@@ -1,3 +1,7 @@
+This is all LGPLv2.1
+If you want a different license, like BSD, just ping me and we can see what we
+can work out.
+
 TL;DR
 For Linux but should be trivial to make work for Windows too. Patches welcome.
 Connect PSP to your Linux box via USB, then run:
