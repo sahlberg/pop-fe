@@ -1,0 +1,74 @@
+TL;DR
+For Linux but should be trivial to make work for Windows too. Patches welcome.
+Connect PSP to your Linux box via USB, then run:
+
+   ./pop-fe --psp-game-dir /run/media/..wherever-the-psp-sdcard-shows-up../PSP/GAME/   ...path-to-your-ps1-game../game.cue
+
+Result:
+Nice EBOOT.PBP with a boxart and a nice background image installed on your PSP (or vita).
+
+Enjoy.
+
+
+
+POP-FE:
+=======
+A utility to automate building and installing PSX games onto different
+systems.
+The current directory where you run this utility from needs to be writable
+so that we can use it to store temporary files during the conversing process.
+It supports and can convert games stored in the following types of file
+formats:
+
+ .cue  : CUE file. The preferred option. The actual image file is extracted
+         from the content of the cue file. If the file-name found inside the
+         cue is a relative path it is assumed that the bin/img file is stored
+         in the same directory as the cue file.
+.bin   : BIN/IMG files. In this case a temporary .cue file will be created
+.img     in the local directory and used for the conversion. This cue file
+         will assume that the bin/img file is just one single track of type
+         MODE2/2352
+.zip   : ZIP file. The ZIP file will be extracted into the local direcotry
+         and if a .cue file is found it will be used.
+
+The utility supports building and installing the games on various different
+target platforms:
+--psp-game-dir <path> : This specifies the path to where a PSP sd card has
+                        been mounted. The games will be converted into
+                        an EBOOT.PBP and will be installed as
+                        <path>/<game-id>/EBOOT.PBP
+                        The EBOOT.PBP will have a cover icon as well as a
+                        background image embedded.
+--retroarch-rom-dir   : The directory where retroarch game images are to be
+                        installed.
+--retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
+#
+Examples:
+Assume I have connected my PSP with USB and it is shows up as :
+   /run/media/sahlberg/disk
+# ./pop-fe.py --psp-game-dir=/run/media/sahlberg/disk/PSP/GAME/ /psx/Metal\ Gear
+If you specify more than one cue file then it is assumed that this is
+a multidisc game and we will use the first cue file to determine the
+game id and title to be used for the whole set.
+
+
+During the conversion process the img/bin file will be temporarily converted
+into an ISO file as NORMAL01.iso in the current directory.
+This is in order to open the iso9660 image and read the system.cnf file
+to extract the game id.
+You can avoid/skip this step by forcing the game-id from the command line,
+using (example only):
+    --game-id=SLUS00957
+    
+Game art and images are fetched from https://psxdatacenter.com/
+If a file ICON0.PNG is found in the game directory it assumed to be the
+cover image and thus we skip pulling it from psxdatacenter.
+Similarly, if PIC1.PNG is found then it is assumed to be a screenshot
+or background image and again we skip pulling this file from the site.
+
+
+--fetch-metadata
+================
+This argument will download and install ICON0.PNG, PIC1.PNG as well as the
+game id and title in the directory where the game is stored.
+This requires that the game directory is writeable.
