@@ -2,7 +2,7 @@ TL;DR
 For Linux but should be trivial to make work for Windows too. Patches welcome.
 Connect PSP to your Linux box via USB, then run:
 
-   ./pop-fe --psp-game-dir /run/media/..wherever-the-psp-sdcard-shows-up../PSP/GAME/   ...path-to-your-ps1-game../game.cue
+   ./pop-fe.py --psp-game-dir /run/media/..wherever-the-psp-sdcard-shows-up../PSP/GAME/   ...path-to-your-ps1-game../game.cue
 
 Result:
 Nice EBOOT.PBP with a boxart and a nice background image installed on your PSP (or vita).
