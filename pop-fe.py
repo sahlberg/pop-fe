@@ -25,6 +25,9 @@
 # The utility supports building and installing the games on various different
 # target platforms:
 #
+# --psio-game-dir <path> : This specifies the path to where a PSIO sd card has
+#                         been mounted. The games will be be installed as
+#                         <path>/<game-id>/<game-title>.bin
 # --psp-game-dir <path> : This specifies the path to where a PSP sd card has
 #                         been mounted. The games will be converted into
 #                         an EBOOT.PBP and will be installed as
@@ -296,7 +299,45 @@ def main(cue, idx, args):
             pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(pic1))
             image.save(create_path(bin, 'PIC1.PNG'), format='PNG')
-        
+
+    if args.psio_game_dir:
+        f = args.psio_game_dir + '/' + game_title
+        try:
+            os.mkdir(f)
+        except:
+            True
+
+        g = game_title
+        if idx:
+            g = g + '-%d' % idx[0]
+        g = g + '.bin'
+
+        if idx:
+            if idx[0] == 1:
+                try:
+                    os.unlink(f + '/MULTIDISC.LST')
+                except:
+                    True
+            with open(f + '/MULTIDISC.LST', 'a+b') as d:
+                d.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
+
+        if not idx or idx[0] == 1:
+            try:
+                image = Image.open(create_path(bin, 'ICON0.PNG'))
+                print('Use existing ICON0.PNG as cover')
+            except:
+                print('Fetch cover for', game_title)
+                icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
+                image = Image.open(io.BytesIO(icon0))
+
+            image = image.resize((80,84), Image.BILINEAR)
+            i = io.BytesIO()
+            image.save(f + '/COVER.BMP', format='BMP')
+            
+        f = f + '/' + g
+        print('Installing', f)
+        copy_file(bin, f)
+            
     if args.psp_game_dir:
         p = popstation()
         p.img = bin
@@ -402,6 +443,8 @@ if __name__ == "__main__":
                     help='Where to store retroarch thumbnails')
     parser.add_argument('--retroarch-rom-dir',
                     help='Where to store retroarch roms')
+    parser.add_argument('--psio-game-dir',
+                    help='Where to store images for PSIO')
     parser.add_argument('--psp-game-dir',
                     help='Where to store PSP EBOOT.PBP')
     parser.add_argument('--fetch-metadata', action='store_true',

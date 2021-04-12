@@ -37,6 +37,9 @@ formats:
 
 The utility supports building and installing the games on various different
 target platforms:
+--psio-game-dir <path> : This specifies the path to where a PSIO sd card has
+                         been mounted. The games will be be installed as
+                         <path>/<game-id>/<game-title>.bin
 --psp-game-dir <path> : This specifies the path to where a PSP sd card has
                         been mounted. The games will be converted into
                         an EBOOT.PBP and will be installed as
