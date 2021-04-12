@@ -39,14 +39,14 @@ The utility supports building and installing the games on various different
 target platforms:
 --psio-game-dir <path> : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
-                         <path>/<game-id>/<game-title>.bin
+                         <path>/<game-title>/<game-title>.bin
 --psp-game-dir <path> : This specifies the path to where a PSP sd card has
                         been mounted. The games will be converted into
                         an EBOOT.PBP and will be installed as
                         <path>/<game-id>/EBOOT.PBP
                         The EBOOT.PBP will have a cover icon as well as a
                         background image embedded.
---retroarch-rom-dir   : The directory where retroarch game images are to be
+--retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
 #

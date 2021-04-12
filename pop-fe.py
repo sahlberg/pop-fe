@@ -27,14 +27,14 @@
 #
 # --psio-game-dir <path> : This specifies the path to where a PSIO sd card has
 #                         been mounted. The games will be be installed as
-#                         <path>/<game-id>/<game-title>.bin
+#                         <path>/<game-title>/<game-title>.bin
 # --psp-game-dir <path> : This specifies the path to where a PSP sd card has
 #                         been mounted. The games will be converted into
 #                         an EBOOT.PBP and will be installed as
 #                         <path>/<game-id>/EBOOT.PBP
 #                         The EBOOT.PBP will have a cover icon as well as a
 #                         background image embedded.
-# --retroarch-rom-dir   : The directory where retroarch game images are to be
+# --retroarch-game-dir  : The directory where retroarch game images are to be
 #                         installed.
 # --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
 #
@@ -422,7 +422,7 @@ def main(cue, idx, args):
         print('Save snap as', f)
         image.save(f, 'PNG')
 
-    if args.retroarch_rom_dir:
+    if args.retroarch_game_dir:
         g = game_title
         if idx:
             g = g + '-%d' % idx[0]
@@ -441,8 +441,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--retroarch-thumbnail-dir',
                     help='Where to store retroarch thumbnails')
-    parser.add_argument('--retroarch-rom-dir',
-                    help='Where to store retroarch roms')
+    parser.add_argument('--retroarch-game-dir',
+                    help='Where to store retroarch games')
     parser.add_argument('--psio-game-dir',
                     help='Where to store images for PSIO')
     parser.add_argument('--psp-game-dir',
