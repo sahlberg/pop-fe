@@ -58,7 +58,7 @@ a multidisc game and we will use the first cue file to determine the
 game id and title to be used for the whole set.
 
 Example:
- # ./pop-fe.py --psp-game-dir /run/media/sahlberg/disk/PSP/GAME/ /psx/Grandia\ -\ Disc1of2\ \[SCUS-94457\]/Grandia\ -\ Disc1of2\ \[SCUS-94457\].img /psx/Grandia\ -\ Disc2of2\ \[SCUS-94465\]/Grandia\ -\ Disc2of2\ \[SCUS-94465\].img
+ # ./pop-fe.py --psp-game-dir /run/media/sahlberg/disk/PSP/GAME/ /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
 
 During the conversion process the img/bin file will be temporarily converted
 into an ISO file as NORMAL01.iso in the current directory.
