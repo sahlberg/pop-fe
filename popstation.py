@@ -3150,6 +3150,48 @@ _data2 = bytearray([
                   
 
 class popstation(object):
+    _sfo = {
+        'BOOTABLE': {
+            'data_fmt': 1028,
+            'data': 1},
+        'CATEGORY': {
+            'data_fmt': 516,
+            'data_max_len': 4,
+            'data': 'ME'},
+        'DISC_ID': {
+            'data_fmt': 516,
+            'data_max_len': 16,
+            'data': 'SLUS00000'},
+        'DISC_NUMBER': {
+            'data_fmt': 1028,
+            'data': 1},
+        'DISC_TOTAL': {
+            'data_fmt': 1028,
+            'data': 1},
+        'DISC_VERSION': {
+            'data_fmt': 516,
+            'data_max_len': 8,
+            'data': '1.00'},
+        'LICENSE': {
+            'data_fmt': 516,
+            'data_max_len': 512,
+            'data': 'Copyright(C) Sony Computer Entertainment America Inc.'},
+        'PARENTAL_LEVEL': {
+            'data_fmt': 1028,
+            'data': 3},
+        'PSP_SYSTEM_VER': {
+            'data_fmt': 516,
+            'data_max_len': 8,
+            'data': '3.01'},
+        'REGION': {
+            'data_fmt': 1028,
+            'data': 32768},
+        'TITLE': {
+            'data_fmt': 516,
+            'data_max_len': 128,
+            'data': 'default title'},
+    }
+        
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
         self._img = None
@@ -3163,6 +3205,8 @@ class popstation(object):
         self._pic1 = None
         self._logo = None
         self._snd0 = None
+        self._disc_number = 1
+        self._disc_total = 1
         
     @property
     def icon0(self):
@@ -3189,11 +3233,30 @@ class popstation(object):
         self._pic1 = value
     
     @property
+    def disc_number(self):
+        return self._disc_number
+    
+    @disc_number.setter
+    def disc_number(self, value):
+        self._sfo['DISC_NUMBER']['data'] = value
+        self._disc_number = value
+    
+    @property
+    def disc_total(self):
+        return self._disc_total
+    
+    @disc_total.setter
+    def disc_total(self, value):
+        self._sfo['DISC_TOTAL']['data'] = value
+        self._disc_total = value
+    
+    @property
     def game_title(self):
         return self._game_title
 
     @game_title.setter
     def game_title(self, value):
+        self._sfo['TITLE']['data'] = value
         self._game_title = value
     
     @property
@@ -3202,6 +3265,7 @@ class popstation(object):
 
     @game_id.setter
     def game_id(self, value):
+        self._sfo['DISC_ID']['data'] = value
         self._game_id = value
     
     @property
@@ -3277,81 +3341,12 @@ class popstation(object):
         return data
 
     def GenerateSFO(self):
-        tmp = [
-                {'eo_offset': 20,
-                 'key_offset': 0,
-                 'data_fmt': 1028,
-                 'data_offset': 0,
-                 'key': 'BOOTABLE',
-                 'data': 1},
-                {'eo_offset': 36,
-                 'key_offset': 9,
-                 'data_fmt': 516,
-                 'data_len': 3,
-                 'data_max_len': 4,
-                 'data_offset': 4,
-                 'key': 'CATEGORY',
-                 'data': 'ME'},
-                {'eo_offset': 52,
-                 'key_offset': 18,
-                 'data_fmt': 516,
-                 'data_len': 10,
-                 'data_max_len': 16,
-                 'data_offset': 8,
-                 'key': 'DISC_ID',
-                 'data': self._game_id},
-                {'eo_offset': 68,
-                 'key_offset': 26,
-                 'data_fmt': 516,
-                 'data_len': 5,
-                 'data_max_len': 8,
-                 'data_offset': 24,
-                 'key': 'DISC_VERSION',
-                 'data': '1.00'},
-                {'eo_offset': 84,
-                 'key_offset': 39,
-                 'data_fmt': 516,
-                 'data_len': 54,
-                 'data_max_len': 512,
-                 'data_offset': 32,
-                 'key': 'LICENSE',
-                 'data': 'Copyright(C) Sony Computer Entertainment America Inc.'},
-                {'eo_offset': 100,
-                 'key_offset': 47,
-                 'data_fmt': 1028,
-                 'data_offset': 544,
-                 'key': 'PARENTAL_LEVEL',
-                 'data': 3},
-                {'eo_offset': 116,
-                 'key_offset': 62,
-                 'data_fmt': 516,
-                 'data_len': 5,
-                 'data_max_len': 8,
-                 'data_offset': 548,
-                 'key': 'PSP_SYSTEM_VER',
-                 'data': '3.01'},
-                {'eo_offset': 132,
-                 'key_offset': 77,
-                 'data_fmt': 1028,
-                 'data_offset': 556,
-                 'key': 'REGION',
-                 'data': 32768},
-                {'eo_offset': 148,
-                 'key_offset': 84,
-                 'data_fmt': 516,
-                 'data_len': len(self._game_title) + 1,
-                 'data_max_len': 128,
-                 'data_offset': 560,
-                 'key': 'TITLE',
-                 'data': self._game_title},
-            ]
-
         #
         # Generate keys table
         #
         keys = bytes(0)
-        for e in tmp:
-            keys = keys + bytes(e['key'] + '\0', encoding='utf8')
+        for key in self._sfo:
+            keys = keys + bytes(key + '\0', encoding='utf8')
         if len(keys) % 4:
             keys = keys + bytes(4 - len(keys) % 4)
             
@@ -3359,7 +3354,8 @@ class popstation(object):
         # Generate data table
         #
         data = bytes(0)
-        for e in tmp:
+        for key in self._sfo:
+            e = self._sfo[key]
             if e['data_fmt'] == 1028:
                 b = bytearray(4)
                 struct.pack_into('<I', b, 0, e['data'])
@@ -3367,6 +3363,7 @@ class popstation(object):
                 e['data_len'] = 4
                 e['data_max_len'] = 4
             if e['data_fmt'] == 516 or e['data_fmt'] == 4:
+                e['data_len'] = len(e['data']) + 1
                 b = bytes(e['data'], encoding='utf-8')
                 if len(b) < e['data_max_len']:
                     b = b + bytes(e['data_max_len'] - len(b))
@@ -3378,7 +3375,8 @@ class popstation(object):
         index = bytes(0)
         key_offset = 0
         data_offset = 0
-        for e in tmp:
+        for key in self._sfo:
+            e = self._sfo[key]
             b = bytearray(16)
             struct.pack_into('<H', b, 0, key_offset)
             struct.pack_into('<H', b, 2, e['data_fmt'])
@@ -3386,7 +3384,7 @@ class popstation(object):
             struct.pack_into('<I', b, 8, e['data_max_len'])
             struct.pack_into('<I', b, 12, data_offset)
 
-            key_offset = key_offset + len(e['key']) + 1
+            key_offset = key_offset + len(key) + 1
             data_offset = data_offset + e['data_max_len']
             
             index = index + b
@@ -3399,7 +3397,7 @@ class popstation(object):
         struct.pack_into('<I', hdr, 4, 257)
         struct.pack_into('<I', hdr, 8, len(index) + 20)
         struct.pack_into('<I', hdr, 12, len(keys) + len(index) + 20)
-        struct.pack_into('<I', hdr, 16, len(tmp))
+        struct.pack_into('<I', hdr, 16, len(self._sfo))
         
         return hdr + index + keys + data
                 
