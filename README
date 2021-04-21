@@ -24,7 +24,7 @@ so that we can use it to store temporary files during the conversing process.
 It supports and can convert games stored in the following types of file
 formats:
 
- .cue  : CUE file. The preferred option. The actual image file is extracted
+.cue   : CUE file. The preferred option. The actual image file is extracted
          from the content of the cue file. If the file-name found inside the
          cue is a relative path it is assumed that the bin/img file is stored
          in the same directory as the cue file.
@@ -43,9 +43,9 @@ target platforms:
                          If you list more than one file it is assumed these
                          are all the disks part of a multidisc game and
                          MULTIDISC.LST will be created accordingly.
-			 If you have installed cue2cu2.py in the same
-			 directory as pop-fe.py then a .cu2 file will be
-			 created as well.
+                         If you have installed cue2cu2.py in the same
+                         directory as pop-fe.py then a .cu2 file will be
+                         created as well.
 --psp-game-dir <path> : This specifies the path to where a PSP sd card has
                         been mounted. The games will be converted into
                         an EBOOT.PBP and will be installed as
