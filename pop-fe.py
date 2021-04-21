@@ -79,6 +79,7 @@
 
 from PIL import Image, ImageDraw, ImageFont
 import argparse
+import datetime
 import io
 import os
 import re
@@ -88,7 +89,7 @@ import sys
 import iso9660      # python-pycdio
 import requests
 import requests_cache
-import datetime
+import subprocess
 import zipfile
 from pathlib import Path
 
@@ -334,10 +335,18 @@ def main(cue, idx, args):
             i = io.BytesIO()
             image.save(f + '/COVER.BMP', format='BMP')
             
-        f = f + '/' + g
-        print('Installing', f)
-        copy_file(bin, f)
-            
+        print('Installing', f + '/' + g)
+        copy_file(bin, f + '/' + g)
+
+        try:
+            subprocess.call(['./cue2cu2.py', '--size', str(os.stat(bin).st_size), cue])
+            cu2 = cue.split('/')[-1][:-4] + '.cu2'
+            print('Created CU2:', cu2)
+            copy_file(cu2, f + '/' + g[:-4] + '.cu2')
+            os.unlink(cu2)
+        except:
+            True
+
     if args.psp_game_dir:
         p = popstation()
         p.img = bin
