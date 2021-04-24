@@ -153,6 +153,14 @@ def get_pic1_from_game(game_id, game):
     filter = 'images/screens/././.*/ss..jpg'
     return fetch_cached_binary(random.choice(re.findall(filter, game)))
 
+def get_psio_cover(game_id):
+    f = 'https://raw.githubusercontent.com/logi-26/psio-assist/main/covers/' + game_id + '.bmp'
+    ret = requests.get(f, stream=True)
+    if ret.status_code != 200:
+        raise Exception('Failed to fetch file ', f)
+
+    return ret.content
+
 def get_first_bin_in_cue(cue):
     with open(cue, "r") as f:
         files = re.findall('".*"', f.read())
@@ -307,17 +315,14 @@ def main(cue, idx, args):
         if not idx or idx[0] == 1:
             try:
                 image = Image.open(create_path(bin, 'ICON0.PNG'))
+                image = image.resize((80,84), Image.BILINEAR)
+                image.save(f + '/COVER.BMP', format='BMP')
                 print('Use existing ICON0.PNG as cover')
             except:
                 print('Fetch cover for', game_title)
-                if not game:
-                    game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-                icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
-                image = Image.open(io.BytesIO(icon0))
-
-            image = image.resize((80,84), Image.BILINEAR)
-            i = io.BytesIO()
-            image.save(f + '/COVER.BMP', format='BMP')
+                image = get_psio_cover(game_id[0:4] + '-' + game_id[4:9])
+                with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
+                    d.write(image)
             
         print('Installing', f + '/' + g)
         copy_file(bin, f + '/' + g)
