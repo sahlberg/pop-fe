@@ -226,6 +226,7 @@ def main(cue, idx, args):
 
     print('BIN:', bin)
 
+    game = None
     game_id = None
     if args.game_id:
         game_id = args.game_id
@@ -252,8 +253,6 @@ def main(cue, idx, args):
         game_title = get_title_from_game(game_id[0:4].upper() + '-' + game_id[4:9])
     print('Title:', game_title)
 
-    game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-    
     if args.fetch_metadata:
         print('fetching metadata')
 
@@ -267,6 +266,8 @@ def main(cue, idx, args):
             print('Already have ICON0.PNG')
         except:
             print('Fetching cover as ICON0.PNG')
+            if not game:
+                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
             icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(icon0))
             image.save(create_path(bin, 'ICON0.PNG'), format='PNG')
@@ -276,6 +277,8 @@ def main(cue, idx, args):
             print('Already have PIC1.PNG')
         except:
             print('Fetching screenshot as PIC1.PNG')
+            if not game:
+                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
             pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(pic1))
             image.save(create_path(bin, 'PIC1.PNG'), format='PNG')
@@ -307,6 +310,8 @@ def main(cue, idx, args):
                 print('Use existing ICON0.PNG as cover')
             except:
                 print('Fetch cover for', game_title)
+                if not game:
+                    game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
                 icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
                 image = Image.open(io.BytesIO(icon0))
 
@@ -343,6 +348,8 @@ def main(cue, idx, args):
             print('Use existing ICON0.PNG as cover')
         except:
             print('Fetch cover for', game_title)
+            if not game:
+                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
             icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(icon0))
 
@@ -357,6 +364,8 @@ def main(cue, idx, args):
             print('Use existing PIC1.PNG as background')
         except:
             print('Fetch screenshot for', game_title)
+            if not game:
+                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
             pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(pic1))
         image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
@@ -386,6 +395,8 @@ def main(cue, idx, args):
         g = game_title
         if idx:
             g = g + '-%d' % idx[0]
+        if not game:
+            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
         icon0 = get_icon0_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(icon0))
         try:
@@ -398,6 +409,8 @@ def main(cue, idx, args):
         print('Save cover as', f)
         image.save(f, 'PNG')
 
+        if not game:
+            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
         pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(pic1))
         try:
