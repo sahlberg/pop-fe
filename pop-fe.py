@@ -93,6 +93,7 @@ import subprocess
 import zipfile
 from pathlib import Path
 
+from gamedb import games
 from bchunk import bchunk
 from popstation import popstation
 
@@ -136,31 +137,11 @@ def fetch_cached_binary(path):
 
     return ret.content
 
-    
-def get_gamelist_from_gamecode(code):
-    if code == 'SLES' or code == 'SCES':
-        return fetch_cached_file('plist.html')
-    if code == 'SLUS' or code == 'SCUS':
-        return fetch_cached_file('ulist.html')
-    if code == 'SLPS' or code == 'SCPS' or code == 'SLPM':
-        return fetch_cached_file('jlist.html')
+def get_game_from_gamelist(game_id):
+    return fetch_cached_file(games[game_id]['url'])
 
-    raise Exception('Don\'t know the gamlist for %s' % code)
-#'https://psxdatacenter.com/plist.html'
-#	"SCED",
-#	"SLED",
-#	"SLPS",
-#	"SIPS",
-#	"ESPM"
-
-
-def get_game_from_gamelist(game_id, game_list):
-    g = re.findall('games/././' + game_id + '.html', game_list)
-    return fetch_cached_file(g[0])
-
-def get_title_from_game(game_id, game):
-    g = re.findall('<title>.*</title>', game)
-    return g[0][7:-8]
+def get_title_from_game(game_id):
+    return games[game_id]['title']
 
 def get_icon0_from_game(game_id, game):
     g = re.findall('images/covers/././%s.jpg' % game_id, game)
@@ -258,9 +239,6 @@ def main(cue, idx, args):
         game_id = get_gameid_from_iso()
     print('Id:', game_id)
 
-    game_list = get_gamelist_from_gamecode(game_id[0:4].upper())
-    game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9], game_list)
-    
     game_title = None
     if args.title:
         game_title = args.title
@@ -271,10 +249,11 @@ def main(cue, idx, args):
         except:
             True
     if not game_title:
-        game_title = get_title_from_game(game_id, game)
+        game_title = get_title_from_game(game_id[0:4].upper() + '-' + game_id[4:9])
     print('Title:', game_title)
 
-
+    game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
+    
     if args.fetch_metadata:
         print('fetching metadata')
 
