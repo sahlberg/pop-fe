@@ -313,15 +313,16 @@ def main(cue, idx, args):
                 d.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
 
         if not idx or idx[0] == 1:
+            ifn = f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp'
             try:
                 image = Image.open(create_path(bin, 'ICON0.PNG'))
                 image = image.resize((80,84), Image.BILINEAR)
-                image.save(f + '/COVER.BMP', format='BMP')
+                image.save(ifn, format='BMP')
                 print('Use existing ICON0.PNG as cover')
             except:
                 print('Fetch cover for', game_title)
                 image = get_psio_cover(game_id[0:4] + '-' + game_id[4:9])
-                with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
+                with open(ifn, 'wb') as d:
                     d.write(image)
             
         print('Installing', f + '/' + g)
