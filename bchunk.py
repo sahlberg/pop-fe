@@ -183,6 +183,10 @@ class bchunk(object):
         return self.tracks[idx]['bin']
 
     @property
+    def cue(self):
+        return self.tracks
+
+    @property
     def raw(self):
         return self._raw
 

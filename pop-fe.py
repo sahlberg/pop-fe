@@ -204,33 +204,11 @@ def create_path(bin, f):
         f = '/'.join(s[:-1]) + '/' + f
     return f
 
-def get_bin_file(line):
-    # strip off leading 'FILE '
-    pos = line.lower().index('file ')
-    line = line[pos + 5:]
-    # strip off leading 'FILE '
-    pos = line.lower().index(' binary')
-    line = line[:pos+1]
-    #strip off leading ' '
-    while line[0] == ' ':
-        line = line[1:]
-    #strip off trailing ' '
-    while line[-1] == ' ':
-        line = line[:-1]
-    # remove double quotes
-    if line[0] == '"':
-        line = line[1:-1]
-    # remove single quotes
-    if line[0] == '\'':
-        line = line[1:-1]
-    return line
-
-def main(cue, idx, args):
-    with open(cue, 'r') as c:
-        bin = get_bin_file(c.readlines()[0])
-        s = cue.split('/')
-        if len(s) > 1:
-            bin = '/'.join(s[:-1]) + '/' + bin
+def main(cue_file, cue, idx, args):
+    bin = cue[0]['bin']
+    s = cue_file.split('/')
+    if len(s) > 1 and len(cue[0]['bin'].split('/')) == 1:
+        bin = '/'.join(s[:-1]) + '/' + bin
 
     print('BIN:', bin)
 
@@ -329,8 +307,8 @@ def main(cue, idx, args):
         copy_file(bin, f + '/' + g)
 
         try:
-            subprocess.call(['./cue2cu2.py', '--size', str(os.stat(bin).st_size), cue])
-            cu2 = cue.split('/')[-1][:-4] + '.cu2'
+            subprocess.call(['./cue2cu2.py', '--size', str(os.stat(bin).st_size), cue_file])
+            cu2 = cue_file.split('/')[-1][:-4] + '.cu2'
             print('Created CU2:', cu2)
             copy_file(cu2, f + '/' + g[:-4] + '.cu2')
             os.unlink(cu2)
@@ -475,34 +453,34 @@ if __name__ == "__main__":
     idx = None
     if len(args.files) > 1:
         idx = (1, len(args.files))
-    for cue in args.files:
+    for cue_file in args.files:
         zip = None
-        print('Processing', cue, '...')
+        print('Processing', cue_file, '...')
 
-        if cue[-3:] == 'zip':
+        if cue_file[-3:] == 'zip':
             print('This is a ZIP file. Uncompress the file.')
-            zip = cue
+            zip = cue_file
             with zipfile.ZipFile(zip, 'r') as zf:
                 for f in zf.namelist():
                     print('Extracting', f)
                     zf.extract(f)
                     if re.search('.cue$', f):
                         print('Found CUE file', f)
-                        cue = f
+                        cue_file = f
 
         tmpcue = None
-        if cue[-3:] == 'img' or cue[-3:] == 'bin':
+        if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
             print('IMG or IMG file. Create a temporary cue file for it')
             tmpcue = 'TMP.cue'
             with open(tmpcue, "w") as f:
-                f.write('FILE "%s" BINARY\n' % cue)
+                f.write('FILE "%s" BINARY\n' % cue_file)
                 f.write('  TRACK 01 MODE2/2352\n')
                 f.write('    INDEX 01 00:00:00\n')
 
-            cue = tmpcue
+            cue_file = tmpcue
 
-        if cue[-3:] != 'cue':
-            print('%s is not a CUE file. Skipping' % cue)
+        if cue_file[-3:] != 'cue':
+            print('%s is not a CUE file. Skipping' % cue_file)
             continue
         
         if not idx or idx[0] == 1:
@@ -511,10 +489,10 @@ if __name__ == "__main__":
             # We only do this for the first disk of a multi-disk set.
             print('Convert CUE to a normal style ISO')
             bc = bchunk()
-            bc.open(cue)
+            bc.open(cue_file)
             bc.writetrack(0, 'NORMAL')
 
-        main(cue, idx, args)
+        main(cue_file, bc.cue, idx, args)
         if idx:
             idx = (idx[0] + 1, idx[1])
         if tmpcue:
