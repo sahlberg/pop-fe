@@ -2182,7 +2182,7 @@ _datapspbody = bytes([0x7f,
 0x61,0x74,0x61,0x00,0x2e,0x73,0x62,0x73,0x73,0x00,0x2e,0x62,0x73,0x73,0x00,0x2e,
 0x73,0x68,0x73,0x74,0x72,0x74,0x61,0x62,0x00])
 
-_data1 = bytearray([
+_data1 = bytes([
 	0x5F, 0x53, 0x43, 0x55, 0x53, 0x5F, 0x39, 0x34, 0x34, 0x37, 0x36, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -2411,7 +2411,7 @@ _data1 = bytearray([
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 ])
 
-_data2 = bytearray([
+_data2 = bytes([
 	0x00, 0x00, 0x00, 0x00, 0xFF, 0x07, 0x00, 0x00, 0x48, 0x6F, 0x74, 0x20, 0x53, 0x68, 0x6F, 0x74,
 	0x73, 0x20, 0x47, 0x6F, 0x6C, 0x66, 0xC2, 0xAE, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -3402,10 +3402,6 @@ class popstation(object):
         return hdr + index + keys + data
                 
     def convert(self):
-        toc = None
-        if self._ccd:
-            toc = self.get_toc_from_ccd()
-        
         with open(self._img, 'rb') as fh:
             fh.seek(0, 2)
             isosize = fh.tell()
@@ -3490,11 +3486,15 @@ class popstation(object):
         for _ in range(0xfc):
             fh.write(x)
 
-        _data1[1:5] = bytes(self._game_id[0:4], encoding='utf-8')
-        _data1[6:11] = bytes(self._game_id[4:9], encoding='utf-8')
-        if toc:
-            _data1[1024:1024 + len(toc)] = toc
-        fh.write(_data1)
+        _d = bytearray(_data1)
+        _d[1:5] = bytes(self._game_id[0:4], encoding='utf-8')
+        _d[6:11] = bytes(self._game_id[4:9], encoding='utf-8')
+        if self._ccd:
+            toc = self.get_toc_from_ccd()
+        
+            if toc:
+                _d[1024:1024 + len(toc)] = toc
+        fh.write(_d)
 
         p2_offset = fh.tell()
         x = bytearray(4)
@@ -3502,8 +3502,9 @@ class popstation(object):
         fh.write(x)
 
         b = bytes(self._game_title, encoding='utf-8')
-        _data2[8:8 + len(b)] = b 
-        fh.write(_data2)
+        _d = bytearray(_data2)
+        _d[8:8 + len(b)] = b 
+        fh.write(_d)
         index_offset = fh.tell()
 
         print('Writing indexes')
@@ -3556,6 +3557,19 @@ class popstation(object):
 
         end_offset = fh.tell() - struct.unpack_from('<I', header, 36)[0]
 
+        x = fh.tell()
+        fh.seek(index_offset)
+        fh.write(indexes)
+        buf = bytearray(4)
+        fh.seek(p1_offset)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
+        end_offset = end_offset + 0x2d31
+        fh.seek(p2_offset)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
+        fh.seek(x)
+
         print('Writing startdat header')
         fh.write(_startdatheader)
         print('Writing P.O.P.S standard logo')
@@ -3563,19 +3577,6 @@ class popstation(object):
         print('Writing startdat footer')
         fh.write(_startdatfooter)
         print('Updating compressed indexes')
-        buf = bytearray(4)
-
-        fh.seek(p1_offset)
-        struct.pack_into('<I', buf, 0, end_offset)
-        fh.write(buf)
-
-        end_offset = end_offset + 0x2d31
-        fh.seek(p2_offset)
-        struct.pack_into('<I', buf, 0, end_offset)
-        fh.write(buf)
-
-        fh.seek(index_offset)
-        fh.write(indexes)
 
         
 if __name__ == "__main__":
