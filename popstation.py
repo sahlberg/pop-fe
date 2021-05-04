@@ -3484,7 +3484,6 @@ class popstation(object):
         p1_offset = fh.tell()
 
         x = bytearray(4)
-        struct.pack_into('<I', x, 0, isosize + 0x100000)
         fh.write(x)
 
         x = bytearray(4)
@@ -3511,9 +3510,6 @@ class popstation(object):
         dummy = bytes(24)
         offset = 0
         x = 0
-        if self._complevel == 0:
-            x = 0x9300
-
         for i in range(int(isosize / 0x9300)):
             b = bytearray(4)
             struct.pack_into('<I', b, 0, offset)
@@ -3521,54 +3517,44 @@ class popstation(object):
             struct.pack_into('<I', b, 0, x)
             fh.write(b)
             fh.write(dummy)
-            if self._complevel == 0:
-                offset = offset + 0x9300
 
         offset = fh.tell()
         fh.write(bytes(struct.unpack_from('<I', header, 36)[0] + 0x100000 - offset))
 
         print('Writing PSX CD Dump')
         fi = open(self._img, 'rb')
-        if self._complevel == 0:
-            while True:
-                buf = fi.read(1024 * 1024)
-                if not buf:
-                    break
-                fh.write(buf)
-            fh.write(bytes(isosize - isorealsize))
         indexes = bytearray(0)
         end_offset = 0
-        if self._complevel != 0:
-            print('Writing compressed image')
-            offset = 0
-            i = 0
-            while True:
-                buf = fi.read(0x9300)
-                if not buf:
-                    break
-                if len(buf) < 0x9300:
-                    buf = buf + bytearray(0x9300 - len(buf))
-                c = zlib.compress(buf, self._complevel)
-                c = c[2:-4]
-                idx = bytearray(32)
-                struct.pack_into('<I', idx, 0, offset)
-                if len(c) >= 0x9300:
-                    struct.pack_into('<I', idx, 4, 0x9300)
-                    fh.write(buf)
-                    offset = offset + 0x9300
-                if len(c) < 0x9300:
-                    struct.pack_into('<I', idx, 4, len(c))
-                    fh.write(c)
-                    offset = offset + len(c)
-                indexes = indexes + idx
-                i = i + 1
+        print('Writing compressed image')
+        offset = 0
+        i = 0
+        while True:
+            buf = fi.read(0x9300)
+            if not buf:
+                break
+            if len(buf) < 0x9300:
+                buf = buf + bytearray(0x9300 - len(buf))
+            c = zlib.compress(buf, self._complevel)
+            c = c[2:-4]
+            idx = bytearray(32)
+            struct.pack_into('<I', idx, 0, offset)
+            if len(c) >= 0x9300:
+                struct.pack_into('<I', idx, 4, 0x9300)
+                fh.write(buf)
+                offset = offset + 0x9300
+            if len(c) < 0x9300:
+                struct.pack_into('<I', idx, 4, len(c))
+                fh.write(c)
+                offset = offset + len(c)
+            indexes = indexes + idx
+            i = i + 1
 
-            x = fh.tell()
-            if x & 0xf:
-                for _ in range(0x10 - (x & 0xf)):
-                    fh.write(bytes('0', encoding='utf-8'))
+        x = fh.tell()
+        if x & 0xf:
+            for _ in range(0x10 - (x & 0xf)):
+                fh.write(bytes('0', encoding='utf-8'))
 
-            end_offset = fh.tell() - struct.unpack_from('<I', header, 36)[0]
+        end_offset = fh.tell() - struct.unpack_from('<I', header, 36)[0]
 
         print('Writing startdat header')
         fh.write(_startdatheader)
@@ -3576,21 +3562,20 @@ class popstation(object):
         fh.write(_logo_buffer)
         print('Writing startdat footer')
         fh.write(_startdatfooter)
-        if self._complevel != 0:
-            print('Updating compressed indexes')
-            buf = bytearray(4)
+        print('Updating compressed indexes')
+        buf = bytearray(4)
 
-            fh.seek(p1_offset)
-            struct.pack_into('<I', buf, 0, end_offset)
-            fh.write(buf)
+        fh.seek(p1_offset)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
 
-            end_offset = end_offset + 0x2d31
-            fh.seek(p2_offset)
-            struct.pack_into('<I', buf, 0, end_offset)
-            fh.write(buf)
+        end_offset = end_offset + 0x2d31
+        fh.seek(p2_offset)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
 
-            fh.seek(index_offset)
-            fh.write(indexes)
+        fh.seek(index_offset)
+        fh.write(indexes)
 
         
 if __name__ == "__main__":
