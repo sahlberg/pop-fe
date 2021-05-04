@@ -3613,7 +3613,13 @@ if __name__ == "__main__":
     print('game id', p.game_id)
     p.game_title = args.game_title[0]
     print('game title', p.game_title)
-    p.icon0 = open('ICON0.PNG', 'rb').read()
-    p.pic1 = open('PIC1.PNG', 'rb').read()
+    try:
+        p.icon0 = open('ICON0.PNG', 'rb').read()
+    except:
+        True
+    try:
+        p.pic1 = open('PIC1.PNG', 'rb').read()
+    except:
+        True
     
     p.convert()
