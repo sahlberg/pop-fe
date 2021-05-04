@@ -3195,7 +3195,6 @@ class popstation(object):
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
         self._img = None
-        self._ccd = None
         self._complevel = 1
         self._game_id = None
         self._game_title = None
@@ -3285,14 +3284,6 @@ class popstation(object):
         self._img = value
     
     @property
-    def ccd(self):
-        return self._ccd
-
-    @ccd.setter
-    def ccd(self, value):
-        self._ccd = value
-
-    @property
     def complevel(self):
         return self._complevel
 
@@ -3303,9 +3294,16 @@ class popstation(object):
     def get_toc_from_ccd(self):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
-    
+
+        try:
+            os.stat(self._img[:-4] + '.ccd')
+            _ccd = self._img[:-4] + '.ccd'
+            print('Found CDD', _ccd)
+        except:
+            return None
+        
         c = configparser.ConfigParser()
-        c.read(self._ccd)
+        c.read(_ccd)
         entries = []
         for i in range(int(c['Disc']['TocEntries'])):
             e = {}
@@ -3489,11 +3487,9 @@ class popstation(object):
         _d = bytearray(_data1)
         _d[1:5] = bytes(self._game_id[0:4], encoding='utf-8')
         _d[6:11] = bytes(self._game_id[4:9], encoding='utf-8')
-        if self._ccd:
-            toc = self.get_toc_from_ccd()
-        
-            if toc:
-                _d[1024:1024 + len(toc)] = toc
+        toc = self.get_toc_from_ccd()
+        if toc:
+            _d[1024:1024 + len(toc)] = toc
         fh.write(_d)
 
         p2_offset = fh.tell()
@@ -3590,11 +3586,6 @@ if __name__ == "__main__":
 
     p = popstation()
     p.img = args.image[0]
-    try:
-        os.stat(args.image[0][:-4] + '.ccd')
-        p.ccd = args.image[0][:-4] + '.ccd'
-    except:
-        True
     p.game_id = args.game_id[0]
     print('game id', p.game_id)
     p.game_title = args.game_title[0]

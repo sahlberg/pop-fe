@@ -318,12 +318,6 @@ def main(cue_file, cue, idx, args):
     if args.psp_game_dir:
         p = popstation()
         p.img = bin
-        try:
-            os.stat(bin[:-4] + '.ccd')
-            p.ccd = bin[:-4] + '.ccd'
-            print('Found CDD', p.ccd)
-        except:
-            True
         p.game_id = game_id
         p.game_title = game_title
 
