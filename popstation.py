@@ -3504,16 +3504,9 @@ class popstation(object):
         index_offset = fh.tell()
 
         print('Writing indexes')
-        dummy = bytes(24)
-        offset = 0
-        x = 0
         for i in range(int(isosize / 0x9300)):
-            b = bytearray(4)
-            struct.pack_into('<I', b, 0, offset)
+            b = bytearray(32)
             fh.write(b)
-            struct.pack_into('<I', b, 0, x)
-            fh.write(b)
-            fh.write(dummy)
 
         offset = fh.tell()
         fh.write(bytes(struct.unpack_from('<I', header, 36)[0] + 0x100000 - offset))
