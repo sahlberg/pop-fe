@@ -166,12 +166,10 @@ def get_first_bin_in_cue(cue):
         files = re.findall('".*"', f.read())
         return files[0][1:-1]
 
-def add_image_text(image, title, idx):
+def add_image_text(image, title):
     # Add a nice title text to the background image
     # Split it into separate lines
     #   for ' - '
-    if idx:
-        title = title + ' - (Disc %d of %d)' % idx
     print('Add image text: title:', title)
     strings = title.split(' - ')
     y = 18
@@ -347,7 +345,7 @@ def main(cue_file, cue, idx, p):
                 pic1 = get_pic1_from_game(p.game_id[0:4] + '-' + p.game_id[4:9], game)
                 image = Image.open(io.BytesIO(pic1))
             image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
-            image = add_image_text(image, p.game_title, idx)
+            image = add_image_text(image, p.game_title)
 
             i = io.BytesIO()
             image.save(i, format='PNG')
