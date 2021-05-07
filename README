@@ -52,6 +52,8 @@ target platforms:
                         <path>/<game-id>/EBOOT.PBP
                         The EBOOT.PBP will have a cover icon as well as a
                         background image embedded.
+			If you specify multiple images then a single multi-disk
+			EBOOT.PBP will be created.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.

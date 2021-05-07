@@ -204,7 +204,7 @@ def create_path(bin, f):
         f = '/'.join(s[:-1]) + '/' + f
     return f
 
-def main(cue_file, cue, idx, args):
+def main(cue_file, cue, idx, p):
     bin = cue[0]['bin']
     s = cue_file.split('/')
     if len(s) > 1 and len(cue[0]['bin'].split('/')) == 1:
@@ -316,56 +316,60 @@ def main(cue_file, cue, idx, args):
             True
 
     if args.psp_game_dir:
-        p = popstation()
-        p.img = bin
-        p.game_id = game_id
-        p.game_title = game_title
+        if not idx or idx[0] == 1:
+            p.game_id = game_id
+            p.game_title = game_title
+            print('game_id', p.game_id)
+            print('game_title', p.game_title)
+            try:
+                image = Image.open(create_path(bin, 'ICON0.PNG'))
+                print('Use existing ICON0.PNG as cover')
+            except:
+                print('Fetch cover for', p.game_title)
+                if not game:
+                    game = get_game_from_gamelist(p.game_id[0:4].upper() + '-' + p.game_id[4:9])
+                icon0 = get_icon0_from_game(p.game_id[0:4].upper() + '-' + p.game_id[4:9], game)
+                image = Image.open(io.BytesIO(icon0))
 
-        try:
-            image = Image.open(create_path(bin, 'ICON0.PNG'))
-            print('Use existing ICON0.PNG as cover')
-        except:
-            print('Fetch cover for', game_title)
-            if not game:
-                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-            icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
-            image = Image.open(io.BytesIO(icon0))
+            image = image.resize((80,80), Image.BILINEAR)
+            i = io.BytesIO()
+            image.save(i, format='PNG')
+            i.seek(0)
+            p.icon0 = i.read()
 
-        image = image.resize((80,80), Image.BILINEAR)
-        i = io.BytesIO()
-        image.save(i, format='PNG')
-        i.seek(0)
-        p.icon0 = i.read()
+            try:
+                image = Image.open(create_path(bin, 'PIC1.PNG'))
+                print('Use existing PIC1.PNG as background')
+            except:
+                print('Fetch screenshot for', p.game_title)
+                if not game:
+                    game = get_game_from_gamelist(p.game_id[0:4].upper() + '-' + p.game_id[4:9])
+                pic1 = get_pic1_from_game(p.game_id[0:4] + '-' + p.game_id[4:9], game)
+                image = Image.open(io.BytesIO(pic1))
+            image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
+            image = add_image_text(image, p.game_title, idx)
 
-        try:
-            image = Image.open(create_path(bin, 'PIC1.PNG'))
-            print('Use existing PIC1.PNG as background')
-        except:
-            print('Fetch screenshot for', game_title)
-            if not game:
-                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-            pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
-            image = Image.open(io.BytesIO(pic1))
-        image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
-        image = add_image_text(image, game_title, idx)
+            i = io.BytesIO()
+            image.save(i, format='PNG')
+            i.seek(0)
+            p.pic1 = i.read()
 
-        i = io.BytesIO()
-        image.save(i, format='PNG')
-        i.seek(0)
-        p.pic1 = i.read()
+        print('Add image', bin)
+        p.add_img(bin)
 
-        f = args.psp_game_dir + '/' + game_id
-        if idx:
-            f = f + ' - %d' % idx[0]
+        if idx and idx[0] != idx[1]:
+            return
+
+        f = args.psp_game_dir + '/' + p.game_id
         print('Install EBOOT in', f)
         try:
             os.mkdir(f)
         except:
             True
             
-        print('Running popstation')
         p.eboot = f + '/EBOOT.PBP'
-        p.convert()
+        print('Create EBOOT at', p.eboot)
+        p.create()
         
         return
     
@@ -444,6 +448,8 @@ if __name__ == "__main__":
     except:
         True
 
+    p = popstation()
+
     idx = None
     if len(args.files) > 1:
         idx = (1, len(args.files))
@@ -477,16 +483,15 @@ if __name__ == "__main__":
             print('%s is not a CUE file. Skipping' % cue_file)
             continue
         
-        if not idx or idx[0] == 1:
-            # We need to convert the first track to an ISO so we can open the
-            # disk and read system.cnf
-            # We only do this for the first disk of a multi-disk set.
-            print('Convert CUE to a normal style ISO')
-            bc = bchunk()
-            bc.open(cue_file)
-            bc.writetrack(0, 'NORMAL')
+        # We need to convert the first track to an ISO so we can open the
+        # disk and read system.cnf
+        # We only do this for the first disk of a multi-disk set.
+        print('Convert CUE to a normal style ISO')
+        bc = bchunk()
+        bc.open(cue_file)
+        bc.writetrack(0, 'NORMAL')
 
-        main(cue_file, bc.cue, idx, args)
+        main(cue_file, bc.cue, idx, p)
         if idx:
             idx = (idx[0] + 1, idx[1])
         if tmpcue:
