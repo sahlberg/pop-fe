@@ -2307,7 +2307,7 @@ def ParseSFO(sfo_buf):
             data['data'] = buf[:-1].decode('utf-8')
         if idx['data_fmt'] == 4:
             data['data_max_len'] = idx['data_max_len']
-            data['data'] = buf[:].decode('utf-8')
+            data['data'] = buf
         sfo['parameters'][name] = data
     return sfo
         
