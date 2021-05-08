@@ -2264,6 +2264,53 @@ _datapspbody = bytes([
 PSP_OFFSET = 0x20
 PSAR_OFFSET = 0x24
 
+def ParseSFO(sfo_buf):
+    SFO_HEADER_SIZE = 0x14
+    INDEX_ENTRY_SIZE = 0x10
+
+    sfo = {}
+    sfo['magic'] = sfo_buf[0:4]
+    if sfo['magic'] != b'\x00PSF':
+        raise Exception('No SFO found')
+    sfo['version'] = struct.unpack_from('<I', sfo_buf, 4)[0]
+    sfo['key_table_start'] = struct.unpack_from('<I', sfo_buf, 8)[0]
+    sfo['data_table_start'] = struct.unpack_from('<I', sfo_buf, 12)[0]
+    sfo['table_entries'] = struct.unpack_from('<I', sfo_buf, 16)[0]
+    # read index table
+    sfo['parameters'] = {}
+    for i in range(sfo['table_entries']):
+        _pos = SFO_HEADER_SIZE + i * INDEX_ENTRY_SIZE
+        buf = sfo_buf[_pos:_pos + INDEX_ENTRY_SIZE]
+        idx = {}
+        idx['key_offset'] = struct.unpack_from('<H', buf, 0)[0]
+        idx['data_fmt'] = struct.unpack_from('<H', buf, 2)[0]
+        idx['data_len'] = struct.unpack_from('<I', buf, 4)[0]
+        idx['data_max_len'] = struct.unpack_from('<I', buf, 8)[0]
+        idx['data_offset'] = struct.unpack_from('<I', buf, 12)[0]
+        # read key name
+        _pos = sfo['key_table_start'] + idx['key_offset']
+        buf = sfo_buf[_pos:_pos + 64] # no keys longer than this
+        for o in range(len(buf)):
+            if buf[o] == 0:
+                break
+        name = buf[:o].decode('utf-8')
+        # read data and create a dict
+        data = {}
+        data['data_fmt'] = idx['data_fmt']
+        # read data
+        _pos = sfo['data_table_start'] + idx['data_offset']
+        buf = sfo_buf[_pos:_pos + idx['data_len']]
+        if data['data_fmt'] == 1028:
+            data['data'] = struct.unpack_from('<I', buf, 0)[0]
+        if idx['data_fmt'] == 516:
+            data['data_max_len'] = idx['data_max_len']
+            data['data'] = buf[:-1].decode('utf-8')
+        if idx['data_fmt'] == 4:
+            data['data_max_len'] = idx['data_max_len']
+            data['data'] = buf[:].decode('utf-8')
+        sfo['parameters'][name] = data
+    return sfo
+        
 class popstation(object):
     _sfo = {
         'BOOTABLE': {
@@ -2645,9 +2692,6 @@ class popstation(object):
         fh.seek(x)
                     
     def dump(self, eboot):
-        SFO_HEADER_SIZE = 0x14
-        INDEX_ENTRY_SIZE = 0x10
-        
         with open(eboot, 'rb') as e:
             # read header
             buf = e.read(0x28)
@@ -2677,50 +2721,8 @@ class popstation(object):
                 f.write(buf)
                 
             # read sfo header
-            sfo = {}
-            
             e.seek(header['sfo'])
-            buf = e.read(SFO_HEADER_SIZE)
-            sfo['magic'] = buf[0:4]
-            if sfo['magic'] != b'\x00PSF':
-                raise Exception('No SFO found')
-            sfo['version'] = struct.unpack_from('<I', buf, 4)[0]
-            sfo['key_table_start'] = struct.unpack_from('<I', buf, 8)[0]
-            sfo['data_table_start'] = struct.unpack_from('<I', buf, 12)[0]
-            sfo['table_entries'] = struct.unpack_from('<I', buf, 16)[0]
-            # read index table
-            sfo['parameters'] = {}
-            for i in range(sfo['table_entries']):
-                e.seek(header['sfo'] + SFO_HEADER_SIZE + i * INDEX_ENTRY_SIZE)
-                buf = e.read(INDEX_ENTRY_SIZE)
-                idx = {}
-                idx['key_offset'] = struct.unpack_from('<H', buf, 0)[0]
-                idx['data_fmt'] = struct.unpack_from('<H', buf, 2)[0]
-                idx['data_len'] = struct.unpack_from('<I', buf, 4)[0]
-                idx['data_max_len'] = struct.unpack_from('<I', buf, 8)[0]
-                idx['data_offset'] = struct.unpack_from('<I', buf, 12)[0]
-                # read key name
-                e.seek(header['sfo'] + sfo['key_table_start'] + idx['key_offset'])
-                buf = e.read(64) # no keys longer than this
-                for o in range(len(buf)):
-                    if buf[o] == 0:
-                        break
-                name = buf[:o].decode('utf-8')
-                # read data and create a dict
-                data = {}
-                data['data_fmt'] = idx['data_fmt']
-                # read data
-                e.seek(header['sfo'] + sfo['data_table_start'] + idx['data_offset'])
-                buf = e.read(idx['data_len'])
-                if data['data_fmt'] == 1028:
-                    data['data'] = struct.unpack_from('<I', buf, 0)[0]
-                if idx['data_fmt'] == 516:
-                    data['data_max_len'] = idx['data_max_len']
-                    data['data'] = buf[:-1].decode('utf-8')
-                if idx['data_fmt'] == 4:
-                    data['data_max_len'] = idx['data_max_len']
-                    data['data'] = buf[:].decode('utf-8')
-                sfo['parameters'][name] = data
+            sfo = ParseSFO(e.read(header['icon0'] - header['sfo']))
             self._sfo = sfo['parameters']
             
             # icon0
