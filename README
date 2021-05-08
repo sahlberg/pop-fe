@@ -91,3 +91,13 @@ or background image and again we skip pulling this file from the site.
 This argument will download and install ICON0.PNG, PIC1.PNG as well as the
 game id and title in the directory where the game is stored.
 This requires that the game directory is writeable.
+
+PSIO
+====
+PSIO uses a varient of CUE files called CU2.
+To generate a CU2 file when installing PSIO games you need to have the
+CUE2CU2.PY tool installed in the same directory as POP-FE.PY.
+This tool can be downloaded from :
+
+  https://github.com/NRGDEAD/Cue2cu2
+
