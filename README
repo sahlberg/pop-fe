@@ -92,6 +92,12 @@ This argument will download and install ICON0.PNG, PIC1.PNG as well as the
 game id and title in the directory where the game is stored.
 This requires that the game directory is writeable.
 
+VMP.PY
+======
+vmp.py is a utility to convert between signed VMP memory card images
+(as used by PSP) and raw memory card images as created for example by
+Memory Card Annihilator on the PS2.
+
 PSIO
 ====
 PSIO uses a varient of CUE files called CU2.
