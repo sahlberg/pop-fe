@@ -2788,6 +2788,9 @@ class popstation(object):
                 e.seek(offset)
                 buf = e.read(24)
                 e.seek(offset)
+
+                if not buf:
+                    break
                 
                 if buf[:16] == b'PSTITLEIMG000000':
                     print('Dumping PSTITLEIMG.DAT')
@@ -2847,6 +2850,14 @@ class popstation(object):
                                break
                            f.write(buf)
                     break
+                print('Unknown section:', buf)
+                with open('EXTRA.DAT', 'wb') as o:
+                    while True:
+                        buf = e.read(1024*1024)
+                        if not buf:
+                            break
+                        o.write(buf)
+                raise Exception('Unknown section in EBOOT.PBP', buf)
                 
         print('Done dumping', eboot)
 
