@@ -206,52 +206,6 @@ def main(cue_file, cue, idx):
     print('BIN:', bin)
 
     game = None
-    if args.psio_game_dir:
-        f = args.psio_game_dir + '/' + game_title
-        try:
-            os.mkdir(f)
-        except:
-            True
-
-        g = game_title
-        if idx:
-            g = g + '-%d' % idx[0]
-        g = g + '.bin'
-
-        if idx:
-            if idx[0] == 1:
-                try:
-                    os.unlink(f + '/MULTIDISC.LST')
-                except:
-                    True
-            with open(f + '/MULTIDISC.LST', 'a+b') as d:
-                d.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
-
-        if not idx or idx[0] == 1:
-            ifn = f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp'
-            try:
-                image = Image.open(create_path(bin, 'ICON0.PNG'))
-                image = image.resize((80,84), Image.BILINEAR)
-                image.save(ifn, format='BMP')
-                print('Use existing ICON0.PNG as cover')
-            except:
-                print('Fetch cover for', game_title)
-                image = get_psio_cover(game_id[0:4] + '-' + game_id[4:9])
-                with open(ifn, 'wb') as d:
-                    d.write(image)
-            
-        print('Installing', f + '/' + g)
-        copy_file(bin, f + '/' + g)
-
-        try:
-            subprocess.call(['./cue2cu2.py', '--size', str(os.stat(bin).st_size), cue_file])
-            cu2 = cue_file.split('/')[-1][:-4] + '.cu2'
-            print('Created CU2:', cu2)
-            copy_file(cu2, f + '/' + g[:-4] + '.cu2')
-            os.unlink(cu2)
-        except:
-            True
-
     if args.retroarch_thumbnail_dir:
         g = game_title
         if idx:
@@ -343,6 +297,45 @@ def get_imgs_from_bin(cue):
                 img_files.append(f)
     return img_files
 
+def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
+    
+        f = dest + '/' + game_title
+        try:
+            os.mkdir(f)
+        except:
+            True
+
+        with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
+            image = Image.open(io.BytesIO(icon0))
+            image = image.resize((80,84), Image.BILINEAR)
+            i = io.BytesIO()
+            image.save(i, format='BMP')
+            i.seek(0)
+            d.write(i.read())
+            
+        try:
+            os.unlink(f + '/MULTIDISC.LST')
+        except:
+            True
+        with open(f + '/MULTIDISC.LST', 'wb') as md:
+            for i in range(len(img_files)):
+                g = game_title
+                g = g + '-%d' % i
+                g = g + '.img'
+                md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
+
+                print('Installing', f + '/' + g)
+                copy_file(img_files[i], f + '/' + g)
+
+                try:
+                    subprocess.call(['./cue2cu2.py', '--size', str(os.stat(img_files[i]).st_size), cue_files[i]])
+                    cu2 = img_files[i].split('/')[-1][:-4] + '.cu2'
+                    copy_file(cu2, f + '/' + g[:-4] + '.cu2')
+                    os.unlink(cu2)
+                except:
+                    True
+
+                    
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files):
     print('Create PSP EBOOT.PBP for', game_title)
 
@@ -524,6 +517,8 @@ if __name__ == "__main__":
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
+    if args.psio_game_dir:
+        create_psio(args.psio_game_dir, game_id, game_title, icon0, cue_files, img_files)
         
     for f in temp_files:
         print('Deleting temp file', f)
