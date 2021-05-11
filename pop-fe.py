@@ -28,10 +28,10 @@
 # --psio-game-dir <path> : This specifies the path to where a PSIO sd card has
 #                         been mounted. The games will be be installed as
 #                         <path>/<game-title>/<game-title>.bin
-# --psp-game-dir <path> : This specifies the path to where a PSP sd card has
+# --psp-dir <path>      : This specifies the path to where a PSP sd card has
 #                         been mounted. The games will be converted into
 #                         an EBOOT.PBP and will be installed as
-#                         <path>/<game-id>/EBOOT.PBP
+#                         <path>/PSP/GAME/<game-id>/EBOOT.PBP
 #                         The EBOOT.PBP will have a cover icon as well as a
 #                         background image embedded.
 # --retroarch-game-dir  : The directory where retroarch game images are to be
@@ -202,41 +202,10 @@ def create_path(bin, f):
         f = '/'.join(s[:-1]) + '/' + f
     return f
 
-def main(cue_file, cue, idx, p):
-    bin = cue[0]['bin']
-    s = cue_file.split('/')
-    if len(s) > 1 and len(cue[0]['bin'].split('/')) == 1:
-        bin = '/'.join(s[:-1]) + '/' + bin
-
+def main(cue_file, cue, idx):
     print('BIN:', bin)
 
     game = None
-    game_id = None
-    if args.game_id:
-        game_id = args.game_id
-    if not game_id:
-        try:
-            with open(create_path(bin, 'GAME_ID'), 'r') as d:
-                game_id = d.read()
-        except:
-            True
-    if not game_id:
-        game_id = get_gameid_from_iso()
-    print('Id:', game_id)
-
-    game_title = None
-    if args.title:
-        game_title = args.title
-    if not game_title:
-        try:
-            with open(create_path(bin, 'GAME_TITLE'), 'r') as d:
-                game_title = d.read()
-        except:
-            True
-    if not game_title:
-        game_title = get_title_from_game(game_id[0:4].upper() + '-' + game_id[4:9])
-    print('Title:', game_title)
-
     if args.fetch_metadata:
         print('fetching metadata')
 
@@ -255,7 +224,6 @@ def main(cue_file, cue, idx, p):
             icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
             image = Image.open(io.BytesIO(icon0))
             image.save(create_path(bin, 'ICON0.PNG'), format='PNG')
-
         try:
             os.stat(create_path(bin, 'PIC1.PNG'))
             print('Already have PIC1.PNG')
@@ -313,64 +281,6 @@ def main(cue_file, cue, idx, p):
         except:
             True
 
-    if args.psp_game_dir:
-        if not idx or idx[0] == 1:
-            p.game_id = game_id
-            p.game_title = game_title
-            print('game_id', p.game_id)
-            print('game_title', p.game_title)
-            try:
-                image = Image.open(create_path(bin, 'ICON0.PNG'))
-                print('Use existing ICON0.PNG as cover')
-            except:
-                print('Fetch cover for', p.game_title)
-                if not game:
-                    game = get_game_from_gamelist(p.game_id[0:4].upper() + '-' + p.game_id[4:9])
-                icon0 = get_icon0_from_game(p.game_id[0:4].upper() + '-' + p.game_id[4:9], game)
-                image = Image.open(io.BytesIO(icon0))
-
-            image = image.resize((80,80), Image.BILINEAR)
-            i = io.BytesIO()
-            image.save(i, format='PNG')
-            i.seek(0)
-            p.icon0 = i.read()
-
-            try:
-                image = Image.open(create_path(bin, 'PIC1.PNG'))
-                print('Use existing PIC1.PNG as background')
-            except:
-                print('Fetch screenshot for', p.game_title)
-                if not game:
-                    game = get_game_from_gamelist(p.game_id[0:4].upper() + '-' + p.game_id[4:9])
-                pic1 = get_pic1_from_game(p.game_id[0:4] + '-' + p.game_id[4:9], game)
-                image = Image.open(io.BytesIO(pic1))
-            image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
-            image = add_image_text(image, p.game_title)
-
-            i = io.BytesIO()
-            image.save(i, format='PNG')
-            i.seek(0)
-            p.pic1 = i.read()
-
-        print('Add image', bin)
-        p.add_img(bin)
-
-        if idx and idx[0] != idx[1]:
-            return
-
-        f = args.psp_game_dir + '/' + p.game_id
-        print('Install EBOOT in', f)
-        try:
-            os.mkdir(f)
-        except:
-            True
-            
-        p.eboot = f + '/EBOOT.PBP'
-        print('Create EBOOT at', p.eboot)
-        p.create()
-        
-        return
-    
     if args.retroarch_thumbnail_dir:
         g = game_title
         if idx:
@@ -410,8 +320,70 @@ def main(cue_file, cue, idx, p):
         f = args.retroarch_rom_dir + '/' + g + '.img'
         print('Installing', f)
         copy_file(bin, f)
+
         
-                     
+def get_imgs_from_bin(cue):
+    def get_file_name(line):
+        # strip off leading 'FILE '
+        pos = line.lower().index('file ')
+        line = line[pos + 5:]
+        # strip off leading 'FILE '
+        pos = line.lower().index(' binary')
+        line = line[:pos+1]
+        #strip off leading ' '
+        while line[0] == ' ':
+            line = line[1:]
+        #strip off trailing ' '
+        while line[-1] == ' ':
+            line = line[:-1]
+        # remove double quotes
+        if line[0] == '"':
+            line = line[1:-1]
+        # remove single quotes
+        if line[0] == '\'':
+            line = line[1:-1]
+        return line
+    
+    print('CUE', cue)
+
+    img_files = []
+    with open(cue, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            # FILE
+            if re.search('^\s*FILE', line):
+                f = get_file_name(line)
+                s = cue.split('/')
+                if len(s) > 1:
+                    f = '/'.join(s[:-1]) + '/' + f
+                img_files.append(f)
+    return img_files
+
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files):
+    print('Create PSP EBOOT.PBP for', game_title)
+
+    p = popstation()
+    p.game_id = game_id
+    p.game_title = game_title
+    p.icon0 = icon0
+    p.pic1 = pic1
+
+    for f in img_files:
+        print('Add image', f)
+        p.add_img(f)
+
+    f = dest + '/PSP/GAME/' + p.game_id
+    print('Install EBOOT in', f)
+    try:
+        os.mkdir(f)
+    except:
+        True
+            
+    p.eboot = f + '/EBOOT.PBP'
+    print('Create EBOOT at', p.eboot)
+    p.create()
+
+
 # ICON0 is the game cover
 # PIC1 is background image/poster
 #
@@ -426,8 +398,8 @@ if __name__ == "__main__":
                     help='Where to store retroarch games')
     parser.add_argument('--psio-game-dir',
                     help='Where to store images for PSIO')
-    parser.add_argument('--psp-game-dir',
-                    help='Where to store PSP EBOOT.PBP')
+    parser.add_argument('--psp-dir',
+                    help='Where the PSP memory card is mounted')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -446,9 +418,10 @@ if __name__ == "__main__":
     except:
         True
 
-    p = popstation()
-
     idx = None
+    temp_files = []
+    cue_files = []
+    img_files = []
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
@@ -461,6 +434,7 @@ if __name__ == "__main__":
             with zipfile.ZipFile(zip, 'r') as zf:
                 for f in zf.namelist():
                     print('Extracting', f)
+                    temp_files.append(f)
                     zf.extract(f)
                     if re.search('.cue$', f):
                         print('Found CUE file', f)
@@ -468,8 +442,9 @@ if __name__ == "__main__":
 
         tmpcue = None
         if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
-            print('IMG or IMG file. Create a temporary cue file for it')
-            tmpcue = 'TMP.cue'
+            tmpcue = 'TMP%d.cue' % (0 if not idx else idx[0])
+            print('IMG or BIN file. Create a temporary cue file for it', tmpcue)
+            temp_files.append(tmpcue)
             with open(tmpcue, "w") as f:
                 f.write('FILE "%s" BINARY\n' % cue_file)
                 f.write('  TRACK 01 MODE2/2352\n')
@@ -480,29 +455,91 @@ if __name__ == "__main__":
         if cue_file[-3:] != 'cue':
             print('%s is not a CUE file. Skipping' % cue_file)
             continue
-        
-        # We need to convert the first track to an ISO so we can open the
-        # disk and read system.cnf
-        # We only do this for the first disk of a multi-disk set.
-        print('Convert CUE to a normal style ISO')
-        bc = bchunk()
-        bc.open(cue_file)
-        bc.writetrack(0, 'NORMAL')
 
-        main(cue_file, bc.cue, idx, p)
+        i = get_imgs_from_bin(cue_file)
+        img_files.append(i[0])
+        cue_files.append(cue_file)
+
         if idx:
             idx = (idx[0] + 1, idx[1])
-        if tmpcue:
-            os.unlink(tmpcue)
 
-        if zip:
-            with zipfile.ZipFile(zip, 'r') as zf:
-                for f in zf.namelist():
-                    print('Remove temporary file', f)
-                    os.unlink(f)
+    # We need to convert the first track of the first ISO so we can open the
+    # disk and read system.cnf
+    # We only do this for the first disk of a multi-disk set.
+    print('Convert CUE to a normal style ISO')
+    bc = bchunk()
+    bc.open(cue_files[0])
+    bc.writetrack(0, 'NORMAL')
+    temp_files.append('NORMAL01.iso')
 
+    game_id = None
+    if args.game_id:
+        game_id = args.game_id
+    if not game_id:
+        try:
+            with open(create_path(img_files[0], 'GAME_ID'), 'r') as d:
+                game_id = d.read()
+        except:
+            True
+    if not game_id:
+        game_id = get_gameid_from_iso()
+
+    game_title = None
+    if args.title:
+        game_title = args.title
+    if not game_title:
+        try:
+            with open(create_path(img_files[0], 'GAME_TITLE'), 'r') as d:
+                game_title = d.read()
+        except:
+            True
+    if not game_title:
+        game_title = get_title_from_game(game_id[0:4].upper() + '-' + game_id[4:9])
+
+    game = None
+
+    # ICON0.PNG
     try:
-        os.unlink('NORMAL01.iso')
+        image = Image.open(create_path(img_files[0], 'ICON0.PNG'))
+        print('Use existing ICON0.PNG as cover')
     except:
-        True
+        print('Fetch cover for', game_title)
+        if not game:
+            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
+        icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
+        image = Image.open(io.BytesIO(icon0))
+    image = image.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    icon0 = i.read()
+
+    # PIC1.PNG
+    try:
+        image = Image.open(create_path(img_files[0], 'PIC1.PNG'))
+        print('Use existing PIC1.PNG as background')
+    except:
+        print('Fetch screenshot for', game_title)
+        if not game:
+            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
+        pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
+        image = Image.open(io.BytesIO(pic1))
+    image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
+    image = add_image_text(image, game_title)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    pic1 = i.read()
+    
+    print('Id:', game_id)
+    print('Title:', game_title)
+    print('Cue Files', cue_files)
+    print('Imb Files', img_files)
+
+    if args.psp_dir:
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files)
+    
+    for f in temp_files:
+        print('Deleting temp file', f)
+        os.unlink(f)
 

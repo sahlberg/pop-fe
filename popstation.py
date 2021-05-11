@@ -2588,7 +2588,6 @@ class popstation(object):
             isosize = isosize + (0x9300 - (isosize%0x9300))
 
         psiso_offset = fh.tell()
-        print('Disc', disc_num, 'pos at 0x%08x' % (fh.tell()))
 
         # Block #1
         buf = bytearray(1024)

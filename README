@@ -46,10 +46,10 @@ target platforms:
                          If you have installed cue2cu2.py in the same
                          directory as pop-fe.py then a .cu2 file will be
                          created as well.
---psp-game-dir <path> : This specifies the path to where a PSP sd card has
+--psp-dir <path>      : This specifies the path to where a PSP sd card has
                         been mounted. The games will be converted into
                         an EBOOT.PBP and will be installed as
-                        <path>/<game-id>/EBOOT.PBP
+                        <path>/PSP/GAME/<game-id>/EBOOT.PBP
                         The EBOOT.PBP will have a cover icon as well as a
                         background image embedded.
 			If you specify multiple images then a single multi-disk
