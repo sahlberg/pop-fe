@@ -206,35 +206,6 @@ def main(cue_file, cue, idx):
     print('BIN:', bin)
 
     game = None
-    if args.fetch_metadata:
-        print('fetching metadata')
-
-        with open(create_path(bin, 'GAME_ID'), 'w') as d:
-            d.write(game_id)
-        with open(create_path(bin, 'GAME_TITLE'), 'w') as d:
-            d.write(game_title)
-
-        try:
-            os.stat(create_path(bin, 'ICON0.PNG'))
-            print('Already have ICON0.PNG')
-        except:
-            print('Fetching cover as ICON0.PNG')
-            if not game:
-                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-            icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
-            image = Image.open(io.BytesIO(icon0))
-            image.save(create_path(bin, 'ICON0.PNG'), format='PNG')
-        try:
-            os.stat(create_path(bin, 'PIC1.PNG'))
-            print('Already have PIC1.PNG')
-        except:
-            print('Fetching screenshot as PIC1.PNG')
-            if not game:
-                game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-            pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
-            image = Image.open(io.BytesIO(pic1))
-            image.save(create_path(bin, 'PIC1.PNG'), format='PNG')
-
     if args.psio_game_dir:
         f = args.psio_game_dir + '/' + game_title
         try:
@@ -321,6 +292,19 @@ def main(cue_file, cue, idx):
         print('Installing', f)
         copy_file(bin, f)
 
+
+def create_metadata(img, game_id, game_title, icon0, pic1):
+    print('fetching metadata for', game_id)
+
+    with open(create_path(img, 'GAME_ID'), 'w') as d:
+        d.write(game_id)
+    with open(create_path(img, 'GAME_TITLE'), 'w') as d:
+        d.write(game_title)
+    with open(create_path(img, 'ICON0.PNG'), 'wb') as d:
+        d.write(icon0)
+    with open(create_path(img, 'PIC1.PNG'), 'wb') as d:
+        d.write(pic1)
+        
         
 def get_imgs_from_bin(cue):
     def get_file_name(line):
@@ -538,7 +522,9 @@ if __name__ == "__main__":
 
     if args.psp_dir:
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files)
-    
+    if args.fetch_metadata:
+        create_metadata(img_files[0], game_id, game_title, icon0, pic1)
+        
     for f in temp_files:
         print('Deleting temp file', f)
         os.unlink(f)
