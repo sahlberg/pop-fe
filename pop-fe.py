@@ -202,31 +202,19 @@ def create_path(bin, f):
         f = '/'.join(s[:-1]) + '/' + f
     return f
 
-def main(cue_file, cue, idx):
-    print('BIN:', bin)
-
-    game = None
-    if args.retroarch_thumbnail_dir:
-        g = game_title
-        if idx:
-            g = g + '-%d' % idx[0]
-        if not game:
-            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-        icon0 = get_icon0_from_game(game_id[0:4] + '-' + game_id[4:9], game)
-        image = Image.open(io.BytesIO(icon0))
+def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         try:
-            os.stat(args.retroarch_thumbnail_dir + '/Named_Boxarts')
+            os.stat(dest + '/Named_Boxarts')
         except:
-            os.mkdir(args.retroarch_thumbnail_dir + '/Named_Boxarts')
+            os.mkdir(dest + '/Named_Boxarts')
+    
+        image = Image.open(io.BytesIO(icon0))
         image = image.resize((256,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
-        f = args.retroarch_thumbnail_dir + '/Named_Boxarts/' + g + '.png'
+        f = args.retroarch_thumbnail_dir + '/Named_Boxarts/' + game_title + '.png'
         print('Save cover as', f)
         image.save(f, 'PNG')
 
-        if not game:
-            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-        pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(pic1))
         try:
             os.stat(args.retroarch_thumbnail_dir + '/Named_Snaps')
@@ -234,7 +222,7 @@ def main(cue_file, cue, idx):
             os.mkdir(args.retroarch_thumbnail_dir + '/Named_Snaps')
         image = image.resize((512,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
-        f = args.retroarch_thumbnail_dir + '/Named_Snaps/' + g + '.png'
+        f = args.retroarch_thumbnail_dir + '/Named_Snaps/' + game_title + '.png'
         print('Save snap as', f)
         image.save(f, 'PNG')
 
@@ -526,6 +514,8 @@ if __name__ == "__main__":
         create_psio(args.psio_game_dir, game_id, game_title, icon0, cue_files, img_files)
     if args.retroarch_game_dir:
         create_retroarch(args.retroarch_game_dir, game_title, cue_files, img_files)
+    if args.retroarch_thumbnail_dir:
+        create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 
     for f in temp_files:
         print('Deleting temp file', f)
