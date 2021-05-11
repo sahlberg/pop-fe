@@ -238,14 +238,6 @@ def main(cue_file, cue, idx):
         print('Save snap as', f)
         image.save(f, 'PNG')
 
-    if args.retroarch_game_dir:
-        g = game_title
-        if idx:
-            g = g + '-%d' % idx[0]
-        f = args.retroarch_rom_dir + '/' + g + '.img'
-        print('Installing', f)
-        copy_file(bin, f)
-
 
 def create_metadata(img, game_id, game_title, icon0, pic1):
     print('fetching metadata for', game_id)
@@ -296,6 +288,19 @@ def get_imgs_from_bin(cue):
                     f = '/'.join(s[:-1]) + '/' + f
                 img_files.append(f)
     return img_files
+
+
+def create_retroarch(dest, game_title, cue_files, img_files):
+    with open(dest + '/' + game_title + '.m3u', 'wb') as md:
+        for i in range(len(img_files)):
+            g = game_title
+            g = g + '-%d' % i + '.img'
+            md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
+
+            f = dest + '/' + g
+            print('Installing', f)
+            copy_file(img_files[i], f)
+
 
 def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
     
@@ -519,7 +524,9 @@ if __name__ == "__main__":
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_game_dir:
         create_psio(args.psio_game_dir, game_id, game_title, icon0, cue_files, img_files)
-        
+    if args.retroarch_game_dir:
+        create_retroarch(args.retroarch_game_dir, game_title, cue_files, img_files)
+
     for f in temp_files:
         print('Deleting temp file', f)
         os.unlink(f)
