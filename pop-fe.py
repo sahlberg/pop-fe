@@ -108,18 +108,17 @@ def add_image_text(image, title, game_id):
     fnt = ImageFont.truetype("/usr/share/fonts/dejavu/DejaVuSansMono.ttf", 20)
     d = ImageDraw.Draw(txt)
 
-    # Add Title (multiple lines)
+    # Add Title (multiple lines) to upper right
     for t in strings:
         ts = d.textsize(t, font=fnt)
         d.text((image.size[0] - ts[0], y), t, font=fnt,
                fill=(255,255,255,255))
         y = y + ts[1] + 2
 
-    # Add game-id
+    # Add game-id to bottom right
     ts = d.textsize(game_id, font=fnt)
-    d.text((image.size[0] - ts[0], y), game_id, font=fnt,
+    d.text((image.size[0] - ts[0], image.size[1] - ts[1]), game_id, font=fnt,
            fill=(255,255,255,255))
-    y = y + ts[1] + 2
 
     image = Image.alpha_composite(image, txt)
     return image
