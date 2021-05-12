@@ -6,7 +6,7 @@ TL;DR
 For Linux but should be trivial to make work for Windows too. Patches welcome.
 Connect PSP to your Linux box via USB, then run:
 
-   ./pop-fe.py --psp-game-dir /run/media/..wherever-the-psp-sdcard-shows-up../PSP/GAME/   ...path-to-your-ps1-game../game.cue
+   ./pop-fe.py --psp-dir /run/media/..wherever-the-psp-sdcard-shows-up  ...path-to-your-ps1-game../game.cue
 
 Result:
 Nice EBOOT.PBP with a boxart and a nice background image installed on your PSP (or vita).
@@ -65,14 +65,14 @@ Examples:
 Assume I have connected my PSP with USB and it is shows up as :
    /run/media/sahlberg/disk
    
-# ./pop-fe.py --psp-game-dir=/run/media/sahlberg/disk/PSP/GAME/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+# ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 If you specify more than one cue file then it is assumed that this is
 a multidisc game and we will use the first cue file to determine the
 game id and title to be used for the whole set.
 
 Example:
- # ./pop-fe.py --psp-game-dir /run/media/sahlberg/disk/PSP/GAME/ /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
+ # ./pop-fe.py --psp-dir /run/media/sahlberg/disk/ /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
 
 During the conversion process the img/bin file will be temporarily converted
 into an ISO file as NORMAL01.iso in the current directory.
