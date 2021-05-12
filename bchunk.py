@@ -70,7 +70,7 @@ class bchunk(object):
         raise Exception('Can not handle this mode yet, check bchunk docs')
 
     def parse_cue(self, cue):
-        print('Cue:', cue)
+        print('Cue:', cue) if self._verbose else None
         with open(cue, 'r') as c:
             lines = c.readlines()
             tracks = []
@@ -131,11 +131,11 @@ class bchunk(object):
     def writetrack(self, idx, fn):
         t = self.tracks[idx]
         fn = fn + "%02d" % t['num'] + '.' + t['extension']
-        print('Read bin', idx, self.tracks[idx]['bin'])
+        print('Read bin', idx, self.tracks[idx]['bin']) if self._verbose else None
         with open(self.tracks[idx]['bin'], "rb") as i:
             i.seek(t['start'])
             with open(fn, "wb") as o:
-                print('Write track', fn)
+                print('Write track', fn) if self._verbose else None
                 reallen = int((t['stopsect'] - t['startsect'] + 1) * t['bsize'])
 
                 if t['audio'] and self.towav:
@@ -171,6 +171,7 @@ class bchunk(object):
         
     def __init__(self):
         self._file = None
+        self._verbose = False
         self._raw = False
         self._psxtruncate = False
         self._towav = False
@@ -193,6 +194,14 @@ class bchunk(object):
     @raw.setter
     def raw(self, value):
         self._raw = value
+
+    @property
+    def verbose(self):
+        return self._verbose
+
+    @verbose.setter
+    def verbose(self, value):
+        self._verbose = value
 
     @property
     def swapaudio(self):
@@ -221,6 +230,7 @@ class bchunk(object):
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('-r', action='store_true',
                     help='Raw mode for MODE2/2352: write all 2352 bytes from offset 0 (VCD/MPEG)')
     parser.add_argument('-p', action='store_true',
@@ -234,6 +244,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     bc = bchunk()
+    bc.verbose = args.v
     bc.raw = args.r
     bc.psxtruncate = args.p
     bc.towav = args.w

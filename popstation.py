@@ -2351,6 +2351,7 @@ class popstation(object):
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
         self._img = []
+        self._verbose = False
         self._complevel = 1
         self._game_id = 'SLUS00000'
         self._game_title = 'TITLE'
@@ -2363,6 +2364,14 @@ class popstation(object):
         
     def add_img(self, img):
         self._img.append(img)
+
+    @property
+    def verbose(self):
+        return self._verbose
+
+    @verbose.setter
+    def verbose(self, value):
+        self._verbose = value
 
     @property
     def sfo(self):
@@ -2445,7 +2454,7 @@ class popstation(object):
         try:
             os.stat(img[:-4] + '.ccd')
             _ccd = img[:-4] + '.ccd'
-            print('Found CDD', _ccd)
+            print('Found CDD', _ccd) if self._verbose else None
         except:
             return None
         
@@ -2547,18 +2556,18 @@ class popstation(object):
         return hdr + index + keys + data
 
     def dump_to_img(self, dat, img, cue, toc):
-        print('Create', cue)
+        print('Create', cue) if self._verbose else None
         with open(cue, "w") as c:
             c.write('FILE "%s" BINARY\n' % img)
             c.write('  TRACK 01 MODE2/2352\n')
             c.write('    INDEX 01 00:00:00\n')
         with open(dat, 'rb') as i:
-            print('Create', toc)
+            print('Create', toc) if self._verbose else None
             with open(toc, 'wb') as o:
                 i.seek(0x800)
                 buf = i.read(1020)
                 o.write(buf)
-            print('Create', img)
+            print('Create', img) if self._verbose else None
             with open(img, 'wb') as o:
                 _o = 0x4000
                 while True:
@@ -2608,11 +2617,11 @@ class popstation(object):
                 os.stat(img[:-4] + '.toc')
                 with open(img[:-4] + '.toc', 'rb') as f:
                     toc = f.read(1020)
-                print('Using TOC', img[:-4] + '.toc')
+                print('Using TOC', img[:-4] + '.toc') if self._verbose else None
             except:
                 True
         if not toc:
-            print('Create a fake toc')
+            print('Create a fake toc') if self._verbose else None
             toc = bytearray(_basic_toc)
             # size of image plus 2 seconds
             x = int((isosize + 352800) / 2352)
@@ -2644,7 +2653,7 @@ class popstation(object):
         # Blocks 6 - 16
         fh.write(bytes(11264))
 
-        print('Writing indexes')
+        print('Writing indexes') if self._verbose else None
         index_offset = fh.tell()
         for i in range(int(isosize / 0x9300)):
             b = bytearray(32)
@@ -2653,10 +2662,10 @@ class popstation(object):
         offset = fh.tell()
         fh.write(bytes(psiso_offset + 0x100000 - offset))
 
-        print('Writing PSX CD Dump')
+        print('Writing PSX CD Dump') if self._verbose else None
         fi = open(img, 'rb')
         indexes = bytearray(0)
-        print('Writing compressed image')
+        print('Writing compressed image') if self._verbose else None
         offset = 0
         i = 0
 
@@ -2708,14 +2717,14 @@ class popstation(object):
             header['datapsp'] = struct.unpack_from('<I', buf, PSP_OFFSET)[0]
             header['datapsar'] = struct.unpack_from('<I', buf, PSAR_OFFSET)[0]
             
-            print('Dumping HEADER.DAT')
+            print('Dumping HEADER.DAT') if self._verbose else None
             with open('HEADER.DAT', 'wb') as f:
                 f.write(buf)
             
             # dump SFO
             e.seek(header['sfo'])
             buf = e.read(header['icon0'] - header['sfo'])
-            print('Dumping PARAM.SFO')
+            print('Dumping PARAM.SFO') if self._verbose else None
             with open('PARAM.SFO', 'wb') as f:
                 f.write(buf)
                 
@@ -2729,7 +2738,7 @@ class popstation(object):
                 e.seek(header['icon0'])
                 self._icon0 = e.read(header['icon1'] - header['icon0'])
                 # dump ICON0.PNG
-                print('Dumping ICON0.PNG')
+                print('Dumping ICON0.PNG') if self._verbose else None
                 with open('ICON0.PNG', 'wb') as f:
                     f.write(self._icon0)
             # icon1
@@ -2737,7 +2746,7 @@ class popstation(object):
                 e.seek(header['icon1'])
                 self._icon1 = e.read(header['pic0'] - header['icon1'])
                 # dump ICON1.PNG
-                print('Dumping ICON1.PNG')
+                print('Dumping ICON1.PNG') if self._verbose else None
                 with open('ICON1.PNG', 'wb') as f:
                     f.write(self._icon1)
             # pic0
@@ -2745,7 +2754,7 @@ class popstation(object):
                 e.seek(header['pic0'])
                 self._pic0 = e.read(header['pic1'] - header['pic0'])
                 # dump PIC0.PNG
-                print('Dumping PIC0.PNG')
+                print('Dumping PIC0.PNG') if self._verbose else None
                 with open('PIC0.PNG', 'wb') as f:
                     f.write(self._pic0)
             # pic1
@@ -2753,7 +2762,7 @@ class popstation(object):
                 e.seek(header['pic1'])
                 self._pic1 = e.read(header['snd0'] - header['pic1'])
                 # dump PIC1.PNG
-                print('Dumping PIC1.PNG')
+                print('Dumping PIC1.PNG') if self._verbose else None
                 with open('PIC1.PNG', 'wb') as f:
                     f.write(self._pic1)
             # snd0
@@ -2761,12 +2770,12 @@ class popstation(object):
                 e.seek(header['snd0'])
                 self._snd0 = e.read(header['datapsp'] - header['snd0'])
                 # dump SND0.AT3
-                print('Dumping SND0.AT3')
+                print('Dumping SND0.AT3') if self._verbose else None
                 with open('SND0.AT3', 'wb') as f:
                     f.write(self._snd0)
 
             # Dump DATA.PSP
-            print('Dumping DATA.PSP')
+            print('Dumping DATA.PSP') if self._verbose else None
             e.seek(header['datapsp'])
             buf = e.read(header['datapsar'] - header['datapsp'])
             with open('DATA.PSP', 'wb') as f:
@@ -2792,7 +2801,7 @@ class popstation(object):
                     break
                 
                 if buf[:16] == b'PSTITLEIMG000000':
-                    print('Dumping PSTITLEIMG.DAT')
+                    print('Dumping PSTITLEIMG.DAT') if self._verbose else None
                     with open('PSTITLEIMG.DAT', 'wb') as f:
                         buf = e.read(1024)
                         f.write(buf)
@@ -2821,7 +2830,7 @@ class popstation(object):
                             break
                         _last_offset = _off + _len
 
-                    print('Dumping PSISO%d.DAT' % _disc_id)
+                    print('Dumping PSISO%d.DAT' % _disc_id) if self._verbose else None
                     e.seek(offset)
                     with open('PSISO%d.DAT' % _disc_id, 'wb') as f: 
                         _num = _last_offset + 0x100000
@@ -2841,7 +2850,7 @@ class popstation(object):
                     # This is where startdat, the logo buffer and pgd sits
                     # we don;t care about them and can consider everything
                     # done
-                    print('Dumping STARTDAT.DAT')
+                    print('Dumping STARTDAT.DAT') if self._verbose else None
                     with open('STARTDAT.DAT', 'wb') as f: 
                         while True:
                            buf = e.read(1048576)
@@ -2858,11 +2867,11 @@ class popstation(object):
                         o.write(buf)
                 raise Exception('Unknown section in EBOOT.PBP', buf)
                 
-        print('Done dumping', eboot)
+        print('Done dumping', eboot) if self._verbose else None
 
 
     def create(self):
-        print('Generating PARAM.SFO [%s]...' % self._game_title)
+        print('Generating PARAM.SFO [%s]...' % self._game_title) if self._verbose else None
         sfo = self.GenerateSFO()
 
         fh = open(self._eboot, 'wb')
@@ -2870,7 +2879,7 @@ class popstation(object):
         #
         # Header and file table
         #
-        print('Writing header')
+        print('Writing header') if self._verbose else None
         curoffs = 0x28
         header = bytearray(0x28)
         struct.pack_into('<I', header, 0, 0x50425000)
@@ -2904,23 +2913,23 @@ class popstation(object):
 
         fh.write(header)
 
-        print('Writing PARAM.SFO at')
+        print('Writing PARAM.SFO at') if self._verbose else None
         fh.write(sfo)
 
         if self._icon0:
-            print('Writing ICON0.PNG at')
+            print('Writing ICON0.PNG at') if self._verbose else None
             fh.write(self._icon0)
         if self._icon1:
-            print('Writing ICON1.PNG')
+            print('Writing ICON1.PNG') if self._verbose else None
             fh.write(self._icon1)
         if self._pic0:
-            print('Writing PIC0.PNG')
+            print('Writing PIC0.PNG') if self._verbose else None
             fh.write(self._pic0)
         if self._pic1:
-            print('Writing PIC1.PNG')
+            print('Writing PIC1.PNG') if self._verbose else None
             fh.write(self._pic1)
         if self._snd0:
-            print('Writing SND0.AT3')
+            print('Writing SND0.AT3') if self._verbose else None
             fh.write(self._snd0)
 
         fh.write(_datapspbody)
@@ -2929,7 +2938,7 @@ class popstation(object):
         # Start of DATA.PSAR
         _psar_offset = fh.tell()
         _disc_num = 0
-        print('Writing initial PSTITLEIMG.DAT')
+        print('Writing initial PSTITLEIMG.DAT') if self._verbose else None
         _pstitle = bytearray(_pstitledata)
         fh.write(_pstitle)
 
@@ -2937,7 +2946,7 @@ class popstation(object):
         for img in self._img:
             fh.seek((fh.tell() + 0x7fff) & 0xffff8000)
             struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)        
-            print('Writing PSISO%d.DAT.created' % disc_num)
+            print('Writing PSISO%d.DAT.created' % disc_num) if self._verbose else None
             self.encode_psiso(fh, disc_num, img)
             fh.seek(0, 2)
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
@@ -2960,24 +2969,25 @@ class popstation(object):
         # Update game name
         _t = bytes(self._game_title, encoding='utf-8')
         _pstitle[0x30c:0x30c + len(_t)] = _t
-        print('Writing updated PSTITLEIMG.DAT')
+        print('Writing updated PSTITLEIMG.DAT') if self._verbose else None
         fh.write(_pstitle)
         fh.seek(x)
         with open('PSTITLEIMG.DAT.created', 'wb') as f:
             f.write(_pstitle)
             
-        print('Writing STARTDAT header')
+        print('Writing STARTDAT header') if self._verbose else None
         fh.write(_startdatheader)
-        print('Writing P.O.P.S standard logo')
+        print('Writing P.O.P.S standard logo') if self._verbose else None
         fh.write(_logo_buffer)
-        print('Writing STARTDAT footer')
+        print('Writing STARTDAT footer') if self._verbose else None
         fh.write(_startdatfooter)
                 
-        print('EBOOT.PBP Created')
+        print('EBOOT.PBP Created') if self._verbose else None
 
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--game-id',
                         help='GameId for this iso.')
     parser.add_argument('--title',
@@ -2988,6 +2998,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     p = popstation()
+    p.verbose = args.v
     if args.command[0] == 'dump':
         print('Dump EBOOT')
         p.dump(args.image[0])
@@ -2997,10 +3008,10 @@ if __name__ == "__main__":
             p.add_img(i)
         if args.game_id:
             p.game_id = args.game_id
-            print('game id', p.game_id)
+            print('game id', p.game_id) if self._verbose else None
         if args.title:
             p.game_title = args.title
-            print('title', p.game_title)
+            print('title', p.game_title) if self._verbose else None
         try:
             p.icon0 = open('ICON0.PNG', 'rb').read()
         except:

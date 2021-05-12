@@ -32,8 +32,11 @@ formats:
 .img     in the local directory and used for the conversion. This cue file
          will assume that the bin/img file is just one single track of type
          MODE2/2352
-.zip   : ZIP file. The ZIP file will be extracted into the local direcotry
+.zip   : ZIP file. The ZIP file will be extracted into the local directory
          and if a .cue file is found it will be used.
+.*     : Various memory card image formats.
+         Memory cards are detected by file size so the extensions does not
+	 matter.
 
 The utility supports building and installing the games on various different
 target platforms:
@@ -84,6 +87,29 @@ If a file ICON0.PNG is found in the game directory it assumed to be the
 cover image and thus we skip pulling it from psxdatacenter.
 Similarly, if PIC1.PNG is found then it is assumed to be a screenshot
 or background image and again we skip pulling this file from the site.
+
+
+Installing Memory Card images on PSP
+====================================
+Most memory card image formats are supported.
+To provide a memory card image to install along with the the game
+you just add the filename to the list of images.
+The file extension does nto matter as we detect the memory cards by file size.
+Some platforms, such as PSP, require a two step process to install the
+memory cards so follow the onscreen instructions carefully.
+
+Example:
+   ./pop-fe.py --psp-dir /run/media/sahlberg/disk/ Crash.cue Crash.srm
+
+
+You can also install a memory card image directly for am already installed
+game. But before this works, you must have ran the game at least once
+so that the PSP creates the required metadata files in the SAVEDATA
+directory. Since you are not providing a disk image to determine the game-id
+from you must specify game-id explicitely.
+
+Example:
+   ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/ --game_id=SCUS94900 --psp-install-memory-card Crash.srm
 
 
 --fetch-metadata

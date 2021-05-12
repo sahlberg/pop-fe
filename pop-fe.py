@@ -5,77 +5,6 @@
 # systems.
 # The current directory where you run this utility from needs to be writable
 # so that we can use it to store temporary files during the conversing process.
-#
-# It supports and can convert games stored in the following types of file
-# formats:
-#  .cue  : CUE file. The preferred option. The actual image file is extracted
-#          from the content of the cue file. If the file-name found inside the
-#          cue is a relative path it is assumed that the bin/img file is stored
-#          in the same directory as the cue file.
-#
-# .bin   : BIN/IMG files. In this case a temporary .cue file will be created
-# .img     in the local directory and used for the conversion. This cue file
-#          will assume that the bin/img file is just one single track of type
-#          MODE2/2352
-#
-# .zip   : ZIP file. The ZIP file will be extracted into the local direcotry
-#          and if a .cue file is found it will be used.
-#
-#
-# The utility supports building and installing the games on various different
-# target platforms:
-#
-# --psio-game-dir <path> : This specifies the path to where a PSIO sd card has
-#                         been mounted. The games will be be installed as
-#                         <path>/<game-title>/<game-title>.bin
-# --psp-dir <path>      : This specifies the path to where a PSP sd card has
-#                         been mounted. The games will be converted into
-#                         an EBOOT.PBP and will be installed as
-#                         <path>/PSP/GAME/<game-id>/EBOOT.PBP
-#                         The EBOOT.PBP will have a cover icon as well as a
-#                         background image embedded.
-# --retroarch-game-dir  : The directory where retroarch game images are to be
-#                         installed.
-# --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
-#
-#
-# Examples:
-# Assume I have connected my PSP with USB and it is shows up as :
-#    /run/media/sahlberg/disk
-#
-# ./pop-fe.py --psp-game-dir=/run/media/sahlberg/disk/PSP/GAME/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
-#
-#
-# Multidisk games:
-# If you specify more than one cue file then it is assumed that this is
-# a multidisc game and we will use the first cue file to determine the
-# game id and title to be used for the whole set.
-# 
-#
-#
-# During the conversion process the img/bin file will be temporarily converted
-# into an ISO file as NORMAL01.iso in the current directory.
-# This is in order to open the iso9660 image and read the system.cnf file
-# to extract the game id.
-# You can avoid/skip this step by forcing the game-id from the command line,
-# using (example only):
-#     --game-id=SLUS00957
-#
-# Game art and images are fetched from https://psxdatacenter.com/
-# If a file ICON0.PNG is found in the game directory it assumed to be the
-# cover image and thus we skip pulling it from psxdatacenter.
-# Similarly, if PIC1.PNG is found then it is assumed to be a screenshot
-# or background image and again we skip pulling this file from the site.
-#
-# --fetch-metadata
-# This argument will download and install ICON0.PNG, PIC1.PNG as well as the
-# game id and title in the directory where the game is stored.
-# This requires that the game directory is writeable.
-#
-#
-# https://psxdatacenter.com/
-# https://www.psdevwiki.com/ps3/Eboot.PBP
-# https://www.reddit.com/r/RetroArch/comments/ckqtzd/commandline_programs_to_convert_psx_cd_images_on/
 
 from PIL import Image, ImageDraw, ImageFont
 import argparse
@@ -91,6 +20,7 @@ import requests
 import requests_cache
 import subprocess
 import zipfile
+from vmp import encode_vmp
 from pathlib import Path
 
 from gamedb import games
@@ -98,6 +28,7 @@ from bchunk import bchunk
 from popstation import popstation
 
 PSX_SITE = 'https://psxdatacenter.com/'
+verbose = False
 
 def get_gameid_from_iso():
     iso = iso9660.ISO9660.IFS(source='NORMAL01.iso')
@@ -123,7 +54,7 @@ def get_gameid_from_iso():
 
 def fetch_cached_file(path):
     ret = requests.get(PSX_SITE + path)
-    print('get', PSX_SITE + path)
+    print('get', PSX_SITE + path) if verbose else None
     if ret.status_code != 200:
         raise Exception('Failed to fetch file ', PSX_SITE + path)
 
@@ -170,7 +101,7 @@ def add_image_text(image, title):
     # Add a nice title text to the background image
     # Split it into separate lines
     #   for ' - '
-    print('Add image text: title:', title)
+    print('Add image text: title:', title) if verbose else None
     strings = title.split(' - ')
     y = 18
     txt = Image.new("RGBA", image.size, (255,255,255,0))
@@ -212,7 +143,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image = image.resize((256,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Boxarts/' + game_title + '.png'
-        print('Save cover as', f)
+        print('Save cover as', f) if verbose else None
         image.save(f, 'PNG')
 
         image = Image.open(io.BytesIO(pic1))
@@ -223,12 +154,12 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image = image.resize((512,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Snaps/' + game_title + '.png'
-        print('Save snap as', f)
+        print('Save snap as', f) if verbose else None
         image.save(f, 'PNG')
 
 
 def create_metadata(img, game_id, game_title, icon0, pic1):
-    print('fetching metadata for', game_id)
+    print('fetching metadata for', game_id) if verbose else None
 
     with open(create_path(img, 'GAME_ID'), 'w') as d:
         d.write(game_id)
@@ -262,7 +193,7 @@ def get_imgs_from_bin(cue):
             line = line[1:-1]
         return line
     
-    print('CUE', cue)
+    print('CUE', cue) if verbose else None
 
     img_files = []
     with open(cue, 'r') as f:
@@ -286,7 +217,7 @@ def create_retroarch(dest, game_title, cue_files, img_files):
             md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
 
             f = dest + '/' + g
-            print('Installing', f)
+            print('Installing', f) if verbose else None
             copy_file(img_files[i], f)
 
 
@@ -317,7 +248,7 @@ def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
                 g = g + '.img'
                 md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
 
-                print('Installing', f + '/' + g)
+                print('Installing', f + '/' + g) if verbose else None
                 copy_file(img_files[i], f + '/' + g)
 
                 try:
@@ -329,30 +260,116 @@ def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
                     True
 
                     
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files):
-    print('Create PSP EBOOT.PBP for', game_title)
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards):
+    print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
     p = popstation()
+    p.verbose = verbose
     p.game_id = game_id
     p.game_title = game_title
     p.icon0 = icon0
     p.pic1 = pic1
 
     for f in img_files:
-        print('Add image', f)
+        print('Add image', f) if verbose else None
         p.add_img(f)
 
     f = dest + '/PSP/GAME/' + p.game_id
-    print('Install EBOOT in', f)
+    print('Install EBOOT in', f) if verbose else None
     try:
         os.mkdir(f)
     except:
         True
             
     p.eboot = f + '/EBOOT.PBP'
-    print('Create EBOOT at', p.eboot)
+    print('Create EBOOT.PBP at', p.eboot)
     p.create()
+    os.sync()
 
+    idx = 0
+    for mc in mem_cards:
+        mf = f + ('/SCEVMC%d.VMP' % idx)
+        with open(mf, 'wb') as of:
+            print('Installing MemoryCard in temporary location as', mf)
+            of.write(encode_vmp(mc))
+        idx = idx + 1 
+    if idx > 0:
+        print('###################################################')
+        print('###################################################')
+        print('Memory card images temporarily written to the game directory.')
+        print('1, Remove the PSP')
+        print('2, Start the game to create the SAVEDATA directory')
+        print('   and then quit the game.')
+        print('3, Reconnect the PSP')
+        print('4, Run this command to finish installing the memory cards:')
+        print('')
+        print('./pop-fe.py --psp-dir=%s --game_id=%s --psp-install-memory-card' % (dest, game_id))
+        print('###################################################')
+        print('###################################################')
+        os.sync()
+
+        
+def install_psp_mc(dest, game_id, mem_cards):
+    if mem_cards and len(mem_cards) >= 1:
+        try:
+            with open(dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC0.VMP', 'wb') as f:
+                f.write(encode_vmp(mem_cards[0]))
+                print('Installed', dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC0.VMP')
+        except:
+            raise Exception('Can not install memory card file.', dest + '/PSP/SAVEDATA/' + game_id, 'does not exist')
+    if mem_cards and len(mem_cards) >= 2:
+        try:
+            with open(dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP', 'wb') as f:
+                f.write(encode_vmp(mem_cards[1]))
+                print('Installed', dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
+        except:
+            raise Exception('Can not install memory card file.', dest + '/PSP/SAVEDATA/' + game_id, 'does not exist')
+            
+    try:
+        os.stat(dest + '/PSP/GAME/' + game_id + '/SCEVMC0.VMP')
+        try:
+            copy_file(dest + '/PSP/GAME/' + game_id + '/SCEVMC0.VMP',
+                      dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC0.VMP')
+            print('Installed', dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC0.VMP')
+            os.unlink(dest + '/PSP/GAME/' + game_id + '/SCEVMC0.VMP')
+        except:
+            print('Could not install /PSP/SAVEDATA/' + game_id + '/SCEVMC0.VMP')
+    except:
+        True
+        
+    try:
+        os.stat(dest + '/PSP/GAME/' + game_id + '/SCEVMC1.VMP')
+        try:
+            copy_file(dest + '/PSP/GAME/' + game_id + '/SCEVMC1.VMP',
+                      dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
+            print('Installed', dest + '/PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
+            os.unlink(dest + '/PSP/GAME/' + game_id + '/SCEVMC1.VMP')
+        except:
+            print('Could not install /PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
+    except:
+        True
+    os.sync()
+
+def check_memory_card(f):
+    if os.stat(f).st_size == 131072:
+        with open(f, 'rb') as mc:
+            return [mc.read(131072)]
+    if os.stat(f).st_size == 131200:
+        with open(f, 'rb') as mc:
+            mc.seek(0x80)
+            return [mc.read(131072)]
+    if os.stat(f).st_size == 131136:
+        with open(f, 'rb') as mc:
+            mc.seek(0x40)
+            return [mc.read(131072)]
+    if os.stat(f).st_size == 262144:
+        with open(f, 'rb') as mc:
+            return [mc.read(131072), mc.read(131072)]
+    if os.stat(f).st_size == 134976:
+        with open(f, 'rb') as mc:
+            mc.seek(0xf40)
+            return [mc.read(131072)]
+    
 
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -362,6 +379,7 @@ if __name__ == "__main__":
     requests_cache.install_cache(str(Path.home()) + '/.pop-fe', expire_after=expire_after)
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--retroarch-thumbnail-dir',
                     help='Where to store retroarch thumbnails')
     parser.add_argument('--retroarch-game-dir',
@@ -370,6 +388,9 @@ if __name__ == "__main__":
                     help='Where to store images for PSIO')
     parser.add_argument('--psp-dir',
                     help='Where the PSP memory card is mounted')
+    parser.add_argument('--psp-install-memory-card', action='store_true',
+                        help='Finish installing a PSX memory card after '
+                        'running the game at least once')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -378,8 +399,11 @@ if __name__ == "__main__":
                     help='Force title for this iso')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
-    
-    if not args.files:
+
+    if args.v:
+        verbose = True
+
+    if not args.files and not args.psp_install_memory_card:
         print('You must specify at least one file to fetch images for')
         exit(1)
 
@@ -392,28 +416,37 @@ if __name__ == "__main__":
     temp_files = []
     cue_files = []
     img_files = []
+    mem_cards = []
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
+        # Try to find which ones are memory cards
+        if os.stat(cue_file).st_size <= 262144:
+            mc = check_memory_card(cue_file)
+            if mc:
+                for i in mc:
+                    mem_cards.append(i)
+                continue
+        
         zip = None
         print('Processing', cue_file, '...')
 
         if cue_file[-3:] == 'zip':
-            print('This is a ZIP file. Uncompress the file.')
+            print('This is a ZIP file. Uncompress the file.') if verbose else None
             zip = cue_file
             with zipfile.ZipFile(zip, 'r') as zf:
                 for f in zf.namelist():
-                    print('Extracting', f)
+                    print('Extracting', f) if verbose else None
                     temp_files.append(f)
                     zf.extract(f)
                     if re.search('.cue$', f):
-                        print('Found CUE file', f)
+                        print('Found CUE file', f) if verbose else None
                         cue_file = f
 
         tmpcue = None
         if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
             tmpcue = 'TMP%d.cue' % (0 if not idx else idx[0])
-            print('IMG or BIN file. Create a temporary cue file for it', tmpcue)
+            print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
             temp_files.append(tmpcue)
             with open(tmpcue, "w") as f:
                 f.write('FILE "%s" BINARY\n' % cue_file)
@@ -423,7 +456,7 @@ if __name__ == "__main__":
             cue_file = tmpcue
 
         if cue_file[-3:] != 'cue':
-            print('%s is not a CUE file. Skipping' % cue_file)
+            print('%s is not a CUE file. Skipping' % cue_file) if verbose else None
             continue
 
         i = get_imgs_from_bin(cue_file)
@@ -433,11 +466,16 @@ if __name__ == "__main__":
         if idx:
             idx = (idx[0] + 1, idx[1])
 
+    if args.psp_install_memory_card:
+        install_psp_mc(args.psp_dir, args.game_id, mem_cards)
+        quit()
+            
     # We need to convert the first track of the first ISO so we can open the
     # disk and read system.cnf
     # We only do this for the first disk of a multi-disk set.
-    print('Convert CUE to a normal style ISO')
+    print('Convert CUE to a normal style ISO') if verbose else None
     bc = bchunk()
+    bc.verbose = args.v
     bc.open(cue_files[0])
     bc.writetrack(0, 'NORMAL')
     temp_files.append('NORMAL01.iso')
@@ -471,9 +509,9 @@ if __name__ == "__main__":
     # ICON0.PNG
     try:
         image = Image.open(create_path(img_files[0], 'ICON0.PNG'))
-        print('Use existing ICON0.PNG as cover')
+        print('Use existing ICON0.PNG as cover') if verbose else None
     except:
-        print('Fetch cover for', game_title)
+        print('Fetch cover for', game_title) if verbose else None
         if not game:
             game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
         icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
@@ -487,9 +525,9 @@ if __name__ == "__main__":
     # PIC1.PNG
     try:
         image = Image.open(create_path(img_files[0], 'PIC1.PNG'))
-        print('Use existing PIC1.PNG as background')
+        print('Use existing PIC1.PNG as background') if verbose else None
     except:
-        print('Fetch screenshot for', game_title)
+        print('Fetch screenshot for', game_title) if verbose else None
         if not game:
             game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
         pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
@@ -503,11 +541,11 @@ if __name__ == "__main__":
     
     print('Id:', game_id)
     print('Title:', game_title)
-    print('Cue Files', cue_files)
-    print('Imb Files', img_files)
+    print('Cue Files', cue_files) if verbose else None
+    print('Imb Files', img_files) if verbose else None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files)
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_game_dir:
@@ -518,6 +556,6 @@ if __name__ == "__main__":
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 
     for f in temp_files:
-        print('Deleting temp file', f)
+        print('Deleting temp file', f) if verbose else None
         os.unlink(f)
 
