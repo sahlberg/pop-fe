@@ -97,7 +97,7 @@ def get_first_bin_in_cue(cue):
         files = re.findall('".*"', f.read())
         return files[0][1:-1]
 
-def add_image_text(image, title):
+def add_image_text(image, title, game_id):
     # Add a nice title text to the background image
     # Split it into separate lines
     #   for ' - '
@@ -107,12 +107,19 @@ def add_image_text(image, title):
     txt = Image.new("RGBA", image.size, (255,255,255,0))
     fnt = ImageFont.truetype("/usr/share/fonts/dejavu/DejaVuSansMono.ttf", 20)
     d = ImageDraw.Draw(txt)
-    
+
+    # Add Title (multiple lines)
     for t in strings:
         ts = d.textsize(t, font=fnt)
         d.text((image.size[0] - ts[0], y), t, font=fnt,
                fill=(255,255,255,255))
         y = y + ts[1] + 2
+
+    # Add game-id
+    ts = d.textsize(game_id, font=fnt)
+    d.text((image.size[0] - ts[0], y), game_id, font=fnt,
+           fill=(255,255,255,255))
+    y = y + ts[1] + 2
 
     image = Image.alpha_composite(image, txt)
     return image
@@ -533,7 +540,7 @@ if __name__ == "__main__":
         pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(pic1))
     image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
-    image = add_image_text(image, game_title)
+    image = add_image_text(image, game_title, game_id)
     i = io.BytesIO()
     image.save(i, format='PNG')
     i.seek(0)
