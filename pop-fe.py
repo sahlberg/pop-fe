@@ -466,9 +466,11 @@ if __name__ == "__main__":
             continue
 
         i = get_imgs_from_bin(cue_file)
+        if len(i) > 1:
+            raise Exception('Can not handle disks that consists of separate files per track yet.')
         img_files.append(i[0])
         cue_files.append(cue_file)
-
+        
         if idx:
             idx = (idx[0] + 1, idx[1])
 
