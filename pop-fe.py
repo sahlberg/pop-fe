@@ -29,6 +29,7 @@ from popstation import popstation
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
+font = '/usr/share/fonts/dejavu/DejaVuSansMono.ttf'
 
 def get_gameid_from_iso():
     iso = iso9660.ISO9660.IFS(source='NORMAL01.iso')
@@ -105,7 +106,7 @@ def add_image_text(image, title, game_id):
     strings = title.split(' - ')
     y = 18
     txt = Image.new("RGBA", image.size, (255,255,255,0))
-    fnt = ImageFont.truetype("/usr/share/fonts/dejavu/DejaVuSansMono.ttf", 20)
+    fnt = ImageFont.truetype(font, 20)
     d = ImageDraw.Draw(txt)
 
     # Add Title (multiple lines) to upper right
@@ -116,9 +117,13 @@ def add_image_text(image, title, game_id):
         y = y + ts[1] + 2
 
     # Add game-id to bottom right
+    fnt = ImageFont.truetype(font, 10)
     ts = d.textsize(game_id, font=fnt)
-    d.text((image.size[0] - ts[0], image.size[1] - ts[1]), game_id, font=fnt,
-           fill=(255,255,255,255))
+    d.rectangle([(image.size[0] - ts[0] - 1, image.size[1] - ts[1] + 1),
+                 (image.size[0] + 1, image.size[1] + 1)],
+                fill=(0,0,0,255))
+    d.text((image.size[0] - ts[0], image.size[1] - ts[1] - 1),
+           game_id, font=fnt, fill=(255,255,255,255))
 
     image = Image.alpha_composite(image, txt)
     return image
