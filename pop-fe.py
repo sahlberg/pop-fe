@@ -228,44 +228,48 @@ def create_retroarch(dest, game_title, cue_files, img_files):
 
 
 def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
+    try:
+        os.stat('./cue2cu2.py')
+    except:
+        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
     
-        f = dest + '/' + game_title
-        try:
-            os.mkdir(f)
-        except:
-            True
+    f = dest + '/' + game_title
+    try:
+        os.mkdir(f)
+    except:
+        True
 
-        with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
-            image = Image.open(io.BytesIO(icon0))
-            image = image.resize((80,84), Image.BILINEAR)
-            i = io.BytesIO()
-            image.save(i, format='BMP')
-            i.seek(0)
-            d.write(i.read())
+    with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
+        image = Image.open(io.BytesIO(icon0))
+        image = image.resize((80,84), Image.BILINEAR)
+        i = io.BytesIO()
+        image.save(i, format='BMP')
+        i.seek(0)
+        d.write(i.read())
             
-        try:
-            os.unlink(f + '/MULTIDISC.LST')
-        except:
-            True
-        with open(f + '/MULTIDISC.LST', 'wb') as md:
-            for i in range(len(img_files)):
-                g = game_title
-                g = g + '-%d' % i
-                g = g + '.img'
-                md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
+    try:
+        os.unlink(f + '/MULTIDISC.LST')
+    except:
+        True
+    with open(f + '/MULTIDISC.LST', 'wb') as md:
+        for i in range(len(img_files)):
+            g = game_title
+            g = g + '-%d' % i
+            g = g + '.img'
+            md.write(bytes(g + chr(13) + chr(10), encoding='utf-8'))
 
-                print('Installing', f + '/' + g) if verbose else None
-                copy_file(img_files[i], f + '/' + g)
+            print('Installing', f + '/' + g) if verbose else None
+            copy_file(img_files[i], f + '/' + g)
 
-                try:
-                    subprocess.call(['./cue2cu2.py', '--size', str(os.stat(img_files[i]).st_size), cue_files[i]])
-                    cu2 = img_files[i].split('/')[-1][:-4] + '.cu2'
-                    copy_file(cu2, f + '/' + g[:-4] + '.cu2')
-                    os.unlink(cu2)
-                except:
-                    True
+            try:
+                subprocess.call(['./cue2cu2.py', '--size', str(os.stat(img_files[i]).st_size), cue_files[i]])
+                cu2 = img_files[i].split('/')[-1][:-4] + '.cu2'
+                copy_file(cu2, f + '/' + g[:-4] + '.cu2')
+                os.unlink(cu2)
+            except:
+                True
 
-                    
+
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
@@ -390,7 +394,7 @@ if __name__ == "__main__":
                     help='Where to store retroarch thumbnails')
     parser.add_argument('--retroarch-game-dir',
                     help='Where to store retroarch games')
-    parser.add_argument('--psio-game-dir',
+    parser.add_argument('--psio-dir',
                     help='Where to store images for PSIO')
     parser.add_argument('--psp-dir',
                     help='Where the PSP memory card is mounted')
@@ -556,8 +560,8 @@ if __name__ == "__main__":
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
-    if args.psio_game_dir:
-        create_psio(args.psio_game_dir, game_id, game_title, icon0, cue_files, img_files)
+    if args.psio_dir:
+        create_psio(args.psio_dir, game_id, game_title, icon0, cue_files, img_files)
     if args.retroarch_game_dir:
         create_retroarch(args.retroarch_game_dir, game_title, cue_files, img_files)
     if args.retroarch_thumbnail_dir:
