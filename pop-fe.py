@@ -15,7 +15,18 @@ import re
 import random
 import struct
 import sys
-import iso9660      # python-pycdio
+have_pycdlib = False
+try:
+    import pycdlib
+    have_pycdlib = True
+except:
+    True
+have_iso9660 = False
+try:
+    import iso9660      # python-pycdio
+    have_iso9660 = True
+except:
+    True
 import requests
 import requests_cache
 import subprocess
@@ -32,20 +43,32 @@ verbose = False
 font = '/usr/share/fonts/dejavu/DejaVuSansMono.ttf'
 
 def get_gameid_from_iso():
-    iso = iso9660.ISO9660.IFS(source='NORMAL01.iso')
+    if not have_pycdlib and not have_iso9660:
+        raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
-    st = iso.stat('system.cnf', True)
-    if st is None:
-        raise Exception('Could not open system.cnf')
+    if have_pycdlib:
+        iso = pycdlib.PyCdlib()
+        iso.open('NORMAL01.iso')
+        extracted = io.BytesIO()
+        iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
+        extracted.seek(0)
+        buf = str(extracted.read(1024))
+        iso.close()
+    if have_iso9660:
+        iso = iso9660.ISO9660.IFS(source='NORMAL01.iso')
 
-    buf = iso.seek_read(st['LSN'])
-    iso.close()
+        st = iso.stat('system.cnf', True)
+        if st is None:
+            raise Exception('Could not open system.cnf')
 
-    idx = buf[1].find('cdrom:')
+        buf = iso.seek_read(st['LSN'])[1][:128]
+        iso.close()
+
+    idx = buf.find('cdrom:')
     if idx < 0:
         raise Exception('Could not read system.cnf')
 
-    buf = buf[1][idx:idx+50]
+    buf = buf[idx:idx+50]
     idx = buf.find(';1')
     buf = buf[idx-11:idx]
     
