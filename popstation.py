@@ -2946,7 +2946,6 @@ class popstation(object):
         for img in self._img:
             fh.seek((fh.tell() + 0x7fff) & 0xffff8000)
             struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)        
-            print('Writing PSISO%d.DAT.created' % disc_num) if self._verbose else None
             self.encode_psiso(fh, disc_num, img)
             fh.seek(0, 2)
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
@@ -2972,8 +2971,6 @@ class popstation(object):
         print('Writing updated PSTITLEIMG.DAT') if self._verbose else None
         fh.write(_pstitle)
         fh.seek(x)
-        with open('PSTITLEIMG.DAT.created', 'wb') as f:
-            f.write(_pstitle)
             
         print('Writing STARTDAT header') if self._verbose else None
         fh.write(_startdatheader)
@@ -3008,10 +3005,10 @@ if __name__ == "__main__":
             p.add_img(i)
         if args.game_id:
             p.game_id = args.game_id
-            print('game id', p.game_id) if self._verbose else None
+            print('game id', p.game_id)
         if args.title:
             p.game_title = args.title
-            print('title', p.game_title) if self._verbose else None
+            print('title', p.game_title)
         try:
             p.icon0 = open('ICON0.PNG', 'rb').read()
         except:
