@@ -31,8 +31,8 @@ pip3 install pycdlib
 cue2cu2
 -------
 This is a small program that parses a CUE and reformats it into CU2 format.
-It is used by PSIO but will be used later for other things in pop-fe too
-as the cu2 format is a LOT easier to parse.
+It is used by PSIO but also to create the TOC structure we need for PSP
+EBOOTs when a CCD file is not present.
 
 Please install this python script in the same directory as pop-fe.
 It can be downloaded from   https://github.com/NRGDEAD/Cue2cu2

@@ -255,12 +255,7 @@ def create_retroarch(dest, game_title, cue_files, img_files):
             copy_file(img_files[i], f)
 
 
-def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
-    try:
-        os.stat('./cue2cu2.py')
-    except:
-        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
-    
+def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
     f = dest + '/' + game_title
     try:
         os.mkdir(f)
@@ -288,14 +283,7 @@ def create_psio(dest, game_id, game_title, icon0, cue_files, img_files):
 
             print('Installing', f + '/' + g) if verbose else None
             copy_file(img_files[i], f + '/' + g)
-
-            try:
-                subprocess.call(['./cue2cu2.py', '--size', str(os.stat(img_files[i]).st_size), cue_files[i]])
-                cu2 = img_files[i].split('/')[-1][:-4] + '.cu2'
-                copy_file(cu2, f + '/' + g[:-4] + '.cu2')
-                os.unlink(cu2)
-            except:
-                True
+            copy_file(cu2_files[i], f + '/' + g[:-4] + '.cu2')
 
 
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards):
@@ -446,13 +434,19 @@ if __name__ == "__main__":
         exit(1)
 
     try:
+        os.stat('./cue2cu2.py')
+    except:
+        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
+        
+    try:
         os.unlink('NORMAL01.iso')
     except:
         True
 
     idx = None
-    temp_files = []
+    temp_files = []  
     cue_files = []
+    cu2_files = []
     img_files = []
     mem_cards = []
     if len(args.files) > 1:
@@ -500,8 +494,20 @@ if __name__ == "__main__":
         i = get_imgs_from_bin(cue_file)
         if len(i) > 1:
             raise Exception('Can not handle disks that consists of separate files per track yet.')
+
+        cu2_file = cue_file[:-4] + '.cu2'
+        try:
+            os.stat(cu2_file).st_size
+            print('Using existing CU2 file: %s' % cu2_file) if verbose else None
+        except:
+            cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
+            print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
+            subprocess.call(['./cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(i[0]).st_size), cue_file])
+            temp_files.append(cu2_file)
+
         img_files.append(i[0])
         cue_files.append(cue_file)
+        cu2_files.append(cu2_file)
         
         if idx:
             idx = (idx[0] + 1, idx[1])
@@ -591,7 +597,7 @@ if __name__ == "__main__":
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
-        create_psio(args.psio_dir, game_id, game_title, icon0, cue_files, img_files)
+        create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
     if args.retroarch_game_dir:
         create_retroarch(args.retroarch_game_dir, game_title, cue_files, img_files)
     if args.retroarch_thumbnail_dir:
