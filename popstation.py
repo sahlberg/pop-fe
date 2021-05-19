@@ -2350,7 +2350,7 @@ class popstation(object):
         
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
-        self._img = []
+        self._img_toc = []
         self._verbose = False
         self._complevel = 1
         self._game_id = 'SLUS00000'
@@ -2362,8 +2362,8 @@ class popstation(object):
         self._logo = None
         self._snd0 = None
         
-    def add_img(self, img):
-        self._img.append(img)
+    def add_img(self, img_toc):
+        self._img_toc.append(img_toc)
 
     @property
     def verbose(self):
@@ -2586,11 +2586,11 @@ class popstation(object):
                         buf = zlib.decompress(buf, wbits=-15)
                     o.write(buf)
                 
-    def encode_psiso(self, fh, disc_num, img):
+    def encode_psiso(self, fh, disc_num, img_toc):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
 
-        with open(img, 'rb') as f:
+        with open(img_toc[0], 'rb') as f:
             f.seek(0, 2)
             isosize = f.tell()
         if isosize % 0x9300:
@@ -2610,7 +2610,9 @@ class popstation(object):
 
         # Block #3
         buf = bytearray(1024)
-        toc = self.get_toc_from_ccd(img)
+        toc = img_toc[1]
+        if toc:
+            print('Got a TOC')
         if not toc:
             try:
                 os.stat(img[:-4] + '.toc')
@@ -2619,6 +2621,8 @@ class popstation(object):
                 print('Using TOC', img[:-4] + '.toc') if self._verbose else None
             except:
                 True
+        if not toc:
+            toc = self.get_toc_from_ccd(img)
         if not toc:
             print('Create a fake toc') if self._verbose else None
             toc = bytearray(_basic_toc)
@@ -2662,7 +2666,7 @@ class popstation(object):
         fh.write(bytes(psiso_offset + 0x100000 - offset))
 
         print('Writing PSX CD Dump') if self._verbose else None
-        fi = open(img, 'rb')
+        fi = open(img_toc[0], 'rb')
         indexes = bytearray(0)
         print('Writing compressed image') if self._verbose else None
         offset = 0
@@ -2948,10 +2952,10 @@ class popstation(object):
         fh.write(_pstitle)
 
         disc_num = 0
-        for img in self._img:
+        for img_toc in self._img_toc:
             fh.seek((fh.tell() + 0x7fff) & 0xffff8000)
             struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)        
-            self.encode_psiso(fh, disc_num, img)
+            self.encode_psiso(fh, disc_num, img_toc)
             fh.seek(0, 2)
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
 
@@ -3007,7 +3011,7 @@ if __name__ == "__main__":
     
     if args.command[0] == 'create':
         for i in args.image:
-            p.add_img(i)
+            p.add_img((i, None))
         if args.game_id:
             p.game_id = args.game_id
             print('game id', p.game_id)

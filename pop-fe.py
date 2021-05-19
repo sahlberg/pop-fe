@@ -286,7 +286,55 @@ def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
             copy_file(cu2_files[i], f + '/' + g[:-4] + '.cu2')
 
 
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards):
+def get_toc_from_cu2(cu2):
+    def bcd(i):
+        return int(i % 10) + 16 * (int(i / 10) % 10)
+
+    _toc_header = bytes([
+        0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
+        0x01, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x01, 0x00, 0xa2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+        ])
+    
+    toc = bytearray(_toc_header)
+
+    with open(cu2, 'r') as f:
+        lines = f.readlines()
+
+        # Find the number of tracks and trk_end
+        num_tracks = None
+        trk_end = None
+        for line in lines:
+            if re.search('^ntracks', line):
+                num_tracks = int(line[7:])
+            if re.search('^trk end', line):
+                trk_end = line[10:]
+        # number of tracks
+        toc[17] = bcd(num_tracks)
+        # size of image
+        toc[27] = bcd(int(trk_end[:2]))
+        toc[28] = bcd(int(trk_end[3:5]))
+        toc[29] = bcd(int(trk_end[6:8]))
+
+        buf = bytearray(10)
+        track = 1
+        for line in lines:
+            if not re.search('^data', line) and not re.search('^track', line):
+                continue
+            
+            msf = line[10:]
+            buf[0] = 0x41 if track == 1 else 0x01
+            buf[2] = bcd(track)
+            buf[7] = bcd(int(msf[:2]))
+            buf[8] = bcd(int(msf[3:5]))
+            buf[9] = bcd(int(msf[6:8]))
+            
+            track = track + 1
+            toc = toc + buf
+            
+        return toc
+    
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
     p = popstation()
@@ -296,9 +344,15 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, img_files, mem
     p.icon0 = icon0
     p.pic1 = pic1
 
-    for f in img_files:
+    for i in range(len(img_files)):
+        f = img_files[i]
+        toc = p.get_toc_from_ccd(f)
+        if not toc:
+            print('Need to create a TOC') if verbose else None
+            toc = get_toc_from_cu2(cu2_files[i])
+
         print('Add image', f) if verbose else None
-        p.add_img(f)
+        p.add_img((f, toc))
 
     f = dest + '/PSP/GAME/' + p.game_id
     print('Install EBOOT in', f) if verbose else None
@@ -593,7 +647,7 @@ if __name__ == "__main__":
     print('Imb Files', img_files) if verbose else None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, img_files, mem_cards)
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
