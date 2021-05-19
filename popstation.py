@@ -2601,7 +2601,6 @@ class popstation(object):
         # Block #1
         buf = bytearray(1024)
         buf[:12] = b'PSISOIMG0000'
-        struct.pack_into('<I', buf, 12, isosize + 0x100000)
         fh.write(buf)
         
         # Block #2
@@ -2690,12 +2689,18 @@ class popstation(object):
             indexes = indexes + idx
             i = i + 1
 
+        if fh.tell() & 0xf:
+            fh.seek((fh.tell() + 0xf) & 0xfffffff0)
         end_offset = fh.tell() - psiso_offset
-        eld_offset = (end_offset + 0xf) & 0xfffffff0
         x = fh.tell()
         fh.seek(index_offset)
         fh.write(indexes)
+        
         buf = bytearray(4)
+        fh.seek(psiso_offset + 12)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
+        
         end_offset = end_offset + 0x2d31
         fh.seek(x)
                     

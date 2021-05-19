@@ -532,6 +532,8 @@ if __name__ == "__main__":
     if not game_id:
         game_id = get_gameid_from_iso()
 
+    game_id = game_id.upper()
+    
     game_title = None
     if args.title:
         game_title = args.title
@@ -542,7 +544,7 @@ if __name__ == "__main__":
         except:
             True
     if not game_title:
-        game_title = get_title_from_game(game_id[0:4].upper() + '-' + game_id[4:9])
+        game_title = get_title_from_game(game_id[0:4] + '-' + game_id[4:9])
 
     game = None
 
@@ -553,8 +555,8 @@ if __name__ == "__main__":
     except:
         print('Fetch cover for', game_title) if verbose else None
         if not game:
-            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
-        icon0 = get_icon0_from_game(game_id[0:4].upper() + '-' + game_id[4:9], game)
+            game = get_game_from_gamelist(game_id[0:4] + '-' + game_id[4:9])
+        icon0 = get_icon0_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(icon0))
     image = image.resize((80,80), Image.BILINEAR)
     i = io.BytesIO()
@@ -569,7 +571,7 @@ if __name__ == "__main__":
     except:
         print('Fetch screenshot for', game_title) if verbose else None
         if not game:
-            game = get_game_from_gamelist(game_id[0:4].upper() + '-' + game_id[4:9])
+            game = get_game_from_gamelist(game_id[0:4] + '-' + game_id[4:9])
         pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
         image = Image.open(io.BytesIO(pic1))
     image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
