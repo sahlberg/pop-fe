@@ -2612,7 +2612,7 @@ class popstation(object):
         buf = bytearray(1024)
         toc = img_toc[1]
         if toc:
-            print('Got a TOC')
+            print('Got a TOC') if self._verbose else None
         if not toc:
             try:
                 os.stat(img[:-4] + '.toc')

@@ -85,7 +85,19 @@ formats:
 	 matter.
 
 The utility supports building and installing the games on various different
-target platforms:
+target platforms.
+Command line arguments are:
+-v                     : Verbose. Print additional information about what
+		         operations are performed during the game installation.
+--title                : Force the title to use for this game.
+		         By default pop-fe will automatically discover the
+			 game title from the image file provided. This argument
+			 can be used to override the title if the autodetection
+			 is wrong or fails.
+--game_id              : Force the game id. By default pop-fe will extract
+		         the SYSTEM.CNF file off the game iso and use it to
+			 detect the game-id. This argument can be used to
+			 override the id.
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin
@@ -94,14 +106,16 @@ target platforms:
                          MULTIDISC.LST will be created accordingly.
                          PSIO uses CU2 files so must have cue2cu2.py installed
 			 in the same directory as pop-fe.py.
---psp-dir <path>      : This specifies the path to where a PSP sd card has
-                        been mounted. The games will be converted into
-                        an EBOOT.PBP and will be installed as
-                        <path>/PSP/GAME/<game-id>/EBOOT.PBP
-                        The EBOOT.PBP will have a cover icon as well as a
-                        background image embedded.
-			If you specify multiple images then a single multi-disk
-			EBOOT.PBP will be created.
+--psp-dir <path>       : This specifies the path to where a PSP sd card has
+                         been mounted. The games will be converted into
+                         an EBOOT.PBP and will be installed as
+                         <path>/PSP/GAME/<game-id>/EBOOT.PBP
+                         The EBOOT.PBP will have a cover icon as well as a
+                         background image embedded.
+			 If you specify multiple images then a single multi-disk
+			 EBOOT.PBP will be created.
+--psp-install-memory-card : Used to install memory card images on the PSP.
+			 See memory card section below for usage.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
@@ -155,6 +169,17 @@ from you must specify game-id explicitely.
 
 Example:
    ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/ --game_id=SCUS94900 --psp-install-memory-card Crash.srm
+
+
+VITA SUPPORT
+============
+Vita is supported and you can install EBOOTs for its memory card also.
+The only difference is that when installing on a PSP you specify the path to the
+root of the SD card. If you want to install to a SD card for a Vita then you
+specify the path to the pspemu directory on the SD card:
+
+Example:  
+# ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/pspemu/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 
 --fetch-metadata
