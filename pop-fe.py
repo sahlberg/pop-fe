@@ -491,7 +491,7 @@ if __name__ == "__main__":
         os.stat('./cue2cu2.py')
     except:
         raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
-        
+
     try:
         os.unlink('NORMAL01.iso')
     except:
@@ -546,8 +546,18 @@ if __name__ == "__main__":
             continue
 
         i = get_imgs_from_bin(cue_file)
+        img_file = i[0]
         if len(i) > 1:
-            raise Exception('Can not handle disks that consists of separate files per track yet.')
+            try:
+                os.stat('./binmerge')
+            except:
+                raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
+            mb = 'MB%d' % (0 if not idx else idx[0])
+            subprocess.call(['./binmerge', '-o', '.', cue_file, mb])
+            cue_file = mb + '.cue'
+            temp_files.append(cue_file)
+            img_file = mb + '.bin'
+            temp_files.append(img_file)
 
         cu2_file = cue_file[:-4] + '.cu2'
         try:
@@ -556,10 +566,10 @@ if __name__ == "__main__":
         except:
             cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            subprocess.call(['./cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(i[0]).st_size), cue_file])
+            subprocess.call(['./cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
 
-        img_files.append(i[0])
+        img_files.append(img_file)
         cue_files.append(cue_file)
         cu2_files.append(cu2_file)
         

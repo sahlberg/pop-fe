@@ -40,6 +40,18 @@ Also make it executable by calling
 
 chmod +x cue2cu2.py
 
+binmerge
+--------
+This is a small python program to merge multi-bin files into a single bin.
+This is required if you intend to use pop-fe with multi-bin disks.
+
+This tool can be downloaded from
+https://github.com/putnam/binmerge
+and should be placed in the same directory as pop-fe.py.
+
+Make it executable with
+chmod +x binmerge
+
 HOW TO RUN POP-FE:
 ==================
 Pop-fe needs to create a bunch of temporary files while it is processing the
