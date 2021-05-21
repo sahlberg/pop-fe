@@ -52,6 +52,13 @@ and should be placed in the same directory as pop-fe.py.
 Make it executable with
 chmod +x binmerge
 
+requests_cache
+--------------
+This is to reduce the amount of data we fetch from the internet.
+Install this with :
+pip3 install requests_cache
+
+
 HOW TO RUN POP-FE:
 ==================
 Pop-fe needs to create a bunch of temporary files while it is processing the

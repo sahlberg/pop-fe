@@ -28,7 +28,10 @@ try:
 except:
     True
 import requests
-import requests_cache
+try:
+    import requests_cache
+except:
+    True
 import subprocess
 import zipfile
 from vmp import encode_vmp
