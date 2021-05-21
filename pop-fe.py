@@ -31,7 +31,7 @@ import requests
 try:
     import requests_cache
 except:
-    True
+    print('requests_cache is not installed.\nYou should install requests_cache by running:\npip3 install requests_cache')
 import subprocess
 import zipfile
 from vmp import encode_vmp
