@@ -134,14 +134,14 @@ Examples:
 Assume I have connected my PSP with USB and it is shows up as :
    /run/media/sahlberg/disk
    
-# ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+# ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 If you specify more than one cue file then it is assumed that this is
 a multidisc game and we will use the first cue file to determine the
 game id and title to be used for the whole set.
 
 Example:
- # ./pop-fe.py --psp-dir /run/media/sahlberg/disk/ /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
+ # ./pop-fe.py --psp-dir=auto /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
 
 During the conversion process the img/bin file will be temporarily converted
 into an ISO file as NORMAL01.iso in the current directory.
@@ -168,7 +168,7 @@ Some platforms, such as PSP, require a two step process to install the
 memory cards so follow the onscreen instructions carefully.
 
 Example:
-   ./pop-fe.py --psp-dir /run/media/sahlberg/disk/ Crash.cue Crash.srm
+   ./pop-fe.py --psp-dir=auto Crash.cue Crash.srm
 
 
 You can also install a memory card image directly for am already installed
@@ -178,7 +178,7 @@ directory. Since you are not providing a disk image to determine the game-id
 from you must specify game-id explicitely.
 
 Example:
-   ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/ --game_id=SCUS94900 --psp-install-memory-card Crash.srm
+   ./pop-fe.py --psp-dir=auto --game_id=SCUS94900 --psp-install-memory-card Crash.srm
 
 
 VITA SUPPORT
@@ -190,6 +190,8 @@ specify the path to the pspemu directory on the SD card:
 
 Example:  
 # ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/pspemu/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+or just use the auto feature:
+# ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 
 --fetch-metadata
