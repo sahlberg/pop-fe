@@ -470,8 +470,9 @@ def find_psp_mount():
                     return strings[1] + '/pspemu'
                 except:
                     True
+        raise Exception('Could not find any PSP or VITA memory cards')
 
-            
+    
 # ICON0 is the game cover
 # PIC1 is background image/poster
 #
