@@ -3,10 +3,10 @@ If you want a different license, like BSD, just ping me and we can see what we
 can work out.
 
 TL;DR
-For Linux but should be trivial to make work for Windows too. Patches welcome.
+For Linux but should be easy to make work for Windows too. Patches welcome.
 Connect PSP to your Linux box via USB, then run:
 
-   ./pop-fe.py --psp-dir /run/media/..wherever-the-psp-sdcard-shows-up  ...path-to-your-ps1-game../game.cue
+   ./pop-fe.py --psp-dir=auto  ...path-to-your-ps1-game../game.cue
 
 Result:
 Nice EBOOT.PBP with a boxart and a nice background image installed on your PSP (or vita).
@@ -121,6 +121,9 @@ Command line arguments are:
                          background image embedded.
 			 If you specify multiple images then a single multi-disk
 			 EBOOT.PBP will be created.
+			 If you specify path as 'auto' then pop-fe will
+			 scan all mounted media and pick the first one that
+			 contains a PSP or VITA memory card.
 --psp-install-memory-card : Used to install memory card images on the PSP.
 			 See memory card section below for usage.
 --retroarch-game-dir  : The directory where retroarch game images are to be

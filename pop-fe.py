@@ -454,6 +454,24 @@ def check_memory_card(f):
             return [mc.read(131072)]
     
 
+def find_psp_mount():
+    with open('/proc/self/mounts', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            strings = line.split(' ')
+            if strings[1][:11] == '/run/media/' or strings[1][:7] == '/media/':
+                try:
+                    os.stat(strings[1] + '/PSP/GAME')
+                    return strings[1]
+                except:
+                    True
+                try:
+                    os.stat(strings[1] + '/pspemu/PSP/GAME')
+                    return strings[1] + '/pspemu'
+                except:
+                    True
+
+            
 # ICON0 is the game cover
 # PIC1 is background image/poster
 #
@@ -485,6 +503,9 @@ if __name__ == "__main__":
 
     if args.v:
         verbose = True
+
+    if args.psp_dir and args.psp_dir.upper() == 'AUTO':
+        args.psp_dir = find_psp_mount()
 
     if not args.files and not args.psp_install_memory_card:
         print('You must specify at least one file to fetch images for')
