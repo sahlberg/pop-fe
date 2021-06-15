@@ -44,6 +44,7 @@ from popstation import popstation
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
 font = '/usr/share/fonts/dejavu/DejaVuSansMono.ttf'
+winfont = '/c/Windows/Fonts/arial.ttf'
 
 def get_gameid_from_iso():
     if not have_pycdlib and not have_iso9660:
@@ -132,7 +133,10 @@ def add_image_text(image, title, game_id):
     strings = title.split(' - ')
     y = 18
     txt = Image.new("RGBA", image.size, (255,255,255,0))
-    fnt = ImageFont.truetype(font, 20)
+    try:
+        fnt = ImageFont.truetype(font, 20)
+    except:
+        fnt = ImageFont.truetype(winfont, 20)
     d = ImageDraw.Draw(txt)
 
     # Add Title (multiple lines) to upper right
@@ -143,7 +147,10 @@ def add_image_text(image, title, game_id):
         y = y + ts[1] + 2
 
     # Add game-id to bottom right
-    fnt = ImageFont.truetype(font, 10)
+    try:
+        fnt = ImageFont.truetype(font, 10)
+    except:
+        fnt = ImageFont.truetype(winfont, 10)
     ts = d.textsize(game_id, font=fnt)
     d.rectangle([(image.size[0] - ts[0] - 1, image.size[1] - ts[1] + 1),
                  (image.size[0] + 1, image.size[1] + 1)],
@@ -367,7 +374,10 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     p.eboot = f + '/EBOOT.PBP'
     print('Create EBOOT.PBP at', p.eboot)
     p.create()
-    os.sync()
+    try:
+        os.sync()
+    except:
+        True
 
     idx = 0
     for mc in mem_cards:
@@ -389,7 +399,10 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         print('./pop-fe.py --psp-dir=%s --game_id=%s --psp-install-memory-card' % (dest, game_id))
         print('###################################################')
         print('###################################################')
-        os.sync()
+        try:
+            os.sync()
+        except:
+            True
 
         
 def install_psp_mc(dest, game_id, mem_cards):
@@ -431,7 +444,10 @@ def install_psp_mc(dest, game_id, mem_cards):
             print('Could not install /PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
     except:
         True
-    os.sync()
+    try:
+        os.sync()
+    except:
+        True
 
 def check_memory_card(f):
     if os.stat(f).st_size == 131072:
@@ -578,7 +594,7 @@ if __name__ == "__main__":
             except:
                 raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
             mb = 'MB%d' % (0 if not idx else idx[0])
-            subprocess.call(['./binmerge', '-o', '.', cue_file, mb])
+            subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
             cue_file = mb + '.cue'
             temp_files.append(cue_file)
             img_file = mb + '.bin'
@@ -591,7 +607,7 @@ if __name__ == "__main__":
         except:
             cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            subprocess.call(['./cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
 
         img_files.append(img_file)
