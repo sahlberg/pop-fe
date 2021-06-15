@@ -227,6 +227,7 @@ INSTALLATION
 Pop-fe has a few external dependencies. It requires python3 and some additional
 bits and pieces. Here are some examples on how to install pop-fe and its
 dependencies.
+Some comments and instructions on different OSes:
 
 Mint20.1:
 ---------
@@ -244,3 +245,24 @@ chmod +x cue2cu2.py
 cp ../binmerge/binmerge .
 chmod +x binmerge
 
+Windows 10:
+-----------
+Install git
+Install python3
+pip3 install requests_cache
+pip3 install pycdlib
+pip3 install Pillow
+pip3 install pycryptodome
+Start git-bash
+git clone https://github.com/sahlberg/pop-fe.git
+git clone https://github.com/NRGDEAD/Cue2cu2.git
+git clone https://github.com/putnam/binmerge.git
+cd pop-fe
+git checkout windows
+cp ../Cue2cu2/cue2cu2.py .
+cp ../binmerge/binmerge .
+
+On windows, always run pop-fe from git-bash and from within the pop-fe
+directory.
+AUTO is not supported on windows so you must specify the drive letter for the
+PSP as --psp-dir=/e/   (If it is mounted as E:)
