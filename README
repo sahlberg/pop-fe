@@ -3,8 +3,8 @@ If you want a different license, like BSD, just ping me and we can see what we
 can work out.
 
 TL;DR
-For Linux but should be easy to make work for Windows too. Patches welcome.
-Connect PSP to your Linux box via USB, then run:
+For Linux (and windows).
+Connect PSP to your Linux/Windows box via USB, then run:
 
    ./pop-fe.py --psp-dir=auto  ...path-to-your-ps1-game../game.cue
 
