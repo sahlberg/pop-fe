@@ -44,6 +44,11 @@ from popstation import popstation
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
 font = '/usr/share/fonts/dejavu/DejaVuSansMono.ttf'
+try:
+    os.stat(font)
+except:
+    font = '/c/Windows/Fonts/arial.ttf'
+    os.stat(font)
 
 def get_gameid_from_iso():
     if not have_pycdlib and not have_iso9660:
@@ -367,7 +372,10 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     p.eboot = f + '/EBOOT.PBP'
     print('Create EBOOT.PBP at', p.eboot)
     p.create()
-    os.sync()
+    try:
+        os.sync()
+    except:
+        True
 
     idx = 0
     for mc in mem_cards:
@@ -389,7 +397,10 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         print('./pop-fe.py --psp-dir=%s --game_id=%s --psp-install-memory-card' % (dest, game_id))
         print('###################################################')
         print('###################################################')
-        os.sync()
+        try:
+            os.sync()
+        except:
+            True
 
         
 def install_psp_mc(dest, game_id, mem_cards):
@@ -431,7 +442,10 @@ def install_psp_mc(dest, game_id, mem_cards):
             print('Could not install /PSP/SAVEDATA/' + game_id + '/SCEVMC1.VMP')
     except:
         True
-    os.sync()
+    try:
+        os.sync()
+    except:
+        True
 
 def check_memory_card(f):
     if os.stat(f).st_size == 131072:
@@ -455,22 +469,25 @@ def check_memory_card(f):
     
 
 def find_psp_mount():
+    candidates = ['/d', '/e', '/f', '/g']
     with open('/proc/self/mounts', 'r') as f:
         lines = f.readlines()
         for line in lines:
             strings = line.split(' ')
             if strings[1][:11] == '/run/media/' or strings[1][:7] == '/media/':
-                try:
-                    os.stat(strings[1] + '/PSP/GAME')
-                    return strings[1]
-                except:
-                    True
-                try:
-                    os.stat(strings[1] + '/pspemu/PSP/GAME')
-                    return strings[1] + '/pspemu'
-                except:
-                    True
-        raise Exception('Could not find any PSP or VITA memory cards')
+                candidates.append(strings[1])
+    for c in candidates:
+        try:
+            os.stat(c + '/PSP/GAME')
+            return c
+        except:
+            True
+        try:
+            os.stat(c + '/pspemu/PSP/GAME')
+            return c + '/pspemu'
+        except:
+            True
+    raise Exception('Could not find any PSP or VITA memory cards')
 
     
 # ICON0 is the game cover
@@ -578,7 +595,7 @@ if __name__ == "__main__":
             except:
                 raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
             mb = 'MB%d' % (0 if not idx else idx[0])
-            subprocess.call(['./binmerge', '-o', '.', cue_file, mb])
+            subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
             cue_file = mb + '.cue'
             temp_files.append(cue_file)
             img_file = mb + '.bin'
@@ -591,7 +608,7 @@ if __name__ == "__main__":
         except:
             cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            subprocess.call(['./cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
 
         img_files.append(img_file)
