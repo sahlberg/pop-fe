@@ -107,7 +107,7 @@ def get_title_from_game(game_id):
     return games[game_id]['title']
 
 def get_icon0_from_game(game_id, game):
-    g = re.findall('images/covers/././%s.jpg' % game_id, game)
+    g = re.findall('images/covers/././.*.jpg', game)
     return fetch_cached_binary(g[0])
 
 def get_pic1_from_game(game_id, game):
