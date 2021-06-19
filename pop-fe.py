@@ -107,13 +107,13 @@ def get_title_from_game(game_id):
     return games[game_id]['title']
 
 def get_icon0_from_game(game_id, game):
-    g = re.findall('images/covers/././.*.jpg', game)
+    g = re.findall('images/covers/./.*/.*.jpg', game)
     return fetch_cached_binary(g[0])
 
 def get_pic1_from_game(game_id, game):
     # Screenshots might be from a different release of the game
     # so we can not use game_id
-    filter = 'images/screens/././.*/ss..jpg'
+    filter = 'images/screens/./.*/.*/ss..jpg'
     return fetch_cached_binary(random.choice(re.findall(filter, game)))
 
 def get_psio_cover(game_id):
