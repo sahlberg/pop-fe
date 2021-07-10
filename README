@@ -220,6 +220,12 @@ Just copy cue2cu2.py to the same directory as pop-fe.py and make it executable :
   chmod +x cue2cu2.py
 
 
+PS2 Support
+===========
+Pop-fe can convert games into VCD format and install it on a USB memory stick
+that has been prepared to be used with POPStarter and OPL to play PS1 games.
+The USB stick must have a POPS subdirectory where the VCD file and memory cards
+will be installed and an ART subdirectory for cover and background images.
 
 
 INSTALLATION

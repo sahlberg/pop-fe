@@ -2350,6 +2350,7 @@ class popstation(object):
         
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
+        self._vcd = 'GAME.VCD'
         self._img_toc = []
         self._verbose = False
         self._complevel = 1
@@ -2438,6 +2439,14 @@ class popstation(object):
     @eboot.setter
     def eboot(self, value):
         self._eboot = value
+    
+    @property
+    def vcd(self):
+        return self._vcd
+
+    @vcd.setter
+    def vcd(self, value):
+        self._vcd = value
     
     @property
     def complevel(self):
@@ -2585,7 +2594,42 @@ class popstation(object):
                     if len(buf) < 0x9300:
                         buf = zlib.decompress(buf, wbits=-15)
                     o.write(buf)
-                
+
+
+    def get_toc(self, img_toc, isosize):
+        img = img_toc[0]
+        toc = img_toc[1]
+        if toc:
+            print('Got a TOC') if self._verbose else None
+            return toc
+
+        try:
+            os.stat(img[:-4] + '.toc')
+            with open(img[:-4] + '.toc', 'rb') as f:
+                toc = f.read(1020)
+            print('Using TOC', img[:-4] + '.toc') if self._verbose else None
+            return toc
+        except:
+            True
+            
+        toc = self.get_toc_from_ccd(img)
+        if toc:
+            return toc
+        
+        print('Create a fake toc') if self._verbose else None
+        toc = bytearray(_basic_toc)
+        # size of image plus 2 seconds
+        x = int((isosize + 352800) / 2352)
+        frames = x % 75
+        toc[29] = bcd(frames)
+        x = x - frames
+        x = int(x / 75)
+        secs = x % 60
+        toc[28] = bcd(secs)
+        mins = int(x / 60)
+        toc[27] = bcd(mins)
+        return toc
+
     def encode_psiso(self, fh, disc_num, img_toc):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
@@ -2610,34 +2654,8 @@ class popstation(object):
 
         # Block #3
         buf = bytearray(1024)
-        toc = img_toc[1]
-        if toc:
-            print('Got a TOC') if self._verbose else None
-        if not toc:
-            try:
-                os.stat(img[:-4] + '.toc')
-                with open(img[:-4] + '.toc', 'rb') as f:
-                    toc = f.read(1020)
-                print('Using TOC', img[:-4] + '.toc') if self._verbose else None
-            except:
-                True
-        if not toc:
-            toc = self.get_toc_from_ccd(img)
-        if not toc:
-            print('Create a fake toc') if self._verbose else None
-            toc = bytearray(_basic_toc)
-            # size of image plus 2 seconds
-            x = int((isosize + 352800) / 2352)
-            frames = x % 75
-            toc[29] = bcd(frames)
-            x = x - frames
-            x = int(x / 75)
-            secs = x % 60
-            toc[28] = bcd(secs)
-            mins = int(x / 60)
-            toc[27] = bcd(mins)
-        if toc:
-            buf[:len(toc)] = toc
+        toc = self.get_toc(img_toc, isosize)
+        buf[:len(toc)] = toc
         # disc start offset == 0x100000
         struct.pack_into('<I', buf, 0x3fc, 0x100000) 
         fh.write(buf)
@@ -2990,6 +3008,49 @@ class popstation(object):
                 
         print('EBOOT.PBP Created') if self._verbose else None
 
+    def encode_vcd(self, fh, img_toc):
+        def bcd(i):
+            return int(i % 10) + 16 * (int(i / 10) % 10)
+
+        with open(img_toc[0], 'rb') as f:
+            f.seek(0, 2)
+            isosize = f.tell()
+            realisosize = isosize
+        if isosize % 0x9300:
+            isosize = isosize + (0x9300 - (isosize%0x9300))
+
+        psiso_offset = fh.tell()
+        num_sectors = int(realisosize / 2352)
+        print('Num sectors 0x%08x' % (num_sectors))
+        toc = self.get_toc(img_toc, isosize)
+        fh.write(toc)
+
+        fh.seek(0x400)
+        buf = bytearray(16)
+        buf[0] = 0x6b
+        buf[1] = 0x48
+        buf[2] = 0x6e
+        buf[3] = 0x20
+        struct.pack_into('<I', buf, 8, num_sectors)
+        struct.pack_into('<I', buf, 12, num_sectors)
+        fh.write(buf)
+
+        fh.seek(0x100000)
+        with open(img_toc[0], 'rb') as f:
+            while True:
+                buf = f.read(0x9300)
+                if not buf:
+                    break
+                fh.write(buf)
+
+        print(self._vcd, 'Created') if self._verbose else None
+
+
+    def create_vcd(self):
+        print('Create VCD', self._vcd) if self._verbose else None
+        fh = open(self._vcd, 'wb')
+        self.encode_vcd(fh, self._img_toc[0])
+
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -3005,11 +3066,11 @@ if __name__ == "__main__":
 
     p = popstation()
     p.verbose = args.v
-    if args.command[0] == 'dump':
-        print('Dump EBOOT')
+    if args.command[0] == 'dump_pbp':
+        print('Dump EBOOT.PBP')
         p.dump_pbp(args.image[0])
     
-    if args.command[0] == 'create':
+    if args.command[0] == 'create_pbp':
         for i in args.image:
             p.add_img((i, None))
         if args.game_id:

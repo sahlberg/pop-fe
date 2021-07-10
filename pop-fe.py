@@ -489,6 +489,108 @@ def find_psp_mount():
             True
     raise Exception('Could not find any PSP or VITA memory cards')
 
+
+def create_blank_mc(mc):
+    with open(mc, "wb") as f:
+        f.seek(131071)
+        f.write(bytes(1))
+        f.seek(0)
+        
+        buf = bytearray(2)
+        buf[0] = 0x4d
+        buf[1] = 0x43
+        f.write(buf)
+
+        buf = bytearray([0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0e,
+                         0xa0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                         0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+        f.seek(0x70)
+        f.write(buf)
+
+        buf = bytearray([0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa0,
+                         0xa0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                         0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+        for i in range(0xf0, 0x780, 0x80):
+            f.seek(i)
+            f.write(buf)
+
+        buf = bytearray([0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa0,
+                         0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00,
+                         0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+        f.seek(0x7f0)
+        f.write(buf)
+
+        buf = bytearray([0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00,
+                         0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+        for i in range(0x880, 0x1190, 0x80):
+            f.seek(i)
+            f.write(buf)
+
+            
+def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files):
+    print('Create PS2 VCD for', game_title) if verbose else None
+
+    p = popstation()
+    p.verbose = verbose
+    p.game_id = game_id
+    p.game_title = game_title
+
+    for i in range(len(img_files)):
+        f = img_files[i]
+        toc = p.get_toc_from_ccd(f)
+        if not toc:
+            print('Need to create a TOC') if verbose else None
+            toc = get_toc_from_cu2(cu2_files[i])
+
+        print('Add image', f) if verbose else None
+        p.add_img((f, toc))
+
+    f = dest + '/POPS'
+    print('Install VCD in', f) if verbose else None
+    try:
+        os.stat(f)
+    except:
+        raise Exception('No POPS directory found')
+        
+
+    print('GameID', game_id, game_title)
+    pp = dest + '/POPS/' + game_id[:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '.' + game_title
+    p.vcd = pp + '.VCD'
+    print('Create GAME.VCD at', p.vcd)
+    p.create_vcd()
+    try:
+        os.sync()
+    except:
+        True
+
+    try:
+        os.mkdir(pp)
+    except:
+        True
+
+    create_blank_mc(pp + '/SLOT0.VMC')
+    create_blank_mc(pp + '/SLOT1.VMC')
+        
+    try:
+        os.stat(dest + '/ART')
+    except:
+        raise Exception('No ART directory found')
+    
+    pp = dest + '/ART/'
+    f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
+    image = Image.open(io.BytesIO(icon0))
+    image = image.resize((200, 200))
+    image = image.convert('RGB')
+    image.save(f, format='JPEG')
+    f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_BG.jpg'
+    image = Image.open(io.BytesIO(pic1))
+    image = image.resize((640, 480))
+    image = image.convert('RGB')
+    image.save(f, format='JPEG')
+
     
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -510,6 +612,8 @@ if __name__ == "__main__":
     parser.add_argument('--psp-install-memory-card', action='store_true',
                         help='Finish installing a PSX memory card after '
                         'running the game at least once')
+    parser.add_argument('--ps2-dir',
+                    help='Where the PS2 USB-stick is mounted')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -700,6 +804,8 @@ if __name__ == "__main__":
 
     if args.psp_dir:
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
+    if args.ps2_dir:
+        create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
