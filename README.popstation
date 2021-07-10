@@ -4,7 +4,7 @@ This is a utility to create or dump single or multidisc EBOOT.PBP files.
 
 To dump the content of a EBOOT.PBP file use:
 
-    ./popstation.py dump SLUS00664/EBOOT.PBP
+    ./popstation.py dump_pbp SLUS00664/EBOOT.PBP
 
 It will dump all the main sections of the PBP, including the disk images
 and it will create CUE and CCD files for them to be used.
@@ -15,9 +15,9 @@ Check redump.org maybe?
 
 To create a single disk EBOOT.PBP :
 
-    ./popstation.py --title='Xenogears' --game-id='SLUS00664' create SLUS00664/PSISO0.img
+    ./popstation.py --title='Xenogears' --game-id='SLUS00664' create_pbp SLUS00664/PSISO0.img
 
 To create a multi-disk disk EBOOT.PBP :
 
-    ./popstation.py --title='Xenogears' --game-id='SLUS00664' create SLUS00664/PSISO0.img SLUS00664/PSISO1.img
+    ./popstation.py --title='Xenogears' --game-id='SLUS00664' create_pbp SLUS00664/PSISO0.img SLUS00664/PSISO1.img
 

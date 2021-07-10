@@ -2708,7 +2708,7 @@ class popstation(object):
         end_offset = end_offset + 0x2d31
         fh.seek(x)
                     
-    def dump(self, eboot):
+    def dump_pbp(self, eboot):
         with open(eboot, 'rb') as e:
             # read header
             buf = e.read(0x28)
@@ -2879,7 +2879,7 @@ class popstation(object):
         print('Done dumping', eboot) if self._verbose else None
 
 
-    def create(self):
+    def create_pbp(self):
         print('Generating PARAM.SFO [%s]...' % self._game_title) if self._verbose else None
         sfo = self.GenerateSFO()
 
@@ -3007,7 +3007,7 @@ if __name__ == "__main__":
     p.verbose = args.v
     if args.command[0] == 'dump':
         print('Dump EBOOT')
-        p.dump(args.image[0])
+        p.dump_pbp(args.image[0])
     
     if args.command[0] == 'create':
         for i in args.image:
@@ -3031,4 +3031,4 @@ if __name__ == "__main__":
         except:
             True
     
-        p.create()
+        p.create_pbp()

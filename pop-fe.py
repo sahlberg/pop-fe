@@ -371,7 +371,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             
     p.eboot = f + '/EBOOT.PBP'
     print('Create EBOOT.PBP at', p.eboot)
-    p.create()
+    p.create_pbp()
     try:
         os.sync()
     except:
