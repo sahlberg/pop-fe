@@ -3021,7 +3021,6 @@ class popstation(object):
 
         psiso_offset = fh.tell()
         num_sectors = int(realisosize / 2352)
-        print('Num sectors 0x%08x' % (num_sectors))
         toc = self.get_toc(img_toc, isosize)
         fh.write(toc)
 
@@ -3050,6 +3049,7 @@ class popstation(object):
         print('Create VCD', self._vcd) if self._verbose else None
         fh = open(self._vcd, 'wb')
         self.encode_vcd(fh, self._img_toc[0])
+        self._img_toc = []
 
         
 if __name__ == "__main__":

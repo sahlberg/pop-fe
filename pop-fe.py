@@ -532,11 +532,36 @@ def create_blank_mc(mc):
             
 def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files):
     print('Create PS2 VCD for', game_title) if verbose else None
+    print('Install VCD in', dest + '/POPS')
 
+    try:
+        os.stat(dest + '/POPS')
+    except:
+        raise Exception('No POPS directory found')
+    try:
+        os.stat(dest + '/ART')
+    except:
+        raise Exception('No ART directory found')
+        
     p = popstation()
     p.verbose = verbose
     p.game_id = game_id
     p.game_title = game_title
+
+    discs_txt = None
+    vmcdir_txt = None
+    if len(img_files) > 1:
+        for i in range(4):
+            pp = game_id[:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '.' + game_title
+            pp = pp + '_CD%d.VCD\n' % (i + 1)
+            if not vmcdir_txt:
+                vmcdir_txt = pp[:-5] + '\n'
+            if i >= len(img_files):
+                pp = '\n'
+            if not discs_txt:
+                discs_txt = pp
+            else:
+                discs_txt = discs_txt + pp
 
     for i in range(len(img_files)):
         f = img_files[i]
@@ -548,37 +573,34 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
 
-    f = dest + '/POPS'
-    print('Install VCD in', f) if verbose else None
-    try:
-        os.stat(f)
-    except:
-        raise Exception('No POPS directory found')
-        
+        print('GameID', game_id, game_title) if verbose else None
+        pp = dest + '/POPS/' + game_id[:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '.' + game_title
+        if len(img_files) > 1:
+            pp = pp + '_CD%d' % (i + 1)
+        try:
+            os.mkdir(pp)
+        except:
+            True
+        p.vcd = pp + '.VCD'
+        print('Create VCD at', p.vcd) if verbose else None
+        p.create_vcd()
+        try:
+            os.sync()
+        except:
+            True
 
-    print('GameID', game_id, game_title)
-    pp = dest + '/POPS/' + game_id[:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '.' + game_title
-    p.vcd = pp + '.VCD'
-    print('Create GAME.VCD at', p.vcd)
-    p.create_vcd()
-    try:
-        os.sync()
-    except:
-        True
+        if discs_txt:
+            with open(pp + '/DISCS.TXT', 'w') as f:
+                f.write(discs_txt)
+        if vmcdir_txt:
+            with open(pp + '/VMCDIR.TXT', 'w') as f:
+                f.write(vmcdir_txt)
 
-    try:
-        os.mkdir(pp)
-    except:
-        True
 
-    create_blank_mc(pp + '/SLOT0.VMC')
-    create_blank_mc(pp + '/SLOT1.VMC')
-        
-    try:
-        os.stat(dest + '/ART')
-    except:
-        raise Exception('No ART directory found')
-    
+        if i == 0:
+            create_blank_mc(pp + '/SLOT0.VMC')
+            create_blank_mc(pp + '/SLOT1.VMC')
+            
     pp = dest + '/ART/'
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
     image = Image.open(io.BytesIO(icon0))
