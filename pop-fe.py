@@ -107,9 +107,16 @@ def get_title_from_game(game_id):
     return games[game_id]['title']
 
 def get_icon0_from_game(game_id, game):
-    g = re.findall('images/covers/./.*/.*.jpg', game)
-    return fetch_cached_binary(g[0])
-
+    print('get icon for', game_id)
+    try:
+        url = 'http://www.hwc.nat.cu/psx/' + game_id[0:4] + '_' + game_id[5:8] + '.' + game_id[8:10] + '_COV.jpg'
+        subprocess.run(['wget', '-q', url, '-O', 'ICON0.jpg'], check=True)
+        with open('ICON0.jpg', 'rb') as f:
+            return f.read()
+    except:
+        g = re.findall('images/covers/./.*/.*.jpg', game)
+        return fetch_cached_binary(g[0])
+        
 def get_pic1_from_game(game_id, game):
     # Screenshots might be from a different release of the game
     # so we can not use game_id
@@ -344,6 +351,13 @@ def get_toc_from_cu2(cu2):
     
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
+
+    image = Image.open(io.BytesIO(icon0))
+    image = image.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    icon0 = i.read()
 
     p = popstation()
     p.verbose = verbose
@@ -583,7 +597,7 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
         p.vcd = pp + '.VCD'
         print('Create VCD at', p.vcd) if verbose else None
-        p.create_vcd()
+        #p.create_vcd()
         try:
             os.sync()
         except:
@@ -604,14 +618,15 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     pp = dest + '/ART/'
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
     image = Image.open(io.BytesIO(icon0))
+    print('Image', image)
     image = image.resize((200, 200))
     image = image.convert('RGB')
-    image.save(f, format='JPEG')
+    image.save(f, format='JPEG', quality=100, subsampling=0)
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_BG.jpg'
     image = Image.open(io.BytesIO(pic1))
     image = image.resize((640, 480))
     image = image.convert('RGB')
-    image.save(f, format='JPEG')
+    image.save(f, format='JPEG', quality=100, subsampling=0)
 
     
 # ICON0 is the game cover
@@ -795,8 +810,8 @@ if __name__ == "__main__":
         if not game:
             game = get_game_from_gamelist(game_id[0:4] + '-' + game_id[4:9])
         icon0 = get_icon0_from_game(game_id[0:4] + '-' + game_id[4:9], game)
+        temp_files.append('ICON0.jpg')
         image = Image.open(io.BytesIO(icon0))
-    image = image.resize((80,80), Image.BILINEAR)
     i = io.BytesIO()
     image.save(i, format='PNG')
     i.seek(0)
@@ -839,5 +854,7 @@ if __name__ == "__main__":
 
     for f in temp_files:
         print('Deleting temp file', f) if verbose else None
-        os.unlink(f)
-
+        try:
+            os.unlink(f)
+        except:
+            True
