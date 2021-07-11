@@ -597,7 +597,7 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
         p.vcd = pp + '.VCD'
         print('Create VCD at', p.vcd) if verbose else None
-        #p.create_vcd()
+        p.create_vcd()
         try:
             os.sync()
         except:
@@ -618,7 +618,6 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     pp = dest + '/ART/'
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
     image = Image.open(io.BytesIO(icon0))
-    print('Image', image)
     image = image.resize((200, 200))
     image = image.convert('RGB')
     image.save(f, format='JPEG', quality=100, subsampling=0)
