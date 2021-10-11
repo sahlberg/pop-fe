@@ -2597,6 +2597,9 @@ class popstation(object):
 
 
     def get_toc(self, img_toc, isosize):
+        def bcd(i):
+            return int(i % 10) + 16 * (int(i / 10) % 10)
+
         img = img_toc[0]
         toc = img_toc[1]
         if toc:
@@ -3060,16 +3063,19 @@ if __name__ == "__main__":
     parser.add_argument('--title',
                         help='Title for this iso')
     parser.add_argument('command', nargs=1, 
-                        help='create|dump')
+                        help='create_pbp|dump_pbp')
     parser.add_argument('image', nargs='*', help='Image file(s)')
+    parser.add_argument('--compression',
+                        help='Compression level [0-9]. Default is 1.')
     args = parser.parse_args()
 
     p = popstation()
     p.verbose = args.v
+    
     if args.command[0] == 'dump_pbp':
         print('Dump EBOOT.PBP')
         p.dump_pbp(args.image[0])
-    
+        
     if args.command[0] == 'create_pbp':
         for i in args.image:
             p.add_img((i, None))
@@ -3079,6 +3085,9 @@ if __name__ == "__main__":
         if args.title:
             p.game_title = args.title
             print('title', p.game_title)
+        if args.compression:
+            p.complevel = int(args.compression)
+            print('Compression level', p.complevel)
         try:
             p.icon0 = open('ICON0.PNG', 'rb').read()
         except:
