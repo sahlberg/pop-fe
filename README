@@ -126,6 +126,8 @@ Command line arguments are:
 			 contains a PSP or VITA memory card.
 --psp-install-memory-card : Used to install memory card images on the PSP.
 			 See memory card section below for usage.
+--ps2-dir             : This is the directory that holds the USB stick to
+		        install VCD files for running under POPS on a PS2.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
