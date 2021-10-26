@@ -43,12 +43,10 @@ from popstation import popstation, GenerateSFO
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
-font = '/usr/share/fonts/dejavu/DejaVuSansMono.ttf'
-try:
-    os.stat(font)
-except:
-    font = '/c/Windows/Fonts/arial.ttf'
-    os.stat(font)
+if sys.platform == 'win32':
+    font = 'arial.ttf'
+else:
+    font = 'DejaVuSansMono.ttf'
 
 def get_gameid_from_iso():
     if not have_pycdlib and not have_iso9660:
