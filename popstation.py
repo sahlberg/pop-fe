@@ -13,6 +13,7 @@
 import argparse
 import configparser
 import datetime
+import hashlib
 import io
 import os
 import struct
@@ -2595,7 +2596,6 @@ class popstation(object):
                         buf = zlib.decompress(buf, wbits=-15)
                     o.write(buf)
 
-
     def get_toc(self, img_toc, isosize):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
@@ -2703,6 +2703,9 @@ class popstation(object):
             c = c[2:-4]
             idx = bytearray(32)
             struct.pack_into('<I', idx, 0, offset)
+            h = hashlib.sha1()
+            h.update(buf)
+            idx[8:24] = h.digest()[:16]
             if len(c) >= 0x9300:
                 struct.pack_into('<H', idx, 4, 0x9300)
                 fh.write(buf)
