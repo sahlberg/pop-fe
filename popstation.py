@@ -22,8 +22,8 @@ import zlib
 
 _basic_toc = bytes([
     0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
-    0x01, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00,
-    0x01, 0x00, 0xa2, 0x00, 0x00, 0x00, 0x00, 0x67, 0x57, 0x52,
+    0x41, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00,
+    0x41, 0x00, 0xa2, 0x00, 0x00, 0x00, 0x00, 0x67, 0x57, 0x52,
     0x41, 0x00, 0x01, 0x00, 0x02, 0x01, 0x00, 0x00, 0x02, 0x00
 ])
 
@@ -2311,7 +2311,66 @@ def ParseSFO(sfo_buf):
             data['data'] = buf
         sfo['parameters'][name] = data
     return sfo
+
+def GenerateSFO(sfo):
+    #
+    # Generate keys table
+    #
+    keys = bytes(0)
+    for key in sfo:
+        keys = keys + bytes(key + '\0', encoding='utf8')
+    if len(keys) % 4:
+        keys = keys + bytes(4 - len(keys) % 4)
+            
+    #
+    # Generate data table
+    #
+    data = bytes(0)
+    for key in sfo:
+        e = sfo[key]
+        if e['data_fmt'] == 1028:
+            b = bytearray(4)
+            struct.pack_into('<I', b, 0, e['data'])
+            data = data + b
+            e['data_len'] = 4
+            e['data_max_len'] = 4
+        if e['data_fmt'] == 516 or e['data_fmt'] == 4:
+            e['data_len'] = len(e['data']) + 1
+            b = bytes(e['data'], encoding='utf-8')
+            if len(b) < e['data_max_len']:
+                b = b + bytes(e['data_max_len'] - len(b))
+                data = data + b
+     #
+    # generate index table
+    #
+    index = bytes(0)
+    key_offset = 0
+    data_offset = 0
+    for key in sfo:
+        e = sfo[key]
+        b = bytearray(16)
+        struct.pack_into('<H', b, 0, key_offset)
+        struct.pack_into('<H', b, 2, e['data_fmt'])
+        struct.pack_into('<I', b, 4, e['data_len'])
+        struct.pack_into('<I', b, 8, e['data_max_len'])
+        struct.pack_into('<I', b, 12, data_offset)
+        key_offset = key_offset + len(key) + 1
+        data_offset = data_offset + e['data_max_len']
         
+        index = index + b
+     #
+    # generate header
+    #
+    hdr = bytearray(20)
+    hdr[0:4] = bytearray(b'\x00PSF')
+    struct.pack_into('<I', hdr, 4, 257)
+    struct.pack_into('<I', hdr, 8, len(index) + 20)
+    struct.pack_into('<I', hdr, 12, len(keys) + len(index) + 20)
+    struct.pack_into('<I', hdr, 16, len(sfo))
+    
+    return hdr + index + keys + data
+
+
 class popstation(object):
     _sfo = {
         'BOOTABLE': {
@@ -2351,6 +2410,8 @@ class popstation(object):
         
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
+        self._iso_bin_dat = None
+        self._ibd = None
         self._vcd = 'GAME.VCD'
         self._img_toc = []
         self._verbose = False
@@ -2440,7 +2501,15 @@ class popstation(object):
     @eboot.setter
     def eboot(self, value):
         self._eboot = value
-    
+
+    @property
+    def iso_bin_dat(self):
+        return self._iso_bin_dat
+
+    @iso_bin_dat.setter
+    def iso_bin_dat(self, value):
+        self._iso_bin_dat = value
+        
     @property
     def vcd(self):
         return self._vcd
@@ -2503,67 +2572,6 @@ class popstation(object):
             struct.pack_into('<B', buf, 9, e['pframe'])
             data = data + buf
         return data
-
-    def GenerateSFO(self):
-        #
-        # Generate keys table
-        #
-        keys = bytes(0)
-        for key in self._sfo:
-            keys = keys + bytes(key + '\0', encoding='utf8')
-        if len(keys) % 4:
-            keys = keys + bytes(4 - len(keys) % 4)
-            
-        #
-        # Generate data table
-        #
-        data = bytes(0)
-        for key in self._sfo:
-            e = self._sfo[key]
-            if e['data_fmt'] == 1028:
-                b = bytearray(4)
-                struct.pack_into('<I', b, 0, e['data'])
-                data = data + b
-                e['data_len'] = 4
-                e['data_max_len'] = 4
-            if e['data_fmt'] == 516 or e['data_fmt'] == 4:
-                e['data_len'] = len(e['data']) + 1
-                b = bytes(e['data'], encoding='utf-8')
-                if len(b) < e['data_max_len']:
-                    b = b + bytes(e['data_max_len'] - len(b))
-                    data = data + b
-
-        #
-        # generate index table
-        #
-        index = bytes(0)
-        key_offset = 0
-        data_offset = 0
-        for key in self._sfo:
-            e = self._sfo[key]
-            b = bytearray(16)
-            struct.pack_into('<H', b, 0, key_offset)
-            struct.pack_into('<H', b, 2, e['data_fmt'])
-            struct.pack_into('<I', b, 4, e['data_len'])
-            struct.pack_into('<I', b, 8, e['data_max_len'])
-            struct.pack_into('<I', b, 12, data_offset)
-
-            key_offset = key_offset + len(key) + 1
-            data_offset = data_offset + e['data_max_len']
-            
-            index = index + b
-
-        #
-        # generate header
-        #
-        hdr = bytearray(20)
-        hdr[0:4] = bytearray(b'\x00PSF')
-        struct.pack_into('<I', hdr, 4, 257)
-        struct.pack_into('<I', hdr, 8, len(index) + 20)
-        struct.pack_into('<I', hdr, 12, len(keys) + len(index) + 20)
-        struct.pack_into('<I', hdr, 16, len(self._sfo))
-        
-        return hdr + index + keys + data
 
     def dump_to_img(self, dat, img, cue, toc):
         print('Create', cue) if self._verbose else None
@@ -2648,6 +2656,7 @@ class popstation(object):
         # Block #1
         buf = bytearray(1024)
         buf[:12] = b'PSISOIMG0000'
+        struct.pack_into('<I', buf, 12, isosize + 0x100000) 
         fh.write(buf)
         
         # Block #2
@@ -2699,12 +2708,15 @@ class popstation(object):
                 break
             if len(buf) < 0x9300:
                 buf = buf + bytearray(0x9300 - len(buf))
-            c = zlib.compress(buf, self._complevel)
-            c = c[2:-4]
+            c = buf
+            if self._complevel != 0:
+                c = zlib.compress(buf, self._complevel)
+                c = c[2:-4]
             idx = bytearray(32)
             struct.pack_into('<I', idx, 0, offset)
             h = hashlib.sha1()
             h.update(buf)
+            idx[6] = 0x01 # we need this for uncompressed image in ps3 pkg?
             idx[8:24] = h.digest()[:16]
             if len(c) >= 0x9300:
                 struct.pack_into('<H', idx, 4, 0x9300)
@@ -2728,10 +2740,17 @@ class popstation(object):
         fh.seek(psiso_offset + 12)
         struct.pack_into('<I', buf, 0, end_offset)
         fh.write(buf)
+
+        if self._ibd:
+            with open(self._eboot, 'rb') as _f:
+                _f.seek(psiso_offset)
+                self._ibd.write(_f.read(0x100000))
         
         end_offset = end_offset + 0x2d31
         fh.seek(x)
-                    
+
+
+            
     def dump_pbp(self, eboot):
         with open(eboot, 'rb') as e:
             # read header
@@ -2905,7 +2924,7 @@ class popstation(object):
 
     def create_pbp(self):
         print('Generating PARAM.SFO [%s]...' % self._game_title) if self._verbose else None
-        sfo = self.GenerateSFO()
+        sfo = GenerateSFO(self._sfo)
 
         fh = open(self._eboot, 'wb')
         
@@ -2968,12 +2987,18 @@ class popstation(object):
         fh.write(_datapspbody)
         fh.seek(x)
 
+        if self._iso_bin_dat:
+            print('Create', self._iso_bin_dat)
+            self._ibd = open(self._iso_bin_dat, 'wb')
+
         # Start of DATA.PSAR
         _psar_offset = fh.tell()
         _disc_num = 0
         print('Writing initial PSTITLEIMG.DAT') if self._verbose else None
         _pstitle = bytearray(_pstitledata)
         fh.write(_pstitle)
+        if self._ibd:
+            self._ibd.write(_pstitle)
 
         disc_num = 0
         for img_toc in self._img_toc:
@@ -2982,9 +3007,16 @@ class popstation(object):
             self.encode_psiso(fh, disc_num, img_toc)
             fh.seek(0, 2)
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
-
             disc_num = disc_num + 1
-
+            if self._ibd:
+                # check this with Grandia (2 disks)
+                _b = bytearray(4)
+                struct.pack_into('<I', _b, 0, 0x100000 + 0x8000)
+                self._ibd.seek((disc_num - 1) * 0x100000 + 0xffc)
+                self._ibd.write(_b)
+                    
+                self._ibd.seek(disc_num * 0x100000 + 0x3ff)
+                self._ibd.write(bytes(1))
 
         # Add padding before STARTDAT
         fh.seek((fh.tell() + 0x0f) & 0xfffffff0)
@@ -3003,6 +3035,17 @@ class popstation(object):
         _pstitle[0x30c:0x30c + len(_t)] = _t
         print('Writing updated PSTITLEIMG.DAT') if self._verbose else None
         fh.write(_pstitle)
+        if self._ibd:
+            # fixup the header.
+            # See https://www.psdevwiki.com/ps3/Iso.bin.edat
+            _b = bytearray(1024)
+            _b[:16] = _pstitle[:16]
+            _b[0x0264:0x0264 + 16] = _pstitle[0x0264:0x0264 + 16]
+            for i in range(disc_num):
+                struct.pack_into('<I', _b, 0x0200 + i * 4, i * 0x100000 + 0x0400)
+            self._ibd.seek(0)
+            self._ibd.write(_b)
+            self._ibd.close()
         fh.seek(x)
             
         print('Writing STARTDAT header') if self._verbose else None

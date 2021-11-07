@@ -1,6 +1,12 @@
+POP-FE a tool to automate the process converting PSX disk images and install
+them on various platforms, including:
+* PSP/VITA
+* PSIO
+* PS2
+* PS3
+* Retroarch
+
 This is all LGPLv2.1
-If you want a different license, like BSD, just ping me and we can see what we
-can work out.
 
 TL;DR
 For Linux (and windows).
@@ -128,6 +134,9 @@ Command line arguments are:
 			 See memory card section below for usage.
 --ps2-dir             : This is the directory that holds the USB stick to
 		        install VCD files for running under POPS on a PS2.
+--ps3-pkg             : This creates a PS3 PKG. This only works for linux
+		        and has some additional requirements. See special
+			section below.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
@@ -228,6 +237,45 @@ Pop-fe can convert games into VCD format and install it on a USB memory stick
 that has been prepared to be used with POPStarter and OPL to play PS1 games.
 The USB stick must have a POPS subdirectory where the VCD file and memory cards
 will be installed and an ART subdirectory for cover and background images.
+
+PS3 Support
+===========
+Pop-fe can convert games into a PS3 PKG that can be installed on PS3 systems
+with CFW or HEN. For now this only works for Linux as it has some extra
+requirements. It requires that python2 is available as 'python2' on your system.
+
+Preparations
+------------
+Install ecdsa pythin module:
+
+$ pip3 install pycdio
+
+Make sure python2 is available and install it if not.
+
+$ python2 --version
+
+Install and compile make_npdata as a subdirectory in the pop-fe directory
+
+$ git clone https://github.com/Sorvigolova/make_npdata.git
+$ cd make_npdata
+$ cd Linux
+$ make
+$ cd ../../
+
+Install webMAN-MOD as a subdirectory in the pop-fe directory
+
+$ git clone https://github.com/aldostools/webMAN-MOD.git
+
+Then to use it just run it as
+
+$ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
+
+If you have existing memory card images with saves for the game you can add
+them to the PKG too from the command line, otherwise pop-fe will automatically
+add two empty memory cards to the PKG:
+
+$ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img mc.vmp
+
 
 
 INSTALLATION
