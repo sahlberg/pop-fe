@@ -39,7 +39,7 @@ from pathlib import Path
 
 from gamedb import games
 from bchunk import bchunk
-from popstation import popstation
+from popstation import popstation, GenerateSFO
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
@@ -416,7 +416,236 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         except:
             True
 
+
+def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
+    print('Create PS3 PKG for', game_title) if verbose else None
+
+    image = Image.open(io.BytesIO(icon0))
+    image = image.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    icon0 = i.read()
+
+    p = popstation()
+    p.verbose = verbose
+    p.game_id = game_id
+    p.game_title = game_title
+    p.icon0 = icon0
+    p.pic1 = pic1
+    p.complevel = 0
+    
+    for i in range(len(img_files)):
+        f = img_files[i]
+        toc = None
+        #toc = p.get_toc_from_ccd(f)  # ps3 do not like these tocs
+        if not toc:
+            print('Need to create a TOC') if verbose else None
+            toc = get_toc_from_cu2(cu2_files[i])
+
+        print('Add image', f) if verbose else None
+        p.add_img((f, toc))
+
+    # create directory structure
+    f = game_id
+    print('GameID', f)
+    try:
+        os.mkdir(f)
+    except:
+        True
+
+    sfo = {
+        'ANALOG_MODE': {
+            'data_fmt': 1028,
+            'data': 1},
+        'ATTRIBUTE': {
+            'data_fmt': 1028,
+            'data': 2},
+        'BOOTABLE': {
+            'data_fmt': 1028,
+            'data': 1},
+        'CATEGORY': {
+            'data_fmt': 516,
+            'data_max_len': 4,
+            'data': '1P'},
+        'PARENTAL_LEVEL': {
+            'data_fmt': 1028,
+            'data': 3},
+        'PS3_SYSTEM_VER': {
+            'data_fmt': 516,
+            'data_max_len': 8,
+            'data': '01.7000'},
+        'RESOLUTION': {
+            'data_fmt': 1028,
+            'data': 1},
+        'SOUND_FORMAT': {
+            'data_fmt': 1028,
+            'data': 1},
+        'TITLE': {
+            'data_fmt': 516,
+            'data_max_len': 128,
+            'data': game_title},
+        'TITLE_ID': {
+            'data_fmt': 516,
+            'data_max_len': 16,
+            'data': game_id},
+        'VERSION': {
+            'data_fmt': 516,
+            'data_max_len': 8,
+            'data': '01.00'}
+        }
+    with open(f + '/PARAM.SFO', 'wb') as of:
+        of.write(GenerateSFO(sfo))
         
+    image = Image.open(io.BytesIO(icon0))
+    image = image.resize((320, 176), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(f + '/ICON0.PNG', format='PNG')
+
+    image = Image.open(io.BytesIO(pic1))
+    image = image.resize((1000, 560), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(f + '/PIC0.PNG', format='PNG')
+    
+    image = Image.open(io.BytesIO(pic1))
+    image = image.resize((1920, 1080), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(f + '/PIC1.PNG', format='PNG')
+    
+    image = Image.open(io.BytesIO(pic1))
+    image = image.resize((310, 250), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(f + '/PIC2.PNG', format='PNG')
+
+    with open('PS3LOGO.DAT', 'rb') as i:
+        with open(f + '/PS3LOGO.DAT', 'wb') as o:
+            o.write(i.read())
+            
+    f = game_id + '/USRDIR'
+    try:
+        os.mkdir(f)
+    except:
+        True
+
+    _cfg = bytes([
+        0x1c, 0x00, 0x00, 0x00, 0x50, 0x53, 0x31, 0x45,
+        0x6d, 0x75, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67,
+        0x46, 0x69, 0x6c, 0x65, 0x00, 0xe3, 0xb7, 0xeb,
+        0x04, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,
+        0xbb, 0xfa, 0xe2, 0x1b, 0x10, 0x00, 0x00, 0x00,
+        0x64, 0x69, 0x73, 0x63, 0x5f, 0x6e, 0x6f, 0x00,
+        0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x93, 0xd1, 0x5b, 0xf8
+    ])
+    with open(f + '/CONFIG', 'wb') as o:
+        o.write(_cfg)
+
+        
+    f = game_id + '/USRDIR/CONTENT'
+    try:
+        os.mkdir(f)
+    except:
+        True
+
+    p.eboot = game_id + '/USRDIR/CONTENT/EBOOT.PBP'
+    p.iso_bin_dat = game_id + '/USRDIR/ISO.BIN.DAT'
+    try:
+        os.unlink(p.iso_bin_dat)
+    except:
+        True
+    print('Create EBOOT.PBP at', p.eboot)
+    p.create_pbp()
+    try:
+        os.sync()
+    except:
+        True
+
+    # sign the ISO.BIN.DAT
+    print('Signing', p.iso_bin_dat)
+    subprocess.call(['python3', './sign3.py', p.iso_bin_dat])
+
+    #
+    # USRDIR/SAVEDATA
+    #
+    f = game_id + '/USRDIR/SAVEDATA'
+    try:
+        os.mkdir(f)
+    except:
+        True
+    image = Image.open(io.BytesIO(icon0))
+    image = image.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(f + '/ICON0.PNG', format='PNG')
+
+    if len(mem_cards) < 1:
+        create_blank_mc(f + '/SCEVMC0.VMP')
+    if len(mem_cards) < 2:
+        create_blank_mc(f + '/SCEVMC1.VMP')
+    idx = 0
+    for mc in mem_cards:
+        mf = f + (f + '/SCEVMC%d.VMP' % idx)
+        with open(mf, 'wb') as of:
+            print('Installing MemoryCard as', mf)
+            of.write(encode_vmp(mc))
+        idx = idx + 1 
+
+    sfo = {
+        'CATEGORY': {
+            'data_fmt': 516,
+            'data_max_len': 4,
+            'data': 'MS'},
+        'PARENTAL_LEVEL': {
+            'data_fmt': 1028,
+            'data': 1},
+        'SAVEDATA_DETAIL': {
+            'data_fmt': 516,
+            'data_max_len': 4,
+            'data': ''},
+        'SAVEDATA_DIRECTORY': {
+            'data_fmt': 516,
+            'data_max_len': 4,
+            'data': game_id},
+        'SAVEDATA_FILE_LIST': {
+            'data_fmt': 4,
+            'data_max_len': 3168,
+            'data': str(bytes(3168))},
+        'SAVEDATA_TITLE': {
+            'data_fmt': 516,
+            'data_max_len': 128,
+            'data': ''},
+        'TITLE': {
+            'data_fmt': 516,
+            'data_max_len': 128,
+            'data': game_title},
+        'SAVEDATA_PARAMS': {
+            'data_fmt': 4,
+            'data_max_len': 128,
+            'data': str(b"A\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xda\xdaC4\x1br\xc2\xede\xa1/k'D\xc6\x11(\xcf\xc8\xb7(\xb8tG+*f\x85L\nm\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8a\xfa,\xa1\xe7+mA\xc5m.\x9a\xba\xbct\xb0")}
+    }
+    with open(f + '/PARAM.SFO', 'wb') as of:
+        of.write(GenerateSFO(sfo))
+
+    #
+    # Create ISO.BIN.EDAT
+    #
+    print('Create ISO.BIN.EDAT')
+    subprocess.call(['make_npdata/Linux/make_npdata', '-e',
+                     '%s/USRDIR/ISO.BIN.DAT' % game_id,
+                     '%s/USRDIR/ISO.BIN.EDAT' % game_id,
+                     '1', '1', '1', '0', '16', '3', '00',
+                     'UP9000-%s_00-0000000000000001' % game_id,
+                     '5'])
+
+    #
+    # Create PS3 PKG
+    #
+    print('Create PKG')
+    subprocess.call(['python2',
+            './webMAN-MOD/_Projects_/wm_url_launcher/pypkg/pkg_custom.py',
+                     game_id, dest])
+    print('Finished.', dest, 'created')
+
+    
 def install_psp_mc(dest, game_id, mem_cards):
     if mem_cards and len(mem_cards) >= 1:
         try:
@@ -650,6 +879,8 @@ if __name__ == "__main__":
                         'running the game at least once')
     parser.add_argument('--ps2-dir',
                     help='Where the PS2 USB-stick is mounted')
+    parser.add_argument('--ps3-pkg',
+                    help='Name of the PS3 pckage to create')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -842,6 +1073,8 @@ if __name__ == "__main__":
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
+    if args.ps3_pkg:
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
