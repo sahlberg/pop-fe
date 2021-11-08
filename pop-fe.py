@@ -496,31 +496,37 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         }
     with open(f + '/PARAM.SFO', 'wb') as of:
         of.write(GenerateSFO(sfo))
-        
+        temp_files.append(f + '/PARAM.SFO')
+
     image = Image.open(io.BytesIO(icon0))
     image = image.resize((320, 176), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
+    temp_files.append(f + '/ICON0.PNG')
 
     image = Image.open(io.BytesIO(pic1))
     image = image.resize((1000, 560), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/PIC0.PNG', format='PNG')
+    temp_files.append(f + '/PIC0.PNG')
     
     image = Image.open(io.BytesIO(pic1))
     image = image.resize((1920, 1080), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/PIC1.PNG', format='PNG')
+    temp_files.append(f + '/PIC1.PNG')
     
     image = Image.open(io.BytesIO(pic1))
     image = image.resize((310, 250), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/PIC2.PNG', format='PNG')
-
+    temp_files.append(f + '/PIC2.PNG')
+    
     with open('PS3LOGO.DAT', 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:
             o.write(i.read())
-            
+            temp_files.append(f + '/PS3LOGO.DAT')
+
     f = game_id + '/USRDIR'
     try:
         os.mkdir(f)
@@ -539,6 +545,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     ])
     with open(f + '/CONFIG', 'wb') as o:
         o.write(_cfg)
+        temp_files.append(f + '/CONFIG')
 
         
     f = game_id + '/USRDIR/CONTENT'
@@ -555,6 +562,8 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         True
     print('Create EBOOT.PBP at', p.eboot)
     p.create_pbp()
+    temp_files.append(p.eboot)
+    temp_files.append(p.iso_bin_dat)
     try:
         os.sync()
     except:
@@ -576,6 +585,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     image = image.resize((80,80), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
+    temp_files.append(f + '/ICON0.PNG')    
 
     if len(mem_cards) < 1:
         create_blank_mc(f + '/SCEVMC0.VMP')
@@ -588,6 +598,8 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             print('Installing MemoryCard as', mf)
             of.write(encode_vmp(mc))
         idx = idx + 1 
+    temp_files.append(f + '/SCEVMC0.VMP')
+    temp_files.append(f + '/SCEVMC1.VMP')
 
     sfo = {
         'CATEGORY': {
@@ -624,6 +636,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     }
     with open(f + '/PARAM.SFO', 'wb') as of:
         of.write(GenerateSFO(sfo))
+        temp_files.append(f + '/PARAM.SFO')
 
     #
     # Create ISO.BIN.EDAT
@@ -635,6 +648,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
                      '1', '1', '1', '0', '16', '3', '00',
                      'UP9000-%s_00-0000000000000001' % game_id,
                      '5'])
+    temp_files.append('%s/USRDIR/ISO.BIN.EDAT' % game_id)
 
     #
     # Create PS3 PKG
@@ -643,6 +657,10 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     subprocess.call(['python2',
             './webMAN-MOD/_Projects_/wm_url_launcher/pypkg/pkg_custom.py',
                      game_id, dest])
+    temp_files.append(game_id + '/USRDIR/CONTENT')
+    temp_files.append(game_id + '/USRDIR/SAVEDATA')
+    temp_files.append(game_id + '/USRDIR')
+    temp_files.append(game_id)
     print('Finished.', dest, 'created')
 
     
@@ -1089,4 +1107,7 @@ if __name__ == "__main__":
         try:
             os.unlink(f)
         except:
-            True
+            try:
+                os.rmdir(f)
+            except:
+                True
