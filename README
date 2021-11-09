@@ -208,9 +208,11 @@ root of the SD card. If you want to install to a SD card for a Vita then you
 specify the path to the pspemu directory on the SD card:
 
 Example:  
-# ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/pspemu/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+$ ./pop-fe.py --psp-dir=/run/media/sahlberg/disk/pspemu/ /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+
 or just use the auto feature:
-# ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+
+$ ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 
 --fetch-metadata
