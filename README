@@ -39,10 +39,11 @@ cue2cu2
 This is a small program that parses a CUE and reformats it into CU2 format.
 It is used by PSIO but also to create the TOC structure we need for PSP
 EBOOTs when a CCD file is not present.
+It is also required when creating PS3 PKGs.
 
 Please install this python script in the same directory as pop-fe.
 It can be downloaded from   https://github.com/NRGDEAD/Cue2cu2
-Also make it executable by calling
+Make it executable by calling
 
 chmod +x cue2cu2.py
 
@@ -137,6 +138,8 @@ Command line arguments are:
 --ps3-pkg             : This creates a PS3 PKG. This only works for linux
 		        and has some additional requirements. See special
 			section below.
+			This requires CU2 files so make sure this script is
+			installed.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
@@ -174,7 +177,7 @@ Installing Memory Card images on PSP
 Most memory card image formats are supported.
 To provide a memory card image to install along with the the game
 you just add the filename to the list of images.
-The file extension does nto matter as we detect the memory cards by file size.
+The file extension does not matter as we detect the memory cards by file size.
 Some platforms, such as PSP, require a two step process to install the
 memory cards so follow the onscreen instructions carefully.
 
@@ -182,7 +185,7 @@ Example:
    ./pop-fe.py --psp-dir=auto Crash.cue Crash.srm
 
 
-You can also install a memory card image directly for am already installed
+You can also install a memory card image directly for an already installed
 game. But before this works, you must have ran the game at least once
 so that the PSP creates the required metadata files in the SAVEDATA
 directory. Since you are not providing a disk image to determine the game-id
