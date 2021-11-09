@@ -148,7 +148,12 @@ Examples:
 Assume I have connected my PSP with USB and it is shows up as :
    /run/media/sahlberg/disk
    
-# ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+$ ./pop-fe.py --psp-dir=/run/media/sahlberg/disk /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
+
+Or you can just let pop-fe try to discover it automagically for you. This
+works for both Linux and Windows:
+
+$ ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 If you specify more than one cue file then it is assumed that this is
 a multidisc game and we will use the first cue file to determine the
