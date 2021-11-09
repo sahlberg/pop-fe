@@ -420,13 +420,6 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
 def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
     print('Create PS3 PKG for', game_title) if verbose else None
 
-    image = Image.open(io.BytesIO(icon0))
-    image = image.resize((80,80), Image.BILINEAR)
-    i = io.BytesIO()
-    image.save(i, format='PNG')
-    i.seek(0)
-    icon0 = i.read()
-
     p = popstation()
     p.verbose = verbose
     p.game_id = game_id
@@ -503,21 +496,21 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
-
+    
     image = Image.open(io.BytesIO(pic1))
-    image = image.resize((1000, 560), Image.BILINEAR)
+    image = image.resize((1000, 560), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC0.PNG', format='PNG')
     temp_files.append(f + '/PIC0.PNG')
     
     image = Image.open(io.BytesIO(pic1))
-    image = image.resize((1920, 1080), Image.BILINEAR)
+    image = image.resize((1920, 1080), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
     image = Image.open(io.BytesIO(pic1))
-    image = image.resize((310, 250), Image.BILINEAR)
+    image = image.resize((310, 250), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC2.PNG', format='PNG')
     temp_files.append(f + '/PIC2.PNG')
