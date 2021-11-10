@@ -260,10 +260,6 @@ Install ecdsa pythin module:
 
 $ pip3 install pycdio
 
-Make sure python2 is available and install it if not.
-
-$ python2 --version
-
 Install and compile make_npdata as a subdirectory in the pop-fe directory
 
 $ git clone https://github.com/Sorvigolova/make_npdata.git
@@ -272,9 +268,14 @@ $ cd Linux
 $ make
 $ cd ../../
 
-Install webMAN-MOD as a subdirectory in the pop-fe directory
+Install PSL1GHT as a subdirectory in the pop-fe directory
+and compile the pgcrypt module:
 
-$ git clone https://github.com/aldostools/webMAN-MOD.git
+$ git clone https://github.com/sahlberg/PSL1GHT
+$ cd PSL1GHT/tools/ps3py
+$ git checkout origin/use-python3
+$ make
+$ cd ../../..
 
 Then to use it just run it as
 

@@ -645,8 +645,9 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     # Create PS3 PKG
     #
     print('Create PKG')
-    subprocess.call(['python2',
-            './webMAN-MOD/_Projects_/wm_url_launcher/pypkg/pkg_custom.py',
+    subprocess.call(['python3',
+                     'PSL1GHT/tools/ps3py/pkg.py',
+                     '-c', 'UP9000-%s_00-0000000000000001' % game_id,
                      game_id, dest])
     temp_files.append(game_id + '/USRDIR/CONTENT')
     temp_files.append(game_id + '/USRDIR/SAVEDATA')
