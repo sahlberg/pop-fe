@@ -12,10 +12,14 @@ TL;DR
 For Linux (and windows).
 Connect PSP to your Linux/Windows box via USB, then run:
 
-   ./pop-fe.py --psp-dir=auto  ...path-to-your-ps1-game../game.cue
+  $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
 
-Result:
-Nice EBOOT.PBP with a boxart and a nice background image installed on your PSP (or vita).
+Or create a PS3 PKG:
+
+  $ ./pop-fe.py --ps3-pkg=Grandia.pkg /psx/Grandia1of2.img /psx/Grandia2of2.img
+
+or ...
+
 
 Enjoy.
 
@@ -160,7 +164,7 @@ a multidisc game and we will use the first cue file to determine the
 game id and title to be used for the whole set.
 
 Example:
- # ./pop-fe.py --psp-dir=auto /psx/Grandia\ -\ Disc1of2/Grandia1of2.img /psx/Grandia -\ Disc2of2/Grandia2of2.img
+ # ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
 
 During the conversion process the img/bin file will be temporarily converted
 into an ISO file as NORMAL01.iso in the current directory.
