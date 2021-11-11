@@ -256,9 +256,9 @@ requirements. It requires that python2 is available as 'python2' on your system.
 
 Preparations
 ------------
-Install ecdsa pythin module:
+Install ecdsa python module:
 
-$ pip3 install pycdio
+$ pip3 install ecdsa
 
 Install and compile make_npdata as a subdirectory in the pop-fe directory
 
