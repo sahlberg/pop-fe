@@ -32,7 +32,7 @@ You need python support to read ISO9660 images. This is needed to be able to
 read system.cnf to discover the game-id.
 I support two different such python extensions since the are not all available
 on all flavors of linux. Pycdio and Pycdlib.
-As long as you have one of them install things should work.
+As long as you have one of them installed things should work.
 
 pip3 install pycdio
 or
@@ -256,7 +256,7 @@ PS3 Support
 ===========
 Pop-fe can convert games into a PS3 PKG that can be installed on PS3 systems
 with CFW or HEN. For now this only works for Linux as it has some extra
-requirements. It requires that python2 is available as 'python2' on your system.
+requirements.
 
 Preparations
 ------------
