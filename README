@@ -14,7 +14,7 @@ Connect PSP to your Linux/Windows box via USB, then run:
 
   $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
 
-Or create a PS3 PKG:
+Or create a PS3 PKG: (Linux only)
 
   $ ./pop-fe.py --ps3-pkg=Grandia.pkg /psx/Grandia1of2.img /psx/Grandia2of2.img
 
