@@ -260,6 +260,8 @@ Install ecdsa python module:
 
 $ pip3 install ecdsa
 
+$ cd <directory where pop-fe is installed>
+
 Install and compile make_npdata as a subdirectory in the pop-fe directory
 
 $ git clone https://github.com/Sorvigolova/make_npdata.git
