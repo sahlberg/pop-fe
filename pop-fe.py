@@ -40,6 +40,7 @@ from pathlib import Path
 from gamedb import games
 from bchunk import bchunk
 from popstation import popstation, GenerateSFO
+from make_isoedat import pack
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
@@ -633,12 +634,9 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     # Create ISO.BIN.EDAT
     #
     print('Create ISO.BIN.EDAT')
-    subprocess.call(['make_npdata/Linux/make_npdata', '-e',
-                     '%s/USRDIR/ISO.BIN.DAT' % game_id,
-                     '%s/USRDIR/ISO.BIN.EDAT' % game_id,
-                     '1', '1', '1', '0', '16', '3', '00',
-                     'UP9000-%s_00-0000000000000001' % game_id,
-                     '5'])
+    pack('%s/USRDIR/ISO.BIN.DAT' % game_id,
+         '%s/USRDIR/ISO.BIN.EDAT' % game_id,
+         'UP9000-%s_00-0000000000000001' % game_id)
     temp_files.append('%s/USRDIR/ISO.BIN.EDAT' % game_id)
 
     #

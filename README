@@ -266,14 +266,6 @@ $ pip3 install ecdsa
 
 $ cd <directory where pop-fe is installed>
 
-Install and compile make_npdata as a subdirectory in the pop-fe directory
-
-$ git clone https://github.com/Sorvigolova/make_npdata.git
-$ cd make_npdata
-$ cd Linux
-$ make
-$ cd ../../
-
 Install PSL1GHT as a subdirectory in the pop-fe directory
 and compile the pgcrypt module:
 
