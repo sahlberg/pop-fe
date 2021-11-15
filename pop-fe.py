@@ -585,7 +585,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         create_blank_mc(f + '/SCEVMC1.VMP')
     idx = 0
     for mc in mem_cards:
-        mf = f + (f + '/SCEVMC%d.VMP' % idx)
+        mf = f + ('/SCEVMC%d.VMP' % idx)
         with open(mf, 'wb') as of:
             print('Installing MemoryCard as', mf)
             of.write(encode_vmp(mc))

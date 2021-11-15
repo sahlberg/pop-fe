@@ -279,12 +279,6 @@ Then to use it just run it as
 
 $ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
 
-If you have existing memory card images with saves for the game you can add
-them to the PKG too from the command line, otherwise pop-fe will automatically
-add two empty memory cards to the PKG:
-
-$ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img mc.vmp
-
 
 
 INSTALLATION
