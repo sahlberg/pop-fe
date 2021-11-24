@@ -2411,7 +2411,6 @@ class popstation(object):
     def __init__(self):
         self._eboot = 'EBOOT.PBP'
         self._iso_bin_dat = None
-        self._ibd = None
         self._vcd = 'GAME.VCD'
         self._img_toc = []
         self._verbose = False
@@ -2741,11 +2740,6 @@ class popstation(object):
         struct.pack_into('<I', buf, 0, end_offset)
         fh.write(buf)
 
-        if self._ibd:
-            with open(self._eboot, 'rb') as _f:
-                _f.seek(psiso_offset)
-                self._ibd.write(_f.read(0x100000))
-        
         end_offset = end_offset + 0x2d31
         fh.seek(x)
 
@@ -2922,11 +2916,39 @@ class popstation(object):
         print('Done dumping', eboot) if self._verbose else None
 
 
+    def create_iso_bin_dat(self, fh, pstitle, psiso_offsets):
+        print('Create ISO.BIN.DAT', self._iso_bin_dat)
+        with open(self._iso_bin_dat, 'wb') as _ibd:
+            _ibd.seek(len(pstitle))
+            for i in range(len(psiso_offsets)):
+                fh.seek(psiso_offsets[i])
+                _ibd.write(fh.read(0x100000))
+
+                # check this with Grandia (2 disks)
+                _b = bytearray(4)
+                struct.pack_into('<I', _b, 0, 0x100000 + 0x8000)
+                _ibd.seek(i * 0x100000 + 0xffc)
+                _ibd.write(_b)
+
+                _ibd.seek((i + 1) * 0x100000 + 0x3ff)
+                _ibd.write(bytes(1))
+
+            # fixup the header.
+            # See https://www.psdevwiki.com/ps3/Iso.bin.edat
+            _b = bytearray(1024)
+            _b[:16] = pstitle[:16]
+            _b[0x0264:0x0264 + 16] = pstitle[0x0264:0x0264 + 16]
+            for i in range(len(psiso_offsets)):
+                struct.pack_into('<I', _b, 0x0200 + i * 4, i * 0x100000 + 0x0400)
+            _ibd.seek(0)
+            _ibd.write(_b)
+
+
     def create_pbp(self):
         print('Generating PARAM.SFO [%s]...' % self._game_title) if self._verbose else None
         sfo = GenerateSFO(self._sfo)
 
-        fh = open(self._eboot, 'wb')
+        fh = open(self._eboot, 'wb+')
         
         #
         # Header and file table
@@ -2988,43 +3010,29 @@ class popstation(object):
 
         fh.write(_datapspbody)
 
-        if self._iso_bin_dat:
-            print('Create', self._iso_bin_dat)
-            self._ibd = open(self._iso_bin_dat, 'wb')
-
         # Start of DATA.PSAR
-        _disc_num = 0
-        print('Writing initial PSTITLEIMG.DAT') if self._verbose else None
-        fh.seek(_psar_offset)
         _pstitle = bytearray(_pstitledata)
-        fh.write(_pstitle)
-        if self._ibd:
-            self._ibd.write(_pstitle)
+
+        # skip past _pstitle, we will write it later
+        fh.seek(_psar_offset + len(_pstitle))
+        print('Size of pstitle', len(_pstitle))
 
         disc_num = 0
+        psiso_offsets = []
         for img_toc in self._img_toc:
             fh.seek((fh.tell() + 0x7fff) & 0xffff8000)
-            struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)        
+            struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)
+            psiso_offsets.append(fh.tell())
             self.encode_psiso(fh, disc_num, img_toc)
             fh.seek(0, 2)
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
             disc_num = disc_num + 1
-            if self._ibd:
-                # check this with Grandia (2 disks)
-                _b = bytearray(4)
-                struct.pack_into('<I', _b, 0, 0x100000 + 0x8000)
-                self._ibd.seek((disc_num - 1) * 0x100000 + 0xffc)
-                self._ibd.write(_b)
-                    
-                self._ibd.seek(disc_num * 0x100000 + 0x3ff)
-                self._ibd.write(bytes(1))
-
+                            
         # Add padding before STARTDAT
         fh.seek((fh.tell() + 0x0f) & 0xfffffff0)
 
         # update PSTITLEIMG
         x = fh.tell()
-        fh.seek(_psar_offset)
         _pstitle[:16] = b'PSTITLEIMG000000'
         # update offset to STARTDAT
         struct.pack_into('<I', _pstitle, 0x10, x - _psar_offset)
@@ -3034,21 +3042,14 @@ class popstation(object):
         # Update game name
         _t = bytes(self._game_title, encoding='utf-8')
         _pstitle[0x30c:0x30c + len(_t)] = _t
-        print('Writing updated PSTITLEIMG.DAT') if self._verbose else None
+        print('Writing PSTITLEIMG.DAT') if self._verbose else None
+        fh.seek(_psar_offset)
         fh.write(_pstitle)
-        if self._ibd:
-            # fixup the header.
-            # See https://www.psdevwiki.com/ps3/Iso.bin.edat
-            _b = bytearray(1024)
-            _b[:16] = _pstitle[:16]
-            _b[0x0264:0x0264 + 16] = _pstitle[0x0264:0x0264 + 16]
-            for i in range(disc_num):
-                struct.pack_into('<I', _b, 0x0200 + i * 4, i * 0x100000 + 0x0400)
-            self._ibd.seek(0)
-            self._ibd.write(_b)
-            self._ibd.close()
+
+        if self._iso_bin_dat:
+            self.create_iso_bin_dat(fh, _pstitle, psiso_offsets)
+
         fh.seek(x)
-            
         print('Writing STARTDAT header') if self._verbose else None
         fh.write(_startdatheader)
         print('Writing P.O.P.S standard logo') if self._verbose else None

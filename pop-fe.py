@@ -423,8 +423,8 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     p.verbose = verbose
     p.game_id = game_id
     p.game_title = game_title
-    p.icon0 = icon0
-    p.pic1 = pic1
+    #p.icon0 = icon0
+    #p.pic1 = pic1
     p.complevel = 0
     
     for i in range(len(img_files)):
