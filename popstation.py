@@ -2958,8 +2958,10 @@ class popstation(object):
         # datapspbody is 30632 in size in our example
         _dpsplen = 30632
         x = curoffs + _dpsplen
+        # add padding
         if x % 0x10000:
             x = x + (0x10000 - (x % 0x10000))
+        _psar_offset = x
 
         struct.pack_into('<I', header, PSAR_OFFSET, x)
 
@@ -2985,16 +2987,15 @@ class popstation(object):
             fh.write(self._snd0)
 
         fh.write(_datapspbody)
-        fh.seek(x)
 
         if self._iso_bin_dat:
             print('Create', self._iso_bin_dat)
             self._ibd = open(self._iso_bin_dat, 'wb')
 
         # Start of DATA.PSAR
-        _psar_offset = fh.tell()
         _disc_num = 0
         print('Writing initial PSTITLEIMG.DAT') if self._verbose else None
+        fh.seek(_psar_offset)
         _pstitle = bytearray(_pstitledata)
         fh.write(_pstitle)
         if self._ibd:
