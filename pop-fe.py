@@ -348,7 +348,7 @@ def get_toc_from_cu2(cu2):
             
         return toc
     
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
     if icon0:
@@ -367,6 +367,8 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         p.icon0 = icon0
     if pic1:
         p.pic1 = pic1
+    if len(aea_files):
+        p.aea = aea_files
         
     for i in range(len(img_files)):
         f = img_files[i]
@@ -419,7 +421,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
+def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -429,6 +431,8 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     #p.icon0 = icon0
     #p.pic1 = pic1
     p.complevel = 0
+    if len(aea_files):
+        p.aea = aea_files
     
     for i in range(len(img_files)):
         f = img_files[i]
@@ -927,6 +931,7 @@ if __name__ == "__main__":
     cu2_files = []
     img_files = []
     mem_cards = []
+    aea_files = []
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
@@ -997,6 +1002,25 @@ if __name__ == "__main__":
         cue_files.append(cue_file)
         cu2_files.append(cu2_file)
         
+        if args.psp_dir or args.ps3_pkg:
+            bc = bchunk()
+            bc.towav = True
+            bc.open(cue_file)
+            for i in range(1, len(bc.cue)):
+                f = 'TRACK_%d_' % (0 if not idx else idx[0])
+                bc.writetrack(i, f)
+                wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
+                temp_files.append(wav_file)
+                aea_file = wav_file[:-3] + 'aea'
+                temp_files.append(aea_file)
+                print('Converting', wav_file, 'to', aea_file)
+                try:
+                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                except:
+                    print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                    break
+                aea_files.append(aea_file)
+            
         if idx:
             idx = (idx[0] + 1, idx[1])
 
@@ -1081,11 +1105,11 @@ if __name__ == "__main__":
     print('Imb Files', img_files) if verbose else None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:

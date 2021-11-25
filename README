@@ -280,6 +280,31 @@ Then to use it just run it as
 $ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
 
 
+CDDA SUPPORT
+============
+CDDA is supported for PSP/VITA/PS3 but requires an external tool to convert the
+audio tracks into ATRAC3 LP2 format.
+If you do not have this tool installed then pop-fe will still create the
+EBOOT.PBP image but without the audio tracks.
+
+To get the audio tracks for games such as RidgeRacerRevolution and similar
+working, install and build the tool :
+
+Linux/Fedora
+------------
+$ sudo dnf install libsndfile-devel
+$ cd <directory where pop-fe is installed>
+$ git clone https://github.com/dcherednik/atracdenc.git 
+$ cd atracdenc/src/
+$ cmake .
+$ make
+$ cd ../..
+
+Windows
+-------
+No idea.
+Anyone, Please contribute instructions for windows, or precompiled binaries.
+
 
 INSTALLATION
 ============

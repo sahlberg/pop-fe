@@ -2413,6 +2413,7 @@ class popstation(object):
         self._iso_bin_dat = None
         self._vcd = 'GAME.VCD'
         self._img_toc = []
+        self._aea = []
         self._verbose = False
         self._complevel = 1
         self._game_id = 'SLUS00000'
@@ -2426,6 +2427,14 @@ class popstation(object):
         
     def add_img(self, img_toc):
         self._img_toc.append(img_toc)
+
+    @property
+    def aea(self):
+        return self._aea
+    
+    @aea.setter
+    def aea(self, aea):
+        self._aea = aea
 
     @property
     def verbose(self):
@@ -2644,6 +2653,7 @@ class popstation(object):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
 
+        att = bytes(0)
         with open(img_toc[0], 'rb') as f:
             f.seek(0, 2)
             isosize = f.tell()
@@ -2672,7 +2682,10 @@ class popstation(object):
         fh.write(buf)
 
         # Block #4
-        fh.write(bytes(1568))
+        # audio tracks table
+        _b = bytearray(1568)
+        att_offset = fh.tell()
+        fh.write(_b)
 
         # block #5
         p2_offset = fh.tell()
@@ -2728,19 +2741,38 @@ class popstation(object):
             indexes = indexes + idx
             i = i + 1
 
+        # insert the aa3 blobs
+        for i in self._aea:
+            print('Inject', i)
+            with open(i, 'rb') as f:
+                f.seek(0x60)
+                buf = f.read()
+                _b = bytearray(16)
+                struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset - 0x100000)
+                struct.pack_into('<I', _b, 4, len(buf))
+                att = att + _b
+                fh.write(buf)
+                fh.seek((fh.tell() + 0xf) & 0xfffffff0)
+                
         if fh.tell() & 0xf:
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
         end_offset = fh.tell() - psiso_offset
         x = fh.tell()
         fh.seek(index_offset)
         fh.write(indexes)
-        
+
+        # update PSISOIMG0000xxxx length
         buf = bytearray(4)
         fh.seek(psiso_offset + 12)
         struct.pack_into('<I', buf, 0, end_offset)
         fh.write(buf)
 
         end_offset = end_offset + 0x2d31
+
+        if len(att):
+            fh.seek(att_offset)
+            fh.write(att)
+
         fh.seek(x)
 
 
