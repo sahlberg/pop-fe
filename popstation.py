@@ -3015,7 +3015,6 @@ class popstation(object):
 
         # skip past _pstitle, we will write it later
         fh.seek(_psar_offset + len(_pstitle))
-        print('Size of pstitle', len(_pstitle))
 
         disc_num = 0
         psiso_offsets = []

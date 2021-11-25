@@ -351,20 +351,23 @@ def get_toc_from_cu2(cu2):
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
-    image = Image.open(io.BytesIO(icon0))
-    image = image.resize((80,80), Image.BILINEAR)
-    i = io.BytesIO()
-    image.save(i, format='PNG')
-    i.seek(0)
-    icon0 = i.read()
+    if icon0:
+        image = Image.open(io.BytesIO(icon0))
+        image = image.resize((80,80), Image.BILINEAR)
+        i = io.BytesIO()
+        image.save(i, format='PNG')
+        i.seek(0)
+        icon0 = i.read()
 
     p = popstation()
     p.verbose = verbose
     p.game_id = game_id
     p.game_title = game_title
-    p.icon0 = icon0
-    p.pic1 = pic1
-
+    if icon0:
+        p.icon0 = icon0
+    if pic1:
+        p.pic1 = pic1
+        
     for i in range(len(img_files)):
         f = img_files[i]
         toc = p.get_toc_from_ccd(f)
