@@ -302,8 +302,12 @@ $ cd ../..
 
 Windows
 -------
-No idea.
-Anyone, Please contribute instructions for windows, or precompiled binaries.
+Start GIT-Bash
+$ cd pop-fe
+$ mkdir atracdenc
+$ mkdir atracdenc/src
+
+Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\USERS\<your-user>\pop-fe\atracdenc\src
 
 
 INSTALLATION
