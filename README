@@ -24,51 +24,6 @@ or ...
 Enjoy.
 
 
-DEPENDENCIES:
-=============
-Iso-parser
-----------
-You need python support to read ISO9660 images. This is needed to be able to
-read system.cnf to discover the game-id.
-I support two different such python extensions since the are not all available
-on all flavors of linux. Pycdio and Pycdlib.
-As long as you have one of them installed things should work.
-
-pip3 install pycdio
-or
-pip3 install pycdlib
-
-cue2cu2
--------
-This is a small program that parses a CUE and reformats it into CU2 format.
-It is used by PSIO but also to create the TOC structure we need for PSP
-EBOOTs when a CCD file is not present.
-It is also required when creating PS3 PKGs.
-
-Please install this python script in the same directory as pop-fe.
-It can be downloaded from   https://github.com/NRGDEAD/Cue2cu2
-Make it executable by calling
-
-chmod +x cue2cu2.py
-
-binmerge
---------
-This is a small python program to merge multi-bin files into a single bin.
-This is required if you intend to use pop-fe with multi-bin disks.
-
-This tool can be downloaded from
-https://github.com/putnam/binmerge
-and should be placed in the same directory as pop-fe.py.
-
-Make it executable with
-chmod +x binmerge
-
-requests_cache
---------------
-This is to reduce the amount of data we fetch from the internet.
-Install this with :
-pip3 install requests_cache
-
 
 HOW TO RUN POP-FE:
 ==================
@@ -280,35 +235,6 @@ Then to use it just run it as
 $ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
 
 
-CDDA SUPPORT
-============
-CDDA is supported for PSP/VITA/PS3 but requires an external tool to convert the
-audio tracks into ATRAC3 LP2 format.
-If you do not have this tool installed then pop-fe will still create the
-EBOOT.PBP image but without the audio tracks.
-
-To get the audio tracks for games such as RidgeRacerRevolution and similar
-working, install and build the tool :
-
-Linux/Fedora
-------------
-$ sudo dnf install libsndfile-devel
-$ cd <directory where pop-fe is installed>
-$ git clone https://github.com/dcherednik/atracdenc.git 
-$ cd atracdenc/src/
-$ cmake .
-$ make
-$ cd ../..
-
-Windows
--------
-Start GIT-Bash
-$ cd pop-fe
-$ mkdir atracdenc
-$ mkdir atracdenc/src
-
-Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\USERS\<your-user>\pop-fe\atracdenc\src
-
 
 INSTALLATION
 ============
@@ -354,3 +280,79 @@ On windows, always run pop-fe from git-bash and from within the pop-fe
 directory.
 The directory names for the E: drive-letter is /e etc in the git-bash shell
 so use --psp-dir=/e or --psp-dir=auto
+
+ADDITONAL DEPENDENCIES:
+=======================
+Iso-parser
+----------
+You need python support to read ISO9660 images. This is needed to be able to
+read system.cnf to discover the game-id.
+I support two different such python extensions since the are not all available
+on all flavors of linux. Pycdio and Pycdlib.
+As long as you have one of them installed things should work.
+
+pip3 install pycdio
+or
+pip3 install pycdlib
+
+cue2cu2
+-------
+This is a small program that parses a CUE and reformats it into CU2 format.
+It is used by PSIO but also to create the TOC structure we need for PSP
+EBOOTs when a CCD file is not present.
+It is also required when creating PS3 PKGs.
+
+Please install this python script in the same directory as pop-fe.
+It can be downloaded from   https://github.com/NRGDEAD/Cue2cu2
+Make it executable by calling
+
+chmod +x cue2cu2.py
+
+binmerge
+--------
+This is a small python program to merge multi-bin files into a single bin.
+This is required if you intend to use pop-fe with multi-bin disks.
+
+This tool can be downloaded from
+https://github.com/putnam/binmerge
+and should be placed in the same directory as pop-fe.py.
+
+Make it executable with
+chmod +x binmerge
+
+requests_cache
+--------------
+This is to reduce the amount of data we fetch from the internet.
+Install this with :
+pip3 install requests_cache
+
+CDDA SUPPORT
+------------
+CDDA is supported for PSP/VITA/PS3 but requires an external tool to convert the
+audio tracks into ATRAC3 LP2 format.
+If you do not have this tool installed then pop-fe will still create the
+EBOOT.PBP image but without the audio tracks.
+
+To get the audio tracks for games such as RidgeRacerRevolution and similar
+working, install and build the tool :
+
+Linux/Fedora
+............
+$ sudo dnf install libsndfile-devel
+$ cd <directory where pop-fe is installed>
+$ git clone https://github.com/dcherednik/atracdenc.git 
+$ cd atracdenc/src/
+$ cmake .
+$ make
+$ cd ../..
+
+Windows
+.......
+Start GIT-Bash
+$ cd pop-fe
+$ mkdir atracdenc
+$ mkdir atracdenc/src
+
+Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\USERS\<your-user>\pop-fe\atracdenc\src
+
+
