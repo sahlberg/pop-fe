@@ -2742,17 +2742,18 @@ class popstation(object):
             i = i + 1
 
         # insert the aa3 blobs
-        for i in self._aea[disc_num]:
-            print('Inject', i)
-            with open(i, 'rb') as f:
-                f.seek(0x60)
-                buf = f.read()
-                _b = bytearray(16)
-                struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset - 0x100000)
-                struct.pack_into('<I', _b, 4, len(buf))
-                att = att + _b
-                fh.write(buf)
-                fh.seek((fh.tell() + 0xf) & 0xfffffff0)
+        if disc_num in self._aea:
+            for i in self._aea[disc_num]:
+                print('Inject', i)
+                with open(i, 'rb') as f:
+                    f.seek(0x60)
+                    buf = f.read()
+                    _b = bytearray(16)
+                    struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset - 0x100000)
+                    struct.pack_into('<I', _b, 4, len(buf))
+                    att = att + _b
+                    fh.write(buf)
+                    fh.seek((fh.tell() + 0xf) & 0xfffffff0)
                 
         if fh.tell() & 0xf:
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
