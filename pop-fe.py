@@ -931,7 +931,7 @@ if __name__ == "__main__":
     cu2_files = []
     img_files = []
     mem_cards = []
-    aea_files = []
+    aea_files = {}
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
@@ -1001,11 +1001,12 @@ if __name__ == "__main__":
         img_files.append(img_file)
         cue_files.append(cue_file)
         cu2_files.append(cu2_file)
-        
+
         if args.psp_dir or args.ps3_pkg:
             bc = bchunk()
             bc.towav = True
             bc.open(cue_file)
+            aea_files[0 if not idx else idx[0] - 1] = []
             for i in range(1, len(bc.cue)):
                 f = 'TRACK_%d_' % (0 if not idx else idx[0])
                 bc.writetrack(i, f)
@@ -1019,8 +1020,8 @@ if __name__ == "__main__":
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break
-                aea_files.append(aea_file)
-            
+                aea_files[0 if not idx else idx[0] - 1].append(aea_file)
+
         if idx:
             idx = (idx[0] + 1, idx[1])
 

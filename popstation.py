@@ -2413,7 +2413,7 @@ class popstation(object):
         self._iso_bin_dat = None
         self._vcd = 'GAME.VCD'
         self._img_toc = []
-        self._aea = []
+        self._aea = {}
         self._verbose = False
         self._complevel = 1
         self._game_id = 'SLUS00000'
@@ -2742,7 +2742,7 @@ class popstation(object):
             i = i + 1
 
         # insert the aa3 blobs
-        for i in self._aea:
+        for i in self._aea[disc_num]:
             print('Inject', i)
             with open(i, 'rb') as f:
                 f.seek(0x60)
