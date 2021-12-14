@@ -48866,3 +48866,661 @@ games = {
 	'title': "UM JAMMER LAMMY [PLAYSTATION THE BEST]",
     },
 }
+
+
+libcrypt = {
+    'SLES-01226': {
+        'url': 'http://redump.org/disc/5120/',
+    },
+    'SLES-02563': {
+        'url': 'http://redump.org/disc/3334/',
+    },
+    'SCES-01564': {
+        'url': 'http://redump.org/disc/6147/',
+    },
+    'SCES-02028': {
+        'url': 'http://redump.org/disc/28260/',
+    },
+    'SCES-02029': {
+        'url': 'http://redump.org/disc/26604/',
+    },
+    'SCES-02030': {
+        'url': 'http://redump.org/disc/27680/',
+    },
+    'SCES-02031': {
+        'url': 'http://redump.org/disc/1128/',
+    },
+    'SLES-03324': {
+        'url': 'http://redump.org/disc/4873/',
+    },
+    'SCES-02365': {
+        'url': 'http://redump.org/disc/11318/',
+    },
+    'SCES-02366': {
+        'url': 'http://redump.org/disc/29560/',
+    },
+    'SCES-02367': {
+        'url': 'http://redump.org/disc/25241/',
+    },
+    'SCES-02368': {
+        'url': 'http://redump.org/disc/28330/',
+    },
+    'SCES-02369': {
+        'url': 'http://redump.org/disc/25983/',
+    },
+    'SCES-02487': {
+        'url': 'http://redump.org/disc/29290/',
+    },
+    'SCES-02488': {
+        'url': 'http://redump.org/disc/28149/',
+    },
+    'SCES-02489': {
+        'url': 'http://redump.org/disc/26734/',
+    },
+    'SCES-02490': {
+        'url': 'http://redump.org/disc/35294/',
+    },
+    'SCES-02491': {
+        'url': 'http://redump.org/disc/5579/',
+    },
+    'SLES-02293': {
+        'url': 'http://redump.org/disc/27297/',
+    },
+    'SCES-02834': {
+        'url': 'http://redump.org/disc/5483/',
+    },
+    'SCES-02105': {
+        'url': 'http://redump.org/disc/897/',
+    },
+    'SLES-02207': {
+        'url': 'http://redump.org/disc/710/',
+    },
+    'SLES-02208': {
+        'url': 'http://redump.org/disc/24278/',
+    },
+    'SLES-02209': {
+        'url': 'http://redump.org/disc/7586/',
+    },
+    'SLES-02210': {
+        'url': 'http://redump.org/disc/28171/',
+    },
+    'SLES-02211': {
+        'url': 'http://redump.org/disc/27940/',
+    },
+    'SLES-03189': {
+        'url': 'http://redump.org/disc/58589/',
+    },
+    'SLES-03190': {
+        'url': 'http://redump.org/disc/53874/',
+    },
+    'SLES-03191': {
+        'url': 'http://redump.org/disc/19140/',
+    },
+    'SCES-02006': {
+        'url': 'http://redump.org/disc/28327/',
+    },
+    'SCES-02005': {
+        'url': 'http://redump.org/disc/25550/',
+    },
+    'SCES-02007': {
+        'url': 'http://redump.org/disc/17311/',
+    },
+    'SCES-01695': {
+        'url': 'http://redump.org/disc/6887/',
+    },
+    'SCES-02264': {
+        'url': 'http://redump.org/disc/27076/',
+    },
+    'SCES-01431': {
+        'url': 'http://redump.org/disc/29818/',
+    },
+    'SCES-02185': {
+        'url': 'http://redump.org/disc/27067/',
+    },
+    'SCES-01516': {
+        'url': 'http://redump.org/disc/29462/',
+    },
+    'SCES-01517': {
+        'url': 'http://redump.org/disc/15483/',
+    },
+    'SCES-01518': {
+        'url': 'http://redump.org/disc/27824/',
+    },
+    'SCES-01519': {
+        'url': 'http://redump.org/disc/27287/',
+    },
+    'SCES-02182': {
+        'url': 'http://redump.org/disc/6885/',
+    },
+    'SLES-02538': {
+        'url': 'http://redump.org/disc/26580/',
+    },
+    'SLES-01715': {
+        'url': 'http://redump.org/disc/880/',
+    },
+    'SLES-02722': {
+        'url': 'http://redump.org/disc/4311/',
+    },
+    'SLES-02723': {
+        'url': 'http://redump.org/disc/48119/',
+    },
+    'SLES-02724': {
+        'url': 'http://redump.org/disc/27982/',
+    },
+    'SLES-02965': {
+        'url': 'http://redump.org/disc/2371/',
+    },
+    'SLES-12965': {
+        'url': 'http://redump.org/disc/2370/',
+    },
+    'SLES-22965': {
+        'url': 'http://redump.org/disc/2372/',
+    },
+    'SLES-32965': {
+        'url': 'http://redump.org/disc/2373/',
+    },
+    'SLES-02966': {
+        'url': 'http://redump.org/disc/2455/',
+    },
+    'SLES-12966': {
+        'url': 'http://redump.org/disc/2456/',
+    },
+    'SLES-22966': {
+        'url': 'http://redump.org/disc/2457/',
+    },
+    'SLES-32966': {
+        'url': 'http://redump.org/disc/2458/',
+    },
+    'SLES-02967': {
+        'url': 'http://redump.org/disc/737/',
+    },
+    'SLES-12967': {
+        'url': 'http://redump.org/disc/738/',
+    },
+    'SLES-22967': {
+        'url': 'http://redump.org/disc/739/',
+    },
+    'SLES-32967': {
+        'url': 'http://redump.org/disc/740/',
+    },
+    'SLES-02968': {
+        'url': 'http://redump.org/disc/2714/',
+    },
+    'SLES-12968': {
+        'url': 'http://redump.org/disc/2716/',
+    },
+    'SLES-22968': {
+        'url': 'http://redump.org/disc/2717/',
+    },
+    'SLES-32968': {
+        'url': 'http://redump.org/disc/2718/',
+    },
+    'SLES-02969': {
+        'url': 'http://redump.org/disc/1113/',
+    },
+    'SLES-12969': {
+        'url': 'http://redump.org/disc/1114/',
+    },
+    'SLES-22969': {
+        'url': 'http://redump.org/disc/1115/',
+    },
+    'SLES-32969': {
+        'url': 'http://redump.org/disc/1116/',
+    },
+    'SLES-02080': {
+        'url': 'http://redump.org/disc/866/',
+    },
+    'SLES-12080': {
+        'url': 'http://redump.org/disc/875/',
+    },
+    'SLES-22080': {
+        'url': 'http://redump.org/disc/873/',
+    },
+    'SLES-32080': {
+        'url': 'http://redump.org/disc/874/',
+    },
+    'SLES-02081': {
+        'url': 'http://redump.org/disc/4028/',
+    },
+    'SLES-12081': {
+        'url': 'http://redump.org/disc/4029/',
+    },
+    'SLES-22081': {
+        'url': 'http://redump.org/disc/4030/',
+    },
+    'SLES-32081': {
+        'url': 'http://redump.org/disc/4031/',
+    },
+    'SLES-02082': {
+        'url': 'http://redump.org/disc/733/',
+    },
+    'SLES-12082': {
+        'url': 'http://redump.org/disc/734/',
+    },
+    'SLES-22082': {
+        'url': 'http://redump.org/disc/735/',
+    },
+    'SLES-32082': {
+        'url': 'http://redump.org/disc/736/',
+    },
+    'SLES-02083': {
+        'url': 'http://redump.org/disc/1587/',
+    },
+    'SLES-12083': {
+        'url': 'http://redump.org/disc/1588/',
+    },
+    'SLES-22083': {
+        'url': 'http://redump.org/disc/1589/',
+    },
+    'SLES-32083': {
+        'url': 'http://redump.org/disc/1590/',
+    },
+    'SLES-02084': {
+        'url': 'http://redump.org/disc/1109/',
+    },
+    'SLES-12084': {
+        'url': 'http://redump.org/disc/1110/',
+    },
+    'SLES-22084': {
+        'url': 'http://redump.org/disc/1111/',
+    },
+    'SLES-32084': {
+        'url': 'http://redump.org/disc/1112/',
+    },
+    'SCES-01979': {
+        'url': 'http://redump.org/disc/969/',
+    },
+    'SCES-02222': {
+        'url': 'http://redump.org/disc/31126/',
+    },
+    'SLES-03062': {
+        'url': 'http://redump.org/disc/7516/',
+    },
+    'SLES-02328': {
+        'url': 'http://redump.org/disc/7420/',
+    },
+    'SLES-12328': {
+        'url': 'http://redump.org/disc/7421/',
+    },
+    'SLES-22328': {
+        'url': 'http://redump.org/disc/7422/',
+    },
+    'SLES-02329': {
+        'url': 'http://redump.org/disc/13382/',
+    },
+    'SLES-12329': {
+        'url': 'http://redump.org/disc/13383/',
+    },
+    'SLES-22329': {
+        'url': 'http://redump.org/disc/13384/',
+    },
+    'SLES-02330': {
+        'url': 'http://redump.org/disc/7695/',
+    },
+    'SLES-12330': {
+        'url': 'http://redump.org/disc/7696/',
+    },
+    'SLES-22330': {
+        'url': 'http://redump.org/disc/7697/',
+    },
+    'SLES-01241': {
+        'url': 'http://redump.org/disc/833/',
+    },
+    'SLES-01041': {
+        'url': 'http://redump.org/disc/703/',
+    },
+    'SLES-02766': {
+        'url': 'http://redump.org/disc/33070/',
+    },
+    'SLES-02767': {
+        'url': 'http://redump.org/disc/19539/',
+    },
+    'SLES-02768': {
+        'url': 'http://redump.org/disc/48791/',
+    },
+    'SLES-02769': {
+        'url': 'http://redump.org/disc/48020/',
+    },
+    'SCES-01444': {
+        'url': 'http://redump.org/disc/64315/',
+    },
+    'SLES-01362': {
+        'url': 'http://redump.org/disc/1659/',
+    },
+    'SLES-01301': {
+        'url': 'http://redump.org/disc/1177/',
+    },
+    'SLES-02024 ': {
+        'url': 'http://redump.org/disc/24279/',
+    },
+    'SLES-02025': {
+        'url': 'http://redump.org/disc/393/',
+    },
+    'SLES-02027': {
+        'url': 'http://redump.org/disc/28167/',
+    },
+    'SLES-02026': {
+        'url': 'http://redump.org/disc/27944/',
+    },
+    'SLES-02975': {
+        'url': 'http://redump.org/disc/6847/',
+    },
+    'SLES-02976': {
+        'url': 'http://redump.org/disc/45075/',
+    },
+    'SLES-02977': {
+        'url': 'http://redump.org/disc/17767/',
+    },
+    'SLES-02978': {
+        'url': 'http://redump.org/disc/29597/',
+    },
+    'SLES-02979': {
+        'url': 'http://redump.org/disc/48602/',
+    },
+    'SLES-03603': {
+        'url': 'http://redump.org/disc/26750/',
+    },
+    'SLES-03604': {
+        'url': 'http://redump.org/disc/49266/',
+    },
+    'SLES-03605': {
+        'url': 'http://redump.org/disc/3320/',
+    },
+    'SLES-03606': {
+        'url': 'http://redump.org/disc/48369/',
+    },
+    'SLES-03607': {
+        'url': 'http://redump.org/disc/48045/',
+    },
+    'SLES-03530': {
+        'url': 'http://redump.org/disc/19142/',
+    },
+    'SCES-00311': {
+        'url': 'http://redump.org/disc/61153/',
+    },
+    'SCES-01492': {
+        'url': 'http://redump.org/disc/13389/',
+    },
+    'SCES-01493': {
+        'url': 'http://redump.org/disc/25542/',
+    },
+    'SCES-01494': {
+        'url': 'http://redump.org/disc/29475/',
+    },
+    'SCES-01495': {
+        'url': 'http://redump.org/disc/1584/',
+    },
+    'SCES-02544': {
+        'url': 'http://redump.org/disc/593/',
+    },
+    'SCES-02545': {
+        'url': 'http://redump.org/disc/1547/',
+    },
+    'SCES-02546': {
+        'url': 'http://redump.org/disc/2625/',
+    },
+    'SLES-03519': {
+        'url': 'http://redump.org/disc/30764/',
+    },
+    'SLES-03520': {
+        'url': 'http://redump.org/disc/28185/',
+    },
+    'SLES-03521': {
+        'url': 'http://redump.org/disc/17711/',
+    },
+    'SLES-03522': {
+        'url': 'http://redump.org/disc/28025/',
+    },
+    'SLES-03523': {
+        'url': 'http://redump.org/disc/27937/',
+    },
+    'SLES-01545': {
+        'url': 'http://redump.org/disc/25913/',
+    },
+    'SLES-02395': {
+        'url': 'http://redump.org/disc/28160/',
+    },
+    'SLES-02839': {
+        'url': 'http://redump.org/disc/5823/',
+    },
+    'SLES-01906': {
+        'url': 'http://redump.org/disc/1176/',
+    },
+    'SLES-02830': {
+        'url': 'http://redump.org/disc/15091/',
+    },
+    'SLES-02689': {
+        'url': 'http://redump.org/disc/622/',
+    },
+    'SLES-02700': {
+        'url': 'http://redump.org/disc/3933/',
+    },
+    'SLES-02086': {
+        'url': 'http://redump.org/disc/1010/',
+    },
+    'SLES-02558': {
+        'url': 'http://redump.org/disc/118/',
+    },
+    'SLES-12558': {
+        'url': 'http://redump.org/disc/119/',
+    },
+    'SLES-02559': {
+        'url': 'http://redump.org/disc/13381/',
+    },
+    'SLES-12559': {
+        'url': 'http://redump.org/disc/13380/',
+    },
+    'SLES-02560': {
+        'url': 'http://redump.org/disc/4307/',
+    },
+    'SLES-12560': {
+        'url': 'http://redump.org/disc/4308/',
+    },
+    'SLES-02561': {
+        'url': 'http://redump.org/disc/1122/',
+    },
+    'SLES-12561': {
+        'url': 'http://redump.org/disc/1123/',
+    },
+    'SLES-02562': {
+        'url': 'http://redump.org/disc/29442/',
+    },
+    'SLES-12562': {
+        'url': 'http://redump.org/disc/29443/',
+    },
+    'SLES-02061': {
+        'url': 'http://redump.org/disc/772/',
+    },
+    'SLES-02396': {
+        'url': 'http://redump.org/disc/46131/',
+    },
+    'SLES-02396': {
+        'url': 'http://redump.org/disc/46131/',
+    },
+    'SLES-02992': {
+        'url': 'http://redump.org/disc/27807/',
+    },
+    'SLES-00017': {
+        'url': 'http://redump.org/disc/3309/',
+    },
+    'SLES-01943': {
+        'url': 'http://redump.org/disc/25908/',
+    },
+    'SLES-02824': {
+        'url': 'http://redump.org/disc/5127/',
+    },
+    'SLES-02529': {
+        'url': 'http://redump.org/disc/496/',
+    },
+    'SLES-02530': {
+        'url': 'http://redump.org/disc/9753/',
+    },
+    'SLES-02531': {
+        'url': 'http://redump.org/disc/5526/',
+    },
+    'SLES-02698': {
+        'url': 'http://redump.org/disc/28197/',
+    },
+    'SLES-02533': {
+        'url': 'http://redump.org/disc/16397/',
+    },
+    'SLES-02532': {
+        'url': 'http://redump.org/disc/1387/',
+    },
+    'SLES-00995': {
+        'url': 'http://redump.org/disc/17746/',
+    },
+    'SLES-02681': {
+        'url': 'http://redump.org/disc/7755/',
+    },
+    'SLES-02112': {
+        'url': 'http://redump.org/disc/280/',
+    },
+    'SLES-02113': {
+        'url': 'http://redump.org/disc/28278/',
+    },
+    'SLES-02118': {
+        'url': 'http://redump.org/disc/2605/',
+    },
+    'SLES-02763': {
+        'url': 'http://redump.org/disc/3705/',
+    },
+    'SCES-02290': {
+        'url': 'http://redump.org/disc/29918/',
+    },
+    'SCES-02430': {
+        'url': 'http://redump.org/disc/29512/',
+    },
+    'SCES-02431': {
+        'url': 'http://redump.org/disc/20213/',
+    },
+    'SCES-02432': {
+        'url': 'http://redump.org/disc/29592/',
+    },
+    'SCES-02433': {
+        'url': 'http://redump.org/disc/48046/',
+    },
+    'SCES-01763': {
+        'url': 'http://redump.org/disc/1250/',
+    },
+    'SCES-02104': {
+        'url': 'http://redump.org/disc/1182/',
+    },
+    'SCES-02835': {
+        'url': 'http://redump.org/disc/492/',
+    },
+    'SLES-02857': {
+        'url': 'http://redump.org/disc/7460/',
+    },
+    'SLES-02858': {
+        'url': 'http://redump.org/disc/29281/',
+    },
+    'SLES-02859': {
+        'url': 'http://redump.org/disc/15759/',
+    },
+    'SLES-02860': {
+        'url': 'http://redump.org/disc/46132/',
+    },
+    'SLES-02861': {
+        'url': 'http://redump.org/disc/27884/',
+    },
+    'SLES-02862': {
+        'url': 'http://redump.org/disc/62664/',
+    },
+    'SLES-03241': {
+        'url': 'http://redump.org/disc/12627/',
+    },
+    'SLES-03242': {
+        'url': 'http://redump.org/disc/28190/',
+    },
+    'SLES-03243': {
+        'url': 'http://redump.org/disc/46130/',
+    },
+    'SLES-03244': {
+        'url': 'http://redump.org/disc/49569/',
+    },
+    'SLES-03245': {
+        'url': 'http://redump.org/disc/27310/',
+    },
+    'SLES-02831': {
+        'url': 'http://redump.org/disc/25284/',
+    },
+    'SLES-03489': {
+        'url': 'http://redump.org/disc/617/',
+    },
+    'SLES-03626': {
+        'url': 'http://redump.org/disc/5819/',
+    },
+    'SLES-03648': {
+        'url': 'http://redump.org/disc/47605/',
+    },
+    'SLES-02688': {
+        'url': 'http://redump.org/disc/910/',
+    },
+    'SCES-01700': {
+        'url': 'http://redump.org/disc/4004/',
+    },
+    'SCES-01701': {
+        'url': 'http://redump.org/disc/8346/',
+    },
+    'SCES-01702': {
+        'url': 'http://redump.org/disc/4385/',
+    },
+    'SCES-01703': {
+        'url': 'http://redump.org/disc/28048/',
+    },
+    'SCES-01704': {
+        'url': 'http://redump.org/disc/25328/',
+    },
+    'SCES-01882': {
+        'url': 'http://redump.org/disc/19757/',
+    },
+    'SLES-02572': {
+        'url': 'http://redump.org/disc/615/',
+    },
+    'SLES-02573': {
+        'url': 'http://redump.org/disc/27567/',
+    },
+    'SLES-02704': {
+        'url': 'http://redump.org/disc/1793/',
+    },
+    'SLES-02705': {
+        'url': 'http://redump.org/disc/28153/',
+    },
+    'SLES-02706': {
+        'url': 'http://redump.org/disc/5528/',
+    },
+    'SLES-02707': {
+        'url': 'http://redump.org/disc/28346/',
+    },
+    'SLES-01733': {
+        'url': 'http://redump.org/disc/7446/',
+    },
+    'SLES-02071': {
+        'url': 'http://redump.org/disc/618/',
+    },
+    'SLES-02354': {
+        'url': 'http://redump.org/disc/50247/',
+    },
+    'SLES-02355': {
+        'url': 'http://redump.org/disc/17768/',
+    },
+    'SLES-02754': {
+        'url': 'http://redump.org/disc/9978/',
+    },
+    'SLES-02755': {
+        'url': 'http://redump.org/disc/12636/',
+    },
+    'SLES-02756': {
+        'url': 'http://redump.org/disc/548/',
+    },
+    'SLES-01907': {
+        'url': 'http://redump.org/disc/1063/',
+    },
+    'SLES-02733': {
+        'url': 'http://redump.org/disc/1848/',
+    },
+    'SCES-01909': {
+        'url': 'http://redump.org/disc/355/',
+    },
+}

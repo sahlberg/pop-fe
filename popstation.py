@@ -2414,6 +2414,7 @@ class popstation(object):
         self._vcd = 'GAME.VCD'
         self._img_toc = []
         self._aea = {}
+        self._magic_word = []
         self._verbose = False
         self._complevel = 1
         self._game_id = 'SLUS00000'
@@ -2435,6 +2436,14 @@ class popstation(object):
     @aea.setter
     def aea(self, aea):
         self._aea = aea
+
+    @property
+    def magic_word(self):
+        return self._magic_word
+    
+    @aea.setter
+    def magic_word(self, magic_word):
+        self._magic_word = magic_word
 
     @property
     def verbose(self):
@@ -2693,6 +2702,11 @@ class popstation(object):
         buf[8:10] = b'\xff\x07'
         b = bytes(self._game_title, encoding='utf-8')
         buf[12:12 + len(b)] = b
+        # where the magic word is stored
+        if disc_num < len(self._magic_word):
+            print('Injecting MAGIC WORD 0x%04x for disc %d' % (self._magic_word[disc_num], disc_num))
+            struct.pack_into('<H', buf, 144, self._magic_word[disc_num]) 
+
         fh.write(buf)
 
         # Blocks 6 - 16

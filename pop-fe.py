@@ -37,7 +37,7 @@ import zipfile
 from vmp import encode_vmp
 from pathlib import Path
 
-from gamedb import games
+from gamedb import games, libcrypt
 from bchunk import bchunk
 from popstation import popstation, GenerateSFO
 from make_isoedat import pack
@@ -49,20 +49,20 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
-def get_gameid_from_iso():
+def get_gameid_from_iso(path='NORMAL01.iso'):
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
     if have_pycdlib:
         iso = pycdlib.PyCdlib()
-        iso.open('NORMAL01.iso')
+        iso.open(path)
         extracted = io.BytesIO()
         iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
         extracted.seek(0)
         buf = str(extracted.read(1024))
         iso.close()
     if have_iso9660:
-        iso = iso9660.ISO9660.IFS(source='NORMAL01.iso')
+        iso = iso9660.ISO9660.IFS(source=path)
 
         st = iso.stat('system.cnf', True)
         if st is None:
@@ -130,6 +130,63 @@ def get_psio_cover(game_id):
 
     return ret.content
 
+def generate_magic_word(url):
+    print('Compute MagicWord from URL', url)
+    
+    ret = requests.get(url)
+    print('get', url) if verbose else None
+    if ret.status_code != 200:
+        raise Exception('Failed to fetch file ', url)
+
+    b = ret.content.decode(ret.apparent_encoding)
+    idx = b.find('Sectors with LibCrypt protection')
+    if idx == -1:
+        print('Subchannel data not found at', url)
+        return 0
+    b = b[idx:]
+    idx = b.find('table')
+    b = b[:idx]
+
+    mw = 0
+    if b.find('<td>14105</td>') > 0 or b.find('<td>14110</td>') > 0:
+        mw = mw | 0x8000
+    if b.find('<td>14231</td>') > 0 or b.find('<td>14236</td>') > 0:
+        mw = mw | 0x4000
+    if b.find('<td>14485</td>') > 0 or b.find('<td>14490</td>') > 0:
+        mw = mw | 0x2000
+    if b.find('<td>14579</td>') > 0 or b.find('<td>14584</td>') > 0:
+        mw = mw | 0x1000
+
+    if b.find('<td>14649</td>') > 0 or b.find('<td>14654</td>') > 0:
+        mw = mw | 0x0800
+    if b.find('<td>14899</td>') > 0 or b.find('<td>14904</td>') > 0:
+        mw = mw | 0x0400
+    if b.find('<td>15056</td>') > 0 or b.find('<td>15061</td>') > 0:
+        mw = mw | 0x0200
+    if b.find('<td>15130</td>') > 0 or b.find('<td>15135</td>') > 0:
+        mw = mw | 0x0100
+        
+    if b.find('<td>15242</td>') > 0 or b.find('<td>15247</td>') > 0:
+        mw = mw | 0x0080
+    if b.find('<td>15312</td>') > 0 or b.find('<td>15317</td>') > 0:
+        mw = mw | 0x0040
+    if b.find('<td>15378</td>') > 0 or b.find('<td>15383</td>') > 0:
+        mw = mw | 0x0020
+    if b.find('<td>15628</td>') > 0 or b.find('<td>15633</td>') > 0:
+        mw = mw | 0x0010
+        
+    if b.find('<td>15919</td>') > 0 or b.find('<td>15924</td>') > 0:
+        mw = mw | 0x0008
+    if b.find('<td>16031</td>') > 0 or b.find('<td>16036</td>') > 0:
+        mw = mw | 0x0004
+    if b.find('<td>16101</td>') > 0 or b.find('<td>16106/td>') > 0:
+        mw = mw | 0x0002
+    if b.find('<td>16167</td>') > 0 or b.find('<td>16172</td>') > 0:
+        mw = mw | 0x0001
+
+    print('MagicWord %04x' % mw)
+    return mw
+    
 def get_first_bin_in_cue(cue):
     with open(cue, "r") as f:
         files = re.findall('".*"', f.read())
@@ -421,7 +478,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
+def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -431,6 +488,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     #p.icon0 = icon0
     #p.pic1 = pic1
     p.complevel = 0
+    p.magic_word = magic_word
     if len(aea_files):
         p.aea = aea_files
     
@@ -1105,12 +1163,32 @@ if __name__ == "__main__":
     print('Cue Files', cue_files) if verbose else None
     print('Imb Files', img_files) if verbose else None
 
+    magic_word = []
+    if game_id[0:4] + '-' + game_id[4:9] in libcrypt:
+        if args.ps3_pkg:
+            print('#####################################\nWARNING. This disc is protected with libcrypt\nwill attempt to generate MagivWord to satisfy libcrypt checks\n#####################################')
+            magic_word.append(generate_magic_word(libcrypt[game_id[0:4] + '-' + game_id[4:9]]['url']))
+            # Generate ISOs for the rest of the disks too and get their
+            # magic word
+            for idx in range(1, len(cue_files)):
+                print('idx', idx, cue_files[idx])
+                print('Convert CUE to a normal style ISO') if verbose else None
+                bc = bchunk()
+                bc.verbose = args.v
+                bc.open(cue_files[idx])
+                print('Creating ISO MW%02x' % idx)
+                bc.writetrack(0, 'MW%02x' % idx)
+                temp_files.append('MW%02x01.iso' % idx)
+
+                gid = get_gameid_from_iso('MW%02x01.iso' % idx)
+                magic_word.append(generate_magic_word(libcrypt[gid[0:4] + '-' + gid[4:9]]['url']))
+
     if args.psp_dir:
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
