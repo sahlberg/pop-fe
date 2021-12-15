@@ -99,6 +99,7 @@ Command line arguments are:
 			section below.
 			This requires CU2 files so make sure this script is
 			installed.
+--ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
@@ -233,6 +234,34 @@ $ cd ../../..
 Then to use it just run it as
 
 $ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
+
+
+LIBCRYPT
+========
+Libcrypt is a copy protection used on a small number of PAL releases.
+https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
+
+The protection is based on careful corruption of the subchannel data of the
+disk and may prevent the converted games from running on PSP/PS3.
+
+PSP/VITA
+--------
+When converting to PSP/VITA pop-fe will try to locate and apply a PPF patch
+file to disable the libcrypt protection, making it possible to run the
+game on PSP/VITA.
+This is provided through a curated list of URLs for where to download
+the fix. This list is very incomplete and needs to be extended, patches
+welcome.  See gamedb.py/libcrypt
+
+PS3
+---
+Libcrypt protected games are automatically patched by injecting the MagicWord
+into the package file.
+(The MagicWord is a compact representation of the subchannel corruption)
+This should be sufficient to allow any games to work when converted to
+a PS3 package.
+If not, you can use the --ps3-libcrypt argument to force pop-fe to try to find
+and apply PPF patches for this game.
 
 
 

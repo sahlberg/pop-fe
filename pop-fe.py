@@ -41,6 +41,7 @@ from gamedb import games, libcrypt
 from bchunk import bchunk
 from popstation import popstation, GenerateSFO
 from make_isoedat import pack
+from ppf import ApplyPPF
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
@@ -929,6 +930,49 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
     image = image.convert('RGB')
     image.save(f, format='JPEG', quality=100, subsampling=0)
 
+
+def get_disc_ids(cue_files):
+    disc_ids = []
+    for idx in range(len(cue_files)):
+        print('Convert CUE to a normal style ISO') if verbose else None
+        bc = bchunk()
+        bc.verbose = args.v
+        bc.open(cue_files[idx])
+        bc.writetrack(0, 'ISO%02x' % idx)
+        temp_files.append('ISO%02x01.iso' % idx)
+
+        gid = get_gameid_from_iso('ISO%02x01.iso' % idx)
+        disc_ids.append(gid)
+
+    return disc_ids
+
+
+def apply_ppf(img, disc_id):
+    if 'ppf' in libcrypt[disc_id]:
+        print('Patching ', disc_id, 'to remove libcrypt')
+        ApplyPPF(img, libcrypt[disc_id]['ppf'])
+        return
+    if not 'ppfzip' in libcrypt[disc_id]:
+        print('##################################')
+        print('WARNING! No PPF found for', disc_id, 'the game might not work unless you have already patched the image file')
+        print('##################################')
+        return
+    print('Fetching PPF for', disc_id)  if verbose else None
+    ret = requests.get(libcrypt[disc_id]['ppfzip'][0])
+    if ret.status_code != 200:
+        print('##################################')
+        print('WARNING! PPF to remove libcrypt was not found for %s. Game might not work.')
+        print('##################################')
+        return
+
+    z = zipfile.ZipFile(io.BytesIO(ret.content))
+    print('Extracting PPF ', libcrypt[disc_id]['ppfzip'][1]) if verbose else None
+    z.extract(libcrypt[disc_id]['ppfzip'][1])
+    temp_files.append(libcrypt[disc_id]['ppfzip'][1])
+
+    print('Patching ', disc_id, 'to remove libcrypt')
+    ApplyPPF(img, libcrypt[disc_id]['ppfzip'][1])
+
     
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -960,6 +1004,7 @@ if __name__ == "__main__":
                         help='Force game_id for this iso.')
     parser.add_argument('--title',
                     help='Force title for this iso')
+    parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1091,12 +1136,9 @@ if __name__ == "__main__":
     # disk and read system.cnf
     # We only do this for the first disk of a multi-disk set.
     print('Convert CUE to a normal style ISO') if verbose else None
-    bc = bchunk()
-    bc.verbose = args.v
-    bc.open(cue_files[0])
-    bc.writetrack(0, 'NORMAL')
-    temp_files.append('NORMAL01.iso')
-
+    disc_ids = get_disc_ids(cue_files)
+    print('disc_ids', disc_ids)
+    
     game_id = None
     if args.game_id:
         game_id = args.game_id
@@ -1107,7 +1149,7 @@ if __name__ == "__main__":
         except:
             True
     if not game_id:
-        game_id = get_gameid_from_iso()
+        game_id = disc_ids[0]
 
     game_id = game_id.upper()
     
@@ -1121,7 +1163,7 @@ if __name__ == "__main__":
         except:
             True
     if not game_title:
-        game_title = get_title_from_game(game_id[0:4] + '-' + game_id[4:9])
+        game_title = get_title_from_game(game_id)
 
     game = None
 
@@ -1132,8 +1174,8 @@ if __name__ == "__main__":
     except:
         print('Fetch cover for', game_title) if verbose else None
         if not game:
-            game = get_game_from_gamelist(game_id[0:4] + '-' + game_id[4:9])
-        icon0 = get_icon0_from_game(game_id[0:4] + '-' + game_id[4:9], game)
+            game = get_game_from_gamelist(game_id)
+        icon0 = get_icon0_from_game(game_id, game)
         temp_files.append('ICON0.jpg')
         image = Image.open(io.BytesIO(icon0))
     i = io.BytesIO()
@@ -1148,8 +1190,8 @@ if __name__ == "__main__":
     except:
         print('Fetch screenshot for', game_title) if verbose else None
         if not game:
-            game = get_game_from_gamelist(game_id[0:4] + '-' + game_id[4:9])
-        pic1 = get_pic1_from_game(game_id[0:4] + '-' + game_id[4:9], game)
+            game = get_game_from_gamelist(game_id)
+        pic1 = get_pic1_from_game(game_id, game)
         image = Image.open(io.BytesIO(pic1))
     image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
     image = add_image_text(image, game_title, game_id)
@@ -1162,26 +1204,47 @@ if __name__ == "__main__":
     print('Title:', game_title)
     print('Cue Files', cue_files) if verbose else None
     print('Imb Files', img_files) if verbose else None
-
+    print('Disc IDs', disc_ids) if verbose else None
+    
     magic_word = []
-    if game_id[0:4] + '-' + game_id[4:9] in libcrypt:
+    if game_id in libcrypt:
+        patch_libcrypt = False
+        if args.ps3_pkg and args.ps3_libcrypt:
+            patch_libcrypt = True
+        if args.psp_dir:
+            print('#####################################')
+            print('WARNING! This disc is protected with libcrypt.')
+            print('Will attempt to apply libcrypt PPF patch')
+            print('#####################################')
+            patch_libcrypt = True
         if args.ps3_pkg:
-            print('#####################################\nWARNING. This disc is protected with libcrypt\nwill attempt to generate MagivWord to satisfy libcrypt checks\n#####################################')
-            magic_word.append(generate_magic_word(libcrypt[game_id[0:4] + '-' + game_id[4:9]]['url']))
+            print('#####################################')
+            print('WARNING! This disc is protected with libcrypt.')
+            print('Will attempt to inject MagicWord into ISO.BIN.DAT')
+            print('This should work for most games. If not then try')
+            print('creating the package again with --ps3-libcrypt')
+            print('#####################################')
             # Generate ISOs for the rest of the disks too and get their
             # magic word
-            for idx in range(1, len(cue_files)):
-                print('idx', idx, cue_files[idx])
-                print('Convert CUE to a normal style ISO') if verbose else None
-                bc = bchunk()
-                bc.verbose = args.v
-                bc.open(cue_files[idx])
-                print('Creating ISO MW%02x' % idx)
-                bc.writetrack(0, 'MW%02x' % idx)
-                temp_files.append('MW%02x01.iso' % idx)
-
-                gid = get_gameid_from_iso('MW%02x01.iso' % idx)
-                magic_word.append(generate_magic_word(libcrypt[gid[0:4] + '-' + gid[4:9]]['url']))
+            for idx in range(len(cue_files)):
+                magic_word.append(generate_magic_word(libcrypt[disc_ids[idx]]['url']))
+        if patch_libcrypt:
+            #
+            # Copy the CUE and BIN locally so we can patch them
+            for idx in range(len(cue_files)):
+                i = get_imgs_from_bin(cue_files[idx])
+                print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
+                copy_file(i[0], 'LCP%02x.bin' % idx) 
+                temp_files.append('LCP%02x.bin' % idx)
+                with open(cue_files[idx], 'r') as fi:
+                    l = fi.readlines()
+                    l[0] = 'FILE "%s" BINARY\n' % ('LCP%02x.bin' % idx)
+                    with open('LCP%02x.cue' % idx, 'w') as fo:
+                        fo.writelines(l)
+                    temp_files.append('LCP%02x.cue' % idx)
+                cue_files[idx] = 'LCP%02x.cue' % idx
+                img_files[idx] = 'LCP%02x.bin' % idx
+                apply_ppf(img_files[idx], disc_ids[idx])
 
     if args.psp_dir:
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
