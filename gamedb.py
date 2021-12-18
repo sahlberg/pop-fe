@@ -48871,7 +48871,8 @@ games = {
 libcrypt = {
     'SLES01226': {
         'url': 'http://redump.org/disc/5120/',
-        'ppf': 'libcrypt/Actua Ice Hockey 2 (Europe).ppf'        
+        'ppf': 'libcrypt/Actua Ice Hockey 2 (Europe).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02563': {
         'url': 'http://redump.org/disc/3334/',
@@ -48881,7 +48882,8 @@ libcrypt = {
     },
     'SCES02028': {
         'url': 'http://redump.org/disc/28260/',
-        'ppf': 'libcrypt/Ape Escape (France).ppf'
+        'ppf': 'libcrypt/Ape Escape (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02029': {
         'url': 'http://redump.org/disc/26604/',
@@ -48900,7 +48902,8 @@ libcrypt = {
     },
     'SCES02366': {
         'url': 'http://redump.org/disc/29560/',
-        'ppf': 'libcrypt/Barbie - Aventure Equestre (France).ppf'        
+        'ppf': 'libcrypt/Barbie - Aventure Equestre (France).ppf',        
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02367': {
         'url': 'http://redump.org/disc/25241/',
@@ -48916,7 +48919,8 @@ libcrypt = {
     },
     'SCES02488': {
         'url': 'http://redump.org/disc/28149/',
-        'ppf': 'libcrypt/Barbie - Sports Extreme (France).ppf'
+        'ppf': 'libcrypt/Barbie - Sports Extreme (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02489': {
         'url': 'http://redump.org/disc/26734/',
@@ -48929,14 +48933,16 @@ libcrypt = {
     },
     'SLES02293': {
         'url': 'http://redump.org/disc/27297/',
-        'ppf': 'libcrypt/Canal+ Premier Manager (Europe) (Fr,Es,It).ppf'
+        'ppf': 'libcrypt/Canal+ Premier Manager (Europe) (Fr,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02834': {
         'url': 'http://redump.org/disc/5483/',
     },
     'SCES02105': {
         'url': 'http://redump.org/disc/897/',
-        'ppf': 'libcrypt/CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) (EDC).ppf'
+        'ppf': 'libcrypt/CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) (EDC).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02207': {
         'url': 'http://redump.org/disc/710/',
@@ -48961,7 +48967,8 @@ libcrypt = {
     },
     'SLES03191': {
         'url': 'http://redump.org/disc/19140/',
-        'ppf': 'libcrypt/Disney\'s 102 Dalmatians - Puppies to the Rescue (Europe) (Fr,De,Es,It,Nl).ppf'
+        'ppf': 'libcrypt/Disney\'s 102 Dalmatians - Puppies to the Rescue (Europe) (Fr,De,Es,It,Nl).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02006': {
         'url': 'http://redump.org/disc/28327/',
@@ -48986,7 +48993,8 @@ libcrypt = {
     },
     'SCES01516': {
         'url': 'http://redump.org/disc/29462/',
-        'ppf': 'libcrypt/Disney Tarzan (France).ppf'
+        'ppf': 'libcrypt/Disney Tarzan (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES01517': {
         'url': 'http://redump.org/disc/15483/',
@@ -49002,15 +49010,18 @@ libcrypt = {
     },
     'SLES02538': {
         'url': 'http://redump.org/disc/26580/',
-        'ppf': 'libcrypt/EA Sports Superbike 2000 (Europe) (En,Fr,De,Es,It,Sv).ppf'
+        'ppf': 'libcrypt/EA Sports Superbike 2000 (Europe) (En,Fr,De,Es,It,Sv).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01715': {
         'url': 'http://redump.org/disc/880/',
-        'ppf': 'libcrypt/Eagle One - Harrier Attack (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Eagle One - Harrier Attack (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02722': {
         'url': 'http://redump.org/disc/4311/',
-        'ppf': 'libcrypt/F1 2000 (Europe) (En,Fr,De,Nl).ppf'
+        'ppf': 'libcrypt/F1 2000 (Europe) (En,Fr,De,Nl).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02723': {
         'url': 'http://redump.org/disc/48119/',
@@ -49032,19 +49043,23 @@ libcrypt = {
     },
     'SLES02966': {
         'url': 'http://redump.org/disc/2455/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 1).ppf'
+        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 1).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES12966': {
         'url': 'http://redump.org/disc/2456/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 2).ppf'
+        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 2).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES22966': {
         'url': 'http://redump.org/disc/2457/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 3).ppf'
+        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 3).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES32966': {
         'url': 'http://redump.org/disc/2458/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 4).ppf'
+        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 4).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02967': {
         'url': 'http://redump.org/disc/737/',
@@ -49146,7 +49161,8 @@ libcrypt = {
     },
     'SLES22084': {
         'url': 'http://redump.org/disc/1111/',
-        'ppf': 'libcrypt/Dino Crisis (France).ppf'
+        'ppf': 'libcrypt/Dino Crisis (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES32084': {
         'url': 'http://redump.org/disc/1112/',
@@ -49174,15 +49190,18 @@ libcrypt = {
     },
     'SLES02329': {
         'url': 'http://redump.org/disc/13382/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 1).ppf'
+        'ppf': 'libcrypt/Galerians (France) (Disc 1).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES12329': {
         'url': 'http://redump.org/disc/13383/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 2).ppf'
+        'ppf': 'libcrypt/Galerians (France) (Disc 2).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES22329': {
         'url': 'http://redump.org/disc/13384/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 3).ppf'
+        'ppf': 'libcrypt/Galerians (France) (Disc 3).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02330': {
         'url': 'http://redump.org/disc/7695/',
@@ -49198,14 +49217,16 @@ libcrypt = {
     },
     'SLES01241': {
         'url': 'http://redump.org/disc/833/',
-        'ppf': 'libcrypt/Gekido - Urban Fighters (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Gekido - Urban Fighters (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01041': {
         'url': 'http://redump.org/disc/703/',
     },
     'SLES02766': {
         'url': 'http://redump.org/disc/33070/',
-        'ppf': 'libcrypt/Les Cochons de Guerre (France).ppf'
+        'ppf': 'libcrypt/Les Cochons de Guerre (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02767': {
         'url': 'http://redump.org/disc/19539/',
@@ -49218,18 +49239,21 @@ libcrypt = {
     },
     'SCES01444': {
         'url': 'http://redump.org/disc/64315/',
-        'ppf': 'libcrypt/Jackie Chan Stuntmaster (Europe).ppf'
+        'ppf': 'libcrypt/Jackie Chan Stuntmaster (Europe).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01362': {
         'url': 'http://redump.org/disc/1659/',
-        'ppf': 'libcrypt/Le Mans 24 Hours (Europe) (En,Fr,De,Es,It,Pt).ppf'
+        'ppf': 'libcrypt/Le Mans 24 Hours (Europe) (En,Fr,De,Es,It,Pt).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01301': {
         'url': 'http://redump.org/disc/1177/',
     },
     'SLES02024 ': {
         'url': 'http://redump.org/disc/24279/',
-        'ppf': 'libcrypt/Legacy of Kain - Soul Reaver (France).ppf'
+        'ppf': 'libcrypt/Legacy of Kain - Soul Reaver (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02025': {
         'url': 'http://redump.org/disc/393/',
@@ -49245,7 +49269,8 @@ libcrypt = {
     },
     'SLES02976': {
         'url': 'http://redump.org/disc/45075/',
-        'ppf': 'libcrypt/Roger Lemerre - La Selection des Champions (France).ppf'
+        'ppf': 'libcrypt/Roger Lemerre - La Selection des Champions (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02977': {
         'url': 'http://redump.org/disc/17767/',
@@ -49273,14 +49298,16 @@ libcrypt = {
     },
     'SLES03530': {
         'url': 'http://redump.org/disc/19142/',
-        'ppf': 'libcrypt/Lucky Luke - Western Fever (Europe) (En,Fr,De,Es,It,Nl).ppf'
+        'ppf': 'libcrypt/Lucky Luke - Western Fever (Europe) (En,Fr,De,Es,It,Nl).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES00311': {
         'url': 'http://redump.org/disc/61153/',
     },
     'SCES01492': {
         'url': 'http://redump.org/disc/13389/',
-        'ppf': 'libcrypt/MediEvil (France).ppf'
+        'ppf': 'libcrypt/MediEvil (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES01493': {
         'url': 'http://redump.org/disc/25542/',
@@ -49293,7 +49320,8 @@ libcrypt = {
     },
     'SCES02544': {
         'url': 'http://redump.org/disc/593/',
-        'ppf': 'libcrypt/MediEvil 2 (Europe) (En,Fr,De).ppf'
+        'ppf': 'libcrypt/MediEvil 2 (Europe) (En,Fr,De).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02545': {
         'url': 'http://redump.org/disc/1547/',
@@ -49306,7 +49334,8 @@ libcrypt = {
     },
     'SLES03520': {
         'url': 'http://redump.org/disc/28185/',
-        'ppf': 'libcrypt/Men in Black - The Series - Crashdown (France).ppf'
+        'ppf': 'libcrypt/Men in Black - The Series - Crashdown (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES03521': {
         'url': 'http://redump.org/disc/17711/',
@@ -49322,30 +49351,36 @@ libcrypt = {
     },
     'SLES02395': {
         'url': 'http://redump.org/disc/28160/',
-        'ppf': 'libcrypt/Michelin Rally Masters - Race of Champions (Europe) (Fr,Es,It).ppf'
+        'ppf': 'libcrypt/Michelin Rally Masters - Race of Champions (Europe) (Fr,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02839': {
         'url': 'http://redump.org/disc/5823/',
-        'ppf': 'libcrypt/Mike Tyson Boxing (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Mike Tyson Boxing (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01906': {
         'url': 'http://redump.org/disc/1176/',
-        'ppf': 'libcrypt/Mission - Impossible (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Mission - Impossible (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02830': {
         'url': 'http://redump.org/disc/15091/',
-        'ppf': 'libcrypt/MoHo (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/MoHo (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02689': {
         'url': 'http://redump.org/disc/622/',
     },
     'SLES02700': {
         'url': 'http://redump.org/disc/3933/',
-        'ppf': 'libcrypt/Need for Speed - Porsche 2000 (Europe) (Fr,Es,It).ppf'
+        'ppf': 'libcrypt/Need for Speed - Porsche 2000 (Europe) (Fr,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02086': {
         'url': 'http://redump.org/disc/1010/',
-        'ppf': 'libcrypt/N-Gen Racing (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/N-Gen Racing (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02558': {
         'url': 'http://redump.org/disc/118/',
@@ -49355,11 +49390,13 @@ libcrypt = {
     },
     'SLES02559': {
         'url': 'http://redump.org/disc/13381/',
-        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 1).ppf'
+        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 1).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES12559': {
         'url': 'http://redump.org/disc/13380/',
-        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 2).ppf'
+        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 2).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02560': {
         'url': 'http://redump.org/disc/4307/',
@@ -49393,22 +49430,26 @@ libcrypt = {
     },
     'SLES00017': {
         'url': 'http://redump.org/disc/3309/',
-        'ppf': 'libcrypt/Prince Naseem Boxing (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Prince Naseem Boxing (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01943': {
         'url': 'http://redump.org/disc/25908/',
-        'ppf': 'libcrypt/Radikal Bikers (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Radikal Bikers (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02824': {
         'url': 'http://redump.org/disc/5127/',
-        'ppf': 'libcrypt/RC Revenge (Europe) (En,Fr,De,Es).ppf'
+        'ppf': 'libcrypt/RC Revenge (Europe) (En,Fr,De,Es).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02529': {
         'url': 'http://redump.org/disc/496/',
     },
     'SLES02530': {
         'url': 'http://redump.org/disc/9753/',
-        'ppf': 'libcrypt/Resident Evil 3 - Nemesis (France).ppf'
+        'ppf': 'libcrypt/Resident Evil 3 - Nemesis (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02531': {
         'url': 'http://redump.org/disc/5526/',
@@ -49424,7 +49465,8 @@ libcrypt = {
     },
     'SLES00995': {
         'url': 'http://redump.org/disc/17746/',
-        'ppf': 'libcrypt/Ronaldo V-Football (Europe) (En,Fr,Nl,Sv).ppf'
+        'ppf': 'libcrypt/Ronaldo V-Football (Europe) (En,Fr,Nl,Sv).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02681': {
         'url': 'http://redump.org/disc/7755/',
@@ -49434,21 +49476,24 @@ libcrypt = {
     },
     'SLES02113': {
         'url': 'http://redump.org/disc/28278/',
-        'ppf': 'libcrypt/SaGa Frontier 2 (France).ppf'
+        'ppf': 'libcrypt/SaGa Frontier 2 (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02118': {
         'url': 'http://redump.org/disc/2605/',
     },
     'SLES02763': {
         'url': 'http://redump.org/disc/3705/',
-        'ppf': 'libcrypt/SnoCross Championship Racing (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/SnoCross Championship Racing (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02290': {
         'url': 'http://redump.org/disc/29918/',
     },
     'SCES02430': {
         'url': 'http://redump.org/disc/29512/',
-        'ppf': 'libcrypt/Space Debris (France).ppf'
+        'ppf': 'libcrypt/Space Debris (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02431': {
         'url': 'http://redump.org/disc/20213/',
@@ -49464,18 +49509,21 @@ libcrypt = {
     },
     'SCES02104': {
         'url': 'http://redump.org/disc/1182/',
-        'ppf': 'libcrypt/Spyro 2 - Gateway to Glimmer (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Spyro 2 - Gateway to Glimmer (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02835': {
         'url': 'http://redump.org/disc/492/',
-        'ppf': 'libcrypt/Spyro - Year of the Dragon (Europe) (En,Fr,De,Es,It) (v1.0).ppf'
+        'ppf': 'libcrypt/Spyro - Year of the Dragon (Europe) (En,Fr,De,Es,It) (v1.0).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02857': {
         'url': 'http://redump.org/disc/7460/',
     },
     'SLES02858': {
         'url': 'http://redump.org/disc/29281/',
-        'ppf': 'libcrypt/Sydney 2000 (France).ppf'
+        'ppf': 'libcrypt/Sydney 2000 (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02859': {
         'url': 'http://redump.org/disc/15759/',
@@ -49494,7 +49542,8 @@ libcrypt = {
     },
     'SLES03242': {
         'url': 'http://redump.org/disc/28190/',
-        'ppf': 'libcrypt/TechnoMage - En Quete de L\'Eternite (France).ppf'
+        'ppf': 'libcrypt/TechnoMage - En Quete de L\'Eternite (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES03243': {
         'url': 'http://redump.org/disc/46130/',
@@ -49513,21 +49562,24 @@ libcrypt = {
     },
     'SLES03626': {
         'url': 'http://redump.org/disc/5819/',
-        'ppf': 'libcrypt/Italian Job, The (Europe) (Fr,De,Es).ppf'
+        'ppf': 'libcrypt/Italian Job, The (Europe) (Fr,De,Es).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES03648': {
         'url': 'http://redump.org/disc/47605/',
     },
     'SLES02688': {
         'url': 'http://redump.org/disc/910/',
-        'ppf': 'libcrypt/Theme Park World (Europe) (En,Fr,De,Es,It,Nl,Sv).ppf'
+        'ppf': 'libcrypt/Theme Park World (Europe) (En,Fr,De,Es,It,Nl,Sv).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES01700': {
         'url': 'http://redump.org/disc/4004/',
     },
     'SCES01701': {
         'url': 'http://redump.org/disc/8346/',
-        'ppf': 'libcrypt/Monde des Bleus, Le - Le Jeu Officiel de l\'Equipe de France (France).ppf'
+        'ppf': 'libcrypt/Monde des Bleus, Le - Le Jeu Officiel de l\'Equipe de France (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES01702': {
         'url': 'http://redump.org/disc/4385/',
@@ -49540,11 +49592,13 @@ libcrypt = {
     },
     'SCES01882': {
         'url': 'http://redump.org/disc/19757/',
-        'ppf': 'libcrypt/This Is Football (Europe) (Fr,Nl).ppf'
+        'ppf': 'libcrypt/This Is Football (Europe) (Fr,Nl).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02572': {
         'url': 'http://redump.org/disc/615/',
-        'ppf': 'libcrypt/TOCA World Touring Cars (Europe) (En,Fr,De).ppf'
+        'ppf': 'libcrypt/TOCA World Touring Cars (Europe) (En,Fr,De).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02573': {
         'url': 'http://redump.org/disc/27567/',
@@ -49554,25 +49608,29 @@ libcrypt = {
     },
     'SLES02705': {
         'url': 'http://redump.org/disc/28153/',
-        'ppf': 'libcrypt/UEFA Euro 2000 (France).ppf'
+        'ppf': 'libcrypt/UEFA Euro 2000 (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02706': {
         'url': 'http://redump.org/disc/5528/',
     },
     'SLES02707': {
         'url': 'http://redump.org/disc/28346/',
-        'ppf': 'libcrypt/Crash Bash (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Crash Bash (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01733': {
         'url': 'http://redump.org/disc/7446/',
-        'ppf': 'libcrypt/UEFA Striker (Europe) (En,Fr,De,Es,It,Nl).ppf'
+        'ppf': 'libcrypt/UEFA Striker (Europe) (En,Fr,De,Es,It,Nl).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02071': {
         'url': 'http://redump.org/disc/618/',
     },
     'SLES02354': {
         'url': 'http://redump.org/disc/50247/',
-        'ppf': 'libcrypt/Urban Chaos (France).ppf'
+        'ppf': 'libcrypt/Urban Chaos (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02355': {
         'url': 'http://redump.org/disc/17768/',
@@ -49583,50 +49641,61 @@ libcrypt = {
     },
     'SLES02755': {
         'url': 'http://redump.org/disc/12636/',
-        'ppf': 'libcrypt/Vagrant Story (France).ppf'
+        'ppf': 'libcrypt/Vagrant Story (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02756': {
         'url': 'http://redump.org/disc/548/',
     },
     'SLES01907': {
         'url': 'http://redump.org/disc/1063/',
-        'ppf': 'libcrypt/V-Rally - Championship Edition 2 (Europe) (En,Fr,De).ppf'
+        'ppf': 'libcrypt/V-Rally - Championship Edition 2 (Europe) (En,Fr,De).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02733': {
         'url': 'http://redump.org/disc/1848/',
-        'ppf': 'libcrypt/Walt Disney World Quest - Magical Racing Tour (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da).ppf'
+        'ppf': 'libcrypt/Walt Disney World Quest - Magical Racing Tour (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES01909': {
         'url': 'http://redump.org/disc/355/',
-        'ppf': 'libcrypt/Wip3out (Europe) (En,Fr,De,Es,It).ppf'
+        'ppf': 'libcrypt/Wip3out (Europe) (En,Fr,De,Es,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES02004': {
         'url': 'http://redump.org/disc/27819/',
-        'ppf': 'libcrypt/Disney Fais Ton Histoire! - Mulan (France).ppf'
+        'ppf': 'libcrypt/Disney Fais Ton Histoire! - Mulan (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES03061': {
         'url': 'http://redump.org/disc/6867/',
-        'ppf': 'libcrypt/F.A. Premier League Football Manager 2001, The (Europe).ppf'
+        'ppf': 'libcrypt/F.A. Premier League Football Manager 2001, The (Europe).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES00298': {
         'url': 'http://redump.org/disc/924/',
-        'ppf': 'libcrypt/Formula One 99 (Europe) (En,Fr,De,It).ppf'
+        'ppf': 'libcrypt/Formula One 99 (Europe) (En,Fr,De,It).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES03090': {
         'url': 'http://redump.org/disc/29518/',
-        'ppf': 'libcrypt/Muppet Monster Adventure (France).ppf'
+        'ppf': 'libcrypt/Muppet Monster Adventure (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES01879': {
         'url': 'http://redump.org/disc/26606/',
-        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 1) (v1.0).ppf'
+        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 1) (v1.0).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES11879': {
         'url': 'http://redump.org/disc/26607/',
-        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 2) (v1.0).ppf'
+        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 2) (v1.0).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02196': {
         'url': 'http://redump.org/disc/2931/',
-        'ppf': 'libcrypt/World Championship Snooker (Europe) (En,Fr,De).ppf'
+        'ppf': 'libcrypt/World Championship Snooker (Europe) (En,Fr,De).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
 }
 

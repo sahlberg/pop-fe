@@ -948,6 +948,8 @@ def get_disc_ids(cue_files):
 
 
 def apply_ppf(img, disc_id):
+    if 'credit' in libcrypt[disc_id]:
+        print(libcrypt[disc_id]['credit'])
     if 'ppf' in libcrypt[disc_id]:
         print('Patching ', disc_id, 'to remove libcrypt')
         ApplyPPF(img, libcrypt[disc_id]['ppf'])
