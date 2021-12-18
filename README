@@ -385,7 +385,7 @@ make
 cd ../../..
 mkdir atracdenc
 mkdir atracdenc/src
-# Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\msys64\home\<your-user>\pop-fe\atracdenc\src
+# Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip and extract atracdenc.exe and save it in C:\msys64\home\<your-user>\pop-fe\atracdenc\src
 
 
 On windows, always run pop-fe from git-bash and from within the pop-fe
