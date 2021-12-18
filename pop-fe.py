@@ -1211,7 +1211,7 @@ if __name__ == "__main__":
         patch_libcrypt = False
         if args.ps3_pkg and args.ps3_libcrypt:
             patch_libcrypt = True
-        if args.psp_dir:
+        if args.psp_dir or args.ps2_dir or args.psio_dir:
             print('#####################################')
             print('WARNING! This disc is protected with libcrypt.')
             print('Will attempt to apply libcrypt PPF patch')
