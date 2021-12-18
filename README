@@ -14,7 +14,7 @@ Connect PSP to your Linux/Windows box via USB, then run:
 
   $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
 
-Or create a PS3 PKG: (Linux only)
+Or create a PS3 PKG:
 
   $ ./pop-fe.py --ps3-pkg=Grandia.pkg /psx/Grandia1of2.img /psx/Grandia2of2.img
 
@@ -211,8 +211,7 @@ will be installed and an ART subdirectory for cover and background images.
 PS3 Support
 ===========
 Pop-fe can convert games into a PS3 PKG that can be installed on PS3 systems
-with CFW or HEN. For now this only works for Linux as it has some extra
-requirements.
+with CFW or HEN.
 
 Preparations
 ------------
@@ -262,53 +261,6 @@ This should be sufficient to allow any games to work when converted to
 a PS3 package.
 If not, you can use the --ps3-libcrypt argument to force pop-fe to try to find
 and apply PPF patches for this game.
-
-
-
-INSTALLATION
-============
-Pop-fe has a few external dependencies. It requires python3 and some additional
-bits and pieces. Here are some examples on how to install pop-fe and its
-dependencies.
-Some comments and instructions on different OSes:
-
-Mint20.1:
----------
-sudo apt install python-is-python3
-sudo apt install python3-pip
-pip3 install requests_cache
-pip3 install pycdlib
-sudo apt install git
-git clone https://github.com/sahlberg/pop-fe.git
-git clone https://github.com/NRGDEAD/Cue2cu2.git
-git clone https://github.com/putnam/binmerge.git
-cd pop-fe
-cp ../Cue2cu2/cue2cu2.py .
-chmod +x cue2cu2.py
-cp ../binmerge/binmerge .
-chmod +x binmerge
-
-Windows 10:
------------
-Install git
-Install python3
-pip3 install requests_cache
-pip3 install pycdlib
-pip3 install Pillow
-pip3 install pycryptodome
-Start git-bash
-git clone https://github.com/sahlberg/pop-fe.git
-git clone https://github.com/NRGDEAD/Cue2cu2.git
-git clone https://github.com/putnam/binmerge.git
-cd pop-fe
-git checkout master
-cp ../Cue2cu2/cue2cu2.py .
-cp ../binmerge/binmerge .
-
-On windows, always run pop-fe from git-bash and from within the pop-fe
-directory.
-The directory names for the E: drive-letter is /e etc in the git-bash shell
-so use --psp-dir=/e or --psp-dir=auto
 
 ADDITONAL DEPENDENCIES:
 =======================
@@ -362,26 +314,85 @@ audio tracks into ATRAC3 LP2 format.
 If you do not have this tool installed then pop-fe will still create the
 EBOOT.PBP image but without the audio tracks.
 
-To get the audio tracks for games such as RidgeRacerRevolution and similar
-working, install and build the tool :
+The instructions to set this tool up are part of the Linux/Windows install
+instructions below. (atracdenc)
 
-Linux/Fedora
-............
-$ sudo dnf install libsndfile-devel
-$ cd <directory where pop-fe is installed>
-$ git clone https://github.com/dcherednik/atracdenc.git 
-$ cd atracdenc/src/
-$ cmake .
-$ make
-$ cd ../..
 
-Windows
-.......
-Start GIT-Bash
-$ cd pop-fe
-$ mkdir atracdenc
-$ mkdir atracdenc/src
+INSTALLATION
+============
+Pop-fe has a few external dependencies. It requires python3 and some additional
+bits and pieces. Here are some examples on how to install pop-fe and its
+dependencies on different OSes:
 
-Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\USERS\<your-user>\pop-fe\atracdenc\src
+Mint20.1:
+---------
+sudo apt install python-is-python3
+sudo apt install python3-pip
+sudo apt install libsndfile-dev
+pip3 install requests_cache
+pip3 install pycdlib  (or pip3 install pycdio)
+pip3 install ecdsa
+sudo apt install git
+git clone https://github.com/sahlberg/pop-fe.git
+git clone https://github.com/NRGDEAD/Cue2cu2.git
+git clone https://github.com/putnam/binmerge.git
+git clone https://github.com/dcherednik/atracdenc.git
+cd pop-fe
+cp ../Cue2cu2/cue2cu2.py .
+chmod +x cue2cu2.py
+cp ../binmerge/binmerge .
+chmod +x binmerge
+git clone http://github.com/sahlberg/PSL1GHT
+cd PSL1GHT/tools/ps3py
+git checkout origin/use-python3
+make
+cd ../../..
+cd atracdenc/src/
+cmake .
+make
+cd ../..
 
+Windows (x86_64)
+----------------
+Install Mingw64/MSYS2
+Open Mingw64 Prompt and type
+
+export PATH=$PATH:/mingw64/bin
+pacman -S mingw-w64-x86_64-gcc
+pacman -S make
+pacman -S mingw-w64-x86_64-python
+pacman -S git
+pacman -S mingw-w64-x86_64-python-pip
+pacman -S mingw-w64-x86_64-python-pillow
+pip3 uninstall pillow
+pip3 install pillow
+pip3 install requests_cache
+pip3 install pycdlib
+pip3 install pycryptodome
+pip3 install ecdsa
+git clone https://github.com/sahlberg/pop-fe.git
+git clone https://github.com/NRGDEAD/Cue2cu2.git
+git clone https://github.com/putnam/binmerge.git
+cd pop-fe
+cp ../Cue2cu2/cue2cu2.py .
+chmod +x cue2cu2.py
+cp ../binmerge/binmerge .
+chmod +x binmerge
+git clone http://github.com/sahlberg/PSL1GHT
+cd PSL1GHT/tools/ps3py
+git checkout origin/use-python3
+make
+cd ../../..
+mkdir atracdenc
+mkdir atracdenc/src
+# Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.0.zip and extract atracdenc.exe and save it in C:\msys64\home\<your-user>\pop-fe\atracdenc\src
+
+
+On windows, always run pop-fe from git-bash and from within the pop-fe
+directory.
+The directory names for the E: drive-letter is /e etc in the git-bash shell
+so use --psp-dir=/e or --psp-dir=auto
+
+You may need to run this command every time you open the MSYS2 shell:
+export PATH=$PATH:/mingw64/bin
 

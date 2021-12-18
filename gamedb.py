@@ -49162,12 +49162,15 @@ libcrypt = {
     },
     'SLES02328': {
         'url': 'http://redump.org/disc/7420/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal1.ppf']
     },
     'SLES12328': {
         'url': 'http://redump.org/disc/7421/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal2.ppf']
     },
     'SLES22328': {
         'url': 'http://redump.org/disc/7422/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal3.ppf']
     },
     'SLES02329': {
         'url': 'http://redump.org/disc/13382/',
@@ -49183,12 +49186,15 @@ libcrypt = {
     },
     'SLES02330': {
         'url': 'http://redump.org/disc/7695/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'pdx-ggc1.pdf']
     },
     'SLES12330': {
         'url': 'http://redump.org/disc/7696/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'PDX-GGC2.PPF']
     },
     'SLES22330': {
         'url': 'http://redump.org/disc/7697/',
+        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'PDX-GGC3.PPF']
     },
     'SLES01241': {
         'url': 'http://redump.org/disc/833/',
