@@ -1884,9 +1884,9 @@ games = {
     	'id': 'SLUS01300',
 	'title': "007 - RACING",
     },
-    'SCUS-94508': {
+    'SCUS94508': {
         'url': "games/U/0-9/SCUS-94508.html",
-    	'id': 'SCUS-94508',
+    	'id': 'SCUS94508',
 	'title': "2XTREME",
     },
     'SLUS00066': {
@@ -1894,9 +1894,9 @@ games = {
     	'id': 'SLUS00066',
 	'title': "3D BASEBALL - THE MAJORS",
     },
-    'SCUS-94231': {
+    'SCUS94231': {
         'url': "games/U/0-9/SCUS-94231.html",
-    	'id': 'SCUS-94231',
+    	'id': 'SCUS94231',
 	'title': "3XTREME",
     },
     'SLUS00874': {
@@ -1944,9 +1944,9 @@ games = {
     	'id': 'SLUS00777',
 	'title': "ACTIVISION CLASSICS",
     },
-    'SCUS-94502': {
+    'SCUS94502': {
         'url': "games/U/A/SCUS-94502.html",
-    	'id': 'SCUS-94502',
+    	'id': 'SCUS94502',
 	'title': "ADIDAS POWER SOCCER",
     },
     'SLUS00547': {
@@ -2059,9 +2059,9 @@ games = {
     	'id': 'SLUS01010',
 	'title': "ANIMORPHS - SHATTERED REALITY",
     },
-    'SCUS-94423': {
+    'SCUS94423': {
         'url': "games/U/A/SCUS-94423.html",
-    	'id': 'SCUS-94423',
+    	'id': 'SCUS94423',
 	'title': "APE ESCAPE",
     },
     'SLUS00373': {
@@ -2069,9 +2069,9 @@ games = {
     	'id': 'SLUS00373',
 	'title': "APOCALYPSE - STARRING BRUCE WILLIS",
     },
-    'SCUS-94603': {
+    'SCUS94603': {
         'url': "games/U/A/SCUS-94603.html",
-    	'id': 'SCUS-94603',
+    	'id': 'SCUS94603',
 	'title': "AQUANAUT'S HOLIDAY",
     },
     'SLUS01224': {
@@ -2129,9 +2129,9 @@ games = {
     	'id': 'SLUS00164',
 	'title': "AREA 51",
     },
-    'SCUS-94182': {
+    'SCUS94182': {
         'url': "games/U/A/SCUS-94182.html",
-    	'id': 'SCUS-94182',
+    	'id': 'SCUS94182',
 	'title': "ARMORED CORE",
     },
     'SLUS01323': {
@@ -2219,9 +2219,9 @@ games = {
     	'id': 'SLUS00713',
 	'title': "ASSAULT RETRIBUTION",
     },
-    'SCUS-94405': {
+    'SCUS94405': {
         'url': "games/U/A/SCUS-94405.html",
-    	'id': 'SCUS-94405',
+    	'id': 'SCUS94405',
 	'title': "ASSAULT RIGS",
     },
     'SLUS00773': {
@@ -2369,14 +2369,14 @@ games = {
     	'id': 'SLUS00387',
 	'title': "BATMAN FOREVER - THE ARCADE GAME",
     },
-    'SCUS-94003': {
+    'SCUS94003': {
         'url': "games/U/B/SCUS-94003.html",
-    	'id': 'SCUS-94003',
+    	'id': 'SCUS94003',
 	'title': "BATTLE ARENA TOSHINDEN",
     },
-    'SCUS-94200': {
+    'SCUS94200': {
         'url': "games/U/B/SCUS-94200.html",
-    	'id': 'SCUS-94200',
+    	'id': 'SCUS94200',
 	'title': "BATTLE ARENA TOSHINDEN",
     },
     'SLUS00220': {
@@ -2429,9 +2429,9 @@ games = {
     	'id': 'SLUS01489',
 	'title': "BEYBLADE - LET IT RIP!",
     },
-    'SCUS-94702': {
+    'SCUS94702': {
         'url': "games/U/B/SCUS-94702.html",
-    	'id': 'SCUS-94702',
+    	'id': 'SCUS94702',
 	'title': "BEYOND THE BEYOND",
     },
     'SLUS00645': {
@@ -2509,9 +2509,9 @@ games = {
     	'id': 'SLUS01031',
 	'title': "BLASTER MASTER - BLASTING AGAIN",
     },
-    'SCUS-94412': {
+    'SCUS94412': {
         'url': "games/U/B/SCUS-94412.html",
-    	'id': 'SCUS-94412',
+    	'id': 'SCUS94412',
 	'title': "BLASTO",
     },
     'SLUS00100': {
@@ -2529,14 +2529,14 @@ games = {
     	'id': 'SLUS00027',
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
     },
-    'SCUS-94199': {
+    'SCUS94199': {
         'url': "games/U/B/SCUS-94199.html",
-    	'id': 'SCUS-94199',
+    	'id': 'SCUS94199',
 	'title': "BLOODY ROAR",
     },
-    'SCUS-94424': {
+    'SCUS94424': {
         'url': "games/U/B/SCUS-94424.html",
-    	'id': 'SCUS-94424',
+    	'id': 'SCUS94424',
 	'title': "BLOODY ROAR 2",
     },
     'SLUS01198': {
@@ -2554,9 +2554,9 @@ games = {
     	'id': 'SLUS01407',
 	'title': "BOB THE BUILDER - CAN WE FIX IT?",
     },
-    'SCUS-94307': {
+    'SCUS94307': {
         'url': "games/U/B/SCUS-94307.html",
-    	'id': 'SCUS-94307',
+    	'id': 'SCUS94307',
 	'title': "BOGEY DEAD 6",
     },
     'SLUS00823': {
@@ -2724,9 +2724,9 @@ games = {
     	'id': 'SLUS01317',
 	'title': "BURSTRICK WAKE BOARDING!!",
     },
-    'SCUS-94180': {
+    'SCUS94180': {
         'url': "games/U/B/SCUS-94180.html",
-    	'id': 'SCUS-94180',
+    	'id': 'SCUS94180',
 	'title': "BUSHIDO BLADE",
     },
     'SLUS00663': {
@@ -2734,9 +2734,9 @@ games = {
     	'id': 'SLUS00663',
 	'title': "BUSHIDO BLADE 2",
     },
-    'SCUS-94263': {
+    'SCUS94263': {
         'url': "games/U/B/SCUS-94263.html",
-    	'id': 'SCUS-94263',
+    	'id': 'SCUS94263',
 	'title': "BUST A GROOVE",
     },
     'SLUS01159': {
@@ -2769,9 +2769,9 @@ games = {
     	'id': 'SLUS00499',
 	'title': "C - THE CONTRA ADVENTURE",
     },
-    'SCUS-94666': {
+    'SCUS94666': {
         'url': "games/U/C/SCUS-94666.html",
-    	'id': 'SCUS-94666',
+    	'id': 'SCUS94666',
 	'title': "C-12 - FINAL RESISTANCE",
     },
     'SLUS01391': {
@@ -2814,24 +2814,24 @@ games = {
     	'id': 'SLUS01379',
 	'title': "CARD GAMES",
     },
-    'SCUS-94156': {
+    'SCUS94156': {
         'url': "games/U/C/SCUS-94156.html",
-    	'id': 'SCUS-94156',
+    	'id': 'SCUS94156',
 	'title': "CARDINAL SYN",
     },
-    'SCUS-94604': {
+    'SCUS94604': {
         'url': "games/U/C/SCUS-94604.html",
-    	'id': 'SCUS-94604',
+    	'id': 'SCUS94604',
 	'title': "CARNAGE HEART",
     },
-    'SCUS-94964': {
+    'SCUS94964': {
         'url': "games/U/C/SCUS-94604.html",
-    	'id': 'SCUS-94964',
+    	'id': 'SCUS94964',
 	'title': "CARNAGE HEART",
     },
-    'SCUS-94416': {
+    'SCUS94416': {
         'url': "games/U/C/SCUS-94416.html",
-    	'id': 'SCUS-94416',
+    	'id': 'SCUS94416',
 	'title': "CART WORLD SERIES",
     },
     'SLUS00162': {
@@ -2909,14 +2909,14 @@ games = {
     	'id': 'SLUS00814',
 	'title': "CHOCOBO'S DUNGEON 2",
     },
-    'SCUS-94700': {
+    'SCUS94700': {
         'url': "games/U/C/SCUS-94700.html",
-    	'id': 'SCUS-94700',
+    	'id': 'SCUS94700',
 	'title': "CHRONICLES OF THE SWORD",
     },
-    'SCUS-94701': {
+    'SCUS94701': {
         'url': "games/U/C/SCUS-94700.html",
-    	'id': 'SCUS-94701',
+    	'id': 'SCUS94701',
 	'title': "CHRONICLES OF THE SWORD",
     },
     'SLUS01041': {
@@ -2954,14 +2954,14 @@ games = {
     	'id': 'SLUS00695',
 	'title': "CLOCK TOWER 2 - THE STRUGGLE WITHIN",
     },
-    'SCUS-94409': {
+    'SCUS94409': {
         'url': "games/U/C/SCUS-94409.html",
-    	'id': 'SCUS-94409',
+    	'id': 'SCUS94409',
 	'title': "CODENAME TENKA",
     },
-    'SCUS-94474': {
+    'SCUS94474': {
         'url': "games/U/C/SCUS-94474.html",
-    	'id': 'SCUS-94474',
+    	'id': 'SCUS94474',
 	'title': "COLIN MCRAE RALLY",
     },
     'SLUS01222': {
@@ -3024,14 +3024,14 @@ games = {
     	'id': 'SLUS00667',
 	'title': "COMMAND & CONQUER - RED ALERT - RETALIATION",
     },
-    'SCUS-94294': {
+    'SCUS94294': {
         'url': "games/U/C/SCUS-94294.html",
-    	'id': 'SCUS-94294',
+    	'id': 'SCUS94294',
 	'title': "CONTENDER",
     },
-    'SCUS-94494': {
+    'SCUS94494': {
         'url': "games/U/C/SCUS-94494.html",
-    	'id': 'SCUS-94494',
+    	'id': 'SCUS94494',
 	'title': "CONTENDER 2",
     },
     'SLUS01305': {
@@ -3044,29 +3044,29 @@ games = {
     	'id': 'SLUS00288',
 	'title': "CONTRA - LEGACY OF WAR",
     },
-    'SCUS-94356': {
+    'SCUS94356': {
         'url': "games/U/C/SCUS-94356.html",
-    	'id': 'SCUS-94356',
+    	'id': 'SCUS94356',
 	'title': "COOL BOARDERS",
     },
-    'SCUS-94358': {
+    'SCUS94358': {
         'url': "games/U/C/SCUS-94358.html",
-    	'id': 'SCUS-94358',
+    	'id': 'SCUS94358',
 	'title': "COOL BOARDERS 2",
     },
-    'SCUS-94251': {
+    'SCUS94251': {
         'url': "games/U/C/SCUS-94251.html",
-    	'id': 'SCUS-94251',
+    	'id': 'SCUS94251',
 	'title': "COOL BOARDERS 3",
     },
-    'SCUS-94559': {
+    'SCUS94559': {
         'url': "games/U/C/SCUS-94559.html",
-    	'id': 'SCUS-94559',
+    	'id': 'SCUS94559',
 	'title': "COOL BOARDERS 4",
     },
-    'SCUS-94597': {
+    'SCUS94597': {
         'url': "games/U/C/SCUS-94597.html",
-    	'id': 'SCUS-94597',
+    	'id': 'SCUS94597',
 	'title': "COOL BOARDERS 2001",
     },
     'SLUS00898': {
@@ -3094,29 +3094,29 @@ games = {
     	'id': 'SLUS01157',
 	'title': "COVERT OPS - NUCLEAR DAWN",
     },
-    'SCUS-94900': {
+    'SCUS94900': {
         'url': "games/U/C/SCUS-94900.html",
-    	'id': 'SCUS-94900',
+    	'id': 'SCUS94900',
 	'title': "CRASH BANDICOOT",
     },
-    'SCUS-94154': {
+    'SCUS94154': {
         'url': "games/U/C/SCUS-94154.html",
-    	'id': 'SCUS-94154',
+    	'id': 'SCUS94154',
 	'title': "CRASH BANDICOOT 2 - CORTEX STRIKES BACK",
     },
-    'SCUS-94244': {
+    'SCUS94244': {
         'url': "games/U/C/SCUS-94244.html",
-    	'id': 'SCUS-94244',
+    	'id': 'SCUS94244',
 	'title': "CRASH BANDICOOT 3 - WARPED",
     },
-    'SCUS-94570': {
+    'SCUS94570': {
         'url': "games/U/C/SCUS-94570.html",
-    	'id': 'SCUS-94570',
+    	'id': 'SCUS94570',
 	'title': "CRASH BASH",
     },
-    'SCUS-94426': {
+    'SCUS94426': {
         'url': "games/U/C/SCUS-94426.html",
-    	'id': 'SCUS-94426',
+    	'id': 'SCUS94426',
 	'title': "CRASH TEAM RACING",
     },
     'SLUS01438': {
@@ -3324,14 +3324,14 @@ games = {
     	'id': 'SLUS00732',
 	'title': "DESTREGA",
     },
-    'SCUS-94302': {
+    'SCUS94302': {
         'url': "games/U/D/SCUS-94302.html",
-    	'id': 'SCUS-94302',
+    	'id': 'SCUS94302',
 	'title': "DESTRUCTION DERBY",
     },
-    'SCUS-94350': {
+    'SCUS94350': {
         'url': "games/U/D/SCUS-94350.html",
-    	'id': 'SCUS-94350',
+    	'id': 'SCUS94350',
 	'title': "DESTRUCTION DERBY 2",
     },
     'SLUS00912': {
@@ -3414,14 +3414,14 @@ games = {
     	'id': 'SLUS01552',
 	'title': "DIRT JOCKEY - HEAVY EQUIPMENT OPERATOR",
     },
-    'SCUS-94600': {
+    'SCUS94600': {
         'url': "games/U/D/SCUS-94600.html",
-    	'id': 'SCUS-94600',
+    	'id': 'SCUS94600',
 	'title': "DISCWORLD",
     },
-    'SCUS-94605': {
+    'SCUS94605': {
         'url': "games/U/D/SCUS-94605.html",
-    	'id': 'SCUS-94605',
+    	'id': 'SCUS94605',
 	'title': "DISCWORLD II - MORTALITY BYTES!",
     },
     'SLUS01574': {
@@ -3439,14 +3439,14 @@ games = {
     	'id': 'SLUS07013CE',
 	'title': "DISNEY ACTION GAMES COLLECTORS' EDITION",
     },
-    'SCUS-94569': {
+    'SCUS94569': {
         'url': "games/U/D/SCUS-94569.html",
-    	'id': 'SCUS-94569',
+    	'id': 'SCUS94569',
 	'title': "DISNEY'S ALADDIN - NASIRA'S REVENGE",
     },
-    'SCUS-94636': {
+    'SCUS94636': {
         'url': "games/U/D/SCUS-94636.html",
-    	'id': 'SCUS-94636',
+    	'id': 'SCUS94636',
 	'title': "DISNEY'S ATLANTIS - THE LOST EMPIRE",
     },
     'SLUS01167': {
@@ -3474,9 +3474,9 @@ games = {
     	'id': 'SLUS01029',
 	'title': "DISNEY'S HERCULES - THE ACTION GAME [RERELEASE]",
     },
-    'SCUS-94646': {
+    'SCUS94646': {
         'url': "games/U/D/SCUS-94646.html",
-    	'id': 'SCUS-94646',
+    	'id': 'SCUS94646',
 	'title': "DISNEY'S LILO & STITCH",
     },
     'SLUS01038': {
@@ -3484,9 +3484,9 @@ games = {
     	'id': 'SLUS01038',
 	'title': "DISNEY'S MULAN STORY STUDIO",
     },
-    'SCUS-94643': {
+    'SCUS94643': {
         'url': "games/U/D/SCUS-94643.html",
-    	'id': 'SCUS-94643',
+    	'id': 'SCUS94643',
 	'title': "DISNEY'S PETER PAN IN RETURN TO NEVERLAND",
     },
     'SLUS01583': {
@@ -3499,14 +3499,14 @@ games = {
     	'id': 'SLUS01437',
 	'title': "DISNEY'S POOH'S PARTY GAME - IN SEARCH OF THE TREASURE",
     },
-    'SCUS-94456': {
+    'SCUS94456': {
         'url': "games/U/D/SCUS-94456.html",
-    	'id': 'SCUS-94456',
+    	'id': 'SCUS94456',
 	'title': "DISNEY'S TARZAN",
     },
-    'SCUS-94571': {
+    'SCUS94571': {
         'url': "games/U/D/SCUS-94571.html",
-    	'id': 'SCUS-94571',
+    	'id': 'SCUS94571',
 	'title': "DISNEY'S THE EMPEROR'S NEW GROOVE",
     },
     'SLUS01282': {
@@ -3524,9 +3524,9 @@ games = {
     	'id': 'SLUS01210',
 	'title': "DISNEY'S TIGGER'S HONEY HUNT",
     },
-    'SCUS-94647': {
+    'SCUS94647': {
         'url': "games/U/D/SCUS-94647.html",
-    	'id': 'SCUS-94647',
+    	'id': 'SCUS94647',
 	'title': "DISNEY'S TREASURE PLANET",
     },
     'SLUS01513': {
@@ -3539,9 +3539,9 @@ games = {
     	'id': 'SLUS01514',
 	'title': "DISNEY'S WINNIE THE POOH - PRESCHOOL",
     },
-    'SCUS-94288': {
+    'SCUS94288': {
         'url': "games/U/D/SCUS-94288.html",
-    	'id': 'SCUS-94288',
+    	'id': 'SCUS94288',
 	'title': "DISNEY / PIXAR - A BUG'S LIFE",
     },
     'SLUS01192': {
@@ -3549,9 +3549,9 @@ games = {
     	'id': 'SLUS01192',
 	'title': "DISNEY / PIXAR - BUZZ LIGHTYEAR OF STAR COMMAND",
     },
-    'SCUS-94635': {
+    'SCUS94635': {
         'url': "games/U/D/SCUS-94635.html",
-    	'id': 'SCUS-94635',
+    	'id': 'SCUS94635',
 	'title': "DISNEY / PIXAR - MONSTERS INC. - SCREAM TEAM",
     },
     'SLUS00893': {
@@ -3744,9 +3744,9 @@ games = {
     	'id': 'SLUS00809',
 	'title': "EHRGEIZ - GOD BLESS THE RING",
     },
-    'SCUS-94243': {
+    'SCUS94243': {
         'url': "games/U/E/SCUS-94243.html",
-    	'id': 'SCUS-94243',
+    	'id': 'SCUS94243',
 	'title': "EINHANDER",
     },
     'SLUS00654': {
@@ -3759,9 +3759,9 @@ games = {
     	'id': 'SLUS00699',
 	'title': "ELIMINATOR",
     },
-    'SCUS-94152': {
+    'SCUS94152': {
         'url': "games/U/E/SCUS-94152.html",
-    	'id': 'SCUS-94152',
+    	'id': 'SCUS94152',
 	'title': "EPIDEMIC",
     },
     'SLUS01462': {
@@ -3769,9 +3769,9 @@ games = {
     	'id': 'SLUS01462',
 	'title': "EQUESTRIAN SHOWCASE",
     },
-    'SCUS-94503': {
+    'SCUS94503': {
         'url': "games/U/E/SCUS-94503.html",
-    	'id': 'SCUS-94503',
+    	'id': 'SCUS94503',
 	'title': "ESPN EXTREME GAMES",
     },
     'SLUS01186': {
@@ -3994,19 +3994,19 @@ games = {
     	'id': 'SLUS00331',
 	'title': "FINAL DOOM",
     },
-    'SCUS-94163': {
+    'SCUS94163': {
         'url': "games/U/F/SCUS-94163.html",
-    	'id': 'SCUS-94163',
+    	'id': 'SCUS94163',
 	'title': "FINAL FANTASY VII",
     },
-    'SCUS-94164': {
+    'SCUS94164': {
         'url': "games/U/F/SCUS-94163.html",
-    	'id': 'SCUS-94164',
+    	'id': 'SCUS94164',
 	'title': "FINAL FANTASY VII",
     },
-    'SCUS-94165': {
+    'SCUS94165': {
         'url': "games/U/F/SCUS-94163.html",
-    	'id': 'SCUS-94165',
+    	'id': 'SCUS94165',
 	'title': "FINAL FANTASY VII",
     },
     'SLUS00892': {
@@ -4074,9 +4074,9 @@ games = {
     	'id': 'SLUS01541',
 	'title': "FINAL FANTASY ORIGINS",
     },
-    'SCUS-94221': {
+    'SCUS94221': {
         'url': "games/U/F/SCUS-94221.html",
-    	'id': 'SCUS-94221',
+    	'id': 'SCUS94221',
 	'title': "FINAL FANTASY TACTICS",
     },
     'SLUS00802': {
@@ -4104,9 +4104,9 @@ games = {
     	'id': 'SLUS01540',
 	'title': "FORD TRUCK MANIA",
     },
-    'SCUS-94353': {
+    'SCUS94353': {
         'url': "games/U/F/SCUS-94353.html",
-    	'id': 'SCUS-94353',
+    	'id': 'SCUS94353',
 	'title': "FORMULA 1",
     },
     'SLUS00744': {
@@ -4309,24 +4309,24 @@ games = {
     	'id': 'SLUS00555',
 	'title': "GOLDEN NUGGET",
     },
-    'SCUS-94194': {
+    'SCUS94194': {
         'url': "games/U/G/SCUS-94194.html",
-    	'id': 'SCUS-94194',
+    	'id': 'SCUS94194',
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR",
     },
-    'SCUS-94455': {
+    'SCUS94455': {
         'url': "games/U/G/SCUS-94455.html",
-    	'id': 'SCUS-94455',
+    	'id': 'SCUS94455',
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
     },
-    'SCUS-94488': {
+    'SCUS94488': {
         'url': "games/U/G/SCUS-94455.html",
-    	'id': 'SCUS-94488',
+    	'id': 'SCUS94488',
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
     },
-    'SCUS-94588': {
+    'SCUS94588': {
         'url': "games/U/G/SCUS-94455.html",
-    	'id': 'SCUS-94588',
+    	'id': 'SCUS94588',
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
     },
     'SLUS00127': {
@@ -4374,14 +4374,14 @@ games = {
     	'id': 'SLUS00846',
 	'title': "GRAND THEFT AUTO - MISSION PACK #1 - LONDON 1969",
     },
-    'SCUS-94457': {
+    'SCUS94457': {
         'url': "games/U/G/SCUS-94457.html",
-    	'id': 'SCUS-94457',
+    	'id': 'SCUS94457',
 	'title': "GRANDIA",
     },
-    'SCUS-94465': {
+    'SCUS94465': {
         'url': "games/U/G/SCUS-94457.html",
-    	'id': 'SCUS-94465',
+    	'id': 'SCUS94465',
 	'title': "GRANDIA",
     },
     'SLUS00323': {
@@ -4389,9 +4389,9 @@ games = {
     	'id': 'SLUS00323',
 	'title': "GRID RUNNER",
     },
-    'SCUS-94568': {
+    'SCUS94568': {
         'url': "games/U/G/SCUS-94568.html",
-    	'id': 'SCUS-94568',
+    	'id': 'SCUS94568',
 	'title': "GRIND SESSION",
     },
     'SLUS01150': {
@@ -4524,14 +4524,14 @@ games = {
     	'id': 'SLUS01375',
 	'title': "HOSHIGAMI - RUINING BLUE EARTH",
     },
-    'SCUS-94188': {
+    'SCUS94188': {
         'url': "games/U/H/SCUS-94188.html",
-    	'id': 'SCUS-94188',
+    	'id': 'SCUS94188',
 	'title': "HOT SHOTS GOLF",
     },
-    'SCUS-94476': {
+    'SCUS94476': {
         'url': "games/U/H/SCUS-94476.html",
-    	'id': 'SCUS-94476',
+    	'id': 'SCUS94476',
 	'title': "HOT SHOTS GOLF 2",
     },
     'SLUS01293': {
@@ -4599,9 +4599,9 @@ games = {
     	'id': 'SLUS01267',
 	'title': "INSPECTOR GADGET - GADGET'S CRAZY MAZE",
     },
-    'SCUS-94181': {
+    'SCUS94181': {
         'url': "games/U/I/SCUS-94181.html",
-    	'id': 'SCUS-94181',
+    	'id': 'SCUS94181',
 	'title': "INTELLIGENT QUBE",
     },
     'SLUS00906': {
@@ -4699,24 +4699,24 @@ games = {
     	'id': 'SLUS00832',
 	'title': "JEREMY MCGRATH SUPERCROSS 2000",
     },
-    'SCUS-94907': {
+    'SCUS94907': {
         'url': "games/U/J/SCUS-94907.html",
-    	'id': 'SCUS-94907',
+    	'id': 'SCUS94907',
 	'title': "JERSEY DEVIL",
     },
-    'SCUS-94309': {
+    'SCUS94309': {
         'url': "games/U/J/SCUS-94309.html",
-    	'id': 'SCUS-94309',
+    	'id': 'SCUS94309',
 	'title': "JET MOTO",
     },
-    'SCUS-94167': {
+    'SCUS94167': {
         'url': "games/U/J/SCUS-94167.html",
-    	'id': 'SCUS-94167',
+    	'id': 'SCUS94167',
 	'title': "JET MOTO 2",
     },
-    'SCUS-94555': {
+    'SCUS94555': {
         'url': "games/U/J/SCUS-94555.html",
-    	'id': 'SCUS-94555',
+    	'id': 'SCUS94555',
 	'title': "JET MOTO 3",
     },
     'SLUS01509': {
@@ -4764,14 +4764,14 @@ games = {
     	'id': 'SLUS00989',
 	'title': "JUGGERNAUT",
     },
-    'SCUS-94103': {
+    'SCUS94103': {
         'url': "games/U/J/SCUS-94103.html",
-    	'id': 'SCUS-94103',
+    	'id': 'SCUS94103',
 	'title': "JUMPING FLASH!",
     },
-    'SCUS-94108': {
+    'SCUS94108': {
         'url': "games/U/J/SCUS-94108.html",
-    	'id': 'SCUS-94108',
+    	'id': 'SCUS94108',
 	'title': "JUMPING FLASH! 2",
     },
     'SLUS01383': {
@@ -4819,9 +4819,9 @@ games = {
     	'id': 'SLUS01412',
 	'title': "KICKBOXING",
     },
-    'SCUS-94102': {
+    'SCUS94102': {
         'url': "games/U/K/SCUS-94102.html",
-    	'id': 'SCUS-94102',
+    	'id': 'SCUS94102',
 	'title': "KILEAK - THE DNA IMPERATIVE",
     },
     'SLUS00938': {
@@ -4899,9 +4899,9 @@ games = {
     	'id': 'SLUS01102',
 	'title': "KOUDELKA",
     },
-    'SCUS-94303': {
+    'SCUS94303': {
         'url': "games/U/K/SCUS-94303.html",
-    	'id': 'SCUS-94303',
+    	'id': 'SCUS94303',
 	'title': "KRAZY IVAN",
     },
     'SLUS01125': {
@@ -4919,9 +4919,9 @@ games = {
     	'id': 'SLUS00708',
 	'title': "LEGACY OF KAIN - SOUL REAVER",
     },
-    'SCUS-94254': {
+    'SCUS94254': {
         'url': "games/U/L/SCUS-94254.html",
-    	'id': 'SCUS-94254',
+    	'id': 'SCUS94254',
 	'title': "LEGEND OF LEGAIA",
     },
     'SLUS01013': {
@@ -4944,9 +4944,9 @@ games = {
     	'id': 'SLUS00937',
 	'title': "LEGO ROCK RAIDERS",
     },
-    'SCUS-94601': {
+    'SCUS94601': {
         'url': "games/U/L/SCUS-94601.html",
-    	'id': 'SCUS-94601',
+    	'id': 'SCUS94601',
 	'title': "LEMMINGS 3D",
     },
     'SLUS00760': {
@@ -5169,14 +5169,14 @@ games = {
     	'id': 'SLUS01270',
 	'title': "MEDAL OF HONOR - UNDERGROUND",
     },
-    'SCUS-94227': {
+    'SCUS94227': {
         'url': "games/U/M/SCUS-94227.html",
-    	'id': 'SCUS-94227',
+    	'id': 'SCUS94227',
 	'title': "MEDIEVIL",
     },
-    'SCUS-94564': {
+    'SCUS94564': {
         'url': "games/U/M/SCUS-94564.html",
-    	'id': 'SCUS-94564',
+    	'id': 'SCUS94564',
 	'title': "MEDIEVIL II",
     },
     'SLUS00453': {
@@ -5274,49 +5274,49 @@ games = {
     	'id': 'SLUS01016',
 	'title': "MISSION IMPOSSIBLE",
     },
-    'SCUS-94170': {
+    'SCUS94170': {
         'url': "games/U/M/SCUS-94170.html",
-    	'id': 'SCUS-94170',
+    	'id': 'SCUS94170',
 	'title': "MLB 98",
     },
-    'SCUS-94233': {
+    'SCUS94233': {
         'url': "games/U/M/SCUS-94233.html",
-    	'id': 'SCUS-94233',
+    	'id': 'SCUS94233',
 	'title': "MLB 99",
     },
-    'SCUS-94359': {
+    'SCUS94359': {
         'url': "games/U/M/SCUS-94359.html",
-    	'id': 'SCUS-94359',
+    	'id': 'SCUS94359',
 	'title': "MLB 2000",
     },
-    'SCUS-94478': {
+    'SCUS94478': {
         'url': "games/U/M/SCUS-94478.html",
-    	'id': 'SCUS-94478',
+    	'id': 'SCUS94478',
 	'title': "MLB 2001",
     },
-    'SCUS-94638': {
+    'SCUS94638': {
         'url': "games/U/M/SCUS-94638.html",
-    	'id': 'SCUS-94638',
+    	'id': 'SCUS94638',
 	'title': "MLB 2002",
     },
-    'SCUS-94653': {
+    'SCUS94653': {
         'url': "games/U/M/SCUS-94653.html",
-    	'id': 'SCUS-94653',
+    	'id': 'SCUS94653',
 	'title': "MLB 2003",
     },
-    'SCUS-94689': {
+    'SCUS94689': {
         'url': "games/U/M/SCUS-94689.html",
-    	'id': 'SCUS-94689',
+    	'id': 'SCUS94689',
 	'title': "MLB 2004",
     },
-    'SCUS-94692': {
+    'SCUS94692': {
         'url': "games/U/M/SCUS-94692.html",
-    	'id': 'SCUS-94692',
+    	'id': 'SCUS94692',
 	'title': "MLB 2005",
     },
-    'SCUS-94507': {
+    'SCUS94507': {
         'url': "games/U/M/SCUS-94507.html",
-    	'id': 'SCUS-94507',
+    	'id': 'SCUS94507',
 	'title': "MLB PENNANT RACE",
     },
     'SLUS01103': {
@@ -5389,9 +5389,9 @@ games = {
     	'id': 'SLUS01021',
 	'title': "MORT THE CHICKEN",
     },
-    'SCUS-94201': {
+    'SCUS94201': {
         'url': "games/U/M/SCUS-94201.html",
-    	'id': 'SCUS-94201',
+    	'id': 'SCUS94201',
 	'title': "MORTAL KOMBAT 3",
     },
     'SLUS01126': {
@@ -5444,9 +5444,9 @@ games = {
     	'id': 'SLUS01531',
 	'title': "MOTOCROSS MANIA 2",
     },
-    'SCUS-94355': {
+    'SCUS94355': {
         'url': "games/U/M/SCUS-94355.html",
-    	'id': 'SCUS-94355',
+    	'id': 'SCUS94355',
 	'title': "MOTOR TOON GRAND PRIX",
     },
     'SLUS00717': {
@@ -5509,9 +5509,9 @@ games = {
     	'id': 'SLUS01512',
 	'title': "MY DISNEY KITCHEN",
     },
-    'SCUS-94602': {
+    'SCUS94602': {
         'url': "games/U/M/SCUS-94602.html",
-    	'id': 'SCUS-94602',
+    	'id': 'SCUS94602',
 	'title': "MYST",
     },
     'SLUS00637': {
@@ -5709,44 +5709,44 @@ games = {
     	'id': 'SLUS01483',
 	'title': "NBA LIVE 2003",
     },
-    'SCUS-94500': {
+    'SCUS94500': {
         'url': "games/U/N/SCUS-94500.html",
-    	'id': 'SCUS-94500',
+    	'id': 'SCUS94500',
 	'title': "NBA SHOOTOUT",
     },
-    'SCUS-94552': {
+    'SCUS94552': {
         'url': "games/U/N/SCUS-94552.html",
-    	'id': 'SCUS-94552',
+    	'id': 'SCUS94552',
 	'title': "NBA SHOOTOUT '97",
     },
-    'SCUS-94171': {
+    'SCUS94171': {
         'url': "games/U/N/SCUS-94171.html",
-    	'id': 'SCUS-94171',
+    	'id': 'SCUS94171',
 	'title': "NBA SHOOTOUT '98",
     },
-    'SCUS-94561': {
+    'SCUS94561': {
         'url': "games/U/N/SCUS-94561.html",
-    	'id': 'SCUS-94561',
+    	'id': 'SCUS94561',
 	'title': "NBA SHOOTOUT 2000",
     },
-    'SCUS-94581': {
+    'SCUS94581': {
         'url': "games/U/N/SCUS-94581.html",
-    	'id': 'SCUS-94581',
+    	'id': 'SCUS94581',
 	'title': "NBA SHOOTOUT 2001",
     },
-    'SCUS-94641': {
+    'SCUS94641': {
         'url': "games/U/N/SCUS-94641.html",
-    	'id': 'SCUS-94641',
+    	'id': 'SCUS94641',
 	'title': "NBA SHOOTOUT 2002",
     },
-    'SCUS-94673': {
+    'SCUS94673': {
         'url': "games/U/N/SCUS-94673.html",
-    	'id': 'SCUS-94673',
+    	'id': 'SCUS94673',
 	'title': "NBA SHOOTOUT 2003",
     },
-    'SCUS-94691': {
+    'SCUS94691': {
         'url': "games/U/N/SCUS-94691.html",
-    	'id': 'SCUS-94691',
+    	'id': 'SCUS94691',
 	'title': "NBA SHOOTOUT 2004",
     },
     'SLUS00948': {
@@ -5759,19 +5759,19 @@ games = {
     	'id': 'SLUS00142',
 	'title': "NCAA BASKETBALL - FINAL FOUR '97",
     },
-    'SCUS-94264': {
+    'SCUS94264': {
         'url': "games/U/N/SCUS-94264.html",
-    	'id': 'SCUS-94264',
+    	'id': 'SCUS94264',
 	'title': "NCAA FINAL FOUR 99",
     },
-    'SCUS-94562': {
+    'SCUS94562': {
         'url': "games/U/N/SCUS-94562.html",
-    	'id': 'SCUS-94562',
+    	'id': 'SCUS94562',
 	'title': "NCAA FINAL FOUR 2000",
     },
-    'SCUS-94579': {
+    'SCUS94579': {
         'url': "games/U/N/SCUS-94579.html",
-    	'id': 'SCUS-94579',
+    	'id': 'SCUS94579',
 	'title': "NCAA FINAL FOUR 2001",
     },
     'SLUS00514': {
@@ -5794,29 +5794,29 @@ games = {
     	'id': 'SLUS01219',
 	'title': "NCAA FOOTBALL 2001",
     },
-    'SCUS-94172': {
+    'SCUS94172': {
         'url': "games/U/N/SCUS-94172.html",
-    	'id': 'SCUS-94172',
+    	'id': 'SCUS94172',
 	'title': "NCAA GAMEBREAKER 98",
     },
-    'SCUS-94246': {
+    'SCUS94246': {
         'url': "games/U/N/SCUS-94246.html",
-    	'id': 'SCUS-94246',
+    	'id': 'SCUS94246',
 	'title': "NCAA GAMEBREAKER 99",
     },
-    'SCUS-94509': {
+    'SCUS94509': {
         'url': "games/U/N/SCUS-94509.html",
-    	'id': 'SCUS-94509',
+    	'id': 'SCUS94509',
 	'title': "NCAA FOOTBALL - GAME BREAKER",
     },
-    'SCUS-94557': {
+    'SCUS94557': {
         'url': "games/U/N/SCUS-94557.html",
-    	'id': 'SCUS-94557',
+    	'id': 'SCUS94557',
 	'title': "NCAA GAMEBREAKER 2000",
     },
-    'SCUS-94573': {
+    'SCUS94573': {
         'url': "games/U/N/SCUS-94573.html",
-    	'id': 'SCUS-94573',
+    	'id': 'SCUS94573',
 	'title': "NCAA GAMEBREAKER 2001",
     },
     'SLUS00526': {
@@ -5894,54 +5894,54 @@ games = {
     	'id': 'SLUS00047',
 	'title': "NFL FULL CONTACT",
     },
-    'SCUS-94505': {
+    'SCUS94505': {
         'url': "games/U/N/SCUS-94505.html",
-    	'id': 'SCUS-94505',
+    	'id': 'SCUS94505',
 	'title': "NFL GAMEDAY",
     },
-    'SCUS-94510': {
+    'SCUS94510': {
         'url': "games/U/N/SCUS-94510.html",
-    	'id': 'SCUS-94510',
+    	'id': 'SCUS94510',
 	'title': "NFL GAMEDAY 97",
     },
-    'SCUS-94173': {
+    'SCUS94173': {
         'url': "games/U/N/SCUS-94173.html",
-    	'id': 'SCUS-94173',
+    	'id': 'SCUS94173',
 	'title': "NFL GAMEDAY 98",
     },
-    'SCUS-94234': {
+    'SCUS94234': {
         'url': "games/U/N/SCUS-94234.html",
-    	'id': 'SCUS-94234',
+    	'id': 'SCUS94234',
 	'title': "NFL GAMEDAY 99",
     },
-    'SCUS-94556': {
+    'SCUS94556': {
         'url': "games/U/N/SCUS-94556.html",
-    	'id': 'SCUS-94556',
+    	'id': 'SCUS94556',
 	'title': "NFL GAMEDAY 2000",
     },
-    'SCUS-94575': {
+    'SCUS94575': {
         'url': "games/U/N/SCUS-94575.html",
-    	'id': 'SCUS-94575',
+    	'id': 'SCUS94575',
 	'title': "NFL GAMEDAY 2001",
     },
-    'SCUS-94639': {
+    'SCUS94639': {
         'url': "games/U/N/SCUS-94639.html",
-    	'id': 'SCUS-94639',
+    	'id': 'SCUS94639',
 	'title': "NFL GAMEDAY 2002",
     },
-    'SCUS-94665': {
+    'SCUS94665': {
         'url': "games/U/N/SCUS-94665.html",
-    	'id': 'SCUS-94665',
+    	'id': 'SCUS94665',
 	'title': "NFL GAMEDAY 2003",
     },
-    'SCUS-94690': {
+    'SCUS94690': {
         'url': "games/U/N/SCUS-94690.html",
-    	'id': 'SCUS-94690',
+    	'id': 'SCUS94690',
 	'title': "NFL GAMEDAY 2004",
     },
-    'SCUS-94695': {
+    'SCUS94695': {
         'url': "games/U/N/SCUS-94695.html",
-    	'id': 'SCUS-94695',
+    	'id': 'SCUS94695',
 	'title': "NFL GAMEDAY 2005",
     },
     'SLUS00011': {
@@ -5949,14 +5949,14 @@ games = {
     	'id': 'SLUS00011',
 	'title': "NFL QUARTERBACK CLUB '97",
     },
-    'SCUS-94245': {
+    'SCUS94245': {
         'url': "games/U/N/SCUS-94245.html",
-    	'id': 'SCUS-94245',
+    	'id': 'SCUS94245',
 	'title': "NFL XTREME",
     },
-    'SCUS-94420': {
+    'SCUS94420': {
         'url': "games/U/N/SCUS-94420.html",
-    	'id': 'SCUS-94420',
+    	'id': 'SCUS94420',
 	'title': "NFL XTREME 2",
     },
     'SLUS01155': {
@@ -5999,34 +5999,34 @@ games = {
     	'id': 'SLUS00391',
 	'title': "NHL BREAKAWAY 98",
     },
-    'SCUS-94504': {
+    'SCUS94504': {
         'url': "games/U/N/SCUS-94504.html",
-    	'id': 'SCUS-94504',
+    	'id': 'SCUS94504',
 	'title': "NHL FACE OFF",
     },
-    'SCUS-94550': {
+    'SCUS94550': {
         'url': "games/U/N/SCUS-94550.html",
-    	'id': 'SCUS-94550',
+    	'id': 'SCUS94550',
 	'title': "NHL FACE OFF '97",
     },
-    'SCUS-94174': {
+    'SCUS94174': {
         'url': "games/U/N/SCUS-94174.html",
-    	'id': 'SCUS-94174',
+    	'id': 'SCUS94174',
 	'title': "NHL FACE OFF 98",
     },
-    'SCUS-94235': {
+    'SCUS94235': {
         'url': "games/U/N/SCUS-94235.html",
-    	'id': 'SCUS-94235',
+    	'id': 'SCUS94235',
 	'title': "NHL FACE OFF 99",
     },
-    'SCUS-94558': {
+    'SCUS94558': {
         'url': "games/U/N/SCUS-94558.html",
-    	'id': 'SCUS-94558',
+    	'id': 'SCUS94558',
 	'title': "NHL FACE OFF 2000",
     },
-    'SCUS-94577': {
+    'SCUS94577': {
         'url': "games/U/N/SCUS-94577.html",
-    	'id': 'SCUS-94577',
+    	'id': 'SCUS94577',
 	'title': "NHL FACE OFF 2001",
     },
     'SLUS00327': {
@@ -6084,14 +6084,14 @@ games = {
     	'id': 'SLUS00466',
 	'title': "NORSE BY NORSEWEST - THE RETURN OF THE LOST VIKINGS",
     },
-    'SCUS-94404': {
+    'SCUS94404': {
         'url': "games/U/N/SCUS-94404.html",
-    	'id': 'SCUS-94404',
+    	'id': 'SCUS94404',
 	'title': "NOVASTORM",
     },
-    'SCUS-94407': {
+    'SCUS94407': {
         'url': "games/U/N/SCUS-94404.html",
-    	'id': 'SCUS-94407',
+    	'id': 'SCUS94407',
 	'title': "NOVASTORM",
     },
     'SLUS00518': {
@@ -6139,9 +6139,9 @@ games = {
     	'id': 'SLUS00148',
 	'title': "OLYMPIC SUMMER GAMES - ATLANTA '96",
     },
-    'SCUS-94449': {
+    'SCUS94449': {
         'url': "games/U/O/SCUS-94449.html",
-    	'id': 'SCUS-94449',
+    	'id': 'SCUS94449',
 	'title': "OMEGA BOOST",
     },
     'SLUS00469': {
@@ -6189,9 +6189,9 @@ games = {
     	'id': 'SLUS00132',
 	'title': "PANZER GENERAL",
     },
-    'SCUS-94183': {
+    'SCUS94183': {
         'url': "games/U/P/SCUS-94183.html",
-    	'id': 'SCUS-94183',
+    	'id': 'SCUS94183',
 	'title': "PARAPPA THE RAPPER",
     },
     'SLUS00662': {
@@ -6274,9 +6274,9 @@ games = {
     	'id': 'SLUS00517',
 	'title': "PGA TOUR GOLF 98",
     },
-    'SCUS-94403': {
+    'SCUS94403': {
         'url': "games/U/P/SCUS-94403.html",
-    	'id': 'SCUS-94403',
+    	'id': 'SCUS94403',
 	'title': "PHILOSOMA",
     },
     'SLUS01523': {
@@ -6364,9 +6364,9 @@ games = {
     	'id': 'SLUS00277',
 	'title': "POPULOUS - THE BEGINNING",
     },
-    'SCUS-94187': {
+    'SCUS94187': {
         'url': "games/U/P/SCUS-94187.html",
-    	'id': 'SCUS-94187',
+    	'id': 'SCUS94187',
 	'title': "PORSCHE CHALLENGE",
     },
     'SLUS00408': {
@@ -6449,14 +6449,14 @@ games = {
     	'id': 'SLUS00639',
 	'title': "PRO PINBALL - TIMESHOCK!",
     },
-    'SCUS-94551': {
+    'SCUS94551': {
         'url': "games/U/P/SCUS-94551.html",
-    	'id': 'SCUS-94551',
+    	'id': 'SCUS94551',
 	'title': "PROFESSIONAL UNDERGROUND LEAGUE OF PAIN",
     },
-    'SCUS-94408': {
+    'SCUS94408': {
         'url': "games/U/P/SCUS-94408.html",
-    	'id': 'SCUS-94408',
+    	'id': 'SCUS94408',
 	'title': "PROJECT - HORNED OWL",
     },
     'SLUS00045': {
@@ -6554,14 +6554,14 @@ games = {
     	'id': 'SLUS00808',
 	'title': "RAILROAD TYCOON II",
     },
-    'SCUS-94308': {
+    'SCUS94308': {
         'url': "games/U/R/SCUS-94308.html",
-    	'id': 'SCUS-94308',
+    	'id': 'SCUS94308',
 	'title': "RALLY CROSS",
     },
-    'SCUS-94247': {
+    'SCUS94247': {
         'url': "games/U/R/SCUS-94247.html",
-    	'id': 'SCUS-94247',
+    	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2",
     },
     'SLUS01065': {
@@ -6779,9 +6779,9 @@ games = {
     	'id': 'SLUS01073',
 	'title': "RHAPSODY - A MUSICAL ADVENTURE",
     },
-    'SCUS-94300': {
+    'SCUS94300': {
         'url': "games/U/R/SCUS-94300.html",
-    	'id': 'SCUS-94300',
+    	'id': 'SCUS94300',
 	'title': "RIDGE RACER",
     },
     'SLUS00540': {
@@ -6974,14 +6974,14 @@ games = {
     	'id': 'SLUS01135',
 	'title': "RUNABOUT 2",
     },
-    'SCUS-94272': {
+    'SCUS94272': {
         'url': "games/U/R/SCUS-94272.html",
-    	'id': 'SCUS-94272',
+    	'id': 'SCUS94272',
 	'title': "RUNNING WILD",
     },
-    'SCUS-94417': {
+    'SCUS94417': {
         'url': "games/U/R/SCUS-94417.html",
-    	'id': 'SCUS-94417',
+    	'id': 'SCUS94417',
 	'title': "RUSH HOUR",
     },
     'SLUS00828': {
@@ -6999,9 +6999,9 @@ games = {
     	'id': 'SLUS01208',
 	'title': "SABRINA THE TEENAGE WITCH - A TWITCH IN TIME",
     },
-    'SCUS-94230': {
+    'SCUS94230': {
         'url': "games/U/S/SCUS-94230.html",
-    	'id': 'SCUS-94230',
+    	'id': 'SCUS94230',
 	'title': "SAGA FRONTIER",
     },
     'SLUS00933': {
@@ -7029,9 +7029,9 @@ games = {
     	'id': 'SLUS01064',
 	'title': "SAMMY SOSA SOFTBALL SLAM",
     },
-    'SCUS-94206': {
+    'SCUS94206': {
         'url': "games/U/S/SCUS-94206.html",
-    	'id': 'SCUS-94206',
+    	'id': 'SCUS94206',
 	'title': "SAMURAI SHOWDOWN III - BLADES OF BLOOD",
     },
     'SLUS01039': {
@@ -7059,9 +7059,9 @@ games = {
     	'id': 'SLUS01149',
 	'title': "SEA-DOO HYDROCROSS",
     },
-    'SCUS-94110': {
+    'SCUS94110': {
         'url': "games/U/S/SCUS-94110.html",
-    	'id': 'SCUS-94110',
+    	'id': 'SCUS94110',
 	'title': "SENTIENT",
     },
     'SLUS00604': {
@@ -7299,9 +7299,9 @@ games = {
     	'id': 'SLUS00243',
 	'title': "SPACE JAM",
     },
-    'SCUS-94204': {
+    'SCUS94204': {
         'url': "games/U/S/SCUS-94204.html",
-    	'id': 'SCUS-94204',
+    	'id': 'SCUS94204',
 	'title': "SPAWN THE ETERNAL",
     },
     'SLUS01447': {
@@ -7324,9 +7324,9 @@ games = {
     	'id': 'SLUS01131',
 	'title': "SPEC OPS - STEALTH PATROL",
     },
-    'SCUS-94563': {
+    'SCUS94563': {
         'url': "games/U/S/SCUS-94563.html",
-    	'id': 'SCUS-94563',
+    	'id': 'SCUS94563',
 	'title': "SPEED PUNKS",
     },
     'SLUS00613': {
@@ -7384,19 +7384,19 @@ games = {
     	'id': 'SLUS00014',
 	'title': "SPOT GOES TO HOLLYWOOD",
     },
-    'SCUS-94228': {
+    'SCUS94228': {
         'url': "games/U/S/SCUS-94228.html",
-    	'id': 'SCUS-94228',
+    	'id': 'SCUS94228',
 	'title': "SPYRO THE DRAGON",
     },
-    'SCUS-94425': {
+    'SCUS94425': {
         'url': "games/U/S/SCUS-94425.html",
-    	'id': 'SCUS-94425',
+    	'id': 'SCUS94425',
 	'title': "SPYRO 2 - RIPTO'S RAGE",
     },
-    'SCUS-94467': {
+    'SCUS94467': {
         'url': "games/U/S/SCUS-94467.html",
-    	'id': 'SCUS-94467',
+    	'id': 'SCUS94467',
 	'title': "SPYRO 3 - YEAR OF THE DRAGON",
     },
     'SLUS00241': {
@@ -7409,14 +7409,14 @@ games = {
     	'id': 'SLUS00372',
 	'title': "STAR GLADIATOR - EPISODE 1 - FINAL CRUSADE",
     },
-    'SCUS-94421': {
+    'SCUS94421': {
         'url': "games/U/S/SCUS-94421.html",
-    	'id': 'SCUS-94421',
+    	'id': 'SCUS94421',
 	'title': "STAR OCEAN - THE SECOND STORY",
     },
-    'SCUS-94422': {
+    'SCUS94422': {
         'url': "games/U/S/SCUS-94421.html",
-    	'id': 'SCUS-94422',
+    	'id': 'SCUS94422',
 	'title': "STAR OCEAN - THE SECOND STORY",
     },
     'SLUS00924': {
@@ -7479,9 +7479,9 @@ games = {
     	'id': 'SLUS00093',
 	'title': "STEEL HARBINGER",
     },
-    'SCUS-94902': {
+    'SCUS94902': {
         'url': "games/U/S/SCUS-94902.html",
-    	'id': 'SCUS-94902',
+    	'id': 'SCUS94902',
 	'title': "STEEL REIGN",
     },
     'SLUS00629': {
@@ -7584,9 +7584,9 @@ games = {
     	'id': 'SLUS01337',
 	'title': "STRIKERS 1945",
     },
-    'SCUS-94669': {
+    'SCUS94669': {
         'url': "games/U/S/SCUS-94669.html",
-    	'id': 'SCUS-94669',
+    	'id': 'SCUS94669',
 	'title': "STUART LITTLE 2",
     },
     'SLUS00292': {
@@ -7624,9 +7624,9 @@ games = {
     	'id': 'SLUS01005',
 	'title': "SUPERCROSS 2000",
     },
-    'SCUS-94453': {
+    'SCUS94453': {
         'url': "games/U/S/SCUS-94453.html",
-    	'id': 'SCUS-94453',
+    	'id': 'SCUS94453',
 	'title': "SUPERCROSS CIRCUIT",
     },
     'SLUS01493': {
@@ -7654,24 +7654,24 @@ games = {
     	'id': 'SLUS00262',
 	'title': "SYNDICATE WARS",
     },
-    'SCUS-94240': {
+    'SCUS94240': {
         'url': "games/U/S/SCUS-94240.html",
-    	'id': 'SCUS-94240',
+    	'id': 'SCUS94240',
 	'title': "SYPHON FILTER",
     },
-    'SCUS-94451': {
+    'SCUS94451': {
         'url': "games/U/S/SCUS-94451.html",
-    	'id': 'SCUS-94451',
+    	'id': 'SCUS94451',
 	'title': "SYPHON FILTER 2",
     },
-    'SCUS-94492': {
+    'SCUS94492': {
         'url': "games/U/S/SCUS-94451.html",
-    	'id': 'SCUS-94492',
+    	'id': 'SCUS94492',
 	'title': "SYPHON FILTER 2",
     },
-    'SCUS-94640': {
+    'SCUS94640': {
         'url': "games/U/S/SCUS-94640.html",
-    	'id': 'SCUS-94640',
+    	'id': 'SCUS94640',
 	'title': "SYPHON FILTER 3",
     },
     'SLUS00813': {
@@ -7694,9 +7694,9 @@ games = {
     	'id': 'SLUS00660',
 	'title': "TAIL CONCERTO",
     },
-    'SCUS-94607': {
+    'SCUS94607': {
         'url': "games/U/T/SCUS-94607.html",
-    	'id': 'SCUS-94607',
+    	'id': 'SCUS94607',
 	'title': "TAIL OF THE SUN - WILD, PURE, SIMPLE LIFE",
     },
     'SLUS00626': {
@@ -7844,9 +7844,9 @@ games = {
     	'id': 'SLUS00338',
 	'title': "TETRIS PLUS",
     },
-    'SCUS-94906': {
+    'SCUS94906': {
         'url': "games/U/T/SCUS-94906.html",
-    	'id': 'SCUS-94906',
+    	'id': 'SCUS94906',
 	'title': "THE ADVENTURES OF LOMAX",
     },
     'SLUS01475': {
@@ -7864,9 +7864,9 @@ games = {
     	'id': 'SLUS00052',
 	'title': "THE CHESSMASTER 3-D",
     },
-    'SCUS-94150': {
+    'SCUS94150': {
         'url': "games/U/T/SCUS-94150.html",
-    	'id': 'SCUS-94150',
+    	'id': 'SCUS94150',
 	'title': "THE CITY OF LOST CHILDREN",
     },
     'SLUS00242': {
@@ -7939,9 +7939,9 @@ games = {
     	'id': 'SLUS01457',
 	'title': "THE ITALIAN JOB",
     },
-    'SCUS-94205': {
+    'SCUS94205': {
         'url': "games/U/T/SCUS-94205.html",
-    	'id': 'SCUS-94205',
+    	'id': 'SCUS94205',
 	'title': "THE KING OF FIGHTERS '95",
     },
     'SLUS01332': {
@@ -7964,24 +7964,24 @@ games = {
     	'id': 'SLUS01043',
 	'title': "THE LAND BEFORE TIME - RETURN TO GREAT VALLEY",
     },
-    'SCUS-94491': {
+    'SCUS94491': {
         'url': "games/U/T/SCUS-94491.html",
-    	'id': 'SCUS-94491',
+    	'id': 'SCUS94491',
 	'title': "THE LEGEND OF DRAGOON",
     },
-    'SCUS-94584': {
+    'SCUS94584': {
         'url': "games/U/T/SCUS-94491.html",
-    	'id': 'SCUS-94584',
+    	'id': 'SCUS94584',
 	'title': "THE LEGEND OF DRAGOON",
     },
-    'SCUS-94585': {
+    'SCUS94585': {
         'url': "games/U/T/SCUS-94491.html",
-    	'id': 'SCUS-94585',
+    	'id': 'SCUS94585',
 	'title': "THE LEGEND OF DRAGOON",
     },
-    'SCUS-94586': {
+    'SCUS94586': {
         'url': "games/U/T/SCUS-94491.html",
-    	'id': 'SCUS-94586',
+    	'id': 'SCUS94586',
 	'title': "THE LEGEND OF DRAGOON",
     },
     'SLUS00515': {
@@ -8009,9 +8009,9 @@ games = {
     	'id': 'SLUS01423',
 	'title': "THE POWERPUFF GIRLS - CHEMICAL X-TRACTION",
     },
-    'SCUS-94402': {
+    'SCUS94402': {
         'url': "games/U/T/SCUS-94402.html",
-    	'id': 'SCUS-94402',
+    	'id': 'SCUS94402',
 	'title': "THE RAIDEN PROJECT",
     },
     'SLUS01008': {
@@ -8099,9 +8099,9 @@ games = {
     	'id': 'SLUS00727',
 	'title': "THUNDER FORCE V - PERFECT SYSTEM",
     },
-    'SCUS-94352': {
+    'SCUS94352': {
         'url': "games/U/T/SCUS-94352.html",
-    	'id': 'SCUS-94352',
+    	'id': 'SCUS94352',
 	'title': "THUNDER TRUCK RALLY",
     },
     'SLUS00191': {
@@ -8144,9 +8144,9 @@ games = {
     	'id': 'SLUS01336',
 	'title': "TIME CRISIS - PROJECT TITAN",
     },
-    'SCUS-94427': {
+    'SCUS94427': {
         'url': "games/U/T/SCUS-94427.html",
-    	'id': 'SCUS-94427',
+    	'id': 'SCUS94427',
 	'title': "TINY TANK",
     },
     'SLUS01393': {
@@ -8174,14 +8174,14 @@ games = {
     	'id': 'SLUS00980',
 	'title': "TNN MOTORSPORTS HARDCORE TR",
     },
-    'SCUS-94208': {
+    'SCUS94208': {
         'url': "games/U/T/SCUS-94208.html",
-    	'id': 'SCUS-94208',
+    	'id': 'SCUS94208',
 	'title': "TOBAL No.1",
     },
-    'SCUS-94961': {
+    'SCUS94961': {
         'url': "games/U/T/SCUS-94208.html",
-    	'id': 'SCUS-94961',
+    	'id': 'SCUS94961',
 	'title': "TOBAL No.1",
     },
     'SLUS00611': {
@@ -8244,14 +8244,14 @@ games = {
     	'id': 'SLUS01311',
 	'title': "TOMB RAIDER - CHRONICLES",
     },
-    'SCUS-94236': {
+    'SCUS94236': {
         'url': "games/U/T/SCUS-94236.html",
-    	'id': 'SCUS-94236',
+    	'id': 'SCUS94236',
 	'title': "TOMBA!",
     },
-    'SCUS-94454': {
+    'SCUS94454': {
         'url': "games/U/T/SCUS-94454.html",
-    	'id': 'SCUS-94454',
+    	'id': 'SCUS94454',
 	'title': "TOMBA! 2 - THE EVIL SWINE RETURNS",
     },
     'SLUS01007': {
@@ -8349,9 +8349,9 @@ games = {
     	'id': 'SLUS00188',
 	'title': "TUNNEL B1",
     },
-    'SCUS-94229': {
+    'SCUS94229': {
         'url': "games/U/T/SCUS-94229.html",
-    	'id': 'SCUS-94229',
+    	'id': 'SCUS94229',
 	'title': "TURBO PROP RACING",
     },
     'SLUS01499': {
@@ -8359,29 +8359,29 @@ games = {
     	'id': 'SLUS01499',
 	'title': "TURNABOUT",
     },
-    'SCUS-94304': {
+    'SCUS94304': {
         'url': "games/U/T/SCUS-94304.html",
-    	'id': 'SCUS-94304',
+    	'id': 'SCUS94304',
 	'title': "TWISTED METAL",
     },
-    'SCUS-94306': {
+    'SCUS94306': {
         'url': "games/U/T/SCUS-94306.html",
-    	'id': 'SCUS-94306',
+    	'id': 'SCUS94306',
 	'title': "TWISTED METAL 2",
     },
-    'SCUS-94249': {
+    'SCUS94249': {
         'url': "games/U/T/SCUS-94249.html",
-    	'id': 'SCUS-94249',
+    	'id': 'SCUS94249',
 	'title': "TWISTED METAL 3",
     },
-    'SCUS-94560': {
+    'SCUS94560': {
         'url': "games/U/T/SCUS-94560.html",
-    	'id': 'SCUS-94560',
+    	'id': 'SCUS94560',
 	'title': "TWISTED METAL 4",
     },
-    'SCUS-94642': {
+    'SCUS94642': {
         'url': "games/U/T/SCUS-94642.html",
-    	'id': 'SCUS-94642',
+    	'id': 'SCUS94642',
 	'title': "TWISTED METAL - SMALL BRAWL",
     },
     'SLUS01074': {
@@ -8404,9 +8404,9 @@ games = {
     	'id': 'SLUS01143',
 	'title': "ULTIMATE FIGHTING CHAMPIONSHIP",
     },
-    'SCUS-94448': {
+    'SCUS94448': {
         'url': "games/U/U/SCUS-94448.html",
-    	'id': 'SCUS-94448',
+    	'id': 'SCUS94448',
 	'title': "UM JAMMER LAMMY",
     },
     'SLUS00686': {
@@ -8594,9 +8594,9 @@ games = {
     	'id': 'SLUS00117',
 	'title': "WARHAMMER - SHADOW OF THE HORNED RAT",
     },
-    'SCUS-94305': {
+    'SCUS94305': {
         'url': "games/U/W/SCUS-94305.html",
-    	'id': 'SCUS-94305',
+    	'id': 'SCUS94305',
 	'title': "WARHAWK - THE RED MERCURY MISSIONS",
     },
     'SLUS00976': {
@@ -8654,14 +8654,14 @@ games = {
     	'id': 'SLUS01174',
 	'title': "WHEEL OF FORTUNE - 2ND EDITION",
     },
-    'SCUS-94567': {
+    'SCUS94567': {
         'url': "games/U/W/SCUS-94567.html",
-    	'id': 'SCUS-94567',
+    	'id': 'SCUS94567',
 	'title': "WHO WANTS TO BE A MILLIONAIRE - 2ND EDITION",
     },
-    'SCUS-94644': {
+    'SCUS94644': {
         'url': "games/U/W/SCUS-94644.html",
-    	'id': 'SCUS-94644',
+    	'id': 'SCUS94644',
 	'title': "WHO WANTS TO BE A MILLIONAIRE - 3RD EDITION",
     },
     'SLUS00425': {
@@ -8669,19 +8669,19 @@ games = {
     	'id': 'SLUS00425',
 	'title': "WILD 9",
     },
-    'SCUS-94608': {
+    'SCUS94608': {
         'url': "games/U/W/SCUS-94608.html",
-    	'id': 'SCUS-94608',
+    	'id': 'SCUS94608',
 	'title': "WILD ARMS",
     },
-    'SCUS-94484': {
+    'SCUS94484': {
         'url': "games/U/W/SCUS-94484.html",
-    	'id': 'SCUS-94484',
+    	'id': 'SCUS94484',
 	'title': "WILD ARMS 2",
     },
-    'SCUS-94498': {
+    'SCUS94498': {
         'url': "games/U/W/SCUS-94484.html",
-    	'id': 'SCUS-94498',
+    	'id': 'SCUS94498',
 	'title': "WILD ARMS 2",
     },
     'SLUS00201': {
@@ -8729,9 +8729,9 @@ games = {
     	'id': 'SLUS00273',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
     },
-    'SCUS-94301': {
+    'SCUS94301': {
         'url': "games/U/W/SCUS-94301.html",
-    	'id': 'SCUS-94301',
+    	'id': 'SCUS94301',
 	'title': "WIPEOUT",
     },
     'SLUS00865': {
@@ -8739,9 +8739,9 @@ games = {
     	'id': 'SLUS00865',
 	'title': "WIPEOUT 3",
     },
-    'SCUS-94351': {
+    'SCUS94351': {
         'url': "games/U/W/SCUS-94351.html",
-    	'id': 'SCUS-94351',
+    	'id': 'SCUS94351',
 	'title': "WIPEOUT XL",
     },
     'SLUS01188': {
