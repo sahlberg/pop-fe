@@ -1756,32 +1756,32 @@ games = {
     },
     'SLPS02260': {
         'url': "games/J/Z/SLPS-02260.html",
-    	'id': 'SLPS02260</',
+    	'id': 'SLPS02260',
 	'title': "ZIPANGUJIMA - UNMEI WA SAIKARORO GA KIMERU!",
     },
     'SLPM86643': {
         'url': "games/J/Z/SLPM-86643.html",
-    	'id': 'SLPM86643</',
+    	'id': 'SLPM86643',
 	'title': "ZIPANGUJIMA - UNMEI WA SAIKARORO GA KIMERU! [MAJOR WAVE SERIES]",
     },
     'SLPS03255': {
         'url': "games/J/Z/SLPS-03255.html",
-    	'id': 'SLPS03255</',
+    	'id': 'SLPS03255',
 	'title': "ZOIDS - BATTLE CARD GAME",
     },
     'SLPS02982': {
         'url': "games/J/Z/SLPS-02982.html",
-    	'id': 'SLPS02982</',
+    	'id': 'SLPS02982',
 	'title': "ZOIDS - ZENEBUS VS HERIC",
     },
     'SLPS03389': {
         'url': "games/J/Z/SLPS-03389.html",
-    	'id': 'SLPS03389</',
+    	'id': 'SLPS03389',
 	'title': "ZOIDS 2 - HELIC REPUBLIC VS GUYLOS EMPIRE",
     },
     'SLPS00488': {
         'url': "games/J/Z/SLPS-00488.html",
-    	'id': 'SLPS00488</',
+    	'id': 'SLPS00488',
 	'title': "ZOKU GUSSUN OYOYO",
     },
     'SLPS01326': {
@@ -21416,17 +21416,17 @@ games = {
     },
     'SLES00039': {
         'url': "games/P/T/SLES-00039.html",
-    	'id': 'SLES00039</br>SLES-00039',
+    	'id': 'SLES00039',
 	'title': "THE RAVEN PROJECT",
     },
     'SLES00518': {
         'url': "games/P/T/SLES-00518.html",
-    	'id': 'SLES00518</br>SLES-10518',
+    	'id': 'SLES00518',
 	'title': "THE RAVEN PROJECT",
     },
     'SLES00519': {
         'url': "games/P/T/SLES-00519.html",
-    	'id': 'SLES00519</br>SLES-10519',
+    	'id': 'SLES00519',
 	'title': "THE RAVEN PROJECT",
     },
     'SLES03401': {
