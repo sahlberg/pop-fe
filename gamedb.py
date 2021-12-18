@@ -48949,6 +48949,8 @@ libcrypt = {
     },
     'SLES02208': {
         'url': 'http://redump.org/disc/24278/',
+        'ppf': 'libcrypt/Dino Crisis (France).ppf',
+        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES02209': {
         'url': 'http://redump.org/disc/7586/',
@@ -49161,8 +49163,6 @@ libcrypt = {
     },
     'SLES22084': {
         'url': 'http://redump.org/disc/1111/',
-        'ppf': 'libcrypt/Dino Crisis (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SLES32084': {
         'url': 'http://redump.org/disc/1112/',

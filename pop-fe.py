@@ -947,7 +947,24 @@ def get_disc_ids(cue_files):
     return disc_ids
 
 
-def apply_ppf(img, disc_id):
+def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
+    if auto_libcrypt:
+        # https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
+        print('Try to automatically generate libcrypt patch for', img)
+        with open(img, 'rb+') as f:
+            while True:
+                off = f.tell()
+                buf = bytearray(f.read(0x9300))
+                if not buf:
+                    break
+                pos = buf.find(bytes([0x25, 0x30, 0x86, 0x00]))
+                if pos > 0:
+                    print('Found libcrypt signature. Patching it')
+                    struct.pack_into('<H', buf, pos, magic_word)
+                    struct.pack_into('<H', buf, pos + 2, 0x34c6)
+                    f.seek(off)
+                    f.write(buf)
+        return
     if 'credit' in libcrypt[disc_id]:
         print(libcrypt[disc_id]['credit'])
     if 'ppf' in libcrypt[disc_id]:
@@ -1007,6 +1024,7 @@ if __name__ == "__main__":
     parser.add_argument('--title',
                     help='Force title for this iso')
     parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
+    parser.add_argument('--auto-libcrypt', action='store_true', help='Apply automatically generated libcrypt patches')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1210,7 +1228,11 @@ if __name__ == "__main__":
     
     magic_word = []
     if game_id in libcrypt:
+        for idx in range(len(cue_files)):
+            magic_word.append(generate_magic_word(libcrypt[disc_ids[idx]]['url']))
         patch_libcrypt = False
+        if args.auto_libcrypt:
+            patch_libcrypt = True
         if args.ps3_pkg and args.ps3_libcrypt:
             patch_libcrypt = True
         if args.psp_dir or args.ps2_dir or args.psio_dir:
@@ -1226,10 +1248,6 @@ if __name__ == "__main__":
             print('This should work for most games. If not then try')
             print('creating the package again with --ps3-libcrypt')
             print('#####################################')
-            # Generate ISOs for the rest of the disks too and get their
-            # magic word
-            for idx in range(len(cue_files)):
-                magic_word.append(generate_magic_word(libcrypt[disc_ids[idx]]['url']))
         if patch_libcrypt:
             #
             # Copy the CUE and BIN locally so we can patch them
@@ -1246,7 +1264,7 @@ if __name__ == "__main__":
                     temp_files.append('LCP%02x.cue' % idx)
                 cue_files[idx] = 'LCP%02x.cue' % idx
                 img_files[idx] = 'LCP%02x.bin' % idx
-                apply_ppf(img_files[idx], disc_ids[idx])
+                apply_ppf(img_files[idx], disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
     if args.psp_dir:
         create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)

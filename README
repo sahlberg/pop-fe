@@ -100,6 +100,9 @@ Command line arguments are:
 			This requires CU2 files so make sure this script is
 			installed.
 --ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages
+--auto-libcrypt       : Try to automatically create and apply a patch for
+                        libcrypt. This can be used if there is no proper PPF
+			file available. This is not 100% reliable.
 --retroarch-game-dir  : The directory where retroarch game images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
