@@ -9,7 +9,7 @@ them on various platforms, including:
 This is all LGPLv2.1
 
 TL;DR
-For Linux (and windows).
+For Linux and windows.
 Connect PSP to your Linux/Windows box via USB, then run:
 
   $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
@@ -94,9 +94,7 @@ Command line arguments are:
 			 See memory card section below for usage.
 --ps2-dir             : This is the directory that holds the USB stick to
 		        install VCD files for running under POPS on a PS2.
---ps3-pkg             : This creates a PS3 PKG. This only works for linux
-		        and has some additional requirements. See special
-			section below.
+--ps3-pkg             : This creates a PS3 PKG
 			This requires CU2 files so make sure this script is
 			installed.
 --ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages
