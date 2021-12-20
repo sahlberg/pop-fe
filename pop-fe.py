@@ -1131,6 +1131,8 @@ if __name__ == "__main__":
             bc.open(cue_file)
             aea_files[0 if not idx else idx[0] - 1] = []
             for i in range(1, len(bc.cue)):
+                if not bc.cue[i]['audio']:
+                    continue
                 f = 'TRACK_%d_' % (0 if not idx else idx[0])
                 bc.writetrack(i, f)
                 wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
