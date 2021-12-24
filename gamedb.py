@@ -48936,11 +48936,9 @@ libcrypt = {
         'ppf': 'libcrypt/Canal+ Premier Manager (Europe) (Fr,Es,It).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
-    'SCES02834': {
-        'url': 'http://redump.org/disc/5483/',
-    },
     'SCES02105': {
         'url': 'http://redump.org/disc/897/',
+        # Also 'url': 'http://redump.org/disc/798/',
         'ppf': 'libcrypt/CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) (EDC).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
@@ -48961,8 +48959,8 @@ libcrypt = {
     'SLES02211': {
         'url': 'http://redump.org/disc/27940/',
     },
-    'SLES03189': {
-        'url': 'http://redump.org/disc/58589/',
+    'SLES03189': { # Disney's 102 Dalmatians: Puppies to the Rescue
+        'url': 'http://redump.org/disc/35141/',
     },
     'SLES03190': {
         'url': 'http://redump.org/disc/53874/',
@@ -48974,6 +48972,9 @@ libcrypt = {
     },
     'SCES02006': {
         'url': 'http://redump.org/disc/28327/',
+    },
+    'SCES02181': {
+        'url': 'http://redump.org/disc/51711/',
     },
     'SCES02005': {
         'url': 'http://redump.org/disc/25550/',
@@ -48989,6 +48990,9 @@ libcrypt = {
     },
     'SCES01431': {
         'url': 'http://redump.org/disc/29818/',
+    },
+    'SCES02184': {
+        'url': 'http://redump.org/disc/48938/',
     },
     'SCES02185': {
         'url': 'http://redump.org/disc/27067/',
@@ -49169,6 +49173,7 @@ libcrypt = {
     },
     'SCES01979': {
         'url': 'http://redump.org/disc/969/',
+        # Also 'url': 'http://redump.org/disc/64499/',
     },
     'SCES02222': {
         'url': 'http://redump.org/disc/31126/',
@@ -49238,7 +49243,7 @@ libcrypt = {
         'url': 'http://redump.org/disc/48020/',
     },
     'SCES01444': {
-        'url': 'http://redump.org/disc/64315/',
+        'url': 'http://redump.org/disc/3985/',
         'ppf': 'libcrypt/Jackie Chan Stuntmaster (Europe).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
@@ -49302,7 +49307,7 @@ libcrypt = {
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
     'SCES00311': {
-        'url': 'http://redump.org/disc/61153/',
+        'url': 'http://redump.org/disc/592/',
     },
     'SCES01492': {
         'url': 'http://redump.org/disc/13389/',
@@ -49421,12 +49426,10 @@ libcrypt = {
     },
     'SLES02396': {
         'url': 'http://redump.org/disc/46131/',
+        # Also 'url': 'http://redump.org/disc/56471/',
     },
     'SLES02396': {
         'url': 'http://redump.org/disc/46131/',
-    },
-    'SLES02992': {
-        'url': 'http://redump.org/disc/27807/',
     },
     'SLES00017': {
         'url': 'http://redump.org/disc/3309/',
@@ -49497,6 +49500,7 @@ libcrypt = {
     },
     'SCES02431': {
         'url': 'http://redump.org/disc/20213/',
+        # Also 'url': 'http://redump.org/disc/85814/',
     },
     'SCES02432': {
         'url': 'http://redump.org/disc/29592/',
@@ -49514,6 +49518,7 @@ libcrypt = {
     },
     'SCES02835': {
         'url': 'http://redump.org/disc/492/',
+        # Also 'url': 'http://redump.org/disc/19611/',
         'ppf': 'libcrypt/Spyro - Year of the Dragon (Europe) (En,Fr,De,Es,It) (v1.0).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
@@ -49616,6 +49621,12 @@ libcrypt = {
     },
     'SLES02707': {
         'url': 'http://redump.org/disc/28346/',
+    },
+    'SLES02708': {
+        'url': 'http://redump.org/disc/50591/',
+    },
+    'SCES02834': {
+        'url': 'http://redump.org/disc/5483/',
         'ppf': 'libcrypt/Crash Bash (Europe) (En,Fr,De,Es,It).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
@@ -49697,5 +49708,14 @@ libcrypt = {
         'ppf': 'libcrypt/World Championship Snooker (Europe) (En,Fr,De).ppf',
         'credit': 'Libcrypt patch contributed by krHACKen'
     },
+    'SLES02402': {
+        'url': 'http://redump.org/disc/59390/'
+    },
+    'SLES02292': {
+        'url': 'http://redump.org/disc/3619/'
+    },
+    'SCES02269': {
+        'url': 'http://redump.org/disc/46676/'
+    }
 }
 
