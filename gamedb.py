@@ -48869,853 +48869,519 @@ games = {
 
 
 libcrypt = {
-    'SLES01226': {
-        'url': 'http://redump.org/disc/5120/',
-        'ppf': 'libcrypt/Actua Ice Hockey 2 (Europe).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02563': {
-        'url': 'http://redump.org/disc/3334/',
-    },
-    'SCES01564': {
-        'url': 'http://redump.org/disc/6147/',
-    },
-    'SCES02028': {
-        'url': 'http://redump.org/disc/28260/',
-        'ppf': 'libcrypt/Ape Escape (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02029': {
-        'url': 'http://redump.org/disc/26604/',
-    },
-    'SCES02030': {
-        'url': 'http://redump.org/disc/27680/',
-    },
-    'SCES02031': {
-        'url': 'http://redump.org/disc/1128/',
-    },
-    'SLES03324': {
-        'url': 'http://redump.org/disc/4873/',
-    },
-    'SCES02365': {
-        'url': 'http://redump.org/disc/11318/',
-    },
-    'SCES02366': {
-        'url': 'http://redump.org/disc/29560/',
-        'ppf': 'libcrypt/Barbie - Aventure Equestre (France).ppf',        
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02367': {
-        'url': 'http://redump.org/disc/25241/',
-    },
-    'SCES02368': {
-        'url': 'http://redump.org/disc/28330/',
-    },
-    'SCES02369': {
-        'url': 'http://redump.org/disc/25983/',
-    },
-    'SCES02487': {
-        'url': 'http://redump.org/disc/29290/',
-    },
-    'SCES02488': {
-        'url': 'http://redump.org/disc/28149/',
-        'ppf': 'libcrypt/Barbie - Sports Extreme (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02489': {
-        'url': 'http://redump.org/disc/26734/',
-    },
-    'SCES02490': {
-        'url': 'http://redump.org/disc/35294/',
-    },
-    'SCES02491': {
-        'url': 'http://redump.org/disc/5579/',
-    },
-    'SLES02293': {
-        'url': 'http://redump.org/disc/27297/',
-        'ppf': 'libcrypt/Canal+ Premier Manager (Europe) (Fr,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02105': {
-        'url': 'http://redump.org/disc/897/',
-        # Also 'url': 'http://redump.org/disc/798/',
-        'ppf': 'libcrypt/CTR - Crash Team Racing (Europe) (En,Fr,De,Es,It,Nl) (EDC).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02207': {
-        'url': 'http://redump.org/disc/710/',
-    },
-    'SLES02208': {
-        'url': 'http://redump.org/disc/24278/',
-        'ppf': 'libcrypt/Dino Crisis (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02209': {
-        'url': 'http://redump.org/disc/7586/',
-    },
-    'SLES02210': {
-        'url': 'http://redump.org/disc/28171/',
-    },
-    'SLES02211': {
-        'url': 'http://redump.org/disc/27940/',
-    },
-    'SLES03189': { # Disney's 102 Dalmatians: Puppies to the Rescue
-        'url': 'http://redump.org/disc/35141/',
-    },
-    'SLES03190': {
-        'url': 'http://redump.org/disc/53874/',
-    },
-    'SLES03191': {
-        'url': 'http://redump.org/disc/19140/',
-        'ppf': 'libcrypt/Disney\'s 102 Dalmatians - Puppies to the Rescue (Europe) (Fr,De,Es,It,Nl).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02006': {
-        'url': 'http://redump.org/disc/28327/',
-    },
-    'SCES02181': {
-        'url': 'http://redump.org/disc/51711/',
-    },
-    'SCES02005': {
-        'url': 'http://redump.org/disc/25550/',
-    },
-    'SCES02007': {
-        'url': 'http://redump.org/disc/17311/',
-    },
-    'SCES01695': {
-        'url': 'http://redump.org/disc/6887/',
-    },
-    'SCES02264': {
-        'url': 'http://redump.org/disc/27076/',
-    },
-    'SCES01431': {
-        'url': 'http://redump.org/disc/29818/',
-    },
-    'SCES02184': {
-        'url': 'http://redump.org/disc/48938/',
-    },
-    'SCES02185': {
-        'url': 'http://redump.org/disc/27067/',
-    },
-    'SCES01516': {
-        'url': 'http://redump.org/disc/29462/',
-        'ppf': 'libcrypt/Disney Tarzan (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES01517': {
-        'url': 'http://redump.org/disc/15483/',
-    },
-    'SCES01518': {
-        'url': 'http://redump.org/disc/27824/',
-    },
-    'SCES01519': {
-        'url': 'http://redump.org/disc/27287/',
-    },
-    'SCES02182': {
-        'url': 'http://redump.org/disc/6885/',
-    },
-    'SLES02538': {
-        'url': 'http://redump.org/disc/26580/',
-        'ppf': 'libcrypt/EA Sports Superbike 2000 (Europe) (En,Fr,De,Es,It,Sv).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01715': {
-        'url': 'http://redump.org/disc/880/',
-        'ppf': 'libcrypt/Eagle One - Harrier Attack (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02722': {
-        'url': 'http://redump.org/disc/4311/',
-        'ppf': 'libcrypt/F1 2000 (Europe) (En,Fr,De,Nl).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02723': {
-        'url': 'http://redump.org/disc/48119/',
-    },
-    'SLES02724': {
-        'url': 'http://redump.org/disc/27982/',
-    },
-    'SLES02965': {
-        'url': 'http://redump.org/disc/2371/',
-    },
-    'SLES12965': {
-        'url': 'http://redump.org/disc/2370/',
-    },
-    'SLES22965': {
-        'url': 'http://redump.org/disc/2372/',
-    },
-    'SLES32965': {
-        'url': 'http://redump.org/disc/2373/',
-    },
-    'SLES02966': {
-        'url': 'http://redump.org/disc/2455/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 1).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES12966': {
-        'url': 'http://redump.org/disc/2456/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 2).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES22966': {
-        'url': 'http://redump.org/disc/2457/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 3).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES32966': {
-        'url': 'http://redump.org/disc/2458/',
-        'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 4).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02967': {
-        'url': 'http://redump.org/disc/737/',
-    },
-    'SLES12967': {
-        'url': 'http://redump.org/disc/738/',
-    },
-    'SLES22967': {
-        'url': 'http://redump.org/disc/739/',
-    },
-    'SLES32967': {
-        'url': 'http://redump.org/disc/740/',
-    },
-    'SLES02968': {
-        'url': 'http://redump.org/disc/2714/',
-    },
-    'SLES12968': {
-        'url': 'http://redump.org/disc/2716/',
-    },
-    'SLES22968': {
-        'url': 'http://redump.org/disc/2717/',
-    },
-    'SLES32968': {
-        'url': 'http://redump.org/disc/2718/',
-    },
-    'SLES02969': {
-        'url': 'http://redump.org/disc/1113/',
-    },
-    'SLES12969': {
-        'url': 'http://redump.org/disc/1114/',
-    },
-    'SLES22969': {
-        'url': 'http://redump.org/disc/1115/',
-    },
-    'SLES32969': {
-        'url': 'http://redump.org/disc/1116/',
-    },
-    'SLES02080': {
-        'url': 'http://redump.org/disc/866/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip', 'FF8PAL1.PPF']
-    },
-    'SLES12080': {
-        'url': 'http://redump.org/disc/875/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip', 'FF8PAL2.PPF']
-    },
-    'SLES22080': {
-        'url': 'http://redump.org/disc/873/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip', 'FF8PAL3.PPF']
-    },
-    'SLES32080': {
-        'url': 'http://redump.org/disc/874/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip', 'FF8PAL4.PPF']
-    },
-    'SLES02081': {
-        'url': 'http://redump.org/disc/4028/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip', 'FF8DISK1.PPF']
-    },
-    'SLES12081': {
-        'url': 'http://redump.org/disc/4029/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip', 'FF8DISK2.PPF']
-    },
-    'SLES22081': {
-        'url': 'http://redump.org/disc/4030/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip', 'FF8DISK3.PPF']
-    },
-    'SLES32081': {
-        'url': 'http://redump.org/disc/4031/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip', 'FF8DISK4.PPF']
-    },
-    'SLES02082': {
-        'url': 'http://redump.org/disc/733/',
-    },
-    'SLES12082': {
-        'url': 'http://redump.org/disc/734/',
-    },
-    'SLES22082': {
-        'url': 'http://redump.org/disc/735/',
-    },
-    'SLES32082': {
-        'url': 'http://redump.org/disc/736/',
-    },
-    'SLES02083': {
-        'url': 'http://redump.org/disc/1587/',
-    },
-    'SLES12083': {
-        'url': 'http://redump.org/disc/1588/',
-    },
-    'SLES22083': {
-        'url': 'http://redump.org/disc/1589/',
-    },
-    'SLES32083': {
-        'url': 'http://redump.org/disc/1590/',
-    },
-    'SLES02084': {
-        'url': 'http://redump.org/disc/1109/',
-    },
-    'SLES12084': {
-        'url': 'http://redump.org/disc/1110/',
-    },
-    'SLES22084': {
-        'url': 'http://redump.org/disc/1111/',
-    },
-    'SLES32084': {
-        'url': 'http://redump.org/disc/1112/',
-    },
-    'SCES01979': {
-        'url': 'http://redump.org/disc/969/',
-        # Also 'url': 'http://redump.org/disc/64499/',
-    },
-    'SCES02222': {
-        'url': 'http://redump.org/disc/31126/',
-    },
-    'SLES03062': {
-        'url': 'http://redump.org/disc/7516/',
-    },
-    'SLES02328': {
-        'url': 'http://redump.org/disc/7420/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal1.ppf']
-    },
-    'SLES12328': {
-        'url': 'http://redump.org/disc/7421/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal2.ppf']
-    },
-    'SLES22328': {
-        'url': 'http://redump.org/disc/7422/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip', 'pdx-gal3.ppf']
-    },
-    'SLES02329': {
-        'url': 'http://redump.org/disc/13382/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 1).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES12329': {
-        'url': 'http://redump.org/disc/13383/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 2).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES22329': {
-        'url': 'http://redump.org/disc/13384/',
-        'ppf': 'libcrypt/Galerians (France) (Disc 3).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02330': {
-        'url': 'http://redump.org/disc/7695/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'pdx-ggc1.pdf']
-    },
-    'SLES12330': {
-        'url': 'http://redump.org/disc/7696/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'PDX-GGC2.PPF']
-    },
-    'SLES22330': {
-        'url': 'http://redump.org/disc/7697/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip', 'PDX-GGC3.PPF']
-    },
-    'SLES01241': {
-        'url': 'http://redump.org/disc/833/',
-        'ppf': 'libcrypt/Gekido - Urban Fighters (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01041': {
-        'url': 'http://redump.org/disc/703/',
-    },
-    'SLES02766': {
-        'url': 'http://redump.org/disc/33070/',
-        'ppf': 'libcrypt/Les Cochons de Guerre (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02767': {
-        'url': 'http://redump.org/disc/19539/',
-    },
-    'SLES02768': {
-        'url': 'http://redump.org/disc/48791/',
-    },
-    'SLES02769': {
-        'url': 'http://redump.org/disc/48020/',
-    },
-    'SCES01444': {
-        'url': 'http://redump.org/disc/3985/',
-        'ppf': 'libcrypt/Jackie Chan Stuntmaster (Europe).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01362': {
-        'url': 'http://redump.org/disc/1659/',
-        'ppf': 'libcrypt/Le Mans 24 Hours (Europe) (En,Fr,De,Es,It,Pt).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01301': {
-        'url': 'http://redump.org/disc/1177/',
-    },
-    'SLES02024 ': {
-        'url': 'http://redump.org/disc/24279/',
-        'ppf': 'libcrypt/Legacy of Kain - Soul Reaver (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02025': {
-        'url': 'http://redump.org/disc/393/',
-    },
-    'SLES02027': {
-        'url': 'http://redump.org/disc/28167/',
-    },
-    'SLES02026': {
-        'url': 'http://redump.org/disc/27944/',
-    },
-    'SLES02975': {
-        'url': 'http://redump.org/disc/6847/',
-    },
-    'SLES02976': {
-        'url': 'http://redump.org/disc/45075/',
-        'ppf': 'libcrypt/Roger Lemerre - La Selection des Champions (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02977': {
-        'url': 'http://redump.org/disc/17767/',
-    },
-    'SLES02978': {
-        'url': 'http://redump.org/disc/29597/',
-    },
-    'SLES02979': {
-        'url': 'http://redump.org/disc/48602/',
-    },
-    'SLES03603': {
-        'url': 'http://redump.org/disc/26750/',
-    },
-    'SLES03604': {
-        'url': 'http://redump.org/disc/49266/',
-    },
-    'SLES03605': {
-        'url': 'http://redump.org/disc/3320/',
-    },
-    'SLES03606': {
-        'url': 'http://redump.org/disc/48369/',
-    },
-    'SLES03607': {
-        'url': 'http://redump.org/disc/48045/',
-    },
-    'SLES03530': {
-        'url': 'http://redump.org/disc/19142/',
-        'ppf': 'libcrypt/Lucky Luke - Western Fever (Europe) (En,Fr,De,Es,It,Nl).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES00311': {
-        'url': 'http://redump.org/disc/592/',
-    },
-    'SCES01492': {
-        'url': 'http://redump.org/disc/13389/',
-        'ppf': 'libcrypt/MediEvil (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES01493': {
-        'url': 'http://redump.org/disc/25542/',
-    },
-    'SCES01494': {
-        'url': 'http://redump.org/disc/29475/',
-    },
-    'SCES01495': {
-        'url': 'http://redump.org/disc/1584/',
-    },
-    'SCES02544': {
-        'url': 'http://redump.org/disc/593/',
-        'ppf': 'libcrypt/MediEvil 2 (Europe) (En,Fr,De).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02545': {
-        'url': 'http://redump.org/disc/1547/',
-    },
-    'SCES02546': {
-        'url': 'http://redump.org/disc/2625/',
-    },
-    'SLES03519': {
-        'url': 'http://redump.org/disc/30764/',
-    },
-    'SLES03520': {
-        'url': 'http://redump.org/disc/28185/',
-        'ppf': 'libcrypt/Men in Black - The Series - Crashdown (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES03521': {
-        'url': 'http://redump.org/disc/17711/',
-    },
-    'SLES03522': {
-        'url': 'http://redump.org/disc/28025/',
-    },
-    'SLES03523': {
-        'url': 'http://redump.org/disc/27937/',
-    },
-    'SLES01545': {
-        'url': 'http://redump.org/disc/25913/',
-    },
-    'SLES02395': {
-        'url': 'http://redump.org/disc/28160/',
-        'ppf': 'libcrypt/Michelin Rally Masters - Race of Champions (Europe) (Fr,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02839': {
-        'url': 'http://redump.org/disc/5823/',
-        'ppf': 'libcrypt/Mike Tyson Boxing (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01906': {
-        'url': 'http://redump.org/disc/1176/',
-        'ppf': 'libcrypt/Mission - Impossible (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02830': {
-        'url': 'http://redump.org/disc/15091/',
-        'ppf': 'libcrypt/MoHo (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02689': {
-        'url': 'http://redump.org/disc/622/',
-    },
-    'SLES02700': {
-        'url': 'http://redump.org/disc/3933/',
-        'ppf': 'libcrypt/Need for Speed - Porsche 2000 (Europe) (Fr,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02086': {
-        'url': 'http://redump.org/disc/1010/',
-        'ppf': 'libcrypt/N-Gen Racing (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02558': {
-        'url': 'http://redump.org/disc/118/',
-    },
-    'SLES12558': {
-        'url': 'http://redump.org/disc/119/',
-    },
-    'SLES02559': {
-        'url': 'http://redump.org/disc/13381/',
-        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 1).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES12559': {
-        'url': 'http://redump.org/disc/13380/',
-        'ppf': 'libcrypt/Parasite Eve II (France) (Disc 2).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02560': {
-        'url': 'http://redump.org/disc/4307/',
-    },
-    'SLES12560': {
-        'url': 'http://redump.org/disc/4308/',
-    },
-    'SLES02561': {
-        'url': 'http://redump.org/disc/1122/',
-    },
-    'SLES12561': {
-        'url': 'http://redump.org/disc/1123/',
-    },
-    'SLES02562': {
-        'url': 'http://redump.org/disc/29442/',
-    },
-    'SLES12562': {
-        'url': 'http://redump.org/disc/29443/',
-    },
-    'SLES02061': {
-        'url': 'http://redump.org/disc/772/',
-    },
-    'SLES02396': {
-        'url': 'http://redump.org/disc/46131/',
-        # Also 'url': 'http://redump.org/disc/56471/',
-    },
-    'SLES02396': {
-        'url': 'http://redump.org/disc/46131/',
-    },
-    'SLES00017': {
-        'url': 'http://redump.org/disc/3309/',
-        'ppf': 'libcrypt/Prince Naseem Boxing (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01943': {
-        'url': 'http://redump.org/disc/25908/',
-        'ppf': 'libcrypt/Radikal Bikers (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02824': {
-        'url': 'http://redump.org/disc/5127/',
-        'ppf': 'libcrypt/RC Revenge (Europe) (En,Fr,De,Es).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02529': {
-        'url': 'http://redump.org/disc/496/',
-    },
-    'SLES02530': {
-        'url': 'http://redump.org/disc/9753/',
-        'ppf': 'libcrypt/Resident Evil 3 - Nemesis (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02531': {
-        'url': 'http://redump.org/disc/5526/',
-    },
-    'SLES02698': {
-        'url': 'http://redump.org/disc/28197/',
-    },
-    'SLES02533': {
-        'url': 'http://redump.org/disc/16397/',
-    },
-    'SLES02532': {
-        'url': 'http://redump.org/disc/1387/',
-    },
-    'SLES00995': {
-        'url': 'http://redump.org/disc/17746/',
-        'ppf': 'libcrypt/Ronaldo V-Football (Europe) (En,Fr,Nl,Sv).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02681': {
-        'url': 'http://redump.org/disc/7755/',
-    },
-    'SLES02112': {
-        'url': 'http://redump.org/disc/280/',
-    },
-    'SLES02113': {
-        'url': 'http://redump.org/disc/28278/',
-        'ppf': 'libcrypt/SaGa Frontier 2 (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02118': {
-        'url': 'http://redump.org/disc/2605/',
-    },
-    'SLES02763': {
-        'url': 'http://redump.org/disc/3705/',
-        'ppf': 'libcrypt/SnoCross Championship Racing (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02290': {
-        'url': 'http://redump.org/disc/29918/',
-    },
-    'SCES02430': {
-        'url': 'http://redump.org/disc/29512/',
-        'ppf': 'libcrypt/Space Debris (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02431': {
-        'url': 'http://redump.org/disc/20213/',
-        # Also 'url': 'http://redump.org/disc/85814/',
-    },
-    'SCES02432': {
-        'url': 'http://redump.org/disc/29592/',
-    },
-    'SCES02433': {
-        'url': 'http://redump.org/disc/48046/',
-    },
-    'SCES01763': {
-        'url': 'http://redump.org/disc/1250/',
-    },
-    'SCES02104': {
-        'url': 'http://redump.org/disc/1182/',
-        'ppf': 'libcrypt/Spyro 2 - Gateway to Glimmer (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02835': {
-        'url': 'http://redump.org/disc/492/',
-        # Also 'url': 'http://redump.org/disc/19611/',
-        'ppf': 'libcrypt/Spyro - Year of the Dragon (Europe) (En,Fr,De,Es,It) (v1.0).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02857': {
-        'url': 'http://redump.org/disc/7460/',
-    },
-    'SLES02858': {
-        'url': 'http://redump.org/disc/29281/',
-        'ppf': 'libcrypt/Sydney 2000 (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02859': {
-        'url': 'http://redump.org/disc/15759/',
-    },
-    'SLES02860': {
-        'url': 'http://redump.org/disc/46132/',
-    },
-    'SLES02861': {
-        'url': 'http://redump.org/disc/27884/',
-    },
-    'SLES02862': {
-        'url': 'http://redump.org/disc/62664/',
-    },
-    'SLES03241': {
-        'url': 'http://redump.org/disc/12627/',
-    },
-    'SLES03242': {
-        'url': 'http://redump.org/disc/28190/',
-        'ppf': 'libcrypt/TechnoMage - En Quete de L\'Eternite (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES03243': {
-        'url': 'http://redump.org/disc/46130/',
-    },
-    'SLES03244': {
-        'url': 'http://redump.org/disc/49569/',
-    },
-    'SLES03245': {
-        'url': 'http://redump.org/disc/27310/',
-    },
-    'SLES02831': {
-        'url': 'http://redump.org/disc/25284/',
-    },
-    'SLES03489': {
-        'url': 'http://redump.org/disc/617/',
-    },
-    'SLES03626': {
-        'url': 'http://redump.org/disc/5819/',
-        'ppf': 'libcrypt/Italian Job, The (Europe) (Fr,De,Es).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES03648': {
-        'url': 'http://redump.org/disc/47605/',
-    },
-    'SLES02688': {
-        'url': 'http://redump.org/disc/910/',
-        'ppf': 'libcrypt/Theme Park World (Europe) (En,Fr,De,Es,It,Nl,Sv).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES01700': {
-        'url': 'http://redump.org/disc/4004/',
-    },
-    'SCES01701': {
-        'url': 'http://redump.org/disc/8346/',
-        'ppf': 'libcrypt/Monde des Bleus, Le - Le Jeu Officiel de l\'Equipe de France (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES01702': {
-        'url': 'http://redump.org/disc/4385/',
-    },
-    'SCES01703': {
-        'url': 'http://redump.org/disc/28048/',
-    },
-    'SCES01704': {
-        'url': 'http://redump.org/disc/25328/',
-    },
-    'SCES01882': {
-        'url': 'http://redump.org/disc/19757/',
-        'ppf': 'libcrypt/This Is Football (Europe) (Fr,Nl).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02572': {
-        'url': 'http://redump.org/disc/615/',
-        'ppf': 'libcrypt/TOCA World Touring Cars (Europe) (En,Fr,De).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02573': {
-        'url': 'http://redump.org/disc/27567/',
-    },
-    'SLES02704': {
-        'url': 'http://redump.org/disc/1793/',
-    },
-    'SLES02705': {
-        'url': 'http://redump.org/disc/28153/',
-        'ppf': 'libcrypt/UEFA Euro 2000 (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02706': {
-        'url': 'http://redump.org/disc/5528/',
-    },
-    'SLES02707': {
-        'url': 'http://redump.org/disc/28346/',
-    },
-    'SLES02708': {
-        'url': 'http://redump.org/disc/50591/',
-    },
-    'SCES02834': {
-        'url': 'http://redump.org/disc/5483/',
-        'ppf': 'libcrypt/Crash Bash (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01733': {
-        'url': 'http://redump.org/disc/7446/',
-        'ppf': 'libcrypt/UEFA Striker (Europe) (En,Fr,De,Es,It,Nl).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02071': {
-        'url': 'http://redump.org/disc/618/',
-    },
-    'SLES02354': {
-        'url': 'http://redump.org/disc/50247/',
-        'ppf': 'libcrypt/Urban Chaos (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02355': {
-        'url': 'http://redump.org/disc/17768/',
-    },
-    'SLES02754': { # Vagrant Story UK
-        'url': 'http://redump.org/disc/9978/',
-        'ppfzip': ['https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-vsuk!zip', 'pdx-vsuk.ppf']
-    },
-    'SLES02755': {
-        'url': 'http://redump.org/disc/12636/',
-        'ppf': 'libcrypt/Vagrant Story (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02756': {
-        'url': 'http://redump.org/disc/548/',
-    },
-    'SLES01907': {
-        'url': 'http://redump.org/disc/1063/',
-        'ppf': 'libcrypt/V-Rally - Championship Edition 2 (Europe) (En,Fr,De).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02733': {
-        'url': 'http://redump.org/disc/1848/',
-        'ppf': 'libcrypt/Walt Disney World Quest - Magical Racing Tour (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES01909': {
-        'url': 'http://redump.org/disc/355/',
-        'ppf': 'libcrypt/Wip3out (Europe) (En,Fr,De,Es,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES02004': {
-        'url': 'http://redump.org/disc/27819/',
-        'ppf': 'libcrypt/Disney Fais Ton Histoire! - Mulan (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES03061': {
-        'url': 'http://redump.org/disc/6867/',
-        'ppf': 'libcrypt/F.A. Premier League Football Manager 2001, The (Europe).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES00298': {
-        'url': 'http://redump.org/disc/924/',
-        'ppf': 'libcrypt/Formula One 99 (Europe) (En,Fr,De,It).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SCES03090': {
-        'url': 'http://redump.org/disc/29518/',
-        'ppf': 'libcrypt/Muppet Monster Adventure (France).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES01879': {
-        'url': 'http://redump.org/disc/26606/',
-        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 1) (v1.0).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES11879': {
-        'url': 'http://redump.org/disc/26607/',
-        'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 2) (v1.0).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02196': {
-        'url': 'http://redump.org/disc/2931/',
-        'ppf': 'libcrypt/World Championship Snooker (Europe) (En,Fr,De).ppf',
-        'credit': 'Libcrypt patch contributed by krHACKen'
-    },
-    'SLES02402': {
-        'url': 'http://redump.org/disc/59390/'
-    },
-    'SLES02292': {
-        'url': 'http://redump.org/disc/3619/'
-    },
-    'SCES02269': {
-        'url': 'http://redump.org/disc/46676/'
-    }
+    'SCES00311': {'magic_word': 34730, 'url': 'http://redump.org/disc/592/'},
+    'SCES01431': {'magic_word': 25927, 'url': 'http://redump.org/disc/29818/'},
+    'SCES01444': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 48452,
+                     'ppf': 'libcrypt/Jackie Chan Stuntmaster (Europe).ppf',
+                     'url': 'http://redump.org/disc/3985/'},
+    'SCES01492': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 53610,
+                     'ppf': 'libcrypt/MediEvil (France).ppf',
+                     'url': 'http://redump.org/disc/13389/'},
+    'SCES01493': {'magic_word': 6522, 'url': 'http://redump.org/disc/25542/'},
+    'SCES01494': {'magic_word': 43686, 'url': 'http://redump.org/disc/29475/'},
+    'SCES01495': {'magic_word': 3671, 'url': 'http://redump.org/disc/1584/'},
+    'SCES01516': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 17654,
+                     'ppf': 'libcrypt/Disney Tarzan (France).ppf',
+                     'url': 'http://redump.org/disc/29462/'},
+    'SCES01517': {'magic_word': 44677, 'url': 'http://redump.org/disc/15483/'},
+    'SCES01518': {'magic_word': 39975, 'url': 'http://redump.org/disc/27824/'},
+    'SCES01519': {'magic_word': 13899, 'url': 'http://redump.org/disc/27287/'},
+    'SCES01564': {'magic_word': 52929, 'url': 'http://redump.org/disc/6147/'},
+    'SCES01695': {'magic_word': 35306, 'url': 'http://redump.org/disc/6887/'},
+    'SCES01700': {'magic_word': 18199, 'url': 'http://redump.org/disc/4004/'},
+    'SCES01701': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 50334,
+                     'ppf': 'libcrypt/Monde des Bleus, Le - Le Jeu Officiel de '
+                            "l'Equipe de France (France).ppf",
+                     'url': 'http://redump.org/disc/8346/'},
+    'SCES01702': {'magic_word': 26410, 'url': 'http://redump.org/disc/4385/'},
+    'SCES01703': {'magic_word': 34879, 'url': 'http://redump.org/disc/28048/'},
+    'SCES01704': {'magic_word': 52786, 'url': 'http://redump.org/disc/25328/'},
+    'SCES01763': {'magic_word': 2415, 'url': 'http://redump.org/disc/1250/'},
+    'SCES01882': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 45924,
+                     'ppf': 'libcrypt/This Is Football (Europe) (Fr,Nl).ppf',
+                     'url': 'http://redump.org/disc/19757/'},
+    'SCES01909': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 59272,
+                     'ppf': 'libcrypt/Wip3out (Europe) (En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/355/'},
+    'SCES01979': {'magic_word': 3485, 'url': 'http://redump.org/disc/969/'},
+    'SCES02004': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 50231,
+                     'ppf': 'libcrypt/Disney Fais Ton Histoire! - Mulan '
+                            '(France).ppf',
+                     'url': 'http://redump.org/disc/27819/'},
+    'SCES02005': {'magic_word': 37175, 'url': 'http://redump.org/disc/25550/'},
+    'SCES02006': {'magic_word': 30036, 'url': 'http://redump.org/disc/28327/'},
+    'SCES02007': {'magic_word': 59014, 'url': 'http://redump.org/disc/17311/'},
+    'SCES02028': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 39636,
+                     'ppf': 'libcrypt/Ape Escape (France).ppf',
+                     'url': 'http://redump.org/disc/28260/'},
+    'SCES02029': {'magic_word': 9910, 'url': 'http://redump.org/disc/26604/'},
+    'SCES02030': {'magic_word': 9177, 'url': 'http://redump.org/disc/27680/'},
+    'SCES02031': {'magic_word': 54053, 'url': 'http://redump.org/disc/1128/'},
+    'SCES02104': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 29771,
+                     'ppf': 'libcrypt/Spyro 2 - Gateway to Glimmer (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/1182/'},
+    'SCES02105': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 41841,
+                     'ppf': 'libcrypt/CTR - Crash Team Racing (Europe) '
+                            '(En,Fr,De,Es,It,Nl) (EDC).ppf',
+                     'url': 'http://redump.org/disc/897/'},
+    'SCES02181': {'magic_word': 32132, 'url': 'http://redump.org/disc/51711/'},
+    'SCES02182': {'magic_word': 43213, 'url': 'http://redump.org/disc/6885/'},
+    'SCES02184': {'magic_word': 7772, 'url': 'http://redump.org/disc/48938/'},
+    'SCES02185': {'magic_word': 29924, 'url': 'http://redump.org/disc/27067/'},
+    'SCES02222': {'magic_word': 42232, 'url': 'http://redump.org/disc/31126/'},
+    'SCES02264': {'magic_word': 3646, 'url': 'http://redump.org/disc/27076/'},
+    'SCES02269': {'magic_word': 30215, 'url': 'http://redump.org/disc/46676/'},
+    'SCES02290': {'magic_word': 4823, 'url': 'http://redump.org/disc/29918/'},
+    'SCES02365': {'magic_word': 7388, 'url': 'http://redump.org/disc/11318/'},
+    'SCES02366': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 54984,
+                     'ppf': 'libcrypt/Barbie - Aventure Equestre (France).ppf',
+                     'url': 'http://redump.org/disc/29560/'},
+    'SCES02367': {'magic_word': 38566, 'url': 'http://redump.org/disc/25241/'},
+    'SCES02368': {'magic_word': 23591, 'url': 'http://redump.org/disc/28330/'},
+    'SCES02369': {'magic_word': 56357, 'url': 'http://redump.org/disc/25983/'},
+    'SCES02430': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 45401,
+                     'ppf': 'libcrypt/Space Debris (France).ppf',
+                     'url': 'http://redump.org/disc/29512/'},
+    'SCES02431': {'magic_word': 30834, 'url': 'http://redump.org/disc/20213/'},
+    'SCES02432': {'magic_word': 5038, 'url': 'http://redump.org/disc/29592/'},
+    'SCES02433': {'magic_word': 46347, 'url': 'http://redump.org/disc/48046/'},
+    'SCES02487': {'magic_word': 31440, 'url': 'http://redump.org/disc/29290/'},
+    'SCES02488': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 35215,
+                     'ppf': 'libcrypt/Barbie - Sports Extreme (France).ppf',
+                     'url': 'http://redump.org/disc/28149/'},
+    'SCES02489': {'magic_word': 9706, 'url': 'http://redump.org/disc/26734/'},
+    'SCES02490': {'magic_word': 3948, 'url': 'http://redump.org/disc/35294/'},
+    'SCES02491': {'magic_word': 61467, 'url': 'http://redump.org/disc/5579/'},
+    'SCES02544': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 14871,
+                     'ppf': 'libcrypt/MediEvil 2 (Europe) (En,Fr,De).ppf',
+                     'url': 'http://redump.org/disc/593/'},
+    'SCES02545': {'magic_word': 43372, 'url': 'http://redump.org/disc/1547/'},
+    'SCES02546': {'magic_word': 14218, 'url': 'http://redump.org/disc/2625/'},
+    'SCES02834': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 59176,
+                     'ppf': 'libcrypt/Crash Bash (Europe) (En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/5483/'},
+    'SCES02835': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 13978,
+                     'ppf': 'libcrypt/Spyro - Year of the Dragon (Europe) '
+                            '(En,Fr,De,Es,It) (v1.0).ppf',
+                     'url': 'http://redump.org/disc/492/'},
+    'SCES03090': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 0,
+                     'ppf': 'libcrypt/Muppet Monster Adventure (France).ppf',
+                     'url': 'http://redump.org/disc/29518/'},
+    'SLES00017': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 58040,
+                     'ppf': 'libcrypt/Prince Naseem Boxing (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/3309/'},
+    'SLES00298': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 0,
+                     'ppf': 'libcrypt/Formula One 99 (Europe) '
+                            '(En,Fr,De,It).ppf',
+                     'url': 'http://redump.org/disc/924/'},
+    'SLES00995': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 35761,
+                     'ppf': 'libcrypt/Ronaldo V-Football (Europe) '
+                            '(En,Fr,Nl,Sv).ppf',
+                     'url': 'http://redump.org/disc/17746/'},
+    'SLES01041': {'magic_word': 25367, 'url': 'http://redump.org/disc/703/'},
+    'SLES01226': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 999,
+                     'ppf': 'libcrypt/Actua Ice Hockey 2 (Europe).ppf',
+                     'url': 'http://redump.org/disc/5120/'},
+    'SLES01241': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 58131,
+                     'ppf': 'libcrypt/Gekido - Urban Fighters (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/833/'},
+    'SLES01301': {'magic_word': 46882, 'url': 'http://redump.org/disc/1177/'},
+    'SLES01362': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 27814,
+                     'ppf': 'libcrypt/Le Mans 24 Hours (Europe) '
+                            '(En,Fr,De,Es,It,Pt).ppf',
+                     'url': 'http://redump.org/disc/1659/'},
+    'SLES01545': {'magic_word': 42318, 'url': 'http://redump.org/disc/25913/'},
+    'SLES01715': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 42228,
+                     'ppf': 'libcrypt/Eagle One - Harrier Attack (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/880/'},
+    'SLES01733': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 45165,
+                     'ppf': 'libcrypt/UEFA Striker (Europe) '
+                            '(En,Fr,De,Es,It,Nl).ppf',
+                     'url': 'http://redump.org/disc/7446/'},
+    'SLES01879': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 0,
+                     'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 1) (v1.0).ppf',
+                     'url': 'http://redump.org/disc/26606/'},
+    'SLES01906': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 5357,
+                     'ppf': 'libcrypt/Mission - Impossible (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/1176/'},
+    'SLES01907': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 49390,
+                     'ppf': 'libcrypt/V-Rally - Championship Edition 2 '
+                            '(Europe) (En,Fr,De).ppf',
+                     'url': 'http://redump.org/disc/1063/'},
+    'SLES01943': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 28775,
+                     'ppf': 'libcrypt/Radikal Bikers (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/25908/'},
+    'SLES02024 ': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                      'magic_word': 7025,
+                      'ppf': 'libcrypt/Legacy of Kain - Soul Reaver '
+                             '(France).ppf',
+                      'url': 'http://redump.org/disc/24279/'},
+    'SLES02025': {'magic_word': 51790, 'url': 'http://redump.org/disc/393/'},
+    'SLES02026': {'magic_word': 4463, 'url': 'http://redump.org/disc/27944/'},
+    'SLES02027': {'magic_word': 14947, 'url': 'http://redump.org/disc/28167/'},
+    'SLES02061': {'magic_word': 35509, 'url': 'http://redump.org/disc/772/'},
+    'SLES02071': {'magic_word': 10037, 'url': 'http://redump.org/disc/618/'},
+    'SLES02080': {   'magic_word': 40416,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
+                                   'FF8PAL1.PPF'],
+                     'url': 'http://redump.org/disc/866/'},
+    'SLES02081': {   'magic_word': 26679,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip',
+                                   'FF8DISK1.PPF'],
+                     'url': 'http://redump.org/disc/4028/'},
+    'SLES02082': {'magic_word': 27019, 'url': 'http://redump.org/disc/733/'},
+    'SLES02083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1587/'},
+    'SLES02084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1109/'},
+    'SLES02086': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 5876,
+                     'ppf': 'libcrypt/N-Gen Racing (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/1010/'},
+    'SLES02112': {'magic_word': 44868, 'url': 'http://redump.org/disc/280/'},
+    'SLES02113': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 22679,
+                     'ppf': 'libcrypt/SaGa Frontier 2 (France).ppf',
+                     'url': 'http://redump.org/disc/28278/'},
+    'SLES02118': {'magic_word': 28080, 'url': 'http://redump.org/disc/2605/'},
+    'SLES02196': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 0,
+                     'ppf': 'libcrypt/World Championship Snooker (Europe) '
+                            '(En,Fr,De).ppf',
+                     'url': 'http://redump.org/disc/2931/'},
+    'SLES02207': {'magic_word': 14956, 'url': 'http://redump.org/disc/710/'},
+    'SLES02208': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 29097,
+                     'ppf': 'libcrypt/Dino Crisis (France).ppf',
+                     'url': 'http://redump.org/disc/24278/'},
+    'SLES02209': {'magic_word': 9942, 'url': 'http://redump.org/disc/7586/'},
+    'SLES02210': {'magic_word': 25389, 'url': 'http://redump.org/disc/28171/'},
+    'SLES02211': {'magic_word': 6743, 'url': 'http://redump.org/disc/27940/'},
+    'SLES02292': {'magic_word': 34546, 'url': 'http://redump.org/disc/3619/'},
+    'SLES02293': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 47749,
+                     'ppf': 'libcrypt/Canal+ Premier Manager (Europe) '
+                            '(Fr,Es,It).ppf',
+                     'url': 'http://redump.org/disc/27297/'},
+    'SLES02328': {   'magic_word': 16162,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip',
+                                   'pdx-gal1.ppf'],
+                     'url': 'http://redump.org/disc/7420/'},
+    'SLES02329': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 40248,
+                     'ppf': 'libcrypt/Galerians (France) (Disc 1).ppf',
+                     'url': 'http://redump.org/disc/13382/'},
+    'SLES02330': {   'magic_word': 57405,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip',
+                                   'pdx-ggc1.pdf'],
+                     'url': 'http://redump.org/disc/7695/'},
+    'SLES02354': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 25833,
+                     'ppf': 'libcrypt/Urban Chaos (France).ppf',
+                     'url': 'http://redump.org/disc/50247/'},
+    'SLES02355': {'magic_word': 19174, 'url': 'http://redump.org/disc/17768/'},
+    'SLES02395': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 43689,
+                     'ppf': 'libcrypt/Michelin Rally Masters - Race of '
+                            'Champions (Europe) (Fr,Es,It).ppf',
+                     'url': 'http://redump.org/disc/28160/'},
+    'SLES02396': {'magic_word': 42346, 'url': 'http://redump.org/disc/46131/'},
+    'SLES02402': {'magic_word': 43578, 'url': 'http://redump.org/disc/59390/'},
+    'SLES02529': {'magic_word': 44400, 'url': 'http://redump.org/disc/496/'},
+    'SLES02530': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 31779,
+                     'ppf': 'libcrypt/Resident Evil 3 - Nemesis (France).ppf',
+                     'url': 'http://redump.org/disc/9753/'},
+    'SLES02531': {'magic_word': 44216, 'url': 'http://redump.org/disc/5526/'},
+    'SLES02532': {'magic_word': 7229, 'url': 'http://redump.org/disc/1387/'},
+    'SLES02533': {'magic_word': 60042, 'url': 'http://redump.org/disc/16397/'},
+    'SLES02538': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 25427,
+                     'ppf': 'libcrypt/EA Sports Superbike 2000 (Europe) '
+                            '(En,Fr,De,Es,It,Sv).ppf',
+                     'url': 'http://redump.org/disc/26580/'},
+    'SLES02558': {'magic_word': 54752, 'url': 'http://redump.org/disc/118/'},
+    'SLES02559': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 22293,
+                     'ppf': 'libcrypt/Parasite Eve II (France) (Disc 1).ppf',
+                     'url': 'http://redump.org/disc/13381/'},
+    'SLES02560': {'magic_word': 56104, 'url': 'http://redump.org/disc/4307/'},
+    'SLES02561': {'magic_word': 60037, 'url': 'http://redump.org/disc/1122/'},
+    'SLES02562': {'magic_word': 15764, 'url': 'http://redump.org/disc/29442/'},
+    'SLES02563': {'magic_word': 19299, 'url': 'http://redump.org/disc/3334/'},
+    'SLES02572': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 14684,
+                     'ppf': 'libcrypt/TOCA World Touring Cars (Europe) '
+                            '(En,Fr,De).ppf',
+                     'url': 'http://redump.org/disc/615/'},
+    'SLES02573': {'magic_word': 21859, 'url': 'http://redump.org/disc/27567/'},
+    'SLES02681': {'magic_word': 7367, 'url': 'http://redump.org/disc/7755/'},
+    'SLES02688': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 29544,
+                     'ppf': 'libcrypt/Theme Park World (Europe) '
+                            '(En,Fr,De,Es,It,Nl,Sv).ppf',
+                     'url': 'http://redump.org/disc/910/'},
+    'SLES02689': {'magic_word': 57810, 'url': 'http://redump.org/disc/622/'},
+    'SLES02698': {'magic_word': 7325, 'url': 'http://redump.org/disc/28197/'},
+    'SLES02700': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 10200,
+                     'ppf': 'libcrypt/Need for Speed - Porsche 2000 (Europe) '
+                            '(Fr,Es,It).ppf',
+                     'url': 'http://redump.org/disc/3933/'},
+    'SLES02704': {'magic_word': 28958, 'url': 'http://redump.org/disc/1793/'},
+    'SLES02705': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 19117,
+                     'ppf': 'libcrypt/UEFA Euro 2000 (France).ppf',
+                     'url': 'http://redump.org/disc/28153/'},
+    'SLES02706': {'magic_word': 7857, 'url': 'http://redump.org/disc/5528/'},
+    'SLES02707': {'magic_word': 44337, 'url': 'http://redump.org/disc/28346/'},
+    'SLES02708': {'magic_word': 24260, 'url': 'http://redump.org/disc/50591/'},
+    'SLES02722': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 46730,
+                     'ppf': 'libcrypt/F1 2000 (Europe) (En,Fr,De,Nl).ppf',
+                     'url': 'http://redump.org/disc/4311/'},
+    'SLES02723': {'magic_word': 4080, 'url': 'http://redump.org/disc/48119/'},
+    'SLES02724': {'magic_word': 52884, 'url': 'http://redump.org/disc/27982/'},
+    'SLES02733': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 46605,
+                     'ppf': 'libcrypt/Walt Disney World Quest - Magical Racing '
+                            'Tour (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da).ppf',
+                     'url': 'http://redump.org/disc/1848/'},
+    'SLES02754': {   'magic_word': 8129,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-vsuk!zip',
+                                   'pdx-vsuk.ppf'],
+                     'url': 'http://redump.org/disc/9978/'},
+    'SLES02755': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 22807,
+                     'ppf': 'libcrypt/Vagrant Story (France).ppf',
+                     'url': 'http://redump.org/disc/12636/'},
+    'SLES02756': {'magic_word': 57462, 'url': 'http://redump.org/disc/548/'},
+    'SLES02763': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 30886,
+                     'ppf': 'libcrypt/SnoCross Championship Racing (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/3705/'},
+    'SLES02766': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 38991,
+                     'ppf': 'libcrypt/Les Cochons de Guerre (France).ppf',
+                     'url': 'http://redump.org/disc/33070/'},
+    'SLES02767': {'magic_word': 43845, 'url': 'http://redump.org/disc/19539/'},
+    'SLES02768': {'magic_word': 40296, 'url': 'http://redump.org/disc/48791/'},
+    'SLES02769': {'magic_word': 12510, 'url': 'http://redump.org/disc/48020/'},
+    'SLES02824': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 45957,
+                     'ppf': 'libcrypt/RC Revenge (Europe) (En,Fr,De,Es).ppf',
+                     'url': 'http://redump.org/disc/5127/'},
+    'SLES02830': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 25276,
+                     'ppf': 'libcrypt/MoHo (Europe) (En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/15091/'},
+    'SLES02831': {'magic_word': 1502, 'url': 'http://redump.org/disc/25284/'},
+    'SLES02839': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 51993,
+                     'ppf': 'libcrypt/Mike Tyson Boxing (Europe) '
+                            '(En,Fr,De,Es,It).ppf',
+                     'url': 'http://redump.org/disc/5823/'},
+    'SLES02857': {'magic_word': 24330, 'url': 'http://redump.org/disc/7460/'},
+    'SLES02858': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 15898,
+                     'ppf': 'libcrypt/Sydney 2000 (France).ppf',
+                     'url': 'http://redump.org/disc/29281/'},
+    'SLES02859': {'magic_word': 9566, 'url': 'http://redump.org/disc/15759/'},
+    'SLES02860': {'magic_word': 42898, 'url': 'http://redump.org/disc/46132/'},
+    'SLES02861': {'magic_word': 51420, 'url': 'http://redump.org/disc/27884/'},
+    'SLES02862': {'magic_word': 50129, 'url': 'http://redump.org/disc/62664/'},
+    'SLES02965': {'magic_word': 46792, 'url': 'http://redump.org/disc/2371/'},
+    'SLES02966': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 52897,
+                     'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 1).ppf',
+                     'url': 'http://redump.org/disc/2455/'},
+    'SLES02967': {'magic_word': 29274, 'url': 'http://redump.org/disc/737/'},
+    'SLES02968': {'magic_word': 58646, 'url': 'http://redump.org/disc/2714/'},
+    'SLES02969': {'magic_word': 60513, 'url': 'http://redump.org/disc/1113/'},
+    'SLES02975': {'magic_word': 31377, 'url': 'http://redump.org/disc/6847/'},
+    'SLES02976': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 25927,
+                     'ppf': 'libcrypt/Roger Lemerre - La Selection des '
+                            'Champions (France).ppf',
+                     'url': 'http://redump.org/disc/45075/'},
+    'SLES02977': {'magic_word': 47245, 'url': 'http://redump.org/disc/17767/'},
+    'SLES02978': {'magic_word': 23315, 'url': 'http://redump.org/disc/29597/'},
+    'SLES02979': {'magic_word': 12106, 'url': 'http://redump.org/disc/48602/'},
+    'SLES03061': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 3198,
+                     'ppf': 'libcrypt/F.A. Premier League Football Manager '
+                            '2001, The (Europe).ppf',
+                     'url': 'http://redump.org/disc/6867/'},
+    'SLES03062': {'magic_word': 45261, 'url': 'http://redump.org/disc/7516/'},
+    'SLES03189': {'magic_word': 19404, 'url': 'http://redump.org/disc/35141/'},
+    'SLES03190': {'magic_word': 28943, 'url': 'http://redump.org/disc/53874/'},
+    'SLES03191': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 27285,
+                     'ppf': "libcrypt/Disney's 102 Dalmatians - Puppies to the "
+                            'Rescue (Europe) (Fr,De,Es,It,Nl).ppf',
+                     'url': 'http://redump.org/disc/19140/'},
+    'SLES03241': {'magic_word': 31618, 'url': 'http://redump.org/disc/12627/'},
+    'SLES03242': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 42856,
+                     'ppf': "libcrypt/TechnoMage - En Quete de L'Eternite "
+                            '(France).ppf',
+                     'url': 'http://redump.org/disc/28190/'},
+    'SLES03243': {'magic_word': 10097, 'url': 'http://redump.org/disc/46130/'},
+    'SLES03244': {'magic_word': 5527, 'url': 'http://redump.org/disc/49569/'},
+    'SLES03245': {'magic_word': 1495, 'url': 'http://redump.org/disc/27310/'},
+    'SLES03324': {'magic_word': 52529, 'url': 'http://redump.org/disc/4873/'},
+    'SLES03489': {'magic_word': 37039, 'url': 'http://redump.org/disc/617/'},
+    'SLES03519': {'magic_word': 47892, 'url': 'http://redump.org/disc/30764/'},
+    'SLES03520': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 38520,
+                     'ppf': 'libcrypt/Men in Black - The Series - Crashdown '
+                            '(France).ppf',
+                     'url': 'http://redump.org/disc/28185/'},
+    'SLES03521': {'magic_word': 64288, 'url': 'http://redump.org/disc/17711/'},
+    'SLES03522': {'magic_word': 51982, 'url': 'http://redump.org/disc/28025/'},
+    'SLES03523': {'magic_word': 12540, 'url': 'http://redump.org/disc/27937/'},
+    'SLES03530': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 37872,
+                     'ppf': 'libcrypt/Lucky Luke - Western Fever (Europe) '
+                            '(En,Fr,De,Es,It,Nl).ppf',
+                     'url': 'http://redump.org/disc/19142/'},
+    'SLES03603': {'magic_word': 23241, 'url': 'http://redump.org/disc/26750/'},
+    'SLES03604': {'magic_word': 6510, 'url': 'http://redump.org/disc/49266/'},
+    'SLES03605': {'magic_word': 61778, 'url': 'http://redump.org/disc/3320/'},
+    'SLES03606': {'magic_word': 50644, 'url': 'http://redump.org/disc/48369/'},
+    'SLES03607': {'magic_word': 35387, 'url': 'http://redump.org/disc/48045/'},
+    'SLES03626': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 20259,
+                     'ppf': 'libcrypt/Italian Job, The (Europe) (Fr,De,Es).ppf',
+                     'url': 'http://redump.org/disc/5819/'},
+    'SLES03648': {'magic_word': 26937, 'url': 'http://redump.org/disc/47605/'},
+    'SLES11879': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 0,
+                     'ppf': 'libcrypt/OverBlood 2 (Europe) (Disc 2) (v1.0).ppf',
+                     'url': 'http://redump.org/disc/26607/'},
+    'SLES12080': {   'magic_word': 40416,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
+                                   'FF8PAL2.PPF'],
+                     'url': 'http://redump.org/disc/875/'},
+    'SLES12081': {   'magic_word': 26679,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip',
+                                   'FF8DISK2.PPF'],
+                     'url': 'http://redump.org/disc/4029/'},
+    'SLES12082': {'magic_word': 27019, 'url': 'http://redump.org/disc/734/'},
+    'SLES12083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1588/'},
+    'SLES12084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1110/'},
+    'SLES12328': {   'magic_word': 19180,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip',
+                                   'pdx-gal2.ppf'],
+                     'url': 'http://redump.org/disc/7421/'},
+    'SLES12329': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 40248,
+                     'ppf': 'libcrypt/Galerians (France) (Disc 2).ppf',
+                     'url': 'http://redump.org/disc/13383/'},
+    'SLES12330': {   'magic_word': 56835,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip',
+                                   'PDX-GGC2.PPF'],
+                     'url': 'http://redump.org/disc/7696/'},
+    'SLES12558': {'magic_word': 54752, 'url': 'http://redump.org/disc/119/'},
+    'SLES12559': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 22293,
+                     'ppf': 'libcrypt/Parasite Eve II (France) (Disc 2).ppf',
+                     'url': 'http://redump.org/disc/13380/'},
+    'SLES12560': {'magic_word': 56104, 'url': 'http://redump.org/disc/4308/'},
+    'SLES12561': {'magic_word': 60037, 'url': 'http://redump.org/disc/1123/'},
+    'SLES12562': {'magic_word': 15764, 'url': 'http://redump.org/disc/29443/'},
+    'SLES12965': {'magic_word': 41427, 'url': 'http://redump.org/disc/2370/'},
+    'SLES12966': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 38705,
+                     'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 2).ppf',
+                     'url': 'http://redump.org/disc/2456/'},
+    'SLES12967': {'magic_word': 55574, 'url': 'http://redump.org/disc/738/'},
+    'SLES12968': {'magic_word': 21583, 'url': 'http://redump.org/disc/2716/'},
+    'SLES12969': {'magic_word': 25691, 'url': 'http://redump.org/disc/1114/'},
+    'SLES22080': {   'magic_word': 40416,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
+                                   'FF8PAL3.PPF'],
+                     'url': 'http://redump.org/disc/873/'},
+    'SLES22081': {   'magic_word': 26679,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip',
+                                   'FF8DISK3.PPF'],
+                     'url': 'http://redump.org/disc/4030/'},
+    'SLES22082': {'magic_word': 27019, 'url': 'http://redump.org/disc/735/'},
+    'SLES22083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1589/'},
+    'SLES22084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1111/'},
+    'SLES22328': {   'magic_word': 28883,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip',
+                                   'pdx-gal3.ppf'],
+                     'url': 'http://redump.org/disc/7422/'},
+    'SLES22329': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 40248,
+                     'ppf': 'libcrypt/Galerians (France) (Disc 3).ppf',
+                     'url': 'http://redump.org/disc/13384/'},
+    'SLES22330': {   'magic_word': 9067,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-ggc!zip',
+                                   'PDX-GGC3.PPF'],
+                     'url': 'http://redump.org/disc/7697/'},
+    'SLES22965': {'magic_word': 28098, 'url': 'http://redump.org/disc/2372/'},
+    'SLES22966': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 51315,
+                     'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 3).ppf',
+                     'url': 'http://redump.org/disc/2457/'},
+    'SLES22967': {'magic_word': 6581, 'url': 'http://redump.org/disc/739/'},
+    'SLES22968': {'magic_word': 16847, 'url': 'http://redump.org/disc/2717/'},
+    'SLES22969': {'magic_word': 26166, 'url': 'http://redump.org/disc/1115/'},
+    'SLES32080': {   'magic_word': 40416,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
+                                   'FF8PAL4.PPF'],
+                     'url': 'http://redump.org/disc/874/'},
+    'SLES32081': {   'magic_word': 26679,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8fr!zip',
+                                   'FF8DISK4.PPF'],
+                     'url': 'http://redump.org/disc/4031/'},
+    'SLES32082': {'magic_word': 27019, 'url': 'http://redump.org/disc/736/'},
+    'SLES32083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1590/'},
+    'SLES32084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1112/'},
+    'SLES32965': {'magic_word': 7877, 'url': 'http://redump.org/disc/2373/'},
+    'SLES32966': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 13777,
+                     'ppf': 'libcrypt/Final Fantasy IX (France) (Disc 4).ppf',
+                     'url': 'http://redump.org/disc/2458/'},
+    'SLES32967': {'magic_word': 21709, 'url': 'http://redump.org/disc/740/'},
+    'SLES32968': {'magic_word': 50717, 'url': 'http://redump.org/disc/2718/'},
+    'SLES32969': {'magic_word': 59587, 'url': 'http://redump.org/disc/1116/'}
 }
 

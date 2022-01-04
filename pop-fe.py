@@ -1231,7 +1231,7 @@ if __name__ == "__main__":
     magic_word = []
     if game_id in libcrypt:
         for idx in range(len(cue_files)):
-            magic_word.append(generate_magic_word(libcrypt[disc_ids[idx]]['url']))
+            magic_word.append(libcrypt[disc_ids[idx]]['magic_word'])
         patch_libcrypt = False
         if args.auto_libcrypt:
             patch_libcrypt = True
