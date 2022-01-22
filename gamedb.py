@@ -49216,7 +49216,10 @@ libcrypt = {
                      'ppf': 'libcrypt/Mike Tyson Boxing (Europe) '
                             '(En,Fr,De,Es,It).ppf',
                      'url': 'http://redump.org/disc/5823/'},
-    'SLES02857': {'magic_word': 24330, 'url': 'http://redump.org/disc/7460/'},
+    'SLES02857': {   'credit': 'Libcrypt patch contributed by Agrippa',
+                     'magic_word': 24330,
+                     'ppf': 'libcrypt/Sydney\ 2000\ \(Europe\).ppf',
+                     'url': 'http://redump.org/disc/7460/'},
     'SLES02858': {   'credit': 'Libcrypt patch contributed by krHACKen',
                      'magic_word': 15898,
                      'ppf': 'libcrypt/Sydney 2000 (France).ppf',
