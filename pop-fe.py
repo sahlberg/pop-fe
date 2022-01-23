@@ -315,7 +315,11 @@ def get_imgs_from_bin(cue):
     return img_files
 
 
-def create_retroarch(dest, game_title, cue_files, img_files):
+def create_retroarch_bin(dest, game_title, cue_files, img_files):
+    try:
+        os.mkdir(dest)
+    except:
+        True
     with open(dest + '/' + game_title + '.m3u', 'wb') as md:
         for i in range(len(img_files)):
             g = game_title
@@ -325,6 +329,29 @@ def create_retroarch(dest, game_title, cue_files, img_files):
             f = dest + '/' + g
             print('Installing', f) if verbose else None
             copy_file(img_files[i], f)
+            
+
+def create_retroarch_cue(dest, game_title, cue_files, img_files):
+    try:
+        os.mkdir(dest)
+    except:
+        True
+    with open(dest + '/' + 'PSISO.m3u', 'wb') as md:
+        for i in range(len(cue_files)):
+            p = 'PSISO%d' % i
+            with open(dest + '/' + p + '.CD', 'wb') as nc:
+                md.write(bytes(p + '.CD' + chr(13) + chr(10), encoding='utf-8'))
+                cur_cue = open(cue_files[i], 'r')
+                for line in cur_cue:
+                    m = re.search('FILE "?(.*?)"? BINARY', line)
+                    if m:
+                        nc.write(bytes('FILE \"%s.bin\" BINARY' % p + chr(13) + chr(10), encoding='utf-8'))
+                    else:
+                        nc.write(bytes(line, encoding='utf-8'))
+                
+                b = dest + '/' + p + '.bin'
+                print('Installing', b) if verbose else None
+                copy_file(img_files[i], b)
 
 
 def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
@@ -405,9 +432,10 @@ def get_toc_from_cu2(cu2):
             toc = toc + buf
             
         return toc
-    
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
-    print('Create PSP EBOOT.PBP for', game_title) if verbose else None
+
+
+def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files):
+    print('Create PBP file for', game_title) if verbose else None
 
     if icon0:
         image = Image.open(io.BytesIO(icon0))
@@ -427,7 +455,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         p.pic1 = pic1
     if len(aea_files):
         p.aea = aea_files
-        
+
     for i in range(len(img_files)):
         f = img_files[i]
         toc = p.get_toc_from_ccd(f)
@@ -438,20 +466,27 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
 
-    f = dest + '/PSP/GAME/' + p.game_id
+    p.eboot = dest_file
+    print('Create PBP file at', p.eboot)
+    p.create_pbp()
+    try:
+        os.sync()
+    except:
+        True
+
+    
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
+    print('Create PSP EBOOT.PBP for', game_title) if verbose else None
+
+    f = dest + '/PSP/GAME/' + game_id
     print('Install EBOOT in', f) if verbose else None
     try:
         os.mkdir(f)
     except:
         True
             
-    p.eboot = f + '/EBOOT.PBP'
-    print('Create EBOOT.PBP at', p.eboot)
-    p.create_pbp()
-    try:
-        os.sync()
-    except:
-        True
+    dest_file = f + '/EBOOT.PBP'
+    generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
 
     idx = 0
     for mc in mem_cards:
@@ -1004,8 +1039,12 @@ if __name__ == "__main__":
     parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--retroarch-thumbnail-dir',
                     help='Where to store retroarch thumbnails')
-    parser.add_argument('--retroarch-game-dir',
-                    help='Where to store retroarch games')
+    parser.add_argument('--retroarch-bin-dir',
+                    help='Where to store retroarch games as (m3u/img)')
+    parser.add_argument('--retroarch-cue-dir',
+                    help='Where to store retroarch games as (m3u/cue)')
+    parser.add_argument('--retroarch-pbp-dir',
+                    help='Where to store retroarch games as (pbp)')
     parser.add_argument('--psio-dir',
                     help='Where to store images for PSIO')
     parser.add_argument('--psp-dir',
@@ -1125,7 +1164,7 @@ if __name__ == "__main__":
         cue_files.append(cue_file)
         cu2_files.append(cu2_file)
 
-        if args.psp_dir or args.ps3_pkg:
+        if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
             bc = bchunk()
             bc.towav = True
             bc.open(cue_file)
@@ -1278,8 +1317,15 @@ if __name__ == "__main__":
         create_metadata(img_files[0], game_id, game_title, icon0, pic1)
     if args.psio_dir:
         create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
-    if args.retroarch_game_dir:
-        create_retroarch(args.retroarch_game_dir, game_title, cue_files, img_files)
+    if args.retroarch_bin_dir:
+        new_path = args.retroarch_bin_dir + '/' + game_title
+        create_retroarch_bin(new_path, game_title, cue_files, img_files)
+    if args.retroarch_cue_dir:
+        new_path = args.retroarch_cue_dir + '/' + game_title
+        create_retroarch_cue(new_path, game_title, cue_files, img_files)
+    if args.retroarch_pbp_dir:
+        new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
+        generate_pbp(new_path, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
     if args.retroarch_thumbnail_dir:
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 
