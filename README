@@ -101,7 +101,15 @@ Command line arguments are:
 --auto-libcrypt       : Try to automatically create and apply a patch for
                         libcrypt. This can be used if there is no proper PPF
 			file available. This is not 100% reliable.
---retroarch-game-dir  : The directory where retroarch game images are to be
+--retroarch-bin-dir  : The directory where retroarch game bins are to be
+                        installed, inside a subfolder. Includes an m3u file 
+                        for correctly loading multi-dics games.
+--retroarch-cue-dir  : The directory where retroarch game cues (as .CD files)
+                        are to be installed with their respective bins, inside 
+                        a subfolder. Includes an m3u file for correctly loading
+                        multi-dics games.
+                        the different discs inputted.
+--retroarch-pbp-dir  : The directory where retroarch game pbp images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
 #
@@ -213,6 +221,12 @@ PS3 Support
 ===========
 Pop-fe can convert games into a PS3 PKG that can be installed on PS3 systems
 with CFW or HEN.
+
+RetroArch Support
+=================
+The PSX emulator cores in retroarch support a variety of formats, with m3u and
+pbp files being the most convenient for loading multi-disc games. Pop-fe can
+prepare these formats/schemes for retroarch to load.
 
 Preparations
 ------------
