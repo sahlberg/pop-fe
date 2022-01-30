@@ -411,3 +411,28 @@ so use --psp-dir=/e or --psp-dir=auto
 You may need to run this command every time you open the MSYS2 shell:
 export PATH=$PATH:/mingw64/bin
 
+
+Docker
+----------------
+# You can also run pop-fe inside a docker container.
+# Assuming Docker is already installed on your preferred distro, run:
+git clone https://github.com/sahlberg/pop-fe.git
+cd pop-fe
+docker build -t pop-fe .
+
+# You can then execute pop-fe directly:
+docker run -it pop-fe --help
+# or get a shell and run pop-fe interactively:
+docker run -it --entrypoint /bin/bash pop-fe:latest
+./pop-fe.py
+
+# Here is another Docker example where we mount the current host directory into the container at "/psp".
+# Directory structure:
+# .
+# ├── game.bin
+# ├── game.cue
+# └── pspemu/
+#     └── PSP/
+#         └── GAME/
+docker run -it --volume "$(pwd):/psp" pop-fe --psp-dir=/psp/pspemu /psp/game.cue
+
