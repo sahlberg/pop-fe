@@ -426,7 +426,7 @@ docker run -it pop-fe --help
 docker run -it --entrypoint /bin/bash pop-fe:latest
 ./pop-fe.py
 
-# Here is another Docker example where we mount the current host directory into the container at `/psp`.
+# Here is another Docker example where we mount the current host directory into the container at "/psp".
 # Directory structure:
 # .
 # ├── game.bin
@@ -434,7 +434,5 @@ docker run -it --entrypoint /bin/bash pop-fe:latest
 # └── pspemu/
 #     └── PSP/
 #         └── GAME/
-docker run -v "$(pwd):/psp" pop-fe --psp-dir=/psp/pspemu /psp/game.cue
 docker run -it --volume "$(pwd):/psp" pop-fe --psp-dir=/psp/pspemu /psp/game.cue
-
 
