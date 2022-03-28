@@ -245,36 +245,33 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         except:
             os.mkdir(dest + '/Named_Boxarts')
     
-        image = Image.open(io.BytesIO(icon0))
-        image = image.resize((256,256), Image.BILINEAR)
+        image = icon0.resize((256,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Boxarts/' + game_title + '.png'
         print('Save cover as', f) if verbose else None
         image.save(f, 'PNG')
 
-        image = Image.open(io.BytesIO(pic1))
         try:
             os.stat(args.retroarch_thumbnail_dir + '/Named_Snaps')
         except:
             os.mkdir(args.retroarch_thumbnail_dir + '/Named_Snaps')
-        image = image.resize((512,256), Image.BILINEAR)
+        image = pic1.resize((512,256), Image.BILINEAR)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Snaps/' + game_title + '.png'
         print('Save snap as', f) if verbose else None
         image.save(f, 'PNG')
 
 
-def create_metadata(img, game_id, game_title, icon0, pic1):
+def create_metadata(img, game_id, game_title, icon0, pic0, pic1):
     print('fetching metadata for', game_id) if verbose else None
 
     with open(create_path(img, 'GAME_ID'), 'w') as d:
         d.write(game_id)
     with open(create_path(img, 'GAME_TITLE'), 'w') as d:
         d.write(game_title)
-    with open(create_path(img, 'ICON0.PNG'), 'wb') as d:
-        d.write(icon0)
-    with open(create_path(img, 'PIC1.PNG'), 'wb') as d:
-        d.write(pic1)
+    icon0.save(create_path(img, 'ICON0.PNG'))
+    pic0.save(create_path(img, 'PIC0.PNG'))
+    pic1.save(create_path(img, 'PIC1.PNG'))
         
         
 def get_imgs_from_bin(cue):
@@ -362,8 +359,7 @@ def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
         True
 
     with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
-        image = Image.open(io.BytesIO(icon0))
-        image = image.resize((80,84), Image.BILINEAR)
+        image = icon0.resize((80,84), Image.BILINEAR)
         i = io.BytesIO()
         image.save(i, format='BMP')
         i.seek(0)
@@ -437,14 +433,6 @@ def get_toc_from_cu2(cu2):
 def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files):
     print('Create PBP file for', game_title) if verbose else None
 
-    if icon0:
-        image = Image.open(io.BytesIO(icon0))
-        image = image.resize((80,80), Image.BILINEAR)
-        i = io.BytesIO()
-        image.save(i, format='PNG')
-        i.seek(0)
-        icon0 = i.read()
-
     p = popstation()
     p.verbose = verbose
     p.game_id = game_id
@@ -478,6 +466,21 @@ def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_fil
 def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
+    # Convert ICON0 to a file object
+    image = icon0.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    icon0 = i.read()
+
+    # Convert PIC1 to a file object
+    pic1 = pic1.resize((480, 272), Image.BILINEAR).convert("RGBA")
+    pic1 = add_image_text(pic1, game_title, game_id)
+    i = io.BytesIO()
+    pic1.save(i, format='PNG')
+    i.seek(0)
+    pic1 = i.read()
+    
     f = dest + '/PSP/GAME/' + game_id
     print('Install EBOOT in', f) if verbose else None
     try:
@@ -514,7 +517,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word):
+def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -591,26 +594,22 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
 
-    image = Image.open(io.BytesIO(icon0))
-    image = image.resize((320, 176), Image.BILINEAR)
+    image = icon0.resize((320, 176), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
     
-    image = Image.open(io.BytesIO(pic1))
-    image = image.resize((1000, 560), Image.NEAREST)
+    image = pic0.resize((1000, 560), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC0.PNG', format='PNG')
     temp_files.append(f + '/PIC0.PNG')
     
-    image = Image.open(io.BytesIO(pic1))
-    image = image.resize((1920, 1080), Image.NEAREST)
+    image = pic1.resize((1920, 1080), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
-    image = Image.open(io.BytesIO(pic1))
-    image = image.resize((310, 250), Image.NEAREST)
+    image = pic1.resize((310, 250), Image.NEAREST)
     i = io.BytesIO()
     image.save(f + '/PIC2.PNG', format='PNG')
     temp_files.append(f + '/PIC2.PNG')
@@ -674,8 +673,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         os.mkdir(f)
     except:
         True
-    image = Image.open(io.BytesIO(icon0))
-    image = image.resize((80,80), Image.BILINEAR)
+    image = icon0.resize((80,80), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')    
@@ -955,13 +953,11 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             
     pp = dest + '/ART/'
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
-    image = Image.open(io.BytesIO(icon0))
-    image = image.resize((200, 200))
+    image = icon0.resize((200, 200))
     image = image.convert('RGB')
     image.save(f, format='JPEG', quality=100, subsampling=0)
     f = pp + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_BG.jpg'
-    image = Image.open(io.BytesIO(pic1))
-    image = image.resize((640, 480))
+    image = pic1.resize((640, 480))
     image = image.convert('RGB')
     image.save(f, format='JPEG', quality=100, subsampling=0)
 
@@ -1205,7 +1201,7 @@ if __name__ == "__main__":
         game_id = args.game_id
     if not game_id:
         try:
-            with open(create_path(img_files[0], 'GAME_ID'), 'r') as d:
+            with open(create_path(args.files[0], 'GAME_ID'), 'r') as d:
                 game_id = d.read()
         except:
             True
@@ -1219,7 +1215,7 @@ if __name__ == "__main__":
         game_title = args.title
     if not game_title:
         try:
-            with open(create_path(img_files[0], 'GAME_TITLE'), 'r') as d:
+            with open(create_path(args.files[0], 'GAME_TITLE'), 'r') as d:
                 game_title = d.read()
         except:
             True
@@ -1230,7 +1226,7 @@ if __name__ == "__main__":
 
     # ICON0.PNG
     try:
-        image = Image.open(create_path(img_files[0], 'ICON0.PNG'))
+        image = Image.open(create_path(args.files[0], 'ICON0.PNG'))
         print('Use existing ICON0.PNG as cover') if verbose else None
     except:
         print('Fetch cover for', game_title) if verbose else None
@@ -1239,14 +1235,23 @@ if __name__ == "__main__":
         icon0 = get_icon0_from_game(game_id, game)
         temp_files.append('ICON0.jpg')
         image = Image.open(io.BytesIO(icon0))
-    i = io.BytesIO()
-    image.save(i, format='PNG')
-    i.seek(0)
-    icon0 = i.read()
+    icon0 = image
+
+    # PIC0.PNG
+    try:
+        image = Image.open(create_path(args.files[0], 'PIC0.PNG'))
+        print('Use existing PIC0.PNG as background') if verbose else None
+    except:
+        print('Fetch screenshot for', game_title) if verbose else None
+        if not game:
+            game = get_game_from_gamelist(game_id)
+        pic0 = get_pic1_from_game(game_id, game)
+        image = Image.open(io.BytesIO(pic0))
+    pic0 = image
 
     # PIC1.PNG
     try:
-        image = Image.open(create_path(img_files[0], 'PIC1.PNG'))
+        image = Image.open(create_path(args.files[0], 'PIC1.PNG'))
         print('Use existing PIC1.PNG as background') if verbose else None
     except:
         print('Fetch screenshot for', game_title) if verbose else None
@@ -1254,12 +1259,7 @@ if __name__ == "__main__":
             game = get_game_from_gamelist(game_id)
         pic1 = get_pic1_from_game(game_id, game)
         image = Image.open(io.BytesIO(pic1))
-    image = image.resize((480, 272), Image.BILINEAR).convert("RGBA")
-    image = add_image_text(image, game_title, game_id)
-    i = io.BytesIO()
-    image.save(i, format='PNG')
-    i.seek(0)
-    pic1 = i.read()
+    pic1 = image
     
     print('Id:', game_id)
     print('Title:', game_title)
@@ -1312,9 +1312,9 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word)
     if args.fetch_metadata:
-        create_metadata(img_files[0], game_id, game_title, icon0, pic1)
+        create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:
         create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
     if args.retroarch_bin_dir:
@@ -1325,6 +1325,20 @@ if __name__ == "__main__":
         create_retroarch_cue(new_path, game_title, cue_files, img_files)
     if args.retroarch_pbp_dir:
         new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
+        if icon0:
+            image = icon0.resize((80,80), Image.BILINEAR)
+            i = io.BytesIO()
+            image.save(i, format='PNG')
+            i.seek(0)
+            icon0 = i.read()
+
+        if pic1:
+            image = pic1
+            i = io.BytesIO()
+            image.save(i, format='PNG')
+            i.seek(0)
+            pic1 = i.read()
+        
         generate_pbp(new_path, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
     if args.retroarch_thumbnail_dir:
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
