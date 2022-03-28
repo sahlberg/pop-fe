@@ -80,7 +80,7 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     idx = buf.find(';1')
     buf = buf[idx-11:idx]
     
-    game_id = buf
+    game_id = buf.upper()
     return game_id[:4] + game_id[5:8] + game_id[9:11]
 
 
