@@ -1189,25 +1189,26 @@ if __name__ == "__main__":
         install_psp_mc(args.psp_dir, args.game_id, mem_cards)
         quit()
             
-    # We need to convert the first track of the first ISO so we can open the
-    # disk and read system.cnf
-    # We only do this for the first disk of a multi-disk set.
-    print('Convert CUE to a normal style ISO') if verbose else None
-    disc_ids = get_disc_ids(cue_files)
-    print('disc_ids', disc_ids)
-    
     game_id = None
     if args.game_id:
         game_id = args.game_id
     if not game_id:
         try:
             with open(create_path(args.files[0], 'GAME_ID'), 'r') as d:
-                game_id = d.read()
+                game_id = d.read(9)
         except:
             True
-    if not game_id:
-        game_id = disc_ids[0]
 
+    disc_ids = None
+    if len(cue_files) > 1 or not game_id:
+        # We need to convert the first track of every ISO so we can open the
+        # disk and read system.cnf
+        # We only do this for the first disk of a multi-disk set.
+        print('Convert CUE to a normal style ISO') if verbose else None
+        disc_ids = get_disc_ids(cue_files)
+        game_id = disc_ids[0]
+    if not disc_ids:
+        disc_ids = [game_id]
     game_id = game_id.upper()
     
     game_title = None
