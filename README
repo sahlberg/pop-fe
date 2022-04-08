@@ -71,6 +71,15 @@ Command line arguments are:
 		         the SYSTEM.CNF file off the game iso and use it to
 			 detect the game-id. This argument can be used to
 			 override the id.
+--resolution	       : By default resolution is set to '2' (640x512)
+		         for PAL games. I.e. games with a GameId that starts
+			 with SCES or SLES.
+			 And it is set to '1' (640x480) for all other games,
+			 which are assumed to all be NTSC.
+			 This argument can be used to force the resolution
+			 to a specific value.
+		         See https://www.psdevwiki.com/ps3/PARAM.SFO#RESOLUTION
+			 for a list of possible values.
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin

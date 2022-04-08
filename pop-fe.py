@@ -517,7 +517,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word):
+def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -573,7 +573,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
             'data': '01.7000'},
         'RESOLUTION': {
             'data_fmt': 1028,
-            'data': 1},
+            'data': resolution},
         'SOUND_FORMAT': {
             'data_fmt': 1028,
             'data': 1},
@@ -1060,6 +1060,8 @@ if __name__ == "__main__":
                     help='Force title for this iso')
     parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
     parser.add_argument('--auto-libcrypt', action='store_true', help='Apply automatically generated libcrypt patches')
+    parser.add_argument('--resolution',
+                        help='Force setting resolution to 1: NTSC 2: PAL')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1210,6 +1212,14 @@ if __name__ == "__main__":
     if not disc_ids:
         disc_ids = [game_id]
     game_id = game_id.upper()
+
+    resolution = 1
+    if args.ps3_pkg and (game_id[:4] == 'SLES' or game_id[:4] == 'SCES'):
+        print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
+        resolution = 2
+    if args.resolution:
+        print('Resolution set to', args.resolution) if verbose else None
+        resolution = int(args.resolution)
     
     game_title = None
     if args.title:
@@ -1313,7 +1323,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:
