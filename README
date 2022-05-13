@@ -349,13 +349,15 @@ bits and pieces. Here are some examples on how to install pop-fe and its
 dependencies on different OSes:
 
 For installations on Linux/Posix/ you need to have a build environment.
-Make sure you have 'git', 'gcc', 'make', 'cmake' installed.
+Make sure you have 'git', 'gcc', 'g++', 'make', 'cmake' installed.
 
 
 Fedora36 Automatic Install:
 -------------------------
 sudo dnf install python-is-python3
 sudo dnf install pip3
+sudo dnf install python3-devel
+sudo dnf install libsndfile-devel
 git clone https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
