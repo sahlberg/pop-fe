@@ -1063,13 +1063,13 @@ def install_deps():
     except:
         print('Installing python pillow')
         subprocess.call(['pip3', 'install', 'pillow']) 
-    # pycrypto
+    # pycryptodome
     try:
-        import Crypto
-        print('Crypto/pycrypto is already installed')
+        import Cryptodome
+        print('Crypto/pycryptodome is already installed')
     except:
-        print('Trying to install python pycrypto(Crypto)')
-        subprocess.call(['pip3', 'install', 'pycrypto'])
+        print('Trying to install python pycryptodome(Crypto)')
+        subprocess.call(['pip3', 'install', 'pycryptodome'])
     # Crypto
     try:
         import Crypto
