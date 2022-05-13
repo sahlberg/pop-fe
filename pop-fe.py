@@ -1062,7 +1062,7 @@ def install_deps():
         print('pillow is already installed')
     except:
         print('Installing python pillow')
-        subprocess.call(['pip3', 'install', 'pillow'])
+        subprocess.call(['pip3', 'install', 'pillow']) 
     # Crypto
     try:
         import Crypto
@@ -1070,6 +1070,13 @@ def install_deps():
     except:
         print('Installing python Crypto')
         subprocess.call(['pip3', 'install', 'Crypto'])
+    # pycrypto
+    try:
+        import Crypto
+        print('Crypto/pycrypto is already installed')
+    except:
+        print('Trying to install python pycrypto(Crypto)')
+        subprocess.call(['pip3', 'install', 'pycrypto'])
     # cue2cu2
     try:
         os.stat('cue2cu2.py')
