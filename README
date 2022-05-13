@@ -348,19 +348,34 @@ Pop-fe has a few external dependencies. It requires python3 and some additional
 bits and pieces. Here are some examples on how to install pop-fe and its
 dependencies on different OSes:
 
-Mint20.1:
----------
+For installations on Linux/Posix/ you need to have a build environment.
+Make sure you have 'gcc', 'make', 'cmake' installed.
+
+
+Debian/Mint Automatic Install:
+------------------------------
 sudo apt install python-is-python3
 sudo apt install python3-pip
 sudo apt install libsndfile-dev
-pip3 install requests_cache
-pip3 install pycdlib  (or pip3 install pycdio)
-pip3 install ecdsa
+sudo apt install git
+git clone https://github.com/sahlberg/pop-fe.git
+cd pop-fe
+./pop-fe.py --install
+
+
+Debian/Mint Manual Install:
+------------------------
+sudo apt install python-is-python3
+sudo apt install python3-pip
+sudo apt install libsndfile-dev
 sudo apt install git
 git clone https://github.com/sahlberg/pop-fe.git
 git clone https://github.com/NRGDEAD/Cue2cu2.git
 git clone https://github.com/putnam/binmerge.git
 git clone https://github.com/dcherednik/atracdenc.git
+pip3 install requests_cache
+pip3 install pycdlib  (or pip3 install pycdio)
+pip3 install ecdsa
 cd pop-fe
 cp ../Cue2cu2/cue2cu2.py .
 chmod +x cue2cu2.py

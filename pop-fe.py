@@ -1023,7 +1023,85 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
     print('Patching ', disc_id, 'to remove libcrypt')
     ApplyPPF(img, libcrypt[disc_id]['ppfzip'][1])
 
-    
+def install_deps():
+    print(os.name)
+    # requests_cache
+    try:
+        import requests_cache
+        print('requests_cache is already installed')
+    except:
+        print('Installing python requests_cache')
+        subprocess.call(['pip3', 'install', 'requests_cache'])
+    # pycdlib
+    try:
+        import pycdlib
+        print('pycdlib is already installed')
+    except:
+        print('Installing python pycdlib.  This will fail on some platforms')
+        subprocess.call(['pip3', 'install', 'pycdlib'])
+    # iso9660
+    try:
+        import iso9660
+        print('iso9660 is already installed')
+    except:
+        print('Installing python iso9660.  This will fail on some platforms')
+        subprocess.call(['pip3', 'install', 'iso9660'])
+    # ecdsa
+    try:
+        import ecdsa
+        print('ecdsa is already installed')
+    except:
+        print('Installing python ecdsa')
+        subprocess.call(['pip3', 'install', 'ecdsa'])
+    # cue2cu2
+    try:
+        os.stat('cue2cu2.py')
+        print('cue2cu2.py is already installed')
+    except:
+        print('Downloading cue2cu2.py')
+        ret = requests.get('https://raw.githubusercontent.com/NRGDEAD/Cue2cu2/master/cue2cu2.py')
+        if ret.status_code != 200:
+            print('Failed to download cue2cu2. Aborting install.')
+            os.exit()
+        with open('cue2cu2.py', 'wb') as f:
+            f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
+    # binmerge
+    try:
+        os.stat('binmerge')
+        print('binmerge is already installed')
+    except:
+        print('Downloading binmerge')
+        ret = requests.get('https://raw.githubusercontent.com/putnam/binmerge/master/binmerge')
+        if ret.status_code != 200:
+            print('Failed to download binmerge. Aborting install.')
+            os.exit()
+        with open('binmerge', 'wb') as f:
+            f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
+    if os.name == 'posix':
+        # atracdenc
+        try:
+            os.stat('atracdenc/src/atracdenc')
+            print('atracdenc is already installed')
+        except:
+            print('Cloning atracdenc')
+            subprocess.call(['git', 'clone', 'https://github.com/dcherednik/atracdenc.git'])
+            os.chdir('atracdenc/src')
+            subprocess.call(['cmake', '.'])
+            subprocess.call(['make'])
+            os.chdir('../..')
+        # PSL1GHT
+        try:
+            os.stat('PSL1GHT')
+            print('PSL1GHT is already installed')
+        except:
+            print('Cloning PSL1GHT')
+            subprocess.call(['git', 'clone', 'http://github.com/sahlberg/PSL1GHT'])
+            os.chdir('PSL1GHT/tools/ps3py')
+            subprocess.call(['git', 'checkout', 'origin/use-python3'])
+            subprocess.call(['make'])
+            os.chdir('../../..')
+
+
 # ICON0 is the game cover
 # PIC1 is background image/poster
 #
@@ -1062,11 +1140,17 @@ if __name__ == "__main__":
     parser.add_argument('--auto-libcrypt', action='store_true', help='Apply automatically generated libcrypt patches')
     parser.add_argument('--resolution',
                         help='Force setting resolution to 1: NTSC 2: PAL')
+    parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
     if args.v:
         verbose = True
+
+    if args.install:
+        print('Install/Update required dependencies')
+        install_deps()
+        sys.exit()
 
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
