@@ -9,7 +9,10 @@
 import hashlib
 import os
 import struct
-from Crypto.Cipher import AES
+try:
+    from Crypto.Cipher import AES
+except:
+    print('Crypto is not installed.\nYou should install Crypto by running:\npip3 install Crypto')
 
 NPDRM_PSX_KEY = bytes([
     0x52, 0xC0, 0xB5, 0xCA,  0x76, 0xD6, 0x13, 0x4B,

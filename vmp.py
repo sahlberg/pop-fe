@@ -10,7 +10,11 @@ import argparse
 import hashlib
 import os
 import struct
-from Crypto.Cipher import AES
+try:
+    from Crypto.Cipher import AES
+except:
+    print('Crypto is not installed.\nYou should install Crypto by running:\npip3 install Crypto')
+
 
 def dump_vmp(f):
     if os.stat(f).st_size != 131200:
