@@ -1028,13 +1028,6 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
 
 def install_deps():
     print(os.name)
-    # PIL / pillow
-    try:
-        import pillow
-        print('pillow is already installed')
-    except:
-        print('Installing python pillow')
-        subprocess.call(['pip3', 'install', 'pillow'])
     # requests_cache
     try:
         import requests_cache
@@ -1063,6 +1056,20 @@ def install_deps():
     except:
         print('Installing python ecdsa')
         subprocess.call(['pip3', 'install', 'ecdsa'])
+    # PIL / pillow
+    try:
+        import pillow
+        print('pillow is already installed')
+    except:
+        print('Installing python pillow')
+        subprocess.call(['pip3', 'install', 'pillow'])
+    # Crypto
+    try:
+        import Crypto
+        print('Crypto is already installed')
+    except:
+        print('Installing python Crypto')
+        subprocess.call(['pip3', 'install', 'Crypto'])
     # cue2cu2
     try:
         os.stat('cue2cu2.py')
