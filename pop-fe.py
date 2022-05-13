@@ -1123,9 +1123,6 @@ def install_deps():
 # PIC1 is background image/poster
 #
 if __name__ == "__main__":
-    expire_after = datetime.timedelta(days=100)
-    requests_cache.install_cache(str(Path.home()) + '/.pop-fe', expire_after=expire_after)
-
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--retroarch-thumbnail-dir',
@@ -1169,6 +1166,9 @@ if __name__ == "__main__":
         install_deps()
         sys.exit()
 
+    expire_after = datetime.timedelta(days=100)
+    requests_cache.install_cache(str(Path.home()) + '/.pop-fe', expire_after=expire_after)
+        
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
 
