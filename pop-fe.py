@@ -27,7 +27,10 @@ try:
     have_iso9660 = True
 except:
     True
-import requests
+try:
+    import requests
+except:
+    print('requests is not installed.\nYou should install requests by running:\npip3 install requests')
 try:
     import requests_cache
 except:
@@ -1025,6 +1028,13 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
 
 def install_deps():
     print(os.name)
+    # PIL / pillow
+    try:
+        import pillow
+        print('pillow is already installed')
+    except:
+        print('Installing python pillow')
+        subprocess.call(['pip3', 'install', 'pillow'])
     # requests_cache
     try:
         import requests_cache
