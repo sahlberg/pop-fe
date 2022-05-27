@@ -46,6 +46,8 @@ from popstation import popstation, GenerateSFO
 from make_isoedat import pack
 from ppf import ApplyPPF
 
+temp_files = []  
+
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
 if sys.platform == 'win32':
@@ -109,22 +111,35 @@ def get_game_from_gamelist(game_id):
 def get_title_from_game(game_id):
     return games[game_id]['title']
 
-def get_icon0_from_game(game_id, game):
-    print('get icon for', game_id)
+def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
-        url = 'http://www.hwc.nat.cu/psx/' + game_id[0:4] + '_' + game_id[5:8] + '.' + game_id[8:10] + '_COV.jpg'
-        subprocess.run(['wget', '-q', url, '-O', 'ICON0.jpg'], check=True)
-        with open('ICON0.jpg', 'rb') as f:
-            return f.read()
+        image = Image.open(create_path(cue, 'ICON0.PNG'))
+        print('Use existing ICON0.PNG as cover') if verbose else None
+        return image
+    except:
+        True
+
+    try:
+        url = 'http://www.hwc.nat.cu/psx/' + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
+        print('Try URL', url)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], check=True)
+        return Image.open(tmpfile)
     except:
         g = re.findall('images/covers/./.*/.*.jpg', game)
-        return fetch_cached_binary(g[0])
+        return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
-def get_pic1_from_game(game_id, game):
+def get_pic1_from_game(game_id, game, cue, filename):
+    try:
+        image = Image.open(create_path(cue, filename))
+        print('Use existing', filename, 'as background') if verbose else None
+        return image
+    except:
+        True
+
     # Screenshots might be from a different release of the game
     # so we can not use game_id
     filter = 'images/screens/./.*/.*/ss..jpg'
-    return fetch_cached_binary(random.choice(re.findall(filter, game)))
+    return Image.open(io.BytesIO(fetch_cached_binary(random.choice(re.findall(filter, game)))))
 
 def get_psio_cover(game_id):
     f = 'https://raw.githubusercontent.com/logi-26/psio-assist/main/covers/' + game_id + '.bmp'
@@ -1194,7 +1209,6 @@ if __name__ == "__main__":
         True
 
     idx = None
-    temp_files = []  
     cue_files = []
     cu2_files = []
     img_files = []
@@ -1341,44 +1355,20 @@ if __name__ == "__main__":
     if not game_title:
         game_title = get_title_from_game(game_id)
 
-    game = None
+    game = get_game_from_gamelist(game_id)
 
     # ICON0.PNG
-    try:
-        image = Image.open(create_path(args.files[0], 'ICON0.PNG'))
-        print('Use existing ICON0.PNG as cover') if verbose else None
-    except:
-        print('Fetch cover for', game_title) if verbose else None
-        if not game:
-            game = get_game_from_gamelist(game_id)
-        icon0 = get_icon0_from_game(game_id, game)
-        temp_files.append('ICON0.jpg')
-        image = Image.open(io.BytesIO(icon0))
-    icon0 = image
+    print('Fetch ICON0 for', game_title) if verbose else None
+    temp_files.append('ICON0.jpg')
+    icon0 = get_icon0_from_game(game_id, game, args.files[0], 'ICON0.jpg')
 
     # PIC0.PNG
-    try:
-        image = Image.open(create_path(args.files[0], 'PIC0.PNG'))
-        print('Use existing PIC0.PNG as background') if verbose else None
-    except:
-        print('Fetch screenshot for', game_title) if verbose else None
-        if not game:
-            game = get_game_from_gamelist(game_id)
-        pic0 = get_pic1_from_game(game_id, game)
-        image = Image.open(io.BytesIO(pic0))
-    pic0 = image
-
+    print('Fetch PIC0 for', game_title) if verbose else None
+    pic0 = get_pic1_from_game(game_id, game, args.files[0], 'PIC0.PNG')
+    
     # PIC1.PNG
-    try:
-        image = Image.open(create_path(args.files[0], 'PIC1.PNG'))
-        print('Use existing PIC1.PNG as background') if verbose else None
-    except:
-        print('Fetch screenshot for', game_title) if verbose else None
-        if not game:
-            game = get_game_from_gamelist(game_id)
-        pic1 = get_pic1_from_game(game_id, game)
-        image = Image.open(io.BytesIO(pic1))
-    pic1 = image
+    print('Fetch PIC1 for', game_title) if verbose else None
+    pic1 = get_pic1_from_game(game_id, game, args.files[0], 'PIC1.PNG')
     
     print('Id:', game_id)
     print('Title:', game_title)
