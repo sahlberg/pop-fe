@@ -122,6 +122,7 @@ class PopFePs3App:
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Cue files', '.cue'), ('All Files', ['*.*', '*'])])
             self.builder.get_object('disc1', self.master).config(path='')
             self.builder.get_object('disc1', self.master).config(state='normal')
+            self.builder.get_variable('d%d_label' % (idx)).set('')
         for idx in range(2, 5):
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
         self.builder.get_object('create_button', self.master).config(state='disabled')
@@ -133,6 +134,8 @@ class PopFePs3App:
         cue_file = event.widget.cget('path')
         if not len(cue_file):
             return
+        self.master.config(cursor='watch')
+        self.master.update()
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
@@ -144,6 +147,7 @@ class PopFePs3App:
             try:
                 os.stat('./binmerge')
             except:
+                self.master.config(cursor='')
                 raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
             mb = 'MB' + disc
             subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
@@ -169,9 +173,7 @@ class PopFePs3App:
         print('ID', disc_id)
         temp_files.append(tmp + '01.iso')
 
-        l = self.builder.get_variable(disc + '_label')
-        l.set(disc_id)
-
+        self.builder.get_variable(disc + '_label').set(disc_id)
 
         self.img_files.append(img_file)
         self.disc_ids.append(disc_id)
@@ -220,6 +222,7 @@ class PopFePs3App:
         elif disc == 'd5':
             self.builder.get_object('disc5', self.master).config(state='disabled')
         print('Finished processing disc') if verbose else None
+        self.master.config(cursor='')
 
 
     def on_icon0_clicked(self, event):
@@ -299,7 +302,32 @@ class PopFePs3App:
 
         self.master.config(cursor='watch')
         self.master.update()
-        popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], {}, magic_word, resolution)
+        aea_files = {}
+        print('Scanning for audio tracks')
+        for d in range(len(self.cue_files)):
+            aea_files[d] = []
+            bc = bchunk()
+            bc.towav = True
+            bc.open(self.cue_files[d])
+            for i in range(1, len(bc.cue)):
+                if not bc.cue[i]['audio']:
+                    continue
+                f = 'pop-fe-ps3-work/TRACK_%d_' % (d)
+                bc.writetrack(i, f)
+                wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
+                temp_files.append(wav_file)
+                aea_file = wav_file[:-3] + 'aea'
+                temp_files.append(aea_file)
+                print('Converting', wav_file, 'to', aea_file)
+                try:
+                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                except:
+                    print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                    break
+                aea_files[d].append(aea_file)
+
+        print(aea_files)
+        popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
