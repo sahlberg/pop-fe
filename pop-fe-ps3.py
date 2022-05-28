@@ -120,11 +120,10 @@ class PopFePs3App:
         self.pkgdir = None
         for idx in range(1,5):
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Cue files', '.cue'), ('All Files', ['*.*', '*'])])
-            self.builder.get_object('disc1', self.master).config(path='')
-            self.builder.get_object('disc1', self.master).config(state='normal')
+            self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('d%d_label' % (idx)).set('')
-        for idx in range(2, 5):
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
+        self.builder.get_object('disc1', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_variable('gameid_variable').set('')
         self.builder.get_variable('title_variable').set('')

@@ -22,6 +22,7 @@
         <child>
           <object class="pygubu.builder.widgets.pathchooserinput" id="disc1">
             <property name="state">disabled</property>
+            <property name="textvariable">string:disc1_variable</property>
             <property name="title" translatable="yes">d1</property>
             <property name="type">file</property>
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
@@ -34,6 +35,7 @@
         <child>
           <object class="pygubu.builder.widgets.pathchooserinput" id="disc2">
             <property name="state">disabled</property>
+            <property name="textvariable">string:disc2_variable</property>
             <property name="title" translatable="yes">d2</property>
             <property name="type">file</property>
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
@@ -46,6 +48,7 @@
         <child>
           <object class="pygubu.builder.widgets.pathchooserinput" id="disc3">
             <property name="state">disabled</property>
+            <property name="textvariable">string:disc3_variable</property>
             <property name="title" translatable="yes">d3</property>
             <property name="type">file</property>
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
@@ -58,6 +61,7 @@
         <child>
           <object class="pygubu.builder.widgets.pathchooserinput" id="disc4">
             <property name="state">disabled</property>
+            <property name="textvariable">string:disc4_variable</property>
             <property name="title" translatable="yes">d4</property>
             <property name="type">file</property>
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
@@ -70,6 +74,7 @@
         <child>
           <object class="pygubu.builder.widgets.pathchooserinput" id="disc5">
             <property name="state">disabled</property>
+            <property name="textvariable">string:disc5_variable</property>
             <property name="title" translatable="yes">d5</property>
             <property name="type">file</property>
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
