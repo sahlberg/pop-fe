@@ -327,7 +327,7 @@ class PopFePs3App:
                 aea_files[d].append(aea_file)
 
         print(aea_files)
-        popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution)
+        popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/')
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
