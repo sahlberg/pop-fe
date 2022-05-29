@@ -346,7 +346,6 @@ class PopFePs3App:
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
-        d.grab_set()
         self.master.wait_window(d)
         self.init_data()
 

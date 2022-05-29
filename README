@@ -126,6 +126,7 @@ Command line arguments are:
 --retroarch-pbp-dir  : The directory where retroarch game pbp images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
+
 #
 Examples:
 Assume I have connected my PSP with USB and it is shows up as :
