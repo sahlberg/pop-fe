@@ -119,7 +119,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         for idx in range(1,5):
-            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Cue files', '.cue'), ('All Files', ['*.*', '*'])])
+            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.img']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('d%d_label' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
@@ -131,29 +131,45 @@ class PopFePs3App:
         
     def on_path_changed(self, event):
         cue_file = event.widget.cget('path')
+        img_file = None
         if not len(cue_file):
             return
+
         self.master.config(cursor='watch')
         self.master.update()
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
+        if cue_file[-4:] == '.bin' or cue_file[-4:] == '.img':
+            tmpcue = 'pop-fe-ps3-work/TMPCUE' + disc + '.cue'
+            tmpimg = 'pop-fe-ps3-work/TMPIMG' + disc + '.bin'
+            print('Need to create a temporary cue/bin', tmpcue, tmpimg)
+            temp_files.append(tmpcue)
+            temp_files.append(tmpimg)
+            popfe.copy_file(cue_file, tmpimg)
 
-        i = popfe.get_imgs_from_bin(cue_file)
-        img_file = i[0]
-        if len(i) > 1:
-            print('Merging multi-bin disc') if verbose else None
-            try:
-                os.stat('./binmerge')
-            except:
-                self.master.config(cursor='')
-                raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
-            mb = 'MB' + disc
-            subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
-            cue_file = 'pop-fe-ps3-work/' + mb + '.cue'
-            temp_files.append(cue_file)
-            img_file = 'pop-fe-ps3-work/' + mb + '.bin'
-            temp_files.append(img_file)
+            with open(tmpcue, "w") as f:
+                f.write('FILE "%s" BINARY\n' % ('TMPIMG' + disc + '.bin'))
+                f.write('  TRACK 01 MODE2/2352\n')
+                f.write('    INDEX 01 00:00:00\n')
+            img_file = cue_file
+            cue_file = tmpcue
+        else:
+            i = popfe.get_imgs_from_bin(cue_file)
+            img_file = i[0]
+            if len(i) > 1:
+                print('Merging multi-bin disc') if verbose else None
+                try:
+                    os.stat('./binmerge')
+                except:
+                    self.master.config(cursor='')
+                    raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
+                mb = 'MB' + disc
+                subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
+                cue_file = 'pop-fe-ps3-work/' + mb + '.cue'
+                temp_files.append(cue_file)
+                img_file = 'pop-fe-ps3-work/' + mb + '.bin'
+                temp_files.append(img_file)
             
         print('Generating cu2') if verbose else None
         cu2_file = cue_file[:-4] + '.cu2'
@@ -162,7 +178,7 @@ class PopFePs3App:
             print('Using existing CU2 file: %s' % cu2_file) if verbose else None
         except:
             cu2_file = 'pop-fe-ps3-work/CUE' + disc + '.cu2'
-            print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
+            print('Creating temporary CU2 file %s from %s' % (cu2_file, cue_file)) if verbose else None
             subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
 
@@ -325,7 +341,6 @@ class PopFePs3App:
                     break
                 aea_files[d].append(aea_file)
 
-        print(aea_files)
         popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/')
         self.master.config(cursor='')
 
