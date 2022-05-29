@@ -685,7 +685,10 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
 
     # sign the ISO.BIN.DAT
     print('Signing', p.iso_bin_dat)
-    subprocess.call(['python3', './sign3.py', p.iso_bin_dat])
+    if os.name == 'posix':
+        subprocess.call(['python3', './sign3.py', p.iso_bin_dat])
+    else:
+        subprocess.call(['sign3.exe', p.iso_bin_dat])
 
     #
     # USRDIR/SAVEDATA
@@ -764,10 +767,10 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
     # Create PS3 PKG
     #
     print('Create PKG')
-    subprocess.call(['python3',
-                     'PSL1GHT/tools/ps3py/pkg.py',
-                     '-c', 'UP9000-%s_00-0000000000000001' % game_id,
-                     subdir + game_id, dest])
+    if os.name == 'posix':
+        subprocess.call(['python3','PSL1GHT/tools/ps3py/pkg.py','-c', 'UP9000-%s_00-0000000000000001' % game_id,subdir + game_id, dest])
+    else:
+        subprocess.call(['pkg.exe','-c', 'UP9000-%s_00-0000000000000001' % game_id,subdir + game_id, dest])
     temp_files.append(subdir + game_id + '/USRDIR/CONTENT')
     temp_files.append(subdir + game_id + '/USRDIR/SAVEDATA')
     temp_files.append(subdir + game_id + '/USRDIR')
@@ -1107,16 +1110,24 @@ def install_deps():
         subprocess.call(['pip3', 'install', 'Crypto'])
     # cue2cu2
     try:
-        os.stat('cue2cu2.py')
-        print('cue2cu2.py is already installed')
+        if os.name == 'posix':
+            os.stat('cue2cu2.py')
+            print('cue2cu2.py is already installed')
+        else:
+            os.stat('cue2cu2.exe')
+            print('cue2cu2.py is already installed')
     except:
         print('Downloading cue2cu2.py')
         ret = requests.get('https://raw.githubusercontent.com/NRGDEAD/Cue2cu2/master/cue2cu2.py')
         if ret.status_code != 200:
             print('Failed to download cue2cu2. Aborting install.')
             exit(1)
-        with open('cue2cu2.py', 'wb') as f:
-            f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
+        if os.name == 'posix':
+            with open('cue2cu2.py', 'wb') as f:
+                f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
+        else:
+            with open('cue2cu2.exe', 'wb') as f:
+                f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
     # binmerge
     try:
         os.stat('binmerge')
@@ -1214,7 +1225,10 @@ if __name__ == "__main__":
         exit(1)
 
     try:
-        os.stat('./cue2cu2.py')
+        if os.name == 'posix':
+            os.stat('./cue2cu2.py')
+        else:
+            os.stat('cue2cu2.exe')
     except:
         raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
 
@@ -1275,11 +1289,17 @@ if __name__ == "__main__":
         img_file = i[0]
         if len(i) > 1:
             try:
-                os.stat('./binmerge')
+                if os.name == 'posix':
+                    os.stat('./binmerge')
+                else:
+                    os.stat('binmerge.exe')
             except:
                 raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
             mb = 'MB%d' % (0 if not idx else idx[0])
-            subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
+            if os.name == 'posix':
+                subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
+            else:
+                subprocess.call(['binmerge.exe', '-o', '.', cue_file, mb])
             cue_file = mb + '.cue'
             temp_files.append(cue_file)
             img_file = mb + '.bin'
@@ -1292,7 +1312,10 @@ if __name__ == "__main__":
         except:
             cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            if os.name == 'posix':
+                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            else:
+                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
 
         img_files.append(img_file)
@@ -1315,7 +1338,10 @@ if __name__ == "__main__":
                 temp_files.append(aea_file)
                 print('Converting', wav_file, 'to', aea_file)
                 try:
-                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                    if os.name == 'posix':
+                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                    else:
+                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break

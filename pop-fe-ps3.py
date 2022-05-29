@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#!/usr/bin/env python
 
 import argparse
 import os
@@ -165,7 +166,10 @@ class PopFePs3App:
                     self.master.config(cursor='')
                     raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
                 mb = 'MB' + disc
-                subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
+                if os.name == 'posix':
+                    subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
+                else:
+                    subprocess.call(['binmerge.exe', '-o', 'pop-fe-ps3-work', cue_file, mb])
                 cue_file = 'pop-fe-ps3-work/' + mb + '.cue'
                 temp_files.append(cue_file)
                 img_file = 'pop-fe-ps3-work/' + mb + '.bin'
@@ -179,9 +183,11 @@ class PopFePs3App:
         except:
             cu2_file = 'pop-fe-ps3-work/CUE' + disc + '.cu2'
             print('Creating temporary CU2 file %s from %s' % (cu2_file, cue_file)) if verbose else None
-            subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            if os.name == 'posix':
+                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            else:
+                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
-
         print('Scanning for Game ID') if verbose else None
         tmp = 'pop-fe-ps3-work/TMP'
         disc_id = get_disc_id(cue_file, tmp)
@@ -335,7 +341,10 @@ class PopFePs3App:
                 temp_files.append(aea_file)
                 print('Converting', wav_file, 'to', aea_file)
                 try:
-                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                    if os.name == 'posix':
+                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                    else:
+                        subprocess.run(['atracdenc/src/atracdenc.exe', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break
