@@ -106,7 +106,12 @@ Command line arguments are:
 --ps3-pkg             : This creates a PS3 PKG
 			This requires CU2 files so make sure this script is
 			installed.
---ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages
+--ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages.
+		        This should normally not be needed as we automatically
+			inject the magic word to the emulator running on the
+			PS3.
+--snd0                : Provide an audio file to be played when this game
+		        is focused on the XMB. See the SND0.AT3 section below.
 --auto-libcrypt       : Try to automatically create and apply a patch for
                         libcrypt. This can be used if there is no proper PPF
 			file available. This is not 100% reliable.
@@ -204,6 +209,16 @@ VMP.PY
 vmp.py is a utility to convert between signed VMP memory card images
 (as used by PSP) and raw memory card images as created for example by
 Memory Card Annihilator on the PS2.
+
+
+SND0.AT3
+========
+For PS3 this is a file that will be played when this games icon is focused on
+the XMB. The file must be less than 2.4MB in size and needs to be in a special
+ATRAC3 format.
+See https://atunnic.gitbook.io/tnpsh-wiki/big-stinky-brew/aesthetic/snd0-atrac3
+for how to create these type of files.
+
 
 PSIO
 ====
@@ -446,6 +461,11 @@ so use --psp-dir=/e or --psp-dir=auto
 You may need to run this command every time you open the MSYS2 shell:
 export PATH=$PATH:/mingw64/bin
 
+
+POP-FE-PS3
+==========
+pop-fe-ps3.py is a graphical frontend to pop-fe:create_ps3() and can be used to
+create PS3 packages from a GUI instead of using the command line.
 
 Docker
 ----------------
