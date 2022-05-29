@@ -535,7 +535,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './'):
+def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -611,7 +611,11 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
     with open(f + '/PARAM.SFO', 'wb') as of:
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
-
+    if snd0:
+        with open(snd0, 'rb') as i:
+            with open(f + '/SND0.AT3', 'wb') as o:
+                o.write(i.read())
+    
     image = icon0.resize((320, 176), Image.BILINEAR)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
@@ -1186,6 +1190,8 @@ if __name__ == "__main__":
     parser.add_argument('--resolution',
                         help='Force setting resolution to 1: NTSC 2: PAL')
     parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
+    parser.add_argument('--snd0',
+                        help='SND0.AT3 file to inject in PS3 PKG')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1430,7 +1436,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=args.snd0)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:

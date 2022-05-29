@@ -201,7 +201,7 @@
                 <property name="text" translatable="yes">Directory</property>
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">4</property>
+                  <property name="row">5</property>
                   <property name="sticky">w</property>
                 </layout>
               </object>
@@ -213,7 +213,7 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_dir_changed" add="" />
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">4</property>
+                  <property name="row">5</property>
                   <property name="sticky">w</property>
                 </layout>
               </object>
@@ -223,7 +223,7 @@
                 <property name="text" translatable="yes">Pkg File</property>
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">5</property>
+                  <property name="row">6</property>
                 </layout>
               </object>
             </child>
@@ -233,7 +233,7 @@
                 <property name="textvariable">string:pkgfile_variable</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">5</property>
+                  <property name="row">6</property>
                   <property name="sticky">w</property>
                 </layout>
               </object>
@@ -245,7 +245,7 @@
                   <property name="column">0</property>
                   <property name="columnspan">2</property>
                   <property name="pady">5</property>
-                  <property name="row">2</property>
+                  <property name="row">3</property>
                   <property name="sticky">ew</property>
                 </layout>
               </object>
@@ -256,8 +256,27 @@
                 <layout manager="grid">
                   <property name="column">0</property>
                   <property name="columnspan">2</property>
-                  <property name="row">3</property>
+                  <property name="row">4</property>
                   <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="label13">
+                <property name="text" translatable="yes">SND0.AT3</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="pathchooserinput1">
+                <property name="textvariable">string:snd0_variable</property>
+                <property name="type">file</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">2</property>
                 </layout>
               </object>
             </child>
