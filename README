@@ -428,6 +428,7 @@ pacman -S mingw-w64-x86_64-gcc
 pacman -S make
 pacman -S mingw-w64-x86_64-python
 pacman -S git
+pacman -S unzip
 pacman -S mingw-w64-x86_64-python-pip
 pacman -S mingw-w64-x86_64-python-pillow
 pip3 uninstall pillow
@@ -449,9 +450,25 @@ cd PSL1GHT/tools/ps3py
 git checkout origin/use-python3
 make
 cd ../../..
-mkdir atracdenc
-mkdir atracdenc/src
-# Then download https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip and extract atracdenc.exe and save it in C:\msys64\home\<your-user>\pop-fe\atracdenc\src
+wget https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip
+unzip -j atracdenc-x86_0.0.3 -x README.TXT
+pip install pyinstaller
+pip install pygubu
+pyinstaller PSL1GHT/tools/ps3py/pkg.py
+pyinstaller cue2cu2.py
+pyinstaller binmerge
+pyinstaller sign3.py
+pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
+pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+mkdir dist/pop-fe-ps3/atracdenc
+mkdir dist/pop-fe-ps3/atracdenc/src
+cp dist/binmerge/binmerge.exe dist/pop-fe-ps3/.
+cp dist/cue2cu2/cue2cu2.exe dist/pop-fe-ps3/.
+cp dist/pkg/pkg.exe dist/pop-fe-ps3/.
+cp dist/pkg/pkgcrypt.cp39-mingw_x86_64.pyd dist/pop-fe-ps3/.
+cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
+cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
+cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
 
 
 On windows, always run pop-fe from git-bash and from within the pop-fe
