@@ -2462,6 +2462,14 @@ class popstation(object):
         self._sfo = value
 
     @property
+    def snd0(self):
+        return self._snd0
+
+    @snd0.setter
+    def snd0(self, value):
+        self._snd0 = value
+    
+    @property
     def icon0(self):
         return self._icon0
 

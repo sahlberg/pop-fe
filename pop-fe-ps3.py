@@ -113,7 +113,7 @@ class PopFePs3App:
         self.img_files = []
         self.disc_ids = []
         self.icon0 = None
-        self.icon_tk = None
+        self.icon0_tk = None
         self.pic0 = None
         self.pic0_tk = None
         self.pic1 = None
