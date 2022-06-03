@@ -629,9 +629,9 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
                     subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', snd0, '-o', tmp_snd0], check=True)
             except:
                 print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-        print('Converting EA3 to AT3 file') if verbose else None
-        temp_files.append(f + '/SND0.AT3')
-        create_riff(tmp_snd0, f + '/SND0.AT3', 0x249f00)
+            print('Converting EA3 to AT3 file') if verbose else None
+            temp_files.append(f + '/SND0.AT3')
+            create_riff(tmp_snd0, f + '/SND0.AT3', 0x249f00)
 
     
     image = icon0.resize((320, 176), Image.BILINEAR)
