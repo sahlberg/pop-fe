@@ -218,8 +218,16 @@ For PS3 this is a file that will be played when this games icon is focused on
 the XMB. The file must be a WAVE file, 16bit, stereo, 44100Hz.
 This file will be converted into ATRAC3 format using the atracdenc tool.
 
-(See https://atunnic.gitbook.io/tnpsh-wiki/big-stinky-brew/aesthetic/snd0-atrac3
-for how to create these type of files by hand.)
+(See:
+  how to create these type of files by hand:
+    https://atunnic.gitbook.io/tnpsh-wiki/big-stinky-brew/aesthetic/snd0-atrac3
+  relation between EA3 and WAV files for ATRAC3 data:
+    https://github.com/GrapheneCt/ElevenMPV-A/blob/04885b62dcd7dfb318986cf0b553483975b745a6/ElevenMPV-A/source/audio/at3.cpp#L264
+    and
+    https://github.com/GrapheneCt/ElevenMPV-A/blob/04885b62dcd7dfb318986cf0b553483975b745a6/ElevenMPV-A/source/audio/at3.cpp#L132
+  discussions at psx-place:
+    https://www.psx-place.com/threads/pop-fe-a-utility-to-create-psx-classics-packages-for-ps3.37426/
+)
 
 
 PSIO

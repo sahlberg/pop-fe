@@ -12,57 +12,69 @@ import os
 import struct
 
 
-def dump_riff(riff):
-    print('Dumping', riff)
+def parse_riff(riff):
     with open(riff, 'rb') as f:
         buf = f.read()
     if buf[:4] != b'RIFF':
         print('Not a RIFF File.')
-        exit()
+        return None
+    
     _len = struct.unpack_from('<I', buf, 4)[0]
     if _len + 8 != os.stat(riff).st_size:
         print('RIFF Header length invalid. Was', _len, 'but expected', os.stat(riff).st_size - 8)
-        exit()
+        return None
+    
     if buf[8:12] != b'WAVE':
         print('Not a RIFF/WAVE File.')
-        exit()
+        return None
+    
+    result = {}
     buf = buf[12:]
     while buf:
         _len = struct.unpack_from('<I', buf, 4)[0]
+        _c = buf[:4].decode()
         _b = buf[8:8 + _len]
-        if buf[:4] == b'fmt ':
-            print('fmt : 0x%08x bytes' % _len)
-            print('\tBytes', _b)
-            print('\tCompression code: 0x%04x' % struct.unpack_from('<H', _b, 0)[0])
-            print('\tNumber of channels: %d' % struct.unpack_from('<H', _b, 2)[0])
-            print('\tSample rate: %d' % struct.unpack_from('<I', _b, 4)[0])
-            print('\tAverage bytes per second: %d' % struct.unpack_from('<I', _b, 8)[0])
-            print('\tBlock align: %d' % struct.unpack_from('<H', _b, 12)[0])
-            print('\tSignificant bits per sample: %d' % struct.unpack_from('<H', _b, 14)[0])
+        result[_c] = {'data': _b}
+        if _c == 'fmt ':
+            result[_c]['compression_code'] = struct.unpack_from('<H', _b, 0)[0]
+            result[_c]['number_of_channel'] = struct.unpack_from('<H', _b, 2)[0]
+            result[_c]['sample_rate'] = struct.unpack_from('<I', _b, 4)[0]
+            result[_c]['average_bytes_per_second'] = struct.unpack_from('<I', _b, 8)[0]
+            result[_c]['block_align'] = struct.unpack_from('<H', _b, 12)[0]
+            result[_c]['significant_bits_per_sample'] = struct.unpack_from('<H', _b, 14)[0]
             if len(_b[16:]) > 2:
-                print('\tExtra format bytes: %d' % struct.unpack_from('<H', _b, 16)[0])
-                print('\tExtra bytes', _b[18:])
-        elif buf[:4] == b'data':
-            print('data: 0x%08x bytes' % _len)
-        elif buf[:4] == b'fact':
-            print('fact: 0x%08x bytes' % _len)
+                result[_c]['extra_bytes'] = _b[18:]
+        elif _c == 'data':
+            True
+        elif _c == 'fact':
             if _len == 4:
-                print('\tdata', _b, '0x%08x' % struct.unpack_from('<I', _b, 0)[0])
+                result[_c]['number_of_samples'] = [struct.unpack_from('<I', _b, 0)[0]]
             elif _len == 8:
-                print('\tdata', _b, '0x%08x 0x%08x' % (struct.unpack_from('<I', _b, 0)[0], struct.unpack_from('<I', _b, 4)[0]))
-        elif buf[:4] == b'smpl':
-            print('smpl: 0x%08x bytes' % _len)
-            print('\tdata', _b)
-        elif buf[:4] == b'LIST':
-            print('LIST: 0x%08x bytes' % _len)
-            print('\tdata', _b)
+                result[_c]['number_of_samples'] = [struct.unpack_from('<I', _b, 0)[0], struct.unpack_from('<I', _b, 4)[0]]
+        elif _c == 'smpl':
+            True
+        elif _c == 'LIST':
+            True
         else:
             print('Unknown chunk type', buf[:4])
         _len = (_len + 1) & ~1  # chunks are 16 bit aligned
         buf = buf[8 + _len:]
-    
+    return result
 
-def create_riff(ea3, riff, max_data_size=0):
+def dump_riff(riff):
+    print('Dumping', riff)
+    res = parse_riff(riff)
+    if not res:
+        print('Not a RIFF/WAVE File.')
+        exit()
+    for k in res:
+        print(k, ': Size 0x%08x bytes' % len(res[k]['data']))
+        if k != 'data':
+              for l in res[k]:
+                  print('\t', l + ':', res[k][l])
+
+
+def create_riff(ea3, riff, number_of_samples=0, max_data_size=0):
     print('Create', riff, 'from', ea3)
     with open(riff, 'wb') as f:
         buf = bytearray(12)
@@ -91,9 +103,11 @@ def create_riff(ea3, riff, max_data_size=0):
                 print('Not a valid EA3 file', ea3, 'aborting.')
                 exit()
             buf = buf[96:]
-        if max_data_size and len(buf) > int(max_data_size):
-            buf = buf[:int(max_data_size) & ~0x3f]
-            print('Claming max size to', int(max_data_size) + ~0x3f)
+        if max_data_size and len(buf) > max_data_size:
+            buf = buf[:max_data_size & ~0x3f]
+            print('Claming max size to', max_data_size + ~0x3f)
+            # Clamped the file so number_of_samples are no longer valid
+            number_of_samples = 0
         data_size = len(buf)
         _b = bytearray(8)
         _b[:4] = b'data'
@@ -107,7 +121,11 @@ def create_riff(ea3, riff, max_data_size=0):
         _b = bytearray(12)
         _b[:4] = b'fact'
         struct.pack_into('<I', _b, 4, len(_b) - 8)
-        struct.pack_into('<I', _b, 8, int(data_size / 0xc0 * 0x201))
+        if number_of_samples:
+            struct.pack_into('<I', _b, 8, number_of_samples)
+        else:
+            # guesstimate the number of samples
+            struct.pack_into('<I', _b, 8, int(data_size / 0xc0 * 0x201))
         f.write(_b)
         
         # LIST
@@ -134,8 +152,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('command', nargs=1, 
                         help='create|dump')
-    parser.add_argument('--max-data-size',
+    parser.add_argument('--max-data-size', nargs='?', const=0, type=int,
                         help='Clamp the data chunk to this size')
+    parser.add_argument('--number-of-samples', nargs='?', const=0, type=int,
+                        help='Number of samples for the \'fact\' chunk')
     parser.add_argument('files', nargs='*', help='RIFF/WAVE file')
     args = parser.parse_args()
 
@@ -145,7 +165,7 @@ if __name__ == "__main__":
         if len(args.files) != 2:
             print('Usage: riff.py create FILE.EA3 FILE.AT3')
             exit()
-        create_riff(args.files[0], args.files[1], args.max_data_size)
+        create_riff(args.files[0], args.files[1], number_of_samples=args.number_of_samples, max_data_size=args.max_data_size)
     else:
         print('No command given. Aborting')
     
