@@ -449,7 +449,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files):
+def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None):
     print('Create PBP file for', game_title) if verbose else None
 
     p = popstation()
@@ -462,7 +462,8 @@ def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_fil
         p.pic1 = pic1
     if len(aea_files):
         p.aea = aea_files
-
+    if snd0:
+        p.snd0 = snd0
     for i in range(len(img_files)):
         f = img_files[i]
         toc = p.get_toc_from_ccd(f)
@@ -482,7 +483,7 @@ def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_fil
         True
 
     
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files):
+def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
     # Convert ICON0 to a file object
@@ -506,9 +507,33 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         os.mkdir(f)
     except:
         True
-            
+
+    snd0_data = None
+    if snd0:
+        print('Creating SND0.AT3')
+        tmp_snd0 = subdir + 'SND0.EA3'
+        s = parse_riff(snd0)
+        if not s:
+            print('Not a WAVE file')
+        else:
+            print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
+            temp_files.append(tmp_snd0)
+            try:
+                if os.name == 'posix':
+                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', snd0, '-o', tmp_snd0], check=True)
+                else:
+                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', snd0, '-o', tmp_snd0], check=True)
+            except:
+                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+            print('Converting EA3 to AT3 file') if verbose else None
+            temp_files.append(subdir + 'SND0.AT3')
+            create_riff(tmp_snd0, subdir + 'SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00)
+
+            with open(subdir + 'SND0.AT3', 'rb') as i:
+                snd0_data = i.read()
+
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
+    generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data)
 
     idx = 0
     for mc in mem_cards:
@@ -1475,7 +1500,7 @@ if __name__ == "__main__":
                 apply_ppf(img_files[idx], disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files)
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=args.snd0)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
