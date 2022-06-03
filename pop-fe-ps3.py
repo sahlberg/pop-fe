@@ -128,6 +128,7 @@ class PopFePs3App:
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_variable('gameid_variable').set('')
         self.builder.get_variable('title_variable').set('')
+        self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
 
         
     def on_path_changed(self, event):

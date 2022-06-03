@@ -215,10 +215,11 @@ Memory Card Annihilator on the PS2.
 SND0.AT3
 ========
 For PS3 this is a file that will be played when this games icon is focused on
-the XMB. The file must be less than 2.4MB in size and needs to be in a special
-ATRAC3 format.
-See https://atunnic.gitbook.io/tnpsh-wiki/big-stinky-brew/aesthetic/snd0-atrac3
-for how to create these type of files.
+the XMB. The file must be a WAVE file, 16bit, stereo, 44100Hz.
+This file will be converted into ATRAC3 format using the atracdenc tool.
+
+(See https://atunnic.gitbook.io/tnpsh-wiki/big-stinky-brew/aesthetic/snd0-atrac3
+for how to create these type of files by hand.)
 
 
 PSIO

@@ -40,11 +40,12 @@ import zipfile
 from vmp import encode_vmp
 from pathlib import Path
 
-from gamedb import games, libcrypt
 from bchunk import bchunk
-from popstation import popstation, GenerateSFO
+from gamedb import games, libcrypt
 from make_isoedat import pack
+from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
+from riff import create_riff
 
 temp_files = []  
 
@@ -612,9 +613,26 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
     if snd0:
+        print('Creating SND0.AT3')
+        tmp_snd0 = subdir + 'SND0.EA3'
         with open(snd0, 'rb') as i:
-            with open(f + '/SND0.AT3', 'wb') as o:
-                o.write(i.read())
+            buf = i.read()
+        if buf[:4] != b'RIFF' or buf[8:12] != b'WAVE':
+            print('Not a WAVE file')
+        else:
+            print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
+            temp_files.append(tmp_snd0)
+            try:
+                if os.name == 'posix':
+                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', snd0, '-o', tmp_snd0], check=True)
+                else:
+                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', snd0, '-o', tmp_snd0], check=True)
+            except:
+                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        print('Converting EA3 to AT3 file') if verbose else None
+        temp_files.append(f + '/SND0.AT3')
+        create_riff(tmp_snd0, f + '/SND0.AT3', 0x249f00)
+
     
     image = icon0.resize((320, 176), Image.BILINEAR)
     i = io.BytesIO()
@@ -1202,7 +1220,7 @@ if __name__ == "__main__":
                         help='Force setting resolution to 1: NTSC 2: PAL')
     parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
     parser.add_argument('--snd0',
-                        help='SND0.AT3 file to inject in PS3 PKG')
+                        help='WAV file to inject in PS3 PKG')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
