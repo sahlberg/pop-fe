@@ -527,7 +527,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
                 print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             print('Converting EA3 to AT3 file') if verbose else None
             temp_files.append(subdir + 'SND0.AT3')
-            create_riff(tmp_snd0, subdir + 'SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00)
+            create_riff(tmp_snd0, subdir + 'SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=450000, loop=True)
 
             with open(subdir + 'SND0.AT3', 'rb') as i:
                 snd0_data = i.read()
@@ -655,7 +655,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
                 print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             print('Converting EA3 to AT3 file') if verbose else None
             temp_files.append(f + '/SND0.AT3')
-            create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00)
+            create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00, loop=True)
 
     
     image = icon0.resize((320, 176), Image.BILINEAR)
