@@ -12,6 +12,41 @@ import os
 import struct
 
 
+def copy_riff(src, dst, max_duration_ms=0):
+    r = parse_riff(src)
+    if not r:
+        return
+    if r['fmt ']['compression_code'] != 1:
+        print('Not an uncompressed WAV file.')
+        return
+    
+    with open(src, 'rb') as i:
+        buf = i.read()
+        buf = buf[12:]
+    with open(dst, 'wb') as o:
+        o.write(b'RIFF\x00\x00\x00\x00WAVE')
+        while buf:
+            _len = struct.unpack_from('<I', buf, 4)[0]
+            _l = _len
+            _c = buf[:4].decode()
+            if _c == 'data' and max_duration_ms:
+                _sp = round(1000000000 / r['fmt ']['sample_rate'])
+                if len(buf) > int(max_duration_ms * 1000000 / _sp) * 4:
+                    print('Clamping file to', max_duration_ms, 'ms')
+                    _l = int(max_duration_ms * 1000000 / _sp) * 4
+            _b = bytearray(buf[:8 + _l])
+            struct.pack_into('<I', _b, 4, _l)
+            o.write(_b)
+            _len = (_len + 1) & ~1  # chunks are 16 bit aligned
+            buf = buf[8 + _len:]
+
+        x = o.tell() - 8
+        _b = bytearray(4)
+        struct.pack_into('<I', _b, 0, x)
+        o.seek(4)
+        o.write(_b)
+        
+
 def parse_riff(riff):
     with open(riff, 'rb') as f:
         buf = f.read()
@@ -208,9 +243,11 @@ def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('command', nargs=1, 
-                        help='create|dump')
+                        help='create|dump|copy')
     parser.add_argument('--max-data-size', nargs='?', const=0, type=int,
                         help='Clamp the data chunk to this size')
+    parser.add_argument('--max-duration-ms', nargs='?', const=0, type=int,
+                        help='Clamp the data chunk to this length in ms')
     parser.add_argument('--number-of-samples', nargs='?', const=0, type=int,
                         help='Number of samples for the \'fact\' chunk')
     parser.add_argument('--loop', action='store_true', help='Create a loop')
@@ -224,6 +261,11 @@ if __name__ == "__main__":
             print('Usage: riff.py create FILE.EA3 FILE.AT3')
             exit()
         create_riff(args.files[0], args.files[1], number_of_samples=args.number_of_samples, max_data_size=args.max_data_size, loop=args.loop)
+    elif args.command[0] == 'copy':
+        if len(args.files) != 2:
+            print('Usage: riff.py copy SRC.WAV DST.WAV')
+            exit()
+        copy_riff(args.files[0], args.files[1], max_duration_ms=args.max_duration_ms)
     else:
         print('No command given. Aborting')
     
