@@ -214,9 +214,17 @@ Memory Card Annihilator on the PS2.
 
 SND0.AT3
 ========
-For PS3 this is a file that will be played when this games icon is focused on
-the XMB. The file must be a WAVE file, 16bit, stereo, 44100Hz.
-This file will be converted into ATRAC3 format using the atracdenc tool.
+For PS3/PSP this is a file that will be played when this games icon is focused
+on the XMB. The file must be a WAVE file, 16bit, stereo, 44100Hz.
+This file will be automatically converted into ATRAC3 format using the
+atracdenc tool.
+
+A good way to generate these WAV files is to find a good OST music file for
+the game at youtube and download it in 3GP format. Then convert it to
+44100Hz/Stereo/16bit WAV like so:
+
+$ ffmpeg -i Azure\ Dreams\ OST\ 3.\ Overture.3gp  -ar 44100 -ac 2 Azure\ Dreams\ OST\ 3.\ Overture.wav
+
 
 (See:
   how to create these type of files by hand:
