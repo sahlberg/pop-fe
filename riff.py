@@ -176,13 +176,14 @@ def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
         if len(buf) & 1:
             buf = buf + b'\0'
         f.write(buf)
-            
-        # fact
-        _b = bytearray(12)
-        _b[:4] = b'fact'
-        struct.pack_into('<I', _b, 4, len(_b) - 8)
-        struct.pack_into('<I', _b, 8, number_of_samples)
-        f.write(_b)
+
+        if not loop:
+            # fact
+            _b = bytearray(12)
+            _b[:4] = b'fact'
+            struct.pack_into('<I', _b, 4, len(_b) - 8)
+            struct.pack_into('<I', _b, 8, number_of_samples)
+            f.write(_b)
 
         # LIST
         buf = b'ATRACDENC\0'
