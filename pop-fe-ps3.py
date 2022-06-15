@@ -161,11 +161,6 @@ class PopFePs3App:
             img_file = i[0]
             if len(i) > 1:
                 print('Merging multi-bin disc') if verbose else None
-                try:
-                    os.stat('./binmerge')
-                except:
-                    self.master.config(cursor='')
-                    raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
                 mb = 'MB' + disc
                 if os.name == 'posix':
                     subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
