@@ -1,0 +1,76 @@
+name: Python package
+
+on: [push, pull_request]
+
+jobs:
+  build-windows:
+    name: Windows build
+    runs-on: windows-2022
+
+    strategy:
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install required Python packages
+        run:   |
+          pip install pillow
+          pip install pycryptodome
+          pip install requests_cache
+          pip install pycdlib
+          pip install ecdsa
+          pip install pyinstaller
+          pip install pygubu
+      - name: Build PSL1GHT
+        run:   |
+          git clone http://github.com/sahlberg/PSL1GHT
+          cd PSL1GHT/tools/ps3py
+          git checkout origin/use-python3
+          make
+          cd ../../..
+          pyinstaller PSL1GHT/tools/ps3py/pkg.py
+      - name: Build CUE2CU2
+        run:   |
+          git clone https://github.com/NRGDEAD/Cue2cu2.git
+          cp Cue2cu2/cue2cu2.py .
+          pyinstaller cue2cu2.py
+      - name: Build binmerge
+        run:   |
+          git clone https://github.com/putnam/binmerge.git bm
+          cp bm/binmerge .
+          pyinstaller binmerge
+      - name: Build sign3
+        run:   |
+          pyinstaller sign3.py
+      - name: Install ATRACDENC
+        run:   |
+          Invoke-WebRequest -OutFile atracdenc-x86_0.0.3.zip https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip
+          unzip -j atracdenc-x86_0.0.3 -x README.TXT
+      - name: Build pop-fe
+        run:   |
+          pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
+      - name: Build pop-fe-ps3
+        run:   |
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+      - name: Update dist
+        run:   |
+          mkdir dist/pop-fe-ps3/atracdenc
+          mkdir dist/pop-fe-ps3/atracdenc/src
+          cp dist/binmerge/binmerge.exe dist/pop-fe-ps3/.
+          cp dist/cue2cu2/cue2cu2.exe dist/pop-fe-ps3/.
+          cp dist/pkg/pkg.exe dist/pop-fe-ps3/.
+          cp dist/pkg/pkgcrypt*.pyd dist/pop-fe-ps3/.
+          cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
+          cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
+          cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
+          ls -R dist
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v2
+        with: 
+          name: assets-for-download
+          path: dist
