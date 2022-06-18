@@ -210,7 +210,7 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC0') if verbose else None
-            self.pic0 = popfe.get_pic1_from_game(disc_id, game, cue_file, 'PIC0.PNG')
+            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file, 'PIC0.PNG')
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
             self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')

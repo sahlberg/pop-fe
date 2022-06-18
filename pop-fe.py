@@ -129,7 +129,11 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
         g = re.findall('images/covers/./.*/.*.jpg', game)
         return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
-def get_pic1_from_game(game_id, game, cue, filename):
+def get_pic_from_game(pic, game_id, game, cue, filename):
+    if pic in games[game_id]:
+        ret = requests.get(games[game_id][pic], stream=True)
+        if ret.status_code == 200:
+            return Image.open(io.BytesIO(ret.content))
     try:
         image = Image.open(create_path(cue, filename))
         print('Use existing', filename, 'as background') if verbose else None
@@ -141,6 +145,12 @@ def get_pic1_from_game(game_id, game, cue, filename):
     # so we can not use game_id
     filter = 'images/screens/./.*/.*/ss..jpg'
     return Image.open(io.BytesIO(fetch_cached_binary(random.choice(re.findall(filter, game)))))
+
+def get_pic0_from_game(game_id, game, cue, filename):
+    return get_pic_from_game('pic0', game_id, game, cue, filename)
+
+def get_pic1_from_game(game_id, game, cue, filename):
+    return get_pic_from_game('pic1', game_id, game, cue, filename)
 
 def get_psio_cover(game_id):
     f = 'https://raw.githubusercontent.com/logi-26/psio-assist/main/covers/' + game_id + '.bmp'
@@ -1456,7 +1466,7 @@ if __name__ == "__main__":
 
     # PIC0.PNG
     print('Fetch PIC0 for', game_title) if verbose else None
-    pic0 = get_pic1_from_game(game_id, game, args.files[0], 'PIC0.PNG')
+    pic0 = get_pic0_from_game(game_id, game, args.files[0], 'PIC0.PNG')
     
     # PIC1.PNG
     print('Fetch PIC1 for', game_title) if verbose else None

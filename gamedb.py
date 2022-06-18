@@ -2033,6 +2033,8 @@ games = {
         'url': "games/U/A/SLUS-00553.html",
     	'id': 'SLUS00553',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLUS01017': {
         'url': "games/U/A/SLUS-01017.html",
@@ -9448,26 +9450,36 @@ games = {
         'url': "games/P/A/SLES-01135.html",
     	'id': 'SLES01135',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLES01198': {
         'url': "games/P/A/SLES-01198.html",
     	'id': 'SLES01198',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLES01256': {
         'url': "games/P/A/SLES-01256.html",
     	'id': 'SLES01256',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLES01257': {
         'url': "games/P/A/SLES-01257.html",
     	'id': 'SLES01257',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLES01258': {
         'url': "games/P/A/SLES-01258.html",
     	'id': 'SLES01258',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SLES02600': {
         'url': "games/P/A/SLES-02600.html",
@@ -24053,6 +24065,8 @@ games = {
         'url': "games/J/A/SCPS-10035.html",
     	'id': 'SCPS10035',
 	'title': "ALUNDRA",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
     },
     'SCPS45449': {
         'url': "games/J/A/SCPS-45449.html",
