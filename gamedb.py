@@ -6213,31 +6213,49 @@ games = {
         'url': "games/U/P/SLUS-00662.html",
     	'id': 'SLUS00662',
 	'title': "PARASITE EVE",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SLUS00668': {
         'url': "games/U/P/SLUS-00662.html",
     	'id': 'SLUS00668',
 	'title': "PARASITE EVE",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SLUS90028': {
         'url': "games/U/P/SLUS-00662.html",
     	'id': 'SLUS90028',
 	'title': "PARASITE EVE",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SLUS01042': {
         'url': "games/U/P/SLUS-01042.html",
     	'id': 'SLUS01042',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLUS01055': {
         'url': "games/U/P/SLUS-01042.html",
     	'id': 'SLUS01055',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLUS90028': {
         'url': "games/U/P/SLUS-01042.html",
     	'id': 'SLUS90028',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLUS01539': {
         'url': "games/U/P/SLUS-01539.html",
@@ -18324,51 +18342,81 @@ games = {
         'url': "games/P/P/SLES-02558.html",
     	'id': 'SLES02558',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES12558': {
         'url': "games/P/P/SLES-02558.html",
     	'id': 'SLES12558',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES02559': {
         'url': "games/P/P/SLES-02559.html",
     	'id': 'SLES02559',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES12559': {
         'url': "games/P/P/SLES-02559.html",
     	'id': 'SLES12559',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES02560': {
         'url': "games/P/P/SLES-02560.html",
     	'id': 'SLES02560',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES12560': {
         'url': "games/P/P/SLES-02560.html",
     	'id': 'SLES12560',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES02561': {
         'url': "games/P/P/SLES-02561.html",
     	'id': 'SLES02561',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES12561': {
         'url': "games/P/P/SLES-02561.html",
     	'id': 'SLES12561',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES02562': {
         'url': "games/P/P/SLES-02562.html",
     	'id': 'SLES02562',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES12562': {
         'url': "games/P/P/SLES-02562.html",
     	'id': 'SLES12562',
 	'title': "PARASITE EVE 2",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLES03108': {
         'url': "games/P/P/SLES-03108.html",
@@ -40059,61 +40107,97 @@ games = {
         'url': "games/J/P/SCPS-45203.html",
     	'id': 'SCPS45203',
 	'title': "PARASITE EVE [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SCPS45204': {
         'url': "games/J/P/SCPS-45203.html",
     	'id': 'SCPS45204',
 	'title': "PARASITE EVE [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SLPS01230': {
         'url': "games/J/P/SLPS-01230.html",
     	'id': 'SLPS01230',
 	'title': "PARASITE EVE [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SLPS01231': {
         'url': "games/J/P/SLPS-01230.html",
     	'id': 'SLPS01231',
 	'title': "PARASITE EVE [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss10.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/P/SLUS-00662/ss12.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
     },
     'SCPS45467': {
         'url': "games/J/P/SCPS-45467.html",
     	'id': 'SCPS45467',
 	'title': "PARASITE EVE II [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SCPS45468': {
         'url': "games/J/P/SCPS-45467.html",
     	'id': 'SCPS45468',
 	'title': "PARASITE EVE II [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS02480': {
         'url': "games/J/P/SLPS-02480.html",
     	'id': 'SLPS02480',
 	'title': "PARASITE EVE II [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS02481': {
         'url': "games/J/P/SLPS-02480.html",
     	'id': 'SLPS02481',
 	'title': "PARASITE EVE II [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS91479': {
         'url': "games/J/P/SLPS-91479.html",
     	'id': 'SLPS91479',
 	'title': "PARASITE EVE II [PSONE BOOKS] [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS91480': {
         'url': "games/J/P/SLPS-91479.html",
     	'id': 'SLPS91480',
 	'title': "PARASITE EVE II [PSONE BOOKS] [ 2 DISCS ]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS02779': {
         'url': "games/J/P/SLPS-02779.html",
     	'id': 'SLPS02779',
 	'title': "PARASITE EVE II [SQUARESOFT MILLENNIUM COLLECTION]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS02780': {
         'url': "games/J/P/SLPS-02779.html",
     	'id': 'SLPS02780',
 	'title': "PARASITE EVE II [SQUARESOFT MILLENNIUM COLLECTION]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss17.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/P/SLES-02561/ss10.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
     },
     'SLPS01539': {
         'url': "games/J/P/SLPS-01539.html",
