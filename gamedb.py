@@ -2266,6 +2266,9 @@ games = {
         'url': "games/U/A/SLUS-00614.html",
     	'id': 'SLUS00614',
 	'title': "AZURE DREAMS",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss5.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IAva_WuYcnQ&list=PL436F1639DA346403&index=3'
     },
     'SLUS00659': {
         'url': "games/U/B/SLUS-00659.html",
@@ -5221,16 +5224,25 @@ games = {
         'url': "games/U/M/SLUS-00594.html",
     	'id': 'SLUS00594',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLUS00776': {
         'url': "games/U/M/SLUS-00594.html",
     	'id': 'SLUS00776',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLUS00957': {
         'url': "games/U/M/SLUS-00957.html",
     	'id': 'SLUS00957',
 	'title': "METAL GEAR SOLID - VR MISSIONS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-02136/ss8.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-02136/ss3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLUS01212': {
         'url': "games/U/M/SLUS-01212.html",
@@ -10031,6 +10043,9 @@ games = {
         'url': "games/P/A/SLES-01219.html",
     	'id': 'SLES01219',
 	'title': "AZURE DREAMS",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss5.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IAva_WuYcnQ&list=PL436F1639DA346403&index=3'
     },
     'SLES01260':       {
         'url': "games/P/B/SLES-01260.html",
@@ -14951,56 +14966,89 @@ games = {
         'url': "games/P/M/SLES-01370.html",
     	'id': 'SLES01370',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES11370': {
         'url': "games/P/M/SLES-01370.html",
     	'id': 'SLES11370',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES01506': {
         'url': "games/P/M/SLES-01506.html",
     	'id': 'SLES01506',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES11506': {
         'url': "games/P/M/SLES-01506.html",
     	'id': 'SLES11506',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES01507': {
         'url': "games/P/M/SLES-01507.html",
     	'id': 'SLES01507',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES11507': {
         'url': "games/P/M/SLES-01507.html",
     	'id': 'SLES11507',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES01508': {
         'url': "games/P/M/SLES-01508.html",
     	'id': 'SLES01508',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES11508': {
         'url': "games/P/M/SLES-01508.html",
     	'id': 'SLES11508',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES01734': {
         'url': "games/P/M/SLES-01734.html",
     	'id': 'SLES01734',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES11734': {
         'url': "games/P/M/SLES-01734.html",
     	'id': 'SLES11734',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES02136': {
         'url': "games/P/M/SLES-02136.html",
     	'id': 'SLES02136',
 	'title': "METAL GEAR SOLID - SPECIAL MISSIONS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-02136/ss8.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-02136/ss3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLES03575': {
         'url': "games/P/M/SLES-03575.html",
@@ -36781,166 +36829,265 @@ games = {
         'url': "games/J/M/SCPS-45317.html",
     	'id': 'SCPS45317',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45318': {
         'url': "games/J/M/SCPS-45317.html",
     	'id': 'SCPS45318',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45320': {
         'url': "games/J/M/SCPS-45320.html",
     	'id': 'SCPS45320',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45321': {
         'url': "games/J/M/SCPS-45320.html",
     	'id': 'SCPS45321',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45322': {
         'url': "games/J/M/SCPS-45320.html",
     	'id': 'SCPS45322',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86114': {
         'url': "games/J/M/SLPM-86114.html",
     	'id': 'SLPM86114',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86115': {
         'url': "games/J/M/SLPM-86114.html",
     	'id': 'SLPM86115',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86116': {
         'url': "games/J/M/SLPM-86114.html",
     	'id': 'SLPM86116',
 	'title': "METAL GEAR SOLID",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86485': {
         'url': "games/J/M/SLPM-86485.html",
     	'id': 'SLPM86485',
 	'title': "METAL GEAR SOLID [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86486': {
         'url': "games/J/M/SLPM-86485.html",
     	'id': 'SLPM86486',
 	'title': "METAL GEAR SOLID [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87411': {
         'url': "games/J/M/SLPM-87411.html",
     	'id': 'SLPM87411',
 	'title': "METAL GEAR SOLID [METAL GEAR 20TH ANNIVERSARY]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87412': {
         'url': "games/J/M/SLPM-87411.html",
     	'id': 'SLPM87412',
 	'title': "METAL GEAR SOLID [METAL GEAR 20TH ANNIVERSARY]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87413': {
         'url': "games/J/M/SLPM-87411.html",
     	'id': 'SLPM87413',
 	'title': "METAL GEAR SOLID [METAL GEAR 20TH ANNIVERSARY]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87030': {
         'url': "games/J/M/SLPM-87030.html",
     	'id': 'SLPM87030',
 	'title': "METAL GEAR SOLID [PSONE BOOKS]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87031': {
         'url': "games/J/M/SLPM-87030.html",
     	'id': 'SLPM87031',
 	'title': "METAL GEAR SOLID [PSONE BOOKS]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86111': {
         'url': "games/J/M/SLPM-86111.html",
     	'id': 'SLPM86111',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86112': {
         'url': "games/J/M/SLPM-86111.html",
     	'id': 'SLPM86112',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86113': {
         'url': "games/J/M/SLPM-86111.html",
     	'id': 'SLPM86113',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86111': {
         'url': "games/J/M/SLPM-86111-2.html",
     	'id': 'SLPM86111',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE SAI HAKKOU KINEN]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86112': {
         'url': "games/J/M/SLPM-86111-2.html",
     	'id': 'SLPM86112',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE SAI HAKKOU KINEN]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86113': {
         'url': "games/J/M/SLPM-86111-2.html",
     	'id': 'SLPM86113',
 	'title': "METAL GEAR SOLID [PREMIUM PACKAGE SAI HAKKOU KINEN]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45412': {
         'url': "games/J/M/SCPS-45412.html",
     	'id': 'SCPS45412',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45413': {
         'url': "games/J/M/SCPS-45412.html",
     	'id': 'SCPS45413',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SCPS45414': {
         'url': "games/J/M/SCPS-45412.html",
     	'id': 'SCPS45414',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86247': {
         'url': "games/J/M/SLPM-86247.html",
     	'id': 'SLPM86247',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86248': {
         'url': "games/J/M/SLPM-86247.html",
     	'id': 'SLPM86248',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86249': {
         'url': "games/J/M/SLPM-86247.html",
     	'id': 'SLPM86249',
 	'title': "METAL GEAR SOLID INTEGRAL",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86470': {
         'url': "games/J/M/SLPM-86470.html",
     	'id': 'SLPM86470',
 	'title': "METAL GEAR SOLID INTEGRAL [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86471': {
         'url': "games/J/M/SLPM-86470.html",
     	'id': 'SLPM86471',
 	'title': "METAL GEAR SOLID INTEGRAL [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM86472': {
         'url': "games/J/M/SLPM-86470.html",
     	'id': 'SLPM86472',
 	'title': "METAL GEAR SOLID INTEGRAL [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87324': {
         'url': "games/J/M/SLPM-87324.html",
     	'id': 'SLPM87324',
 	'title': "METAL GEAR SOLID INTEGRAL [PSONE BOOKS]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87325': {
         'url': "games/J/M/SLPM-87324.html",
     	'id': 'SLPM87325',
 	'title': "METAL GEAR SOLID INTEGRAL [PSONE BOOKS]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPM87326': {
         'url': "games/J/M/SLPM-87324.html",
     	'id': 'SLPM87326',
 	'title': "METAL GEAR SOLID INTEGRAL [PSONE BOOKS]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss9.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/M/SLES-01734/ss1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=tAKi13Gb7es&list=PL3CBDC974B0BA26D3&index=1'
     },
     'SLPS00008': {
         'url': "games/J/M/SLPS-00008.html",
@@ -39231,11 +39378,17 @@ games = {
         'url': "games/J/O/SLPM-86047.html",
     	'id': 'SLPM86047',
 	'title': "OTHER LIFE - AZURE DREAMS",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss5.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IAva_WuYcnQ&list=PL436F1639DA346403&index=3'
     },
     'SLPM86104': {
         'url': "games/J/O/SLPM-86104.html",
     	'id': 'SLPM86104',
 	'title': "OTHER LIFE - AZURE DREAMS [KONAMI THE BEST]",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss5.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00614/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IAva_WuYcnQ&list=PL436F1639DA346403&index=3'
     },
     'SLPS02459': {
         'url': "games/J/O/SLPS-02459.html",

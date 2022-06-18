@@ -202,11 +202,8 @@ class PopFePs3App:
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
             game = popfe.get_game_from_gamelist(disc_id)
             print('Fetching SND0')
-            snd0 = popfe.get_snd0_from_game(disc_id, subdir='pop-fe-ps3-work/')
-            if snd0:
-                print('Found SND0', snd0)
-                temp_files.append(snd0)
-                self.builder.get_variable('snd0_variable').set(snd0)
+            if 'snd0' in games[disc_id]:
+                self.builder.get_variable('snd0_variable').set(games[disc_id]['snd0'])
             
             print('Fetching ICON0') if verbose else None
             self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file, 'pop-fe-ps3-work/ICON0.PNG')
