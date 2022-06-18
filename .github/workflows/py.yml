@@ -52,6 +52,10 @@ jobs:
         run:   |
           Invoke-WebRequest -OutFile atracdenc-x86_0.0.3.zip https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip
           unzip -j atracdenc-x86_0.0.3 -x README.TXT
+      - name: Install FFMPEG
+        run:   |
+          Invoke-WebRequest -OutFile ffmpeg-release-essentials.zip https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+          unzip -j ffmpeg-release-essentials.zip -x */doc/* -x */presets/* -x */README.txt -x */LICENSE -x */bin/ffplay.exe -x */bin/ffprobe.exe
       - name: Build pop-fe
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
@@ -69,6 +73,7 @@ jobs:
           cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
+          cp ffmpeg.exe dist/pop-fe-ps3/.
           ls -R dist
       - name: Upload artefacts
         uses: actions/upload-artifact@v2
