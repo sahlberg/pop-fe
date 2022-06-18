@@ -26,6 +26,7 @@ jobs:
           pip install ecdsa
           pip install pyinstaller
           pip install pygubu
+          pip install git+https://github.com/nficano/pytube
       - name: Build PSL1GHT
         run:   |
           git clone http://github.com/sahlberg/PSL1GHT
