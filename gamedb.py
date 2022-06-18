@@ -2034,7 +2034,8 @@ games = {
     	'id': 'SLUS00553',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLUS01017': {
         'url': "games/U/A/SLUS-01017.html",
@@ -9459,28 +9460,32 @@ games = {
     	'id': 'SLES01198',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLES01256': {
         'url': "games/P/A/SLES-01256.html",
     	'id': 'SLES01256',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLES01257': {
         'url': "games/P/A/SLES-01257.html",
     	'id': 'SLES01257',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLES01258': {
         'url': "games/P/A/SLES-01258.html",
     	'id': 'SLES01258',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLES02600': {
         'url': "games/P/A/SLES-02600.html",
@@ -24067,7 +24072,8 @@ games = {
     	'id': 'SCPS10035',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SCPS45449': {
         'url': "games/J/A/SCPS-45449.html",
