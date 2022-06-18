@@ -201,6 +201,13 @@ class PopFePs3App:
             self.builder.get_variable('gameid_variable').set(disc_id)
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
             game = popfe.get_game_from_gamelist(disc_id)
+            print('Fetching SND0')
+            snd0 = popfe.get_snd0_from_game(disc_id, subdir='pop-fe-ps3-work/')
+            if snd0:
+                print('Found SND0', snd0)
+                temp_files.append(snd0)
+                self.builder.get_variable('snd0_variable').set(snd0)
+            
             print('Fetching ICON0') if verbose else None
             self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
@@ -347,6 +354,10 @@ class PopFePs3App:
                 aea_files[d].append(aea_file)
 
         snd0 = self.builder.get_variable('snd0_variable').get()
+        if snd0[:24] == 'https://www.youtube.com/':
+            snd0 = popfe.get_snd0_from_link(snd0)
+            if snd0:
+                temp_files.append(snd0)
         popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
         self.master.config(cursor='')
 

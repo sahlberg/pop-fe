@@ -27,6 +27,12 @@ try:
     have_iso9660 = True
 except:
     True
+have_pytube = False
+try:
+    from pytube import YouTube
+    have_pytube = True
+except:
+    True
 try:
     import requests
 except:
@@ -151,6 +157,41 @@ def get_pic0_from_game(game_id, game, cue, filename):
 
 def get_pic1_from_game(game_id, game, cue, filename):
     return get_pic_from_game('pic1', game_id, game, cue, filename)
+
+# caller adds the wav file to temp_files
+def get_snd0_from_link(link, subdir='./'):
+    if not have_pytube:
+        return None
+    yt = YouTube(link)
+    fn = yt.streams.filter(only_audio=True)[0].download(subdir)
+    temp_files.append(fn)
+    try:
+        if os.name == 'posix':
+            subprocess.call(['ffmpeg', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+        else:
+            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+        return subdir + 'snd0.wav'
+    except:
+        return None
+
+# caller adds the wav file to temp_files
+def get_snd0_from_game(game_id, subdir='./'):
+    if not have_pytube:
+        return None
+    if not 'snd0' in games[game_id]:
+        return None
+
+    yt = YouTube(games[game_id]['snd0'])
+    fn = yt.streams.filter(only_audio=True)[0].download(subdir)
+    temp_files.append(fn)
+    try:
+        if os.name == 'posix':
+            subprocess.call(['ffmpeg', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+        else:
+            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+        return subdir + 'snd0.wav'
+    except:
+        return None
 
 def get_psio_cover(game_id):
     f = 'https://raw.githubusercontent.com/logi-26/psio-assist/main/covers/' + game_id + '.bmp'
@@ -1169,6 +1210,13 @@ def install_deps():
     except:
         print('Installing python Crypto')
         subprocess.call(['pip3', 'install', 'Crypto'])
+    # pytube
+    try:
+        from pytube import YouTube
+        print('Pytube is already installed')
+    except:
+        print('Installing python pytube')
+        subprocess.call(['pip3', 'install', 'git+https://github.com/nficano/pytube'])
     # cue2cu2
     try:
         if os.name == 'posix':
@@ -1518,12 +1566,23 @@ if __name__ == "__main__":
                 img_files[idx] = 'LCP%02x.bin' % idx
                 apply_ppf(img_files[idx], disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
+    snd0 = args.snd0
+    # if we did not get an --snd0 argument see if can find one in the gamedb
+    if not snd0:
+        snd0 = get_snd0_from_game(game_id)
+        if snd0:
+            temp_files.append(snd0)
+    if snd0[:24] == 'https://www.youtube.com/':
+        snd0 = get_snd0_from_link(snd0)
+        if snd0:
+            temp_files.append(snd0)
+           
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=args.snd0)
+        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=args.snd0)
+        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:

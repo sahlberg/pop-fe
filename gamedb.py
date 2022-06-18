@@ -9451,7 +9451,8 @@ games = {
     	'id': 'SLES01135',
 	'title': "ALUNDRA",
         'pic0': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss19.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg'
+        'pic1': 'https://psxdatacenter.com/images/screens/P/A/SLES-01258/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
     },
     'SLES01198': {
         'url': "games/P/A/SLES-01198.html",

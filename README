@@ -214,10 +214,21 @@ Memory Card Annihilator on the PS2.
 
 SND0.AT3
 ========
-For PS3/PSP this is a file that will be played when this games icon is focused
-on the XMB. The file must be a WAVE file, 16bit, stereo, 44100Hz.
-This file will be automatically converted into ATRAC3 format using the
+For PS3/PSP this is the audio that will be played when this games icon is
+focused on the XMB. It can either be a 16bit/44100/Stereo WAVE file or a
+youtube link.
+
+Examples:
+
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0='https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
+  
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0=Alundra.WAV
+
+If specified as a file it must be WAVE/16bit/stereo/44100Hz.
+
+This file/link will be automatically converted into ATRAC3 format using the
 atracdenc tool.
+
 
 A good way to generate these WAV files is to find a good OST music file for
 the game at youtube and download it in 3GP format. Then convert it to
@@ -417,6 +428,7 @@ git clone https://github.com/sahlberg/pop-fe.git
 git clone https://github.com/NRGDEAD/Cue2cu2.git
 git clone https://github.com/putnam/binmerge.git
 git clone https://github.com/dcherednik/atracdenc.git
+pip3 install git+https://github.com/nficano/pytube
 pip3 install requests_cache
 pip3 install pycdlib  (or pip3 install pycdio)
 pip3 install ecdsa
