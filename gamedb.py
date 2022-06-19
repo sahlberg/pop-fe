@@ -6118,16 +6118,25 @@ games = {
         'url': "games/U/O/SLUS-00710.html",
     	'id': 'SLUS00710',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLUS00731': {
         'url': "games/U/O/SLUS-00710.html",
     	'id': 'SLUS00731',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLUS00190': {
         'url': "games/U/O/SLUS-00190.html",
     	'id': 'SLUS00190',
 	'title': "ODDWORLD - ABE'S ODDYSEE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QWx7Ibjenkg&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=4'
     },
     'SLUS00698': {
         'url': "games/U/O/SLUS-00698.html",
@@ -6746,21 +6755,33 @@ games = {
         'url': "games/U/R/SLUS-00170.html",
     	'id': 'SLUS00170',
 	'title': "RESIDENT EVIL",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLUS00551': {
         'url': "games/U/R/SLUS-00551.html",
     	'id': 'SLUS00551',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLUS90009': {
         'url': "games/U/R/SLUS-00551.html",
     	'id': 'SLUS90009',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLUS00747': {
         'url': "games/U/R/SLUS-00747.html",
     	'id': 'SLUS00747',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT (DUAL SHOCK VERSION)",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLUS00421': {
         'url': "games/U/R/SLUS-00421.html",
@@ -6798,6 +6819,9 @@ games = {
         'url': "games/U/R/SLUS-00923.html",
     	'id': 'SLUS00923',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLUS01087': {
         'url': "games/U/R/SLUS-01087.html",
@@ -18087,76 +18111,121 @@ games = {
         'url': "games/P/O/SLES-01480.html",
     	'id': 'SLES01480',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11480': {
         'url': "games/P/O/SLES-01480.html",
     	'id': 'SLES11480',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01502': {
         'url': "games/P/O/SLES-01502.html",
     	'id': 'SLES01502',
 	'title': "ODDWORLD - ABE'S EXODDUS (L'EXODE DE ABE)",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11502': {
         'url': "games/P/O/SLES-01502.html",
     	'id': 'SLES11502',
 	'title': "ODDWORLD - ABE'S EXODDUS (L'EXODE DE ABE)",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01503': {
         'url': "games/P/O/SLES-01503.html",
     	'id': 'SLES01503',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11503': {
         'url': "games/P/O/SLES-01503.html",
     	'id': 'SLES11503',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01504': {
         'url': "games/P/O/SLES-01504.html",
     	'id': 'SLES01504',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11504': {
         'url': "games/P/O/SLES-01504.html",
     	'id': 'SLES11504',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01505': {
         'url': "games/P/O/SLES-01505.html",
     	'id': 'SLES01505',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11505': {
         'url': "games/P/O/SLES-01505.html",
     	'id': 'SLES11505',
 	'title': "ODDWORLD - ABE'S EXODDUS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES00664': {
         'url': "games/P/O/SLES-00664.html",
     	'id': 'SLES00664',
 	'title': "ODDWORLD - ABE'S ODDYSEE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
     },
     'SLES00838': {
         'url': "games/P/O/SLES-00838.html",
     	'id': 'SLES00838',
 	'title': "ODDWORLD - ABE'S ODDYSEE (L'ODDYSEE D'ABE)",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
     },
     'SLES00839': {
         'url': "games/P/O/SLES-00839.html",
     	'id': 'SLES00839',
 	'title': "ODDWORLD - ABE'S ODDYSEE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
     },
     'SLES00840': {
         'url': "games/P/O/SLES-00840.html",
     	'id': 'SLES00840',
 	'title': "ODDWORLD - ABE'S ODDYSEE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
     },
     'SLES00841': {
         'url': "games/P/O/SLES-00841.html",
     	'id': 'SLES00841',
 	'title': "ODDWORLD - ABE'S ODDYSEE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss18.jpgs',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-00841/ss4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
     },
     'SLES01391': {
         'url': "games/P/O/SLES-01391.html",
@@ -19177,31 +19246,49 @@ games = {
         'url': "games/P/R/SLES-00200.html",
     	'id': 'SLES00200',
 	'title': "RESIDENT EVIL",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00227': {
         'url': "games/P/R/SLES-00227.html",
     	'id': 'SLES00227',
 	'title': "RESIDENT EVIL",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00228': {
         'url': "games/P/R/SLES-00228.html",
     	'id': 'SLES00228',
 	'title': "RESIDENT EVIL",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00969': {
         'url': "games/P/R/SLES-00969.html",
     	'id': 'SLES00969',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00970': {
         'url': "games/P/R/SLES-00970.html",
     	'id': 'SLES00970',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00971': {
         'url': "games/P/R/SLES-00971.html",
     	'id': 'SLES00971',
 	'title': "RESIDENT EVIL - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLES00972': {
         'url': "games/P/R/SLES-00972.html",
@@ -19287,31 +19374,49 @@ games = {
         'url': "games/P/R/SLES-02529.html",
     	'id': 'SLES02529',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02530': {
         'url': "games/P/R/SLES-02530.html",
     	'id': 'SLES02530',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02531': {
         'url': "games/P/R/SLES-02531.html",
     	'id': 'SLES02531',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02532': {
         'url': "games/P/R/SLES-02532.html",
     	'id': 'SLES02532',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02533': {
         'url': "games/P/R/SLES-02533.html",
     	'id': 'SLES02533',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02698': {
         'url': "games/P/R/SLES-02698.html",
     	'id': 'SLES02698',
 	'title': "RESIDENT EVIL 3 - NEMESIS",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLES02732': {
         'url': "games/P/R/SLES-02732.html",
@@ -25433,26 +25538,41 @@ games = {
         'url': "games/J/B/SLPS-00222.html",
     	'id': 'SLPS00222',
 	'title': "BIOHAZARD",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLPS00998': {
         'url': "games/J/B/SLPS-00998.html",
     	'id': 'SLPS00998',
 	'title': "BIOHAZARD - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLPS00999': {
         'url': "games/J/B/SLPS-00998.html",
     	'id': 'SLPS00999',
 	'title': "BIOHAZARD - DIRECTOR'S CUT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLPS01512': {
         'url': "games/J/B/SLPS-01512.html",
     	'id': 'SLPS01512',
 	'title': "BIOHAZARD - DIRECTOR'S CUT - DUAL SHOCK",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLPS01513': {
         'url': "games/J/B/SLPS-01512.html",
     	'id': 'SLPS01513',
 	'title': "BIOHAZARD - DIRECTOR'S CUT - DUAL SHOCK",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss1.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-00170/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
     },
     'SLPS01222': {
         'url': "games/J/B/SLPS-01222.html",
@@ -25490,11 +25610,17 @@ games = {
         'url': "games/J/B/SLPS-02300.html",
     	'id': 'SLPS02300',
 	'title': "BIOHAZARD 3 - LAST ESCAPE",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLPM87224': {
         'url': "games/J/B/SLPM-87224.html",
     	'id': 'SLPM87224',
 	'title': "BIOHAZARD 3 - LAST ESCAPE [CAPKORE]",
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss14.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-02532/ss11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13'
     },
     'SLPS02553': {
         'url': "games/J/B/SLPS-02553.html",
