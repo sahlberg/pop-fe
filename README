@@ -217,12 +217,23 @@ SND0.AT3
 For PS3/PSP this is the audio that will be played when this games icon is
 focused on the XMB. It can either be a 16bit/44100/Stereo WAVE file or a
 youtube link.
+If you specify --snd0='auto' then pop-fe will search youtube for the name of
+the game and the string 'ps1 ost' and use the first search result.
+YMMV
+
+The game database in gamedb.py contains curated youtube links for some games.
+IF a game has a curated link then it will be automatically used even if the
+--snd0 argument is not provided.
+Please send patches to populate these fields in gamedb.py with more entries.
+
 
 Examples:
 
   $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0='https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
   
   $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0=Alundra.WAV
+  
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0=auto
 
 If specified as a file it must be WAVE/16bit/stereo/44100Hz.
 

@@ -30,6 +30,7 @@ except:
 have_pytube = False
 try:
     from pytube import YouTube
+    from pytube.contrib.search import Search
     have_pytube = True
 except:
     True
@@ -1572,6 +1573,10 @@ if __name__ == "__main__":
         snd0 = get_snd0_from_game(game_id)
         if snd0:
             temp_files.append(snd0)
+    if snd0 == 'auto':
+        a = Search(game_title + ' ps1 ost')
+        snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
+        print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)
     if snd0[:24] == 'https://www.youtube.com/':
         snd0 = get_snd0_from_link(snd0)
         if snd0:
