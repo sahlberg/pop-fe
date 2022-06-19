@@ -15,6 +15,11 @@ import importlib
 from gamedb import games, libcrypt
 popfe = importlib.import_module("pop-fe")
 
+# Possible auto-music from youtube:
+#a = pytube.contrib.search.Search('alundra ps1 ost')
+#>>> print(a.results[0])
+#<pytube.__main__.YouTube object: videoId=FNWhTdzYySQ>
+#a.results[0].streams.filter(only_audio=True)[0].download()
 
 verbose = False
 temp_files = []
