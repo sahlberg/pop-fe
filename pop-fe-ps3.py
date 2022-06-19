@@ -9,17 +9,18 @@ import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
 
+have_pytube = False
+try:
+    import pytube
+    have_pytube = True
+except:
+    True
+
 from PIL import Image
 from bchunk import bchunk
 import importlib  
 from gamedb import games, libcrypt
 popfe = importlib.import_module("pop-fe")
-
-# Possible auto-music from youtube:
-#a = pytube.contrib.search.Search('alundra ps1 ost')
-#>>> print(a.results[0])
-#<pytube.__main__.YouTube object: videoId=FNWhTdzYySQ>
-#a.results[0].streams.filter(only_audio=True)[0].download()
 
 verbose = False
 temp_files = []
@@ -74,6 +75,7 @@ class PopFePs3App:
             'on_pic1_clicked': self.on_pic1_clicked,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
+            'on_youtube_audio': self.on_youtube_audio,
             'on_create_pkg': self.on_create_pkg,
             'on_reset': self.on_reset,
         }
@@ -131,6 +133,7 @@ class PopFePs3App:
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
         self.builder.get_object('disc1', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
+        self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('gameid_variable').set('')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
@@ -236,6 +239,7 @@ class PopFePs3App:
             self.builder.get_object('disc1', self.master).config(state='disabled')
             self.builder.get_object('disc2', self.master).config(state='normal')
             self.builder.get_object('create_button', self.master).config(state='normal')
+            self.builder.get_object('youtube_button', self.master).config(state='normal')
         elif disc == 'd2':
             self.builder.get_object('disc2', self.master).config(state='disabled')
             self.builder.get_object('disc3', self.master).config(state='normal')
@@ -303,6 +307,16 @@ class PopFePs3App:
     def on_dir_changed(self, event):
         self.pkgdir = event.widget.cget('path')
         # PKG in print()
+
+    def on_youtube_audio(self):
+        if not have_pytube:
+            return
+        self.master.config(cursor='watch')
+        a = pytube.contrib.search.Search(self.builder.get_variable('title_variable').get() + ' ps1 ost')
+        if a:
+            self.builder.get_variable('snd0_variable').set('https://www.youtube.com/watch?v=' + a.results[0].video_id)
+           
+        self.master.config(cursor='')
 
     def on_create_pkg(self):        
         pkg = self.builder.get_variable('pkgfile_variable').get()

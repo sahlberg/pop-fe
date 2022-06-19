@@ -146,144 +146,6 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Frame" id="frame1">
-            <property name="height">200</property>
-            <property name="width">200</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="columnspan">2</property>
-              <property name="row">7</property>
-              <property name="sticky">nsew</property>
-            </layout>
-            <child>
-              <object class="ttk.Label" id="label8">
-                <property name="text" translatable="yes">Game ID:</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">0</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Entry" id="gameid">
-                <property name="textvariable">string:gameid_variable</property>
-                <property name="width">10</property>
-                <layout manager="grid">
-                  <property name="column">1</property>
-                  <property name="row">0</property>
-                  <property name="sticky">ew</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Label" id="label9">
-                <property name="text" translatable="yes">Title:</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">1</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Entry" id="entry2">
-                <property name="textvariable">string:title_variable</property>
-                <layout manager="grid">
-                  <property name="column">1</property>
-                  <property name="row">1</property>
-                  <property name="sticky">ew</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Label" id="label10">
-                <property name="text" translatable="yes">Directory</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">5</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="pygubu.builder.widgets.pathchooserinput" id="pkgdir">
-                <property name="textvariable">string:pkgdir_variable</property>
-                <property name="type">directory</property>
-                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_dir_changed" add="" />
-                <layout manager="grid">
-                  <property name="column">1</property>
-                  <property name="row">5</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Label" id="label11">
-                <property name="text" translatable="yes">Pkg File</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">6</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Entry" id="pkgfile">
-                <property name="text" translatable="yes">game.pkg</property>
-                <property name="textvariable">string:pkgfile_variable</property>
-                <layout manager="grid">
-                  <property name="column">1</property>
-                  <property name="row">6</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Separator" id="separator3">
-                <property name="orient">horizontal</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="columnspan">2</property>
-                  <property name="pady">5</property>
-                  <property name="row">3</property>
-                  <property name="sticky">ew</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Label" id="label12">
-                <property name="text" translatable="yes">Output Directory/File:</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="columnspan">2</property>
-                  <property name="row">4</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="ttk.Label" id="label13">
-                <property name="text" translatable="yes">SND0:</property>
-                <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">2</property>
-                  <property name="sticky">w</property>
-                </layout>
-              </object>
-            </child>
-            <child>
-              <object class="pygubu.builder.widgets.pathchooserinput" id="snd0">
-                <property name="textvariable">string:snd0_variable</property>
-                <property name="type">file</property>
-                <layout manager="grid">
-                  <property name="column">1</property>
-                  <property name="row">2</property>
-                </layout>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child>
           <object class="ttk.Separator" id="separator4">
             <property name="orient">horizontal</property>
             <layout manager="grid">
@@ -356,9 +218,162 @@
         <layout manager="grid">
           <property name="column">0</property>
           <property name="columnspan">2</property>
-          <property name="row">1</property>
+          <property name="row">4</property>
           <property name="sticky">ew</property>
         </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="padx">10</property>
+          <property name="pady">5</property>
+          <property name="row">1</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label8">
+            <property name="text" translatable="yes">Game ID:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="gameid">
+            <property name="textvariable">string:gameid_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label9">
+            <property name="text" translatable="yes">Title:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry2">
+            <property name="textvariable">string:title_variable</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label13">
+            <property name="text" translatable="yes">SND0:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.pathchooserinput" id="snd0">
+            <property name="textvariable">string:snd0_variable</property>
+            <property name="type">file</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="youtube_button">
+            <property name="command" type="command" cbtype="simple">on_youtube_audio</property>
+            <property name="text" translatable="yes">Try to find Audio on YouTube</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">3</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame3">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="padx">10</property>
+          <property name="pady">5</property>
+          <property name="row">3</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label15">
+            <property name="text" translatable="yes">Directory</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">6</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.pathchooserinput" id="pathchooserinput1">
+            <property name="textvariable">string:pkgdir_variable</property>
+            <property name="type">directory</property>
+            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_dir_changed" add="" />
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">6</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label16">
+            <property name="text" translatable="yes">Pkg File</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry4">
+            <property name="text" translatable="yes">game.pkg</property>
+            <property name="textvariable">string:pkgfile_variable</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">7</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label17">
+            <property name="text" translatable="yes">Output Directory/File:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="row">5</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
       </object>
     </child>
     <child>
@@ -370,7 +385,7 @@
           <property name="columnspan">2</property>
           <property name="padx">10</property>
           <property name="pady">5</property>
-          <property name="row">2</property>
+          <property name="row">5</property>
           <property name="sticky">ew</property>
         </layout>
         <child>
@@ -391,6 +406,16 @@
             </layout>
           </object>
         </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator3">
+        <property name="orient">horizontal</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">2</property>
+          <property name="sticky">ew</property>
+        </layout>
       </object>
     </child>
   </object>
