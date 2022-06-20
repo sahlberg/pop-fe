@@ -11224,19 +11224,24 @@ games = {
     	'id': 'SLES02080',
 	'title': "FINAL FANTASY VIII",
     },
-    'SLES12080': {
+    'SCES02080': {
         'url': "games/P/F/SLES-02080.html",
-    	'id': 'SLES12080',
+    	'id': 'SCES02080',
 	'title': "FINAL FANTASY VIII",
     },
-    'SLES22080': {
-        'url': "games/P/F/SLES-02080.html",
-    	'id': 'SLES22080',
+    'SCES12080': {
+        'url': "games/P/F/SCES-02080.html",
+    	'id': 'SCES12080',
 	'title': "FINAL FANTASY VIII",
     },
-    'SLES32080': {
-        'url': "games/P/F/SLES-02080.html",
-    	'id': 'SLES32080',
+    'SCES22080': {
+        'url': "games/P/F/SCES-02080.html",
+    	'id': 'SCES22080',
+	'title': "FINAL FANTASY VIII",
+    },
+    'SCES32080': {
+        'url': "games/P/F/SCES-02080.html",
+    	'id': 'SCES32080',
 	'title': "FINAL FANTASY VIII",
     },
     'SLES02081': {
@@ -49513,6 +49518,10 @@ libcrypt = {
     'SLES02061': {'magic_word': 35509, 'url': 'http://redump.org/disc/772/'},
     'SLES02071': {'magic_word': 10037, 'url': 'http://redump.org/disc/618/'},
     'SLES02080': {   'magic_word': 40416,
+                     'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
+                                   'FF8PAL1.PPF'],
+                     'url': 'http://redump.org/disc/866/'},
+    'SCES02080': {   'magic_word': 40416,
                      'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=ff8ukv2!zip',
                                    'FF8PAL1.PPF'],
                      'url': 'http://redump.org/disc/866/'},
