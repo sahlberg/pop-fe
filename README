@@ -161,6 +161,21 @@ Similarly, if PIC1.PNG is found then it is assumed to be a screenshot
 or background image and again we skip pulling this file from the site.
 
 
+Image files for PS3 packages
+============================
+PS3 packages uses 3 image files: ICON0, PIC0 and PIC1
+ICON0 is the game cover and shown in the game list on the XMB.
+It is square and it will be resized to 176x176 pixels.
+If you provide your own custom image here, create it as 176x176 as then there
+will be no blurring due to rescaling.
+
+PIC0 is the foreground image when the game is selected in the XMB. It is
+1000x560 pixels in size.
+
+PIC1 is the background image when the game is selected in the XMB. It is
+1920x1080 pixels in size.
+
+
 Installing Memory Card images on PSP
 ====================================
 Most memory card image formats are supported.
