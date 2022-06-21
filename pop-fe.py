@@ -719,23 +719,22 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
             temp_files.append(f + '/SND0.AT3')
             create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00, loop=True)
     
-    image = icon0.resize((320, 176), Image.BILINEAR)
-    i = io.BytesIO()
+    img = icon0.resize((176, 176), Image.BILINEAR)
+    image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
+    image.putalpha(0)
+    image.paste(img)
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
     
     image = pic0.resize((1000, 560), Image.NEAREST)
-    i = io.BytesIO()
     image.save(f + '/PIC0.PNG', format='PNG')
     temp_files.append(f + '/PIC0.PNG')
     
     image = pic1.resize((1920, 1080), Image.NEAREST)
-    i = io.BytesIO()
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
     image = pic1.resize((310, 250), Image.NEAREST)
-    i = io.BytesIO()
     image.save(f + '/PIC2.PNG', format='PNG')
     temp_files.append(f + '/PIC2.PNG')
     
