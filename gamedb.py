@@ -6787,32 +6787,32 @@ games = {
         'url': "games/U/R/SLUS-00421.html",
     	'id': 'SLUS00421',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLUS00592': {
         'url': "games/U/R/SLUS-00421.html",
     	'id': 'SLUS00592',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLUS00748': {
         'url': "games/U/R/SLUS-00748.html",
     	'id': 'SLUS00748',
 	'title': "RESIDENT EVIL 2 (DUAL SHOCK VERSION)",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLUS00756': {
         'url': "games/U/R/SLUS-00748.html",
     	'id': 'SLUS00756',
 	'title': "RESIDENT EVIL 2 (DUAL SHOCK VERSION)",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLUS00923': {
@@ -19299,80 +19299,80 @@ games = {
         'url': "games/P/R/SLES-00972.html",
     	'id': 'SLES00972',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES10972': {
         'url': "games/P/R/SLES-00972.html",
     	'id': 'SLES10972',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES00973': {
         'url': "games/P/R/SLES-00973.html",
     	'id': 'SLES00973',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES10973': {
         'url': "games/P/R/SLES-00973.html",
     	'id': 'SLES10973',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES00974': {
         'url': "games/P/R/SLES-00974.html",
     	'id': 'SLES00974',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES10974': {
         'url': "games/P/R/SLES-00974.html",
     	'id': 'SLES10974',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES00975': {
         'url': "games/P/R/SLES-00975.html",
     	'id': 'SLES00975',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES10975': {
         'url': "games/P/R/SLES-00975.html",
     	'id': 'SLES10975',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES00976': {
         'url': "games/P/R/SLES-00976.html",
     	'id': 'SLES00976',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES10976': {
         'url': "games/P/R/SLES-00976.html",
     	'id': 'SLES10976',
 	'title': "RESIDENT EVIL 2",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss3.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/R/SLES-00976/ss2.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6'
     },
     'SLES02529': {

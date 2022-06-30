@@ -722,7 +722,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
     img = icon0.resize((176, 176), Image.BILINEAR)
     image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
     image.putalpha(0)
-    image.paste(img)
+    image.paste(img, (72,0))
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
     
