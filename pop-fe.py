@@ -122,7 +122,7 @@ def get_title_from_game(game_id):
 def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
         image = Image.open(create_path(cue, 'ICON0.PNG'))
-        print('Use existing ICON0.PNG as cover') if verbose else None
+        print('Use existing ICON0.PNG as cover') if verbose else None 
         return image
     except:
         True
@@ -718,11 +718,15 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
             print('Converting EA3 to AT3 file') if verbose else None
             temp_files.append(f + '/SND0.AT3')
             create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00, loop=True)
-    
-    img = icon0.resize((176, 176), Image.BILINEAR)
-    image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
-    image.putalpha(0)
-    image.paste(img, (72,0))
+
+    image = None
+    if icon0.size[0] == icon0.size[1]:
+        img = icon0.resize((176, 176), Image.BILINEAR)
+        image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
+        image.putalpha(0)
+        image.paste(img, (72,0))
+    else:
+        image = icon0.resize((320, 176), Image.BILINEAR)
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
     
@@ -1572,11 +1576,11 @@ if __name__ == "__main__":
         snd0 = get_snd0_from_game(game_id)
         if snd0:
             temp_files.append(snd0)
-    if snd0 == 'auto':
+    if snd0 and snd0 == 'auto':
         a = Search(game_title + ' ps1 ost')
         snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
         print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)
-    if snd0[:24] == 'https://www.youtube.com/':
+    if snd0 and snd0[:24] == 'https://www.youtube.com/':
         snd0 = get_snd0_from_link(snd0)
         if snd0:
             temp_files.append(snd0)
