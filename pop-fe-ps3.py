@@ -147,6 +147,7 @@ class PopFePs3App:
 
         self.master.config(cursor='watch')
         self.master.update()
+        cue_file_orig = cue_file
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
@@ -214,7 +215,7 @@ class PopFePs3App:
                 self.builder.get_variable('snd0_variable').set(games[disc_id]['snd0'])
             
             print('Fetching ICON0') if verbose else None
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file, 'pop-fe-ps3-work/ICON0.PNG')
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
             self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
             self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
@@ -222,7 +223,7 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC0') if verbose else None
-            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file, 'PIC0.PNG')
+            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig, 'PIC0.PNG')
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
             self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
@@ -230,7 +231,7 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
             
             print('Fetching PIC1') if verbose else None
-            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file, 'PIC1.PNG')
+            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig, 'PIC1.PNG')
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
             self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
