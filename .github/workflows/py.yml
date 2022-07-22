@@ -62,6 +62,9 @@ jobs:
       - name: Build pop-fe-ps3
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+      - name: Build pop-fe-psp
+        run:   |
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-psp.ui;." pop-fe-psp.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
       - name: Update dist/pop-fe
         run:   |
           mkdir dist/pop-fe/atracdenc
@@ -82,16 +85,13 @@ jobs:
           cp dist/pkg/pkg.exe dist/pop-fe-ps3/.
           cp dist/pkg/pkgcrypt*.pyd dist/pop-fe-ps3/.
           cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
+          cp dist/pop-fe-psp/pop-fe-psp.ui dist/pop-fe-ps3/.
+          cp dist/pop-fe-psp/pop-fe-psp.exe dist/pop-fe-ps3/.
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
-      - name: Upload pop-fe artefact
+      - name: Upload pop-fe-ui artefact
         uses: actions/upload-artifact@v2
         with: 
-          name: pop-fe
-          path: dist/pop-fe
-      - name: Upload pop-fe-ps3 artefact
-        uses: actions/upload-artifact@v2
-        with: 
-          name: pop-fe-ps3
+          name: pop-fe-ui
           path: dist/pop-fe-ps3
