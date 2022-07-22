@@ -301,7 +301,7 @@
         <property name="width">200</property>
         <layout manager="grid">
           <property name="column">0</property>
-          <property name="columnspan">1</property>
+          <property name="columnspan">3</property>
           <property name="padx">10</property>
           <property name="pady">5</property>
           <property name="row">3</property>
@@ -309,7 +309,7 @@
         </layout>
         <child>
           <object class="ttk.Label" id="label15">
-            <property name="text" translatable="yes">Directory</property>
+            <property name="text" translatable="yes">Output Directory</property>
             <layout manager="grid">
               <property name="column">0</property>
               <property name="row">6</property>
@@ -325,17 +325,6 @@
             <layout manager="grid">
               <property name="column">1</property>
               <property name="row">6</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label17">
-            <property name="text" translatable="yes">Output Directory:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="columnspan">2</property>
-              <property name="row">5</property>
               <property name="sticky">w</property>
             </layout>
           </object>
@@ -379,6 +368,7 @@
         <property name="orient">horizontal</property>
         <layout manager="grid">
           <property name="column">0</property>
+          <property name="columnspan">2</property>
           <property name="row">2</property>
           <property name="sticky">ew</property>
         </layout>
