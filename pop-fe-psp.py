@@ -362,6 +362,6 @@ if __name__ == "__main__":
 
     root = tk.Tk()
     app = PopFePs3App(root)
-    root.title('pop-fe PS3')
+    root.title('pop-fe PSP')
     root.mainloop()
     
