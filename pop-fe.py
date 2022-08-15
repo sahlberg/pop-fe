@@ -89,12 +89,15 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     if idx < 0:
         raise Exception('Could not read system.cnf')
 
-    buf = buf[idx:idx+50]
+    buf = buf[idx + 6:idx + 50]
     idx = buf.find(';1')
-    buf = buf[idx-11:idx]
-    
+    buf = buf[:idx]
+    bad_chars = "\\_. "
+    for i in bad_chars:
+        buf = buf.replace(i, "")
+
     game_id = buf.upper()
-    return game_id[:4] + game_id[5:8] + game_id[9:11]
+    return game_id
 
 
 def fetch_cached_file(path):
@@ -114,11 +117,10 @@ def fetch_cached_binary(path):
     return ret.content
 
 def get_game_from_gamelist(game_id):
-    return fetch_cached_file(games[game_id]['url'])
+    return fetch_cached_file(games[game_id]['url']) if game_id in games else None
 
 def get_title_from_game(game_id):
-    return games[game_id]['title']
-
+    return games[game_id]['title'] if game_id in games else "Unknown"
 def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
         image = Image.open(create_path(cue, 'ICON0.PNG'))
@@ -137,7 +139,7 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
         return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
 def get_pic_from_game(pic, game_id, game, cue, filename):
-    if pic in games[game_id]:
+    if game_id in games and pic in games[game_id]:
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
             return Image.open(io.BytesIO(ret.content))
@@ -177,7 +179,7 @@ def get_snd0_from_link(link, subdir='./'):
 
 # caller adds the wav file to temp_files
 def get_snd0_from_game(game_id, subdir='./'):
-    if not have_pytube:
+    if not have_pytube or not game_id in games:
         return None
     if not 'snd0' in games[game_id]:
         return None
