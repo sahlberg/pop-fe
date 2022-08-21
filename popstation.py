@@ -2958,6 +2958,17 @@ class popstation(object):
                             break
                         print('Dumping ATRAC3 data as TRACK_%d_%02d.aea' % (_disc_id - 1, i + 2))
                         with open('TRACK_%d_%02d.aea' % (_disc_id - 1, i + 2), 'wb') as f:
+                            _b = bytearray(0x60)
+                            _b[0] = 0x45
+                            _b[1] = 0x41
+                            _b[2] = 0x33
+                            _b[3] = 0x01
+                            _b[5] = 0x60
+                            _b[6] = 0xff
+                            _b[7] = 0xff
+                            _b[34] = 0x20
+                            _b[35] = 0x30
+                            f.write(_b)
                             e.seek(offset + aea_offset + 0x100000)
                             f.write(e.read(aea_length))
                     e.seek(_o)
