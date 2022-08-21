@@ -2946,6 +2946,21 @@ class popstation(object):
                     if e.tell() & 0xf:
                         e.seek((e.tell() + 0xf) & 0xfffffff0)
                     _disc_id = _disc_id + 1
+
+                    # check for Audio Tracks
+                    _o = e.tell()
+                    for i in range(99):
+                        e.seek(offset + 0x0c00 + i * 16)
+                        _b = e.read(16)
+                        aea_offset = struct.unpack_from('<I', _b, 0)[0]
+                        aea_length = struct.unpack_from('<I', _b, 4)[0]
+                        if aea_offset == 0:
+                            break
+                        print('Dumping ATRAC3 data as TRACK_%d_%02d.aea' % (_disc_id - 1, i + 2))
+                        with open('TRACK_%d_%02d.aea' % (_disc_id - 1, i + 2), 'wb') as f:
+                            e.seek(offset + aea_offset + 0x100000)
+                            f.write(e.read(aea_length))
+                    e.seek(_o)
                     continue
                 if buf[:8] == b'STARTDAT':
                     # This is where startdat, the logo buffer and pgd sits
@@ -2967,7 +2982,7 @@ class popstation(object):
                             break
                         o.write(buf)
                 raise Exception('Unknown section in EBOOT.PBP', buf)
-                
+
         print('Done dumping', eboot) if self._verbose else None
 
 
