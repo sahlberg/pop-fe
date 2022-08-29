@@ -128,15 +128,17 @@ class PopFePs3App:
         self.pic1_tk = None
         self.preview_tk = None
         self.pkgdir = None
+        for idx in range(1,6):
+            self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.img']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
-            self.builder.get_variable('d%d_label' % (idx)).set('')
+            self.builder.get_variable('discid%d_variable' % (idx)).set('')
+            self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
         self.builder.get_object('disc1', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
-        self.builder.get_variable('gameid_variable').set('')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
 
@@ -215,10 +217,9 @@ class PopFePs3App:
         print('Scanning for Game ID') if verbose else None
         tmp = 'pop-fe-ps3-work/TMP'
         disc_id = get_disc_id(cue_file, tmp)
-        print('ID', disc_id)
         temp_files.append(tmp + '01.iso')
 
-        self.builder.get_variable(disc + '_label').set(disc_id)
+        self.builder.get_variable('disci%s_variable' % (disc)).set(disc_id)
 
         self.img_files.append(img_file)
         self.disc_ids.append(disc_id)
@@ -226,7 +227,7 @@ class PopFePs3App:
         self.cu2_files.append(cu2_file)
 
         if disc == 'd1':
-            self.builder.get_variable('gameid_variable').set(disc_id)
+            self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
             game = popfe.get_game_from_gamelist(disc_id)
             print('Fetching SND0')
@@ -264,15 +265,19 @@ class PopFePs3App:
             self.builder.get_object('create_button', self.master).config(state='normal')
             self.builder.get_object('youtube_button', self.master).config(state='normal')
         elif disc == 'd2':
+            self.builder.get_object('discid2', self.master).config(state='normal')
             self.builder.get_object('disc2', self.master).config(state='disabled')
             self.builder.get_object('disc3', self.master).config(state='normal')
         elif disc == 'd3':
+            self.builder.get_object('discid3', self.master).config(state='normal')
             self.builder.get_object('disc3', self.master).config(state='disabled')
             self.builder.get_object('disc4', self.master).config(state='normal')
         elif disc == 'd4':
+            self.builder.get_object('discid4', self.master).config(state='normal')
             self.builder.get_object('disc4', self.master).config(state='disabled')
             self.builder.get_object('disc5', self.master).config(state='normal')
         elif disc == 'd5':
+            self.builder.get_object('discid5', self.master).config(state='normal')
             self.builder.get_object('disc5', self.master).config(state='disabled')
         print('Finished processing disc') if verbose else None
         self.master.config(cursor='')
@@ -351,7 +356,14 @@ class PopFePs3App:
         if len(pkgdir):
             pkg = pkgdir + '/' + pkg
         print('Creating ' + pkg)
-        disc_id = self.builder.get_variable('gameid_variable').get()
+        disc_ids = []
+        for idx in range(len(self.cue_files)):
+            print(idx)
+            d = self.builder.get_variable('discid%d_variable' % (idx + 1)).get()
+            print(idx, d)
+            disc_ids.append(d)
+
+        disc_id = disc_ids[0]
         title = self.builder.get_variable('title_variable').get()
         print('DISC', disc_id)
         print('TITLE', title)
@@ -399,7 +411,7 @@ class PopFePs3App:
             snd0 = popfe.get_snd0_from_link(snd0)
             if snd0:
                 temp_files.append(snd0)
-        popfe.create_ps3(pkg, disc_id, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
+        popfe.create_ps3(pkg, disc_ids, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

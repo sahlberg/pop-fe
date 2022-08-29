@@ -2417,7 +2417,7 @@ class popstation(object):
         self._magic_word = []
         self._verbose = False
         self._complevel = 1
-        self._game_id = 'SLUS00000'
+        self._disc_ids = ['SLUS00000']
         self._game_title = 'TITLE'
         self._icon0 = None
         self._icon1 = None
@@ -2511,13 +2511,13 @@ class popstation(object):
         self._game_title = value
     
     @property
-    def game_id(self):
-        return self._game_id
+    def disc_ids(self):
+        return self._disc_ids
 
-    @game_id.setter
-    def game_id(self, value):
-        self._sfo['DISC_ID']['data'] = value
-        self._game_id = value
+    @disc_ids.setter
+    def disc_ids(self, value):
+        self._sfo['DISC_ID']['data'] = value[0]
+        self._disc_ids = value
     
     @property
     def eboot(self):
@@ -2687,7 +2687,8 @@ class popstation(object):
         
         # Block #2
         buf = bytearray(1024)
-        buf[0:11] = bytes('_' + self._game_id[0:4] + '_' + self._game_id[4:9], encoding='utf-8')
+        gid = self._disc_ids[disc_num]
+        buf[0:11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
         fh.write(buf)
 
         # Block #3
@@ -3118,7 +3119,8 @@ class popstation(object):
         struct.pack_into('<I', _pstitle, 0x10, x - _psar_offset)
         struct.pack_into('<I', _pstitle, 0x284, x - _psar_offset + 0x2d31)
         # Update game id
-        _pstitle[0x264:0x264 + 11] = bytes('_' + self._game_id[0:4] + '_' + self._game_id[4:9], encoding='utf-8')
+        gid = self._disc_ids[0]
+        _pstitle[0x264:0x264 + 11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
         # Update game name
         _t = bytes(self._game_title, encoding='utf-8')
         _pstitle[0x30c:0x30c + len(_t)] = _t
@@ -3186,8 +3188,8 @@ class popstation(object):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('--game-id',
-                        help='GameId for this iso.')
+    parser.add_argument('--disc-id',
+                        help='DiscId for this iso.')
     parser.add_argument('--title',
                         help='Title for this iso')
     parser.add_argument('command', nargs=1, 
@@ -3207,9 +3209,9 @@ if __name__ == "__main__":
     if args.command[0] == 'create_pbp':
         for i in args.image:
             p.add_img((i, None))
-        if args.game_id:
-            p.game_id = args.game_id
-            print('game id', p.game_id)
+        if args.disc_id:
+            p.disc_ids = [args.disc_id]
+            print('disc id', p.disc_ids)
         if args.title:
             p.game_title = args.title
             print('title', p.game_title)

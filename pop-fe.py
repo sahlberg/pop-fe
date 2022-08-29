@@ -503,12 +503,12 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None):
     print('Create PBP file for', game_title) if verbose else None
 
     p = popstation()
     p.verbose = verbose
-    p.game_id = game_id
+    p.disc_ids = disc_ids
     p.game_title = game_title
     if icon0:
         p.icon0 = icon0
@@ -537,7 +537,7 @@ def generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_fil
         True
 
     
-def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
 
     # Convert ICON0 to a file object
@@ -549,13 +549,13 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
 
     # Convert PIC1 to a file object
     pic1 = pic1.resize((480, 272), Image.BILINEAR).convert("RGBA")
-    pic1 = add_image_text(pic1, game_title, game_id)
+    pic1 = add_image_text(pic1, game_title, disc_ids[0])
     i = io.BytesIO()
     pic1.save(i, format='PNG')
     i.seek(0)
     pic1 = i.read()
     
-    f = dest + '/PSP/GAME/' + game_id
+    f = dest + '/PSP/GAME/' + disc_ids[0]
     print('Install EBOOT in', f) if verbose else None
     try:
         os.mkdir(f)
@@ -592,7 +592,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
                 snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data)
 
     idx = 0
     for mc in mem_cards:
@@ -611,7 +611,7 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         print('3, Reconnect the PSP/VITA')
         print('4, Run this command to finish installing the memory cards:')
         print('')
-        print('./pop-fe.py --psp-dir=%s --game_id=%s --psp-install-memory-card' % (dest, game_id))
+        print('./pop-fe.py --psp-dir=%s --disc_id=%s --psp-install-memory-card' % (dest, disc_ids[0]))
         print('###################################################')
         print('###################################################')
         try:
@@ -620,12 +620,12 @@ def create_psp(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
             True
 
 
-def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
     p.verbose = verbose
-    p.game_id = game_id
+    p.disc_ids = disc_ids
     p.game_title = game_title
     #p.icon0 = icon0
     #p.pic1 = pic1
@@ -646,7 +646,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
         p.add_img((f, toc))
 
     # create directory structure
-    f = subdir + game_id
+    f = subdir + disc_ids[0]
     print('GameID', f)
     try:
         os.mkdir(f)
@@ -687,7 +687,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
         'TITLE_ID': {
             'data_fmt': 516,
             'data_max_len': 16,
-            'data': game_id},
+            'data': disc_ids[0]},
         'VERSION': {
             'data_fmt': 516,
             'data_max_len': 8,
@@ -749,7 +749,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
             o.write(i.read())
             temp_files.append(f + '/PS3LOGO.DAT')
 
-    f = subdir + game_id + '/USRDIR'
+    f = subdir + disc_ids[0] + '/USRDIR'
     try:
         os.mkdir(f)
     except:
@@ -770,14 +770,14 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
         temp_files.append(f + '/CONFIG')
 
         
-    f = subdir + game_id + '/USRDIR/CONTENT'
+    f = subdir + disc_ids[0] + '/USRDIR/CONTENT'
     try:
         os.mkdir(f)
     except:
         True
 
-    p.eboot = subdir + game_id + '/USRDIR/CONTENT/EBOOT.PBP'
-    p.iso_bin_dat = subdir + game_id + '/USRDIR/ISO.BIN.DAT'
+    p.eboot = subdir + disc_ids[0] + '/USRDIR/CONTENT/EBOOT.PBP'
+    p.iso_bin_dat = subdir + disc_ids[0] + '/USRDIR/ISO.BIN.DAT'
     try:
         os.unlink(p.iso_bin_dat)
     except:
@@ -801,7 +801,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
     #
     # USRDIR/SAVEDATA
     #
-    f = subdir + game_id + '/USRDIR/SAVEDATA'
+    f = subdir + disc_ids[0] + '/USRDIR/SAVEDATA'
     try:
         os.mkdir(f)
     except:
@@ -840,7 +840,7 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
         'SAVEDATA_DIRECTORY': {
             'data_fmt': 516,
             'data_max_len': 4,
-            'data': game_id},
+            'data': disc_ids[0]},
         'SAVEDATA_FILE_LIST': {
             'data_fmt': 4,
             'data_max_len': 3168,
@@ -866,23 +866,23 @@ def create_ps3(dest, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_file
     # Create ISO.BIN.EDAT
     #
     print('Create ISO.BIN.EDAT')
-    pack(subdir + '%s/USRDIR/ISO.BIN.DAT' % game_id,
-         subdir + '%s/USRDIR/ISO.BIN.EDAT' % game_id,
-         'UP9000-%s_00-0000000000000001' % game_id)
-    temp_files.append(subdir + '%s/USRDIR/ISO.BIN.EDAT' % game_id)
+    pack(subdir + '%s/USRDIR/ISO.BIN.DAT' % disc_ids[0],
+         subdir + '%s/USRDIR/ISO.BIN.EDAT' % disc_ids[0],
+         'UP9000-%s_00-0000000000000001' % disc_ids[0])
+    temp_files.append(subdir + '%s/USRDIR/ISO.BIN.EDAT' % disc_ids[0])
 
     #
     # Create PS3 PKG
     #
     print('Create PKG')
     if os.name == 'posix':
-        subprocess.call(['python3','PSL1GHT/tools/ps3py/pkg.py','-c', 'UP9000-%s_00-0000000000000001' % game_id,subdir + game_id, dest])
+        subprocess.call(['python3','PSL1GHT/tools/ps3py/pkg.py','-c', 'UP9000-%s_00-0000000000000001' % disc_ids[0],subdir + disc_ids[0], dest])
     else:
-        subprocess.call(['pkg.exe','-c', 'UP9000-%s_00-0000000000000001' % game_id,subdir + game_id, dest])
-    temp_files.append(subdir + game_id + '/USRDIR/CONTENT')
-    temp_files.append(subdir + game_id + '/USRDIR/SAVEDATA')
-    temp_files.append(subdir + game_id + '/USRDIR')
-    temp_files.append(subdir + game_id)
+        subprocess.call(['pkg.exe','-c', 'UP9000-%s_00-0000000000000001' % disc_ids[0],subdir + disc_ids[0], dest])
+    temp_files.append(subdir + disc_ids[0] + '/USRDIR/CONTENT')
+    temp_files.append(subdir + disc_ids[0] + '/USRDIR/SAVEDATA')
+    temp_files.append(subdir + disc_ids[0] + '/USRDIR')
+    temp_files.append(subdir + disc_ids[0])
     print('Finished.', dest, 'created')
     for f in temp_files:
         print('Deleting temp file', f) if verbose else None
@@ -1022,7 +1022,7 @@ def create_blank_mc(mc):
             f.write(buf)
 
             
-def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files):
+def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files):
     print('Create PS2 VCD for', game_title) if verbose else None
     print('Install VCD in', dest + '/POPS')
 
@@ -1037,11 +1037,12 @@ def create_ps2(dest, game_id, game_title, icon0, pic1, cue_files, cu2_files, img
         
     p = popstation()
     p.verbose = verbose
-    p.game_id = game_id
+    p.disc_ids = disc_ids
     p.game_title = game_title
 
     discs_txt = None
     vmcdir_txt = None
+    game_id = disc_ids[0]
     if len(img_files) > 1:
         for i in range(4):
             pp = game_id[:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '.' + game_title
@@ -1588,11 +1589,11 @@ if __name__ == "__main__":
             temp_files.append(snd0)
            
     if args.psp_dir:
-        create_psp(args.psp_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
     if args.ps2_dir:
-        create_ps2(args.ps2_dir, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files)
+        create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, game_id, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:
@@ -1619,7 +1620,7 @@ if __name__ == "__main__":
             i.seek(0)
             pic1 = i.read()
         
-        generate_pbp(new_path, game_id, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
+        generate_pbp(new_path, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files)
     if args.retroarch_thumbnail_dir:
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 

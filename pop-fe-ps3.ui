@@ -9,156 +9,6 @@
       <property name="sticky">nsew</property>
     </layout>
     <child>
-      <object class="ttk.Frame" id="discs">
-        <property name="height">200</property>
-        <property name="width">200</property>
-        <layout manager="grid">
-          <property name="column">0</property>
-          <property name="padx">10</property>
-          <property name="pady">5</property>
-          <property name="row">0</property>
-          <property name="sticky">nsew</property>
-        </layout>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="disc1">
-            <property name="state">disabled</property>
-            <property name="textvariable">string:disc1_variable</property>
-            <property name="title" translatable="yes">d1</property>
-            <property name="type">file</property>
-            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">1</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="disc2">
-            <property name="state">disabled</property>
-            <property name="textvariable">string:disc2_variable</property>
-            <property name="title" translatable="yes">d2</property>
-            <property name="type">file</property>
-            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">2</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="disc3">
-            <property name="state">disabled</property>
-            <property name="textvariable">string:disc3_variable</property>
-            <property name="title" translatable="yes">d3</property>
-            <property name="type">file</property>
-            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">3</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="disc4">
-            <property name="state">disabled</property>
-            <property name="textvariable">string:disc4_variable</property>
-            <property name="title" translatable="yes">d4</property>
-            <property name="type">file</property>
-            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">4</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="disc5">
-            <property name="state">disabled</property>
-            <property name="textvariable">string:disc5_variable</property>
-            <property name="title" translatable="yes">d5</property>
-            <property name="type">file</property>
-            <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">5</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label1">
-            <property name="text" translatable="yes">Discs:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">0</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label3">
-            <property name="textvariable">string:d1_label</property>
-            <property name="width">10</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">1</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label4">
-            <property name="textvariable">string:d2_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">2</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label5">
-            <property name="textvariable">string:d3_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">3</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label6">
-            <property name="textvariable">string:d4_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">4</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label7">
-            <property name="textvariable">string:d5_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">5</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Separator" id="separator4">
-            <property name="orient">horizontal</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="pady">5</property>
-              <property name="row">6</property>
-              <property name="sticky">ew</property>
-            </layout>
-          </object>
-        </child>
-      </object>
-    </child>
-    <child>
       <object class="ttk.Frame" id="images">
         <property name="height">200</property>
         <property name="width">200</property>
@@ -221,92 +71,6 @@
           <property name="row">4</property>
           <property name="sticky">ew</property>
         </layout>
-      </object>
-    </child>
-    <child>
-      <object class="ttk.Frame" id="nameofgame">
-        <property name="height">200</property>
-        <property name="width">200</property>
-        <layout manager="grid">
-          <property name="column">0</property>
-          <property name="columnspan">1</property>
-          <property name="padx">10</property>
-          <property name="pady">5</property>
-          <property name="row">1</property>
-          <property name="sticky">nsew</property>
-        </layout>
-        <child>
-          <object class="ttk.Label" id="label8">
-            <property name="text" translatable="yes">Game ID:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">0</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Entry" id="gameid">
-            <property name="textvariable">string:gameid_variable</property>
-            <property name="width">10</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">0</property>
-              <property name="sticky">ew</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label9">
-            <property name="text" translatable="yes">Title:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">1</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Entry" id="entry2">
-            <property name="textvariable">string:title_variable</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">1</property>
-              <property name="sticky">ew</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label13">
-            <property name="text" translatable="yes">SND0:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">2</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="pygubu.builder.widgets.pathchooserinput" id="snd0">
-            <property name="textvariable">string:snd0_variable</property>
-            <property name="type">file</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">2</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Button" id="youtube_button">
-            <property name="command" type="command" cbtype="simple">on_youtube_audio</property>
-            <property name="text" translatable="yes">Try to find Audio on YouTube</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">3</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
       </object>
     </child>
     <child>
@@ -413,6 +177,7 @@
         <property name="orient">horizontal</property>
         <layout manager="grid">
           <property name="column">0</property>
+          <property name="columnspan">3</property>
           <property name="row">2</property>
           <property name="sticky">ew</property>
         </layout>
@@ -446,6 +211,210 @@
               <property name="pady">10</property>
               <property name="row">1</property>
             </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="discs">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack" />
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="disc1">
+                <property name="state">disabled</property>
+                <property name="textvariable">string:disc1_variable</property>
+                <property name="title" translatable="yes">d1</property>
+                <property name="type">file</property>
+                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="disc2">
+                <property name="state">disabled</property>
+                <property name="textvariable">string:disc2_variable</property>
+                <property name="title" translatable="yes">d2</property>
+                <property name="type">file</property>
+                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="disc3">
+                <property name="state">disabled</property>
+                <property name="textvariable">string:disc3_variable</property>
+                <property name="title" translatable="yes">d3</property>
+                <property name="type">file</property>
+                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="disc4">
+                <property name="state">disabled</property>
+                <property name="textvariable">string:disc4_variable</property>
+                <property name="title" translatable="yes">d4</property>
+                <property name="type">file</property>
+                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="disc5">
+                <property name="state">disabled</property>
+                <property name="textvariable">string:disc5_variable</property>
+                <property name="title" translatable="yes">d5</property>
+                <property name="type">file</property>
+                <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">5</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="label1">
+                <property name="text" translatable="yes">Discs:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="discid1">
+                <property name="textvariable">string:discid1_variable</property>
+                <property name="width">10</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="discid2">
+                <property name="textvariable">string:discid2_variable</property>
+                <property name="width">10</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="discid3">
+                <property name="textvariable">string:discid3_variable</property>
+                <property name="width">10</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="discid4">
+                <property name="textvariable">string:discid4_variable</property>
+                <property name="width">10</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="discid5">
+                <property name="textvariable">string:discid5_variable</property>
+                <property name="width">10</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">5</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="nameofgame">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="side">left</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="label9">
+                <property name="text" translatable="yes">Title:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entry2">
+                <property name="textvariable">string:title_variable</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">1</property>
+                  <property name="sticky">ew</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="label13">
+                <property name="text" translatable="yes">SND0:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="snd0">
+                <property name="textvariable">string:snd0_variable</property>
+                <property name="type">file</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="youtube_button">
+                <property name="command" type="command" cbtype="simple">on_youtube_audio</property>
+                <property name="text" translatable="yes">Try to find Audio on YouTube</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">3</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
           </object>
         </child>
       </object>

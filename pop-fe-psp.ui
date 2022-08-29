@@ -95,64 +95,64 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Label" id="label3">
-            <property name="textvariable">string:d1_label</property>
-            <property name="width">10</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">1</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label4">
-            <property name="textvariable">string:d2_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">2</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label5">
-            <property name="textvariable">string:d3_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">3</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label6">
-            <property name="textvariable">string:d4_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">4</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Label" id="label7">
-            <property name="textvariable">string:d5_label</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">5</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
           <object class="ttk.Separator" id="separator4">
             <property name="orient">horizontal</property>
             <layout manager="grid">
               <property name="column">0</property>
+              <property name="columnspan">2</property>
               <property name="pady">5</property>
               <property name="row">6</property>
               <property name="sticky">ew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="discid1">
+            <property name="textvariable">string:discid1_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="discid2">
+            <property name="textvariable">string:discid2_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="discid3">
+            <property name="textvariable">string:discid3_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="discid4">
+            <property name="textvariable">string:discid4_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="discid5">
+            <property name="textvariable">string:discid5_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">5</property>
             </layout>
           </object>
         </child>
@@ -221,27 +221,6 @@
           <property name="row">1</property>
           <property name="sticky">nsew</property>
         </layout>
-        <child>
-          <object class="ttk.Label" id="label8">
-            <property name="text" translatable="yes">Game ID:</property>
-            <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">0</property>
-              <property name="sticky">w</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Entry" id="gameid">
-            <property name="textvariable">string:gameid_variable</property>
-            <property name="width">10</property>
-            <layout manager="grid">
-              <property name="column">1</property>
-              <property name="row">0</property>
-              <property name="sticky">ew</property>
-            </layout>
-          </object>
-        </child>
         <child>
           <object class="ttk.Label" id="label9">
             <property name="text" translatable="yes">Title:</property>
