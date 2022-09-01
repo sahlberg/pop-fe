@@ -3004,11 +3004,13 @@ class popstation(object):
             _ibd.seek(len(pstitle))
             for i in range(len(psiso_offsets)):
                 fh.seek(psiso_offsets[i])
-                _ibd.write(fh.read(0x100000))
+                _b = bytearray(fh.read(0x100000))
+                _b[12:16] = b'\x00\x00\x00\x00'
+                _ibd.write(_b)
 
                 # check this with Grandia (2 disks)
                 _b = bytearray(4)
-                struct.pack_into('<I', _b, 0, 0x100000 + 0x8000)
+                struct.pack_into('<I', _b, 0, psiso_offsets[i] + 0x100000 - 0x010000)
                 _ibd.seek(i * 0x100000 + 0xffc)
                 _ibd.write(_b)
 
