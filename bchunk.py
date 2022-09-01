@@ -79,9 +79,10 @@ class bchunk(object):
                 # FILE
                 if re.search('^\s*FILE', line):
                     f = self.get_file_name(line)
-                    s = cue.split('/')
-                    if len(s) > 1:
-                        f = '/'.join(s[:-1]) + '/' + f
+                    if f[0] != '/':
+                        s = cue.split('/')
+                        if len(s) > 1:
+                            f = '/'.join(s[:-1]) + '/' + f
                     if self._file:
                         if len(tracks) >= 1:
                             tracks[-1]['stop'] = os.stat(tracks[-1]['bin']).st_size

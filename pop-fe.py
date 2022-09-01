@@ -378,9 +378,10 @@ def get_imgs_from_bin(cue):
             # FILE
             if re.search('^\s*FILE', line):
                 f = get_file_name(line)
-                s = cue.split('/')
-                if len(s) > 1:
-                    f = '/'.join(s[:-1]) + '/' + f
+                if f[0] != '/':
+                    s = cue.split('/')
+                    if len(s) > 1:
+                        f = '/'.join(s[:-1]) + '/' + f
                 img_files.append(f)
     return img_files
 
@@ -1105,17 +1106,17 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     image.save(f, format='JPEG', quality=100, subsampling=0)
 
 
-def get_disc_ids(cue_files):
+def get_disc_ids(cue_files, subdir='./'):
     disc_ids = []
     for idx in range(len(cue_files)):
         print('Convert CUE to a normal style ISO') if verbose else None
         bc = bchunk()
         bc.verbose = args.v
         bc.open(cue_files[idx])
-        bc.writetrack(0, 'ISO%02x' % idx)
-        temp_files.append('ISO%02x01.iso' % idx)
+        bc.writetrack(0, subdir + 'ISO%02x' % idx)
+        temp_files.append(subdir + 'ISO%02x01.iso' % idx)
 
-        gid = get_gameid_from_iso('ISO%02x01.iso' % idx)
+        gid = get_gameid_from_iso(subdir + 'ISO%02x01.iso' % idx)
         disc_ids.append(gid)
 
     return disc_ids
@@ -1340,6 +1341,12 @@ if __name__ == "__main__":
         print('You must specify at least one file to fetch images for')
         exit(1)
 
+    subdir = './pop-fe-work/'
+    try:
+        os.stat(subdir)
+    except:
+        os.mkdir(subdir)
+        
     try:
         if os.name == 'posix':
             os.stat('./cue2cu2.py')
@@ -1387,7 +1394,7 @@ if __name__ == "__main__":
 
         tmpcue = None
         if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
-            tmpcue = 'TMP%d.cue' % (0 if not idx else idx[0])
+            tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
             print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
             temp_files.append(tmpcue)
             with open(tmpcue, "w") as f:
@@ -1426,7 +1433,7 @@ if __name__ == "__main__":
             os.stat(cu2_file).st_size
             print('Using existing CU2 file: %s' % cu2_file) if verbose else None
         except:
-            cu2_file = 'TMP%d.cu2' % (0 if not idx else idx[0])
+            cu2_file = subdir + 'TMP%d.cu2' % (0 if not idx else idx[0])
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
             if os.name == 'posix':
                 subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
@@ -1446,7 +1453,7 @@ if __name__ == "__main__":
             for i in range(1, len(bc.cue)):
                 if not bc.cue[i]['audio']:
                     continue
-                f = 'TRACK_%d_' % (0 if not idx else idx[0])
+                f = subdir + 'TRACK_%d_' % (0 if not idx else idx[0])
                 bc.writetrack(i, f)
                 wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
                 temp_files.append(wav_file)
@@ -1486,7 +1493,7 @@ if __name__ == "__main__":
         # disk and read system.cnf
         # We only do this for the first disk of a multi-disk set.
         print('Convert CUE to a normal style ISO') if verbose else None
-        disc_ids = get_disc_ids(cue_files)
+        disc_ids = get_disc_ids(cue_files, subdir=subdir)
         game_id = disc_ids[0]
     if not disc_ids:
         disc_ids = [game_id]
@@ -1516,8 +1523,8 @@ if __name__ == "__main__":
 
     # ICON0.PNG
     print('Fetch ICON0 for', game_title) if verbose else None
-    temp_files.append('ICON0.jpg')
-    icon0 = get_icon0_from_game(game_id, game, args.files[0], 'ICON0.jpg')
+    temp_files.append(subdir + 'ICON0.jpg')
+    icon0 = get_icon0_from_game(game_id, game, args.files[0], subdir + 'ICON0.jpg')
 
     # PIC0.PNG
     print('Fetch PIC0 for', game_title) if verbose else None
@@ -1576,7 +1583,7 @@ if __name__ == "__main__":
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
     if not snd0:
-        snd0 = get_snd0_from_game(game_id)
+        snd0 = get_snd0_from_game(game_id, subdir=subdir)
         if snd0:
             temp_files.append(snd0)
     if snd0 and snd0 == 'auto':
@@ -1593,7 +1600,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:
