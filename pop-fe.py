@@ -621,6 +621,34 @@ def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
             True
 
 
+def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files):
+    print('Create PS Classics/AutoBleem EBOOT.PBP for', game_title) if verbose else None
+
+    # Convert ICON0 to a file object
+    image = icon0.resize((80,80), Image.BILINEAR)
+    i = io.BytesIO()
+    image.save(i, format='PNG')
+    i.seek(0)
+    icon0 = i.read()
+
+    # Convert PIC1 to a file object
+    pic1 = pic1.resize((480, 272), Image.BILINEAR).convert("RGBA")
+    pic1 = add_image_text(pic1, game_title, disc_ids[0])
+    i = io.BytesIO()
+    pic1.save(i, format='PNG')
+    i.seek(0)
+    pic1 = i.read()
+    
+    dest_file = dest + '/Games/' + game_title + '.PBP'
+    print('Install EBOOT as', dest_file) if verbose else None
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, [])
+
+    try:
+        os.sync()
+    except:
+        True
+
+            
 def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
@@ -963,12 +991,13 @@ def check_memory_card(f):
 
 def find_psp_mount():
     candidates = ['/d', '/e', '/f', '/g']
-    with open('/proc/self/mounts', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            strings = line.split(' ')
-            if strings[1][:11] == '/run/media/' or strings[1][:7] == '/media/':
-                candidates.append(strings[1])
+    if os.name == 'posix':
+        with open('/proc/self/mounts', 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                strings = line.split(' ')
+                if strings[1][:11] == '/run/media/' or strings[1][:7] == '/media/':
+                    candidates.append(strings[1])
     for c in candidates:
         try:
             os.stat(c + '/PSP/GAME')
@@ -981,6 +1010,24 @@ def find_psp_mount():
         except:
             True
     raise Exception('Could not find any PSP or VITA memory cards')
+
+
+def find_psc_mount():
+    candidates = ['/d', '/e', '/f', '/g']
+    if os.name == 'posix':
+        with open('/proc/self/mounts', 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                strings = line.split(' ')
+                if strings[1][:11] == '/run/media/' or strings[1][:7] == '/media/':
+                    candidates.append(strings[1])
+    for c in candidates:
+        try:
+            os.stat(c + '/Games')
+            return c
+        except:
+            True
+    raise Exception('Could not find any PS Classic/AutoBleem devices')
 
 
 def create_blank_mc(mc):
@@ -1307,6 +1354,8 @@ if __name__ == "__main__":
                     help='Where the PS2 USB-stick is mounted')
     parser.add_argument('--ps3-pkg',
                     help='Name of the PS3 pckage to create')
+    parser.add_argument('--psc-dir',
+                    help='Where the PS Classic/AutoBleem memory card is mounted')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -1336,6 +1385,10 @@ if __name__ == "__main__":
         
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
+
+    if args.psc_dir and args.psc_dir.upper() == 'AUTO':
+        args.psc_dir = find_psc_mount()
+    print('MOUNT', args.psc_dir)
 
     if not args.files and not args.psp_install_memory_card:
         print('You must specify at least one file to fetch images for')
@@ -1601,6 +1654,8 @@ if __name__ == "__main__":
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
         create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir)
+    if args.psc_dir:
+        create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.fetch_metadata:
         create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:

@@ -5,6 +5,7 @@ them on various platforms, including:
 * PS2
 * PS3
 * Retroarch
+* PS Classic
 
 This is all LGPLv2.1
 
@@ -106,6 +107,12 @@ Command line arguments are:
 --ps3-pkg             : This creates a PS3 PKG
 			This requires CU2 files so make sure this script is
 			installed.
+--psc-dir             : This is the directory that holds the USB stick
+		        with AutoBleem to install to. The game will be installed
+			as Games/<title>.PBP. The PSC emulator can only handle
+			single disc PBPs :-(
+			Specify --psc-dir=auto and it will scan all connected
+			devices to try to find the one with AutoBleem.
 --ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages.
 		        This should normally not be needed as we automatically
 			inject the magic word to the emulator running on the
