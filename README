@@ -308,6 +308,13 @@ PS3 Support
 Pop-fe can convert games into a PS3 PKG that can be installed on PS3 systems
 with CFW or HEN.
 
+PSClassic support
+=================
+Pop-fe can convert games and install them for use on AutoBleem 1.0 memory
+sticks.
+Multidisc support only works for when running the PBP from retroarch as the
+builtin PCSX emulator does not see to support multidisc PBPs.
+
 RetroArch Support
 =================
 The PSX emulator cores in retroarch support a variety of formats, with m3u and
