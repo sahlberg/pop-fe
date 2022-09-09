@@ -67,23 +67,25 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
-    if have_pycdlib:
-        iso = pycdlib.PyCdlib()
-        iso.open(path)
-        extracted = io.BytesIO()
-        iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
-        extracted.seek(0)
-        buf = str(extracted.read(1024))
-        iso.close()
-    if have_iso9660:
-        iso = iso9660.ISO9660.IFS(source=path)
+    try:
+        if have_pycdlib:
+            iso = pycdlib.PyCdlib()
+            iso.open(path)
+            extracted = io.BytesIO()
+            iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
+            extracted.seek(0)
+            buf = str(extracted.read(1024))
+            iso.close()
+        if have_iso9660:
+            iso = iso9660.ISO9660.IFS(source=path)
+            st = iso.stat('system.cnf', True)
+            if st is None:
+                raise Exception('Could not open system.cnf')
 
-        st = iso.stat('system.cnf', True)
-        if st is None:
-            raise Exception('Could not open system.cnf')
-
-        buf = iso.seek_read(st['LSN'])[1][:128]
-        iso.close()
+            buf = iso.seek_read(st['LSN'])[1][:128]
+            iso.close()
+    except:
+        return 'UNKN00000'
 
     idx = buf.find('cdrom:')
     if idx < 0:
@@ -137,6 +139,9 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
     except:
         True
 
+    if game_id[:4] == 'UNKN':
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
+    
     try:
         url = 'http://www.hwc.nat.cu/psx/' + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
         print('Try URL', url)
@@ -158,6 +163,9 @@ def get_pic_from_game(pic, game_id, game, cue, filename):
     except:
         True
 
+    if game_id[:4] == 'UNKN':
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
+    
     # Screenshots might be from a different release of the game
     # so we can not use game_id
     filter = 'images/screens/./.*/.*/ss..jpg'
@@ -1395,7 +1403,6 @@ if __name__ == "__main__":
 
     if args.psc_dir and args.psc_dir.upper() == 'AUTO':
         args.psc_dir = find_psc_mount()
-    print('MOUNT', args.psc_dir)
 
     if not args.files and not args.psp_install_memory_card:
         print('You must specify at least one file to fetch images for')
