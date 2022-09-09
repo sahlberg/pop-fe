@@ -90,8 +90,15 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         raise Exception('Could not read system.cnf')
 
     buf = buf[idx + 6:idx + 50]
+    idx = buf.find('\r')
+    if idx > 0:
+        buf = buf[:idx]
+    idx = buf.find('\n')
+    if idx > 0:
+        buf = buf[:idx]
     idx = buf.find(';1')
-    buf = buf[:idx]
+    if idx > 0:
+        buf = buf[:idx]
     bad_chars = "\\_. "
     for i in bad_chars:
         buf = buf.replace(i, "")
@@ -121,6 +128,7 @@ def get_game_from_gamelist(game_id):
 
 def get_title_from_game(game_id):
     return games[game_id]['title'] if game_id in games else "Unknown"
+
 def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
         image = Image.open(create_path(cue, 'ICON0.PNG'))
@@ -1162,7 +1170,6 @@ def get_disc_ids(cue_files, subdir='./'):
         bc.open(cue_files[idx])
         bc.writetrack(0, subdir + 'ISO%02x' % idx)
         temp_files.append(subdir + 'ISO%02x01.iso' % idx)
-
         gid = get_gameid_from_iso(subdir + 'ISO%02x01.iso' % idx)
         disc_ids.append(gid)
 
