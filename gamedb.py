@@ -4384,11 +4384,13 @@ games = {
         'url': "games/U/G/SCUS-94457.html",
     	'id': 'SCUS94457',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SCUS94465': {
         'url': "games/U/G/SCUS-94457.html",
     	'id': 'SCUS94465',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLUS00323': {
         'url': "games/U/G/SLUS-00323.html",
@@ -12008,31 +12010,37 @@ games = {
         'url': "games/P/G/SLES-02397.html",
     	'id': 'SLES02397',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES12397': {
         'url': "games/P/G/SLES-02397.html",
     	'id': 'SLES12397',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES02398': {
         'url': "games/P/G/SLES-02398.html",
     	'id': 'SLES02398',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES12398': {
         'url': "games/P/G/SLES-02398.html",
     	'id': 'SLES12398',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES02399': {
         'url': "games/P/G/SLES-02399.html",
     	'id': 'SLES02399',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES12399': {
         'url': "games/P/G/SLES-02399.html",
     	'id': 'SLES12399',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLES00381': {
         'url': "games/P/G/SLES-00381.html",
@@ -31858,21 +31866,25 @@ games = {
         'url': "games/J/G/SLPS-02124.html",
     	'id': 'SLPS02124',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLPS02125': {
         'url': "games/J/G/SLPS-02124.html",
     	'id': 'SLPS02125',
 	'title': "GRANDIA",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLPS91205': {
         'url': "games/J/G/SLPS-91205.html",
     	'id': 'SLPS91205',
 	'title': "GRANDIA [PLAYSTATION THE BEST]",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLPS91206': {
         'url': "games/J/G/SLPS-91205.html",
     	'id': 'SLPS91206',
 	'title': "GRANDIA [PLAYSTATION THE BEST]",
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
     },
     'SLPS01624': {
         'url': "games/J/G/SLPS-01624.html",

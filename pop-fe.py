@@ -180,6 +180,18 @@ def get_pic0_from_game(game_id, game, cue, filename):
 def get_pic1_from_game(game_id, game, cue, filename):
     return get_pic_from_game('pic1', game_id, game, cue, filename)
 
+def get_pic1_from_bc(game_id, game, cue, filename):
+    if game_id[:4] == 'UNKN':
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
+    
+    path = games[game_id]['url'][:-5].replace('games', 'images/hires')
+    path = path + '/' + path.split('/')[-1] + '-B-ALL.jpg'
+    ret = requests.get(PSX_SITE + path, stream=True)
+    if ret.status_code != 200:
+        raise Exception('Failed to fetch file ', PSX_SITE + path)
+
+    return Image.open(io.BytesIO(ret.content))
+
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
     if not have_pytube:
@@ -770,7 +782,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00, loop=True)
 
     image = None
-    if icon0.size[0] == icon0.size[1]:
+    if icon0.size[0] > icon0.size[1] - 10 and icon0.size[0] < icon0.size[1] + 10:
         img = icon0.resize((176, 176), Image.BILINEAR)
         image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
         image.putalpha(0)
@@ -779,10 +791,11 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image = icon0.resize((320, 176), Image.BILINEAR)
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
-    
-    image = pic0.resize((1000, 560), Image.NEAREST)
-    image.save(f + '/PIC0.PNG', format='PNG')
-    temp_files.append(f + '/PIC0.PNG')
+
+    if pic0:
+        image = pic0.resize((1000, 560), Image.NEAREST)
+        image.save(f + '/PIC0.PNG', format='PNG')
+        temp_files.append(f + '/PIC0.PNG')
     
     image = pic1.resize((1920, 1080), Image.NEAREST)
     image.save(f + '/PIC1.PNG', format='PNG')

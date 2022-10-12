@@ -21,43 +21,89 @@
           <property name="sticky">nsew</property>
         </layout>
         <child>
-          <object class="tk.Canvas" id="icon0_canvas">
-            <property name="background">white</property>
-            <property name="borderwidth">1</property>
-            <property name="height">80</property>
-            <property name="width">80</property>
-            <bind sequence="&lt;ButtonPress&gt;" handler="on_icon0_clicked" add="" />
+          <object class="ttk.Frame" id="icon0">
+            <property name="height">200</property>
+            <property name="width">200</property>
             <layout manager="grid">
               <property name="column">0</property>
               <property name="row">0</property>
             </layout>
+            <child>
+              <object class="ttk.Label" id="label3">
+                <property name="text" translatable="yes">ICON0</property>
+                <layout manager="pack" />
+              </object>
+            </child>
+            <child>
+              <object class="tk.Canvas" id="icon0_canvas">
+                <property name="background">white</property>
+                <property name="borderwidth">1</property>
+                <property name="height">80</property>
+                <property name="width">80</property>
+                <bind sequence="&lt;ButtonPress&gt;" handler="on_icon0_clicked" add="" />
+                <layout manager="pack" />
+              </object>
+            </child>
           </object>
         </child>
         <child>
-          <object class="tk.Canvas" id="pic0_canvas">
-            <property name="background">white</property>
-            <property name="borderwidth">1</property>
-            <property name="height">80</property>
-            <property name="width">128</property>
-            <bind sequence="&lt;ButtonPress&gt;" handler="on_pic0_clicked" add="" />
+          <object class="ttk.Frame" id="pic0">
+            <property name="height">200</property>
+            <property name="width">200</property>
             <layout manager="grid">
               <property name="column">0</property>
-              <property name="pady">10</property>
               <property name="row">1</property>
             </layout>
+            <child>
+              <object class="ttk.Label" id="label4">
+                <property name="text" translatable="yes">PIC0</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Canvas" id="pic0_canvas">
+                <property name="background">white</property>
+                <property name="borderwidth">1</property>
+                <property name="height">80</property>
+                <property name="width">128</property>
+                <bind sequence="&lt;ButtonPress&gt;" handler="on_pic0_clicked" add="" />
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
           </object>
         </child>
         <child>
-          <object class="tk.Canvas" id="pic1_canvas">
-            <property name="background">white</property>
-            <property name="borderwidth">1</property>
-            <property name="height">80</property>
-            <property name="width">128</property>
-            <bind sequence="&lt;ButtonPress&gt;" handler="on_pic1_clicked" add="" />
+          <object class="ttk.Frame" id="pic1">
+            <property name="height">200</property>
+            <property name="width">200</property>
             <layout manager="grid">
               <property name="column">0</property>
               <property name="row">2</property>
             </layout>
+            <child>
+              <object class="ttk.Label" id="pic1_or_back">
+                <property name="text" translatable="yes">PIC1</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Canvas" id="pic1_canvas">
+                <property name="background">white</property>
+                <property name="borderwidth">1</property>
+                <property name="height">80</property>
+                <property name="width">128</property>
+                <bind sequence="&lt;ButtonPress&gt;" handler="on_pic1_clicked" add="" />
+                <layout manager="pack" />
+              </object>
+            </child>
           </object>
         </child>
       </object>
@@ -415,6 +461,45 @@
                 </layout>
               </object>
             </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="options">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="row">3</property>
+          <property name="sticky">nsew</property>
+        </layout>
+        <child>
+          <object class="ttk.Checkbutton" id="disable_pic0">
+            <property name="command" type="command" cbtype="simple">on_pic0_disabled</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Disable PIC0</property>
+            <property name="variable">string:pic0_disabled_variable</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="pic1_as_background">
+            <property name="command" type="command" cbtype="simple">on_pic1_from_bc</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Use back cover as PIC1</property>
+            <property name="variable">string:bc_for_pic1_variable</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
           </object>
         </child>
       </object>

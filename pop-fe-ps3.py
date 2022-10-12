@@ -61,6 +61,9 @@ class PopFePs3App:
         self.pic0_tk = None
         self.pic1 = None
         self.pic1_tk = None
+        self.back = None
+        self.pic0_disabled = 'off'
+        self.pic1_bc = 'off'
         self.preview_tk = None
         self.pkgdir = None
         
@@ -73,7 +76,9 @@ class PopFePs3App:
         callbacks = {
             'on_icon0_clicked': self.on_icon0_clicked,
             'on_pic0_clicked': self.on_pic0_clicked,
+            'on_pic0_disabled': self.on_pic0_disabled,
             'on_pic1_clicked': self.on_pic1_clicked,
+            'on_pic1_from_bc': self.on_pic1_from_bc,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
             'on_youtube_audio': self.on_youtube_audio,
@@ -126,6 +131,9 @@ class PopFePs3App:
         self.pic0_tk = None
         self.pic1 = None
         self.pic1_tk = None
+        self.back = None
+        self.pic0_disabled = 'off'
+        self.pic1_bc = 'off'
         self.preview_tk = None
         self.pkgdir = None
         for idx in range(1,6):
@@ -135,20 +143,25 @@ class PopFePs3App:
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('discid%d_variable' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
-            self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
         self.builder.get_object('disc1', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
+        self.builder.get_object('disable_pic0', self.master).config(state='disabled')
+        self.builder.get_object('pic1_as_background', self.master).config(state='disabled')
+        self.builder.get_variable('snd0_variable').set('')
 
 
     def update_preview(self):
         if not self.pic1:
             return
         c = self.builder.get_object('preview_canvas', self.master)
-        p1 = self.pic1.resize((382,216), Image.BILINEAR)
-        if self.pic0:
+        if self.pic1_bc == 'off':
+            p1 = self.pic1.resize((382,216), Image.BILINEAR)
+        else:
+            p1 = self.back.resize((382,216), Image.BILINEAR)
+        if self.pic0 and self.pic0_disabled == 'off':
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.BILINEAR)
             Image.Image.paste(p1, p0, box=(148,79))
         if self.icon0:
@@ -264,6 +277,8 @@ class PopFePs3App:
             self.builder.get_object('disc2', self.master).config(state='normal')
             self.builder.get_object('create_button', self.master).config(state='normal')
             self.builder.get_object('youtube_button', self.master).config(state='normal')
+            self.builder.get_object('disable_pic0', self.master).config(state='normal')
+            self.builder.get_object('pic1_as_background', self.master).config(state='normal')
         elif disc == 'd2':
             self.builder.get_object('discid2', self.master).config(state='normal')
             self.builder.get_object('disc2', self.master).config(state='disabled')
@@ -332,6 +347,30 @@ class PopFePs3App:
         self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
+        self.update_preview()
+
+    def on_pic0_disabled(self):
+        self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
+        self.update_preview()
+
+    def on_pic1_from_bc(self):
+        self.pic1_bc = self.builder.get_variable('bc_for_pic1_variable').get()
+        if not self.back and self.disc_ids:
+            disc_id = self.disc_ids[0]
+            game = popfe.get_game_from_gamelist(disc_id)
+            self.master.config(cursor='watch')
+            self.master.update()
+            self.back = popfe.get_pic1_from_bc(disc_id, game, self.cue_files[0], 'BACK.PNG')
+            self.master.config(cursor='')
+        self.builder.get_object('pic1_or_back', self.master).config(text='PIC1' if self.pic1_bc == 'off' else 'BACK')
+        if self.pic1_bc == 'off':
+            self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
+        else:
+            self.back.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
+        self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
+        c = self.builder.get_object('pic1_canvas', self.master)
+        c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
+        
         self.update_preview()
 
     def on_dir_changed(self, event):
@@ -411,7 +450,12 @@ class PopFePs3App:
             snd0 = popfe.get_snd0_from_link(snd0)
             if snd0:
                 temp_files.append(snd0)
-        popfe.create_ps3(pkg, disc_ids, title, self.icon0, self.pic0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, magic_word, resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
+        popfe.create_ps3(pkg, disc_ids, title, self.icon0,
+                         self.pic0 if self.pic0_disabled == 'off' else None,
+                         self.pic1 if self.pic1_bc== 'off' else self.back,
+                         self.cue_files, self.cu2_files,
+                         self.img_files, [], aea_files, magic_word,
+                         resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
