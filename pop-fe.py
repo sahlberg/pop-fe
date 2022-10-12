@@ -192,6 +192,18 @@ def get_pic1_from_bc(game_id, game, cue, filename):
 
     return Image.open(io.BytesIO(ret.content))
 
+def get_icon0_from_disc(game_id, game, cue, filename):
+    if game_id[:4] == 'UNKN':
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
+    
+    path = games[game_id]['url'][:-5].replace('games', 'images/hires')
+    path = path + '/' + path.split('/')[-1] + '-D-ALL.jpg'
+    ret = requests.get(PSX_SITE + path, stream=True)
+    if ret.status_code != 200:
+        raise Exception('Failed to fetch file ', PSX_SITE + path)
+
+    return Image.open(io.BytesIO(ret.content))
+
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
     if not have_pytube:
