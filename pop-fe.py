@@ -204,6 +204,39 @@ def get_icon0_from_disc(game_id, game, cue, filename):
 
     return Image.open(io.BytesIO(ret.content))
 
+def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
+    print('Creating SND0.AT3')
+    tmp_wav = subdir + 'SND0.WAV'
+    tmp_snd0 = subdir + 'SND0.EA3'
+    temp_files.append(tmp_wav)
+    temp_files.append(tmp_snd0)
+    s = parse_riff(snd0)
+    if not s:
+        print('Not a WAVE file')
+        return None
+
+    loop = True
+    while loop:
+        print('Creating temporary WAV file clamped to %d second duration %s' % (duration, tmp_wav))
+        copy_riff(snd0, tmp_wav, max_duration_ms=duration * 1000)
+        s = parse_riff(tmp_wav)
+        print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
+        try:
+            if os.name == 'posix':
+                subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
+            else:
+                subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
+        except:
+            print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        print('Converting EA3 to AT3 file') if verbose else None
+        temp_files.append(at3)
+        create_riff(tmp_snd0, at3, number_of_samples=int(len(s['data']['data'])/4), max_data_size=0, loop=True)
+        if os.stat(at3).st_size < max_size:
+            break
+        # Too big. Clamp duration and try again
+        duration = int(duration * 0.95 / (os.stat(at3).st_size / max_size))
+
+
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
     if not have_pytube:
@@ -608,32 +641,9 @@ def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 
     snd0_data = None
     if snd0:
-        print('Creating SND0.AT3')
-        tmp_wav = subdir + 'SND0.WAV'
-        tmp_snd0 = subdir + 'SND0.EA3'
-        temp_files.append(tmp_wav)
-        temp_files.append(tmp_snd0)
-        s = parse_riff(snd0)
-        if not s:
-            print('Not a WAVE file')
-        else:
-            print('Creating temporary WAV file clamped to 59 second duration', tmp_wav)
-            copy_riff(snd0, tmp_wav, max_duration_ms=59000)
-            s = parse_riff(tmp_wav)
-            print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
-            try:
-                if os.name == 'posix':
-                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
-                else:
-                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
-            except:
-                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-            print('Converting EA3 to AT3 file') if verbose else None
-            temp_files.append(subdir + 'SND0.AT3')
-            create_riff(tmp_snd0, subdir + 'SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=450000, loop=True)
-
-            with open(subdir + 'SND0.AT3', 'rb') as i:
-                snd0_data = i.read()
+        convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000)
+        with open(subdir + 'SND0.AT3', 'rb') as i:
+            snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
     generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data)
@@ -769,29 +779,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
     if snd0:
-        print('Creating SND0.AT3')
-        tmp_wav = subdir + 'SND0.WAV'
-        tmp_snd0 = subdir + 'SND0.EA3'
-        temp_files.append(tmp_wav)
-        temp_files.append(tmp_snd0)
-        s = parse_riff(snd0)
-        if not s:
-            print('Not a WAVE file')
-        else:
-            print('Creating temporary WAV file clamped to 119 second duration', tmp_wav)
-            copy_riff(snd0, tmp_wav, max_duration_ms=119000)
-            s = parse_riff(tmp_wav)
-            print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
-            try:
-                if os.name == 'posix':
-                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
-                else:
-                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
-            except:
-                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-            print('Converting EA3 to AT3 file') if verbose else None
-            temp_files.append(f + '/SND0.AT3')
-            create_riff(tmp_snd0, f + '/SND0.AT3', number_of_samples=int(len(s['data']['data'])/4), max_data_size=0x249f00, loop=True)
+        convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000)
 
     image = None
     if icon0.size[0] > icon0.size[1] - 10 and icon0.size[0] < icon0.size[1] + 10:

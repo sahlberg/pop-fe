@@ -162,7 +162,7 @@ def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
             buf = buf[96:]
         if max_data_size and len(buf) > max_data_size:
             buf = buf[:max_data_size & ~0x3f]
-            print('Claming max size to', max_data_size + ~0x3f)
+            print('Clamping max size to', max_data_size + ~0x3f)
             # Clamped the file so number_of_samples are no longer valid
             number_of_samples = 0
         data_size = len(buf)
