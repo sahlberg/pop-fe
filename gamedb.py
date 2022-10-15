@@ -6904,6 +6904,9 @@ games = {
         'url': "games/U/R/SLUS-01087.html",
     	'id': 'SLUS01087',
 	'title': "RESIDENT EVIL - SURVIVOR",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss4.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
     },
     'SLUS00184': {
         'url': "games/U/R/SLUS-00184.html",
@@ -19546,11 +19549,17 @@ games = {
         'url': "games/P/R/SLES-02732.html",
     	'id': 'SLES02732',
 	'title': "RESIDENT EVIL - SURVIVOR",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss4.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
     },
     'SLES02744': {
         'url': "games/P/R/SLES-02744.html",
     	'id': 'SLES02744',
 	'title': "RESIDENT EVIL - SURVIVOR",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss4.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/R/SLUS-01087/ss7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
     },
     'SLES01661': {
         'url': "games/P/R/SLES-01661.html",
