@@ -72,6 +72,12 @@ Command line arguments are:
 		         the SYSTEM.CNF file off the game iso and use it to
 			 detect the game-id. This argument can be used to
 			 override the id.
+--cover                : Image to use as the game icon. If not specified pop-fe
+		         will automatically fetch one from the internet.
+--pic0                 : Image to use as the PIC0/Screenshot. If not specified pop-fe
+		         will automatically fetch one from the internet.
+--pic1                 : Image to use as the PIC1/Screenshot. If not specified pop-fe
+		         will automatically fetch one from the internet.
 --resolution	       : By default resolution is set to '2' (640x512)
 		         for PAL games. I.e. games with a GameId that starts
 			 with SCES or SLES.

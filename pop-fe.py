@@ -1401,6 +1401,12 @@ if __name__ == "__main__":
     parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
     parser.add_argument('--snd0',
                         help='WAV file to inject in PS3 PKG')
+    parser.add_argument('--cover',
+                        help='Cover image to use')
+    parser.add_argument('--pic0',
+                        help='PIC0/screenshot image to use')
+    parser.add_argument('--pic1',
+                        help='PIC1/screenshot image to use')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1605,17 +1611,32 @@ if __name__ == "__main__":
     game = get_game_from_gamelist(game_id)
 
     # ICON0.PNG
-    print('Fetch ICON0 for', game_title) if verbose else None
-    temp_files.append(subdir + 'ICON0.jpg')
-    icon0 = get_icon0_from_game(game_id, game, args.files[0], subdir + 'ICON0.jpg')
+    icon0 = None
+    if args.cover:
+        print('Get cover from', args.cover)
+        icon0 = Image.open(args.cover)
+    if not icon0:
+        print('Fetch ICON0 for', game_title) if verbose else None
+        temp_files.append(subdir + 'ICON0.jpg')
+        icon0 = get_icon0_from_game(game_id, game, args.files[0], subdir + 'ICON0.jpg')
 
     # PIC0.PNG
-    print('Fetch PIC0 for', game_title) if verbose else None
-    pic0 = get_pic0_from_game(game_id, game, args.files[0])
+    pic0 = None
+    if args.pic0:
+        print('Get PIC0/Screenshot from', args.pic0)
+        pic0 = Image.open(args.pic0)
+    if not pic0:
+        print('Fetch PIC0 for', game_title) if verbose else None
+        pic0 = get_pic0_from_game(game_id, game, args.files[0])
     
     # PIC1.PNG
-    print('Fetch PIC1 for', game_title) if verbose else None
-    pic1 = get_pic1_from_game(game_id, game, args.files[0])
+    pic1 = None
+    if args.pic1:
+        print('Get PIC1/Screenshot from', args.pic1)
+        pic1 = Image.open(args.pic1)
+    if not pic1:
+        print('Fetch PIC1 for', game_title) if verbose else None
+        pic1 = get_pic1_from_game(game_id, game, args.files[0])
     
     print('Id:', game_id)
     print('Title:', game_title)
