@@ -162,26 +162,31 @@ using (example only):
     --game-id=SLUS00957
     
 Game art and images are fetched from https://psxdatacenter.com/
-If a file ICON0.PNG is found in the game directory it assumed to be the
-cover image and thus we skip pulling it from psxdatacenter.
-Similarly, if PIC1.PNG is found then it is assumed to be a screenshot
-or background image and again we skip pulling this file from the site.
+If a file named the same as the CUE but with the extension *_cover.png is found in the game
+directory it assumed to be the cover image and thus we skip pulling it from psxdatacenter.
+Example: cuefile:  foo.cue and corresponding cover in foo_cover.png
+
+Similarly, files named as <cue>_pic0.png and <cue>_pic1.png are used for the screenshot
+images.
 
 
 Image files for PS3 packages
 ============================
-PS3 packages uses 3 image files: ICON0, PIC0 and PIC1
-ICON0 is the game cover and shown in the game list on the XMB.
+PS3 packages uses 3 image files: <cue>_cover.png, <cue>_pic0.png and <cue>_pic1.png
+Cover is the game cover and shown in the game list on the XMB.
 It is square and it will be resized to 176x176 pixels.
 If you provide your own custom image here, create it as 176x176 as then there
 will be no blurring due to rescaling.
 
-PIC0 is the foreground image when the game is selected in the XMB. It is
+Pic0 is the foreground image when the game is selected in the XMB. It is
 1000x560 pixels in size.
 
-PIC1 is the background image when the game is selected in the XMB. It is
+Pic1 is the background image when the game is selected in the XMB. It is
 1920x1080 pixels in size.
 
+These files must be named like the cue file.
+Example:
+MyGame.cue -> MyGame_cover.png MyGame_pic0.png MyGame_pic1.png
 
 Installing Memory Card images on PSP
 ====================================
@@ -223,8 +228,8 @@ $ ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 --fetch-metadata
 ================
-This argument will download and install ICON0.PNG, PIC1.PNG as well as the
-game id and title in the directory where the game is stored.
+This argument will download and install <cue>_cover.png, <cue>_pic0.png, <cue>_pic1.png as
+well as the game id and title in the directory where the game is stored.
 This requires that the game directory is writeable.
 
 VMP.PY

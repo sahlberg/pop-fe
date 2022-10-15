@@ -270,7 +270,7 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC0') if verbose else None
-            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig, 'PIC0.PNG')
+            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
             self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
@@ -278,7 +278,7 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
             
             print('Fetching PIC1') if verbose else None
-            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig, 'PIC1.PNG')
+            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
             self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
@@ -405,7 +405,7 @@ class PopFePs3App:
             game = popfe.get_game_from_gamelist(disc_id)
             self.master.config(cursor='watch')
             self.master.update()
-            self.back = popfe.get_pic1_from_bc(disc_id, game, self.cue_files[0], 'BACK.PNG')
+            self.back = popfe.get_pic1_from_bc(disc_id, game, self.cue_files[0])
             self.master.config(cursor='')
         self.builder.get_object('pic1_or_back', self.master).config(text='PIC1' if self.pic1_bc == 'off' else 'BACK')
         if self.pic1_bc == 'off':

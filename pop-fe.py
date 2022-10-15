@@ -136,8 +136,8 @@ def get_title_from_game(game_id):
 
 def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
-        image = Image.open(create_path(cue, 'ICON0.PNG'))
-        print('Use existing ICON0.PNG as cover') if verbose else None 
+        image = Image.open(cue[:-4] + '_cover.png')
+        print('Use existing file %s as cover' % (cue[:-4] + '_cover.png')) if verbose else None 
         return image
     except:
         True
@@ -154,18 +154,18 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
         g = re.findall('images/covers/./.*/.*.jpg', game)
         return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
-def get_pic_from_game(pic, game_id, game, cue, filename):
-    if game_id in games and pic in games[game_id]:
-        ret = requests.get(games[game_id][pic], stream=True)
-        if ret.status_code == 200:
-            return Image.open(io.BytesIO(ret.content))
+def get_pic_from_game(pic, game_id, game, filename):
     try:
-        image = Image.open(create_path(cue, filename))
-        print('Use existing', filename, 'as background') if verbose else None
+        image = Image.open(filename)
+        print('Use existing', filename, 'as', pic) if verbose else None
         return image
     except:
         True
 
+    if game_id in games and pic in games[game_id]:
+        ret = requests.get(games[game_id][pic], stream=True)
+        if ret.status_code == 200:
+            return Image.open(io.BytesIO(ret.content))
     if game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
@@ -174,13 +174,13 @@ def get_pic_from_game(pic, game_id, game, cue, filename):
     filter = 'images/screens/./.*/.*/ss..jpg'
     return Image.open(io.BytesIO(fetch_cached_binary(random.choice(re.findall(filter, game)))))
 
-def get_pic0_from_game(game_id, game, cue, filename):
-    return get_pic_from_game('pic0', game_id, game, cue, filename)
+def get_pic0_from_game(game_id, game, cue):
+    return get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
 
-def get_pic1_from_game(game_id, game, cue, filename):
-    return get_pic_from_game('pic1', game_id, game, cue, filename)
+def get_pic1_from_game(game_id, game, cue):
+    return get_pic_from_game('pic1', game_id, game, cue[:-4] + '_pic1.png')
 
-def get_pic1_from_bc(game_id, game, cue, filename):
+def get_pic1_from_bc(game_id, game, cue):
     if game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
@@ -411,16 +411,17 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image.save(f, 'PNG')
 
 
-def create_metadata(img, game_id, game_title, icon0, pic0, pic1):
-    print('fetching metadata for', game_id) if verbose else None
+def create_metadata(cue, game_id, game_title, icon0, pic0, pic1):
+    print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
-    with open(create_path(img, 'GAME_ID'), 'w') as d:
+    f = cue.split('/')[-1][:-4]
+    with open(create_path(cue, 'GAME_ID'), 'w') as d:
         d.write(game_id)
-    with open(create_path(img, 'GAME_TITLE'), 'w') as d:
+    with open(create_path(cue, 'GAME_TITLE'), 'w') as d:
         d.write(game_title)
-    icon0.save(create_path(img, 'ICON0.PNG'))
-    pic0.save(create_path(img, 'PIC0.PNG'))
-    pic1.save(create_path(img, 'PIC1.PNG'))
+    icon0.save(create_path(cue, f + '_cover.png'))
+    pic0.save(create_path(cue, f + '_pic0.png'))
+    pic1.save(create_path(cue, f + '_pic1.png'))
         
         
 def get_imgs_from_bin(cue):
@@ -1575,7 +1576,6 @@ if __name__ == "__main__":
         # We need to convert the first track of every ISO so we can open the
         # disk and read system.cnf
         # We only do this for the first disk of a multi-disk set.
-        print('Convert CUE to a normal style ISO') if verbose else None
         disc_ids = get_disc_ids(cue_files, subdir=subdir)
         game_id = disc_ids[0]
     if not disc_ids:
@@ -1611,11 +1611,11 @@ if __name__ == "__main__":
 
     # PIC0.PNG
     print('Fetch PIC0 for', game_title) if verbose else None
-    pic0 = get_pic0_from_game(game_id, game, args.files[0], 'PIC0.PNG')
+    pic0 = get_pic0_from_game(game_id, game, args.files[0])
     
     # PIC1.PNG
     print('Fetch PIC1 for', game_title) if verbose else None
-    pic1 = get_pic1_from_game(game_id, game, args.files[0], 'PIC1.PNG')
+    pic1 = get_pic1_from_game(game_id, game, args.files[0])
     
     print('Id:', game_id)
     print('Title:', game_title)
@@ -1687,7 +1687,7 @@ if __name__ == "__main__":
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.fetch_metadata:
-        create_metadata(img_files[0], game_id, game_title, icon0, pic0, pic1)
+        create_metadata(args.files[0], game_id, game_title, icon0, pic0, pic1)
     if args.psio_dir:
         create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
     if args.retroarch_bin_dir:
