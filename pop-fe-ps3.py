@@ -160,7 +160,7 @@ class PopFePs3App:
         self.builder.get_object('disc_as_icon0', self.master).config(state='disabled')
         self.builder.get_variable('disc_as_icon0_variable').set('off')
         self.builder.get_variable('snd0_variable').set('')
-        self.builder.get_object('icon0_or_disc', self.master).config(text='ICON0')
+        self.builder.get_object('icon0_or_disc', self.master).config(text='COVER')
         self.builder.get_object('pic1_or_back', self.master).config(text='PIC1')
 
 
@@ -317,7 +317,7 @@ class PopFePs3App:
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
             ('All Files', ['*.*', '*'])]
-        path = tk.filedialog.askopenfilename(title='Select image for ICON0',filetypes=filetypes)
+        path = tk.filedialog.askopenfilename(title='Select image for COVER',filetypes=filetypes)
         try:
             os.stat(path)
             self.icon0 = Image.open(path)
@@ -387,7 +387,7 @@ class PopFePs3App:
             self.disc = d
             self.master.config(cursor='')
 
-        self.builder.get_object('icon0_or_disc', self.master).config(text='ICON0' if self.icon0_disc == 'off' else 'DISC')
+        self.builder.get_object('icon0_or_disc', self.master).config(text='COVER' if self.icon0_disc == 'off' else 'DISC')
         if self.icon0_disc == 'off':
             self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
         else:
