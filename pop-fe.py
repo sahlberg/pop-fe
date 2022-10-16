@@ -148,9 +148,10 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
         url = 'http://www.hwc.nat.cu/psx/' + game_id[0:4] + '_' + game_id[4:7] + '.' + game_id[7:9] + '_COV.jpg'
         print('Try URL', url)
-        subprocess.run(['wget', '-q', url, '-O', tmpfile], check=True)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=5, check=True)
         return Image.open(tmpfile)
     except:
+        print('Falling back to PSXDATACENTRE for cover')
         g = re.findall('images/covers/./.*/.*.jpg', game)
         return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
