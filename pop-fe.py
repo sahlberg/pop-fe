@@ -242,8 +242,12 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
 def get_snd0_from_link(link, subdir='./'):
     if not have_pytube:
         return None
-    yt = YouTube(link)
-    fn = yt.streams.filter(only_audio=True)[0].download(subdir)
+    try:
+        yt = YouTube(link)
+        fn = yt.streams.filter(only_audio=True)[0].download(subdir)
+    except:
+        print('Failed to download', link)
+        return None
     temp_files.append(fn)
     try:
         if os.name == 'posix':
