@@ -416,7 +416,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image.save(f, 'PNG')
 
 
-def create_metadata(cue, game_id, game_title, icon0, pic0, pic1):
+def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0):
     print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
     f = cue.split('/')[-1][:-4]
@@ -427,7 +427,10 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1):
     icon0.save(create_path(cue, f + '_cover.png'))
     pic0.save(create_path(cue, f + '_pic0.png'))
     pic1.save(create_path(cue, f + '_pic1.png'))
-        
+    if snd0:
+        with open(snd0, 'rb') as i:
+            with open(create_path(cue, f + '.snd0'), 'wb') as o:
+                o.write(i.read())
         
 def get_imgs_from_bin(cue):
     def get_file_name(line):
@@ -1692,6 +1695,13 @@ if __name__ == "__main__":
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
     if not snd0:
+        try:
+            os.stat(args.files[0][:-4] + '.snd0')
+            snd0 = args.files[0][:-4] + '.snd0'
+            print('Use locally stored SND0 from', snd0)
+        except:
+            True
+    if not snd0:
         snd0 = get_snd0_from_game(game_id, subdir=subdir)
         if snd0:
             temp_files.append(snd0)
@@ -1713,7 +1723,7 @@ if __name__ == "__main__":
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.fetch_metadata:
-        create_metadata(args.files[0], game_id, game_title, icon0, pic0, pic1)
+        create_metadata(args.files[0], game_id, game_title, icon0, pic0, pic1, snd0)
     if args.psio_dir:
         create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
     if args.retroarch_bin_dir:
