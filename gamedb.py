@@ -2929,6 +2929,9 @@ games = {
         'url': "games/U/C/SLUS-00067.html",
     	'id': 'SLUS00067',
 	'title': "CASTLEVANIA - SYMPHONY OF THE NIGHT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/C/SLUS-00067/ss15.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/C/SLUS-00067/ss3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HnVDnAMs_Mk&list=PLFjuFokngRvjHomRZTsWAEm3_Znrdax5s&index=2',
     },
     'SLUS01384': {
         'url': "games/U/C/SLUS-01384.html",
@@ -3179,6 +3182,7 @@ games = {
         'url': "games/U/C/SCUS-94900.html",
     	'id': 'SCUS94900',
 	'title': "CRASH BANDICOOT",
+        'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
     },
     'SCUS94154': {
         'url': "games/U/C/SCUS-94154.html",
@@ -11115,6 +11119,9 @@ games = {
         'url': "games/P/C/SLES-00524.html",
     	'id': 'SLES00524',
 	'title': "CASTLEVANIA - SYMPHONY OF THE NIGHT",
+        'pic0': 'https://psxdatacenter.com/images/screens/U/C/SLUS-00067/ss15.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/C/SLUS-00067/ss3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HnVDnAMs_Mk&list=PLFjuFokngRvjHomRZTsWAEm3_Znrdax5s&index=2',
     },
     'SLES03532': {
         'url': "games/P/C/SLES-03532.html",
@@ -16895,6 +16902,7 @@ games = {
         'url': "games/P/C/SCES-00344.html",
     	'id': 'SCES00344',
 	'title': "CRASH BANDICOOT",
+        'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
     },
     'SCES00967': {
         'url': "games/P/C/SCES-00967.html",
@@ -27989,6 +27997,7 @@ games = {
         'url': "games/J/C/SCPS-10031.html",
     	'id': 'SCPS10031',
 	'title': "CRASH BANDICOOT",
+        'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
     },
     'SCPS91057': {
         'url': "games/J/C/SCPS-91057.html",
