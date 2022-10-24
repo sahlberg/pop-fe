@@ -2413,9 +2413,11 @@ class popstation(object):
         self._iso_bin_dat = None
         self._vcd = 'GAME.VCD'
         self._img_toc = []
+        self._track0_size = []
         self._aea = {}
         self._magic_word = []
         self._verbose = False
+        self._striptracks = False
         self._complevel = 1
         self._disc_ids = ['SLUS00000']
         self._game_title = 'TITLE'
@@ -2428,6 +2430,9 @@ class popstation(object):
         
     def add_img(self, img_toc):
         self._img_toc.append(img_toc)
+
+    def add_track0_size(self, track0_size):
+        self._track0_size.append(track0_size)
 
     @property
     def aea(self):
@@ -2550,6 +2555,14 @@ class popstation(object):
     @complevel.setter
     def complevel(self, value):
         self._complevel = value
+
+    @property
+    def striptracks(self):
+        return self._striptracks
+
+    @striptracks.setter
+    def striptracks(self, value):
+        self._striptracks = value
 
     def get_toc_from_ccd(self, img):
         def bcd(i):
@@ -2674,6 +2687,8 @@ class popstation(object):
         with open(img_toc[0], 'rb') as f:
             f.seek(0, 2)
             isosize = f.tell()
+        if self._track0_size:
+            isosize = self._track0_size[disc_num]
         if isosize % 0x9300:
             isosize = isosize + (0x9300 - (isosize%0x9300))
 
@@ -2738,6 +2753,8 @@ class popstation(object):
         i = 0
 
         while True:
+            if fi.tell() >= isosize:
+                break
             buf = fi.read(0x9300)
             if not buf:
                 break

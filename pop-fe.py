@@ -720,6 +720,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     p.game_title = game_title
     #p.icon0 = icon0
     #p.pic1 = pic1
+    p.striptracks = True
     p.complevel = 0
     p.magic_word = magic_word
     if len(aea_files):
@@ -732,9 +733,13 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         if not toc:
             print('Need to create a TOC') if verbose else None
             toc = get_toc_from_cu2(cu2_files[i])
-
-        print('Add image', f) if verbose else None
         p.add_img((f, toc))
+        
+        bc = bchunk()
+        bc.towav = True
+        bc.open(cue_files[i])
+        # store how big the data track is
+        p.add_track0_size(bc.tracks[0]['stop'])
 
     # create directory structure
     f = subdir + disc_ids[0]
