@@ -2,12 +2,18 @@
 #!/usr/bin/env python
 
 import argparse
+import datetime
+import io
 import os
 import pathlib
 import pygubu
+import requests
+import requests_cache
 import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
+if os.name == 'posix':
+    from tkinterdnd2 import *
 
 have_pytube = False
 try:
@@ -77,10 +83,13 @@ class PopFePs3App:
 
         callbacks = {
             'on_icon0_clicked': self.on_icon0_clicked,
+            'on_icon0_dropped': self.on_icon0_dropped,
             'on_icon0_from_disc': self.on_icon0_from_disc,
             'on_pic0_clicked': self.on_pic0_clicked,
+            'on_pic0_dropped': self.on_pic0_dropped,
             'on_pic0_disabled': self.on_pic0_disabled,
             'on_pic1_clicked': self.on_pic1_clicked,
+            'on_pic1_dropped': self.on_pic1_dropped,
             'on_pic1_from_bc': self.on_pic1_from_bc,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
@@ -90,6 +99,16 @@ class PopFePs3App:
         }
 
         builder.connect_callbacks(callbacks)
+        if os.name == 'posix':
+            c = self.builder.get_object('icon0_canvas', self.master)
+            c.drop_target_register(DND_FILES)
+            c.dnd_bind('<<Drop>>', self.on_icon0_dropped)
+            c = self.builder.get_object('pic0_canvas', self.master)
+            c.drop_target_register(DND_FILES)
+            c.dnd_bind('<<Drop>>', self.on_pic0_dropped)
+            c = self.builder.get_object('pic1_canvas', self.master)
+            c.drop_target_register(DND_FILES)
+            c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
         self.init_data()
 
     def __del__(self):
@@ -141,6 +160,7 @@ class PopFePs3App:
         self.icon0_disc = 'off'
         self.preview_tk = None
         self.pkgdir = None
+        
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
@@ -313,6 +333,45 @@ class PopFePs3App:
         self.master.config(cursor='')
 
 
+    def on_icon0_dropped(self, event):
+        self.master.config(cursor='watch')
+        self.master.update()
+        # try to open it as a file
+        self.icon0_tk = None
+        try:
+            os.stat(event.data)
+            self.icon0 = Image.open(event.data)
+        except:
+            self.icon0 = None
+        # if that failed, check if it was a link
+        if not self.icon0:
+            try:
+                _s = event.data
+                _p = _s.find('src="')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[_p + 5:]
+                _p = _s.find('"')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[:_p]
+                ret = requests.get(_s, stream=True)
+                if ret.status_code != 200:
+                    raise Exception('Failed to fetch file ', _s)
+                self.icon0 = Image.open(io.BytesIO(ret.content))
+            except:
+                True
+
+        self.master.config(cursor='')
+        if not self.icon0:
+            return
+        temp_files.append('pop-fe-ps3-work/ICON0.PNG')
+        self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
+        self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
+        c = self.builder.get_object('icon0_canvas', self.master)
+        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.update_preview()
+        
     def on_icon0_clicked(self, event):
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
@@ -330,6 +389,45 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
         self.update_preview()
 
+    def on_pic0_dropped(self, event):
+        self.master.config(cursor='watch')
+        self.master.update()
+        # try to open it as a file
+        self.pic0_tk = None
+        try:
+            os.stat(event.data)
+            self.pic0 = Image.open(event.data)
+        except:
+            self.pic0 = None
+        # if that failed, check if it was a link
+        if not self.pic0:
+            try:
+                _s = event.data
+                _p = _s.find('src="')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[_p + 5:]
+                _p = _s.find('"')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[:_p]
+                ret = requests.get(_s, stream=True)
+                if ret.status_code != 200:
+                    raise Exception('Failed to fetch file ', _s)
+                self.pic0 = Image.open(io.BytesIO(ret.content))
+            except:
+                True
+
+        self.master.config(cursor='')
+        if not self.pic0:
+            return
+        temp_files.append('pop-fe-ps3-work/PIC0.PNG')
+        self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
+        self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
+        c = self.builder.get_object('pic0_canvas', self.master)
+        c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
+        self.update_preview()
+        
     def on_pic0_clicked(self, event):
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
@@ -345,6 +443,45 @@ class PopFePs3App:
         self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
+        self.update_preview()
+
+    def on_pic1_dropped(self, event):
+        self.master.config(cursor='watch')
+        self.master.update()
+        # try to open it as a file
+        self.pic1_tk = None
+        try:
+            os.stat(event.data)
+            self.pic1 = Image.open(event.data)
+        except:
+            self.pic1 = None
+        # if that failed, check if it was a link
+        if not self.pic1:
+            try:
+                _s = event.data
+                _p = _s.find('src="')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[_p + 5:]
+                _p = _s.find('"')
+                if _p < 0:
+                    raise Exception('Not a HTTP link')
+                _s = _s[:_p]
+                ret = requests.get(_s, stream=True)
+                if ret.status_code != 200:
+                    raise Exception('Failed to fetch file ', _s)
+                self.pic1 = Image.open(io.BytesIO(ret.content))
+            except:
+                True
+
+        self.master.config(cursor='')
+        if not self.pic1:
+            return
+        temp_files.append('pop-fe-ps3-work/PIC1.PNG')
+        self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
+        self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
+        c = self.builder.get_object('pic1_canvas', self.master)
+        c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
         
     def on_pic1_clicked(self, event):
@@ -517,10 +654,16 @@ if __name__ == "__main__":
     parser.add_argument('-v', action='store_true', help='Verbose')
     args = parser.parse_args()
 
+    expire_after = datetime.timedelta(days=100)
+    requests_cache.install_cache(str(pathlib.Path.home()) + '/.pop-fe', expire_after=expire_after)
+    
     if args.v:
         verbose = True
 
-    root = tk.Tk()
+    if os.name == 'posix':
+        root = TkinterDnD.Tk()
+    else:
+        root = tk.Tk()
     app = PopFePs3App(root)
     root.title('pop-fe PS3')
     root.mainloop()

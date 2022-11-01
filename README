@@ -483,6 +483,7 @@ pip3 install git+https://github.com/nficano/pytube
 pip3 install requests_cache
 pip3 install pycdlib  (or pip3 install pycdio)
 pip3 install ecdsa
+pip3 install tkinterdnd2
 cd pop-fe
 cp ../Cue2cu2/cue2cu2.py .
 chmod +x cue2cu2.py

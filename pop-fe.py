@@ -1267,56 +1267,63 @@ def install_deps():
         print('requests_cache is already installed')
     except:
         print('Installing python requests_cache')
-        subprocess.call(['pip3', 'install', 'requests_cache'])
+        subprocess.call(['pip', 'install', 'requests_cache'])
     # pycdlib
     try:
         import pycdlib
         print('pycdlib is already installed')
     except:
         print('Installing python pycdlib.  This will fail on some platforms')
-        subprocess.call(['pip3', 'install', 'pycdlib'])
+        subprocess.call(['pip', 'install', 'pycdlib'])
     # iso9660
     try:
         import iso9660
         print('iso9660 is already installed')
     except:
         print('Installing python iso9660.  This will fail on some platforms')
-        subprocess.call(['pip3', 'install', 'iso9660'])
+        subprocess.call(['pip', 'install', 'iso9660'])
     # ecdsa
     try:
         import ecdsa
         print('ecdsa is already installed')
     except:
         print('Installing python ecdsa')
-        subprocess.call(['pip3', 'install', 'ecdsa'])
+        subprocess.call(['pip', 'install', 'ecdsa'])
     # PIL / pillow
     try:
         import pillow
         print('pillow is already installed')
     except:
         print('Installing python pillow')
-        subprocess.call(['pip3', 'install', 'pillow']) 
+        subprocess.call(['pip', 'install', 'pillow']) 
+    # tkinterdnd2
+    try:
+        import tkinterdnd2
+        print('tkinterdnd2 is already installed')
+    except:
+        print('Installing python tkinterdnd2')
+        subprocess.call(['pip', 'install', 'tkinterdnd2']) 
     # pycryptodome
     try:
         import Cryptodome
         print('Crypto/pycryptodome is already installed')
     except:
         print('Trying to install python pycryptodome(Crypto)')
-        subprocess.call(['pip3', 'install', 'pycryptodome'])
+        subprocess.call(['pip', 'install', 'pycryptodome'])
     # Crypto
     try:
         import Crypto
         print('Crypto is already installed')
     except:
         print('Installing python Crypto')
-        subprocess.call(['pip3', 'install', 'Crypto'])
+        subprocess.call(['pip', 'install', 'Crypto'])
     # pytube
     try:
         from pytube import YouTube
         print('Pytube is already installed')
     except:
         print('Installing python pytube')
-        subprocess.call(['pip3', 'install', 'git+https://github.com/nficano/pytube'])
+        subprocess.call(['pip', 'install', 'git+https://github.com/nficano/pytube'])
     # cue2cu2
     try:
         if os.name == 'posix':
