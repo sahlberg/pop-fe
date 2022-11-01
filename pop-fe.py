@@ -1296,6 +1296,13 @@ def install_deps():
     except:
         print('Installing python pillow')
         subprocess.call(['pip3', 'install', 'pillow']) 
+    # tkinterdnd2
+    try:
+        import tkinterdnd2
+        print('tkinterdnd2 is already installed')
+    except:
+        print('Installing python tkinterdnd2')
+        subprocess.call(['pip', 'install', 'tkinterdnd2']) 
     # pycryptodome
     try:
         import Cryptodome
