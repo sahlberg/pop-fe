@@ -62,7 +62,7 @@ jobs:
           pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
       - name: Build pop-fe-ps3
         run:   |
-          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput --collect-all tkinterdnd2
       - name: Build pop-fe-psp
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-psp.ui;." pop-fe-psp.py --hidden-import pop-fe --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput

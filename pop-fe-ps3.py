@@ -12,8 +12,7 @@ import requests_cache
 import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
-if os.name == 'posix':
-    from tkinterdnd2 import *
+from tkinterdnd2 import *
 
 have_pytube = False
 try:
@@ -99,16 +98,15 @@ class PopFePs3App:
         }
 
         builder.connect_callbacks(callbacks)
-        if os.name == 'posix':
-            c = self.builder.get_object('icon0_canvas', self.master)
-            c.drop_target_register(DND_FILES)
-            c.dnd_bind('<<Drop>>', self.on_icon0_dropped)
-            c = self.builder.get_object('pic0_canvas', self.master)
-            c.drop_target_register(DND_FILES)
-            c.dnd_bind('<<Drop>>', self.on_pic0_dropped)
-            c = self.builder.get_object('pic1_canvas', self.master)
-            c.drop_target_register(DND_FILES)
-            c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
+        c = self.builder.get_object('icon0_canvas', self.master)
+        c.drop_target_register(DND_FILES)
+        c.dnd_bind('<<Drop>>', self.on_icon0_dropped)
+        c = self.builder.get_object('pic0_canvas', self.master)
+        c.drop_target_register(DND_FILES)
+        c.dnd_bind('<<Drop>>', self.on_pic0_dropped)
+        c = self.builder.get_object('pic1_canvas', self.master)
+        c.drop_target_register(DND_FILES)
+        c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
         self.init_data()
 
     def __del__(self):
@@ -660,10 +658,7 @@ if __name__ == "__main__":
     if args.v:
         verbose = True
 
-    if os.name == 'posix':
-        root = TkinterDnD.Tk()
-    else:
-        root = tk.Tk()
+    root = TkinterDnD.Tk()
     app = PopFePs3App(root)
     root.title('pop-fe PS3')
     root.mainloop()
