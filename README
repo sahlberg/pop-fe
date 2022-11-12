@@ -74,10 +74,10 @@ Command line arguments are:
 			 override the id.
 --cover                : Image to use as the game icon. If not specified pop-fe
 		         will automatically fetch one from the internet.
---pic0                 : Image to use as the PIC0/Screenshot. If not specified pop-fe
-		         will automatically fetch one from the internet.
---pic1                 : Image to use as the PIC1/Screenshot. If not specified pop-fe
-		         will automatically fetch one from the internet.
+--pic0                 : Image to use as the PIC0/Screenshot. If not specified
+		         pop-fe will automatically fetch one from the internet.
+--pic1                 : Image to use as the PIC1/Screenshot. If not specified
+		         pop-fe will automatically fetch one from the internet.
 --resolution	       : By default resolution is set to '2' (640x512)
 		         for PAL games. I.e. games with a GameId that starts
 			 with SCES or SLES.
@@ -87,6 +87,17 @@ Command line arguments are:
 			 to a specific value.
 		         See https://www.psdevwiki.com/ps3/PARAM.SFO#RESOLUTION
 			 for a list of possible values.
+--whole-disk           : For PS3 Packages pop-fe will default to only encode
+		         the data track in the pkg disc image and not the raw
+			 CD-DA tracks. The CD-DA tracks are converted to
+			 ATRAC3 format which is much much smaller which are
+			 then injected into the package.
+			 This makes packaged for games with CD-DA music much
+			 smaller in size. Use this argument if you still want
+			 the raw audio tracks to also be stored in the disc
+			 image. (This is only useful if at a later time you
+			 want to convert the EBOOT.PBP file back into a .BIN
+			 file)
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin

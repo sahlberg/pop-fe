@@ -711,7 +711,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -720,7 +720,8 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     p.game_title = game_title
     #p.icon0 = icon0
     #p.pic1 = pic1
-    p.striptracks = True
+    if not whole_disk:
+        p.striptracks = True
     p.complevel = 0
     p.magic_word = magic_word
     if len(aea_files):
@@ -735,11 +736,12 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             toc = get_toc_from_cu2(cu2_files[i])
         p.add_img((f, toc))
         
-        bc = bchunk()
-        bc.towav = True
-        bc.open(cue_files[i])
-        # store how big the data track is
-        p.add_track0_size(bc.tracks[0]['stop'])
+        if not whole_disk:
+            bc = bchunk()
+            bc.towav = True
+            bc.open(cue_files[i])
+            # store how big the data track is
+            p.add_track0_size(bc.tracks[0]['stop'])
 
     # create directory structure
     f = subdir + disc_ids[0]
@@ -1419,6 +1421,7 @@ if __name__ == "__main__":
     parser.add_argument('--resolution',
                         help='Force setting resolution to 1: NTSC 2: PAL')
     parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
+    parser.add_argument('--whole-disk', action='store_true', help='Encode the entire disk and not just the first track. (Only applies to PS3)')
     parser.add_argument('--snd0',
                         help='WAV file to inject in PS3 PKG')
     parser.add_argument('--cover',
@@ -1731,7 +1734,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.fetch_metadata:

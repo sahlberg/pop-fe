@@ -2687,7 +2687,7 @@ class popstation(object):
         with open(img_toc[0], 'rb') as f:
             f.seek(0, 2)
             isosize = f.tell()
-        if self._track0_size:
+        if self._striptracks and self._track0_size:
             isosize = self._track0_size[disc_num]
         if isosize % 0x9300:
             isosize = isosize + (0x9300 - (isosize%0x9300))
