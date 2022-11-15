@@ -1565,6 +1565,8 @@ if __name__ == "__main__":
             aea_files[0 if not idx else idx[0] - 1] = []
             for i in range(1, len(bc.cue)):
                 if not bc.cue[i]['audio']:
+                    print('WARNING disc contains multiple data tracks. Forcing --whole-disk')
+                    args.whole_disk = True
                     continue
                 f = subdir + 'TRACK_%d_' % (0 if not idx else idx[0])
                 bc.writetrack(i, f)
