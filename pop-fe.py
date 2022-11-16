@@ -817,7 +817,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
-    image = pic1.resize((310, 250), Image.NEAREST)
+    image = pic0.resize((310, 250), Image.NEAREST)
     image.save(f + '/PIC2.PNG', format='PNG')
     temp_files.append(f + '/PIC2.PNG')
     
