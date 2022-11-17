@@ -219,7 +219,9 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC1') if verbose else None
-            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
+            # Use PIC0 from the database as this is the small front image
+            # we use for PS3
+            self.pic1 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
             self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
@@ -229,6 +231,7 @@ class PopFePs3App:
             self.builder.get_object('disc2', self.master).config(state='normal')
             self.builder.get_object('youtube_button', self.master).config(state='normal')
             self.builder.get_object('create_button', self.master).config(state='normal')
+            self.update_preview()
         elif disc == 'd2':
             self.builder.get_object('discid2', self.master).config(state='normal')
             self.builder.get_object('disc2', self.master).config(state='disabled')
@@ -248,6 +251,22 @@ class PopFePs3App:
         self.master.config(cursor='')
 
 
+    def update_preview(self):
+        print('Update preview', self.pic1)
+        if not self.pic1:
+            return
+        c = self.builder.get_object('preview_canvas', self.master)
+        p1 = self.pic1.resize((382,216), Image.BILINEAR)
+        if self.icon0:
+            i0 = self.icon0.resize((int(p1.size[1] * 0.25) , int(p1.size[1] * 0.25)), Image.BILINEAR)
+            Image.Image.paste(p1, i0, box=(36,81))
+        temp_files.append('pop-fe-ps3-work/PREVIEW.PNG')
+        p1.save('pop-fe-ps3-work/PREVIEW.PNG')
+        self.preview_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PREVIEW.PNG')
+        c = self.builder.get_object('preview_canvas', self.master)
+        c.create_image(0, 0, image=self.preview_tk, anchor='nw')
+        
+
     def on_icon0_clicked(self, event):
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
@@ -263,6 +282,7 @@ class PopFePs3App:
         self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.update_preview()
 
 
     def on_pic1_clicked(self, event):
@@ -280,6 +300,7 @@ class PopFePs3App:
         self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
+        self.update_preview()
 
     def on_dir_changed(self, event):
         self.pkgdir = event.widget.cget('path')

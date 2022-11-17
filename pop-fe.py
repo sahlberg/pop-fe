@@ -1732,7 +1732,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
            
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
