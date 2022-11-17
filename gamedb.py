@@ -6257,16 +6257,16 @@ games = {
         'url': "games/U/O/SLUS-00710.html",
     	'id': 'SLUS00710',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLUS00731': {
         'url': "games/U/O/SLUS-00710.html",
     	'id': 'SLUS00731',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLUS00190': {
@@ -18478,80 +18478,80 @@ games = {
         'url': "games/P/O/SLES-01480.html",
     	'id': 'SLES01480',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11480': {
         'url': "games/P/O/SLES-01480.html",
     	'id': 'SLES11480',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01502': {
         'url': "games/P/O/SLES-01502.html",
     	'id': 'SLES01502',
 	'title': "ODDWORLD - ABE'S EXODDUS (L'EXODE DE ABE)",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11502': {
         'url': "games/P/O/SLES-01502.html",
     	'id': 'SLES11502',
 	'title': "ODDWORLD - ABE'S EXODDUS (L'EXODE DE ABE)",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01503': {
         'url': "games/P/O/SLES-01503.html",
     	'id': 'SLES01503',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11503': {
         'url': "games/P/O/SLES-01503.html",
     	'id': 'SLES11503',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01504': {
         'url': "games/P/O/SLES-01504.html",
     	'id': 'SLES01504',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11504': {
         'url': "games/P/O/SLES-01504.html",
     	'id': 'SLES11504',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES01505': {
         'url': "games/P/O/SLES-01505.html",
     	'id': 'SLES01505',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES11505': {
         'url': "games/P/O/SLES-01505.html",
     	'id': 'SLES11505',
 	'title': "ODDWORLD - ABE'S EXODDUS",
-        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic0': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss2.jpg',
+        'pic1': 'https://psxdatacenter.com/images/screens/P/O/SLES-01505/ss3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=lIPVx9w_JKM&list=PLH834K1pkcjL6M-DwBFMO-LZSwnzh3aiz&index=4'
     },
     'SLES00664': {
