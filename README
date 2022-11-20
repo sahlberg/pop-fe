@@ -98,6 +98,8 @@ Command line arguments are:
 			 image. (This is only useful if at a later time you
 			 want to convert the EBOOT.PBP file back into a .BIN
 			 file)
+--watermark            : Add a watermark consisting of disk-id and game-title
+		         to PIC0 for PSP and PSC games.
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin

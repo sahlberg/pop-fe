@@ -314,11 +314,9 @@
     </child>
     <child>
       <object class="ttk.Frame" id="frame3">
-        <property name="height">200</property>
-        <property name="width">200</property>
         <layout manager="grid">
           <property name="column">0</property>
-          <property name="columnspan">3</property>
+          <property name="columnspan">1</property>
           <property name="padx">10</property>
           <property name="pady">5</property>
           <property name="row">3</property>
@@ -329,8 +327,8 @@
             <property name="text" translatable="yes">Output Directory</property>
             <layout manager="grid">
               <property name="column">0</property>
-              <property name="row">6</property>
-              <property name="sticky">w</property>
+              <property name="row">0</property>
+              <property name="sticky">ew</property>
             </layout>
           </object>
         </child>
@@ -341,7 +339,7 @@
             <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_dir_changed" add="" />
             <layout manager="grid">
               <property name="column">1</property>
-              <property name="row">6</property>
+              <property name="row">0</property>
               <property name="sticky">w</property>
             </layout>
           </object>
@@ -421,6 +419,29 @@
             <layout manager="grid">
               <property name="column">0</property>
               <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame4">
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">10</property>
+          <property name="row">3</property>
+        </layout>
+        <child>
+          <object class="ttk.Checkbutton" id="watermark">
+            <property name="command" type="command" cbtype="simple">on_watermark</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Watermark in PIC1</property>
+            <property name="variable">string:watermark_variable</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
             </layout>
           </object>
         </child>

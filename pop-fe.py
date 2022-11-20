@@ -142,7 +142,7 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
     except:
         True
 
-    if game_id[:4] == 'UNKN':
+    if not game or game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
     try:
@@ -167,7 +167,7 @@ def get_pic_from_game(pic, game_id, game, filename):
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
             return Image.open(io.BytesIO(ret.content))
-    if game_id[:4] == 'UNKN':
+    if not game or game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
     # Screenshots might be from a different release of the game
@@ -623,9 +623,8 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_fi
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=True):
     print('Create PSP EBOOT.PBP for', game_title) if verbose else None
-
     # Convert ICON0 to a file object
     image = icon0.resize((80,80), Image.BILINEAR)
     i = io.BytesIO()
@@ -635,7 +634,8 @@ def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 
     # Convert PIC1 to a file object
     pic1 = pic1.resize((480, 272), Image.BILINEAR).convert("RGBA")
-    pic1 = add_image_text(pic1, game_title, disc_ids[0])
+    if watermark:
+        pic1 = add_image_text(pic1, game_title, disc_ids[0])
     i = io.BytesIO()
     pic1.save(i, format='PNG')
     i.seek(0)
@@ -683,7 +683,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
             True
 
 
-def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files):
+def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True):
     print('Create PS Classics/AutoBleem EBOOT.PBP for', game_title) if verbose else None
 
     # Convert ICON0 to a file object
@@ -695,7 +695,8 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 
     # Convert PIC1 to a file object
     pic1 = pic1.resize((480, 272), Image.BILINEAR).convert("RGBA")
-    pic1 = add_image_text(pic1, game_title, disc_ids[0])
+    if watermark:
+        pic1 = add_image_text(pic1, game_title, disc_ids[0])
     i = io.BytesIO()
     pic1.save(i, format='PNG')
     i.seek(0)
@@ -1430,6 +1431,8 @@ if __name__ == "__main__":
                         help='PIC0/screenshot image to use')
     parser.add_argument('--pic1',
                         help='PIC1/screenshot image to use')
+    parser.add_argument('--watermark', action='store_true',
+                    help='Add a disc-id/game-title watermark for PSP/PSC')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1732,13 +1735,13 @@ if __name__ == "__main__":
             temp_files.append(snd0)
            
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=True if args.watermark else False)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
         create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk)
     if args.psc_dir:
-        create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
+        create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:
         create_metadata(args.files[0], game_id, game_title, icon0, pic0, pic1, snd0)
     if args.psio_dir:

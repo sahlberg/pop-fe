@@ -60,6 +60,7 @@ class PopFePs3App:
         self.pic1 = None
         self.pic1_tk = None
         self.pkgdir = None
+        self.watermark = 'on'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -72,6 +73,7 @@ class PopFePs3App:
             'on_pic1_clicked': self.on_pic1_clicked,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
+            'on_watermark': self.on_watermark,
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_eboot': self.on_create_eboot,
             'on_reset': self.on_reset,
@@ -121,6 +123,8 @@ class PopFePs3App:
         self.pic1 = None
         self.pic1_tk = None
         self.pkgdir = None
+        self.watermark = 'on'
+        self.builder.get_variable('watermark_variable').set(self.watermark)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
@@ -267,6 +271,9 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
         
 
+    def on_watermark(self):
+        self.watermark = self.builder.get_variable('watermark_variable').get()
+        
     def on_icon0_clicked(self, event):
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
@@ -367,7 +374,7 @@ class PopFePs3App:
             if snd0:
                 temp_files.append(snd0)
         ebootdir = self.pkgdir if self.pkgdir else '.'
-        popfe.create_psp(ebootdir, self.disc_ids, title, self.icon0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, subdir='pop-fe-ps3-work/', snd0=snd0)
+        popfe.create_psp(ebootdir, self.disc_ids, title, self.icon0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, subdir='pop-fe-ps3-work/', snd0=snd0, watermark=True if self.watermark=='on' else False)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
