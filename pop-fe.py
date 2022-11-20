@@ -623,10 +623,15 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic1, cue_files, cu2_fi
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=True):
-    print('Create PSP EBOOT.PBP for', game_title) if verbose else None
+def create_psp(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, square_icon0=False):
     # Convert ICON0 to a file object
-    image = icon0.resize((80,80), Image.BILINEAR)
+    if square_icon0:
+        img = icon0.resize((80, 80), Image.BILINEAR)
+        image = Image.new(img.mode, (144, 80), (0,0,0)).convert('RGBA')
+        image.putalpha(0)
+        image.paste(img, (32,0))
+    else:
+        image = icon0.resize((144, 80), Image.BILINEAR)
     i = io.BytesIO()
     image.save(i, format='PNG')
     i.seek(0)
@@ -712,7 +717,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, square_icon0=False):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -799,7 +804,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000)
 
     image = None
-    if icon0.size[0] > icon0.size[1] - 10 and icon0.size[0] < icon0.size[1] + 10:
+    if square_icon0:
         img = icon0.resize((176, 176), Image.BILINEAR)
         image = Image.new(img.mode, (320, 176), (0,0,0)).convert('RGBA')
         image.putalpha(0)
@@ -1433,6 +1438,8 @@ if __name__ == "__main__":
                         help='PIC1/screenshot image to use')
     parser.add_argument('--watermark', action='store_true',
                     help='Add a disc-id/game-title watermark for PSP/PSC')
+    parser.add_argument('--square-icon0', action='store_true',
+                    help='Rescale ICON0 so that is is square')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -1735,11 +1742,11 @@ if __name__ == "__main__":
             temp_files.append(snd0)
            
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=True if args.watermark else False)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, square_icon0=args.square_icon0)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, square_icon0=args.square_icon0)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:

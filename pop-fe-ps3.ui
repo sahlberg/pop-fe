@@ -516,6 +516,20 @@
             </layout>
           </object>
         </child>
+        <child>
+          <object class="ttk.Checkbutton" id="square_icon0">
+            <property name="command" type="command" cbtype="simple">on_square_icon0</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Rescale ICON0 to square</property>
+            <property name="variable">string:square_icon0_variable</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
       </object>
     </child>
   </object>

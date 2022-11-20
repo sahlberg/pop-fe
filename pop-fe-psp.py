@@ -61,6 +61,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
+        self.square_icon0 = 'off'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -77,6 +78,7 @@ class PopFePs3App:
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_eboot': self.on_create_eboot,
             'on_reset': self.on_reset,
+            'on_square_icon0': self.on_square_icon0,
         }
 
         builder.connect_callbacks(callbacks)
@@ -124,6 +126,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
+        self.square_icon0 = 'off'
         self.builder.get_variable('watermark_variable').set(self.watermark)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
@@ -137,8 +140,11 @@ class PopFePs3App:
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
+        self.builder.get_variable('square_icon0_variable').set('off')
 
         
+    def on_square_icon0(self):
+        self.square_icon0 = self.builder.get_variable('square_icon0_variable').get()
     def on_path_changed(self, event):
         cue_file = event.widget.cget('path')
         img_file = None
@@ -374,7 +380,11 @@ class PopFePs3App:
             if snd0:
                 temp_files.append(snd0)
         ebootdir = self.pkgdir if self.pkgdir else '.'
-        popfe.create_psp(ebootdir, self.disc_ids, title, self.icon0, self.pic1, self.cue_files, self.cu2_files, self.img_files, [], aea_files, subdir='pop-fe-ps3-work/', snd0=snd0, watermark=True if self.watermark=='on' else False)
+        popfe.create_psp(ebootdir, self.disc_ids, title, self.icon0, self.pic1,
+                         self.cue_files, self.cu2_files, self.img_files, [],
+                         aea_files, subdir='pop-fe-ps3-work/', snd0=snd0,
+                         watermark=True if self.watermark=='on' else False,
+                         square_icon0=False if self.square_icon0=='off' else True)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

@@ -100,6 +100,7 @@ Command line arguments are:
 			 file)
 --watermark            : Add a watermark consisting of disk-id and game-title
 		         to PIC0 for PSP and PSC games.
+--square-icon0	       : Rescale ICON0 so that it is square.
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin
