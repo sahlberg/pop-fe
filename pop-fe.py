@@ -1474,10 +1474,14 @@ if __name__ == "__main__":
 
     if args.list_themes:
         for theme in themes:
-            print(theme, ':', themes[theme]['description'])
+            print(theme, ':', themes[theme]['description'], themes[theme]['url'])
         exit(0)
 
     if args.theme:
+        if args.theme[:4] == 'http':
+            themes['http'] = {'url': args.theme,
+                              'description': 'direct link to theme'}
+            args.theme = 'http'
         if args.theme not in themes:
             print('No such theme:', args.theme)
             exit(1)

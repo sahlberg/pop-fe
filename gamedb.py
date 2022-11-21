@@ -50440,6 +50440,6 @@ libcrypt = {
 
 themes = {
     'Test': { 'url': 'https://github.com/sahlberg/pop-fe-theme-test',
-              'description': 'This is a test theme',
+              'description': 'This is a test theme.',
         }
 }
