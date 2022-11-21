@@ -24,7 +24,7 @@ except:
 from PIL import Image, ImageDraw
 from bchunk import bchunk
 import importlib  
-from gamedb import games, libcrypt
+from gamedb import games, libcrypt, themes
 popfe = importlib.import_module("pop-fe")
 
 verbose = False
@@ -97,6 +97,7 @@ class PopFePs3App:
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_pkg': self.on_create_pkg,
             'on_reset': self.on_reset,
+            'on_theme_selected': self.on_theme_selected,
         }
 
         builder.connect_callbacks(callbacks)
@@ -109,6 +110,12 @@ class PopFePs3App:
         c = self.builder.get_object('pic1_canvas', self.master)
         c.drop_target_register(DND_FILES)
         c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
+
+        self._theme = ''
+        o = ['']
+        for theme in themes:
+            o.append(theme)
+        self.builder.get_object('theme', self.master).configure(values=o)
         self.init_data()
 
     def __del__(self):
@@ -186,8 +193,22 @@ class PopFePs3App:
         self.builder.get_variable('square_icon0_variable').set('off')
         self.builder.get_object('square_icon0', self.master).config(state='disabled')
 
-
     def update_preview(self):
+        def has_transparency(img):
+            if img.info.get("transparency", None) is not None:
+                return True
+            if img.mode == "P":
+                transparent = img.info.get("transparency", -1)
+                for _, index in img.getcolors():
+                    if index == transparent:
+                        return True
+            elif img.mode == "RGBA":
+                extrema = img.getextrema()
+                if extrema[3][0] < 255:
+                    return True
+
+                return False
+        
         if not self.pic1:
             return
         c = self.builder.get_object('preview_canvas', self.master)
@@ -197,18 +218,30 @@ class PopFePs3App:
             p1 = self.back.resize((382,216), Image.BILINEAR)
         if self.pic0 and self.pic0_disabled == 'off':
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.BILINEAR)
-            Image.Image.paste(p1, p0, box=(148,79))
+            if has_transparency(p0):
+                Image.Image.paste(p1, p0, box=(148,79), mask=p0)
+            else:
+                Image.Image.paste(p1, p0, box=(148,79))
         if self.icon0:
             if self.icon0_disc == 'off':
                 i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
             else:
                 i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
-            Image.Image.paste(p1, i0, box=(100,79))
+            if has_transparency(i0):
+                Image.Image.paste(p1, i0, box=(100,79), mask=i0)
+            else:
+                Image.Image.paste(p1, i0, box=(100,79))
         temp_files.append('pop-fe-ps3-work/PREVIEW.PNG')
         p1.save('pop-fe-ps3-work/PREVIEW.PNG')
         self.preview_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PREVIEW.PNG')
         c = self.builder.get_object('preview_canvas', self.master)
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
+
+    def on_theme_selected(self, event):
+        self._theme = self.builder.get_object('theme', self.master).get()
+        if self._theme:
+            self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
+        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         
     def on_path_changed(self, event):
         cue_file = event.widget.cget('path')
@@ -281,11 +314,26 @@ class PopFePs3App:
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
             game = popfe.get_game_from_gamelist(disc_id)
             print('Fetching SND0')
-            if disc_id in games and 'snd0' in games[disc_id]:
-                self.builder.get_variable('snd0_variable').set(games[disc_id]['snd0'])
-            
+            snd0 = None
+            if self._theme != '':
+                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-ps3-work')
+                if snd0:
+                    temp_files.append(snd0)
+            if not snd0 and disc_id in games and 'snd0' in games[disc_id]:
+                snd0 = games[disc_id]['snd0']
+            if snd0:
+                self.builder.get_variable('snd0_variable').set(snd0)
+                
             print('Fetching ICON0') if verbose else None
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
+            self.icon0 = None
+            if self._theme != '':
+                print('Get icon0 from theme')
+                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'ICON0.PNG')
+                if not self.icon0:
+                    self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'ICON0.png')
+                self.icon0 = self.icon0.crop(self.icon0.getbbox())
+            if not self.icon0:
+                self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
             self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
             self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
@@ -293,7 +341,13 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC0') if verbose else None
-            self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
+            self.pic0 = None
+            if self._theme != '':
+                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC0.PNG')
+                if not self.pic0:
+                    self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC0.png')
+            if not self.pic0:
+                self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
             self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
@@ -301,7 +355,13 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
             
             print('Fetching PIC1') if verbose else None
-            self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
+            self.pic1 = None
+            if self._theme != '':
+                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC1.PNG')
+                if not self.pic1:
+                    self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC1.png')
+            if not self.pic1:
+                self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
             self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')

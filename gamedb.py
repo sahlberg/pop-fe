@@ -50438,3 +50438,10 @@ libcrypt = {
     'SLES32969': {'magic_word': 59587, 'url': 'http://redump.org/disc/1116/'}
 }
 
+themes = {
+    '98DMAKE': { 'url': 'https://github.com/98DEMAKE/pop-fe-theme-98demake',
+                 'description': 'A theme by 98DMAKE',
+                 'square_icon0': True,
+        }
+}
+

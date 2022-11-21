@@ -48,7 +48,7 @@ from vmp import encode_vmp
 from pathlib import Path
 
 from bchunk import bchunk
-from gamedb import games, libcrypt
+from gamedb import games, libcrypt, themes
 from make_isoedat import pack
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
@@ -133,6 +133,28 @@ def get_game_from_gamelist(game_id):
 
 def get_title_from_game(game_id):
     return games[game_id]['title'] if game_id in games else "Unknown"
+
+def get_snd0_from_theme(theme, game_id, subdir):
+    try:
+        tmpfile = subdir + '/snd0.theme'
+        temp_files.append(tmpfile)
+        url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/SND0.WAV' + '?raw=true'
+        print('Try URL', url)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
+        return tmpfile
+    except:
+        return None
+    
+def get_image_from_theme(theme, game_id, subdir, image):
+    try:
+        tmpfile = subdir + '/' + image + '.theme'
+        temp_files.append(tmpfile)
+        url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/' + image + '?raw=true'
+        print('Try URL', url)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
+        return Image.open(tmpfile)
+    except:
+        return None
 
 def get_icon0_from_game(game_id, game, cue, tmpfile):
     try:
@@ -815,7 +837,18 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     temp_files.append(f + '/ICON0.PNG')
 
     if pic0:
-        image = pic0.resize((1000, 560), Image.NEAREST)
+        # 4:3 == 1.333   16:9 == 1.7777
+        aspect = pic0.size[0] / pic0.size[1]
+        pp = pic0
+        if aspect < 1.555:
+            # Looks like pic0 is 4:3. We need to add some transparent
+            # columns on each side to turn this into 16:9 aspect ratio
+            # which is what PS3 expects for PIC0.PNG
+            pp = Image.new(pic0.mode, (int(pic0.size[1] * 1.777), pic0.size[1]), (0,0,0)).convert('RGBA')
+            pp.putalpha(0)
+            pp.paste(pic0, (int((pic0.size[1] * 1.777 - pic0.size[0]) / 2),0))
+
+        image = pp.resize((1000, 560), Image.NEAREST)
         image.save(f + '/PIC0.PNG', format='PNG')
         temp_files.append(f + '/PIC0.PNG')
     
@@ -823,9 +856,21 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
-    image = pic0.resize((310, 250), Image.NEAREST)
-    image.save(f + '/PIC2.PNG', format='PNG')
-    temp_files.append(f + '/PIC2.PNG')
+    if pic0:
+        # 4:3 == 1.333   16:9 == 1.7777
+        aspect = pic0.size[0] / pic0.size[1]
+        pp = pic0
+        if aspect > 1.555:
+            # Looks like pic0 is 16:9. We need to add some transparent
+            # areas above and below the image to turn this into 4:3 aspect ratio
+            # which is what PS3 expects for PIC2.PNG
+            pp = Image.new(pic0.mode, (pic0.size[0], int(pic0.size[0] / 1.333)), (0,0,0)).convert('RGBA')
+            pp.putalpha(0)
+            pp.paste(pic0, (0, int((pic0.size[0] / 1.333 - pic0.size[1]) / 2)))
+
+        image = pp.resize((310, 250), Image.NEAREST)
+        image.save(f + '/PIC2.PNG', format='PNG')
+        temp_files.append(f + '/PIC2.PNG')
     
     with open('PS3LOGO.DAT', 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:
@@ -1440,11 +1485,29 @@ if __name__ == "__main__":
                     help='Add a disc-id/game-title watermark for PSP/PSC')
     parser.add_argument('--square-icon0', action='store_true',
                     help='Rescale ICON0 so that is is square')
+    parser.add_argument('--list-themes', action='store_true',
+                    help='List available themes')
+    parser.add_argument('--theme',
+                        help='Theme to use')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
     if args.v:
         verbose = True
+
+    if args.list_themes:
+        for theme in themes:
+            print(theme, ':', themes[theme]['description'], themes[theme]['url'])
+        exit(0)
+
+    if args.theme:
+        if args.theme[:4] == 'http':
+            themes['http'] = {'url': args.theme,
+                              'description': 'direct link to theme'}
+            args.theme = 'http'
+        if args.theme not in themes:
+            print('No such theme:', args.theme)
+            exit(1)
 
     if args.install:
         print('Install/Update required dependencies')
@@ -1650,6 +1713,10 @@ if __name__ == "__main__":
     if args.cover:
         print('Get cover from', args.cover)
         icon0 = Image.open(args.cover)
+    if args.theme:
+        icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.PNG')
+        if not icon0:
+            icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.png')
     if not icon0:
         print('Fetch ICON0 for', game_title) if verbose else None
         temp_files.append(subdir + 'ICON0.jpg')
@@ -1660,6 +1727,10 @@ if __name__ == "__main__":
     if args.pic0:
         print('Get PIC0/Screenshot from', args.pic0)
         pic0 = Image.open(args.pic0)
+    if args.theme:
+        pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.PNG')
+        if not pic0:
+            pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.png')
     if not pic0:
         print('Fetch PIC0 for', game_title) if verbose else None
         pic0 = get_pic0_from_game(game_id, game, args.files[0])
@@ -1669,6 +1740,10 @@ if __name__ == "__main__":
     if args.pic1:
         print('Get PIC1/Screenshot from', args.pic1)
         pic1 = Image.open(args.pic1)
+    if args.theme:
+        pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.PNG')
+        if not pic1:
+            pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.png')
     if not pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
         pic1 = get_pic1_from_game(game_id, game, args.files[0])
@@ -1721,6 +1796,8 @@ if __name__ == "__main__":
 
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
+    if args.theme:
+        snd0 = get_snd0_from_theme(args.theme, game_id, subdir)
     if not snd0:
         try:
             os.stat(args.files[0][:-4] + '.snd0')
