@@ -50438,3 +50438,8 @@ libcrypt = {
     'SLES32969': {'magic_word': 59587, 'url': 'http://redump.org/disc/1116/'}
 }
 
+themes = {
+    'Test': { 'url': 'https://github.com/sahlberg/pop-fe-theme-test',
+              'description': 'This is a test theme',
+        }
+}
