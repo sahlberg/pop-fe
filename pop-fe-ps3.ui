@@ -275,7 +275,10 @@
           <object class="ttk.Frame" id="discs">
             <property name="height">200</property>
             <property name="width">200</property>
-            <layout manager="pack" />
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
             <child>
               <object class="pygubu.builder.widgets.pathchooserinput" id="disc1">
                 <property name="state">disabled</property>
@@ -407,8 +410,11 @@
           <object class="ttk.Frame" id="nameofgame">
             <property name="height">200</property>
             <property name="width">200</property>
-            <layout manager="pack">
-              <property name="side">left</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="pady">10</property>
+              <property name="row">1</property>
+              <property name="sticky">nsew</property>
             </layout>
             <child>
               <object class="ttk.Label" id="label9">
@@ -458,6 +464,35 @@
                   <property name="column">1</property>
                   <property name="row">3</property>
                   <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="theme_frame">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">2</property>
+              <property name="sticky">nsew</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="label3">
+                <property name="text" translatable="yes">Theme:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="theme">
+                <bind sequence="&lt;&lt;ComboboxSelected&gt;&gt;" handler="on_theme_selected" add="" />
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">0</property>
                 </layout>
               </object>
             </child>

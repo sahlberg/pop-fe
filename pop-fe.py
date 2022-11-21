@@ -140,7 +140,7 @@ def get_snd0_from_theme(theme, game_id, subdir):
         temp_files.append(tmpfile)
         url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/SND0.WAV' + '?raw=true'
         print('Try URL', url)
-        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=5, check=True)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
         return tmpfile
     except:
         return None
@@ -151,7 +151,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
         temp_files.append(tmpfile)
         url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/' + image + '?raw=true'
         print('Try URL', url)
-        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=5, check=True)
+        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
         return Image.open(tmpfile)
     except:
         return None
