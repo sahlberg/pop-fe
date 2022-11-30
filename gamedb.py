@@ -50439,7 +50439,9 @@ libcrypt = {
 }
 
 themes = {
-    'Test': { 'url': 'https://github.com/sahlberg/pop-fe-theme-test',
-              'description': 'This is a test theme.',
+    '98DMAKE': { 'url': 'https://github.com/98DEMAKE/pop-fe-theme-98demake',
+                 'description': 'A theme by 98DMAKE',
+                 'square_icon0': True,
         }
 }
+

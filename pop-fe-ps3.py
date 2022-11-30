@@ -193,7 +193,6 @@ class PopFePs3App:
         self.builder.get_variable('square_icon0_variable').set('off')
         self.builder.get_object('square_icon0', self.master).config(state='disabled')
 
-
     def update_preview(self):
         if not self.pic1:
             return
@@ -219,6 +218,8 @@ class PopFePs3App:
 
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
+        self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
+        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         
     def on_path_changed(self, event):
         cue_file = event.widget.cget('path')
@@ -304,7 +305,11 @@ class PopFePs3App:
             print('Fetching ICON0') if verbose else None
             self.icon0 = None
             if self._theme != '':
+                print('Get icon0 from theme')
                 self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'ICON0.PNG')
+                if not self.icon0:
+                    self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'ICON0.png')
+                self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
                 self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
@@ -317,6 +322,8 @@ class PopFePs3App:
             self.pic0 = None
             if self._theme != '':
                 self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC0.PNG')
+                if not self.pic0:
+                    self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC0.png')
             if not self.pic0:
                 self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
@@ -329,6 +336,8 @@ class PopFePs3App:
             self.pic1 = None
             if self._theme != '':
                 self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC1.PNG')
+                if not self.pic1:
+                    self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'PIC1.png')
             if not self.pic1:
                 self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
