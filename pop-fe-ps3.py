@@ -194,6 +194,21 @@ class PopFePs3App:
         self.builder.get_object('square_icon0', self.master).config(state='disabled')
 
     def update_preview(self):
+        def has_transparency(img):
+            if img.info.get("transparency", None) is not None:
+                return True
+            if img.mode == "P":
+                transparent = img.info.get("transparency", -1)
+                for _, index in img.getcolors():
+                    if index == transparent:
+                        return True
+            elif img.mode == "RGBA":
+                extrema = img.getextrema()
+                if extrema[3][0] < 255:
+                    return True
+
+                return False
+        
         if not self.pic1:
             return
         c = self.builder.get_object('preview_canvas', self.master)
@@ -203,13 +218,19 @@ class PopFePs3App:
             p1 = self.back.resize((382,216), Image.BILINEAR)
         if self.pic0 and self.pic0_disabled == 'off':
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.BILINEAR)
-            Image.Image.paste(p1, p0, box=(148,79))
+            if has_transparency(p0):
+                Image.Image.paste(p1, p0, box=(148,79), mask=p0)
+            else:
+                Image.Image.paste(p1, p0, box=(148,79))
         if self.icon0:
             if self.icon0_disc == 'off':
                 i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
             else:
                 i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
-            Image.Image.paste(p1, i0, box=(100,79))
+            if has_transparency(i0):
+                Image.Image.paste(p1, i0, box=(100,79), mask=i0)
+            else:
+                Image.Image.paste(p1, i0, box=(100,79))
         temp_files.append('pop-fe-ps3-work/PREVIEW.PNG')
         p1.save('pop-fe-ps3-work/PREVIEW.PNG')
         self.preview_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PREVIEW.PNG')
