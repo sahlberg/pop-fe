@@ -837,7 +837,18 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     temp_files.append(f + '/ICON0.PNG')
 
     if pic0:
-        image = pic0.resize((1000, 560), Image.NEAREST)
+        # 4:3 == 1.333   16:9 == 1.7777
+        aspect = pic0.size[0] / pic0.size[1]
+        pp = pic0
+        if aspect < 1.555:
+            # Looks like pic0 is 4:3. We need to add some transparent
+            # columns on each side to turn this into 16:9 aspect ratio
+            # which is what PS3 expects for PIC0.PNG
+            pp = Image.new(pic0.mode, (int(pic0.size[1] * 1.777), pic0.size[1]), (0,0,0)).convert('RGBA')
+            pp.putalpha(0)
+            pp.paste(pic0, (int((pic0.size[1] * 1.777 - pic0.size[0]) / 2),0))
+
+        image = pp.resize((1000, 560), Image.NEAREST)
         image.save(f + '/PIC0.PNG', format='PNG')
         temp_files.append(f + '/PIC0.PNG')
     
@@ -845,9 +856,21 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     image.save(f + '/PIC1.PNG', format='PNG')
     temp_files.append(f + '/PIC1.PNG')
     
-    image = pic0.resize((310, 250), Image.NEAREST)
-    image.save(f + '/PIC2.PNG', format='PNG')
-    temp_files.append(f + '/PIC2.PNG')
+    if pic0:
+        # 4:3 == 1.333   16:9 == 1.7777
+        aspect = pic0.size[0] / pic0.size[1]
+        pp = pic0
+        if aspect > 1.555:
+            # Looks like pic0 is 16:9. We need to add some transparent
+            # areas above and below the image to turn this into 4:3 aspect ratio
+            # which is what PS3 expects for PIC2.PNG
+            pp = Image.new(pic0.mode, (pic0.size[0], int(pic0.size[0] / 1.333)), (0,0,0)).convert('RGBA')
+            pp.putalpha(0)
+            pp.paste(pic0, (0, int((pic0.size[0] / 1.333 - pic0.size[1]) / 2)))
+
+        image = pp.resize((310, 250), Image.NEAREST)
+        image.save(f + '/PIC2.PNG', format='PNG')
+        temp_files.append(f + '/PIC2.PNG')
     
     with open('PS3LOGO.DAT', 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:
@@ -1692,6 +1715,8 @@ if __name__ == "__main__":
         icon0 = Image.open(args.cover)
     if args.theme:
         icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.PNG')
+        if not icon0:
+            icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.png')
     if not icon0:
         print('Fetch ICON0 for', game_title) if verbose else None
         temp_files.append(subdir + 'ICON0.jpg')
@@ -1704,6 +1729,8 @@ if __name__ == "__main__":
         pic0 = Image.open(args.pic0)
     if args.theme:
         pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.PNG')
+        if not pic0:
+            pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.png')
     if not pic0:
         print('Fetch PIC0 for', game_title) if verbose else None
         pic0 = get_pic0_from_game(game_id, game, args.files[0])
@@ -1715,6 +1742,8 @@ if __name__ == "__main__":
         pic1 = Image.open(args.pic1)
     if args.theme:
         pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.PNG')
+        if not pic1:
+            pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.png')
     if not pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
         pic1 = get_pic1_from_game(game_id, game, args.files[0])

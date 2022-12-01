@@ -218,7 +218,8 @@ class PopFePs3App:
 
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
-        self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
+        if self._theme:
+            self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
         self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         
     def on_path_changed(self, event):
