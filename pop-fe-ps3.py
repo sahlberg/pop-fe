@@ -211,6 +211,8 @@ class PopFePs3App:
         
         if not self.pic1:
             return
+        if self.pic0 and self.pic0.mode == 'P':
+            self.pic0 = self.pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
         if self.pic1_bc == 'off':
             p1 = self.pic1.resize((382,216), Image.BILINEAR)
