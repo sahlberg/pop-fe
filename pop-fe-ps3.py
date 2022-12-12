@@ -165,7 +165,6 @@ class PopFePs3App:
         self.pic0_disabled = 'off'
         self.pic1_bc = 'off'
         self.icon0_disc = 'off'
-        self.square_icon0 = 'off'
         self.preview_tk = None
         self.pkgdir = None
         
@@ -181,17 +180,7 @@ class PopFePs3App:
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
-        self.builder.get_object('disable_pic0', self.master).config(state='disabled')
-        self.builder.get_variable('pic0_disabled_variable').set('off')
-        self.builder.get_object('pic1_as_background', self.master).config(state='disabled')
-        self.builder.get_variable('bc_for_pic1_variable').set('off')
-        self.builder.get_object('disc_as_icon0', self.master).config(state='disabled')
-        self.builder.get_variable('disc_as_icon0_variable').set('off')
         self.builder.get_variable('snd0_variable').set('')
-        self.builder.get_object('icon0_or_disc', self.master).config(text='COVER')
-        self.builder.get_object('pic1_or_back', self.master).config(text='PIC1')
-        self.builder.get_variable('square_icon0_variable').set('off')
-        self.builder.get_object('square_icon0', self.master).config(state='disabled')
 
     def update_preview(self):
         def has_transparency(img):
