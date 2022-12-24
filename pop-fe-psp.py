@@ -136,8 +136,6 @@ class PopFePs3App:
         self.pic1 = None
         self.pic1_tk = None
         self.pkgdir = None
-        self.watermark = 'on'
-        self.square_icon0 = 'off'
         self.builder.get_variable('watermark_variable').set(self.watermark)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
@@ -248,7 +246,7 @@ class PopFePs3App:
                     self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-ps3-work', 'ICON0.png')
                 if self.icon0:
                     self.icon0 = self.icon0.crop(self.icon0.getbbox())
-            if not icon0:
+            if not self.icon0:
                 self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
             self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
