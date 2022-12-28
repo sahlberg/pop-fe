@@ -147,12 +147,14 @@ def get_snd0_from_theme(theme, game_id, subdir):
     
 def get_image_from_theme(theme, game_id, subdir, image):
     try:
-        tmpfile = subdir + '/' + image + '.theme'
-        temp_files.append(tmpfile)
-        url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/' + image + '?raw=true'
-        print('Try URL', url)
-        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
-        return Image.open(tmpfile)
+        url = themes[theme]['url'] + '/raw/main/data/' + game_id + '/' + image
+        print('Try URL', url) #if verbose else None
+        ret = requests.get(url, stream=True)
+        if ret.status_code != 200:
+            return None
+
+        d = ret.content
+        return Image.open(io.BytesIO(d))
     except:
         return None
 
