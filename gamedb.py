@@ -2357,17 +2357,7 @@ games = {
     'SLUS01037': {
         'url': "games/U/B/SLUS-01037.html",
     	'id': 'SLUS01037',
-	'title': "BALDUR'S GATE [3 DISCS]",
-    },
-    'SLUS01037': {
-        'url': "games/U/B/SLUS-01037.html",
-    	'id': 'SLUS01037',
-	'title': "BALDUR'S GATE [3 DISCS]",
-    },
-    'SLUS01037': {
-        'url': "games/U/B/SLUS-01037.html",
-    	'id': 'SLUS01037',
-	'title': "BALDUR'S GATE [3 DISCS]",
+	'title': "BALDUR'S GATE",
     },
     'SLUS01249': {
         'url': "games/U/B/SLUS-01249.html",

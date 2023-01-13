@@ -262,11 +262,12 @@ class PopFePs3App:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
             self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
-        temp_files.append('pop-fe-ps3-work/ICON0.PNG')
-        self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
-        c = self.builder.get_object('icon0_canvas', self.master)
-        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        if self.icon0:
+            temp_files.append('pop-fe-ps3-work/ICON0.PNG')
+            self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
+            self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
+            c = self.builder.get_object('icon0_canvas', self.master)
+            c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
         print('Fetching PIC0') if verbose else None
         self.pic0 = None

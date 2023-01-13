@@ -177,6 +177,8 @@ def get_icon0_from_game(game_id, game, cue, tmpfile):
     except:
         print('Falling back to PSXDATACENTRE for cover')
         g = re.findall('images/covers/./.*/.*.jpg', game)
+        if not g:
+            return None
         return Image.open(io.BytesIO(fetch_cached_binary(g[0])))
         
 def get_pic_from_game(pic, game_id, game, filename):
