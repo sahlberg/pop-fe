@@ -7912,16 +7912,19 @@ games = {
         'url': "games/U/T/SLUS-01355.html",
     	'id': 'SLUS01355',
 	'title': "TALES OF DESTINY II",
+        'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
     },
     'SLUS01367': {
         'url': "games/U/T/SLUS-01355.html",
     	'id': 'SLUS01367',
 	'title': "TALES OF DESTINY II",
+        'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
     },
     'SLUS01368': {
         'url': "games/U/T/SLUS-01355.html",
     	'id': 'SLUS01368',
 	'title': "TALES OF DESTINY II",
+        'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
     },
     'SLUS01547': {
         'url': "games/U/T/SLUS-01547.html",
