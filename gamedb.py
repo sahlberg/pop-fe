@@ -7892,6 +7892,7 @@ games = {
         'url': "games/U/T/SLUS-00560.html",
     	'id': 'SLUS00560',
 	'title': "TACTICS OGRE - LET US CLING TOGETHER",
+        'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
     },
     'SLUS00660': {
         'url': "games/U/T/SLUS-00660.html",
@@ -47221,11 +47222,13 @@ games = {
         'url': "games/J/T/SLPS-00767.html",
     	'id': 'SLPS00767',
 	'title': "TACTICS OGRE - LET US CLING TOGETHER",
+        'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
     },
     'SLPS02524': {
         'url': "games/J/T/SLPS-02524.html",
     	'id': 'SLPS02524',
 	'title': "TACTICS OGRE - LET US CLING TOGETHER [ARTDINK BEST CHOICE]",
+        'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
     },
     'SLPS00116': {
         'url': "games/J/T/SLPS-00116.html",
