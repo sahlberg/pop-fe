@@ -2418,21 +2418,25 @@ games = {
         'url': "games/U/B/SLUS-01141.html",
     	'id': 'SLUS01141',
 	'title': "BATMAN - GOTHAM CITY RACER",
+        'snd0': "https://www.youtube.com/watch?v=pQ7z5T8sjAU",
     },
     'SLUS00393': {
         'url': "games/U/B/SLUS-00393.html",
     	'id': 'SLUS00393',
 	'title': "BATMAN & ROBIN",
+        'snd0': "https://www.youtube.com/watch?v=jd_eGM15R1k",
     },
     'SLUS01207': {
         'url': "games/U/B/SLUS-01207.html",
     	'id': 'SLUS01207',
 	'title': "BATMAN BEYOND - RETURN OF THE JOKER",
+        'snd0': "https://www.youtube.com/watch?v=sD8JuG4rbfg&list=PL8x7wHq_i5DfISkP3Fqy7I9Uds-XylhkT&index=1",
     },
     'SLUS00387': {
         'url': "games/U/B/SLUS-00387.html",
     	'id': 'SLUS00387',
 	'title': "BATMAN FOREVER - THE ARCADE GAME",
+        'snd0': "https://www.youtube.com/watch?v=DKQOPhoWy2M",
     },
     'SCUS94003': {
         'url': "games/U/B/SCUS-94003.html",
@@ -2628,16 +2632,19 @@ games = {
         'url': "games/U/B/SLUS-00823.html",
     	'id': 'SLUS00823',
 	'title': "BOMBERMAN FANTASY RACE",
+        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
     },
     'SLUS01189': {
         'url': "games/U/B/SLUS-01189.html",
     	'id': 'SLUS01189',
 	'title': "BOMBERMAN PARTY EDITION",
+        'snd0': "https://www.youtube.com/watch?v=CtSzGhohR7A&list=PLjyLjyXJQJUPUeEAnIRdBFmWs5gUL9mZy&index=1",
     },
     'SLUS00680': {
         'url': "games/U/B/SLUS-00680.html",
     	'id': 'SLUS00680',
 	'title': "BOMBERMAN WORLD",
+        'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
     },
     'SLUS00968': {
         'url': "games/U/B/SLUS-00968.html",
@@ -10411,21 +10418,25 @@ games = {
         'url': "games/P/B/SLES-00102.html",
     	'id': 'SLES00102',
 	'title': "BATMAN & ROBIN",
+        'snd0': "https://www.youtube.com/watch?v=jd_eGM15R1k",
     },
     'SLES01220': {
         'url': "games/P/B/SLES-01220.html",
     	'id': 'SLES01220',
 	'title': "BATMAN & ROBIN",
+        'snd0': "https://www.youtube.com/watch?v=jd_eGM15R1k",
     },
     'SLES02874': {
         'url': "games/P/B/SLES-02874.html",
     	'id': 'SLES02874',
 	'title': "BATMAN - GOTHAM CITY RACER",
+        'snd0': "https://www.youtube.com/watch?v=pQ7z5T8sjAU",
     },
     'SLES00525': {
         'url': "games/P/B/SLES-00525.html",
     	'id': 'SLES00525',
 	'title': "BATMAN FOREVER - THE ARCADE GAME",
+        'snd0': "https://www.youtube.com/watch?v=DKQOPhoWy2M",
     },
     'SLES02902': {
         'url': "games/P/B/SLES-02902.html",
@@ -10696,11 +10707,13 @@ games = {
         'url': "games/P/B/SLES-01712.html",
     	'id': 'SLES01712',
 	'title': "BOMBERMAN FANTASY RACE",
+        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
     },
     'SCES01078': {
         'url': "games/P/B/SCES-01078.html",
     	'id': 'SCES01078',
 	'title': "BOMBERMAN WORLD",
+        'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
     },
     'SLES01451': {
         'url': "games/P/B/SLES-01451.html",
@@ -25695,6 +25708,7 @@ games = {
         'url': "games/J/B/SLPS-00698.html",
     	'id': 'SLPS00698',
 	'title': "BATMAN FOREVER - THE ARCADE GAME",
+        'snd0': "https://www.youtube.com/watch?v=DKQOPhoWy2M",
     },
     'SLPS00485': {
         'url': "games/J/B/SLPS-00485.html",
@@ -26358,16 +26372,19 @@ games = {
         'url': "games/J/B/SLPS-01525.html",
     	'id': 'SLPS01525',
 	'title': "BOMBERMAN FANTASY RACE",
+        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
     },
     'SLPS91138': {
         'url': "games/J/B/SLPS-91138.html",
     	'id': 'SLPS91138',
 	'title': "BOMBERMAN FANTASY RACE [PLAYSTATION THE BEST]",
+        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
     },
     'SLPM87102': {
         'url': "games/J/B/SLPM-87102.html",
     	'id': 'SLPM87102',
 	'title': "BOMBERMAN FANTASY RACE [PSONE BOOKS]",
+        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
     },
     'SLPS03002': {
         'url': "games/J/B/SLPS-03002.html",
@@ -26398,16 +26415,19 @@ games = {
         'url': "games/J/B/SCPS-45168.html",
     	'id': 'SCPS45168',
 	'title': "BOMBERMAN WORLD",
+        'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
     },
     'SLPS01155': {
         'url': "games/J/B/SLPS-01155.html",
     	'id': 'SLPS01155',
 	'title': "BOMBERMAN WORLD",
+        'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
     },
     'SLPS91149': {
         'url': "games/J/B/SLPS-91149.html",
     	'id': 'SLPS91149',
 	'title': "BOMBERMAN WORLD [PLAYSTATION THE BEST]",
+        'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
     },
     'SLPS00333': {
         'url': "games/J/B/SLPS-00333.html",
