@@ -4634,6 +4634,7 @@ games = {
         'url': "games/U/H/SLUS-01195.html",
     	'id': 'SLUS01195',
 	'title': "HOGS OF WAR",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLUS01394': {
         'url': "games/U/H/SLUS-01394.html",
@@ -4959,11 +4960,13 @@ games = {
         'url': "games/U/K/SLUS-00158.html",
     	'id': 'SLUS00158',
 	'title': "KING'S FIELD",
+        'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
     },
     'SLUS00255': {
         'url': "games/U/K/SLUS-00255.html",
     	'id': 'SLUS00255',
 	'title': "KING'S FIELD II",
+        'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
     },
     'SLUS00801': {
         'url': "games/U/K/SLUS-00801.html",
@@ -6426,11 +6429,13 @@ games = {
         'url': "games/U/P/SLUS-01158.html",
     	'id': 'SLUS01158',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLUS01339': {
         'url': "games/U/P/SLUS-01158.html",
     	'id': 'SLUS01339',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLUS01130': {
         'url': "games/U/P/SLUS-01130.html",
@@ -12706,26 +12711,31 @@ games = {
         'url': "games/P/H/SLES-01041.html",
     	'id': 'SLES01041',
 	'title': "HOGS OF WAR",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLES02769': {
         'url': "games/P/H/SLES-02769.html",
     	'id': 'SLES02769',
 	'title': "HOGS OF WAR",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLES02767': {
         'url': "games/P/H/SLES-02767.html",
     	'id': 'SLES02767',
 	'title': "HOGS OF WAR [FRONTSCHWEINE]",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLES02766': {
         'url': "games/P/H/SLES-02766.html",
     	'id': 'SLES02766',
 	'title': "HOGS OF WAR [LES COCHONS DE GUERRE]",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLES02768': {
         'url': "games/P/H/SLES-02768.html",
     	'id': 'SLES02768',
 	'title': "HOGS OF WAR [MARRANOS EN GUERRA]",
+        'snd0': "https://www.youtube.com/watch?v=ikDsMKdGdW0&list=PL3kKCMADc1jZyDhHiZ84hmfoOeGiMbpSH&index=1",
     },
     'SLES04050': {
         'url': "games/P/H/SLES-04050.html",
@@ -14341,6 +14351,7 @@ games = {
         'url': "games/P/K/SCES-00510.html",
     	'id': 'SCES00510',
 	'title': "KING'S FIELD",
+        'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
     },
     'SCES01659': {
         'url': "games/P/K/SCES-01659.html",
@@ -35491,26 +35502,31 @@ games = {
         'url': "games/J/K/SLPS-00017.html",
     	'id': 'SLPS00017',
 	'title': "KING'S FIELD",
+        'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
     },
     'SLPS91401': {
         'url': "games/J/K/SLPS-91401.html",
     	'id': 'SLPS91401',
 	'title': "KING'S FIELD [PSONE BOOKS]",
+        'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
     },
     'SLPS00069': {
         'url': "games/J/K/SLPS-00069.html",
     	'id': 'SLPS00069',
 	'title': "KING'S FIELD II",
+        'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
     },
     'SLPS91003': {
         'url': "games/J/K/SLPS-91003.html",
     	'id': 'SLPS91003',
 	'title': "KING'S FIELD II [PLAYSTATION THE BEST]",
+        'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
     },
     'SLPS91423': {
         'url': "games/J/K/SLPS-91423.html",
     	'id': 'SLPS91423',
 	'title': "KING'S FIELD II [PSONE BOOKS]",
+        'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
     },
     'SLPS00377': {
         'url': "games/J/K/SLPS-00377.html",
@@ -41097,36 +41113,43 @@ games = {
         'url': "games/J/P/SCPS-45495.html",
     	'id': 'SCPS45495',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SCPS45496': {
         'url': "games/J/P/SCPS-45495.html",
     	'id': 'SCPS45496',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLPS02825': {
         'url': "games/J/P/SLPS-02825.html",
     	'id': 'SLPS02825',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLPS02826': {
         'url': "games/J/P/SLPS-02825.html",
     	'id': 'SLPS02826',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLPM86967': {
         'url': "games/J/P/SLPM-86967.html",
     	'id': 'SLPM86967',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT [ATLUS BEST COLLECTION]",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLPS02785': {
         'url': "games/J/P/SLPS-02785.html",
     	'id': 'SLPS02785',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT [DELUXE PACK]",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SLPS02786': {
         'url': "games/J/P/SLPS-02785.html",
     	'id': 'SLPS02786',
 	'title': "PERSONA 2 - ETERNAL PUNISHMENT [DELUXE PACK]",
+        'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
     },
     'SCPS45410': {
         'url': "games/J/P/SCPS-45410.html",

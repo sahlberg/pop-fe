@@ -104,7 +104,7 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     # Some games are of the form \DIR\SLPS12345, get rid of the path
     buf = buf.split('\\')[-1]
     
-    bad_chars = "\\_. "
+    bad_chars = "\\_. -"
     for i in bad_chars:
         buf = buf.replace(i, "")
 
