@@ -211,11 +211,12 @@ class PopFePs3App:
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
             else:
                 Image.Image.paste(p1, p0, box=(148,79))
-        if self.icon0:
-            if self.icon0_disc == 'off':
+        i0 = None
+        if self.icon0 and self.icon0_disc == 'off':
                 i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
-            else:
+        if self.disc and self.icon0_disc == 'on':
                 i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.BILINEAR)
+        if i0:
             if has_transparency(i0):
                 Image.Image.paste(p1, i0, box=(100,79), mask=i0)
             else:

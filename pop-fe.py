@@ -215,7 +215,7 @@ def get_pic1_from_bc(game_id, game, cue):
     path = path + '/' + path.split('/')[-1] + '-B-ALL.jpg'
     ret = requests.get(PSX_SITE + path, stream=True)
     if ret.status_code != 200:
-        raise Exception('Failed to fetch file ', PSX_SITE + path)
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
 
     return Image.open(io.BytesIO(ret.content))
 
@@ -227,7 +227,7 @@ def get_icon0_from_disc(game_id, game, cue, filename):
     path = path + '/' + path.split('/')[-1] + '-D-ALL.jpg'
     ret = requests.get(PSX_SITE + path, stream=True)
     if ret.status_code != 200:
-        raise Exception('Failed to fetch file ', PSX_SITE + path)
+        return Image.new("RGBA", (80, 80), (255,255,255,0))
 
     return Image.open(io.BytesIO(ret.content))
 
