@@ -615,7 +615,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True):
     print('Create PBP file for', game_title) if verbose else None
 
     p = popstation()
@@ -643,6 +643,13 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         p.add_img((f, toc))
 
     p.eboot = dest_file
+    if not whole_disk:
+        bc = bchunk()
+        bc.towav = True
+        bc.open(cue_files[i])
+        # store how big the data track is
+        p.add_track0_size(bc.tracks[0]['stop'])
+        p.striptracks = True
     print('Create PBP file at', p.eboot)
     p.create_pbp()
     try:
@@ -692,7 +699,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False)
 
     idx = 0
     for mc in mem_cards:
