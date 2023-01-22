@@ -1642,7 +1642,7 @@ if __name__ == "__main__":
         cue_files.append(cue_file)
         cu2_files.append(cu2_file)
 
-        if args.ps3_pkg or args.retroarch_pbp_dir:
+        if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
             bc = bchunk()
             bc.towav = True
             bc.open(cue_file)
@@ -1830,7 +1830,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
            
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, [], snd0=snd0, watermark=args.watermark, square_icon0=args.square_icon0)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, square_icon0=args.square_icon0)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
