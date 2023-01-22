@@ -650,10 +650,8 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         p.snd0 = snd0
     for i in range(len(img_files)):
         f = img_files[i]
-        toc = p.get_toc_from_ccd(f)
-        if not toc:
-            print('Need to create a TOC') if verbose else None
-            toc = get_toc_from_cu2(cu2_files[i])
+        print('Need to create a TOC') if verbose else None
+        toc = get_toc_from_cu2(cu2_files[i])
 
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
@@ -791,11 +789,8 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     
     for i in range(len(img_files)):
         f = img_files[i]
-        toc = None
-        #toc = p.get_toc_from_ccd(f)  # ps3 do not like these tocs
-        if not toc:
-            print('Need to create a TOC') if verbose else None
-            toc = get_toc_from_cu2(cu2_files[i])
+        print('Need to create a TOC') if verbose else None
+        toc = get_toc_from_cu2(cu2_files[i])
         p.add_img((f, toc))
         
         if not whole_disk:
@@ -1239,10 +1234,8 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 
     for i in range(len(img_files)):
         f = img_files[i]
-        toc = p.get_toc_from_ccd(f)
-        if not toc:
-            print('Need to create a TOC') if verbose else None
-            toc = get_toc_from_cu2(cu2_files[i])
+        print('Need to create a TOC') if verbose else None
+        toc = get_toc_from_cu2(cu2_files[i])
 
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
