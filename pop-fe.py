@@ -584,7 +584,10 @@ def get_toc_from_cu2(cu2):
         # Find the number of tracks and trk_end
         num_tracks = None
         trk_end = None
+        data = None
         for line in lines:
+            if re.search('data', line):
+                data = line[10:10 + 8]
             if re.search('^ntracks', line):
                 num_tracks = int(line[7:])
             if re.search('^trk end', line):
@@ -593,25 +596,38 @@ def get_toc_from_cu2(cu2):
         toc[17] = bcd(num_tracks)
         # size of image
         toc[27] = bcd(int(trk_end[:2]))
-        toc[28] = bcd(int(trk_end[3:5]))
+        toc[28] = bcd(int(trk_end[3:5]) - 2)
         toc[29] = bcd(int(trk_end[6:8]))
 
-        buf = bytearray(10)
         track = 1
         for line in lines:
             if not re.search('^data', line) and not re.search('^track', line):
                 continue
             
             msf = line[10:]
-            buf[0] = 0x41 if track == 1 else 0x01
-            buf[2] = bcd(track)
-            buf[7] = bcd(int(msf[:2]))
-            buf[8] = bcd(int(msf[3:5]))
-            buf[9] = bcd(int(msf[6:8]))
+            buf = bytearray(10)
+            if track == 1:
+                buf[0] = 0x41
+                buf[2] = bcd(track)
+                buf[3] = bcd(int(data[:2]))
+                buf[4] = bcd(int(data[3:5]))
+                buf[5] = 1
+                buf[7] = int(data[:2])
+                buf[8] = int(data[3:5])
+                buf[9] = int(data[6:8])
+            else:
+                buf[0] = 0x01
+                buf[2] = bcd(track)
+                buf[3] = bcd(int(msf[:2])  - 2*int(data[:2]))
+                buf[4] = bcd(int(msf[3:5]) - 2*int(data[3:5]))
+                buf[5] = bcd(int(msf[6:8]) - 2*int(data[6:8]))
+                buf[7] = bcd(int(msf[:2])  - int(data[:2]))
+                buf[8] = bcd(int(msf[3:5]) - int(data[3:5]))
+                buf[9] = bcd(int(msf[6:8]) - int(data[6:8]))
             
             track = track + 1
             toc = toc + buf
-            
+
         return toc
 
 
