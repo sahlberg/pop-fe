@@ -8461,11 +8461,13 @@ games = {
         'url': "games/U/T/SLUS-00885.html",
     	'id': 'SLUS00885',
 	'title': "TOMB RAIDER - THE LAST REVELATION",
+        'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
     },
     'SLUS01311': {
         'url': "games/U/T/SLUS-01311.html",
     	'id': 'SLUS01311',
 	'title': "TOMB RAIDER - CHRONICLES",
+        'snd0': "https://www.youtube.com/watch?v=AHdafkVxmM4&list=PLEeafQzOeklQxilKZvtXGrRtMa9S-wY5Q&index=1",
     },
     'SCUS94236': {
         'url': "games/U/T/SCUS-94236.html",
@@ -49363,11 +49365,13 @@ games = {
         'url': "games/J/T/SLPS-02803.html",
     	'id': 'SLPS02803',
 	'title': "TOMB RAIDER - THE LAST REVELATION",
+        'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
     },
     'SLPM86896': {
         'url': "games/J/T/SLPM-86896.html",
     	'id': 'SLPM86896',
 	'title': "TOMB RAIDER - THE LAST REVELATION [CAPKORE]",
+        'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
     },
     'SLPM86779': {
         'url': "games/J/T/SLPM-86779.html",
