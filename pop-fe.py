@@ -277,9 +277,9 @@ def get_snd0_from_link(link, subdir='./'):
     temp_files.append(fn)
     try:
         if os.name == 'posix':
-            subprocess.call(['ffmpeg', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+            subprocess.call(['ffmpeg', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
         else:
-            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
         return subdir + 'snd0.wav'
     except:
         return None
@@ -296,9 +296,9 @@ def get_snd0_from_game(game_id, subdir='./'):
     temp_files.append(fn)
     try:
         if os.name == 'posix':
-            subprocess.call(['ffmpeg', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+            subprocess.call(['ffmpeg', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
         else:
-            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
+            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
         return subdir + 'snd0.wav'
     except:
         return None
