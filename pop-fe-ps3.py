@@ -14,6 +14,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinterdnd2 import *
 
+
 have_pytube = False
 try:
     import pytube
@@ -72,7 +73,6 @@ class PopFePs3App:
         self.pic0_disabled = 'off'
         self.pic1_bc = 'off'
         self.icon0_disc = 'off'
-        self.square_icon0 = 'off'
         self.preview_tk = None
         self.pkgdir = None
         
@@ -117,6 +117,8 @@ class PopFePs3App:
         for theme in themes:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
+        self.square_icon0 = 'on'
+        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         self.init_data()
 
     def __del__(self):
@@ -262,7 +264,8 @@ class PopFePs3App:
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG', add_psn_frame=True)
+            
         if self.icon0:
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
             self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
