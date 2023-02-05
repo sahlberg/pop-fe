@@ -286,14 +286,7 @@ def get_snd0_from_link(link, subdir='./'):
         print('Failed to download', link)
         return None
     temp_files.append(fn)
-    try:
-        if os.name == 'posix':
-            subprocess.call(['ffmpeg', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
-        else:
-            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
-        return subdir + 'snd0.wav'
-    except:
-        return None
+    return fn;
 
 # caller adds the wav file to temp_files
 def get_snd0_from_game(game_id, subdir='./'):
@@ -302,17 +295,7 @@ def get_snd0_from_game(game_id, subdir='./'):
     if not 'snd0' in games[game_id]:
         return None
 
-    yt = YouTube(games[game_id]['snd0'])
-    fn = yt.streams.filter(only_audio=True)[0].download(subdir)
-    temp_files.append(fn)
-    try:
-        if os.name == 'posix':
-            subprocess.call(['ffmpeg', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
-        else:
-            subprocess.call(['ffmpeg.exe', '-y', '-i', fn, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0.wav'])
-        return subdir + 'snd0.wav'
-    except:
-        return None
+    return get_snd0_from_link(games[game_id]['snd0'], subdir=subdir)
 
 def get_psio_cover(game_id):
     f = 'https://raw.githubusercontent.com/logi-26/psio-assist/main/covers/' + game_id + '.bmp'
@@ -863,6 +846,15 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
     if snd0:
+        try:
+            temp_files.append(subdir + 'snd0_tmp.wav')
+            if os.name == 'posix':
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+            else:
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+            snd0 = subdir + 'snd0_tmp.wav'
+        except:
+            snd0 = None
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000)
 
     image = None
@@ -1855,7 +1847,7 @@ if __name__ == "__main__":
         snd0 = get_snd0_from_link(snd0)
         if snd0:
             temp_files.append(snd0)
-           
+
     if args.psp_dir:
         create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, square_icon0=args.square_icon0)
     if args.ps2_dir:
