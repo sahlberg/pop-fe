@@ -63,7 +63,6 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
-        self.square_icon0 = 'off'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -91,6 +90,8 @@ class PopFePs3App:
         for theme in themes:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
+        self.square_icon0 = 'on'
+        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         self.init_data()
 
     def __del__(self):
@@ -149,7 +150,6 @@ class PopFePs3App:
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
-        self.builder.get_variable('square_icon0_variable').set('off')
 
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
