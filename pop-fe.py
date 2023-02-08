@@ -702,6 +702,16 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
 
     snd0_data = None
     if snd0:
+        try:
+            temp_files.append(subdir + 'snd0_tmp.wav')
+            if os.name == 'posix':
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+            else:
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+            snd0 = subdir + 'snd0_tmp.wav'
+        except:
+            snd0 = None
+    if snd0:
         convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000)
         with open(subdir + 'SND0.AT3', 'rb') as i:
             snd0_data = i.read()

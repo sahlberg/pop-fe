@@ -8896,6 +8896,7 @@ games = {
         'url': "games/U/W/SLUS-00425.html",
     	'id': 'SLUS00425',
 	'title': "WILD 9",
+        'snd0': "https://www.youtube.com/watch?v=nlaCbnrC29g&list=PL7D5AE03BFE123E0C&index=2",
     },
     'SCUS94608': {
         'url': "games/U/W/SCUS-94608.html",
@@ -23471,6 +23472,7 @@ games = {
         'url': "games/P/W/SLES-01333.html",
     	'id': 'SLES01333',
 	'title': "WILD 9",
+        'snd0': "https://www.youtube.com/watch?v=nlaCbnrC29g&list=PL7D5AE03BFE123E0C&index=2",
     },
     'SCES00321': {
         'url': "games/P/W/SCES-00321.html",
