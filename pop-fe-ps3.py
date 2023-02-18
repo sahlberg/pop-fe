@@ -86,7 +86,6 @@ class PopFePs3App:
             'on_icon0_clicked': self.on_icon0_clicked,
             'on_icon0_dropped': self.on_icon0_dropped,
             'on_icon0_from_disc': self.on_icon0_from_disc,
-            'on_square_icon0': self.on_square_icon0,
             'on_pic0_clicked': self.on_pic0_clicked,
             'on_pic0_dropped': self.on_pic0_dropped,
             'on_pic0_disabled': self.on_pic0_disabled,
@@ -117,8 +116,6 @@ class PopFePs3App:
         for theme in themes:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
-        self.square_icon0 = 'on'
-        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         self.init_data()
 
     def __del__(self):
@@ -231,9 +228,6 @@ class PopFePs3App:
 
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
-        if self._theme:
-            self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
-        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         self.update_assets()
 
     def update_assets(self):
@@ -381,7 +375,6 @@ class PopFePs3App:
             self.builder.get_object('disable_pic0', self.master).config(state='normal')
             self.builder.get_object('pic1_as_background', self.master).config(state='normal')
             self.builder.get_object('disc_as_icon0', self.master).config(state='normal')
-            self.builder.get_object('square_icon0', self.master).config(state='normal')
         elif disc == 'd2':
             self.builder.get_object('discid2', self.master).config(state='normal')
             self.builder.get_object('disc2', self.master).config(state='disabled')
@@ -573,12 +566,6 @@ class PopFePs3App:
         self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
         self.update_preview()
 
-    def on_icon0_square(self):
-        self.icon0_square = self.builder.get_variable('icon0_square_variable').get()
-        
-    def on_square_icon0(self):
-        self.square_icon0 = self.builder.get_variable('square_icon0_variable').get()
-        
     def on_icon0_from_disc(self):
         self.icon0_disc = self.builder.get_variable('disc_as_icon0_variable').get()
         if not self.disc and self.disc_ids:
@@ -712,8 +699,7 @@ class PopFePs3App:
                          self.pic1 if self.pic1_bc=='off' else self.back,
                          self.cue_files, self.cu2_files,
                          self.img_files, [], aea_files, magic_word,
-                         resolution, subdir='pop-fe-ps3-work/', snd0=snd0,
-                         square_icon0=False if self.square_icon0=='off' else True)
+                         resolution, subdir='pop-fe-ps3-work/', snd0=snd0)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

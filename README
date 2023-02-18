@@ -100,7 +100,6 @@ Command line arguments are:
 			 file)
 --watermark            : Add a watermark consisting of disk-id and game-title
 		         to PIC0 for PSP and PSC games.
---square-icon0	       : Rescale ICON0 so that it is square.
 --list-themes          : This lists all the available themes
 --theme <theme>        : Use ICON0/PIC0/PIC1/SND0 from the theme if available
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has

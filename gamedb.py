@@ -50509,7 +50509,6 @@ libcrypt = {
 themes = {
     '98DEMAKE': { 'url': 'https://github.com/98DEMAKE/pop-fe-theme-98demake',
                   'description': 'A theme by 98DMAKE',
-                  'square_icon0': True,
-        }
+                 },
 }
 

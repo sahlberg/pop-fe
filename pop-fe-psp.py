@@ -80,7 +80,6 @@ class PopFePs3App:
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_eboot': self.on_create_eboot,
             'on_reset': self.on_reset,
-            'on_square_icon0': self.on_square_icon0,
             'on_theme_selected': self.on_theme_selected,
         }
 
@@ -90,8 +89,6 @@ class PopFePs3App:
         for theme in themes:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
-        self.square_icon0 = 'on'
-        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         self.init_data()
 
     def __del__(self):
@@ -153,12 +150,7 @@ class PopFePs3App:
 
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
-        if self._theme:
-            self.square_icon0 = 'on' if themes[self._theme]['square_icon0'] else 'off'
-        self.builder.get_variable('square_icon0_variable').set(self.square_icon0)
         
-    def on_square_icon0(self):
-        self.square_icon0 = self.builder.get_variable('square_icon0_variable').get()
     def on_path_changed(self, event):
         cue_file = event.widget.cget('path')
         img_file = None
@@ -472,8 +464,7 @@ class PopFePs3App:
                          self.icon0, self.pic0, self.pic1,
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, subdir='pop-fe-ps3-work/', snd0=snd0,
-                         watermark=True if self.watermark=='on' else False,
-                         square_icon0=False if self.square_icon0=='off' else True)
+                         watermark=True if self.watermark=='on' else False)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
