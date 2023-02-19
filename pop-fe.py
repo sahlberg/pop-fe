@@ -53,6 +53,7 @@ from make_isoedat import pack
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
+from theme_ascii import create_ascii_pic0, create_ascii_pic1
 
 temp_files = []  
 
@@ -148,6 +149,16 @@ def get_snd0_from_theme(theme, game_id, subdir):
         return None
     
 def get_image_from_theme(theme, game_id, subdir, image):
+    if theme == 'ASCIIART':
+        if image[:4] == 'PIC0':
+            return create_ascii_pic0(game_id, games[game_id]['title'])
+        if image[:4] == 'PIC1':
+            game = get_game_from_gamelist(game_id)
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+
+            return create_ascii_pic1(game_id, icon0)
+    if 'auto' in themes[theme]:
+        return None
     try:
         url = themes[theme]['url'] + '/raw/main/data/' + game_id + '/' + image
         print('Try URL', url) #if verbose else None
@@ -184,7 +195,6 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
             return None
         i = Image.open(io.BytesIO(fetch_cached_binary(g[0])))
 
-    print('add psn frame')
     if i and add_psn_frame:
         i = i.resize((134,139), Image.BILINEAR)
         im0 = Image.open(io.BytesIO(i0))
@@ -376,7 +386,7 @@ def add_image_text(image, title, game_id):
     strings = title.split(' - ')
     y = 18
     txt = Image.new("RGBA", image.size, (255,255,255,0))
-    fnt = ImageFont.truetype(font, 20)
+    fnt = ImageFont.truetype(font, 8)
     d = ImageDraw.Draw(txt)
 
     # Add Title (multiple lines) to upper right
@@ -669,7 +679,6 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
     
 def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False):
     # Convert ICON0 to a file object
-    print(icon0.size)
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
         image = icon0.resize((80, 80), Image.BILINEAR)
     else:
