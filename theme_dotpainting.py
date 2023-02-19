@@ -15,34 +15,39 @@ else:
     font = 'DejaVuSansMono.ttf'
 
 def create_dotpainting_pic0(game_id, title):
-    pic0 = Image.new("RGBA", (250, 140), (255,255,255,0))
+    p0 = Image.new("RGB", (250, 140), (0,0,0))
     fnt = ImageFont.truetype(font, 12)
-    d = ImageDraw.Draw(pic0)
+    d = ImageDraw.Draw(p0)
 
     off = 80
     y = 1
     t = '##############################'
     ts = d.textsize(t, font=fnt)
-    d.text((off, y), t, font=fnt, fill=(128,255,128,255))
+    d.text((off, y), t, font=fnt, fill=(255,128,128,255))
     y = y + ts[1] + 2
     
     strings = title.split(' - ')
     for t in strings:
         ts = d.textsize('#', font=fnt)
-        d.text((off, y), '#', font=fnt, fill=(128,255,128,255))
+        d.text((off, y), '#', font=fnt, fill=(255,128,128,255))
         
         ts = d.textsize(t, font=fnt)
-        d.text((off + 12, y), t, font=fnt,
-               fill=(0,0,0,255))
-        d.text((off + 11, y - 1), t, font=fnt,
+        d.text((off + 11, y), t, font=fnt,
                fill=(255,255,255,255))
         y = y + ts[1] + 2
 
     t = '##############################'
     ts = d.textsize(t, font=fnt)
-    d.text((off, y), t, font=fnt, fill=(128,255,128,255))
+    d.text((off, y), t, font=fnt, fill=(255,128,128,255))
 
-    pic0 = pic0.resize((1000,560), Image.NEAREST)
+    pic0 = Image.new("RGBA", (1000, 560), (255,255,255,0))
+    d = ImageDraw.Draw(pic0)
+    for i in range(250):
+        for j in range(140):
+            p = p0.getpixel((i,j))
+            if p != (0,0,0):
+                d.ellipse([(i * 4, j * 4), (i * 4 + 3, j * 4 + 3)], fill = p)
+
     return pic0
 
 def create_dotpainting_pic1(game_id, icon0):
