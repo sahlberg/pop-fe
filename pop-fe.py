@@ -54,6 +54,7 @@ from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
 from theme_ascii import create_ascii_pic0, create_ascii_pic1
+from theme_dotpainting import create_dotpainting_pic0, create_dotpainting_pic1
 
 temp_files = []  
 
@@ -157,6 +158,14 @@ def get_image_from_theme(theme, game_id, subdir, image):
             icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
 
             return create_ascii_pic1(game_id, icon0)
+    if theme == 'DOTPAINTING':
+        if image[:4] == 'PIC0':
+            return create_dotpainting_pic0(game_id, games[game_id]['title'])
+        if image[:4] == 'PIC1':
+            game = get_game_from_gamelist(game_id)
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+
+            return create_dotpainting_pic1(game_id, icon0)
     if 'auto' in themes[theme]:
         return None
     try:
