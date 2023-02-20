@@ -1603,7 +1603,7 @@ if __name__ == "__main__":
 
     if args.list_themes:
         for theme in themes:
-            print(theme, ':', themes[theme]['description'], themes[theme]['url'])
+            print(theme, ':', themes[theme]['description'], 'AUTO' if 'url' not in themes[theme] else themes[theme]['url'])
         exit(0)
 
     if args.theme:
