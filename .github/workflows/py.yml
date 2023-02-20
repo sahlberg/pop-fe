@@ -28,6 +28,9 @@ jobs:
           pip install pygubu
           pip install tkinterDnD2
           pip install git+https://github.com/nficano/pytube
+          pip install opencv-contrib-python
+          pip install scikit-learn
+          pip install scipy
       - name: Build PSL1GHT
         run:   |
           git clone http://github.com/sahlberg/PSL1GHT
