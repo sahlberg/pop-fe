@@ -829,13 +829,14 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[]):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
     p.verbose = verbose
     p.disc_ids = disc_ids
     p.game_title = game_title
+    p.subchannels = subchannels
     #p.icon0 = icon0
     #p.pic1 = pic1
     if not whole_disk:
@@ -1541,6 +1542,67 @@ def install_deps():
             subprocess.call(['make'])
             os.chdir('../../..')
 
+def generate_subchannels(magic_word):
+    def generate_subchannel(sector, is_corrupt):
+        def bcd(i):
+            return int(i % 10) + 16 * (int(i / 10) % 10)
+
+        sc = bytearray(12)
+        s = sector - 150
+        struct.pack_into('<I', sc, 0, s)
+        struct.pack_into('<B', sc, 4, 1)
+        struct.pack_into('<B', sc, 5, 1)
+        if is_corrupt:
+            s = s - 1
+        struct.pack_into('<B', sc, 8, bcd(s % 75))
+        s = s - (s % 75)
+        s = int(s / 75)
+        struct.pack_into('<B', sc, 7, bcd(s % 60))
+        struct.pack_into('<B', sc, 6, bcd(int(s / 60)))
+
+        s = sector
+        if is_corrupt:
+            s = s - 1
+        struct.pack_into('<B', sc, 11, bcd(s % 75))
+        s = s - (s % 75)
+        s = int(s / 75)
+        struct.pack_into('<B', sc, 10, bcd(s % 60))
+        struct.pack_into('<B', sc, 9, bcd(int(s / 60)))
+
+        return sc
+
+    sector_pairs = {
+        15: [14105,14110],
+        14: [14231,14236],
+        13: [14485,14490],
+        12: [14579,14584],
+        11: [14649,14654],
+        10: [14899,14904],
+         9: [15056,15061],
+         8: [15130,15135],
+         7: [15242,15247],
+         6: [15312,15317],
+         5: [15378,15383],
+         4: [15628,15633],
+         3: [15919,15924],
+         2: [16031,16036],
+         1: [16101,16106],
+         0: [16167,16172]
+        }
+    scd = bytes(0)
+    scd = scd + bytes([0xff,0xff,0xff,0xff,0x00,0x00,0x00,0x00,0xff,0xff,0xff,0xff])
+    for i in range(15, -1, -1):
+        scd = scd + generate_subchannel(sector_pairs[i][0], magic_word & (1<<i))
+        scd = scd + generate_subchannel(sector_pairs[i][1], magic_word & (1<<i))
+    scd = scd + bytes([0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff])
+
+    print('Generate subchannel data for 0x%04x' % magic_word)
+    s = scd
+    while s:
+        print(struct.unpack_from('<I', s, 0)[0], s[:12].hex())
+        s = s[12:]
+
+    return scd
 
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -1859,11 +1921,13 @@ if __name__ == "__main__":
     print('Cue Files', cue_files) if verbose else None
     print('Imb Files', img_files) if verbose else None
     print('Disc IDs', disc_ids) if verbose else None
-    
+
+    subchannels = []
     magic_word = []
     if game_id in libcrypt:
         for idx in range(len(cue_files)):
             magic_word.append(libcrypt[disc_ids[idx]]['magic_word'])
+            subchannels.append(generate_subchannels(libcrypt[disc_ids[idx]]['magic_word']))
         patch_libcrypt = False
         if args.auto_libcrypt:
             patch_libcrypt = True
@@ -1878,7 +1942,8 @@ if __name__ == "__main__":
         if args.ps3_pkg:
             print('#####################################')
             print('WARNING! This disc is protected with libcrypt.')
-            print('Will attempt to inject MagicWord into ISO.BIN.DAT')
+            print('Will attempt to inject MagicWord and Subchannel data')
+            print('into ISO.BIN.DAT')
             print('This should work for most games. If not then try')
             print('creating the package again with --ps3-libcrypt')
             print('#####################################')
@@ -1929,7 +1994,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:

@@ -2416,6 +2416,7 @@ class popstation(object):
         self._track0_size = []
         self._aea = {}
         self._magic_word = []
+        self._subchannels = []
         self._verbose = False
         self._striptracks = False
         self._complevel = 1
@@ -2446,9 +2447,17 @@ class popstation(object):
     def magic_word(self):
         return self._magic_word
     
-    @aea.setter
+    @magic_word.setter
     def magic_word(self, magic_word):
         self._magic_word = magic_word
+
+    @property
+    def subchannels(self):
+        return self._subchannels
+
+    @subchannels.setter
+    def subchannels(self, subchannels):
+        self._subchannels = subchannels
 
     @property
     def verbose(self):
@@ -2794,7 +2803,7 @@ class popstation(object):
                     att = att + _b
                     fh.write(buf)
                     fh.seek((fh.tell() + 0xf) & 0xfffffff0)
-                
+
         if fh.tell() & 0xf:
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
         end_offset = fh.tell() - psiso_offset
@@ -3025,7 +3034,6 @@ class popstation(object):
                 _b[12:16] = b'\x00\x00\x00\x00'
                 _ibd.write(_b)
 
-                # check this with Grandia (2 disks)
                 _b = bytearray(4)
                 struct.pack_into('<I', _b, 0, psiso_offsets[i] + 0x100000 - 0x010000)
                 _ibd.seek(i * 0x100000 + 0xffc)
@@ -3043,6 +3051,25 @@ class popstation(object):
                 struct.pack_into('<I', _b, 0x0200 + i * 4, i * 0x100000 + 0x0400)
             _ibd.seek(0)
             _ibd.write(_b)
+
+            # Inject subchannel data
+            sc_offset = 0x100000 * len(self._subchannels) + 0x400
+            for idx in range(len(self._subchannels)):
+                print('Offsetoo 0x%08x' % (sc_offset))
+                print('Inject subchannel data for disk', idx)
+                _b = bytearray(8)
+                sc_len = len(self._subchannels[idx])
+                struct.pack_into('<I', _b, 0, sc_offset)
+                struct.pack_into('<I', _b, 4, int(sc_len/12))
+                _ibd.seek(0x100000 * idx + 0x400 + 0x12d4)
+                print('Write offset/count at 0x%08x' % _ibd.tell())
+                print(_b.hex())
+                _ibd.write(_b)
+
+                _ibd.seek(sc_offset)
+                _ibd.write(self._subchannels[idx])
+
+                sc_offset = sc_offset + sc_len
 
 
     def create_pbp(self):
