@@ -2751,6 +2751,20 @@ class popstation(object):
             b = bytearray(32)
             fh.write(b)
 
+        # insert the subchannel blob
+        if disc_num < len(self._subchannels):
+            x = fh.tell()
+            _b = bytearray(8)
+            sc_len = len(self._subchannels[disc_num])
+            print('Injecting subchannel blob of len %d at offset 0x%08x' % (sc_len, fh.tell()))
+            struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset)
+            struct.pack_into('<I', _b, 4, int(sc_len / 12))
+            fh.seek(psiso_offset + 0x12d4)
+            fh.write(_b)
+
+            fh.seek(x)
+            fh.write(self._subchannels[disc_num])
+            
         offset = fh.tell()
         fh.write(bytes(psiso_offset + 0x100000 - offset))
 
@@ -2801,9 +2815,11 @@ class popstation(object):
                     struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset - 0x100000)
                     struct.pack_into('<I', _b, 4, len(buf))
                     att = att + _b
+                    print('Write AEA at 0x%08x' % fh.tell())
                     fh.write(buf)
                     fh.seek((fh.tell() + 0xf) & 0xfffffff0)
 
+        
         if fh.tell() & 0xf:
             fh.seek((fh.tell() + 0xf) & 0xfffffff0)
         end_offset = fh.tell() - psiso_offset

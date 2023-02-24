@@ -679,13 +679,14 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[]):
     print('Create PBP file for', game_title) if verbose else None
 
     p = popstation()
     p.verbose = verbose
     p.disc_ids = disc_ids
     p.game_title = game_title
+    p.subchannels = subchannels
     if icon0:
         p.icon0 = icon0
     if pic0:
@@ -720,7 +721,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[]):
     # Convert ICON0 to a file object
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
         image = icon0.resize((80, 80), Image.BILINEAR)
@@ -771,7 +772,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False, subchannels=subchannels)
 
     idx = 0
     for mc in mem_cards:
@@ -1927,7 +1928,7 @@ if __name__ == "__main__":
             patch_libcrypt = True
         if args.ps3_pkg and args.ps3_libcrypt:
             patch_libcrypt = True
-        if args.psp_dir or args.ps2_dir or args.psio_dir:
+        if args.ps2_dir or args.psio_dir:
             print('#####################################')
             print('WARNING! This disc is protected with libcrypt.')
             print('Will attempt to apply libcrypt PPF patch')
@@ -1984,7 +1985,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, subchannels=subchannels)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
