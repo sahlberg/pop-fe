@@ -1596,12 +1596,6 @@ def generate_subchannels(magic_word):
         scd = scd + generate_subchannel(sector_pairs[i][1], magic_word & (1<<i))
     scd = scd + bytes([0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff])
 
-    print('Generate subchannel data for 0x%04x' % magic_word)
-    s = scd
-    while s:
-        print(struct.unpack_from('<I', s, 0)[0], s[:12].hex())
-        s = s[12:]
-
     return scd
 
 # ICON0 is the game cover
