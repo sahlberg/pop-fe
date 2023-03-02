@@ -561,7 +561,7 @@ def create_retroarch_bin(dest, game_title, cue_files, img_files):
             copy_file(img_files[i], f)
             
 
-def create_retroarch_cue(dest, game_title, cue_files, img_files):
+def create_retroarch_cue(dest, game_title, cue_files, img_files, magic_word):
     try:
         os.mkdir(dest)
     except:
@@ -582,8 +582,10 @@ def create_retroarch_cue(dest, game_title, cue_files, img_files):
                 b = dest + '/' + p + '.bin'
                 print('Installing', b) if verbose else None
                 copy_file(img_files[i], b)
-
-
+            if i < len(magic_word):
+                print('Create magic word for disc', i)
+                create_sbi(dest + '/' + p + '.sbi', magic_word[i])
+                
 def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
     f = dest + '/' + game_title
     try:
@@ -1364,6 +1366,7 @@ def get_disc_ids(cue_files, subdir='./'):
 
 
 def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
+    print('XXX libcrypt')
     if auto_libcrypt:
         # https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
         print('Try to automatically generate libcrypt patch for', img)
@@ -1598,6 +1601,51 @@ def generate_subchannels(magic_word):
     scd = scd + bytes([0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff])
 
     return scd
+
+def create_sbi(sbi, magic_word):
+    def generate_sbi(sector):
+        def bcd(i):
+            return int(i % 10) + 16 * (int(i / 10) % 10)
+
+        sc = bytearray(4)
+        s = sector
+        struct.pack_into('<B', sc, 2, bcd(s % 75))
+        s = s - (s % 75)
+        s = int(s / 75)
+        struct.pack_into('<B', sc, 1, bcd(s % 60))
+        struct.pack_into('<B', sc, 0, bcd(int(s / 60)))
+        struct.pack_into('<B', sc, 3, 1)
+
+        sc = sc + bytes([0xff, 0xff, 0xff, 0xff,
+                         0xff, 0xff, 0xff, 0xff,
+                         0xff, 0xff])
+        return sc
+
+    sector_pairs = {
+        15: [14105,14110],
+        14: [14231,14236],
+        13: [14485,14490],
+        12: [14579,14584],
+        11: [14649,14654],
+        10: [14899,14904],
+         9: [15056,15061],
+         8: [15130,15135],
+         7: [15242,15247],
+         6: [15312,15317],
+         5: [15378,15383],
+         4: [15628,15633],
+         3: [15919,15924],
+         2: [16031,16036],
+         1: [16101,16106],
+         0: [16167,16172]
+        }
+    with open(sbi, 'wb') as f:
+        f.write(bytes([0x53, 0x42, 0x49, 0x00]))
+        for i in range(15, -1, -1):
+            if magic_word & (1<<i):
+                f.write(generate_sbi(sector_pairs[i][0]))
+                f.write(generate_sbi(sector_pairs[i][1]))
+                
 
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -2001,7 +2049,7 @@ if __name__ == "__main__":
         create_retroarch_bin(new_path, game_title, cue_files, img_files)
     if args.retroarch_cue_dir:
         new_path = args.retroarch_cue_dir + '/' + game_title
-        create_retroarch_cue(new_path, game_title, cue_files, img_files)
+        create_retroarch_cue(new_path, game_title, cue_files, img_files, magic_word)
     if args.retroarch_pbp_dir:
         new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
         if icon0:
