@@ -706,15 +706,16 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
 
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
+        
+        if not whole_disk:
+            bc = bchunk()
+            bc.towav = True
+            bc.open(cue_files[i])
+            # store how big the data track is
+            p.add_track0_size(bc.tracks[0]['stop'])
+            p.striptracks = True
 
     p.eboot = dest_file
-    if not whole_disk:
-        bc = bchunk()
-        bc.towav = True
-        bc.open(cue_files[i])
-        # store how big the data track is
-        p.add_track0_size(bc.tracks[0]['stop'])
-        p.striptracks = True
     print('Create PBP file at', p.eboot)
     p.create_pbp()
     try:
