@@ -3,6 +3,34 @@ name: Python package
 on: [push, pull_request]
 
 jobs:
+  test-linux:
+    name: Linux build and test
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run:   |
+          sudo apt install python-is-python3
+          sudo apt install python3-pip
+          sudo apt install libsndfile-dev
+          sudo apt install git
+          sudo apt install ffmpeg
+      - name: Install pop-fe
+        run:   |
+          ./pop-fe.py --install
+      - name: Test building a PS3 package
+        run:   |
+          ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png testimages/vs/vs.cue 
+
   build-windows:
     name: Windows build
     runs-on: windows-2022
