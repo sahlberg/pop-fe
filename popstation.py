@@ -3071,7 +3071,6 @@ class popstation(object):
             # Inject subchannel data
             sc_offset = 0x100000 * len(self._subchannels) + 0x400
             for idx in range(len(self._subchannels)):
-                print('Offsetoo 0x%08x' % (sc_offset))
                 print('Inject subchannel data for disk', idx)
                 _b = bytearray(8)
                 sc_len = len(self._subchannels[idx])
