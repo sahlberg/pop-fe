@@ -593,12 +593,10 @@ Docker
 ----------------
 # You can also run pop-fe inside a docker container.
 # Assuming Docker is already installed on your preferred distro, run:
-git clone https://github.com/sahlberg/pop-fe.git
-cd pop-fe
-docker build -t pop-fe .
+docker build -t pop-fe https://github.com/sahlberg/pop-fe.git
 
 # You can then execute pop-fe directly:
-docker run -it pop-fe --help
+docker run -it pop-fe:latest --help
 # or get a shell and run pop-fe interactively:
 docker run -it --entrypoint /bin/bash pop-fe:latest
 ./pop-fe.py
@@ -611,5 +609,4 @@ docker run -it --entrypoint /bin/bash pop-fe:latest
 # └── pspemu/
 #     └── PSP/
 #         └── GAME/
-docker run -it --volume "$(pwd):/psp" pop-fe --psp-dir=/psp/pspemu /psp/game.cue
-
+docker run -it --volume "$(pwd):/psp" pop-fe:latest --psp-dir=/psp/pspemu /psp/game.cue
