@@ -1379,7 +1379,6 @@ def get_disc_ids(cue_files, subdir='./'):
 
 
 def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
-    print('XXX libcrypt')
     if auto_libcrypt:
         # https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
         print('Try to automatically generate libcrypt patch for', img)
@@ -1907,7 +1906,10 @@ if __name__ == "__main__":
         # disk and read system.cnf
         # We only do this for the first disk of a multi-disk set.
         disc_ids = get_disc_ids(cue_files, subdir=subdir)
-        game_id = disc_ids[0]
+        if game_id:
+            disc_ids[0] = game_id
+        else:
+            game_id = disc_ids[0]
     if not disc_ids:
         disc_ids = [game_id]
     game_id = game_id.upper()
