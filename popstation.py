@@ -3078,7 +3078,6 @@ class popstation(object):
                 struct.pack_into('<I', _b, 4, int(sc_len/12))
                 _ibd.seek(0x100000 * idx + 0x400 + 0x12d4)
                 print('Write offset/count at 0x%08x' % _ibd.tell())
-                print(_b.hex())
                 _ibd.write(_b)
 
                 _ibd.seek(sc_offset)
