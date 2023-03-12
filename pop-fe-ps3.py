@@ -351,6 +351,12 @@ class PopFePs3App:
             else:
                 subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
+        try:
+            os.stat(cu2_file).st_size
+        except:
+            print('Failed to convert to cu2. The cue file is probably from a bad dump.')
+            raise Exception('Bad dump CUE, can not convert to CU2')
+
         print('Scanning for Game ID') if verbose else None
         tmp = 'pop-fe-ps3-work/TMP'
         disc_id = get_disc_id(cue_file, tmp)
