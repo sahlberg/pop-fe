@@ -51,7 +51,7 @@ def create_dotpainting_pic0(game_id, title):
     return pic0
 
 def create_dotpainting_pic1(game_id, icon0):
-    icon0 = icon0.resize((120,120), Image.BILINEAR)
+    icon0 = icon0.resize((120,120), Image.Resampling.BILINEAR)
     pic1 = Image.new("RGB", (1920, 1080), (0,0,0))
     d = ImageDraw.Draw(pic1)
     for i in range(120):

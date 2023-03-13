@@ -53,7 +53,7 @@ def create_oilpainting_pic0(game_id, title, tmpfile):
     return pic0
 
 def create_oilpainting_pic1(game_id, icon0, tmpfile):
-    icon0 = icon0.resize((1000,1000), Image.BILINEAR)
+    icon0 = icon0.resize((1000,1000), Image.Resampling.BILINEAR)
     icon0.save(tmpfile, format='BMP')
     img = cv2.imread(tmpfile, cv2.IMREAD_COLOR)
     res = cv2.xphoto.oilPainting(img, 7, 1)
@@ -102,7 +102,7 @@ def create_watercolor_pic0(game_id, title, tmpfile):
     return pic0
 
 def create_watercolor_pic1(game_id, icon0, tmpfile):
-    icon0 = icon0.resize((1000,1000), Image.BILINEAR)
+    icon0 = icon0.resize((1000,1000), Image.Resampling.BILINEAR)
     icon0.save(tmpfile, format='BMP')
     img = cv2.imread(tmpfile, cv2.IMREAD_COLOR)
     res = cv2.stylization(img, sigma_s=60, sigma_r=0.6)
@@ -156,7 +156,7 @@ def create_colorsketch_pic1(game_id, icon0, tmpfile):
     grey, color = cv2.pencilSketch(img, sigma_s=150, sigma_r=0.20, shade_factor=0.02)
     cv2.imwrite(tmpfile, color)
     icon0 = Image.open(tmpfile)
-    icon0 = icon0.resize((1000,1000), Image.NEAREST)
+    icon0 = icon0.resize((1000,1000), Image.Resampling.NEAREST)
 
     pic1 = Image.new("RGB", (1920, 1080), (0,0,0))
     Image.Image.paste(pic1, icon0, box=(100,0))

@@ -241,7 +241,7 @@ class PopFePs3App:
             if not self.icon0:
                 self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
-            self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
+            self.icon0.resize((80,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
             self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
             c = self.builder.get_object('icon0_canvas', self.master)
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -255,7 +255,7 @@ class PopFePs3App:
             if not self.pic0:
                 self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC0.PNG')
-            self.pic0.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
+            self.pic0.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
             c = self.builder.get_object('pic0_canvas', self.master)
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
@@ -269,7 +269,7 @@ class PopFePs3App:
             if not self.pic1:
                 self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
             temp_files.append('pop-fe-ps3-work/PIC1.PNG')
-            self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
+            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
             c = self.builder.get_object('pic1_canvas', self.master)
             c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
@@ -320,15 +320,15 @@ class PopFePs3App:
         if self.pic0 and self.pic0.mode == 'P':
             self.pic0 = self.pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
-        p1 = self.pic1.resize((382,216), Image.BILINEAR)
+        p1 = self.pic1.resize((382,216), Image.Resampling.BILINEAR)
         if self.pic0: # and self.pic0_disabled == 'off':
-            p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.BILINEAR)
+            p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.BILINEAR)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
             else:
                 Image.Image.paste(p1, p0, box=(148,79))
         if self.icon0:
-            i0 = self.icon0.resize((int(p1.size[1] * 0.25) , int(p1.size[1] * 0.25)), Image.BILINEAR)
+            i0 = self.icon0.resize((int(p1.size[1] * 0.25) , int(p1.size[1] * 0.25)), Image.Resampling.BILINEAR)
             if has_transparency(i0):
                 Image.Image.paste(p1, i0, box=(36,81), mask=i0)
             else:
@@ -354,7 +354,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append('pop-fe-ps3-work/ICON0.PNG')
-        self.icon0.resize((80,80), Image.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
+        self.icon0.resize((80,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
         self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -372,7 +372,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append('pop-fe-ps3-work/PIC0.PNG')
-        self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
+        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/PIC0.PNG')
         self.pic0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
@@ -389,7 +389,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append('pop-fe-ps3-work/PIC1.PNG')
-        self.pic1.resize((128,80), Image.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
+        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/PIC1.PNG')
         self.pic1_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')

@@ -42,12 +42,12 @@ def create_ascii_pic0(game_id, title):
     ts = d.textsize(t, font=fnt)
     d.text((off, y), t, font=fnt, fill=(128,255,128,255))
 
-    pic0 = pic0.resize((1000,560), Image.NEAREST)
+    pic0 = pic0.resize((1000,560), Image.Resampling.NEAREST)
     return pic0
 
 def create_ascii_pic1(game_id, icon0):
     AC = ["W", "#", "%", "?", "*", "+", ";", ":", ",", ".", " "]
-    icon0 = icon0.convert("L").resize((120,120), Image.BILINEAR)
+    icon0 = icon0.convert("L").resize((120,120), Image.Resampling.BILINEAR)
     pic1 = Image.new("RGB", (1920, 1080), (0,0,0))
     fnt = ImageFont.truetype(font, 12)
     d = ImageDraw.Draw(pic1)
