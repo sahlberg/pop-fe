@@ -1886,6 +1886,11 @@ if __name__ == "__main__":
         if idx:
             idx = (idx[0] + 1, idx[1])
 
+    # We need to convert the first track of every ISO so we can open the
+    # disk and read system.cnf
+    disc_ids = get_disc_ids(cue_files, subdir=subdir)
+    real_disc_ids = disc_ids[:]
+
     if args.psp_install_memory_card:
         install_psp_mc(args.psp_dir, args.game_id, mem_cards)
         quit()
@@ -1900,12 +1905,7 @@ if __name__ == "__main__":
         except:
             True
 
-    disc_ids = None
     if len(cue_files) > 1 or not game_id:
-        # We need to convert the first track of every ISO so we can open the
-        # disk and read system.cnf
-        # We only do this for the first disk of a multi-disk set.
-        disc_ids = get_disc_ids(cue_files, subdir=subdir)
         if game_id:
             disc_ids[0] = game_id
         else:
