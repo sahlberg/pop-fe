@@ -1891,31 +1891,32 @@ if __name__ == "__main__":
     disc_ids = get_disc_ids(cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
 
+    if args.game_id:
+        args.game_id = args.game_id.split(',')
     if args.psp_install_memory_card:
-        install_psp_mc(args.psp_dir, args.game_id, mem_cards)
+        if not args.game_id:
+            raise Exception('Must specify --game_id when using --psp-install-memory-card')
+        install_psp_mc(args.psp_dir, args.game_id[0], mem_cards)
         quit()
             
-    game_id = None
+    _gids = None
     if args.game_id:
-        game_id = args.game_id
-    if not game_id:
+        _gids = args.game_id
+    if not _gids:
         try:
             with open(create_path(args.files[0], 'GAME_ID'), 'r') as d:
-                game_id = d.read(9)
+                _gids = re.sub(r'[^A-Z0-9\,]+', '', d.read()).split(',')
         except:
             True
 
-    if len(cue_files) > 1 or not game_id:
-        if game_id:
-            disc_ids[0] = game_id
-        else:
-            game_id = disc_ids[0]
-    if not disc_ids:
-        disc_ids = [game_id]
-    game_id = game_id.upper()
-
+    if _gids:
+        # override the disc_ids with the content of 'GAME_ID' or --game_id
+        for idx in range(len(_gids)):
+            if idx < len(disc_ids):
+                disc_ids[idx] = _gids[idx]
+    
     resolution = 1
-    if args.ps3_pkg and (game_id[:4] == 'SLES' or game_id[:4] == 'SCES'):
+    if args.ps3_pkg and (real_disc_ids[0][:4] == 'SLES' or real_disc_ids[0][:4] == 'SCES'):
         print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
         resolution = 2
     if args.resolution:
@@ -1932,9 +1933,9 @@ if __name__ == "__main__":
         except:
             True
     if not game_title:
-        game_title = get_title_from_game(game_id)
+        game_title = get_title_from_game(disc_ids[0])
 
-    game = get_game_from_gamelist(game_id)
+    game = get_game_from_gamelist(disc_ids[0])
 
     # ICON0.PNG
     icon0 = None
@@ -1942,13 +1943,13 @@ if __name__ == "__main__":
         print('Get cover from', args.cover)
         icon0 = Image.open(args.cover)
     if args.theme:
-        icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.PNG')
+        icon0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'ICON0.PNG')
         if not icon0:
-            icon0 = get_image_from_theme(args.theme, game_id, subdir, 'ICON0.png')
+            icon0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'ICON0.png')
     if not icon0:
         print('Fetch ICON0 for', game_title) if verbose else None
         temp_files.append(subdir + 'ICON0.jpg')
-        icon0 = get_icon0_from_game(game_id, game, args.files[0], subdir + 'ICON0.jpg', add_psn_frame=True if args.ps3_pkg else False)
+        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', add_psn_frame=True if args.ps3_pkg else False)
 
     # PIC0.PNG
     pic0 = None
@@ -1956,12 +1957,12 @@ if __name__ == "__main__":
         print('Get PIC0/Screenshot from', args.pic0)
         pic0 = Image.open(args.pic0)
     if args.theme:
-        pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.PNG')
+        pic0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC0.PNG')
         if not pic0:
-            pic0 = get_image_from_theme(args.theme, game_id, subdir, 'PIC0.png')
+            pic0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC0.png')
     if not pic0:
         print('Fetch PIC0 for', game_title) if verbose else None
-        pic0 = get_pic0_from_game(game_id, game, args.files[0])
+        pic0 = get_pic0_from_game(disc_ids[0], game, args.files[0])
     
     # PIC1.PNG
     pic1 = None
@@ -1969,14 +1970,14 @@ if __name__ == "__main__":
         print('Get PIC1/Screenshot from', args.pic1)
         pic1 = Image.open(args.pic1)
     if args.theme:
-        pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.PNG')
+        pic1 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC1.PNG')
         if not pic1:
-            pic1 = get_image_from_theme(args.theme, game_id, subdir, 'PIC1.png')
+            pic1 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC1.png')
     if not pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
-        pic1 = get_pic1_from_game(game_id, game, args.files[0])
+        pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
     
-    print('Id:', game_id)
+    print('Id:', disc_ids[0])
     print('Title:', game_title)
     print('Cue Files', cue_files) if verbose else None
     print('Imb Files', img_files) if verbose else None
@@ -2028,7 +2029,7 @@ if __name__ == "__main__":
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
     if args.theme:
-        snd0 = get_snd0_from_theme(args.theme, game_id, subdir)
+        snd0 = get_snd0_from_theme(args.theme, disc_ids[0], subdir)
     if not snd0:
         try:
             os.stat(args.files[0][:-4] + '.snd0')
@@ -2037,7 +2038,7 @@ if __name__ == "__main__":
         except:
             True
     if not snd0:
-        snd0 = get_snd0_from_game(game_id, subdir=subdir)
+        snd0 = get_snd0_from_game(disc_ids[0], subdir=subdir)
         if snd0:
             temp_files.append(snd0)
     if snd0 and snd0 == 'auto':
@@ -2058,9 +2059,9 @@ if __name__ == "__main__":
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:
-        create_metadata(args.files[0], game_id, game_title, icon0, pic0, pic1, snd0)
+        create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0)
     if args.psio_dir:
-        create_psio(args.psio_dir, game_id, game_title, icon0, cu2_files, img_files)
+        create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cu2_files, img_files)
     if args.retroarch_bin_dir:
         new_path = args.retroarch_bin_dir + '/' + game_title
         create_retroarch_bin(new_path, game_title, cue_files, img_files)
