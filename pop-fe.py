@@ -1984,10 +1984,10 @@ if __name__ == "__main__":
 
     subchannels = []
     magic_word = []
-    if game_id in libcrypt:
-        for idx in range(len(cue_files)):
-            magic_word.append(libcrypt[disc_ids[idx]]['magic_word'])
-            subchannels.append(generate_subchannels(libcrypt[disc_ids[idx]]['magic_word']))
+    if real_disc_ids[0] in libcrypt:
+        for idx in range(len(real_disc_ids)):
+            magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
+            subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
         patch_libcrypt = False
         if args.auto_libcrypt:
             patch_libcrypt = True
@@ -2023,7 +2023,7 @@ if __name__ == "__main__":
                     temp_files.append('LCP%02x.cue' % idx)
                 cue_files[idx] = 'LCP%02x.cue' % idx
                 img_files[idx] = 'LCP%02x.bin' % idx
-                apply_ppf(img_files[idx], disc_ids[idx], magic_word[idx], args.auto_libcrypt)
+                apply_ppf(img_files[idx], real_disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
