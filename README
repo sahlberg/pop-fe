@@ -72,6 +72,10 @@ Command line arguments are:
 		         the SYSTEM.CNF file off the game iso and use it to
 			 detect the game-id. This argument can be used to
 			 override the id.
+			 For multidisc games this supports a comma-separated
+			 list of ids.
+			 This argument does not affect libcrypt. Libcrypt
+			 handling will always use the id from the cue/bin.
 --cover                : Image to use as the game icon. If not specified pop-fe
 		         will automatically fetch one from the internet.
 --pic0                 : Image to use as the PIC0/Screenshot. If not specified
