@@ -525,6 +525,11 @@ cd ../..
 
 Windows (x86_64)
 ----------------
+Windows hs prebuilt binary releases of pop-fe available at :
+https://github.com/sahlberg/pop-fe/releases
+If you use these you do not need to perform the manual install described below.
+
+
 Install Mingw64/MSYS2
 Open Mingw64 Prompt and type
 
