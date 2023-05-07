@@ -250,9 +250,9 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
         i = Image.open(io.BytesIO(fetch_cached_binary(g[0])))
 
     if i and add_psn_frame:
-        i = i.resize((134,139), Image.Resampling.BILINEAR)
+        i = i.resize((138,140), Image.Resampling.BILINEAR)
         im0 = Image.open(io.BytesIO(i0))
-        Image.Image.paste(im0, i, box=(22,20))
+        Image.Image.paste(im0, i, box=(20,18))
         return im0
     
     return i
