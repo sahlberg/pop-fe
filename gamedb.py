@@ -24388,6 +24388,7 @@ games = {
         'url': "games/J/A/SCPS-10131.html",
     	'id': 'SCPS10131',
 	'title': "ACONCAGUA",
+        'pic0': 'https://images.launchbox-app.com/f70565b3-c151-4590-8689-b81af1293d53.png',
     },
     'SCPS10132': {
         'url': "games/J/A/SCPS-10131.html",
