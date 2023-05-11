@@ -351,8 +351,7 @@ def get_snd0_from_link(link, subdir='./'):
     if not have_pytube:
         return None
     try:
-        yt = YouTube(link)
-        fn = yt.streams.filter(only_audio=True)[0].download(subdir)
+        fn = YouTube(link).streams.filter(only_audio=True)[0].download(subdir)
     except:
         print('Failed to download', link)
         return None
@@ -519,9 +518,12 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0):
     pic0.save(create_path(cue, f + '_pic0.png'))
     pic1.save(create_path(cue, f + '_pic1.png'))
     if snd0:
-        with open(snd0, 'rb') as i:
-            with open(create_path(cue, f + '.snd0'), 'wb') as o:
-                o.write(i.read())
+        p = create_path(cue, f + '.snd0')
+        if p != snd0:
+            with open(snd0, 'rb') as i:
+                d = i.read()
+                with open(p, 'wb') as o:
+                    o.write(d)
         
 def get_imgs_from_bin(cue):
     def get_file_name(line):
