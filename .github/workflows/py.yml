@@ -61,7 +61,6 @@ jobs:
         run:   |
           pip install pillow
           pip install pycryptodome
-          pip install requests_cache
           pip install pycdlib
           pip install ecdsa
           pip install pyinstaller

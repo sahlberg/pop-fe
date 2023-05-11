@@ -8,7 +8,6 @@ import os
 import pathlib
 import pygubu
 import requests
-import requests_cache
 import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
@@ -724,9 +723,6 @@ if __name__ == "__main__":
     parser.add_argument('-v', action='store_true', help='Verbose')
     args = parser.parse_args()
 
-    expire_after = datetime.timedelta(days=100)
-    requests_cache.install_cache(str(pathlib.Path.home()) + '/.pop-fe', expire_after=expire_after)
-    
     if args.v:
         verbose = True
 
