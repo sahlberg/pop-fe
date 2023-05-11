@@ -2895,7 +2895,7 @@ games = {
     	'id': 'SLUS00422',
 	'title': "BREATH OF FIRE III",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLUS01324': {
@@ -2903,7 +2903,7 @@ games = {
     	'id': 'SLUS01324',
 	'title': "BREATH OF FIRE IV",
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/U/B/SLUS-01324/ss11.jpg',
+        'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
     },
     'SLUS00687': {
@@ -11514,7 +11514,7 @@ games = {
     	'id': 'SLES01304',
 	'title': "BREATH OF FIRE III",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLES01319': {
@@ -11522,7 +11522,7 @@ games = {
     	'id': 'SLES01319',
 	'title': "BREATH OF FIRE III",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLES01320': {
@@ -11530,7 +11530,7 @@ games = {
     	'id': 'SLES01320',
 	'title': "BREATH OF FIRE III",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLES03552': {
@@ -11538,7 +11538,7 @@ games = {
     	'id': 'SLES03552',
 	'title': "BREATH OF FIRE IV",
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/U/B/SLUS-01324/ss11.jpg',
+        'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
     },
     'SLES00759': {
@@ -28402,7 +28402,7 @@ games = {
     	'id': 'SLPS00990',
 	'title': "BREATH OF FIRE III",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLPM86720': {
@@ -28410,7 +28410,7 @@ games = {
     	'id': 'SLPM86720',
 	'title': "BREATH OF FIRE III [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/P/B/SLES-01304/ss13.jpg',
+        'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
     },
     'SLPS02728': {
@@ -28418,7 +28418,7 @@ games = {
     	'id': 'SLPS02728',
 	'title': "BREATH OF FIRE IV",
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/U/B/SLUS-01324/ss11.jpg',
+        'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
     },
     'SLPM87159': {
@@ -28426,7 +28426,7 @@ games = {
     	'id': 'SLPM87159',
 	'title': "BREATH OF FIRE IV [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
-        'pic1': 'https://psxdatacenter.com/images/screens/U/B/SLUS-01324/ss11.jpg',
+        'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
     },
     'SLPM87054': {
