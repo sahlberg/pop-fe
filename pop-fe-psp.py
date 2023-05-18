@@ -63,6 +63,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
+        self.pic0_disabled = 'off'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -73,6 +74,7 @@ class PopFePs3App:
         callbacks = {
             'on_icon0_clicked': self.on_icon0_clicked,
             'on_pic0_clicked': self.on_pic0_clicked,
+            'on_pic0_disabled': self.on_pic0_disabled,
             'on_pic1_clicked': self.on_pic1_clicked,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
@@ -321,7 +323,7 @@ class PopFePs3App:
             self.pic0 = self.pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
         p1 = self.pic1.resize((382,216), Image.Resampling.BILINEAR)
-        if self.pic0: # and self.pic0_disabled == 'off':
+        if self.pic0 and self.pic0_disabled == 'off':
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.BILINEAR)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
@@ -360,6 +362,10 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
         self.update_preview()
 
+
+    def on_pic0_disabled(self):
+        self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
+        self.update_preview()
 
     def on_pic0_clicked(self, event):
         filetypes = [
@@ -463,7 +469,9 @@ class PopFePs3App:
                 temp_files.append(snd0)
         ebootdir = self.pkgdir if self.pkgdir else '.'
         popfe.create_psp(ebootdir, self.disc_ids, title,
-                         self.icon0, self.pic0, self.pic1,
+                         self.icon0,
+                         self.pic0 if self.pic0_disabled =='off' else None,
+                         self.pic1,
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, subdir='pop-fe-ps3-work/', snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
