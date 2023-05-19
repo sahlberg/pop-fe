@@ -41,10 +41,6 @@ try:
     import requests
 except:
     print('requests is not installed.\nYou should install requests by running:\npip3 install requests')
-try:
-    import requests_cache
-except:
-    print('requests_cache is not installed.\nYou should install requests_cache by running:\npip3 install requests_cache')
 import subprocess
 import zipfile
 try:
@@ -1437,15 +1433,14 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
 
 def install_deps():
     print(os.name)
-    # requests_cache
+    # requests
     try:
-        import requests_cache
-        print('requests_cache is already installed')
-    except:
-        print('Installing python requests_cache')
-        subprocess.call(['pip', 'install', 'requests_cache'])
         import requests
-        import requests_cache
+        print('requests is already installed')
+    except:
+        print('Installing python requests')
+        subprocess.call(['pip', 'install', 'requests'])
+        import requests
     # pycdlib
     try:
         import pycdlib
@@ -1751,9 +1746,6 @@ if __name__ == "__main__":
         install_deps()
         exit(0)
 
-    expire_after = datetime.timedelta(days=100)
-    requests_cache.install_cache(str(Path.home()) + '/.pop-fe', expire_after=expire_after)
-        
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
 

@@ -439,11 +439,11 @@ and should be placed in the same directory as pop-fe.py.
 Make it executable with
 chmod +x binmerge
 
-requests_cache
+requests
 --------------
-This is to reduce the amount of data we fetch from the internet.
+This is used to fetch data from the internet.
 Install this with :
-pip3 install requests_cache
+pip3 install requests
 
 CDDA SUPPORT
 ------------
@@ -501,7 +501,7 @@ git clone https://github.com/NRGDEAD/Cue2cu2.git
 git clone https://github.com/putnam/binmerge.git
 git clone https://github.com/dcherednik/atracdenc.git
 pip3 install git+https://github.com/nficano/pytube
-pip3 install requests_cache
+pip3 install requests
 pip3 install pycdlib  (or pip3 install pycdio)
 pip3 install ecdsa
 pip3 install tkinterdnd2
@@ -543,7 +543,7 @@ pacman -S mingw-w64-x86_64-python-pip
 pacman -S mingw-w64-x86_64-python-pillow
 pip3 uninstall pillow
 pip3 install pillow
-pip3 install requests_cache
+pip3 install requests
 pip3 install pycdlib
 pip3 install pycryptodome
 pip3 install ecdsa
