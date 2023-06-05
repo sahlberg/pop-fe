@@ -170,6 +170,7 @@ games = {
 	'title': "VALKYRIE PROFILE",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM86380': {
         'url': "games/J/V/SLPM-86379.html",
@@ -177,6 +178,7 @@ games = {
 	'title': "VALKYRIE PROFILE",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM86371': {
         'url': "games/J/V/SLPM-86371.html",
@@ -184,6 +186,7 @@ games = {
 	'title': "VALKYRIE PROFILE [LIMITED DELUXE PACK]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM86372': {
         'url': "games/J/V/SLPM-86371.html",
@@ -191,6 +194,7 @@ games = {
 	'title': "VALKYRIE PROFILE [LIMITED DELUXE PACK]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM87354': {
         'url': "games/J/V/SLPM-87354.html",
@@ -198,6 +202,7 @@ games = {
 	'title': "VALKYRIE PROFILE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM87355': {
         'url': "games/J/V/SLPM-87354.html",
@@ -205,6 +210,7 @@ games = {
 	'title': "VALKYRIE PROFILE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM87372': {
         'url': "games/J/V/SLPM-87372.html",
@@ -212,6 +218,7 @@ games = {
 	'title': "VALKYRIE PROFILE [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPM87373': {
         'url': "games/J/V/SLPM-87372.html",
@@ -219,6 +226,7 @@ games = {
 	'title': "VALKYRIE PROFILE [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLPS01932': {
         'url': "games/J/V/SLPS-01932.html",
@@ -8926,6 +8934,7 @@ games = {
 	'title': "THREADS OF FATE",
         'pic0': 'https://images.launchbox-app.com/273b7b97-c6d9-4624-91a2-2ec5d761d20a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OvVS5tgBWc8',
     },
     'SLUS00727': {
         'url': "games/U/T/SLUS-00727.html",
@@ -9312,6 +9321,7 @@ games = {
 	'title': "VALKYRIE PROFILE",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLUS01179': {
         'url': "games/U/V/SLUS-01156.html",
@@ -9319,6 +9329,7 @@ games = {
 	'title': "VALKYRIE PROFILE",
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
     },
     'SLUS01138': {
         'url': "games/U/V/SLUS-01138.html",
