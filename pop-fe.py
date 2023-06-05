@@ -134,9 +134,14 @@ def fetch_cached_file(path):
 
 
 def fetch_cached_binary(path):
-    ret = requests.get(PSX_SITE + path, stream=True)
+    try:
+        ret = requests.get(PSX_SITE + path, stream=True)
+    except:
+        print('fetch_cached_binary: Failed to fetch file ', PSX_SITE + path)
+        return NULL
     if ret.status_code != 200:
-        raise Exception('Failed to fetch file ', PSX_SITE + path)
+        print('fetch_cached_binary: Failed to fetch file ', PSX_SITE + path)
+        return NULL
 
     return ret.content
 
@@ -236,7 +241,10 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
     g = re.findall('images/covers/./.*/.*.jpg', game)
     if not g:
         return None
-    i = Image.open(io.BytesIO(fetch_cached_binary(g[0])))
+    fcb = fetch_cached_binary(g[0])
+    if not fcb:
+        return None
+    i = Image.open(io.BytesIO(fcb))
 
     if i and add_psn_frame:
         i = i.resize((138,140), Image.Resampling.BILINEAR)
@@ -264,7 +272,10 @@ def get_pic_from_game(pic, game_id, game, filename):
     # Screenshots might be from a different release of the game
     # so we can not use game_id
     filter = 'images/screens/./.*/.*/ss..jpg'
-    return Image.open(io.BytesIO(fetch_cached_binary(random.choice(re.findall(filter, game)))))
+    fcb = fetch_cached_binary(random.choice(re.findall(filter, game)))
+    if not fcb:
+        return None
+    return Image.open(io.BytesIO(fcb))
 
 def get_pic0_from_game(game_id, game, cue):
     pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
