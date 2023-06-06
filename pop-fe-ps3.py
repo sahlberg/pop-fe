@@ -645,9 +645,7 @@ class PopFePs3App:
         print('Creating ' + pkg)
         disc_ids = []
         for idx in range(len(self.cue_files)):
-            print(idx)
             d = self.builder.get_variable('discid%d_variable' % (idx + 1)).get()
-            print(idx, d)
             disc_ids.append(d)
 
         disc_id = disc_ids[0]

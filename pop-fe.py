@@ -282,7 +282,11 @@ def get_pic0_from_game(game_id, game, cue):
     # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
     ar = pic0.height / pic0.width
     if pic0.height * ar > 560:
-        pic0 = pic0.resize((int(560 / ar), 560), Image.Resampling.NEAREST)
+        if int(560 / ar) < 1000:
+            pic0 = pic0.resize((int(560 / ar), 560), Image.Resampling.NEAREST)
+        else:
+            ar = 1000 / pic0.width
+            pic0 = pic0.resize((1000, int(pic0.height * ar)), Image.Resampling.NEAREST)
         i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
         i.putalpha(0)
         ns = (int((1000 - pic0.size[0]) / 2), 0)
