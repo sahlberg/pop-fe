@@ -1968,7 +1968,8 @@ if __name__ == "__main__":
     if not icon0:
         print('Fetch ICON0 for', game_title) if verbose else None
         temp_files.append(subdir + 'ICON0.jpg')
-        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', add_psn_frame=True if args.ps3_pkg or args.psp_dir else False)
+        print('fetch metadata', args.fetch_metadata)
+        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', add_psn_frame=True if args.ps3_pkg or args.psp_dir or args.fetch_metadata else False)
 
     # PIC0.PNG
     pic0 = None
