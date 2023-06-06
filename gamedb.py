@@ -3772,6 +3772,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLUS90064': {
         'url': "games/U/D/SLUS-00922.html",
@@ -3779,6 +3780,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLUS01279': {
         'url': "games/U/D/SLUS-01279.html",
@@ -3786,6 +3788,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLUS01552': {
         'url': "games/U/D/SLUS-01552.html",
@@ -8948,16 +8951,23 @@ games = {
         'url': "games/U/T/SLUS-00727.html",
     	'id': 'SLUS00727',
 	'title': "THUNDER FORCE V - PERFECT SYSTEM",
+        'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
+        'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
     },
     'SCUS94352': {
         'url': "games/U/T/SCUS-94352.html",
     	'id': 'SCUS94352',
 	'title': "THUNDER TRUCK RALLY",
+        'pic0': 'https://images.launchbox-app.com/8bd127a9-2996-4ddb-b6ab-9a67f3639657.png',
+        'snd0': 'https://www.youtube.com/watch?v=hbsGgY1KHFo',
     },
     'SLUS00191': {
         'url': "games/U/T/SLUS-00191.html",
     	'id': 'SLUS00191',
 	'title': "THUNDER STRIKE 2",
+        'pic0': 'https://images.launchbox-app.com/e498b014-7f02-47ab-bd2e-9a720dd0d7dd.png',
+        'snd0': 'https://www.youtube.com/watch?v=3wv9m78413U',
     },
     'SLUS01273': {
         'url': "games/U/T/SLUS-01273.html",
@@ -8988,11 +8998,18 @@ games = {
         'url': "games/U/T/SLUS-00405.html",
     	'id': 'SLUS00405',
 	'title': "TIME CRISIS",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SLUS01336': {
         'url': "games/U/T/SLUS-01336.html",
     	'id': 'SLUS01336',
 	'title': "TIME CRISIS - PROJECT TITAN",
+        'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
+        'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
+        
     },
     'SCUS94427': {
         'url': "games/U/T/SCUS-94427.html",
@@ -18806,6 +18823,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLES02208': {
         'url': "games/P/D/SLES-02208.html",
@@ -18813,6 +18831,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLES02209': {
         'url': "games/P/D/SLES-02209.html",
@@ -18820,6 +18839,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLES02210': {
         'url': "games/P/D/SLES-02210.html",
@@ -18827,6 +18847,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLES02211': {
         'url': "games/P/D/SLES-02211.html",
@@ -18834,6 +18855,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLES03221': {
         'url': "games/P/D/SLES-03221.html",
@@ -18841,6 +18863,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLES03222': {
         'url': "games/P/D/SLES-03222.html",
@@ -18848,6 +18871,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLES03223': {
         'url': "games/P/D/SLES-03223.html",
@@ -18855,6 +18879,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLES03224': {
         'url': "games/P/D/SLES-03224.html",
@@ -18862,6 +18887,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLES03225': {
         'url': "games/P/D/SLES-03225.html",
@@ -18869,6 +18895,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLES03989': {
         'url': "games/P/D/SLES-03989.html",
@@ -24299,11 +24326,17 @@ games = {
         'url': "games/P/T/SCES-00657.html",
     	'id': 'SCES00657',
 	'title': "TIME CRISIS",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SCES02776': {
         'url': "games/P/T/SCES-02776.html",
     	'id': 'SCES02776',
 	'title': "TIME CRISIS - PROJECT TITAN",
+        'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
+        'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
     },
     'SLES03459': {
         'url': "games/P/T/SLES-03459.html",
@@ -31430,6 +31463,7 @@ games = {
 	'title': "DINO CRISIS",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'CPCS-00701': {
         'url': "games/J/D/CPCS-00701.html",
@@ -31437,6 +31471,7 @@ games = {
 	'title': "DINO CRISIS 5TH ANNIVERSARY [3 DISCS]",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLPM86903': {
         'url': "games/J/D/CPCS-00701.html",
@@ -31444,6 +31479,7 @@ games = {
 	'title': "DINO CRISIS 5TH ANNIVERSARY [3 DISCS]",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLPM87234': {
         'url': "games/J/D/CPCS-00701.html",
@@ -31451,6 +31487,7 @@ games = {
 	'title': "DINO CRISIS 5TH ANNIVERSARY [3 DISCS]",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLPM86903': {
         'url': "games/J/D/SLPM-86903.html",
@@ -31458,6 +31495,7 @@ games = {
 	'title': "DINO CRISIS [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
     },
     'SLPM86627': {
         'url': "games/J/D/SLPM-86627.html",
@@ -31465,6 +31503,7 @@ games = {
 	'title': "DINO CRISIS 2",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLPM87234': {
         'url': "games/J/D/SLPM-87234.html",
@@ -31472,6 +31511,7 @@ games = {
 	'title': "DINO CRISIS 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
     },
     'SLPS02797': {
         'url': "games/J/D/SLPS-02797.html",
@@ -51347,11 +51387,17 @@ games = {
         'url': "games/J/T/SLPS-01406.html",
     	'id': 'SLPS01406',
 	'title': "THUNDER FORCE V - PERFECT SYSTEM",
+        'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
+        'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
     },
     'SLPS02211': {
         'url': "games/J/T/SLPS-02211.html",
     	'id': 'SLPS02211',
 	'title': "THUNDER FORCE V - PERFECT SYSTEM [TECHNOSOFT COLLECTION 2500]",
+        'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
+        'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
     },
     'SLPS00094': {
         'url': "games/J/T/SLPS-00094.html",
@@ -51412,31 +51458,49 @@ games = {
         'url': "games/J/T/SLPS-00666.html",
     	'id': 'SLPS00666',
 	'title': "TIME CRISIS",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SLPS00635': {
         'url': "games/J/T/SLPS-00635.html",
     	'id': 'SLPS00635',
 	'title': "TIME CRISIS [WITH GUNCON]",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SCPS45334': {
         'url': "games/J/T/SCPS-45334.html",
     	'id': 'SCPS45334',
 	'title': "TIME CRISIS [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SLPS91087': {
         'url': "games/J/T/SLPS-91087.html",
     	'id': 'SLPS91087',
 	'title': "TIME CRISIS [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
+        'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
     },
     'SCPS45514': {
         'url': "games/J/T/SCPS-45514.html",
     	'id': 'SCPS45514',
 	'title': "TIME CRISIS - PROJECT TITAN",
+        'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
+        'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
     },
     'SLPS03188': {
         'url': "games/J/T/SLPS-03188.html",
     	'id': 'SLPS03188',
 	'title': "TIME CRISIS - PROJECT TITAN",
+        'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
+        'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
     },
     'SLPS00383': {
         'url': "games/J/T/SLPS-00383.html",
