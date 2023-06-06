@@ -168,7 +168,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
             return create_ascii_pic0(game_id, games[game_id]['title'])
         if image[:4] == 'PIC1':
             game = get_game_from_gamelist(game_id)
-            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + '/ICON0-theme.jpg')
 
             return create_ascii_pic1(game_id, icon0)
     if theme == 'DOTPAINTING':
@@ -176,7 +176,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
             return create_dotpainting_pic0(game_id, games[game_id]['title'])
         if image[:4] == 'PIC1':
             game = get_game_from_gamelist(game_id)
-            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + '/ICON0-theme.jpg')
 
             return create_dotpainting_pic1(game_id, icon0)
     if theme == 'OILPAINTING':
@@ -186,7 +186,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
             return create_oilpainting_pic0(game_id, games[game_id]['title'], tmpfile)
         if image[:4] == 'PIC1':
             game = get_game_from_gamelist(game_id)
-            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + '/ICON0-theme.jpg')
             tmpfile = subdir + '/pic1-tmp.png'
             temp_files.append(tmpfile)
             return create_oilpainting_pic1(game_id, icon0, tmpfile)
@@ -197,7 +197,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
             return create_watercolor_pic0(game_id, games[game_id]['title'], tmpfile)
         if image[:4] == 'PIC1':
             game = get_game_from_gamelist(game_id)
-            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + '/ICON0-theme.jpg')
             tmpfile = subdir + '/pic1-tmp.png'
             temp_files.append(tmpfile)
             return create_watercolor_pic1(game_id, icon0, tmpfile)
@@ -208,7 +208,7 @@ def get_image_from_theme(theme, game_id, subdir, image):
             return create_colorsketch_pic0(game_id, games[game_id]['title'], tmpfile)
         if image[:4] == 'PIC1':
             game = get_game_from_gamelist(game_id)
-            icon0 = get_icon0_from_game(game_id, game, None, subdir + 'ICON0-theme.jpg')
+            icon0 = get_icon0_from_game(game_id, game, None, subdir + '/ICON0-theme.jpg')
             tmpfile = subdir + '/pic1-tmp.png'
             temp_files.append(tmpfile)
             return create_colorsketch_pic1(game_id, icon0, tmpfile)
