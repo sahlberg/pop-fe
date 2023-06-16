@@ -2249,6 +2249,8 @@ games = {
     	'id': 'SLUS00264',
 	'title': "ANDRETTI RACING",
         'pic0': 'https://images.launchbox-app.com/9a70a5f5-0ef3-4080-b795-3de76db60836.png',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00264/ss9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rm-IAwI6C54',
     },
     'SLUS00784': {
         'url': "games/U/A/SLUS-00784.html",
@@ -6851,7 +6853,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=QWx7Ibjenkg&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=4'
+        'snd0': 'https://www.youtube.com/watch?v=QWx7Ibjenkg&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=4',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',
     },
     'SLUS00698': {
         'url': "games/U/O/SLUS-00698.html",
@@ -10782,18 +10785,24 @@ games = {
     	'id': 'SLES00438',
 	'title': "ANDRETTI RACING",
         'pic0': 'https://images.launchbox-app.com/9a70a5f5-0ef3-4080-b795-3de76db60836.png',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00264/ss9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rm-IAwI6C54',
     },
     'SLES00439': {
         'url': "games/P/A/SLES-00439.html",
     	'id': 'SLES00439',
 	'title': "ANDRETTI RACING",
         'pic0': 'https://images.launchbox-app.com/9a70a5f5-0ef3-4080-b795-3de76db60836.png',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00264/ss9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rm-IAwI6C54',
     },
     'SLES00440': {
         'url': "games/P/A/SLES-00440.html",
     	'id': 'SLES00440',
 	'title': "ANDRETTI RACING",
         'pic0': 'https://images.launchbox-app.com/9a70a5f5-0ef3-4080-b795-3de76db60836.png',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00264/ss9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rm-IAwI6C54',
     },
     'SLES04071': {
         'url': "games/P/A/SLES-04071.html",
@@ -20523,7 +20532,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',        
     },
     'SLES00838': {
         'url': "games/P/O/SLES-00838.html",
@@ -20531,7 +20541,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE (L'ODDYSEE D'ABE)",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',
     },
     'SLES00839': {
         'url': "games/P/O/SLES-00839.html",
@@ -20539,7 +20550,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',
     },
     'SLES00840': {
         'url': "games/P/O/SLES-00840.html",
@@ -20547,7 +20559,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',
     },
     'SLES00841': {
         'url': "games/P/O/SLES-00841.html",
@@ -20555,7 +20568,8 @@ games = {
 	'title': "ODDWORLD - ABE'S ODDYSEE",
         'pic0': 'https://images.launchbox-app.com/0911faa2-840d-4888-9683-818e0881be10.png',
         'pic1': 'https://images.launchbox-app.com/afd984a9-8844-4efd-825c-0bc607742406.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2'
+        'snd0': 'https://www.youtube.com/watch?v=UG6YgoxDuAE&list=PLH834K1pkcjJFBGUYrWQtNBoZJT_VFU9W&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Oddworld%20-%20Abe%27s%20Oddysee%20%28USA%29_jp2.zip',
     },
     'SLES01391': {
         'url': "games/P/O/SLES-01391.html",
@@ -27420,6 +27434,8 @@ games = {
     	'id': 'SLPS00759',
 	'title': "ANDRETTI RACING",
         'pic0': 'https://images.launchbox-app.com/9a70a5f5-0ef3-4080-b795-3de76db60836.png',
+        'pic1': 'https://psxdatacenter.com/images/screens/U/A/SLUS-00264/ss9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rm-IAwI6C54',
     },
     'SLPS00894': {
         'url': "games/J/A/SLPS-00894.html",

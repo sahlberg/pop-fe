@@ -241,7 +241,7 @@ class PopFePs3App:
                 if self.icon0:
                     self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
-                self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG')
+                self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-ps3-work/ICON0.PNG', add_psn_frame=True)
             temp_files.append('pop-fe-ps3-work/ICON0.PNG')
             self.icon0.resize((80,80), Image.Resampling.BILINEAR).save('pop-fe-ps3-work/ICON0.PNG')
             self.icon0_tk = tk.PhotoImage(file = 'pop-fe-ps3-work/ICON0.PNG')

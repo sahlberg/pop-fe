@@ -49,6 +49,7 @@ except:
     True
 from pathlib import Path
 from bchunk import bchunk
+from document import create_document
 from gamedb import games, libcrypt, themes
 try:
     from make_isoedat import pack
@@ -758,7 +759,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[]):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None):
     # Convert ICON0 to a file object
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
         image = icon0.resize((80, 80), Image.Resampling.BILINEAR)
@@ -810,6 +811,10 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
 
     dest_file = f + '/EBOOT.PBP'
     generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False, subchannels=subchannels)
+
+    if manual:
+        print('Installing manual as', f + '/DOCUMENT.DAT')
+        copy_file(manual, f + '/DOCUMENT.DAT')
 
     idx = 0
     for mc in mem_cards:
@@ -1681,7 +1686,44 @@ def create_sbi(sbi, magic_word):
             if magic_word & (1<<i):
                 f.write(generate_sbi(sector_pairs[i][0]))
                 f.write(generate_sbi(sector_pairs[i][1]))
+
+# Convert scans of the manual into a DOCUMENT.DAT for PSP
+def create_manual(source, gameid, subdir='./pop-fe-work/'):
+    print('Create DOCUMENT.DAT from', source)
+    if source[:8] == 'https://':
+            print('Download manual from', source)
+            try:
+                tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
+                temp_files.append(tmpfile)
+                subprocess.run(['wget', '-q', source, '-O', tmpfile], timeout=30, check=True)
+                print('Downloaded manual as', tmpfile)
+                source = tmpfile
+            except:
+                True
+    if source[-4:] == '.zip':
+            print('Unzip manual', source)
+            subdir = subdir + '/DOCUMENT-tmp'
+            try:
+                os.stat(subdir)
+            except:
+                os.mkdir(subdir)
+            temp_files.append(subdir)
                 
+            z = zipfile.ZipFile(source)
+            for f in z.namelist():
+                f = z.extract(f, path=subdir)
+                temp_files.append(f)
+            source = subdir
+    if not os.path.isdir(source):
+        print('Can not create manual.', source, 'is not a directory')
+        return None
+
+    tmpfile = subdir + '/DOCUMENT.DAT'
+    temp_files.append(tmpfile)
+    print('Create manual from directory [%s]' % (source))
+    create_document(source, gameid, 480, tmpfile)
+    return tmpfile
+
 
 # ICON0 is the game cover
 # PIC1 is background image/poster
@@ -1714,6 +1756,8 @@ if __name__ == "__main__":
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
                         help='Force game_id for this iso.')
+    parser.add_argument('--manual',
+                        help='Directory/Zip/HTTP-link containing images for themanual')
     parser.add_argument('--title',
                     help='Force title for this iso')
     parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
@@ -1996,7 +2040,15 @@ if __name__ == "__main__":
     if not pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
-    
+
+    manual = None
+    if args.manual:
+        manual = args.manual
+    if not manual and 'manual' in games[disc_ids[0]]:
+        manual = games[disc_ids[0]]['manual']
+    if manual:
+        manual = create_manual(manual, disc_ids[0])
+        
     print('Id:', disc_ids[0])
     print('Title:', game_title)
     print('Cue Files', cue_files) if verbose else None
@@ -2071,7 +2123,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, subchannels=subchannels)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, subchannels=subchannels, manual=manual)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:

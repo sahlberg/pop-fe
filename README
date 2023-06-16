@@ -82,6 +82,9 @@ Command line arguments are:
 		         pop-fe will automatically fetch one from the internet.
 --pic1                 : Image to use as the PIC1/Screenshot. If not specified
 		         pop-fe will automatically fetch one from the internet.
+--manual               : Specify a http link, zip-file or a directory containing
+                         scans of the manual. This is only supported for
+			 PSP at the moment. See Manual section below.
 --resolution	       : By default resolution is set to '2' (640x512)
 		         for PAL games. I.e. games with a GameId that starts
 			 with SCES or SLES.
@@ -311,6 +314,17 @@ $ ffmpeg -i Azure\ Dreams\ OST\ 3.\ Overture.3gp  -ar 44100 -ac 2 Azure\ Dreams\
     https://www.psx-place.com/threads/pop-fe-a-utility-to-create-psx-classics-packages-for-ps3.37426/
 )
 
+
+MANUAL
+======
+Pop-fe can create a "Software Manual" for PSP. Use the --manual command line
+argument and spepcify either a https-link, a zip-file or a directory containing
+scans of the manual to use to generate DOCUMENT.DAT.
+The files can be in any format and will be converted to PNG and re-scaled to
+480 pixels wide to match the PSP screen.
+
+The image filenames must contain a 4 digit number to indicate the page number
+starting at 0000.
 
 PSIO
 ====
