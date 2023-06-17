@@ -256,8 +256,13 @@ $ ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 --fetch-metadata
 ================
-This argument will download and install <cue>_cover.png, <cue>_pic0.png, <cue>_pic1.png as
-well as the game id and title in the directory where the game is stored.
+This argument will download and install
+<cue>_cover.png,
+<cue>_pic0.png,
+<cue>_pic1.png,
+<cue>.snd0,
+<cue>.manual,
+as well as the game id and title in the directory where the game is stored.
 This requires that the game directory is writeable.
 
 VMP.PY
@@ -325,6 +330,15 @@ The files can be in any format and will be converted to PNG and re-scaled to
 
 The image filenames must contain a 4 digit number to indicate the page number
 starting at 0000.
+
+You can also store the manual locally alongside the cue file.
+The file needs to have the same name as the cue but the extension .manual
+The format of this file can either be a pre-processed DOCUMENT.DAT file
+or it can be a zip file containing image scans.
+
+If this file exist then pop-fe will use it as the manual, overriding any
+any default manual that may be specified in gamedb.py.
+
 
 PSIO
 ====

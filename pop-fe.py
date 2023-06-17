@@ -522,7 +522,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image.save(f, 'PNG')
 
 
-def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0):
+def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
     print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
     f = cue.split('/')[-1][:-4]
@@ -533,6 +533,17 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0):
     icon0.save(create_path(cue, f + '_cover.png'))
     pic0.save(create_path(cue, f + '_pic0.png'))
     pic1.save(create_path(cue, f + '_pic1.png'))
+    if manual:
+        p = create_path(cue, f + '.manual')
+        try:
+            os.stat(p)
+            print('Local manual detected in', p, 'skipping fetch')
+        except:
+            if p != manual:
+                with open(manual, 'rb') as i:
+                    d = i.read()
+                    with open(p, 'wb') as o:
+                        o.write(d)
     if snd0:
         p = create_path(cue, f + '.snd0')
         if p != snd0:
@@ -1689,6 +1700,19 @@ def create_sbi(sbi, magic_word):
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP
 def create_manual(source, gameid, subdir='./pop-fe-work/'):
+    if source[:8] != 'https://':
+        with open(source, 'rb') as f:
+            buf = f.read(4)
+            signature = struct.unpack_from('<I', buf, 0)[0]
+            if signature == 0x20434F44: # a PSP DOCUMENT.DAT file?
+                return source
+            if signature == 0x04034b50: # a ZIP file?
+                print('Is a zip file')
+                tmpfile = subdir + '/DOCUMENT.zip'
+                temp_files.append(tmpfile)
+                copy_file(source, tmpfile)
+                source = tmpfile
+
     print('Create DOCUMENT.DAT from', source)
     if source[:8] == 'https://':
             print('Download manual from', source)
@@ -2012,7 +2036,6 @@ if __name__ == "__main__":
     if not icon0:
         print('Fetch ICON0 for', game_title) if verbose else None
         temp_files.append(subdir + 'ICON0.jpg')
-        print('fetch metadata', args.fetch_metadata)
         icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', add_psn_frame=True if args.ps3_pkg or args.psp_dir or args.fetch_metadata else False)
 
     # PIC0.PNG
@@ -2044,6 +2067,13 @@ if __name__ == "__main__":
     manual = None
     if args.manual:
         manual = args.manual
+    if not manual:
+        try:
+            os.stat(args.files[0][:-4] + '.manual')
+            manual = args.files[0][:-4] + '.manual'
+            print('Use locally stored manual from', manual)
+        except:
+            True
     if not manual and 'manual' in games[disc_ids[0]]:
         manual = games[disc_ids[0]]['manual']
     if manual:
@@ -2131,7 +2161,7 @@ if __name__ == "__main__":
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:
-        create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0)
+        create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual)
     if args.psio_dir:
         create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cu2_files, img_files)
     if args.retroarch_bin_dir:
