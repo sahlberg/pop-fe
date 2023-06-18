@@ -2067,19 +2067,20 @@ if __name__ == "__main__":
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
 
     manual = None
-    if args.manual:
-        manual = args.manual
-    if not manual:
-        try:
-            os.stat(args.files[0][:-4] + '.manual')
-            manual = args.files[0][:-4] + '.manual'
-            print('Use locally stored manual from', manual)
-        except:
-            True
-    if not manual and 'manual' in games[disc_ids[0]]:
-        manual = games[disc_ids[0]]['manual']
-    if manual:
-        manual = create_manual(manual, disc_ids[0])
+    if args.psp_dir:
+        if args.manual:
+            manual = args.manual
+        if not manual:
+            try:
+                os.stat(args.files[0][:-4] + '.manual')
+                manual = args.files[0][:-4] + '.manual'
+                print('Use locally stored manual from', manual)
+            except:
+                True
+        if not manual and 'manual' in games[disc_ids[0]]:
+            manual = games[disc_ids[0]]['manual']
+        if manual:
+            manual = create_manual(manual, disc_ids[0])
         
     print('Id:', disc_ids[0])
     print('Title:', game_title)
