@@ -148,8 +148,12 @@ class PopFePs3App:
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
+        self.builder.get_variable('snd0_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
 
+        self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
+        self.builder.get_variable('manual_variable').set('')
+        
     def on_theme_selected(self, event):
         self._theme = self.builder.get_object('theme', self.master).get()
         
@@ -230,6 +234,8 @@ class PopFePs3App:
                 snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-ps3-work')
             if not snd0 and 'snd0' in games[disc_id]:
                 self.builder.get_variable('snd0_variable').set(games[disc_id]['snd0'])
+            if 'manual' in games[disc_id]:
+                self.builder.get_variable('manual_variable').set(games[disc_id]['manual'])
             
             print('Fetching ICON0') if verbose else None
             self.icon0 = None
@@ -467,6 +473,13 @@ class PopFePs3App:
             snd0 = popfe.get_snd0_from_link(snd0)
             if snd0:
                 temp_files.append(snd0)
+
+        manual = self.builder.get_variable('manual_variable').get()
+        if manual and len(manual):
+            manual = popfe.create_manual(manual, self.disc_ids[0], subdir='pop-fe-ps3-work/')
+        else:
+            manual = None
+
         ebootdir = self.pkgdir if self.pkgdir else '.'
         popfe.create_psp(ebootdir, self.disc_ids, title,
                          self.icon0,
@@ -475,7 +488,7 @@ class PopFePs3App:
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, subdir='pop-fe-ps3-work/', snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
-                         subchannels=subchannels)
+                         subchannels=subchannels, manual=manual)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

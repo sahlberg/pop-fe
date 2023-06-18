@@ -1700,6 +1700,7 @@ def create_sbi(sbi, magic_word):
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP
 def create_manual(source, gameid, subdir='./pop-fe-work/'):
+    print('Create manual', source)
     if source[:8] != 'https://':
         with open(source, 'rb') as f:
             buf = f.read(4)
@@ -1719,11 +1720,12 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
             try:
                 tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
                 temp_files.append(tmpfile)
-                subprocess.run(['wget', '-q', source, '-O', tmpfile], timeout=30, check=True)
+                subprocess.run(['wget', source, '-O', tmpfile], timeout=120, check=True)
                 print('Downloaded manual as', tmpfile)
                 source = tmpfile
             except:
-                True
+                print('Failed to download manual from', source)
+                return None
     if source[-4:] == '.zip':
             print('Unzip manual', source)
             subdir = subdir + '/DOCUMENT-tmp'

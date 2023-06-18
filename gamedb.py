@@ -5240,6 +5240,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00556': {
         'url': "games/U/G/SLUS-00544.html",
@@ -5247,6 +5248,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00798': {
         'url': "games/U/G/SLUS-00798.html",
@@ -5266,6 +5268,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01098': {
         'url': "games/U/G/SLUS-00986.html",
@@ -5273,6 +5276,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01099': {
         'url': "games/U/G/SLUS-00986.html",
@@ -5280,21 +5284,29 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00942': {
         'url': "games/U/G/SLUS-00942.html",
     	'id': 'SLUS00942',
 	'title': "GALLOP RACER",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gallop%20Racer%20%28USA%29_jp2.zip',
     },
     'SLUS00624': {
         'url': "games/U/G/SLUS-00624.html",
     	'id': 'SLUS00624',
 	'title': "GAUNTLET LEGENDS",
+        'pic0': 'https://images.launchbox-app.com/a6b07bf3-4411-4bef-9d70-9470269d6b98.png',
+        'pic1': 'https://images.launchbox-app.com/4b310cd6-fb9c-4aab-9a80-b76759ace629.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gauntlet%20Legends%20%28USA%29_jp2.zip',
     },
     'SLUS00970': {
         'url': "games/U/G/SLUS-00970.html",
     	'id': 'SLUS00970',
 	'title': "GEKIDO - URBAN FIGHTERS",
+        'pic0': 'https://images.launchbox-app.com/a8c4cc43-ee5e-4755-89bf-702feb249715.png',
+        'pic1': 'https://images.launchbox-app.com/f5a4ca77-1dcb-481f-92ff-081bc57ab868.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gekido%20-%20Urban%20Fighters%20%28USA%29_jp2.zip',
     },
     'SLUS01498': {
         'url': "games/U/G/SLUS-01498.html",
@@ -5305,6 +5317,8 @@ games = {
         'url': "games/U/G/SLUS-00024.html",
     	'id': 'SLUS00024',
 	'title': "GEOM CUBE",
+        'pic0': 'https://images.launchbox-app.com/af53cad6-a279-4c03-a69a-3425d7501139.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Geom%20Cube%20%28USA%29_jp2.zip',
     },
     'SLUS00042': {
         'url': "games/U/G/SLUS-00042.html",
@@ -5312,6 +5326,7 @@ games = {
 	'title': "GEX",
         'pic0': 'https://images.launchbox-app.com/eb061de1-3efc-432b-910b-54ff286e43d9.png',
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
     },
     'SLUS00598': {
         'url': "games/U/G/SLUS-00598.html",
@@ -5319,6 +5334,7 @@ games = {
 	'title': "GEX - ENTER THE GECKO",
         'pic0': 'https://images.launchbox-app.com/fb3c3242-eade-4543-914a-d04ba16155bd.png',
         'pic1': 'https://images.launchbox-app.com/6a373200-a4b9-4470-a696-6eb3db09edf3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20-%20Enter%20the%20Gecko%20%28USA%29_jp2.zip',
     },
     'SLUS00806': {
         'url': "games/U/G/SLUS-00806.html",
@@ -5326,6 +5342,7 @@ games = {
 	'title': "GEX 3 - DEEP COVER GECKO",
         'pic0': 'https://images.launchbox-app.com/98915251-96c3-40b0-a0f4-b9d077f98130.png',
         'pic1': 'https://images.launchbox-app.com/1a187051-61ab-4969-8e26-a92c9999cb9d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%203%20-%20Deep%20Cover%20Gecko%20%28USA%29_jp2.zip',
     },
     'SLUS00552': {
         'url': "games/U/G/SLUS-00552.html",
@@ -5346,6 +5363,8 @@ games = {
         'url': "games/U/G/SLUS-00295.html",
     	'id': 'SLUS00295',
 	'title': "GOAL STORM '97",
+        'pic0': 'https://images.launchbox-app.com/28e41606-d95d-4320-a4b0-1ead09091ef3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Goal%20Storm%20%2797%20%28USA%29_jp2.zip',
     },
     'SLUS00319': {
         'url': "games/U/G/SLUS-00319.html",
@@ -5363,6 +5382,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCUS94455': {
         'url': "games/U/G/SCUS-94455.html",
@@ -5370,6 +5390,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCUS94488': {
         'url': "games/U/G/SCUS-94455.html",
@@ -5377,6 +5398,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCUS94588': {
         'url': "games/U/G/SCUS-94455.html",
@@ -5384,6 +5406,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SLUS00127': {
         'url': "games/U/G/SLUS-00127.html",
@@ -5396,6 +5419,7 @@ games = {
 	'title': "GRAND THEFT AUTO",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00106': {
         'url': "games/U/G/SLUS-00106CE.html",
@@ -5403,6 +5427,7 @@ games = {
 	'title': "GRAND THEFT AUTO - COLLECTOR'S EDITION",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00789': {
         'url': "games/U/G/SLUS-00106CE.html",
@@ -5410,6 +5435,7 @@ games = {
 	'title': "GRAND THEFT AUTO - COLLECTOR'S EDITION",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00846': {
         'url': "games/U/G/SLUS-00106CE.html",
@@ -5417,6 +5443,7 @@ games = {
 	'title': "GRAND THEFT AUTO - COLLECTOR'S EDITION",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00106': {
         'url': "games/U/G/SLUS-00106DC.html",
@@ -5424,6 +5451,7 @@ games = {
 	'title': "GRAND THEFT AUTO DIRECTOR'S CUT",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00846': {
         'url': "games/U/G/SLUS-00106DC.html",
@@ -5431,6 +5459,7 @@ games = {
 	'title': "GRAND THEFT AUTO DIRECTOR'S CUT",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLUS00789': {
         'url': "games/U/G/SLUS-00789.html",
@@ -5438,6 +5467,7 @@ games = {
 	'title': "GRAND THEFT AUTO 2",
         'pic0': 'https://images.launchbox-app.com/06ae932b-a96c-4198-af17-cd348daaa15a.png',
         'pic1': 'https://images.launchbox-app.com/0cbc90f8-d56a-49cf-a854-d671b1645f01.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%202%20%28USA%29_jp2.zip',
     },
     'SLUS00846': {
         'url': "games/U/G/SLUS-00846.html",
@@ -5450,7 +5480,8 @@ games = {
 	'title': "GRANDIA",
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
-        #'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94465': {
         'url': "games/U/G/SCUS-94457.html",
@@ -5459,6 +5490,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00323': {
         'url': "games/U/G/SLUS-00323.html",
@@ -5469,6 +5501,8 @@ games = {
         'url': "games/U/G/SCUS-94568.html",
     	'id': 'SCUS94568',
 	'title': "GRIND SESSION",
+        'pic0': 'https://images.launchbox-app.com/bd4248d2-1862-47e7-a749-476b3015cbf3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grind%20Session%20%28USA%29_jp2.zip',
     },
     'SLUS01150': {
         'url': "games/U/G/SLUS-01150.html",
@@ -5504,6 +5538,8 @@ games = {
         'url': "games/U/G/SLUS-01398.html",
     	'id': 'SLUS01398',
 	'title': "GUNFIGHTER - THE LEGEND OF JESSE JAMES",
+        'pic0': 'https://images.launchbox-app.com/a5dc5857-13e5-4b98-a86d-6803e3efcac1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gunfighter%20-%20The%20Legend%20of%20Jesse%20James%20%28USA%29_jp2.zip',
     },
     'SLUS00313': {
         'url': "games/U/G/SLUS-00313.html",
@@ -9373,6 +9409,8 @@ games = {
         'url': "games/U/T/SLUS-00769.html",
     	'id': 'SLUS00769',
 	'title': "THE GAME OF LIFE",
+        'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Game%20of%20Life%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLUS00597': {
         'url': "games/U/T/SLUS-00597.html",
@@ -9381,11 +9419,15 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLUS01197': {
         'url': "games/U/T/SLUS-01197.html",
     	'id': 'SLUS01197',
 	'title': "THE GRINCH",
+        'pic0': 'https://images.launchbox-app.com/2333b729-138c-481c-96cb-4e7da2536cc2.png',
+        'pic1': 'https://images.launchbox-app.com/56ec5520-bab5-41cc-80a1-670a3f6c6350.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grinch%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLUS00120': {
         'url': "games/U/T/SLUS-00120.html",
@@ -14075,6 +14117,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10082': {
         'url': "games/P/G/SLES-00082.html",
@@ -14082,6 +14125,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00853': {
         'url': "games/P/G/SLES-00853.html",
@@ -14089,6 +14133,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10853': {
         'url': "games/P/G/SLES-00853.html",
@@ -14096,6 +14141,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00854': {
         'url': "games/P/G/SLES-00854.html",
@@ -14103,6 +14149,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10854': {
         'url': "games/P/G/SLES-00854.html",
@@ -14110,6 +14157,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00855': {
         'url': "games/P/G/SLES-00855.html",
@@ -14117,6 +14165,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10855': {
         'url': "games/P/G/SLES-00855.html",
@@ -14124,6 +14173,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00856': {
         'url': "games/P/G/SLES-00856.html",
@@ -14131,6 +14181,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10856': {
         'url': "games/P/G/SLES-00856.html",
@@ -14138,6 +14189,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES01625': {
         'url': "games/P/G/SCES-01625.html",
@@ -14195,6 +14247,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12328': {
         'url': "games/P/G/SLES-02328.html",
@@ -14202,6 +14255,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22328': {
         'url': "games/P/G/SLES-02328.html",
@@ -14209,6 +14263,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02329': {
         'url': "games/P/G/SLES-02329.html",
@@ -14216,6 +14271,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12329': {
         'url': "games/P/G/SLES-02329.html",
@@ -14223,6 +14279,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22329': {
         'url': "games/P/G/SLES-02329.html",
@@ -14230,6 +14287,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02330': {
         'url': "games/P/G/SLES-02330.html",
@@ -14237,6 +14295,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12330': {
         'url': "games/P/G/SLES-02330.html",
@@ -14244,6 +14303,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22330': {
         'url': "games/P/G/SLES-02330.html",
@@ -14251,26 +14311,39 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02791': {
         'url': "games/P/G/SLES-02791.html",
     	'id': 'SLES02791',
 	'title': "GAUNTLET LEGENDS",
+        'pic0': 'https://images.launchbox-app.com/a6b07bf3-4411-4bef-9d70-9470269d6b98.png',
+        'pic1': 'https://images.launchbox-app.com/4b310cd6-fb9c-4aab-9a80-b76759ace629.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gauntlet%20Legends%20%28USA%29_jp2.zip',
     },
     'SLES02931': {
         'url': "games/P/G/SLES-02931.html",
     	'id': 'SLES02931',
 	'title': "GAUNTLET LEGENDS",
+        'pic0': 'https://images.launchbox-app.com/a6b07bf3-4411-4bef-9d70-9470269d6b98.png',
+        'pic1': 'https://images.launchbox-app.com/4b310cd6-fb9c-4aab-9a80-b76759ace629.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gauntlet%20Legends%20%28USA%29_jp2.zip',
     },
     'SLES02932': {
         'url': "games/P/G/SLES-02932.html",
     	'id': 'SLES02932',
 	'title': "GAUNTLET LEGENDS",
+        'pic0': 'https://images.launchbox-app.com/a6b07bf3-4411-4bef-9d70-9470269d6b98.png',
+        'pic1': 'https://images.launchbox-app.com/4b310cd6-fb9c-4aab-9a80-b76759ace629.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gauntlet%20Legends%20%28USA%29_jp2.zip',
     },
     'SLES01241': {
         'url': "games/P/G/SLES-01241.html",
     	'id': 'SLES01241',
 	'title': "GEKIDO - URBAN FIGHTERS",
+        'pic0': 'https://images.launchbox-app.com/a8c4cc43-ee5e-4755-89bf-702feb249715.png',
+        'pic1': 'https://images.launchbox-app.com/f5a4ca77-1dcb-481f-92ff-081bc57ab868.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gekido%20-%20Urban%20Fighters%20%28USA%29_jp2.zip',
     },
     'SLES04004': {
         'url': "games/P/G/SLES-04004.html",
@@ -14283,6 +14356,7 @@ games = {
 	'title': "GEX",
         'pic0': 'https://images.launchbox-app.com/eb061de1-3efc-432b-910b-54ff286e43d9.png',
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
     },
     'SLES00596': {
         'url': "games/P/G/SLES-00596.html",
@@ -14302,6 +14376,7 @@ games = {
 	'title': "GEX 3 - DEEP COVER GECKO",
         'pic0': 'https://images.launchbox-app.com/98915251-96c3-40b0-a0f4-b9d077f98130.png',
         'pic1': 'https://images.launchbox-app.com/1a187051-61ab-4969-8e26-a92c9999cb9d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%203%20-%20Deep%20Cover%20Gecko%20%28USA%29_jp2.zip',
     },
     'SCES01050': {
         'url': "games/P/G/SCES-01050.html",
@@ -14379,6 +14454,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCES02380': {
         'url': "games/P/G/SCES-02380.html",
@@ -14386,6 +14462,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCES12380': {
         'url': "games/P/G/SCES-02380.html",
@@ -14393,6 +14470,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SLES00032': {
         'url': "games/P/G/SLES-00032.html",
@@ -14400,6 +14478,7 @@ games = {
 	'title': "GRAND THEFT AUTO",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLES00032': {
         'url': "games/P/G/SLES-00032CE.html",
@@ -14407,6 +14486,7 @@ games = {
 	'title': "GRAND THEFT AUTO [COLLECTOR'S EDITION SET]",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLES03389': {
         'url': "games/P/G/SLES-00032CE.html",
@@ -14414,6 +14494,7 @@ games = {
 	'title': "GRAND THEFT AUTO [COLLECTOR'S EDITION SET]",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLES01404': {
         'url': "games/P/G/SLES-00032CE.html",
@@ -14421,6 +14502,7 @@ games = {
 	'title': "GRAND THEFT AUTO [COLLECTOR'S EDITION SET]",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLES03389': {
         'url': "games/P/G/SLES-03389.html",
@@ -14438,6 +14520,7 @@ games = {
 	'title': "GRAND THEFT AUTO 2",
         'pic0': 'https://images.launchbox-app.com/06ae932b-a96c-4198-af17-cd348daaa15a.png',
         'pic1': 'https://images.launchbox-app.com/0cbc90f8-d56a-49cf-a854-d671b1645f01.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%202%20%28USA%29_jp2.zip',
     },
     'SLES02458': {
         'url': "games/P/G/SLES-02458.html",
@@ -14445,6 +14528,7 @@ games = {
 	'title': "GRAND THEFT AUTO 2",
         'pic0': 'https://images.launchbox-app.com/06ae932b-a96c-4198-af17-cd348daaa15a.png',
         'pic1': 'https://images.launchbox-app.com/0cbc90f8-d56a-49cf-a854-d671b1645f01.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%202%20%28USA%29_jp2.zip',
     },
     'SCES04090': {
         'url': "games/P/G/SCES-04090.html",
@@ -14458,6 +14542,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12397': {
         'url': "games/P/G/SLES-02397.html",
@@ -14466,6 +14551,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02398': {
         'url': "games/P/G/SLES-02398.html",
@@ -14474,6 +14560,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12398': {
         'url': "games/P/G/SLES-02398.html",
@@ -14482,6 +14569,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02399': {
         'url': "games/P/G/SLES-02399.html",
@@ -14490,6 +14578,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12399': {
         'url': "games/P/G/SLES-02399.html",
@@ -14498,6 +14587,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00381': {
         'url': "games/P/G/SLES-00381.html",
@@ -14508,6 +14598,8 @@ games = {
         'url': "games/P/G/SCES-02885.html",
     	'id': 'SCES02885',
 	'title': "GRIND SESSION",
+        'pic0': 'https://images.launchbox-app.com/bd4248d2-1862-47e7-a749-476b3015cbf3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grind%20Session%20%28USA%29_jp2.zip',
     },
     'SLES02223': {
         'url': "games/P/G/SLES-02223.html",
@@ -25526,6 +25618,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SCES01321': {
         'url': "games/P/T/SCES-01321.html",
@@ -25534,6 +25627,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SCES01322': {
         'url': "games/P/T/SCES-01322.html",
@@ -25542,11 +25636,15 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLES02974': {
         'url': "games/P/T/SLES-02974.html",
     	'id': 'SLES02974',
 	'title': "THE GRINCH",
+        'pic0': 'https://images.launchbox-app.com/2333b729-138c-481c-96cb-4e7da2536cc2.png',
+        'pic1': 'https://images.launchbox-app.com/56ec5520-bab5-41cc-80a1-670a3f6c6350.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grinch%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLES01776': {
         'url': "games/P/T/SLES-01776.html",
@@ -34273,11 +34371,15 @@ games = {
         'url': "games/J/D/SLPS-00155.html",
     	'id': 'SLPS00155',
 	'title': "DX JINSEI GAME - THE GAME OF LIFE",
+        'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Game%20of%20Life%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS91025': {
         'url': "games/J/D/SLPS-91025.html",
     	'id': 'SLPS91025',
 	'title': "DX JINSEI GAME - THE GAME OF LIFE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Game%20of%20Life%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS00918': {
         'url': "games/J/D/SLPS-00918.html",
@@ -36222,6 +36324,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10066': {
         'url': "games/J/G/SCPS-10065.html",
@@ -36229,6 +36332,7 @@ games = {
 	'title': "G-POLICE",
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM86195': {
         'url': "games/J/G/SLPM-86195.html",
@@ -36376,6 +36480,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02193': {
         'url': "games/J/G/SLPS-02192.html",
@@ -36383,6 +36488,7 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02194': {
         'url': "games/J/G/SLPS-02192.html",
@@ -36390,11 +36496,13 @@ games = {
 	'title': "GALERIANS",
         'pic0': 'https://images.launchbox-app.com/7bedd9fa-b66d-4e12-9324-812c67e11a66.png',
         'pic1': 'https://images.launchbox-app.com/565bd114-18a9-4560-9ad8-1a9dac095f59.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Galerians%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00507': {
         'url': "games/J/G/SLPS-00507.html",
     	'id': 'SLPS00507',
 	'title': "GALLOP RACER",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gallop%20Racer%20%28USA%29_jp2.zip',
     },
     'SLPS01077': {
         'url': "games/J/G/SLPS-01077.html",
@@ -36790,6 +36898,8 @@ games = {
         'url': "games/J/G/SLPS-00007.html",
     	'id': 'SLPS00007',
 	'title': "GEOM CUBE",
+        'pic0': 'https://images.launchbox-app.com/af53cad6-a279-4c03-a69a-3425d7501139.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Geom%20Cube%20%28USA%29_jp2.zip',
     },
     'SLPS01575': {
         'url': "games/J/G/SLPS-01575.html",
@@ -36827,6 +36937,7 @@ games = {
 	'title': "GEX",
         'pic0': 'https://images.launchbox-app.com/eb061de1-3efc-432b-910b-54ff286e43d9.png',
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
     },
     'SCPS45092': {
         'url': "games/J/G/SCPS-45092.html",
@@ -36897,6 +37008,8 @@ games = {
         'url': "games/J/G/SCPS-45165.html",
     	'id': 'SCPS45165',
 	'title': "GOAL STORM '97",
+        'pic0': 'https://images.launchbox-app.com/28e41606-d95d-4320-a4b0-1ead09091ef3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Goal%20Storm%20%2797%20%28USA%29_jp2.zip',
     },
     'SLPS02945': {
         'url': "games/J/G/SLPS-02945.html",
@@ -37054,6 +37167,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCPS10045': {
         'url': "games/J/G/SCPS-10045.html",
@@ -37061,6 +37175,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCPS91128': {
         'url': "games/J/G/SCPS-91128.html",
@@ -37068,6 +37183,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCPS91301': {
         'url': "games/J/G/SCPS-91301.html",
@@ -37075,6 +37191,7 @@ games = {
 	'title': "GRAN TURISMO - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
         'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%20%28USA%29%20%28Reference%29_jp2.zip',
     },
     'SCPS45457': {
         'url': "games/J/G/SCPS-45457.html",
@@ -37082,6 +37199,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCPS45458': {
         'url': "games/J/G/SCPS-45457.html",
@@ -37089,6 +37207,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCPS10116': {
         'url': "games/J/G/SCPS-10116.html",
@@ -37096,6 +37215,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCPS10117': {
         'url': "games/J/G/SCPS-10116.html",
@@ -37103,6 +37223,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCAJ-01001': {
         'url': "games/J/G/SCAJ-01001.html",
@@ -37110,6 +37231,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCAJ-01002': {
         'url': "games/J/G/SCAJ-01001.html",
@@ -37117,6 +37239,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCPS91326': {
         'url': "games/J/G/SCPS-91326.html",
@@ -37124,6 +37247,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SCPS91327': {
         'url': "games/J/G/SCPS-91326.html",
@@ -37131,6 +37255,7 @@ games = {
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
     'SLPS01554': {
         'url': "games/J/G/SLPS-01554.html",
@@ -37138,6 +37263,7 @@ games = {
 	'title': "GRAND THEFT AUTO",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLPM87007': {
         'url': "games/J/G/SLPM-87007.html",
@@ -37145,6 +37271,7 @@ games = {
 	'title': "GRAND THEFT AUTO [POKKIRI 1400]",
         'pic0': 'https://images.launchbox-app.com/c1409db6-14fb-4720-abec-a8de8f072bee.png',
         'pic1': 'https://images.launchbox-app.com/d53cbc81-6b72-4aee-9c66-c19b5837c2ae.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grand%20Theft%20Auto%20%28USA%29_jp2.zip',
     },
     'SLPS02124': {
         'url': "games/J/G/SLPS-02124.html",
@@ -37153,6 +37280,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02125': {
         'url': "games/J/G/SLPS-02124.html",
@@ -37161,6 +37289,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91205': {
         'url': "games/J/G/SLPS-91205.html",
@@ -37169,6 +37298,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91206': {
         'url': "games/J/G/SLPS-91205.html",
@@ -37177,6 +37307,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/42414e1a-68c6-484b-b522-44868b65d821.png',
         'pic1': 'https://images.launchbox-app.com/3dbc73d4-13de-44a7-be2a-e72e42da3235.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9435rZ8-Iaw&list=PL5PW5TdgaMASYcEHgiwZspyuC0-7IgpeG&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Grandia%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01624': {
         'url': "games/J/G/SLPS-01624.html",
@@ -53140,6 +53271,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SCPS10046': {
         'url': "games/J/T/SCPS-10046.html",
@@ -53148,6 +53280,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/95365c67-5692-4742-b13c-1dcaafea4914.png',
         'pic1': 'https://cdn.mobygames.com/screenshots/16273403-the-granstream-saga-playstation-intro.png',
         'snd0': 'https://www.youtube.com/watch?v=xTEzOpaK5PY',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Granstream%20Saga%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS00719': {
         'url': "games/J/T/SLPS-00719.html",
