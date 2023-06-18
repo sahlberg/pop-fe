@@ -2664,7 +2664,7 @@ games = {
     	'id': 'SLUS00086',
 	'title': "BASES LOADED '96 - DOUBLE HEADER",
         'pic0': 'https://images.launchbox-app.com/64ab151d-0a07-4549-a48e-471738a4e03a.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Bases%20Loaded%20%2796%20-%20Double%20Header%20%28USA%29_jp2.zip',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Loaded%20%28USA%29_jp2.zip',
     },
     'SLUS00873': {
         'url': "games/U/B/SLUS-00873.html",
@@ -6165,6 +6165,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SCUS94254': {
         'url': "games/U/L/SCUS-94254.html",
@@ -6176,6 +6177,10 @@ games = {
         'url': "games/U/L/SLUS-01013.html",
     	'id': 'SLUS01013',
 	'title': "LEGEND OF MANA",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLUS01246': {
         'url': "games/U/L/SLUS-01246.html",
@@ -6215,6 +6220,7 @@ games = {
     	'id': 'SLUS00076',
 	'title': "LOADED",
         'pic0': 'https://images.launchbox-app.com/ac67de13-93b2-4e3f-ba36-d86b20a0fcaf.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Loaded%20%28USA%29_jp2.zip',
     },
     'SLUS00557': {
         'url': "games/U/L/SLUS-00557.html",
@@ -6225,6 +6231,9 @@ games = {
         'url': "games/U/L/SLUS-01369.html",
     	'id': 'SLUS01369',
 	'title': "LOONEY TUNES - SHEEP RAIDER",
+        'pic0': 'https://images.launchbox-app.com/2f6e8e5f-8155-4227-be26-700f52bad973.png',
+        'pic1': 'https://images.launchbox-app.com/2f2b0402-50f8-4763-861a-0b2b6c3fdbea.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Looney%20Tunes%20-%20Sheep%20Raider%20%28USA%29_jp2.zip',
     },
     'SLUS01145': {
         'url': "games/U/L/SLUS-01145.html",
@@ -6235,6 +6244,9 @@ games = {
         'url': "games/U/L/SLUS-00719.html",
     	'id': 'SLUS00719',
 	'title': "LUCKY LUKE",
+        'pic0': 'https://images.launchbox-app.com/bf3addcc-615a-44c2-811b-c0290c6567af.png',
+        'pic1': 'https://images.launchbox-app.com/f120aa15-3a2f-40b1-b34f-e5004edf8b20.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lucky%20Luke%20%28USA%29_jp2.zip',
     },
     'SLUS00628': {
         'url': "games/U/L/SLUS-00628.html",
@@ -6243,6 +6255,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00899': {
         'url': "games/U/L/SLUS-00628.html",
@@ -6251,6 +6264,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00921': {
         'url': "games/U/L/SLUS-00628.html",
@@ -6259,6 +6273,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01071': {
         'url': "games/U/L/SLUS-01071.html",
@@ -6267,6 +6282,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01239': {
         'url': "games/U/L/SLUS-01071.html",
@@ -6275,6 +6291,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01240': {
         'url': "games/U/L/SLUS-01071.html",
@@ -6283,6 +6300,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01257': {
         'url': "games/U/L/SLUS-01071.html",
@@ -6291,6 +6309,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01306': {
         'url': "games/U/M/SLUS-01306.html",
@@ -7854,6 +7873,8 @@ games = {
         'url': "games/U/P/SCUS-94551.html",
     	'id': 'SCUS94551',
 	'title': "PROFESSIONAL UNDERGROUND LEAGUE OF PAIN",
+        'pic0': 'https://images.launchbox-app.com/6707f9c2-1311-48d0-bb48-0dedd4686fef.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/League%20of%20Pain%20-%20Professional%20Underground%20%28USA%29_jp2.zip',
     },
     'SCUS94408': {
         'url': "games/U/P/SCUS-94408.html",
@@ -9571,6 +9592,8 @@ games = {
         'url': "games/U/T/SLUS-01481.html",
     	'id': 'SLUS01481',
 	'title': "THE LAND BEFORE TIME - BIG WATER ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/c0076280-6ce7-4826-b40b-fbb123e5c323.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Land%20Before%20Time%2C%20The%20-%20Big%20Water%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLUS01213': {
         'url': "games/U/T/SLUS-01213.html",
@@ -9581,6 +9604,8 @@ games = {
         'url': "games/U/T/SLUS-01043.html",
     	'id': 'SLUS01043',
 	'title': "THE LAND BEFORE TIME - RETURN TO GREAT VALLEY",
+        'pic0': 'https://images.launchbox-app.com/6964df68-1206-454f-aef6-321ec6a05bcc.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Land%20Before%20Time%2C%20The%20-%20Return%20to%20the%20Great%20Valley%20%28USA%29_jp2.zip',
     },
     'SCUS94491': {
         'url': "games/U/T/SCUS-94491.html",
@@ -9588,6 +9613,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94584': {
         'url': "games/U/T/SCUS-94491.html",
@@ -9595,6 +9621,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94585': {
         'url': "games/U/T/SCUS-94491.html",
@@ -9602,6 +9629,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94586': {
         'url': "games/U/T/SCUS-94491.html",
@@ -9609,6 +9637,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00515': {
         'url': "games/U/T/SLUS-00515.html",
@@ -17436,6 +17465,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SLES02024': {
         'url': "games/P/L/SLES-02024.html",
@@ -17444,6 +17474,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SLES02025': {
         'url': "games/P/L/SLES-02025.html",
@@ -17452,6 +17483,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SLES02026': {
         'url': "games/P/L/SLES-02026.html",
@@ -17460,6 +17492,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SLES02027': {
         'url': "games/P/L/SLES-02027.html",
@@ -17468,6 +17501,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/71e0557d-a6f4-4440-8046-85a120f6d97c.png',
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
     },
     'SLES00730': {
         'url': "games/P/L/SLES-00730.html",
@@ -17702,6 +17736,7 @@ games = {
     	'id': 'SLES00013',
 	'title': "LOADED",
         'pic0': 'https://images.launchbox-app.com/ac67de13-93b2-4e3f-ba36-d86b20a0fcaf.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Loaded%20%28USA%29_jp2.zip',
     },
     'SLES00451': {
         'url': "games/P/L/SLES-00451.html",
@@ -17738,6 +17773,9 @@ games = {
         'url': "games/P/L/SLES-02895.html",
     	'id': 'SLES02895',
 	'title': "LOONEY TUNES - SHEEP, DOG 'N' WOLF",
+        'pic0': 'https://images.launchbox-app.com/2f6e8e5f-8155-4227-be26-700f52bad973.png',
+        'pic1': 'https://images.launchbox-app.com/2f2b0402-50f8-4763-861a-0b2b6c3fdbea.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Looney%20Tunes%20-%20Sheep%20Raider%20%28USA%29_jp2.zip',
     },
     'SLES02951': {
         'url': "games/P/L/SLES-02951.html",
@@ -17803,6 +17841,9 @@ games = {
         'url': "games/P/L/SLES-00943.html",
     	'id': 'SLES00943',
 	'title': "LUCKY LUKE",
+        'pic0': 'https://images.launchbox-app.com/bf3addcc-615a-44c2-811b-c0290c6567af.png',
+        'pic1': 'https://images.launchbox-app.com/f120aa15-3a2f-40b1-b34f-e5004edf8b20.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lucky%20Luke%20%28USA%29_jp2.zip',
     },
     'SLES03530': {
         'url': "games/P/L/SLES-03530.html",
@@ -25937,6 +25978,8 @@ games = {
         'url': "games/P/T/SLES-04055.html",
     	'id': 'SLES04055',
 	'title': "THE LAND BEFORE TIME - BIG WATER ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/c0076280-6ce7-4826-b40b-fbb123e5c323.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Land%20Before%20Time%2C%20The%20-%20Big%20Water%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLES03448': {
         'url': "games/P/T/SLES-03448.html",
@@ -25947,6 +25990,8 @@ games = {
         'url': "games/P/T/SLES-02981.html",
     	'id': 'SLES02981',
 	'title': "THE LAND BEFORE TIME - THE RETURN TO GREAT VALLEY",
+        'pic0': 'https://images.launchbox-app.com/6964df68-1206-454f-aef6-321ec6a05bcc.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Land%20Before%20Time%2C%20The%20-%20Return%20to%20the%20Great%20Valley%20%28USA%29_jp2.zip',
     },
     'SLES00020': {
         'url': "games/P/T/SLES-00020.html",
@@ -25969,6 +26014,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13043': {
         'url': "games/P/T/SCES-03043.html",
@@ -25976,6 +26022,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23043': {
         'url': "games/P/T/SCES-03043.html",
@@ -25983,6 +26030,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33043': {
         'url': "games/P/T/SCES-03043.html",
@@ -25990,6 +26038,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03044': {
         'url': "games/P/T/SCES-03044.html",
@@ -25997,6 +26046,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13044': {
         'url': "games/P/T/SCES-03044.html",
@@ -26004,6 +26054,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23044': {
         'url': "games/P/T/SCES-03044.html",
@@ -26011,6 +26062,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33044': {
         'url': "games/P/T/SCES-03044.html",
@@ -26018,6 +26070,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03045': {
         'url': "games/P/T/SCES-03045.html",
@@ -26025,6 +26078,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13045': {
         'url': "games/P/T/SCES-03045.html",
@@ -26032,6 +26086,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23045': {
         'url': "games/P/T/SCES-03045.html",
@@ -26039,6 +26094,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33045': {
         'url': "games/P/T/SCES-03045.html",
@@ -26046,6 +26102,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03046': {
         'url': "games/P/T/SCES-03046.html",
@@ -26053,6 +26110,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13046': {
         'url': "games/P/T/SCES-03046.html",
@@ -26060,6 +26118,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23046': {
         'url': "games/P/T/SCES-03046.html",
@@ -26067,6 +26126,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33046': {
         'url': "games/P/T/SCES-03046.html",
@@ -26074,6 +26134,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03047': {
         'url': "games/P/T/SCES-03047.html",
@@ -26081,6 +26142,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13047': {
         'url': "games/P/T/SCES-03047.html",
@@ -26088,6 +26150,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23047': {
         'url': "games/P/T/SCES-03047.html",
@@ -26095,6 +26158,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33047': {
         'url': "games/P/T/SCES-03047.html",
@@ -26102,6 +26166,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00903': {
         'url': "games/P/T/SLES-00903.html",
@@ -41869,6 +41934,9 @@ games = {
         'url': "games/J/L/SLPS-01674.html",
     	'id': 'SLPS01674',
 	'title': "LUCKY LUKE",
+        'pic0': 'https://images.launchbox-app.com/bf3addcc-615a-44c2-811b-c0290c6567af.png',
+        'pic1': 'https://images.launchbox-app.com/f120aa15-3a2f-40b1-b34f-e5004edf8b20.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lucky%20Luke%20%28USA%29_jp2.zip',
     },
     'SLPS01832': {
         'url': "games/J/L/SLPS-01832.html",
@@ -41887,6 +41955,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01398': {
         'url': "games/J/L/SLPS-01397.html",
@@ -41895,6 +41964,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91129': {
         'url': "games/J/L/SLPS-91129.html",
@@ -41903,6 +41973,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91130': {
         'url': "games/J/L/SLPS-91129.html",
@@ -41911,6 +41982,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%20-%20Silver%20Star%20Story%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02081': {
         'url': "games/J/L/SLPS-02081.html",
@@ -41919,6 +41991,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02082': {
         'url': "games/J/L/SLPS-02081.html",
@@ -41927,6 +42000,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02083': {
         'url': "games/J/L/SLPS-02081.html",
@@ -41935,6 +42009,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02966': {
         'url': "games/J/L/SLPS-02966.html",
@@ -41943,6 +42018,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02967': {
         'url': "games/J/L/SLPS-02966.html",
@@ -41951,6 +42027,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02968': {
         'url': "games/J/L/SLPS-02966.html",
@@ -41959,6 +42036,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM86777': {
         'url': "games/J/L/SLPM-86777.html",
@@ -49232,36 +49310,64 @@ games = {
         'url': "games/J/S/SCPS-45416.html",
     	'id': 'SCPS45416',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SCPS45417': {
         'url': "games/J/S/SCPS-45416.html",
     	'id': 'SCPS45417',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPS02170': {
         'url': "games/J/S/SLPS-02170.html",
     	'id': 'SLPS02170',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPS02171': {
         'url': "games/J/S/SLPS-02170.html",
     	'id': 'SLPS02171',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPS91456': {
         'url': "games/J/S/SLPS-91456.html",
     	'id': 'SLPS91456',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPS02771': {
         'url': "games/J/S/SLPS-02771.html",
     	'id': 'SLPS02771',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA [SQUARESOFT MILLENNIUM COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPM87394': {
         'url': "games/J/S/SLPM-87394.html",
     	'id': 'SLPM87394',
 	'title': "SEIKEN DENSETSU - LEGEND OF MANA [ULTIMATE HITS]",
+        'pic0': 'https://images.launchbox-app.com/4edf4b88-0de6-4288-b208-f5a90d18fae1.png',
+        'pic1': 'https://images.launchbox-app.com/3eb6000e-39fb-4f8a-b121-a0dee1b70759.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D3Nl6S-tTkM&list=PLpVsNPWzaPeUg6iIsTodd1C0H0Yntafg7&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Mana%20%28USA%29_jp2.zip',
     },
     'SLPS00740': {
         'url': "games/J/S/SLPS-00740.html",
@@ -53721,6 +53827,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10120': {
         'url': "games/J/T/SCPS-10119.html",
@@ -53728,6 +53835,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10121': {
         'url': "games/J/T/SCPS-10119.html",
@@ -53735,6 +53843,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10122': {
         'url': "games/J/T/SCPS-10119.html",
@@ -53742,6 +53851,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45461': {
         'url': "games/J/T/SCPS-45461.html",
@@ -53749,6 +53859,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45462': {
         'url': "games/J/T/SCPS-45461.html",
@@ -53756,6 +53867,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45463': {
         'url': "games/J/T/SCPS-45461.html",
@@ -53763,6 +53875,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45464': {
         'url': "games/J/T/SCPS-45461.html",
@@ -53770,6 +53883,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01323': {
         'url': "games/J/T/SLPS-01323.html",
