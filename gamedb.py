@@ -5993,6 +5993,8 @@ games = {
         'url': "games/U/K/SLUS-00766.html",
     	'id': 'SLUS00766',
 	'title': "K-1 - REVENGE",
+        'pic0': 'https://images.launchbox-app.com/f6e4a7d5-4fb3-4708-90ff-ace7f879ceff.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/K-1%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLUS00414': {
         'url': "games/U/K/SLUS-00414.html",
@@ -6003,6 +6005,8 @@ games = {
         'url': "games/U/K/SLUS-00677.html",
     	'id': 'SLUS00677',
 	'title': "KAGERO - DECEPTION II",
+        'pic0': 'https://images.launchbox-app.com/2493d5bb-ebd6-429d-9b7c-a732f0d78800.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
     },
     'SLUS00631': {
         'url': "games/U/K/SLUS-00631.html",
@@ -6013,6 +6017,8 @@ games = {
         'url': "games/U/K/SLUS-00600.html",
     	'id': 'SLUS00600',
 	'title': "KENSEI SACRED FIST",
+        'pic0': 'https://images.launchbox-app.com/022118ad-e0d9-44f1-a95d-ba4948cc5e81.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kensei%20-%20Sacred%20Fist%20%28USA%29_jp2.zip',
     },
     'SLUS01412': {
         'url': "games/U/K/SLUS-01412.html",
@@ -6033,23 +6039,33 @@ games = {
         'url': "games/U/K/SLUS-00369.html",
     	'id': 'SLUS00369',
 	'title': "KILLING ZONE",
+        'pic0': 'https://images.launchbox-app.com/69307a68-486b-4ba2-86c4-b60ba3d27d0f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Killing%20Zone%20%28USA%29_jp2.zip',
     },
     'SLUS00158': {
         'url': "games/U/K/SLUS-00158.html",
     	'id': 'SLUS00158',
 	'title': "KING'S FIELD",
         'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
+        'pic0': 'https://images.launchbox-app.com/bc3a60e6-ed3e-42ba-84bd-84a113034050.png',
+        'pic1': 'https://images.launchbox-app.com/e7cc24d9-46c5-491a-b5a4-a80468d67ca1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20%28USA%29_jp2.zip',
     },
     'SLUS00255': {
         'url': "games/U/K/SLUS-00255.html",
     	'id': 'SLUS00255',
 	'title': "KING'S FIELD II",
         'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
+        'pic0': 'https://images.launchbox-app.com/9b5b7d7d-0778-4887-bd5e-72b923b95d16.png',
+        'pic1': 'https://images.launchbox-app.com/7dab61c3-331c-4f16-b4d9-15953144ec0d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20II%20%28USA%29_jp2.zip',
     },
     'SLUS00801': {
         'url': "games/U/K/SLUS-00801.html",
     	'id': 'SLUS00801',
 	'title': "KINGSLEY'S ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/10a1ea69-7cdb-4ef1-92d6-51b9ec8668a3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kingsley%27s%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLUS01366': {
         'url': "games/U/K/SLUS-01366.html",
@@ -6057,6 +6073,7 @@ games = {
 	'title': "KISS PINBALL",
         'pic0': 'https://images.launchbox-app.com/31001844-78ae-4f0a-bc94-9fe06efbb423.png',
         'pic1': 'https://images.launchbox-app.com/dd5caf32-00d8-435b-a85e-49d99499b287.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/KISS%20Pinball%20%28USA%29_jp2.zip',
     },
     'SLUS00585': {
         'url': "games/U/K/SLUS-00585.html",
@@ -6064,16 +6081,21 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SLUS00737': {
         'url': "games/U/K/SLUS-00737.html",
     	'id': 'SLUS00737',
 	'title': "KNOCKOUT KINGS",
+        'pic0': 'https://images.launchbox-app.com/17a24ae4-199e-4a9d-8c37-455dd6342073.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Knockout%20Kings%20%28USA%29_jp2.zip',
     },
     'SLUS00993': {
         'url': "games/U/K/SLUS-00993.html",
     	'id': 'SLUS00993',
 	'title': "KNOCKOUT KINGS 2000",
+        'pic0': 'https://images.launchbox-app.com/86f8c056-f73b-4d05-b67f-9c7eb65e88f5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Knockout%20Kings%202000%20%28USA%29_jp2.zip',
     },
     'SLUS01269': {
         'url': "games/U/K/SLUS-01269.html",
@@ -6091,6 +6113,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01100': {
         'url': "games/U/K/SLUS-01051.html",
@@ -6098,6 +6121,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01101': {
         'url': "games/U/K/SLUS-01051.html",
@@ -6105,6 +6129,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01102': {
         'url': "games/U/K/SLUS-01051.html",
@@ -6112,17 +6137,21 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94303': {
         'url': "games/U/K/SCUS-94303.html",
     	'id': 'SCUS94303',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLUS01125': {
         'url': "games/U/K/SLUS-01125.html",
     	'id': 'SLUS01125',
 	'title': "KURT WARNER'S ARENA FOOTBALL UNLEASHED",
+        'pic0': 'https://images.launchbox-app.com/419880c4-add3-4d01-afa1-c78e2d98fa52.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kurt%20Warner%27s%20Arena%20Football%20Unleashed%20%28USA%29_jp2.zip',
     },
     'SLUS01441': {
         'url': "games/U/L/SLUS-01441.html",
@@ -15636,6 +15665,8 @@ games = {
         'url': "games/P/K/SLES-01967.html",
     	'id': 'SLES01967',
 	'title': "KAGERO - DECEPTION II",
+        'pic0': 'https://images.launchbox-app.com/2493d5bb-ebd6-429d-9b7c-a732f0d78800.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
     },
     'SLES03209': {
         'url': "games/P/K/SLES-03209.html",
@@ -15646,6 +15677,8 @@ games = {
         'url': "games/P/K/SLES-01081.html",
     	'id': 'SLES01081',
 	'title': "KENSEI SACRED FIST",
+        'pic0': 'https://images.launchbox-app.com/022118ad-e0d9-44f1-a95d-ba4948cc5e81.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kensei%20-%20Sacred%20Fist%20%28USA%29_jp2.zip',
     },
     'SLES01039': {
         'url': "games/P/K/SLES-01039.html",
@@ -15696,6 +15729,8 @@ games = {
         'url': "games/P/K/SLES-00446.html",
     	'id': 'SLES00446',
 	'title': "KILLING ZONE",
+        'pic0': 'https://images.launchbox-app.com/69307a68-486b-4ba2-86c4-b60ba3d27d0f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Killing%20Zone%20%28USA%29_jp2.zip',
     },
     'SCES03767': {
         'url': "games/P/D/SCES-03767.html",
@@ -16982,11 +17017,16 @@ games = {
     	'id': 'SCES00510',
 	'title': "KING'S FIELD",
         'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
+        'pic0': 'https://images.launchbox-app.com/bc3a60e6-ed3e-42ba-84bd-84a113034050.png',
+        'pic1': 'https://images.launchbox-app.com/e7cc24d9-46c5-491a-b5a4-a80468d67ca1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20%28USA%29_jp2.zip',
     },
     'SCES01659': {
         'url': "games/P/K/SCES-01659.html",
     	'id': 'SCES01659',
 	'title': "KINGSLEY'S ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/10a1ea69-7cdb-4ef1-92d6-51b9ec8668a3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kingsley%27s%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLES03676': {
         'url': "games/P/K/SLES-03676.html",
@@ -17004,6 +17044,7 @@ games = {
 	'title': "KISS PINBALL",
         'pic0': 'https://images.launchbox-app.com/31001844-78ae-4f0a-bc94-9fe06efbb423.png',
         'pic1': 'https://images.launchbox-app.com/dd5caf32-00d8-435b-a85e-49d99499b287.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/KISS%20Pinball%20%28USA%29_jp2.zip',
     },
     'SLES01246': {
         'url': "games/P/K/SLES-01246.html",
@@ -17026,6 +17067,7 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCES01185': {
         'url': "games/P/K/SCES-01185.html",
@@ -17033,6 +17075,7 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCES01186': {
         'url': "games/P/K/SCES-01186.html",
@@ -17040,6 +17083,7 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCES01187': {
         'url': "games/P/K/SCES-01187.html",
@@ -17047,6 +17091,7 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCES01188': {
         'url': "games/P/K/SCES-01188.html",
@@ -17054,6 +17099,7 @@ games = {
 	'title': "KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCES03922': {
         'url': "games/P/K/SCES-03922.html",
@@ -17076,11 +17122,15 @@ games = {
         'url': "games/P/K/SLES-02322.html",
     	'id': 'SLES02322',
 	'title': "KNOCKOUT KINGS 2000",
+        'pic0': 'https://images.launchbox-app.com/86f8c056-f73b-4d05-b67f-9c7eb65e88f5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Knockout%20Kings%202000%20%28USA%29_jp2.zip',
     },
     'SLES02323': {
         'url': "games/P/K/SLES-02323.html",
     	'id': 'SLES02323',
 	'title': "KNOCKOUT KINGS 2000",
+        'pic0': 'https://images.launchbox-app.com/86f8c056-f73b-4d05-b67f-9c7eb65e88f5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Knockout%20Kings%202000%20%28USA%29_jp2.zip',
     },
     'SLES03121': {
         'url': "games/P/K/SLES-03121.html",
@@ -17108,6 +17158,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12897': {
         'url': "games/P/K/SLES-02897.html",
@@ -17115,6 +17166,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22897': {
         'url': "games/P/K/SLES-02897.html",
@@ -17122,6 +17174,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32897': {
         'url': "games/P/K/SLES-02897.html",
@@ -17129,6 +17182,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02898': {
         'url': "games/P/K/SLES-02898.html",
@@ -17136,6 +17190,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12898': {
         'url': "games/P/K/SLES-02898.html",
@@ -17143,6 +17198,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22898': {
         'url': "games/P/K/SLES-02898.html",
@@ -17150,6 +17206,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32898': {
         'url': "games/P/K/SLES-02898.html",
@@ -17157,6 +17214,7 @@ games = {
 	'title': "KOUDELKA",
         'pic0': 'https://images.launchbox-app.com/01883c27-9bca-4e74-8ce0-653f1a689332.png',
         'pic1': 'https://images.launchbox-app.com/887f38ea-cf19-48f7-b779-36a7e8e03b37.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Koudelka%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02899': {
         'url': "games/P/K/SLES-02899.html",
@@ -17247,35 +17305,42 @@ games = {
     	'id': 'SLES00084',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00125': {
         'url': "games/P/K/SLES-00125.html",
     	'id': 'SLES00125',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00126': {
         'url': "games/P/K/SLES-00126.html",
     	'id': 'SLES00126',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00127': {
         'url': "games/P/K/SLES-00127.html",
     	'id': 'SLES00127',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00128': {
         'url': "games/P/K/SLES-00128.html",
     	'id': 'SLES00128',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SCES01000': {
         'url': "games/P/K/SCES-01000.html",
     	'id': 'SCES01000',
 	'title': "KULA WORLD",
+        'pic0': 'https://images.launchbox-app.com/bceb6d67-bc5a-41e8-9104-08505891e783.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kula%20World%20%28Europe%29_jp2.zip',
     },
     'SCES00866': {
         'url': "games/P/K/SCES-00866.html",
@@ -35510,16 +35575,22 @@ games = {
         'url': "games/J/F/SCPS-45336.html",
     	'id': 'SCPS45336',
 	'title': "FIGHTING ILLUSION - K-1 - REVENGE",
+        'pic0': 'https://images.launchbox-app.com/f6e4a7d5-4fb3-4708-90ff-ace7f879ceff.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/K-1%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLPS00978': {
         'url': "games/J/F/SLPS-00978.html",
     	'id': 'SLPS00978',
 	'title': "FIGHTING ILLUSION - K-1 - REVENGE",
+        'pic0': 'https://images.launchbox-app.com/f6e4a7d5-4fb3-4708-90ff-ace7f879ceff.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/K-1%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLPS91090': {
         'url': "games/J/F/SLPS-91090.html",
     	'id': 'SLPS91090',
 	'title': "FIGHTING ILLUSION - K-1 - REVENGE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/f6e4a7d5-4fb3-4708-90ff-ace7f879ceff.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/K-1%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLPS02304': {
         'url': "games/J/F/SLPS-02304.html",
@@ -39728,16 +39799,22 @@ games = {
         'url': "games/J/K/SLPS-01421.html",
     	'id': 'SLPS01421',
 	'title': "KAGERO - KOKUMEIKAN SHINSHOU",
+        'pic0': 'https://images.launchbox-app.com/60c22427-a1f6-4ccf-9293-ad9ba25c84cc.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
     },
     'SLPS91148': {
         'url': "games/J/K/SLPS-91148.html",
     	'id': 'SLPS91148',
 	'title': "KAGERO - KOKUMEIKAN SHINSHOU [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/60c22427-a1f6-4ccf-9293-ad9ba25c84cc.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
     },
     'SLPS91405': {
         'url': "games/J/K/SLPS-91405.html",
     	'id': 'SLPS91405',
 	'title': "KAGERO - KOKUMEIKAN SHINSHOU [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/60c22427-a1f6-4ccf-9293-ad9ba25c84cc.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
     },
     'SLPS00915': {
         'url': "games/J/K/SLPS-00915.html",
@@ -39960,6 +40037,7 @@ games = {
 	'title': "KAZE NO KLONOA - DOOR TO PHANTOMILE",
         'pic0': 'https://images.launchbox-app.com/f8b35619-0f72-48e1-bc39-c97269e960e5.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SLPS91169': {
         'url': "games/J/K/SLPS-91169.html",
@@ -39967,6 +40045,7 @@ games = {
 	'title': "KAZE NO KLONOA - DOOR TO PHANTOMILE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/f8b35619-0f72-48e1-bc39-c97269e960e5.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
     },
     'SCPS45111': {
         'url': "games/J/K/SCPS-45111.html",
@@ -40067,6 +40146,8 @@ games = {
         'url': "games/J/K/SLPS-00502.html",
     	'id': 'SLPS00502',
 	'title': "KENSEI - THE KING OF BOXING",
+        'pic0': 'https://images.launchbox-app.com/022118ad-e0d9-44f1-a95d-ba4948cc5e81.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kensei%20-%20Sacred%20Fist%20%28USA%29_jp2.zip',
     },
     'SLPS02605': {
         'url': "games/J/K/SLPS-02605.html",
@@ -40502,6 +40583,8 @@ games = {
         'url': "games/J/K/SLPS-00296.html",
     	'id': 'SLPS00296',
 	'title': "KILLING ZONE",
+        'pic0': 'https://images.launchbox-app.com/69307a68-486b-4ba2-86c4-b60ba3d27d0f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Killing%20Zone%20%28USA%29_jp2.zip',
     },
     'SLPS01177': {
         'url': "games/J/K/SLPS-01177.html",
@@ -40598,30 +40681,45 @@ games = {
     	'id': 'SLPS00017',
 	'title': "KING'S FIELD",
         'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
+        'pic0': 'https://images.launchbox-app.com/bc3a60e6-ed3e-42ba-84bd-84a113034050.png',
+        'pic1': 'https://images.launchbox-app.com/e7cc24d9-46c5-491a-b5a4-a80468d67ca1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20%28USA%29_jp2.zip',
     },
     'SLPS91401': {
         'url': "games/J/K/SLPS-91401.html",
     	'id': 'SLPS91401',
 	'title': "KING'S FIELD [PSONE BOOKS]",
         'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
+        'pic0': 'https://images.launchbox-app.com/bc3a60e6-ed3e-42ba-84bd-84a113034050.png',
+        'pic1': 'https://images.launchbox-app.com/e7cc24d9-46c5-491a-b5a4-a80468d67ca1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20%28USA%29_jp2.zip',
     },
     'SLPS00069': {
         'url': "games/J/K/SLPS-00069.html",
     	'id': 'SLPS00069',
 	'title': "KING'S FIELD II",
         'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
+        'pic0': 'https://images.launchbox-app.com/9b5b7d7d-0778-4887-bd5e-72b923b95d16.png',
+        'pic1': 'https://images.launchbox-app.com/7dab61c3-331c-4f16-b4d9-15953144ec0d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20II%20%28USA%29_jp2.zip',
     },
     'SLPS91003': {
         'url': "games/J/K/SLPS-91003.html",
     	'id': 'SLPS91003',
 	'title': "KING'S FIELD II [PLAYSTATION THE BEST]",
         'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
+        'pic0': 'https://images.launchbox-app.com/9b5b7d7d-0778-4887-bd5e-72b923b95d16.png',
+        'pic1': 'https://images.launchbox-app.com/7dab61c3-331c-4f16-b4d9-15953144ec0d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20II%20%28USA%29_jp2.zip',
     },
     'SLPS91423': {
         'url': "games/J/K/SLPS-91423.html",
     	'id': 'SLPS91423',
 	'title': "KING'S FIELD II [PSONE BOOKS]",
         'snd0': "https://www.youtube.com/watch?v=N0KrJP1LcK4&list=PLMHCGC8qP541uHexu_Y5OKvEJX4p3OCcT&index=1",
+        'pic0': 'https://images.launchbox-app.com/9b5b7d7d-0778-4887-bd5e-72b923b95d16.png',
+        'pic1': 'https://images.launchbox-app.com/7dab61c3-331c-4f16-b4d9-15953144ec0d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20II%20%28USA%29_jp2.zip',
     },
     'SLPS00377': {
         'url': "games/J/K/SLPS-00377.html",
@@ -41154,11 +41252,14 @@ games = {
     	'id': 'SLPS00492',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SCPS10064': {
         'url': "games/J/K/SCPS-10064.html",
     	'id': 'SCPS10064',
 	'title': "KULAQUEST",
+        'pic0': 'https://images.launchbox-app.com/bceb6d67-bc5a-41e8-9104-08505891e783.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kula%20World%20%28Europe%29_jp2.zip',
     },
     'SLPS00115': {
         'url': "games/J/K/SLPS-00115.html",
