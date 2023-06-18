@@ -36,7 +36,16 @@ def create_document(source, gameid, maxysize, output):
         struct.pack_into('<I', buf, 12, f.tell()) # size low
 
         return buf
-    
+
+    def generate_png(pic, maxysize):
+        sf = 480 / pic.size[0]
+        ns = (480, int(sf * pic.size[1]))
+        if ns[1] > maxysize:
+            ns = (480, maxysize)
+        image = pic.resize(ns, Image.Resampling.BILINEAR)
+        f = io.BytesIO()
+        image.save(f, 'PNG')
+        return f
 
     docs = []
     imgs = []
@@ -49,15 +58,19 @@ def create_document(source, gameid, maxysize, output):
         docs.append(g[0])
 
         pic = Image.open(g[0])
-        sf = 480 / pic.size[0]
-        ns = (480, int(sf * pic.size[1]))
-        if ns[1] > maxysize:
-            ns = (480, maxysize)
-        image = pic.resize(ns, Image.Resampling.BILINEAR)
-        f = io.BytesIO()
-        image.save(f, 'PNG')
-        imgs.append(f)
         
+        # images are supposed to be ~square but some scans contain two pages
+        # side by side. Split them.
+        if pic.size[0] > pic.size[1] * 1.75:
+            box = (0, 0, int(pic.size[0] / 2), pic.size[1])
+            imgs.append(generate_png(pic.crop(box), maxysize))
+            
+            box = (int(pic.size[0] / 2), 0, pic.size[0], pic.size[1])
+            imgs.append(generate_png(pic.crop(box), maxysize))
+        else:
+            f = generate_png(pic, maxysize)
+            imgs.append(f)
+
     with open(output, 'wb') as o:
         o.write(create_header(gameid)) # size 0x88
         for i in range(len(imgs)):
