@@ -322,7 +322,6 @@ class PopFePs3App:
 
                 return False
 
-        print('Update preview', self.pic1)
         if not self.pic1:
             return
         if self.pic0 and self.pic0.mode == 'P':

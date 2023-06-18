@@ -1277,6 +1277,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45171': {
         'url': "games/J/X/SCPS-45170.html",
@@ -1285,6 +1286,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01160': {
         'url': "games/J/X/SLPS-01160.html",
@@ -1293,6 +1295,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01161': {
         'url': "games/J/X/SLPS-01160.html",
@@ -1301,6 +1304,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91436': {
         'url': "games/J/X/SLPS-91436.html",
@@ -1309,6 +1313,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91437': {
         'url': "games/J/X/SLPS-91436.html",
@@ -1317,6 +1322,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02773': {
         'url': "games/J/X/SLPS-02773.html",
@@ -1325,6 +1331,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02774':    {
         'url': "games/J/X/SLPS-02773.html",
@@ -1333,6 +1340,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02775': {
         'url': "games/J/X/SLPS-02775.html",
@@ -1341,6 +1349,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02776':    {
         'url': "games/J/X/SLPS-02775.html",
@@ -1349,6 +1358,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00750': {
         'url': "games/J/X/SLPS-00750.html",
@@ -2001,6 +2011,7 @@ games = {
     	'id': 'SLPS00534',
 	'title': "ZOOP",
         'pic0': 'https://images.launchbox-app.com/13bc30f1-f379-40f1-b3a1-7f2d96d93e51.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Zoop%20-%20America%27s%20Largest%20Killer%20of%20Time%21%20%28USA%29_jp2.zip',
     },
     'SLPS00271': {
         'url': "games/J/Z/SLPS-00271.html",
@@ -10756,6 +10767,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00669': {
         'url': "games/U/X/SLUS-00664.html",
@@ -10764,6 +10776,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QEanoxSGQmM&list=PL6wAXLnKvuzgyC00JxTeGfGBGIAmKGdTi&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00461': {
         'url': "games/U/X/SLUS-00461.html",
@@ -10816,6 +10829,8 @@ games = {
         'url': "games/U/Y/SLUS-01411.html",
     	'id': 'SLUS01411',
 	'title': "YU-GI-OH! FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLUS00183':       {
         'url': "games/U/Z/SLUS-00183.html",
@@ -10832,6 +10847,7 @@ games = {
     	'id': 'SLUS00078',
 	'title': "ZOOP",
         'pic0': 'https://images.launchbox-app.com/13bc30f1-f379-40f1-b3a1-7f2d96d93e51.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Zoop%20-%20America%27s%20Largest%20Killer%20of%20Time%21%20%28USA%29_jp2.zip',
     },
     'SLES03134': {
         'url': "games/P/0-9/SLES-03134.html",
@@ -28538,26 +28554,36 @@ games = {
         'url': "games/P/Y/SLES-03947.html",
     	'id': 'SLES03947',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03948': {
         'url': "games/P/Y/SLES-03948.html",
     	'id': 'SLES03948',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03949': {
         'url': "games/P/Y/SLES-03949.html",
     	'id': 'SLES03949',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03950': {
         'url': "games/P/Y/SLES-03950.html",
     	'id': 'SLES03950',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03951': {
         'url': "games/P/Y/SLES-03951.html",
     	'id': 'SLES03951',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES00713': {
         'url': "games/P/Y/SLES-00713.html",
