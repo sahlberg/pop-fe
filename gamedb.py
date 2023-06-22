@@ -7820,11 +7820,15 @@ games = {
         'url': "games/U/O/SLUS-00020.html",
     	'id': 'SLUS00020',
 	'title': "OFF-WORLD INTERCEPTOR EXTREME",
+        'pic0': 'https://images.launchbox-app.com/a6e76b25-d87d-40dd-995f-1a13f441a0d5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Off-World%20Interceptor%20Extreme%20%28USA%29_jp2.zip',
     },
     'SLUS00467': {
         'url': "games/U/O/SLUS-00467.html",
     	'id': 'SLUS00467',
 	'title': "OGRE BATTLE - THE MARCH OF THE BLACK QUEEN",
+        'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLUS00156': {
         'url': "games/U/O/SLUS-00156.html",
@@ -7845,6 +7849,8 @@ games = {
         'url': "games/U/O/SLUS-00469.html",
     	'id': 'SLUS00469',
 	'title': "ONE",
+        'pic0': 'https://images.launchbox-app.com/ed670a6f-3ae5-4b8d-9162-5c96249f9522.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/One%20%28USA%29_jp2.zip',
     },
     'SLUS01406': {
         'url': "games/U/O/SLUS-01406.html",
@@ -7856,6 +7862,7 @@ games = {
     	'id': 'SLUS00464',
 	'title': "OVERBLOOD - A 3D SCI-FI ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLUS00439': {
         'url': "games/U/P/SLUS-00439.html",
@@ -22971,6 +22978,8 @@ games = {
         'url': "games/P/O/SLES-00047.html",
     	'id': 'SLES00047',
 	'title': "OFF-WORLD INTERCEPTOR EXTREME",
+        'pic0': 'https://images.launchbox-app.com/a6e76b25-d87d-40dd-995f-1a13f441a0d5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Off-World%20Interceptor%20Extreme%20%28USA%29_jp2.zip',
     },
     'SLES00110': {
         'url': "games/P/O/SLES-00110.html",
@@ -22996,6 +23005,8 @@ games = {
         'url': "games/P/O/SLES-00944.html",
     	'id': 'SLES00944',
 	'title': "ONE",
+        'pic0': 'https://images.launchbox-app.com/ed670a6f-3ae5-4b8d-9162-5c96249f9522.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/One%20%28USA%29_jp2.zip',
     },
     'SLES03807': {
         'url': "games/P/O/SLES-03807.html",
@@ -23017,18 +23028,21 @@ games = {
     	'id': 'SLES00768',
 	'title': "OVERBLOOD - A 3D SCI-FI ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLES00769': {
         'url': "games/P/O/SLES-00769.html",
     	'id': 'SLES00769',
 	'title': "OVERBLOOD - A 3D SCI-FI ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLES00770': {
         'url': "games/P/O/SLES-00770.html",
     	'id': 'SLES00770',
 	'title': "OVERBLOOD - A 3D SCI-FI ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLES01879': {
         'url': "games/P/O/SLES-01879.html",
@@ -23070,6 +23084,8 @@ games = {
         'url': "games/P/O/SLES-00865.html",
     	'id': 'SLES00865',
 	'title': "OVERBOARD!",
+        'pic0': 'https://images.launchbox-app.com/031a6955-2636-4b67-a46e-c08f843bb0da.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Overboard%20%28Europe%29_jp2.zip',
     },
     'SCES00934':       {
         'url': "games/P/P/SCES-00934.html",
@@ -34442,11 +34458,15 @@ games = {
         'url': "games/J/D/SLPS-00481.html",
     	'id': 'SLPS00481',
 	'title': "DENSETSU NO OGRE BATTLE - THE MARCH OF THE BLACK QUEEN",
+        'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLPS91083': {
         'url': "games/J/D/SLPS-91083.html",
     	'id': 'SLPS91083',
 	'title': "DENSETSU NO OGRE BATTLE - THE MARCH OF THE BLACK QUEEN [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLPS01753': {
         'url': "games/J/D/SLPS-01753.html",
@@ -46225,6 +46245,8 @@ games = {
         'url': "games/J/O/SLPS-00122.html",
     	'id': 'SLPS00122',
 	'title': "OFF-WORLD INTERCEPTOR EXTREME",
+        'pic0': 'https://images.launchbox-app.com/a6e76b25-d87d-40dd-995f-1a13f441a0d5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Off-World%20Interceptor%20Extreme%20%28USA%29_jp2.zip',
     },
     'SLPS02764': {
         'url': "games/J/O/SLPS-02764.html",
@@ -46320,6 +46342,8 @@ games = {
         'url': "games/J/O/SLPS-01812.html",
     	'id': 'SLPS01812',
 	'title': "ONE",
+        'pic0': 'https://images.launchbox-app.com/ed670a6f-3ae5-4b8d-9162-5c96249f9522.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/One%20%28USA%29_jp2.zip',
     },
     'SLPM86837': {
         'url': "games/J/O/SLPM-86837.html",
@@ -46576,18 +46600,21 @@ games = {
     	'id': 'SLPS00392',
 	'title': "OVERBLOOD [3D ACTIVE ADVENTURE]",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLPM86641': {
         'url': "games/J/O/SLPM-86641.html",
     	'id': 'SLPM86641',
 	'title': "OVERBLOOD [3D ACTIVE ADVENTURE] [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SLPS91032': {
         'url': "games/J/O/SLPS-91032.html",
     	'id': 'SLPS91032',
 	'title': "OVERBLOOD [3D ACTIVE ADVENTURE] [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/512ba8d4-9d0c-430a-b288-138bf256eaec.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/OverBlood%20%28USA%29_jp2.zip',
     },
     'SCPS45190': {
         'url': "games/J/O/SCPS-45190.html",
