@@ -142,6 +142,8 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLPS02377': {
         'url': "games/J/V/SLPS-02377.html",
@@ -149,6 +151,8 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLPS91457': {
         'url': "games/J/V/SLPS-91457.html",
@@ -156,6 +160,8 @@ games = {
 	'title': "VAGRANT STORY [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLPM87393': {
         'url': "games/J/V/SLPM-87393.html",
@@ -163,6 +169,8 @@ games = {
 	'title': "VAGRANT STORY [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLPM86379': {
         'url': "games/J/V/SLPM-86379.html",
@@ -171,6 +179,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM86380': {
         'url': "games/J/V/SLPM-86379.html",
@@ -179,6 +188,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM86371': {
         'url': "games/J/V/SLPM-86371.html",
@@ -187,6 +197,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM86372': {
         'url': "games/J/V/SLPM-86371.html",
@@ -195,6 +206,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87354': {
         'url': "games/J/V/SLPM-87354.html",
@@ -203,6 +215,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87355': {
         'url': "games/J/V/SLPM-87354.html",
@@ -211,6 +224,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87372': {
         'url': "games/J/V/SLPM-87372.html",
@@ -219,6 +233,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87373': {
         'url': "games/J/V/SLPM-87372.html",
@@ -227,6 +242,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01932': {
         'url': "games/J/V/SLPS-01932.html",
@@ -242,16 +258,22 @@ games = {
         'url': "games/J/V/SLPS-02477.html",
     	'id': 'SLPS02477',
 	'title': "VAMPIRE HUNTER D",
+        'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLPS91523': {
         'url': "games/J/V/SLPS-91523.html",
     	'id': 'SLPS91523',
 	'title': "VAMPIRE HUNTER D [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLPS03198': {
         'url': "games/J/V/SLPS-03198.html",
     	'id': 'SLPS03198',
 	'title': "VAMPIRE HUNTER D [VICTOR COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLPS01700': {
         'url': "games/J/V/SLPS-01700.html",
@@ -268,24 +290,32 @@ games = {
     	'id': 'SCPS45183',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SLPM86007': {
         'url': "games/J/V/SLPM-86007.html",
     	'id': 'SLPM86007',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SLPM86067': {
         'url': "games/J/V/SLPM-86067.html",
     	'id': 'SLPM86067',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SLPM87278': {
         'url': "games/J/V/SLPM-87278.html",
     	'id': 'SLPM87278',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SCPS45415': {
         'url': "games/J/V/SCPS-45415.html",
@@ -294,6 +324,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLPM86251': {
         'url': "games/J/V/SLPM-86251.html",
@@ -302,6 +333,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLPM86504': {
         'url': "games/J/V/SLPM-86504.html",
@@ -310,6 +342,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLPM87279': {
         'url': "games/J/V/SLPM-87279.html",
@@ -318,6 +351,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLPS00873': {
         'url': "games/J/V/SLPS-00873.html",
@@ -397,30 +431,35 @@ games = {
     	'id': 'SLPS01703',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPS91182': {
         'url': "games/J/V/SLPS-91182.html",
     	'id': 'SLPS91182',
 	'title': "VIGILANTE 8 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPM86929': {
         'url': "games/J/V/SLPM-86929.html",
     	'id': 'SLPM86929',
 	'title': "VIGILANTE 8 [POKKIRI 1400 SERIES]",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPS02615': {
         'url': "games/J/V/SLPS-02615.html",
     	'id': 'SLPS02615',
 	'title': "VIGILANTE 8 - SECOND BATTLE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPM86928': {
         'url': "games/J/V/SLPM-86928.html",
     	'id': 'SLPM86928',
 	'title': "VIGILANTE 8 - SECOND BATTLE [POKKIRI 1400 SERIES]",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPS00892': {
         'url': "games/J/V/SLPS-00892.html",
@@ -641,6 +680,8 @@ games = {
         'url': "games/J/W/SLPS-01098.html",
     	'id': 'SLPS01098',
 	'title': "WARCRAFT II - THE DARK SAGA",
+        'pic0': 'https://images.launchbox-app.com/07582a32-8eba-49b0-911a-1e0fc8fb8fb1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WarCraft%20II%20-%20The%20Dark%20Saga%20%28USA%29_jp2.zip',
     },
     'SLPS02658': {
         'url': "games/J/W/SLPS-02658.html",
@@ -719,6 +760,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCPS45027': {
         'url': "games/J/W/SCPS-45027.html",
@@ -727,6 +769,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCPS91038': {
         'url': "games/J/W/SCPS-91038.html",
@@ -735,6 +778,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCPS91306': {
         'url': "games/J/W/SCPS-91306.html",
@@ -743,6 +787,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCPS45429': {
         'url': "games/J/W/SCPS-45429.html",
@@ -751,6 +796,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45430': {
         'url': "games/J/W/SCPS-45429.html",
@@ -759,6 +805,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10089': {
         'url': "games/J/W/SCPS-10089.html",
@@ -767,6 +814,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS10090': {
         'url': "games/J/W/SCPS-10089.html",
@@ -775,6 +823,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS91208': {
         'url': "games/J/W/SCPS-91208.html",
@@ -783,6 +832,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS91209': {
         'url': "games/J/W/SCPS-91208.html",
@@ -791,6 +841,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS91321': {
         'url': "games/J/W/SCPS-91321.html",
@@ -799,6 +850,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS91322': {
         'url': "games/J/W/SCPS-91321.html",
@@ -807,6 +859,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02174': {
         'url': "games/J/W/SLPS-02174.html",
@@ -824,24 +877,28 @@ games = {
     	'id': 'SLPS00477',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00478': {
         'url': "games/J/W/SLPS-00477.html",
     	'id': 'SLPS00478',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00479': {
         'url': "games/J/W/SLPS-00477.html",
     	'id': 'SLPS00479',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00480': {
         'url': "games/J/W/SLPS-00477.html",
     	'id': 'SLPS00480',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00598': {
         'url': "games/J/W/SLPS-00598.html",
@@ -924,6 +981,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SCPS10098': {
         'url': "games/J/W/SCPS-10098.html",
@@ -931,6 +989,7 @@ games = {
 	'title': "WIPEOUT 3",
         'pic0': 'https://images.launchbox-app.com/9c3b88b7-bab3-4b93-9b5c-954b11fb0669.png',
         'pic1': 'https://images.launchbox-app.com/9ab56a08-a75d-4c46-8861-83256a3ba671.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%203%20%28USA%29_jp2.zip',
     },
     'SIPS60010': {
         'url': "games/J/W/SIPS-60010.html",
@@ -938,6 +997,7 @@ games = {
 	'title': "WIPEOUT XL",
         'pic0': 'https://images.launchbox-app.com/3a533258-713f-445c-9bd3-f7e261dd0f26.png',
         'pic1': 'https://images.launchbox-app.com/e2724d4c-c39e-4dbf-ae2a-a3534af9a23c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20XL%20%28USA%29_jp2.zip',
     },
     'SLPS02691': {
         'url': "games/J/W/SLPS-02691.html",
@@ -1188,6 +1248,8 @@ games = {
         'url': "games/J/W/SLPS-00547.html",
     	'id': 'SLPS00547',
 	'title': "WORMS",
+        'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLPS02852': {
         'url': "games/J/W/SLPS-02852.html",
@@ -1238,6 +1300,7 @@ games = {
         'url': "games/J/X/SLPS-00257.html",
     	'id': 'SLPS00257',
 	'title': "X-COM - MICHINARU SHINRYAKUSHA",
+        'pic0': 'https://images.launchbox-app.com/77a578d0-171f-4e05-b115-d2bee55e1156.png',
     },
     'SLPS01944': {
         'url': "games/J/X/SLPS-01944.html",
@@ -1249,12 +1312,14 @@ games = {
     	'id': 'SLPM86765',
 	'title': "X-MEN MUTANT ACADEMY",
         'pic0': 'https://images.launchbox-app.com/6921b571-a4a9-44a2-b620-8351d277efdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%20%28USA%29_jp2.zip',
     },
     'SLPM87081': {
         'url': "games/J/X/SLPM-87081.html",
     	'id': 'SLPM87081',
 	'title': "X-MEN MUTANT ACADEMY [SUPERLITE 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/6921b571-a4a9-44a2-b620-8351d277efdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%20%28USA%29_jp2.zip',
     },
     'SLPM87077': {
         'url': "games/J/X/SLPM-87077.html",
@@ -1262,6 +1327,7 @@ games = {
 	'title': "X-MEN MUTANT ACADEMY 2",
         'pic0': 'https://images.launchbox-app.com/f827cfa4-683c-4e3b-b5c8-c88a9dbe1d7a.png',
         'pic1': 'https://images.launchbox-app.com/a778a00f-576e-4744-8421-99e53225807b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%202%20%28USA%29_jp2.zip',
     },
     'SLPS01284': {
         'url': "games/J/X/SLPS-01284.html",
@@ -1269,6 +1335,7 @@ games = {
 	'title': "X-MEN VS STREET FIGHTER EX EDITION",
         'pic0': 'https://images.launchbox-app.com/0e71634b-5fb0-4e92-bf38-2f8ebae54067.png',
         'pic1': 'https://images.launchbox-app.com/47b12bff-12ff-4331-b98d-6ce43c8c4133.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20vs.%20Street%20Fighter%20%28USA%29_jp2.zip',
     },
     'SCPS45170': {
         'url': "games/J/X/SCPS-45170.html",
@@ -9967,6 +10034,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00949': {
         'url': "games/U/T/SLUS-00915.html",
@@ -9975,6 +10043,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00950': {
         'url': "games/U/T/SLUS-00915.html",
@@ -9983,6 +10052,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00951': {
         'url': "games/U/T/SLUS-00915.html",
@@ -9991,6 +10061,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00275': {
         'url': "games/U/T/SLUS-00275.html",
@@ -10428,6 +10499,8 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLUS01156': {
         'url': "games/U/V/SLUS-01156.html",
@@ -10436,6 +10509,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01179': {
         'url': "games/U/V/SLUS-01156.html",
@@ -10444,11 +10518,14 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b37d8993-2ccf-40d9-96ed-f3efe02d5b04.png',
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01138': {
         'url': "games/U/V/SLUS-01138.html",
     	'id': 'SLUS01138',
 	'title': "VAMPIRE HUNTER D",
+        'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLUS01035': {
         'url': "games/U/V/SLUS-01035.html",
@@ -10460,6 +10537,8 @@ games = {
     	'id': 'SLUS00447',
 	'title': "VANDAL HEARTS",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SLUS00940': {
         'url': "games/U/V/SLUS-00940.html",
@@ -10468,22 +10547,28 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLUS01070': {
         'url': "games/U/V/SLUS-01070.html",
     	'id': 'SLUS01070',
 	'title': "VANGUARD BANDITS",
+        'pic0': 'https://images.launchbox-app.com/b12c52c1-0018-4165-8e58-4ad15b6ce48f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vanguard%20Bandits%20%28USA%29_jp2.zip',
     },
     'SLUS01109': {
         'url': "games/U/V/SLUS-01109.html",
     	'id': 'SLUS01109',
 	'title': "VANISHING POINT",
+        'pic0': 'https://images.launchbox-app.com/3686201d-4209-4672-9beb-e194a0fc3bd8.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vanishing%20Point%20%28USA%29_jp2.zip',
     },
     'SLUS00836': {
         'url': "games/U/V/SLUS-00836.html",
     	'id': 'SLUS00836',
 	'title': "VEGAS GAMES 2000",
         'pic0': 'https://images.launchbox-app.com/d4f48d00-9207-4fb0-9f10-a8a188aa61a7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vegas%20Games%202000%20%28USA%29_jp2.zip',
     },
     'SLUS00033': {
         'url': "games/U/V/SLUS-00033.html",
@@ -10496,12 +10581,14 @@ games = {
     	'id': 'SLUS00510',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLUS00868': {
         'url': "games/U/V/SLUS-00868.html",
     	'id': 'SLUS00868',
 	'title': "VIGILANTE 8 - 2ND OFFENSE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLUS01341': {
         'url': "games/U/V/SLUS-01341.html",
@@ -10552,6 +10639,8 @@ games = {
         'url': "games/U/V/SLUS-00625.html",
     	'id': 'SLUS00625',
 	'title': "VR SPORTS POWERBOAT RACING",
+        'pic0': 'https://images.launchbox-app.com/368ca581-b822-47c6-a1a5-e92c344264d4.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/VR%20Sports%20Powerboat%20Racing%20%28USA%29_jp2.zip',
     },
     'SLUS00199': {
         'url': "games/U/V/SLUS-00199.html",
@@ -10582,6 +10671,8 @@ games = {
         'url': "games/U/W/SLUS-00480.html",
     	'id': 'SLUS00480',
 	'title': "WARCRAFT II - THE DARK SAGA",
+        'pic0': 'https://images.launchbox-app.com/07582a32-8eba-49b0-911a-1e0fc8fb8fb1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WarCraft%20II%20-%20The%20Dark%20Saga%20%28USA%29_jp2.zip',
     },
     'SLUS00599': {
         'url': "games/U/W/SLUS-00599.html",
@@ -10612,21 +10703,30 @@ games = {
         'url': "games/U/W/SLUS-01204.html",
     	'id': 'SLUS01204',
 	'title': "WARRIORS OF MIGHT & MAGIC",
+        'pic0': 'https://images.launchbox-app.com/e19b248f-5ee6-46c0-b6b3-2d7fca607537.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
     },
     'SLUS00819': {
         'url': "games/U/W/SLUS-00819.html",
     	'id': 'SLUS00819',
 	'title': "WARZONE 2100",
+        'pic0': 'https://images.launchbox-app.com/443317dd-b7fb-4ab8-94c0-3213a01eef19.png',
+        'pic1': 'https://images.launchbox-app.com/143a6d4c-5816-4839-9aa0-a3606a919d26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warzone%202100%20%28USA%29_jp2.zip',
     },
     'SLUS00147': {
         'url': "games/U/W/SLUS-00147.html",
     	'id': 'SLUS00147',
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
+        'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wayne%20Gretzky%27s%203D%20Hockey%20%2798%20%28USA%29_jp2.zip',
     },
     'SLUS01274': {
         'url': "games/U/W/SLUS-01274.html",
     	'id': 'SLUS01274',
 	'title': "WCW - BACKSTAGE ASSAULT",
+        'pic0': 'https://images.launchbox-app.com/b79bb84a-7ec9-41cb-aa8e-ef0e61a9cbb0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WCW%20Backstage%20Assault%20%28USA%29_jp2.zip',
     },
     'SLUS00963': {
         'url': "games/U/W/SLUS-00963.html",
@@ -10642,6 +10742,8 @@ games = {
         'url': "games/U/W/SLUS-00779.html",
     	'id': 'SLUS00779',
 	'title': "WCW/NWO THUNDER",
+        'pic0': 'https://images.launchbox-app.com/bca23a5c-6311-46f5-ac13-6a1acf944e58.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WCW-nWo%20Thunder%20%28USA%29_jp2.zip',
     },
     'SLUS00455': {
         'url': "games/U/W/SLUS-00455.html",
@@ -10652,11 +10754,16 @@ games = {
         'url': "games/U/W/SLUS-00683.html",
     	'id': 'SLUS00683',
 	'title': "WHEEL OF FORTUNE",
+        'pic0': 'https://images.launchbox-app.com/ad455a4d-4c79-426f-882e-fb414a6e650b.png',
+        'pic1': 'https://images.launchbox-app.com/8724070b-75ae-4dee-973c-8ba7aa871c25.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wheel%20of%20Fortune%20%28USA%29_jp2.zip',
     },
     'SLUS01174': {
         'url': "games/U/W/SLUS-01174.html",
     	'id': 'SLUS01174',
 	'title': "WHEEL OF FORTUNE - 2ND EDITION",
+        'pic1': 'https://images.launchbox-app.com/dfe8bbe4-2a9d-4179-bc69-e29f55dec78b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wheel%20of%20Fortune%20-%202nd%20Edition%20%28USA%29_jp2.zip',
     },
     'SCUS94567': {
         'url': "games/U/W/SCUS-94567.html",
@@ -10673,6 +10780,9 @@ games = {
     	'id': 'SLUS00425',
 	'title': "WILD 9",
         'snd0': "https://www.youtube.com/watch?v=nlaCbnrC29g&list=PL7D5AE03BFE123E0C&index=2",
+        'pic0': 'https://images.launchbox-app.com/0c174b36-87b7-48ee-ba58-025028c51658.png',
+        'pic1': 'https://images.launchbox-app.com/2abe5d9a-0901-401f-bd6f-50d9aee505f3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%209%20%28USA%29_jp2.zip',
     },
     'SCUS94608': {
         'url': "games/U/W/SCUS-94608.html",
@@ -10681,6 +10791,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCUS94484': {
         'url': "games/U/W/SCUS-94484.html",
@@ -10689,6 +10800,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94498': {
         'url': "games/U/W/SCUS-94484.html",
@@ -10697,60 +10809,70 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2d9d9f7b-e9eb-4d85-99f4-da6b7f31ef75.png',
         'pic1': 'https://images.launchbox-app.com/1729796f-ec8b-4aac-8719-03beac08848a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3JfCYgxrQ_M',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00201': {
         'url': "games/U/W/SLUS-00201.html",
     	'id': 'SLUS00201',
 	'title': "WILLIAMS ARCADE'S GREATEST HITS",
         'pic0': 'https://images.launchbox-app.com/63cc4dae-6105-4944-b2f5-f0375332205f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Williams%20Arcade%27s%20Greatest%20Hits%20%28USA%29_jp2.zip',
     },
     'SLUS00019': {
         'url': "games/U/W/SLUS-00019.html",
     	'id': 'SLUS00019',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00134': {
         'url': "games/U/W/SLUS-00019.html",
     	'id': 'SLUS00134',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00135': {
         'url': "games/U/W/SLUS-00019.html",
     	'id': 'SLUS00135',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00136': {
         'url': "games/U/W/SLUS-00019.html",
     	'id': 'SLUS00136',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00270': {
         'url': "games/U/W/SLUS-00270.html",
     	'id': 'SLUS00270',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00271': {
         'url': "games/U/W/SLUS-00270.html",
     	'id': 'SLUS00271',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00272': {
         'url': "games/U/W/SLUS-00270.html",
     	'id': 'SLUS00272',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00273': {
         'url': "games/U/W/SLUS-00270.html",
     	'id': 'SLUS00273',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94301': {
         'url': "games/U/W/SCUS-94301.html",
@@ -10758,6 +10880,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SLUS00865': {
         'url': "games/U/W/SLUS-00865.html",
@@ -10765,6 +10888,7 @@ games = {
 	'title': "WIPEOUT 3",
         'pic0': 'https://images.launchbox-app.com/9c3b88b7-bab3-4b93-9b5c-954b11fb0669.png',
         'pic1': 'https://images.launchbox-app.com/9ab56a08-a75d-4c46-8861-83256a3ba671.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%203%20%28USA%29_jp2.zip',
     },
     'SCUS94351': {
         'url': "games/U/W/SCUS-94351.html",
@@ -10772,6 +10896,7 @@ games = {
 	'title': "WIPEOUT XL",
         'pic0': 'https://images.launchbox-app.com/3a533258-713f-445c-9bd3-f7e261dd0f26.png',
         'pic1': 'https://images.launchbox-app.com/e2724d4c-c39e-4dbf-ae2a-a3534af9a23c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20XL%20%28USA%29_jp2.zip',
     },
     'SLUS01188': {
         'url': "games/U/W/SLUS-01188.html",
@@ -10807,6 +10932,8 @@ games = {
         'url': "games/U/W/SLUS-00336.html",
     	'id': 'SLUS00336',
 	'title': "WORMS",
+        'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLUS00888': {
         'url': "games/U/W/SLUS-00888.html",
@@ -10817,6 +10944,9 @@ games = {
         'url': "games/U/W/SLUS-01448.html",
     	'id': 'SLUS01448',
 	'title': "WORMS WORLD PARTY",
+        'pic0': 'https://images.launchbox-app.com/12bfc04c-5eb9-48b5-80d4-5b0270154a18.png',
+        'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
     },
     'SLUS00587': {
         'url': "games/U/W/SLUS-00587.html",
@@ -10832,6 +10962,9 @@ games = {
         'url': "games/U/W/SLUS-00831.html",
     	'id': 'SLUS00831',
 	'title': "WWF - ATTITUDE",
+        'pic0': 'https://images.launchbox-app.com/c88c5ed5-e90a-4999-8b1a-b5dd8d3d7a30.png',
+        'pic1': 'https://images.launchbox-app.com/f9b87380-effb-4a7b-b255-54f748a5752b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20Attitude%20%28USA%29_jp2.zip',
     },
     'SLUS00246': {
         'url': "games/U/W/SLUS-00246.html",
@@ -10842,16 +10975,23 @@ games = {
         'url': "games/U/W/SLUS-00927.html",
     	'id': 'SLUS00927',
 	'title': "WWF SMACKDOWN!",
+        'pic0': 'https://images.launchbox-app.com/5aa07767-6a12-4c41-bddb-ccb0209740b0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%20%28USA%29_jp2.zip',
     },
     'SLUS01234': {
         'url': "games/U/W/SLUS-01234.html",
     	'id': 'SLUS01234',
 	'title': "WWF SMACKDOWN! 2 - KNOW YOUR ROLE",
+        'pic0': 'https://images.launchbox-app.com/e6b3b967-e485-471a-91c1-3e84a073a00c.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%202%20-%20Know%20Your%20Role%20%28USA%29_jp2.zip',
     },
     'SLUS00495': {
         'url': "games/U/W/SLUS-00495.html",
     	'id': 'SLUS00495',
 	'title': "WWF WAR ZONE",
+        'pic0': 'https://images.launchbox-app.com/a5cab113-0b56-4289-8c35-feedfa6e8060.png',
+        'pic1': 'https://images.launchbox-app.com/8fb07fa1-3695-476e-9f60-09bd8318cd1d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20War%20Zone%20%28USA%29_jp2.zip',
     },
     'SLUS00013': {
         'url': "games/U/W/SLUS-00013.html",
@@ -10869,6 +11009,7 @@ games = {
     	'id': 'SLUS00141',
 	'title': "X-COM - UFO DEFENSE",
         'pic0': 'https://images.launchbox-app.com/77a578d0-171f-4e05-b115-d2bee55e1156.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Com%20-%20UFO%20Defense%20%28USA%29_jp2.zip',
     },
     'SLUS00044': {
         'url': "games/U/X/SLUS-00044.html",
@@ -10882,6 +11023,7 @@ games = {
     	'id': 'SLUS00774',
 	'title': "X-MEN - MUTANT ACADEMY",
         'pic0': 'https://images.launchbox-app.com/6921b571-a4a9-44a2-b620-8351d277efdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%20%28USA%29_jp2.zip',
     },
     'SLUS01382': {
         'url': "games/U/X/SLUS-01382.html",
@@ -10889,6 +11031,7 @@ games = {
 	'title': "X-MEN - MUTANT ACADEMY 2",
         'pic0': 'https://images.launchbox-app.com/f827cfa4-683c-4e3b-b5c8-c88a9dbe1d7a.png',
         'pic1': 'https://images.launchbox-app.com/a778a00f-576e-4744-8421-99e53225807b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%202%20%28USA%29_jp2.zip',
     },
     'SLUS00627': {
         'url': "games/U/X/SLUS-00627.html",
@@ -10896,6 +11039,7 @@ games = {
 	'title': "X-MEN VS STREET FIGHTER",
         'pic0': 'https://images.launchbox-app.com/0e71634b-5fb0-4e92-bf38-2f8ebae54067.png',
         'pic1': 'https://images.launchbox-app.com/47b12bff-12ff-4331-b98d-6ce43c8c4133.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20vs.%20Street%20Fighter%20%28USA%29_jp2.zip',
     },
     'SLUS00977': {
         'url': "games/U/X/SLUS-00977.html",
@@ -10932,11 +11076,14 @@ games = {
     	'id': 'SLUS01566',
 	'title': "XS AIRBOAT RACING",
         'pic0': 'https://images.launchbox-app.com/f92ff31e-1c35-4e35-9f8e-df121fd89b39.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/XS%20Airboat%20Racing%20%28USA%29_jp2.zip',
     },
     'SLUS01560': {
         'url': "games/U/X/SLUS-01560.html",
     	'id': 'SLUS01560',
 	'title': "XS JUNIOR LEAGUE DODGEBALL",
+        'pic0': 'https://images.launchbox-app.com/1d522884-c982-4036-9891-5e781e8ff612.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/XS%20Junior%20League%20Dodgeball%20%28USA%29_jp2.zip',
     },
     'SLUS01554': {
         'url': "games/U/X/SLUS-01554.html",
@@ -26806,6 +26953,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES11565': {
         'url': "games/P/T/SCES-01565.html",
@@ -26814,6 +26962,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES21565': {
         'url': "games/P/T/SCES-01565.html",
@@ -26822,6 +26971,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES31565': {
         'url': "games/P/T/SCES-01565.html",
@@ -26830,6 +26980,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES01566': {
         'url': "games/P/T/SCES-01566.html",
@@ -26838,6 +26989,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES11566': {
         'url': "games/P/T/SCES-01566.html",
@@ -26846,6 +26998,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES21566': {
         'url': "games/P/T/SCES-01566.html",
@@ -26854,6 +27007,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES31566': {
         'url': "games/P/T/SCES-01566.html",
@@ -26862,6 +27016,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES01567': {
         'url': "games/P/T/SCES-01567.html",
@@ -26870,6 +27025,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES11567': {
         'url': "games/P/T/SCES-01567.html",
@@ -26878,6 +27034,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES21567': {
         'url': "games/P/T/SCES-01567.html",
@@ -26886,6 +27043,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES31567': {
         'url': "games/P/T/SCES-01567.html",
@@ -26894,6 +27052,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES01568': {
         'url': "games/P/T/SCES-01568.html",
@@ -26902,6 +27061,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES11568': {
         'url': "games/P/T/SCES-01568.html",
@@ -26910,6 +27070,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES21568': {
         'url': "games/P/T/SCES-01568.html",
@@ -26918,6 +27079,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES31568': {
         'url': "games/P/T/SCES-01568.html",
@@ -26926,6 +27088,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES01569': {
         'url': "games/P/T/SCES-01569.html",
@@ -26934,6 +27097,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES11569': {
         'url': "games/P/T/SCES-01569.html",
@@ -26942,6 +27106,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES21569': {
         'url': "games/P/T/SCES-01569.html",
@@ -26950,6 +27115,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES31569': {
         'url': "games/P/T/SCES-01569.html",
@@ -26958,6 +27124,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f6887922-d615-4e0a-9da2-844c8474118d.png',
         'pic1': 'https://cdn.theatlantic.com/thumbor/KJLAYSLKzlETcF1N_ZApmLbJJcI=/2x0:2044x1149/960x540/media/img/mt/2018/09/GettyImages_857037/original.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0o3gE_uw068&list=PLeksWoMUtlCWOBTpRu026flxEih8-XRb-&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Files%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00627': {
         'url': "games/P/T/SLES-00627.html",
@@ -27832,6 +27999,8 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLES02755': {
         'url': "games/P/V/SLES-02755.html",
@@ -27839,6 +28008,8 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLES02756': {
         'url': "games/P/V/SLES-02756.html",
@@ -27846,17 +28017,23 @@ games = {
 	'title': "VAGRANT STORY",
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
     },
     'SLES02731': {
         'url': "games/P/V/SLES-02731.html",
     	'id': 'SLES02731',
 	'title': "VAMPIRE HUNTER D",
+        'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLES00204': {
         'url': "games/P/V/SLES-00204.html",
     	'id': 'SLES00204',
 	'title': "VANDAL HEARTS",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
     'SLES02469': {
         'url': "games/P/V/SLES-02469.html",
@@ -27865,6 +28042,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLES02496': {
         'url': "games/P/V/SLES-02496.html",
@@ -27873,6 +28051,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLES02497': {
         'url': "games/P/V/SLES-02497.html",
@@ -27881,11 +28060,14 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d382fdd8-4a80-444d-a927-268fd9c24e61.png',
         'pic1': 'https://images.launchbox-app.com/281af721-b412-42c5-8a2f-132f33d4084f.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_QNfNLwwpQg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20II%20%28USA%29_jp2.zip',
     },
     'SLES02534': {
         'url': "games/P/V/SLES-02534.html",
     	'id': 'SLES02534',
 	'title': "VANISHING POINT",
+        'pic0': 'https://images.launchbox-app.com/3686201d-4209-4672-9beb-e194a0fc3bd8.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vanishing%20Point%20%28USA%29_jp2.zip',
     },
     'SLES02918': {
         'url': "games/P/V/SLES-02918.html",
@@ -27967,30 +28149,35 @@ games = {
     	'id': 'SLES01212',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLES01213': {
         'url': "games/P/V/SLES-01213.html",
     	'id': 'SLES01213',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLES01214': {
         'url': "games/P/V/SLES-01214.html",
     	'id': 'SLES01214',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLES01215': {
         'url': "games/P/V/SLES-01215.html",
     	'id': 'SLES01215',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLES02162': {
         'url': "games/P/V/SLES-02162.html",
     	'id': 'SLES02162',
 	'title': "VIGILANTE 8 - 2ND OFFENSE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLES01302': {
         'url': "games/P/V/SLES-01302.html",
@@ -28041,6 +28228,8 @@ games = {
         'url': "games/P/V/SLES-00931.html",
     	'id': 'SLES00931',
 	'title': "VR SPORTS POWERBOAT RACING",
+        'pic0': 'https://images.launchbox-app.com/368ca581-b822-47c6-a1a5-e92c344264d4.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/VR%20Sports%20Powerboat%20Racing%20%28USA%29_jp2.zip',
     },
     'SLES01104': {
         'url': "games/P/V/SLES-01104.html",
@@ -28056,6 +28245,9 @@ games = {
         'url': "games/P/W/SLES-02468.html",
     	'id': 'SLES02468',
 	'title': "WACKY RACES",
+        'pic0': 'https://images.launchbox-app.com/810628ec-0982-4d65-a400-b9f067534833.png',
+        'pic1': 'https://images.launchbox-app.com/d56dbad0-cae1-40cb-8d56-0bd438433eb4.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wacky%20Races%20%28Europe%29_jp2.zip',
     },
     'SCES03025': {
         'url': "games/P/W/SCES-03025.html",
@@ -28131,6 +28323,8 @@ games = {
         'url': "games/P/W/SLES-00878.html",
     	'id': 'SLES00878',
 	'title': "WARCRAFT II - THE DARK SAGA",
+        'pic0': 'https://images.launchbox-app.com/07582a32-8eba-49b0-911a-1e0fc8fb8fb1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WarCraft%20II%20-%20The%20Dark%20Saga%20%28USA%29_jp2.zip',
     },
     'SLES00978': {
         'url': "games/P/W/SLES-00978.html",
@@ -28171,36 +28365,53 @@ games = {
         'url': "games/P/W/SLES-03263.html",
     	'id': 'SLES03263',
 	'title': "WARRIORS OF MIGHT & MAGIC",
+        'pic0': 'https://images.launchbox-app.com/e19b248f-5ee6-46c0-b6b3-2d7fca607537.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
     },
     'SLES03330': {
         'url': "games/P/W/SLES-03330.html",
     	'id': 'SLES03330',
 	'title': "WARRIORS OF MIGHT & MAGIC",
+        'pic0': 'https://images.launchbox-app.com/e19b248f-5ee6-46c0-b6b3-2d7fca607537.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
     },
     'SLES00937': {
         'url': "games/P/W/SLES-00937.html",
     	'id': 'SLES00937',
 	'title': "WARZONE 2100",
+        'pic0': 'https://images.launchbox-app.com/443317dd-b7fb-4ab8-94c0-3213a01eef19.png',
+        'pic1': 'https://images.launchbox-app.com/143a6d4c-5816-4839-9aa0-a3606a919d26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warzone%202100%20%28USA%29_jp2.zip',
     },
     'SLES01742': {
         'url': "games/P/W/SLES-01742.html",
     	'id': 'SLES01742',
 	'title': "WARZONE 2100",
+        'pic0': 'https://images.launchbox-app.com/443317dd-b7fb-4ab8-94c0-3213a01eef19.png',
+        'pic1': 'https://images.launchbox-app.com/143a6d4c-5816-4839-9aa0-a3606a919d26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warzone%202100%20%28USA%29_jp2.zip',
     },
     'SLES01743': {
         'url': "games/P/W/SLES-01743.html",
     	'id': 'SLES01743',
 	'title': "WARZONE 2100",
+        'pic0': 'https://images.launchbox-app.com/443317dd-b7fb-4ab8-94c0-3213a01eef19.png',
+        'pic1': 'https://images.launchbox-app.com/143a6d4c-5816-4839-9aa0-a3606a919d26.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Warzone%202100%20%28USA%29_jp2.zip',
     },
     'SLES01160': {
         'url': "games/P/W/SLES-01160.html",
     	'id': 'SLES01160',
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
+        'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wayne%20Gretzky%27s%203D%20Hockey%20%2798%20%28USA%29_jp2.zip',
     },
     'SLES03168': {
         'url': "games/P/W/SLES-03168.html",
     	'id': 'SLES03168',
 	'title': "WCW - BACKSTAGE ASSAULT",
+        'pic0': 'https://images.launchbox-app.com/b79bb84a-7ec9-41cb-aa8e-ef0e61a9cbb0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WCW%20Backstage%20Assault%20%28USA%29_jp2.zip',
     },
     'SLES02193': {
         'url': "games/P/W/SLES-02193.html",
@@ -28216,6 +28427,8 @@ games = {
         'url': "games/P/W/SLES-01663.html",
     	'id': 'SLES01663',
 	'title': "WCW/NWO THUNDER",
+        'pic0': 'https://images.launchbox-app.com/bca23a5c-6311-46f5-ac13-6a1acf944e58.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WCW-nWo%20Thunder%20%28USA%29_jp2.zip',
     },
     'SLES00763': {
         'url': "games/P/W/SLES-00763.html",
@@ -28287,6 +28500,9 @@ games = {
     	'id': 'SLES01333',
 	'title': "WILD 9",
         'snd0': "https://www.youtube.com/watch?v=nlaCbnrC29g&list=PL7D5AE03BFE123E0C&index=2",
+        'pic0': 'https://images.launchbox-app.com/0c174b36-87b7-48ee-ba58-025028c51658.png',
+        'pic1': 'https://images.launchbox-app.com/2abe5d9a-0901-401f-bd6f-50d9aee505f3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%209%20%28USA%29_jp2.zip',
     },
     'SCES00321': {
         'url': "games/P/W/SCES-00321.html",
@@ -28295,6 +28511,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCES01171': {
         'url': "games/P/W/SCES-01171.html",
@@ -28303,6 +28520,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCES01172': {
         'url': "games/P/W/SCES-01172.html",
@@ -28311,6 +28529,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCES01173': {
         'url': "games/P/W/SCES-01173.html",
@@ -28319,6 +28538,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SCES01174': {
         'url': "games/P/W/SCES-01174.html",
@@ -28327,6 +28547,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2596def5-e159-40f8-bc79-5b0962c80abd.png',
         'pic1': 'https://images.launchbox-app.com/f1059788-0035-4c50-a419-f362eb855faa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVOFibwVMw0',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wild%20Arms%20%28USA%29_jp2.zip',
     },
     'SLES02631': {
         'url': "games/P/W/SLES-02631.html",
@@ -28338,6 +28559,7 @@ games = {
     	'id': 'SLES00323',
 	'title': "WILLIAMS ARCADE'S GREATEST HITS",
         'pic0': 'https://images.launchbox-app.com/63cc4dae-6105-4944-b2f5-f0375332205f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Williams%20Arcade%27s%20Greatest%20Hits%20%28USA%29_jp2.zip',
     },
     'SLES03329': {
         'url': "games/P/W/SLES-03329.html",
@@ -28349,144 +28571,168 @@ games = {
     	'id': 'SLES00074',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10074': {
         'url': "games/P/W/SLES-00074.html",
     	'id': 'SLES10074',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20074': {
         'url': "games/P/W/SLES-00074.html",
     	'id': 'SLES20074',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30074': {
         'url': "games/P/W/SLES-00074.html",
     	'id': 'SLES30074',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00104': {
         'url': "games/P/W/SLES-00104.html",
     	'id': 'SLES00104',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10104': {
         'url': "games/P/W/SLES-00104.html",
     	'id': 'SLES10104',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20104': {
         'url': "games/P/W/SLES-00104.html",
     	'id': 'SLES20104',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30104': {
         'url': "games/P/W/SLES-00104.html",
     	'id': 'SLES30104',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00105': {
         'url': "games/P/W/SLES-00105.html",
     	'id': 'SLES00105',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10105': {
         'url': "games/P/W/SLES-00105.html",
     	'id': 'SLES10105',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20105': {
         'url': "games/P/W/SLES-00105.html",
     	'id': 'SLES20105',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30105': {
         'url': "games/P/W/SLES-00105.html",
     	'id': 'SLES30105',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00659': {
         'url': "games/P/W/SLES-00659.html",
     	'id': 'SLES00659',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10659': {
         'url': "games/P/W/SLES-00659.html",
     	'id': 'SLES10659',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20659': {
         'url': "games/P/W/SLES-00659.html",
     	'id': 'SLES20659',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30659': {
         'url': "games/P/W/SLES-00659.html",
     	'id': 'SLES30659',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00660': {
         'url': "games/P/W/SLES-00660.html",
     	'id': 'SLES00660',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10660': {
         'url': "games/P/W/SLES-00660.html",
     	'id': 'SLES10660',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20660': {
         'url': "games/P/W/SLES-00660.html",
     	'id': 'SLES20660',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30660': {
         'url': "games/P/W/SLES-00660.html",
     	'id': 'SLES30660',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00661': {
         'url': "games/P/W/SLES-00661.html",
     	'id': 'SLES00661',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10661': {
         'url': "games/P/W/SLES-00661.html",
     	'id': 'SLES10661',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES20661': {
         'url': "games/P/W/SLES-00661.html",
     	'id': 'SLES20661',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES30661': {
         'url': "games/P/W/SLES-00661.html",
     	'id': 'SLES30661',
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00540': {
         'url': "games/P/W/SLES-00540.html",
@@ -28497,11 +28743,15 @@ games = {
         'url': "games/P/W/SLES-01375.html",
     	'id': 'SLES01375',
 	'title': "WING OVER 2",
+        'pic0': 'https://images.launchbox-app.com/edf5d046-ec5b-481c-8901-de194381bf7b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Over%202%20%28Europe%29_jp2.zip',
     },
     'SLES04070': {
         'url': "games/P/W/SLES-04070.html",
     	'id': 'SLES04070',
 	'title': "WINKY THE LITTLE BEAR",
+        'pic0': 'https://images.launchbox-app.com/7724772f-5bca-455a-8eb0-0134b7cff979.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Winky%20the%20Little%20Bear%20%28Europe%29_jp2.zip',
     },
     'SCES00010': {
         'url': "games/P/W/SCES-00010.html",
@@ -28509,6 +28759,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SLES00327': {
         'url': "games/P/W/SLES-00327.html",
@@ -28516,6 +28767,7 @@ games = {
 	'title': "WIPEOUT 2097",
         'pic0': 'https://images.launchbox-app.com/e7c81f33-b649-4f0c-b0f2-afb53be6429b.png',
         'pic1': 'https://images.launchbox-app.com/e2724d4c-c39e-4dbf-ae2a-a3534af9a23c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%202097%20%28Europe%29_jp2.zip',
     },
     'SCES01909': {
         'url': "games/P/W/SCES-01909.html",
@@ -28523,6 +28775,7 @@ games = {
 	'title': "WIPEOUT 3",
         'pic0': 'https://images.launchbox-app.com/9c3b88b7-bab3-4b93-9b5c-954b11fb0669.png',
         'pic1': 'https://images.launchbox-app.com/9ab56a08-a75d-4c46-8861-83256a3ba671.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%203%20%28USA%29_jp2.zip',
     },
     'SCES02845': {
         'url': "games/P/W/SCES-02845.html",
@@ -28530,6 +28783,7 @@ games = {
 	'title': "WIPEOUT 3 - SPECIAL EDITION",
         'pic0': 'https://images.launchbox-app.com/9c3b88b7-bab3-4b93-9b5c-954b11fb0669.png',
         'pic1': 'https://images.launchbox-app.com/9ab56a08-a75d-4c46-8861-83256a3ba671.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%203%20%28USA%29_jp2.zip',
     },
     'SLES03869': {
         'url': "games/P/W/SLES-03869.html",
@@ -28550,11 +28804,15 @@ games = {
         'url': "games/P/W/SLES-01265.html",
     	'id': 'SLES01265',
 	'title': "WORLD CUP 98",
+        'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/World%20Cup%2098%20%28USA%29_jp2.zip',
     },
     'SLES01268': {
         'url': "games/P/W/SLES-01268.html",
     	'id': 'SLES01268',
 	'title': "WORLD CUP 98 - COPPA DEL MONDO",
+        'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/World%20Cup%2098%20%28USA%29_jp2.zip',
     },
     'SLES00088': {
         'url': "games/P/W/SLES-00088.html",
@@ -28615,6 +28873,8 @@ games = {
         'url': "games/P/W/SLES-00119.html",
     	'id': 'SLES00119',
 	'title': "WORMS",
+        'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLES02217': {
         'url': "games/P/W/SLES-02217.html",
@@ -28640,6 +28900,9 @@ games = {
         'url': "games/P/W/SLES-03804.html",
     	'id': 'SLES03804',
 	'title': "WORMS WORLD PARTY",
+        'pic0': 'https://images.launchbox-app.com/12bfc04c-5eb9-48b5-80d4-5b0270154a18.png',
+        'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
     },
     'SCES03907': {
         'url': "games/P/W/SCES-03907.html",
@@ -28675,11 +28938,17 @@ games = {
         'url': "games/P/W/SLES-01980.html",
     	'id': 'SLES01980',
 	'title': "WWF - ATTITUDE",
+        'pic0': 'https://images.launchbox-app.com/c88c5ed5-e90a-4999-8b1a-b5dd8d3d7a30.png',
+        'pic1': 'https://images.launchbox-app.com/f9b87380-effb-4a7b-b255-54f748a5752b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20Attitude%20%28USA%29_jp2.zip',
     },
     'SLES02255': {
         'url': "games/P/W/SLES-02255.html",
     	'id': 'SLES02255',
 	'title': "WWF - ATTITUDE",
+        'pic0': 'https://images.launchbox-app.com/c88c5ed5-e90a-4999-8b1a-b5dd8d3d7a30.png',
+        'pic1': 'https://images.launchbox-app.com/f9b87380-effb-4a7b-b255-54f748a5752b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20Attitude%20%28USA%29_jp2.zip',
     },
     'SLES00286': {
         'url': "games/P/W/SLES-00286.html",
@@ -28690,16 +28959,23 @@ games = {
         'url': "games/P/W/SLES-02619.html",
     	'id': 'SLES02619',
 	'title': "WWF SMACKDOWN!",
+        'pic0': 'https://images.launchbox-app.com/5aa07767-6a12-4c41-bddb-ccb0209740b0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%20%28USA%29_jp2.zip',
     },
     'SLES03251': {
         'url': "games/P/W/SLES-03251.html",
     	'id': 'SLES03251',
 	'title': "WWF SMACKDOWN! 2 - KNOW YOUR ROLE",
+        'pic0': 'https://images.launchbox-app.com/e6b3b967-e485-471a-91c1-3e84a073a00c.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%202%20-%20Know%20Your%20Role%20%28USA%29_jp2.zip',
     },
     'SLES00804': {
         'url': "games/P/W/SLES-00804.html",
     	'id': 'SLES00804',
 	'title': "WWF WAR ZONE",
+        'pic0': 'https://images.launchbox-app.com/a5cab113-0b56-4289-8c35-feedfa6e8060.png',
+        'pic1': 'https://images.launchbox-app.com/8fb07fa1-3695-476e-9f60-09bd8318cd1d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20War%20Zone%20%28USA%29_jp2.zip',
     },
     'SLES00103': {
         'url': "games/P/W/SLES-00103.html",
@@ -28727,6 +29003,7 @@ games = {
     	'id': 'SLES00054',
 	'title': "X-COM ENEMY UNKNOWN",
         'pic0': 'https://images.launchbox-app.com/6e6b2a83-a110-4c36-9311-d347c9302b8c.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Com%20-%20UFO%20Defense%20%28USA%29_jp2.zip',
     },
     'SLES00077': {
         'url': "games/P/X/SLES-00077.html",
@@ -28751,12 +29028,14 @@ games = {
     	'id': 'SLES02865',
 	'title': "X-MEN - MUTANT ACADEMY",
         'pic0': 'https://images.launchbox-app.com/6921b571-a4a9-44a2-b620-8351d277efdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%20%28USA%29_jp2.zip',
     },
     'SLES02866': {
         'url': "games/P/X/SLES-02866.html",
     	'id': 'SLES02866',
 	'title': "X-MEN - MUTANT ACADEMY",
         'pic0': 'https://images.launchbox-app.com/6921b571-a4a9-44a2-b620-8351d277efdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%20%28USA%29_jp2.zip',
     },
     'SLES03630': {
         'url': "games/P/X/SLES-03630.html",
@@ -28764,6 +29043,7 @@ games = {
 	'title': "X-MEN - MUTANT ACADEMY 2",
         'pic0': 'https://images.launchbox-app.com/f827cfa4-683c-4e3b-b5c8-c88a9dbe1d7a.png',
         'pic1': 'https://images.launchbox-app.com/a778a00f-576e-4744-8421-99e53225807b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20-%20Mutant%20Academy%202%20%28USA%29_jp2.zip',
     },
     'SLES01247': {
         'url': "games/P/X/SLES-01247.html",
@@ -28771,6 +29051,7 @@ games = {
 	'title': "X-MEN VS STREET FIGHTER",
         'pic0': 'https://images.launchbox-app.com/0e71634b-5fb0-4e92-bf38-2f8ebae54067.png',
         'pic1': 'https://images.launchbox-app.com/47b12bff-12ff-4331-b98d-6ce43c8c4133.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/X-Men%20vs.%20Street%20Fighter%20%28USA%29_jp2.zip',
     },
     'SLES02265': {
         'url': "games/P/X/SLES-02265.html",
@@ -28832,6 +29113,7 @@ games = {
     	'id': 'SLES04101',
 	'title': "XS AIRBOAT RACING",
         'pic0': 'https://images.launchbox-app.com/f92ff31e-1c35-4e35-9f8e-df121fd89b39.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/XS%20Airboat%20Racing%20%28USA%29_jp2.zip',
     },
     'SLES04120': {
         'url': "games/P/X/SLES-04120.html",
