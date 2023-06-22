@@ -49,7 +49,7 @@ except:
     True
 from pathlib import Path
 from bchunk import bchunk
-from document import create_document
+from document import create_document, encrypt_document
 from gamedb import games, libcrypt, themes
 try:
     from make_isoedat import pack
@@ -883,7 +883,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[]):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     p = popstation()
@@ -1056,6 +1056,11 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     except:
         True
 
+    if manual:
+        print('Installing manual as', f + '/DOCUMENT.DAT')
+        temp_files.append(f + '/DOCUMENT.DAT')
+        copy_file(manual, f + '/DOCUMENT.DAT')
+        
     p.eboot = subdir + disc_ids[0] + '/USRDIR/CONTENT/EBOOT.PBP'
     p.iso_bin_dat = subdir + disc_ids[0] + '/USRDIR/ISO.BIN.DAT'
     try:
@@ -1699,7 +1704,7 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][1]))
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP
-def create_manual(source, gameid, subdir='./pop-fe-work/'):
+def create_manual(source, gameid, subdir='./pop-fe-work/', encrypt=False):
     print('Create manual', source)
     if source[:8] != 'https://':
         with open(source, 'rb') as f:
@@ -1720,7 +1725,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
             try:
                 tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
                 temp_files.append(tmpfile)
-                subprocess.run(['wget', source, '-O', tmpfile], timeout=120, check=True)
+                subprocess.run(['wget', source, '-O', tmpfile], timeout=180, check=True)
                 print('Downloaded manual as', tmpfile)
                 source = tmpfile
             except:
@@ -1748,6 +1753,13 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     temp_files.append(tmpfile)
     print('Create manual from directory [%s]' % (source))
     create_document(source, gameid, 480, tmpfile)
+    if encrypt:
+        print('Encrypting DOCUMENT.DAT')
+        with open(tmpfile, 'rb+') as f:
+            buf = f.read()
+            enc = encrypt_document(buf)
+            f.seek(0)
+            f.write(enc)
     return tmpfile
 
 
@@ -2067,7 +2079,7 @@ if __name__ == "__main__":
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
 
     manual = None
-    if args.psp_dir:
+    if args.psp_dir or args.ps3_pkg:
         if args.manual:
             manual = args.manual
         if not manual:
@@ -2080,7 +2092,7 @@ if __name__ == "__main__":
         if not manual and 'manual' in games[disc_ids[0]]:
             manual = games[disc_ids[0]]['manual']
         if manual:
-            manual = create_manual(manual, disc_ids[0])
+            manual = create_manual(manual, disc_ids[0], encrypt=True if args.ps3_pkg else False)
         
     print('Id:', disc_ids[0])
     print('Title:', game_title)
@@ -2160,7 +2172,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=manual)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:

@@ -5,6 +5,10 @@
 # Based on PSP Docmaker GUI by takedown psp.in.th
 
 try:
+    from Crypto.Cipher import DES
+except:
+    print('Crypto is not installed.\nYou should install Crypto by running:\npip3 install Crypto')
+try:
     from PIL import Image, ImageDraw, ImageFont
 except:
     print('You need to install python module pillow')
@@ -13,9 +17,27 @@ import io
 import glob
 import os
 import struct
+import sys
 import zipfile
 
 verbose = False
+
+
+des_key = bytes([0x39, 0xF7, 0xEF, 0xA1, 0x6C, 0xCE, 0x5F, 0x4C])
+des_iv  = bytes([0xA8, 0x19, 0xC4, 0xF5, 0xE1, 0x54, 0xE3, 0x0B])
+pgd_hdr = bytes([0x00, 0x50, 0x47, 0x44, 0x01, 0x00, 0x00, 0x00,
+                 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+
+def decrypt_document(data):
+    cipher = DES.new(des_key, DES.MODE_CBC, iv=des_iv)
+    msg = cipher.decrypt(data[16:])
+    return msg
+
+
+def encrypt_document(data):
+    cipher = DES.new(des_key, DES.MODE_CBC, iv=des_iv)
+    msg = cipher.encrypt(data)
+    return pgd_hdr + msg
 
 
 def create_document(source, gameid, maxysize, output):
@@ -89,13 +111,43 @@ def create_document(source, gameid, maxysize, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('source', nargs=1, help='Directory containing image files')
-    parser.add_argument('gameid', nargs=1, help='Gameid. Example: SLES12345')
-    parser.add_argument('document', nargs=1, help='Filename of the resulting document.dat')
+    parser.add_argument('--source', nargs=1, help='Directory containing image files')
+    parser.add_argument('--gameid', nargs=1, help='Gameid. Example: SLES12345')
+    parser.add_argument('--document', nargs=1, help='Filename of the resulting document.dat')
+    parser.add_argument('--decrypt', nargs=1, help='Filename to decrypt')
+    parser.add_argument('--encrypt', nargs=1, help='Filename to decrypt')
     args = parser.parse_args()
 
     if args.v:
         verbose = True
 
+    if args.decrypt:
+        print('Decrypt', args.decrypt)
+        with open(args.decrypt[0], 'rb+') as f:
+            buf = f.read(4)
+            if buf != bytes([0x00, 0x50, 0x47, 0x44]):
+                print('Not a PGD document. Can not decrypt.')
+                sys.exit()
+            f.seek(0)
+            buf = decrypt_document(f.read())
+            f.seek(0)
+            f.truncate(0)
+            f.write(buf)
+        sys.exit()
+
+    if args.encrypt:
+        print('Encrypt', args.encrypt)
+        with open(args.encrypt[0], 'rb+') as f:
+            buf = f.read(4)
+            if buf != bytes([0x44, 0x4f, 0x43, 0x20]):
+                print('Not a DOC document. Can not encrypt.')
+                sys.exit()
+            f.seek(0)
+            buf = encrypt_document(f.read())
+            f.seek(0)
+            f.truncate(0)
+            f.write(buf)
+        sys.exit()
+        
     print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
     create_document(args.source[0], args.gameid[0], 480, args.document[0])
