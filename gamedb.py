@@ -7868,6 +7868,9 @@ games = {
         'url': "games/U/P/SLUS-00439.html",
     	'id': 'SLUS00439',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SLUS01389': {
         'url': "games/U/P/SLUS-01389.html",
@@ -7878,11 +7881,17 @@ games = {
         'url': "games/U/P/SLUS-00232.html",
     	'id': 'SLUS00232',
 	'title': "PANDEMONIUM!",
+        'pic0': 'https://images.launchbox-app.com/6972c3de-5a4a-4095-8aa0-9309fd315605.png',
+        'pic1': 'https://cdn.mobygames.com/promos/2986469-pandemonium-concept-art-forest.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pandemonium%21%20%28USA%29_jp2.zip',
     },
     'SLUS00578': {
         'url': "games/U/P/SLUS-00578.html",
     	'id': 'SLUS00578',
 	'title': "PANDEMONIUM! 2",
+        'pic0': 'https://images.launchbox-app.com/2a055ba2-4d98-4483-ae71-d1f7892dd0d9.png',
+        'pic1': 'https://images.launchbox-app.com/cf26f3a6-eece-4547-8212-587855cb3508.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pandemonium%21%202%20%28USA%29_jp2.zip',
     },
     'SLUS01399': {
         'url': "games/U/P/SLUS-01399.html",
@@ -7895,6 +7904,7 @@ games = {
     	'id': 'SLUS00132',
 	'title': "PANZER GENERAL",
         'pic0': 'https://images.launchbox-app.com/7b68a381-2594-4560-a4e8-ffc8058cc0a1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Panzer%20General%20%28USA%29_jp2.zip',
     },
     'SCUS94183': {
         'url': "games/U/P/SCUS-94183.html",
@@ -7909,7 +7919,8 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00668': {
         'url': "games/U/P/SLUS-00662.html",
@@ -7917,7 +7928,8 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS90028': {
         'url': "games/U/P/SLUS-00662.html",
@@ -7925,7 +7937,8 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01042': {
         'url': "games/U/P/SLUS-01042.html",
@@ -7933,7 +7946,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01055': {
         'url': "games/U/P/SLUS-01042.html",
@@ -7941,7 +7955,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS90028': {
         'url': "games/U/P/SLUS-01042.html",
@@ -7949,7 +7964,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01539': {
         'url': "games/U/P/SLUS-01539.html",
@@ -7967,11 +7983,16 @@ games = {
 	'title': "PERFECT WEAPON",
         'pic0': 'https://images.launchbox-app.com/4410f3b9-46e1-49e5-a46e-ad1c9eb5833d.png',
         'pic1': 'https://images.launchbox-app.com/5b5b0378-2479-4f9b-9aeb-e427dda22c45.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Perfect%20Weapon%20%28USA%29_jp2.zip',
     },
     'SLUS00339': {
         'url': "games/U/P/SLUS-00339.html",
     	'id': 'SLUS00339',
 	'title': "PERSONA REVELATIONS",
+        'pic0': 'https://images.launchbox-app.com/bec36843-e1e3-41b8-867b-222a9b459633.png',
+        'pic1': 'https://images.launchbox-app.com/e573ee2d-85a7-4117-af54-b28a8243cea8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RzHgXFk6V20',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Persona%20%28USA%29_jp2.zip',
     },
     'SLUS01158': {
         'url': "games/U/P/SLUS-01158.html",
@@ -8034,6 +8055,8 @@ games = {
         'url': "games/U/P/SLUS-01409.html",
     	'id': 'SLUS01409',
 	'title': "PIPE DREAMS 3D",
+        'pic0': 'https://images.launchbox-app.com/2a49d3ec-0b4b-4730-88b5-e12948de8df2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pipe%20Dreams%203D%20%28USA%29_jp2.zip',
     },
     'SLUS00146': {
         'url': "games/U/P/SLUS-00146.html",
@@ -8047,6 +8070,7 @@ games = {
 	'title': "PITFALL 3D - BEYOND THE JUNGLE",
         'pic0': 'https://images.launchbox-app.com/14a8f592-0a98-429d-93cf-f8c3054f5945.png',
         'pic1': 'https://images.launchbox-app.com/72ae0527-d694-4ae4-8830-1aa2d570bd59.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pitfall%203D%20-%20Beyond%20the%20Jungle%20%28USA%29_jp2.zip',
     },
     'SLUS01468': {
         'url': "games/U/P/SLUS-01468.html",
@@ -8054,11 +8078,15 @@ games = {
 	'title': "PLANET OF THE APES",
         'pic0': 'https://images.launchbox-app.com/a2551c64-996e-430a-aa4d-dbeee342e9ef.png',
         'pic1': 'https://images.launchbox-app.com/575392f0-0f46-4e6c-9b98-4c73f8bac582.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Planet%20of%20the%20Apes%20%28USA%29_jp2.zip',
     },
     'SLUS00653': {
         'url': "games/U/P/SLUS-00653.html",
     	'id': 'SLUS00653',
 	'title': "POCKET FIGHTER",
+        'pic0': 'https://images.launchbox-app.com/512245cc-171c-46e4-be91-dd90fd90af07.png',
+        'pic1': 'https://cdn.mobygames.com/promos/7640829-pocket-fighter-screenshot.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pocket%20Fighter%20%28USA%29_jp2.zip',
     },
     'SLUS00097': {
         'url': "games/U/P/SLUS-00097.html",
@@ -8070,6 +8098,7 @@ games = {
     	'id': 'SLUS00481',
 	'title': "POINT BLANK",
         'pic0': 'https://images.launchbox-app.com/3551ee41-ac47-4bf1-ab42-ad490ebc59c7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Point%20Blank%20%28USA%29_jp2.zip',
     },
     'SLUS00796': {
         'url': "games/U/P/SLUS-00796.html",
@@ -8077,6 +8106,7 @@ games = {
 	'title': "POINT BLANK 2",
         'pic0': 'https://images.launchbox-app.com/08bd3f78-6ecd-4341-b46e-d960396c9f8c.png',
         'pic1': 'https://images.launchbox-app.com/5c4ddf22-7085-4520-95bd-619e16126921.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Point%20Blank%202%20%28USA%29_jp2.zip',
     },
     'SLUS01354': {
         'url': "games/U/P/SLUS-01354.html",
@@ -8099,6 +8129,8 @@ games = {
         'url': "games/U/P/SLUS-00889.html",
     	'id': 'SLUS00889',
 	'title': "PONG - THE NEXT LEVEL",
+        'pic0': 'https://images.launchbox-app.com/fa17d332-60f2-45ac-a9c3-2c2e11d1650d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pong%20-%20The%20Next%20Level%20%28USA%29_jp2.zip',
     },
     'SLUS00758': {
         'url': "games/U/P/SLUS-00758.html",
@@ -8124,6 +8156,8 @@ games = {
         'url': "games/U/P/SLUS-01445.html",
     	'id': 'SLUS01445',
 	'title': "POWER PLAY - SPORTS TRIVIA",
+        'pic0': 'https://images.launchbox-app.com/f5955aae-e770-4513-9e65-bd3bf7096991.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Play%20-%20Sports%20Trivia%20%28USA%29_jp2.zip',
     },
     'SLUS01114': {
         'url': "games/U/P/SLUS-01114.html",
@@ -8134,11 +8168,17 @@ games = {
         'url': "games/U/P/SLUS-01351.html",
     	'id': 'SLUS01351',
 	'title': "POWER RANGERS - TIME FORCE",
+        'pic0': 'https://images.launchbox-app.com/55370d8c-8e75-458b-b55f-a96394e583f0.png',
+        'pic1': 'https://images.launchbox-app.com/800c4a8c-ddab-401a-b93f-c74c9af97902.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20-%20Time%20Force%20%28USA%29_jp2.zip',
     },
     'SLUS00256': {
         'url': "games/U/P/SLUS-00256.html",
     	'id': 'SLUS00256',
 	'title': "POWER RANGERS ZEO - FULL TILT BATTLE PINBALL",
+        'pic0': 'https://images.launchbox-app.com/5cd1b611-2d9e-4bd6-988e-3f72c5709225.png',
+        'pic1': 'https://images.launchbox-app.com/835c47c0-c73b-4d87-aa99-64e0a64a227f.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20Zeo%20-%20Full%20Tilt%20Battle%20Pinball%20%28USA%29_jp2.zip',
     },
     'SLUS00105': {
         'url': "games/U/P/SLUS-00105.html",
@@ -8167,6 +8207,8 @@ games = {
         'url': "games/U/P/SLUS-00486.html",
     	'id': 'SLUS00486',
 	'title': "POY POY",
+        'pic0': 'https://images.launchbox-app.com/7882852a-4591-4ea0-bf33-cfbac6fbd47e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Poy%20Poy%20%28USA%29_jp2.zip',
     },
     'SLUS00126': {
         'url': "games/U/P/SLUS-00126.html",
@@ -8177,11 +8219,16 @@ games = {
         'url': "games/U/P/SLUS-00817.html",
     	'id': 'SLUS00817',
 	'title': "PRO 18 WORLD TOUR GOLF",
+        'pic0': 'https://images.launchbox-app.com/7a6d0ccb-224f-48e2-be28-3b2e365da497.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%2018%20-%20World%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLUS00371': {
         'url': "games/U/P/SLUS-00371.html",
     	'id': 'SLUS00371',
 	'title': "PRO PINBALL",
+        'pic0': 'https://images.launchbox-app.com/ba2fc3bf-3416-4004-b260-f4fbe285ad69.png',
+        'pic1': 'https://images.launchbox-app.com/2691699f-15d2-4caf-ae6b-a33df49cf9e1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro-Pinball%20%28USA%29_jp2.zip',
     },
     'SLUS01260': {
         'url': "games/U/P/SLUS-01260.html",
@@ -8192,18 +8239,24 @@ games = {
         'url': "games/U/P/SLUS-01261.html",
     	'id': 'SLUS01261',
 	'title': "PRO PINBALL - FANTASTIC JOURNEY",
+        'pic0': 'https://images.launchbox-app.com/8ac45292-617f-48e5-a8f4-318304c5035b.png',
+        'pic1': 'https://images.launchbox-app.com/1fee3fd0-ae07-42f0-880c-b9e18c7161d6.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%20Pinball%20-%20Fantastic%20Journey%20%28USA%29_jp2.zip',
     },
     'SLUS00639': {
         'url': "games/U/P/SLUS-00639.html",
     	'id': 'SLUS00639',
 	'title': "PRO PINBALL - TIMESHOCK!",
+        'pic0': 'https://images.launchbox-app.com/4b299a80-63fb-4b15-a6ac-c60d649c9291.png',
+        'pic1': 'https://images.launchbox-app.com/bc0071db-75f1-4758-89e1-704aa20a219a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%20Pinball%20-%20Timeshock%21%20%28USA%29_jp2.zip',
     },
     'SCUS94551': {
         'url': "games/U/P/SCUS-94551.html",
     	'id': 'SCUS94551',
 	'title': "PROFESSIONAL UNDERGROUND LEAGUE OF PAIN",
         'pic0': 'https://images.launchbox-app.com/6707f9c2-1311-48d0-bb48-0dedd4686fef.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/League%20of%20Pain%20-%20Professional%20Underground%20%28USA%29_jp2.zip',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Professional%20Underground%20League%20of%20Pain%20%28USA%29_jp2.zip',
     },
     'SCUS94408': {
         'url': "games/U/P/SCUS-94408.html",
@@ -8219,6 +8272,8 @@ games = {
         'url': "games/U/P/SLUS-00730.html",
     	'id': 'SLUS00730',
 	'title': "PSYBADEK",
+        'pic0': 'https://images.launchbox-app.com/461530c8-66f2-4607-9c7c-219a6dbb2216.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Psybadek%20%28USA%29_jp2.zip',
     },
     'SLUS00165': {
         'url': "games/U/P/SLUS-00165.html",
@@ -8244,11 +8299,15 @@ games = {
         'url': "games/U/P/SLUS-00579.html",
     	'id': 'SLUS00579',
 	'title': "PUNKY SKUNK",
+        'pic0': 'https://images.launchbox-app.com/270d4f99-37f6-446a-a3bf-29537b7714fb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Punky%20Skunk%20%28USA%29_jp2.zip',
     },
     'SLUS01371': {
         'url': "games/U/P/SLUS-01371.html",
     	'id': 'SLUS01371',
 	'title': "PUTTER GOLF",
+        'pic0': 'https://images.launchbox-app.com/11e493ad-3d71-46f7-8b4d-d2d968e71a75.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Putter%20Golf%20%28USA%29_jp2.zip',
     },
     'SLUS01307': {
         'url': "games/U/P/SLUS-01307.html",
@@ -8274,6 +8333,9 @@ games = {
         'url': "games/U/Q/SLUS-00757.html",
     	'id': 'SLUS00757',
 	'title': "QUAKE II",
+        'pic0': 'https://images.launchbox-app.com/348dbda8-fc70-4e9d-8898-f8a7ea00722d.png',
+        'pic1': 'https://images.launchbox-app.com/cc7e7df4-7a70-4f78-a2fe-fdc30d810158.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Quake%20II%20%28USA%29_jp2.zip',
     },
     'SLUS00797': {
         'url': "games/U/R/SLUS-00797.html",
@@ -23091,26 +23153,41 @@ games = {
         'url': "games/P/P/SCES-00934.html",
     	'id': 'SCES00934',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SCES02277': {
         'url': "games/P/P/SCES-02277.html",
     	'id': 'SCES02277',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SCES02278': {
         'url': "games/P/P/SCES-02278.html",
     	'id': 'SCES02278',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SCES02279': {
         'url': "games/P/P/SCES-02279.html",
     	'id': 'SCES02279',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SCES02280': {
         'url': "games/P/P/SCES-02280.html",
     	'id': 'SCES02280',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SLES03576': {
         'url': "games/P/P/SLES-03576.html",
@@ -23121,11 +23198,17 @@ games = {
         'url': "games/P/P/SLES-00526.html",
     	'id': 'SLES00526',
 	'title': "PANDEMONIUM!",
+        'pic0': 'https://images.launchbox-app.com/6972c3de-5a4a-4095-8aa0-9309fd315605.png',
+        'pic1': 'https://cdn.mobygames.com/promos/2986469-pandemonium-concept-art-forest.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pandemonium%21%20%28USA%29_jp2.zip',
     },
     'SLES00965': {
         'url': "games/P/P/SLES-00965.html",
     	'id': 'SLES00965',
 	'title': "PANDEMONIUM! 2",
+        'pic0': 'https://images.launchbox-app.com/2a055ba2-4d98-4483-ae71-d1f7892dd0d9.png',
+        'pic1': 'https://images.launchbox-app.com/cf26f3a6-eece-4547-8212-587855cb3508.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pandemonium%21%202%20%28USA%29_jp2.zip',
     },
     'SLES03339': {
         'url': "games/P/P/SLES-03339.html",
@@ -23138,6 +23221,7 @@ games = {
     	'id': 'SLES00041',
 	'title': "PANZER GENERAL",
         'pic0': 'https://images.launchbox-app.com/7b68a381-2594-4560-a4e8-ffc8058cc0a1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Panzer%20General%20%28USA%29_jp2.zip',
     },
     'SLES04048': {
         'url': "games/P/P/SLES-04048.html",
@@ -23157,7 +23241,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12558': {
         'url': "games/P/P/SLES-02558.html",
@@ -23165,7 +23250,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02559': {
         'url': "games/P/P/SLES-02559.html",
@@ -23173,7 +23259,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12559': {
         'url': "games/P/P/SLES-02559.html",
@@ -23181,7 +23268,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02560': {
         'url': "games/P/P/SLES-02560.html",
@@ -23189,7 +23277,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12560': {
         'url': "games/P/P/SLES-02560.html",
@@ -23197,7 +23286,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02561': {
         'url': "games/P/P/SLES-02561.html",
@@ -23205,7 +23295,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12561': {
         'url': "games/P/P/SLES-02561.html",
@@ -23213,7 +23304,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02562': {
         'url': "games/P/P/SLES-02562.html",
@@ -23221,7 +23313,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12562': {
         'url': "games/P/P/SLES-02562.html",
@@ -23229,7 +23322,8 @@ games = {
 	'title': "PARASITE EVE 2",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES03108': {
         'url': "games/P/P/SLES-03108.html",
@@ -23282,6 +23376,7 @@ games = {
 	'title': "PERFECT WEAPON",
         'pic0': 'https://images.launchbox-app.com/4410f3b9-46e1-49e5-a46e-ad1c9eb5833d.png',
         'pic1': 'https://images.launchbox-app.com/5b5b0378-2479-4f9b-9aeb-e427dda22c45.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Perfect%20Weapon%20%28USA%29_jp2.zip',
     },
     'SLES00685': {
         'url': "games/P/P/SLES-00685.html",
@@ -23289,6 +23384,7 @@ games = {
 	'title': "PERFECT WEAPON",
         'pic0': 'https://images.launchbox-app.com/4410f3b9-46e1-49e5-a46e-ad1c9eb5833d.png',
         'pic1': 'https://images.launchbox-app.com/5b5b0378-2479-4f9b-9aeb-e427dda22c45.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Perfect%20Weapon%20%28USA%29_jp2.zip',
     },
     'SLES00686': {
         'url': "games/P/P/SLES-00686.html",
@@ -23296,6 +23392,7 @@ games = {
 	'title': "PERFECT WEAPON",
         'pic0': 'https://images.launchbox-app.com/4410f3b9-46e1-49e5-a46e-ad1c9eb5833d.png',
         'pic1': 'https://images.launchbox-app.com/5b5b0378-2479-4f9b-9aeb-e427dda22c45.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Perfect%20Weapon%20%28USA%29_jp2.zip',
     },
     'SCES00981': {
         'url': "games/P/P/SCES-00981.html",
@@ -23379,6 +23476,7 @@ games = {
 	'title': "PITFALL 3D - BEYOND THE JUNGLE",
         'pic0': 'https://images.launchbox-app.com/14a8f592-0a98-429d-93cf-f8c3054f5945.png',
         'pic1': 'https://images.launchbox-app.com/72ae0527-d694-4ae4-8830-1aa2d570bd59.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pitfall%203D%20-%20Beyond%20the%20Jungle%20%28USA%29_jp2.zip',
     },
     'SLES00836': {
         'url': "games/P/P/SLES-00836.html",
@@ -23386,6 +23484,7 @@ games = {
 	'title': "PITFALL 3D - BEYOND THE JUNGLE",
         'pic0': 'https://images.launchbox-app.com/14a8f592-0a98-429d-93cf-f8c3054f5945.png',
         'pic1': 'https://images.launchbox-app.com/72ae0527-d694-4ae4-8830-1aa2d570bd59.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pitfall%203D%20-%20Beyond%20the%20Jungle%20%28USA%29_jp2.zip',
     },
     'SLES00837': {
         'url': "games/P/P/SLES-00837.html",
@@ -23393,6 +23492,7 @@ games = {
 	'title': "PITFALL 3D - BEYOND THE JUNGLE",
         'pic0': 'https://images.launchbox-app.com/14a8f592-0a98-429d-93cf-f8c3054f5945.png',
         'pic1': 'https://images.launchbox-app.com/72ae0527-d694-4ae4-8830-1aa2d570bd59.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pitfall%203D%20-%20Beyond%20the%20Jungle%20%28USA%29_jp2.zip',
     },
     'SLES02087': {
         'url': "games/P/P/SLES-02087.html",
@@ -23405,6 +23505,7 @@ games = {
 	'title': "PLANET OF THE APES",
         'pic0': 'https://images.launchbox-app.com/a2551c64-996e-430a-aa4d-dbeee342e9ef.png',
         'pic1': 'https://images.launchbox-app.com/575392f0-0f46-4e6c-9b98-4c73f8bac582.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Planet%20of%20the%20Apes%20%28USA%29_jp2.zip',
     },
     'SLES00319': {
         'url': "games/P/P/SLES-00319.html",
@@ -23458,6 +23559,9 @@ games = {
         'url': "games/P/P/SLES-01378.html",
     	'id': 'SLES01378',
 	'title': "POCKET FIGHTER",
+        'pic0': 'https://images.launchbox-app.com/512245cc-171c-46e4-be91-dd90fd90af07.png',
+        'pic1': 'https://cdn.mobygames.com/promos/7640829-pocket-fighter-screenshot.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pocket%20Fighter%20%28USA%29_jp2.zip',
     },
     'SLES00168': {
         'url': "games/P/P/SLES-00168.html",
@@ -23469,6 +23573,7 @@ games = {
     	'id': 'SCES00886',
 	'title': "POINT BLANK",
         'pic0': 'https://images.launchbox-app.com/3551ee41-ac47-4bf1-ab42-ad490ebc59c7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Point%20Blank%20%28USA%29_jp2.zip',
     },
     'SCES02180': {
         'url': "games/P/P/SCES-02180.html",
@@ -23476,6 +23581,7 @@ games = {
 	'title': "POINT BLANK 2",
         'pic0': 'https://images.launchbox-app.com/08bd3f78-6ecd-4341-b46e-d960396c9f8c.png',
         'pic1': 'https://images.launchbox-app.com/5c4ddf22-7085-4520-95bd-619e16126921.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Point%20Blank%202%20%28USA%29_jp2.zip',
     },
     'SCES03383': {
         'url': "games/P/P/SCES-03383.html",
@@ -23487,6 +23593,8 @@ games = {
         'url': "games/P/P/SLES-02020.html",
     	'id': 'SLES02020',
 	'title': "PONG",
+        'pic0': 'https://images.launchbox-app.com/fa17d332-60f2-45ac-a9c3-2c2e11d1650d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pong%20-%20The%20Next%20Level%20%28USA%29_jp2.zip',
     },
     'SLES02697': {
         'url': "games/P/P/SLES-02697.html",
@@ -23537,16 +23645,25 @@ games = {
         'url': "games/P/P/SLES-03730.html",
     	'id': 'SLES03730',
 	'title': "POWER RANGERS - TIME FORCE",
+        'pic0': 'https://images.launchbox-app.com/55370d8c-8e75-458b-b55f-a96394e583f0.png',
+        'pic1': 'https://images.launchbox-app.com/800c4a8c-ddab-401a-b93f-c74c9af97902.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20-%20Time%20Force%20%28USA%29_jp2.zip',
     },
     'SLES03731': {
         'url': "games/P/P/SLES-03731.html",
     	'id': 'SLES03731',
 	'title': "POWER RANGERS - LA FORCE DU TEMPS",
+        'pic0': 'https://images.launchbox-app.com/55370d8c-8e75-458b-b55f-a96394e583f0.png',
+        'pic1': 'https://images.launchbox-app.com/800c4a8c-ddab-401a-b93f-c74c9af97902.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20-%20Time%20Force%20%28USA%29_jp2.zip',
     },
     'SLES00597': {
         'url': "games/P/P/SLES-00597.html",
     	'id': 'SLES00597',
 	'title': "POWER RANGERS ZEO - FULL TILT BATTLE PINBALL",
+        'pic0': 'https://images.launchbox-app.com/5cd1b611-2d9e-4bd6-988e-3f72c5709225.png',
+        'pic1': 'https://images.launchbox-app.com/835c47c0-c73b-4d87-aa99-64e0a64a227f.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20Zeo%20-%20Full%20Tilt%20Battle%20Pinball%20%28USA%29_jp2.zip',
     },
     'SLES00118': {
         'url': "games/P/P/SLES-00118.html",
@@ -23562,11 +23679,15 @@ games = {
         'url': "games/P/P/SLES-00785.html",
     	'id': 'SLES00785',
 	'title': "POY POY",
+        'pic0': 'https://images.launchbox-app.com/7882852a-4591-4ea0-bf33-cfbac6fbd47e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Poy%20Poy%20%28USA%29_jp2.zip',
     },
     'SLES01536': {
         'url': "games/P/P/SLES-01536.html",
     	'id': 'SLES01536',
 	'title': "POY POY 2",
+        'pic0': 'https://images.launchbox-app.com/c7f6bae7-443b-4fc3-813a-7a4968571b34.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Poy%20Poy%202%20%28Europe%29_jp2.zip',
     },
     'SLES00738': {
         'url': "games/P/P/SLES-00738.html",
@@ -23612,11 +23733,16 @@ games = {
         'url': "games/P/P/SLES-03284.html",
     	'id': 'SLES03284',
 	'title': "PRISM LAND",
+        'pic0': 'https://images.launchbox-app.com/5f5caa2c-69a7-4af5-9693-58ab3318aa5f.png',
+        'pic1': 'https://images.launchbox-app.com/cc883666-c7d9-46a0-94fc-44016a6904ad.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Prism%20Land%20Story%20%28Europe%29_jp2.zip',
     },
     'SLES01559': {
         'url': "games/P/P/SLES-01559.html",
     	'id': 'SLES01559',
 	'title': "PRO 18 WORLD TOUR GOLF",
+        'pic0': 'https://images.launchbox-app.com/7a6d0ccb-224f-48e2-be28-3b2e365da497.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%2018%20-%20World%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLES04052': {
         'url': "games/P/P/SLES-04052.html",
@@ -23657,16 +23783,25 @@ games = {
         'url': "games/P/P/SLES-02466.html",
     	'id': 'SLES02466',
 	'title': "PRO PINBALL - FANTASTIC JOURNEY",
+        'pic0': 'https://images.launchbox-app.com/8ac45292-617f-48e5-a8f4-318304c5035b.png',
+        'pic1': 'https://images.launchbox-app.com/1fee3fd0-ae07-42f0-880c-b9e18c7161d6.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%20Pinball%20-%20Fantastic%20Journey%20%28USA%29_jp2.zip',
     },
     'SLES00259': {
         'url': "games/P/P/SLES-00259.html",
     	'id': 'SLES00259',
 	'title': "PRO PINBALL - THE WEB",
+        'pic0': 'https://images.launchbox-app.com/ba2fc3bf-3416-4004-b260-f4fbe285ad69.png',
+        'pic1': 'https://images.launchbox-app.com/2691699f-15d2-4caf-ae6b-a33df49cf9e1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro-Pinball%20%28USA%29_jp2.zip',
     },
     'SLES00606': {
         'url': "games/P/P/SLES-00606.html",
     	'id': 'SLES00606',
 	'title': "PRO PINBALL - TIMESHOCK!",
+        'pic0': 'https://images.launchbox-app.com/4b299a80-63fb-4b15-a6ac-c60d649c9291.png',
+        'pic1': 'https://images.launchbox-app.com/bc0071db-75f1-4758-89e1-704aa20a219a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pro%20Pinball%20-%20Timeshock%21%20%28USA%29_jp2.zip',
     },
     'SLES03962': {
         'url': "games/P/P/SLES-03962.html",
@@ -23682,6 +23817,8 @@ games = {
         'url': "games/P/P/SLES-00929.html",
     	'id': 'SLES00929',
 	'title': "PSYBADEK",
+        'pic0': 'https://images.launchbox-app.com/461530c8-66f2-4607-9c7c-219a6dbb2216.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Psybadek%20%28USA%29_jp2.zip',
     },
     'SLES00070': {
         'url': "games/P/P/SLES-00070.html",
@@ -23747,6 +23884,9 @@ games = {
         'url': "games/P/Q/SLES-01534.html",
     	'id': 'SLES01534',
 	'title': "QUAKE II",
+        'pic0': 'https://images.launchbox-app.com/348dbda8-fc70-4e9d-8898-f8a7ea00722d.png',
+        'pic1': 'https://images.launchbox-app.com/cc7e7df4-7a70-4f78-a2fe-fdc30d810158.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Quake%20II%20%28USA%29_jp2.zip',
     },
     'SLES03480': {
         'url': "games/P/Q/SLES-03480.html",
@@ -29634,6 +29774,9 @@ games = {
         'url': "games/J/A/SLPS-02586.html",
     	'id': 'SLPS02586',
 	'title': "ACTION PUZZLE - PRISM LAND [HONKAKUHA DE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/5f5caa2c-69a7-4af5-9693-58ab3318aa5f.png',
+        'pic1': 'https://images.launchbox-app.com/cc883666-c7d9-46a0-94fc-44016a6904ad.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Prism%20Land%20Story%20%28Europe%29_jp2.zip',
     },
     'SLPS00298': {
         'url': "games/J/A/SLPS-00298.html",
@@ -43630,16 +43773,28 @@ games = {
         'url': "games/J/M/SLPS-00500.html",
     	'id': 'SLPS00500',
 	'title': "MEGAMI IBUNROKU PERSONA",
+        'pic0': 'https://images.launchbox-app.com/bec36843-e1e3-41b8-867b-222a9b459633.png',
+        'pic1': 'https://images.launchbox-app.com/e573ee2d-85a7-4117-af54-b28a8243cea8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RzHgXFk6V20',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Persona%20%28USA%29_jp2.zip',
     },
     'SLPS91029': {
         'url': "games/J/M/SLPS-91029.html",
     	'id': 'SLPS91029',
 	'title': "MEGAMI IBUNROKU PERSONA [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/bec36843-e1e3-41b8-867b-222a9b459633.png',
+        'pic1': 'https://images.launchbox-app.com/e573ee2d-85a7-4117-af54-b28a8243cea8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RzHgXFk6V20',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Persona%20%28USA%29_jp2.zip',
     },
     'SLPM87192': {
         'url': "games/J/M/SLPM-87192.html",
     	'id': 'SLPM87192',
 	'title': "MEGAMI IBUNROKU PERSONA [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/bec36843-e1e3-41b8-867b-222a9b459633.png',
+        'pic1': 'https://images.launchbox-app.com/e573ee2d-85a7-4117-af54-b28a8243cea8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RzHgXFk6V20',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Persona%20%28USA%29_jp2.zip',
     },
     'SLPS00435': {
         'url': "games/J/M/SLPS-00435.html",
@@ -47016,11 +47171,17 @@ games = {
         'url': "games/J/P/SCPS-45445.html",
     	'id': 'SCPS45445',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SLPS02345': {
         'url': "games/J/P/SLPS-02345.html",
     	'id': 'SLPS02345',
 	'title': "PAC-MAN WORLD",
+        'pic0': 'https://images.launchbox-app.com/4dbd031c-b843-4fb0-8ccc-18bad21bcb00.png',
+        'pic1': 'https://images.launchbox-app.com/447b573a-1de6-4e45-8795-2cf872996ab1.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pac-Man%20World%20%28USA%29_jp2.zip',
     },
     'SLPS00346': {
         'url': "games/J/P/SLPS-00346.html",
@@ -47090,6 +47251,7 @@ games = {
     	'id': 'SLPS00552',
 	'title': "PANZER GENERAL",
         'pic0': 'https://images.launchbox-app.com/7b68a381-2594-4560-a4e8-ffc8058cc0a1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Panzer%20General%20%28USA%29_jp2.zip',
     },
     'SLPM86695': {
         'url': "games/J/P/SLPM-86695.html",
@@ -47150,7 +47312,8 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45204': {
         'url': "games/J/P/SCPS-45203.html",
@@ -47158,7 +47321,8 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01230': {
         'url': "games/J/P/SLPS-01230.html",
@@ -47166,7 +47330,8 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01231': {
         'url': "games/J/P/SLPS-01230.html",
@@ -47174,7 +47339,8 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3'
+        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45467': {
         'url': "games/J/P/SCPS-45467.html",
@@ -47182,7 +47348,8 @@ games = {
 	'title': "PARASITE EVE II [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45468': {
         'url': "games/J/P/SCPS-45467.html",
@@ -47190,7 +47357,8 @@ games = {
 	'title': "PARASITE EVE II [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02480': {
         'url': "games/J/P/SLPS-02480.html",
@@ -47198,7 +47366,8 @@ games = {
 	'title': "PARASITE EVE II [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02481': {
         'url': "games/J/P/SLPS-02480.html",
@@ -47206,7 +47375,8 @@ games = {
 	'title': "PARASITE EVE II [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91479': {
         'url': "games/J/P/SLPS-91479.html",
@@ -47214,7 +47384,8 @@ games = {
 	'title': "PARASITE EVE II [PSONE BOOKS] [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91480': {
         'url': "games/J/P/SLPS-91479.html",
@@ -47222,7 +47393,8 @@ games = {
 	'title': "PARASITE EVE II [PSONE BOOKS] [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02779': {
         'url': "games/J/P/SLPS-02779.html",
@@ -47230,7 +47402,8 @@ games = {
 	'title': "PARASITE EVE II [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02780': {
         'url': "games/J/P/SLPS-02779.html",
@@ -47238,7 +47411,8 @@ games = {
 	'title': "PARASITE EVE II [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/b51ed85b-1d8e-4c69-b9df-857ecd7edf3e.png',
         'pic1': 'https://images.launchbox-app.com/79c1be55-afe3-4cc6-99ce-a58ec7a9ff64.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=y7BCsKdZBVU&list=PL73256473334F2CF6&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20II%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01539': {
         'url': "games/J/P/SLPS-01539.html",
@@ -47592,6 +47766,8 @@ games = {
         'url': "games/J/P/SLPM-87045.html",
     	'id': 'SLPM87045',
 	'title': "PIPE DREAMS 3D [WORLD GREATEST HITS]",
+        'pic0': 'https://images.launchbox-app.com/2a49d3ec-0b4b-4730-88b5-e12948de8df2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pipe%20Dreams%203D%20%28USA%29_jp2.zip',
     },
     'SLPS00082': {
         'url': "games/J/P/SLPS-00082.html",
@@ -47610,6 +47786,7 @@ games = {
 	'title': "PITFALL 3D",
         'pic0': 'https://images.launchbox-app.com/14a8f592-0a98-429d-93cf-f8c3054f5945.png',
         'pic1': 'https://images.launchbox-app.com/72ae0527-d694-4ae4-8830-1aa2d570bd59.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pitfall%203D%20-%20Beyond%20the%20Jungle%20%28USA%29_jp2.zip',
     },
     'SLPS02290': {
         'url': "games/J/P/SLPS-02290.html",
@@ -47775,11 +47952,17 @@ games = {
         'url': "games/J/P/SLPS-01360.html",
     	'id': 'SLPS01360',
 	'title': "POCKET FIGHTER",
+        'pic0': 'https://images.launchbox-app.com/512245cc-171c-46e4-be91-dd90fd90af07.png',
+        'pic1': 'https://cdn.mobygames.com/promos/7640829-pocket-fighter-screenshot.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pocket%20Fighter%20%28USA%29_jp2.zip',
     },
     'SLPS91191': {
         'url': "games/J/P/SLPS-91191.html",
     	'id': 'SLPS91191',
 	'title': "POCKET FIGHTER [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/512245cc-171c-46e4-be91-dd90fd90af07.png',
+        'pic1': 'https://cdn.mobygames.com/promos/7640829-pocket-fighter-screenshot.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Pocket%20Fighter%20%28USA%29_jp2.zip',
     },
     'SCPS10104': {
         'url': "games/J/P/SCPS-10104.html",
@@ -48070,6 +48253,9 @@ games = {
         'url': "games/J/P/SLPS-00490.html",
     	'id': 'SLPS00490',
 	'title': "POWER RANGERS PINBALL",
+        'pic0': 'https://images.launchbox-app.com/5cd1b611-2d9e-4bd6-988e-3f72c5709225.png',
+        'pic1': 'https://images.launchbox-app.com/835c47c0-c73b-4d87-aa99-64e0a64a227f.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Power%20Rangers%20Zeo%20-%20Full%20Tilt%20Battle%20Pinball%20%28USA%29_jp2.zip',
     },
     'SLPM86629': {
         'url': "games/J/P/SLPM-86629.html",
@@ -48135,6 +48321,9 @@ games = {
         'url': "games/J/P/SLPS-01252.html",
     	'id': 'SLPS01252',
 	'title': "PRISM LAND STORY",
+        'pic0': 'https://images.launchbox-app.com/5f5caa2c-69a7-4af5-9693-58ab3318aa5f.png',
+        'pic1': 'https://images.launchbox-app.com/cc883666-c7d9-46a0-94fc-44016a6904ad.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Prism%20Land%20Story%20%28Europe%29_jp2.zip',
     },
     'SLPS02360': {
         'url': "games/J/P/SLPS-02360.html",
@@ -51618,6 +51807,8 @@ games = {
         'url': "games/J/S/SLPM-86868.html",
     	'id': 'SLPM86868',
 	'title': "SIMPLE 1500 SERIES VOL.069 - THE PUTTER GOLF",
+        'pic0': 'https://images.launchbox-app.com/11e493ad-3d71-46f7-8b4d-d2d968e71a75.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Putter%20Golf%20%28USA%29_jp2.zip',
     },
     'SLPM86869': {
         'url': "games/J/S/SLPM-86869.html",
