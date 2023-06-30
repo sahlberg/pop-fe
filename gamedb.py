@@ -4,6 +4,7 @@ games = {
     	'id': 'SCPS91325',
 	'title': "UM JAMMER LAMMY [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
     'SLPS01767': {
         'url': "games/J/U/SLPS-01767.html",
@@ -9213,6 +9214,9 @@ games = {
         'url': "games/U/S/SLUS-01069.html",
     	'id': 'SLUS01069',
 	'title': "SIM THEME PARK",
+        'pic0': 'https://images.launchbox-app.com/ed232d23-13c2-4f78-b464-5742d66c6cff.png',
+        'pic1': 'https://images.launchbox-app.com/07384a4e-fcd3-486a-96c0-eebe770ca34c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Theme%20Park%20%28USA%29_jp2.zip',
     },
     'SLUS00113': {
         'url': "games/U/S/SLUS-00113.html",
@@ -9875,6 +9879,9 @@ games = {
         'url': "games/U/T/SLUS-00813.html",
     	'id': 'SLUS00813',
 	'title': "T.R.A.G. - TACTICAL RESCUE ASSAULT GROUP - MISSION OF MERCY",
+        'pic0': 'https://images.launchbox-app.com/1389d4db-7a88-4c83-9bbe-5f35572873d3.png',
+        'pic1': 'https://images.launchbox-app.com/cfbca703-1fcd-4c3b-aab5-ffd29effaa7d.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/T.R.A.G.%20-%20Mission%20of%20Mercy%20%28USA%29_jp2.zip',
     },
     'SLUS00787': {
         'url': "games/U/T/SLUS-00787.html",
@@ -9888,6 +9895,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/acef890e-a336-4b3e-8fe2-609acf87e648.png',
         'pic1': 'https://images.launchbox-app.com/ac8e1c36-8f81-4741-b85b-899fb09fb222.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tactics%20Ogre%20%28USA%29_jp2.zip',
     },
     'SLUS00660': {
         'url': "games/U/T/SLUS-00660.html",
@@ -9910,6 +9918,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/728bd369-d733-435b-a542-38a4240bfa3d.png',
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
     },
     'SLUS01355': {
         'url': "games/U/T/SLUS-01355.html",
@@ -9983,6 +9992,7 @@ games = {
 	'title': "TEKKEN 2",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
     },
     'SLUS00402': {
         'url': "games/U/T/SLUS-00402.html",
@@ -9990,6 +10000,7 @@ games = {
 	'title': "TEKKEN 3",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SLUS00959': {
         'url': "games/U/T/SLUS-00959.html",
@@ -10000,11 +10011,15 @@ games = {
         'url': "games/U/T/SLUS-00283.html",
     	'id': 'SLUS00283',
 	'title': "TEMPEST X3",
+        'pic0': 'https://images.launchbox-app.com/5fb0c434-4865-4856-b1f3-2a463fcff8f5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tempest%20X3%20%28USA%29_jp2.zip',
     },
     'SLUS00377': {
         'url': "games/U/T/SLUS-00377.html",
     	'id': 'SLUS00377',
 	'title': "TEN PIN ALLEY",
+        'pic0': 'https://images.launchbox-app.com/29f07594-5d5e-436f-805f-00f8d4685493.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ten%20Pin%20Alley%20%28USA%29_jp2.zip',
     },
     'SLUS00706': {
         'url': "games/U/T/SLUS-00706.html",
@@ -10012,6 +10027,7 @@ games = {
 	'title': "TENCHU - STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/c968443f-2224-40ad-9a69-1c4804bd9fbb.png',
         'pic1': 'https://images.launchbox-app.com/0ca31f9b-6611-4b2b-8fb3-be8cb1da6310.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%20-%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLUS00939': {
         'url': "games/U/T/SLUS-00939.html",
@@ -10019,6 +10035,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLUS01348': {
         'url': "games/U/T/SLUS-01348.html",
@@ -10034,11 +10051,16 @@ games = {
         'url': "games/U/T/SLUS-00487.html",
     	'id': 'SLUS00487',
 	'title': "TEST DRIVE 4",
+        'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%204%20%28USA%29_jp2.zip',
     },
     'SLUS00610': {
         'url': "games/U/T/SLUS-00610.html",
     	'id': 'SLUS00610',
 	'title': "TEST DRIVE 5",
+        'pic0': 'https://images.launchbox-app.com/2804424b-d164-4b64-ae83-55a084e829fa.png',
+        'pic1': 'https://images.launchbox-app.com/b283d37a-11e5-492c-83cd-525952298ba9.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%205%20%28USA%29_jp2.zip',
     },
     'SLUS00839': {
         'url': "games/U/T/SLUS-00839.html",
@@ -10049,26 +10071,38 @@ games = {
         'url': "games/U/T/SLUS-01077.html",
     	'id': 'SLUS01077',
 	'title': "TEST DRIVE LE MANS",
+        'pic0': 'https://images.launchbox-app.com/4f0b0f5f-23ea-4e8d-90f9-ffff575cfe4a.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Le%20Mans%20%28USA%29_jp2.zip',
     },
     'SLUS00396': {
         'url': "games/U/T/SLUS-00396.html",
     	'id': 'SLUS00396',
 	'title': "TEST DRIVE OFF-ROAD",
+        'pic0': 'https://images.launchbox-app.com/b9180230-2937-4d04-9245-8afc77743c27.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Off-Road%20%28USA%29_jp2.zip',
     },
     'SLUS00609': {
         'url': "games/U/T/SLUS-00609.html",
     	'id': 'SLUS00609',
 	'title': "TEST DRIVE OFF-ROAD 2",
+        'pic0': 'https://images.launchbox-app.com/64fee22c-bc28-47d2-a736-9bd0fed8c3c5.png',
+        'pic1': 'https://images.launchbox-app.com/281c8c05-cd02-4a57-bd4a-947345705826.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Off-Road%202%20%28USA%29_jp2.zip',
     },
     'SLUS00840': {
         'url': "games/U/T/SLUS-00840.html",
     	'id': 'SLUS00840',
 	'title': "TEST DRIVE OFF-ROAD 3",
+        'pic0': 'https://images.launchbox-app.com/5e1ce555-d824-456b-b0b2-8a055bff2435.png',
+        'pic1': 'https://images.launchbox-app.com/4cbfc156-532a-4e54-93a1-8d72326e958b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Off-Road%203%20%28USA%29_jp2.zip',
     },
     'SLUS00338': {
         'url': "games/U/T/SLUS-00338.html",
     	'id': 'SLUS00338',
 	'title': "TETRIS PLUS",
+        'pic0': 'https://images.launchbox-app.com/c23ed97f-8719-424c-b044-388c48d2d348.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tetris%20Plus%20%28USA%29_jp2.zip',
     },
     'SCUS94906': {
         'url': "games/U/T/SCUS-94906.html",
@@ -10305,6 +10339,7 @@ games = {
 	'title': "THE UNHOLY WAR",
         'pic0': 'https://images.launchbox-app.com/89cab7c6-9f45-4de5-b867-21b0f758ba78.png',
         'snd0': 'https://www.youtube.com/watch?v=48kWqabQehM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Unholy%20War%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLUS01413': {
         'url': "games/U/T/SLUS-01413.html",
@@ -10361,6 +10396,9 @@ games = {
         'url': "games/U/T/SLUS-00017.html",
     	'id': 'SLUS00017',
 	'title': "THEME PARK",
+        'pic0': 'https://images.launchbox-app.com/ed232d23-13c2-4f78-b464-5742d66c6cff.png',
+        'pic1': 'https://images.launchbox-app.com/07384a4e-fcd3-486a-96c0-eebe770ca34c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Theme%20Park%20%28USA%29_jp2.zip',
     },
     'SLUS00845': {
         'url': "games/U/T/SLUS-00845.html",
@@ -10369,6 +10407,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d450e56c-0165-4e8b-b2c6-1f4bd0fcd87f.png',
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00858': {
         'url': "games/U/T/SLUS-00845.html",
@@ -10377,6 +10416,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d450e56c-0165-4e8b-b2c6-1f4bd0fcd87f.png',
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00935': {
         'url': "games/U/T/SLUS-00935.html",
@@ -10390,6 +10430,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/273b7b97-c6d9-4624-91a2-2ec5d761d20a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OvVS5tgBWc8',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Threads%20of%20Fate%20%28USA%29_jp2.zip',
     },
     'SLUS00727': {
         'url': "games/U/T/SLUS-00727.html",
@@ -10398,6 +10439,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
         'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
         'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thunder%20Force%20V%20-%20Perfect%20System%20%28USA%29_jp2.zip',
     },
     'SCUS94352': {
         'url': "games/U/T/SCUS-94352.html",
@@ -10405,6 +10447,7 @@ games = {
 	'title': "THUNDER TRUCK RALLY",
         'pic0': 'https://images.launchbox-app.com/8bd127a9-2996-4ddb-b6ab-9a67f3639657.png',
         'snd0': 'https://www.youtube.com/watch?v=hbsGgY1KHFo',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thunder%20Truck%20Rally%20%28USA%29_jp2.zip',
     },
     'SLUS00191': {
         'url': "games/U/T/SLUS-00191.html",
@@ -10412,6 +10455,7 @@ games = {
 	'title': "THUNDER STRIKE 2",
         'pic0': 'https://images.launchbox-app.com/e498b014-7f02-47ab-bd2e-9a720dd0d7dd.png',
         'snd0': 'https://www.youtube.com/watch?v=3wv9m78413U',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/ThunderStrike%202%20%28USA%29_jp2.zip',
     },
     'SLUS01273': {
         'url': "games/U/T/SLUS-01273.html",
@@ -10422,6 +10466,8 @@ games = {
         'url': "games/U/T/SLUS-00785.html",
     	'id': 'SLUS00785',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
+        'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLUS01054': {
         'url': "games/U/T/SLUS-01054.html",
@@ -10441,6 +10487,7 @@ games = {
 	'title': "TIME COMMANDO",
         'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Commando%20%28USA%29_jp2.zip',
     },
     'SLUS00405': {
         'url': "games/U/T/SLUS-00405.html",
@@ -10449,6 +10496,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SLUS01336': {
         'url': "games/U/T/SLUS-01336.html",
@@ -10457,18 +10505,22 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
         'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
         'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
-        
-        
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20-%20Project%20Titan%20%28USA%29_jp2.zip',
     },
     'SCUS94427': {
         'url': "games/U/T/SCUS-94427.html",
     	'id': 'SCUS94427',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SLUS01393': {
         'url': "games/U/T/SLUS-01393.html",
     	'id': 'SLUS01393',
 	'title': "TINY TOON ADVENTURES - PLUCKY'S BIG ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/80708b7a-2aef-476d-8435-9f576a440979.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Plucky%27s%20Big%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLUS00638': {
         'url': "games/U/T/SLUS-00638.html",
@@ -10479,11 +10531,16 @@ games = {
         'url': "games/U/T/SLUS-00967.html",
     	'id': 'SLUS00967',
 	'title': "TINY TOON ADVENTURES - TOONENSTEIN - DARE TO SCARE!",
+        'pic0': 'https://images.launchbox-app.com/9cdd85c5-ea73-427d-8eab-210b1d574609.png',
+        'pic1': 'https://images.launchbox-app.com/b9faf425-60b5-412a-a097-6b4d88f94939.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Toonenstein%20-%20Dare%20to%20Scare%21%20%28USA%29_jp2.zip',
     },
     'SLUS00089': {
         'url': "games/U/T/SLUS-00089.html",
     	'id': 'SLUS00089',
 	'title': "TNN MOTORSPORTS HARDCORE 4X4",
+        'pic0': 'https://images.launchbox-app.com/43c6a063-a935-4e32-a7d4-3732fbac1318.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/TNN%20Motor%20Sports%20-%20Hardcore%204x4%20%28USA%29_jp2.zip',
     },
     'SLUS00980': {
         'url': "games/U/T/SLUS-00980.html",
@@ -10504,11 +10561,16 @@ games = {
         'url': "games/U/T/SLUS-00611.html",
     	'id': 'SLUS00611',
 	'title': "TOCA CHAMPIONSHIP RACING",
+        'pic0': 'https://images.launchbox-app.com/c971c772-1815-4c82-b01a-b5146bfaf622.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/TOCA%20Championship%20Racing%20%28USA%29_jp2.zip',
     },
     'SLUS00996': {
         'url': "games/U/T/SLUS-00996.html",
     	'id': 'SLUS00996',
 	'title': "TOCA 2 - TOURING CAR CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/a37dd6db-0875-4812-888d-449b801369a2.png',
+        'pic1': 'https://images.launchbox-app.com/f323b36f-c66f-46d5-9394-13d1cfc33ba3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/TOCA%202%20Touring%20Car%20Challenge%20%28USA%29_jp2.zip',
     },
     'SLUS00229': {
         'url': "games/U/T/SLUS-00229.html",
@@ -10524,16 +10586,24 @@ games = {
         'url': "games/U/T/SLUS-00947.html",
     	'id': 'SLUS00947',
 	'title': "TOM CLANCY'S RAINBOW SIX",
+        'pic0': 'https://images.launchbox-app.com/dffbb584-76ac-46ea-ad16-12cac265e49f.png',
+        'pic1': 'https://images.launchbox-app.com/e81beb65-fbd6-4602-a418-e29143c681b0.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20%28USA%29_jp2.zip',
     },
     'SLUS01473': {
         'url': "games/U/T/SLUS-01473.html",
     	'id': 'SLUS01473',
 	'title': "TOM CLANCY'S RAINBOW SIX - LONE WOLF",
+        'pic0': 'https://images.launchbox-app.com/42b338eb-28e7-45ab-9ed2-8bab4c490521.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20-%20Lone%20Wolf%20%28USA%29_jp2.zip',
     },
     'SLUS01108': {
         'url': "games/U/T/SLUS-01108.html",
     	'id': 'SLUS01108',
 	'title': "TOM CLANCY'S RAINBOW SIX - ROGUE SPEAR",
+        'pic0': 'https://images.launchbox-app.com/83652ae8-d6a8-4c32-96c8-48c704f8cb97.png',
+        'pic1': 'https://images.launchbox-app.com/dd5039a6-8969-4011-9454-ba6993d1193f.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20-%20Rogue%20Spear%20%28USA%29_jp2.zip',
     },
     'SLUS00152': {
         'url': "games/U/T/SLUS-00152.html",
@@ -10541,18 +10611,21 @@ games = {
 	'title': "TOMB RAIDER",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
         'pic1': 'https://images.launchbox-app.com/4a3ae71c-8dd7-4339-b211-6ccf4be40efe.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLUS00437': {
         'url': "games/U/T/SLUS-00437.html",
     	'id': 'SLUS00437',
 	'title': "TOMB RAIDER II",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLUS00691': {
         'url': "games/U/T/SLUS-00691.html",
     	'id': 'SLUS00691',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLUS00885': {
         'url': "games/U/T/SLUS-00885.html",
@@ -10560,6 +10633,7 @@ games = {
 	'title': "TOMB RAIDER - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLUS01311': {
         'url': "games/U/T/SLUS-01311.html",
@@ -10567,6 +10641,7 @@ games = {
 	'title': "TOMB RAIDER - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
         'snd0': "https://www.youtube.com/watch?v=AHdafkVxmM4&list=PLEeafQzOeklQxilKZvtXGrRtMa9S-wY5Q&index=1",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SCUS94236': {
         'url': "games/U/T/SCUS-94236.html",
@@ -10574,6 +10649,7 @@ games = {
 	'title': "TOMBA!",
         'pic0': 'https://images.launchbox-app.com/64817db9-e231-4786-8715-6c9506057b37.png',
         'pic1': 'https://images.launchbox-app.com/4890e420-0cc1-4cc5-a40f-e44b99c2b3e2.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomba%21%20%28USA%29_jp2.zip',
     },
     'SCUS94454': {
         'url': "games/U/T/SCUS-94454.html",
@@ -10593,6 +10669,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER",
         'pic0': 'https://images.launchbox-app.com/7b4c6692-2928-4cf9-9a84-7400dd5f6f4b.png',
         'pic1': 'https://images.launchbox-app.com/8e703149-8bcf-444c-bd36-c60ca1c4b5ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%20%28USA%29_jp2.zip',
     },
     'SLUS01066': {
         'url': "games/U/T/SLUS-01066.html",
@@ -10600,6 +10677,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 2",
         'pic0': 'https://images.launchbox-app.com/864e1893-462d-48cf-b96e-5acba45d517d.png',
         'pic1': 'https://images.launchbox-app.com/7e205b48-4165-43d8-ab8e-c89bf61e9bc2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29_jp2.zip',
     },
     'SLUS01419': {
         'url': "games/U/T/SLUS-01419.html",
@@ -10607,6 +10685,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 3",
         'pic0': 'https://images.launchbox-app.com/808a35f7-d1a0-4833-bf83-f69adb464cad.png',
         'pic1': 'https://images.launchbox-app.com/604b6243-75d9-4e0f-88c8-2973f5c1d12c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%203%20%28USA%29_jp2.zip',
     },
     'SLUS01485': {
         'url': "games/U/T/SLUS-01485.html",
@@ -10639,11 +10718,15 @@ games = {
         'url': "games/U/T/SLUS-00430.html",
     	'id': 'SLUS00430',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SLUS00979': {
         'url': "games/U/T/SLUS-00979.html",
     	'id': 'SLUS00979',
 	'title': "TRICK'N SNOWBOARDER",
+        'pic0': 'https://images.launchbox-app.com/703a987e-f51d-4641-a5b3-30bd2d879b5b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Trick%27n%20Snowboarder%20%28USA%29_jp2.zip',
     },
     'SLUS00237': {
         'url': "games/U/T/SLUS-00237.html",
@@ -10654,21 +10737,30 @@ games = {
         'url': "games/U/T/SLUS-00465.html",
     	'id': 'SLUS00465',
 	'title': "TRIPLE PLAY '98",
+        'pic0': 'https://images.launchbox-app.com/8b158504-49e9-45c5-a4be-532f1c2c6e4f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%2098%20%28USA%29_jp2.zip',
     },
     'SLUS00618': {
         'url': "games/U/T/SLUS-00618.html",
     	'id': 'SLUS00618',
 	'title': "TRIPLE PLAY '99",
+        'pic0': 'https://images.launchbox-app.com/be4ebe9e-b05b-4c71-8d99-6b361840e953.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%2099%20%28USA%29_jp2.zip',
     },
     'SLUS00827': {
         'url': "games/U/T/SLUS-00827.html",
     	'id': 'SLUS00827',
 	'title': "TRIPLE PLAY 2000",
+        'pic0': 'https://images.launchbox-app.com/ebb37a99-abf6-473c-b873-ab1185fed6a6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%202000%20%28USA%29_jp2.zip',
     },
     'SLUS01082': {
         'url': "games/U/T/SLUS-01082.html",
     	'id': 'SLUS01082',
 	'title': "TRIPLE PLAY 2001",
+        'pic0': 'https://images.launchbox-app.com/6691c5e4-a90c-44c0-bd61-a678e291e38a.png',
+        'pic1': 'https://images.launchbox-app.com/5cb1f3db-8209-4147-a11c-3f5ca1b1c681.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%202001%20%28USA%29_jp2.zip',
     },
     'SLUS01345': {
         'url': "games/U/T/SLUS-01345.html",
@@ -10701,6 +10793,7 @@ games = {
 	'title': "TWISTED METAL",
         'pic0': 'https://images.launchbox-app.com/c069c938-111b-481a-b877-59d898b86a76.png',
         'pic1': 'https://images.launchbox-app.com/084c9712-1f56-4656-bf88-919a42dd0679.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%20%28USA%29_jp2.zip',
     },
     'SCUS94306': {
         'url': "games/U/T/SCUS-94306.html",
@@ -10708,6 +10801,7 @@ games = {
 	'title': "TWISTED METAL 2",
         'pic0': 'https://images.launchbox-app.com/276d7e6e-6e5e-4531-ab30-4a2941562576.png',
         'pic1': 'https://images.launchbox-app.com/d799f5d8-ef7a-44e5-83db-ffd4fae5bfab.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%202%20%28USA%29_jp2.zip',
     },
     'SCUS94249': {
         'url': "games/U/T/SCUS-94249.html",
@@ -10715,6 +10809,7 @@ games = {
 	'title': "TWISTED METAL 3",
         'pic0': 'https://images.launchbox-app.com/79576e08-e136-4dd3-a770-37a16d79cd67.png',
         'pic1': 'https://images.launchbox-app.com/3d73f3fa-1820-4a0e-8ec4-991fb889a8c2.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%20III%20%28USA%29_jp2.zip',
     },
     'SCUS94560': {
         'url': "games/U/T/SCUS-94560.html",
@@ -10722,6 +10817,7 @@ games = {
 	'title': "TWISTED METAL 4",
         'pic0': 'https://images.launchbox-app.com/a807c806-e06c-4872-b6f6-de6b9ec15caa.png',
         'pic1': 'https://images.launchbox-app.com/5454746c-64bd-49a6-b4d0-4607a3277643.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%204%20%28USA%29_jp2.zip',
     },
     'SCUS94642': {
         'url': "games/U/T/SCUS-94642.html",
@@ -10739,6 +10835,7 @@ games = {
         'url': "games/U/U/SLUS-00864.html",
     	'id': 'SLUS00864',
 	'title': "ULTIMATE 8 BALL",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ultimate%208%20Ball%20%28USA%29_jp2.zip',
     },
     'SLUS01577': {
         'url': "games/U/U/SLUS-01577.html",
@@ -10755,6 +10852,7 @@ games = {
     	'id': 'SCUS94448',
 	'title': "UM JAMMER LAMMY",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
     'SLUS00686': {
         'url': "games/U/U/SLUS-00686.html",
@@ -10766,6 +10864,7 @@ games = {
     	'id': 'SLUS01091',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLUS01228':       {
         'url': "games/U/V/SLUS-01228.html",
@@ -27027,6 +27126,7 @@ games = {
 	'title': "TEKKEN 2",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
     },
     'SCES01237': {
         'url': "games/P/T/SCES-01237.html",
@@ -27034,6 +27134,7 @@ games = {
 	'title': "TEKKEN 3",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SLES02131': {
         'url': "games/P/T/SLES-02131.html",
@@ -27074,11 +27175,15 @@ games = {
         'url': "games/P/T/SLES-00316.html",
     	'id': 'SLES00316',
 	'title': "TEMPEST X3",
+        'pic0': 'https://images.launchbox-app.com/5fb0c434-4865-4856-b1f3-2a463fcff8f5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tempest%20X3%20%28USA%29_jp2.zip',
     },
     'SLES00534': {
         'url': "games/P/T/SLES-00534.html",
     	'id': 'SLES00534',
 	'title': "TEN PIN ALLEY",
+        'pic0': 'https://images.launchbox-app.com/29f07594-5d5e-436f-805f-00f8d4685493.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ten%20Pin%20Alley%20%28USA%29_jp2.zip',
     },
     'SLES01374':    {
         'url': "games/P/T/SLES-01374.html",
@@ -27086,6 +27191,7 @@ games = {
 	'title': "TENCHU - STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/c968443f-2224-40ad-9a69-1c4804bd9fbb.png',
         'pic1': 'https://images.launchbox-app.com/0ca31f9b-6611-4b2b-8fb3-be8cb1da6310.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%20-%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES02452': {
         'url': "games/P/T/SLES-02452.html",
@@ -27093,6 +27199,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES02462': {
         'url': "games/P/T/SLES-02462.html",
@@ -27100,6 +27207,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES02463': {
         'url': "games/P/T/SLES-02463.html",
@@ -27107,6 +27215,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES02464': {
         'url': "games/P/T/SLES-02464.html",
@@ -27114,6 +27223,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES02465': {
         'url': "games/P/T/SLES-02465.html",
@@ -27121,6 +27231,7 @@ games = {
 	'title': "TENCHU 2 - BIRTH OF THE STEALTH ASSASSINS",
         'pic0': 'https://images.launchbox-app.com/adf14d4a-b3ef-4411-a9c6-7485dd649f77.png',
         'pic1': 'https://images.launchbox-app.com/51b40128-8a08-4254-84f5-0d90c10b3d1a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tenchu%202%20-%20Birth%20of%20the%20Stealth%20Assassins%20%28USA%29_jp2.zip',
     },
     'SLES00935': {
         'url': "games/P/T/SLES-00935.html",
@@ -27136,6 +27247,8 @@ games = {
         'url': "games/P/T/SLES-00948.html",
     	'id': 'SLES00948',
 	'title': "TEST DRIVE 4",
+        'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%204%20%28USA%29_jp2.zip',
     },
     'SLES01179': {
         'url': "games/P/T/SLES-01179.html",
@@ -27146,6 +27259,9 @@ games = {
         'url': "games/P/T/SLES-01165.html",
     	'id': 'SLES01165',
 	'title': "TEST DRIVE 5",
+        'pic0': 'https://images.launchbox-app.com/2804424b-d164-4b64-ae83-55a084e829fa.png',
+        'pic1': 'https://images.launchbox-app.com/b283d37a-11e5-492c-83cd-525952298ba9.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%205%20%28USA%29_jp2.zip',
     },
     'SLES02752': {
         'url': "games/P/T/SLES-02752.html",
@@ -27156,11 +27272,15 @@ games = {
         'url': "games/P/T/SLES-00194.html",
     	'id': 'SLES00194',
 	'title': "TEST DRIVE OFF-ROAD",
+        'pic0': 'https://images.launchbox-app.com/b9180230-2937-4d04-9245-8afc77743c27.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Off-Road%20%28USA%29_jp2.zip',
     },
     'SLES00442': {
         'url': "games/P/T/SLES-00442.html",
     	'id': 'SLES00442',
 	'title': "TETRIS PLUS",
+        'pic0': 'https://images.launchbox-app.com/c23ed97f-8719-424c-b044-388c48d2d348.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tetris%20Plus%20%28USA%29_jp2.zip',
     },
     'SLES03858': {
         'url': "games/P/T/SLES-03858.html",
@@ -27640,6 +27760,7 @@ games = {
 	'title': "THE UNHOLY WAR",
         'pic0': 'https://images.launchbox-app.com/89cab7c6-9f45-4de5-b867-21b0f758ba78.png',
         'snd0': 'https://www.youtube.com/watch?v=48kWqabQehM',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Unholy%20War%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLES03551': {
         'url': "games/P/T/SLES-03551.html",
@@ -27835,6 +27956,9 @@ games = {
         'url': "games/P/T/SLES-00072.html",
     	'id': 'SLES00072',
 	'title': "THEME PARK",
+        'pic0': 'https://images.launchbox-app.com/ed232d23-13c2-4f78-b464-5742d66c6cff.png',
+        'pic1': 'https://images.launchbox-app.com/07384a4e-fcd3-486a-96c0-eebe770ca34c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Theme%20Park%20%28USA%29_jp2.zip',
     },
     'SLES02688': {
         'url': "games/P/T/SLES-02688.html",
@@ -27845,16 +27969,22 @@ games = {
         'url': "games/P/T/SCES-01700.html",
     	'id': 'SCES01700',
 	'title': "THIS IS FOOTBALL",
+        'pic0': 'https://images.launchbox-app.com/a22b6681-19ba-40ec-bde5-fb2becb327f0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/This%20Is%20Football%20%28Europe%29_jp2.zip',
     },
     'SCES01703': {
         'url': "games/P/T/SCES-01703.html",
     	'id': 'SCES01703',
 	'title': "THIS IS FOOTBALL",
+        'pic0': 'https://images.launchbox-app.com/a22b6681-19ba-40ec-bde5-fb2becb327f0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/This%20Is%20Football%20%28Europe%29_jp2.zip',
     },
     'SCES01882': {
         'url': "games/P/T/SCES-01882.html",
     	'id': 'SCES01882',
 	'title': "THIS IS FOOTBALL",
+        'pic0': 'https://images.launchbox-app.com/a22b6681-19ba-40ec-bde5-fb2becb327f0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/This%20Is%20Football%20%28Europe%29_jp2.zip',
     },
     'SCES02269': {
         'url': "games/P/T/SCES-02269.html",
@@ -27919,6 +28049,8 @@ games = {
         'url': "games/P/T/SLES-01674.html",
     	'id': 'SLES01674',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
+        'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLES02551': {
         'url': "games/P/T/SLES-02551.html",
@@ -27958,6 +28090,7 @@ games = {
 	'title': "TIME COMMANDO",
         'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Commando%20%28USA%29_jp2.zip',
     },
     'SLES03651': {
         'url': "games/P/T/SLES-03651.html",
@@ -27971,6 +28104,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SCES02776': {
         'url': "games/P/T/SCES-02776.html",
@@ -27979,6 +28113,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
         'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
         'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20-%20Project%20Titan%20%28USA%29_jp2.zip',
     },
     'SLES03459': {
         'url': "games/P/T/SLES-03459.html",
@@ -27989,26 +28124,41 @@ games = {
         'url': "games/P/T/SCES-01338.html",
     	'id': 'SCES01338',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SCES02072': {
         'url': "games/P/T/SCES-02072.html",
     	'id': 'SCES02072',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SCES02073': {
         'url': "games/P/T/SCES-02073.html",
     	'id': 'SCES02073',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SCES02074': {
         'url': "games/P/T/SCES-02074.html",
     	'id': 'SCES02074',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SCES02075': {
         'url': "games/P/T/SCES-02075.html",
     	'id': 'SCES02075',
 	'title': "TINY TANK",
+        'pic0': 'https://images.launchbox-app.com/0510b8f3-290a-44aa-b361-98ea6afba608.png',
+        'pic1': 'https://images.launchbox-app.com/8bc92088-fa27-4e6b-aa39-ff2ded8f3a27.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Tank%20%28USA%29_jp2.zip',
     },
     'SCES01996': {
         'url': "games/P/T/SCES-01996.html",
@@ -28029,21 +28179,32 @@ games = {
         'url': "games/P/T/SLES-03547.html",
     	'id': 'SLES03547',
 	'title': "TINY TOON ADVENTURES - PLUCKY'S BIG ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/80708b7a-2aef-476d-8435-9f576a440979.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Plucky%27s%20Big%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLES02923': {
         'url': "games/P/T/SLES-02923.html",
     	'id': 'SLES02923',
 	'title': "TINY TOON ADVENTURES - TOONENSTEIN DARE TO SCARE!",
+        'pic0': 'https://images.launchbox-app.com/9cdd85c5-ea73-427d-8eab-210b1d574609.png',
+        'pic1': 'https://images.launchbox-app.com/b9faf425-60b5-412a-a097-6b4d88f94939.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Toonenstein%20-%20Dare%20to%20Scare%21%20%28USA%29_jp2.zip',
     },
     'SLES02927': {
         'url': "games/P/T/SLES-02927.html",
     	'id': 'SLES02927',
 	'title': "TINY TOON ADVENTURES - TOONENSTEIN - GEISTERSTUNDE!",
+        'pic0': 'https://images.launchbox-app.com/9cdd85c5-ea73-427d-8eab-210b1d574609.png',
+        'pic1': 'https://images.launchbox-app.com/b9faf425-60b5-412a-a097-6b4d88f94939.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Toonenstein%20-%20Dare%20to%20Scare%21%20%28USA%29_jp2.zip',
     },
     'SLES02926': {
         'url': "games/P/T/SLES-02926.html",
     	'id': 'SLES02926',
 	'title': "TINY TOON ADVENTURES - TOONENSTEIN - LE CHATEAU HANTE",
+        'pic0': 'https://images.launchbox-app.com/9cdd85c5-ea73-427d-8eab-210b1d574609.png',
+        'pic1': 'https://images.launchbox-app.com/b9faf425-60b5-412a-a097-6b4d88f94939.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiny%20Toon%20Adventures%20-%20Toonenstein%20-%20Dare%20to%20Scare%21%20%28USA%29_jp2.zip',
     },
     'SLES00275': {
         'url': "games/P/T/SLES-00275.html",
@@ -28079,11 +28240,17 @@ games = {
         'url': "games/P/T/SLES-01542.html",
     	'id': 'SLES01542',
 	'title': "TOCA 2 - TOURING CARS",
+        'pic0': 'https://images.launchbox-app.com/a37dd6db-0875-4812-888d-449b801369a2.png',
+        'pic1': 'https://images.launchbox-app.com/f323b36f-c66f-46d5-9394-13d1cfc33ba3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/TOCA%202%20Touring%20Car%20Challenge%20%28USA%29_jp2.zip',
     },
     'SLES01547': {
         'url': "games/P/T/SLES-01547.html",
     	'id': 'SLES01547',
 	'title': "TOCA 2 - TOURING CARS",
+        'pic0': 'https://images.launchbox-app.com/a37dd6db-0875-4812-888d-449b801369a2.png',
+        'pic1': 'https://images.launchbox-app.com/f323b36f-c66f-46d5-9394-13d1cfc33ba3.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/TOCA%202%20Touring%20Car%20Challenge%20%28USA%29_jp2.zip',
     },
     'SLES00413': {
         'url': "games/P/T/SLES-00413.html",
@@ -28099,21 +28266,32 @@ games = {
         'url': "games/P/T/SLES-01136.html",
     	'id': 'SLES01136',
 	'title': "TOM CLANCY'S RAINBOW SIX",
+        'pic0': 'https://images.launchbox-app.com/dffbb584-76ac-46ea-ad16-12cac265e49f.png',
+        'pic1': 'https://images.launchbox-app.com/e81beb65-fbd6-4602-a418-e29143c681b0.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20%28USA%29_jp2.zip',
     },
     'SLES02372': {
         'url': "games/P/T/SLES-02372.html",
     	'id': 'SLES02372',
 	'title': "TOM CLANCY'S RAINBOW SIX",
+        'pic0': 'https://images.launchbox-app.com/dffbb584-76ac-46ea-ad16-12cac265e49f.png',
+        'pic1': 'https://images.launchbox-app.com/e81beb65-fbd6-4602-a418-e29143c681b0.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20%28USA%29_jp2.zip',
     },
     'SLES03888': {
         'url': "games/P/T/SLES-03888.html",
     	'id': 'SLES03888',
 	'title': "TOM CLANCY'S RAINBOW SIX - LONE WOLF",
+        'pic0': 'https://images.launchbox-app.com/42b338eb-28e7-45ab-9ed2-8bab4c490521.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20-%20Lone%20Wolf%20%28USA%29_jp2.zip',
     },
     'SLES02696': {
         'url': "games/P/T/SLES-02696.html",
     	'id': 'SLES02696',
 	'title': "TOM CLANCY'S RAINBOW SIX - ROGUE SPEAR",
+        'pic0': 'https://images.launchbox-app.com/83652ae8-d6a8-4c32-96c8-48c704f8cb97.png',
+        'pic1': 'https://images.launchbox-app.com/dd5039a6-8969-4011-9454-ba6993d1193f.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20-%20Rogue%20Spear%20%28USA%29_jp2.zip',
     },
     'SLES00024': {
         'url': "games/P/T/SLES-00024.html",
@@ -28121,6 +28299,7 @@ games = {
 	'title': "TOMB RAIDER",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
         'pic1': 'https://images.launchbox-app.com/4a3ae71c-8dd7-4339-b211-6ccf4be40efe.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLES00485': {
         'url': "games/P/T/SLES-00485.html",
@@ -28128,6 +28307,7 @@ games = {
 	'title': "TOMB RAIDER",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
         'pic1': 'https://images.launchbox-app.com/4a3ae71c-8dd7-4339-b211-6ccf4be40efe.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLES00486': {
         'url': "games/P/T/SLES-00486.html",
@@ -28135,118 +28315,138 @@ games = {
 	'title': "TOMB RAIDER",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
         'pic1': 'https://images.launchbox-app.com/4a3ae71c-8dd7-4339-b211-6ccf4be40efe.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLES00718': {
         'url': "games/P/T/SLES-00718.html",
     	'id': 'SLES00718',
 	'title': "TOMB RAIDER II - STARRING LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES00719': {
         'url': "games/P/T/SLES-00719.html",
     	'id': 'SLES00719',
 	'title': "TOMB RAIDER II - STARRING LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES00720': {
         'url': "games/P/T/SLES-00720.html",
     	'id': 'SLES00720',
 	'title': "TOMB RAIDER II - STARRING LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES00107': {
         'url': "games/P/T/SLES-00107.html",
     	'id': 'SLES00107',
 	'title': "TOMB RAIDER II - STARRING LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES01649': {
         'url': "games/P/T/SLES-01649.html",
     	'id': 'SLES01649',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES01682': {
         'url': "games/P/T/SLES-01682.html",
     	'id': 'SLES01682',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES01683': {
         'url': "games/P/T/SLES-01683.html",
     	'id': 'SLES01683',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES01684': {
         'url': "games/P/T/SLES-01684.html",
     	'id': 'SLES01684',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES01685': {
         'url': "games/P/T/SLES-01685.html",
     	'id': 'SLES01685',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLES02239': {
         'url': "games/P/T/SLES-02239.html",
     	'id': 'SLES02239',
 	'title': "TOMB RAIDER IV - LA REVELATION FINALE",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLES02238': {
         'url': "games/P/T/SLES-02238.html",
     	'id': 'SLES02238',
 	'title': "TOMB RAIDER IV - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLES02240': {
         'url': "games/P/T/SLES-02240.html",
     	'id': 'SLES02240',
 	'title': "TOMB RAIDER IV - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLES02241': {
         'url': "games/P/T/SLES-02241.html",
     	'id': 'SLES02241',
 	'title': "TOMB RAIDER IV - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLES02242': {
         'url': "games/P/T/SLES-02242.html",
     	'id': 'SLES02242',
 	'title': "TOMB RAIDER IV - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLES03331': {
         'url': "games/P/T/SLES-03331.html",
     	'id': 'SLES03331',
 	'title': "TOMB RAIDER V - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLES03336': {
         'url': "games/P/T/SLES-03336.html",
     	'id': 'SLES03336',
 	'title': "TOMB RAIDER V - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLES03334': {
         'url': "games/P/T/SLES-03334.html",
     	'id': 'SLES03334',
 	'title': "TOMB RAIDER V - DIE CHRONIK",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLES03335': {
         'url': "games/P/T/SLES-03335.html",
     	'id': 'SLES03335',
 	'title': "TOMB RAIDER V - LA LEGGENDA DI LARA CROFT",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLES03333': {
         'url': "games/P/T/SLES-03333.html",
     	'id': 'SLES03333',
 	'title': "TOMB RAIDER V - SUR LES TRACES DE LARA CROFT",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SCES01330': {
         'url': "games/P/T/SCES-01330.html",
@@ -28299,6 +28499,7 @@ games = {
 	'title': "TONY HAWK'S SKATEBOARDING",
         'pic0': 'https://images.launchbox-app.com/7b4c6692-2928-4cf9-9a84-7400dd5f6f4b.png',
         'pic1': 'https://images.launchbox-app.com/8e703149-8bcf-444c-bd36-c60ca1c4b5ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%20%28USA%29_jp2.zip',
     },
     'SLES02908': {
         'url': "games/P/T/SLES-02908.html",
@@ -28306,6 +28507,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 2",
         'pic0': 'https://images.launchbox-app.com/864e1893-462d-48cf-b96e-5acba45d517d.png',
         'pic1': 'https://images.launchbox-app.com/7e205b48-4165-43d8-ab8e-c89bf61e9bc2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29_jp2.zip',
     },
     'SLES02909': {
         'url': "games/P/T/SLES-02909.html",
@@ -28313,6 +28515,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 2",
         'pic0': 'https://images.launchbox-app.com/864e1893-462d-48cf-b96e-5acba45d517d.png',
         'pic1': 'https://images.launchbox-app.com/7e205b48-4165-43d8-ab8e-c89bf61e9bc2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29_jp2.zip',
     },
     'SLES02910': {
         'url': "games/P/T/SLES-02910.html",
@@ -28320,6 +28523,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 2",
         'pic0': 'https://images.launchbox-app.com/864e1893-462d-48cf-b96e-5acba45d517d.png',
         'pic1': 'https://images.launchbox-app.com/7e205b48-4165-43d8-ab8e-c89bf61e9bc2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29_jp2.zip',
     },
     'SLES03645': {
         'url': "games/P/T/SLES-03645.html",
@@ -28327,6 +28531,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 3",
         'pic0': 'https://images.launchbox-app.com/808a35f7-d1a0-4833-bf83-f69adb464cad.png',
         'pic1': 'https://images.launchbox-app.com/604b6243-75d9-4e0f-88c8-2973f5c1d12c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%203%20%28USA%29_jp2.zip',
     },
     'SLES03646': {
         'url': "games/P/T/SLES-03646.html",
@@ -28334,6 +28539,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 3",
         'pic0': 'https://images.launchbox-app.com/808a35f7-d1a0-4833-bf83-f69adb464cad.png',
         'pic1': 'https://images.launchbox-app.com/604b6243-75d9-4e0f-88c8-2973f5c1d12c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%203%20%28USA%29_jp2.zip',
     },
     'SLES03647': {
         'url': "games/P/T/SLES-03647.html",
@@ -28341,6 +28547,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 3",
         'pic0': 'https://images.launchbox-app.com/808a35f7-d1a0-4833-bf83-f69adb464cad.png',
         'pic1': 'https://images.launchbox-app.com/604b6243-75d9-4e0f-88c8-2973f5c1d12c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%203%20%28USA%29_jp2.zip',
     },
     'SLES03954': {
         'url': "games/P/T/SLES-03954.html",
@@ -28397,6 +28604,8 @@ games = {
         'url': "games/P/T/SLES-04127.html",
     	'id': 'SLES04127',
 	'title': "TOYS",
+        'pic0': 'https://images.launchbox-app.com/d32e1f7e-afb9-4f0c-a108-4c67b4ce643f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Toys%20%28Europe%29_jp2.zip',
     },
     'SLES00262':       {
         'url': "games/P/T/SLES-00262.html",
@@ -28417,26 +28626,36 @@ games = {
         'url': "games/P/T/SCES-00850.html",
     	'id': 'SCES00850',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SCES01070': {
         'url': "games/P/T/SCES-01070.html",
     	'id': 'SCES01070',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SCES01071': {
         'url': "games/P/T/SCES-01071.html",
     	'id': 'SCES01071',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SCES01072': {
         'url': "games/P/T/SCES-01072.html",
     	'id': 'SCES01072',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SCES01073': {
         'url': "games/P/T/SCES-01073.html",
     	'id': 'SCES01073',
 	'title': "TREASURES OF THE DEEP",
+        'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
     },
     'SLES04062': {
         'url': "games/P/T/SLES-04062.html",
@@ -28447,11 +28666,15 @@ games = {
         'url': "games/P/T/SLES-02304.html",
     	'id': 'SLES02304',
 	'title': "TRICK'N SNOWBOARDER",
+        'pic0': 'https://images.launchbox-app.com/703a987e-f51d-4641-a5b3-30bd2d879b5b.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Trick%27n%20Snowboarder%20%28USA%29_jp2.zip',
     },
     'SLES01791': {
         'url': "games/P/T/SLES-01791.html",
     	'id': 'SLES01791',
 	'title': "TRIPLE PLAY BASEBALL 2000",
+        'pic0': 'https://images.launchbox-app.com/ebb37a99-abf6-473c-b873-ab1185fed6a6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%202000%20%28USA%29_jp2.zip',
     },
     'SLES03953': {
         'url': "games/P/T/SLES-03953.html",
@@ -28496,6 +28719,7 @@ games = {
 	'title': "TWISTED METAL",
         'pic0': 'https://images.launchbox-app.com/c069c938-111b-481a-b877-59d898b86a76.png',
         'pic1': 'https://images.launchbox-app.com/084c9712-1f56-4656-bf88-919a42dd0679.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%20%28USA%29_jp2.zip',
     },
     'SCES00567': {
         'url': "games/P/T/SCES-00567.html",
@@ -28637,24 +28861,28 @@ games = {
     	'id': 'SCES01753',
 	'title': "UM JAMMER LAMMY",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
     'SLES02071': {
         'url': "games/P/U/SLES-02071.html",
     	'id': 'SLES02071',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES02354': {
         'url': "games/P/U/SLES-02354.html",
     	'id': 'SLES02354',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES02355': {
         'url': "games/P/U/SLES-02355.html",
     	'id': 'SLES02355',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES03810': {
         'url': "games/P/U/SLES-03810.html",
@@ -54636,6 +54864,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/acef890e-a336-4b3e-8fe2-609acf87e648.png',
         'pic1': 'https://images.launchbox-app.com/ac8e1c36-8f81-4741-b85b-899fb09fb222.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tactics%20Ogre%20%28USA%29_jp2.zip',
     },
     'SLPS02524': {
         'url': "games/J/T/SLPS-02524.html",
@@ -54644,6 +54873,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/acef890e-a336-4b3e-8fe2-609acf87e648.png',
         'pic1': 'https://images.launchbox-app.com/ac8e1c36-8f81-4741-b85b-899fb09fb222.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D8C_9u3JJSI&list=PL1B0191417CC31391&index=49',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tactics%20Ogre%20%28USA%29_jp2.zip',
     },
     'SLPS00116': {
         'url': "games/J/T/SLPS-00116.html",
@@ -54780,6 +55010,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/728bd369-d733-435b-a542-38a4240bfa3d.png',
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
     },
     'SLPS91111': {
         'url': "games/J/T/SLPS-91111.html",
@@ -54788,6 +55019,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/728bd369-d733-435b-a542-38a4240bfa3d.png',
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
     },
     'SCPS45507': {
         'url': "games/J/T/SCPS-45507.html",
@@ -55076,6 +55308,7 @@ games = {
 	'title': "TEKKEN 2",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
     },
     'SLPS91055': {
         'url': "games/J/T/SLPS-91055.html",
@@ -55083,6 +55316,7 @@ games = {
 	'title': "TEKKEN 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
     },
     'SCPS45213': {
         'url': "games/J/T/SCPS-45213.html",
@@ -55090,6 +55324,7 @@ games = {
 	'title': "TEKKEN 3",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SCPS45215': {
         'url': "games/J/T/SCPS-45215.html",
@@ -55097,6 +55332,7 @@ games = {
 	'title': "TEKKEN 3",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SLPS01300': {
         'url': "games/J/T/SLPS-01300.html",
@@ -55104,6 +55340,7 @@ games = {
 	'title': "TEKKEN 3",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SLPS91202': {
         'url': "games/J/T/SLPS-91202.html",
@@ -55111,6 +55348,7 @@ games = {
 	'title': "TEKKEN 3 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/11225aad-26ef-4b78-9a72-4ec77eed9567.png',
         'pic1': 'https://images.launchbox-app.com/2162d1b1-bfa1-44a3-8702-42187ef1ace3.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%203%20%28USA%29_jp2.zip',
     },
     'SLPS00365': {
         'url': "games/J/T/SLPS-00365.html",
@@ -55236,26 +55474,38 @@ games = {
         'url': "games/J/T/SLPS-01288.html",
     	'id': 'SLPS01288',
 	'title': "TEST DRIVE 4",
+        'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%204%20%28USA%29_jp2.zip',
     },
     'SLPS01964': {
         'url': "games/J/T/SLPS-01964.html",
     	'id': 'SLPS01964',
 	'title': "TEST DRIVE 5",
+        'pic0': 'https://images.launchbox-app.com/2804424b-d164-4b64-ae83-55a084e829fa.png',
+        'pic1': 'https://images.launchbox-app.com/b283d37a-11e5-492c-83cd-525952298ba9.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%205%20%28USA%29_jp2.zip',
     },
     'SLPS01965': {
         'url': "games/J/T/SLPS-01965.html",
     	'id': 'SLPS01965',
 	'title': "TEST DRIVE OFF-ROAD 2",
+        'pic0': 'https://images.launchbox-app.com/64fee22c-bc28-47d2-a736-9bd0fed8c3c5.png',
+        'pic1': 'https://images.launchbox-app.com/281c8c05-cd02-4a57-bd4a-947345705826.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%20Off-Road%202%20%28USA%29_jp2.zip',
     },
     'SLPS00466': {
         'url': "games/J/T/SLPS-00466.html",
     	'id': 'SLPS00466',
 	'title': "TETRIS PLUS",
+        'pic0': 'https://images.launchbox-app.com/c23ed97f-8719-424c-b044-388c48d2d348.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tetris%20Plus%20%28USA%29_jp2.zip',
     },
     'SLPS01720': {
         'url': "games/J/T/SLPS-01720.html",
     	'id': 'SLPS01720',
 	'title': "TETRIS PLUS [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/c23ed97f-8719-424c-b044-388c48d2d348.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tetris%20Plus%20%28USA%29_jp2.zip',
     },
     'SLPS02886': {
         'url': "games/J/T/SLPS-02886.html",
@@ -56036,11 +56286,17 @@ games = {
         'url': "games/J/T/SLPS-00175.html",
     	'id': 'SLPS00175',
 	'title': "THEME PARK",
+        'pic0': 'https://images.launchbox-app.com/ed232d23-13c2-4f78-b464-5742d66c6cff.png',
+        'pic1': 'https://images.launchbox-app.com/07384a4e-fcd3-486a-96c0-eebe770ca34c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Theme%20Park%20%28USA%29_jp2.zip',
     },
     'SLPS91013': {
         'url': "games/J/T/SLPS-91013.html",
     	'id': 'SLPS91013',
 	'title': "THEME PARK [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/ed232d23-13c2-4f78-b464-5742d66c6cff.png',
+        'pic1': 'https://images.launchbox-app.com/07384a4e-fcd3-486a-96c0-eebe770ca34c.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Theme%20Park%20%28USA%29_jp2.zip',
     },
     'SLPS02643': {
         'url': "games/J/T/SLPS-02643.html",
@@ -56069,6 +56325,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d450e56c-0165-4e8b-b2c6-1f4bd0fcd87f.png',
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01781': {
         'url': "games/J/T/SLPS-01780.html",
@@ -56077,6 +56334,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d450e56c-0165-4e8b-b2c6-1f4bd0fcd87f.png',
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02589': {
         'url': "games/J/T/SLPS-02589.html",
@@ -56090,6 +56348,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
         'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
         'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thunder%20Force%20V%20-%20Perfect%20System%20%28USA%29_jp2.zip',
     },
     'SLPS02211': {
         'url': "games/J/T/SLPS-02211.html",
@@ -56098,6 +56357,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb23cbee-feb4-44b8-a43c-bca9bb2d7c94.png',
         'pic1': 'https://images.launchbox-app.com/b1e4966e-778d-47dd-832f-66bd962787da.jpg',
         'snd0': 'https://www.youtube.com/watch?v=bOPJ5D5rb_U&list=PLRCWcYuqfcLyEK_mGbk0b19JrjP2bG-i0&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thunder%20Force%20V%20-%20Perfect%20System%20%28USA%29_jp2.zip',
     },
     'SLPS00094': {
         'url': "games/J/T/SLPS-00094.html",
@@ -56118,6 +56378,8 @@ games = {
         'url': "games/J/T/SLPS-02012.html",
     	'id': 'SLPS02012',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
+        'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLPS01017': {
         'url': "games/J/T/SLPS-01017.html",
@@ -56157,6 +56419,7 @@ games = {
 	'title': "TIME COMMANDO",
         'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Commando%20%28USA%29_jp2.zip',
     },
     'SLPS00666': {
         'url': "games/J/T/SLPS-00666.html",
@@ -56165,6 +56428,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SLPS00635': {
         'url': "games/J/T/SLPS-00635.html",
@@ -56173,6 +56437,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SCPS45334': {
         'url': "games/J/T/SCPS-45334.html",
@@ -56181,6 +56446,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SLPS91087': {
         'url': "games/J/T/SLPS-91087.html",
@@ -56189,6 +56455,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5221a89f-625f-4ff0-84ad-202f8c7c060f.png',
         'pic1': 'https://cdn.mobygames.com/promos/6010661-time-crisis-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=12QJhgcGmZQ&list=PL9EB1F88C47A0E11F&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20%28USA%29_jp2.zip',
     },
     'SCPS45514': {
         'url': "games/J/T/SCPS-45514.html",
@@ -56197,6 +56464,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
         'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
         'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20-%20Project%20Titan%20%28USA%29_jp2.zip',
     },
     'SLPS03188': {
         'url': "games/J/T/SLPS-03188.html",
@@ -56205,6 +56473,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e22f8fd-30f3-427a-a86e-2ac41f49b32a.png',
         'pic1': 'https://cdn.mobygames.com/promos/1232041-time-crisis-project-titan-concept-art.png',
         'snd0': 'https://www.youtube.com/watch?v=15KUtz9aZnM&list=PL04C38AD5DBCDCB15&index=2',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Crisis%20-%20Project%20Titan%20%28USA%29_jp2.zip',
     },
     'SLPS00383': {
         'url': "games/J/T/SLPS-00383.html",
@@ -56780,66 +57049,79 @@ games = {
         'url': "games/J/T/SLPM-87084.html",
     	'id': 'SLPM87084',
 	'title': "TOM CLANCY'S RAINBOW SIX [WORLD GREATEST HITS]",
+        'pic0': 'https://images.launchbox-app.com/dffbb584-76ac-46ea-ad16-12cac265e49f.png',
+        'pic1': 'https://images.launchbox-app.com/e81beb65-fbd6-4602-a418-e29143c681b0.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tom%20Clancy%27s%20Rainbow%20Six%20%28USA%29_jp2.zip',
     },
     'SLPS00617': {
         'url': "games/J/T/SLPS-00617.html",
     	'id': 'SLPS00617',
 	'title': "TOMB RAIDERS",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLPS91049': {
         'url': "games/J/T/SLPS-91049.html",
     	'id': 'SLPS91049',
 	'title': "TOMB RAIDERS [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLPS91433': {
         'url': "games/J/T/SLPS-91433.html",
     	'id': 'SLPS91433',
 	'title': "TOMB RAIDERS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/c525c3c0-35b3-44d2-a39a-9b7040a52e3f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20%28USA%29_jp2.zip',
     },
     'SLPS01200': {
         'url': "games/J/T/SLPS-01200.html",
     	'id': 'SLPS01200',
 	'title': "TOMB RAIDER II",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLPS91119': {
         'url': "games/J/T/SLPS-91119.html",
     	'id': 'SLPS91119',
 	'title': "TOMB RAIDER II [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLPS91434': {
         'url': "games/J/T/SLPS-91434.html",
     	'id': 'SLPS91434',
 	'title': "TOMB RAIDER II [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/6195f703-96b8-45a2-b68e-7c1df709f1a0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SCPS45385': {
         'url': "games/J/T/SCPS-45385.html",
     	'id': 'SCPS45385',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SCPS45386': {
         'url': "games/J/T/SCPS-45385.html",
     	'id': 'SCPS45386',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLPM86196': {
         'url': "games/J/T/SLPM-86196.html",
     	'id': 'SLPM86196',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLPM86197': {
         'url': "games/J/T/SLPM-86196.html",
     	'id': 'SLPM86197',
 	'title': "TOMB RAIDER III - ADVENTURES OF LARA CROFT",
         'pic0': 'https://images.launchbox-app.com/3156e12f-e1a4-4eff-bdbd-f1e76c6a38d6.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29_jp2.zip',
     },
     'SLPS02803': {
         'url': "games/J/T/SLPS-02803.html",
@@ -56847,6 +57129,7 @@ games = {
 	'title': "TOMB RAIDER - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLPM86896': {
         'url': "games/J/T/SLPM-86896.html",
@@ -56854,18 +57137,21 @@ games = {
 	'title': "TOMB RAIDER - THE LAST REVELATION [CAPKORE]",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
     'SLPM86779': {
         'url': "games/J/T/SLPM-86779.html",
     	'id': 'SLPM86779',
 	'title': "TOMB RAIDER V - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLPM87160': {
         'url': "games/J/T/SLPM-87160.html",
     	'id': 'SLPM87160',
 	'title': "TOMB RAIDER V - CHRONICLES [CAPKORE]",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLPS02350': {
         'url': "games/J/T/SLPS-02350.html",
@@ -56895,6 +57181,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER",
         'pic0': 'https://images.launchbox-app.com/7b4c6692-2928-4cf9-9a84-7400dd5f6f4b.png',
         'pic1': 'https://images.launchbox-app.com/8e703149-8bcf-444c-bd36-c60ca1c4b5ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%20%28USA%29_jp2.zip',
     },
     'SLPM86943': {
         'url': "games/J/T/SLPM-86943.html",
@@ -56902,6 +57189,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER [SUPERLITE 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/7b4c6692-2928-4cf9-9a84-7400dd5f6f4b.png',
         'pic1': 'https://images.launchbox-app.com/8e703149-8bcf-444c-bd36-c60ca1c4b5ba.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%20%28USA%29_jp2.zip',
     },
     'SLPM86751': {
         'url': "games/J/T/SLPM-86751.html",
@@ -56909,6 +57197,7 @@ games = {
 	'title': "TONY HAWK'S PRO SKATER 2",
         'pic0': 'https://images.launchbox-app.com/864e1893-462d-48cf-b96e-5acba45d517d.png',
         'pic1': 'https://images.launchbox-app.com/7e205b48-4165-43d8-ab8e-c89bf61e9bc2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29_jp2.zip',
     },
     'SLPS00430': {
         'url': "games/J/T/SLPS-00430.html",
@@ -57069,11 +57358,15 @@ games = {
         'url': "games/J/T/SLPS-00887.html",
     	'id': 'SLPS00887',
 	'title': "TRIPLE PLAY '98",
+        'pic0': 'https://images.launchbox-app.com/8b158504-49e9-45c5-a4be-532f1c2c6e4f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%2098%20%28USA%29_jp2.zip',
     },
     'SLPS01621': {
         'url': "games/J/T/SLPS-01621.html",
     	'id': 'SLPS01621',
 	'title': "TRIPLE PLAY '99",
+        'pic0': 'https://images.launchbox-app.com/be4ebe9e-b05b-4c71-8d99-6b361840e953.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Triple%20Play%2099%20%28USA%29_jp2.zip',
     },
     'SLPS00911': {
         'url': "games/J/T/SLPS-00911.html",
@@ -57302,6 +57595,7 @@ games = {
 	'title': "TWISTED METAL",
         'pic0': 'https://images.launchbox-app.com/c069c938-111b-481a-b877-59d898b86a76.png',
         'pic1': 'https://images.launchbox-app.com/084c9712-1f56-4656-bf88-919a42dd0679.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Twisted%20Metal%20%28USA%29_jp2.zip',
     },
     'SIPS60021': {
         'url': "games/J/T/SIPS-60021.html",
@@ -57438,18 +57732,21 @@ games = {
     	'id': 'SCPS45391',
 	'title': "UM JAMMER LAMMY",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
     'SCPS18011': {
         'url': "games/J/U/SCPS-18011.html",
     	'id': 'SCPS18011',
 	'title': "UM JAMMER LAMMY",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
     'SCPS91226': {
         'url': "games/J/U/SCPS-91226.html",
     	'id': 'SCPS91226',
 	'title': "UM JAMMER LAMMY [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/5adf27a0-00fe-493a-a9d6-f65bc9b2c7d7.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
 }
 
