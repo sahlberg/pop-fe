@@ -8343,6 +8343,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS90049': {
         'url': "games/U/R/SLUS-00797.html",
@@ -8350,6 +8352,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01291': {
         'url': "games/U/R/SLUS-01291.html",
@@ -8360,6 +8364,10 @@ games = {
         'url': "games/U/R/SLUS-00403.html",
     	'id': 'SLUS00403',
 	'title': "RAGE RACER",
+        'pic0': 'https://images.launchbox-app.com/20d8b0a4-e800-4bd5-9a7d-27b852a55543.png',
+        'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
     },
     'SLUS01461': {
         'url': "games/U/R/SLUS-01461.html",
@@ -8370,6 +8378,8 @@ games = {
         'url': "games/U/R/SLUS-00808.html",
     	'id': 'SLUS00808',
 	'title': "RAILROAD TYCOON II",
+        'pic0': 'https://images.launchbox-app.com/c9f170ee-d958-49b2-95a3-7012f63736c1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Railroad%20Tycoon%20II%20%28USA%29_jp2.zip',
     },
     'SCUS94308': {
         'url': "games/U/R/SCUS-94308.html",
@@ -8383,26 +8393,37 @@ games = {
     	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
     },
     'SLUS01065': {
         'url': "games/U/R/SLUS-01065.html",
     	'id': 'SLUS01065',
 	'title': "RAMPAGE THROUGH TIME",
+        'pic0': 'https://images.launchbox-app.com/bc259f02-4961-42e7-a202-38b2058195e2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20Through%20Time%20%28USA%29_jp2.zip',
     },
     'SLUS00549': {
         'url': "games/U/R/SLUS-00549.html",
     	'id': 'SLUS00549',
 	'title': "RAMPAGE WORLD TOUR",
+        'pic0': 'https://images.launchbox-app.com/8740c804-5e9e-4d7f-9398-4a30eef525f1.png',
+        'pic1': 'https://images.launchbox-app.com/d4d322fb-bc96-4fa4-8a87-7a9ba449ee97.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20World%20Tour%20%28USA%29_jp2.zip',
     },
     'SLUS00742': {
         'url': "games/U/R/SLUS-00742.html",
     	'id': 'SLUS00742',
 	'title': "RAMPAGE 2 - UNIVERSAL TOUR",
+        'pic0': 'https://images.launchbox-app.com/d90e8c9b-d253-4a60-997f-44216c9ab1d2.png',
+        'pic1': 'https://images.launchbox-app.com/bb9dbe96-4ef0-4e34-a7b5-7c9f8bcd2147.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%202%20-%20Universal%20Tour%20%28USA%29_jp2.zip',
     },
     'SLUS00542': {
         'url': "games/U/R/SLUS-00542.html",
     	'id': 'SLUS00542',
 	'title': "RASCAL",
+        'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rascal%20%28USA%29_jp2.zip',
     },
     'SLUS01575': {
         'url': "games/U/R/SLUS-01575.html",
@@ -8413,6 +8434,9 @@ games = {
         'url': "games/U/R/SLUS-00656.html",
     	'id': 'SLUS00656',
 	'title': "RAT ATTACK!",
+        'pic0': 'https://images.launchbox-app.com/64558e02-ba7a-46bb-bfab-1dfe37ed6a01.png',
+        'pic1': 'https://images.launchbox-app.com/f643a17f-254e-4d51-b7e7-ea609451c77a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rat%20Attack%21%20%28USA%29_jp2.zip',
     },
     'SLUS00534': {
         'url': "games/U/R/SLUS-00534.html",
@@ -8430,6 +8454,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
     },
     'SLUS01235': {
         'url': "games/U/R/SLUS-01235.html",
@@ -8437,11 +8462,15 @@ games = {
 	'title': "RAYMAN 2 - THE GREAT ESCAPE",
         'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
         'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29_jp2.zip',
     },
     'SLUS01265': {
         'url': "games/U/R/SLUS-01265.html",
     	'id': 'SLUS01265',
 	'title': "RAYMAN BRAIN GAMES",
+        'pic0': 'https://images.launchbox-app.com/3d1abfcf-5c61-47c1-b368-6792f59a3044.png',
+        'pic1': 'https://images.launchbox-app.com/b52e6a1b-f9a7-4da6-8f81-6d9e5c653514.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20Brain%20Games%20%28USA%29_jp2.zip',
     },
     'SLUS01458': {
         'url': "games/U/R/SLUS-01458.html",
@@ -8452,6 +8481,9 @@ games = {
         'url': "games/U/R/SLUS-00482.html",
     	'id': 'SLUS00482',
 	'title': "RAYSTORM",
+        'pic0': 'https://images.launchbox-app.com/386a7fd2-fc96-4663-8f22-93275d905e71.png',
+        'pic1': 'https://images.launchbox-app.com/4d32ab47-709a-40c9-8062-f45b76c56554.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RayStorm%20%28USA%29_jp2.zip',
     },
     'SLUS01322': {
         'url': "games/U/R/SLUS-01322.html",
@@ -8462,6 +8494,8 @@ games = {
         'url': "games/U/R/SLUS-01410.html",
     	'id': 'SLUS01410',
 	'title': "RAZOR RACING",
+        'pic0': 'https://images.launchbox-app.com/ad012dad-968e-4619-b111-eeeb714c9f34.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Razor%20Racing%20%28USA%29_jp2.zip',
     },
     'SLUS01285': {
         'url': "games/U/R/SLUS-01285.html",
@@ -8477,6 +8511,8 @@ games = {
         'url': "games/U/R/SLUS-01168.html",
     	'id': 'SLUS01168',
 	'title': "RC REVENGE",
+        'pic0': 'https://images.launchbox-app.com/234f637c-ed84-44ab-9de5-ea27975c3f45.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RC%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLUS00954': {
         'url': "games/U/R/SLUS-00954.html",
@@ -8487,11 +8523,17 @@ games = {
         'url': "games/U/R/SLUS-00857.html",
     	'id': 'SLUS00857',
 	'title': "READY 2 RUMBLE BOXING",
+        'pic0': 'https://images.launchbox-app.com/a824b4c3-5a78-4829-8396-2038bc413986.png',
+        'pic1': 'https://images.launchbox-app.com/037fdd69-bd97-472e-a435-689517d4f6e5.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ready%202%20Rumble%20Boxing%20%28USA%29_jp2.zip',
     },
     'SLUS01147': {
         'url': "games/U/R/SLUS-01147.html",
     	'id': 'SLUS01147',
 	'title': "READY 2 RUMBLE BOXING - ROUND 2",
+        'pic0': 'https://images.launchbox-app.com/4b49515f-c60f-4489-aab3-2984897fd271.png',
+        'pic1': 'https://images.launchbox-app.com/51e9ead3-d52e-4e39-b9e7-c4acecd9b884.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ready%202%20Rumble%20Boxing%20-%20Round%202%20%28USA%29_jp2.zip',
     },
     'SLUS00274': {
         'url': "games/U/R/SLUS-00274.html",
@@ -8514,6 +8556,8 @@ games = {
         'url': "games/U/R/SLUS-00843.html",
     	'id': 'SLUS00843',
 	'title': "REEL FISHING II",
+        'pic0': 'https://images.launchbox-app.com/eb187b9f-fb12-4658-af6b-8da69383e0c8.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Reel%20Fishing%20II%20%28USA%29_jp2.zip',
     },
     'SLUS00382': {
         'url': "games/U/R/SLUS-00382.html",
@@ -8530,6 +8574,8 @@ games = {
         'url': "games/U/R/SLUS-01507.html",
     	'id': 'SLUS01507',
 	'title': "RESCUE COPTER",
+        'pic0': 'https://images.launchbox-app.com/d8f11270-2331-4dca-93bd-6b8d8cd03c27.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rescue%20Copter%20%28USA%29_jp2.zip',
     },
     'SLUS01373': {
         'url': "games/U/R/SLUS-01373.html",
@@ -8544,7 +8590,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
         'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%20%28USA%29_jp2.zip',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%20%28USA%29_jp2.zip'
     },
     'SLUS00551': {
         'url': "games/U/R/SLUS-00551.html",
@@ -8630,33 +8676,46 @@ games = {
         'url': "games/U/R/SLUS-00184.html",
     	'id': 'SLUS00184',
 	'title': "RETURN FIRE",
+        'pic0': 'https://images.launchbox-app.com/276786ff-9e56-4657-94a4-87474f75e567.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Return%20Fire%20%28USA%29_jp2.zip',
     },
     'SLUS00851': {
         'url': "games/U/R/SLUS-00851.html",
     	'id': 'SLUS00851',
 	'title': "RE-VOLT",
+        'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
+        'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
     },
     'SLUS00012': {
         'url': "games/U/R/SLUS-00012.html",
     	'id': 'SLUS00012',
 	'title': "REVOLUTION X",
+        'pic0': 'https://images.launchbox-app.com/bcfd67d6-f8c5-4e53-a23a-ec558545f12e.png',
+        'pic1': 'https://images.launchbox-app.com/7ec44763-29cf-4487-9f65-998f2be9edfd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Revolution%20X%20%28USA%29_jp2.zip',
     },
     'SLUS01073': {
         'url': "games/U/R/SLUS-01073.html",
     	'id': 'SLUS01073',
 	'title': "RHAPSODY - A MUSICAL ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/5cafb393-c0ca-4ffa-b4fe-73a5be43a78b.png',
+        'pic1': 'https://images.launchbox-app.com/1b2ddf4f-5cff-4da0-9365-a105bd1fe7e6.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rhapsody%20-%20A%20Musical%20Adventure%20%28USA%29_jp2.zip',
     },
     'SCUS94300': {
         'url': "games/U/R/SCUS-94300.html",
     	'id': 'SCUS94300',
 	'title': "RIDGE RACER",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
     },
     'SLUS00540': {
         'url': "games/U/R/SLUS-00540.html",
     	'id': 'SLUS00540',
 	'title': "RIDGE RACER [GREATEST HITS]",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
     },
     'SLUS00214': {
         'url': "games/U/R/SLUS-00214.html",
@@ -8664,6 +8723,7 @@ games = {
 	'title': "RIDGE RACER REVOLUTION",
         'pic0': 'https://images.launchbox-app.com/469f5d70-b161-4768-a34b-8f6330ee8c60.png',
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
     },
     'SLUS00186': {
         'url': "games/U/R/SLUS-00186.html",
@@ -8678,11 +8738,15 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
     },
     'SLUS00616': {
         'url': "games/U/R/SLUS-00616.html",
     	'id': 'SLUS00616',
 	'title': "RISK",
+        'pic0': 'https://images.launchbox-app.com/fc84f165-2673-414e-bc46-9302d61358e1.png',
+        'pic1': 'https://images.launchbox-app.com/dd70b4c4-d479-45df-a30b-92b35e41f737.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Risk%20-%20The%20Game%20of%20Global%20Domination%20%28USA%29_jp2.zip',
     },
     'SLUS00681': {
         'url': "games/U/R/SLUS-00681.html",
@@ -8737,6 +8801,9 @@ games = {
         'url': "games/U/R/SLUS-00204.html",
     	'id': 'SLUS00204',
 	'title': "ROAD & TRACKS PRESENTS - THE NEED FOR SPEED",
+        'pic0': 'https://images.launchbox-app.com/5f362a3e-a780-4778-ae93-93d8c6c18624.png',
+        'pic1': 'https://images.launchbox-app.com/280bf9c4-6acd-48d8-9e54-b1380a4c5773.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20%26%20Track%20Presents%20-%20The%20Need%20for%20Speed%20%28USA%29_jp2.zip',
     },
     'SLUS00035': {
         'url': "games/U/R/SLUS-00035.html",
@@ -8744,6 +8811,7 @@ games = {
 	'title': "ROAD RASH",
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
     },
     'SLUS00524': {
         'url': "games/U/R/SLUS-00524.html",
@@ -8751,6 +8819,7 @@ games = {
 	'title': "ROAD RASH 3D",
         'pic0': 'https://images.launchbox-app.com/0d7c46ae-6fa0-4d11-85c0-eb16b3fd93cd.png',
         'pic1': 'https://images.launchbox-app.com/a6b3a640-1e2e-4d1f-b14b-c8bb9d0b0e0e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%203D%20%28USA%29_jp2.zip',
     },
     'SLUS01053': {
         'url': "games/U/R/SLUS-01053.html",
@@ -8758,12 +8827,14 @@ games = {
 	'title': "ROAD RASH - JAILBREAK",
         'pic0': 'https://images.launchbox-app.com/87510739-37f2-4e15-8af5-342b20c0e905.png',
         'pic1': 'https://images.launchbox-app.com/68ff08d1-759e-4219-90cd-ddda53d69a7e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20-%20Jailbreak%20%28USA%29_jp2.zip',
     },
     'SLUS01024': {
         'url': "games/U/R/SLUS-01024.html",
     	'id': 'SLUS01024',
 	'title': "ROADSTERS",
         'pic0': 'https://images.launchbox-app.com/8895e4ab-23b5-47e6-90eb-d130e8953842.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Roadsters%20%28USA%29_jp2.zip',
     },
     'SLUS00316': {
         'url': "games/U/R/SLUS-00316.html",
@@ -8784,16 +8855,23 @@ games = {
         'url': "games/U/R/SLUS-01124.html",
     	'id': 'SLUS01124',
 	'title': "ROCK'EM SOCK'EM ROBOTS ARENA",
+        'pic0': 'https://images.launchbox-app.com/a537ba8c-2098-41f9-bb94-5f6ddbff3405.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rock%20%27Em%20Sock%20%27Em%20Robots%20Arena%20%28USA%29_jp2.zip',
     },
     'SLUS01353': {
         'url': "games/U/R/SLUS-01353.html",
     	'id': 'SLUS01353',
 	'title': "ROCKET POWER - TEAM ROCKET RESCUE",
+        'pic0': 'https://images.launchbox-app.com/5565db16-8f1a-4d18-be6f-3d5dad40f5a8.png',
+        'pic1': 'https://images.launchbox-app.com/fa34eaea-c6f1-41a5-976f-3cbec7133366.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rocket%20Power%20-%20Team%20Rocket%20Rescue%20%28USA%29_jp2.zip',
     },
     'SLUS00643': {
         'url': "games/U/R/SLUS-00643.html",
     	'id': 'SLUS00643',
 	'title': "ROGUE TRIP - VACATION 2012",
+        'pic0': 'https://images.launchbox-app.com/9d20f33d-5aad-402a-a94c-8bcb761f0fe5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rogue%20Trip%20-%20Vacation%202012%20%28USA%29_jp2.zip',
     },
     'SLUS00724': {
         'url': "games/U/R/SLUS-00724.html",
@@ -8805,12 +8883,14 @@ games = {
     	'id': 'SLUS00800',
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
     },
     'SLUS00867': {
         'url': "games/U/R/SLUS-00867.html",
     	'id': 'SLUS00867',
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
     },
     'SLUS00195': {
         'url': "games/U/R/SLUS-00195.html",
@@ -8826,6 +8906,8 @@ games = {
         'url': "games/U/R/SLUS-00750.html",
     	'id': 'SLUS00750',
 	'title': "ROSCO MCQUEEN FIREFIGHTER EXTREME",
+        'pic0': 'https://images.launchbox-app.com/500a1071-936e-420e-9386-166b331cbe57.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rosco%20McQueen%20Firefighter%20Extreme%20%28USA%29_jp2.zip',
     },
     'SLUS01062': {
         'url': "games/U/R/SLUS-01062.html",
@@ -8836,6 +8918,9 @@ games = {
         'url': "games/U/R/SLUS-00640.html",
     	'id': 'SLUS00640',
 	'title': "RPG MAKER",
+        'pic0': 'https://images.launchbox-app.com/535df41d-42ab-49f8-b032-ac906b427070.png',
+        'pic1': 'https://images.launchbox-app.com/4476cdd2-37d4-4fda-9313-1f8968253939.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RPG%20Maker%20%28USA%29_jp2.zip',
     },
     'SLUS00877': {
         'url': "games/U/R/SLUS-00877.html",
@@ -8859,6 +8944,9 @@ games = {
         'url': "games/U/R/SLUS-00650.html",
     	'id': 'SLUS00650',
 	'title': "RUGRATS THE SEARCH FOR REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLUS00880': {
         'url': "games/U/R/SLUS-00880.html",
@@ -8874,6 +8962,8 @@ games = {
         'url': "games/U/R/SLUS-01135.html",
     	'id': 'SLUS01135',
 	'title': "RUNABOUT 2",
+        'pic0': 'https://images.launchbox-app.com/010e5bc6-96f4-4e2c-af57-4760c9e2d3c9.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Runabout%202%20%28USA%29_jp2.zip',
     },
     'SCUS94272': {
         'url': "games/U/R/SCUS-94272.html",
@@ -8889,6 +8979,8 @@ games = {
         'url': "games/U/R/SLUS-00828.html",
     	'id': 'SLUS00828',
 	'title': "RUSHDOWN",
+        'pic0': 'https://images.launchbox-app.com/d07bdb21-97fd-482a-9366-566482faf9d4.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rushdown%20%28USA%29_jp2.zip',
     },
     'SLUS00692': {
         'url': "games/U/S/SLUS-00692.html",
@@ -10063,6 +10155,7 @@ games = {
 	'title': "THE RAIDEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLUS01008': {
         'url': "games/U/T/SLUS-01008.html",
@@ -23927,6 +24020,10 @@ games = {
         'url': "games/P/R/SCES-00650.html",
     	'id': 'SCES00650',
 	'title': "RAGE RACER",
+        'pic0': 'https://images.launchbox-app.com/20d8b0a4-e800-4bd5-9a7d-27b852a55543.png',
+        'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
     },
     'SLES03511': {
         'url': "games/P/R/SLES-03511.html",
@@ -23942,6 +24039,8 @@ games = {
         'url': "games/P/R/SLES-02426.html",
     	'id': 'SLES02426',
 	'title': "RAILROAD TYCOON II",
+        'pic0': 'https://images.launchbox-app.com/c9f170ee-d958-49b2-95a3-7012f63736c1.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Railroad%20Tycoon%20II%20%28USA%29_jp2.zip',
     },
     'SCES00408': {
         'url': "games/P/R/SCES-00408.html",
@@ -23955,21 +24054,30 @@ games = {
     	'id': 'SCES01631',
 	'title': "RALLY CROSS 2",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
     },
     'SLES02849': {
         'url': "games/P/R/SLES-02849.html",
     	'id': 'SLES02849',
 	'title': "RAMPAGE THROUGH TIME",
+        'pic0': 'https://images.launchbox-app.com/bc259f02-4961-42e7-a202-38b2058195e2.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20Through%20Time%20%28USA%29_jp2.zip',
     },
     'SLES01011': {
         'url': "games/P/R/SLES-01011.html",
     	'id': 'SLES01011',
 	'title': "RAMPAGE WORLD TOUR",
+        'pic0': 'https://images.launchbox-app.com/8740c804-5e9e-4d7f-9398-4a30eef525f1.png',
+        'pic1': 'https://images.launchbox-app.com/d4d322fb-bc96-4fa4-8a87-7a9ba449ee97.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20World%20Tour%20%28USA%29_jp2.zip',
     },
     'SLES02021': {
         'url': "games/P/R/SLES-02021.html",
     	'id': 'SLES02021',
 	'title': "RAMPAGE 2 - UNIVERSAL TOUR",
+        'pic0': 'https://images.launchbox-app.com/d90e8c9b-d253-4a60-997f-44216c9ab1d2.png',
+        'pic1': 'https://images.launchbox-app.com/bb9dbe96-4ef0-4e34-a7b5-7c9f8bcd2147.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%202%20-%20Universal%20Tour%20%28USA%29_jp2.zip',
     },
     'SLES00214': {
         'url': "games/P/R/SLES-00214.html",
@@ -23990,6 +24098,8 @@ games = {
         'url': "games/P/R/SLES-00858.html",
     	'id': 'SLES00858',
 	'title': "RASCAL",
+        'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rascal%20%28USA%29_jp2.zip',
     },
     'SLES04058': {
         'url': "games/P/R/SLES-04058.html",
@@ -24000,6 +24110,9 @@ games = {
         'url': "games/P/R/SLES-01103.html",
     	'id': 'SLES01103',
 	'title': "RAT ATTACK!",
+        'pic0': 'https://images.launchbox-app.com/64558e02-ba7a-46bb-bfab-1dfe37ed6a01.png',
+        'pic1': 'https://images.launchbox-app.com/f643a17f-254e-4d51-b7e7-ea609451c77a.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rat%20Attack%21%20%28USA%29_jp2.zip',
     },
     'SCES00741': {
         'url': "games/P/R/SCES-00741.html",
@@ -24017,6 +24130,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
     },
     'SLES02905': {
         'url': "games/P/R/SLES-02905.html",
@@ -24024,6 +24138,7 @@ games = {
 	'title': "RAYMAN 2 - THE GREAT ESCAPE",
         'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
         'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29_jp2.zip',
     },
     'SLES02906': {
         'url': "games/P/R/SLES-02906.html",
@@ -24031,6 +24146,7 @@ games = {
 	'title': "RAYMAN 2 - THE GREAT ESCAPE",
         'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
         'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29_jp2.zip',
     },
     'SLES02797': {
         'url': "games/P/R/SLES-02797.html",
@@ -24061,6 +24177,9 @@ games = {
         'url': "games/P/R/SCES-00742.html",
     	'id': 'SCES00742',
 	'title': "RAYSTORM",
+        'pic0': 'https://images.launchbox-app.com/386a7fd2-fc96-4663-8f22-93275d905e71.png',
+        'pic1': 'https://images.launchbox-app.com/4d32ab47-709a-40c9-8062-f45b76c56554.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RayStorm%20%28USA%29_jp2.zip',
     },
     'SLES03068': {
         'url': "games/P/R/SLES-03068.html",
@@ -24071,6 +24190,8 @@ games = {
         'url': "games/P/R/SLES-02824.html",
     	'id': 'SLES02824',
 	'title': "RC REVENGE",
+        'pic0': 'https://images.launchbox-app.com/234f637c-ed84-44ab-9de5-ea27975c3f45.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RC%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLES01459': {
         'url': "games/P/R/SLES-01459.html",
@@ -24091,11 +24212,17 @@ games = {
         'url': "games/P/R/SLES-02333.html",
     	'id': 'SLES02333',
 	'title': "READY 2 RUMBLE BOXING",
+        'pic0': 'https://images.launchbox-app.com/a824b4c3-5a78-4829-8396-2038bc413986.png',
+        'pic1': 'https://images.launchbox-app.com/037fdd69-bd97-472e-a435-689517d4f6e5.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ready%202%20Rumble%20Boxing%20%28USA%29_jp2.zip',
     },
     'SLES02850': {
         'url': "games/P/R/SLES-02850.html",
     	'id': 'SLES02850',
 	'title': "READY 2 RUMBLE BOXING - ROUND 2",
+        'pic0': 'https://images.launchbox-app.com/4b49515f-c60f-4489-aab3-2984897fd271.png',
+        'pic1': 'https://images.launchbox-app.com/51e9ead3-d52e-4e39-b9e7-c4acecd9b884.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ready%202%20Rumble%20Boxing%20-%20Round%202%20%28USA%29_jp2.zip',
     },
     'SCES00561': {
         'url': "games/P/R/SCES-00561.html",
@@ -24139,6 +24266,8 @@ games = {
         'url': "games/P/R/SLES-02780.html",
     	'id': 'SLES02780',
 	'title': "REEL FISHING II",
+        'pic0': 'https://images.launchbox-app.com/eb187b9f-fb12-4658-af6b-8da69383e0c8.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Reel%20Fishing%20II%20%28USA%29_jp2.zip',
     },
     'SLES00537': {
         'url': "games/P/R/SLES-00537.html",
@@ -24397,21 +24526,32 @@ games = {
         'url': "games/P/R/SLES-00177.html",
     	'id': 'SLES00177',
 	'title': "RETURN FIRE",
+        'pic0': 'https://images.launchbox-app.com/276786ff-9e56-4657-94a4-87474f75e567.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Return%20Fire%20%28USA%29_jp2.zip',
     },
     'SLES01973': {
         'url': "games/P/R/SLES-01973.html",
     	'id': 'SLES01973',
 	'title': "RE-VOLT",
+        'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
+        'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
     },
     'SLES00129': {
         'url': "games/P/R/SLES-00129.html",
     	'id': 'SLES00129',
 	'title': "REVOLUTION X",
+        'pic0': 'https://images.launchbox-app.com/bcfd67d6-f8c5-4e53-a23a-ec558545f12e.png',
+        'pic1': 'https://images.launchbox-app.com/7ec44763-29cf-4487-9f65-998f2be9edfd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Revolution%20X%20%28USA%29_jp2.zip',
     },
     'SLES00151': {
         'url': "games/P/R/SLES-00151.html",
     	'id': 'SLES00151',
 	'title': "REVOLUTION X",
+        'pic0': 'https://images.launchbox-app.com/bcfd67d6-f8c5-4e53-a23a-ec558545f12e.png',
+        'pic1': 'https://images.launchbox-app.com/7ec44763-29cf-4487-9f65-998f2be9edfd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Revolution%20X%20%28USA%29_jp2.zip',
     },
     'SLES04146': {
         'url': "games/P/R/SLES-04146.html",
@@ -24423,6 +24563,7 @@ games = {
     	'id': 'SCES00001',
 	'title': "RIDGE RACER",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
     },
     'SCES00242': {
         'url': "games/P/R/SCES-00242.html",
@@ -24430,6 +24571,7 @@ games = {
 	'title': "RIDGE RACER REVOLUTION",
         'pic0': 'https://images.launchbox-app.com/469f5d70-b161-4768-a34b-8f6330ee8c60.png',
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
     },
     'SCES01706': {
         'url': "games/P/R/SCES-01706.html",
@@ -24437,6 +24579,8 @@ games = {
 	'title': "RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCED-01832': {
         'url': "games/P/R/SCES-01706.html",
@@ -24444,6 +24588,8 @@ games = {
 	'title': "RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00472': {
         'url': "games/P/R/SLES-00472.html",
@@ -24463,11 +24609,15 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
     },
     'SLES00707': {
         'url': "games/P/R/SLES-00707.html",
     	'id': 'SLES00707',
 	'title': "RISK",
+        'pic0': 'https://images.launchbox-app.com/fc84f165-2673-414e-bc46-9302d61358e1.png',
+        'pic1': 'https://images.launchbox-app.com/dd70b4c4-d479-45df-a30b-92b35e41f737.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Risk%20-%20The%20Game%20of%20Global%20Domination%20%28USA%29_jp2.zip',
     },
     'SLES01436': {
         'url': "games/P/R/SLES-01436.html",
@@ -24592,6 +24742,9 @@ games = {
         'url': "games/P/R/SLES-00223.html",
     	'id': 'SLES00223',
 	'title': "ROAD & TRACKS PRESENTS THE NEED FOR SPEED",
+        'pic0': 'https://images.launchbox-app.com/5f362a3e-a780-4778-ae93-93d8c6c18624.png',
+        'pic1': 'https://images.launchbox-app.com/280bf9c4-6acd-48d8-9e54-b1380a4c5773.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20%26%20Track%20Presents%20-%20The%20Need%20for%20Speed%20%28USA%29_jp2.zip',
     },
     'SLES00543': {
         'url': "games/P/R/SLES-00543.html",
@@ -24604,6 +24757,7 @@ games = {
 	'title': "ROAD RASH",
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
     },
     'SLES00910': {
         'url': "games/P/R/SLES-00910.html",
@@ -24611,6 +24765,7 @@ games = {
 	'title': "ROAD RASH 3D",
         'pic0': 'https://images.launchbox-app.com/0d7c46ae-6fa0-4d11-85c0-eb16b3fd93cd.png',
         'pic1': 'https://images.launchbox-app.com/a6b3a640-1e2e-4d1f-b14b-c8bb9d0b0e0e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%203D%20%28USA%29_jp2.zip',
     },
     'SLES01157': {
         'url': "games/P/R/SLES-01157.html",
@@ -24618,6 +24773,7 @@ games = {
 	'title': "ROAD RASH 3D",
         'pic0': 'https://images.launchbox-app.com/0d7c46ae-6fa0-4d11-85c0-eb16b3fd93cd.png',
         'pic1': 'https://images.launchbox-app.com/a6b3a640-1e2e-4d1f-b14b-c8bb9d0b0e0e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%203D%20%28USA%29_jp2.zip',
     },
     'SLES01158': {
         'url': "games/P/R/SLES-01158.html",
@@ -24625,6 +24781,7 @@ games = {
 	'title': "ROAD RASH 3D",
         'pic0': 'https://images.launchbox-app.com/0d7c46ae-6fa0-4d11-85c0-eb16b3fd93cd.png',
         'pic1': 'https://images.launchbox-app.com/a6b3a640-1e2e-4d1f-b14b-c8bb9d0b0e0e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%203D%20%28USA%29_jp2.zip',
     },
     'SLES02552': {
         'url': "games/P/R/SLES-02552.html",
@@ -24632,12 +24789,14 @@ games = {
 	'title': "ROAD RASH - JAILBREAK",
         'pic0': 'https://images.launchbox-app.com/87510739-37f2-4e15-8af5-342b20c0e905.png',
         'pic1': 'https://images.launchbox-app.com/68ff08d1-759e-4219-90cd-ddda53d69a7e.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20-%20Jailbreak%20%28USA%29_jp2.zip',
     },
     'SLES02326': {
         'url': "games/P/R/SLES-02326.html",
     	'id': 'SLES02326',
 	'title': "ROADSTERS",
         'pic0': 'https://images.launchbox-app.com/8895e4ab-23b5-47e6-90eb-d130e8953842.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Roadsters%20%28USA%29_jp2.zip',
     },
     'SLES04110': {
         'url': "games/P/R/SLES-04110.html",
@@ -24668,11 +24827,17 @@ games = {
         'url': "games/P/R/SLES-03732.html",
     	'id': 'SLES03732',
 	'title': "ROCKET POWER - SAUVETAGE EXTREME",
+        'pic0': 'https://images.launchbox-app.com/5565db16-8f1a-4d18-be6f-3d5dad40f5a8.png',
+        'pic1': 'https://images.launchbox-app.com/fa34eaea-c6f1-41a5-976f-3cbec7133366.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rocket%20Power%20-%20Team%20Rocket%20Rescue%20%28USA%29_jp2.zip',
     },
     'SLES03702': {
         'url': "games/P/R/SLES-03702.html",
     	'id': 'SLES03702',
 	'title': "ROCKET POWER - TEAM ROCKET RESCUE",
+        'pic0': 'https://images.launchbox-app.com/5565db16-8f1a-4d18-be6f-3d5dad40f5a8.png',
+        'pic1': 'https://images.launchbox-app.com/fa34eaea-c6f1-41a5-976f-3cbec7133366.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rocket%20Power%20-%20Team%20Rocket%20Rescue%20%28USA%29_jp2.zip',
     },
     'SLES00056': {
         'url': "games/P/R/SLES-00056.html",
@@ -24693,6 +24858,8 @@ games = {
         'url': "games/P/R/SLES-01417.html",
     	'id': 'SLES01417',
 	'title': "ROGUE TRIP - VACATION 2012",
+        'pic0': 'https://images.launchbox-app.com/9d20f33d-5aad-402a-a94c-8bcb761f0fe5.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rogue%20Trip%20-%20Vacation%202012%20%28USA%29_jp2.zip',
     },
     'SLES03449': {
         'url': "games/P/R/SLES-03449.html",
@@ -24704,12 +24871,14 @@ games = {
     	'id': 'SLES01660',
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
     },
     'SCES01922': {
         'url': "games/P/R/SCES-01922.html",
     	'id': 'SCES01922',
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
     },
     'SLES00995': {
         'url': "games/P/R/SLES-00995.html",
@@ -24730,6 +24899,8 @@ games = {
         'url': "games/P/R/SCES-00257.html",
     	'id': 'SCES00257',
 	'title': "ROSCO MCQUEEN - FIREFIGHTER EXTREME",
+        'pic0': 'https://images.launchbox-app.com/500a1071-936e-420e-9386-166b331cbe57.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rosco%20McQueen%20Firefighter%20Extreme%20%28USA%29_jp2.zip',
     },
     'SLES02591': {
         'url': "games/P/R/SLES-02591.html",
@@ -24773,16 +24944,25 @@ games = {
         'url': "games/P/R/SLES-01671.html",
     	'id': 'SLES01671',
 	'title': "RUGRATS - ALLA RICERCA DI REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLES01670': {
         'url': "games/P/R/SLES-01670.html",
     	'id': 'SLES01670',
 	'title': "RUGRATS - AUF DER SUCHE NACH REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLES01672': {
         'url': "games/P/R/SLES-01672.html",
     	'id': 'SLES01672',
 	'title': "RUGRATS - DE SPEURTOCHT NAAR REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLES02911': {
         'url': "games/P/R/SLES-02911.html",
@@ -24793,11 +24973,17 @@ games = {
         'url': "games/P/R/SLES-02049.html",
     	'id': 'SLES02049',
 	'title': "RUGRATS - LA BÃšSQUEDA DE REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLES01538': {
         'url': "games/P/R/SLES-01538.html",
     	'id': 'SLES01538',
 	'title': "RUGRATS - SEARCH FOR REPTAR",
+        'pic0': 'https://images.launchbox-app.com/9fda8b77-1ea4-4da5-956e-d40afd0879ad.png',
+        'pic1': 'https://images.launchbox-app.com/2a08b25f-71a2-4415-a7f9-07e94255969f.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rugrats%20-%20Search%20for%20Reptar%20%28USA%29_jp2.zip',
     },
     'SLES03344': {
         'url': "games/P/R/SLES-03344.html",
@@ -24833,6 +25019,8 @@ games = {
         'url': "games/P/R/SLES-04015.html",
     	'id': 'SLES04015',
 	'title': "RUNABOUT 2",
+        'pic0': 'https://images.launchbox-app.com/010e5bc6-96f4-4e2c-af57-4760c9e2d3c9.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Runabout%202%20%28USA%29_jp2.zip',
     },
     'SCES01630': {
         'url': "games/P/R/SCES-01630.html",
@@ -24843,6 +25031,8 @@ games = {
         'url': "games/P/R/SLES-01080.html",
     	'id': 'SLES01080',
 	'title': "RUSHDOWN",
+        'pic0': 'https://images.launchbox-app.com/d07bdb21-97fd-482a-9366-566482faf9d4.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rushdown%20%28USA%29_jp2.zip',
     },
     'SLES01286':       {
         'url': "games/P/S/SLES-01286.html",
@@ -27059,6 +27249,7 @@ games = {
 	'title': "THE RAIDEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLES00039': {
         'url': "games/P/T/SLES-00039.html",
@@ -48772,6 +48963,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45355': {
         'url': "games/J/R/SCPS-45354.html",
@@ -48779,6 +48972,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45356': {
         'url': "games/J/R/SCPS-45356.html",
@@ -48786,6 +48981,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45357': {
         'url': "games/J/R/SCPS-45356.html",
@@ -48793,6 +48990,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01800': {
         'url': "games/J/R/SLPS-01800.html",
@@ -48800,6 +48999,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01801': {
         'url': "games/J/R/SLPS-01800.html",
@@ -48807,6 +49008,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01798': {
         'url': "games/J/R/SLPS-01798.html",
@@ -48814,6 +49017,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4 + JOGCON",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01799': {
         'url': "games/J/R/SLPS-01798.html",
@@ -48821,6 +49026,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4 + JOGCON",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91463': {
         'url': "games/J/R/SLPS-91463.html",
@@ -48828,6 +49035,8 @@ games = {
 	'title': "R4 - RIDGE RACER TYPE 4 [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS00167': {
         'url': "games/J/R/SLPS-00167.html",
@@ -48858,6 +49067,10 @@ games = {
         'url': "games/J/R/SLPS-00600.html",
     	'id': 'SLPS00600',
 	'title': "RAGE RACER",
+        'pic0': 'https://images.launchbox-app.com/20d8b0a4-e800-4bd5-9a7d-27b852a55543.png',
+        'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
     },
     'SCPS45019': {
         'url': "games/J/R/SCPS-45019.html",
@@ -48886,6 +49099,7 @@ games = {
 	'title': "RAIDEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS91002': {
         'url': "games/J/R/SLPS-91002.html",
@@ -48893,6 +49107,7 @@ games = {
 	'title': "RAIDEN PROJECT [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS91144': {
         'url': "games/J/R/SLPS-91144.html",
@@ -48900,6 +49115,7 @@ games = {
 	'title': "RAIDEN PROJECT [PLAYSTATION THE BEST] [REPRINT]",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPM86272': {
         'url': "games/J/R/SLPM-86272.html",
@@ -48984,6 +49200,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
     },
     'SLPM88503': {
         'url': "games/J/R/SLPM-88503.html",
@@ -48994,11 +49211,17 @@ games = {
         'url': "games/J/R/SLPS-00678.html",
     	'id': 'SLPS00678',
 	'title': "RAYSTORM",
+        'pic0': 'https://images.launchbox-app.com/386a7fd2-fc96-4663-8f22-93275d905e71.png',
+        'pic1': 'https://images.launchbox-app.com/4d32ab47-709a-40c9-8062-f45b76c56554.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RayStorm%20%28USA%29_jp2.zip',
     },
     'SLPS91050': {
         'url': "games/J/R/SLPS-91050.html",
     	'id': 'SLPS91050',
 	'title': "RAYSTORM [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/386a7fd2-fc96-4663-8f22-93275d905e71.png',
+        'pic1': 'https://images.launchbox-app.com/4d32ab47-709a-40c9-8062-f45b76c56554.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RayStorm%20%28USA%29_jp2.zip',
     },
     'SLPM86546': {
         'url': "games/J/R/SLPM-86546.html",
@@ -49009,6 +49232,8 @@ games = {
         'url': "games/J/R/SLPM-86635.html",
     	'id': 'SLPM86635',
 	'title': "RC REVENGE",
+        'pic0': 'https://images.launchbox-app.com/234f637c-ed84-44ab-9de5-ea27975c3f45.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/RC%20Revenge%20%28USA%29_jp2.zip',
     },
     'SLPM86407': {
         'url': "games/J/R/SLPM-86407.html",
@@ -49019,6 +49244,9 @@ games = {
         'url': "games/J/R/SLPM-86448.html",
     	'id': 'SLPM86448',
 	'title': "READY 2 RUMBLE BOXING",
+        'pic0': 'https://images.launchbox-app.com/a824b4c3-5a78-4829-8396-2038bc413986.png',
+        'pic1': 'https://images.launchbox-app.com/037fdd69-bd97-472e-a435-689517d4f6e5.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ready%202%20Rumble%20Boxing%20%28USA%29_jp2.zip',
     },
     'SLPM87157': {
         'url': "games/J/R/SLPM-87157.html",
@@ -49209,11 +49437,17 @@ games = {
         'url': "games/J/R/SLPM-86332.html",
     	'id': 'SLPM86332',
 	'title': "RE-VOLT",
+        'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
+        'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
     },
     'SLPS00258': {
         'url': "games/J/R/SLPS-00258.html",
     	'id': 'SLPS00258',
 	'title': "REVOLUTION X",
+        'pic0': 'https://images.launchbox-app.com/bcfd67d6-f8c5-4e53-a23a-ec558545f12e.png',
+        'pic1': 'https://images.launchbox-app.com/7ec44763-29cf-4487-9f65-998f2be9edfd.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Revolution%20X%20%28USA%29_jp2.zip',
     },
     'SLPS02634': {
         'url': "games/J/R/SLPS-02634.html",
@@ -49245,12 +49479,14 @@ games = {
     	'id': 'SLPS00001',
 	'title': "RIDGE RACER",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
     },
     'SLPS91001': {
         'url': "games/J/R/SLPS-91001.html",
     	'id': 'SLPS91001',
 	'title': "RIDGE RACER [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
     },
     'SLPS00150': {
         'url': "games/J/R/SLPS-00150.html",
@@ -49258,6 +49494,7 @@ games = {
 	'title': "RIDGE RACER REVOLUTION",
         'pic0': 'https://images.launchbox-app.com/469f5d70-b161-4768-a34b-8f6330ee8c60.png',
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
     },
     'SLPS91028': {
         'url': "games/J/R/SLPS-91028.html",
@@ -49265,6 +49502,7 @@ games = {
 	'title': "RIDGE RACER REVOLUTION [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/469f5d70-b161-4768-a34b-8f6330ee8c60.png',
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
     },
     'SLPM87210': {
         'url': "games/J/R/SLPM-87210.html",
@@ -49302,6 +49540,7 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
     },
     'SLPS01272': {
         'url': "games/J/R/SLPS-01272.html",
@@ -49379,6 +49618,7 @@ games = {
 	'title': "ROAD RASH",
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
     },
     'SCPS10103': {
         'url': "games/J/R/SCPS-10103.html",
@@ -49714,11 +49954,15 @@ games = {
         'url': "games/J/R/SLPS-02403.html",
     	'id': 'SLPS02403',
 	'title': "RUNABOUT 2",
+        'pic0': 'https://images.launchbox-app.com/010e5bc6-96f4-4e2c-af57-4760c9e2d3c9.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Runabout%202%20%28USA%29_jp2.zip',
     },
     'SLPS03033': {
         'url': "games/J/R/SLPS-03033.html",
     	'id': 'SLPS03033',
 	'title': "RUNABOUT 2 [FUKYUUBAN 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/010e5bc6-96f4-4e2c-af57-4760c9e2d3c9.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Runabout%202%20%28USA%29_jp2.zip',
     },
     'SLPS00483': {
         'url': "games/J/R/SLPS-00483.html",
