@@ -2123,6 +2123,7 @@ games = {
 	'title': "007 - RACING",
         'pic0': 'https://images.launchbox-app.com/9f7dc672-f956-4553-abf7-c8310511cb5b.png',
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
         'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20[SLUS-01300]%20(E).cbr',
     },
     'SCUS94508': {
@@ -2243,12 +2244,14 @@ games = {
     	'id': 'SLUS01467',
 	'title': "AIR HOCKEY",
         'pic0': 'https://images.launchbox-app.com/c36d9983-ea28-46ec-9d91-5ff08f38e16c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Air%20Hockey%20(E)%20[SLUS-01467].cbr',
     },
     'SLUS00715': {
         'url': "games/U/A/SLUS-00715.html",
     	'id': 'SLUS00715',
 	'title': "AKUJI THE HEARTLESS",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
     'SLUS00872': {
         'url': "games/U/A/SLUS-00872.html",
@@ -11578,7 +11581,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4afc26f7-521c-41f0-a62e-a3c716a8d058.png',
         'pic1': 'https://images.launchbox-app.com/4a276a9e-bc5f-4606-aeb8-5f8811e7096c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=EnHI4MVOczQ&list=PL3qKGTUJcGDp74v7wLimfhsb5XQwEscR-&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/007%20-%20Tomorrow%20Never%20Dies%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/007%20-%20Tomorrow%20never%20dies%20(S)%20[SLES-01324].cbr',
     },
     'SLES02375': {
         'url': "games/P/0-9/SLES-02375.html",
@@ -11600,6 +11603,8 @@ games = {
 	'title': "007 - RACING",
         'pic0': 'https://images.launchbox-app.com/9f7dc672-f956-4553-abf7-c8310511cb5b.png',
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/007%20-%20Racing%20(S)(Pt)%20[SLES-03355].cbr',
     },
     'SLES03356': {
         'url': "games/P/0-9/SLES-03356.html",
@@ -11607,6 +11612,8 @@ games = {
 	'title': "007 - RACING",
         'pic0': 'https://images.launchbox-app.com/9f7dc672-f956-4553-abf7-c8310511cb5b.png',
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20[SLUS-01300]%20(E).cbr',
     },
     'SLES03357': {
         'url': "games/P/0-9/SLES-03357.html",
@@ -11614,6 +11621,8 @@ games = {
 	'title': "007 - RACING",
         'pic0': 'https://images.launchbox-app.com/9f7dc672-f956-4553-abf7-c8310511cb5b.png',
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20(Platinum)%20[SLES-03357]%20(G).cbr',
     },
     'SLES03658': {
         'url': "games/P/0-9/SLES-03658.html",
@@ -11662,6 +11671,7 @@ games = {
 	'title': "40 WINKS - CON RUFF Y TUMBLE",
         'pic0': 'https://images.launchbox-app.com/858e65c5-e0f1-413c-ba00-19b6781ce23a.png',
         'pic1': 'https://images.launchbox-app.com/a73c5caf-709b-4d0c-971a-dd5b04f84b8b.png',
+        'manual': 'https://psxdatacenter.com/manuals/40%20Winks%20-%20con%20Ruff%20&%20Tumble%20(S)%20[SLES-01941].cbr',
     },
     'SLES00095': {
         'url': "games/P/0-9/SLES-00095.html",
@@ -11677,6 +11687,8 @@ games = {
         'url': "games/P/0-9/SLES-04064.html",
     	'id': 'SLES04064',
 	'title': "5 STAR RACING",
+        'pic0': 'https://images.launchbox-app.com/8111d653-6867-448f-82ef-1795cfac7ed5.png',
+        'manual': 'https://psxdatacenter.com/manuals/5%20Star%20Racing%20(S)%20[SLES-04064].cbr',
     },
     'SLES03481': {
         'url': "games/P/0-9/SLES-03481.html",
@@ -11692,11 +11704,13 @@ games = {
         'url': "games/P/A/SCES-02153.html",
     	'id': 'SCES02153',
 	'title': "A SANGRE FRIA",
+        'manual': 'https://psxdatacenter.com/manuals/A%20Sangre%20Fria%20(S)%20[SLES-02153].cbr',
     },
     'SCES12153': {
         'url': "games/P/A/SCES-02153.html",
     	'id': 'SCES12153',
 	'title': "A SANGRE FRIA",
+        'manual': 'https://psxdatacenter.com/manuals/A%20Sangre%20Fria%20(S)%20[SLES-02153].cbr',
     },
     'SCES02152': {
         'url': "games/P/A/SCES-02152.html",
@@ -11754,7 +11768,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20-%20Electrosphere%20(S)(P)Gr)(E)%20[SCES-02066].cbr',
     },
     'SLES03105': {
         'url': "games/P/A/SLES-03105.html",
@@ -11865,11 +11879,14 @@ games = {
         'url': "games/P/A/SLES-00265.html",
     	'id': 'SLES00265',
 	'title': "ACTUA TENNIS",
+        'pic0': 'https://images.launchbox-app.com/ce28529b-5ddb-4471-8fdf-702be06c58e3.png',
+        'manual': 'https://psxdatacenter.com/manuals/Actua%20Tennis%20(Zoo%20Classics)%20(S)%20[SLES-00265].cbr',
     },
     'SLES01396': {
         'url': "games/P/A/SLES-01396.html",
     	'id': 'SLES01396',
 	'title': "ACTUA TENNIS",
+        'pic0': 'https://images.launchbox-app.com/ce28529b-5ddb-4471-8fdf-702be06c58e3.png',
     },
     'SLES04108': {
         'url': "games/P/A/SLES-04108.html",
@@ -11938,6 +11955,7 @@ games = {
     	'id': 'SLES03743',
 	'title': "AIR HOCKEY!!",
         'pic0': 'https://images.launchbox-app.com/c36d9983-ea28-46ec-9d91-5ff08f38e16c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Air%20Hockey%20(E)%20[SLUS-01467].cbr',
     },
     'SLES00762': {
         'url': "games/P/A/SLES-00762.html",
@@ -11954,6 +11972,7 @@ games = {
     	'id': 'SLES01298',
 	'title': "AKUJI THE HEARTLESS",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
     'SLES03150': {
         'url': "games/P/A/SLES-03150.html",
@@ -11991,7 +12010,7 @@ games = {
 	'title': "ALIEN TRILOGY",
         'pic0': 'https://images.launchbox-app.com/e579d2cd-9c9f-415f-ae2b-b22cb429f137.png',
         'snd0': 'https://www.youtube.com/watch?v=uPzRI555Uwo&list=PL05367013048EF504&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alien%20Trilogy%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Alien%20Trilogy%20(E)(F)(S)(I)(G)%20[SLES-00101].cbr',
     },
     'SLES00246': {
         'url': "games/P/A/SLES-00246.html",
@@ -12027,7 +12046,7 @@ games = {
 	'title': "ALL STAR RACING",
         'pic0': 'https://images.launchbox-app.com/22b3e227-e43a-4150-b44f-2af5768ad004.png',
         'snd0': 'https://www.youtube.com/watch?v=7YvaUfzm2B0',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/All%20Star%20Racing%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/All%20Star%20Racing%20(E)(F)(G)(Du)%20[SLES-03740].cbr',
     },
     'SLES03933': {
         'url': "games/P/A/SLES-03933.html",
@@ -12066,6 +12085,8 @@ games = {
         'url': "games/P/A/SLES-04060.html",
     	'id': 'SLES04060',
 	'title': "ALL-STAR WATERSPORTS",
+        'pic0': 'https://images.launchbox-app.com/f9bde6b7-fc80-4456-a9b1-1158f1ca40ef.png',
+        'manual': 'https://psxdatacenter.com/manuals/All%20Star%20Watersports%20(S)%20[SLES-04060].cbr',
     },
     'SLES02984': {
         'url': "games/P/A/SLES-02984.html",
@@ -12094,7 +12115,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/62217a9c-af81-46e4-98b3-0b8519841040.png',
         'pic1': 'https://images.launchbox-app.com/5ae2a474-6864-46d8-92b8-e650493f4a50.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3FnCIWwBqmc&list=PL1933F08EB5DE2BAB',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alone%20in%20the%20Dark%20-%20The%20New%20Nightmare%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Alone%20in%20the%20Dark%20-%20The%20New%20Nightmare%20[SLES-02801]%20(P).cbr',
     },
     'SLES12801': {
         'url': "games/P/A/SLES-02801.html",
@@ -12148,7 +12169,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/62217a9c-af81-46e4-98b3-0b8519841040.png',
         'pic1': 'https://images.launchbox-app.com/5ae2a474-6864-46d8-92b8-e650493f4a50.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3FnCIWwBqmc&list=PL1933F08EB5DE2BAB',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alone%20in%20the%20Dark%20-%20The%20New%20Nightmare%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Alone%20in%20the%20Dark%20-%20The%20New%20Nightmare%20(S)%20[SLES-02804].cbr',
     },
     'SLES12804': {
         'url': "games/P/A/SLES-02804.html",
@@ -12220,7 +12241,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
         'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Alundra%20(S)%20[SLES-01258].cbr',
     },
     'SLES02600': {
         'url': "games/P/A/SLES-02600.html",
@@ -12284,6 +12305,7 @@ games = {
     	'id': 'SLES02349',
 	'title': "AMERZONE - EL LEGADO DEL EXPLORADOR",
         'pic0': 'https://images.launchbox-app.com/7ef400e7-44df-4f2f-b0c8-92152602a34a.png',
+        'manual': 'https://psxdatacenter.com/manuals/Amerzone%20-%20El%20Legado%20del%20Explorador%20(S)%20[SLES-02349].cbr',
     },
     'SLES12349': {
         'url': "games/P/A/SLES-02349.html",
@@ -12353,6 +12375,7 @@ games = {
     	'id': 'SLES04071',
 	'title': "ANIMAL FOOTBALL",
         'pic0': 'https://images.launchbox-app.com/fa504b70-5b62-4a03-bd94-c789c17cac61.png',
+        'manual': 'https://psxdatacenter.com/manuals/Animal%20Football%20(S)%20[SLES-04071].cbr',
     },
     'SLES04036': {
         'url': "games/P/A/SLES-04036.html",
@@ -12372,6 +12395,7 @@ games = {
     	'id': 'SCES01833',
 	'title': "ANNA KOURNIKOVA'S SMASH COURT TENNIS",
         'pic0': 'https://images.launchbox-app.com/70c6ac49-91ea-43a7-b388-f88900c642d9.png',
+        'manual': "https://psxdatacenter.com/manuals/Anna%20Kournikova's%20Smash%20Court%20Tennis%20(S)(P)(Gr)(E)%20[SCES-01833].cbr",
     },
     'SLES02563': {
         'url': "games/P/A/SLES-02563.html",
@@ -12417,7 +12441,7 @@ games = {
 	'title': "APE ESCAPE - LA INVASION DE LOS MONOS",
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ape%20Escape%20-%20La%20Invasion%20de%20los%20Monos%20(S)%20[SCES-02031].cbr',
     },
     'SLES00834': {
         'url': "games/P/A/SLES-00834.html",
@@ -12512,7 +12536,7 @@ games = {
 	'title': "AREA 51 [MIDWAY CLASSICS]",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Area%2051%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SLES00748': {
         'url': "games/P/A/SLES-00748.html",
@@ -12550,7 +12574,7 @@ games = {
 	'title': "ARMY MEN 3D",
         'pic0': 'https://images.launchbox-app.com/c85cc5c4-73b3-40f2-8dc7-5b5a33caf7dc.png',
         'snd0': 'https://www.youtube.com/watch?v=Pxg1tEyvL60&list=PLgtrpeF-jxrOtlxqdejzzAsafSWPd3fFN&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Army%20Men%203D%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Army%20Men%203D%20(E)(F)(G)(S)(I)(Du)%20[SLES-02378].cbr',
     },
     'SLES02498': {
         'url': "games/P/A/SLES-02498.html",
@@ -12616,6 +12640,7 @@ games = {
     	'id': 'SLES03431',
 	'title': "ARMY MEN - OMEGA SOLDIER",
         'pic0': 'https://images.launchbox-app.com/c824dbdb-ac4b-43a3-9b29-bb691eba78dd.png',
+        'manual': 'https://psxdatacenter.com/manuals/Army%20Men%20-%20Omega%20Soldier%20(E)(F)(S)(I)(Du)%20[SLES-03431].cbr',
     },
     'SLES02855': {
         'url': "games/P/A/SLES-02855.html",
@@ -12707,6 +12732,7 @@ games = {
     	'id': 'SLES03324',
 	'title': "ASTERIX - MEGA MADNESS",
         'pic0': 'https://images.launchbox-app.com/0d5da578-1fe0-48db-9a76-55399f1be7a0.png',
+        'manual': 'https://psxdatacenter.com/manuals/Asterix%20-%20Mega%20Madness%20(S)%20(Pt)%20[SLES-03324].cbr',
     },
     'SLES02092': {
         'url': "games/P/A/SLES-02092.html",
@@ -12719,6 +12745,7 @@ games = {
     	'id': 'SLES02473',
 	'title': "ASTERIX & OBELIX - CONTRA CESAR",
         'pic0': 'https://images.launchbox-app.com/6d935f6c-3d1e-44fe-a27c-0c4bc019b94b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Asterix%20&%20Obelix%20-%20Contra%20C%C3%A9sar%20(S)%20[SLES-02473].cbr',
     },
     'SLES02474': {
         'url': "games/P/A/SLES-02474.html",
@@ -12827,6 +12854,7 @@ games = {
     	'id': 'SLES01291',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES11291': {
         'url': "games/P/A/SLES-01605.html",
@@ -30313,6 +30341,8 @@ games = {
         'url': "games/J/0-9/SLPS-01995.html",
     	'id': 'SLPS01995',
 	'title': "70'S ROBOT ANIME - GEPPY-X - THE SUPER BOOSTED ARMOR",
+        'pic0': 'https://images.launchbox-app.com/35eeda39-ad1c-4440-b0a0-c77e25599648.png',
+        'manual': "https://psxdatacenter.com/manuals/70's%20Robot%20Anime%20-%20Geppy-X%20(J)%20[SLPS-01995-8].cbr",
     },
     'SLPS01996': {
         'url': "games/J/0-9/SLPS-01995.html",
@@ -30430,6 +30460,9 @@ games = {
         'url': "games/J/A/SLPS-01118.html",
     	'id': 'SLPS01118',
 	'title': "ABE A GO GO",
+        'pic0': 'https://images.launchbox-app.com/6d70bb87-befa-4be1-b294-0cad179330eb.png',
+        'pic1': 'https://images.launchbox-app.com/a2b82d68-bea5-457c-81a0-465152d69b85.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Abe%20a%20GoGo%20(J)%20[SLPS-01118].cbr',
     },
     'SLPS02095': {
         'url': "games/J/A/SLPS-02095.html",
@@ -30445,11 +30478,13 @@ games = {
         'url': "games/J/A/SLPS-00061.html",
     	'id': 'SLPS00061',
 	'title': "ACE COMBAT",
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[SLPS-00061].cbr',
     },
     'SLPS91005': {
         'url': "games/J/A/SLPS-91005.html",
     	'id': 'SLPS91005',
 	'title': "ACE COMBAT [PLAYSTATION THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[Playstation%20the%20Best]%20[SLPS-91005].cbr',
     },
     'SLPS00830': {
         'url': "games/J/A/SLPS-00830.html",
@@ -30457,7 +30492,7 @@ games = {
 	'title': "ACE COMBAT 2",
         'pic0' : 'https://images.launchbox-app.com/4382f025-6264-4268-a2fe-340a3bc6b6dc.png',
         'snd0': 'https://www.youtube.com/watch?v=zR4XqythvOY&list=PL021FCE912747136A&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%202%20(J)%20[SLPS-00830].cbr',
     },
     'SLPS91146': {
         'url': "games/J/A/SLPS-91146.html",
@@ -30465,7 +30500,7 @@ games = {
 	'title': "ACE COMBAT 2 [PLAYSTATION THE BEST]",
         'pic0' : 'https://images.launchbox-app.com/4382f025-6264-4268-a2fe-340a3bc6b6dc.png',
         'snd0': 'https://www.youtube.com/watch?v=zR4XqythvOY&list=PL021FCE912747136A&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%202%20(J)%20[SLPS-00830].cbr',
     },
     'SCPS45397': {
         'url': "games/J/A/SCPS-45397.html",
@@ -30473,7 +30508,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SCPS45398': {
         'url': "games/J/A/SCPS-45397.html",
@@ -30481,7 +30516,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SLPS02020': {
         'url': "games/J/A/SLPS-02020.html",
@@ -30489,7 +30524,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SLPS02021': {
         'url': "games/J/A/SLPS-02020.html",
@@ -30497,7 +30532,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SLPS91214': {
         'url': "games/J/A/SLPS-91214.html",
@@ -30505,7 +30540,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SLPS91215': {
         'url': "games/J/A/SLPS-91214.html",
@@ -30513,7 +30548,7 @@ games = {
 	'title': "ACE COMBAT 3 - ELECTROSPHERE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ace%20Combat%203%20-%20Electrosphere%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
     'SLPS02119': {
         'url': "games/J/A/SLPS-02119.html",
@@ -30532,6 +30567,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f70565b3-c151-4590-8689-b81af1293d53.png',
         'pic1': 'https://images.unsplash.com/photo-1579741838571-33188fcead07',
         'snd0': 'https://www.youtube.com/watch?v=nw89Xb5qhiE',
+        'manual': 'https://psxdatacenter.com/manuals/Aconcagua%20(J)%20[SCPS-10131-2].cbr',
     },
     'SCPS10132': {
         'url': "games/J/A/SCPS-10131.html",
@@ -30540,6 +30576,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f70565b3-c151-4590-8689-b81af1293d53.png',
         'pic1': 'https://images.unsplash.com/photo-1579741838571-33188fcead07',
         'snd0': 'https://www.youtube.com/watch?v=nw89Xb5qhiE',
+        'manual': 'https://psxdatacenter.com/manuals/Aconcagua%20(J)%20[SCPS-10131-2].cbr',
     },
     'SLPS02482': {
         'url': "games/J/A/SLPS-02482.html",
@@ -30589,6 +30626,8 @@ games = {
         'url': "games/J/A/SCPS-10126.html",
     	'id': 'SCPS10126',
 	'title': "ADDIE NO OKURIMONO - TO MOZE FROM ADDIE",
+        'pic0': 'https://images.launchbox-app.com/f411abc7-4f95-4eec-a4a9-6bbbe55c2ab7.png',
+        'manual': 'https://psxdatacenter.com/manuals/Addie%20No%20Okurimono%20-%20To%20Moze%20from%20Addie%20(J)%20[SCPS-10126].cbr',
     },
     'SLPS01689': {
         'url': "games/J/A/SLPS-01689.html",
@@ -30774,31 +30813,37 @@ games = {
         'url': "games/J/A/SLPS-01462.html",
     	'id': 'SLPS01462',
 	'title': "AKAGAWA JIROU - YASOUKYOKU",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jirou%20Yasoukyoku%20(J)%20[SLPS-01462].cbr',
     },
     'SLPS01415': {
         'url': "games/J/A/SLPS-01415.html",
     	'id': 'SLPS01415',
 	'title': "AKAGAWA JIROU - YASOUKYOKU [LIMITED EDITION]",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jirou%20Yasoukyoku%20(J)%20[SLPS-01462].cbr',
     },
     'SLPS91151': {
         'url': "games/J/A/SLPS-91151.html",
     	'id': 'SLPS91151',
 	'title': "AKAGAWA JIROU - YASOUKYOKU [PLAYSTATION THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jirou%20Yasoukyoku%20(J)%20[SLPS-01462].cbr',
     },
     'SLPS91503': {
         'url': "games/J/A/SLPS-91503.html",
     	'id': 'SLPS91503',
 	'title': "AKAGAWA JIROU - YASOUKYOKU [PSONE BOOKS]",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jirou%20Yasoukyoku%20(J)%20[SLPS-01462].cbr',
     },
     'SLPS03213': {
         'url': "games/J/A/SLPS-03213.html",
     	'id': 'SLPS03213',
 	'title': "AKAGAWA JIROU - YASOUKYOKU 2",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jiro%20Yasoukyoku%202%20(J)%20[SLPS-03213].cbr',
     },
     'SLPS91505': {
         'url': "games/J/A/SLPS-91505.html",
     	'id': 'SLPS91505',
 	'title': "AKAGAWA JIROU - YASOUKYOKU 2 [PSONE BOOKS]",
+        'manual': 'https://psxdatacenter.com/manuals/Akagawa%20Jiro%20Yasoukyoku%202%20(J)%20[SLPS-03213].cbr',
     },
     'SLPS00187': 	{
         'url': "games/J/A/SLPS-00187.html",
@@ -30824,6 +30869,8 @@ games = {
         'url': "games/J/A/SLPS-01578.html",
     	'id': 'SLPS01578',
 	'title': "ALBALEA NO OTOME - URUWASHI NO SEISHIKITACHI",
+        'pic0': 'https://images.launchbox-app.com/2906ad7e-9a74-44f4-bd07-b17b53197368.png',
+        'manual': 'https://psxdatacenter.com/manuals/Albalea%20no%20Otome%20(J)%20[SLPS-01578].cbr',
     },
     'SLPS00636': {
         'url': "games/J/A/SLPS-00636.html",
@@ -30890,21 +30937,29 @@ games = {
         'url': "games/J/A/SLPS-00173.html",
     	'id': 'SLPS00173',
 	'title': "ALNAM NO KIBA - FANG OF ALNAM",
+        'pic0': 'https://images.launchbox-app.com/97bfa5dc-d00d-4d5e-9b9b-5e0c4f2a3f75.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Kiba%20(J)%20[SLPS-00173].cbr',
     },
     'SLPS01187': {
         'url': "games/J/A/SLPS-01187.html",
     	'id': 'SLPS01187',
 	'title': "ALNAM NO TSUBASA - WING OF ALNAM",
+        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
     },
     'SLPS01188': {
         'url': "games/J/A/SLPS-01187.html",
     	'id': 'SLPS01188',
 	'title': "ALNAM NO TSUBASA - WING OF ALNAM",
+        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
     },
     'SLPS01189': {
         'url': "games/J/A/SLPS-01187.html",
     	'id': 'SLPS01189',
 	'title': "ALNAM NO TSUBASA - WING OF ALNAM",
+        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
     },
     'SLPM87005': {
         'url': "games/J/A/SLPM-87005.html",
@@ -30977,11 +31032,15 @@ games = {
         'url': "games/J/A/SLPS-01108.html",
     	'id': 'SLPS01108',
 	'title': "ANCIENT ROMAN - POWER OF THE DARK SIDE",
+        'pic0': 'https://images.launchbox-app.com/a3111693-803d-4bea-9c7e-c165a2cb488b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ancient%20Roman%20(J)%20[SLPS-01108-9].cbr',
     },
     'SLPS01109': {
         'url': "games/J/A/SLPS-01108.html",
     	'id': 'SLPS01109',
 	'title': "ANCIENT ROMAN - POWER OF THE DARK SIDE",
+        'pic0': 'https://images.launchbox-app.com/a3111693-803d-4bea-9c7e-c165a2cb488b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ancient%20Roman%20(J)%20[SLPS-01108-9].cbr',
     },
     'SLPS00759': {
         'url': "games/J/A/SLPS-00759.html",
@@ -31146,6 +31205,8 @@ games = {
         'url': "games/J/A/SLPS-01655.html",
     	'id': 'SLPS01655',
 	'title': "ANOTHER MIND",
+        'pic0': 'https://images.launchbox-app.com/00dbb218-a071-4ba5-a966-f674063c916f.png',
+        'manual': 'https://psxdatacenter.com/manuals/Another%20Mind%20[SLPS-01655]%20(J).cbr',
     },
     'SLPS02940': {
         'url': "games/J/A/SLPS-02940.html",
@@ -31237,7 +31298,7 @@ games = {
 	'title': "ARC THE LAD",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS91004': {
         'url': "games/J/A/SCPS-91004.html",
@@ -31245,7 +31306,7 @@ games = {
 	'title': "ARC THE LAD [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS91302': {
         'url': "games/J/A/SCPS-91302.html",
@@ -31253,7 +31314,7 @@ games = {
 	'title': "ARC THE LAD [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS10026': {
         'url': "games/J/A/SCPS-10026.html",
@@ -31629,16 +31690,22 @@ games = {
         'url': "games/J/A/SLPS-01751.html",
     	'id': 'SLPS01751',
 	'title': "ATELIER ELIE",
+        'pic0': 'https://images.launchbox-app.com/478bbe00-65ba-44ed-83da-4ee56535a4b3.png',
+        'manual': 'https://psxdatacenter.com/manuals/Atelier%20Elie%20-%20Elie%20no%20Atelier%20(J)%20[SLPS-01751].cbr',
     },
     'SLPS91180': {
         'url': "games/J/A/SLPS-91180.html",
     	'id': 'SLPS91180',
 	'title': "ATELIER ELIE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/478bbe00-65ba-44ed-83da-4ee56535a4b3.png',
+        'manual': 'https://psxdatacenter.com/manuals/Atelier%20Elie%20-%20Elie%20no%20Atelier%20(J)%20[SLPS-01751].cbr',
     },
     'SLPS00856': {
         'url': "games/J/A/SLPS-00856.html",
     	'id': 'SLPS00856',
 	'title': "ATELIER MARIE",
+        'pic0': 'https://images.launchbox-app.com/a419572f-a5a8-4619-8a84-ba07f519686c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Atelier%20Marie%20(J)%20[SLPS-00856].cbr',
     },
     'SLPS01418': {
         'url': "games/J/A/SLPS-01418.html",
@@ -31687,11 +31754,15 @@ games = {
         'url': "games/J/A/SLPS-00546.html",
     	'id': 'SLPS00546',
 	'title': "AUBIRDFORCE",
+        'pic0': 'https://images.launchbox-app.com/115655fd-3767-4d8f-b18f-14d69f903d37.png',
+        'manual': 'https://psxdatacenter.com/manuals/Aubirdforce%20(J)%20[SLPS-00533].cbr',
     },
     'SLPS00533': {
         'url': "games/J/A/SLPS-00533.html",
     	'id': 'SLPS00533',
 	'title': "AUBIRDFORCE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/115655fd-3767-4d8f-b18f-14d69f903d37.png',
+        'manual': 'https://psxdatacenter.com/manuals/Aubirdforce%20(J)%20[SLPS-00533].cbr',
     },
     'SLPS01606': {
         'url': "games/J/A/SLPS-01606.html",
@@ -31712,11 +31783,15 @@ games = {
         'url': "games/J/A/SLPS-00946.html",
     	'id': 'SLPS00946',
 	'title': "AYAKASHI NINDEN KUNOITCHIBAN",
+        'pic0': 'https://images.launchbox-app.com/370f40d7-fbbb-4301-9340-64a18642a436.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ayakashi%20Ninden%20Kunoichiban%20(J)%20[SLPS-00946-7].cbr',
     },
     'SLPS00947': {
         'url': "games/J/A/SLPS-00946.html",
     	'id': 'SLPS00947',
 	'title': "AYAKASHI NINDEN KUNOITCHIBAN",
+        'pic0': 'https://images.launchbox-app.com/370f40d7-fbbb-4301-9340-64a18642a436.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ayakashi%20Ninden%20Kunoichiban%20(J)%20[SLPS-00946-7].cbr',
     },
     'SLPS00380': {
         'url': "games/J/A/SLPS-00380.html",
