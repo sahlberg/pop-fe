@@ -50,15 +50,25 @@ def create_document(source, gameid, maxysize, output):
     docs = []
     imgs = []
     for i in range(100):
+        # Look for ...0001...
         g = glob.glob(source + '/*' + f'{i:04d}' + '*')
         if not g: # try a subdirectory
             g = glob.glob(source + '/*/*' + f'{i:04d}' + '*')
+        if not g:
+            # Look for ...pag01...
+            g = glob.glob(source + '/*pag' + f'{i:02d}' + '*')
+            if not g: # try a subdirectory
+                g = glob.glob(source + '/*/*pag' + f'{i:02d}' + '*')
+        # Some archives start page numbers at 1 instead of 0
+        if not g and i == 0:
+            print('No page 0 found, skip and try page 1')
+            continue
         if not g:
             break
         docs.append(g[0])
 
         pic = Image.open(g[0])
-        
+
         # images are supposed to be ~square but some scans contain two pages
         # side by side. Split them.
         if pic.size[0] > pic.size[1] * 1.75:
@@ -70,6 +80,10 @@ def create_document(source, gameid, maxysize, output):
         else:
             f = generate_png(pic, maxysize)
             imgs.append(f)
+
+    if not docs:
+        print('No images found. Can not create DOCUMENT.DAT')
+        return
 
     with open(output, 'wb') as o:
         o.write(create_header(gameid)) # size 0x88
@@ -85,6 +99,8 @@ def create_document(source, gameid, maxysize, output):
             f.seek(0)
             o.write(f.read())
 
+    return output
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -98,4 +114,5 @@ if __name__ == "__main__":
         verbose = True
 
     print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
-    create_document(args.source[0], args.gameid[0], 480, args.document[0])
+    if not create_document(args.source[0], args.gameid[0], 480, args.document[0]):
+        print('Failed to create DOCUMENT')

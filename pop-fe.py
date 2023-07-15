@@ -38,6 +38,10 @@ try:
 except:
     True
 try:
+    import rarfile
+except:
+    print('rarfile is not installed.\nYou should install requests by running:\npip3 install rarfile')
+try:
     import requests
 except:
     print('requests is not installed.\nYou should install requests by running:\npip3 install requests')
@@ -1486,6 +1490,13 @@ def install_deps():
     except:
         print('Installing python iso9660.  This will fail on some platforms')
         subprocess.call(['pip', 'install', 'iso9660'])
+    # rarfile
+    try:
+        import rarfile
+        print('rarfile is already installed')
+    except:
+        print('Installing python rarfile.  This will fail on some platforms')
+        subprocess.call(['pip', 'install', 'rarfile'])
     # ecdsa
     try:
         import ecdsa
@@ -1727,7 +1738,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
                 print('Failed to download manual from', source)
                 return None
     if source[-4:] == '.zip':
-            print('Unzip manual', source)
+            print('Unzip manual', source, 'from ZIP')
             subdir = subdir + '/DOCUMENT-tmp'
             try:
                 os.stat(subdir)
@@ -1740,6 +1751,20 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
                 f = z.extract(f, path=subdir)
                 temp_files.append(f)
             source = subdir
+    if source[-4:] == '.cbr':
+            print('Unzip manual', source, 'from CBR')
+            subdir = subdir + '/DOCUMENT-tmp'
+            try:
+                os.stat(subdir)
+            except:
+                os.mkdir(subdir)
+            temp_files.append(subdir)
+                
+            r = rarfile.RarFile(source)
+            for f in r.namelist():
+                f = r.extract(f, path=subdir)
+                temp_files.append(f)
+            source = subdir
     if not os.path.isdir(source):
         print('Can not create manual.', source, 'is not a directory')
         return None
@@ -1747,7 +1772,9 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     tmpfile = subdir + '/DOCUMENT.DAT'
     temp_files.append(tmpfile)
     print('Create manual from directory [%s]' % (source))
-    create_document(source, gameid, 480, tmpfile)
+    tmpfile = create_document(source, gameid, 480, tmpfile)
+    if not tmpfile:
+        print('Failed to create DOCUMENT.DAT')
     return tmpfile
 
 

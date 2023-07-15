@@ -67,6 +67,7 @@ jobs:
           pip install ecdsa
           pip install pyinstaller
           pip install pygubu
+          pip install rarfile
           pip install tkinterDnD2
           pip install git+https://github.com/nficano/pytube
           pip install opencv-contrib-python

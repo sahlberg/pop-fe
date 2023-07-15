@@ -2123,6 +2123,7 @@ games = {
 	'title': "007 - RACING",
         'pic0': 'https://images.launchbox-app.com/9f7dc672-f956-4553-abf7-c8310511cb5b.png',
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20[SLUS-01300]%20(E).cbr',
     },
     'SCUS94508': {
         'url': "games/U/0-9/SCUS-94508.html",

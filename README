@@ -534,6 +534,7 @@ pip3 install pycdlib  (or pip3 install pycdio)
 pip3 install ecdsa
 pip3 install tkinterdnd2
 pip3 install opencv-contrib-python
+pip3 install rarfile
 pip3 install scikit-learn
 pip3 install scipy
 cd pop-fe
@@ -576,6 +577,7 @@ pip3 install pycdlib
 pip3 install pycryptodome
 pip3 install ecdsa
 pip3 install opencv-contrib-python
+pip3 install rarfile
 pip3 install scikit-learn
 pip3 install scipy
 git clone https://github.com/sahlberg/pop-fe.git
