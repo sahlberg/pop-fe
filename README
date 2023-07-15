@@ -323,13 +323,18 @@ $ ffmpeg -i Azure\ Dreams\ OST\ 3.\ Overture.3gp  -ar 44100 -ac 2 Azure\ Dreams\
 MANUAL
 ======
 Pop-fe can create a "Software Manual" for PSP. Use the --manual command line
-argument and spepcify either a https-link, a zip-file or a directory containing
-scans of the manual to use to generate DOCUMENT.DAT.
+argument and spepcify either a https-link, a zip-file, a cbr-file (==rar)
+or a directory containing scans of the manual to use to generate DOCUMENT.DAT.
 The files can be in any format and will be converted to PNG and re-scaled to
 480 pixels wide to match the PSP screen.
 
-The image filenames must contain a 4 digit number to indicate the page number
-starting at 0000.
+The image filenames must contain a format that pop-fe understands to match
+page numbers. The naming format that is supported right now are
+* Filename must contain a four digit substrung that matches the page number.
+  Example: '0000'
+* Filename must contain 'pag' followed by two digits that matches a page number.
+  Example: 'pag00'
+Page-numbering start at either 0 or 1.
 
 You can also store the manual locally alongside the cue file.
 The file needs to have the same name as the cue but the extension .manual
