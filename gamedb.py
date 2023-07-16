@@ -11,6 +11,7 @@ games = {
     	'id': 'SLPS01767',
 	'title': "UMEZAWA YUKARI NO TAIKYOKU IGO - HEISEI KIIN II",
         'pic0': 'https://images.launchbox-app.com/54cebb8a-d6f0-4df6-9d10-6f31184c32a7.png',
+        'manual': 'https://psxdatacenter.com/manuals/Umezawa%20Yukari%20no%20Taikyoku%20Igo%20-%20Heisei%20Kiin%20II%20[J]%20[SLPS-01767].cbr',
     },
     'SLPS02172': {
         'url': "games/J/U/SLPS-02172.html",
@@ -476,6 +477,7 @@ games = {
         'url': "games/J/V/SLPS-02295.html",
     	'id': 'SLPS02295',
 	'title': "VIRTUA PACHI-SLOT EX",
+        'manual': 'https://psxdatacenter.com/manuals/Virtua%20Pachi-Slot%20EX%20[J]%20[SLPS-02295].cbr',
     },
     'SLPS01639': {
         'url': "games/J/V/SLPS-01639.html",
@@ -1363,7 +1365,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS01161': {
         'url': "games/J/X/SLPS-01160.html",
@@ -1372,7 +1374,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91436': {
         'url': "games/J/X/SLPS-91436.html",
@@ -1381,7 +1383,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91437': {
         'url': "games/J/X/SLPS-91436.html",
@@ -1390,7 +1392,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02773': {
         'url': "games/J/X/SLPS-02773.html",
@@ -1399,7 +1401,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02774':    {
         'url': "games/J/X/SLPS-02773.html",
@@ -1408,7 +1410,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02775': {
         'url': "games/J/X/SLPS-02775.html",
@@ -1417,7 +1419,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02776':    {
         'url': "games/J/X/SLPS-02775.html",
@@ -1426,7 +1428,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS00750': {
         'url': "games/J/X/SLPS-00750.html",
@@ -1478,16 +1480,19 @@ games = {
         'url': "games/J/Y/SLPS-01045.html",
     	'id': 'SLPS01045',
 	'title': "YAKATA NIGHTMARE PROJECT",
+        'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS01046': {
         'url': "games/J/Y/SLPS-01045.html",
     	'id': 'SLPS01046',
 	'title': "YAKATA NIGHTMARE PROJECT",
+        'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS01047': {
         'url': "games/J/Y/SLPS-01045.html",
     	'id': 'SLPS01047',
 	'title': "YAKATA NIGHTMARE PROJECT",
+        'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS03209': {
         'url': "games/J/Y/SLPS-03209.html",
@@ -1513,11 +1518,15 @@ games = {
         'url': "games/J/Y/SLPS-00152.html",
     	'id': 'SLPS00152',
 	'title': "YAKU - YUUJOU DANGI",
+        'pic0': 'https://images.launchbox-app.com/f0268c37-d7bb-483e-93fc-2fc53c2ea0d3.png',
+        'manual': 'https://psxdatacenter.com/manuals/Yaku%20-%20Yuujou%20Dangi%20(J)%20[SLPS-00152].cbr',
     },
     'SLPS00689': {
         'url': "games/J/Y/SLPS-00689.html",
     	'id': 'SLPS00689',
 	'title': "YAKU TSUU - NOROI NO GAME",
+        'pic0': 'https://images.launchbox-app.com/f82a1052-4d75-494b-8cac-38f6e1725473.png',
+        'manual': 'https://psxdatacenter.com/manuals/Yaku%20Tsuu%20-%20Noroi%20no%20Game%20[SLPS-00689]%20(J).cbr',
     },
     'SLPS02393': {
         'url': "games/J/Y/SLPS-02393.html",
@@ -1978,11 +1987,15 @@ games = {
         'url': "games/J/Z/SLPM-86311.html",
     	'id': 'SLPM86311',
 	'title': "ZILL O'LL",
+        'pic0': 'https://images.launchbox-app.com/9e8c7a7a-1291-47da-bb8a-f30390223515.png',
+        'manual': "https://psxdatacenter.com/manuals/Zill%20O'll%20[SLPM-86311]%20(J).cbr",
     },
     'SLPM86703': {
         'url': "games/J/Z/SLPM-86703.html",
     	'id': 'SLPM86703',
 	'title': "ZILL O'LL [KOEI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/9e8c7a7a-1291-47da-bb8a-f30390223515.png',
+        'manual': "https://psxdatacenter.com/manuals/Zill%20O'll%20[SLPM-86311]%20(J).cbr",
     },
     'SLPS02260': {
         'url': "games/J/Z/SLPS-02260.html",
@@ -9997,6 +10010,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/83e32aa9-2d8c-47cc-bce0-44b897c39dfc.png',
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
     },
     'SLUS01367': {
         'url': "games/U/T/SLUS-01355.html",
@@ -10005,6 +10019,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/83e32aa9-2d8c-47cc-bce0-44b897c39dfc.png',
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
     },
     'SLUS01368': {
         'url': "games/U/T/SLUS-01355.html",
@@ -10013,6 +10028,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/83e32aa9-2d8c-47cc-bce0-44b897c39dfc.png',
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
     },
     'SLUS01547': {
         'url': "games/U/T/SLUS-01547.html",
@@ -10288,6 +10304,7 @@ games = {
         'url': "games/U/T/SLUS-01457.html",
     	'id': 'SLUS01457',
 	'title': "THE ITALIAN JOB",
+        'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
     },
     'SCUS94205': {
         'url': "games/U/T/SCUS-94205.html",
@@ -10310,6 +10327,7 @@ games = {
         'url': "games/U/T/SLUS-01213.html",
     	'id': 'SLUS01213',
 	'title': "THE LAND BEFORE TIME - GREAT VALLEY RACING ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/c37086a5-2492-47ab-8a2d-c7f452b2b89d.png',
     },
     'SLUS01043': {
         'url': "games/U/T/SLUS-01043.html",
@@ -10354,11 +10372,17 @@ games = {
         'url': "games/U/T/SLUS-00515.html",
     	'id': 'SLUS00515',
 	'title': "THE LOST WORLD - JURASSIC PARK",
+        'pic0': 'https://images.launchbox-app.com/c6d6235a-8224-45eb-9501-89916ddc85c1.png',
+        'pic1': 'https://images.launchbox-app.com/a398d203-6ce6-466c-87d6-2d838b677fc6.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Lost%20World%20-%20Jurassic%20Park%20-%20Special%20Edition%20(E)%20[SLUS-00515].cbr',
     },
     'SLUS00896': {
         'url': "games/U/T/SLUS-00896.html",
     	'id': 'SLUS00896',
 	'title': "THE MISADVENTURES OF TRON BONNE",
+        'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
+        'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Misadventures%20of%20Tron%20Bonne%20[SLUS-00896]%20(E).cbr',
     },
     'SLUS01187': {
         'url': "games/U/T/SLUS-01187.html",
@@ -10596,6 +10620,9 @@ games = {
         'url': "games/U/T/SLUS-00638.html",
     	'id': 'SLUS00638',
 	'title': "TINY TOON ADVENTURES - THE GREAT BEANSTALK",
+        'pic0': 'https://images.launchbox-app.com/a7aa61f1-cacf-4213-81a4-6fba352c542d.png',
+        'pic1': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tiny%20Toon%20-%20Buster%20&%20The%20Beamstalk%20[SLUS-00638]%20(E).cbr',
     },
     'SLUS00967': {
         'url': "games/U/T/SLUS-00967.html",
@@ -10621,11 +10648,17 @@ games = {
         'url': "games/U/T/SCUS-94208.html",
     	'id': 'SCUS94208',
 	'title': "TOBAL No.1",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
     },
     'SCUS94961': {
         'url': "games/U/T/SCUS-94208.html",
     	'id': 'SCUS94961',
 	'title': "TOBAL No.1",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
     },
     'SLUS00611': {
         'url': "games/U/T/SLUS-00611.html",
@@ -10989,6 +11022,9 @@ games = {
         'url': "games/U/V/SLUS-01035.html",
     	'id': 'SLUS01035',
 	'title': "VANARK",
+        'pic0': 'https://images.launchbox-app.com/8f1f620e-0baa-45da-bebc-f7bc2edadb9a.png',
+        'pic1': 'https://images.launchbox-app.com/75a1c959-a161-44b4-894f-99b376c43cf1.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Vanark%20[SLUS-01035]%20(E).cbr',
     },
     'SLUS00447': {
         'url': "games/U/V/SLUS-00447.html",
@@ -27356,6 +27392,7 @@ games = {
 	'title': "TECHNOMAGE - RETURN OF ETERNITY",
         'pic0': 'https://images.launchbox-app.com/44200e72-3d7d-4fe2-bee3-b72264b92804.png',
         'pic1': 'https://images.launchbox-app.com/5901487a-198a-4bfc-9134-989a045321e1.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Techonomage%20-%20Return%20of%20Eternity%20[SLES-03241]%20(E).cbr',
     },
     'SLES03243': {
         'url': "games/P/T/SLES-03243.html",
@@ -27717,16 +27754,20 @@ games = {
         'url': "games/P/T/SLES-03489.html",
     	'id': 'SLES03489',
 	'title': "THE ITALIAN JOB",
+        'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
     },
     'SLES03626': {
         'url': "games/P/T/SLES-03626.html",
     	'id': 'SLES03626',
 	'title': "THE ITALIAN JOB",
+        'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Italian%20Job%20[SLES-03626]%20(S).cbr',
     },
     'SLES03648': {
         'url': "games/P/T/SLES-03648.html",
     	'id': 'SLES03648',
 	'title': "THE ITALIAN JOB",
+        'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
     },
     'SCES00562': {
         'url': "games/P/T/SCES-00562.html",
@@ -27744,6 +27785,8 @@ games = {
         'url': "games/P/T/SLES-03448.html",
     	'id': 'SLES03448',
 	'title': "THE LAND BEFORE TIME - RACING ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/c37086a5-2492-47ab-8a2d-c7f452b2b89d.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Land%20Before%20Time%20-%20Racing%20Adventure%20[SLES-03448]%20(E).cbr',
     },
     'SLES02981': {
         'url': "games/P/T/SLES-02981.html",
@@ -27931,11 +27974,17 @@ games = {
         'url': "games/P/T/SLES-00903.html",
     	'id': 'SLES00903',
 	'title': "THE LOST WORLD - JURASSIC PARK",
+        'pic0': 'https://images.launchbox-app.com/c6d6235a-8224-45eb-9501-89916ddc85c1.png',
+        'pic1': 'https://images.launchbox-app.com/a398d203-6ce6-466c-87d6-2d838b677fc6.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Lost%20World%20-%20Jurassic%20Park%20-%20Special%20Edition%20(E)%20[SLUS-00515].cbr',
     },
     'SLES02795': {
         'url': "games/P/T/SLES-02795.html",
     	'id': 'SLES02795',
 	'title': "THE MISADVENTURES OF TRON BONNE",
+        'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
+        'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Misadventures%20of%20Tron%20Bonne%20[SLUS-00896]%20(E).cbr',
     },
     'SLES03234': {
         'url': "games/P/T/SLES-03234.html",
@@ -28415,16 +28464,25 @@ games = {
         'url': "games/P/T/SCES-01996.html",
     	'id': 'SCES01996',
 	'title': "TINY TOON ADVENTURES - BUSTER AND THE BEANSTALK",
+        'pic0': 'https://images.launchbox-app.com/a7aa61f1-cacf-4213-81a4-6fba352c542d.png',
+        'pic1': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tiny%20Toon%20-%20Buster%20&%20The%20Beamstalk%20[SLUS-00638]%20(E).cbr',
     },
     'SCES01997': {
         'url': "games/P/T/SCES-01997.html",
     	'id': 'SCES01997',
 	'title': "TINY TOON ADVENTURES - BUSTER AND THE BEANSTALK",
+        'pic0': 'https://images.launchbox-app.com/a7aa61f1-cacf-4213-81a4-6fba352c542d.png',
+        'pic1': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tiny%20Toon%20-%20Buster%20&%20The%20Beamstalk%20[SLUS-00638]%20(E).cbr',
     },
     'SCES01998': {
         'url': "games/P/T/SCES-01998.html",
     	'id': 'SCES01998',
 	'title': "TINY TOON ADVENTURES - BUSTER AND THE BEANSTALK",
+        'pic0': 'https://images.launchbox-app.com/a7aa61f1-cacf-4213-81a4-6fba352c542d.png',
+        'pic1': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tiny%20Toon%20-%20Buster%20&%20The%20Beamstalk%20[SLUS-00638]%20(E).cbr',
     },
     'SLES03547': {
         'url': "games/P/T/SLES-03547.html",
@@ -28465,7 +28523,10 @@ games = {
     'SCES00497': {
         'url': "games/P/T/SCES-00497.html",
     	'id': 'SCES00497',
-	'title': "TOBAL NÂº.1",
+	'title': "TOBAL No.1",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
     },
     'SLES00376': {
         'url': "games/P/T/SLES-00376.html",
@@ -29179,7 +29240,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Vagrant%20Story%20[SLES-02754]%20(E)(Du).cbr',
     },
     'SLES02755': {
         'url': "games/P/V/SLES-02755.html",
@@ -29267,26 +29328,32 @@ games = {
         'url': "games/P/V/SLES-01293.html",
     	'id': 'SLES01293',
 	'title': "VERSAILLES - A GAME OF INTRIGUE",
+        'pic0': 'https://images.launchbox-app.com/46a13c6d-84aa-423d-8f07-ba7bc3753aac.png',
     },
     'SLES01031': {
         'url': "games/P/V/SLES-01031.html",
     	'id': 'SLES01031',
 	'title': "VERSAILLES - COMPLOT A LA COUR DU ROI SOLEIL",
+        'pic0': 'https://images.launchbox-app.com/46a13c6d-84aa-423d-8f07-ba7bc3753aac.png',
     },
     'SLES01294': {
         'url': "games/P/V/SLES-01294.html",
     	'id': 'SLES01294',
 	'title': "VERSAILLES - COMPLOTTO ALLA CORTE DEL RE SOLE",
+        'pic0': 'https://images.launchbox-app.com/46a13c6d-84aa-423d-8f07-ba7bc3753aac.png',
     },
     'SLES01730': {
         'url': "games/P/V/SLES-01730.html",
     	'id': 'SLES01730',
 	'title': "VERSAILLES - VERSCHWORUNG AM HOF",
+        'pic0': 'https://images.launchbox-app.com/46a13c6d-84aa-423d-8f07-ba7bc3753aac.png',
     },
     'SLES02219': {
         'url': "games/P/V/SLES-02219.html",
     	'id': 'SLES02219',
 	'title': "VERSALLES - COMPLOT EN LA CORTE DEL REY SOL",
+        'pic0': 'https://images.launchbox-app.com/46a13c6d-84aa-423d-8f07-ba7bc3753aac.png',
+        'manual': 'https://psxdatacenter.com/manuals/Versalles%20-%20Complot%20en%20la%20Corte%20del%20Rey%20Sol%20[SLES-02219]%20(S).cbr',
     },
     'SCES02873': {
         'url': "games/P/V/SCES-02873.html",
@@ -55625,21 +55692,29 @@ games = {
         'url': "games/J/T/SCPS-45099.html",
     	'id': 'SCPS45099',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE",
+        'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS00330': {
         'url': "games/J/T/SLPS-00330.html",
     	'id': 'SLPS00330',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE",
+        'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS91034': {
         'url': "games/J/T/SLPS-91034.html",
     	'id': 'SLPS91034',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS91411': {
         'url': "games/J/T/SLPS-91411.html",
     	'id': 'SLPS91411',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS00362': {
         'url': "games/J/T/SLPS-00362.html",
@@ -55658,7 +55733,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/728bd369-d733-435b-a542-38a4240bfa3d.png',
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20(J)%20[SLPS-01100].cbr',
     },
     'SLPS91111': {
         'url': "games/J/T/SLPS-91111.html",
@@ -55667,7 +55742,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/728bd369-d733-435b-a542-38a4240bfa3d.png',
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20(J)%20[SLPS-01100].cbr',
     },
     'SCPS45507': {
         'url': "games/J/T/SCPS-45507.html",
@@ -55692,36 +55767,42 @@ games = {
     	'id': 'SLPS03050',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
     },
     'SLPS03051': {
         'url': "games/J/T/SLPS-03050.html",
     	'id': 'SLPS03051',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
     },
     'SLPS03052': {
         'url': "games/J/T/SLPS-03050.html",
     	'id': 'SLPS03052',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
     },
     'SLPS03045': {
         'url': "games/J/T/SLPS-03045.html",
     	'id': 'SLPS03045',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
     },
     'SLPS03046': {
         'url': "games/J/T/SLPS-03045.html",
     	'id': 'SLPS03046',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
     },
     'SLPS03047': {
         'url': "games/J/T/SLPS-03045.html",
     	'id': 'SLPS03047',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
     },
     'SLPS91247': {
         'url': "games/J/T/SLPS-91247.html",
@@ -55745,6 +55826,8 @@ games = {
         'url': "games/J/T/SLPS-03375.html",
     	'id': 'SLPS03375',
 	'title': "TALES OF FANDOM VOL.1 [CLESS VERSION]",
+        'pic0': 'https://images.launchbox-app.com/5aad2540-5717-41ae-a17a-9ffa963af26a.png',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Fandom%20Vol%201%20(J)%20[SLPS-03375].cbr',
     },
     'SLPS03376': {
         'url': "games/J/T/SLPS-03376.html",
@@ -55755,16 +55838,25 @@ games = {
         'url': "games/J/T/SCPS-45367.html",
     	'id': 'SCPS45367',
 	'title': "TALES OF PHANTASIA",
+        'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
+        'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
     },
     'SLPS01770': {
         'url': "games/J/T/SLPS-01770.html",
     	'id': 'SLPS01770',
 	'title': "TALES OF PHANTASIA",
+        'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
+        'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
     },
     'SLPS91210': {
         'url': "games/J/T/SLPS-91210.html",
     	'id': 'SLPS91210',
 	'title': "TALES OF PHANTASIA [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
+        'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
     },
     'SLPS02366': {
         'url': "games/J/T/SLPS-02366.html",
@@ -55870,11 +55962,13 @@ games = {
         'url': "games/J/T/SLPS-00532.html",
     	'id': 'SLPS00532',
 	'title': "TASOKAGE NO ODE - ODE TO THE SUNSET ERA",
+        'manual': 'https://psxdatacenter.com/manuals/Tasogare%20no%20Ode%20(J)%20[SLPS-00532].cbr',
     },
     'SLPS02884': {
         'url': "games/J/T/SLPS-02884.html",
     	'id': 'SLPS02884',
 	'title': "TASOKAGE NO ODE - ODE TO THE SUNSET ERA [BEST PRICE 2500]",
+        'manual': 'https://psxdatacenter.com/manuals/Tasogare%20no%20Ode%20(J)%20[SLPS-00532].cbr',
     },
     'SLPS02939': {
         'url': "games/J/T/SLPS-02939.html",
@@ -55895,6 +55989,8 @@ games = {
         'url': "games/J/T/SLPM-86738.html",
     	'id': 'SLPM86738',
 	'title': "TECHNO BB",
+        'pic0': 'https://images.launchbox-app.com/4e328626-ff33-4038-a161-eb8eca4884ae.png',
+        'manual': 'https://psxdatacenter.com/manuals/Techno%20BB%20[SLPM-86738]%20(J).cbr',
     },
     'SLPS00565': {
         'url': "games/J/T/SLPS-00565.html",
@@ -55956,7 +56052,7 @@ games = {
 	'title': "TEKKEN 2",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Tekken%202%20(J)%20[SLPS-00300].cbr',
     },
     'SLPS91055': {
         'url': "games/J/T/SLPS-91055.html",
@@ -55964,7 +56060,7 @@ games = {
 	'title': "TEKKEN 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/7691ed4e-87ef-4292-a41a-24d473e4b60f.png',
         'pic1': 'https://images.launchbox-app.com/5b37a850-0c5f-4eab-9b3e-55dd9c74d683.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Tekken%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Tekken%202%20(J)%20[SLPS-00300].cbr',
     },
     'SCPS45213': {
         'url': "games/J/T/SCPS-45213.html",
@@ -56082,16 +56178,19 @@ games = {
         'url': "games/J/T/SLPM-87028.html",
     	'id': 'SLPM87028',
 	'title': "TENNIS NO OJI-SAMA - THE PRINCE OF TENNIS",
+        'manual': 'https://psxdatacenter.com/manuals/Tennis%20No%20Oujisama%20(The%20Prince%20of%20Tennis)%20[PSOne%20Books]%20[SLPM-87287]%20(J).cbr',
     },
     'SLPM87200': {
         'url': "games/J/T/SLPM-87200.html",
     	'id': 'SLPM87200',
 	'title': "TENNIS NO OJI-SAMA - THE PRINCE OF TENNIS [KONAMI THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/Tennis%20No%20Oujisama%20(The%20Prince%20of%20Tennis)%20[PSOne%20Books]%20[SLPM-87287]%20(J).cbr',
     },
     'SLPM87287': {
         'url': "games/J/T/SLPM-87287.html",
     	'id': 'SLPM87287',
 	'title': "TENNIS NO OJI-SAMA - THE PRINCE OF TENNIS [PSONE BOOKS]",
+        'manual': 'https://psxdatacenter.com/manuals/Tennis%20No%20Oujisama%20(The%20Prince%20of%20Tennis)%20[PSOne%20Books]%20[SLPM-87287]%20(J).cbr',
     },
     'SLPS01278': {
         'url': "games/J/T/SLPS-01278.html",
@@ -56269,16 +56368,22 @@ games = {
         'url': "games/J/T/SLPS-00782.html",
     	'id': 'SLPS00782',
 	'title': "THE CONVENI! - ANO MACHI O DOKUSEN SEYO",
+        'pic0': 'https://images.launchbox-app.com/cb6f8d4e-5dc5-4caa-92c9-aeedcbdca729.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Conveni%20(J)%20[SLPS-00782].cbr',
     },
     'SLPS91104': {
         'url': "games/J/T/SLPS-91104.html",
     	'id': 'SLPS91104',
 	'title': "THE CONVENI! - ANO MACHI O DOKUSEN SEYO [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/cb6f8d4e-5dc5-4caa-92c9-aeedcbdca729.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Conveni%20(J)%20[SLPS-00782].cbr',
     },
     'SLPM86655': {
         'url': "games/J/T/SLPM-86655.html",
     	'id': 'SLPM86655',
 	'title': "THE CONVENI! - ANO MACHI O DOKUSEN SEYO [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/cb6f8d4e-5dc5-4caa-92c9-aeedcbdca729.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Conveni%20(J)%20[SLPS-00782].cbr',
     },
     'SLPS01146': {
         'url': "games/J/T/SLPS-01146.html",
@@ -56537,7 +56642,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10120': {
         'url': "games/J/T/SCPS-10119.html",
@@ -56545,7 +56650,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10121': {
         'url': "games/J/T/SCPS-10119.html",
@@ -56553,7 +56658,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10122': {
         'url': "games/J/T/SCPS-10119.html",
@@ -56561,7 +56666,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45461': {
         'url': "games/J/T/SCPS-45461.html",
@@ -56569,7 +56674,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45462': {
         'url': "games/J/T/SCPS-45461.html",
@@ -56577,7 +56682,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45463': {
         'url': "games/J/T/SCPS-45461.html",
@@ -56585,7 +56690,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45464': {
         'url': "games/J/T/SCPS-45461.html",
@@ -56593,7 +56698,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SLPS01323': {
         'url': "games/J/T/SLPS-01323.html",
@@ -56614,6 +56719,8 @@ games = {
         'url': "games/J/T/SLPS-01099.html",
     	'id': 'SLPS01099',
 	'title': "THE LOST WORLD - JURASSIC PARK",
+        'pic0': 'https://images.launchbox-app.com/c6d6235a-8224-45eb-9501-89916ddc85c1.png',
+        'pic1': 'https://images.launchbox-app.com/a398d203-6ce6-466c-87d6-2d838b677fc6.png',
     },
     'SLPM86586': {
         'url': "games/J/T/SLPM-86586.html",
@@ -56734,6 +56841,8 @@ games = {
         'url': "games/J/T/SLPS-02703.html",
     	'id': 'SLPS02703',
 	'title': "THE SHANGHAI [VALUE 1500]",
+        'pic0': 'https://images.launchbox-app.com/4c3a8539-a8b7-4171-94ad-235a98f2006d.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Shanghai%20[Value%201500]%20[SLPS-02703]%20(J).cbr',
     },
     'SLPS00169': {
         'url': "games/J/T/SLPS-00169.html",
@@ -56909,6 +57018,8 @@ games = {
         'url': "games/J/T/SLPM-86473.html",
     	'id': 'SLPM86473',
 	'title': "THE YELLOW MONKEY - TRANCEMISSION VJ REMIX",
+        'pic0': 'https://images.launchbox-app.com/3ab908ac-9fea-4591-b889-b0bf871a495d.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Yellow%20Monkey%20-%20Trancemission%20VJ%20Remix%20(J)%20[SLPM-86473].cbr',
     },
     'SLPS00872': {
         'url': "games/J/T/SLPS-00872.html",
@@ -57166,17 +57277,23 @@ games = {
     'SLPS00400': {
         'url': "games/J/T/SLPS-00400.html",
     	'id': 'SLPS00400',
-	'title': "TOBAL Nº.1",
+	'title': "TOBAL No.1",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
     },
     'SLPS00401': {
         'url': "games/J/T/SLPS-00400.html",
     	'id': 'SLPS00401',
-	'title': "TOBAL Nº.1",
+	'title': "TOBAL No.1",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
     },
     'SLPM87405': {
         'url': "games/J/T/SLPM-87405.html",
     	'id': 'SLPM87405',
-	'title': "TOBAL Nº.1 [LEGENDARY HITS]",
+	'title': "TOBAL No.1 [LEGENDARY HITS]",
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
     },
     'SCPS45025': {
         'url': "games/J/T/SCPS-45025.html",
