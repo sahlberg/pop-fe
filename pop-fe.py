@@ -530,31 +530,64 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
     print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
     f = cue.split('/')[-1][:-4]
-    with open(create_path(cue, 'GAME_ID'), 'w') as d:
-        d.write(game_id)
-    with open(create_path(cue, 'GAME_TITLE'), 'w') as d:
-        d.write(game_title)
-    icon0.save(create_path(cue, f + '_cover.png'))
-    pic0.save(create_path(cue, f + '_pic0.png'))
-    pic1.save(create_path(cue, f + '_pic1.png'))
-    if manual:
-        p = create_path(cue, f + '.manual')
-        try:
-            os.stat(p)
-            print('Local manual detected in', p, 'skipping fetch')
-        except:
-            if p != manual:
-                with open(manual, 'rb') as i:
-                    d = i.read()
-                    with open(p, 'wb') as o:
-                        o.write(d)
+
+    # GAME_ID
+    try:
+        os.stat(create_path(cue, 'GAME_ID'))
+    except:
+        print('Installing GAME_ID')
+        with open(create_path(cue, 'GAME_ID'), 'w') as d:
+            d.write(game_id)
+
+    # GAME_TITLE
+    try:
+        os.stat(create_path(cue, 'GAME_TITLE'))
+    except:
+        print('Installing GAME_TITLE')
+        with open(create_path(cue, 'GAME_TITLE'), 'w') as d:
+            d.write(game_title)
+
+    # COVER
+    try:
+        os.stat(create_path(cue, f + '_cover.png'))
+    except:
+        print('Installing COVER')
+        icon0.save(create_path(cue, f + '_cover.png'))
+            
+    # PIC0
+    try:
+        os.stat(create_path(cue, f + '_pic0.png'))
+    except:
+        print('Installing PIC0')
+        pic0.save(create_path(cue, f + '_pic0.png'))
+            
+    # PIC1
+    try:
+        os.stat(create_path(cue, f + '_pic1.png'))
+    except:
+        print('Installing PIC0')
+        pic0.save(create_path(cue, f + '_pic1.png'))
+
+    # SND0
     if snd0:
-        p = create_path(cue, f + '.snd0')
-        if p != snd0:
+        try:
+            os.stat(create_path(cue, f + '.snd0'))
+        except:
+            print('Installing SND0')
             with open(snd0, 'rb') as i:
-                d = i.read()
-                with open(p, 'wb') as o:
-                    o.write(d)
+                with open(create_path(cue, f + '.snd0'), 'wb') as o:
+                    o.write(i.read())
+        
+    # MANUAL
+    if manual:
+        try:
+            os.stat(create_path(cue, f + '.manual'))
+        except:
+            print('Installing MANUAL')
+            with open(manual, 'rb') as i:
+                with open(create_path(cue, f + '.manual'), 'wb') as o:
+                    o.write(i.read())
+
         
 def get_imgs_from_bin(cue):
     def get_file_name(line):
@@ -1711,7 +1744,12 @@ def create_sbi(sbi, magic_word):
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP
 def create_manual(source, gameid, subdir='./pop-fe-work/'):
+    # already have a manual in the proper format
+    if source[-7:] == '.manual':
+        return source
+    
     print('Create manual', source)
+
     if source[:8] != 'https://':
         with open(source, 'rb') as f:
             buf = f.read(4)
@@ -2100,7 +2138,7 @@ if __name__ == "__main__":
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
 
     manual = None
-    if args.psp_dir:
+    if args.psp_dir or args.fetch_metadata:
         if args.manual:
             manual = args.manual
         if not manual:

@@ -10075,6 +10075,7 @@ games = {
     	'id': 'SLUS00340',
 	'title': "TECMO'S DECEPTION - INVITATION TO DARKNESS",
         'pic0': 'https://images.launchbox-app.com/4924dbee-42ae-4d32-927d-95bf19c268c5.png',
+        'snd0': 'https://www.youtube.com/watch?v=PTTicLLd9ow&list=PLKkxnBwFOJGKZp6f_RttMVZ4b2_niM7am&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Techmo%27s%20Deception_jp2.zip',
     },
     'SLUS00315': {
