@@ -1767,7 +1767,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
                     temp_files.append(f)
                 source = subdir
             except:
-                print('Could not extract images from CBR file. Make sure that UNRAR is installed.')
+                print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
                 return None
                 
     if not os.path.isdir(source):
