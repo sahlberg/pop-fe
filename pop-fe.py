@@ -1784,6 +1784,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
 
 # ICON0 is the game cover
+# PIC0 is logo
 # PIC1 is background image/poster
 #
 if __name__ == "__main__":
