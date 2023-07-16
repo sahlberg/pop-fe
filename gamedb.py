@@ -878,7 +878,7 @@ games = {
     	'id': 'SLPS00477',
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Colin%20McRae%20Rally%20[SLES-00477]%20(Platinum)%20(S).cbr',
     },
     'SLPS00478': {
         'url': "games/J/W/SLPS-00477.html",
@@ -3816,7 +3816,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/93d9cd45-c6a2-4d51-9edd-0c6020bcfd4b.png',
         'pic1': 'https://images.launchbox-app.com/d9029bf7-22d3-4cfe-843d-102435d34096.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Coolboarders%20[SLPS-00456]%20(J).cbr',
     },
     'SCUS94154': {
         'url': "games/U/C/SCUS-94154.html",
@@ -3938,6 +3938,7 @@ games = {
 	'title': "CYBERIA",
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
     },
     'SLUS00008': {
         'url': "games/U/C/SLUS-00008.html",
@@ -4910,6 +4911,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLUS01275': {
         'url': "games/U/F/SLUS-01266.html",
@@ -4917,6 +4919,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLUS01276': {
         'url': "games/U/F/SLUS-01266.html",
@@ -4924,6 +4927,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLUS01277': {
         'url': "games/U/F/SLUS-01266.html",
@@ -4931,6 +4935,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLUS00533': {
         'url': "games/U/F/SLUS-00533.html",
@@ -5222,6 +5227,7 @@ games = {
         'url': "games/U/F/SLUS-01134.html",
     	'id': 'SLUS01134',
 	'title': "FORMULA ONE 2000",
+        'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
     },
     'SLUS00458': {
         'url': "games/U/F/SLUS-00458.html",
@@ -14206,6 +14212,7 @@ games = {
         'url': "games/P/F/SLES-04169.html",
     	'id': 'SLES04169',
 	'title': "FIFA FOOTBALL 2005",
+        'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES03832': {
         'url': "games/P/F/SLES-03832.html",
@@ -14258,7 +14265,7 @@ games = {
 	'title': "FINAL FANTASY ANTHOLOGY",
         'pic0': 'https://images.launchbox-app.com/8ee97b6e-0e75-430c-9bf6-be25557a6474.png',
         'pic1': 'https://images.launchbox-app.com/5d46b98a-12d8-4aac-af89-56b503d78c69.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Anthology%20-%20Final%20Fantasy%20V%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Anthology%20(S)%20[SCES-03840].cbr',
     },
     'SCES13840': {
         'url': "games/P/F/SCES-03840.html",
@@ -14274,7 +14281,7 @@ games = {
 	'title': "FINAL FANTASY ORIGINS",
         'pic0': 'https://images.launchbox-app.com/209bfdd1-29e2-4509-8ce5-c44904301859.png',
         'pic1': 'https://images.launchbox-app.com/d6fe92ca-4556-4dee-b30a-9beca106b179.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Origins%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20-%20Origins%20(I)(S)%20[SLES-04034].cbr',
     },
     'SLES14034': {
         'url': "games/P/F/SLES-04034.html",
@@ -14288,11 +14295,16 @@ games = {
         'url': "games/P/F/SCES-03828.html",
     	'id': 'SCES03828',
 	'title': "FINAL FANTASY VI",
+        'pic0': 'https://images.launchbox-app.com/553b5753-9d56-4864-929a-a5dd33db987f.png',
+        'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VI%20(S)%20[SCES-03828].cbr',
     },
     'SCED-50642': {
         'url': "games/P/F/SCES-03828.html",
     	'id': 'SCED-50642',
 	'title': "FINAL FANTASY VI",
+        'pic0': 'https://images.launchbox-app.com/553b5753-9d56-4864-929a-a5dd33db987f.png',
+        'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
     },
     'SCES00867': {
         'url': "games/P/F/SCES-00867.html",
@@ -14742,7 +14754,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES12969': {
         'url': "games/P/F/SLES-02969.html",
@@ -14751,7 +14763,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES22969': {
         'url': "games/P/F/SLES-02969.html",
@@ -14760,7 +14772,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES32969': {
         'url': "games/P/F/SLES-02969.html",
@@ -14769,7 +14781,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SCES03884': {
         'url': "games/P/F/SCES-03884.html",
@@ -14780,21 +14792,26 @@ games = {
         'url': "games/P/F/SLES-00094.html",
     	'id': 'SLES00094',
 	'title': "FIRO & KLAWD",
+        'pic0': 'https://images.launchbox-app.com/07b94b52-2811-4d78-9650-4e0d33772b69.png',
+        'manual': 'https://psxdatacenter.com/manuals/Firo%20&%20Klawd%20(Multi-7)%20(E)(F)(G)(I)(S)(Du)(Sw)%20[SLES-00094].cbr',
     },
     'SLES00252': {
         'url': "games/P/F/SLES-00252.html",
     	'id': 'SLES00252',
 	'title': "FIRO & KLAWD",
+        'pic0': 'https://images.launchbox-app.com/07b94b52-2811-4d78-9650-4e0d33772b69.png',
     },
     'SLES00253': {
         'url': "games/P/F/SLES-00253.html",
     	'id': 'SLES00253',
 	'title': "FIRO & KLAWD",
+        'pic0': 'https://images.launchbox-app.com/07b94b52-2811-4d78-9650-4e0d33772b69.png',
     },
     'SLES00254': {
         'url': "games/P/F/SLES-00254.html",
     	'id': 'SLES00254',
 	'title': "FIRO & KLAWD",
+        'pic0': 'https://images.launchbox-app.com/07b94b52-2811-4d78-9650-4e0d33772b69.png',
     },
     'SLES02085': {
         'url': "games/P/F/SLES-02085.html",
@@ -14869,7 +14886,7 @@ games = {
     	'id': 'SLES00298',
 	'title': "FORMULA 1",
         'pic0': 'https://images.launchbox-app.com/bb1b1df5-8384-4e28-a38e-051da3f1586a.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Formula%201%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Formula%201%20(Multi-2)%20(E)(F)%20[SLES-00298].cbr',
     },
     'SLES00859': {
         'url': "games/P/F/SLES-00859.html",
@@ -14881,12 +14898,13 @@ games = {
     	'id': 'SLES01421',
 	'title': "FORMULA 1 '98",
         'pic0': 'https://images.launchbox-app.com/ca7f484e-1c49-447f-aa3d-2d6d7f6c879c.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Formula%201%2098%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Formula%201%2098%20[SLES-01421]%20(F).cbr',
     },
     'SLES03994': {
         'url': "games/P/F/SLES-03994.html",
     	'id': 'SLES03994',
 	'title': "FORMULA GP",
+        'manual': 'https://psxdatacenter.com/manuals/Formula%20GP%20(S)%20[SLES-03994].cbr',
     },
     'SLES00726': {
         'url': "games/P/F/SLES-00726.html",
@@ -14917,16 +14935,20 @@ games = {
         'url': "games/P/F/SCES-02777.html",
     	'id': 'SCES02777',
 	'title': "FORMULA ONE 2000",
+        'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
+        'manual': 'https://psxdatacenter.com/manuals/Formula%20One%202000%20(E)%20[SCES-02777].cbr',
     },
     'SCES02778': {
         'url': "games/P/F/SCES-02778.html",
     	'id': 'SCES02778',
 	'title': "FORMULA ONE 2000",
+        'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
     },
     'SCES02779': {
         'url': "games/P/F/SCES-02779.html",
     	'id': 'SCES02779',
 	'title': "FORMULA ONE 2000",
+        'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
     },
     'SCES03404': {
         'url': "games/P/F/SCES-03404.html",
@@ -14969,7 +14991,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/45436126-86b2-4fe6-b13e-792f323120af.png',
         'pic1': 'https://images.launchbox-app.com/6ea92711-44b7-443d-8dba-f6556f230e0e.png',
         'snd0': 'https://www.youtube.com/watch?v=Hc3i2sVc0Hc&list=PL4FA3070127B87043&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Forsaken%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Forsaken%20[SLES-01086]%20(F)(Du).cbr',
     },
     'SLES01087': {
         'url': "games/P/F/SLES-01087.html",
@@ -15070,7 +15092,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/500cc935-9f98-4b13-8da5-ca0f41615fc3.png',
         'pic1': 'https://images.launchbox-app.com/e36ea1a9-d206-4943-beb1-02951b09afda.jpg',
         'snd0': 'https://www.youtube.com/watch?v=oW5eyvQ00Fg&list=PLKBjuFjyI637q68RkprKCiD6YGhgOdlT_&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Future%20Cop%20-%20L.A.P.D.%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Future%20Cop%20L.A.P.D.%20(E)(P)%20[SLES-01449].cbr',
     },
     'SLES01482': {
         'url': "games/P/F/SLES-01482.html",
@@ -16616,6 +16638,7 @@ games = {
 	'title': "DISNEY / PIXAR - MONSTRUOS SA - LA ISLA DE LOS SUSTOS",
         'pic0': 'https://images.launchbox-app.com/3359213e-650b-4e7e-aac0-1c4856fe0d42.png',
         'pic1': 'https://cdn.mobygames.com/covers/8111656-disneypixar-monsters-inc-playstation-3-front-cover.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Disney%20Pixar%20Monstruos%20SA%20[SLES-03767]%20[S].cbr',
     },
     'SCES01737': {
         'url': "games/P/D/SCES-01737.html",
@@ -17086,7 +17109,7 @@ games = {
 	'title': "DRIVER - YOU'RE THE WHEELMAN",
         'pic0': 'https://images.launchbox-app.com/3691ef51-3d62-41f6-973e-2b7322aa55f0.png',
         'pic1': 'https://images.launchbox-app.com/67dcb932-a330-4e33-bb89-52c3b61b330a.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%20-%20You%20Are%20the%20Wheelman%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Driver%20[SLES-01978]%20(Platinum)%20(S).cbr',
     },
     'SLES02993': {
         'url': "games/P/D/SLES-02993.html",
@@ -17729,6 +17752,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES13386': {
         'url': "games/P/F/SLES-03386.html",
@@ -17736,6 +17760,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES23386': {
         'url': "games/P/F/SLES-03386.html",
@@ -17743,6 +17768,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES33386': {
         'url': "games/P/F/SLES-03386.html",
@@ -17750,6 +17776,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES00940': {
         'url': "games/P/F/SLES-00940.html",
@@ -20681,6 +20708,8 @@ games = {
         'url': "games/P/C/SLES-04148.html",
     	'id': 'SLES04148',
 	'title': "CINDY'S CARIBBEAN HOLIDAY",
+        'pic0': 'https://images.launchbox-app.com/baab5a01-9298-428e-b5b6-2b4d65544217.png',
+        'manual': 'https://psxdatacenter.com/manuals/Cindy%20Caribbean%20Holiday%20[SLES-04148]%20(E).cbr',
     },
     'SLES04147': {
         'url': "games/P/C/SLES-04147.html",
@@ -21185,7 +21214,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5c5bd83e-49df-4c1f-a2a7-8f0a20e880ef.png',
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%202%20-%20Cortex%20Strikes%20Back%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Crash%20Bandicoot%202%20(Platinum)%20[SCES-00967]%20(E)(F)(G)(Du)(I)(S).cbr',
     },
     'SCES01420': {
         'url': "games/P/C/SCES-01420.html",
@@ -21366,6 +21395,7 @@ games = {
 	'title': "CYBERIA",
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
     },
     'SLES00272': {
         'url': "games/P/C/SLES-00272.html",
@@ -21373,6 +21403,7 @@ games = {
 	'title': "CYBERIA",
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
     },
     'SLES02370': {
         'url': "games/P/C/SLES-02370.html",
@@ -21527,7 +21558,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/7d914843-c1ad-4443-8b7d-b569d61968ac.png',
         'pic1': 'https://images.launchbox-app.com/8f8c1250-2b2a-4ed9-8a5b-351f4a66b250.jpg',
         'snd0': 'https://www.youtube.com/watch?v=IuZ2TXs2J-o&list=PLXBpfYjzL87_YzzGTJivvrYLvulF6b2gl&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Darkstalkers%203%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Darkstalkers%203%20[SLES-01719]%20(E)(F)(G)(S)(I).cbr',
     },
     'SLES00612': {
         'url': "games/P/D/SLES-00612.html",
@@ -22040,6 +22071,7 @@ games = {
 	'title': "DISNEY'S 102 DALMATIANS - PUPPIES TO THE RESCUE",
         'pic0': 'https://images.launchbox-app.com/10e74053-b72c-4907-8554-7e7de4654fac.png',
         'pic1': 'https://images.launchbox-app.com/ab130211-1f1b-4e2b-87da-fa6a4beb2803.jpg',
+        'manual': "https://psxdatacenter.com/manuals/Disney's%20102%20Dalmatians%20-%20Puppies%20to%20the%20Rescue%20(E)%20[SLES-03189].cbr",
     },
     'SLES03190': {
         'url': "games/P/D/SLES-03190.html",
@@ -22432,6 +22464,7 @@ games = {
         'url': "games/P/D/SCES-03036.html",
     	'id': 'SCES03036',
 	'title': "DISNEY'S LA SIRENITA II",
+        'manual': 'https://psxdatacenter.com/manuals/Disney%20-%20La%20Sirenita%202%20[SCES-03036]%20(S).cbr',
     },
     'SLES03641': {
         'url': "games/P/D/SLES-03641.html",
@@ -33658,12 +33691,14 @@ games = {
     	'id': 'SCPS10109',
 	'title': "CHASE THE EXPRESS",
         'pic0': 'https://images.launchbox-app.com/35092679-1713-401c-892c-73df05023ab1.png',
+        'manual': 'https://psxdatacenter.com/manuals/Chase%20the%20Express%20[SCPS-10109-10]%20(J).cbr',
     },
     'SCPS10110': {
         'url': "games/J/C/SCPS-10109.html",
     	'id': 'SCPS10110',
 	'title': "CHASE THE EXPRESS",
         'pic0': 'https://images.launchbox-app.com/35092679-1713-401c-892c-73df05023ab1.png',
+        'manual': 'https://psxdatacenter.com/manuals/Chase%20the%20Express%20[SCPS-10109-10]%20(J).cbr',
     },
     'SLPS01251': {
         'url': "games/J/C/SLPS-01251.html",
@@ -33759,6 +33794,8 @@ games = {
         'url': "games/J/C/SLPS-01853.html",
     	'id': 'SLPS01853',
 	'title': "CHIPPOKE RALPH NO DAIBOUKEN [THE ADVENTURE OF LITTLE RALPH]",
+        'pic0': 'https://images.launchbox-app.com/d7e32b8b-0f1f-44cb-901d-2251b78a2cbf.png',
+        'manual': 'https://psxdatacenter.com/manuals/Chippoke%20Ralph%20no%20Daibouken%20-%20The%20Adventure%20of%20Little%20Ralph%20[SLPS-01853].cbr',
     },
     'SLPS00183': {
         'url': "games/J/C/SLPS-00183.html",
@@ -33890,6 +33927,8 @@ games = {
         'url': "games/J/C/SLPS-03400.html",
     	'id': 'SLPS03400',
 	'title': "CHOCOLATE KISS",
+        'pic0': 'https://images.launchbox-app.com/39bc35f3-b359-4d81-b6b5-c7b1c6016634.png',
+        'manual': 'https://psxdatacenter.com/manuals/Chocolate%20Kiss%20(J)%20[SLPS-03400].cbr',
     },
     'SLPS02123': {
         'url': "games/J/C/SLPS-02123.html",
@@ -34457,6 +34496,7 @@ games = {
     	'id': 'SLPS91056',
 	'title': "CLOCK TOWER 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'manual': 'https://psxdatacenter.com/manuals/Clock%20Tower%202%20[Playstation%20the%20Best]%20[SLPS-91056]%20(J).cbr',
     },
     'SCPS45173': {
         'url': "games/J/C/SCPS-45173.html",
@@ -34898,6 +34938,8 @@ games = {
         'url': "games/J/C/SLPS-00229.html",
     	'id': 'SLPS00229',
 	'title': "CRITICOM - THE CRITICAL COMBAT",
+        'pic0': 'https://images.launchbox-app.com/04b05fb1-5056-4aa8-b74a-eb43be22cf35.png',
+        'manual': 'https://psxdatacenter.com/manuals/Criticom%20[SLPS-00229]%20(J).cbr',
     },
     'SLPM86310': {
         'url': "games/J/C/SLPM-86310.html",
@@ -34933,11 +34975,15 @@ games = {
         'url': "games/J/C/SLPM-86280.html",
     	'id': 'SLPM86280',
 	'title': "CROSS TANTEI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/91189159-48d5-4013-8232-fcfe76d8cdf5.png',
+        'manual': 'https://psxdatacenter.com/manuals/Cross%20Tantei%20Monogatari%20(J)%20[SLPM-86280-1].cbr',
     },
     'SLPM86281': {
         'url': "games/J/C/SLPM-86280.html",
     	'id': 'SLPM86281',
 	'title': "CROSS TANTEI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/91189159-48d5-4013-8232-fcfe76d8cdf5.png',
+        'manual': 'https://psxdatacenter.com/manuals/Cross%20Tantei%20Monogatari%20(J)%20[SLPM-86280-1].cbr',
     },
     'SLPM86639': {
         'url': "games/J/C/SLPM-86639.html",
@@ -35903,7 +35949,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
     'CPCS-00701': {
         'url': "games/J/D/CPCS-00701.html",
@@ -35912,7 +35958,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
     'SLPM86903': {
         'url': "games/J/D/CPCS-00701.html",
@@ -35921,7 +35967,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
     'SLPM87234': {
         'url': "games/J/D/CPCS-00701.html",
@@ -35930,7 +35976,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
     'SLPM86903': {
         'url': "games/J/D/SLPM-86903.html",
@@ -35939,7 +35985,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
     'SLPM86627': {
         'url': "games/J/D/SLPM-86627.html",
@@ -35948,7 +35994,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
         'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%202%20[SLUS-01279]%20(E).cbr',
     },
     'SLPM87234': {
         'url': "games/J/D/SLPM-87234.html",
@@ -35957,7 +36003,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/28e71cb6-7417-4951-a151-be1b3acc6137.png',
         'pic1': 'https://images.launchbox-app.com/ccefeb05-b1c1-4782-9832-eedc58f20d04.jpg',
         'snd0': 'https://www.youtube.com/watch?v=KcM4zf-1jsM&list=PL3FBFFC798CBC6514&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%202%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%202%20[SLUS-01279]%20(E).cbr',
     },
     'SLPS02797': {
         'url': "games/J/D/SLPS-02797.html",
@@ -36047,7 +36093,7 @@ games = {
     	'id': 'SLPS00804',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Disruptor%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Disruptor%20[SLPS-00804]%20(J).cbr',
     },
     'SLPS01364': {
         'url': "games/J/D/SLPS-01364.html",
@@ -36768,16 +36814,25 @@ games = {
         'url': "games/J/E/SLPS-01518.html",
     	'id': 'SLPS01518',
 	'title': "ECHO NIGHT",
+        'pic0': 'https://images.launchbox-app.com/be5fb023-682e-41c3-a0f0-f3fc6416176c.png',
+        'pic1': 'https://images.launchbox-app.com/9e460b35-6b51-47b0-899e-b78c86d8ae93.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Echo%20Night%20[SLPS-01518]%20(J).cbr',
     },
     'SLPS91143': {
         'url': "games/J/E/SLPS-91143.html",
     	'id': 'SLPS91143',
 	'title': "ECHO NIGHT [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/be5fb023-682e-41c3-a0f0-f3fc6416176c.png',
+        'pic1': 'https://images.launchbox-app.com/9e460b35-6b51-47b0-899e-b78c86d8ae93.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Echo%20Night%20[SLPS-01518]%20(J).cbr',
     },
     'SLPS91403': {
         'url': "games/J/E/SLPS-91403.html",
     	'id': 'SLPS91403',
 	'title': "ECHO NIGHT [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/be5fb023-682e-41c3-a0f0-f3fc6416176c.png',
+        'pic1': 'https://images.launchbox-app.com/9e460b35-6b51-47b0-899e-b78c86d8ae93.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Echo%20Night%20[SLPS-01518]%20(J).cbr',
     },
     'SLPS02167': {
         'url': "games/J/E/SLPS-02167.html",
@@ -37111,6 +37166,8 @@ games = {
         'url': "games/J/E/SLPS-00584.html",
     	'id': 'SLPS00584',
 	'title': "ETERNAL MELODY",
+        'pic0': 'https://images.launchbox-app.com/4f8670dd-350f-4a97-b7fd-3aa7517f9699.png',
+        'manual': 'https://psxdatacenter.com/manuals/Eternal%20Melody%20(J)%20[SLPS-00584].cbr',
     },
     'SLPM86826': {
         'url': "games/J/E/SLPM-86826.html",
@@ -37414,6 +37471,8 @@ games = {
         'url': "games/J/F/SLPM-87237.html",
     	'id': 'SLPM87237',
 	'title': "FARLAND SAGA - TOKI NO MICHISHIRUBE (SUPERLITE 1500 SERIES)",
+        'pic0': 'https://images.launchbox-app.com/7251dfca-a2cc-463d-adec-0c5e70ab058e.png',
+        'manual': 'https://psxdatacenter.com/manuals/Farland%20Saga%20-%20Toki%20no%20Michishirube%20[Superlite%201500%20Series]%20[J]%20[SLPM-87237].cbr',
     },
     'SLPS00797': {
         'url': "games/J/F/SLPS-00797.html",
@@ -37676,11 +37735,15 @@ games = {
         'url': "games/J/F/SCPS-45387.html",
     	'id': 'SCPS45387',
 	'title': "FINAL FANTASY VI",
+        'pic0': 'https://images.launchbox-app.com/553b5753-9d56-4864-929a-a5dd33db987f.png',
+        'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
     },
     'SLPM86198': {
         'url': "games/J/F/SLPM-86198.html",
     	'id': 'SLPM86198',
 	'title': "FINAL FANTASY VI",
+        'pic0': 'https://images.launchbox-app.com/553b5753-9d56-4864-929a-a5dd33db987f.png',
+        'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
     },
     'SLPS00700': {
         'url': "games/J/F/SLPS-00700.html",
@@ -37689,7 +37752,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS00701': {
         'url': "games/J/F/SLPS-00700.html",
@@ -37698,7 +37761,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS00702': {
         'url': "games/J/F/SLPS-00700.html",
@@ -37707,7 +37770,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45007': {
         'url': "games/J/F/SCPS-45007.html",
@@ -37716,7 +37779,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45008': {
         'url': "games/J/F/SCPS-45007.html",
@@ -37725,7 +37788,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45009': {
         'url': "games/J/F/SCPS-45007.html",
@@ -37734,7 +37797,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS01057': {
         'url': "games/J/F/SLPS-01057.html",
@@ -37743,6 +37806,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01058': {
         'url': "games/J/F/SLPS-01057.html",
@@ -37751,6 +37815,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01059': {
         'url': "games/J/F/SLPS-01057.html",
@@ -37759,6 +37824,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01060': {
         'url': "games/J/F/SLPS-01057.html",
@@ -37767,6 +37833,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91440': {
         'url': "games/J/F/SLPS-91440.html",
@@ -37775,6 +37842,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91441': {
         'url': "games/J/F/SLPS-91440.html",
@@ -37783,6 +37851,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91442': {
         'url': "games/J/F/SLPS-91440.html",
@@ -37791,6 +37860,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91443': {
         'url': "games/J/F/SLPS-91440.html",
@@ -37799,6 +37869,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87380': {
         'url': "games/J/F/SLPM-87380.html",
@@ -37807,6 +37878,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87381': {
         'url': "games/J/F/SLPM-87380.html",
@@ -37815,6 +37887,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87382': {
         'url': "games/J/F/SLPM-87380.html",
@@ -37823,6 +37896,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87383': {
         'url': "games/J/F/SLPM-87380.html",
@@ -37831,6 +37905,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
         'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SCPS45375': {
         'url': "games/J/F/SCPS-45375.html",
@@ -37839,7 +37914,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45376': {
         'url': "games/J/F/SCPS-45375.html",
@@ -37848,7 +37923,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45377': {
         'url': "games/J/F/SCPS-45375.html",
@@ -37857,7 +37932,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45378': {
         'url': "games/J/F/SCPS-45375.html",
@@ -37866,7 +37941,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01880': {
         'url': "games/J/F/SLPS-01880.html",
@@ -37875,7 +37950,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01881': {
         'url': "games/J/F/SLPS-01880.html",
@@ -37884,7 +37959,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01882': {
         'url': "games/J/F/SLPS-01880.html",
@@ -37893,7 +37968,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01883': {
         'url': "games/J/F/SLPS-01880.html",
@@ -37902,7 +37977,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87384': {
         'url': "games/J/F/SLPM-87384.html",
@@ -37911,7 +37986,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87385': {
         'url': "games/J/F/SLPM-87384.html",
@@ -37920,7 +37995,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87386': {
         'url': "games/J/F/SLPM-87384.html",
@@ -37929,7 +38004,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87387': {
         'url': "games/J/F/SLPM-87384.html",
@@ -37938,7 +38013,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45500': {
         'url': "games/J/F/SCPS-45500.html",
@@ -37947,7 +38022,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45501': {
         'url': "games/J/F/SCPS-45500.html",
@@ -37956,7 +38031,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45502': {
         'url': "games/J/F/SCPS-45500.html",
@@ -37965,7 +38040,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45503': {
         'url': "games/J/F/SCPS-45500.html",
@@ -37974,7 +38049,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02000': {
         'url': "games/J/F/SLPS-02000.html",
@@ -37983,7 +38058,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02001': {
         'url': "games/J/F/SLPS-02000.html",
@@ -37992,7 +38067,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02002': {
         'url': "games/J/F/SLPS-02000.html",
@@ -38001,7 +38076,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02003': {
         'url': "games/J/F/SLPS-02000.html",
@@ -38010,7 +38085,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87388': {
         'url': "games/J/F/SLPM-87388.html",
@@ -38019,7 +38094,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87389': {
         'url': "games/J/F/SLPM-87388.html",
@@ -38028,7 +38103,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87390': {
         'url': "games/J/F/SLPM-87388.html",
@@ -38037,7 +38112,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87391': {
         'url': "games/J/F/SLPM-87388.html",
@@ -38046,7 +38121,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45087': {
         'url': "games/J/F/SCPS-45087.html",
@@ -38054,7 +38129,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SCPS45088': {
         'url': "games/J/F/SCPS-45087.html",
@@ -38062,7 +38137,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPS00770': {
         'url': "games/J/F/SLPS-00770.html",
@@ -38070,7 +38145,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPS00771': {
         'url': "games/J/F/SLPS-00770.html",
@@ -38078,7 +38153,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPS91435': {
         'url': "games/J/F/SLPS-91435.html",
@@ -38086,7 +38161,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPS02768': {
         'url': "games/J/F/SLPS-02768.html",
@@ -38094,7 +38169,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPM87392': {
         'url': "games/J/F/SLPM-87392.html",
@@ -38102,7 +38177,7 @@ games = {
 	'title': "FINAL FANTASY TACTICS [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/9146732a-d87b-443e-9222-44d4d65d9dbb.png',
         'pic1': 'https://images.launchbox-app.com/fe2c9c7f-4d31-43eb-8ca3-12a3762e5837.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Tactics%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Tactics%20(J)%20[SLPS-00770].cbr',
     },
     'SLPS01266': {
         'url': "games/J/F/SLPS-01266.html",
@@ -38138,11 +38213,15 @@ games = {
         'url': "games/J/F/SLPS-01315.html",
     	'id': 'SLPS01315',
 	'title': "FIRE WOMAN MATOIGUMI",
+
+        'pic0': 'https://images.launchbox-app.com/8dc0956c-be5e-48c8-88da-1163b785f149.png',
+        'manual': 'https://psxdatacenter.com/manuals/Fire%20Woman%20Matoigumi%20(J)%20[SLPS-01315].cbr',
     },
     'SLPS00803': {
         'url': "games/J/F/SLPS-00803.html",
     	'id': 'SLPS00803',
 	'title': "FIRO & KLAWD",
+        'pic0': 'https://images.launchbox-app.com/07b94b52-2811-4d78-9650-4e0d33772b69.png',
     },
     'SLPS01708': {
         'url': "games/J/F/SLPS-01708.html",
@@ -38326,6 +38405,8 @@ games = {
         'url': "games/J/F/SLPS-01355.html",
     	'id': 'SLPS01355',
 	'title': "FOX JUNCTION",
+        'pic0': 'https://images.launchbox-app.com/a093042e-ce21-40da-ac4f-cf8a7f2a6448.png',
+        'manual': 'https://psxdatacenter.com/manuals/Fox%20Junction%20(J)%20[SLPS-01355].cbr',
     },
     'SLPS00453': {
         'url': "games/J/F/SLPS-00453.html",
@@ -38405,18 +38486,21 @@ games = {
     	'id': 'SCPS45116',
 	'title': "FRONT MISSION 2",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPS01000': {
         'url': "games/J/F/SLPS-01000.html",
     	'id': 'SLPS01000',
 	'title': "FRONT MISSION 2",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPM87397': {
         'url': "games/J/F/SLPM-87397.html",
     	'id': 'SLPM87397',
 	'title': "FRONT MISSION 2 [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPS02222': {
         'url': "games/J/F/SLPS-02222.html",
@@ -38425,7 +38509,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb662e1a-aa9f-4c3a-812c-bdd0820a3f13.png',
         'pic1': 'https://images.launchbox-app.com/68ea339a-9807-4a05-8241-99ef1363386e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=E7YgearQ3Xo&list=PLDf5rbhJzPT2zpJg-SuytuDoYYL3ginI_&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Front%20Mission%203%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%203%20(J)%20[SLPS-02222].cbr',
     },
     'SLPS91447': {
         'url': "games/J/F/SLPS-91447.html",
@@ -38434,7 +38518,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb662e1a-aa9f-4c3a-812c-bdd0820a3f13.png',
         'pic1': 'https://images.launchbox-app.com/68ea339a-9807-4a05-8241-99ef1363386e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=E7YgearQ3Xo&list=PLDf5rbhJzPT2zpJg-SuytuDoYYL3ginI_&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Front%20Mission%203%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%203%20(J)%20[SLPS-02222].cbr',
     },
     'SLPS02772': {
         'url': "games/J/F/SLPS-02772.html",
@@ -38443,7 +38527,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb662e1a-aa9f-4c3a-812c-bdd0820a3f13.png',
         'pic1': 'https://images.launchbox-app.com/68ea339a-9807-4a05-8241-99ef1363386e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=E7YgearQ3Xo&list=PLDf5rbhJzPT2zpJg-SuytuDoYYL3ginI_&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Front%20Mission%203%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%203%20(J)%20[SLPS-02222].cbr',
     },
     'SLPM87399': {
         'url': "games/J/F/SLPM-87399.html",
@@ -38452,25 +38536,28 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fb662e1a-aa9f-4c3a-812c-bdd0820a3f13.png',
         'pic1': 'https://images.launchbox-app.com/68ea339a-9807-4a05-8241-99ef1363386e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=E7YgearQ3Xo&list=PLDf5rbhJzPT2zpJg-SuytuDoYYL3ginI_&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Front%20Mission%203%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%203%20(J)%20[SLPS-02222].cbr',
     },
     'SCPS45090': {
         'url': "games/J/F/SCPS-45090.html",
     	'id': 'SCPS45090',
 	'title': "FRONT MISSION ALTERNATIVE",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPS00953': {
         'url': "games/J/F/SLPS-00953.html",
     	'id': 'SLPS00953',
 	'title': "FRONT MISSION ALTERNATIVE",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPM87398': {
         'url': "games/J/F/SLPM-87398.html",
     	'id': 'SLPM87398',
 	'title': "FRONT MISSION ALTERNATIVE [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPS02307': {
         'url': "games/J/F/SLPS-02307.html",
