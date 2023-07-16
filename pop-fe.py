@@ -1759,12 +1759,17 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
             except:
                 os.mkdir(subdir)
             temp_files.append(subdir)
+
+            try:
+                r = rarfile.RarFile(source)
+                for f in r.namelist():
+                    f = r.extract(f, path=subdir)
+                    temp_files.append(f)
+                source = subdir
+            except:
+                print('Could not extract images from CBR file. Make sure that UNRAR is installed.')
+                return None
                 
-            r = rarfile.RarFile(source)
-            for f in r.namelist():
-                f = r.extract(f, path=subdir)
-                temp_files.append(f)
-            source = subdir
     if not os.path.isdir(source):
         print('Can not create manual.', source, 'is not a directory')
         return None
