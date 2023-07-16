@@ -8054,6 +8054,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'manual': 'https://psxdatacenter.com/manuals/Persona%202%20-%20Eternal%20Punishment%20[SLUS-01158]%20(E).cbr',
     },
     'SLUS01339': {
         'url': "games/U/P/SLUS-01158.html",
@@ -8062,6 +8063,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'manual': 'https://psxdatacenter.com/manuals/Persona%202%20-%20Eternal%20Punishment%20[SLUS-01158]%20(E).cbr',
     },
     'SLUS01130': {
         'url': "games/U/P/SLUS-01130.html",
@@ -8103,6 +8105,8 @@ games = {
         'url': "games/U/P/SLUS-01494.html",
     	'id': 'SLUS01494',
 	'title': "PINOBEE",
+        'pic0': 'https://images.launchbox-app.com/75d02a91-b3fd-4798-b289-50a909923f68.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pinobee%20(E)%20[SLUS-01494].cbr',
     },
     'SLUS01409': {
         'url': "games/U/P/SLUS-01409.html",
@@ -8821,6 +8825,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLUS00563': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8828,6 +8833,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLUS00564': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8835,6 +8841,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLUS00565': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8842,6 +8849,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLUS00580': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8849,6 +8857,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLUS00204': {
         'url': "games/U/R/SLUS-00204.html",
@@ -9069,6 +9078,8 @@ games = {
         'url': "games/U/S/SLUS-01381.html",
     	'id': 'SLUS01381',
 	'title': "SAIYUKI - JOURNEY WEST",
+        'pic0': 'https://images.launchbox-app.com/4f74f4f9-a764-4605-b1e3-74a2cedea70c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Saiyuki%20Journey%20West%20[SLUS-01381]%20(E).cbr',
     },
     'SLUS01397': {
         'url': "games/U/S/SLUS-01397.html",
@@ -9211,12 +9222,14 @@ games = {
     	'id': 'SLUS00028',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
     },
     'SLUS00137': {
         'url': "games/U/S/SLUS-00028.html",
     	'id': 'SLUS00137',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
     },
     'SLUS01308': {
         'url': "games/U/S/SLUS-01308.html",
@@ -9257,6 +9270,7 @@ games = {
     	'id': 'SLUS00728',
 	'title': "SILHOUETTE MIRAGE",
         'pic0': 'https://images.launchbox-app.com/953c7c57-8646-4b41-815a-1d5369e7fbd9.png',
+        'manual': 'https://psxdatacenter.com/manuals/Silhouette%20Mirage%20[SLUS-00728]%20(E).cbr',
     },
     'SLUS00050': {
         'url': "games/U/S/SLUS-00050.html",
@@ -9733,6 +9747,9 @@ games = {
         'url': "games/U/S/SLUS-00548.html",
     	'id': 'SLUS00548',
 	'title': "STREET FIGHTER EX PLUS ALPHA",
+        'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
+        'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX%20Plus%20Alpha%20[SLUS-00548]%20(E).cbr',
     },
     'SLUS01105': {
         'url': "games/U/S/SLUS-01105.html",
@@ -23973,6 +23990,8 @@ games = {
         'url': "games/P/P/SLES-04014.html",
     	'id': 'SLES04014',
 	'title': "PINOBEE",
+        'pic0': 'https://images.launchbox-app.com/75d02a91-b3fd-4798-b289-50a909923f68.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pinobee%20(E)%20[SLUS-01494].cbr',
     },
     'SLES03400': {
         'url': "games/P/P/SLES-03400.html",
@@ -24145,6 +24164,9 @@ games = {
         'url': "games/P/P/SCES-00409.html",
     	'id': 'SCES00409',
 	'title': "PORSCHE CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/fa92937d-e4a9-4225-9bf7-0fd251a91649.png',
+        'pic1': 'https://images.launchbox-app.com/7f2ba961-388b-4aaf-80c5-d9c140deb0e1.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Porsche%20Challenge%20[SCES-00409]%20(E)(F)(G).cbr',
     },
     'SLES00202': {
         'url': "games/P/P/SLES-00202.html",
@@ -24364,6 +24386,9 @@ games = {
         'url': "games/P/P/SLES-02070.html",
     	'id': 'SLES02070',
 	'title': "PUCHI CARAT",
+        'pic0': 'https://images.launchbox-app.com/b91e757c-5bca-40a2-942d-ed2d44fea24b.png',
+        'pic1': 'https://images.launchbox-app.com/6715ba3a-ddc5-42a4-bc97-5f6ce5291103.png',
+        'manual': 'https://psxdatacenter.com/manuals/Puchi%20Carat%20(E)(F)(G)(I)(S)(P)%20[SLES-02070].cbr',
     },
     'SLES01203': {
         'url': "games/P/P/SLES-01203.html",
@@ -24678,6 +24703,7 @@ games = {
 	'title': "REBOOT",
         'pic0': 'https://images.launchbox-app.com/aaceb153-1024-436e-9908-3fb9211c8492.png',
         'pic1': 'https://images.launchbox-app.com/d3a06dfb-b589-4194-b205-f17a9240a25a.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Reboot%20(S)%20[SLES-00925].cbr',
     },
     'SLES01727': {
         'url': "games/P/R/SLES-01727.html",
@@ -25061,6 +25087,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES10963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25068,6 +25095,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES20963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25075,6 +25103,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES30963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25082,6 +25111,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES40963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25089,6 +25119,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES01099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25096,6 +25127,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES11099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25103,6 +25135,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES21099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25110,6 +25143,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES31099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25117,6 +25151,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES41099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25124,6 +25159,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES01100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25131,6 +25167,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES11100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25138,6 +25175,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES21100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25145,6 +25183,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES31100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25152,6 +25191,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES41100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25159,6 +25199,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLES00223': {
         'url': "games/P/R/SLES-00223.html",
@@ -25411,11 +25452,16 @@ games = {
         'url': "games/P/R/SLES-03344.html",
     	'id': 'SLES03344',
 	'title': "RUGRATS EN PARIS - LA PELICULA",
+        'pic0': 'https://images.launchbox-app.com/cc71704a-bcfd-40ce-bd44-c9809ac842ff.png',
+        'pic1': 'https://images.launchbox-app.com/a60a21b9-31f2-4372-a84c-33acd7763e9d.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Rugrats%20en%20Paris%20La%20Pelicula%20[SLES-03344]%20(S).cbr',
     },
     'SLES03342': {
         'url': "games/P/R/SLES-03342.html",
     	'id': 'SLES03342',
 	'title': "RUGRATS IN PARIS - THE MOVIE",
+        'pic0': 'https://images.launchbox-app.com/cc71704a-bcfd-40ce-bd44-c9809ac842ff.png',
+        'pic1': 'https://images.launchbox-app.com/a60a21b9-31f2-4372-a84c-33acd7763e9d.jpg',
     },
     'SLES02525': {
         'url': "games/P/R/SLES-02525.html",
@@ -25744,12 +25790,14 @@ games = {
     	'id': 'SLES00071',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
     },
     'SLES10071': {
         'url': "games/P/S/SLES-00071.html",
     	'id': 'SLES10071',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
     },
     'SLES04176': {
         'url': "games/P/S/SLES-04176.html",
@@ -25926,6 +25974,7 @@ games = {
         'url': "games/P/S/SLES-03960.html",
     	'id': 'SLES03960',
 	'title': "SNOWBOARD RACER",
+        'manual': 'https://psxdatacenter.com/manuals/Snowboard%20Racer%20[SCES-03960]%20(E).cbr',
     },
     'SLES00691': {
         'url': "games/P/S/SLES-00691.html",
@@ -26057,6 +26106,8 @@ games = {
         'url': "games/P/S/SLES-04126.html",
     	'id': 'SLES04126',
 	'title': "SPACE RIDER",
+        'pic0': 'https://images.launchbox-app.com/50de0901-997a-4fac-9469-42b42eebb5f3.png',
+        'manual': 'https://psxdatacenter.com/manuals/Space%20Rider%20[SLES-04126]%20(E).cbr',
     },
     'SCES01056':       {
         'url': "games/P/S/SCES-01056.html",
@@ -26155,7 +26206,7 @@ games = {
 	'title': "SPICE WORLD",
         'pic0': 'https://images.launchbox-app.com/014e71e4-32db-42f4-871c-3b0c51d36115.png',
         'pic1': 'https://images.launchbox-app.com/7cb7db6d-ca5c-4fed-b291-c0f075b8261d.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Spice%20World%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Spice%20World%20(S)%20[SCES-01234].cbr',
     },
     'SLES00117': {
         'url': "games/P/S/SLES-00117.html",
@@ -26317,7 +26368,7 @@ games = {
 	'title': "SPYRO THE DRAGON",
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20the%20Dragon%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Spyro%20the%20Dragon%20(Platinum)%20(E)(F)(G)(I)(S)(Du)%20[SCES-01438].cbr',
     },
     'SCES02104': {
         'url': "games/P/S/SCES-02104.html",
@@ -26330,7 +26381,7 @@ games = {
 	'title': "SPYRO 3 - YEAR OF THE DRAGON",
         'pic0': 'https://images.launchbox-app.com/8cd3083a-5e82-43a1-897a-bf03eb254c3a.png',
         'pic1': 'https://images.launchbox-app.com/ec9b9440-bb3b-4e2f-9a64-f4a841e3c86b.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20-%20Year%20of%20the%20Dragon%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Spyro%20-%20Year%20of%20the%20Dragon%20(Platinum)%20(S)(P)Gr)(E)%20[SCES-02835].cbr',
     },
     'SLES00495': {
         'url': "games/P/S/SLES-00495.html",
@@ -26437,7 +26488,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Dark%20Forces%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20Dark%20Forces%20[SLES-00646]%20(S).cbr',
     },
     'SLES03273': {
         'url': "games/P/S/SLES-03273.html",
@@ -26538,7 +26589,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - LA AMENAZA FANTASMA",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20La%20Amenaza%20Fantasma%20[SLES-02038]%20(S).cbr',
     },
     'SLES01111': {
         'url': "games/P/S/SLES-01111.html",
@@ -26721,6 +26772,9 @@ games = {
         'url': "games/P/S/SLES-02598.html",
     	'id': 'SLES02598',
 	'title': "STREET FIGHTER EX 2 PLUS",
+        'pic0': 'https://images.launchbox-app.com/2245ace0-c41b-4ccd-9f8e-84c9929555cf.png',
+        'pic1': 'https://images.launchbox-app.com/1762b00a-42d3-4fa8-826e-5932f5c50ba5.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX2%20Plus%20SLES-02598%20(F)(G).cbr',
     },
     'SLES00296': {
         'url': "games/P/S/SLES-00296.html",
@@ -26818,6 +26872,7 @@ games = {
 	'title': "STUART LITTLE 2",
         'pic0': 'https://images.launchbox-app.com/ecc82c4b-edbd-456a-b7f2-db59c5c4df52.png',
         'pic1': 'https://www.pluggedin.com/wp-content/uploads/2019/12/stuart-little-2.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Stuart%20Little%202%20[SCES-03849]%20(S).cbr',
     },
     'SCES03850': {
         'url': "games/P/S/SCES-03850.html",
@@ -48325,11 +48380,13 @@ games = {
         'url': "games/J/P/SLPS-03158.html",
     	'id': 'SLPS03158',
 	'title': "PACHI-SLOT TEIOU - MAKER SUISHOU MANUAL 2 - ICE STORY",
+        'manual': 'https://psxdatacenter.com/manuals/Pachi-Slot%20Teiou%20Maker%20Suishou%20Manual%202%20Ice%20Story%20[SLPS-03158]%20(J).cbr',
     },
     'SLPS03478': {
         'url': "games/J/P/SLPS-03478.html",
     	'id': 'SLPS03478',
 	'title': "PACHI-SLOT TEIOU - MAKER SUISHOU MANUAL 2 - ICE STORY [BEST OF THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/Pachi-Slot%20Teiou%20Maker%20Suishou%20Manual%202%20Ice%20Story%20[SLPS-03158]%20(J).cbr',
     },
     'SLPS03130': {
         'url': "games/J/P/SLPS-03130.html",
@@ -48405,6 +48462,8 @@ games = {
         'url': "games/J/P/SLPS-02575.html",
     	'id': 'SLPS02575',
 	'title': "PACHITTE CHONMAGE 2",
+        'pic0': 'https://images.launchbox-app.com/0f912105-399f-45f1-bcc2-cfa8420300db.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pachitte%20Chongmage%202%20(J)%20[SLPS-02575].cbr',
     },
     'SLPS03422': {
         'url': "games/J/P/SLPS-03422.html",
@@ -48575,7 +48634,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
         'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Parasite%20Eve%20[SLPS-01230]%20(J).cbr',
     },
     'SLPS01231': {
         'url': "games/J/P/SLPS-01230.html",
@@ -48584,7 +48643,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
         'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Parasite%20Eve%20[SLPS-01230]%20(J).cbr',
     },
     'SCPS45467': {
         'url': "games/J/P/SCPS-45467.html",
@@ -48682,11 +48741,15 @@ games = {
         'url': "games/J/P/SLPS-01043.html",
     	'id': 'SLPS01043',
 	'title': "PARLOR! PRO 2",
+        'pic0': 'https://images.launchbox-app.com/841612f8-2fe5-4d14-ba04-1602cab1598c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Parlor%20Pro%202%20(J)%20[SLPS-01043].cbr',
     },
     'SLPS91184': {
         'url': "games/J/P/SLPS-91184.html",
     	'id': 'SLPS91184',
 	'title': "PARLOR! PRO 2 [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/841612f8-2fe5-4d14-ba04-1602cab1598c.png',
+        'manual': 'https://psxdatacenter.com/manuals/Parlor%20Pro%202%20(J)%20[SLPS-01043].cbr',
     },
     'SLPS01453': {
         'url': "games/J/P/SLPS-01453.html",
@@ -48807,6 +48870,9 @@ games = {
         'url': "games/J/P/SLPS-01762.html",
     	'id': 'SLPS01762',
 	'title': "PEPSIMAN",
+        'pic0': 'https://images.launchbox-app.com/63e33bbf-20ae-4e12-ae46-58769dcd75a8.png',
+        'pic1': 'https://images.launchbox-app.com/a42f3d53-2623-47f8-81c1-a3348aae2000.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Pepsiman%20(J)%20[SCPS-10131-2].cbr',
     },
     'SLPS02409': {
         'url': "games/J/P/SLPS-02409.html",
@@ -48909,6 +48975,8 @@ games = {
         'url': "games/J/P/SCPS-10111.html",
     	'id': 'SCPS10111',
 	'title': "PET IN TV WITH MY DEAR DOG",
+        'pic0': 'https://images.launchbox-app.com/d694d21b-7a1b-447b-8a41-c191f4f22b81.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pet%20in%20TV%20with%20my%20dear%20dog%20(J)%20[SCPS-10111].cbr',
     },
     'SLPS02292': {
         'url': "games/J/P/SLPS-02292.html",
@@ -48934,6 +49002,8 @@ games = {
         'url': "games/J/P/SCPS-10009.html",
     	'id': 'SCPS10009',
 	'title': "PHILOSOMA",
+        'pic0': 'https://images.launchbox-app.com/84994cca-aee7-4067-a552-b73a9fe26e96.png',
+        'manual': 'https://psxdatacenter.com/manuals/Philosoma%20(J)%20[SCPS-10009].cbr',
     },
     'SLPS02648': {
         'url': "games/J/P/SLPS-02648.html",
@@ -49005,6 +49075,7 @@ games = {
         'url': "games/J/P/SLPS-01587.html",
     	'id': 'SLPS01587',
 	'title': "PINNOCCHIA NO MIRU YUME [THE BEST TAKARAMONO]",
+        'manual': 'https://psxdatacenter.com/manuals/Pinocchia%20no%20Miru%20Yume%20[the%20Best%20Takaramono]%20(J)%20[SLPS-01587].cbr',
     },
     'SLPM87045': {
         'url': "games/J/P/SLPM-87045.html",
@@ -49222,6 +49293,8 @@ games = {
         'url': "games/J/P/SLPS-02218.html",
     	'id': 'SLPS02218',
 	'title': "POCKET TUNER",
+        'pic0': 'https://images.launchbox-app.com/c22292d0-a04b-4975-a96a-a3d96d48cebd.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pocket%20Tuner%20[SLPS-02218]%20(J).cbr',
     },
     'SLPS00437': {
         'url': "games/J/P/SLPS-00437.html",
@@ -49452,11 +49525,15 @@ games = {
         'url': "games/J/P/SCPS-10050.html",
     	'id': 'SCPS10050',
 	'title': "POPOROGUE",
+        'pic0': 'https://images.launchbox-app.com/3642eb65-aa73-4e2c-8249-0ca057a31039.png',
+        'manual': 'https://psxdatacenter.com/manuals/Popolocrois%20(J)%20[SCPS-10023].cbr',
     },
     'SCPS91312': {
         'url': "games/J/P/SCPS-91312.html",
     	'id': 'SCPS91312',
 	'title': "POPOROGUE [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/3642eb65-aa73-4e2c-8249-0ca057a31039.png',
+        'manual': 'https://psxdatacenter.com/manuals/Popolocrois%20(J)%20[SCPS-10023].cbr',
     },
     'SLPS02085': {
         'url': "games/J/P/SLPS-02085.html",
@@ -49467,11 +49544,17 @@ games = {
         'url': "games/J/P/SCPS-45117.html",
     	'id': 'SCPS45117',
 	'title': "PORSCHE CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/fa92937d-e4a9-4225-9bf7-0fd251a91649.png',
+        'pic1': 'https://images.launchbox-app.com/7f2ba961-388b-4aaf-80c5-d9c140deb0e1.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Porsche%20Challenge%20[SIPS-60016]%20(J).cbr',
     },
     'SIPS60016': {
         'url': "games/J/P/SIPS-60016.html",
     	'id': 'SIPS60016',
 	'title': "PORSCHE CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/fa92937d-e4a9-4225-9bf7-0fd251a91649.png',
+        'pic1': 'https://images.launchbox-app.com/7f2ba961-388b-4aaf-80c5-d9c140deb0e1.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Porsche%20Challenge%20[SIPS-60016]%20(J).cbr',
     },
     'SLPS00324': {
         'url': "games/J/P/SLPS-00324.html",
@@ -49668,6 +49751,8 @@ games = {
         'url': "games/J/P/SLPS-01388.html",
     	'id': 'SLPS01388',
 	'title': "PRO WRESTLING SENGOKUDEN 2",
+        'pic0': 'https://images.launchbox-app.com/36e26102-6b76-4ff3-8cf6-0a384c080079.png',
+        'manual': 'https://psxdatacenter.com/manuals/Pro%20Wrestling%20Sengokuden%202%20[SLPS-01388]%20(J).cbr',
     },
     'SLPS01006': {
         'url': "games/J/P/SLPS-01006.html",
@@ -49979,36 +50064,51 @@ games = {
         'url': "games/J/R/SLPS-02047.html",
     	'id': 'SLPS02047',
 	'title': "R - ROCK'N RIDERS",
+        'manual': 'https://psxdatacenter.com/manuals/R%20-%20Rock%20n%20Riders%20[Limited%20Edition]%20[SLPS-02045]%20(J).cbr',
     },
     'SLPS02045': {
         'url': "games/J/R/SLPS-02045.html",
     	'id': 'SLPS02045',
 	'title': "R - ROCK'N RIDERS [LIMITED EDITION]",
+        'manual': 'https://psxdatacenter.com/manuals/R%20-%20Rock%20n%20Riders%20[Limited%20Edition]%20[SLPS-02045]%20(J).cbr',
     },
     'SLPS02046': {
         'url': "games/J/R/SLPS-02045.html",
     	'id': 'SLPS02046',
 	'title': "R - ROCK'N RIDERS [LIMITED EDITION]",
+        'manual': 'https://psxdatacenter.com/manuals/R%20-%20Rock%20n%20Riders%20[Limited%20Edition]%20[SLPS-02045]%20(J).cbr',
     },
     'SLPS01087': {
         'url': "games/J/R/SLPS-01087.html",
     	'id': 'SLPS01087',
 	'title': "R MJ - THE MYSTERY HOSPITAL",
+        'pic0': 'https://images.launchbox-app.com/9479aed4-45de-4cf5-876d-ef8d1f2b90ed.png',
+        'pic1': 'https://images.launchbox-app.com/475f625d-655f-4c94-b0c3-63185d7dad70.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/RMJ%20-%20The%20Mystery%20Hospital%20(J)%20[SLPS-01087-8].cbr',
     },
     'SLPS01088': {
         'url': "games/J/R/SLPS-01087.html",
     	'id': 'SLPS01088',
 	'title': "R MJ - THE MYSTERY HOSPITAL",
+        'pic0': 'https://images.launchbox-app.com/9479aed4-45de-4cf5-876d-ef8d1f2b90ed.png',
+        'pic1': 'https://images.launchbox-app.com/475f625d-655f-4c94-b0c3-63185d7dad70.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/RMJ%20-%20The%20Mystery%20Hospital%20(J)%20[SLPS-01087-8].cbr',
     },
     'SLPS91096': {
         'url': "games/J/R/SLPS-91096.html",
     	'id': 'SLPS91096',
 	'title': "R MJ - THE MYSTERY HOSPITAL [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/9479aed4-45de-4cf5-876d-ef8d1f2b90ed.png',
+        'pic1': 'https://images.launchbox-app.com/475f625d-655f-4c94-b0c3-63185d7dad70.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/RMJ%20-%20The%20Mystery%20Hospital%20(J)%20[SLPS-01087-8].cbr',
     },
     'SLPS91097': {
         'url': "games/J/R/SLPS-91096.html",
     	'id': 'SLPS91097',
 	'title': "R MJ - THE MYSTERY HOSPITAL [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/9479aed4-45de-4cf5-876d-ef8d1f2b90ed.png',
+        'pic1': 'https://images.launchbox-app.com/475f625d-655f-4c94-b0c3-63185d7dad70.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/RMJ%20-%20The%20Mystery%20Hospital%20(J)%20[SLPS-01087-8].cbr',
     },
     'SCPS45354': {
         'url': "games/J/R/SCPS-45354.html",
@@ -50360,11 +50460,17 @@ games = {
         'url': "games/J/R/SLPS-01343.html",
     	'id': 'SLPS01343',
 	'title': "REBUS",
+        'pic0': 'https://images.launchbox-app.com/3ecdcd77-dd1e-4da4-b58c-d3f1c4285685.png',
+        'pic1': 'https://images.launchbox-app.com/96ed8c7d-ef56-4b99-a827-33240339a989.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Rebus%20(J)%20(Playing%20manual)%20[SLPS-01343].cbr',
     },
     'SLPS91121': {
         'url': "games/J/R/SLPS-91121.html",
     	'id': 'SLPS91121',
 	'title': "REBUS [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/3ecdcd77-dd1e-4da4-b58c-d3f1c4285685.png',
+        'pic1': 'https://images.launchbox-app.com/96ed8c7d-ef56-4b99-a827-33240339a989.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Rebus%20(J)%20(Playing%20manual)%20[SLPS-01343].cbr',
     },
     'SCPS45089': {
         'url': "games/J/R/SCPS-45089.html",
@@ -50532,14 +50638,14 @@ games = {
     	'id': 'SLPS00001',
 	'title': "RIDGE RACER",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ridge%20Racer%20[SLPS-00001]%20(J).cbr',
     },
     'SLPS91001': {
         'url': "games/J/R/SLPS-91001.html",
     	'id': 'SLPS91001',
 	'title': "RIDGE RACER [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/916add93-9ced-4067-be00-2527d322abdb.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Ridge%20Racer%20[SLPS-00001]%20(J).cbr',
     },
     'SLPS00150': {
         'url': "games/J/R/SLPS-00150.html",
@@ -50581,6 +50687,8 @@ games = {
         'url': "games/J/R/SLPS-00829.html",
     	'id': 'SLPS00829',
 	'title': "RIOT STARS",
+        'pic0': 'https://images.launchbox-app.com/edfc7f46-93f2-44d2-9747-992c4cbd3f37.png',
+        'manual': 'https://psxdatacenter.com/manuals/Riot%20Stars%20(J)%20[SLPS-00828].cbr',
     },
     'SLPS00259': {
         'url': "games/J/R/SLPS-00259.html",
@@ -50631,6 +50739,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLPS01181': {
         'url': "games/J/R/SLPS-01180.html",
@@ -50638,6 +50747,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLPS01182': {
         'url': "games/J/R/SLPS-01180.html",
@@ -50645,6 +50755,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLPS01183': {
         'url': "games/J/R/SLPS-01180.html",
@@ -50652,6 +50763,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLPS01184': {
         'url': "games/J/R/SLPS-01180.html",
@@ -50659,6 +50771,7 @@ games = {
 	'title': "RIVEN - THE SEQUEL TO MYST",
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
     },
     'SLPS00327': {
         'url': "games/J/R/SLPS-00327.html",
@@ -51552,6 +51665,7 @@ games = {
         'url': "games/J/S/SLPS-02633.html",
     	'id': 'SLPS02633',
 	'title': "SANYO PACHINKO PARADISE 3",
+        'manual': 'https://psxdatacenter.com/manuals/Sanyo%20Pachinko%20Paradise%203%20[SLPS-02633]%20(J).cbr',
     },
     'SLPS02988': {
         'url': "games/J/S/SLPS-02988.html",
@@ -51642,16 +51756,19 @@ games = {
         'url': "games/J/S/SLPS-01560.html",
     	'id': 'SLPS01560',
 	'title': "SD GUNDAM G GENERATION",
+        'manual': 'https://psxdatacenter.com/manuals/SD%20Gundam%20G%20Generation%20[SLPS-01560-1]%20(J).cbr',
     },
     'SLPS01561': {
         'url': "games/J/S/SLPS-01560.html",
     	'id': 'SLPS01561',
 	'title': "SD GUNDAM G GENERATION",
+        'manual': 'https://psxdatacenter.com/manuals/SD%20Gundam%20G%20Generation%20[SLPS-01560-1]%20(J).cbr',
     },
     'SLPS91133': {
         'url': "games/J/S/SLPS-91133.html",
     	'id': 'SLPS91133',
 	'title': "SD GUNDAM G GENERATION [PLAYSTATION THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/SD%20Gundam%20G%20Generation%20[SLPS-01560-1]%20(J).cbr',
     },
     'SLPS02900': {
         'url': "games/J/S/SLPS-02900.html",
@@ -51702,26 +51819,31 @@ games = {
         'url': "games/J/S/SLPS-02200.html",
     	'id': 'SLPS02200',
 	'title': "SD GUNDAM G GENERATION ZERO",
+        'pic0': 'https://images.launchbox-app.com/f1c48af7-80fa-4c11-b5a8-bd9ffbc6b6b9.png',
     },
     'SLPS02201': {
         'url': "games/J/S/SLPS-02200.html",
     	'id': 'SLPS02201',
 	'title': "SD GUNDAM G GENERATION ZERO",
+        'pic0': 'https://images.launchbox-app.com/f1c48af7-80fa-4c11-b5a8-bd9ffbc6b6b9.png',
     },
     'SLPS02202': {
         'url': "games/J/S/SLPS-02200.html",
     	'id': 'SLPS02202',
 	'title': "SD GUNDAM G GENERATION ZERO",
+        'pic0': 'https://images.launchbox-app.com/f1c48af7-80fa-4c11-b5a8-bd9ffbc6b6b9.png',
     },
     'SLPS03206': {
         'url': "games/J/S/SLPS-03206.html",
     	'id': 'SLPS03206',
 	'title': "SD GUNDAM G GENERATION ZERO [BANDAI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/f1c48af7-80fa-4c11-b5a8-bd9ffbc6b6b9.png',
     },
     'SLPS03207': {
         'url': "games/J/S/SLPS-03206.html",
     	'id': 'SLPS03207',
 	'title': "SD GUNDAM G GENERATION ZERO [BANDAI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/f1c48af7-80fa-4c11-b5a8-bd9ffbc6b6b9.png',
     },
     'SLPS00385': {
         'url': "games/J/S/SLPS-00385.html",
@@ -51965,11 +52087,15 @@ games = {
         'url': "games/J/S/SLPS-01603.html",
     	'id': 'SLPS01603',
 	'title': "SERIAL EXPERIMENTS LAIN",
+        'pic0': 'https://images.launchbox-app.com/b23dac26-31e5-4e33-9c19-49d903b5d5f1.png',
+        'manual': 'https://psxdatacenter.com/manuals/Serial%20Experiments%20Lain%20(J)%20[SLPS-01603].cbr',
     },
     'SLPS01604': {
         'url': "games/J/S/SLPS-01603.html",
     	'id': 'SLPS01604',
 	'title': "SERIAL EXPERIMENTS LAIN",
+        'pic0': 'https://images.launchbox-app.com/b23dac26-31e5-4e33-9c19-49d903b5d5f1.png',
+        'manual': 'https://psxdatacenter.com/manuals/Serial%20Experiments%20Lain%20(J)%20[SLPS-01603].cbr',
     },
     'SLPS01081': {
         'url': "games/J/S/SLPS-01081.html",
@@ -52000,6 +52126,9 @@ games = {
         'url': "games/J/S/SLPS-01420.html",
     	'id': 'SLPS01420',
 	'title': "SHADOW TOWER",
+        'pic0': 'https://images.launchbox-app.com/d9646206-7ef0-4bff-b1d6-9afa2d8ec369.png',
+        'pic1': 'https://images.launchbox-app.com/e4b66591-f0bf-4dad-a58a-7f8057b0b8d6.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Shadow%20Tower%20(J)%20[SLPS-01420].cbr',
     },
     'SLPS01472': {
         'url': "games/J/S/SLPS-01472.html",
@@ -52015,6 +52144,8 @@ games = {
         'url': "games/J/S/SLPS-00266.html",
     	'id': 'SLPS00266',
 	'title': "SHANGHAI - GREAT MOMENTS",
+        'pic0': 'https://images.launchbox-app.com/a16cf394-d358-4745-9508-b7078c43ca60.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shanghai%20Great%20Moments%20[SLPS-00266]%20(J).cbr',
     },
     'SCPS10004': {
         'url': "games/J/S/SCPS-10004.html",
@@ -52051,14 +52182,14 @@ games = {
     	'id': 'SLPS03229',
 	'title': "SHEEP",
         'pic0': 'https://images.launchbox-app.com/260f2a09-5c6e-473a-87f5-9e01b36df92a.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Sheep%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Sheep%20(J)%20[SLPS-03229].cbr',
     },
     'SLPM87020': {
         'url': "games/J/S/SLPM-87020.html",
     	'id': 'SLPM87020',
 	'title': "SHEEP [POKKIRI 1400]",
         'pic0': 'https://images.launchbox-app.com/260f2a09-5c6e-473a-87f5-9e01b36df92a.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Sheep%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Sheep%20(J)%20[SLPS-03229].cbr',
     },
     'SLPS00486': {
         'url': "games/J/S/SLPS-00486.html",
@@ -52219,16 +52350,22 @@ games = {
         'url': "games/J/S/SLPS-00550.html",
     	'id': 'SLPS00550',
 	'title': "SHIN SUPER ROBOT TAISEN",
+        'pic0': 'https://images.launchbox-app.com/68803de8-709f-498b-b0b9-6c84f0b23085.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shin%20Super%20Robot%20Taisen%20[SLPS-00550]%20(J).cbr',
     },
     'SLPS91084': {
         'url': "games/J/S/SLPS-91084.html",
     	'id': 'SLPS91084',
 	'title': "SHIN SUPER ROBOT TAISEN [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/68803de8-709f-498b-b0b9-6c84f0b23085.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shin%20Super%20Robot%20Taisen%20[SLPS-00550]%20(J).cbr',
     },
     'SLPS00787': {
         'url': "games/J/S/SLPS-00787.html",
     	'id': 'SLPS00787',
 	'title': "SHIN SUPER ROBOT TAISEN [SPECIAL DISC]",
+        'pic0': 'https://images.launchbox-app.com/68803de8-709f-498b-b0b9-6c84f0b23085.png',
+        'manual': 'https://psxdatacenter.com/manuals/Shin%20Super%20Robot%20Taisen%20[SLPS-00550]%20(J).cbr',
     },
     'SLPS00810': {
         'url': "games/J/S/SLPS-00810.html",
@@ -52562,6 +52699,7 @@ games = {
     	'id': 'SLPS01449',
 	'title': "SILHOUETTE MIRAGE - REPROGRAMMED HOPE",
         'pic0': 'https://images.launchbox-app.com/d61a29ae-0649-4c1f-9469-33bfee529714.png',
+        'manual': 'https://psxdatacenter.com/manuals/Silhouette%20Mirage%20[SLUS-00728]%20(E).cbr',
     },
     'SLPS00374': {
         'url': "games/J/S/SLPS-00374.html",
@@ -53525,21 +53663,29 @@ games = {
         'url': "games/J/S/SLPS-02789.html",
     	'id': 'SLPS02789',
 	'title': "SLAP HAPPY RHYTHM BUSTERS",
+        'pic0': 'https://images.launchbox-app.com/438d2771-6ca7-4ed4-bb42-84b32812538d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Slap%20Happy%20Rhythm%20Busters%20[SLPS-02789]%20(J).cbr',
     },
     'SLPS91460': {
         'url': "games/J/S/SLPS-91460.html",
     	'id': 'SLPS91460',
 	'title': "SLAP HAPPY RHYTHM BUSTERS [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/438d2771-6ca7-4ed4-bb42-84b32812538d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Slap%20Happy%20Rhythm%20Busters%20[SLPS-02789]%20(J).cbr',
     },
     'SLPS01363': {
         'url': "games/J/S/SLPS-01363.html",
     	'id': 'SLPS01363',
 	'title': "SLAYERS ROYAL",
+        'pic0': 'https://images.launchbox-app.com/5274a2dd-54fb-461e-8f2d-5be76b77224b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Slayers%20Royal%20Manual%20(J)%20[SLPS-01363].cbr',
     },
     'SLPS02115': {
         'url': "games/J/S/SLPS-02115.html",
     	'id': 'SLPS02115',
 	'title': "SLAYERS ROYAL 2",
+        'pic0': 'https://images.launchbox-app.com/92cc2921-fdd0-408e-9960-83909e97142a.png',
+        'manual': 'https://psxdatacenter.com/manuals/Slayers%20Royal%202%20Manual%20(J)%20[SLPS-02115].cbr',
     },
     'SLPS01599': {
         'url': "games/J/S/SLPS-01599.html",
@@ -53810,16 +53956,22 @@ games = {
         'url': "games/J/S/SLPS-01291.html",
     	'id': 'SLPS01291',
 	'title': "SOUKAIGI",
+        'pic0': 'https://images.launchbox-app.com/c7eafafa-0885-4ba7-87d1-d7322c325448.png',
+        'manual': 'https://psxdatacenter.com/manuals/Soukaigi%20(J)%20[SLPS-01291-3].cbr',
     },
     'SLPS01292': {
         'url': "games/J/S/SLPS-01291.html",
     	'id': 'SLPS01292',
 	'title': "SOUKAIGI",
+        'pic0': 'https://images.launchbox-app.com/c7eafafa-0885-4ba7-87d1-d7322c325448.png',
+        'manual': 'https://psxdatacenter.com/manuals/Soukaigi%20(J)%20[SLPS-01291-3].cbr',
     },
     'SLPS01293': {
         'url': "games/J/S/SLPS-01291.html",
     	'id': 'SLPS01293',
 	'title': "SOUKAIGI",
+        'pic0': 'https://images.launchbox-app.com/c7eafafa-0885-4ba7-87d1-d7322c325448.png',
+        'manual': 'https://psxdatacenter.com/manuals/Soukaigi%20(J)%20[SLPS-01291-3].cbr',
     },
     'SCPS45093': {
         'url': "games/J/S/SCPS-45093.html",
@@ -53915,31 +54067,47 @@ games = {
         'url': "games/J/S/SLPS-00555.html",
     	'id': 'SLPS00555',
 	'title': "SOUL EDGE",
+        'pic0': 'https://images.launchbox-app.com/9bb4c861-de64-4dc8-9ce2-26e464371f91.png',
+        'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Soul%20Edge%20[SLPS-00555]%20(J).cbr',
     },
     'SLPS00545': {
         'url': "games/J/S/SLPS-00545.html",
     	'id': 'SLPS00545',
 	'title': "SOUL EDGE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/9bb4c861-de64-4dc8-9ce2-26e464371f91.png',
+        'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Soul%20Edge%20[SLPS-00555]%20(J).cbr',
     },
     'SLPS91168': {
         'url': "games/J/S/SLPS-91168.html",
     	'id': 'SLPS91168',
 	'title': "SOUL EDGE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/9bb4c861-de64-4dc8-9ce2-26e464371f91.png',
+        'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Soul%20Edge%20[SLPS-00555]%20(J).cbr',
     },
     'SLPS91454': {
         'url': "games/J/S/SLPS-91454.html",
     	'id': 'SLPS91454',
 	'title': "SOUL EDGE [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/9bb4c861-de64-4dc8-9ce2-26e464371f91.png',
+        'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Soul%20Edge%20[SLPS-00555]%20(J).cbr',
     },
     'SLPS01090': {
         'url': "games/J/S/SLPS-01090.html",
     	'id': 'SLPS01090',
 	'title': "SOULMASTER",
+        'pic0': 'https://images.launchbox-app.com/63456076-6881-4af6-a50a-67e3b3ce1b0f.png',
+        'manual': 'https://psxdatacenter.com/manuals/Soulmaster%20(Koei%20the%20Best)%20(J)%20[SLPM-86170].cbr',
     },
     'SLPM86170': {
         'url': "games/J/S/SLPM-86170.html",
     	'id': 'SLPM86170',
 	'title': "SOULMASTER [KOEI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/63456076-6881-4af6-a50a-67e3b3ce1b0f.png',
+        'manual': 'https://psxdatacenter.com/manuals/Soulmaster%20(Koei%20the%20Best)%20(J)%20[SLPM-86170].cbr',
     },
     'SLPS02479': {
         'url': "games/J/S/SLPS-02479.html",
@@ -54083,6 +54251,7 @@ games = {
         'url': "games/J/S/SLPM-86661.html",
     	'id': 'SLPM86661',
 	'title': "SPACE CHASER 2000 [SUPERLITE 1500 SERIES]",
+        'manual': 'https://psxdatacenter.com/manuals/Space%20Chaser%202000%20[Superlite%201500%20Series]%20[SLPM-86661]%20(J).cbr',
     },
     'SLPS00012': {
         'url': "games/J/S/SLPS-00012.html",
@@ -54187,6 +54356,8 @@ games = {
         'url': "games/J/S/SLPS-00476.html",
     	'id': 'SLPS00476',
 	'title': "SPECTRAL TOWER",
+        'pic0': 'https://images.launchbox-app.com/0705f143-1b6b-4492-97c8-27ad56421568.png',
+        'manual': 'https://psxdatacenter.com/manuals/Spectral%20Tower%20[SLPS-00476]%20(J).cbr',
     },
     'SLPS01179': {
         'url': "games/J/S/SLPS-01179.html",
@@ -54310,6 +54481,8 @@ games = {
         'url': "games/J/S/SLPS-00957.html",
     	'id': 'SLPS00957',
 	'title': "ST. ANDREWS OLD COURSE - EIKOU NO ST. ANDREWS",
+        'pic0': 'https://images.launchbox-app.com/e8bebddd-6a3b-403a-8d83-e01fb4d224dd.png',
+        'manual': 'https://psxdatacenter.com/manuals/St.%20Andrews%20Old%20Course%20-%20Eikou%20No%20St.%20Andrews%20(J)%20[SLPS-00957].cbr',
     },
     'SLPS02638': {
         'url': "games/J/S/SLPS-02638.html",
@@ -54345,11 +54518,15 @@ games = {
         'url': "games/J/S/SCPS-45432.html",
     	'id': 'SCPS45432',
 	'title': "STAR IXIOM",
+        'pic0': 'https://images.launchbox-app.com/9a81bf73-182e-419f-a950-6b95b1bfa0cf.png',
+        'manual': 'https://psxdatacenter.com/manuals/Star%20Ixiom%20(J)%20[SLPS-01680].cbr',
     },
     'SLPS01680': {
         'url': "games/J/S/SLPS-01680.html",
     	'id': 'SLPS01680',
 	'title': "STAR IXIOM",
+        'pic0': 'https://images.launchbox-app.com/9a81bf73-182e-419f-a950-6b95b1bfa0cf.png',
+        'manual': 'https://psxdatacenter.com/manuals/Star%20Ixiom%20(J)%20[SLPS-01680].cbr',
     },
     'SLPS01390': {
         'url': "games/J/S/SLPS-01390.html",
@@ -54428,7 +54605,7 @@ games = {
 	'title': "STAR WARS - MASTER OF TERÄS KÄSI",
         'pic0': 'https://images.launchbox-app.com/a8caa6b5-fb08-4cb9-9982-5f83ac4ef078.png',
         'pic1': 'https://images.launchbox-app.com/812645b9-7aae-46f8-a02c-239bc402d05c.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Masters%20of%20Teras%20Kasi%20%28USA%29_jp2.zip'
+        'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20Master%20of%20Teras%20Kasi%20[SLPS-01464]%20(J).cbr'
     },
     'SLPS00638': {
         'url': "games/J/S/SLPS-00638.html",
@@ -55104,6 +55281,7 @@ games = {
         'url': "games/J/S/SLPM-87161.html",
     	'id': 'SLPM87161',
 	'title': "SUPERLITE 1500 SERIES - KEEPER",
+        'manual': 'https://psxdatacenter.com/manuals/SuperLite%201500%20Series%20-%20Keeper%20[SLPM-87161]%20(J).cbr',
     },
     'SLPS02068': {
         'url': "games/J/S/SLPS-02068.html",
@@ -55139,6 +55317,7 @@ games = {
         'url': "games/J/S/SLPM-86282.html",
     	'id': 'SLPM86282',
 	'title': "SUPERLITE 1500 SERIES - REVERSI II",
+        'manual': 'https://psxdatacenter.com/manuals/Superlite%201500%20Series%20-%20Reversi%20II%20[SLPM-86282].cbr',
     },
     'SLPM86275': {
         'url': "games/J/S/SLPM-86275.html",
@@ -55149,6 +55328,7 @@ games = {
         'url': "games/J/S/SLPM-86839.html",
     	'id': 'SLPM86839',
 	'title': "SUPERLITE 1500 SERIES - SLITHER LINK",
+        'manual': 'https://psxdatacenter.com/manuals/Superlite%201500%20Series%20-%20Slither%20Link%20[SLPM-86839]%20(J).cbr',
     },
     'SLPM86440': {
         'url': "games/J/S/SLPM-86440.html",
@@ -55169,6 +55349,7 @@ games = {
         'url': "games/J/S/SLPM-86536.html",
     	'id': 'SLPM86536',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU 3",
+        'manual': 'https://psxdatacenter.com/manuals/Superlite%201500%20Series%20Suudoku%203%20[SLPM-86536]%20(J).cbr',
     },
     'SLPM86676': {
         'url': "games/J/S/SLPM-86676.html",
@@ -55254,6 +55435,7 @@ games = {
         'url': "games/J/S/SLPM-86819.html",
     	'id': 'SLPM86819',
 	'title': "SUPERLITE GOLD SERIES - OTENAMI HAIKEN",
+        'manual': 'https://psxdatacenter.com/manuals/Superlite%20Gold%20Series%20Otenami%20Haiken%20[J]%20[SLPM-86819].cbr',
     },
     'SLPS01737': {
         'url': "games/J/S/SLPS-01737.html",
