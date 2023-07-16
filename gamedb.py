@@ -29240,7 +29240,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/64653371-9f67-4101-9359-bd6aa726da9e.png',
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Vagrant%20Story%20[SLES-02754]%20(E)(Du).cbr',
     },
     'SLES02755': {
         'url': "games/P/V/SLES-02755.html",
