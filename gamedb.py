@@ -2829,6 +2829,8 @@ games = {
         'url': "games/U/B/SLUS-01335.html",
     	'id': 'SLUS01335',
 	'title': "BATTLE HUNTER",
+        'pic0': 'https://images.launchbox-app.com/d14b7e03-d2f7-49e7-9376-53b0cdd20e7d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Battle%20Hunter%20[SLUS-01335]%20(E).cbr',
     },
     'SLUS00389': {
         'url': "games/U/B/SLUS-00389.html",
@@ -3200,6 +3202,7 @@ games = {
     	'id': 'SLUS00687',
 	'title': "BRIGANDINE - THE LEGEND OF FORSENA",
         'pic0': 'https://images.launchbox-app.com/5d3350cb-bf6b-47fa-8c51-1c9105f43eef.png',
+        'manual': 'https://psxdatacenter.com/manuals/Brigandine%20-%20Legend%20of%20Forsena%20[SLUS-00687]%20(E).cbr',
     },
     'SLUS00289': {
         'url': "games/U/B/SLUS-00289.html",
@@ -13070,21 +13073,26 @@ games = {
         'url': "games/P/B/SCES-02365.html",
     	'id': 'SCES02365',
 	'title': "BARBIE - RACE & RIDE",
+        'pic0': 'https://images.launchbox-app.com/d474b0f4-13e1-4747-a69d-b529a90b2298.png',
     },
     'SCES02367': {
         'url': "games/P/B/SCES-02367.html",
     	'id': 'SCES02367',
 	'title': "BARBIE - RACE & RIDE",
+        'pic0': 'https://images.launchbox-app.com/d474b0f4-13e1-4747-a69d-b529a90b2298.png',
     },
     'SCES02368': {
         'url': "games/P/B/SCES-02368.html",
     	'id': 'SCES02368',
 	'title': "BARBIE - RACE & RIDE",
+        'pic0': 'https://images.launchbox-app.com/d474b0f4-13e1-4747-a69d-b529a90b2298.png',
     },
     'SCES02369': {
         'url': "games/P/B/SCES-02369.html",
     	'id': 'SCES02369',
 	'title': "BARBIE - RACE & RIDE",
+        'pic0': 'https://images.launchbox-app.com/d474b0f4-13e1-4747-a69d-b529a90b2298.png',
+        'manual': 'https://psxdatacenter.com/manuals/Barbie%20Race%20&%20Ride%20[SCES-02369]%20(S).cbr',
     },
     'SCES02488': {
         'url': "games/P/B/SCES-02488.html",
@@ -13437,7 +13445,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QkN0aPyrQd4&list=PLiJCqXeqyAIAFAULUiPn84jgmbGG10bxw&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Blood%20Omen%20Legacy%20of%20Kain%20[SLES-00075]%20(E).cbr',
     },
     'SLES00522': {
         'url': "games/P/B/SLES-00522.html",
@@ -32101,6 +32109,8 @@ games = {
         'url': "games/J/B/SLPS-00542.html",
     	'id': 'SLPS00542',
 	'title': "BASTARD!! UTSURONARU KAMIGAMI NO UTSUWA",
+        'pic0': 'https://images.launchbox-app.com/e090e2cd-d66e-4095-83d6-964f4b761e40.png',
+        'manual': 'https://psxdatacenter.com/manuals/Bastard!!%20Utsuronaru%20Kamigami%20no%20Utsuwa%20[SLPS-00542]%20(J).cbr',
     },
     'SLPS00698': {
         'url': "games/J/B/SLPS-00698.html",
@@ -32366,6 +32376,7 @@ games = {
         'url': "games/J/B/SLPS-00459.html",
     	'id': 'SLPS00459',
 	'title': "BIG CHALLENGE GOLF - TOKYO YOMIURI COUNTRY CLUB HEN",
+        'manual': 'https://psxdatacenter.com/manuals/Big%20Challenge%20Golf%20-%20Tokyo%20Yomiuri%20Country%20Club%20Hen%20[SLPS-00459]%20(J).cbr',
     },
     'SLPS03368': {
         'url': "games/J/B/SLPS-03368.html",
@@ -32378,7 +32389,8 @@ games = {
 	'title': "BIOHAZARD",
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%20[SLPS-00222]%20(J).cbr',
     },
     'SLPS00998': {
         'url': "games/J/B/SLPS-00998.html",
@@ -32386,7 +32398,8 @@ games = {
 	'title': "BIOHAZARD - DIRECTOR'S CUT",
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': "https://psxdatacenter.com/manuals/Bio%20Hazard%20Director's%20Cut%20(J)%20[SLPS-00998].cbr",
     },
     'SLPS00999': {
         'url': "games/J/B/SLPS-00998.html",
@@ -32394,7 +32407,8 @@ games = {
 	'title': "BIOHAZARD - DIRECTOR'S CUT",
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': "https://psxdatacenter.com/manuals/Bio%20Hazard%20Director's%20Cut%20(J)%20[SLPS-00998].cbr",
     },
     'SLPS01512': {
         'url': "games/J/B/SLPS-01512.html",
@@ -32402,7 +32416,8 @@ games = {
 	'title': "BIOHAZARD - DIRECTOR'S CUT - DUAL SHOCK",
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': "https://psxdatacenter.com/manuals/BioHazard%20-%20Director's%20Cut%20-%20Dual%20Shock%20(J)%20[SLPS-01512].cbr",
     },
     'SLPS01513': {
         'url': "games/J/B/SLPS-01512.html",
@@ -32410,7 +32425,8 @@ games = {
 	'title': "BIOHAZARD - DIRECTOR'S CUT - DUAL SHOCK",
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1'
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': "https://psxdatacenter.com/manuals/BioHazard%20-%20Director's%20Cut%20-%20Dual%20Shock%20(J)%20[SLPS-01512].cbr",
     },
     'SLPS01222': {
         'url': "games/J/B/SLPS-01222.html",
@@ -32419,6 +32435,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6daedfb-7a47-4a8c-9f18-20cb9621d11c.png',
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20(J)%20[SLPS-01222].cbr',
     },
     'SLPS01223': {
         'url': "games/J/B/SLPS-01222.html",
@@ -32427,6 +32444,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6daedfb-7a47-4a8c-9f18-20cb9621d11c.png',
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20(J)%20[SLPS-01222].cbr',
     },
     'SLPS01510': {
         'url': "games/J/B/SLPS-01510.html",
@@ -32435,6 +32453,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6daedfb-7a47-4a8c-9f18-20cb9621d11c.png',
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
     },
     'SLPS01511': {
         'url': "games/J/B/SLPS-01510.html",
@@ -32443,6 +32462,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6daedfb-7a47-4a8c-9f18-20cb9621d11c.png',
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
     },
     'SLPS02300': {
         'url': "games/J/B/SLPS-02300.html",
@@ -32473,6 +32493,7 @@ games = {
 	'title': "BIOHAZARD - GUN SURVIVOR [CAPKORE]",
         'pic0': 'https://images.launchbox-app.com/eac53d62-41d7-466e-bf71-d387ecd5ae87.png',
         'pic1': 'https://images.launchbox-app.com/7768f8a0-973d-46fa-96ed-7b73dcb9dd34.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%20Gun%20Survivor%20[Capkore]%20(J)%20[SLPM-86749].cbr',
     },
     'SLPM86770': {
         'url': "games/J/B/SLPM-86770.html",
@@ -32558,21 +32579,29 @@ games = {
         'url': "games/J/B/SLPS-02962.html",
     	'id': 'SLPS02962',
 	'title': "BLACK MATRIX CROSS",
+        'pic0': 'https://images.launchbox-app.com/e93a02bd-1452-4b95-a17b-ceca55e7638b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Black%20Matrix%20Cross%20[SLPS-02962]%20(J).cbr',
     },
     'SLPS02963': {
         'url': "games/J/B/SLPS-02962.html",
     	'id': 'SLPS02963',
 	'title': "BLACK MATRIX CROSS",
+        'pic0': 'https://images.launchbox-app.com/e93a02bd-1452-4b95-a17b-ceca55e7638b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Black%20Matrix%20Cross%20[SLPS-02962]%20(J).cbr',
     },
     'SLPS03415': {
         'url': "games/J/B/SLPS-03415.html",
     	'id': 'SLPS03415',
 	'title': "BLACK MATRIX CROSS [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/e93a02bd-1452-4b95-a17b-ceca55e7638b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Black%20Matrix%20Cross%20[SLPS-02962]%20(J).cbr',
     },
     'SLPS03416': {
         'url': "games/J/B/SLPS-03415.html",
     	'id': 'SLPS03416',
 	'title': "BLACK MATRIX CROSS [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/e93a02bd-1452-4b95-a17b-ceca55e7638b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Black%20Matrix%20Cross%20[SLPS-02962]%20(J).cbr',
     },
     'SLPS01983': {
         'url': "games/J/B/SLPS-01983.html",
@@ -32639,6 +32668,7 @@ games = {
         'url': "games/J/B/SLPS-00353.html",
     	'id': 'SLPS00353',
 	'title': "BLOCK KUZUSHI - DEDEN NO GYAKUSHUU",
+        'manual': 'https://psxdatacenter.com/manuals/Block%20Kuzushi%20-%20Deden%20no%20Gyakushuu%20[SLPS-00353]%20(J).cbr',
     },
     'SLPS02578': {
         'url': "games/J/B/SLPS-02578.html",
@@ -32659,6 +32689,8 @@ games = {
         'url': "games/J/B/SLPS-03219.html",
     	'id': 'SLPS03219',
 	'title': "BLOCK WARS",
+        'pic0': 'https://images.launchbox-app.com/e25edb3b-7e27-4a77-bbd2-b2d3aea2f29d.png',
+        'manual': 'https://psxdatacenter.com/manuals/Block%20Wars%20(J)%20[SLPS-03219].cbr',
     },
     'SLPS00205': {
         'url': "games/J/B/SLPS-00205.html",
@@ -32679,6 +32711,8 @@ games = {
         'url': "games/J/B/SLPS-00526.html",
     	'id': 'SLPS00526',
 	'title': "BLOODY BRIDE - IMODOKI NO BANPAIA",
+        'pic0': 'https://images.launchbox-app.com/8631784e-4dcf-4a3e-8429-6be1e054e1a0.png',
+        'manual': 'https://psxdatacenter.com/manuals/Bloody%20Bride%20-%20Imadoki%20no%20Vampire%20(J)%20[SLPS-00526].cbr',
     },
     'SCPS45129': {
         'url': "games/J/B/SCPS-45129.html",
@@ -32769,6 +32803,9 @@ games = {
         'url': "games/J/B/SLPS-00865.html",
     	'id': 'SLPS00865',
 	'title': "BODY HAZARD",
+        'pic0': 'https://images.launchbox-app.com/6fddecda-5ad7-45a6-b7b5-3ff1dc540e40.png',
+        'pic1': 'https://images.launchbox-app.com/5b5b0378-2479-4f9b-9aeb-e427dda22c45.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Body%20Hazard%20[SLPS-00865]%20(J).cbr',
     },
     'SLPM87024': {
         'url': "games/J/B/SLPM-87024.html",
@@ -32939,16 +32976,20 @@ games = {
         'url': "games/J/B/SLPM-86614.html",
     	'id': 'SLPM86614',
 	'title': "BOUNTY SWORD - FIRST [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/3de01869-f8b9-4906-aad6-fa072a4b6b90.png',
+        'manual': 'https://psxdatacenter.com/manuals/Bounty%20Sword%20-%20First%20[Major%20Wave%20Series]%20(J)%20[SLPM-86614].cbr',
     },
     'SLPS01479': {
         'url': "games/J/B/SLPS-01479.html",
     	'id': 'SLPS01479',
 	'title': "BOUNTY SWORD - DOUBLE EDGE",
+        'manual': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
     },
     'SLPM86625': {
         'url': "games/J/B/SLPM-86625.html",
     	'id': 'SLPM86625',
 	'title': "BOUNTY SWORD - DOUBLE EDGE [MAJOR WAVE SERIES]",
+        'manual': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
     },
     'SLPS00033': {
         'url': "games/J/B/SLPS-00033.html",
@@ -32991,7 +33032,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/86f05185-d73d-4459-ab1f-e1204bd8b949.png',
         'pic1': 'https://images.launchbox-app.com/67a30f77-495f-419a-bbd4-c9235379a48c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FBzZB7rZlqA&list=PL4A9348AFB63EBB15&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Brave%20Fencer%20Musashi%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Brave%20Fencer%20Musashiden%20[SLPS-01490]%20(J).cbr',
     },
     'SLPS01490': {
         'url': "games/J/B/SLPS-01490.html",
@@ -33000,7 +33041,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/86f05185-d73d-4459-ab1f-e1204bd8b949.png',
         'pic1': 'https://images.launchbox-app.com/67a30f77-495f-419a-bbd4-c9235379a48c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FBzZB7rZlqA&list=PL4A9348AFB63EBB15&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Brave%20Fencer%20Musashi%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Brave%20Fencer%20Musashiden%20[SLPS-01490]%20(J).cbr',
     },
     'SLPS01491': {
         'url': "games/J/B/SLPS-01490.html",
@@ -33009,7 +33050,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/86f05185-d73d-4459-ab1f-e1204bd8b949.png',
         'pic1': 'https://images.launchbox-app.com/67a30f77-495f-419a-bbd4-c9235379a48c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FBzZB7rZlqA&list=PL4A9348AFB63EBB15&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Brave%20Fencer%20Musashi%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Brave%20Fencer%20Musashiden%20[SLPS-01490]%20(J).cbr',
     },
     'SLPS02769': {
         'url': "games/J/B/SLPS-02769.html",
@@ -33018,7 +33059,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/86f05185-d73d-4459-ab1f-e1204bd8b949.png',
         'pic1': 'https://images.launchbox-app.com/67a30f77-495f-419a-bbd4-c9235379a48c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FBzZB7rZlqA&list=PL4A9348AFB63EBB15&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Brave%20Fencer%20Musashi%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Brave%20Fencer%20Musashiden%20[SLPS-01490]%20(J).cbr',
     },
     'SLPS01316': {
         'url': "games/J/B/SLPS-01316.html",
@@ -33049,11 +33090,15 @@ games = {
         'url': "games/J/B/SLPS-00129.html",
     	'id': 'SLPS00129',
 	'title': "BREAK THRU!",
+        'pic0': 'https://images.launchbox-app.com/216e665e-012b-4ccd-8195-83dc5571c3ae.png',
+        'manual': 'https://psxdatacenter.com/manuals/Breakthru!%20[SLPS-00129]%20(J).cbr',
     },
     'SLPS02375': {
         'url': "games/J/B/SLPS-02375.html",
     	'id': 'SLPS02375',
 	'title': "BREAK VOLLEY",
+        'pic0': 'https://images.launchbox-app.com/bf8a6199-1019-44ce-a10c-7676d6660374.png',
+        'manual': 'https://psxdatacenter.com/manuals/Break%20Volley%20(J)%20[SLPS-02375].cbr',
     },
     'SLPS00990': {
         'url': "games/J/B/SLPS-00990.html",
@@ -33062,7 +33107,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
         'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Breath%20of%20Fire%20III%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Breath%20of%20Fire%20III%20(J)%20[SLPS-00990].cbr',
     },
     'SLPM86720': {
         'url': "games/J/B/SLPM-86720.html",
@@ -33071,7 +33116,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8700d632-251d-4bde-8755-779ce97bb519.png',
         'pic1': 'https://images.launchbox-app.com/7bea37ab-be51-4e6e-aaa3-0d8f095fef87.png',
         'snd0': 'https://www.youtube.com/watch?v=BYxwVM1zM3I',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Breath%20of%20Fire%20III%20%28USA%29_jp2.zip',
+        'manual': 'https://psxdatacenter.com/manuals/Breath%20of%20Fire%20III%20(J)%20[SLPS-00990].cbr',
     },
     'SLPS02728': {
         'url': "games/J/B/SLPS-02728.html",
@@ -33149,6 +33194,8 @@ games = {
         'url': "games/J/B/SLPS-01105.html",
     	'id': 'SLPS01105',
 	'title': "BUCKLE UP!",
+        'pic0': 'https://images.launchbox-app.com/aba2ccbc-f797-40ae-ada1-004d59da2b69.png',
+        'manual': 'https://psxdatacenter.com/manuals/Buckle%20Up%20(J)%20[SLPS-01105].cbr',
     },
     'SLPM86133': {
         'url': "games/J/B/SLPM-86133.html",
