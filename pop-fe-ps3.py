@@ -8,6 +8,7 @@ import os
 import pathlib
 import pygubu
 import requests
+import shutil
 import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
@@ -145,10 +146,9 @@ class PopFePs3App:
 
         temp_files = []  
         temp_files.append('pop-fe-ps3-work')
-        try:
-            os.mkdir('pop-fe-ps3-work')
-        except:
-            True
+        shutil.rmtree('pop-fe-ps3-work', ignore_errors=True)
+        os.mkdir('pop-fe-ps3-work')
+
         self.cue_files = []
         self.cu2_files = []
         self.img_files = []

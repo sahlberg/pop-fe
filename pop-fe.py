@@ -16,6 +16,7 @@ import io
 import os
 import re
 import random
+import shutil
 import struct
 import sys
 have_pycdlib = False
@@ -1912,11 +1913,9 @@ if __name__ == "__main__":
         print('You must specify at least one file to fetch images for')
         exit(1)
 
-    subdir = './pop-fe-work/'
-    try:
-        os.stat(subdir)
-    except:
-        os.mkdir(subdir)
+    subdir = 'pop-fe-work/'
+    shutil.rmtree(subdir, ignore_errors=True)
+    os.mkdir(subdir)
         
     try:
         if os.name == 'posix':
