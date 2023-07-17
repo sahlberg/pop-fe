@@ -58620,6 +58620,11 @@ games = {
     },
 }
 
+gameid_translation = {
+    'SLPS0208': {
+        'id': 'SLPS00208'
+    }
+}
 
 libcrypt = {
     'SCES00311': {'magic_word': 34730, 'url': 'http://redump.org/disc/592/'},

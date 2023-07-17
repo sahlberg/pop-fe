@@ -55,7 +55,7 @@ except:
 from pathlib import Path
 from bchunk import bchunk
 from document import create_document
-from gamedb import games, libcrypt, themes
+from gamedb import games, libcrypt, themes, gameid_translation
 try:
     from make_isoedat import pack
 except:
@@ -134,6 +134,9 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         buf = buf.replace(i, "")
 
     game_id = buf.upper()
+    # Special handling of games with broken id in system.cnf
+    if game_id in gameid_translation:
+        game_id = gameid_translation[game_id]['id']
     return game_id
 
 
@@ -1780,7 +1783,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
             try:
                 tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
                 temp_files.append(tmpfile)
-                subprocess.run(['wget', source, '-O', tmpfile], timeout=120, check=True)
+                subprocess.run(['wget', source, '-O', tmpfile], timeout=240, check=True)
                 print('Downloaded manual as', tmpfile)
                 source = tmpfile
             except:
