@@ -102,17 +102,53 @@ def create_document(source, gameid, maxysize, output):
     return output
 
 
+def view_document(document, page):
+    with open(document, 'rb') as i:
+        buf = i.read(136)
+
+        if struct.unpack_from('<I', buf, 0)[0] != 0x20434F44:
+            print('Not a DOCUMENT.DAT file')
+            exit
+    
+        num_pages = struct.unpack_from('<I', buf, 132)[0]
+        print('Num pages:', num_pages)
+
+        i.seek(136 + 128 * page)
+        buf = i.read(128)
+        offset_low = struct.unpack_from('<I', buf, 0)[0]
+        size_low = struct.unpack_from('<I', buf, 12)[0]
+        print('offset:', offset_low)
+        print('size:', size_low)
+        i.seek(offset_low)
+
+        image = Image.open(io.BytesIO(i.read(size_low)))
+        image.show()
+        
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('source', nargs=1, help='Directory containing image files')
-    parser.add_argument('gameid', nargs=1, help='Gameid. Example: SLES12345')
-    parser.add_argument('document', nargs=1, help='Filename of the resulting document.dat')
+    parser.add_argument('command', nargs=1, choices=['create', 'view'], help='Command')
+    #parser.add_argument('source', nargs=1, help='Directory containing image files')
+    #parser.add_argument('gameid', nargs=1, help='Gameid. Example: SLES12345')
+    #parser.add_argument('document', nargs=1, help='Filename of the resulting document.dat')
+    parser.add_argument('--document', help='Name of DOCUMENT.DAT')
+    parser.add_argument('--page', help='Page number')
     args = parser.parse_args()
 
     if args.v:
         verbose = True
 
-    print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
-    if not create_document(args.source[0], args.gameid[0], 480, args.document[0]):
-        print('Failed to create DOCUMENT')
+    if args.command[0] == 'create':
+        print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
+        if not create_document(args.source[0], args.gameid[0], 480, args.document[0]):
+            print('Failed to create DOCUMENT')
+    if args.command[0] == 'view':
+        if not args.document:
+            print('Must specify --document')
+            os._exit(1)
+        if not args.page:
+            print('Must specify --page')
+            os._exit(1)
+        view_document(args.document, int(args.page))
+        
