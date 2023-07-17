@@ -125,7 +125,7 @@ def view_document(document, page):
         image.show()
 
 
-def unpack_document(document, output):
+def extract_document(document, output):
     with open(document, 'rb') as i:
         buf = i.read(136)
 
@@ -153,22 +153,31 @@ def unpack_document(document, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('command', nargs=1, choices=['create', 'view', 'unpack'], help='Command')
-    #parser.add_argument('source', nargs=1, help='Directory containing image files')
-    #parser.add_argument('gameid', nargs=1, help='Gameid. Example: SLES12345')
-    #parser.add_argument('document', nargs=1, help='Filename of the resulting document.dat')
+    parser.add_argument('command', nargs=1, choices=['create', 'view', 'extract'], help='Command')
     parser.add_argument('--document', help='Name of DOCUMENT.DAT')
     parser.add_argument('--page', help='Page number')
     parser.add_argument('--output', help='Output file/directory')
+    parser.add_argument('--directory', help='Directory containing the source PNGs')
+    parser.add_argument('--gameid', help='GameID')
     args = parser.parse_args()
 
     if args.v:
         verbose = True
 
     if args.command[0] == 'create':
-        print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
-        if not create_document(args.source[0], args.gameid[0], 480, args.document[0]):
+        if not args.directory:
+            print('Must specify --directory')
+            os._exit(1)
+        if not args.document:
+            print('Must specify --document')
+            os._exit(1)
+        if not args.gameid:
+            print('Must specify --gameid')
+            os._exit(1)
+        print('Convert', args.directory, 'to', args.document) if verbose else None
+        if not create_document(args.directory, args.gameid, 480, args.document):
             print('Failed to create DOCUMENT')
+
     if args.command[0] == 'view':
         if not args.document:
             print('Must specify --document')
@@ -178,12 +187,12 @@ if __name__ == "__main__":
             os._exit(1)
         view_document(args.document, int(args.page))
 
-    if args.command[0] == 'unpack':
+    if args.command[0] == 'extract':
         if not args.document:
             print('Must specify --document')
             os._exit(1)
         if not args.output:
             print('Must specify --output')
             os._exit(1)
-        unpack_document(args.document, args.output)
+        extract_document(args.document, args.output)
         
