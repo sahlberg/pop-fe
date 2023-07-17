@@ -1750,7 +1750,8 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
         return source
     
     print('Create manual', source)
-
+    files = []
+    
     if source[:8] != 'https://':
         with open(source, 'rb') as f:
             buf = f.read(4)
@@ -1779,24 +1780,19 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     if source[-4:] == '.zip':
             print('Unzip manual', source, 'from ZIP')
             subdir = subdir + '/DOCUMENT-tmp'
-            try:
-                os.stat(subdir)
-            except:
-                os.mkdir(subdir)
+            os.mkdir(subdir)
             temp_files.append(subdir)
                 
             z = zipfile.ZipFile(source)
             for f in z.namelist():
                 f = z.extract(f, path=subdir)
                 temp_files.append(f)
+                files.append(f)
             source = subdir
     if source[-4:] == '.cbr':
             print('Unzip manual', source, 'from CBR')
             subdir = subdir + '/DOCUMENT-tmp'
-            try:
-                os.stat(subdir)
-            except:
-                os.mkdir(subdir)
+            os.mkdir(subdir)
             temp_files.append(subdir)
 
             try:
@@ -1804,6 +1800,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
                 for f in r.namelist():
                     f = r.extract(f, path=subdir)
                     temp_files.append(f)
+                    files.append(f)
                 source = subdir
             except:
                 print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
@@ -1815,8 +1812,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     tmpfile = subdir + '/DOCUMENT.DAT'
     temp_files.append(tmpfile)
-    print('Create manual from directory [%s]' % (source))
-    tmpfile = create_document(source, gameid, 480, tmpfile)
+    tmpfile = create_document(files, gameid, 480, tmpfile)
     if not tmpfile:
         print('Failed to create DOCUMENT.DAT')
     return tmpfile
@@ -2272,3 +2268,4 @@ if __name__ == "__main__":
                 os.rmdir(f)
             except:
                 True
+    shutil.rmtree('pop-fe-work', ignore_errors=True)

@@ -18,16 +18,16 @@ import zipfile
 verbose = False
 
 
-def create_document(source, gameid, maxysize, output):
-    def create_header(gameid):
+def create_document(files, gameid, maxysize, output):
+    def create_header(gameid, imgs):
         buf = bytearray(136)
         struct.pack_into('<I', buf, 0, 0x20434F44)
         struct.pack_into('<I', buf, 4, 0x10000)
         struct.pack_into('<I', buf, 8, 0x10000)
         buf[12:21] = bytes(gameid, encoding='utf-8')
-        struct.pack_into('<I', buf, 28, 1 if len(docs) <= 100 else 1)
+        struct.pack_into('<I', buf, 28, 1 if len(imgs) <= 100 else 1)
         struct.pack_into('<I', buf, 128, 0xffffffff)
-        struct.pack_into('<I', buf, 132, len(docs))
+        struct.pack_into('<I', buf, 132, len(imgs))
         return buf
     
     def generate_document_entry(f, pos):
@@ -47,27 +47,13 @@ def create_document(source, gameid, maxysize, output):
         image.save(f, 'PNG')
         return f
 
-    docs = []
+    files.sort()
     imgs = []
-    for i in range(100):
-        # Look for ...0001...
-        g = glob.glob(source + '/*' + f'{i:04d}' + '*')
-        if not g: # try a subdirectory
-            g = glob.glob(source + '/*/*' + f'{i:04d}' + '*')
-        if not g:
-            # Look for ...pag01...
-            g = glob.glob(source + '/*pag' + f'{i:02d}' + '*')
-            if not g: # try a subdirectory
-                g = glob.glob(source + '/*/*pag' + f'{i:02d}' + '*')
-        # Some archives start page numbers at 1 instead of 0
-        if not g and i == 0:
-            print('No page 0 found, skip and try page 1')
+    for file in files:
+        try:
+            pic = Image.open(file)
+        except:
             continue
-        if not g:
-            break
-        docs.append(g[0])
-
-        pic = Image.open(g[0])
 
         # images are supposed to be ~square but some scans contain two pages
         # side by side. Split them.
@@ -81,15 +67,15 @@ def create_document(source, gameid, maxysize, output):
             f = generate_png(pic, maxysize)
             imgs.append(f)
 
-    if not docs:
+    if not imgs:
         print('No images found. Can not create DOCUMENT.DAT')
         return
 
     with open(output, 'wb') as o:
-        o.write(create_header(gameid)) # size 0x88
+        o.write(create_header(gameid, imgs)) # size 0x88
         for i in range(len(imgs)):
-            o.write(bytes(128))        # size 0x80
-        o.write(bytes(8))              # size 0x08, padding
+            o.write(bytes(128))              # size 0x80
+        o.write(bytes(8))                    # size 0x08, padding
         
         for idx, f in enumerate(imgs):
             b = generate_document_entry(f, o.tell())
