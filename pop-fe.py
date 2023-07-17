@@ -2001,12 +2001,12 @@ if __name__ == "__main__":
             mb = 'MB%d' % (0 if not idx else idx[0])
             temp_files.append(mb)
             if os.name == 'posix':
-                subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
+                subprocess.call(['python3', './binmerge', '-o', subdir, cue_file, mb])
             else:
-                subprocess.call(['binmerge.exe', '-o', '.', cue_file, mb])
-            cue_file = mb + '.cue'
+                subprocess.call(['binmerge.exe', '-o', subdir, cue_file, mb])
+            cue_file = subdir + mb + '.cue'
             temp_files.append(cue_file)
-            img_file = mb + '.bin'
+            img_file = subdir + mb + '.bin'
             temp_files.append(img_file)
 
         cu2_file = cue_file[:-4] + '.cu2'
