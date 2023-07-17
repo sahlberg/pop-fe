@@ -103,7 +103,14 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
             buf = iso.seek_read(st['LSN'])[1][:128]
             iso.close()
     except:
-        return 'UNKN00000'
+        print('Failed to read game id. Falling back to raw read')
+        with open(path, 'rb') as f:
+            buf = f.read(10*1024*1024)
+            idx = buf.find('cdrom:'.encode())
+            if (idx > 0):
+                buf = str(buf[idx:idx+1024])
+            else:
+                return 'UNKN00000'
 
     idx = buf.find('cdrom:')
     if idx < 0:
@@ -556,21 +563,23 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
         icon0.save(create_path(cue, f + '_cover.png'))
             
     # PIC0
-    try:
-        os.stat(create_path(cue, f + '_pic0.png'))
-    except:
-        print('Installing PIC0')
-        pic0.save(create_path(cue, f + '_pic0.png'))
+    if game_id in games and 'pic0' in games[game_id]:
+        try:
+            os.stat(create_path(cue, f + '_pic0.png'))
+        except:
+            print('Installing PIC0')
+            pic0.save(create_path(cue, f + '_pic0.png'))
             
     # PIC1
-    try:
-        os.stat(create_path(cue, f + '_pic1.png'))
-    except:
-        print('Installing PIC0')
-        pic0.save(create_path(cue, f + '_pic1.png'))
+    if game_id in games and 'pic1' in games[game_id]:
+        try:
+            os.stat(create_path(cue, f + '_pic1.png'))
+        except:
+            print('Installing PIC1')
+            pic1.save(create_path(cue, f + '_pic1.png'))
 
     # SND0
-    if snd0:
+    if snd0 and game_id in games and 'snd0' in games[game_id]:
         try:
             os.stat(create_path(cue, f + '.snd0'))
         except:
@@ -580,7 +589,7 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
                     o.write(i.read())
         
     # MANUAL
-    if manual:
+    if manual and game_id in games and 'manual' in games[game_id]:
         try:
             os.stat(create_path(cue, f + '.manual'))
         except:
@@ -1928,6 +1937,7 @@ if __name__ == "__main__":
 
     idx = None
     cue_files = []
+    real_cue_files = []
     cu2_files = []
     img_files = []
     mem_cards = []
@@ -1935,6 +1945,7 @@ if __name__ == "__main__":
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
+        real_cue_files.append(cue_file)
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
             mc = check_memory_card(cue_file)
@@ -1985,6 +1996,7 @@ if __name__ == "__main__":
             except:
                 raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
             mb = 'MB%d' % (0 if not idx else idx[0])
+            temp_files.append(mb)
             if os.name == 'posix':
                 subprocess.call(['python3', './binmerge', '-o', '.', cue_file, mb])
             else:
@@ -2043,7 +2055,7 @@ if __name__ == "__main__":
 
     # We need to convert the first track of every ISO so we can open the
     # disk and read system.cnf
-    disc_ids = get_disc_ids(cue_files, subdir=subdir)
+    disc_ids = get_disc_ids(real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
 
     if args.game_id:
