@@ -123,17 +123,43 @@ def view_document(document, page):
 
         image = Image.open(io.BytesIO(i.read(size_low)))
         image.show()
+
+
+def unpack_document(document, output):
+    with open(document, 'rb') as i:
+        buf = i.read(136)
+
+        if struct.unpack_from('<I', buf, 0)[0] != 0x20434F44:
+            print('Not a DOCUMENT.DAT file')
+            exit
+    
+        num_pages = struct.unpack_from('<I', buf, 132)[0]
+        print('Num pages:', num_pages)
+
+        for page in range(num_pages):
+            print('Extracting', page, 'to', output + '/%04d.png' % page)
+
+            i.seek(136 + 128 * page)
+            buf = i.read(128)
+            offset_low = struct.unpack_from('<I', buf, 0)[0]
+            size_low = struct.unpack_from('<I', buf, 12)[0]
+            i.seek(offset_low)
+
+            with open(output + '/%04d.png' % page, 'wb') as o:
+                o.write(i.read(size_low))
+
         
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('command', nargs=1, choices=['create', 'view'], help='Command')
+    parser.add_argument('command', nargs=1, choices=['create', 'view', 'unpack'], help='Command')
     #parser.add_argument('source', nargs=1, help='Directory containing image files')
     #parser.add_argument('gameid', nargs=1, help='Gameid. Example: SLES12345')
     #parser.add_argument('document', nargs=1, help='Filename of the resulting document.dat')
     parser.add_argument('--document', help='Name of DOCUMENT.DAT')
     parser.add_argument('--page', help='Page number')
+    parser.add_argument('--output', help='Output file/directory')
     args = parser.parse_args()
 
     if args.v:
@@ -151,4 +177,13 @@ if __name__ == "__main__":
             print('Must specify --page')
             os._exit(1)
         view_document(args.document, int(args.page))
+
+    if args.command[0] == 'unpack':
+        if not args.document:
+            print('Must specify --document')
+            os._exit(1)
+        if not args.output:
+            print('Must specify --output')
+            os._exit(1)
+        unpack_document(args.document, args.output)
         
