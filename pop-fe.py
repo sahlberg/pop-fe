@@ -60,6 +60,7 @@ try:
     from make_isoedat import pack
 except:
     True
+from cue import parse_ccd, ccd2cue, write_cue
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
@@ -780,6 +781,7 @@ def get_toc_from_cu2(cu2):
 def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[]):
     print('Create PBP file for', game_title) if verbose else None
 
+    SECTLEN = 2352
     p = popstation()
     p.verbose = verbose
     p.disc_ids = disc_ids
@@ -808,7 +810,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
             bc.towav = True
             bc.open(cue_files[i])
             # store how big the data track is
-            p.add_track0_size(bc.tracks[0]['stop'])
+            p.add_track0_size(bc.tracks[1]['INDEX'][1]['STOPSECT'] * SECTLEN)
             p.striptracks = True
 
     p.eboot = dest_file
@@ -936,6 +938,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[]):
     print('Create PS3 PKG for', game_title) if verbose else None
 
+    SECTLEN = 2352
     p = popstation()
     p.verbose = verbose
     p.disc_ids = disc_ids
@@ -961,7 +964,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             bc.towav = True
             bc.open(cue_files[i])
             # store how big the data track is
-            p.add_track0_size(bc.tracks[0]['stop'])
+            p.add_track0_size(bc.tracks[1]['INDEX'][1]['STOPSECT'] * SECTLEN)
 
     # create directory structure
     f = subdir + disc_ids[0]
@@ -1455,13 +1458,14 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 def get_disc_ids(cue_files, subdir='./'):
     disc_ids = []
     for idx in range(len(cue_files)):
-        print('Convert CUE to a normal style ISO') if verbose else None
+        print('Convert CUE to a normal style ISO', cue_files[idx]) if verbose else None
         bc = bchunk()
         bc.verbose = args.v
         bc.open(cue_files[idx])
-        bc.writetrack(0, subdir + 'ISO%02x' % idx)
-        temp_files.append(subdir + 'ISO%02x01.iso' % idx)
-        gid = get_gameid_from_iso(subdir + 'ISO%02x01.iso' % idx)
+        fn = subdir + 'ISO%02x01.iso' % idx
+        bc.writetrack(1, fn)
+        temp_files.append(fn)
+        gid = get_gameid_from_iso(fn)
         disc_ids.append(gid)
 
     return disc_ids
@@ -1972,7 +1976,6 @@ if __name__ == "__main__":
                         print('Found CUE file', f) if verbose else None
                         cue_file = f
 
-        tmpcue = None
         if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
             tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
             print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
@@ -1984,6 +1987,19 @@ if __name__ == "__main__":
 
             cue_file = tmpcue
 
+        if cue_file[-3:] == 'ccd':
+            tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
+            print('CCD file. Create a temporary cue file for it', tmpcue) if verbose else None
+            temp_files.append(tmpcue)
+            ccd = parse_ccd(cue_file)
+            cue = ccd2cue(ccd)
+            write_cue(cue, tmpcue)
+
+            cue_file = tmpcue
+            # we didn't actually have a CUE file to start with so just
+            # replace the "real" cue filename with our temporary one
+            real_cue_files[-1] = cue_file
+            
         if cue_file[-3:] != 'cue':
             print('%s is not a CUE file. Skipping' % cue_file) if verbose else None
             continue
@@ -2031,23 +2047,22 @@ if __name__ == "__main__":
             bc.towav = True
             bc.open(cue_file)
             aea_files[0 if not idx else idx[0] - 1] = []
-            for i in range(1, len(bc.cue)):
-                if not bc.cue[i]['audio']:
+            for i in range(2, len(bc.cue) + 1):
+                if bc.cue[i]['MODE'] != 'AUDIO':
                     print('WARNING disc contains multiple data tracks. Forcing --whole-disk')
                     args.whole_disk = True
                     continue
-                f = subdir + 'TRACK_%d_' % (0 if not idx else idx[0])
+                f = subdir + 'TRACK_%d_%02d.wav' % (0 if not idx else idx[0], i)
                 bc.writetrack(i, f)
-                wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
-                temp_files.append(wav_file)
-                aea_file = wav_file[:-3] + 'aea'
+                temp_files.append(f)
+                aea_file = f[:-3] + 'aea'
                 temp_files.append(aea_file)
-                print('Converting', wav_file, 'to', aea_file)
+                print('Converting', f, 'to', aea_file)
                 try:
                     if os.name == 'posix':
-                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True)
                     else:
-                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True)
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break

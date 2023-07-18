@@ -8,139 +8,30 @@ import re
 import struct
 import sys
 
+from cue import parse_cue
 
 class bchunk(object):
     SECTLEN         = 2352
     WAV_FORMAT_HLEN = 24
     WAV_DATA_HLEN   = 8
     
-    def get_file_name(self, line):
-        # strip off leading 'FILE '
-        pos = line.lower().index('file ')
-        line = line[pos + 5:]
-        # strip off leading 'FILE '
-        pos = line.lower().index(' binary')
-        line = line[:pos+1]
-        #strip off leading ' '
-        while line[0] == ' ':
-            line = line[1:]
-        #strip off trailing ' '
-        while line[-1] == ' ':
-            line = line[:-1]
-        # remove double quotes
-        if line[0] == '"':
-            line = line[1:-1]
-        # remove single quotes
-        if line[0] == '\'':
-            line = line[1:-1]
-        return line
-
-    def get_mode(self, track, line):
-        if line.lower().find('mode1/2352') >= 0:
-            track['extension'] = 'iso'
-            track['bstart'] = 16
-            track['bsize'] = 2048
-            return track
-        if line.lower().find('mode2/2352') >= 0:
-            track['extension'] = 'iso'
-            if self.raw:
-                track['bstart'] = 0
-                track['bsize'] = 2352
-                return track
-            if self.psxtruncate:
-                track['bstart'] = 0
-                track['bsize'] = 2336
-                return track
-            track['bstart'] = 24
-            track['bsize'] = 2048
-            return track
-        if line.lower().find('mode2/2336') >= 0:
-            track['extension'] = 'iso'
-            track['bstart'] = 16
-            track['bsize'] = 2336
-            return track
-        if line.lower().find('audio') >= 0:
-            track['bstart'] = 0
-            track['bsize'] = 2352
-            track['audio'] = True
-            if self.towav:
-                track['extension'] = 'wav'
-            else:
-                track['extension'] = 'cdr'
-            return track
-        raise Exception('Can not handle this mode yet, check bchunk docs')
-
-    def parse_cue(self, cue):
-        print('Cue:', cue) if self._verbose else None
-        with open(cue, 'r') as c:
-            lines = c.readlines()
-            tracks = []
-
-            for line in lines:
-                # FILE
-                if re.search('^\s*FILE', line):
-                    f = self.get_file_name(line)
-                    if f[0] != '/':
-                        s = cue.split('/')
-                        if len(s) > 1:
-                            f = '/'.join(s[:-1]) + '/' + f
-                    if self._file:
-                        if len(tracks) >= 1:
-                            tracks[-1]['stop'] = os.stat(tracks[-1]['bin']).st_size
-                            tracks[-1]['stopsect'] = int(tracks[-1]['stop'] / self.SECTLEN)
-                        
-                    self._file = f
-                    continue
-                # TRACK
-                pos = line.lower().find('track ')
-                if pos >= 0:
-                    track = {'audio': False, 'bsize': -1, 'bstart': -1,
-                             'startsect': -1, 'stopsect': -1,
-                             'bin': self._file}
-                    line = line[pos + 6:]
-                    while line[0] == ' ':
-                        line = line[1:]
-                    pos = line.index(' ')
-                    track['num'] = int(line[:pos])
-                    line = line[pos:]
-                    while line[0] == ' ':
-                        line = line[1:]
-                    track = self.get_mode(track, line)
-                    tracks.append(track)
-                # INDEX
-                pos = line.lower().find('index ')
-                if pos >= 0:
-                    line = line[pos + 6:]
-                    while line[0] == ' ':
-                        line = line[1:]
-                    pos = line.index(' ')
-                    line = line[pos:]
-                    while line[0] == ' ':
-                        line = line[1:]
-                    mins, secs, frames = line.split(':')
-
-                    tracks[-1]['startsect'] = 75 * ( int(mins) * 60 + int(secs) ) + int(frames)
-                    tracks[-1]['start'] = int(tracks[-1]['startsect'] * self.SECTLEN)
-                    if len(tracks) > 1:
-                        if tracks[-2]['stopsect'] < 0:
-                            tracks[-2]['stopsect'] = tracks[-1]['startsect']
-                            tracks[-2]['stop'] = tracks[-1]['start'] - 1
-        if len(tracks) >= 1:
-            tracks[-1]['stop'] = os.stat(tracks[-1]['bin']).st_size
-            tracks[-1]['stopsect'] = int(tracks[-1]['stop'] / self.SECTLEN)
-        self.tracks = tracks
-        
     def writetrack(self, idx, fn):
         t = self.tracks[idx]
-        fn = fn + "%02d" % t['num'] + '.' + t['extension']
-        print('Read bin', idx, self.tracks[idx]['bin']) if self._verbose else None
-        with open(self.tracks[idx]['bin'], "rb") as i:
-            i.seek(t['start'])
+        print('Read file', idx, self.tracks[idx]['FILE']) if self._verbose else None
+
+        with open(t['FILE'], "rb") as i:
+            # Find the last index for this track. Assume this is the
+            # data track
+            index = None
+            for _i in t['INDEX']:
+                index = t['INDEX'][_i]
+
+            i.seek(index['STARTSECT'] * self.SECTLEN)
             with open(fn, "wb") as o:
                 print('Write track', fn) if self._verbose else None
-                reallen = int((t['stopsect'] - t['startsect'] + 1) * t['bsize'])
+                reallen = int((index['STOPSECT'] - index['STARTSECT'] + 1) * t['BSIZE'])
 
-                if t['audio'] and self.towav:
+                if t['MODE'] == 'AUDIO' and self.towav:
                     buf = bytearray(44)
                     buf[0:4] = bytes('RIFF', encoding='utf-8')
                     struct.pack_into('<I', buf, 4, reallen + self.WAV_DATA_HLEN + self.WAV_FORMAT_HLEN + 4)
@@ -158,17 +49,17 @@ class bchunk(object):
                     
                     o.write(buf)
 
-                sect = t['startsect']
-                while sect <= t['stopsect']:
+                sect = index['STARTSECT']
+                while sect <= index['STOPSECT']:
                     buf = i.read(self.SECTLEN)
                     if len(buf) == 0:
                         break
-                    if t['audio']:
+                    if t['MODE'] == 'AUDIO':
                         if self.swapaudio:
-                            for pos in range(t['bstart'], t['bstart'] + t['bsize'], 2):
+                            for pos in range(t['BSTART'], t['BSTART'] + t['BSIZE'], 2):
                                 buf[pos:pos+2] = struct.pack('>H', struct.unpack('<H', buf[pos:pos+2])[0])
 
-                    o.write(buf[t['bstart']:t['bstart'] + t['bsize']])
+                    o.write(buf[t['BSTART']:t['BSTART'] + t['BSIZE']])
                     sect = sect + 1
         
     def __init__(self):
@@ -180,7 +71,8 @@ class bchunk(object):
         self._swapaudio = False
         
     def open(self, cue):
-        self.parse_cue(cue)
+        print('Cue:', cue) if self._verbose else None
+        self.tracks = parse_cue(cue)['TRACKS']
 
     def bin(self, idx):
         return self.tracks[idx]['bin']
@@ -252,5 +144,6 @@ if __name__ == "__main__":
     bc.towav = args.w
     bc.swapaudio = args.s
     bc.open(args.image[0])
-    for i in range(len(bc.tracks)):
-        bc.writetrack(i, args.basename[0])
+    for i in bc.tracks:
+        fn = args.basename[0] + "%02d" % i + ('.wav' if bc.tracks[i]['MODE'] == 'AUDIO' else '.iso')
+        bc.writetrack(i, fn)

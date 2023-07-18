@@ -22,6 +22,7 @@ from bchunk import bchunk
 import importlib  
 from gamedb import games, libcrypt, themes
 popfe = importlib.import_module("pop-fe")
+from cue import parse_ccd, ccd2cue, write_cue
 
 verbose = False
 temp_files = []
@@ -34,9 +35,9 @@ def get_disc_id(cue, tmp):
     bc = bchunk()
     bc.verbose = False
     bc.open(cue)
-    bc.writetrack(0, tmp)
+    bc.writetrack(1, tmp)
 
-    gid = popfe.get_gameid_from_iso(tmp + '01.iso')
+    gid = popfe.get_gameid_from_iso(tmp)
     return gid
 
 
@@ -140,7 +141,7 @@ class PopFePs3App:
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
-            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.img']), ('All Files', ['*.*', '*'])])
+            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.ccd', '.img']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('discid%d_variable' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
@@ -169,6 +170,13 @@ class PopFePs3App:
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
+        if cue_file[-4:] == '.ccd':
+            tmpcue = 'pop-fe-psp-work/TMPCUE' + disc + '.cue'
+            temp_files.append(tmpcue)
+            ccd = parse_ccd(cue_file)
+            cue = ccd2cue(ccd)
+            write_cue(cue, tmpcue)
+            cue_file = tmpcue
         if cue_file[-4:] == '.bin' or cue_file[-4:] == '.img':
             tmpcue = 'pop-fe-psp-work/TMPCUE' + disc + '.cue'
             tmpimg = 'pop-fe-psp-work/TMPIMG' + disc + '.bin'
@@ -212,10 +220,10 @@ class PopFePs3App:
                 subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
         print('Scanning for Game ID') if verbose else None
-        tmp = 'pop-fe-psp-work/TMP'
+        tmp = 'pop-fe-psp-work/TMP01.iso'
         disc_id = get_disc_id(cue_file, tmp)
         print('ID', disc_id)
-        temp_files.append(tmp + '01.iso')
+        temp_files.append(tmp)
 
         self.builder.get_variable('disci%s_variable' % (disc)).set(disc_id)
 
@@ -447,12 +455,11 @@ class PopFePs3App:
             bc = bchunk()
             bc.towav = True
             bc.open(self.cue_files[d])
-            for i in range(1, len(bc.cue)):
-                if not bc.cue[i]['audio']:
+            for i in range(2, len(bc.cue) + 1):
+                if bc.cue[i]['MODE'] != 'AUDIO':
                     continue
-                f = 'pop-fe-psp-work/TRACK_%d_' % (d)
-                bc.writetrack(i, f)
-                wav_file = f + '%02d.wav' % (bc.cue[i]['num'])
+                wav_file = 'pop-fe-psp-work/TRACK_%d_%02d.wav' % (d, i)
+                bc.writetrack(i, wav_file)
                 temp_files.append(wav_file)
                 aea_file = wav_file[:-3] + 'aea'
                 temp_files.append(aea_file)

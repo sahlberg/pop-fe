@@ -13,11 +13,11 @@ TL;DR
 For Linux and windows.
 Connect PSP to your Linux/Windows box via USB, then run:
 
-  $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
+  $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.cue /psx/Grandia2of2.cue
 
 Or create a PS3 PKG:
 
-  $ ./pop-fe.py --ps3-pkg=Grandia.pkg /psx/Grandia1of2.img /psx/Grandia2of2.img
+  $ ./pop-fe.py --ps3-pkg=Grandia.pkg /psx/Grandia1of2.ccd /psx/Grandia2of2.ccd
 
 or ...
 
@@ -48,6 +48,7 @@ formats:
          from the content of the cue file. If the file-name found inside the
          cue is a relative path it is assumed that the bin/img file is stored
          in the same directory as the cue file.
+.ccd   : CCD file. Will be converted to a temporary CUE file before it is used.
 .bin   : BIN/IMG files. In this case a temporary .cue file will be created
 .img     in the local directory and used for the conversion. This cue file
          will assume that the bin/img file is just one single track of type
@@ -289,11 +290,11 @@ Please send patches to populate these fields in gamedb.py with more entries.
 
 Examples:
 
-  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0='https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.cue --snd0='https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1'
   
-  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0=Alundra.WAV
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.cue --snd0=Alundra.WAV
   
-  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.img --snd0=auto
+  $ ./pop-fe.py --ps3-pkg=alundra.pkg Alundra.cue --snd0=auto
 
 If specified as a file it must be WAVE/16bit/stereo/44100Hz.
 
@@ -403,7 +404,7 @@ $ cd ../../..
 
 Then to use it just run it as
 
-$ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.img Grandia_d2.img
+$ ./pop-fe.py --ps3-pkg=Grandia.pkg Grandia_d1.cue Grandia_d2.cue
 
 
 LIBCRYPT
