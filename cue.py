@@ -28,9 +28,9 @@ def fixup_cue(cue, raw=False, psxtruncate=False):
         filesize = os.stat(file).st_size
 
         for idx in cue['TRACKS'][track]['INDEX']:
-            cue['TRACKS'][track]['INDEX'][idx]['STOPSECT'] = int(filesize / SECTLEN)
+            cue['TRACKS'][track]['INDEX'][idx]['STOPSECT'] = int(filesize / SECTLEN) - 1
             if _t >=0 and _i >= 0:
-                cue['TRACKS'][_t]['INDEX'][_i]['STOPSECT'] = cue['TRACKS'][track]['INDEX'][idx]['STARTSECT']
+                cue['TRACKS'][_t]['INDEX'][_i]['STOPSECT'] = cue['TRACKS'][track]['INDEX'][idx]['STARTSECT'] - 1
             
             _t = track
             _i = idx
