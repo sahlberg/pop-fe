@@ -282,7 +282,11 @@ def get_pic_from_game(pic, game_id, game, filename):
     if game_id in games and pic in games[game_id]:
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
-            return Image.open(io.BytesIO(ret.content))
+            try:
+                return Image.open(io.BytesIO(ret.content))
+            except:
+                print('Failed to parse file', games[game_id][pic])
+                return None
     if not game or game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
@@ -296,6 +300,8 @@ def get_pic_from_game(pic, game_id, game, filename):
 
 def get_pic0_from_game(game_id, game, cue):
     pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
+    if not pic0:
+        return None
     # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
     ar = pic0.height / pic0.width
     if pic0.height * ar > 560:
@@ -567,7 +573,7 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
         icon0.save(create_path(cue, f + '_cover.png'))
             
     # PIC0
-    if game_id in games and 'pic0' in games[game_id]:
+    if pic0 and game_id in games and 'pic0' in games[game_id]:
         try:
             os.stat(create_path(cue, f + '_pic0.png'))
         except:
