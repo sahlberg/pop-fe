@@ -3839,7 +3839,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/93d9cd45-c6a2-4d51-9edd-0c6020bcfd4b.png',
         'pic1': 'https://images.launchbox-app.com/d9029bf7-22d3-4cfe-843d-102435d34096.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Coolboarders%20[SLPS-00456]%20(J).cbr',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bash%20%28USA%29_jp2.zip',
     },
     'SCUS94154': {
         'url': "games/U/C/SCUS-94154.html",

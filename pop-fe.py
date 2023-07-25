@@ -2179,7 +2179,7 @@ if __name__ == "__main__":
                 print('Use locally stored manual from', manual)
             except:
                 True
-        if not manual and 'manual' in games[disc_ids[0]]:
+        if disc_ids[0] in games and not manual and 'manual' in games[disc_ids[0]]:
             manual = games[disc_ids[0]]['manual']
         if manual:
             manual = create_manual(manual, disc_ids[0])
