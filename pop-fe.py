@@ -854,8 +854,15 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     pic1.save(i, format='PNG')
     i.seek(0)
     pic1 = i.read()
-    
-    f = dest + '/PSP/GAME/' + disc_ids[0]
+
+    # Try /PSP/GAME/ if it exists as this is where a PSP memorystick will
+    # store the games. 
+    try:
+        os.stat(dest + '/PSP/GAME/')
+        f = dest + '/PSP/GAME/' + disc_ids[0]
+    except:
+        f = dest + '/' + disc_ids[0]
+
     print('Install EBOOT in', f) if verbose else None
     try:
         os.mkdir(f)
