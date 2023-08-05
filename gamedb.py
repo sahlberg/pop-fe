@@ -5089,7 +5089,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00908': {
@@ -5098,7 +5098,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00909': {
@@ -5107,7 +5107,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00910': {
@@ -5116,7 +5116,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01251': {
@@ -14544,7 +14544,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES02080': {
@@ -14553,7 +14553,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12080': {
@@ -14562,7 +14562,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES22080': {
@@ -14571,7 +14571,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES32080': {
@@ -14580,7 +14580,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02081': {
@@ -14589,7 +14589,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12081': {
@@ -14598,7 +14598,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22081': {
@@ -14607,7 +14607,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32081': {
@@ -14616,7 +14616,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02082': {
@@ -14625,7 +14625,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12082': {
@@ -14634,7 +14634,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22082': {
@@ -14643,7 +14643,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32082': {
@@ -14652,7 +14652,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02083': {
@@ -14661,7 +14661,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12083': {
@@ -14670,7 +14670,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22083': {
@@ -14679,7 +14679,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32083': {
@@ -14688,7 +14688,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02084': {
@@ -14697,7 +14697,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12084': {
@@ -14706,7 +14706,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22084': {
@@ -14715,7 +14715,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32084': {
@@ -14724,7 +14724,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02965': {
@@ -38251,7 +38251,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45376': {
@@ -38260,7 +38260,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45377': {
@@ -38269,7 +38269,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45378': {
@@ -38278,7 +38278,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01880': {
@@ -38287,7 +38287,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01881': {
@@ -38296,7 +38296,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01882': {
@@ -38305,7 +38305,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPS01883': {
@@ -38314,7 +38314,7 @@ games = {
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87384': {
@@ -38323,7 +38323,7 @@ games = {
 	'title': "FINAL FANTASY VIII [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87385': {
@@ -38332,7 +38332,7 @@ games = {
 	'title': "FINAL FANTASY VIII [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87386': {
@@ -38341,7 +38341,7 @@ games = {
 	'title': "FINAL FANTASY VIII [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SLPM87387': {
@@ -38350,7 +38350,7 @@ games = {
 	'title': "FINAL FANTASY VIII [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=8IRVXAR7eK4&list=PLXczYlGAMZx3NlbIspi5hCQa6Kn28hlb9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VIII%20(J)%20[SLPS-01880].cbr',
     },
     'SCPS45500': {
@@ -58828,7 +58828,10 @@ libcrypt = {
                      'url': 'http://redump.org/disc/4028/'},
     'SLES02082': {'magic_word': 27019, 'url': 'http://redump.org/disc/733/'},
     'SLES02083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1587/'},
-    'SLES02084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1109/'},
+    'SLES02084': {'credit': 'Libcrypt patch contributed by Chenchotronk',
+                  'magic_word': 17597,
+                  'ppf': 'libcrypt/Final Fantasy VIII (Spain) (Disc 1).ppf',
+                  'url': 'http://redump.org/disc/1109/'},
     'SLES02086': {   'credit': 'Libcrypt patch contributed by krHACKen',
                      'magic_word': 5876,
                      'ppf': 'libcrypt/N-Gen Racing (Europe) '
@@ -59069,7 +59072,10 @@ libcrypt = {
                      'url': 'http://redump.org/disc/4029/'},
     'SLES12082': {'magic_word': 27019, 'url': 'http://redump.org/disc/734/'},
     'SLES12083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1588/'},
-    'SLES12084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1110/'},
+    'SLES12084': {   'credit': 'Libcrypt patch contributed by Chenchotronk',
+                     'magic_word': 17597,
+                     'ppf': 'libcrypt/Final Fantasy VIII (Spain) (Disc 2).ppf',
+                     'url': 'http://redump.org/disc/1110/'},
     'SLES12328': {   'magic_word': 19180,
                      'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip',
                                    'pdx-gal2.ppf'],
@@ -59108,7 +59114,10 @@ libcrypt = {
                      'url': 'http://redump.org/disc/4030/'},
     'SLES22082': {'magic_word': 27019, 'url': 'http://redump.org/disc/735/'},
     'SLES22083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1589/'},
-    'SLES22084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1111/'},
+    'SLES22084': {'credit': 'Libcrypt patch contributed by Chenchotronk',
+                  'magic_word': 17597,
+                  'ppf': 'libcrypt/Final Fantasy VIII (Spain) (Disc 3).ppf',
+                  'url': 'http://redump.org/disc/1111/'},
     'SLES22328': {   'magic_word': 28883,
                      'ppfzip': [   'https://dl.consolecopyworld.com/dl.php?c=psx&f=pdx-galp!zip',
                                    'pdx-gal3.ppf'],
@@ -59139,7 +59148,10 @@ libcrypt = {
                      'url': 'http://redump.org/disc/4031/'},
     'SLES32082': {'magic_word': 27019, 'url': 'http://redump.org/disc/736/'},
     'SLES32083': {'magic_word': 38093, 'url': 'http://redump.org/disc/1590/'},
-    'SLES32084': {'magic_word': 17597, 'url': 'http://redump.org/disc/1112/'},
+    'SLES32084': {'credit': 'Libcrypt patch contributed by Chenchotronk',
+                  'magic_word': 17597,
+                  'ppf': 'libcrypt/Final Fantasy VIII (Spain) (Disc 4).ppf',
+                  'url': 'http://redump.org/disc/1112/'},
     'SLES32965': {'magic_word': 7877, 'url': 'http://redump.org/disc/2373/'},
     'SLES32966': {   'credit': 'Libcrypt patch contributed by krHACKen',
                      'magic_word': 13777,
