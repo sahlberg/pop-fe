@@ -849,7 +849,10 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     # Convert PIC1 to a file object
     pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
     if watermark:
-        pic1 = add_image_text(pic1, game_title, disc_ids[0])
+        try:
+            pic1 = add_image_text(pic1, game_title, disc_ids[0])
+        except:
+            True
     i = io.BytesIO()
     pic1.save(i, format='PNG')
     i.seek(0)
@@ -931,7 +934,10 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     # Convert PIC1 to a file object
     pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
     if watermark:
-        pic1 = add_image_text(pic1, game_title, disc_ids[0])
+        try:
+            pic1 = add_image_text(pic1, game_title, disc_ids[0])
+        except:
+            True
     i = io.BytesIO()
     pic1.save(i, format='PNG')
     i.seek(0)

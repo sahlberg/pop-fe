@@ -2168,6 +2168,7 @@ games = {
 	'title': "40 WINKS",
         'pic0': 'https://images.launchbox-app.com/858e65c5-e0f1-413c-ba00-19b6781ce23a.png',
         'pic1': 'https://images.launchbox-app.com/a73c5caf-709b-4d0c-971a-dd5b04f84b8b.png',
+        'manual': 'https://psxdatacenter.com/manuals/40%20Winks%20-%20con%20Ruff%20&%20Tumble%20(S)%20[SLES-01941].cbr',
     },
     'SLUS01449': {
         'url': "games/U/0-9/SLUS-01449.html",
@@ -11782,6 +11783,7 @@ games = {
 	'title': "40 WINKS - CONQUER YOUR DREAMS",
         'pic0': 'https://images.launchbox-app.com/858e65c5-e0f1-413c-ba00-19b6781ce23a.png',
         'pic1': 'https://images.launchbox-app.com/a73c5caf-709b-4d0c-971a-dd5b04f84b8b.png',
+        'manual': 'https://psxdatacenter.com/manuals/40%20Winks%20-%20con%20Ruff%20&%20Tumble%20(S)%20[SLES-01941].cbr',
     },
     'SLES01940': {
         'url': "games/P/0-9/SLES-01940.html",
@@ -11789,6 +11791,7 @@ games = {
 	'title': "40 WINKS - CON RUFF E TUMBLE",
         'pic0': 'https://images.launchbox-app.com/858e65c5-e0f1-413c-ba00-19b6781ce23a.png',
         'pic1': 'https://images.launchbox-app.com/a73c5caf-709b-4d0c-971a-dd5b04f84b8b.png',
+        'manual': 'https://psxdatacenter.com/manuals/40%20Winks%20-%20con%20Ruff%20&%20Tumble%20(S)%20[SLES-01941].cbr',
     },
     'SLES01941': {
         'url': "games/P/0-9/SLES-01941.html",
