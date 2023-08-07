@@ -147,8 +147,10 @@ def fetch_cached_file(path):
     if ret.status_code != 200:
         raise Exception('Failed to fetch file ', PSX_SITE + path)
 
-    return ret.content.decode(ret.apparent_encoding)
-
+    if ret.apparent_encoding:
+        return ret.content.decode(ret.apparent_encoding)
+    else:
+        return ret.content
 
 def fetch_cached_binary(path):
     try:
@@ -283,7 +285,10 @@ def get_pic_from_game(pic, game_id, game, filename):
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
             try:
-                return Image.open(io.BytesIO(ret.content))
+                if ret.apparent_encoding:
+                    return Image.open(io.BytesIO(ret.content.decode(ret.apparent_encoding)))
+                else:
+                    return Image.open(io.BytesIO(ret.content))
             except:
                 print('Failed to parse file', games[game_id][pic])
                 return None
@@ -1779,6 +1784,8 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][1]))
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP
+# XXX add support for pdf manuals
+# https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf
 def create_manual(source, gameid, subdir='./pop-fe-work/'):
     # already have a manual in the proper format
     if source[-7:] == '.manual':

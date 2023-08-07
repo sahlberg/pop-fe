@@ -270,11 +270,12 @@ class PopFePs3App:
                     self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
             if not self.pic0:
                 self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
-            temp_files.append('pop-fe-psp-work/PIC0.PNG')
-            self.pic0.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC0.PNG')
-            self.pic0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC0.PNG')
-            c = self.builder.get_object('pic0_canvas', self.master)
-            c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
+            if self.pic0:
+                temp_files.append('pop-fe-psp-work/PIC0.PNG')
+                self.pic0.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC0.PNG')
+                self.pic0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC0.PNG')
+                c = self.builder.get_object('pic0_canvas', self.master)
+                c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
 
             print('Fetching PIC1') if verbose else None
             self.pic1 = None
