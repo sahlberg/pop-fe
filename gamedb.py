@@ -1346,7 +1346,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45171': {
@@ -1355,7 +1355,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01160': {
@@ -1364,7 +1364,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS01161': {
@@ -1373,7 +1373,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91436': {
@@ -1382,7 +1382,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91437': {
@@ -1391,7 +1391,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02773': {
@@ -1400,7 +1400,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02774':    {
@@ -1409,7 +1409,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02775': {
@@ -1418,7 +1418,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02776':    {
@@ -1427,7 +1427,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS00750': {
@@ -11581,7 +11581,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00669': {
@@ -11590,7 +11590,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=Z3c3po95AZk&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00461': {
