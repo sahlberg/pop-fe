@@ -7,12 +7,14 @@ import io
 import os
 import pathlib
 import pygubu
+import re
 import requests
 import shutil
 import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
 from tkinterdnd2 import *
+import zipfile
 
 
 have_pytube = False
@@ -168,7 +170,7 @@ class PopFePs3App:
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
-            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.ccd', '.img']), ('All Files', ['*.*', '*'])])
+            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('discid%d_variable' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
@@ -310,6 +312,35 @@ class PopFePs3App:
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
+
+        if cue_file[-4:] == '.chd':
+            print('This is a CHD file. Uncompress the file.') if verbose else None
+            chd = cue_file
+            try:
+                tmpcue = 'pop-fe-ps3-work/CDH%s.cue' % disc
+                tmpbin = 'pop-fe-ps3-work/CDH%s.bin' % disc
+                temp_files.append(tmpcue)
+                temp_files.append(tmpbin)
+                print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
+                subprocess.run(['chdman', 'extractcd', '-f', '-i', chd, '-ob', tmpbin, '-o', tmpcue], check=True)
+            except:
+                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nCHDMAN not found.\nCan not convert game\nPlease see README file for how to install chdman\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                os._exit(10)
+            cue_file = tmpcue
+            self.cue_file_orig = cue_file
+        if cue_file[-4:] == '.zip':
+            print('This is a ZIP file. Uncompress the file.') if verbose else None
+            zip = cue_file
+            with zipfile.ZipFile(zip, 'r') as zf:
+                for f in zf.namelist():
+                    print('Extracting', 'pop-fe-ps3-work/' + f) if verbose else None
+                    temp_files.append('pop-fe-ps3-work/' + f)
+                    zf.extract(f, path='pop-fe-ps3-work/')
+                    if re.search('.cue$', f):
+                        print('Found CUE file', f) if verbose else None
+                        cue_file = 'pop-fe-ps3-work/' + f
+                        self.cue_file_orig = cue_file
+            
         if cue_file[-4:] == '.ccd':
             tmpcue = 'pop-fe-ps3-work/TMPCUE' + disc + '.cue'
             temp_files.append(tmpcue)
