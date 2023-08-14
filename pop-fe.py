@@ -2007,17 +2007,20 @@ if __name__ == "__main__":
         zip = None
         print('Processing', cue_file, '...')
 
-        if cue_file[-3:] == 'zip':
+        if cue_file[-4:] == '.zip':
             print('This is a ZIP file. Uncompress the file.') if verbose else None
             zip = cue_file
             with zipfile.ZipFile(zip, 'r') as zf:
                 for f in zf.namelist():
-                    print('Extracting', f) if verbose else None
-                    temp_files.append(f)
-                    zf.extract(f)
+                    print('Extracting', subdir + f) if verbose else None
+                    temp_files.append(subdir + f)
+                    zf.extract(f, path=subdir)
                     if re.search('.cue$', f):
                         print('Found CUE file', f) if verbose else None
-                        cue_file = f
+                        cue_file = subdir + f
+                        # we didn't actually have a CUE file to start with so just
+                        # replace the "real" cue filename with our temporary one
+                        real_cue_files[-1] = cue_file
 
         if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
             tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
