@@ -55,6 +55,7 @@ formats:
          MODE2/2352
 .zip   : ZIP file. The ZIP file will be extracted into the local directory
          and if a .cue file is found it will be used.
+.chd   : CHD file. This requires that the chdman program is installed.
 .*     : Various memory card image formats.
          Memory cards are detected by file size so the extensions does not
 	 matter.
