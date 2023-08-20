@@ -1097,10 +1097,11 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image = pp.resize((1000, 560), Image.Resampling.NEAREST)
         image.save(f + '/PIC0.PNG', format='PNG')
         temp_files.append(f + '/PIC0.PNG')
-    
-    image = pic1.resize((1920, 1080), Image.Resampling.NEAREST)
-    image.save(f + '/PIC1.PNG', format='PNG')
-    temp_files.append(f + '/PIC1.PNG')
+
+    if pic1:
+        image = pic1.resize((1920, 1080), Image.Resampling.NEAREST)
+        image.save(f + '/PIC1.PNG', format='PNG')
+        temp_files.append(f + '/PIC1.PNG')
     
     if pic0:
         # 4:3 == 1.333   16:9 == 1.7777

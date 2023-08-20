@@ -75,6 +75,7 @@ class PopFePs3App:
         self.disc = None
         self.pic0_disabled = 'off'
         self.pic1_bc = 'off'
+        self.pic1_disabled = 'off'
         self.icon0_disc = 'off'
         self.preview_tk = None
         self.pkgdir = None
@@ -95,6 +96,7 @@ class PopFePs3App:
             'on_pic0_disabled': self.on_pic0_disabled,
             'on_pic1_clicked': self.on_pic1_clicked,
             'on_pic1_dropped': self.on_pic1_dropped,
+            'on_pic1_disabled': self.on_pic1_disabled,
             'on_pic1_from_bc': self.on_pic1_from_bc,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
@@ -199,15 +201,16 @@ class PopFePs3App:
 
                 return False
         
-        if not self.pic1:
-            return
         if self.pic0 and self.pic0.mode == 'P':
             self.pic0 = self.pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
-        if self.pic1_bc == 'off':
-            p1 = self.pic1.resize((382,216), Image.Resampling.BILINEAR)
+        if not self.pic1 or self.pic1_disabled == 'on':
+            p1 = Image.new("RGBA", (382,216), (255,255,255,0))
         else:
-            p1 = self.back.resize((382,216), Image.Resampling.BILINEAR)
+            if self.pic1_bc == 'off':
+                p1 = self.pic1.resize((382,216), Image.Resampling.BILINEAR)
+            else:
+                p1 = self.back.resize((382,216), Image.Resampling.BILINEAR)
         if self.pic0 and self.pic0_disabled == 'off':
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.BILINEAR)
             if has_transparency(p0):
@@ -616,6 +619,10 @@ class PopFePs3App:
         self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
         self.update_preview()
 
+    def on_pic1_disabled(self):
+        self.pic1_disabled = self.builder.get_variable('pic1_disabled_variable').get()
+        self.update_preview()
+
     def on_icon0_from_disc(self):
         self.icon0_disc = self.builder.get_variable('disc_as_icon0_variable').get()
         if not self.disc and self.disc_ids:
@@ -741,10 +748,13 @@ class PopFePs3App:
             snd0 = popfe.get_snd0_from_link(snd0)
             if snd0:
                 temp_files.append(snd0)
+        p1 = self.pic1 if self.pic1_bc=='off' else self.back
+        if self.pic1_disabled:
+            p1 = None
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
-                         self.pic1 if self.pic1_bc=='off' else self.back,
+                         p1,
                          self.cue_files, self.cu2_files,
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir='pop-fe-ps3-work/', snd0=snd0,
