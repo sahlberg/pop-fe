@@ -78,6 +78,7 @@ class PopFePs3App:
         self.icon0_disc = 'off'
         self.preview_tk = None
         self.pkgdir = None
+        self.data_track_only = 'off'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -101,6 +102,7 @@ class PopFePs3App:
             'on_create_pkg': self.on_create_pkg,
             'on_reset': self.on_reset,
             'on_theme_selected': self.on_theme_selected,
+            'on_data_track_only': self.on_data_track_only,
         }
 
         builder.connect_callbacks(callbacks)
@@ -606,6 +608,10 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
 
+    def on_data_track_only(self):
+        self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
+        self.update_preview()
+
     def on_pic0_disabled(self):
         self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
         self.update_preview()
@@ -742,7 +748,8 @@ class PopFePs3App:
                          self.cue_files, self.cu2_files,
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir='pop-fe-ps3-work/', snd0=snd0,
-                         subchannels=subchannels)
+                         subchannels=subchannels,
+                         whole_disk=True if self.data_track_only=='off' else False)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
