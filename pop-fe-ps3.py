@@ -105,6 +105,8 @@ class PopFePs3App:
             'on_reset': self.on_reset,
             'on_theme_selected': self.on_theme_selected,
             'on_data_track_only': self.on_data_track_only,
+            'on_force_pal': self.on_force_pal,
+            'on_force_ntsc': self.on_force_ntsc,
         }
 
         builder.connect_callbacks(callbacks)
@@ -611,6 +613,14 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
 
+    def on_force_pal(self):
+        if self.builder.get_variable('force_pal_variable').get() == 'on':
+            self.builder.get_variable('force_ntsc_variable').set('off')
+            
+    def on_force_ntsc(self):
+        if self.builder.get_variable('force_ntsc_variable').get() == 'on':
+            self.builder.get_variable('force_pal_variable').set('off')
+        
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
         self.update_preview()
@@ -715,7 +725,11 @@ class PopFePs3App:
         if disc_id[:4] == 'SLES' or disc_id[:4] == 'SCES':
             print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
             resolution = 2
-
+        if self.builder.get_variable('force_pal_variable').get() == 'on':
+            resolution = 2
+        if self.builder.get_variable('force_ntsc_variable').get() == 'on':
+            resolution = 1
+            
         self.master.config(cursor='watch')
         self.master.update()
         aea_files = {}

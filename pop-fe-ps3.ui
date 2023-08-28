@@ -506,6 +506,7 @@
         <property name="width">200</property>
         <layout manager="grid">
           <property name="column">1</property>
+          <property name="columnspan">2</property>
           <property name="row">3</property>
           <property name="sticky">nsew</property>
         </layout>
@@ -575,6 +576,34 @@
             <layout manager="grid">
               <property name="column">0</property>
               <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="force_pal">
+            <property name="command" type="command" cbtype="simple">on_force_pal</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Force PAL</property>
+            <property name="variable">string:force_pal_variable</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="force_ntsc">
+            <property name="command" type="command" cbtype="simple">on_force_ntsc</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Force NTSC</property>
+            <property name="variable">string:force_ntsc_variable</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">1</property>
               <property name="sticky">w</property>
             </layout>
           </object>
