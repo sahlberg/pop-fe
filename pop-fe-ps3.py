@@ -749,7 +749,7 @@ class PopFePs3App:
             if snd0:
                 temp_files.append(snd0)
         p1 = self.pic1 if self.pic1_bc=='off' else self.back
-        if self.pic1_disabled:
+        if self.pic1_disabled == 'on':
             p1 = None
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
