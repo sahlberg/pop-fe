@@ -3084,6 +3084,14 @@ class popstation(object):
                 _ibd.write(self._subchannels[idx])
 
                 sc_offset = sc_offset + sc_len
+            try:
+                with open('EXTERNAL.BIN', 'rb') as f:
+                    buf = f.read()
+                    print('Patching EXTERNAL CONFIG with %d bytes of data' % len(buf))
+                    _ibd.seek(0x424)
+                    _ibd.write(buf)
+            except:
+                True        
 
 
     def create_pbp(self):
