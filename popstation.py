@@ -3088,7 +3088,7 @@ class popstation(object):
                 with open('EXTERNAL.BIN', 'rb') as f:
                     buf = f.read()
                     print('Patching EXTERNAL CONFIG with %d bytes of data' % len(buf))
-                    _ibd.seek(0x424)
+                    _ibd.seek(0x824)
                     _ibd.write(buf)
             except:
                 True        
