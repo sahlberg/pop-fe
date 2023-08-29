@@ -883,11 +883,13 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         # Check if it is already in ATRAC3 format
         with open(snd0, 'rb') as s:
             buf = s.read(36)
-            if buf[:4] == b'RIFF' and buf[8:12] == b'WAVE' and struct.unpack_from('<H', buf, 20)[0] == 0x270:
-                print('SND0 is already in AT3 format. No conversion needed.')
-                s.seek(0)
-                snd0_data = s.read()
-                snd0 = None
+            if buf[:4] == b'RIFF':
+                riff = parse_riff(snd0)
+                if riff['fmt ']['compression_code'] in [624, 65534]:
+                    print('SND0 is already in AT3 format. No conversion needed.')
+                    s.seek(0)
+                    snd0_data = s.read()
+                    snd0 = None
     if snd0:
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
@@ -1055,10 +1057,12 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         # Check if it is already in ATRAC3 format
         with open(snd0, 'rb') as s:
             buf = s.read(36)
-            if buf[:4] == b'RIFF' and buf[8:12] == b'WAVE' and struct.unpack_from('<H', buf, 20)[0] == 0x270:
-                print('SND0 is already in AT3 format. No conversion needed.')
-                copy_file(snd0, f + '/SND0.AT3')
-                snd0 = None
+            if buf[:4] == b'RIFF':
+                riff = parse_riff(snd0)
+                if riff['fmt ']['compression_code'] in [624, 65534]:
+                    print('SND0 is already in AT3 format. No conversion needed.')
+                    copy_file(snd0, f + '/SND0.AT3')
+                    snd0 = None
     if snd0:
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
