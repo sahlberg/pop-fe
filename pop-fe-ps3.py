@@ -80,6 +80,7 @@ class PopFePs3App:
         self.preview_tk = None
         self.pkgdir = None
         self.data_track_only = 'off'
+        self.configs = []
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -172,6 +173,7 @@ class PopFePs3App:
         self.disc = None
         self.preview_tk = None
         self.pkgdir = None
+        self.configs = []
         
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
@@ -413,6 +415,7 @@ class PopFePs3App:
         self.disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
         self.cu2_files.append(cu2_file)
+        self.configs.append(bytes())
 
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
@@ -735,6 +738,8 @@ class PopFePs3App:
         aea_files = {}
         print('Scanning for audio tracks')
         for d in range(len(self.cue_files)):
+            if self.builder.get_variable('force_ntsc_variable').get() == 'on':
+                self.configs[d] = self.configs[d] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
             aea_files[d] = []
             bc = bchunk()
             bc.towav = True
@@ -773,7 +778,8 @@ class PopFePs3App:
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir='pop-fe-ps3-work/', snd0=snd0,
                          subchannels=subchannels,
-                         whole_disk=True if self.data_track_only=='off' else False)
+                         whole_disk=True if self.data_track_only=='off' else False,
+                         configs=self.configs)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

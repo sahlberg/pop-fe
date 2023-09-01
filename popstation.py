@@ -2415,6 +2415,7 @@ class popstation(object):
         self._img_toc = []
         self._track0_size = []
         self._aea = {}
+        self._configs = None
         self._magic_word = []
         self._subchannels = []
         self._verbose = False
@@ -2442,6 +2443,14 @@ class popstation(object):
     @aea.setter
     def aea(self, aea):
         self._aea = aea
+
+    @property
+    def configs(self):
+        return self._configs
+    
+    @configs.setter
+    def configs(self, configs):
+        self._configs = configs
 
     @property
     def magic_word(self):
@@ -2713,6 +2722,11 @@ class popstation(object):
         buf = bytearray(1024)
         gid = self._disc_ids[disc_num]
         buf[0:11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
+        if self._configs:
+            _l = len(self._configs[disc_num])
+            if _l:
+                buf[0x24:0x24 + 8] = bytes([0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00])
+                buf[0x2c:0x2c + _l] = self._configs[disc_num]
         fh.write(buf)
 
         # Block #3

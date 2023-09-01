@@ -971,7 +971,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[]):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], configs=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     SECTLEN = 2352
@@ -988,7 +988,8 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     p.magic_word = magic_word
     if len(aea_files):
         p.aea = aea_files
-    
+    if configs:
+        p.configs = configs
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
