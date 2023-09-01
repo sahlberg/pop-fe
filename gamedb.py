@@ -16071,6 +16071,9 @@ games = {
         'url': "games/P/H/SLES-01562.html",
     	'id': 'SLES01562',
 	'title': "HELLNIGHT",
+        'pic0': 'https://images.launchbox-app.com/21449c5a-f1b2-4f80-a04d-6184b6a6acf0.png',
+        'pic1': 'https://images.launchbox-app.com/27208f1b-6e09-42d6-b9d2-d5485919a0de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=1oGAoCA_bJU&list=PL6B683DDAEC78D7F0&index=1',
     },
     'SLES00586': {
         'url': "games/P/H/SLES-00586.html",
