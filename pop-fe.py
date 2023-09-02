@@ -1964,6 +1964,8 @@ if __name__ == "__main__":
         install_deps()
         exit(0)
 
+    ps3configs = None
+    
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
 
@@ -2001,6 +2003,14 @@ if __name__ == "__main__":
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
+        if args.ps3_pkg:
+            if not ps3configs:
+                ps3configs = []
+            ps3configs.append(bytes())
+            if args.resolution == '1':
+                ps3configs[-1] = ps3configs[-1] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
+                print('Inject config to force NTSC') if verbose else None
+
         real_cue_files.append(cue_file)
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
@@ -2325,7 +2335,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:

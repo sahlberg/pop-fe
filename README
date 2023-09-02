@@ -96,6 +96,9 @@ Command line arguments are:
 			 to a specific value.
 		         See https://www.psdevwiki.com/ps3/PARAM.SFO#RESOLUTION
 			 for a list of possible values.
+			 When forcing the resolution to NTSC for PS3 this
+			 will additionally inject the ps1_netemu config option
+			 to set the speed of the game correctly.
 --whole-disk           : For PS3 Packages pop-fe will default to only encode
 		         the data track in the pkg disc image and not the raw
 			 CD-DA tracks. The CD-DA tracks are converted to
