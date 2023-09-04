@@ -2308,7 +2308,7 @@ if __name__ == "__main__":
 
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
-    if args.theme:
+    if not snd0 and args.theme:
         snd0 = get_snd0_from_theme(args.theme, disc_ids[0], subdir)
     if not snd0:
         try:
@@ -2321,7 +2321,7 @@ if __name__ == "__main__":
         snd0 = get_snd0_from_game(disc_ids[0], subdir=subdir)
         if snd0:
             temp_files.append(snd0)
-    if snd0 and snd0 == 'auto':
+    if snd0 == 'auto':
         a = Search(game_title + ' ps1 ost')
         snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
         print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)

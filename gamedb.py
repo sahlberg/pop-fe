@@ -1972,6 +1972,7 @@ games = {
         'url': "games/J/Z/SLPS-01666.html",
     	'id': 'SLPS01666',
 	'title': "ZEUS - CARNAGE HEART SECOND",
+        'pic0': 'https://images.launchbox-app.com/51bfacbd-71c0-41d6-a343-3b0f4037d4ea.png',
     },
     'SLPS02318': {
         'url': "games/J/Z/SLPS-02318.html",
@@ -2016,76 +2017,91 @@ games = {
         'url': "games/J/Z/SLPS-02982.html",
     	'id': 'SLPS02982',
 	'title': "ZOIDS - ZENEBUS VS HERIC",
+        'pic0': 'https://images.launchbox-app.com/ddde81ec-c0fb-4e2a-b3be-e838e6e43b13.png',
     },
     'SLPS03389': {
         'url': "games/J/Z/SLPS-03389.html",
     	'id': 'SLPS03389',
 	'title': "ZOIDS 2 - HELIC REPUBLIC VS GUYLOS EMPIRE",
+        'pic0': 'https://images.launchbox-app.com/fe125039-3c2b-4188-8eec-1efe6c830524.png',
     },
     'SLPS00488': {
         'url': "games/J/Z/SLPS-00488.html",
     	'id': 'SLPS00488',
 	'title': "ZOKU GUSSUN OYOYO",
+        'pic0': 'https://images.launchbox-app.com/e4f45542-7281-4f98-a3d2-954b45ad7d5f.png',
     },
     'SLPS01326': {
         'url': "games/J/Z/SLPS-01326.html",
     	'id': 'SLPS01326',
 	'title': "ZOKU HATSUKOI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/e00b1ee5-e044-49eb-9f46-ab65b26265be.png',
     },
     'SLPS01327': {
         'url': "games/J/Z/SLPS-01326.html",
     	'id': 'SLPS01327',
 	'title': "ZOKU HATSUKOI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/e00b1ee5-e044-49eb-9f46-ab65b26265be.png',
     },
     'SLPS01328': {
         'url': "games/J/Z/SLPS-01326.html",
     	'id': 'SLPS01328',
 	'title': "ZOKU HATSUKOI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/e00b1ee5-e044-49eb-9f46-ab65b26265be.png',
     },
     'SLPS01329': {
         'url': "games/J/Z/SLPS-01326.html",
     	'id': 'SLPS01329',
 	'title': "ZOKU HATSUKOI MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/e00b1ee5-e044-49eb-9f46-ab65b26265be.png',
     },
     'SLPS02266': {
         'url': "games/J/Z/SLPS-02266.html",
     	'id': 'SLPS02266',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02267': {
         'url': "games/J/Z/SLPS-02266.html",
     	'id': 'SLPS02267',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02268': {
         'url': "games/J/Z/SLPS-02266.html",
     	'id': 'SLPS02268',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02269': {
         'url': "games/J/Z/SLPS-02266.html",
     	'id': 'SLPS02269',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02927': {
         'url': "games/J/Z/SLPS-02927.html",
     	'id': 'SLPS02927',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02928': {
         'url': "games/J/Z/SLPS-02927.html",
     	'id': 'SLPS02928',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02929': {
         'url': "games/J/Z/SLPS-02927.html",
     	'id': 'SLPS02929',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS02930': {
         'url': "games/J/Z/SLPS-02927.html",
     	'id': 'SLPS02930',
 	'title': "ZOKU MIKAGURA SHOUJO TANTEIDAN - KANKETSUHEN [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/74b8121a-933b-49ac-b237-f4e5126e9143.png',
     },
     'SLPS00534': {
         'url': "games/J/Z/SLPS-00534.html",
@@ -2098,21 +2114,29 @@ games = {
         'url': "games/J/Z/SLPS-00271.html",
     	'id': 'SLPS00271',
 	'title': "ZORK I - THE GREAT UNDERGROUND EMPIRE",
+        'pic0': 'https://images.launchbox-app.com/c5ee97f9-bc27-48db-883a-8648ce07df7b.png',
     },
     'SLPS01238': {
         'url': "games/J/Z/SLPS-01238.html",
     	'id': 'SLPS01238',
 	'title': "ZUTTO ISSHO - WITH ME EVERYTIME...",
+        'pic0': 'https://images.launchbox-app.com/55fd34ea-8fbe-43aa-bace-3fc3440434ba.png',
+        'pic1': 'https://images.launchbox-app.com/5c302738-dcbd-4506-afd4-a35c46f670b8.png',
+        'snd0': 'https://www.youtube.com/watch?v=pMr2Gwg9OL4',
     },
     'SLPM86523': {
         'url': "games/J/Z/SLPM-86523.html",
     	'id': 'SLPM86523',
 	'title': "ZUTTO ISSHO - WITH ME EVERYTIME... [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/55fd34ea-8fbe-43aa-bace-3fc3440434ba.png',
+        'pic1': 'https://images.launchbox-app.com/5c302738-dcbd-4506-afd4-a35c46f670b8.png',
+        'snd0': 'https://www.youtube.com/watch?v=pMr2Gwg9OL4',
     },
     'SLPS00424': {
         'url': "games/J/Z/SLPS-00424.html",
     	'id': 'SLPS00424',
 	'title': "ZXE-D - LEGEND OF PLASMALITE",
+        'pic0': 'https://images.launchbox-app.com/b73da9aa-a1f6-446f-b749-89bba3a9889a.png',
     },
     'SLUS01272': {
         'url': "games/U/0-9/SLUS-01272.html",
@@ -9240,6 +9264,7 @@ games = {
         'url': "games/U/S/SLUS-00795.html",
     	'id': 'SLUS00795',
 	'title': "SHANGHAI - TRUE VALOR",
+        'pic0': 'https://images.launchbox-app.com/4e70d712-4ed6-43c5-a8a1-132f4a7a83f7.png',
     },
     'SLUS01298': {
         'url': "games/U/S/SLUS-01298.html",
@@ -9252,11 +9277,13 @@ games = {
         'url': "games/U/S/SLUS-00031.html",
     	'id': 'SLUS00031',
 	'title': "SHELLSHOCK",
+        'pic0': 'https://images.launchbox-app.com/15b62b48-157a-463b-8cdc-c35eb15f7e1c.png',
     },
     'SLUS00558': {
         'url': "games/U/S/SLUS-00558.html",
     	'id': 'SLUS00558',
 	'title': "SHIPWRECKERS!",
+        'pic0': 'https://images.launchbox-app.com/36e3578b-a448-47a8-b196-86946c19955b.png',
     },
     'SLUS00028': {
         'url': "games/U/S/SLUS-00028.html",
@@ -9276,11 +9303,13 @@ games = {
         'url': "games/U/S/SLUS-01308.html",
     	'id': 'SLUS01308',
 	'title': "SHOOTER - SPACE SHOT",
+        'pic0': 'https://images.launchbox-app.com/2979544e-ed66-43b8-b941-9c5dc0a30c5e.png',
     },
     'SLUS01302': {
         'url': "games/U/S/SLUS-01302.html",
     	'id': 'SLUS01302',
 	'title': "SHOOTER - STARFIGHTER SANVEIN",
+        'pic0': 'https://images.launchbox-app.com/033851b4-d733-4219-9633-4a96c2c1fc9d.png',
     },
     'SLUS01463': {
         'url': "games/U/S/SLUS-01463.html",
@@ -9317,6 +9346,7 @@ games = {
         'url': "games/U/S/SLUS-00050.html",
     	'id': 'SLUS00050',
 	'title': "SILVERLOAD",
+        'pic0': 'https://images.launchbox-app.com/e4d2f6f8-b5f0-4f7d-bf6b-98178c647573.png',
     },
     'SLUS01069': {
         'url': "games/U/S/SLUS-01069.html",
@@ -9330,11 +9360,15 @@ games = {
         'url': "games/U/S/SLUS-00113.html",
     	'id': 'SLUS00113',
 	'title': "SIMCITY 2000",
+        'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
+        'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
     },
     'SLUS00209': {
         'url': "games/U/S/SLUS-00209.html",
     	'id': 'SLUS00209',
 	'title': "SKELETON WARRIORS",
+        'pic0': 'https://images.launchbox-app.com/c130dc70-f934-43a9-b740-694d7c47796e.png',
+        'pic1': 'https://images.launchbox-app.com/52c7b1ba-f0a9-4438-8289-410e03185068.jpg',
     },
     'SLUS00601': {
         'url': "games/U/S/SLUS-00601.html",
@@ -9354,11 +9388,13 @@ games = {
         'url': "games/U/S/SLUS-00022.html",
     	'id': 'SLUS00022',
 	'title': "SLAM'N'JAM '96 FEATURING MAGIC & KAREEM",
+        'pic0': 'https://images.launchbox-app.com/3902d60a-f765-4973-8759-483e89687d22.png',
     },
     'SLUS00080': {
         'url': "games/U/S/SLUS-00080.html",
     	'id': 'SLUS00080',
 	'title': "SLAMSCAPE",
+        'pic0': 'https://images.launchbox-app.com/fa2a5ac9-97fd-4b92-9e2c-a6ccf995c037.png',
     },
     'SLUS00955': {
         'url': "games/U/S/SLUS-00955.html",
@@ -9372,6 +9408,7 @@ games = {
         'url': "games/U/S/SLUS-01555.html",
     	'id': 'SLUS01555',
 	'title': "SLOTS",
+        'pic0': 'https://images.launchbox-app.com/c494e6f0-ac20-49b9-9514-a4813153e1e0.png',
     },
     'SLUS00781': {
         'url': "games/U/S/SLUS-00781.html",
@@ -9385,6 +9422,7 @@ games = {
         'url': "games/U/S/SLUS-01359.html",
     	'id': 'SLUS01359',
 	'title': "SMURF RACER",
+        'pic0': 'https://images.launchbox-app.com/00a7397d-b4de-427c-9215-7f64bd1bb01f.png',
     },
     'SLUS01093': {
         'url': "games/U/S/SLUS-01093.html",
@@ -25887,6 +25925,7 @@ games = {
         'url': "games/P/S/SLES-01618.html",
     	'id': 'SLES01618',
 	'title': "SHANGHAI - TRUE VALOR",
+        'pic0': 'https://images.launchbox-app.com/4e70d712-4ed6-43c5-a8a1-132f4a7a83f7.png',
     },
     'SLES01658': {
         'url': "games/P/S/SLES-01658.html",
@@ -25908,16 +25947,19 @@ games = {
         'url': "games/P/S/SLES-00026.html",
     	'id': 'SLES00026',
 	'title': "SHELLSHOCK",
+        'pic0': 'https://images.launchbox-app.com/a08af4dc-76ea-44a3-9a49-adf55ce23c43.png',
     },
     'SLES00215': {
         'url': "games/P/S/SLES-00215.html",
     	'id': 'SLES00215',
 	'title': "SHELLSHOCK",
+        'pic0': 'https://images.launchbox-app.com/a08af4dc-76ea-44a3-9a49-adf55ce23c43.png',
     },
     'SLES00216': {
         'url': "games/P/S/SLES-00216.html",
     	'id': 'SLES00216',
 	'title': "SHELLSHOCK",
+        'pic0': 'https://images.launchbox-app.com/a08af4dc-76ea-44a3-9a49-adf55ce23c43.png',
     },
     'SLES00071': {
         'url': "games/P/S/SLES-00071.html",
@@ -26003,6 +26045,8 @@ games = {
         'url': "games/P/S/SLES-00471.html",
     	'id': 'SLES00471',
 	'title': "SIMCITY 2000",
+        'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
+        'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
     },
     'SLES04152': {
         'url': "games/P/S/SLES-04152.html",
@@ -26013,6 +26057,8 @@ games = {
         'url': "games/P/S/SLES-00341.html",
     	'id': 'SLES00341',
 	'title': "SKELETON WARRIORS",
+        'pic0': 'https://images.launchbox-app.com/c130dc70-f934-43a9-b740-694d7c47796e.png',
+        'pic1': 'https://images.launchbox-app.com/52c7b1ba-f0a9-4438-8289-410e03185068.jpg',
     },
     'SLES02947': {
         'url': "games/P/S/SLES-02947.html",
@@ -26054,11 +26100,13 @@ games = {
         'url': "games/P/S/SLES-00076.html",
     	'id': 'SLES00076',
 	'title': "SLAM'N'JAM '96 - FEATURING MAGIC & KAREEM",
+        'pic0': 'https://images.launchbox-app.com/3902d60a-f765-4973-8759-483e89687d22.png',
     },
     'SLES00427': {
         'url': "games/P/S/SLES-00427.html",
     	'id': 'SLES00427',
 	'title': "SLAMSCAPE",
+        'pic0': 'https://images.launchbox-app.com/fa2a5ac9-97fd-4b92-9e2c-a6ccf995c037.png',
     },
     'SLES02194': {
         'url': "games/P/S/SLES-02194.html",
@@ -52388,6 +52436,7 @@ games = {
         'url': "games/J/S/SLPS-00486.html",
     	'id': 'SLPS00486',
 	'title': "SHELLSHOCK",
+        'pic0': 'https://images.launchbox-app.com/851f7b54-c0b6-4ba1-8e8d-c3a44c03508c.png',
     },
     'SLPS01893': {
         'url': "games/J/S/SLPS-01893.html",
@@ -52914,11 +52963,15 @@ games = {
         'url': "games/J/S/SLPS-00420.html",
     	'id': 'SLPS00420',
 	'title': "SIMCITY 2000",
+        'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
+        'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
     },
     'SLPS91098': {
         'url': "games/J/S/SLPS-91098.html",
     	'id': 'SLPS91098',
 	'title': "SIMCITY 2000 [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
+        'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
     },
     'SLPS02842': {
         'url': "games/J/S/SLPS-02842.html",
@@ -53851,6 +53904,7 @@ games = {
         'url': "games/J/S/SLPS-00426.html",
     	'id': 'SLPS00426',
 	'title': "SLAM'N'JAM '96 - FEATURING MAGIC & KAREEM",
+        'pic0': 'https://images.launchbox-app.com/3902d60a-f765-4973-8759-483e89687d22.png',
     },
     'SLPS02789': {
         'url': "games/J/S/SLPS-02789.html",
