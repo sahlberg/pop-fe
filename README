@@ -203,6 +203,22 @@ Similarly, files named as <cue>_pic0.png and <cue>_pic1.png are used for the scr
 images.
 
 
+PS3 External config files
+=========================
+External configs is a way to add commands to the ps1_netemu emulator that to
+tweak gameplay for individual titles.
+
+See: https://www.psdevwiki.com/ps3/Talk:PS1_Emulation#External_Configs
+
+pop-fe/pop-fe-ps3 comes with a bunch of configs built in for various games.
+(See the ps3configs subdirectory.)
+
+You can also specify additional config files that pop-fe/pop-fe-ps3 will
+automatically eject when you create a PS3 package.
+This is done by storing the config file in the same directory as the cue file
+and with the filename <cue-file>.ps3config
+
+
 Image files for PS3 packages
 ============================
 PS3 packages uses 3 image files: <cue>_cover.png, <cue>_pic0.png and <cue>_pic1.png

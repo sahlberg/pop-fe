@@ -1942,6 +1942,7 @@ games = {
         'url': "games/J/Z/SLPS-00083.html",
     	'id': 'SLPS00083',
 	'title': "ZERO DIVIDE",
+        'pic0': 'https://images.launchbox-app.com/d3166d17-eef6-42c1-90fb-fd570ab541d4.png',
     },
     'SCPS45079': {
         'url': "games/J/Z/SCPS-45079.html",
@@ -2394,6 +2395,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Alundra 2/SLUS-01017.BIN',
     },
     'SLUS01488': {
         'url': "games/U/A/SLUS-01488.html",
@@ -2430,6 +2432,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ape Escape/SCUS-94423.BIN',
     },
     'SLUS00373': {
         'url': "games/U/A/SLUS-00373.html",
@@ -2546,12 +2549,14 @@ games = {
     	'id': 'SLUS01030',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01030.BIN',
     },
     'SLUS01081': {
         'url': "games/U/A/SLUS-01030.html",
     	'id': 'SLUS01081',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01081.BIN',
     },
     'SLUS00670': {
         'url': "games/U/A/SLUS-00670.html",
@@ -2863,6 +2868,7 @@ games = {
 	'title': "BATTLE ARENA TOSHINDEN 2",
         'pic0': 'https://images.launchbox-app.com/42af2995-a35f-4d2e-9152-e8937f374734.png',
         'pic1': 'https://images.launchbox-app.com/730771ac-422a-4df1-b951-4ee639f0a40c.jpg',
+        'ps3config': 'ps3configs/Battle Arena Toshinden 2/SCUS-00220.BIN',
     },
     'SLUS00483': {
         'url': "games/U/B/SLUS-00483.html",
@@ -2959,6 +2965,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
         'snd0': 'https://www.youtube.com/watch?v=84tI_tp8fnw',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Big%20Bass%20World%20Championship%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Big Bass World Championship/SLUS-00228.BIN',
     },
     'SLUS01527': {
         'url': "games/U/B/SLUS-01527.html",
@@ -3171,6 +3178,7 @@ games = {
     	'id': 'SLUS00444',
 	'title': "BRAHMA FORCE - THE ASSAULT ON BELTLOGGER 9",
         'pic0': 'https://images.launchbox-app.com/9e4cc2a0-75ea-4425-a02e-bd5f7c3bdd6a.png',
+        'ps3config': 'ps3configs/Beltlogger 9/SLUS-00444.BIN',
     },
     'SLUS00083': {
         'url': "games/U/B/SLUS-00083.html",
@@ -3242,6 +3250,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
         'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
+        'ps3config': 'ps3configs/Breath of Fire IV/SLUS-01324.BIN',
     },
     'SLUS00687': {
         'url': "games/U/B/SLUS-00687.html",
@@ -3642,6 +3651,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'ps3config': 'ps3configs/Clock Tower/SLUS-00539.BIN',
     },
     'SLUS00695': {
         'url': "games/U/C/SLUS-00695.html",
@@ -3876,6 +3886,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%202%20-%20Cortex%20Strikes%20Back%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Crash Bandicoot 2/SCUS-94154.BIN',
     },
     'SCUS94244': {
         'url': "games/U/C/SCUS-94244.html",
@@ -3885,6 +3896,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Crash Bandicoot 3/SCUS-94244.BIN',
     },
     'SCUS94570': {
         'url': "games/U/C/SCUS-94570.html",
@@ -4135,6 +4147,7 @@ games = {
 	'title': "DECEPTION III - DARK DELUSION",
         'pic0': 'https://images.launchbox-app.com/a1faa7a1-86f2-4c70-b585-1bec1d24049b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Deception%20III%20-%20Dark%20Delusion%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Deception III/SLUS-01067.BIN',
     },
     'SLUS00009': {
         'url': "games/U/D/SLUS-00009.html",
@@ -4291,6 +4304,7 @@ games = {
 	'title': "DIGIMON WORLD 3",
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
+        'ps3config': 'ps3configs/Digimon World 3/SLUS-01436.BIN',
     },
     'SLUS00922': {
         'url': "games/U/D/SLUS-00922.html",
@@ -4387,6 +4401,7 @@ games = {
 	'title': "DISNEY'S GOOFY'S FUN HOUSE",
         'pic0': 'https://images.launchbox-app.com/e5f7b727-27a4-446c-9ddc-17b6403377f8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Goofy%27s%20Fun%20House%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Disney\'s Goofy Fun House/SLUS-01209.BIN',
     },
     'SLUS00529': {
         'url': "games/U/D/SLUS-00529.html",
@@ -4476,6 +4491,7 @@ games = {
     	'id': 'SCUS94647',
 	'title': "DISNEY'S TREASURE PLANET",
         'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
+        'ps3config': 'ps3configs/Disney\'s Treasure Planet/SCUS-94647.BIN',
     },
     'SLUS01513': {
         'url': "games/U/D/SLUS-01513.html",
@@ -4717,6 +4733,7 @@ games = {
 	'title': "DYNASTY WARRIORS",
         'pic0': 'https://images.launchbox-app.com/8486e1bf-40d1-4366-acb7-46601a96b02b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dynasty%20Warriors%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Dynasty Warriors/SLUS-00438.BIN',
     },
     'SLUS01385': {
         'url': "games/U/E/SLUS-01385.html",
@@ -4768,6 +4785,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/331e0af7-a7ae-4744-98e1-d02d717d9caf.png',
         'pic1': 'https://images.launchbox-app.com/bea66f6c-d92b-4d4b-89b7-719220e6ed57.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ehrgeiz%20-%20God%20Bless%20the%20Ring%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ehrgeiz/SLUS-00809.BIN',
     },
     'SCUS94243': {
         'url': "games/U/E/SCUS-94243.html",
@@ -4800,6 +4818,7 @@ games = {
         'url': "games/U/E/SLUS-01462.html",
     	'id': 'SLUS01462',
 	'title': "EQUESTRIAN SHOWCASE",
+        'ps3config': 'ps3configs/Equestriad 2001/SLUS-01462.BIN',
     },
     'SCUS94503': {
         'url': "games/U/E/SCUS-94503.html",
@@ -5030,6 +5049,7 @@ games = {
         'url': "games/U/F/SLUS-00520.html",
     	'id': 'SLUS00520',
 	'title': "FIFA - ROAD TO WORLD CUP '98",
+        'ps3config': 'ps3configs/FIFA - Road to the World Cup \'98/SLUS-00520.BIN',
     },
     'SLUS00038': {
         'url': "games/U/F/SLUS-00038.html",
@@ -5203,6 +5223,7 @@ games = {
     	'id': 'SLUS01360',
 	'title': "FINAL FANTASY CHRONICLES",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Chronicles%20-%20Final%20Fantasy%20IV%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Final Fantasy IV/SLUS-01360.BIN',
     },
     'SLUS01363': {
         'url': "games/U/F/SLUS-01360.html",
@@ -5476,6 +5497,7 @@ games = {
 	'title': "GEOM CUBE",
         'pic0': 'https://images.launchbox-app.com/af53cad6-a279-4c03-a69a-3425d7501139.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Geom%20Cube%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Geom Cube/SLUS-00024.BIN',
     },
     'SLUS00042': {
         'url': "games/U/G/SLUS-00042.html",
@@ -5509,6 +5531,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/645a70d4-c541-4004-a5e2-674729d218e0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=aoiaFPJVKVo&list=PL2C9F15EBD4D4F2DA&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ghost%20in%20the%20Shell%20[SLUS-00552]%20(E).cbr',
+        'ps3config': 'ps3configs/Ghost in the Shell/SLUS-00552.BIN',
     },
     'SLUS00890': {
         'url': "games/U/G/SLUS-00890.html",
@@ -5752,6 +5775,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/144ab09c-a54c-4bed-9b3f-fcab7ae17427.png',
         'pic1': 'https://images.launchbox-app.com/0c843198-a096-4d7d-9824-060a2be0538e.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Harvest%20Moon%20-%20Back%20to%20Nature%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Harvest Moon - Back to Nature/SLUS-01115.BIN',
     },
     'SLUS01027': {
         'url': "games/U/H/SLUS-01027.html",
@@ -5807,6 +5831,7 @@ games = {
 	'title': "HI-OCTANE",
         'pic0': 'https://images.launchbox-app.com/3df029da-c99d-456c-8b30-45035f0e900c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Hi-Octane%20-%20The%20Track%20Fights%20Back%21%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Hi-Octane/SLUS-00157.BIN',
     },
     'SLUS01244': {
         'url': "games/U/H/SLUS-01244.html",
@@ -6125,6 +6150,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f23e7171-2aac-48c5-acc5-958d8624e6dd.png',
         'pic1': 'https://images.launchbox-app.com/404be3da-e3dc-4b6c-b130-b90f2f599dd5.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Judge%20Dredd%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Judge Dredd/SLUS-00630.BIN',
     },
     'SLUS00894': {
         'url': "games/U/J/SLUS-00894.html",
@@ -6155,6 +6181,7 @@ games = {
 	'title': "JUMPING FLASH! 2",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Jumping Flash! 2/SCUS-94108.BIN',
     },
     'SLUS01383': {
         'url': "games/U/J/SLUS-01383.html",
@@ -6189,6 +6216,7 @@ games = {
 	'title': "KAGERO - DECEPTION II",
         'pic0': 'https://images.launchbox-app.com/2493d5bb-ebd6-429d-9b7c-a732f0d78800.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Deception II/SLUS-00677.BIN',
     },
     'SLUS00631': {
         'url': "games/U/K/SLUS-00631.html",
@@ -6999,6 +7027,7 @@ games = {
 	'title': "MONSTER RANCHER 2",
         'pic0': 'https://images.launchbox-app.com/33290946-1ab8-4e42-8cc1-dd77dd8ec950.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Monster%20Rancher%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Monster Rancher 2/SLUS-00917.BIN',
     },
     'SLUS00743': {
         'url': "games/U/M/SLUS-00743.html",
@@ -7104,6 +7133,7 @@ games = {
 	'title': "MOTORHEAD",
         'pic0': 'https://images.launchbox-app.com/ec5beb0f-bdbd-4ae6-8638-aef33b60e7ef.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Motorhead%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Motorhead/SLUS-00717.BIN',
     },
     'SLUS01111': {
         'url': "games/U/M/SLUS-01111.html",
@@ -7170,6 +7200,7 @@ games = {
         'url': "games/U/M/SCUS-94602.html",
     	'id': 'SCUS94602',
 	'title': "MYST",
+        'ps3config': 'ps3configs/Myst/SCUS-94602.BIN',
     },
     'SLUS00637': {
         'url': "games/U/N/SLUS-00637.html",
@@ -7207,6 +7238,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13f5da27-4311-47f7-bdd7-67929a6183ff.png',
         'pic1': 'https://images.launchbox-app.com/1b5fa647-d54f-44a6-a06d-80349bbec0e4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Namco%20Museum%20Vol.%203%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Namco Museum Vol. 3/SLUS-00398.BIN',
     },
     'SLUS00416': {
         'url': "games/U/N/SLUS-00416.html",
@@ -7850,6 +7882,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d2420487-0076-43c4-b73c-c77c73151331.png',
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Nightmare Creatures/SLUS-00582.BIN',
     },
     'SLUS01112': {
         'url': "games/U/N/SLUS-01112.html",
@@ -8259,6 +8292,7 @@ games = {
         'url': "games/U/P/SLUS-00277.html",
     	'id': 'SLUS00277',
 	'title': "POPULOUS - THE BEGINNING",
+        'ps3config': 'ps3configs/Populous - The Beginning/SLUS-00277.BIN',
     },
     'SCUS94187': {
         'url': "games/U/P/SCUS-94187.html",
@@ -8486,6 +8520,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Rage Racer/SLUS-00403.BIN',
     },
     'SLUS01461': {
         'url': "games/U/R/SLUS-01461.html",
@@ -8573,6 +8608,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
     },
     'SLUS01235': {
         'url': "games/U/R/SLUS-01235.html",
@@ -8745,6 +8781,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLUS-00421.BIN',
     },
     'SLUS00592': {
         'url': "games/U/R/SLUS-00421.html",
@@ -8754,6 +8791,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLUS-00592.BIN',
     },
     'SLUS00748': {
         'url': "games/U/R/SLUS-00748.html",
@@ -8763,6 +8801,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLUS-00748.BIN',
     },
     'SLUS00756': {
         'url': "games/U/R/SLUS-00748.html",
@@ -8772,6 +8811,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLUS-00756.BIN',
     },
     'SLUS00923': {
         'url': "games/U/R/SLUS-00923.html",
@@ -8781,6 +8821,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLUS-00923.BIN',
     },
     'SLUS01087': {
         'url': "games/U/R/SLUS-01087.html",
@@ -8872,6 +8913,7 @@ games = {
 	'title': "RIVAL SCHOOLS - UNITED BY FATE",
         'pic0': 'https://images.launchbox-app.com/3dd90e47-5f70-4a91-8757-27d681e3615a.png',
         'pic1': 'https://images.launchbox-app.com/285c1516-2607-47ce-bbde-1db4ab24dc4c.jpg',
+        'ps3config': 'ps3configs/Rival Schools/SLUS-00681.BIN',
     },
     'SLUS00771': {
         'url': "games/U/R/SLUS-00681.html",
@@ -8879,6 +8921,7 @@ games = {
 	'title': "RIVAL SCHOOLS - UNITED BY FATE",
         'pic0': 'https://images.launchbox-app.com/3dd90e47-5f70-4a91-8757-27d681e3615a.png',
         'pic1': 'https://images.launchbox-app.com/285c1516-2607-47ce-bbde-1db4ab24dc4c.jpg',
+        'ps3config': 'ps3configs/Rival Schools/SLUS-00771.BIN',
     },
     'SLUS00535': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8887,6 +8930,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00535.BIN',
     },
     'SLUS00563': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8895,6 +8939,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00563.BIN',
     },
     'SLUS00564': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8903,6 +8948,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00563.BIN',
     },
     'SLUS00565': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8911,6 +8957,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00565.BIN',
     },
     'SLUS00580': {
         'url': "games/U/R/SLUS-00535.html",
@@ -8919,6 +8966,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00580.BIN',
     },
     'SLUS00204': {
         'url': "games/U/R/SLUS-00204.html",
@@ -9134,6 +9182,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/SaGa Frontier 2/SLUS-00933.BIN',
     },
     'SLUS01381': {
         'url': "games/U/S/SLUS-01381.html",
@@ -9259,6 +9308,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e4b66591-f0bf-4dad-a58a-7f8057b0b8d6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UNY8SYsLHAw',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Shadow%20Tower_jp2.zip',
+        'ps3config': 'ps3configs/Shadow Tower/SLUS-00863.BIN',
     },
     'SLUS00795': {
         'url': "games/U/S/SLUS-00795.html",
@@ -9310,6 +9360,7 @@ games = {
     	'id': 'SLUS01302',
 	'title': "SHOOTER - STARFIGHTER SANVEIN",
         'pic0': 'https://images.launchbox-app.com/033851b4-d733-4219-9633-4a96c2c1fc9d.png',
+        'ps3config': 'ps3configs/Sanvein/SLUS-01302.BIN',
     },
     'SLUS01463': {
         'url': "games/U/S/SLUS-01463.html",
@@ -9607,6 +9658,7 @@ games = {
 	'title': "SPIN JAM",
         'pic0': 'https://images.launchbox-app.com/68d53cc7-a24a-4e54-a491-a89af6c38052.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spin%20Jam%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Spin Jam/SLUS-01250.BIN',
     },
     'SLUS01352': {
         'url': "games/U/S/SLUS-01352.html",
@@ -9876,6 +9928,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/d5f3fb9e-ddea-4040-82c2-4037d5021c65.png',
         'snd0': 'https://www.youtube.com/watch?v=EKr4xOlRJhg&list=PLAF84A9EDF037D333',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Strider%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Strider 2/SLUS-01163.BIN',
     },
     'SLUS00139': {
         'url': "games/U/S/SLUS-00139.html",
@@ -9935,6 +9988,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/1764806c-3d47-47af-9fed-96bbb59fc23c.png',
         'pic1': 'https://images.launchbox-app.com/f5cfb6b2-99b7-4297-af54-144b38c2a252.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Super%20Puzzle%20Fighter%20II%20Turbo%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Super Puzzle Fighter II Turbo/SLUS-00418.BIN',
     },
     'SLUS01464': {
         'url': "games/U/S/SLUS-01464.html",
@@ -10118,6 +10172,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4924dbee-42ae-4d32-927d-95bf19c268c5.png',
         'snd0': 'https://www.youtube.com/watch?v=PTTicLLd9ow&list=PLKkxnBwFOJGKZp6f_RttMVZ4b2_niM7am&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Techmo%27s%20Deception_jp2.zip',
+        'ps3config': 'ps3configs/Tecmo\'s Deception/SLUS-00340.BIN',
     },
     'SLUS00315': {
         'url': "games/U/T/SLUS-00315.html",
@@ -10452,6 +10507,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
         'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
         'manual': 'https://psxdatacenter.com/manuals/The%20Misadventures%20of%20Tron%20Bonne%20[SLUS-00896]%20(E).cbr',
+        'ps3config': 'ps3configs/The Misadventures of Tron Bonne/SLUS-00896.BIN',
     },
     'SLUS01187': {
         'url': "games/U/T/SLUS-01187.html",
@@ -10477,6 +10533,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Raiden/SCUS-94402.BIN',
     },
     'SLUS01008': {
         'url': "games/U/T/SLUS-01008.html",
@@ -10571,6 +10628,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Thousand Arms/SLUS-00845.BIN',
     },
     'SLUS00858': {
         'url': "games/U/T/SLUS-00845.html",
@@ -10580,6 +10638,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Thousand Arms/SLUS-00858.BIN',
     },
     'SLUS00935': {
         'url': "games/U/T/SLUS-00935.html",
@@ -10956,6 +11015,7 @@ games = {
         'url': "games/U/T/SCUS-94229.html",
     	'id': 'SCUS94229',
 	'title': "TURBO PROP RACING",
+        'ps3config': 'ps3configs/Rapid Racer/SCUS-94229.BIN',
     },
     'SLUS01499': {
         'url': "games/U/T/SLUS-01499.html",
@@ -11148,6 +11208,7 @@ games = {
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Vigilante 8/SLUS-00510.BIN',
     },
     'SLUS00868': {
         'url': "games/U/V/SLUS-00868.html",
@@ -11692,6 +11753,8 @@ games = {
         'url': "games/U/Z/SLUS-00183.html",
     	'id': 'SLUS00183',
 	'title': "ZERO DIVIDE",
+        'pic0': 'https://images.launchbox-app.com/be2f96cb-4beb-4f58-aafb-d7091a7b7aa7.png',
+        'ps3config': 'ps3configs/Zero Divide/SLUS-00183.BIN',
     },
     'SLUS01401': {
         'url': "games/U/Z/SLUS-01401.html",
@@ -12160,6 +12223,7 @@ games = {
         'url': "games/P/A/SLES-03290.html",
     	'id': 'SLES03290',
 	'title': "ALEXANDRA LEDERMANN 2 - EQUITATION COMPETITION",
+        'ps3config': 'ps3configs/Equestriad 2001/SLES-03290.BIN',
     },
     'SCES03817': {
         'url': "games/P/A/SCES-03817.html",
@@ -12421,6 +12485,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Alundra 2/SLES-02600.BIN',
     },
     'SLES02601': {
         'url': "games/P/A/SLES-02601.html",
@@ -12430,6 +12495,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Alundra 2/SLES-02601.BIN',
     },
     'SLES02602': {
         'url': "games/P/A/SLES-02602.html",
@@ -12439,6 +12505,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Alundra 2/SLES-02602.BIN',
     },
     'SLES04037': {
         'url': "games/P/A/SLES-04037.html",
@@ -12580,6 +12647,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ape Escape/SCES-01564.BIN',
     },
     'SCES02028': {
         'url': "games/P/A/SCES-02028.html",
@@ -12588,6 +12656,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ape Escape/SCES-02028.BIN',
     },
     'SCES02029': {
         'url': "games/P/A/SCES-02029.html",
@@ -12596,6 +12665,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ape Escape/SCES-02029.BIN',
     },
     'SCES02030': {
         'url': "games/P/A/SCES-02030.html",
@@ -12604,6 +12674,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ape Escape/SCES-02030.BIN',
     },
     'SCES02031': {
         'url': "games/P/A/SCES-02031.html",
@@ -12612,6 +12683,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ape%20Escape%20-%20La%20Invasion%20de%20los%20Monos%20(S)%20[SCES-02031].cbr',
+        'ps3config': 'ps3configs/Ape Escape/SCES-02031.BIN',
     },
     'SLES00834': {
         'url': "games/P/A/SLES-00834.html",
@@ -13349,6 +13421,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e22dc01-5a3f-48f6-85c8-a974c2dfc1a5.png',
         'pic1': 'https://images.launchbox-app.com/33c8e980-d71f-4afa-8975-cc86223195a2.jpg',
         'manual': 'https://archive.org/download/sony-playstation-classic-game-manuals/b01-battle-arena-toshinden-en_jp2.zip',
+        'ps3config': 'ps3configs/Battle Arena Toshinden/SCES-00002.BIN',
     },
     'SCES00232': {
         'url': "games/P/B/SCES-00232.html",
@@ -13356,6 +13429,7 @@ games = {
 	'title': "BATTLE ARENA TOSHINDEN 2",
         'pic0': 'https://images.launchbox-app.com/42af2995-a35f-4d2e-9152-e8937f374734.png',
         'pic1': 'https://images.launchbox-app.com/730771ac-422a-4df1-b951-4ee639f0a40c.jpg',
+        'ps3config': 'ps3configs/Battle Arena Toshinden 2/SCES-00232.BIN',
     },
     'SCES00700': {
         'url': "games/P/B/SCES-00700.html",
@@ -13475,6 +13549,7 @@ games = {
         'url': "games/P/B/SLES-02537.html",
     	'id': 'SLES02537',
 	'title': "BISHI BASHI SPECIAL",
+        'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
     'SLES00407': {
         'url': "games/P/B/SLES-00407.html",
@@ -13657,6 +13732,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/968d92a9-cc09-44bb-8f70-a31dce56a03a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D1UhYyRdKnY&list=PL9DF2CA195A156BE1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bloody%20Roar%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Bloody Roar 2/SLES-01722.BIN',
     },
     'SLES03570': {
         'url': "games/P/B/SLES-03570.html",
@@ -13728,6 +13804,7 @@ games = {
     	'id': 'SLES00754',
 	'title': "BRAHMA FORCE",
         'pic0': 'https://images.launchbox-app.com/9e4cc2a0-75ea-4425-a02e-bd5f7c3bdd6a.png',
+        'ps3config': 'ps3configs/Beltlogger 9/SLES-00754.BIN',
     },
     'SLES03992': {
         'url': "games/P/B/SLES-03992.html",
@@ -13783,6 +13860,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
         'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
+        'ps3config': 'ps3configs/Breath of Fire IV/SLES-03552.BIN',
     },
     'SLES00759': {
         'url': "games/P/B/SLES-00759.html",
@@ -14226,6 +14304,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2dd1d81a-6cf6-4359-ace8-97ab375956fd.png',
         'snd0': 'https://www.youtube.com/watch?v=HnVDnAMs_Mk&list=PLFjuFokngRvjHomRZTsWAEm3_Znrdax5s&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Castlevania - Symphony of the Night/SLES-00524.BIN',
     },
     'SLES03532': {
         'url': "games/P/C/SLES-03532.html",
@@ -14271,16 +14350,19 @@ games = {
         'url': "games/P/F/SLES-00914.html",
     	'id': 'SLES00914',
 	'title': "FIFA - ROAD TO WORLD CUP '98",
+        'ps3config': 'ps3configs/FIFA - Road to the World Cup \'98/SLES-00914.BIN',
     },
     'SLES00918': {
         'url': "games/P/F/SLES-00918.html",
     	'id': 'SLES00918',
 	'title': "FIFA - RUMBO AL MUNDIAL '98",
+        'ps3config': 'ps3configs/FIFA - Road to the World Cup \'98/SLES-00918.BIN',
     },
     'SLES00917': {
         'url': "games/P/F/SLES-00917.html",
     	'id': 'SLES00917',
 	'title': "FIFA - ROAD TO WORLD CUP '98",
+        'ps3config': 'ps3configs/FIFA - Road to the World Cup \'98/SLES-00917.BIN',
     },
     'SLES03666': {
         'url': "games/P/F/SLES-03666.html",
@@ -14405,6 +14487,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f23635a5-a7ac-4bf4-a83f-608daa0ad94c.png',
         'pic1': 'https://images.launchbox-app.com/da61b604-8da0-43d6-a553-5cc78e50fd02.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Fighting%20Force%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Fighting Force/SLES-00731.BIN',
     },
     'SLES02233': {
         'url': "games/P/F/SLES-02233.html",
@@ -14435,6 +14518,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ee97b6e-0e75-430c-9bf6-be25557a6474.png',
         'pic1': 'https://images.launchbox-app.com/5d46b98a-12d8-4aac-af89-56b503d78c69.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20Anthology%20(S)%20[SCES-03840].cbr',
+        'ps3config': 'ps3configs/Final Fantasy IV/SCES-03840.BIN',
     },
     'SCES13840': {
         'url': "games/P/F/SCES-03840.html",
@@ -14443,6 +14527,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ee97b6e-0e75-430c-9bf6-be25557a6474.png',
         'pic1': 'https://images.launchbox-app.com/5d46b98a-12d8-4aac-af89-56b503d78c69.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Anthology%20-%20Final%20Fantasy%20VI%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Final Fantasy Anthology/SCES-13840.BIN',
     },
     'SLES04034': {
         'url': "games/P/F/SLES-04034.html",
@@ -15531,11 +15616,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/eb061de1-3efc-432b-910b-54ff286e43d9.png',
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Gex/SLES-00133.BIN',
     },
     'SLES00596': {
         'url': "games/P/G/SLES-00596.html",
     	'id': 'SLES00596',
 	'title': "GEX 3D - RETURN OF THE GECKO",
+        'ps3config': 'ps3configs/Gex - Enter the Gecko/SLES-00596.BIN',
     },
     'SLES01299': {
         'url': "games/P/G/SLES-01299.html",
@@ -15560,6 +15647,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/645a70d4-c541-4004-a5e2-674729d218e0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=aoiaFPJVKVo&list=PL2C9F15EBD4D4F2DA&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ghost%20in%20the%20Shell%20[SLUS-00552]%20(E).cbr',
+        'ps3config': 'ps3configs/Ghost in the Shell/SCES-01050.BIN',
     },
     'SCES01074': {
         'url': "games/P/G/SCES-01074.html",
@@ -15569,6 +15657,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/645a70d4-c541-4004-a5e2-674729d218e0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=aoiaFPJVKVo&list=PL2C9F15EBD4D4F2DA&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ghost%20in%20the%20Shell%20[SLUS-00552]%20(E).cbr',
+        'ps3config': 'ps3configs/Ghost in the Shell/SCES-01074.BIN',
     },
     'SCES01075': {
         'url': "games/P/G/SCES-01075.html",
@@ -15578,6 +15667,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/645a70d4-c541-4004-a5e2-674729d218e0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=aoiaFPJVKVo&list=PL2C9F15EBD4D4F2DA&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ghost%20in%20the%20Shell%20[SLUS-00552]%20(E).cbr',
+        'ps3config': 'ps3configs/Ghost in the Shell/SCES-01075.BIN',
     },
     'SCES02543': {
         'url': "games/P/G/SCES-02543.html",
@@ -16014,6 +16104,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/144ab09c-a54c-4bed-9b3f-fcab7ae17427.png',
         'pic1': 'https://images.launchbox-app.com/0c843198-a096-4d7d-9824-060a2be0538e.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Harvest%20Moon%20-%20Back%20to%20Nature%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Harvest Moon - Back to Nature/SLES-02781.BIN',
     },
     'SLES02738': {
         'url': "games/P/H/SLES-02738.html",
@@ -16159,6 +16250,7 @@ games = {
 	'title': "HI-OCTANE",
         'pic0': 'https://images.launchbox-app.com/3df029da-c99d-456c-8b30-45035f0e900c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Hi-Octane%20-%20The%20Track%20Fights%20Back%21%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Hi-Octane/SLES-00115.BIN',
     },
     'SLES03602': {
         'url': "games/P/H/SLES-03602.html",
@@ -16760,6 +16852,7 @@ games = {
 	'title': "JUMPING FLASH! 2",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Jumping Flash! 2/SCES-00111.BIN',
     },
     'SLES02750': {
         'url': "games/P/J/SLES-02750.html",
@@ -16802,6 +16895,7 @@ games = {
 	'title': "KAGERO - DECEPTION II",
         'pic0': 'https://images.launchbox-app.com/2493d5bb-ebd6-429d-9b7c-a732f0d78800.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Kagero%20-%20Deception%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Deception II/SLES-01967.BIN',
     },
     'SLES03209': {
         'url': "games/P/K/SLES-03209.html",
@@ -17393,6 +17487,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Driver 2/SLES-02993.BIN',
     },
     'SLES12993': {
         'url': "games/P/D/SLES-02993.html",
@@ -17409,6 +17504,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Driver 2/SLES-02994.BIN',
     },
     'SLES12994': {
         'url': "games/P/D/SLES-02994.html",
@@ -17425,6 +17521,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Driver 2/SLES-02995.BIN',
     },
     'SLES12995': {
         'url': "games/P/D/SLES-02995.html",
@@ -17441,6 +17538,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Driver 2/SLES-02996.BIN',
     },
     'SLES12996': {
         'url': "games/P/D/SLES-02996.html",
@@ -17457,6 +17555,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Driver 2/SLES-02997.BIN',
     },
     'SLES12997': {
         'url': "games/P/D/SLES-02997.html",
@@ -17572,6 +17671,7 @@ games = {
 	'title': "DYNASTY WARRIORS",
         'pic0': 'https://images.launchbox-app.com/8486e1bf-40d1-4366-acb7-46601a96b02b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dynasty%20Warriors%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Dynasty Warriors/SLES-00885.BIN',
     },
     'SLES03805':       {
         'url': "games/P/E/SLES-03805.html",
@@ -17671,6 +17771,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/331e0af7-a7ae-4744-98e1-d02d717d9caf.png',
         'pic1': 'https://images.launchbox-app.com/bea66f6c-d92b-4d4b-89b7-719220e6ed57.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ehrgeiz%20-%20God%20Bless%20the%20Ring%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Ehrgeiz/SLES-02111.BIN',
     },
     'SLES04038': {
         'url': "games/P/E/SLES-04038.html",
@@ -18287,6 +18388,7 @@ games = {
 	'title': "KLONOA - BEACH VOLLEYBALL",
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
+        'ps3config': 'ps3configs/Klonoa Beach Volleyball/SCES-03922.BIN',
     },
     'SLES01448': {
         'url': "games/P/K/SLES-01448.html",
@@ -18531,26 +18633,41 @@ games = {
         'url': "games/P/K/SCES-02009.html",
     	'id': 'SCES02009',
 	'title': "KURUSHI FINAL",
+        'pic0': 'https://images.launchbox-app.com/beb06d2a-cb00-4cf0-ad34-3eae15f6c704.png',
+        'pic1': 'https://images.launchbox-app.com/ddbd4f7f-cbfd-40f9-84e5-e1b8b8180013.jpg',
+        'ps3config': 'ps3configs/Kurushi Final/SCES-02009.BIN',
     },
     'SCES02010': {
         'url': "games/P/K/SCES-02010.html",
     	'id': 'SCES02010',
 	'title': "KURUSHI FINAL",
+        'pic0': 'https://images.launchbox-app.com/beb06d2a-cb00-4cf0-ad34-3eae15f6c704.png',
+        'pic1': 'https://images.launchbox-app.com/ddbd4f7f-cbfd-40f9-84e5-e1b8b8180013.jpg',
+        'ps3config': 'ps3configs/Kurushi Final/SCES-02010.BIN',
     },
     'SCES02011': {
         'url': "games/P/K/SCES-02011.html",
     	'id': 'SCES02011',
 	'title': "KURUSHI FINAL",
+        'pic0': 'https://images.launchbox-app.com/beb06d2a-cb00-4cf0-ad34-3eae15f6c704.png',
+        'pic1': 'https://images.launchbox-app.com/ddbd4f7f-cbfd-40f9-84e5-e1b8b8180013.jpg',
+        'ps3config': 'ps3configs/Kurushi Final/SCES-02011.BIN',
     },
     'SCES02012': {
         'url': "games/P/K/SCES-02012.html",
     	'id': 'SCES02012',
 	'title': "KURUSHI FINAL",
+        'pic0': 'https://images.launchbox-app.com/beb06d2a-cb00-4cf0-ad34-3eae15f6c704.png',
+        'pic1': 'https://images.launchbox-app.com/ddbd4f7f-cbfd-40f9-84e5-e1b8b8180013.jpg',
+        'ps3config': 'ps3configs/Kurushi Final/SCES-02012.BIN',
     },
     'SCES02013': {
         'url': "games/P/K/SCES-02013.html",
     	'id': 'SCES02013',
 	'title': "KURUSHI FINAL",
+        'pic0': 'https://images.launchbox-app.com/beb06d2a-cb00-4cf0-ad34-3eae15f6c704.png',
+        'pic1': 'https://images.launchbox-app.com/ddbd4f7f-cbfd-40f9-84e5-e1b8b8180013.jpg',
+        'ps3config': 'ps3configs/Kurushi Final/SCES-02013.BIN',
     },
     'SLES02346':       {
         'url': "games/P/L/SLES-02346.html",
@@ -18909,6 +19026,7 @@ games = {
 	'title': "LOADED",
         'pic0': 'https://images.launchbox-app.com/ac67de13-93b2-4e3f-ba36-d86b20a0fcaf.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Loaded%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Loaded/SLES-00013.BIN',
     },
     'SLES00451': {
         'url': "games/P/L/SLES-00451.html",
@@ -20100,6 +20218,7 @@ games = {
         'url': "games/P/M/SLES-00218.html",
     	'id': 'SLES00218',
 	'title': "MYST (ORIGINAL & HELP CHARITY COMPILATION DISC 2/3)",
+        'ps3config': 'ps3configs/Myst/SLES-00218.BIN',
     },
     'SLES00809':       {
         'url': "games/P/N/SLES-00809.html",
@@ -20135,6 +20254,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13f5da27-4311-47f7-bdd7-67929a6183ff.png',
         'pic1': 'https://images.launchbox-app.com/1b5fa647-d54f-44a6-a06d-80349bbec0e4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Namco%20Museum%20Vol.%203%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Namco Museum Vol. 3/SCES-00268.BIN',
     },
     'SCES00701': {
         'url': "games/P/N/SCES-00701.html",
@@ -21068,6 +21188,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'ps3config': 'ps3configs/Clock Tower/SLES-00870.BIN',
     },
     'SLES00871': {
         'url': "games/P/C/SLES-00871.html",
@@ -21075,6 +21196,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'ps3config': 'ps3configs/Clock Tower/SLES-00871.BIN',
     },
     'SLES00872': {
         'url': "games/P/C/SLES-00872.html",
@@ -21082,6 +21204,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'ps3config': 'ps3configs/Clock Tower/SLES-00872.BIN',
     },
     'SCES02151': {
         'url': "games/P/C/SCES-02151.html",
@@ -21325,6 +21448,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-01006.BIN',
     },
     'SLES11006': {
         'url': "games/P/C/SLES-01006.html",
@@ -21334,6 +21458,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-11006.BIN',
     },
     'SLES01344': {
         'url': "games/P/C/SLES-01344.html",
@@ -21361,6 +21486,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-01007.BIN',
     },
     'SLES11007': {
         'url': "games/P/C/SLES-01007.html",
@@ -21370,6 +21496,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-11007.BIN',
     },
     'SLES01345': {
         'url': "games/P/C/SLES-01345.html",
@@ -21397,6 +21524,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-00949.BIN',
     },
     'SLES10949': {
         'url': "games/P/C/SLES-00949.html",
@@ -21406,6 +21534,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c149ddbb-8d22-4740-8667-090f4b897a5c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F3XgpFgiKN4&list=PLFqTvOsjFbRr--V64mMht3_yijoBvwPR7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Command%20%26%20Conquer%20-%20Red%20Alert%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Command & Conquer - Red Alert/SLES-10949.BIN',
     },
     'SLES01343': {
         'url': "games/P/C/SLES-01343.html",
@@ -21511,6 +21640,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Crash%20Bandicoot%202%20(Platinum)%20[SCES-00967]%20(E)(F)(G)(Du)(I)(S).cbr',
+        'ps3config': 'ps3configs/Crash Bandicoot 2/SCES-00967.BIN',
     },
     'SCES01420': {
         'url': "games/P/C/SCES-01420.html",
@@ -21520,6 +21650,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Crash Bandicoot 3/SCES-01420.BIN',
     },
     'SCES02834': {
         'url': "games/P/C/SCES-02834.html",
@@ -21538,6 +21669,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/CTR%20-%20Crash%20Team%20Racing%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Crash Team Racing/SCES-02105.BIN',
     },
     'SLES03690': {
         'url': "games/P/C/SLES-03690.html",
@@ -22084,6 +22216,7 @@ games = {
         'url': "games/P/D/SLES-00848.html",
     	'id': 'SLES00848',
 	'title': "DEVIL'S DECEPTION - INVITATION TO DARKNESS",
+        'ps3config': 'ps3configs/Tecmo\'s Deception/SLES-00848.BIN',
     },
     'SLES03627': {
         'url': "games/P/D/SLES-03627.html",
@@ -22220,6 +22353,7 @@ games = {
         'url': "games/P/D/SLES-03936.html",
     	'id': 'SLES03936',
 	'title': "DIGIMON WORLD 2003",
+        'ps3config': 'ps3configs/Digimon World 3/SLES-03936.BIN',
     },
     'SLES02207': {
         'url': "games/P/D/SLES-02207.html",
@@ -22591,6 +22725,7 @@ games = {
     	'id': 'SLES03638',
 	'title': "DISNEY'S DINGO UNE JOUNEE DE DINGUE!",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'ps3config': 'ps3configs/Disney\'s Goofy Fun House/SLES-03638.BIN',
     },
     'SLES03095': {
         'url': "games/P/D/SLES-03095.html",
@@ -22659,6 +22794,7 @@ games = {
 	'title': "DISNEY'S GOOFY'S FUN HOUSE",
         'pic0': 'https://images.launchbox-app.com/e5f7b727-27a4-446c-9ddc-17b6403377f8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Goofy%27s%20Fun%20House%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Disney\'s Goofy Fun House/SLES-03639.BIN',
     },
     'SLES03640': {
         'url': "games/P/D/SLES-03640.html",
@@ -22666,6 +22802,7 @@ games = {
 	'title': "DISNEY'S GOOFY'S FUN HOUSE",
         'pic0': 'https://images.launchbox-app.com/e5f7b727-27a4-446c-9ddc-17b6403377f8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Goofy%27s%20Fun%20House%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Disney\'s Goofy Fun House/SLES-03640.BIN',
     },
     'SCES00892': {
         'url': "games/P/D/SCES-00892.html",
@@ -22768,6 +22905,7 @@ games = {
 	'title': "DISNEY'S LA SUPER-DIVER CASA DE GOOFY",
         'pic0': 'https://images.launchbox-app.com/e5f7b727-27a4-446c-9ddc-17b6403377f8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Goofy%27s%20Fun%20House%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Disney\'s Goofy Fun House/SLES-03641.BIN',
     },
     'SCES03016': {
         'url': "games/P/D/SCES-03016.html",
@@ -23476,6 +23614,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d2420487-0076-43c4-b73c-c77c73151331.png',
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Nightmare Creatures/SCES-00582.BIN',
     },
     'SCES00684': {
         'url': "games/P/N/SCES-00684.html",
@@ -23484,6 +23623,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d2420487-0076-43c4-b73c-c77c73151331.png',
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Nightmare Creatures/SCES-00864.BIN',
     },
     'SLES02751': {
         'url': "games/P/N/SLES-02751.html",
@@ -24098,16 +24238,19 @@ games = {
         'url': "games/P/P/SCES-00981.html",
     	'id': 'SCES00981',
 	'title': "PET IN TV",
+        'ps3config': 'ps3configs/Pet in TV/SCES-00981.BIN',
     },
     'SCES01357': {
         'url': "games/P/P/SCES-01357.html",
     	'id': 'SCES01357',
 	'title': "PET IN TV",
+        'ps3config': 'ps3configs/Pet in TV/SCES-01357.BIN',
     },
     'SCES01358': {
         'url': "games/P/P/SCES-01358.html",
     	'id': 'SCES01358',
 	'title': "PET IN TV",
+        'ps3config': 'ps3configs/Pet in TV/SCES-01358.BIN',
     },
     'SLES02061': {
         'url': "games/P/P/SLES-02061.html",
@@ -24639,6 +24782,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Rage Racer/SCES-00650.BIN',
     },
     'SLES03511': {
         'url': "games/P/R/SLES-03511.html",
@@ -24703,6 +24847,7 @@ games = {
         'url': "games/P/R/SCES-00394.html",
     	'id': 'SCES00394',
 	'title': "RAPID RACER",
+        'ps3config': 'ps3configs/Rapid Racer/SCES-00394.BIN',
     },
     'SCES00004': {
         'url': "games/P/R/SCES-00004.html",
@@ -24746,6 +24891,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Rayman/SLES-00049.BIN',
     },
     'SLES02905': {
         'url': "games/P/R/SLES-02905.html",
@@ -24843,6 +24989,7 @@ games = {
         'url': "games/P/R/SCES-00561.html",
     	'id': 'SCES00561',
 	'title': "REAL BOUT FATAL FURY",
+        'ps3config': 'ps3configs/Real Bout Fatal Fury/SCES-00561.BIN',
     },
     'SLES00922': {
         'url': "games/P/R/SLES-00922.html",
@@ -24981,6 +25128,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-00972.BIN',
     },
     'SLES10972': {
         'url': "games/P/R/SLES-00972.html",
@@ -24990,6 +25138,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-10972.BIN',
     },
     'SLES00973': {
         'url': "games/P/R/SLES-00973.html",
@@ -24999,6 +25148,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-00973.BIN',
     },
     'SLES10973': {
         'url': "games/P/R/SLES-00973.html",
@@ -25008,6 +25158,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-10973.BIN',
     },
     'SLES00974': {
         'url': "games/P/R/SLES-00974.html",
@@ -25017,6 +25168,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-00974.BIN',
     },
     'SLES10974': {
         'url': "games/P/R/SLES-00974.html",
@@ -25026,6 +25178,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-10974.BIN',
     },
     'SLES00975': {
         'url': "games/P/R/SLES-00975.html",
@@ -25035,6 +25188,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-00975.BIN',
     },
     'SLES10975': {
         'url': "games/P/R/SLES-00975.html",
@@ -25044,6 +25198,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-10975.BIN',
     },
     'SLES00976': {
         'url': "games/P/R/SLES-00976.html",
@@ -25053,6 +25208,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-00976.BIN',
     },
     'SLES10976': {
         'url': "games/P/R/SLES-00976.html",
@@ -25062,6 +25218,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/2b44c72f-c4a1-4d0a-a9a3-894243c6068b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 2/SLES-10976.BIN',
     },
     'SLES02529': {
         'url': "games/P/R/SLES-02529.html",
@@ -25071,6 +25228,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02529.BIN',
     },
     'SLES02530': {
         'url': "games/P/R/SLES-02530.html",
@@ -25080,6 +25238,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02530.BIN',
     },
     'SLES02531': {
         'url': "games/P/R/SLES-02531.html",
@@ -25089,6 +25248,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02531.BIN',
     },
     'SLES02532': {
         'url': "games/P/R/SLES-02532.html",
@@ -25098,6 +25258,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02532.BIN',
     },
     'SLES02533': {
         'url': "games/P/R/SLES-02533.html",
@@ -25107,6 +25268,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02533.BIN',
     },
     'SLES02698': {
         'url': "games/P/R/SLES-02698.html",
@@ -25116,6 +25278,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dcf9cf37-b7d5-4d11-9cea-a545b5217645.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eUJMaTZ2Tgo&list=PL2657CAD46EE22AF1&index=13',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%203%20-%20Nemesis%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Resident Evil 3/SLES-02698.BIN',
     },
     'SLES02732': {
         'url': "games/P/R/SLES-02732.html",
@@ -25241,6 +25404,7 @@ games = {
 	'title': "RIVAL SCHOOLS - UNITED BY FATE",
         'pic0': 'https://images.launchbox-app.com/3dd90e47-5f70-4a91-8757-27d681e3615a.png',
         'pic1': 'https://images.launchbox-app.com/285c1516-2607-47ce-bbde-1db4ab24dc4c.jpg',
+        'ps3config': 'ps3configs/Rival Schools/SLES-01436.BIN',
     },
     'SLES11436': {
         'url': "games/P/R/SLES-01436.html",
@@ -25248,6 +25412,7 @@ games = {
 	'title': "RIVAL SCHOOLS - UNITED BY FATE",
         'pic0': 'https://images.launchbox-app.com/3dd90e47-5f70-4a91-8757-27d681e3615a.png',
         'pic1': 'https://images.launchbox-app.com/285c1516-2607-47ce-bbde-1db4ab24dc4c.jpg',
+        'ps3config': 'ps3configs/Rival Schools/SLES-11436.BIN',
     },
     'SLES00963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25256,6 +25421,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-00963.BIN',
     },
     'SLES10963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25264,6 +25430,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-10963.BIN',
     },
     'SLES20963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25272,6 +25439,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-20963.BIN',
     },
     'SLES30963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25280,6 +25448,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-30963.BIN',
     },
     'SLES40963': {
         'url': "games/P/R/SLES-00963.html",
@@ -25288,6 +25457,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-40963.BIN',
     },
     'SLES01099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25296,6 +25466,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-01099.BIN',
     },
     'SLES11099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25304,6 +25475,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-11099.BIN',
     },
     'SLES21099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25312,6 +25484,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-21099.BIN',
     },
     'SLES31099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25320,6 +25493,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-31099.BIN',
     },
     'SLES41099': {
         'url': "games/P/R/SLES-01099.html",
@@ -25328,6 +25502,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-41099.BIN',
     },
     'SLES01100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25336,6 +25511,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-01100.BIN',
     },
     'SLES11100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25344,6 +25520,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-11100.BIN',
     },
     'SLES21100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25352,6 +25529,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-21100.BIN',
     },
     'SLES31100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25360,6 +25538,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-31100.BIN',
     },
     'SLES41100': {
         'url': "games/P/R/SLES-01100.html",
@@ -25368,6 +25547,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-41100.BIN',
     },
     'SLES00223': {
         'url': "games/P/R/SLES-00223.html",
@@ -25698,6 +25878,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02112.BIN',
     },
     'SLES02113': {
         'url': "games/P/S/SLES-02113.html",
@@ -25706,6 +25887,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02113.BIN',
     },
     'SLES02118': {
         'url': "games/P/S/SLES-02118.html",
@@ -25714,6 +25896,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02118.BIN',
     },
     'SLES03753': {
         'url': "games/P/S/SLES-03753.html",
@@ -25742,6 +25925,7 @@ games = {
         'url': "games/P/S/SLES-02919.html",
     	'id': 'SLES02919',
 	'title': "SANVEIN",
+        'ps3config': 'ps3configs/Sanvein/SLES-02919.BIN',
     },
     'SLES04177': {
         'url': "games/P/S/SLES-04177.html",
@@ -25967,6 +26151,7 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
+        'ps3config': 'ps3configs/Shockwave Assault/SLES-00071.BIN',
     },
     'SLES10071': {
         'url': "games/P/S/SLES-00071.html",
@@ -25974,6 +26159,7 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
+        'ps3config': 'ps3configs/Shockwave Assault/SLES-10071.BIN',
     },
     'SLES04176': {
         'url': "games/P/S/SLES-04176.html",
@@ -26990,6 +27176,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/d5f3fb9e-ddea-4040-82c2-4037d5021c65.png',
         'snd0': 'https://www.youtube.com/watch?v=EKr4xOlRJhg&list=PLAF84A9EDF037D333',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Strider%202%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Strider 2/SLES-02867.BIN',
     },
     'SLES12867': {
         'url': "games/P/S/SLES-02867.html",
@@ -27019,6 +27206,7 @@ games = {
         'url': "games/P/S/SLES-03510.html",
     	'id': 'SLES03510',
 	'title': "STRIKERS 1945 II",
+        'ps3config': 'ps3configs/Strikers 1945 II/SLES-03510.BIN',
     },
     'SCES03819': {
         'url': "games/P/S/SCES-03819.html",
@@ -27180,6 +27368,7 @@ games = {
         'url': "games/P/S/SLES-00043.html",
     	'id': 'SLES00043',
 	'title': "SUPER PANG COLLECTION",
+        'ps3config': 'ps3configs/Super Pang Collection/SLES-00043.BIN',
     },
     'SLES00605': {
         'url': "games/P/S/SLES-00605.html",
@@ -27188,6 +27377,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/1764806c-3d47-47af-9fed-96bbb59fc23c.png',
         'pic1': 'https://images.launchbox-app.com/f5cfb6b2-99b7-4297-af54-144b38c2a252.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Super%20Puzzle%20Fighter%20II%20Turbo%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Super Puzzle Fighter II Turbo/SLES-00605.BIN',
     },
     'SLES03961': {
         'url': "games/P/S/SLES-03961.html",
@@ -28131,6 +28321,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
         'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
         'manual': 'https://psxdatacenter.com/manuals/The%20Misadventures%20of%20Tron%20Bonne%20[SLUS-00896]%20(E).cbr',
+        'ps3config': 'ps3configs/The Misadventures of Tron Bonne/SLES-02795.BIN',
     },
     'SLES03234': {
         'url': "games/P/T/SLES-03234.html",
@@ -28166,6 +28357,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Raiden/SLES-00051.BIN',
     },
     'SLES00039': {
         'url': "games/P/T/SLES-00039.html",
@@ -28920,26 +29112,31 @@ games = {
         'url': "games/P/T/SCES-02147.html",
     	'id': 'SCES02147',
 	'title': "TOMBI 2",
+        'ps3config': 'ps3configs/Tombi 2/SCES-02147.BIN',
     },
     'SCES02684': {
         'url': "games/P/T/SCES-02684.html",
     	'id': 'SCES02684',
 	'title': "TOMBI 2",
+        'ps3config': 'ps3configs/Tombi 2/SCES-02684.BIN',
     },
     'SCES02685': {
         'url': "games/P/T/SCES-02685.html",
     	'id': 'SCES02685',
 	'title': "TOMBI 2",
+        'ps3config': 'ps3configs/Tombi 2/SCES-02685.BIN',
     },
     'SCES02686': {
         'url': "games/P/T/SCES-02686.html",
     	'id': 'SCES02686',
 	'title': "TOMBI 2",
+        'ps3config': 'ps3configs/Tombi 2/SCES-02686.BIN',
     },
     'SCES02687': {
         'url': "games/P/T/SCES-02687.html",
     	'id': 'SCES02687',
 	'title': "TOMBI 2",
+        'ps3config': 'ps3configs/Tombi 2/SCES-02687.BIN',
     },
     'SLES01228': {
         'url': "games/P/T/SLES-01228.html",
@@ -29542,6 +29739,7 @@ games = {
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Vigilante 8/SLES-01212.BIN',
     },
     'SLES01213': {
         'url': "games/P/V/SLES-01213.html",
@@ -29549,6 +29747,7 @@ games = {
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Vigilante 8/SLES-01213.BIN',
     },
     'SLES01214': {
         'url': "games/P/V/SLES-01214.html",
@@ -29556,6 +29755,7 @@ games = {
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Vigilante 8/SLES-01214.BIN',
     },
     'SLES01215': {
         'url': "games/P/V/SLES-01215.html",
@@ -29563,6 +29763,7 @@ games = {
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Vigilante 8/SLES-01215.BIN',
     },
     'SLES02162': {
         'url': "games/P/V/SLES-02162.html",
@@ -29964,6 +30165,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00074.BIN',
     },
     'SLES10074': {
         'url': "games/P/W/SLES-00074.html",
@@ -29971,6 +30173,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10074.BIN',
     },
     'SLES20074': {
         'url': "games/P/W/SLES-00074.html",
@@ -29978,6 +30181,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20074.BIN',
     },
     'SLES30074': {
         'url': "games/P/W/SLES-00074.html",
@@ -29985,6 +30189,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30074.BIN',
     },
     'SLES00104': {
         'url': "games/P/W/SLES-00104.html",
@@ -29992,6 +30197,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00104.BIN',
     },
     'SLES10104': {
         'url': "games/P/W/SLES-00104.html",
@@ -29999,6 +30205,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10104.BIN',
     },
     'SLES20104': {
         'url': "games/P/W/SLES-00104.html",
@@ -30006,6 +30213,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20104.BIN',
     },
     'SLES30104': {
         'url': "games/P/W/SLES-00104.html",
@@ -30013,6 +30221,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30104.BIN',
     },
     'SLES00105': {
         'url': "games/P/W/SLES-00105.html",
@@ -30020,6 +30229,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00105.BIN',
     },
     'SLES10105': {
         'url': "games/P/W/SLES-00105.html",
@@ -30027,6 +30237,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10105.BIN',
     },
     'SLES20105': {
         'url': "games/P/W/SLES-00105.html",
@@ -30034,6 +30245,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20105.BIN',
     },
     'SLES30105': {
         'url': "games/P/W/SLES-00105.html",
@@ -30041,6 +30253,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30105.BIN',
     },
     'SLES00659': {
         'url': "games/P/W/SLES-00659.html",
@@ -30048,6 +30261,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-00659.BIN',
     },
     'SLES10659': {
         'url': "games/P/W/SLES-00659.html",
@@ -30055,6 +30269,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-10659.BIN',
     },
     'SLES20659': {
         'url': "games/P/W/SLES-00659.html",
@@ -30062,6 +30277,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-20659.BIN',
     },
     'SLES30659': {
         'url': "games/P/W/SLES-00659.html",
@@ -30069,6 +30285,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-30659.BIN',
     },
     'SLES00660': {
         'url': "games/P/W/SLES-00660.html",
@@ -30076,6 +30293,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-00660.BIN',
     },
     'SLES10660': {
         'url': "games/P/W/SLES-00660.html",
@@ -30083,6 +30301,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-10660.BIN',
     },
     'SLES20660': {
         'url': "games/P/W/SLES-00660.html",
@@ -30090,6 +30309,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-20660.BIN',
     },
     'SLES30660': {
         'url': "games/P/W/SLES-00660.html",
@@ -30097,6 +30317,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-30660.BIN',
     },
     'SLES00661': {
         'url': "games/P/W/SLES-00661.html",
@@ -30104,6 +30325,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-00661.BIN',
     },
     'SLES10661': {
         'url': "games/P/W/SLES-00661.html",
@@ -30111,6 +30333,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-10661.BIN',
     },
     'SLES20661': {
         'url': "games/P/W/SLES-00661.html",
@@ -30118,6 +30341,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-20661.BIN',
     },
     'SLES30661': {
         'url': "games/P/W/SLES-00661.html",
@@ -30125,6 +30349,7 @@ games = {
 	'title': "WING COMMANDER IV - THE PRICE OF FREEDOM",
         'pic0': 'https://images.launchbox-app.com/3e44d691-8cac-4b8f-83a4-82af93a4fb28.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20IV%20-%20The%20Price%20of%20Freedom%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Wing Commander IV - The Price of Freedom/SLES-30661.BIN',
     },
     'SLES00540': {
         'url': "games/P/W/SLES-00540.html",
@@ -30611,6 +30836,8 @@ games = {
         'url': "games/P/Z/SLES-00159.html",
     	'id': 'SLES00159',
 	'title': "ZERO DIVIDE",
+        'pic0': 'https://images.launchbox-app.com/42ecb4cd-015a-44d9-af9e-e6a47ff82035.png',
+        'ps3config': 'ps3configs/Zero Divide/SLES-00159.BIN',
     },
     'SCES01094': {
         'url': "games/P/Z/SCES-01094.html",
@@ -31949,12 +32176,14 @@ games = {
     	'id': 'SLPS01855',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01855.BIN',
     },
     'SLPS01856': {
         'url': "games/J/A/SLPS-01855.html",
     	'id': 'SLPS01856',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01856.BIN',
     },
     'SLPS91188': {
         'url': "games/J/A/SLPS-91188.html",
@@ -32771,6 +33000,7 @@ games = {
         'url': "games/J/B/SLPS-00581.html",
     	'id': 'SLPS00581',
 	'title': "BELTLOGGER 9 [LIMITED EDITION]",
+        'ps3config': 'ps3configs/Beltlogger 9/SLPS-00581.BIN',
     },
     'SLPS91462': {
         'url': "games/J/B/SLPS-91462.html",
@@ -32867,6 +33097,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
+        'ps3config': 'ps3configs/Biohazard 2/SLPS-01510.BIN',
     },
     'SLPS01511': {
         'url': "games/J/B/SLPS-01510.html",
@@ -32876,6 +33107,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4b46a1cd-9c38-4d22-be0b-558676d96623.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
+        'ps3config': 'ps3configs/Biohazard 2/SLPS-01511.BIN',
     },
     'SLPS02300': {
         'url': "games/J/B/SLPS-02300.html",
@@ -33123,6 +33355,7 @@ games = {
         'url': "games/J/B/SLPS-00235.html",
     	'id': 'SLPS00235',
 	'title': "BLOOD FACTORY",
+        'ps3config': 'ps3configs/Loaded/SLPS-00235.BIN',
     },
     'SLPS00526': {
         'url': "games/J/B/SLPS-00526.html",
@@ -33166,6 +33399,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/968d92a9-cc09-44bb-8f70-a31dce56a03a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D1UhYyRdKnY&list=PL9DF2CA195A156BE1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bloody%20Roar%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Bloody Roar 2/SCPS-45374.BIN',
     },
     'SLPS01842': {
         'url': "games/J/B/SLPS-01842.html",
@@ -35262,6 +35496,7 @@ games = {
         'url': "games/J/C/SCPS-10118.html",
     	'id': 'SCPS10118',
 	'title': "CRASH BANDICOOT RACING",
+        'ps3config': 'ps3configs/Crash Team Racing/SCPS-10118.BIN',
     },
     'SCPS91230': {
         'url': "games/J/C/SCPS-91230.html",
@@ -35808,6 +36043,15 @@ games = {
         'pic1': 'https://cdn.mobygames.com/promos/8927169-dead-or-alive-render.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AZVfpxv-brI&list=PLhwL_3lZ3YPjwrUkHHHA5cTm9w7KpJnq5&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dead%20or%20Alive%20%28USA%29_jp2.zip',
+    },
+    'SCPS45196': {
+        'url': "games/U/C/SLUS-00067.html",
+    	'id': 'SCPS45196',
+        'pic0': 'https://images.launchbox-app.com/eb4825a4-fd6c-44d3-b75b-8eeccb0ed5b7.png',
+        'pic1': 'https://images.launchbox-app.com/2dd1d81a-6cf6-4359-ace8-97ab375956fd.png',
+        'snd0': 'https://www.youtube.com/watch?v=HnVDnAMs_Mk&list=PLFjuFokngRvjHomRZTsWAEm3_Znrdax5s&index=2',
+	'title': "CASTLEVANIA - SYMPHONY OF THE NIGHT",
+        'ps3config': 'ps3configs/Castlevania - Symphony of the Night/SCPS-45196.BIN',
     },
     'SLPS01289': {
         'url': "games/J/D/SLPS-01289.html",
@@ -36783,6 +37027,7 @@ games = {
         'url': "games/J/D/SLPM-86023.html",
     	'id': 'SLPM86023',
 	'title': "DRACULA X: NOCTURNE IN THE MOONLIGHT",
+        'ps3config': 'ps3configs/Castlevania - Symphony of the Night/SLPM-86023.BIN',
     },
     'SLPM86073': {
         'url': "games/J/D/SLPM-86073.html",
@@ -39676,6 +39921,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/eb061de1-3efc-432b-910b-54ff286e43d9.png',
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Gex/SLPS-00244.BIN',
     },
     'SCPS45092': {
         'url': "games/J/G/SCPS-45092.html",
@@ -45525,6 +45771,7 @@ games = {
         'url': "games/J/M/SLPS-01164.html",
     	'id': 'SLPS01164',
 	'title': "METAL FIST",
+        'ps3config': 'ps3configs/Fighting Force/SLPS-01164.BIN',
     },
     'SCPS45317': {
         'url': "games/J/M/SCPS-45317.html",
@@ -49779,6 +50026,7 @@ games = {
         'url': "games/J/P/SLPS-02085.html",
     	'id': 'SLPS02085',
 	'title': "POPULOUS - THE BEGINNING",
+        'ps3config': 'ps3configs/Populous - The Beginning/SLPS-02085.BIN',
     },
     'SCPS45117': {
         'url': "games/J/P/SCPS-45117.html",
@@ -50464,6 +50712,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Rage Racer/SLPS-00600.BIN',
     },
     'SCPS45019': {
         'url': "games/J/R/SCPS-45019.html",
@@ -52748,11 +52997,13 @@ games = {
         'url': "games/J/S/SLPS-00419.html",
     	'id': 'SLPS00419',
 	'title': "SHOCKWAVE",
+        'ps3config': 'ps3configs/Shockwave Assault/SLPS-00419.BIN',
     },
     'SLPS00516': {
         'url': "games/J/S/SLPS-00516.html",
     	'id': 'SLPS00516',
 	'title': "SHOCKWAVE - OPERATION JUMPGATE",
+        'ps3config': 'ps3configs/Shockwave Assault/SLPS-00516.BIN',
     },
     'SLPS00139': {
         'url': "games/J/S/SLPS-00139.html",
@@ -55084,6 +55335,7 @@ games = {
         'url': "games/J/S/SLKA-02001.html",
     	'id': 'SLKA02001',
 	'title': "STRIKERS 1945 II",
+        'ps3config': 'ps3configs/Strikers 1945 II/SLKA-02001.BIN',
     },
     'SLPS01637': {
         'url': "games/J/S/SLPS-01637.html",

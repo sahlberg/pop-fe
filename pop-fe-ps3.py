@@ -417,6 +417,19 @@ class PopFePs3App:
         self.cu2_files.append(cu2_file)
         self.configs.append(bytes())
 
+        try:
+            os.stat(cue_file[:-3]+'ps3config').st_size
+            print('Found an external config ', cue_file[:-3]+'ps3config')
+            with open(cue_file[:-3]+'ps3config', 'rb') as f:
+                      f.seek(8)
+                      self.configs[-1] = self.configs[-1] + f.read()
+        except:
+            True
+        if disc_id in games and 'ps3config' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['ps3config'], 'rb') as f:
+                      f.seek(8)
+                      self.configs[-1] = self.configs[-1] + f.read()
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))

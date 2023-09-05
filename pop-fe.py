@@ -2154,7 +2154,23 @@ if __name__ == "__main__":
     # disk and read system.cnf
     disc_ids = get_disc_ids(real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
-
+    if args.ps3_pkg:
+        for i in range(len(real_disc_ids)):
+            try:
+                os.stat(real_cue_files[i][:-3]+'ps3config').st_size
+                print('Found an external config ', real_cue_files[i][:-3]+'ps3config')
+                with open(real_cue_files[i][:-3]+'ps3config', 'rb') as f:
+                      f.seek(8)
+                      self.configs[-1] = self.configs[-1] + f.read()
+            except:
+                True
+                
+            disc_id = real_disc_ids[i]
+            if disc_id in games and 'ps3config' in games[disc_id]:
+                print('Found an external config for', disc_id) if verbose else None
+                with open(games[disc_id]['ps3config'], 'rb') as f:
+                      f.seek(8)
+                      ps3configs[i] = ps3configs[i] + f.read()
     if args.game_id:
         args.game_id = args.game_id.split(',')
     if args.psp_install_memory_card:

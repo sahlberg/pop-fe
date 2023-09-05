@@ -122,6 +122,10 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe/.
           cp atracdenc.exe dist/pop-fe/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe/.
+          mkdir dist/pop-fe/libcrypt
+          cp libcrypt/*.* dist/pop-fe/libcrypt
+          mkdir dist/pop-fe/ps3configs
+          cp -r ps3configs/*.* dist/pop-fe/ps3configs
       - name: Update dist/pop-fe-ps3
         run:   |
           mkdir dist/pop-fe-ps3/atracdenc
@@ -138,6 +142,8 @@ jobs:
           cp ffmpeg.exe dist/pop-fe-ps3/.
           mkdir dist/pop-fe-ps3/libcrypt
           cp libcrypt/*.* dist/pop-fe-ps3/libcrypt
+          mkdir dist/pop-fe-ps3/ps3configs
+          cp -r ps3configs/*.* dist/pop-fe-ps3/ps3configs
       - name: Upload pop-fe-ui artefact
         uses: actions/upload-artifact@v3
         with: 
