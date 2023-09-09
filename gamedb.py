@@ -1857,6 +1857,7 @@ games = {
         'url': "games/J/Y/SLPS-02274.html",
     	'id': 'SLPS02274',
 	'title': "YUYAMI TOORI TANKENTAI",
+        'pic0': 'https://images.launchbox-app.com/e2bdebce-7a6a-45a5-99f1-a27826ef1bb0.png',
     },
     'SLPS01460': {
         'url': "games/J/Y/SLPS-01460.html",

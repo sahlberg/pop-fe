@@ -754,9 +754,21 @@ def get_toc_from_cu2(cu2):
         # number of tracks
         toc[17] = bcd(num_tracks)
         # size of image
-        toc[27] = bcd(int(trk_end[:2]))
-        toc[28] = bcd(int(trk_end[3:5]) - 2)
-        toc[29] = bcd(int(trk_end[6:8]))
+        m = bcd(int(trk_end[:2]))
+        s = bcd(int(trk_end[3:5]) - 2)
+        f = bcd(int(trk_end[6:8]))
+
+        # lead-out is the next frame
+        f = f + 1
+        if f == 75:
+            s = s + 1
+            f = 0
+        if s == 60:
+            m = m + 1
+            s = 0
+        toc[27] = m
+        toc[28] = s
+        toc[29] = f
 
         track = 1
         for line in lines:
