@@ -59526,4 +59526,16 @@ ppf_fixes = {
         'desc': 'Trainer for VS',
         'ppf': 'tmp/pdx-vs5p.ppf'
     },
+    'SLES03449': {
+        'desc': 'PPF for Roland Garros 2001 PAL',
+        'ppf': 'ppf/SLES-03449.ppf'
+    },
+    'SLUS00633': {
+        'desc': 'PPF for Alien Resurrection NTSC-U',
+        'ppf': 'ppf/SLUS-00633.ppf'
+    },
+    'SLES02913': {
+        'desc': 'PPF for Alien Resurrection PAL',
+        'ppf': 'ppf/SLES-02913.ppf'
+    },
 }

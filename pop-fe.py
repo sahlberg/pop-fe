@@ -1922,8 +1922,8 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
             cue_files[i] = _c
             img_files[i] = _b
 
-            print('Applying', ppf_fixes[disc_id]['ppf'])
-            ApplyPPF(img_files[i], ppf_fixes[disc_id]['ppf'])
+        print('Applying', ppf_fixes[disc_id]['ppf'])
+        ApplyPPF(img_files[i], ppf_fixes[disc_id]['ppf'])
             
     return cue_files, img_files
 
