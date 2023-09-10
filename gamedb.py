@@ -262,6 +262,8 @@ games = {
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
+        # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
+        'ps3config': 'ps3configs/Vampire Hunter D/SLPS-02477.BIN',
     },
     'SLPS91523': {
         'url': "games/J/V/SLPS-91523.html",
@@ -2930,6 +2932,8 @@ games = {
         'pic1': 'https://images.launchbox-app.com/818ed55d-06de-412b-b22e-a8298782d243.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mqyfD-3L3LE&list=PLbsJWRJv13s9XGu3A5YoGq7ntFcb2D7Ue&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
+        # Fixes black screen after intro FMV
+        'ps3config': 'ps3configs/Transformers Beast Wars Transmetals/SLUS-01160.BIN',
     },
     'SLUS01489': {
         'url': "games/U/B/SLUS-01489.html",
@@ -9372,6 +9376,8 @@ games = {
 	'title': "SHREK TREASURE HUNT",
         'pic0': 'https://images.launchbox-app.com/4fcc1101-979d-4f20-afd7-a408d6af2876.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
+        # Fixes hang when loading into minigames
+        'ps3config': 'ps3configs/Shrek Treasure Hunt/SLUS-01463.BIN',
     },
     'SLUS00902': {
         'url': "games/U/S/SLUS-00902.html",
@@ -11153,6 +11159,8 @@ games = {
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
+        # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
+        'ps3config': 'ps3configs/Vampire Hunter D/SLUS-01138.BIN',
     },
     'SLUS01035': {
         'url': "games/U/V/SLUS-01035.html",
@@ -25683,6 +25691,8 @@ games = {
         'url': "games/P/R/SLES-03449.html",
     	'id': 'SLES03449',
 	'title': "ROLAND GARROS - FRENCH OPEN 2001",
+        # Fixes hanging when loading into a match
+        'ps3config': 'ps3configs/Roland Garros French Ope 2001/SLES-03449.BIN',
     },
     'SLES01660': {
         'url': "games/P/R/SLES-01660.html",
@@ -26179,6 +26189,8 @@ games = {
 	'title': "SHREK TREASURE HUNT",
         'pic0': 'https://images.launchbox-app.com/4fcc1101-979d-4f20-afd7-a408d6af2876.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
+        # Fixes hang when loading into minigames
+        'ps3config': 'ps3configs/Shrek Treasure Hunt/SLES-03996.BIN',
     },
     'SLES02792': {
         'url': "games/P/S/SLES-02792.html",
@@ -29616,6 +29628,8 @@ games = {
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
+        # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
+        'ps3config': 'ps3configs/Vampire Hunter D/SLES-02731.BIN',
     },
     'SLES00204': {
         'url': "games/P/V/SLES-00204.html",
@@ -32896,6 +32910,8 @@ games = {
         'pic1': 'https://images.launchbox-app.com/818ed55d-06de-412b-b22e-a8298782d243.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mqyfD-3L3LE&list=PLbsJWRJv13s9XGu3A5YoGq7ntFcb2D7Ue&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
+        # Fixes black screen after intro FMV
+        'ps3config': 'ps3configs/Transformers Beast Wars Transmetals/SLPS-02468.BIN',
     },
     'SCPS18013': {
         'url': "games/J/B/SCPS-18013.html",
