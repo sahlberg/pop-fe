@@ -1926,7 +1926,30 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
             ApplyPPF(img_files[i], ppf_fixes[disc_id]['ppf'])
             
     return cue_files, img_files
+
+def generate_cu2_files(cue_files, img_files, subdir):
+    cu2_files = []
+
+    for i in range(len(cue_files)):
+        cue_file = cue_files[i]
+        img_file = img_files[i]
+        cu2_file = cue_file[:-4] + '.cu2'
+        try:
+            os.stat(cu2_file).st_size
+            print('Using existing CU2 file: %s' % cu2_file) if verbose else None
+        except:
+            cu2_file = subdir + 'TMP%d.cu2' % (i)
+            print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
+            if os.name == 'posix':
+                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            else:
+                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            temp_files.append(cu2_file)
+        cu2_files.append(cu2_file)
     
+    return cu2_files
+
+
 # ICON0 is the game cover
 # PIC0 is logo
 # PIC1 is background image/poster
@@ -2149,22 +2172,8 @@ if __name__ == "__main__":
             img_file = subdir + mb + '.bin'
             temp_files.append(img_file)
 
-        cu2_file = cue_file[:-4] + '.cu2'
-        try:
-            os.stat(cu2_file).st_size
-            print('Using existing CU2 file: %s' % cu2_file) if verbose else None
-        except:
-            cu2_file = subdir + 'TMP%d.cu2' % (0 if not idx else idx[0])
-            print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            if os.name == 'posix':
-                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
-            else:
-                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
-            temp_files.append(cu2_file)
-
         img_files.append(img_file)
         cue_files.append(cue_file)
-        cu2_files.append(cu2_file)
 
         if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
             bc = bchunk()
@@ -2218,10 +2227,11 @@ if __name__ == "__main__":
                       ps3configs[i] = ps3configs[i] + f.read()
     #
     # Apply all PPF fixes we might need
-    # XXX should we generation of cu2 to after this? 
     #
     cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir)
 
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
+    
     if args.game_id:
         args.game_id = args.game_id.split(',')
     if args.psp_install_memory_card:

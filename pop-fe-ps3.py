@@ -82,7 +82,7 @@ class PopFePs3App:
         self.pkgdir = None
         self.data_track_only = 'off'
         self.configs = []
-        self.subdir = 'pop-fe-ps3-work'
+        self.subdir = 'pop-fe-ps3-work/'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -389,25 +389,6 @@ class PopFePs3App:
                 img_file = self.subdir + mb + '.bin'
                 temp_files.append(img_file)
             
-        print('Generating cu2') if verbose else None
-        cu2_file = cue_file[:-4] + '.cu2'
-        try:
-            os.stat(cu2_file).st_size
-            print('Using existing CU2 file: %s' % cu2_file) if verbose else None
-        except:
-            cu2_file = self.subdir + 'CUE' + disc + '.cu2'
-            print('Creating temporary CU2 file %s from %s' % (cu2_file, cue_file)) if verbose else None
-            if os.name == 'posix':
-                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
-            else:
-                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
-            temp_files.append(cu2_file)
-        try:
-            os.stat(cu2_file).st_size
-        except:
-            print('Failed to convert to cu2. The cue file is probably from a bad dump.')
-            raise Exception('Bad dump CUE, can not convert to CU2')
-
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
         disc_id = get_disc_id(cue_file, tmp)
@@ -418,7 +399,6 @@ class PopFePs3App:
         self.disc_ids.append(disc_id)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
-        self.cu2_files.append(cu2_file)
         self.configs.append(bytes())
 
         try:
@@ -790,10 +770,11 @@ class PopFePs3App:
 
         #
         # Apply all PPF fixes we might need
-        # XXX should we re-generate cu2 to after this? 
         #
         self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.subdir)
 
+        self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
+        
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
