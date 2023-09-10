@@ -984,6 +984,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dUQxO8ZFU9g&list=PLsPMOz2-mpmPVQVxqhIU31jzmlD5-osq4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SCPS10098': {
@@ -11508,6 +11509,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dUQxO8ZFU9g&list=PLsPMOz2-mpmPVQVxqhIU31jzmlD5-osq4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SLUS00865': {
@@ -30377,6 +30379,7 @@ games = {
 	'title': "WIPEOUT",
         'pic0': 'https://images.launchbox-app.com/f50b8200-f27d-4b22-b996-191a858ab8a6.png',
         'pic1': 'https://images.launchbox-app.com/2e49fdaf-2ed9-44b3-ad26-5b392cc423a8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dUQxO8ZFU9g&list=PLsPMOz2-mpmPVQVxqhIU31jzmlD5-osq4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WipEout%20%28USA%29_jp2.zip',
     },
     'SLES00327': {

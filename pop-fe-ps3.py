@@ -732,33 +732,7 @@ class PopFePs3App:
             
         self.master.config(cursor='watch')
         self.master.update()
-        aea_files = {}
-        print('Scanning for audio tracks')
-        for d in range(len(self.cue_files)):
-            if self.builder.get_variable('force_ntsc_variable').get() == 'on':
-                self.configs[d] = self.configs[d] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
-            aea_files[d] = []
-            bc = bchunk()
-            bc.towav = True
-            bc.open(self.cue_files[d])
-            for i in range(2, len(bc.cue) + 1):
-                if bc.cue[i]['MODE'] != 'AUDIO':
-                    continue
-                wav_file = self.subdir + 'TRACK_%d_%02d.wav' % (d, i)
-                bc.writetrack(i, wav_file)
-                aea_file = wav_file[:-3] + 'aea'
-                temp_files.append(aea_file)
-                print('Converting', wav_file, 'to', aea_file)
-                try:
-                    if os.name == 'posix':
-                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
-                    else:
-                        subprocess.run(['atracdenc/src/atracdenc.exe', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
-                except:
-                    print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-                    break
-                aea_files[d].append(aea_file)
-
+        
         snd0 = self.builder.get_variable('snd0_variable').get()
         if snd0[:24] == 'https://www.youtube.com/':
             snd0 = popfe.get_snd0_from_link(snd0)
@@ -775,6 +749,8 @@ class PopFePs3App:
 
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
         
+        aea_files = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
+
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,

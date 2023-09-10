@@ -1949,6 +1949,36 @@ def generate_cu2_files(cue_files, img_files, subdir):
     
     return cu2_files
 
+def generate_aea_files(cue_files, img_files, subdir):
+    aea_files = []
+    
+    for d in range(len(cue_files)):
+        cue_file = cue_files[d]
+        img_file = img_files[d]
+        aea_files.append([])
+        
+        bc = bchunk()
+        bc.towav = True
+        bc.open(cue_file)
+        for i in range(2, len(bc.cue) + 1):
+            f = subdir + 'TRACK_%d_%02d.wav' % (d, i)
+            bc.writetrack(i, f)
+            temp_files.append(f)
+            aea_file = f[:-3] + 'aea'
+            temp_files.append(aea_file)
+            print('Converting', f, 'to', aea_file)
+            try:
+                if os.name == 'posix':
+                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
+                else:
+                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
+            except:
+                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+                break
+            aea_files[d].append(aea_file)    
+
+    return aea_files
+
 
 # ICON0 is the game cover
 # PIC0 is logo
@@ -2063,10 +2093,9 @@ if __name__ == "__main__":
     idx = None
     cue_files = []
     real_cue_files = []
-    cu2_files = []
     img_files = []
     mem_cards = []
-    aea_files = {}
+
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
@@ -2175,32 +2204,6 @@ if __name__ == "__main__":
         img_files.append(img_file)
         cue_files.append(cue_file)
 
-        if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
-            bc = bchunk()
-            bc.towav = True
-            bc.open(cue_file)
-            aea_files[0 if not idx else idx[0] - 1] = []
-            for i in range(2, len(bc.cue) + 1):
-                if bc.cue[i]['MODE'] != 'AUDIO':
-                    print('WARNING disc contains multiple data tracks. Forcing --whole-disk')
-                    args.whole_disk = True
-                    continue
-                f = subdir + 'TRACK_%d_%02d.wav' % (0 if not idx else idx[0], i)
-                bc.writetrack(i, f)
-                temp_files.append(f)
-                aea_file = f[:-3] + 'aea'
-                temp_files.append(aea_file)
-                print('Converting', f, 'to', aea_file)
-                try:
-                    if os.name == 'posix':
-                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
-                    else:
-                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
-                except:
-                    print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-                    break
-                aea_files[0 if not idx else idx[0] - 1].append(aea_file)
-
         if idx:
             idx = (idx[0] + 1, idx[1])
 
@@ -2231,6 +2234,9 @@ if __name__ == "__main__":
     cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir)
 
     cu2_files = generate_cu2_files(cue_files, img_files, subdir)
+
+    if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
+        aea_files = generate_aea_files(cue_files, img_files, subdir)
     
     if args.game_id:
         args.game_id = args.game_id.split(',')

@@ -2414,7 +2414,7 @@ class popstation(object):
         self._vcd = 'GAME.VCD'
         self._img_toc = []
         self._track0_size = []
-        self._aea = {}
+        self._aea = []
         self._configs = None
         self._magic_word = []
         self._subchannels = []
@@ -2819,7 +2819,7 @@ class popstation(object):
             i = i + 1
 
         # insert the aa3 blobs
-        if disc_num in self._aea:
+        if disc_num < len(self._aea):
             for i in self._aea[disc_num]:
                 print('Inject', i)
                 with open(i, 'rb') as f:
@@ -2829,7 +2829,7 @@ class popstation(object):
                     struct.pack_into('<I', _b, 0, fh.tell() - psiso_offset - 0x100000)
                     struct.pack_into('<I', _b, 4, len(buf))
                     att = att + _b
-                    print('Write AEA at 0x%08x' % fh.tell())
+                    print('Write AEA at 0x%08x' % fh.tell()) if self._verbose else None
                     fh.write(buf)
                     fh.seek((fh.tell() + 0xf) & 0xfffffff0)
 
