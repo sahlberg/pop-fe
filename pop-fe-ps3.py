@@ -729,6 +729,8 @@ class PopFePs3App:
             resolution = 2
         if self.builder.get_variable('force_ntsc_variable').get() == 'on':
             resolution = 1
+            for idx in range(len(self.cue_files)):
+                self.configs[idx] = self.configs[idx] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
             
         self.master.config(cursor='watch')
         self.master.update()
