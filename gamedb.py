@@ -59511,3 +59511,9 @@ themes = {
                  },
 }
 
+ppf_fixes = {
+    'TEST01040': {
+        'desc': 'Trainer for VS',
+        'ppf': 'tmp/pdx-vs5p.ppf'
+    },
+}

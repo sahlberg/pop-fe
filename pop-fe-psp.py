@@ -59,6 +59,7 @@ class PopFePs3App:
         self.cu2_files = None
         self.img_files = None
         self.disc_ids = None
+        self.real_disc_ids = None
         self.icon0 = None
         self.icon0_tk = None
         self.pic0 = None
@@ -68,6 +69,7 @@ class PopFePs3App:
         self.pkgdir = None
         self.watermark = 'on'
         self.pic0_disabled = 'off'
+        self.subdir='pop-fe-psp-work/'
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -124,14 +126,15 @@ class PopFePs3App:
                         True
 
         temp_files = []  
-        temp_files.append('pop-fe-psp-work')
-        shutil.rmtree('pop-fe-psp-work', ignore_errors=True)
-        os.mkdir('pop-fe-psp-work')
+        temp_files.append(self.subdir)
+        shutil.rmtree(self.subdir, ignore_errors=True)
+        os.mkdir(self.subdir)
 
         self.cue_files = []
         self.cu2_files = []
         self.img_files = []
         self.disc_ids = []
+        self.real_disc_ids = []
         self.icon0 = None
         self.icon0_tk = None
         self.pic0 = None
@@ -176,8 +179,8 @@ class PopFePs3App:
             print('This is a CHD file. Uncompress the file.') if verbose else None
             chd = cue_file
             try:
-                tmpcue = 'pop-fe-psp-work/CDH%s.cue' % disc
-                tmpbin = 'pop-fe-psp-work/CDH%s.bin' % disc
+                tmpcue = self.subdir + 'CDH%s.cue' % disc
+                tmpbin = self.subdir + 'CDH%s.bin' % disc
                 temp_files.append(tmpcue)
                 temp_files.append(tmpbin)
                 print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
@@ -192,23 +195,23 @@ class PopFePs3App:
             zip = cue_file
             with zipfile.ZipFile(zip, 'r') as zf:
                 for f in zf.namelist():
-                    print('Extracting', 'pop-fe-psp-work/' + f) if verbose else None
-                    temp_files.append('pop-fe-psp-work/' + f)
-                    zf.extract(f, path='pop-fe-psp-work/')
+                    print('Extracting', self.subdir + f) if verbose else None
+                    temp_files.append(self.subdir + f)
+                    zf.extract(f, path=self.subdir)
                     if re.search('.cue$', f):
                         print('Found CUE file', f) if verbose else None
-                        cue_file = 'pop-fe-psp-work/' + f
+                        cue_file = self.subdir + f
                         self.cue_file_orig = cue_file
         if cue_file[-4:] == '.ccd':
-            tmpcue = 'pop-fe-psp-work/TMPCUE' + disc + '.cue'
+            tmpcue = self.subdir + 'TMPCUE' + disc + '.cue'
             temp_files.append(tmpcue)
             ccd = parse_ccd(cue_file)
             cue = ccd2cue(ccd)
             write_cue(cue, tmpcue)
             cue_file = tmpcue
         if cue_file[-4:] == '.bin' or cue_file[-4:] == '.img':
-            tmpcue = 'pop-fe-psp-work/TMPCUE' + disc + '.cue'
-            tmpimg = 'pop-fe-psp-work/TMPIMG' + disc + '.bin'
+            tmpcue = self.subdir + 'TMPCUE' + disc + '.cue'
+            tmpimg = self.subdir + 'TMPIMG' + disc + '.bin'
             print('Need to create a temporary cue/bin', tmpcue, tmpimg)
             temp_files.append(tmpcue)
             temp_files.append(tmpimg)
@@ -227,12 +230,12 @@ class PopFePs3App:
                 print('Merging multi-bin disc') if verbose else None
                 mb = 'MB' + disc
                 if os.name == 'posix':
-                    subprocess.call(['python3', './binmerge', '-o', 'pop-fe-psp-work', cue_file, mb])
+                    subprocess.call(['python3', './binmerge', '-o', self.subdir, cue_file, mb])
                 else:
-                    subprocess.call(['binmerge.exe', '-o', 'pop-fe-psp-work', cue_file, mb])
-                cue_file = 'pop-fe-psp-work/' + mb + '.cue'
+                    subprocess.call(['binmerge.exe', '-o', self.subdir, cue_file, mb])
+                cue_file = self.subdir + mb + '.cue'
                 temp_files.append(cue_file)
-                img_file = 'pop-fe-psp-work/' + mb + '.bin'
+                img_file = self.subdir + mb + '.bin'
                 temp_files.append(img_file)
             
         print('Generating cu2') if verbose else None
@@ -241,7 +244,7 @@ class PopFePs3App:
             os.stat(cu2_file).st_size
             print('Using existing CU2 file: %s' % cu2_file) if verbose else None
         except:
-            cu2_file = 'pop-fe-psp-work/CUE' + disc + '.cu2'
+            cu2_file = self.subdir + 'CUE' + disc + '.cu2'
             print('Creating temporary CU2 file %s from %s' % (cu2_file, cue_file)) if verbose else None
             if os.name == 'posix':
                 subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
@@ -249,7 +252,7 @@ class PopFePs3App:
                 subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
         print('Scanning for Game ID') if verbose else None
-        tmp = 'pop-fe-psp-work/TMP01.iso'
+        tmp = self.subdir + 'TMP01.iso'
         disc_id = get_disc_id(cue_file, tmp)
         print('ID', disc_id)
         temp_files.append(tmp)
@@ -258,6 +261,7 @@ class PopFePs3App:
 
         self.img_files.append(img_file)
         self.disc_ids.append(disc_id)
+        self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
         self.cu2_files.append(cu2_file)
 
@@ -268,7 +272,7 @@ class PopFePs3App:
             print('Fetching SND0')
             snd0 = None
             if self._theme != '':
-                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-psp-work')
+                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, self.subdir)
             if not snd0 and 'snd0' in games[disc_id]:
                 self.builder.get_variable('snd0_variable').set(games[disc_id]['snd0'])
             if 'manual' in games[disc_id]:
@@ -278,45 +282,45 @@ class PopFePs3App:
             self.icon0 = None
             if self._theme != '':
                 print('Get icon0 from theme')
-                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
+                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'ICON0.PNG')
                 if not self.icon0:
-                    self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
+                    self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'ICON0.png')
                 if self.icon0:
                     self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
-                self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, 'pop-fe-psp-work/ICON0.PNG', add_psn_frame=True)
-            temp_files.append('pop-fe-psp-work/ICON0.PNG')
-            self.icon0.resize((80,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/ICON0.PNG')
-            self.icon0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/ICON0.PNG')
+                self.icon0 = popfe.get_icon0_from_game(disc_id, game, cue_file_orig, self.subdir + 'ICON0.PNG', add_psn_frame=True)
+            temp_files.append(self.subdir + 'ICON0.PNG')
+            self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+            self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
             c = self.builder.get_object('icon0_canvas', self.master)
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
             print('Fetching PIC0') if verbose else None
             self.pic0 = None
             if self._theme != '':
-                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
+                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC0.PNG')
                 if not self.pic0:
-                    self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
+                    self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC0.png')
             if not self.pic0:
                 self.pic0 = popfe.get_pic0_from_game(disc_id, game, cue_file_orig)
             if self.pic0:
-                temp_files.append('pop-fe-psp-work/PIC0.PNG')
-                self.pic0.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC0.PNG')
-                self.pic0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC0.PNG')
+                temp_files.append(self.subdir + 'PIC0.PNG')
+                self.pic0.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC0.PNG')
+                self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
                 c = self.builder.get_object('pic0_canvas', self.master)
                 c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
 
             print('Fetching PIC1') if verbose else None
             self.pic1 = None
             if self._theme != '':
-                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.PNG')
+                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC1.PNG')
                 if not self.pic1:
-                    self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
+                    self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC1.png')
             if not self.pic1:
                 self.pic1 = popfe.get_pic1_from_game(disc_id, game, cue_file_orig)
-            temp_files.append('pop-fe-psp-work/PIC1.PNG')
-            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC1.PNG')
-            self.pic1_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC1.PNG')
+            temp_files.append(self.subdir + 'PIC1.PNG')
+            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+            self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
             c = self.builder.get_object('pic1_canvas', self.master)
             c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
             
@@ -378,9 +382,9 @@ class PopFePs3App:
                 Image.Image.paste(p1, i0, box=(36,81), mask=i0)
             else:
                 Image.Image.paste(p1, i0, box=(36,81))
-        temp_files.append('pop-fe-psp-work/PREVIEW.PNG')
-        p1.save('pop-fe-psp-work/PREVIEW.PNG')
-        self.preview_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PREVIEW.PNG')
+        temp_files.append(self.subdir + 'PREVIEW.PNG')
+        p1.save(self.subdir + 'PREVIEW.PNG')
+        self.preview_tk = tk.PhotoImage(file = self.subdir + 'PREVIEW.PNG')
         c = self.builder.get_object('preview_canvas', self.master)
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
         
@@ -398,9 +402,9 @@ class PopFePs3App:
             self.icon0 = Image.open(path)
         except:
             return
-        temp_files.append('pop-fe-psp-work/ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/ICON0.PNG')
+        temp_files.append(self.subdir + 'ICON0.PNG')
+        self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
         self.update_preview()
@@ -420,9 +424,9 @@ class PopFePs3App:
             self.pic0 = Image.open(path)
         except:
             return
-        temp_files.append('pop-fe-psp-work/PIC0.PNG')
-        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC0.PNG')
-        self.pic0_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC0.PNG')
+        temp_files.append(self.subdir + 'PIC0.PNG')
+        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC0.PNG')
+        self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
         self.update_preview()
@@ -437,9 +441,9 @@ class PopFePs3App:
             self.pic1 = Image.open(path)
         except:
             return
-        temp_files.append('pop-fe-psp-work/PIC1.PNG')
-        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save('pop-fe-psp-work/PIC1.PNG')
-        self.pic1_tk = tk.PhotoImage(file = 'pop-fe-psp-work/PIC1.PNG')
+        temp_files.append(self.subdir + 'PIC1.PNG')
+        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+        self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
@@ -469,8 +473,8 @@ class PopFePs3App:
         subchannels = []
         if disc_id in libcrypt:
             for idx in range(len(self.cue_files)):
-                magic_word.append(libcrypt[self.disc_ids[idx]]['magic_word'])
-                subchannels.append(popfe.generate_subchannels(libcrypt[self.disc_ids[idx]]['magic_word']))
+                magic_word.append(libcrypt[self.real_disc_ids[idx]]['magic_word'])
+                subchannels.append(popfe.generate_subchannels(libcrypt[self.real_disc_ids[idx]]['magic_word']))
 
         if disc_id[:4] == 'SLES' or disc_id[:4] == 'SCES':
             print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
@@ -488,7 +492,7 @@ class PopFePs3App:
             for i in range(2, len(bc.cue) + 1):
                 if bc.cue[i]['MODE'] != 'AUDIO':
                     continue
-                wav_file = 'pop-fe-psp-work/TRACK_%d_%02d.wav' % (d, i)
+                wav_file = self.subdir + 'TRACK_%d_%02d.wav' % (d, i)
                 bc.writetrack(i, wav_file)
                 temp_files.append(wav_file)
                 aea_file = wav_file[:-3] + 'aea'
@@ -496,9 +500,9 @@ class PopFePs3App:
                 print('Converting', wav_file, 'to', aea_file)
                 try:
                     if os.name == 'posix':
-                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
                     else:
-                        subprocess.run(['atracdenc/src/atracdenc.exe', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True)
+                        subprocess.run(['atracdenc/src/atracdenc.exe', '--encode=atrac3', '-i', wav_file, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break
@@ -512,17 +516,24 @@ class PopFePs3App:
 
         manual = self.builder.get_variable('manual_variable').get()
         if manual and len(manual):
-            manual = popfe.create_manual(manual, self.disc_ids[0], subdir='pop-fe-psp-work/')
+            manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir)
         else:
             manual = None
 
         ebootdir = self.pkgdir if self.pkgdir else '.'
+
+        #
+        # Apply all PPF fixes we might need
+        # XXX should we re-generate cu2 to after this? 
+        #
+        self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.subdir)
+
         popfe.create_psp(ebootdir, self.disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          self.pic1,
                          self.cue_files, self.cu2_files, self.img_files, [],
-                         aea_files, subdir='pop-fe-psp-work/', snd0=snd0,
+                         aea_files, subdir=self.subdir, snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual)
         self.master.config(cursor='')

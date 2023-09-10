@@ -55,7 +55,7 @@ except:
 from pathlib import Path
 from bchunk import bchunk
 from document import create_document
-from gamedb import games, libcrypt, themes, gameid_translation
+from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation
 try:
     from make_isoedat import pack
 except:
@@ -375,9 +375,9 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
         print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
         try:
             if os.name == 'posix':
-                subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
+                subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True, stdout=subprocess.DEVNULL)
             else:
-                subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True)
+                subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True, stdout=subprocess.DEVNULL)
         except:
             print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             return None
@@ -906,9 +906,9 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
@@ -1080,9 +1080,9 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'])
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
@@ -1895,6 +1895,38 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     return tmpfile
 
 
+#
+# Apply all PPF fixes that may be needed
+#
+def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
+    for i in range(len(real_disc_ids)):
+        disc_id = real_disc_ids[i]
+        if disc_id not in ppf_fixes:
+            continue
+        print('Found PPF:', ppf_fixes[disc_id]['desc'])
+        if subdir != cue_files[i][:len(subdir)]:
+            # Need to copy the bin/cue to the work directory.
+            # We know this is a single bin at this point as if it would have
+            # been merged into the work directory otherwise
+            _c = subdir + 'PPF%02x.cue' % i
+            _b = subdir + 'PPF%02x.bin' % i
+            print('Copy %s -> %s so we can apply PPF' % (img_files[i], _b))
+            copy_file(img_files[i], _b) 
+            temp_files.append(_b)
+            with open(cue_files[i], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('PPF%02x.bin' % i)
+                with open(_c, 'w') as fo:
+                    fo.writelines(l)
+                    temp_files.append(_c)
+            cue_files[i] = _c
+            img_files[i] = _b
+
+            print('Applying', ppf_fixes[disc_id]['ppf'])
+            ApplyPPF(img_files[i], ppf_fixes[disc_id]['ppf'])
+            
+    return cue_files, img_files
+    
 # ICON0 is the game cover
 # PIC0 is logo
 # PIC1 is background image/poster
@@ -2023,7 +2055,8 @@ if __name__ == "__main__":
                 ps3configs[-1] = ps3configs[-1] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
                 print('Inject config to force NTSC') if verbose else None
 
-        real_cue_files.append(cue_file)
+        real_cue_file = cue_file
+        real_cue_files.append(real_cue_file)
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
             mc = check_memory_card(cue_file)
@@ -2151,9 +2184,9 @@ if __name__ == "__main__":
                 print('Converting', f, 'to', aea_file)
                 try:
                     if os.name == 'posix':
-                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True)
+                        subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
                     else:
-                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True)
+                        subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
                 except:
                     print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                     break
@@ -2183,6 +2216,12 @@ if __name__ == "__main__":
                 with open(games[disc_id]['ps3config'], 'rb') as f:
                       f.seek(8)
                       ps3configs[i] = ps3configs[i] + f.read()
+    #
+    # Apply all PPF fixes we might need
+    # XXX should we generation of cu2 to after this? 
+    #
+    cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir)
+
     if args.game_id:
         args.game_id = args.game_id.split(',')
     if args.psp_install_memory_card:
@@ -2320,6 +2359,8 @@ if __name__ == "__main__":
             #
             # Copy the CUE and BIN locally so we can patch them
             for idx in range(len(cue_files)):
+                # qqq we don't need to copy them if they are already in
+                # our temporary work directory pop-fe-work/
                 i = get_imgs_from_bin(cue_files[idx])
                 print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
                 copy_file(i[0], 'LCP%02x.bin' % idx) 
