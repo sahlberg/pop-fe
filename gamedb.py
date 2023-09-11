@@ -261,6 +261,8 @@ games = {
     	'id': 'SLPS02477',
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'pic1': 'https://images.launchbox-app.com/77aaf413-5fa3-41e4-96fe-4ed777b0e599.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wluoTC2ZiJc&list=PLM-xgnrATD5-9GUnjdu6-yi7UHNcpJRnk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
         # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
         'ps3config': 'ps3configs/Vampire Hunter D/SLPS-02477.BIN',
@@ -270,6 +272,8 @@ games = {
     	'id': 'SLPS91523',
 	'title': "VAMPIRE HUNTER D [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'pic1': 'https://images.launchbox-app.com/77aaf413-5fa3-41e4-96fe-4ed777b0e599.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wluoTC2ZiJc&list=PLM-xgnrATD5-9GUnjdu6-yi7UHNcpJRnk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLPS03198': {
@@ -277,6 +281,8 @@ games = {
     	'id': 'SLPS03198',
 	'title': "VAMPIRE HUNTER D [VICTOR COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'pic1': 'https://images.launchbox-app.com/77aaf413-5fa3-41e4-96fe-4ed777b0e599.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wluoTC2ZiJc&list=PLM-xgnrATD5-9GUnjdu6-yi7UHNcpJRnk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
     },
     'SLPS01700': {
@@ -2312,7 +2318,9 @@ games = {
         'url': "games/U/A/SLUS-00633.html",
     	'id': 'SLUS00633',
 	'title': "ALIEN RESURRECTION",
-        'pic0': 'https://images.launchbox-app.com/2fcd7d34-dfa9-462b-9644-64dbb8de4502.png',
+        'pic0': 'https://images.launchbox-app.com/fbd6e264-74a4-4904-8a80-5e034d4ddd87.png',
+        'pic1': 'https://images.launchbox-app.com/bfb7bfdb-5d3b-4050-940d-702ae9446132.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CS_TmUHNTmI&list=PLocqHZj7MJfnkfN13sy23c33Ycl8kNN1i&index=1',
     },
     'SLUS00007': {
         'url': "games/U/A/SLUS-00007.html",
@@ -2928,7 +2936,7 @@ games = {
         'url': "games/U/B/SLUS-01160.html",
     	'id': 'SLUS01160',
 	'title': "BEAST WARS - TRANSFORMERS - TRANSMETAL",
-        'pic0': 'https://images.launchbox-app.com/ec1f89bf-6cda-48f6-8e03-2f8fd6d5cdb9.png',
+        'pic0': 'https://images.launchbox-app.com/ccaddca1-163a-449e-ac00-685e36e407e5.png',
         'pic1': 'https://images.launchbox-app.com/818ed55d-06de-412b-b22e-a8298782d243.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mqyfD-3L3LE&list=PLbsJWRJv13s9XGu3A5YoGq7ntFcb2D7Ue&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
@@ -9181,6 +9189,7 @@ games = {
 	'title': "SAGA FRONTIER",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SLUS00933': {
@@ -9189,6 +9198,7 @@ games = {
 	'title': "SAGA FRONTIER II",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/SaGa Frontier 2/SLUS-00933.BIN',
     },
@@ -9375,6 +9385,8 @@ games = {
     	'id': 'SLUS01463',
 	'title': "SHREK TREASURE HUNT",
         'pic0': 'https://images.launchbox-app.com/4fcc1101-979d-4f20-afd7-a408d6af2876.png',
+        'pic1': 'https://cdn.mobygames.com/covers/6925700-shrek-treasure-hunt-playstation-inside-cover.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=ZLWXkmzNRSc&list=PLO4jlmGoc6uCqdVvnjyjOOXqVj1QTfEm1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
         # Fixes hang when loading into minigames
         'ps3config': 'ps3configs/Shrek Treasure Hunt/SLUS-01463.BIN',
@@ -11158,6 +11170,8 @@ games = {
     	'id': 'SLUS01138',
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'pic1': 'https://images.launchbox-app.com/77aaf413-5fa3-41e4-96fe-4ed777b0e599.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wluoTC2ZiJc&list=PLM-xgnrATD5-9GUnjdu6-yi7UHNcpJRnk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
         # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
         'ps3config': 'ps3configs/Vampire Hunter D/SLUS-01138.BIN',
@@ -12251,7 +12265,9 @@ games = {
         'url': "games/P/A/SLES-02913.html",
     	'id': 'SLES02913',
 	'title': "ALIEN RESURRECTION",
-        'pic0': 'https://images.launchbox-app.com/2fcd7d34-dfa9-462b-9644-64dbb8de4502.png',
+        'pic0': 'https://images.launchbox-app.com/fbd6e264-74a4-4904-8a80-5e034d4ddd87.png',
+        'pic1': 'https://images.launchbox-app.com/bfb7bfdb-5d3b-4050-940d-702ae9446132.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CS_TmUHNTmI&list=PLocqHZj7MJfnkfN13sy23c33Ycl8kNN1i&index=1',
     },
     'SLES00101': {
         'url': "games/P/A/SLES-00101.html",
@@ -25691,6 +25707,7 @@ games = {
         'url': "games/P/R/SLES-03449.html",
     	'id': 'SLES03449',
 	'title': "ROLAND GARROS - FRENCH OPEN 2001",
+        'pic0': 'https://images.launchbox-app.com/8f69d645-c015-4a8a-9456-ac7764d175ec.png',
         # Fixes hanging when loading into a match
         'ps3config': 'ps3configs/Roland Garros French Ope 2001/SLES-03449.BIN',
     },
@@ -25894,6 +25911,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02112.BIN',
     },
@@ -25903,6 +25921,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02113.BIN',
     },
@@ -25912,6 +25931,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/SaGa Frontier 2/SLES-02118.BIN',
     },
@@ -26188,6 +26208,8 @@ games = {
     	'id': 'SLES03996',
 	'title': "SHREK TREASURE HUNT",
         'pic0': 'https://images.launchbox-app.com/4fcc1101-979d-4f20-afd7-a408d6af2876.png',
+        'pic1': 'https://cdn.mobygames.com/covers/6925700-shrek-treasure-hunt-playstation-inside-cover.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=ZLWXkmzNRSc&list=PLO4jlmGoc6uCqdVvnjyjOOXqVj1QTfEm1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
         # Fixes hang when loading into minigames
         'ps3config': 'ps3configs/Shrek Treasure Hunt/SLES-03996.BIN',
@@ -29627,6 +29649,8 @@ games = {
     	'id': 'SLES02731',
 	'title': "VAMPIRE HUNTER D",
         'pic0': 'https://images.launchbox-app.com/b6d2f6c1-d95e-49dc-84c9-f1b162d882ba.png',
+        'pic1': 'https://images.launchbox-app.com/77aaf413-5fa3-41e4-96fe-4ed777b0e599.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wluoTC2ZiJc&list=PLM-xgnrATD5-9GUnjdu6-yi7UHNcpJRnk&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vampire%20Hunter%20D%20%28USA%29_jp2.zip',
         # Experimental config. Should fix hangs during door transitions/loading and other weird issues, but needs more testing.
         'ps3config': 'ps3configs/Vampire Hunter D/SLES-02731.BIN',
@@ -32906,7 +32930,7 @@ games = {
         'url': "games/J/B/SLPS-02468.html",
     	'id': 'SLPS02468',
 	'title': "BEAST WARS - TRANSFORMERS - METALS",
-        'pic0': 'https://images.launchbox-app.com/ec1f89bf-6cda-48f6-8e03-2f8fd6d5cdb9.png',
+        'pic0': 'https://images.launchbox-app.com/ccaddca1-163a-449e-ac00-685e36e407e5.png',
         'pic1': 'https://images.launchbox-app.com/818ed55d-06de-412b-b22e-a8298782d243.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mqyfD-3L3LE&list=PLbsJWRJv13s9XGu3A5YoGq7ntFcb2D7Ue&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
@@ -51717,6 +51741,7 @@ games = {
 	'title': "SAGA FRONTIER",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SLPS00898': {
@@ -51725,6 +51750,7 @@ games = {
 	'title': "SAGA FRONTIER",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SLPS91482': {
@@ -51733,6 +51759,7 @@ games = {
 	'title': "SAGA FRONTIER [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SLPS02766': {
@@ -51741,6 +51768,7 @@ games = {
 	'title': "SAGA FRONTIER [SQUARE MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SLPM87375': {
@@ -51749,6 +51777,7 @@ games = {
 	'title': "SAGA FRONTIER [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/65c136a6-c106-48b5-a3e3-98c5ea96d436.png',
         'pic1': 'https://images.launchbox-app.com/2f65cb93-0e52-436e-b781-d78f85f4801b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%20%28USA%29_jp2.zip',
     },
     'SCPS45300': {
@@ -51757,6 +51786,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SCPS45301': {
@@ -51765,6 +51795,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPS01990': {
@@ -51773,6 +51804,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPS01991': {
@@ -51781,6 +51813,7 @@ games = {
 	'title': "SAGA FRONTIER 2",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPS91483': {
