@@ -913,7 +913,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         except:
             snd0 = None
     if snd0:
-        convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000)
+        convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir)
         with open(subdir + 'SND0.AT3', 'rb') as i:
             snd0_data = i.read()
 
@@ -1086,7 +1086,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
-        convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000)
+        convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
 
     image = None
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
@@ -2416,7 +2416,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, watermark=args.watermark, subchannels=subchannels, manual=manual)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:

@@ -1357,7 +1357,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45171': {
@@ -1366,7 +1366,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01160': {
@@ -1375,7 +1375,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS01161': {
@@ -1384,7 +1384,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91436': {
@@ -1393,7 +1393,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91437': {
@@ -1402,7 +1402,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02773': {
@@ -1411,7 +1411,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02774':    {
@@ -1420,7 +1420,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02775': {
@@ -1429,7 +1429,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02776':    {
@@ -1438,7 +1438,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS00750': {
@@ -2157,6 +2157,7 @@ games = {
 	'title': "007 - THE WORLD IS NOT ENOUGH",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLUS00975': {
         'url': "games/U/0-9/SLUS-00975.html",
@@ -3647,6 +3648,8 @@ games = {
         'url': "games/U/C/SLUS-00697.html",
     	'id': 'SLUS00697',
 	'title': "CIRCUIT BREAKERS",
+        'pic0': 'https://images.launchbox-app.com/c92f136e-889c-4a5f-9a37-0dc6cec351a7.png',
+        'snd0': 'https://www.youtube.com/watch?v=XulukDW5mHg&list=PL397D184388FFA97A&index=1',
     },
     'SLUS00792': {
         'url': "games/U/C/SLUS-00792.html",
@@ -3667,6 +3670,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Y4Bn4uTI3mg&list=PLEE4FFD247AE96466&index=2',
         'ps3config': 'ps3configs/Clock Tower/SLUS-00539.BIN',
     },
     'SLUS00695': {
@@ -3674,6 +3678,7 @@ games = {
     	'id': 'SLUS00695',
 	'title': "CLOCK TOWER 2 - THE STRUGGLE WITHIN",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
     },
     'SCUS94409': {
         'url': "games/U/C/SCUS-94409.html",
@@ -3813,6 +3818,7 @@ games = {
     	'id': 'SLUS00288',
 	'title': "CONTRA - LEGACY OF WAR",
         'pic0': 'https://images.launchbox-app.com/ef947b5b-f40c-4eb2-ae46-7638d952c49b.png',
+        'snd0': 'https://www.youtube.com/watch?v=kJ4mG4YQwNw&list=PLzXzglzKcREG_kpZo9DcSOpuks7uEZ2qF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Contra%20-%20Legacy%20of%20War%20%28USA%29_jp2.zip',
     },
     'SCUS94356': {
@@ -11709,7 +11715,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00669': {
@@ -11718,7 +11724,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=eNx26oNIttc&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00461': {
@@ -11803,6 +11809,7 @@ games = {
 	'title': "007 - THE WORLD IS NOT ENOUGH",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLES03138': {
         'url': "games/P/0-9/SLES-03138.html",
@@ -11810,6 +11817,7 @@ games = {
 	'title': "007 - THE WORLD IS NOT ENOUGH",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLES03135': {
         'url': "games/P/0-9/SLES-03135.html",
@@ -11817,6 +11825,7 @@ games = {
 	'title': "007 - LE MONDE NE SUFFIT PAS",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLES03136': {
         'url': "games/P/0-9/SLES-03136.html",
@@ -11824,6 +11833,7 @@ games = {
 	'title': "007 - DIE WELT IST NICHT GENUG",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLES03137': {
         'url': "games/P/0-9/SLES-03137.html",
@@ -11831,6 +11841,7 @@ games = {
 	'title': "007 - EL MUNDO NUNCA ES SUFICIENTE",
         'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
         'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
     },
     'SLES01324': {
         'url': "games/P/0-9/SLES-01324.html",
@@ -21167,6 +21178,8 @@ games = {
         'url': "games/P/C/SLES-00753.html",
     	'id': 'SLES00753',
 	'title': "CIRCUIT BREAKERS",
+        'pic0': 'https://images.launchbox-app.com/c92f136e-889c-4a5f-9a37-0dc6cec351a7.png',
+        'snd0': 'https://www.youtube.com/watch?v=XulukDW5mHg&list=PL397D184388FFA97A&index=1',
     },
     'SLES01794': {
         'url': "games/P/C/SLES-01794.html",
@@ -21219,6 +21232,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Y4Bn4uTI3mg&list=PLEE4FFD247AE96466&index=2',
         'ps3config': 'ps3configs/Clock Tower/SLES-00870.BIN',
     },
     'SLES00871': {
@@ -21227,6 +21241,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Y4Bn4uTI3mg&list=PLEE4FFD247AE96466&index=2',
         'ps3config': 'ps3configs/Clock Tower/SLES-00871.BIN',
     },
     'SLES00872': {
@@ -21235,6 +21250,7 @@ games = {
 	'title': "CLOCK TOWER",
         'pic0': 'https://images.launchbox-app.com/0f0cde64-7f5e-496b-8333-dc3cb3c54603.png',
         'pic1': 'https://images.launchbox-app.com/2e4362de-689d-4100-a75f-6e346594de89.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Y4Bn4uTI3mg&list=PLEE4FFD247AE96466&index=2',
         'ps3config': 'ps3configs/Clock Tower/SLES-00872.BIN',
     },
     'SCES02151': {
@@ -21589,17 +21605,22 @@ games = {
         'url': "games/P/C/SLES-00927.html",
     	'id': 'SLES00927',
 	'title': "CONSTRUCTOR",
+        'pic0': 'https://images.launchbox-app.com/c4306f96-a201-4f82-9ece-5a187fdd3527.png',
+        'snd0': 'https://www.youtube.com/watch?v=4khzJl0hy5s',
     },
     'SLES01428': {
         'url': "games/P/C/SLES-01428.html",
     	'id': 'SLES01428',
 	'title': "CONSTRUCTOR",
+        'pic0': 'https://images.launchbox-app.com/c4306f96-a201-4f82-9ece-5a187fdd3527.png',
+        'snd0': 'https://www.youtube.com/watch?v=4khzJl0hy5s',
     },
     'SLES00608': {
         'url': "games/P/C/SLES-00608.html",
     	'id': 'SLES00608',
 	'title': "CONTRA - LEGACY OF WAR",
         'pic0': 'https://images.launchbox-app.com/ef947b5b-f40c-4eb2-ae46-7638d952c49b.png',
+        'snd0': 'https://www.youtube.com/watch?v=kJ4mG4YQwNw&list=PLzXzglzKcREG_kpZo9DcSOpuks7uEZ2qF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Contra%20-%20Legacy%20of%20War%20%28USA%29_jp2.zip',
     },
     'SCES00568': {
@@ -34138,6 +34159,9 @@ games = {
         'url': "games/J/C/SLPS-01567.html",
     	'id': 'SLPS01567',
 	'title': "CAPTAIN COMMANDO",
+        'pic0': 'https://images.launchbox-app.com/3e8245d3-351c-4ef8-ab4e-8e2087b6fdbf.png',
+        'pic1': 'https://images.launchbox-app.com/50b67886-e876-41b1-aebe-7a1039e7c8a8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=D_SRcLzmAFc&list=PL8x7wHq_i5Dc5kBiconDIHfqgF8-C2mS7&index=2',
     },
     'SLPM86216': {
         'url': "games/J/C/SLPM-86216.html",
@@ -35153,18 +35177,21 @@ games = {
     	'id': 'SLPS00917',
 	'title': "CLOCK TOWER - THE FIRST FEAR",
         'pic0': 'https://images.launchbox-app.com/6ecd423c-087d-4248-8dfe-80486c29b929.png',
+        'snd0': 'https://www.youtube.com/watch?v=Y4Bn4uTI3mg&list=PLEE4FFD247AE96466&index=2',
     },
     'SLPS00657': {
         'url': "games/J/C/SLPS-00657.html",
     	'id': 'SLPS00657',
 	'title': "CLOCK TOWER 2",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
     },
     'SLPS91056': {
         'url': "games/J/C/SLPS-91056.html",
     	'id': 'SLPS91056',
 	'title': "CLOCK TOWER 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
         'manual': 'https://psxdatacenter.com/manuals/Clock%20Tower%202%20[Playstation%20the%20Best]%20[SLPS-91056]%20(J).cbr',
     },
     'SCPS45173': {
@@ -35172,18 +35199,21 @@ games = {
     	'id': 'SCPS45173',
 	'title': "CLOCK TOWER - GHOST HEAD",
         'pic0': 'https://images.launchbox-app.com/3f03162b-0996-494c-8aa1-e23f420a6600.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
     },
     'SLPS01290': {
         'url': "games/J/C/SLPS-01290.html",
     	'id': 'SLPS01290',
 	'title': "CLOCK TOWER - GHOST HEAD",
         'pic0': 'https://images.launchbox-app.com/3f03162b-0996-494c-8aa1-e23f420a6600.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
     },
     'SLPS91175': {
         'url': "games/J/C/SLPS-91175.html",
     	'id': 'SLPS91175',
 	'title': "CLOCK TOWER - GHOST HEAD [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/3f03162b-0996-494c-8aa1-e23f420a6600.png',
+        'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
     },
     'SLPS00387': {
         'url': "games/J/C/SLPS-00387.html",
@@ -52821,26 +52851,38 @@ games = {
         'url': "games/J/S/SLPS-03170.html",
     	'id': 'SLPS03170',
 	'title': "SHIN MEGAMI TENSEI",
+        'pic0': 'https://images.launchbox-app.com/445281f3-4d75-404e-b4f6-5ccc1d40e00a.png',
+        'pic1': 'https://images.launchbox-app.com/b28336ba-eb06-469e-8dce-0fa6828e9129.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=rYPgFs5gEoY&list=PLivGIjvUj3M2jrRbfnZv8tTFTdhx1E7Xp&index=2',
     },
     'SLPM86924': {
         'url': "games/J/S/SLPM-86924.html",
     	'id': 'SLPM86924',
 	'title': "SHIN MEGAMI TENSEI II",
+        'pic0': 'https://images.launchbox-app.com/3efd2e44-d777-4aed-92a7-d93c7080ae71.png',
+        'pic1': 'https://images.launchbox-app.com/1da56c46-8970-44ce-a5d5-991ae5b649bd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=VW9b6Y5YyOE&list=PLivGIjvUj3M36qR_5QwPZv-8lh8w8BXhU',
     },
     'SLPM87040': {
         'url': "games/J/S/SLPM-87040.html",
     	'id': 'SLPM87040',
 	'title': "SHIN MEGAMI TENSEI - DEVIL CHILDREN - KURO NO SHO - AKA NO SHO",
+        'pic0': 'https://images.launchbox-app.com/c329f32c-5c14-4525-b732-d9173b0dade4.png',
+        'snd0': 'https://www.youtube.com/watch?v=C0yubvZW1u4&list=PLjdSC-ENw036K-2l6wcclUrtoo3b14NGw&index=1',
     },
     'SLPM87154': {
         'url': "games/J/S/SLPM-87154.html",
     	'id': 'SLPM87154',
 	'title': "SHIN MEGAMI TENSEI IF...",
+        'pic0': 'https://images.launchbox-app.com/157b97a3-1b22-453d-846c-4c259d92519b.png',
+        'snd0': 'https://www.youtube.com/watch?v=XfTSHb4Ai5U&list=PLN2wgGwM9KmjdSvDG77dHrfv0p4aNRS_i&index=1',
     },
     'SLPM87153': {
         'url': "games/J/S/SLPM-87153.html",
     	'id': 'SLPM87153',
 	'title': "SHIN MEGAMI TENSEI IF...[KARUKO SAKATAKA-KOU 50TH ANIIVERSARY PACK]",
+        'pic0': 'https://images.launchbox-app.com/157b97a3-1b22-453d-846c-4c259d92519b.png',
+        'snd0': 'https://www.youtube.com/watch?v=XfTSHb4Ai5U&list=PLN2wgGwM9KmjdSvDG77dHrfv0p4aNRS_i&index=1',
     },
     'SLPS00084': {
         'url': "games/J/S/SLPS-00084.html",
