@@ -150,6 +150,10 @@ Command line arguments are:
 		        This should normally not be needed as we automatically
 			inject the magic word to the emulator running on the
 			PS3.
+--romhacks            : Comma separated list of romhacks to apply.
+		        Only supported types are .ppf and .xdelta files.
+			There must be one romhack for each disk image in the
+			conversion.
 --snd0                : Provide an audio file to be played when this game
 		        is focused on the XMB. See the SND0.AT3 section below.
 --auto-libcrypt       : Try to automatically create and apply a patch for
@@ -201,6 +205,23 @@ Example: cuefile:  foo.cue and corresponding cover in foo_cover.png
 
 Similarly, files named as <cue>_pic0.png and <cue>_pic1.png are used for the screenshot
 images.
+
+
+ROMHACKS
+========
+Romhacks can be provided and automatically applied.
+These must either be in PPF format and have a 'ppf' extension or in
+Xdelta[3] format and have a 'xdelta' extension.
+This is a comma-separated list of hacks to apply, one hack for each disk
+in the conversion.
+If you don't want to specify a hack for a disk in the set, then specify 'none'.
+
+Example:
+To apply a romhack on a single disc:
+$ ./pop-fe.py --psp-dir=auto --romhacks SMT.xdelta Shin\ Megami\ Tensei.cue
+
+To apply a romhack to only the second disc of a two disc game:
+$ ./pop-fe.py --psp-dir=auto --romhacks none,X.ppf D1.cue D2.cue
 
 
 PS3 External config files

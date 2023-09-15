@@ -1927,6 +1927,45 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
             
     return cue_files, img_files
 
+
+def ApplyXDELTA(img, romhack):
+    print('Applying XDELTA', romhack)
+    _tmp = img + 'tmp'
+    subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
+    os.remove(img)
+    os.rename(_tmp, img)
+
+#
+# Apply all romhacks
+#
+def apply_romhacks(real_disc_ids, cue_files, img_files, romhacks, subdir):
+    for i in range(len(real_disc_ids)):
+        if romhacks[i] == 'none':
+            continue
+        if subdir != cue_files[i][:len(subdir)]:
+            # Need to copy the bin/cue to the work directory.
+            # We know this is a single bin at this point as if it would have
+            # been merged into the work directory otherwise
+            _c = subdir + 'PATCH%02x.cue' % i
+            _b = subdir + 'PATCH%02x.bin' % i
+            print('Copy %s -> %s so we can apply ROMHACK' % (img_files[i], _b))
+            copy_file(img_files[i], _b) 
+            temp_files.append(_b)
+            with open(cue_files[i], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('PATCH%02x.bin' % i)
+                with open(_c, 'w') as fo:
+                    fo.writelines(l)
+                    temp_files.append(_c)
+            cue_files[i] = _c
+            img_files[i] = _b
+
+        if romhacks[i][-4:] == '.ppf':
+            ApplyPPF(img_files[i], romhacks[i])
+        if romhacks[i][-7:] == '.xdelta':
+            ApplyXDELTA(img_files[i], romhacks[i])
+    return cue_files, img_files
+
 def generate_cu2_files(cue_files, img_files, subdir):
     cu2_files = []
 
@@ -2036,6 +2075,7 @@ if __name__ == "__main__":
                     help='List available themes')
     parser.add_argument('--theme',
                         help='Theme to use')
+    parser.add_argument('--romhacks', help='Romhacks to apply')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -2233,6 +2273,17 @@ if __name__ == "__main__":
     #
     cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir)
 
+    #
+    # Apply all romhacks
+    #
+    if args.romhacks:
+        romhacks = args.romhacks.split(',')
+        if len(romhacks) != len(cue_files):
+            print('--romhacks must have one patch for each disk. Found %d disks but only %d romhacks.' % (len(cue_files), len(romhacks)))
+            shutil.rmtree('pop-fe-work', ignore_errors=True)
+            os._exit(1)
+        cue_files, img_files = apply_romhacks(real_disc_ids, cue_files, img_files, romhacks, subdir)
+    
     cu2_files = generate_cu2_files(cue_files, img_files, subdir)
 
     if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
