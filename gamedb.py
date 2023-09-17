@@ -6770,6 +6770,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/023517a0-d42a-4055-872e-b056dc3b4d36.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mBinToRnfJ0&list=PL57CDE68E7CB4F206&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MediEvil%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Medievil 2/SCUS-94564.BIN',
     },
     'SLUS00453': {
         'url': "games/U/M/SLUS-00453.html",
@@ -16629,6 +16630,7 @@ games = {
         'url': "games/P/I/SLES-02550.html",
     	'id': 'SLES02550',
 	'title': "INTERNATIONAL SUPERSTAR SOCCER 2000",
+        'ps3config': 'ps3configs/International Superstar Soccer/SLES-02550.BIN',
     },
     'SLES03149': {
         'url': "games/P/I/SLES-03149.html",
@@ -19572,6 +19574,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/023517a0-d42a-4055-872e-b056dc3b4d36.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mBinToRnfJ0&list=PL57CDE68E7CB4F206&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MediEvil%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Medievil 2/SCES-02544.BIN',
     },
     'SCES02545': {
         'url': "games/P/M/SCES-02545.html",
@@ -19581,6 +19584,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/023517a0-d42a-4055-872e-b056dc3b4d36.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mBinToRnfJ0&list=PL57CDE68E7CB4F206&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MediEvil%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Medievil 2/SCES-02545.BIN',
     },
     'SCES02546': {
         'url': "games/P/M/SCES-02546.html",
@@ -19590,6 +19594,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/023517a0-d42a-4055-872e-b056dc3b4d36.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mBinToRnfJ0&list=PL57CDE68E7CB4F206&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MediEvil%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Medievil 2/SCES-02546.BIN',
     },
     'SLES01064': {
         'url': "games/P/M/SLES-01064.html",
@@ -42319,6 +42324,7 @@ games = {
         'url': "games/J/J/SLPM-86317.html",
     	'id': 'SLPM86317',
 	'title': "JIKKYOU J.LEAGUE 1999 PERFECT STRIKER",
+        'ps3config': 'ps3configs/International Superstar Soccer/SLPM-86317.BIN',
     },
     'SLPM86008': {
         'url': "games/J/J/SLPM-86008.html",
@@ -59632,5 +59638,13 @@ ppf_fixes = {
     'SLES02136': {
         'desc': 'PPF for Metal Gear Solid Special Missions to remove disc check',
         'ppf': 'ppf/SLES-02136.ppf'
+    },
+    'SLPS01567': {
+        'desc': 'PPF for CaptainCommand boss/texture issue',
+        'ppf': 'ppf/SLPS-01567.ppf'
+    },
+    'SLUS00330': {
+        'desc': 'PPF for MortalCombatTrilogy countdown issue',
+        'ppf': 'ppf/SLUS-00330.ppf'
     },
 }
