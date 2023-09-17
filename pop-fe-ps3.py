@@ -110,6 +110,7 @@ class PopFePs3App:
             'on_data_track_only': self.on_data_track_only,
             'on_force_pal': self.on_force_pal,
             'on_force_ntsc': self.on_force_ntsc,
+            'on_force_newemu': self.on_force_newemu,
         }
 
         builder.connect_callbacks(callbacks)
@@ -621,6 +622,9 @@ class PopFePs3App:
         if self.builder.get_variable('force_ntsc_variable').get() == 'on':
             self.builder.get_variable('force_pal_variable').set('off')
         
+    def on_force_newemu(self):
+        True
+        
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
         self.update_preview()
@@ -753,6 +757,14 @@ class PopFePs3App:
         
         aea_files = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
 
+        #
+        # Force NEWEMU
+        #
+        if self.builder.get_variable('force_newemu_variable').get() == 'on':
+            print('Forcing ps1_newemu for all discs')
+            for idx in range(len(self.cue_files)):
+                self.configs[idx] = bytes([0x38, 0x00, 0x00, 0x00, 0x02,  0x00, 0x00, 0x00])
+            
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,

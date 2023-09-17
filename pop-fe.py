@@ -2076,6 +2076,8 @@ if __name__ == "__main__":
     parser.add_argument('--theme',
                         help='Theme to use')
     parser.add_argument('--romhacks', help='Romhacks to apply')
+    parser.add_argument('--ps1-newemu', action='store_true',
+                    help='Use the ps1_newemu emulator (only valid for PS3 PKG')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -2268,6 +2270,13 @@ if __name__ == "__main__":
                 with open(games[disc_id]['ps3config'], 'rb') as f:
                       f.seek(8)
                       ps3configs[i] = ps3configs[i] + f.read()
+    #
+    # Force use of ps1_newemu, this disables all other config settings
+    #
+    if args.ps1_newemu and args.ps3_pkg:
+        print('Forcing ps1_newemu on all disks for this game')
+        for i in range(len(real_disc_ids)):
+            ps3configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
     #
     # Apply all PPF fixes we might need
     #
