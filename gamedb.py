@@ -59629,4 +59629,8 @@ ppf_fixes = {
         'desc': 'PPF for Alien Resurrection PAL',
         'ppf': 'ppf/SLES-02913.ppf'
     },
+    'SLES02136': {
+        'desc': 'PPF for Metal Gear Solid Special Missions to remove disc check',
+        'ppf': 'ppf/SLES-02136.ppf'
+    },
 }
