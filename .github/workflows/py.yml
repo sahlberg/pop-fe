@@ -127,7 +127,7 @@ jobs:
           mkdir dist/pop-fe/ppf
           cp ppf/*.* dist/pop-fe/ppf
           mkdir dist/pop-fe/ps3configs
-          cp -r ps3configs/*.* dist/pop-fe/ps3configs
+          cp -r ps3configs/* dist/pop-fe/ps3configs
       - name: Update dist/pop-fe-ps3
         run:   |
           mkdir dist/pop-fe-ps3/atracdenc
@@ -147,7 +147,7 @@ jobs:
           mkdir dist/pop-fe-ps3/ppf
           cp ppf/*.* dist/pop-fe-ps3/ppf
           mkdir dist/pop-fe-ps3/ps3configs
-          cp -r ps3configs/*.* dist/pop-fe-ps3/ps3configs
+          cp -r ps3configs/* dist/pop-fe-ps3/ps3configs
       - name: Upload pop-fe-ui artefact
         uses: actions/upload-artifact@v3
         with: 
