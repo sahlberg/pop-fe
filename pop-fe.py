@@ -2019,6 +2019,22 @@ def generate_aea_files(cue_files, img_files, subdir):
     return aea_files
 
 
+#
+# This one is special since the same command may be used for other things
+# so we need to merge the argument if teh command is already there
+#
+def force_ntsc_config(ps3config):
+    c = bytearray(ps3config)
+    merged = False
+    for i in range(0, len(c), 8):
+        if c[i] == 0x20:
+            c[i + 4] = c[i + 4] | 0x40
+            merged = True
+    if not merged:
+        c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
+    return c
+
+
 # ICON0 is the game cover
 # PIC0 is logo
 # PIC1 is background image/poster
@@ -2145,9 +2161,6 @@ if __name__ == "__main__":
             if not ps3configs:
                 ps3configs = []
             ps3configs.append(bytes())
-            if args.resolution == '1':
-                ps3configs[-1] = ps3configs[-1] + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
-                print('Inject config to force NTSC') if verbose else None
 
         real_cue_file = cue_file
         real_cue_files.append(real_cue_file)
@@ -2270,6 +2283,9 @@ if __name__ == "__main__":
                 with open(games[disc_id]['ps3config'], 'rb') as f:
                       f.seek(8)
                       ps3configs[i] = ps3configs[i] + f.read()
+            if args.resolution == '1':
+                print('Inject config to force NTSC') if verbose else None
+                ps3configs[i] = force_ntsc_config(ps3configs[i])
     #
     # Force use of ps1_newemu, this disables all other config settings
     #
@@ -2277,6 +2293,7 @@ if __name__ == "__main__":
         print('Forcing ps1_newemu on all disks for this game')
         for i in range(len(real_disc_ids)):
             ps3configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
+
     #
     # Apply all PPF fixes we might need
     #
