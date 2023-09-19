@@ -1931,7 +1931,11 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
 def ApplyXDELTA(img, romhack):
     print('Applying XDELTA', romhack)
     _tmp = img + 'tmp'
-    subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
+    try:
+        subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
+    except:
+        print('Could not apply xdelta3 patch. Is xdelta3 installed?')
+        return
     os.remove(img)
     os.rename(_tmp, img)
 

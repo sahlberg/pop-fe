@@ -157,6 +157,7 @@ Command line arguments are:
 		        Only supported types are .ppf and .xdelta files.
 			There must be one romhack for each disk image in the
 			conversion.
+			This requires that you have xdelta3 installed.
 --snd0                : Provide an audio file to be played when this game
 		        is focused on the XMB. See the SND0.AT3 section below.
 --auto-libcrypt       : Try to automatically create and apply a patch for
@@ -218,6 +219,7 @@ Xdelta[3] format and have a 'xdelta' extension.
 This is a comma-separated list of hacks to apply, one hack for each disk
 in the conversion.
 If you don't want to specify a hack for a disk in the set, then specify 'none'.
+You must have xdelta3 installed in order to apply such romhacks.
 
 Example:
 To apply a romhack on a single disc:
