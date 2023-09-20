@@ -4981,6 +4981,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ca78eabf-3ea5-4e88-b022-18ef4a0f0fc0.png',
         'pic1': 'https://images.launchbox-app.com/c6263430-9682-4684-99d8-0d4d7b955f69.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Fear%20Effect%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Fear Effect/SLUS-00920.BIN',
     },
     'SLUS01056': {
         'url': "games/U/F/SLUS-00920.html",
