@@ -3493,6 +3493,7 @@ games = {
 	'title': "CARDINAL SYN",
         'pic0': 'https://images.launchbox-app.com/d65438c1-e196-4c8a-a86a-15cedea1052b.png',
         'pic1': 'https://images.launchbox-app.com/83076476-cdff-442a-8165-5cc1d823cbb7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=X-O87VNzD4o&list=PLHQiszD5HINnJ4nTQHO9bbv_-Ym_AXuah&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cardinal%20Syn%20%28USA%29_jp2.zip',
     },
     'SCUS94604': {
@@ -11344,11 +11345,15 @@ games = {
         'url': "games/U/W/SLUS-00550.html",
     	'id': 'SLUS00550',
 	'title': "WARHAMMER - DARK OMEN",
+        'pic0': 'https://images.launchbox-app.com/07046d44-a449-4268-a5fb-27e204b29c07.png',
+        'snd0': 'https://www.youtube.com/watch?v=oW-SjbQwvlg&list=PL720FA12366A94360&index=2',
     },
     'SLUS00117': {
         'url': "games/U/W/SLUS-00117.html",
     	'id': 'SLUS00117',
 	'title': "WARHAMMER - SHADOW OF THE HORNED RAT",
+        'pic0': 'https://images.launchbox-app.com/39d04a5a-892e-4118-b365-fd612091280a.png',
+        'snd0': 'https://www.youtube.com/watch?v=KT-GKRxNRk0&list=PLdPsgzw0nQQnFvIHi0IyVmgHqfEQb0d1G&index=1',
     },
     'SCUS94305': {
         'url': "games/U/W/SCUS-94305.html",
@@ -14286,6 +14291,7 @@ games = {
 	'title': "CARDINAL SYN",
         'pic0': 'https://images.launchbox-app.com/d65438c1-e196-4c8a-a86a-15cedea1052b.png',
         'pic1': 'https://images.launchbox-app.com/83076476-cdff-442a-8165-5cc1d823cbb7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=X-O87VNzD4o&list=PLHQiszD5HINnJ4nTQHO9bbv_-Ym_AXuah&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cardinal%20Syn%20%28USA%29_jp2.zip',
     },
     'SCES01077': {
@@ -14294,6 +14300,7 @@ games = {
 	'title': "CARDINAL SYN",
         'pic0': 'https://images.launchbox-app.com/d65438c1-e196-4c8a-a86a-15cedea1052b.png',
         'pic1': 'https://images.launchbox-app.com/83076476-cdff-442a-8165-5cc1d823cbb7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=X-O87VNzD4o&list=PLHQiszD5HINnJ4nTQHO9bbv_-Ym_AXuah&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cardinal%20Syn%20%28USA%29_jp2.zip',
     },
     'SCES01205': {
@@ -14302,6 +14309,7 @@ games = {
 	'title': "CARDINAL SYN",
         'pic0': 'https://images.launchbox-app.com/d65438c1-e196-4c8a-a86a-15cedea1052b.png',
         'pic1': 'https://images.launchbox-app.com/83076476-cdff-442a-8165-5cc1d823cbb7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=X-O87VNzD4o&list=PLHQiszD5HINnJ4nTQHO9bbv_-Ym_AXuah&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cardinal%20Syn%20%28USA%29_jp2.zip',
     },
     'SCES01206': {
@@ -14310,6 +14318,7 @@ games = {
 	'title': "CARDINAL SYN",
         'pic0': 'https://images.launchbox-app.com/d65438c1-e196-4c8a-a86a-15cedea1052b.png',
         'pic1': 'https://images.launchbox-app.com/83076476-cdff-442a-8165-5cc1d823cbb7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=X-O87VNzD4o&list=PLHQiszD5HINnJ4nTQHO9bbv_-Ym_AXuah&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cardinal%20Syn%20%28USA%29_jp2.zip',
     },
     'SLES01960': {
@@ -30005,11 +30014,15 @@ games = {
         'url': "games/P/W/SLES-01159.html",
     	'id': 'SLES01159',
 	'title': "WARHAMMER - DARK OMEN",
+        'pic0': 'https://images.launchbox-app.com/07046d44-a449-4268-a5fb-27e204b29c07.png',
+        'snd0': 'https://www.youtube.com/watch?v=oW-SjbQwvlg&list=PL720FA12366A94360&index=2',
     },
     'SLES00028': {
         'url': "games/P/W/SLES-00028.html",
     	'id': 'SLES00028',
 	'title': "WARHAMMER - SHADOW OF THE HORNED RAT",
+        'pic0': 'https://images.launchbox-app.com/39d04a5a-892e-4118-b365-fd612091280a.png',
+        'snd0': 'https://www.youtube.com/watch?v=KT-GKRxNRk0&list=PLdPsgzw0nQQnFvIHi0IyVmgHqfEQb0d1G&index=1',
     },
     'SCES00062': {
         'url': "games/P/W/SCES-00062.html",
@@ -37576,11 +37589,17 @@ games = {
         'url': "games/J/E/SLPS-01791.html",
     	'id': 'SLPS01791',
 	'title': "ECSAFORM",
+        'pic0': 'https://images.launchbox-app.com/7a391e53-43a1-4115-afe7-f9792e8880a5.png',
+        'pic1': 'https://images.launchbox-app.com/9ea8ad68-e43b-47d9-a1d1-0b05c1269348.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3mW8gtvLgaU',
     },
     'SLPS01792': {
         'url': "games/J/E/SLPS-01791.html",
     	'id': 'SLPS01792',
 	'title': "ECSAFORM",
+        'pic0': 'https://images.launchbox-app.com/7a391e53-43a1-4115-afe7-f9792e8880a5.png',
+        'pic1': 'https://images.launchbox-app.com/9ea8ad68-e43b-47d9-a1d1-0b05c1269348.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3mW8gtvLgaU',
     },
     'SLPS01549': {
         'url': "games/J/E/SLPS-01549.html",
@@ -40040,6 +40059,9 @@ games = {
         'url': "games/J/G/SLPS-01451.html",
     	'id': 'SLPS01451',
 	'title': "GINGA O JOUSAMA DENSETSU YUNA - FINAL EDITION",
+        'pic0': 'https://images.launchbox-app.com/8986a8f8-4bf3-466d-8525-66f82794fb9a.png',
+        'pic1': 'https://images.launchbox-app.com/ce153c6f-25ff-4301-9e72-feb622a54b22.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lGDqlJ2OWno',
     },
     'SLPS00132': {
         'url': "games/J/G/SLPS-00132.html",
@@ -50247,6 +50269,9 @@ games = {
         'url': "games/J/P/SLPS-01129.html",
     	'id': 'SLPS01129',
 	'title': "PRISONER OF ICE",
+        'pic0': 'https://images.launchbox-app.com/1ee358ff-79cd-47d8-80c2-ffa617d6098c.png',
+        'pic1': 'https://cdn.mobygames.com/covers/7948272-prisoner-of-ice-dos-advertisement.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=cLA5JegqLEE',
     },
     'SLPM86018': {
         'url': "games/J/P/SLPM-86018.html",
@@ -50530,7 +50555,6 @@ games = {
     	'id': 'SLPS03163',
 	'title': "PUZZNIC",
     },
-
     'SLPS00863':       {
         'url': "games/J/Q/SLPS-00863.html",
     	'id': 'SLPS00863',

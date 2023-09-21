@@ -848,33 +848,36 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
     
 def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None):
     # Convert ICON0 to a file object
-    if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
-        image = icon0.resize((80, 80), Image.Resampling.BILINEAR)
-    else:
-        image = icon0.resize((144, 80), Image.Resampling.BILINEAR)
-    i = io.BytesIO()
-    image.save(i, format='PNG')
-    i.seek(0)
-    icon0 = i.read()
+    if icon0:
+        if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
+            image = icon0.resize((80, 80), Image.Resampling.BILINEAR)
+        else:
+            image = icon0.resize((144, 80), Image.Resampling.BILINEAR)
+        i = io.BytesIO()
+        image.save(i, format='PNG')
+        i.seek(0)
+        icon0 = i.read()
 
     # Convert PIC0 to a file object
-    pic0 = pic0.resize((310, 180), Image.Resampling.BILINEAR).convert("RGBA")
-    i = io.BytesIO()
-    pic0.save(i, format='PNG')
-    i.seek(0)
-    pic0 = i.read()
+    if pic0:
+        pic0 = pic0.resize((310, 180), Image.Resampling.BILINEAR).convert("RGBA")
+        i = io.BytesIO()
+        pic0.save(i, format='PNG')
+        i.seek(0)
+        pic0 = i.read()
     
     # Convert PIC1 to a file object
-    pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
-    if watermark:
-        try:
-            pic1 = add_image_text(pic1, game_title, disc_ids[0])
-        except:
-            True
-    i = io.BytesIO()
-    pic1.save(i, format='PNG')
-    i.seek(0)
-    pic1 = i.read()
+    if pic1:
+        pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
+        if watermark:
+            try:
+                pic1 = add_image_text(pic1, game_title, disc_ids[0])
+            except:
+                True
+        i = io.BytesIO()
+        pic1.save(i, format='PNG')
+        i.seek(0)
+        pic1 = i.read()
 
     # Try /PSP/GAME/ if it exists as this is where a PSP memorystick will
     # store the games. 
