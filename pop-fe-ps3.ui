@@ -519,7 +519,7 @@
             <property name="variable">string:pic0_disabled_variable</property>
             <layout manager="grid">
               <property name="column">0</property>
-              <property name="row">1</property>
+              <property name="row">0</property>
               <property name="sticky">w</property>
             </layout>
           </object>
@@ -546,8 +546,8 @@
             <property name="text" translatable="yes">Use disc scan as ICON0</property>
             <property name="variable">string:disc_as_icon0_variable</property>
             <layout manager="grid">
-              <property name="column">0</property>
-              <property name="row">0</property>
+              <property name="column">1</property>
+              <property name="row">2</property>
               <property name="sticky">w</property>
             </layout>
           </object>
@@ -575,7 +575,7 @@
             <property name="variable">string:pic1_disabled_variable</property>
             <layout manager="grid">
               <property name="column">0</property>
-              <property name="row">2</property>
+              <property name="row">1</property>
               <property name="sticky">w</property>
             </layout>
           </object>
@@ -617,6 +617,20 @@
             <property name="variable">string:force_newemu_variable</property>
             <layout manager="grid">
               <property name="column">2</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="disable_snd0">
+            <property name="command" type="command" cbtype="simple">on_snd0_disabled</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Disable SND0</property>
+            <property name="variable">string:snd0_disabled_variable</property>
+            <layout manager="grid">
+              <property name="column">0</property>
               <property name="row">2</property>
               <property name="sticky">w</property>
             </layout>

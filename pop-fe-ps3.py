@@ -77,6 +77,7 @@ class PopFePs3App:
         self.pic0_disabled = 'off'
         self.pic1_bc = 'off'
         self.pic1_disabled = 'off'
+        self.snd0_disabled = 'off'
         self.icon0_disc = 'off'
         self.preview_tk = None
         self.pkgdir = None
@@ -101,6 +102,7 @@ class PopFePs3App:
             'on_pic1_dropped': self.on_pic1_dropped,
             'on_pic1_disabled': self.on_pic1_disabled,
             'on_pic1_from_bc': self.on_pic1_from_bc,
+            'on_snd0_disabled': self.on_snd0_disabled,
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
             'on_youtube_audio': self.on_youtube_audio,
@@ -252,16 +254,17 @@ class PopFePs3App:
             return
         disc_id = self.disc_ids[0]
         game = popfe.get_game_from_gamelist(disc_id)
-        print('Fetching SND0')
-        snd0 = None
-        if self._theme != '':
-            snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-ps3-work')
+        if self.snd0_disabled == 'off':
+            snd0 = None
+            print('Fetching SND0')
+            if self._theme != '':
+                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-ps3-work')
+                if snd0:
+                    temp_files.append(snd0)
+            if not snd0 and disc_id in games and 'snd0' in games[disc_id]:
+                snd0 = games[disc_id]['snd0']
             if snd0:
-                temp_files.append(snd0)
-        if not snd0 and disc_id in games and 'snd0' in games[disc_id]:
-            snd0 = games[disc_id]['snd0']
-        if snd0:
-            self.builder.get_variable('snd0_variable').set(snd0)
+                self.builder.get_variable('snd0_variable').set(snd0)
                 
         print('Fetching ICON0') if verbose else None
         self.icon0 = None
@@ -637,6 +640,9 @@ class PopFePs3App:
         self.pic1_disabled = self.builder.get_variable('pic1_disabled_variable').get()
         self.update_preview()
 
+    def on_snd0_disabled(self):
+        self.snd0_disabled = self.builder.get_variable('snd0_disabled_variable').get()
+
     def on_icon0_from_disc(self):
         self.icon0_disc = self.builder.get_variable('disc_as_icon0_variable').get()
         if not self.disc and self.disc_ids:
@@ -738,12 +744,15 @@ class PopFePs3App:
 
         self.master.config(cursor='watch')
         self.master.update()
-        
-        snd0 = self.builder.get_variable('snd0_variable').get()
-        if snd0[:24] == 'https://www.youtube.com/':
-            snd0 = popfe.get_snd0_from_link(snd0)
-            if snd0:
-                temp_files.append(snd0)
+
+        snd0 = None
+        if self.snd0_disabled == 'off':
+            snd0 = self.builder.get_variable('snd0_variable').get()
+            if snd0[:24] == 'https://www.youtube.com/':
+                snd0 = popfe.get_snd0_from_link(snd0)
+                if snd0:
+                    temp_files.append(snd0)
+
         p1 = self.pic1 if self.pic1_bc=='off' else self.back
         if self.pic1_disabled == 'on':
             p1 = None

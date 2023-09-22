@@ -282,6 +282,9 @@ def get_pic_from_game(pic, game_id, game, filename):
         True
 
     if game_id in games and pic in games[game_id]:
+        # pic None-ed out in gamedb
+        if not games[game_id][pic]:
+            return None
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
             try:
