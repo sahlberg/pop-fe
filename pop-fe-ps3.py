@@ -244,8 +244,10 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
 
     def on_theme_selected(self, event):
+        self.master.config(cursor='watch')
         self._theme = self.builder.get_object('theme', self.master).get()
         self.update_assets()
+        self.master.config(cursor='')
 
     def update_assets(self):
         if not self.disc_ids:
