@@ -7680,6 +7680,7 @@ games = {
     	'id': 'SLUS00620',
 	'title': "NEED FOR SPEED III - HOT PURSUIT",
         'pic0': 'https://images.launchbox-app.com/5279f2be-d671-47db-bb83-78c8121d2a27.png',
+        'pic1': 'https://images.launchbox-app.com/78d9cb99-e38c-4cf1-874b-bd3cdeba2fe7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29_jp2.zip',
     },
     'SLUS00602': {
@@ -20780,6 +20781,7 @@ games = {
     	'id': 'SLES01154',
 	'title': "NEED FOR SPEED III - HOT PURSUIT",
         'pic0': 'https://images.launchbox-app.com/5279f2be-d671-47db-bb83-78c8121d2a27.png',
+        'pic1': 'https://images.launchbox-app.com/78d9cb99-e38c-4cf1-874b-bd3cdeba2fe7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29_jp2.zip',
     },
     'SLES03659': {
