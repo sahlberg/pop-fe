@@ -165,6 +165,8 @@ def fetch_cached_binary(path):
     return ret.content
 
 def get_game_from_gamelist(game_id):
+    if 'url' not in games[game_id]:
+        return None
     return fetch_cached_file(games[game_id]['url']) if game_id in games else None
 
 def get_title_from_game(game_id):
@@ -253,14 +255,22 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
     except:
         True
 
-    if not game or game_id[:4] == 'UNKN':
-        return Image.new("RGBA", (80, 80), (255,255,255,0))
+    if 'icon0' in games[game_id]:
+        print('Gotta ICON0')
+        ret = requests.get(games[game_id]['icon0'], stream=True)
+        if ret.status_code != 200:
+            return None
+        fcb = ret.content
+    else:
+        if not game or game_id[:4] == 'UNKN':
+            return Image.new("RGBA", (80, 80), (255,255,255,0))
 
-    i = None
-    g = re.findall('images/covers/./.*/.*.jpg', game)
-    if not g:
-        return None
-    fcb = fetch_cached_binary(g[0])
+        i = None
+        g = re.findall('images/covers/./.*/.*.jpg', game)
+        if not g:
+            return None
+        fcb = fetch_cached_binary(g[0])
+
     if not fcb:
         return None
     i = Image.open(io.BytesIO(fcb))
