@@ -256,7 +256,6 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
         True
 
     if 'icon0' in games[game_id]:
-        print('Gotta ICON0')
         ret = requests.get(games[game_id]['icon0'], stream=True)
         if ret.status_code != 200:
             return None

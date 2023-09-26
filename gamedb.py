@@ -1,9 +1,21 @@
 games = {
+    'PBPX95001': {
+    	'id': 'PBPX95001',
+	'title': "DEMO ONE",
+        'icon0': 'https://vgcollect.com/images/front-box-art/66539.jpg',
+        'pic1': 'https://vgcollect.com/images/front-box-art/66539.jpg',
+    },
     'PBPX95007': {
     	'id': 'PBPX95007',
 	'title': "DEMO ONE VERSION 6",
         'icon0': 'http://free-iso.org/_ld/2/46460718.jpg',
         'pic1': 'http://free-iso.org/_ld/2/46460718.jpg',
+    },
+    'PBPX95008': {
+    	'id': 'PBPX95008',
+	'title': "DEMO ONE (EUROPE)",
+        'icon0': 'https://archive.org/download/DemoOneEUR-PBPX-95008-9744528/cover.jpg',
+        'pic1': 'https://archive.org/download/DemoOneEUR-PBPX-95008-9744528/cover.jpg',
     },
     'SCPS91325': {
         'url': "games/J/U/SCPS-91325.html",
@@ -5203,6 +5215,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c6263430-9682-4684-99d8-0d4d7b955f69.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F4zMW-4pG-I&list=PLRnwItmM9-WEhEIWdm86maNuXH04-Osn7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Fear%20Effect%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Fear Effect/SLUS-01056.BIN',
     },
     'SLUS01057': {
         'url': "games/U/F/SLUS-00920.html",
@@ -5212,6 +5225,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c6263430-9682-4684-99d8-0d4d7b955f69.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F4zMW-4pG-I&list=PLRnwItmM9-WEhEIWdm86maNuXH04-Osn7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Fear%20Effect%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Fear Effect/SLUS-01057.BIN',
     },
     'SLUS01058': {
         'url': "games/U/F/SLUS-00920.html",
@@ -5221,6 +5235,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c6263430-9682-4684-99d8-0d4d7b955f69.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F4zMW-4pG-I&list=PLRnwItmM9-WEhEIWdm86maNuXH04-Osn7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Fear%20Effect%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'ps3config': 'ps3configs/Fear Effect/SLUS-01058.BIN',
     },
     'SLUS01266': {
         'url': "games/U/F/SLUS-01266.html",
@@ -30048,26 +30063,31 @@ games = {
         'url': "games/P/T/SCES-03070.html",
     	'id': 'SCES03070',
 	'title': "THIS IS FOOTBALL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SCES03071': {
         'url': "games/P/T/SCES-03071.html",
     	'id': 'SCES03071',
 	'title': "THIS IS FOOTBALL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SCES03072': {
         'url': "games/P/T/SCES-03072.html",
     	'id': 'SCES03072',
 	'title': "THIS IS FOOTBALL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SCES03236': {
         'url': "games/P/T/SCES-03236.html",
     	'id': 'SCES03236',
 	'title': "THIS IS FOOTBALL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SCES03075': {
         'url': "games/P/T/SCES-03075.html",
     	'id': 'SCES03075',
 	'title': "THIS IS FOOTBALL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SLES02340': {
         'url': "games/P/T/SLES-02340.html",
@@ -30174,6 +30194,7 @@ games = {
         'url': "games/P/T/SLES-03459.html",
     	'id': 'SLES03459',
 	'title': "TINTIN - DESTINATION ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/9d9b36d2-efb9-47b9-8c4e-8226370f19f0.png',
     },
     'SCES01338': {
         'url': "games/P/T/SCES-01338.html",
@@ -31257,6 +31278,7 @@ games = {
         'url': "games/P/V/SLES-01393.html",
     	'id': 'SLES01393',
 	'title': "VICTORY BOXING 2",
+        'pic0': 'https://images.launchbox-app.com/4cfe303a-5e70-4ecd-8484-b28f45365b11.png',
     },
     'SLES02727': {
         'url': "games/P/V/SLES-02727.html",
@@ -61571,5 +61593,25 @@ ppf_fixes = {
     'SLUS00330': {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',
         'ppf': 'ppf/SLUS-00330.ppf'
+    },
+    'SLES00528': {
+        'desc': 'PPF for MortalCombatTrilogy countdown issue',
+        'ppf': 'ppf/SLES-00528.ppf'
+    },
+    'SLES00053': {
+        'desc': 'PPF for PS1 BIOS issue on PS3',
+        'ppf': 'ppf/SLES-00053.ppf'
+    },
+    'PBPX95001': {
+        'desc': 'PPF to force region to Japan',
+        'ppf': 'ppf/PBPX-xxxxx.ppf'
+    },
+    'PBPX95007': {
+        'desc': 'PPF to force region to Japan',
+        'ppf': 'ppf/PBPX-xxxxx.ppf'
+    },
+    'PBPX95008': {
+        'desc': 'PPF to force region to Japan',
+        'ppf': 'ppf/PBPX-xxxxx.ppf'
     },
 }
