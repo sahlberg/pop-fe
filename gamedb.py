@@ -35127,6 +35127,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/968d92a9-cc09-44bb-8f70-a31dce56a03a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=D1UhYyRdKnY&list=PL9DF2CA195A156BE1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bloody%20Roar%20II%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Bloody Roar 2/SLPS-01842.BIN',
     },
     'SLPS01502': {
         'url': "games/J/B/SLPS-01502.html",
