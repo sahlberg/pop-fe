@@ -11775,6 +11775,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba0c2312-fd7c-4022-b9a8-8e9dbe41a147.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LAxD6e_t9vM&list=PLOqYa2mCm4JHWMZ04U5018dP0WLitlAAI&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
+        'ps3config': 'ps3configs/Um Jammer Lammy/SCUS-94448.BIN',
     },
     'SLUS00686': {
         'url': "games/U/U/SLUS-00686.html",
