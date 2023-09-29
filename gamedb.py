@@ -49322,6 +49322,9 @@ games = {
         'url': "games/J/N/SLPS-00006.html",
     	'id': 'SLPS00006',
 	'title': "NEKKETSU OYAKO",
+        'pic0': 'https://images.launchbox-app.com/822f44c5-9aa8-4182-8a30-48dfd566cc7f.png',
+        'pic1': 'https://images.launchbox-app.com/6c57475d-0c36-4462-879c-4a0060035eb7.png',
+        'snd0': 'https://www.youtube.com/watch?v=kvhuLRyVN4w',
     },
     'SLPS01616': {
         'url': "games/J/N/SLPS-01616.html",

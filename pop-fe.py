@@ -106,12 +106,9 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     except:
         print('Failed to read game id. Falling back to raw read')
         with open(path, 'rb') as f:
-            buf = f.read(10*1024*1024)
-            idx = buf.find('cdrom:'.encode())
-            if (idx > 0):
-                buf = str(buf[idx:idx+1024])
-            else:
-                return 'UNKN00000'
+            f.seek(0x8028)
+            buf = str(f.read(9))[2:-1]
+            return buf
 
     idx = buf.find('cdrom:')
     if idx < 0:
