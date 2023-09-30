@@ -58957,6 +58957,8 @@ games = {
         'url': "games/J/T/SLPS-00719.html",
     	'id': 'SLPS00719',
 	'title': "THE GREAT BATTLE VI",
+        'pic0': 'https://images.launchbox-app.com/18acbe0a-d4fd-461e-b6b7-de2abab37821.png',
+        'snd0': 'https://www.youtube.com/watch?v=n4xWWFEhImo',
     },
     'SLPS03178': {
         'url': "games/J/T/SLPS-03178.html",
@@ -61010,7 +61012,10 @@ games = {
 gameid_translation = {
     'SLPS0208': {
         'id': 'SLPS00208'
-    }
+    },
+    'THEGREATB': {
+        'id': 'SLPS00719'
+    },
 }
 
 libcrypt = {
