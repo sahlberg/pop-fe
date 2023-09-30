@@ -14329,6 +14329,13 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=Y-cULWDgzAk',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Big%20Bass%20Fishing%20%28USA%29_jp2.zip',
     },
+    'SLES04023': {
+        'url': "games/P/S/SLES-04023.html",
+    	'id': 'SLES04023',
+	'title': "SANTA CLAUS SAVES THE EARTH",
+        'pic0': 'https://images.launchbox-app.com/f35685a7-febc-471e-909b-cb78f739ee68.png',
+        'snd0': 'https://www.youtube.com/watch?v=5nK3WsJShKU&list=PLAHf7_wSSLrjklnNFbX2eUsqngPnysVS2&index=1',
+    },
     'SLES04025': {
         'url': "games/P/B/SLES-04025.html",
     	'id': 'SLES04025',
