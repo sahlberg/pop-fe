@@ -113,7 +113,7 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
             return buf
 
     # extra debug
-    print('SYSTEM.CNF:', buf)
+    print('SYSTEM.CNF:', buf, type(buf))
     with open(path, 'rb') as f:
         f.seek(0x8028)
         _b = f.read(9)
