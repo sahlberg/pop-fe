@@ -107,9 +107,18 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         print('Failed to read game id. Falling back to raw read')
         with open(path, 'rb') as f:
             f.seek(0x8028)
-            buf = str(f.read(9))[2:-1]
+            _b = f.read(9)
+            print('RAW', _b)
+            buf = str(_b)[2:-1]
             return buf
 
+    # extra debug
+    print('SYSTEM.CNF:', buf)
+    with open(path, 'rb') as f:
+        f.seek(0x8028)
+        _b = f.read(9)
+        print('BUF read from 0x8028', _b)
+        
     idx = buf.find('cdrom:')
     if idx < 0:
         raise Exception('Could not read system.cnf')
