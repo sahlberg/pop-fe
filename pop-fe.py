@@ -115,7 +115,13 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         raise Exception('Could not read system.cnf')
 
     buf = buf[idx + 6:idx + 50]
+    idx = buf.find('\\r')
+    if idx > 0:
+        buf = buf[:idx]
     idx = buf.find('\r')
+    if idx > 0:
+        buf = buf[:idx]
+    idx = buf.find('\\n')
     if idx > 0:
         buf = buf[:idx]
     idx = buf.find('\n')
