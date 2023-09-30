@@ -124,6 +124,7 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         raise Exception('Could not read system.cnf')
 
     buf = buf[idx + 6:idx + 50]
+    print('BUF00', buf)
     idx = buf.find('\r')
     if idx > 0:
         buf = buf[:idx]
@@ -135,10 +136,12 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         buf = buf[:idx]
     # Some games are of the form \DIR\SLPS12345, get rid of the path
     buf = buf.split('\\')[-1]
+    print('BUF05', buf)
     
     bad_chars = "\\_. -"
     for i in bad_chars:
         buf = buf.replace(i, "")
+    print('BUF09', '[' + buf + ']')
 
     game_id = buf.upper()
     if len(game_id) != 9:
