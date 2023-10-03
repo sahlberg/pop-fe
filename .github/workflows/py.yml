@@ -137,7 +137,7 @@ jobs:
           cp dist/pkg/pkg.exe dist/pop-fe-ps3/.
           cp dist/pkg/pkgcrypt*.pyd dist/pop-fe-ps3/.
           cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
-          cp pop-fe-psp.ui dist/pop-fe-ps3/.
+          cp pop-fe-psp.ui dist/pop-fe-ps3/_internal/.
           cp dist/pop-fe-psp/pop-fe-psp.exe dist/pop-fe-ps3/.
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
