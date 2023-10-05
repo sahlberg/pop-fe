@@ -170,7 +170,6 @@ Command line arguments are:
                         are to be installed with their respective bins, inside 
                         a subfolder. Includes an m3u file for correctly loading
                         multi-dics games.
-                        the different discs inputted.
 --retroarch-pbp-dir  : The directory where retroarch game pbp images are to be
                         installed.
 --retroarch-thumbnail-dir : Where the coverimage for retroarch should go.
