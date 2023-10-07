@@ -3433,6 +3433,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/70879365-ab55-4bd3-9f0f-dda36f35f566.jpg',
         'snd0': 'https://www.youtube.com/watch?v=tHeidNcMhJE&list=PLBA4AF37FC83B3622&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bugs%20Bunny%20-%20Lost%20in%20Time%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Bugs Bunny - Lost in Time/SLUS-00838.bin',
     },
     'SLUS01144': {
         'url': "games/U/B/SLUS-01144.html",
@@ -9392,6 +9393,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
         'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Re-Volt/SLUS-00851.bin',
     },
     'SLUS00012': {
         'url': "games/U/R/SLUS-00012.html",
@@ -14850,6 +14852,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/70879365-ab55-4bd3-9f0f-dda36f35f566.jpg',
         'snd0': 'https://www.youtube.com/watch?v=tHeidNcMhJE&list=PLBA4AF37FC83B3622&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bugs%20Bunny%20-%20Lost%20in%20Time%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Bugs Bunny - Lost in Time/SLES-01726.bin',
     },
     'SLES02896': {
         'url': "games/P/B/SLES-02896.html",
