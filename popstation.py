@@ -2420,6 +2420,7 @@ class popstation(object):
         self._subchannels = []
         self._verbose = False
         self._striptracks = False
+        # complevel is >0 for PSP and ==0 for PS3
         self._complevel = 1
         self._disc_ids = ['SLUS00000']
         self._game_title = 'TITLE'
@@ -2725,8 +2726,14 @@ class popstation(object):
         if self._configs:
             _l = len(self._configs[disc_num])
             if _l:
-                buf[0x24:0x24 + 8] = bytes([0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00])
-                buf[0x2c:0x2c + _l] = self._configs[disc_num]
+                if self._complevel:
+                    # PSP
+                    buf[0x20:0x20 + 8] = bytes([0x70, 0x00, 0x07, 0x06, 0x00, 0x00, 0x06, 0x06])
+                    buf[0x28:0x28 + _l] = self._configs[disc_num]
+                else:
+                    # PS3
+                    buf[0x24:0x24 + 8] = bytes([0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00])
+                    buf[0x2c:0x2c + _l] = self._configs[disc_num]
         fh.write(buf)
 
         # Block #3

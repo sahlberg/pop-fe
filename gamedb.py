@@ -3316,6 +3316,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/67a30f77-495f-419a-bbd4-c9235379a48c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FBzZB7rZlqA&list=PL4A9348AFB63EBB15&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Brave%20Fencer%20Musashi%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Brave Fencer Musashi/SLUS-00726.bin',
     },
     'SLUS90029': {
         'url': "games/U/B/SLUS-00726.html",

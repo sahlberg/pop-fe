@@ -823,7 +823,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[]):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None):
     print('Create PBP file for', game_title) if verbose else None
 
     SECTLEN = 2352
@@ -832,6 +832,8 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
     p.disc_ids = disc_ids
     p.game_title = game_title
     p.subchannels = subchannels
+    if configs:
+        p.configs = configs
     if icon0:
         p.icon0 = icon0
     if pic0:
@@ -867,7 +869,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None):
     # Convert ICON0 to a file object
     if icon0:
         if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
@@ -942,7 +944,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False, subchannels=subchannels)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False, subchannels=subchannels, configs=configs)
 
     if manual:
         print('Installing manual as', f + '/DOCUMENT.DAT')
@@ -2148,6 +2150,7 @@ if __name__ == "__main__":
         exit(0)
 
     ps3configs = None
+    pspconfigs = None
     
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
@@ -2189,6 +2192,10 @@ if __name__ == "__main__":
             if not ps3configs:
                 ps3configs = []
             ps3configs.append(bytes())
+        if args.psp_dir:
+            if not pspconfigs:
+                pspconfigs = []
+            pspconfigs.append(bytes())
 
         real_cue_file = cue_file
         real_cue_files.append(real_cue_file)
@@ -2301,7 +2308,7 @@ if __name__ == "__main__":
                 print('Found an external config ', real_cue_files[i][:-3]+'ps3config')
                 with open(real_cue_files[i][:-3]+'ps3config', 'rb') as f:
                       f.seek(8)
-                      self.configs[-1] = self.configs[-1] + f.read()
+                      ps3configs[-1] = ps3configs[-1] + f.read()
             except:
                 True
                 
@@ -2314,6 +2321,23 @@ if __name__ == "__main__":
             if args.resolution == '1':
                 print('Inject config to force NTSC') if verbose else None
                 ps3configs[i] = force_ntsc_config(ps3configs[i])
+    if args.psp_dir:
+        for i in range(len(real_disc_ids)):
+            try:
+                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
+                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
+                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
+                      f.seek(8)
+                      pspconfigs[-1] = pspconfigs[-1] + f.read()
+            except:
+                True
+                
+            disc_id = real_disc_ids[i]
+            if disc_id in games and 'pspconfig' in games[disc_id]:
+                print('Found an external config for', disc_id) if verbose else None
+                with open(games[disc_id]['pspconfig'], 'rb') as f:
+                      f.seek(8)
+                      pspconfigs[i] = pspconfigs[i] + f.read()
     #
     # Force use of ps1_newemu, this disables all other config settings
     #
@@ -2521,7 +2545,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:

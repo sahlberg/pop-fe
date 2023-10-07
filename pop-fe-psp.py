@@ -71,6 +71,7 @@ class PopFePs3App:
         self.watermark = 'on'
         self.pic0_disabled = 'off'
         self.snd0_disabled = 'off'
+        self.configs = []
         self.subdir='pop-fe-psp-work/'
         
         self.master = master
@@ -146,6 +147,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.preview_tk = None
+        self.configs = []
         self.builder.get_variable('watermark_variable').set(self.watermark)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
@@ -326,7 +328,21 @@ class PopFePs3App:
         self.disc_ids.append(disc_id)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
+        self.configs.append(bytes())
 
+        try:
+            os.stat(cue_file[:-3]+'pspconfig').st_size
+            print('Found an external config ', cue_file[:-3]+'pspconfig')
+            with open(cue_file[:-3]+'pspconfig', 'rb') as f:
+                      f.seek(8)
+                      self.configs[-1] = self.configs[-1] + f.read()
+        except:
+            True
+        if disc_id in games and 'pspconfig' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['pspconfig'], 'rb') as f:
+                      f.seek(8)
+                      self.configs[-1] = self.configs[-1] + f.read()
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
@@ -520,7 +536,7 @@ class PopFePs3App:
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
 
         aea_files = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
-        
+
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -528,7 +544,8 @@ class PopFePs3App:
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, subdir=self.subdir, snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
-                         subchannels=subchannels, manual=manual)
+                         subchannels=subchannels, manual=manual,
+                         configs=self.configs)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

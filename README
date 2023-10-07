@@ -230,8 +230,8 @@ $ ./pop-fe.py --psp-dir=auto --romhacks none,X.ppf D1.cue D2.cue
 
 PS3 External config files
 =========================
-External configs is a way to add commands to the ps1_netemu emulator that to
-tweak gameplay for individual titles.
+External configs is a way to add commands to the ps1_netemu emulator to
+tweak gameplay and fix bugs for individual titles.
 
 See: https://www.psdevwiki.com/ps3/Talk:PS1_Emulation#External_Configs
 
@@ -243,6 +243,20 @@ automatically eject when you create a PS3 package.
 This is done by storing the config file in the same directory as the cue file
 and with the filename <cue-file>.ps3config
 
+PSP External config files
+=========================
+External configs is a way to add commands to the pops emulator to
+tweak gameplay and fix bugs for individual titles.
+
+See: ...
+
+pop-fe/pop-fe-psp comes with a bunch of configs built in for various games.
+(See the pspconfigs subdirectory.)
+
+You can also specify additional config files that pop-fe/pop-fe-psp will
+automatically eject when you create a PSP EBOOT.
+This is done by storing the config file in the same directory as the cue file
+and with the filename <cue-file>.pspconfig
 
 Image files for PS3 packages
 ============================
