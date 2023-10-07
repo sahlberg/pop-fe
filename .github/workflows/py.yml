@@ -134,14 +134,14 @@ jobs:
           mkdir dist/pop-fe-ps3/atracdenc/src
           cp dist/binmerge/binmerge.exe dist/pop-fe-ps3/.
           cp dist/cue2cu2/cue2cu2.exe dist/pop-fe-ps3/.
-          cp dist/pkg/pkg.exe dist/pop-fe-ps3/.
-          cp dist/pkg/pkgcrypt*.pyd dist/pop-fe-ps3/.
+          cp -r -Force dist/pkg/* dist/pop-fe-ps3/.
           cp dist/pop-fe/pop-fe.exe dist/pop-fe-ps3/.
           cp pop-fe-psp.ui dist/pop-fe-ps3/_internal/.
           cp dist/pop-fe-psp/pop-fe-psp.exe dist/pop-fe-ps3/.
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
+          cp dist/pop-fe-ps3/_internal/PS3LOGO.DAT dist/pop-fe-ps3/.
           mkdir dist/pop-fe-ps3/libcrypt
           cp libcrypt/*.* dist/pop-fe-ps3/libcrypt
           mkdir dist/pop-fe-ps3/ppf
