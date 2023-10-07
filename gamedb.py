@@ -3009,6 +3009,7 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
         # Fixes black screen after intro FMV
         'ps3config': 'ps3configs/Transformers Beast Wars Transmetals/SLUS-01160.BIN',
+        'pspconfig': 'pspconfigs/Transformers - Beast Wars Transmetals/SLUS-01160.bin',
     },
     'SLUS01489': {
         'url': "games/U/B/SLUS-01489.html",
@@ -3848,6 +3849,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-00722.bin',
     },
     'SLUS00866': {
         'url': "games/U/C/SLUS-00866.html",
@@ -6379,6 +6381,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Jade%20Cacoon%20[SLUS-00854]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLUS-00854.bin',
     },
     'SLUS01139': {
         'url': "games/U/J/SLUS-01139.html",
@@ -9527,6 +9530,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Road Rash/SLES-00158.bin',
     },
     'SLUS00524': {
         'url': "games/U/R/SLUS-00524.html",
@@ -9954,6 +9958,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLUS-00902.bin',
     },
     'SLUS00707': {
         'url': "games/U/S/SLUS-00707.html",
@@ -9963,6 +9968,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1498ac14-3e40-44f8-8d8a-498bb9fa89be.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mdqNshgDwtQ&list=PLvknaMBlC64hztXIhZZf-ZQueCNLJAB6w&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Hill%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Hill/SLES-01514.bin',
     },
     'SLUS00728': {
         'url': "games/U/S/SLUS-00728.html",
@@ -10032,6 +10038,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e6fa3274-5d35-48ec-b9a0-a3a3327a2295.png',
         'pic1': 'https://images.launchbox-app.com/ded804f8-244e-48b0-b397-06f551b952a8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Sled%20Storm%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Sled Storm/SLUS-00955.bin',
     },
     'SLUS01555': {
         'url': "games/U/S/SLUS-01555.html",
@@ -10085,6 +10092,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6e0ae6f2-28e8-4fa1-811c-b0475d3879aa.png',
         'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Soul%20Blade%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Soul Blade/SLUS-00240.bin',
     },
     'SLUS00822': {
         'url': "games/U/S/SLUS-00822.html",
@@ -11820,6 +11828,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vagrant Story/SLUS-01040.bin',
     },
     'SLUS01156': {
         'url': "games/U/V/SLUS-01156.html",
@@ -17649,6 +17658,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a2548aa7-6cc6-40e9-975a-c5a8cf5f975b.png',
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLES-02201.bin',
     },
     'SLES02202': {
         'url': "games/P/J/SLES-02202.html",
@@ -17657,6 +17667,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a2548aa7-6cc6-40e9-975a-c5a8cf5f975b.png',
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLES-02202.bin',
     },
     'SLES02203': {
         'url': "games/P/J/SLES-02203.html",
@@ -17665,6 +17676,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a2548aa7-6cc6-40e9-975a-c5a8cf5f975b.png',
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLES-02203.bin',
     },
     'SLES02205': {
         'url': "games/P/J/SLES-02205.html",
@@ -17673,6 +17685,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a2548aa7-6cc6-40e9-975a-c5a8cf5f975b.png',
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLES-02205.bin',
     },
     'SLES02206': {
         'url': "games/P/J/SLES-02206.html",
@@ -17681,6 +17694,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a2548aa7-6cc6-40e9-975a-c5a8cf5f975b.png',
         'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
+        'pspconfig': 'pspconfigs/Jade Cocoon - Story of the Tamamayu/SLES-02206.bin',
     },
     'SLES01983': {
         'url': "games/P/J/SLES-01983.html",
@@ -22580,6 +22594,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-01392.bin',
     },
     'SLES01405': {
         'url': "games/P/C/SLES-01405.html",
@@ -22588,6 +22603,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-01405.bin',
     },
     'SLES01406': {
         'url': "games/P/C/SLES-01406.html",
@@ -22596,6 +22612,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-01406.bin',
     },
     'SLES01407': {
         'url': "games/P/C/SLES-01407.html",
@@ -22604,6 +22621,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-01407.bin',
     },
     'SLES01408': {
         'url': "games/P/C/SLES-01408.html",
@@ -22612,6 +22630,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-01408.bin',
     },
     'SLES00530': {
         'url': "games/P/C/SLES-00530.html",
@@ -23624,6 +23643,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dino Crisis/SLES-02207.bin',
     },
     'SLES02208': {
         'url': "games/P/D/SLES-02208.html",
@@ -23633,6 +23653,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dino Crisis/SLES-02208.bin',
     },
     'SLES02209': {
         'url': "games/P/D/SLES-02209.html",
@@ -23642,6 +23663,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dino Crisis/SLES-02209.bin',
     },
     'SLES02210': {
         'url': "games/P/D/SLES-02210.html",
@@ -23651,6 +23673,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dino Crisis/SLES-02210.bin',
     },
     'SLES02211': {
         'url': "games/P/D/SLES-02211.html",
@@ -23660,6 +23683,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dino%20Crisis%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dino Crisis/SLES-02211.bin',
     },
     'SLES03221': {
         'url': "games/P/D/SLES-03221.html",
@@ -26916,6 +26940,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Road Rash/SLES-00158.bin',
     },
     'SLES00910': {
         'url': "games/P/R/SLES-00910.html",
@@ -27562,6 +27587,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLES-02792.bin',
     },
     'SLES02989': {
         'url': "games/P/S/SLES-02989.html",
@@ -27570,6 +27596,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLES-02989.bin',
     },
     'SLES02990': {
         'url': "games/P/S/SLES-02990.html",
@@ -27578,6 +27605,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLES-02990.bin',
     },
     'SLES02991': {
         'url': "games/P/S/SLES-02991.html",
@@ -27586,6 +27614,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLES-02991.bin',
     },
     'SLES02992': {
         'url': "games/P/S/SLES-02992.html",
@@ -27594,6 +27623,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d75d6ed7-8128-460e-8707-e16c2cffb67e.png',
         'pic1': 'https://images.launchbox-app.com/a14b360e-4a8c-4c3a-9e94-1eb68257dcdf.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Bomber%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Bomber/SLES-02992.bin',
     },
     'SLES01514': {
         'url': "games/P/S/SLES-01514.html",
@@ -27603,6 +27633,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1498ac14-3e40-44f8-8d8a-498bb9fa89be.jpg',
         'snd0': 'https://www.youtube.com/watch?v=mdqNshgDwtQ&list=PLvknaMBlC64hztXIhZZf-ZQueCNLJAB6w&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Silent%20Hill%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Silent Hill/SLUS-00707.bin',
     },
     'SLES04157': {
         'url': "games/P/S/SLES-04157.html",
@@ -27683,6 +27714,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e6fa3274-5d35-48ec-b9a0-a3a3327a2295.png',
         'pic1': 'https://images.launchbox-app.com/ded804f8-244e-48b0-b397-06f551b952a8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Sled%20Storm%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Sled Storm/SLES-02194.bin',
     },
     'SLES01580': {
         'url': "games/P/S/SLES-01580.html",
@@ -27755,6 +27787,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6e0ae6f2-28e8-4fa1-811c-b0475d3879aa.png',
         'pic1': 'https://images.launchbox-app.com/be94a305-4a38-4516-9133-2945c4f59665.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Soul%20Blade%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Soul Blade/SCES-00577.bin',
     },
     'SLES02158': {
         'url': "games/P/S/SLES-02158.html",
@@ -31204,6 +31237,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Vagrant%20Story%20[SLES-02754]%20(E)(Du).cbr',
+        'pspconfig': 'pspconfigs/Vagrant Story/SLES-02754.bin',
     },
     'SLES02755': {
         'url': "games/P/V/SLES-02755.html",
@@ -31213,6 +31247,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vagrant Story/SLES-02755.bin',
     },
     'SLES02756': {
         'url': "games/P/V/SLES-02756.html",
@@ -31222,6 +31257,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/bfae8b8a-268b-4d30-8b32-80d730309eb3.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nUFcM7aQVYc&list=PL2ikugbx1BP3HU9-kh4GdTN8rgzNgI7SW&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vagrant%20Story%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vagrant Story/SLES-02756.bin',
     },
     'SLES02731': {
         'url': "games/P/V/SLES-02731.html",
@@ -34657,6 +34693,7 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beast%20Wars%20-%20Transformers%20%28USA%29_jp2.zip',
         # Fixes black screen after intro FMV
         'ps3config': 'ps3configs/Transformers Beast Wars Transmetals/SLPS-02468.BIN',
+        'pspconfig': 'pspconfigs/Transformers - Beast Wars Transmetals/SLPS-02468.bin',
     },
     'SCPS18013': {
         'url': "games/J/B/SCPS-18013.html",
@@ -52670,6 +52707,7 @@ games = {
         'url': "games/J/R/SLPS-02038.html",
     	'id': 'SLPS02038',
 	'title': "RACING LAGOON",
+        'pspconfig': 'pspconfigs/Racing Lagoon/SLPS-02038.bin',
     },
     'SLPS91487': {
         'url': "games/J/R/SLPS-91487.html",
@@ -53264,6 +53302,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/a646e42d-ec81-44dc-b012-79dfa06c8cee.png',
         'pic1': 'https://images.launchbox-app.com/8703cb39-521c-44f0-861a-8f69de893aff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Road%20Rash%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Road Rash/SLPS-00243.bin',
     },
     'SCPS10103': {
         'url': "games/J/R/SCPS-10103.html",

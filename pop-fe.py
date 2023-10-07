@@ -6,6 +6,9 @@
 # The current directory where you run this utility from needs to be writable
 # so that we can use it to store temporary files during the conversing process.
 
+# clean ppf patches for libcrypt
+# https://archive.org/details/lib-crypt-ppf-patches
+
 try:
     from PIL import Image, ImageDraw, ImageFont
 except:
