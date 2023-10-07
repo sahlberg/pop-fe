@@ -3294,6 +3294,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00083.bin',
     },
     'SLUS00171': {
         'url': "games/U/B/SLUS-00083.html",
@@ -3301,6 +3302,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00171.bin',
     },
     'SLUS01508': {
         'url': "games/U/B/SLUS-01508.html",
