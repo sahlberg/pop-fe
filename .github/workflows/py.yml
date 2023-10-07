@@ -145,6 +145,8 @@ jobs:
           cp ppf/*.* dist/pop-fe-ps3/ppf
           mkdir dist/pop-fe-ps3/ps3configs
           cp -r ps3configs/* dist/pop-fe-ps3/ps3configs
+          mkdir dist/pop-fe-ps3/pspconfigs
+          cp -r pspconfigs/* dist/pop-fe-ps3/pspconfigs
           cp -r -Force dist/pkg/* dist/pop-fe-ps3/.
           cp -r -Force dist/pop-fe/* dist/pop-fe-ps3/.
           cp -r -Force dist/pop-fe-psp/* dist/pop-fe-ps3/.
