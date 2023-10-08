@@ -113,6 +113,7 @@ class PopFePs3App:
             'on_force_pal': self.on_force_pal,
             'on_force_ntsc': self.on_force_ntsc,
             'on_force_newemu': self.on_force_newemu,
+            'on_allow_swapdisc': self.on_allow_swapdisc,
         }
 
         builder.connect_callbacks(callbacks)
@@ -630,6 +631,9 @@ class PopFePs3App:
     def on_force_newemu(self):
         True
         
+    def on_allow_swapdisc(self):
+        True
+        
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
         self.update_preview()
@@ -768,6 +772,11 @@ class PopFePs3App:
         
         aea_files = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
 
+        if self.builder.get_variable('allow_discswap_variable').get() == 'on':
+            print('Enable swapdisc for all discs')
+            for idx in range(len(self.cue_files)):
+                self.configs[idx] = bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+        
         #
         # Force NEWEMU
         #
