@@ -12635,11 +12635,15 @@ games = {
         'url': "games/P/0-9/SLES-03658.html",
     	'id': 'SLES03658',
 	'title': "100% STAR",
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/fdb2414c-1bcc-45aa-96e0-873af0c9a256.png',
     },
     'SLES03784': {
         'url': "games/P/0-9/SLES-03784.html",
     	'id': 'SLES03784',
 	'title': "100% STAR",
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/fdb2414c-1bcc-45aa-96e0-873af0c9a256.png',
     },
     'SCES00400': {
         'url': "games/P/0-9/SCES-00400.html",
@@ -12746,6 +12750,7 @@ games = {
         'url': "games/P/A/SLES-02695.html",
     	'id': 'SLES02695',
 	'title': "A2 RACER - EUROPA TOUR",
+        'pic0': 'https://images.launchbox-app.com/a914c04b-d99a-4e05-9e6b-ca2c52b55b17.png',
     },
     'SLES01341': {
         'url': "games/P/A/SLES-01341.html",
@@ -12914,11 +12919,15 @@ games = {
         'url': "games/P/A/SLES-04108.html",
     	'id': 'SLES04108',
 	'title': "ADIBOO & PAZIRAL'S SECRET",
+        'pic0': 'https://images.launchbox-app.com/4e5c4dbc-f75a-4128-95a7-a4a0beab63a8.png',
+        'pic1': 'https://images.launchbox-app.com/068e4b9a-14a0-4518-94d2-7e73c26b99ae.jpg',
     },
     'SCES03558': {
         'url': "games/P/A/SCES-03558.html",
     	'id': 'SCES03558',
 	'title': "ADIBOO ET L'OMBRE VERTE",
+        'pic0': 'https://images.launchbox-app.com/4e5c4dbc-f75a-4128-95a7-a4a0beab63a8.png',
+        'pic1': 'https://images.launchbox-app.com/068e4b9a-14a0-4518-94d2-7e73c26b99ae.jpg',
     },
     'SLES00189': {
         'url': "games/P/A/SLES-00189.html",
@@ -12959,6 +12968,8 @@ games = {
         'url': "games/P/A/SLES-00474.html",
     	'id': 'SLES00474',
 	'title': "AGENT ARMSTRONG",
+        'pic0': 'https://images.launchbox-app.com/faa15c29-dcc1-4105-bc24-3e4143c9843c.png',
+        'pic1': 'https://images.launchbox-app.com/df5e972d-c5f3-4217-9571-57ef8acb4196.jpg',
     },
     'SLES00124': {
         'url': "games/P/A/SLES-00124.html",
@@ -12993,6 +13004,8 @@ games = {
         'url': "games/P/A/SLES-02137.html",
     	'id': 'SLES02137',
 	'title': "AIRONAUTS",
+        'pic0': 'https://images.launchbox-app.com/7c7c02c8-3cf7-458c-8957-104286498b5d.png',
+        'pic1': 'https://images.launchbox-app.com/01e3f6f8-b328-411c-a93a-31ec866134f7.jpg',
     },
     'SLES01298': {
         'url': "games/P/A/SLES-01298.html",
@@ -14001,16 +14014,19 @@ games = {
         'url': "games/P/A/SLES-03052.html",
     	'id': 'SLES03052',
 	'title': "AZTEC - MALEDICTION AU COER DE LA CITE D'OR",
+        'pic0': 'https://images.launchbox-app.com/32186147-03e5-4234-9384-9dccec837622.png',
     },
     'SLES03053': {
         'url': "games/P/A/SLES-03053.html",
     	'id': 'SLES03053',
 	'title': "AZTEC - THE CURSE IN THE HEART OF THE CITY OF GOLD",
+        'pic0': 'https://images.launchbox-app.com/32186147-03e5-4234-9384-9dccec837622.png',
     },
     'SLES03109': {
         'url': "games/P/A/SLES-03109.html",
     	'id': 'SLES03109',
 	'title': "AZTECAS - LA MALDICIAN DE LA CIUDAD DEL ORO",
+        'pic0': 'https://images.launchbox-app.com/32186147-03e5-4234-9384-9dccec837622.png',
     },
     'SLES01219': {
         'url': "games/P/A/SLES-01219.html",
@@ -14333,11 +14349,14 @@ games = {
         'url': "games/P/B/SLES-02096.html",
     	'id': 'SLES02096',
 	'title': "BEATMANIA",
+        'pic0': 'https://images.launchbox-app.com/7e10b2ad-6479-497a-aad0-89aeafe80438.png',
+        'pic1': 'https://images.launchbox-app.com/c995c28b-8162-491e-8b63-0646e2ec5f7c.jpg',
     },
     'SLES00334': {
         'url': "games/P/B/SLES-00334.html",
     	'id': 'SLES00334',
 	'title': "BEDLAM",
+        'pic0': 'https://images.launchbox-app.com/d5c42e2a-aa3e-41b7-9721-041eca742cc3.png',
     },
     'SLES04093': {
         'url': "games/P/B/SLES-04093.html",
@@ -14421,16 +14440,19 @@ games = {
         'url': "games/P/B/SLES-00349.html",
     	'id': 'SLES00349',
 	'title': "BLAM! MACHINEHEAD",
+        'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
     },
     'SLES00350': {
         'url': "games/P/B/SLES-00350.html",
     	'id': 'SLES00350',
 	'title': "BLAM! MACHINEHEAD",
+        'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
     },
     'SLES00351': {
         'url': "games/P/B/SLES-00351.html",
     	'id': 'SLES00351',
 	'title': "BLAM! MACHINEHEAD",
+        'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
     },
     'SLES00476': {
         'url': "games/P/B/SLES-00476.html",
@@ -14535,6 +14557,8 @@ games = {
         'url': "games/P/B/SCES-01443.html",
     	'id': 'SCES01443',
 	'title': "BLOOD LINES",
+        'pic0': 'https://images.launchbox-app.com/936c7ffa-f99c-4d37-9e79-25f2c4699e29.png',
+        'pic1': 'https://images.launchbox-app.com/83cd1d34-cb57-4206-8bfc-05cdaca317d3.jpg',
     },
     'SLES00075': {
         'url': "games/P/B/SLES-00075.html",
@@ -14681,6 +14705,7 @@ games = {
         'url': "games/P/B/SLES-00258.html",
     	'id': 'SLES00258',
 	'title': "BREAK POINT",
+        'pic0': 'https://images.launchbox-app.com/b681c2a4-e1ee-4163-a260-b0db116860e9.png',
     },
     'SLES01304': {
         'url': "games/P/B/SLES-01304.html",
@@ -14974,11 +14999,15 @@ games = {
         'url': "games/P/B/SLES-03563.html",
     	'id': 'SLES03563',
 	'title': "BYGGMESTER BOB - KAN DET FIKSES?",
+        'pic0': 'https://images.launchbox-app.com/ee268a52-640d-4413-93c9-bdf8dd41f9e7.png',
+        'pic1': 'https://images.launchbox-app.com/45904511-ed92-41e8-a73e-36e8aebb8d15.jpg',
     },
     'SLES03562': {
         'url': "games/P/B/SLES-03562.html",
     	'id': 'SLES03562',
 	'title': "BYGGARE BOB - KAN VI FIXA DET?",
+        'pic0': 'https://images.launchbox-app.com/ee268a52-640d-4413-93c9-bdf8dd41f9e7.png',
+        'pic1': 'https://images.launchbox-app.com/45904511-ed92-41e8-a73e-36e8aebb8d15.jpg',
     },
     'SCES03364':       {
         'url': "games/P/C/SCES-03364.html",
@@ -15066,36 +15095,43 @@ games = {
         'url': "games/P/C/SLES-01881.html",
     	'id': 'SLES01881',
 	'title': "CAPCOM GENERATIONS",
+        'pic1': 'https://images.launchbox-app.com/c1d5fd56-1bdf-468a-9ce9-aebb6edfc478.png',
     },
     'SLES11881': {
         'url': "games/P/C/SLES-01881.html",
     	'id': 'SLES11881',
 	'title': "CAPCOM GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/7ff90b64-f24f-45cf-abb5-13766908f169.png',
     },
     'SLES21881': {
         'url': "games/P/C/SLES-01881.html",
     	'id': 'SLES21881',
 	'title': "CAPCOM GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/f57c699f-eaef-4eee-8a1b-566ebd7e11b2.png',
     },
     'SLES31881': {
         'url': "games/P/C/SLES-01881.html",
     	'id': 'SLES31881',
 	'title': "CAPCOM GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/a17b7ee8-fcd2-4b60-a053-d6833510f2e2.png',
     },
     'SLES02098': {
         'url': "games/P/C/SLES-02098.html",
     	'id': 'SLES02098',
 	'title': "CAPCOM GENERATIONS",
+        'pic1': 'https://images.launchbox-app.com/c1d5fd56-1bdf-468a-9ce9-aebb6edfc478.png',
     },
     'SLES12098': {
         'url': "games/P/C/SLES-02098.html",
     	'id': 'SLES12098',
 	'title': "CAPCOM GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/7ff90b64-f24f-45cf-abb5-13766908f169.png',
     },
     'SLES22098': {
         'url': "games/P/C/SLES-02098.html",
     	'id': 'SLES22098',
 	'title': "CAPCOM GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/f57c699f-eaef-4eee-8a1b-566ebd7e11b2.png',
     },
     'SLES03889': {
         'url': "games/P/C/SLES-03889.html",
@@ -15108,6 +15144,7 @@ games = {
         'url': "games/P/C/SLES-03206.html",
     	'id': 'SLES03206',
 	'title': "CARD SHARK",
+        'pic0': 'https://images.launchbox-app.com/a4a300c0-f360-4e70-ad6b-f4db9e1b53a9.png',
     },
     'SCES01043': {
         'url': "games/P/C/SCES-01043.html",
@@ -15949,6 +15986,7 @@ games = {
         'url': "games/P/F/SCES-03884.html",
     	'id': 'SCES03884',
 	'title': "FIREBUGS",
+        'pic0': 'https://images.launchbox-app.com/bb89a2ae-7786-4f2c-817f-439381c8daaf.png',
     },
     'SLES00094': {
         'url': "games/P/F/SLES-00094.html",
@@ -16005,6 +16043,7 @@ games = {
         'url': "games/P/F/SCES-00985.html",
     	'id': 'SCES00985',
 	'title': "FLUID",
+        'pic0': 'https://images.launchbox-app.com/b9e22542-a5b7-4489-b2f9-e63b90ec2545.png',
     },
     'SLES04156': {
         'url': "games/P/F/SLES-04156.html",
@@ -16410,11 +16449,14 @@ games = {
         'url': "games/P/G/SCES-00269.html",
     	'id': 'SCES00269',
 	'title': "GALAXIAN 3",
+        'pic0': 'https://images.launchbox-app.com/6e195a84-36ed-436a-a448-b4ac53b7e4ac.png',
     },
     'SLES00197': {
         'url': "games/P/G/SLES-00197.html",
     	'id': 'SLES00197',
 	'title': "GALAXY FIGHT",
+        'pic0': 'https://images.launchbox-app.com/b3cb8cd7-ab6c-437a-a0ed-f93cfa4ee8dd.png',
+        'pic1': 'https://images.launchbox-app.com/655d80fa-d717-4864-b9d6-e9e91d8b8eb2.jpg',
     },
     'SLES02328': {
         'url': "games/P/G/SLES-02328.html",
@@ -16708,6 +16750,7 @@ games = {
         'url': "games/P/G/SLES-03389.html",
     	'id': 'SLES03389',
 	'title': "GRAND THEFT AUTO - LONDON [SPECIAL EDITION]",
+        'pic0': 'https://images.launchbox-app.com/6ce46acb-608c-483a-be7e-5e54f899c30c.png',
     },
     'SLES01714': {
         'url': "games/P/G/SLES-01714.html",
@@ -16794,6 +16837,8 @@ games = {
         'url': "games/P/G/SLES-00381.html",
     	'id': 'SLES00381',
 	'title': "GRID RUN",
+        'pic0': 'https://images.launchbox-app.com/208dfc0e-a709-4897-b959-4749e65fe387.png',
+        'snd0': 'https://www.youtube.com/watch?v=Xd-5AmjAA4M&list=PL6F6E4A8721A500C4&index=1',
     },
     'SCES02885': {
         'url': "games/P/G/SCES-02885.html",
@@ -17675,16 +17720,21 @@ games = {
         'url': "games/P/I/SLES-03321.html",
     	'id': 'SLES03321',
 	'title': "ISS PRO EVOLUTION 2",
+        'pic0': 'https://images.launchbox-app.com/6d059c65-67a9-41ad-ad62-8b619c523cbc.png',
+        'pic1': 'https://images.launchbox-app.com/f06447dc-00a4-4da9-9fa5-86b030e2166e.jpg',
     },
     'SLES03322': {
         'url': "games/P/I/SLES-03322.html",
     	'id': 'SLES03322',
 	'title': "ISS PRO EVOLUTION 2",
+        'pic0': 'https://images.launchbox-app.com/6d059c65-67a9-41ad-ad62-8b619c523cbc.png',
+        'pic1': 'https://images.launchbox-app.com/f06447dc-00a4-4da9-9fa5-86b030e2166e.jpg',
     },
     'SLES00480': {
         'url': "games/P/I/SLES-00480.html",
     	'id': 'SLES00480',
 	'title': "IZNOGOUD",
+        'pic0': 'https://images.launchbox-app.com/7c7fae60-8333-4a7f-9a76-4e0ab795e6e1.png',
     },
     'SCES01444':       {
         'url': "games/P/J/SCES-01444.html",
@@ -17743,26 +17793,31 @@ games = {
         'url': "games/P/J/SLES-01983.html",
     	'id': 'SLES01983',
 	'title': "JEFF WAYNE'S - LA GUERRE DES MONDES",
+        'pic0': 'https://images.launchbox-app.com/3e4db877-8b3f-4983-81e7-91a6546287fa.png',
     },
     'SLES00230': {
         'url': "games/P/J/SLES-00230.html",
     	'id': 'SLES00230',
 	'title': "JEFF WAYNE'S - THE WAR OF THE WORLDS",
+        'pic0': 'https://images.launchbox-app.com/3e4db877-8b3f-4983-81e7-91a6546287fa.png',
     },
     'SLES01984': {
         'url': "games/P/J/SLES-01984.html",
     	'id': 'SLES01984',
 	'title': "JEFF WAYNE'S - THE WAR OF THE WORLDS",
+        'pic0': 'https://images.launchbox-app.com/3e4db877-8b3f-4983-81e7-91a6546287fa.png',
     },
     'SLES01985': {
         'url': "games/P/J/SLES-01985.html",
     	'id': 'SLES01985',
 	'title': "JEFF WAYNE'S - THE WAR OF THE WORLDS",
+        'pic0': 'https://images.launchbox-app.com/3e4db877-8b3f-4983-81e7-91a6546287fa.png',
     },
     'SLES01986': {
         'url': "games/P/J/SLES-01986.html",
     	'id': 'SLES01986',
 	'title': "JEFF WAYNE'S - THE WAR OF THE WORLDS",
+        'pic0': 'https://images.launchbox-app.com/3e4db877-8b3f-4983-81e7-91a6546287fa.png',
     },
     'SLES01281': {
         'url': "games/P/J/SLES-01281.html",
@@ -21028,6 +21083,7 @@ games = {
         'url': "games/P/M/SLES-00590.html",
     	'id': 'SLES00590',
 	'title': "MIDNIGHT RUN",
+        'pic0': 'https://images.launchbox-app.com/309d7173-0ee4-424c-956e-e5a28660b325.png',
     },
     'SLES02244': {
         'url': "games/P/M/SLES-02244.html",
@@ -21098,6 +21154,8 @@ games = {
         'url': "games/P/M/SLES-02830.html",
     	'id': 'SLES02830',
 	'title': "MOHO",
+        'pic0': 'https://images.launchbox-app.com/493a72b4-07d5-4596-9e40-ecb493cf06a3.png',
+        'pic1': 'https://images.launchbox-app.com/ce6873af-5c99-417a-847d-c92bc3c0dc9e.jpg',
     },
     'SLES01691': {
         'url': "games/P/M/SLES-01691.html",
@@ -22010,6 +22068,8 @@ games = {
         'url': "games/P/N/SLES-03659.html",
     	'id': 'SLES03659',
 	'title': "NEWCOMER - BE A POPSTAR",
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/fdb2414c-1bcc-45aa-96e0-873af0c9a256.png',
     },
     'SLES00933': 	{
         'url': "games/P/N/SLES-00933.html",
@@ -24065,16 +24125,20 @@ games = {
         'url': "games/P/D/SCES-02174.html",
     	'id': 'SCES02174',
 	'title': "DISNEY'S DEFI AU TETRIS MAGIQUE",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SLES03270': {
         'url': "games/P/D/SLES-03270.html",
     	'id': 'SLES03270',
 	'title': "DISNEY'S DER KNIG DER LWEN - SIMBA'S GROSSES ABENTEUER",
+        'pic0': 'https://images.launchbox-app.com/109adf0d-4a14-4272-8226-37955bd2f053.png',
+        'pic1': 'https://images.launchbox-app.com/6f5f07d6-7129-4ad8-8811-397f42d92e59.jpg',
     },
     'SCES03939': {
         'url': "games/P/D/SCES-03939.html",
     	'id': 'SCES03939',
 	'title': "DISNEY'S DER SCHATZPLANET",
+        'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
     },
     'SLES02864': {
         'url': "games/P/D/SLES-02864.html",
@@ -24156,11 +24220,14 @@ games = {
         'url': "games/P/D/SLES-03272.html",
     	'id': 'SLES03272',
 	'title': "DISNEY'S EL REY LEON - LAS AVENTURAS DEL PODEROSO SIMBA",
+        'pic0': 'https://images.launchbox-app.com/109adf0d-4a14-4272-8226-37955bd2f053.png',
+        'pic1': 'https://images.launchbox-app.com/6f5f07d6-7129-4ad8-8811-397f42d92e59.jpg',
     },
     'SCES02177': {
         'url': "games/P/D/SCES-02177.html",
     	'id': 'SCES02177',
 	'title': "DISNEY'S EL TETRIS UN MAGICO DESAFIO",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES03017': {
         'url': "games/P/D/SCES-03017.html",
@@ -24243,6 +24310,8 @@ games = {
         'url': "games/P/D/SCES-03019.html",
     	'id': 'SCES03019',
 	'title': "DISNEY'S KEJSARENS NYA STIL",
+        'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
+        'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
     },
     'SCES03940': {
         'url': "games/P/D/SCES-03940.html",
@@ -24253,21 +24322,29 @@ games = {
         'url': "games/P/D/SLES-03271.html",
     	'id': 'SLES03271',
 	'title': "DISNEY'S IL RE LEONE - LA GRANDE AVVENTURA DI SIMBA",
+        'pic0': 'https://images.launchbox-app.com/109adf0d-4a14-4272-8226-37955bd2f053.png',
+        'pic1': 'https://images.launchbox-app.com/6f5f07d6-7129-4ad8-8811-397f42d92e59.jpg',
     },
     'SCES03012': {
         'url': "games/P/D/SCES-03012.html",
     	'id': 'SCES03012',
 	'title': "DISNEY'S KAIZER KUZCO",
+        'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
+        'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
     },
     'SCES03013': {
         'url': "games/P/D/SCES-03013.html",
     	'id': 'SCES03013',
 	'title': "DISNEY'S KEISARIN UUDET KUVIOT",
+        'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
+        'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
     },
     'SCES03014': {
         'url': "games/P/D/SCES-03014.html",
     	'id': 'SCES03014',
 	'title': "DISNEY'S KUZCO L'EMPEREUR MEGALO",
+        'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
+        'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
     },
     'SCES03033': {
         'url': "games/P/D/SCES-03033.html",
@@ -24399,21 +24476,25 @@ games = {
         'url': "games/P/D/SCES-02154.html",
     	'id': 'SCES02154',
 	'title': "DISNEY'S MAGICAL TETRIS CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES02175': {
         'url': "games/P/D/SCES-02175.html",
     	'id': 'SCES02175',
 	'title': "DISNEY'S MAGICAL TETRIS CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES02179': {
         'url': "games/P/D/SCES-02179.html",
     	'id': 'SCES02179',
 	'title': "DISNEY'S MAGICAL TETRIS CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES02178': {
         'url': "games/P/D/SCES-02178.html",
     	'id': 'SCES02178',
 	'title': "DISNEY'S MAGISCHE TETRIS UITDAGING",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES00163': {
         'url': "games/P/D/SCES-00163.html",
@@ -24573,16 +24654,19 @@ games = {
         'url': "games/P/D/SCES-03944.html",
     	'id': 'SCES03944',
 	'title': "DISNEY'S SKATTERPLANETEN",
+        'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
     },
     'SCES03943': {
         'url': "games/P/D/SCES-03943.html",
     	'id': 'SCES03943',
 	'title': "DISNEY'S SKATTKAMMARPLANETEN",
+        'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
     },
     'SCES02176': {
         'url': "games/P/D/SCES-02176.html",
     	'id': 'SCES02176',
 	'title': "DISNEY'S SFIDA AL TETRIS MAGICO",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SCES01431': {
         'url': "games/P/D/SCES-01431.html",
@@ -25295,6 +25379,7 @@ games = {
         'url': "games/P/O/SLES-04051.html",
     	'id': 'SLES04051',
 	'title': "OMEGA ASSAULT",
+        'pic0': 'https://images.launchbox-app.com/082bad18-4f2b-4b67-a9a7-d52540ed2174.png',
     },
     'SCES02120': {
         'url': "games/P/O/SCES-02120.html",
@@ -25881,6 +25966,8 @@ games = {
         'url': "games/P/P/SLES-03657.html",
     	'id': 'SLES03657',
 	'title': "POPSTAR MAKER",
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/fdb2414c-1bcc-45aa-96e0-873af0c9a256.png',
     },
     'SLES01760': {
         'url': "games/P/P/SLES-01760.html",
@@ -33240,6 +33327,8 @@ games = {
         'url': "games/J/A/SLPS-01073.html",
     	'id': 'SLPS01073',
 	'title': "AGENT ARMSTRONG - HIMITSU SHIREI DAISAKUSEN",
+        'pic0': 'https://images.launchbox-app.com/faa15c29-dcc1-4105-bc24-3e4143c9843c.png',
+        'pic1': 'https://images.launchbox-app.com/df5e972d-c5f3-4217-9571-57ef8acb4196.jpg',
     },
     'SLPS00179': {
         'url': "games/J/A/SLPS-00179.html",
@@ -33316,16 +33405,19 @@ games = {
         'url': "games/J/A/SLPS-00559.html",
     	'id': 'SLPS00559',
 	'title': "AIRGRAVE",
+        'pic0': 'https://images.launchbox-app.com/5cb621ec-31d3-43ea-9d00-c7922369a92a.png',
     },
     'SLPS01096': {
         'url': "games/J/A/SLPS-01096.html",
     	'id': 'SLPS01096',
 	'title': "AISHIAU KOTOSHIKA DEKINAI - NOTHING BUT LOVING YOU",
+        'pic0': 'https://images.launchbox-app.com/1dda840b-fbe2-4bb3-9f90-3ec725c88f91.png',
     },
     'SLPS02824': {
         'url': "games/J/A/SLPS-02824.html",
     	'id': 'SLPS02824',
 	'title': "AISHIAU KOTOSHIKA DEKINAI - NOTHING BUT LOVING YOU [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/1dda840b-fbe2-4bb3-9f90-3ec725c88f91.png',
     },
     'SLPM86254': {
         'url': "games/J/A/SLPM-86254.html",
@@ -34798,21 +34890,29 @@ games = {
         'url': "games/J/B/SLPM-86126.html",
     	'id': 'SLPM86126',
 	'title': "BEATMANIA",
+        'pic0': 'https://images.launchbox-app.com/7e10b2ad-6479-497a-aad0-89aeafe80438.png',
+        'pic1': 'https://images.launchbox-app.com/c995c28b-8162-491e-8b63-0646e2ec5f7c.jpg',
     },
     'SLPM86127': {
         'url': "games/J/B/SLPM-86126.html",
     	'id': 'SLPM86127',
 	'title': "BEATMANIA",
+        'pic0': 'https://images.launchbox-app.com/7e10b2ad-6479-497a-aad0-89aeafe80438.png',
+        'pic1': 'https://images.launchbox-app.com/c995c28b-8162-491e-8b63-0646e2ec5f7c.jpg',
     },
     'SLPM86390': {
         'url': "games/J/B/SLPM-86390.html",
     	'id': 'SLPM86390',
 	'title': "BEATMANIA [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/7e10b2ad-6479-497a-aad0-89aeafe80438.png',
+        'pic1': 'https://images.launchbox-app.com/c995c28b-8162-491e-8b63-0646e2ec5f7c.jpg',
     },
     'SLPM86391': {
         'url': "games/J/B/SLPM-86390.html",
     	'id': 'SLPM86391',
 	'title': "BEATMANIA [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/7e10b2ad-6479-497a-aad0-89aeafe80438.png',
+        'pic1': 'https://images.launchbox-app.com/c995c28b-8162-491e-8b63-0646e2ec5f7c.jpg',
     },
     'SCPS45370': {
         'url': "games/J/B/SCPS-45370.html",
@@ -35171,11 +35271,13 @@ games = {
         'url': "games/J/B/SCPS-45067.html",
     	'id': 'SCPS45067',
 	'title': "BLAM! MACHINEHEAD",
+        'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
     },
     'SLPS00798': {
         'url': "games/J/B/SLPS-00798.html",
     	'id': 'SLPS00798',
 	'title': "BLAM! MACHINEHEAD",
+        'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
     },
     'SLPS02617': {
         'url': "games/J/B/SLPS-02617.html",
@@ -35647,6 +35749,7 @@ games = {
         'url': "games/J/B/SLPM-86044.html",
     	'id': 'SLPM86044',
 	'title': "BREAK POINT",
+        'pic0': 'https://images.launchbox-app.com/b681c2a4-e1ee-4163-a260-b0db116860e9.png',
     },
     'SLPS00129': {
         'url': "games/J/B/SLPS-00129.html",
@@ -35918,41 +36021,49 @@ games = {
         'url': "games/J/C/SLPS-01535.html",
     	'id': 'SLPS01535',
 	'title': "CAPCOM GENERATION 1 - GEKITSUIOU NO JIDAI",
+        'pic1': 'https://images.launchbox-app.com/c1d5fd56-1bdf-468a-9ce9-aebb6edfc478.png',
     },
     'SLPM86748': {
         'url': "games/J/C/SLPM-86748.html",
     	'id': 'SLPM86748',
 	'title': "CAPCOM GENERATION 1 - GEKITSUIOU NO JIDAI [CAPKORE]",
+        'pic1': 'https://images.launchbox-app.com/c1d5fd56-1bdf-468a-9ce9-aebb6edfc478.png',
     },
     'SLPS01585': {
         'url': "games/J/C/SLPS-01585.html",
     	'id': 'SLPS01585',
 	'title': "CAPCOM GENERATION 2 - MAKAI TO KISH",
+        'pic0': 'https://images.launchbox-app.com/7ff90b64-f24f-45cf-abb5-13766908f169.png',
     },
     'SLPM86778': {
         'url': "games/J/C/SLPM-86778.html",
     	'id': 'SLPM86778',
 	'title': "CAPCOM GENERATION 2 - MAKAI TO KISH [CAPKORE]",
+        'pic0': 'https://images.launchbox-app.com/7ff90b64-f24f-45cf-abb5-13766908f169.png',
     },
     'SLPS01649': {
         'url': "games/J/C/SLPS-01649.html",
     	'id': 'SLPS01649',
 	'title': "CAPCOM GENERATION 3 - SHUU KOKO NI REKISHI HAJIMARU",
+        'pic0': 'https://images.launchbox-app.com/f57c699f-eaef-4eee-8a1b-566ebd7e11b2.png',
     },
     'SLPM86811': {
         'url': "games/J/C/SLPM-86811.html",
     	'id': 'SLPM86811',
 	'title': "CAPCOM GENERATION 3 - SHUU KOKO NI REKISHI HAJIMARU [CAPKORE]",
+        'pic0': 'https://images.launchbox-app.com/f57c699f-eaef-4eee-8a1b-566ebd7e11b2.png',
     },
     'SLPS01701': {
         'url': "games/J/C/SLPS-01701.html",
     	'id': 'SLPS01701',
 	'title': "CAPCOM GENERATION 4 - KOKOU NO EIYUU",
+        'pic0': 'https://images.launchbox-app.com/a17b7ee8-fcd2-4b60-a053-d6833510f2e2.png',
     },
     'SLPM86814': {
         'url': "games/J/C/SLPM-86814.html",
     	'id': 'SLPM86814',
 	'title': "CAPCOM GENERATION 4 - KOKOU NO EIYUU [CAPKORE]",
+        'pic0': 'https://images.launchbox-app.com/a17b7ee8-fcd2-4b60-a053-d6833510f2e2.png',
     },
     'SLPS01725': {
         'url': "games/J/C/SLPS-01725.html",
@@ -38622,6 +38733,7 @@ games = {
         'url': "games/J/D/SLPS-01786.html",
     	'id': 'SLPS01786',
 	'title': "DISNEY'S MAGICAL TETRIS CHALLENGE FEATURING MICKEY",
+        'pic0': 'https://images.launchbox-app.com/3d86a34e-cf3f-46ea-9d10-b6dfb7216380.png',
     },
     'SLPM86383': {
         'url': "games/J/D/SLPM-86383.html",
@@ -39356,7 +39468,6 @@ games = {
     	'id': 'SLPS03071',
 	'title': "DX SHACHOU GAME [THE BEST TAKARAMONO]",
     },
-
     'SLPS01387': {
         'url': "games/J/D/SLPS-01387.html",
     	'id': 'SLPS01387',
@@ -41413,11 +41524,14 @@ games = {
         'url': "games/J/G/SLPS-00270.html",
     	'id': 'SLPS00270',
 	'title': "GALAXIAN 3",
+        'pic0': 'https://images.launchbox-app.com/6e195a84-36ed-436a-a448-b4ac53b7e4ac.png',
     },
     'SLPS00138': {
         'url': "games/J/G/SLPS-00138.html",
     	'id': 'SLPS00138',
 	'title': "GALAXY FIGHT - UNIVERSAL WARRIORS",
+        'pic0': 'https://images.launchbox-app.com/b3cb8cd7-ab6c-437a-a0ed-f93cfa4ee8dd.png',
+        'pic1': 'https://images.launchbox-app.com/655d80fa-d717-4864-b9d6-e9e91d8b8eb2.jpg',
     },
     'SLPS02596': {
         'url': "games/J/G/SLPS-02596.html",
@@ -48221,6 +48335,7 @@ games = {
         'url': "games/J/M/SLPM-86022.html",
     	'id': 'SLPM86022',
 	'title': "MIDNIGHT RUN - ROAD FIGHTER 2",
+        'pic0': 'https://images.launchbox-app.com/309d7173-0ee4-424c-956e-e5a28660b325.png',
     },
     'SLPS01312': {
         'url': "games/J/M/SLPS-01312.html",

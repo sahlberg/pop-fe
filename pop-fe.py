@@ -2326,21 +2326,21 @@ if __name__ == "__main__":
                 ps3configs[i] = force_ntsc_config(ps3configs[i])
     if args.psp_dir:
         for i in range(len(real_disc_ids)):
-            try:
-                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
-                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
-                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
-                      f.seek(8)
-                      pspconfigs[-1] = pspconfigs[-1] + f.read()
-            except:
-                True
-                
             disc_id = real_disc_ids[i]
             if disc_id in games and 'pspconfig' in games[disc_id]:
                 print('Found an external config for', disc_id) if verbose else None
                 with open(games[disc_id]['pspconfig'], 'rb') as f:
                       f.seek(8)
-                      pspconfigs[i] = pspconfigs[i] + f.read()
+                      pspconfigs[i] = f.read()
+            try:
+                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
+                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
+                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
+                      f.seek(8)
+                      pspconfigs[-1] = f.read()
+            except:
+                True
+                
     #
     # Force use of ps1_newemu, this disables all other config settings
     #
