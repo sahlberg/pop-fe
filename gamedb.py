@@ -3297,6 +3297,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'ps3config': 'ps3configs/Brain Dead 13/SLUS-00083.bin',
         'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00083.bin',
     },
     'SLUS00171': {
@@ -3305,6 +3306,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'ps3config': 'ps3configs/Brain Dead 13/SLUS-00171.bin',
         'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00171.bin',
     },
     'SLUS01508': {
@@ -35575,6 +35577,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'ps3config': 'ps3configs/Brain Dead 13/SLPS-00514.bin',
     },
     'SLPS00515': {
         'url': "games/J/B/SLPS-00514.html",
@@ -35582,6 +35585,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'ps3config': 'ps3configs/Brain Dead 13/SLPS-00515.bin',
     },
     'SCPS45291': {
         'url': "games/J/B/SCPS-45291.html",
