@@ -2411,19 +2411,16 @@ if __name__ == "__main__":
     
     if args.game_id:
         args.game_id = args.game_id.split(',')
+        # override the disc_ids with the content of --game_id
+        for idx in range(len(args.game_id)):
+            if idx < len(disc_ids):
+                disc_ids[idx] = args.game_id[idx]
     if args.psp_install_memory_card:
         if not args.game_id:
             raise Exception('Must specify --game_id when using --psp-install-memory-card')
         install_psp_mc(args.psp_dir, args.game_id[0], mem_cards)
         quit()
 
-    if args.game_id:
-        _gids = args.game_id
-        # override the disc_ids with the content of --game_id
-        for idx in range(len(_gids)):
-            if idx < len(disc_ids):
-                disc_ids[idx] = _gids[idx]
-    
     resolution = 1
     if args.ps3_pkg and (real_disc_ids[0][:4] == 'SLES' or real_disc_ids[0][:4] == 'SCES'):
         print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None

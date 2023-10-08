@@ -9620,6 +9620,7 @@ games = {
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rollcage/SLUS-00800.bin',
     },
     'SLUS00867': {
         'url': "games/U/R/SLUS-00867.html",
