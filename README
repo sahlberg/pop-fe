@@ -594,6 +594,7 @@ git clone https://github.com/NRGDEAD/Cue2cu2.git
 git clone https://github.com/putnam/binmerge.git
 git clone https://github.com/dcherednik/atracdenc.git
 pip3 install git+https://github.com/nficano/pytube
+pip3 install PyPDF2
 pip3 install requests
 pip3 install pycdlib  (or pip3 install pycdio)
 pip3 install ecdsa
@@ -637,6 +638,7 @@ pacman -S mingw-w64-x86_64-python-pip
 pacman -S mingw-w64-x86_64-python-pillow
 pip3 uninstall pillow
 pip3 install pillow
+pip3 install PyPDF2
 pip3 install requests
 pip3 install pycdlib
 pip3 install pycryptodome

@@ -46,6 +46,10 @@ try:
 except:
     print('rarfile is not installed.\nYou should install requests by running:\npip3 install rarfile')
 try:
+    import PyPDF2
+except:
+    print('PyPDF2 is not installed.\nYou should install requests by running:\npip3 install PyPDF2')
+try:
     import requests
 except:
     print('requests is not installed.\nYou should install requests by running:\npip3 install requests')
@@ -1546,7 +1550,14 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 def get_disc_ids(cue_files, subdir='./'):
     disc_ids = []
     for idx in range(len(cue_files)):
-        print('Convert CUE to a normal style ISO', cue_files[idx]) if verbose else None
+        try:
+            with open(create_path(cue_files[idx], 'GAME_ID'), 'r') as d:
+                disc_ids.append(d.read())
+                print('Read disc id from', create_path(cue_files[idx], 'GAME_ID'))
+                continue
+        except:
+            True
+        print('Convert CUE to a normal style ISO to read the disc id', cue_files[idx]) if verbose else None
         bc = bchunk()
         bc.verbose = args.v
         bc.open(cue_files[idx])
@@ -1606,6 +1617,13 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
 
 def install_deps():
     print(os.name)
+    # PyPDF2
+    try:
+        import PyPDF2
+        print('PyPDF2 is already installed')
+    except:
+        print('Installing python PyPDF2')
+        subprocess.call(['pip', 'install', 'PyPDF2'])
     # requests
     try:
         import requests
@@ -1857,7 +1875,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     
     print('Create manual', source)
     files = []
-    
+
     if source[:8] != 'https://':
         with open(source, 'rb') as f:
             buf = f.read(4)
@@ -1873,45 +1891,66 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     print('Create DOCUMENT.DAT from', source)
     if source[:8] == 'https://':
-            print('Download manual from', source)
-            try:
-                tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
-                temp_files.append(tmpfile)
-                subprocess.run(['wget', source, '-O', tmpfile], timeout=240, check=True)
-                print('Downloaded manual as', tmpfile)
-                source = tmpfile
-            except:
-                print('Failed to download manual from', source)
-                return None
+        print('Download manual from', source)
+        try:
+            tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
+            temp_files.append(tmpfile)
+            subprocess.run(['wget', source, '-O', tmpfile], timeout=240, check=True)
+            print('Downloaded manual as', tmpfile)
+            source = tmpfile
+        except:
+            print('Failed to download manual from', source)
+            return None
     if source[-4:] == '.zip':
-            print('Unzip manual', source, 'from ZIP')
-            subdir = subdir + '/DOCUMENT-tmp'
-            os.mkdir(subdir)
-            temp_files.append(subdir)
+        print('Unzip manual', source, 'from ZIP')
+        subdir = subdir + '/DOCUMENT-tmp'
+        os.mkdir(subdir)
+        temp_files.append(subdir)
                 
-            z = zipfile.ZipFile(source)
-            for f in z.namelist():
-                f = z.extract(f, path=subdir)
+        z = zipfile.ZipFile(source)
+        for f in z.namelist():
+            f = z.extract(f, path=subdir)
+            temp_files.append(f)
+            files.append(f)
+            source = subdir
+    if source[-4:] == '.cbr':
+        print('Unzip manual', source, 'from CBR')
+        subdir = subdir + '/DOCUMENT-tmp'
+        os.mkdir(subdir)
+        temp_files.append(subdir)
+
+        try:
+            r = rarfile.RarFile(source)
+            for f in r.namelist():
+                f = r.extract(f, path=subdir)
                 temp_files.append(f)
                 files.append(f)
             source = subdir
-    if source[-4:] == '.cbr':
-            print('Unzip manual', source, 'from CBR')
-            subdir = subdir + '/DOCUMENT-tmp'
-            os.mkdir(subdir)
-            temp_files.append(subdir)
+        except:
+            print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
+            return None
 
-            try:
-                r = rarfile.RarFile(source)
-                for f in r.namelist():
-                    f = r.extract(f, path=subdir)
+    if source[-4:] == '.pdf':
+        print('Extract manual', source, 'from PDF')
+        subdir = subdir + '/DOCUMENT-tmp'
+        os.mkdir(subdir)
+        temp_files.append(subdir)
+        try:
+            idx = 0
+            r = PyPDF2.PdfReader(source)
+            for p in r.pages:
+                for i in p.images:
+                    f = subdir + '/' + f"{idx:04d}" + '.img'
+                    with open(f, "wb") as fp:
+                        fp.write(i.data)                   
+                    idx = idx + 1
                     temp_files.append(f)
                     files.append(f)
-                source = subdir
-            except:
-                print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
-                return None
-                
+            source = subdir
+        except:
+            print('Failed to parse PDF.')
+            return None
+            
     if not os.path.isdir(source):
         print('Can not create manual.', source, 'is not a directory')
         return None
@@ -2377,19 +2416,10 @@ if __name__ == "__main__":
             raise Exception('Must specify --game_id when using --psp-install-memory-card')
         install_psp_mc(args.psp_dir, args.game_id[0], mem_cards)
         quit()
-            
-    _gids = None
+
     if args.game_id:
         _gids = args.game_id
-    if not _gids:
-        try:
-            with open(create_path(args.files[0], 'GAME_ID'), 'r') as d:
-                _gids = re.sub(r'[^A-Z0-9\,]+', '', d.read()).split(',')
-        except:
-            True
-
-    if _gids:
-        # override the disc_ids with the content of 'GAME_ID' or --game_id
+        # override the disc_ids with the content of --game_id
         for idx in range(len(_gids)):
             if idx < len(disc_ids):
                 disc_ids[idx] = _gids[idx]

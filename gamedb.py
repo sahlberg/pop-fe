@@ -2347,6 +2347,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/27c885e5-b210-41d4-b3f9-4c3bc0c7b282.png',
         'pic1': 'https://images.launchbox-app.com/8181cf02-1af0-4a99-8f75-7f5e44acf1f4.jpg',
         'snd0': 'https://www.youtube.com/watch?v=STJm1RoLYLo&list=PL4385054D3D733B93&index=1',
+        'manual': 'https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf',
     },
     'SLUS01467': {
         'url': "games/U/A/SLUS-01467.html",
