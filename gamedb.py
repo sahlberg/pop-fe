@@ -4579,6 +4579,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e5f82695-2df4-4734-9439-af0de63bb853.png',
         'pic1': 'https://images.launchbox-app.com/c44a031c-1be6-46fd-82c5-5ed1a4beb6f6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Donald%20Duck%20-%20Goin%27%20Quackers%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Disney's Donald Duck - Goin Quackers/SLUS-01242.bin",
     },
     'SLUS01209': {
         'url': "games/U/D/SLUS-01209.html",
@@ -4658,6 +4659,7 @@ games = {
 	'title': "DISNEY'S THE LION KING - SIMBA'S MIGHTY ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/109adf0d-4a14-4272-8226-37955bd2f053.png',
         'pic1': 'https://images.launchbox-app.com/6f5f07d6-7129-4ad8-8811-397f42d92e59.jpg',
+        'pspconfig': "pspconfigs/Disney's The Lion King - Simba's Mighty Adventure/SLUS-01282.bin",
     },
     'SLUS01286': {
         'url': "games/U/D/SLUS-01286.html",
@@ -24194,6 +24196,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e5f82695-2df4-4734-9439-af0de63bb853.png',
         'pic1': 'https://images.launchbox-app.com/c44a031c-1be6-46fd-82c5-5ed1a4beb6f6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Donald%20Duck%20-%20Goin%27%20Quackers%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Disney's Donald Duck - Goin Quackers/SLES-03097.bin",
     },
     'SLES03098': {
         'url': "games/P/D/SLES-03098.html",
@@ -24202,6 +24205,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e5f82695-2df4-4734-9439-af0de63bb853.png',
         'pic1': 'https://images.launchbox-app.com/c44a031c-1be6-46fd-82c5-5ed1a4beb6f6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Donald%20Duck%20-%20Goin%27%20Quackers%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Disney's Donald Duck - Goin Quackers/SLES-03098.bin",
     },
     'SCES03015': {
         'url': "games/P/D/SCES-03015.html",
@@ -24553,6 +24557,7 @@ games = {
         'url': "games/P/D/SLES-03099.html",
     	'id': 'SLES03099',
 	'title': "DISNEY'S PATO DONALD - CUAC ATTACK",
+        'pspconfig': "pspconfigs/Disney's Donald Duck - Goin Quackers/SLES-03099.bin",
     },
     'SCES03707': {
         'url': "games/P/D/SCES-03707.html",
@@ -38725,6 +38730,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e5f82695-2df4-4734-9439-af0de63bb853.png',
         'pic1': 'https://images.launchbox-app.com/c44a031c-1be6-46fd-82c5-5ed1a4beb6f6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Donald%20Duck%20-%20Goin%27%20Quackers%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Disney's Donald Duck - Goin Quackers/SLPM88502.bin",
     },
     'SLPS03460': {
         'url': "games/J/D/SLPS-03460.html",
@@ -39083,6 +39089,9 @@ games = {
         'url': "games/J/D/SLPS-01934.html",
     	'id': 'SLPS01934',
 	'title': "DR. SLUMP",
+        'pic0': 'https://images.launchbox-app.com/3596ae10-3b69-4cb7-830e-36438ee44ae7.png',
+        'pic1': 'https://images.launchbox-app.com/878b51dc-c78a-40f3-a9f4-fba4b8efdbcf.jpg',
+        'pspconfig': 'pspconfigs/Dr. Slump/SLPS-01934.bin',
     },
     'SLPM86023': {
         'url': "games/J/D/SLPM-86023.html",
