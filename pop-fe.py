@@ -1296,6 +1296,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
          'UP9000-%s_00-0000000000000001' % disc_ids[0])
     temp_files.append(subdir + '%s/USRDIR/ISO.BIN.EDAT' % disc_ids[0])
 
+    os._exit(1)
     #
     # Create PS3 PKG
     #
