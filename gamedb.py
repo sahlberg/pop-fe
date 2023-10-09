@@ -14061,11 +14061,13 @@ games = {
         'url': "games/P/B/SLES-03991.html",
     	'id': 'SLES03991',
 	'title': "BABY FELIX TENNIS",
+        'pic0': 'https://images.launchbox-app.com/e91a9fed-c876-45d8-bfac-9c2709b9f135.png',
     },
     'SCES00982': {
         'url': "games/P/B/SCES-00982.html",
     	'id': 'SCES00982',
 	'title': "BABY UNIVERSE",
+        'pic0': 'https://images.launchbox-app.com/b8a25c94-d974-4438-9af7-2d9b9255af69.png',
     },
     'SLES04091': {
         'url': "games/P/B/SLES-04091.html",
@@ -14217,6 +14219,7 @@ games = {
         'url': "games/P/B/SLES-02615.html",
     	'id': 'SLES02615',
 	'title': "BARCA MANAGER 2000",
+        'pic0': 'https://images.launchbox-app.com/0a8def83-497d-4ccf-9476-4a99013e90c4.png',
     },
     'SLES00102': {
         'url': "games/P/B/SLES-00102.html",
@@ -14998,6 +15001,7 @@ games = {
         'url': "games/P/B/SLES-04104.html",
     	'id': 'SLES04104',
 	'title': "BUTTSUBUSHI",
+        'pic0': 'https://images.launchbox-app.com/9b8e1fd0-5c36-4689-ae57-8057ed80f6f3.png',
     },
     'SLES03563': {
         'url': "games/P/B/SLES-03563.html",
@@ -15079,6 +15083,7 @@ games = {
         'url': "games/P/C/SLES-02614.html",
     	'id': 'SLES02614',
 	'title': "CALCIO MANAGER 2000",
+        'pic0': 'https://images.launchbox-app.com/0a8def83-497d-4ccf-9476-4a99013e90c4.png',
     },
     'SLES03921': {
         'url': "games/P/C/SLES-03921.html",
@@ -16053,6 +16058,7 @@ games = {
         'url': "games/P/F/SLES-04156.html",
     	'id': 'SLES04156',
 	'title': "FLYING SQUADRON",
+        'pic0': 'https://images.launchbox-app.com/f7116b8e-a14d-4620-ad40-f36ad5bc2d79.png',
     },
     'SLES03546': {
         'url': "games/P/F/SLES-03546.html",
@@ -16636,6 +16642,8 @@ games = {
         'url': "games/P/G/SCES-02543.html",
     	'id': 'SCES02543',
 	'title': "GHOUL PANIC",
+        'pic0': 'https://images.launchbox-app.com/18980d9e-ebd1-4e53-93c7-792972323ab9.png',
+        'pic1': 'https://images.launchbox-app.com/657ad72f-be97-4a10-9a4c-c7dff1a9cc4b.jpg',
     },
     'SLES01419': {
         'url': "games/P/G/SLES-01419.html",
@@ -16981,6 +16989,7 @@ games = {
         'url': "games/P/G/SLES-02612.html",
     	'id': 'SLES02612',
 	'title': "GUY ROUX MANAGER 2000",
+        'pic0': 'https://images.launchbox-app.com/0a8def83-497d-4ccf-9476-4a99013e90c4.png',
     },
     'SLES03403': {
         'url': "games/P/G/SLES-03403.html",
@@ -17846,11 +17855,13 @@ games = {
         'url': "games/P/J/SLES-04125.html",
     	'id': 'SLES04125',
 	'title': "JET ACE",
+        'pic0': 'https://images.launchbox-app.com/4e264161-3dea-418e-906c-7c881f352867.png',
     },
     'SLES03328': {
         'url': "games/P/J/SLES-03328.html",
     	'id': 'SLES03328',
 	'title': "JETRACER",
+        'pic0': 'https://images.launchbox-app.com/6a46322f-b89a-47ff-bd60-1bbd1ecb5513.png',
     },
     'SCES00566': {
         'url': "games/P/J/SCES-00566.html",
@@ -17995,31 +18006,37 @@ games = {
         'url': "games/P/K/SLES-01039.html",
     	'id': 'SLES01039',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES01061': {
         'url': "games/P/K/SLES-01061.html",
     	'id': 'SLES01061',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES01062': {
         'url': "games/P/K/SLES-01062.html",
     	'id': 'SLES01062',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES01063': {
         'url': "games/P/K/SLES-01062.html",
     	'id': 'SLES01063',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES01327': {
         'url': "games/P/K/SLES-01327.html",
     	'id': 'SLES01327',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES01328': {
         'url': "games/P/K/SLES-01328.html",
     	'id': 'SLES01328',
 	'title': "KICK OFF WORLD",
+        'pic0': 'https://images.launchbox-app.com/0c241a75-c80a-452e-9a6c-bdfa2a865415.png',
     },
     'SLES03959': {
         'url': "games/P/K/SLES-03959.html",
@@ -18857,6 +18874,7 @@ games = {
         'url': "games/P/E/SLES-00343.html",
     	'id': 'SLES00343',
 	'title': "EARTHWORM JIM 2",
+        'pic0': 'https://images.launchbox-app.com/b33e3714-5cbc-4eaf-98ed-c050cca804d1.png',
     },
     'SLES02823': {
         'url': "games/P/E/SLES-02823.html",
@@ -19524,11 +19542,13 @@ games = {
         'url': "games/P/K/SLES-03676.html",
     	'id': 'SLES03676',
 	'title': "KIRIKOU",
+        'pic0': 'https://images.launchbox-app.com/223eb8b9-8bbe-43ab-bfd8-1a547984263a.png',
     },
     'SLES03677': {
         'url': "games/P/K/SLES-03677.html",
     	'id': 'SLES03677',
 	'title': "KIRIKOU",
+        'pic0': 'https://images.launchbox-app.com/223eb8b9-8bbe-43ab-bfd8-1a547984263a.png',
     },
     'SLES03211': {
         'url': "games/P/K/SLES-03211.html",
@@ -19542,16 +19562,19 @@ games = {
         'url': "games/P/K/SLES-01246.html",
     	'id': 'SLES01246',
 	'title': "KKND - KROSSFIRE",
+        'pic0': 'https://images.launchbox-app.com/33ddc923-3ab6-4e5c-82b8-cb51608ed6ee.png',
     },
     'SLES01616': {
         'url': "games/P/K/SLES-01616.html",
     	'id': 'SLES01616',
 	'title': "KKND - KROSSFIRE",
+        'pic0': 'https://images.launchbox-app.com/33ddc923-3ab6-4e5c-82b8-cb51608ed6ee.png',
     },
     'SLES01617': {
         'url': "games/P/K/SLES-01617.html",
     	'id': 'SLES01617',
 	'title': "KKND - KROSSFIRE",
+        'pic0': 'https://images.launchbox-app.com/33ddc923-3ab6-4e5c-82b8-cb51608ed6ee.png',
     },
     'SCES00942': {
         'url': "games/P/K/SCES-00942.html",
@@ -20184,26 +20207,41 @@ games = {
         'url': "games/P/L/SLES-00613.html",
     	'id': 'SLES00613',
 	'title': "LIFEFORCE TENKA",
+        'pic0': 'https://images.launchbox-app.com/82350400-728e-412f-aaa6-870347535c8c.png',
+        'pic1': 'https://images.launchbox-app.com/465811b8-8812-499e-9797-73292161d759.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Codename%20-%20Tenka%20%28USA%29_jp2.zip',
     },
     'SLES00614': {
         'url': "games/P/L/SLES-00614.html",
     	'id': 'SLES00614',
 	'title': "LIFEFORCE TENKA",
+        'pic0': 'https://images.launchbox-app.com/82350400-728e-412f-aaa6-870347535c8c.png',
+        'pic1': 'https://images.launchbox-app.com/465811b8-8812-499e-9797-73292161d759.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Codename%20-%20Tenka%20%28USA%29_jp2.zip',
     },
     'SLES00615': {
         'url': "games/P/L/SLES-00615.html",
     	'id': 'SLES00615',
 	'title': "LIFEFORCE TENKA",
+        'pic0': 'https://images.launchbox-app.com/82350400-728e-412f-aaa6-870347535c8c.png',
+        'pic1': 'https://images.launchbox-app.com/465811b8-8812-499e-9797-73292161d759.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Codename%20-%20Tenka%20%28USA%29_jp2.zip',
     },
     'SLES00616': {
         'url': "games/P/L/SLES-00616.html",
     	'id': 'SLES00616',
 	'title': "LIFEFORCE TENKA",
+        'pic0': 'https://images.launchbox-app.com/82350400-728e-412f-aaa6-870347535c8c.png',
+        'pic1': 'https://images.launchbox-app.com/465811b8-8812-499e-9797-73292161d759.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Codename%20-%20Tenka%20%28USA%29_jp2.zip',
     },
     'SLES00617': {
         'url': "games/P/L/SLES-00617.html",
     	'id': 'SLES00617',
 	'title': "LIFEFORCE TENKA",
+        'pic0': 'https://images.launchbox-app.com/82350400-728e-412f-aaa6-870347535c8c.png',
+        'pic1': 'https://images.launchbox-app.com/465811b8-8812-499e-9797-73292161d759.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Codename%20-%20Tenka%20%28USA%29_jp2.zip',
     },
     'SLES02953': {
         'url': "games/P/L/SLES-02953.html",
@@ -20275,11 +20313,13 @@ games = {
         'url': "games/P/L/SLES-00131.html",
     	'id': 'SLES00131',
 	'title': "LONE SOLDIER",
+        'pic0': 'https://images.launchbox-app.com/e0358a47-dccb-4f07-ae31-9568135cbc34.png',
     },
     'SLES00142': {
         'url': "games/P/L/SLES-00142.html",
     	'id': 'SLES00142',
 	'title': "LONE SOLDIER",
+        'pic0': 'https://images.launchbox-app.com/e0358a47-dccb-4f07-ae31-9568135cbc34.png',
     },
     'SLES03127': {
         'url': "games/P/L/SLES-03127.html",
@@ -20378,6 +20418,8 @@ games = {
         'url': "games/P/L/SLES-03530.html",
     	'id': 'SLES03530',
 	'title': "LUCKY LUKE - WESTERN FEVER",
+        'pic0': 'https://images.launchbox-app.com/786f80cf-28af-46b0-90a4-1c94da32f394.png',
+        'pic1': 'https://images.launchbox-app.com/c47e7cc1-788b-4370-8c79-515c51e94545.png',
     },
     'SLES02720': {
         'url': "games/P/L/SLES-02720.html",
@@ -34491,6 +34533,7 @@ games = {
         'url': "games/J/B/SCPS-18006.html",
     	'id': 'SCPS18006',
 	'title': "BABY UNIVERSE",
+        'pic0': 'https://images.launchbox-app.com/b8a25c94-d974-4438-9af7-2d9b9255af69.png',
     },
     'SLPS01217': {
         'url': "games/J/B/SLPS-01217.html",
@@ -36008,6 +36051,7 @@ games = {
         'url': "games/J/B/SLPS-03162.html",
     	'id': 'SLPS03162',
 	'title': "BUTTSUBUSHI",
+        'pic0': 'https://images.launchbox-app.com/9b8e1fd0-5c36-4689-ae57-8057ed80f6f3.png',
     },
     'SLPS00279':       {
         'url': "games/J/C/SLPS-00279.html",
@@ -46771,6 +46815,7 @@ games = {
         'url': "games/J/L/SLPS-00322.html",
     	'id': 'SLPS00322',
 	'title': "LONE SOLDIER",
+        'pic0': 'https://images.launchbox-app.com/e0358a47-dccb-4f07-ae31-9568135cbc34.png',
     },
     'SLPS01728': {
         'url': "games/J/L/SLPS-01728.html",
