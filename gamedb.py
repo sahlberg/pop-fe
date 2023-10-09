@@ -11853,6 +11853,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Valkyrie Profile/SLUS-01156.bin',
     },
     'SLUS01179': {
         'url': "games/U/V/SLUS-01156.html",
@@ -11862,6 +11863,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c61bf47d-320f-485f-8d6c-e8bacd420ccf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OeBKwxAqpOg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Valkyrie%20Profile%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Valkyrie Profile/SLUS-01179.bin',
     },
     'SLUS01138': {
         'url': "games/U/V/SLUS-01138.html",
