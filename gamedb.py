@@ -61406,6 +61406,9 @@ games = {
 }
 
 gameid_translation = {
+    'GUSSUN_19': {
+        'id': 'SLPS00041',
+    },
     'NIGHTSTRI': {
         'id': 'SLPS00050'
     },
