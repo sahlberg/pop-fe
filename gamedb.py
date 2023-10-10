@@ -3741,6 +3741,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5488ec52-23ca-4189-ab31-1457fd0e50c6.png',
         'pic1': 'https://images.launchbox-app.com/504d0d2b-6d44-4e40-bd81-f341612dbace.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chocobo%20Racing%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Chocobo Racing/SLUS-00844.bin',
     },
     'SLUS00814': {
         'url': "games/U/C/SLUS-00814.html",
@@ -5040,6 +5041,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/72397622-d7e9-4493-a802-afbcefe765c4.jpg',
         'snd0': 'https://www.youtube.com/watch?v=OM-jbvmJJUo&list=PLyxqUxT0goirVyF6FILtXMKpcQfOwCC5d&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Einhander%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Einhander/SCUS-94243.bin',
     },
     'SLUS00654': {
         'url': "games/U/E/SLUS-00654.html",
@@ -5728,6 +5730,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/G-Police/SLUS-00544.bin',
     },
     'SLUS00556': {
         'url': "games/U/G/SLUS-00544.html",
@@ -5736,6 +5739,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/G-Police/SLUS-00556.bin',
     },
     'SLUS00798': {
         'url': "games/U/G/SLUS-00798.html",
