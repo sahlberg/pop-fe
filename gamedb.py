@@ -3490,6 +3490,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4d077b87-10e9-4c4b-9447-394458eda78d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p7p4MBSBvBA&list=PL7C476B1AFC2C80AF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Bushido Blade/SCUS-94180.bin',
     },
     'SLUS00663': {
         'url': "games/U/B/SLUS-00663.html",
@@ -4686,6 +4687,7 @@ games = {
 	'title': "DISNEY'S TREASURE PLANET",
         'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
         'ps3config': 'ps3configs/Disney\'s Treasure Planet/SCUS-94647.BIN',
+        'pspconfig': 'pspconfigs/Disney\'s Treasure Planet/SCUS-94647.bin',
     },
     'SLUS01513': {
         'url': "games/U/D/SLUS-01513.html",
@@ -4837,6 +4839,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SLUS-01092.bin',
     },
     'SLUS01164': {
         'url': "games/U/D/SLUS-01092.html",
@@ -4846,6 +4849,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SLUS-01164.bin',
     },
     'SLUS01206': {
         'url': "games/U/D/SLUS-01206.html",
@@ -4855,6 +4859,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dbea9564-9d23-4608-9055-87563b2c8c8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eLnCJTsEw4E&list=PLdaHf7eG-NSzIsS7MZHyE7xW3Lrv65PKn&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dragon%20Warrior%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Warrior VII/SLUS-01206.bin',
     },
     'SLUS01346': {
         'url': "games/U/D/SLUS-01206.html",
@@ -4864,6 +4869,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/dbea9564-9d23-4608-9055-87563b2c8c8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=eLnCJTsEw4E&list=PLdaHf7eG-NSzIsS7MZHyE7xW3Lrv65PKn&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dragon%20Warrior%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Warrior VII/SLUS-01346.bin',
     },
     'SLUS00226': {
         'url': "games/U/D/SLUS-00226.html",
@@ -8704,6 +8710,7 @@ games = {
 	'title': "PHILOSOMA",
         'pic0': 'https://images.launchbox-app.com/84994cca-aee7-4067-a552-b73a9fe26e96.png',
         'manual': 'https://psxdatacenter.com/manuals/Philosoma%20(J)%20[SCPS-10009].cbr',
+        'pspconfig': 'pspconfigs/Philosoma/SCUS-94403.bin',
     },
     'SLUS01523': {
         'url': "games/U/P/SLUS-01523.html",
@@ -9622,6 +9629,7 @@ games = {
     	'id': 'SLUS00724',
 	'title': "ROLL AWAY",
         'pic0': 'https://images.launchbox-app.com/75229228-ff38-417a-b4fa-0f9592b6c0e1.png',
+        'pspconfig': 'pspconfigs/Roll Away/SLUS-00724.bin',
     },
     'SLUS00800': {
         'url': "games/U/R/SLUS-00800.html",
@@ -11729,6 +11737,7 @@ games = {
 	'title': "TURBO PROP RACING",
         'pic0': 'https://images.launchbox-app.com/1675cd47-59c5-4a6b-9eb5-d2a3f77a8d77.png',
         'ps3config': 'ps3configs/Rapid Racer/SCUS-94229.BIN',
+        'pspconfig': 'pspconfigs/Rapid Racer/SCUS-94229.bin',
     },
     'SLUS01499': {
         'url': "games/U/T/SLUS-01499.html",
@@ -12212,6 +12221,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00019.bin',
     },
     'SLUS00134': {
         'url': "games/U/W/SLUS-00019.html",
@@ -12219,6 +12229,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00134.bin',
     },
     'SLUS00135': {
         'url': "games/U/W/SLUS-00019.html",
@@ -12226,6 +12237,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00135.bin',
     },
     'SLUS00136': {
         'url': "games/U/W/SLUS-00019.html",
@@ -12233,6 +12245,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00136.bin',
     },
     'SLUS00270': {
         'url': "games/U/W/SLUS-00270.html",
@@ -14968,6 +14981,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4d077b87-10e9-4c4b-9447-394458eda78d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p7p4MBSBvBA&list=PL7C476B1AFC2C80AF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%20%28USA%29_jp2.zip',
+        'pspconfig' :'pspconfigs/Bushido Blade/SCES-00899.bin',
     },
     'SCES01313': {
         'url': "games/P/B/SCES-01313.html",
@@ -18443,6 +18457,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-01705.bin',
     },
     'SCES11705': {
         'url': "games/P/D/SCES-01705.html",
@@ -18452,6 +18467,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-11705.bin',
     },
     'SCES02565': {
         'url': "games/P/D/SCES-02565.html",
@@ -18461,6 +18477,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-02565.bin',
     },
     'SCES12565': {
         'url': "games/P/D/SCES-02565.html",
@@ -18470,6 +18487,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-12565.bin',
     },
     'SCES02566': {
         'url': "games/P/D/SCES-02566.html",
@@ -18479,6 +18497,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-02566.bin',
     },
     'SCES12566': {
         'url': "games/P/D/SCES-02566.html",
@@ -18488,6 +18507,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-12566.bin',
     },
     'SCES02567': {
         'url': "games/P/D/SCES-02567.html",
@@ -18497,6 +18517,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-02567.bin',
     },
     'SCES12567': {
         'url': "games/P/D/SCES-02567.html",
@@ -18506,6 +18527,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-12567.bin',
     },
     'SCES02568': {
         'url': "games/P/D/SCES-02568.html",
@@ -18515,6 +18537,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-02568.bin',
     },
     'SCES12568': {
         'url': "games/P/D/SCES-02568.html",
@@ -18524,6 +18547,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Dragon%20Valor_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCES-12568.bin',
     },
     'SLES00300': {
         'url': "games/P/D/SLES-00300.html",
@@ -24876,6 +24900,7 @@ games = {
     	'id': 'SCES03937',
 	'title': "DISNEY'S TREASURE PLANET",
         'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
+        'pspconfig': 'pspconfigs/Disney\'s Treasure Planet/SCES-03937.bin',
     },
     'SCES03748': {
         'url': "games/P/D/SCES-03748.html",
@@ -25839,6 +25864,7 @@ games = {
 	'title': "PHILOSOMA",
         'pic0': 'https://images.launchbox-app.com/84994cca-aee7-4067-a552-b73a9fe26e96.png',
         'manual': 'https://psxdatacenter.com/manuals/Philosoma%20(J)%20[SCPS-10009].cbr',
+        'pspconfig': 'pspconfigs/Philosoma/SCES-00059.bin',
     },
     'SLES02922': {
         'url': "games/P/P/SLES-02922.html",
@@ -26426,6 +26452,7 @@ games = {
     	'id': 'SCES00394',
 	'title': "RAPID RACER",
         'ps3config': 'ps3configs/Rapid Racer/SCES-00394.BIN',
+        'pspconfig': 'pspconfigs/Rapid Racer/SCES-00394.bin',
     },
     'SCES00004': {
         'url': "games/P/R/SCES-00004.html",
@@ -32133,6 +32160,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00074.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-00074.bin',
     },
     'SLES10074': {
         'url': "games/P/W/SLES-00074.html",
@@ -32141,6 +32169,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10074.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-10074.bin',
     },
     'SLES20074': {
         'url': "games/P/W/SLES-00074.html",
@@ -32149,6 +32178,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20074.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-20074.bin',
     },
     'SLES30074': {
         'url': "games/P/W/SLES-00074.html",
@@ -32157,6 +32187,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30074.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-30074.bin',
     },
     'SLES00104': {
         'url': "games/P/W/SLES-00104.html",
@@ -32165,6 +32196,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00104.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-00104.bin',
     },
     'SLES10104': {
         'url': "games/P/W/SLES-00104.html",
@@ -32173,6 +32205,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10104.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-10104.bin',
     },
     'SLES20104': {
         'url': "games/P/W/SLES-00104.html",
@@ -32181,6 +32214,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20104.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-20104.bin',
     },
     'SLES30104': {
         'url': "games/P/W/SLES-00104.html",
@@ -32189,6 +32223,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30104.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-30104.bin',
     },
     'SLES00105': {
         'url': "games/P/W/SLES-00105.html",
@@ -32197,6 +32232,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-00105.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-00105.bin',
     },
     'SLES10105': {
         'url': "games/P/W/SLES-00105.html",
@@ -32205,6 +32241,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-10105.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-10105.bin',
     },
     'SLES20105': {
         'url': "games/P/W/SLES-00105.html",
@@ -32213,6 +32250,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-20105.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-20105.bin',
     },
     'SLES30105': {
         'url': "games/P/W/SLES-00105.html",
@@ -32221,6 +32259,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Wing Commander III - Heart of the Tiger/SLES-30105.BIN',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLES-30105.bin',
     },
     'SLES00659': {
         'url': "games/P/W/SLES-00659.html",
