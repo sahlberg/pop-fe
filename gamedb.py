@@ -42805,11 +42805,13 @@ games = {
         'url': "games/J/G/SLPS-00041.html",
     	'id': 'SLPS00041',
 	'title': "GUSSUN OYOYO",
+        'pic0': 'https://images.launchbox-app.com/af6bc006-8ee2-4107-9ead-f655ad0ab968.png',
     },
     'SLPS02723': {
         'url': "games/J/G/SLPS-02723.html",
     	'id': 'SLPS02723',
 	'title': "GUSSUN OYOYO [XING MARUYASU SERIES]",
+        'pic0': 'https://images.launchbox-app.com/af6bc006-8ee2-4107-9ead-f655ad0ab968.png',
     },
     'SLPS00588': {
         'url': "games/J/G/SLPS-00588.html",
@@ -49929,6 +49931,7 @@ games = {
         'url': "games/J/N/SLPS-00050.html",
     	'id': 'SLPS00050',
 	'title': "NIGHT STRIKER",
+        'pic0': 'https://images.launchbox-app.com/6a1f565e-3736-4b0c-8a19-04b17870b285.png',
     },
     'SIPS60027': {
         'url': "games/J/N/SIPS-60027.html",
@@ -61403,6 +61406,9 @@ games = {
 }
 
 gameid_translation = {
+    'NIGHTSTRI': {
+        'id': 'SLPS00050'
+    },
     'SLUSP01206': {
         'id': 'SLUS01206'
     },

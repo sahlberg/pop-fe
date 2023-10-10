@@ -115,6 +115,8 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         with open(path, 'rb') as f:
             f.seek(0x8028)
             buf = str(f.read(9))[2:-1]
+            if buf in gameid_translation:
+                return gameid_translation[buf]['id']
             return buf
 
     idx = buf.find('cdrom:')
@@ -2370,7 +2372,7 @@ if __name__ == "__main__":
         for i in range(len(real_disc_ids)):
             disc_id = real_disc_ids[i]
             if disc_id in games and 'pspconfig' in games[disc_id]:
-                print('Found an external config for', disc_id) if verbose else None
+                print('Found an external config for', disc_id)
                 with open(games[disc_id]['pspconfig'], 'rb') as f:
                       f.seek(8)
                       pspconfigs[i] = f.read()
