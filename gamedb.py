@@ -1,6 +1,13 @@
 # some manuals from here in pdf format
 # https://www.gamesdatabase.org/list.aspx?DM=0&system=sony_playstation&manual=1&sort=Game
 games = {
+    'NETY00001': {
+    	'id': 'NETY00001',
+	'title': "NETYAROZE",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
     'PBPX95001': {
     	'id': 'PBPX95001',
 	'title': "DEMO ONE",
