@@ -61396,6 +61396,12 @@ games = {
 }
 
 gameid_translation = {
+    'SLUSP01206': {
+        'id': 'SLUS01206'
+    },
+    'SLUSP01346': {
+        'id': 'SLUS01346'
+    },
     'SLPS0208': {
         'id': 'SLPS00208'
     },

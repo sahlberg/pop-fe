@@ -145,6 +145,9 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         buf = buf.replace(i, "")
 
     game_id = buf.upper()
+    # Special handling of games with broken id in system.cnf
+    if game_id in gameid_translation:
+        game_id = gameid_translation[game_id]['id']
     if len(game_id) != 9:
         print('cdrom: line in system.cnf does not contain a proper id, read disc label instead')
         with open(path, 'rb') as f:
