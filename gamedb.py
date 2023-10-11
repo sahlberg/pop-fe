@@ -43948,11 +43948,17 @@ games = {
         'url': "games/J/H/SLPS-03353.html",
     	'id': 'SLPS03353',
 	'title': "HYAKUJUU SENTAI GAORANGER",
+        'pic0': 'https://images.launchbox-app.com/6f866d6a-e35c-4bd0-8967-0ce1637e12f3.png',
+        'pic1': 'https://images.launchbox-app.com/545e9fb7-70a3-43cd-8bed-36ba131666ae.jpg',
+        'pspconfig': 'pspconfigs/Hyakujuu Sentai GaoRanger/SLPS-03353.bin',
     },
     'SLPS03530': {
         'url': "games/J/H/SLPS-03530.html",
     	'id': 'SLPS03530',
 	'title': "HYAKUJUU SENTAI GAORANGER [BANDAI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/6f866d6a-e35c-4bd0-8967-0ce1637e12f3.png',
+        'pic1': 'https://images.launchbox-app.com/545e9fb7-70a3-43cd-8bed-36ba131666ae.jpg',
+        'pspconfig': 'pspconfigs/Hyakujuu Sentai GaoRanger/SLPS-03353.bin',
     },
     'SLPS01102': {
         'url': "games/J/H/SLPS-01102.html",
@@ -50210,6 +50216,9 @@ games = {
         'url': "games/J/N/SLPS-03493.html",
     	'id': 'SLPS03493',
 	'title': "NINPU SENTAI HARIKENGER",
+        'pic0': 'https://images.launchbox-app.com/5be1e6d7-680a-4bf6-82c1-8246cfa3b725.png',
+        'pic1': 'https://images.launchbox-app.com/b2f0dde1-bfc9-4a65-884d-c928de5fa139.jpg',
+        'pspconfig': 'pspconfigs/Ninpuu Sentai Hurricanger/SLPS-03493.bin',
     },
     'SLPS01757': {
         'url': "games/J/N/SLPS-01757.html",
