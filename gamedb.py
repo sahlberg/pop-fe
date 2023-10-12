@@ -22717,6 +22717,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5488ec52-23ca-4189-ab31-1457fd0e50c6.png',
         'pic1': 'https://images.launchbox-app.com/504d0d2b-6d44-4e40-bd81-f341612dbace.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chocobo%20Racing%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Chocobo Racing/SLES-02079.bin',
     },
     'SLES02948': {
         'url': "games/P/C/SLES-02948.html",
@@ -26961,6 +26962,7 @@ games = {
 	'title': "REEL FISHING II",
         'pic0': 'https://images.launchbox-app.com/eb187b9f-fb12-4658-af6b-8da69383e0c8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Reel%20Fishing%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Reel Fishing II/SLES-02780.bin',
     },
     'SLES00537': {
         'url': "games/P/R/SLES-00537.html",
@@ -27624,6 +27626,7 @@ games = {
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rollcage/SLES-01660.bin',
     },
     'SCES01922': {
         'url': "games/P/R/SCES-01922.html",
@@ -31345,6 +31348,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
+        'pspconfig': 'pspconfigs/Tombi 2/SCES-02147.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02147.BIN',
     },
     'SCES02684': {
@@ -31354,6 +31358,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
+        'pspconfig': 'pspconfigs/Tombi 2/SCES-02684.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02684.BIN',
     },
     'SCES02685': {
@@ -31363,6 +31368,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
+        'pspconfig': 'pspconfigs/Tombi 2/SCES-02685.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02685.BIN',
     },
     'SCES02686': {
@@ -31372,6 +31378,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
+        'pspconfig': 'pspconfigs/Tombi 2/SCES-02686.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02686.BIN',
     },
     'SCES02687': {
@@ -31381,6 +31388,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
+        'pspconfig': 'pspconfigs/Tombi 2/SCES-02687.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02687.BIN',
     },
     'SLES01228': {
