@@ -13200,6 +13200,7 @@ games = {
         'url': "games/P/A/SLES-04162.html",
     	'id': 'SLES04162',
 	'title': "ALL MUSIC DANCE!",
+        'pic0': 'https://images.launchbox-app.com/a76a0a2e-1d47-40b6-ab5f-3cef8c67af7c.png',
     },
     'SLES04107': {
         'url': "games/P/A/SLES-04107.html",
@@ -14488,6 +14489,7 @@ games = {
         'url': "games/P/B/SLES-02808.html",
     	'id': 'SLES02808',
 	'title': "BEACH VOLLEYBALL",
+        'pspconfig': 'https://images.launchbox-app.com/1098a94b-8d08-40de-9573-cf9b82129896.png',
     },
     'SLES03598': {
         'url': "games/P/B/SLES-03598.html",
@@ -14566,6 +14568,8 @@ games = {
         'url': "games/P/B/SLES-02537.html",
     	'id': 'SLES02537',
 	'title': "BISHI BASHI SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
         'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
         'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
@@ -17214,6 +17218,7 @@ games = {
         'url': "games/P/H/SLES-03584.html",
     	'id': 'SLES03584',
 	'title': "HALUATKO MILJONAARIKSI",
+        'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
     },
     'SLES00033': {
         'url': "games/P/H/SLES-00033.html",
@@ -17746,6 +17751,7 @@ games = {
         'url': "games/P/H/SLES-03531.html",
     	'id': 'SLES03531',
 	'title': "HYBRID",
+        'pic0': 'https://images.launchbox-app.com/09005683-d602-4e0c-8042-b9717ad75c2e.png',
     },
     'SLES02337': {
         'url': "games/P/H/SLES-02337.html",
@@ -19383,16 +19389,19 @@ games = {
         'url': "games/P/F/SLES-02722.html",
     	'id': 'SLES02722',
 	'title': "F1 2000",
+        'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
     },
     'SLES02723': {
         'url': "games/P/F/SLES-02723.html",
     	'id': 'SLES02723',
 	'title': "F1 2000",
+        'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
     },
     'SLES02724': {
         'url': "games/P/F/SLES-02724.html",
     	'id': 'SLES02724',
 	'title': "F1 2000",
+        'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
     },
     'SLES03117': {
         'url': "games/P/F/SLES-03117.html",
@@ -19638,16 +19647,19 @@ games = {
         'url': "games/P/F/SLES-00504.html",
     	'id': 'SLES00504',
 	'title': "FIFA '97",
+        'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
     },
     'SLES00505': {
         'url': "games/P/F/SLES-00505.html",
     	'id': 'SLES00505',
 	'title': "FIFA '97",
+        'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
     },
     'SLES00506': {
         'url': "games/P/F/SLES-00506.html",
     	'id': 'SLES00506',
 	'title': "FIFA '97",
+        'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
     },
     'SLES01584': {
         'url': "games/P/F/SLES-01584.html",
@@ -23661,11 +23673,13 @@ games = {
         'url': "games/P/D/SLES-04129.html",
     	'id': 'SLES04129',
 	'title': "DANCE EUROPE",
+        'pic0': 'https://images.launchbox-app.com/a76a0a2e-1d47-40b6-ab5f-3cef8c67af7c.png',
     },
     'SLES04121': {
         'url': "games/P/D/SLES-04121.html",
     	'id': 'SLES04121',
 	'title': "DANCE UK",
+        'pic0': 'https://images.launchbox-app.com/a76a0a2e-1d47-40b6-ab5f-3cef8c67af7c.png',
     },
     'SLES04161': {
         'url': "games/P/D/SLES-04161.html",
@@ -26082,6 +26096,7 @@ games = {
         'url': "games/P/P/SLES-00953.html",
     	'id': 'SLES00953',
 	'title': "PAX CORPUS",
+        'pic0': 'https://images.launchbox-app.com/4bffe290-aded-443e-9651-10303c4fc6af.png',
     },
     'SLES00727': {
         'url': "games/P/P/SLES-00727.html",
@@ -27333,6 +27348,8 @@ games = {
         'url': "games/P/R/SLES-00472.html",
     	'id': 'SLES00472',
 	'title': "RIOT",
+        'pic0': 'https://images.launchbox-app.com/6707f9c2-1311-48d0-bb48-0dedd4686fef.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Professional%20Underground%20League%20of%20Pain%20%28USA%29_jp2.zip',
     },
     'SLES00164': {
         'url': "games/P/R/SLES-00164.html",
@@ -35690,16 +35707,28 @@ games = {
         'url': "games/J/B/SLPM-86123.html",
     	'id': 'SLPM86123',
 	'title': "BISHI BASHI SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
+        'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
+        'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
     'SLPM86825': {
         'url': "games/J/B/SLPM-86825.html",
     	'id': 'SLPM86825',
 	'title': "BISHI BASHI SPECIAL [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
+        'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
+        'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
     'SLPM87206': {
         'url': "games/J/B/SLPM-87206.html",
     	'id': 'SLPM87206',
 	'title': "BISHI BASHI SPECIAL [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
+        'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
+        'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
     'SLPM86267': {
         'url': "games/J/B/SLPM-86267.html",
@@ -44293,6 +44322,7 @@ games = {
         'url': "games/J/H/SLPS-01102.html",
     	'id': 'SLPS01102',
 	'title': "HYBRID",
+        'pic0': 'https://images.launchbox-app.com/09005683-d602-4e0c-8042-b9717ad75c2e.png',
     },
     'SLPS02358': {
         'url': "games/J/H/SLPS-02358.html",
@@ -46412,11 +46442,15 @@ games = {
         'url': "games/J/K/SCPS-45516.html",
     	'id': 'SCPS45516',
 	'title': "KLONOA BEACH VOLLEYBALL",
+        'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
+        'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
     },
     'SLPS03433': {
         'url': "games/J/K/SLPS-03433.html",
     	'id': 'SLPS03433',
 	'title': "KLONOA BEACH VOLLEYBALL",
+        'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
+        'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
     },
     'SLPS01531': {
         'url': "games/J/K/SLPS-01531.html",
@@ -50336,6 +50370,8 @@ games = {
         'url': "games/J/N/SLPS-00323.html",
     	'id': 'SLPS00323',
 	'title': "NEO PLANET",
+        'pic0': 'https://images.launchbox-app.com/e12477f7-6414-437c-987a-c7d536878919.png',
+        'pic1': 'https://images.launchbox-app.com/5c608f65-4512-45eb-a360-f8e2a77905ad.jpg',
         'pspconfig': 'pspconfigs/Neo Planet/SLPS-00323.BIN',
     },
     'SLPS01377': {
