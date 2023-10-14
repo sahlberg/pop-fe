@@ -502,10 +502,13 @@ class PopFePs3App:
         resolution = 1
         magic_word = []
         subchannels = []
-        if disc_id in libcrypt:
-            for idx in range(len(self.cue_files)):
+        for idx in range(len(self.cue_files)):
+            if self.real_disc_ids[idx] in libcrypt:
                 magic_word.append(libcrypt[self.real_disc_ids[idx]]['magic_word'])
                 subchannels.append(popfe.generate_subchannels(libcrypt[self.real_disc_ids[idx]]['magic_word']))
+            else:
+                magic_word.append(0)
+                subchannels.append(None)
 
         if disc_id[:4] == 'SLES' or disc_id[:4] == 'SCES':
             print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None

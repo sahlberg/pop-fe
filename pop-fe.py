@@ -2512,10 +2512,15 @@ if __name__ == "__main__":
 
     subchannels = []
     magic_word = []
-    if real_disc_ids[0] in libcrypt:
-        for idx in range(len(real_disc_ids)):
-            magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
-            subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
+    for idx in range(len(real_disc_ids)):
+        if real_disc_ids[idx] not in libcrypt:
+            magic_word.append(0)
+            subchannels.append(None)
+            continue
+        
+        magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
+        subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
+
         patch_libcrypt = False
         if args.auto_libcrypt:
             patch_libcrypt = True
@@ -2538,22 +2543,21 @@ if __name__ == "__main__":
         if patch_libcrypt:
             #
             # Copy the CUE and BIN locally so we can patch them
-            for idx in range(len(cue_files)):
-                # qqq we don't need to copy them if they are already in
-                # our temporary work directory pop-fe-work/
-                i = get_imgs_from_bin(cue_files[idx])
-                print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
-                copy_file(i[0], 'LCP%02x.bin' % idx) 
-                temp_files.append('LCP%02x.bin' % idx)
-                with open(cue_files[idx], 'r') as fi:
-                    l = fi.readlines()
-                    l[0] = 'FILE "%s" BINARY\n' % ('LCP%02x.bin' % idx)
-                    with open('LCP%02x.cue' % idx, 'w') as fo:
-                        fo.writelines(l)
-                    temp_files.append('LCP%02x.cue' % idx)
-                cue_files[idx] = 'LCP%02x.cue' % idx
-                img_files[idx] = 'LCP%02x.bin' % idx
-                apply_ppf(img_files[idx], real_disc_ids[idx], magic_word[idx], args.auto_libcrypt)
+            # qqq we don't need to copy them if they are already in
+            # our temporary work directory pop-fe-work/
+            i = get_imgs_from_bin(cue_files[idx])
+            print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
+            copy_file(i[0], 'LCP%02x.bin' % idx) 
+            temp_files.append('LCP%02x.bin' % idx)
+            with open(cue_files[idx], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('LCP%02x.bin' % idx)
+                with open('LCP%02x.cue' % idx, 'w') as fo:
+                    fo.writelines(l)
+                temp_files.append('LCP%02x.cue' % idx)
+            cue_files[idx] = 'LCP%02x.cue' % idx
+            img_files[idx] = 'LCP%02x.bin' % idx
+            apply_ppf(img_files[idx], real_disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
     snd0 = args.snd0
     # if we did not get an --snd0 argument see if can find one in the gamedb
