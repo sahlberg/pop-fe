@@ -2239,6 +2239,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
         'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20[SLUS-01300]%20(E).cbr',
+        'pspconfig': 'pspconfigs/007 Racing/SLUS-01300.bin',
     },
     'SCUS94508': {
         'url': "games/U/0-9/SCUS-94508.html",
@@ -4104,6 +4105,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/CTR%20-%20Crash%20Team%20Racing%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SCUS-94426.bin',
     },
     'SLUS01438': {
         'url': "games/U/C/SLUS-01438.html",
@@ -12750,6 +12752,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
         'manual': 'https://psxdatacenter.com/manuals/007%20-%20Racing%20(S)(Pt)%20[SLES-03355].cbr',
+        'pspconfig': 'pspconfigs/007 Racing/SLES-03355.bin',
     },
     'SLES03356': {
         'url': "games/P/0-9/SLES-03356.html",
@@ -12759,6 +12762,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
         'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20[SLUS-01300]%20(E).cbr',
+        'pspconfig': 'pspconfigs/007 Racing/SLES-03355.bin',
     },
     'SLES03357': {
         'url': "games/P/0-9/SLES-03357.html",
@@ -12768,6 +12772,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e52c8ead-b8e5-4d5e-86ea-09d45e7bc80b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=APsuPQFIG5I&list=PLA_6nw_SiTT1ucGag7TTHaZ3xtOTWoFIO&index=1',
         'manual': 'https://psxdatacenter.com/manuals/007%20Racing%20(Platinum)%20[SLES-03357]%20(G).cbr',
+        'pspconfig': 'pspconfigs/007 Racing/SLES-03355.bin',
     },
     'SLES03658': {
         'url': "games/P/0-9/SLES-03658.html",
@@ -23590,6 +23595,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/CTR%20-%20Crash%20Team%20Racing%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SCES-02105.bin',
         'ps3config': 'ps3configs/Crash Team Racing/SCES-02105.BIN',
     },
     'SLES03690': {
@@ -24335,6 +24341,7 @@ games = {
 	'title': "DIGIMON WORLD 2003",
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World 2003/SLES-03936.bin',
         'ps3config': 'ps3configs/Digimon World 3/SLES-03936.BIN',
     },
     'SLES02207': {
@@ -38537,6 +38544,7 @@ games = {
         'url': "games/J/C/SCPS-10118.html",
     	'id': 'SCPS10118',
 	'title': "CRASH BANDICOOT RACING",
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SLPS-10118.bin',
         'ps3config': 'ps3configs/Crash Team Racing/SCPS-10118.BIN',
     },
     'SCPS91230': {
