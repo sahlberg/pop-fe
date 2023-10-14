@@ -13108,6 +13108,7 @@ games = {
         'url': "games/P/A/SLES-01875.html",
     	'id': 'SLES01875',
 	'title': "AFL '99",
+        'pic0': 'https://images.launchbox-app.com/cb54ec7c-265b-4fa5-ab47-d0dad8f7a1b0.png',
     },
     'SLES00474': {
         'url': "games/P/A/SLES-00474.html",
@@ -13175,6 +13176,7 @@ games = {
         'url': "games/P/A/SLES-03290.html",
     	'id': 'SLES03290',
 	'title': "ALEXANDRA LEDERMANN 2 - EQUITATION COMPETITION",
+        'pic0': 'https://images.launchbox-app.com/8210be38-7a0c-4526-8a2b-c1c388dd8e94.png',
         'ps3config': 'ps3configs/Equestriad 2001/SLES-03290.BIN',
     },
     'SCES03817': {
@@ -13258,6 +13260,7 @@ games = {
         'url': "games/P/A/SLES-03963.html",
     	'id': 'SLES03963',
 	'title': "ALL STAR TENNIS",
+        'pic0': 'https://images.launchbox-app.com/8d469186-eed4-4e5c-ad15-931218ef3834.png',
     },
     'SLES01433': {
         'url': "games/P/A/SLES-01433.html",
@@ -14725,6 +14728,7 @@ games = {
         'url': "games/P/B/SLES-04067.html",
     	'id': 'SLES04067',
 	'title': "BLOCK BUSTER",
+        'pic0': 'https://images.launchbox-app.com/205b5cba-4540-4afc-8aa4-dd123c25b4ed.png',
     },
     'SLES04003': {
         'url': "games/P/B/SLES-04003.html",
@@ -15072,6 +15076,7 @@ games = {
         'url': "games/P/B/SLES-00174.html",
     	'id': 'SLES00174',
 	'title': "BUGGY",
+        'pic0': 'https://images.launchbox-app.com/53c921a9-d04c-42b0-a6c9-27ddf56345d2.png',
     },
     'SLES00875': {
         'url': "games/P/B/SLES-00875.html",
@@ -15170,12 +15175,16 @@ games = {
         'url': "games/P/B/SLES-04153.html",
     	'id': 'SLES04153',
 	'title': "BUST-A-MOVE 2 + BUST-A-MOVE 3 DX",
+        'pic0': 'https://images.launchbox-app.com/5e0a7812-e1ab-4833-9e5e-e7794eadf6f2.png',
+        'pic1': 'https://images.launchbox-app.com/6049ccf2-9f55-43b2-93b7-2d436110348c.jpg',
         'pspconfig': 'pspconfigs/Bust-A-Move 2 - Arcade Edition/SLES-04153.bin',
     },
     'SLES14153': {
         'url': "games/P/B/SLES-04153.html",
     	'id': 'SLES14153',
 	'title': "BUST-A-MOVE 2 + BUST-A-MOVE 3 DX",
+        'pic0': 'https://images.launchbox-app.com/5e0a7812-e1ab-4833-9e5e-e7794eadf6f2.png',
+        'pic1': 'https://images.launchbox-app.com/6049ccf2-9f55-43b2-93b7-2d436110348c.jpg',
         'pspconfig': 'pspconfigs/Puzzle Bobble 3 DX/SLES-14153.bin',
     },
     'SLES00991': {
@@ -15289,6 +15298,7 @@ games = {
         'url': "games/P/C/SLES-02950.html",
     	'id': 'SLES02950',
 	'title': "CALIFORNIA WATERSPORTS",
+        'pic0': 'https://images.launchbox-app.com/7a7a8595-82d7-4a4f-88bb-6aae3b22c940.png',
     },
     'SLES02293': {
         'url': "games/P/C/SLES-02293.html",
@@ -15453,6 +15463,7 @@ games = {
         'url': "games/P/C/SLES-02942.html",
     	'id': 'SLES02942',
 	'title': "CASTROL HONDA WORLD SUPERBIKE TEAM VTR",
+        'pic0': 'https://images.launchbox-app.com/f1a8340a-53e4-421a-b080-3dce642bd9b1.png',
     },
     'SLES03145': {
         'url': "games/P/F/SLES-03145.html",
@@ -15635,6 +15646,7 @@ games = {
         'url': "games/P/F/SLES-03832.html",
     	'id': 'SLES03832',
 	'title': "FIFA FUSSBALL WELTMEISTERSCHAFT 2002",
+        'pic0': 'https://images.launchbox-app.com/f0c40ac4-e030-45c6-9a63-324be7562446.png',
     },
     'SLES00116':       {
         'url': "games/P/F/SLES-00116.html",
@@ -16336,6 +16348,7 @@ games = {
         'url': "games/P/F/SLES-00859.html",
     	'id': 'SLES00859',
 	'title': "FORMULA 1 '97",
+        'pic0': 'https://images.launchbox-app.com/741c1b57-4ecc-4ad5-81bd-5325c4c36b68.png',
     },
     'SLES01421': {
         'url': "games/P/F/SLES-01421.html",
@@ -16434,6 +16447,7 @@ games = {
         'url': "games/P/F/SCES-03886.html",
     	'id': 'SCES03886',
 	'title': "FORMULA ONE ARCADE",
+        'pic0': 'https://images.launchbox-app.com/0d86c624-9ea4-49a5-b01e-dd7119ece5ea.png',
     },
     'SLES00745': {
         'url': "games/P/F/SLES-00745.html",
@@ -16509,11 +16523,13 @@ games = {
         'url': "games/P/F/SLES-03363.html",
     	'id': 'SLES03363',
 	'title': "FREESTYLE SCOOTER",
+        'pic0': 'https://images.launchbox-app.com/82cbec0b-972c-4d0e-b0f6-9f373663afa6.png',
     },
     'SLES00784': {
         'url': "games/P/F/SLES-00784.html",
     	'id': 'SLES00784',
 	'title': "FRENZY!",
+        'pic0': 'https://images.launchbox-app.com/f4905d50-0b93-473b-b937-b3dffd2d9fee.png',
     },
     'SLES00704': {
         'url': "games/P/F/SLES-00704.html",
@@ -16543,11 +16559,14 @@ games = {
         'url': "games/P/F/SCES-01702.html",
     	'id': 'SCES01702',
 	'title': "FUSSBALL LIVE",
+        'pic0': 'https://images.launchbox-app.com/a22b6681-19ba-40ec-bde5-fb2becb327f0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/This%20Is%20Football%20%28Europe%29_jp2.zip',
     },
     'SCES03074': {
         'url': "games/P/F/SCES-03074.html",
     	'id': 'SCES03074',
 	'title': "FUSSBALL LIVE 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SLES01449': {
         'url': "games/P/F/SLES-01449.html",
@@ -16571,6 +16590,7 @@ games = {
         'url': "games/P/F/SLES-03508.html",
     	'id': 'SLES03508',
 	'title': "FUTURE RACER",
+        'pic0': 'https://images.launchbox-app.com/41430702-1550-41bf-accd-5fbc8d85aab6.png',
     },
     'SLES01314':       {
         'url': "games/P/G/SLES-01314.html",
@@ -17313,6 +17333,9 @@ games = {
         'url': "games/P/H/SLES-03976.html",
     	'id': 'SLES03976',
 	'title': "HARRY POTTER JA SALAISUUKSIEN KAMMIO",
+        'pic0': 'https://images.launchbox-app.com/1112958b-82ac-49a9-95d7-09fc6d0e7455.png',
+        'pic1': 'https://images.launchbox-app.com/260b2c43-02fc-48ed-b033-bb473810f403.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fnHXnF2Cqy0&list=PLO4jlmGoc6uB7KfjuC52Sczrlnms-H3gx&index=1',
     },
     'SLES03973': {
         'url': "games/P/H/SLES-03973.html",
@@ -17775,6 +17798,7 @@ games = {
         'url': "games/P/H/SLES-02958.html",
     	'id': 'SLES02958',
 	'title': "HUNCHBACK OF NOTRE DAME",
+        'pic0': 'https://images.launchbox-app.com/26456fdc-56a8-4bf3-b313-ce4eb612fbde.png',
     },
     'SLES03482': {
         'url': "games/P/H/SLES-03482.html",
@@ -17798,6 +17822,7 @@ games = {
         'url': "games/P/H/SLES-00309.html",
     	'id': 'SLES00309',
 	'title': "HYPER FINAL MATCH TENNIS",
+        'pic0': 'https://images.launchbox-app.com/87842cbc-96e8-44ae-92fa-d39e78384620.png',
     },
     'SLES00746':       {
         'url': "games/P/I/SLES-00746.html",
@@ -17863,6 +17888,7 @@ games = {
         'url': "games/P/I/SLES-01870.html",
     	'id': 'SLES01870',
 	'title': "INFESTATION",
+        'pic0': 'https://images.launchbox-app.com/de010114-b5b2-43dd-8882-560888671863.png',
     },
     'SLES03084': {
         'url': "games/P/I/SLES-03084.html",
@@ -17944,6 +17970,7 @@ games = {
         'url': "games/P/I/SLES-00443.html",
     	'id': 'SLES00443',
 	'title': "INVASION",
+        'pic0': 'https://images.launchbox-app.com/8dea5055-e569-4a42-a141-dfd8d99d5e98.png',
     },
     'SLES00386': {
         'url': "games/P/I/SLES-00386.html",
@@ -18159,6 +18186,7 @@ games = {
         'url': "games/P/J/SCES-03908.html",
     	'id': 'SCES03908',
 	'title': "JINX",
+        'pic0': 'https://images.launchbox-app.com/2f60ebfa-11ec-486d-b381-7f63117d38e1.png',
     },
     'SLES00112': {
         'url': "games/P/J/SLES-00112.html",
@@ -18245,6 +18273,7 @@ games = {
         'url': "games/P/J/SLES-00130.html",
     	'id': 'SLES00130',
 	'title': "JUPITER STRIKE",
+        'pic0': 'https://images.launchbox-app.com/38cc8193-727d-4f22-b102-968b4f5f90f3.png',
     },
     'SLES02753':       {
         'url': "games/P/K/SLES-02753.html",
@@ -18820,6 +18849,7 @@ games = {
         'url': "games/P/D/SLES-03525.html",
     	'id': 'SLES03525',
 	'title': "DRAGSTARS",
+        'pic0': 'https://images.launchbox-app.com/7c5d17ab-812a-4b2a-a62b-6ba33808f1d9.png',
     },
     'SLES01938': {
         'url': "games/P/D/SLES-01938.html",
@@ -19208,6 +19238,7 @@ games = {
         'url': "games/P/E/SLES-03491.html",
     	'id': 'SLES03491',
 	'title': "EGIPTO II - LA PROFECIA DE HELIOPOLIS",
+        'pic0': 'https://images.launchbox-app.com/eb2107c0-e7ce-4361-ade2-32b0ba234a6f.png',
     },
     'SLES01599': {
         'url': "games/P/E/SLES-01599.html",
@@ -19312,11 +19343,14 @@ games = {
         'url': "games/P/E/SCES-01704.html",
     	'id': 'SCES01704',
 	'title': "ESTO ES FUTBOL",
+        'pic0': 'https://images.launchbox-app.com/a22b6681-19ba-40ec-bde5-fb2becb327f0.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/This%20Is%20Football%20%28Europe%29_jp2.zip',
     },
     'SCES03076': {
         'url': "games/P/E/SCES-03076.html",
     	'id': 'SCES03076',
 	'title': "ESTO ES FUTBOL 2",
+        'pic0': 'https://images.launchbox-app.com/7b85691e-125c-45eb-b829-3c2ef6203607.png',
     },
     'SLES02270': {
         'url': "games/P/E/SLES-02270.html",
@@ -41941,7 +41975,6 @@ games = {
         'url': "games/J/F/SLPS-01315.html",
     	'id': 'SLPS01315',
 	'title': "FIRE WOMAN MATOIGUMI",
-
         'pic0': 'https://images.launchbox-app.com/8dc0956c-be5e-48c8-88da-1163b785f149.png',
         'manual': 'https://psxdatacenter.com/manuals/Fire%20Woman%20Matoigumi%20(J)%20[SLPS-01315].cbr',
     },
@@ -42100,6 +42133,7 @@ games = {
         'url': "games/J/F/SIPS-60023.html",
     	'id': 'SIPS60023',
 	'title': "FORMULA 1 '97",
+        'pic0': 'https://images.launchbox-app.com/741c1b57-4ecc-4ad5-81bd-5325c4c36b68.png',
     },
     'SLPS00358': {
         'url': "games/J/F/SLPS-00358.html",
@@ -44743,6 +44777,7 @@ games = {
         'url': "games/J/H/SLPS-00278.html",
     	'id': 'SLPS00278',
 	'title': "HYPER FINAL MATCH TENNIS",
+        'pic0': 'https://images.launchbox-app.com/87842cbc-96e8-44ae-92fa-d39e78384620.png',
     },
     'SLPS00062': {
         'url': "games/J/H/SLPS-00062.html",
