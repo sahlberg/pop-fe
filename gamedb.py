@@ -10071,6 +10071,7 @@ games = {
         'pic1': 'https://cdn.mobygames.com/covers/6925700-shrek-treasure-hunt-playstation-inside-cover.jpg',
         'snd0': 'https://www.youtube.com/watch?v=ZLWXkmzNRSc&list=PLO4jlmGoc6uCqdVvnjyjOOXqVj1QTfEm1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shrek Treasure Hunt/SLUS-01464.bin',
         # Fixes hang when loading into minigames
         'ps3config': 'ps3configs/Shrek Treasure Hunt/SLUS-01463.BIN',
     },
@@ -28566,6 +28567,7 @@ games = {
         'pic1': 'https://cdn.mobygames.com/covers/6925700-shrek-treasure-hunt-playstation-inside-cover.jpg',
         'snd0': 'https://www.youtube.com/watch?v=ZLWXkmzNRSc&list=PLO4jlmGoc6uCqdVvnjyjOOXqVj1QTfEm1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shrek%20Treasure%20Hunt%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shrek Treasure Hunt/SLES-03996.bin',
         # Fixes hang when loading into minigames
         'ps3config': 'ps3configs/Shrek Treasure Hunt/SLES-03996.BIN',
     },
