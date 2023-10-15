@@ -9998,6 +9998,7 @@ games = {
     	'id': 'SLUS00545',
 	'title': "SHADOW MASTER",
         'pic0': 'https://images.launchbox-app.com/12df9030-9424-435c-84a5-f215494b2e51.png',
+        'pspconfig': 'pspconfigs/Shadow Master/SLUS-00545.bin',
     },
     'SLUS00863': {
         'url': "games/U/S/SLUS-00863.html",
@@ -28489,6 +28490,7 @@ games = {
     	'id': 'SLES00888',
 	'title': "SHADOW MASTER",
         'pic0': 'https://images.launchbox-app.com/12df9030-9424-435c-84a5-f215494b2e51.png',
+        'pspconfig': 'pspconfigs/Shadow Master/SLES-00888.bin',
     },
     'SLES01576': {
         'url': "games/P/S/SLES-01576.html",
