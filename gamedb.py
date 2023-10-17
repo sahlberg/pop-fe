@@ -10425,6 +10425,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20the%20Dragon%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Spyro the Dragon/SCUS-94228.bin',
     },
     'SCUS94425': {
         'url': "games/U/S/SCUS-94425.html",
@@ -10432,6 +10433,7 @@ games = {
 	'title': "SPYRO 2 - RIPTO'S RAGE",
         'pic0': 'https://images.launchbox-app.com/f46299b3-550c-458f-a878-0eb9795b1fa1.png',
         'pic1': 'https://images.launchbox-app.com/a93ed873-0ac1-4659-b769-a4331f167967.png',
+        'pspconfig': 'pspconfigs/Spyro 2 - Ripto\'s Rage!/SCUS-94425.bin',
     },
     'SCUS94467': {
         'url': "games/U/S/SCUS-94467.html",
@@ -10440,6 +10442,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8cd3083a-5e82-43a1-897a-bf03eb254c3a.png',
         'pic1': 'https://images.launchbox-app.com/ec9b9440-bb3b-4e2f-9a64-f4a841e3c86b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20-%20Year%20of%20the%20Dragon%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Spyro - Year of the Dragon/SCUS-94467.bin',
     },
     'SLUS00241': {
         'url': "games/U/S/SLUS-00241.html",
