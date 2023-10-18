@@ -15,6 +15,7 @@ except:
     print('You need to install python module pillow')
 import argparse
 import datetime
+import hashlib
 import io
 import os
 import re
@@ -62,7 +63,7 @@ except:
 from pathlib import Path
 from bchunk import bchunk
 from document import create_document
-from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation
+from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
 try:
     from make_isoedat import pack
 except:
@@ -116,6 +117,13 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
             iso.close()
         except:
             True
+
+    if not buf:
+        with open(path, 'rb') as f:
+            h = hashlib.md5(f.read(1024*1024)).hexdigest()
+            if h in gameid_by_md5sum:
+                return gameid_by_md5sum[h]['id']
+
     if not buf:
         print('Failed to read game id. Falling back to raw read')
         with open(path, 'rb') as f:

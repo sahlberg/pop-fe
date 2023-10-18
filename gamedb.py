@@ -62636,6 +62636,12 @@ games = {
     },
 }
 
+gameid_by_md5sum = {
+    '9a80d260f0bf2c9ceed4fe4397f24b7c': {
+        'id': 'SLES04102',
+    },
+}
+
 gameid_translation = {
     'GUSSUN_19': {
         'id': 'SLPS00041',
