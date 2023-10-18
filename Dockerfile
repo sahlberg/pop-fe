@@ -1,4 +1,4 @@
-FROM python:3-bullseye
+FROM python:3.12-bookworm
 
 ENV PATH "${PATH}:/pop-fe"
 
