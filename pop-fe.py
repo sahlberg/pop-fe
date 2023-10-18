@@ -93,8 +93,9 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
-    try:
-        if have_pycdlib:
+    buf = None
+    if have_pycdlib:
+        try:
             iso = pycdlib.PyCdlib()
             iso.open(path)
             extracted = io.BytesIO()
@@ -102,7 +103,10 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
             extracted.seek(0)
             buf = str(extracted.read(1024))
             iso.close()
-        if have_iso9660:
+        except:
+            True
+    if not buf and have_iso9660:
+        try:
             iso = iso9660.ISO9660.IFS(source=path)
             st = iso.stat('system.cnf', True)
             if st is None:
@@ -110,14 +114,19 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
 
             buf = iso.seek_read(st['LSN'])[1][:128]
             iso.close()
-    except:
+        except:
+            True
+    if not buf:
         print('Failed to read game id. Falling back to raw read')
         with open(path, 'rb') as f:
             f.seek(0x8028)
             buf = str(f.read(9))[2:-1]
             if buf in gameid_translation:
                 return gameid_translation[buf]['id']
-            return buf
+            if buf != '         ':
+                return buf
+            else:
+                return 'UNKN00000'
 
     idx = buf.find('cdrom:')
     if idx < 0:
