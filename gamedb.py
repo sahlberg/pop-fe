@@ -2531,6 +2531,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ape Escape/SCUS-94423.bin',
         'ps3config': 'ps3configs/Ape Escape/SCUS-94423.BIN',
     },
     'SLUS00373': {
@@ -6110,6 +6111,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6bf1ef7b-4dbd-4f35-90b7-c7b650124840.png',
         'pic1': 'https://images.launchbox-app.com/8a5adbc5-9768-4426-b286-bbac68816233.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8iHuV_kGIAs&list=PLvWcvkuVJhubZksJjyzq-uBzsZVUutV6e&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault 2/SLUS-01418.bin',
     },
     'SLUS01398': {
         'url': "games/U/G/SLUS-01398.html",
@@ -6405,6 +6407,7 @@ games = {
 	'title': "INUYASHA - A FEUDAL FAIRY TALE",
         'pic0': 'https://images.launchbox-app.com/c7ced79e-6ee6-4bf2-9b7d-e7944f6449f1.png',
         'pic1': 'https://images.launchbox-app.com/aa311550-fda3-49ff-ac85-fa619b0fa236.jpg',
+        'pspconfig': 'pspconfigs/Inuyasha - A Feudal Fairy Tale/SLUS-01534.bin',
     },
     'SLUS00709': {
         'url': "games/U/I/SLUS-00709.html",
@@ -17247,6 +17250,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6bf1ef7b-4dbd-4f35-90b7-c7b650124840.png',
         'pic1': 'https://images.launchbox-app.com/8a5adbc5-9768-4426-b286-bbac68816233.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8iHuV_kGIAs&list=PLvWcvkuVJhubZksJjyzq-uBzsZVUutV6e&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault 2/SLES-03934.bin',
     },
     'SLES03689': {
         'url': "games/P/G/SLES-03689.html",
@@ -42896,6 +42900,7 @@ games = {
         'url': "games/J/G/SLPS-03189.html",
     	'id': 'SLPS03189',
 	'title': "GEAR FIGHTER DENDOH",
+        'pspconfig': 'pspconfigs/Gear Fighter Dendoh/SLPS-03189.bin',
     },
     'SLPM87286': {
         'url': "games/J/G/SLPM-87286.html",
@@ -44637,6 +44642,7 @@ games = {
         'url': "games/J/H/SLPS-02993.html",
     	'id': 'SLPS02993',
 	'title': "HOKUTO NO KEN - SEIKIMATSU KYUUSEISHU DENSETSU",
+        'pspconfig': 'pspconfigs/Hokuto no Ken - Seikimatsu Kyuuseishu Densetsu/SLPS-02993.bin',
     },
     'SLPS02297': {
         'url': "games/J/H/SLPS-02297.html",
@@ -45157,6 +45163,7 @@ games = {
 	'title': "INUYASHA - SENGOKU OTOGI KASSEN",
         'pic0': 'https://images.launchbox-app.com/c7ced79e-6ee6-4bf2-9b7d-e7944f6449f1.png',
         'pic1': 'https://images.launchbox-app.com/aa311550-fda3-49ff-ac85-fa619b0fa236.jpg',
+        'pspconfig': 'pspconfigs/Inuyasha - A Feudal Fairy Tale/SLPS-03504.bin',
     },
     'SLPS03503': {
         'url': "games/J/I/SLPS-03503.html",
@@ -45164,6 +45171,7 @@ games = {
 	'title': "INUYASHA - SENGOKU OTOGI KASSEN [LIMITED EDITION]",
         'pic0': 'https://images.launchbox-app.com/c7ced79e-6ee6-4bf2-9b7d-e7944f6449f1.png',
         'pic1': 'https://images.launchbox-app.com/aa311550-fda3-49ff-ac85-fa619b0fa236.jpg',
+        'pspconfig': 'pspconfigs/Inuyasha - A Feudal Fairy Tale/SLPS-03503.bin',
     },
     'SLPS00551': {
         'url': "games/J/I/SLPS-00551.html",
@@ -55679,11 +55687,13 @@ games = {
         'url': "games/J/S/SCPS-10091.html",
     	'id': 'SCPS10091',
 	'title': "SARU! GET YOU!",
+        'pspconfig': 'pspconfigs/Ape Escape/SCPS-10091.bin',
     },
     'SCPS91196': {
         'url': "games/J/S/SCPS-91196.html",
     	'id': 'SCPS91196',
 	'title': "SARU! GET YOU! [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Ape Escape/SCPS-91196.bin',
     },
     'SCPS91331': {
         'url': "games/J/S/SCPS-91331.html",
@@ -57579,7 +57589,6 @@ games = {
     	'id': 'SLPS00458',
 	'title': "SIMULATION ZOO",
     },
-
     'SLPS03156': {
         'url': "games/J/S/SLPS-03156.html",
     	'id': 'SLPS03156',
