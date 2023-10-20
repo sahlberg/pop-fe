@@ -62683,6 +62683,9 @@ gameid_by_md5sum = {
 }
 
 gameid_translation = {
+    'SCUS00163': {
+        'id': 'SCES00163',
+    },
     'GUSSUN_19': {
         'id': 'SLPS00041',
     },
