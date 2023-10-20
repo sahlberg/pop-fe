@@ -135,17 +135,26 @@ games = {
     	'id': 'SLPM86437',
 	'title': "UTAUTA-UH - SEIREI-SONGS",
     },
+    'SLPM80191':       {
+        'url': "games/J/V/SLPS-01149.html",
+    	'id': 'SLPM80191',
+	'title': "V-RALLY - CHAMPIONSHIP EDITION",
+        'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
+        'pspconfig': 'pspconfigs/V-Rally/SLPM-80191.bin',
+    },
     'SLPS01149':       {
         'url': "games/J/V/SLPS-01149.html",
     	'id': 'SLPS01149',
 	'title': "V-RALLY - CHAMPIONSHIP EDITION",
         'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
+        'pspconfig': 'pspconfigs/V-Rally/SLPS-01449.bin',
     },
     'SLPS91099': {
         'url': "games/J/V/SLPS-91099.html",
     	'id': 'SLPS91099',
 	'title': "V-RALLY - CHAMPIONSHIP EDITION [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
+        'pspconfig': 'pspconfigs/V-Rally/SLPS-91099.bin',
     },
     'SLPS91430': {
         'url': "games/J/V/SLPS-91430.html",
@@ -159,6 +168,7 @@ games = {
 	'title': "V-RALLY 2 - CHAMPIONSHIP EDITION",
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLPS-02516.bin',
     },
     'SLPS91467': {
         'url': "games/J/V/SLPS-91467.html",
@@ -166,6 +176,15 @@ games = {
 	'title': "V-RALLY 2 - CHAMPIONSHIP EDITION [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLPS-91467.bin',
+    },
+    'SLPM80500': {
+        'url': "games/J/V/SLPS-91467.html",
+    	'id': 'SLPM80500',
+	'title': "V-RALLY 2 - CHAMPIONSHIP EDITION [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
+        'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLPM-80500.bin',
     },
     'SLPS00103': {
         'url': "games/J/V/SLPS-00103.html",
@@ -8202,6 +8221,7 @@ games = {
 	'title': "NEED FOR SPEED - V-RALLY",
         'pic0': 'https://images.launchbox-app.com/4567fff9-701d-47aa-a5bc-69242674e7f3.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20-%20V-Rally%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/V-Rally/SLUS-00590.bin',
     },
     'SLUS00276': {
         'url': "games/U/N/SLUS-00276.html",
@@ -11989,6 +12009,7 @@ games = {
 	'title': "V-RALLY 2 - NEED FOR SPEED",
         'pic0': 'https://images.launchbox-app.com/79c6e6c0-102c-4c09-8d4c-51c67d41f663.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLUS-01003.bin',
     },
     'SLUS00218': {
         'url': "games/U/V/SLUS-00218.html",
@@ -32395,6 +32416,7 @@ games = {
     	'id': 'SLES00250',
 	'title': "V-RALLY - CHAMPIONSHIP EDITION '97",
         'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
+        'pspconfig': 'pspconfigs/V-Rally/SLES-00250.bin',
     },
     'SLES00250': {
         'url': "games/P/V/SLES-00250P.html",
@@ -32402,12 +32424,21 @@ games = {
 	'title': "V-RALLY - CHAMPIONSHIP EDITION [PLATINUM VERSION]",
         'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
     },
+    'SLED02124': {
+        'url': "games/P/V/SLES-01907.html",
+    	'id': 'SLED02124',
+	'title': "V-RALLY 2 - CHAMPIONSHIP EDITION",
+        'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
+        'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLED-02124.bin',
+    },
     'SLES01907': {
         'url': "games/P/V/SLES-01907.html",
     	'id': 'SLES01907',
 	'title': "V-RALLY 2 - CHAMPIONSHIP EDITION",
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
+        'pspconfig': 'pspconfigs/V-Rally 2/SLES-01907.bin',
     },
     'SLES00545': {
         'url': "games/P/V/SLES-00545.html",
