@@ -2827,8 +2827,9 @@ class popstation(object):
 
         # insert the aa3 blobs
         if disc_num < len(self._aea):
+            fh.seek((fh.tell() + 0xf) & 0xfffffff0)
             for i in self._aea[disc_num]:
-                print('Inject', i)
+                print('Inject', i, 'at %08x' % fh.tell())
                 with open(i, 'rb') as f:
                     f.seek(0x60)
                     buf = f.read()
@@ -2838,7 +2839,6 @@ class popstation(object):
                     att = att + _b
                     print('Write AEA at 0x%08x' % fh.tell()) if self._verbose else None
                     fh.write(buf)
-                    fh.seek((fh.tell() + 0xf) & 0xfffffff0)
 
         
         if fh.tell() & 0xf:
