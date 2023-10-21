@@ -898,7 +898,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False):
     # Convert ICON0 to a file object
     if icon0:
         if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
@@ -973,7 +973,11 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=False, subchannels=subchannels, configs=configs)
+    whole_disk=False
+    if use_cdda:
+        aea_files = []
+        whole_disk = True
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs)
 
     if manual:
         print('Installing manual as', f + '/DOCUMENT.DAT')
@@ -2151,6 +2155,7 @@ if __name__ == "__main__":
     parser.add_argument('--psp-install-memory-card', action='store_true',
                         help='Finish installing a PSX memory card after '
                         'running the game at least once')
+    parser.add_argument('--psp-use-cdda', action='store_true', help='Use CDDA instead of ATRAC3 for audio tracks on PSP')
     parser.add_argument('--ps2-dir',
                     help='Where the PS2 USB-stick is mounted')
     parser.add_argument('--ps3-pkg',
@@ -2530,6 +2535,8 @@ if __name__ == "__main__":
     subchannels = []
     magic_word = []
     for idx in range(len(real_disc_ids)):
+        if 'psp-use-cdda' in games[real_disc_ids[idx]]:
+            args.psp_use_cdda = True
         if real_disc_ids[idx] not in libcrypt:
             magic_word.append(0)
             subchannels.append(None)
@@ -2601,7 +2608,7 @@ if __name__ == "__main__":
             temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:

@@ -69,6 +69,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
+        self.cdda = 'off'
         self.pic0_disabled = 'off'
         self.snd0_disabled = 'off'
         self.configs = []
@@ -92,6 +93,7 @@ class PopFePs3App:
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_eboot': self.on_create_eboot,
             'on_reset': self.on_reset,
+            'on_cdda': self.on_cdda,
             'on_theme_selected': self.on_theme_selected,
         }
 
@@ -149,6 +151,7 @@ class PopFePs3App:
         self.preview_tk = None
         self.configs = []
         self.builder.get_variable('watermark_variable').set(self.watermark)
+        self.builder.get_variable('cdda_variable').set(self.cdda)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
         for idx in range(1,5):
@@ -330,6 +333,10 @@ class PopFePs3App:
         self.cue_files.append(cue_file)
         self.configs.append(bytes())
 
+        if disc_id in games and 'psp-use-cdda' in games[disc_id]:
+            self.cdda = 'on'
+            self.builder.get_variable('cdda_variable').set(self.cdda)
+        
         if disc_id in games and 'pspconfig' in games[disc_id]:
             print('Found an external config for', disc_id)
             with open(games[disc_id]['pspconfig'], 'rb') as f:
@@ -548,7 +555,8 @@ class PopFePs3App:
                          aea_files, subdir=self.subdir, snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual,
-                         configs=self.configs)
+                         configs=self.configs,
+                         use_cdda=True if self.cdda=='on' else False)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
@@ -558,6 +566,8 @@ class PopFePs3App:
     def on_reset(self):
         self.init_data()
 
+    def on_cdda(self):
+        self.cdda = self.builder.get_variable('cdda_variable').get()
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
