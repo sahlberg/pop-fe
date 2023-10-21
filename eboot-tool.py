@@ -52,6 +52,18 @@ def getaudiotracktable(eboot):
         f.seek(offset + 0xc00)
         return f.read(0x620)
 
+def gettoc(eboot):
+    offset = getpsisoimgoffset(eboot)
+    with open(eboot, 'rb') as f:
+        f.seek(offset + 0x800)
+        return f.read(1020)
+
+def injecttoc(eboot, toc):
+    offset = getpsisoimgoffset(eboot)
+    with open(eboot, 'rb+') as f:
+        f.seek(offset + 0x800)
+        f.write(toc)
+    
 def printhex(name, buf):
     print(name)
     idx = 0
@@ -66,6 +78,9 @@ def printhex(name, buf):
         idx = idx + 1
     print('')
 
+def getdiscmaptableoffset(eboot):
+    offset = getpsisoimgoffset(eboot)
+    return offset + 0x4000
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -92,13 +107,29 @@ if __name__ == "__main__":
     bad_offset = getpsisoimgoffset(args.bad_eboot)
     print('BAD  EBOOT PSISOIMG starts at %08x' % bad_offset)
 
-    #good_att = getaudiotracktable(args.good_eboot)
+    good_att = getaudiotracktable(args.good_eboot)
     #printhex('GOOD ATT', good_att)
-    #bad_att = getaudiotracktable(args.bad_eboot)
+    bad_att = getaudiotracktable(args.bad_eboot)
     #printhex('BAD  ATT', bad_att)
 
-    good_toc = getaudiotracktable(args.good_eboot)
-    printhex('GOOD TOC', good_toc)
-    bad_toc = getaudiotracktable(args.bad_eboot)
-    printhex('BAD  TOC', bad_toc)
+    good_toc = gettoc(args.good_eboot)
+    #printhex('GOOD TOC', good_toc)
+    bad_toc = gettoc(args.bad_eboot)
+    #printhex('BAD  TOC', bad_toc)
     
+    print('Write GOOD TOC to test eboot')
+    injecttoc(args.eboot, good_toc)
+
+    print('Copy all the disc tracks from GOOD test eboot')
+    good_dmt_offset = getdiscmaptableoffset(args.good_eboot)
+    print('GOOD DMT at %04x' % good_dmt_offset)
+    bad_dmt_offset = getdiscmaptableoffset(args.bad_eboot)
+    print('BAD  DMT at %04x' % bad_dmt_offset)
+    
+    with open(args.good_eboot, 'rb') as i:
+        i.seek(good_dmt_offset)
+        buf = i.read()
+        print('amount of disc data', len(buf))
+        with open(args.eboot, 'rb+') as o:
+            o.seek(bad_dmt_offset)
+            #o.write(buf)
