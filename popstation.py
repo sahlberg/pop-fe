@@ -2812,7 +2812,8 @@ class popstation(object):
             struct.pack_into('<I', idx, 0, offset)
             h = hashlib.sha1()
             h.update(buf)
-            idx[6] = 0x01 # we need this for uncompressed image in ps3 pkg?
+            if self._complevel == 0:
+                idx[6] = 0x01 # we need this for uncompressed image in ps3 pkg?
             idx[8:24] = h.digest()[:16]
             if len(c) >= 0x9300:
                 struct.pack_into('<H', idx, 4, 0x9300)
