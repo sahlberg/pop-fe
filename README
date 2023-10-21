@@ -135,13 +135,6 @@ Command line arguments are:
 			 contains a PSP or VITA memory card.
 --psp-install-memory-card : Used to install memory card images on the PSP.
 			 See memory card section below for usage.
---psp-use-cdda        : With this setting the PSP EBOOT will be created
-		        containing the full CDDA tracks but no ATRAC3
-			tracks will be injected.
-			This is helpful for games on PSP that depend on
-			the "cdrom" to automatically play the next track
-			when the current track ends, which PSP does not do
-			automatically for ATRAC3 audio files.
 --ps2-dir             : This is the directory that holds the USB stick to
 		        install VCD files for running under POPS on a PS2.
 --ps3-pkg             : This creates a PS3 PKG

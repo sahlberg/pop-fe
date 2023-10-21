@@ -169,7 +169,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLPS-02516.bin',
-        'psp-use-cdda': True,
     },
     'SLPS91467': {
         'url': "games/J/V/SLPS-91467.html",
@@ -178,7 +177,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLPS-91467.bin',
-        'psp-use-cdda': True,
     },
     'SLPM80500': {
         'url': "games/J/V/SLPS-91467.html",
@@ -187,7 +185,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLPM-80500.bin',
-        'psp-use-cdda': True,
     },
     'SLPS00103': {
         'url': "games/J/V/SLPS-00103.html",
@@ -12013,7 +12010,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/79c6e6c0-102c-4c09-8d4c-51c67d41f663.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLUS-01003.bin',
-        'psp-use-cdda': True,
     },
     'SLUS00218': {
         'url': "games/U/V/SLUS-00218.html",
@@ -32435,7 +32431,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLED-02124.bin',
-        'psp-use-cdda': True,
     },
     'SLES01907': {
         'url': "games/P/V/SLES-01907.html",
@@ -32444,7 +32439,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5171a09b-e88b-4b70-a673-e079d8d2a9b3.png',
         'pic1': 'https://images.launchbox-app.com/8dda9b1c-e3e9-4c33-9947-85257f50742d.jpg',
         'pspconfig': 'pspconfigs/V-Rally 2/SLES-01907.bin',
-        'psp-use-cdda': True,
     },
     'SLES00545': {
         'url': "games/P/V/SLES-00545.html",
