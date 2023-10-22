@@ -819,7 +819,6 @@ def get_toc_from_cu2(cu2):
         toc[27] = m
         toc[28] = s
         toc[29] = f
-
         track = 1
         for line in lines:
             if not re.search('^data', line) and not re.search('^track', line):
@@ -833,18 +832,38 @@ def get_toc_from_cu2(cu2):
                 buf[3] = bcd(int(data[:2]))
                 buf[4] = bcd(int(data[3:5]))
                 buf[5] = 1
-                buf[7] = int(data[:2])
-                buf[8] = int(data[3:5])
-                buf[9] = int(data[6:8])
+                m = int(data[:2])
+                s = int(data[3:5])
+                f = int(data[6:8])
+                buf[7] = m
+                buf[8] = s
+                buf[9] = f
             else:
                 buf[0] = 0x01
                 buf[2] = bcd(track)
-                buf[3] = bcd(int(msf[:2])  - 2*int(data[:2]))
-                buf[4] = bcd(int(msf[3:5]) - 2*int(data[3:5]))
-                buf[5] = bcd(int(msf[6:8]) - 2*int(data[6:8]))
-                buf[7] = bcd(int(msf[:2])  - int(data[:2]))
-                buf[8] = bcd(int(msf[3:5]) - int(data[3:5]))
-                buf[9] = bcd(int(msf[6:8]) - int(data[6:8]))
+                m = bcd(int(msf[:2])  - 2*int(data[:2]))
+                _s = int(msf[3:5]) - 2*int(data[3:5])
+                _s = _s + 2
+                if _s >= 60:
+                    m = m + 1
+                    _s = _s - 60
+                s = bcd(_s)
+                f = bcd(int(msf[6:8]) - 2*int(data[6:8]))
+                buf[3] = m
+                buf[4] = s
+                buf[5] = f
+                m = bcd(int(msf[:2])  - int(data[:2]))
+                f = bcd(int(msf[6:8]) - 2*int(data[6:8]))
+                _s = int(msf[3:5]) - int(data[3:5])
+                _s = _s + 2
+                if _s >= 60:
+                    m = m + 1
+                    _s = _s - 60
+                s = bcd(_s)
+                f = bcd(int(msf[6:8]) - int(data[6:8]))
+                buf[7] = m
+                buf[8] = s
+                buf[9] = f
             
             track = track + 1
             toc = toc + buf
@@ -2088,7 +2107,7 @@ def generate_cu2_files(cue_files, img_files, subdir):
 
 def generate_aea_files(cue_files, img_files, subdir):
     aea_files = []
-    
+
     for d in range(len(cue_files)):
         cue_file = cue_files[d]
         img_file = img_files[d]
