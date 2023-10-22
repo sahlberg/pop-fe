@@ -2686,6 +2686,7 @@ games = {
     	'id': 'SLUS00670',
 	'title': "ARMORED CORE - PROJECT PHANTASMA",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLUS-00670.bin',
     },
     'SLUS01022': {
         'url': "games/U/A/SLUS-01022.html",
@@ -3759,6 +3760,7 @@ games = {
     	'id': 'SLUS01230',
 	'title': "CHAMPIONSHIP MOTOCROSS 2001 - FEATURING RICKY CARMICHAEL",
         'pic0': 'https://images.launchbox-app.com/6cf20a1a-9e8a-42a3-a8da-474cea76715b.png',
+        'pspconfig': 'pspconfigs/Championship Motocross 2001 featuring Ricky Carmichael/SLUS-01230.bin',
     },
     'SLUS01216': {
         'url': "games/U/C/SLUS-01216.html",
@@ -4984,6 +4986,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/63b98e4f-49b0-46ce-b6e5-476be1bff31a.png',
         'pic1': 'https://images.launchbox-app.com/b0301906-9038-4dfe-aa31-2338bdca5c4e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fXDH251DBtM',
+        'pspconfig': 'pspconfigs/Ducati World Racing Challenge/SLUS-01025.bin',
     },
     'SLUS01002': {
         'url': "games/U/D/SLUS-01002.html",
@@ -9769,6 +9772,7 @@ games = {
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rollcage - Stage II/SLUS-00867.bin',
     },
     'SLUS00195': {
         'url': "games/U/R/SLUS-00195.html",
@@ -19127,6 +19131,15 @@ games = {
         'pic1': 'https://images.launchbox-app.com/b0301906-9038-4dfe-aa31-2338bdca5c4e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fXDH251DBtM',
     },
+    'SLES02621': {
+        'url': "games/P/D/SLES-03377.html",
+    	'id': 'SLES02621',
+	'title': "DUCATI WORLD RACING CHALLENGE",
+        'pic0': 'https://images.launchbox-app.com/63b98e4f-49b0-46ce-b6e5-476be1bff31a.png',
+        'pic1': 'https://images.launchbox-app.com/b0301906-9038-4dfe-aa31-2338bdca5c4e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fXDH251DBtM',
+        'pspconfig': 'pspconfigs/Ducati World Racing Challenge/SLES-02621.bin',
+    },
     'SLES03377': {
         'url': "games/P/D/SLES-03377.html",
     	'id': 'SLES03377',
@@ -22850,6 +22863,7 @@ games = {
     	'id': 'SLES03252',
 	'title': "CHAMPIONSHIP MOTOCROSS 2001 - FEATURING RICKY CARMICHAEL",
         'pic0': 'https://images.launchbox-app.com/6cf20a1a-9e8a-42a3-a8da-474cea76715b.png',
+        'pspconfig': 'pspconfigs/Championship Motocross 2001 featuring Ricky Carmichael/SLES-03252.bin',
     },
     'SLES03427': {
         'url': "games/P/C/SLES-03427.html",
@@ -22863,6 +22877,8 @@ games = {
     	'id': 'SLES03107',
 	'title': "CHAOS BREAK",
         'pic0': 'https://images.launchbox-app.com/38119236-7696-4d83-9fbd-08f8fc8c7dc3.png',
+        'pic1': 'https://images.launchbox-app.com/2b18d5b8-ce25-4ffc-ac58-f6d85e5e0686.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=LozHeKUnteI',
         'psp-use-cdda': True,
         'pspconfig': 'pspconfigs/Chaos Break/SLES-03107.bin',
     },
@@ -28084,6 +28100,7 @@ games = {
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rollcage - Stage II/SCES-01922.bin',
     },
     'SLES00995': {
         'url': "games/P/R/SLES-00995.html",
@@ -35284,6 +35301,7 @@ games = {
     	'id': 'SLPS01130',
 	'title': "ARMORED CORE - PROJECT PHANTASMA",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-01130.bin',
     },
     'SLPS91110': {
         'url': "games/J/A/SLPS-91110.html",
@@ -35296,6 +35314,7 @@ games = {
     	'id': 'SLPS91424',
 	'title': "ARMORED CORE - PROJECT PHANTASMA [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-91424.bin',
     },
     'SLPM86502': {
         'url': "games/J/A/SLPM-86502.html",
