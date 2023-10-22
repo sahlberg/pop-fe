@@ -22863,6 +22863,7 @@ games = {
     	'id': 'SLES03107',
 	'title': "CHAOS BREAK",
         'pic0': 'https://images.launchbox-app.com/38119236-7696-4d83-9fbd-08f8fc8c7dc3.png',
+        'psp-use-cdda': True,
         'pspconfig': 'pspconfigs/Chaos Break/SLES-03107.bin',
     },
     'SCES02812': {
@@ -37405,12 +37406,14 @@ games = {
     	'id': 'SCPS45480',
 	'title': "CHAOS BREAK",
         'pic0': 'https://images.launchbox-app.com/38119236-7696-4d83-9fbd-08f8fc8c7dc3.png',
+        'psp-use-cdda': True,
     },
     'SLPM86363': {
         'url': "games/J/C/SLPM-86363.html",
     	'id': 'SLPM86363',
 	'title': "CHAOS BREAK",
         'pic0': 'https://images.launchbox-app.com/38119236-7696-4d83-9fbd-08f8fc8c7dc3.png',
+        'psp-use-cdda': True,
     },
     'SLPS00168': {
         'url': "games/J/C/SLPS-00168.html",
