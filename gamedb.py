@@ -22,6 +22,13 @@ games = {
         'pic0': None,
         'pic1': None,
     },
+    'SLES20090': {
+    	'id': 'SLES20090',
+	'title': "XPLODER V3",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
     'PBPX95001': {
     	'id': 'PBPX95001',
 	'title': "DEMO ONE",
