@@ -4684,6 +4684,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SLUS-00529.bin',
     },
     'SLUS01029': {
         'url': "games/U/D/SLUS-01029.html",
@@ -4691,6 +4692,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SLUS-01029.bin',
     },
     'SCUS94646': {
         'url': "games/U/D/SCUS-94646.html",
@@ -24959,6 +24961,7 @@ games = {
 	'title': "DISNEY'S HERCULE - JEU D'E ACTION",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SCES-00892.bin',
     },
     'SCES00893': {
         'url': "games/P/D/SCES-00893.html",
@@ -24966,6 +24969,7 @@ games = {
 	'title': "DISNEY'S HERCULES - ACTION SPIEL",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SCES-00893.bin',
     },
     'SCES00895': {
         'url': "games/P/D/SCES-00895.html",
@@ -24973,6 +24977,7 @@ games = {
 	'title': "DISNEY'S HERCULES - JUEGO DE ACCION",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SCES-00895.bin',
     },
     'SCES00891': {
         'url': "games/P/D/SCES-00891.html",
@@ -24987,6 +24992,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SCES-00894.bin',
     },
     'SCES00896': {
         'url': "games/P/D/SCES-00896.html",
@@ -24994,6 +25000,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SCES-00896.bin',
     },
     'SCES00898': {
         'url': "games/P/D/SCES-00898.html",
