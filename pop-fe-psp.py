@@ -236,11 +236,12 @@ class PopFePs3App:
                 self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
         if not self.pic1:
             self.pic1 = popfe.get_pic1_from_game(disc_id, game, self.cue_file_orig)
-        temp_files.append(self.subdir + 'PIC1.PNG')
-        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
-        self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
-        c = self.builder.get_object('pic1_canvas', self.master)
-        c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
+        if self.pic1:
+            temp_files.append(self.subdir + 'PIC1.PNG')
+            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+            self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
+            c = self.builder.get_object('pic1_canvas', self.master)
+            c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
 
         self.update_preview()
         

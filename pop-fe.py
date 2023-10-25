@@ -121,6 +121,7 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
     if not buf:
         with open(path, 'rb') as f:
             h = hashlib.md5(f.read(1024*1024)).hexdigest()
+            print('MD5 fingerprint', h)
             if h in gameid_by_md5sum:
                 return gameid_by_md5sum[h]['id']
 
@@ -294,6 +295,8 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, add_psn_frame=False):
         True
 
     if 'icon0' in games[game_id]:
+        if not games[game_id]['icon0']:
+            return None
         ret = requests.get(games[game_id]['icon0'], stream=True)
         if ret.status_code != 200:
             return None

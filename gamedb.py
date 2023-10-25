@@ -62548,6 +62548,7 @@ games = {
         'url': "games/J/T/SLPS-00015.html",
     	'id': 'SLPS00015',
 	'title': "TWINBEE TAISEN PUZZLE DAMA",
+        'pic0': 'https://images.launchbox-app.com/19017c0c-f601-4f72-9458-ae17d7e2cb1a.png',
     },
     'SLPS02126': {
         'url': "games/J/T/SLPS-02126.html",
@@ -62622,6 +62623,7 @@ games = {
         'url': "games/J/U/SLPS-00032.html",
     	'id': 'SLPS00032',
 	'title': "UCHUU SEIBUTSU PUROPON-KUN P!",
+        'pic0': 'https://images.launchbox-app.com/f44c438a-6458-4a93-8235-25af4be09bcd.png',
     },
     'SLPS02032': {
         'url': "games/J/U/SLPS-02032.html",
@@ -62729,6 +62731,12 @@ games = {
 gameid_by_md5sum = {
     '9a80d260f0bf2c9ceed4fe4397f24b7c': {
         'id': 'SLES04102',
+    },
+    'b09a32a384dd6f60f794abae2a0dddcf': {
+        'id': 'SLPS00032',
+    },
+    '9c0798e23361853dd8556829e47688b9': {
+        'id': 'SLPS00015',
     },
 }
 
