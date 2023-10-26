@@ -977,6 +977,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://psxdatacenter.com/manuals/Colin%20McRae%20Rally%20[SLES-00477]%20(Platinum)%20(S).cbr',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLPS-00477.bin',
     },
     'SLPS00478': {
         'url': "games/J/W/SLPS-00477.html",
@@ -984,6 +985,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLPS-00478.bin',
     },
     'SLPS00479': {
         'url': "games/J/W/SLPS-00477.html",
@@ -991,6 +993,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLPS-00479.bin',
     },
     'SLPS00480': {
         'url': "games/J/W/SLPS-00477.html",
@@ -998,6 +1001,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLPS-00480.bin',
     },
     'SLPS00598': {
         'url': "games/J/W/SLPS-00598.html",
@@ -12419,6 +12423,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00019.bin',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00019.bin',
     },
     'SLUS00134': {
         'url': "games/U/W/SLUS-00019.html",
@@ -12426,6 +12431,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00134.bin',
         'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00134.bin',
     },
     'SLUS00135': {
@@ -12435,6 +12441,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00135.bin',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00135.bin',
     },
     'SLUS00136': {
         'url': "games/U/W/SLUS-00019.html",
@@ -12442,6 +12449,7 @@ games = {
 	'title': "WING COMMANDER III - HEART OF THE TIGER",
         'pic0': 'https://images.launchbox-app.com/3dc68ece-908d-40f3-a75c-948a57c0305d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wing%20Commander%20III%20-%20Heart%20of%20the%20Tiger%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00136.bin',
         'pspconfig': 'pspconfigs/Wing Commander III - Heart of the Tiger/SLUS-00136.bin',
     },
     'SLUS00270': {
