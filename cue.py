@@ -79,9 +79,11 @@ def parse_cue(cuefile, raw=False, psxtruncate=False):
 
             if line.upper()[:5] == 'FILE ':
                 file = strip_line(line[5:line.rindex(' ')])
-                if file[0] != '/' and cuefile.rindex('/') >= 0:
-                    file = cuefile[:cuefile.rindex('/') + 1] + file
-                    
+                try:
+                    if file[0] != '/' and cuefile.rindex('/') >= 0:
+                        file = cuefile[:cuefile.rindex('/') + 1] + file
+                except:
+                    True
             if line.upper()[:6] == 'TRACK ':
                 track = int(strip_line(line[6:line.rindex(' ')]))
                 mode = strip_line(line[line.rindex(' '):]).upper()
