@@ -62737,6 +62737,7 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # Fan translation to spanish. Both disks merged into a single disk
     '1808dd8b039de821d347167930b0bcf1': {
         'id': 'SLUS01179',
     },
