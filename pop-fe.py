@@ -2195,7 +2195,7 @@ if __name__ == "__main__":
                         help='Force game_id for this iso.')
     parser.add_argument('--manual',
                         help='Directory/Zip/HTTP-link containing images for themanual')
-    parser.add_argument('--force-no-assets',
+    parser.add_argument('--force-no-assets', action='store_true',
                         help='Do not download any assets for this')
     parser.add_argument('--title',
                     help='Force title for this iso')

@@ -2723,7 +2723,7 @@ class popstation(object):
         buf = bytearray(1024)
         gid = self._disc_ids[disc_num]
         buf[0:11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
-        if self._configs:
+        if self._configs and self._configs[disc_num]:
             _l = len(self._configs[disc_num])
             if _l:
                 if self._complevel:
