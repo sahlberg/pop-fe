@@ -4993,6 +4993,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLUS-01161.bin',
     },
     'SLUS01318': {
         'url': "games/U/D/SLUS-01161.html",
@@ -5002,6 +5003,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLUS-01318.bin',
     },
     'SLUS01025': {
         'url': "games/U/D/SLUS-01025.html",
@@ -10041,6 +10043,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SLUS-00468.bin',
     },
     'SLUS00718': {
         'url': "games/U/S/SLUS-00468.html",
@@ -10048,6 +10051,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SLUS-00718.bin',
     },
     'SLUS00895': {
         'url': "games/U/S/SLUS-00895.html",
@@ -19063,6 +19067,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-02993.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02993.BIN',
     },
     'SLES12993': {
@@ -19072,6 +19077,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-12993.bin',
     },
     'SLES02994': {
         'url': "games/P/D/SLES-02994.html",
@@ -19080,6 +19086,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-02994.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02994.BIN',
     },
     'SLES12994': {
@@ -19089,6 +19096,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-12994.bin',
     },
     'SLES02995': {
         'url': "games/P/D/SLES-02995.html",
@@ -19097,6 +19105,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-02995.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02995.BIN',
     },
     'SLES12995': {
@@ -19106,6 +19115,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-12995.bin',
     },
     'SLES02996': {
         'url': "games/P/D/SLES-02996.html",
@@ -19114,6 +19124,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-02996.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02996.BIN',
     },
     'SLES12996': {
@@ -19123,6 +19134,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-12996.bin',
     },
     'SLES02997': {
         'url': "games/P/D/SLES-02997.html",
@@ -19131,6 +19143,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-02997.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02997.BIN',
     },
     'SLES12997': {
@@ -19140,6 +19153,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver 2/SLES-12997.bin',
     },
     'SLES03402': {
         'url': "games/P/D/SLES-03402.html",
@@ -28502,6 +28516,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-02099.bin',
     },
     'SCES12099': {
         'url': "games/P/S/SCES-02099.html",
@@ -28509,6 +28524,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-12099.bin',
     },
     'SCES02100': {
         'url': "games/P/S/SCES-02100.html",
@@ -28516,6 +28532,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-02100.bin',
     },
     'SCES12100': {
         'url': "games/P/S/SCES-02100.html",
@@ -28523,6 +28540,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-12100.bin',
     },
     'SCES02101': {
         'url': "games/P/S/SCES-02101.html",
@@ -28530,6 +28548,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-02101.bin',
     },
     'SCES12101': {
         'url': "games/P/S/SCES-02101.html",
@@ -28537,6 +28556,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-12101.bin',
     },
     'SCES02102': {
         'url': "games/P/S/SCES-02102.html",
@@ -28544,6 +28564,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-02102.bin',
     },
     'SCES12102': {
         'url': "games/P/S/SCES-02102.html",
@@ -28551,6 +28572,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-12102.bin',
     },
     'SCES02103': {
         'url': "games/P/S/SCES-02103.html",
@@ -28558,6 +28580,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-02103.bin',
     },
     'SCES12103': {
         'url': "games/P/S/SCES-02103.html",
@@ -28565,6 +28588,7 @@ games = {
 	'title': "SHADOW MADNESS",
         'pic0': 'https://images.launchbox-app.com/130b8d76-5ca1-4025-a1ed-877249e2eadb.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shadow%20Madness%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Madness/SCES-12103.bin',
     },
     'SLES00947': {
         'url': "games/P/S/SLES-00947.html",
