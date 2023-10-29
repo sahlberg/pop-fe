@@ -446,7 +446,7 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
             break
         # Too big. Clamp duration and try again
         duration = int(duration * 0.95 / (os.stat(at3).st_size / max_size))
-
+    return snd0
 
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
@@ -995,9 +995,9 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         except:
             snd0 = None
     if snd0:
-        convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir)
-        with open(subdir + 'SND0.AT3', 'rb') as i:
-            snd0_data = i.read()
+        if convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir):
+            with open(subdir + 'SND0.AT3', 'rb') as i:
+                snd0_data = i.read()
 
     dest_file = f + '/EBOOT.PBP'
     whole_disk=False
@@ -2195,6 +2195,8 @@ if __name__ == "__main__":
                         help='Force game_id for this iso.')
     parser.add_argument('--manual',
                         help='Directory/Zip/HTTP-link containing images for themanual')
+    parser.add_argument('--force-no-assets',
+                        help='Do not download any assets for this')
     parser.add_argument('--title',
                     help='Force title for this iso')
     parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
@@ -2538,7 +2540,7 @@ if __name__ == "__main__":
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
 
     manual = None
-    if args.psp_dir or args.fetch_metadata:
+    if not args.force_no_assets and (args.psp_dir or args.fetch_metadata):
         if args.manual:
             manual = args.manual
         if not manual:
@@ -2611,28 +2613,29 @@ if __name__ == "__main__":
             apply_ppf(img_files[idx], real_disc_ids[idx], magic_word[idx], args.auto_libcrypt)
 
     snd0 = args.snd0
-    # if we did not get an --snd0 argument see if can find one in the gamedb
-    if not snd0 and args.theme:
-        snd0 = get_snd0_from_theme(args.theme, disc_ids[0], subdir)
-    if not snd0:
-        try:
-            os.stat(args.files[0][:-4] + '.snd0')
-            snd0 = args.files[0][:-4] + '.snd0'
-            print('Use locally stored SND0 from', snd0)
-        except:
-            True
-    if not snd0:
-        snd0 = get_snd0_from_game(disc_ids[0], subdir=subdir)
-        if snd0:
-            temp_files.append(snd0)
-    if snd0 == 'auto':
-        a = Search(game_title + ' ps1 ost')
-        snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
-        print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)
-    if snd0 and snd0[:24] == 'https://www.youtube.com/':
-        snd0 = get_snd0_from_link(snd0)
-        if snd0:
-            temp_files.append(snd0)
+    if not args.force_no_assets:
+        # if we did not get an --snd0 argument see if can find one in the gamedb
+        if not snd0 and args.theme:
+            snd0 = get_snd0_from_theme(args.theme, disc_ids[0], subdir)
+        if not snd0:
+            try:
+                os.stat(args.files[0][:-4] + '.snd0')
+                snd0 = args.files[0][:-4] + '.snd0'
+                print('Use locally stored SND0 from', snd0)
+            except:
+                True
+        if not snd0:
+            snd0 = get_snd0_from_game(disc_ids[0], subdir=subdir)
+            if snd0:
+                temp_files.append(snd0)
+        if snd0 == 'auto':
+            a = Search(game_title + ' ps1 ost')
+            snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
+            print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)
+        if snd0 and snd0[:24] == 'https://www.youtube.com/':
+            snd0 = get_snd0_from_link(snd0)
+            if snd0:
+                temp_files.append(snd0)
 
     if args.psp_dir:
         create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda)
