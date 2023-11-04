@@ -564,7 +564,7 @@ class PopFePs3App:
         #
         # Apply all PPF fixes we might need
         #
-        self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.subdir)
+        self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.subdir, tag="psp")
 
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
 

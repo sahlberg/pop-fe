@@ -2019,10 +2019,12 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 #
 # Apply all PPF fixes that may be needed
 #
-def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir):
+def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
     for i in range(len(real_disc_ids)):
         disc_id = real_disc_ids[i]
         if disc_id not in ppf_fixes:
+            continue
+        if tag and tag not in ppf_fixes[disc_id]:
             continue
         print('Found PPF:', ppf_fixes[disc_id]['desc'])
         if subdir != cue_files[i][:len(subdir)]:
@@ -2447,7 +2449,7 @@ if __name__ == "__main__":
     #
     # Apply all PPF fixes we might need
     #
-    cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir)
+    cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag='psp' if args.psp_dir else None)
 
     #
     # Apply all romhacks

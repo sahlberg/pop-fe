@@ -10583,7 +10583,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
-        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin' 
+        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
     },
     'SLUS00562': {
         'url': "games/U/S/SLUS-00562.html",
@@ -63420,5 +63420,10 @@ ppf_fixes = {
     'PBPX95008': {
         'desc': 'PPF to force region to Japan',
         'ppf': 'ppf/PBPX-xxxxx.ppf'
+    },
+    'SLUS00884': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLUS-00884-psp.ppf',
+        'psp': True,
     },
 }
