@@ -63421,6 +63421,11 @@ ppf_fixes = {
         'desc': 'PPF to force region to Japan',
         'ppf': 'ppf/PBPX-xxxxx.ppf'
     },
+    'SLUS00888': {
+        'desc': 'PPF for Worms Armageddon',
+        'ppf': 'ppf/SLUS-00888.ppf',
+        'tags': ['psp',],
+    },
     'SLUS00884': {
         'desc': 'Fix for Vita',
         'hashes': {
