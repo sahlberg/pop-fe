@@ -2024,9 +2024,21 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
         disc_id = real_disc_ids[i]
         if disc_id not in ppf_fixes:
             continue
-        if tag and tag not in ppf_fixes[disc_id]:
+        if 'tags' in ppf_fixes[disc_id]:
+            if not tag:
+                continue
+            if tag not in ppf_fixes[disc_id]['tags']:
+                continue
+        if 'ppf' in ppf_fixes[disc_id]:
+            ppf = ppf_fixes[disc_id]['ppf']
+        if 'hashes' in ppf_fixes[disc_id]:
+            with open(img_files[i], 'rb') as f:
+                h = hashlib.md5(f.read(1024*1024)).hexdigest()
+                if h in ppf_fixes[disc_id]['hashes']:
+                    ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
+        if not ppf:
             continue
-        print('Found PPF:', ppf_fixes[disc_id]['desc'])
+        print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
         if subdir != cue_files[i][:len(subdir)]:
             # Need to copy the bin/cue to the work directory.
             # We know this is a single bin at this point as if it would have
@@ -2045,8 +2057,8 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
             cue_files[i] = _c
             img_files[i] = _b
 
-        print('Applying', ppf_fixes[disc_id]['ppf'])
-        ApplyPPF(img_files[i], ppf_fixes[disc_id]['ppf'])
+        print('Applying', ppf)
+        ApplyPPF(img_files[i], ppf)
             
     return cue_files, img_files
 

@@ -63423,7 +63423,12 @@ ppf_fixes = {
     },
     'SLUS00884': {
         'desc': 'Fix for Vita',
-        'ppf': 'ppf/SLUS-00884-psp.ppf',
-        'psp': True,
+        'hashes': {
+            # rev 1.0
+            '5a2ed39e908fcc437faf02969b76b8ee': {
+                'ppf': 'ppf/SLUS-00884-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
     },
 }
