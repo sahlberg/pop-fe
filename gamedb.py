@@ -11858,6 +11858,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f2277af6-f06d-4955-ad66-c06b3ea72c11.png',
         'snd0': 'https://www.youtube.com/watch?v=zItQY-Ghknc&list=PLdaHf7eG-NSw6OwSgzZdwJqDTp8aBKld9&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Torneko%20-%20The%20Last%20Hope_jp2.zip',
+        'pspconfig': 'pspconfigs/Torneko - The Last Hope/SLUS-01181.bin',
     },
     'SLUS00021': {
         'url': "games/U/T/SLUS-00021.html",
@@ -40415,6 +40416,7 @@ games = {
         'url': "games/J/D/SLPM-86293.html",
     	'id': 'SLPM86293',
 	'title': "DRAGON QUEST CHARACTERS - TORUNEKO NO DAIBOUKEN 2 - FUSHIGI NO DUNGEON",
+        'pspconfig': 'pspconfigs/Torneko - The Last Hope/SLPM-86293.bin',
     },
     'SLPM86916': {
         'url': "games/J/D/SLPM-86916.html",
@@ -42595,6 +42597,7 @@ games = {
         'url': "games/J/F/SLPS-03094.html",
     	'id': 'SLPS03094',
 	'title': "FUURAIKI",
+        'pspconfig': 'pspconfigs/Fuuraiki/SLPS-03094.bin',
     },
     'SLPS00441': {
         'url': "games/J/F/SLPS-00441.html",
@@ -47267,6 +47270,7 @@ games = {
         'url': "games/J/K/SLPS-01885.html",
     	'id': 'SLPS01885',
 	'title': "KOSODATE QUIZ MOTTO MY ANGEL",
+        'pspconfig': 'pspconfigs/Kosodate Quiz Motto My Angel/SLPS-01885.bin',
     },
     'SLPS00159': {
         'url': "games/J/K/SLPS-00159.html",
