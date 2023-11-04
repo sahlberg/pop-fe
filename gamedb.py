@@ -20166,6 +20166,7 @@ games = {
     	'id': 'SLES04007',
 	'title': "KOTOBUKI GRAND PRIX",
         'pic0': 'https://images.launchbox-app.com/37898122-ca88-4cf2-b6a7-c815c6d240a9.png',
+        'pspconfig': 'pspconfigs/Kotobuki Grand Prix/SLES-04007.bin',
     },
     'SLES02897': {
         'url': "games/P/K/SLES-02897.html",
@@ -35039,16 +35040,19 @@ games = {
         'url': "games/J/A/SLPS-01579.html",
     	'id': 'SLPS01579',
 	'title': "AOKI OHKAMI TO SHIROKIMEJIKA - GENCHOHISHI",
+        'pspconfig': 'pspconfigs/Aoki Ohkami To Shirokimejika - Genchohishi/SLPS-01579.bin',
     },
     'SLPM86859': {
         'url': "games/J/A/SLPM-86859.html",
     	'id': 'SLPM86859',
 	'title': "AOKI OHKAMI TO SHIROKIMEJIKA - GENCHOHISHI [KOEI TEIBAN SERIES]",
+        'pspconfig': 'pspconfigs/Aoki Ohkami To Shirokimejika - Genchohishi/SLPM-86859.bin',
     },
     'SLPM86303': {
         'url': "games/J/A/SLPM-86303.html",
     	'id': 'SLPM86303',
 	'title': "AOKI OHKAMI TO SHIROKIMEJIKA - GENCHOHISHI [KOEI THE BEST]",
+        'pspconfig': 'pspconfigs/Aoki Ohkami To Shirokimejika - Genchohishi/SLPM-86303.bin',
     },
     'SLPM86271': {
         'url': "games/J/A/SLPM-86271.html",
@@ -40964,6 +40968,7 @@ games = {
         'url': "games/J/E/SLPM-86494.html",
     	'id': 'SLPM86494',
 	'title': "ELDERGATE",
+        'pspconfig': 'pspconfigs/Elder Gate/SLPM-86494.bin',
     },
     'SCPS10038': {
         'url': "games/J/E/SCPS-10038.html",
@@ -47287,12 +47292,14 @@ games = {
     	'id': 'SLPS01941',
 	'title': "KOTOBUKI GRAND PRIX - MEZASE! GENCHARI KING",
         'pic0': 'https://images.launchbox-app.com/37898122-ca88-4cf2-b6a7-c815c6d240a9.png',
+        'pspconfig': 'pspconfigs/Kotobuki Grand Prix/SLPS-01941.bin',
     },
     'SLPM86926': {
         'url': "games/J/K/SLPM-86926.html",
     	'id': 'SLPM86926',
 	'title': "KOTOBUKI GRAND PRIX - MEZASE! GENCHARI KING [POKKIRI 1400]",
         'pic0': 'https://images.launchbox-app.com/37898122-ca88-4cf2-b6a7-c815c6d240a9.png',
+        'pspconfig': 'pspconfigs/Kotobuki Grand Prix/SLPS-86926.bin',
     },
     'SCPS10137': {
         'url': "games/J/K/SCPS-10137.html",
