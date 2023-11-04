@@ -2680,6 +2680,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SCUS-94182.bin',
     },
     'SLUS01323': {
         'url': "games/U/A/SLUS-01323.html",
@@ -2688,6 +2689,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SLUS-01323.bin',
     },
     'SLUS01030': {
         'url': "games/U/A/SLUS-01030.html",
@@ -6889,6 +6891,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCUS-94254.bin',
     },
     'SLUS01013': {
         'url': "games/U/L/SLUS-01013.html",
@@ -13880,6 +13883,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SCES-00842.bin',
     },
     'SLES02617': {
         'url': "games/P/A/SLES-02617.html",
@@ -20549,6 +20553,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCES-01752.bin',
     },
     'SCES01944': {
         'url': "games/P/L/SCES-01944.html",
@@ -20558,6 +20563,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCES-01944.bin',
     },
     'SCES01945': {
         'url': "games/P/L/SCES-01945.html",
@@ -20567,6 +20573,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCES-01945.bin',
     },
     'SCES01946': {
         'url': "games/P/L/SCES-01946.html",
@@ -20576,6 +20583,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCES-01946.bin',
     },
     'SCES01947': {
         'url': "games/P/L/SCES-01947.html",
@@ -20585,6 +20593,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4a098002-deeb-4b3e-8107-d1772a595a8b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Legend%20of%20Legaia_jp2.zip',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCES-01947.bin',
     },
     'SLES04145': {
         'url': "games/P/L/SLES-04145.html",
@@ -35301,6 +35310,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SCPS-45060.bin',
     },
     'SLPS00900': {
         'url': "games/J/A/SLPS-00900.html",
@@ -35309,6 +35319,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SLPS-00900.bin',
     },
     'SLPS91064': {
         'url': "games/J/A/SLPS-91064.html",
@@ -35317,6 +35328,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SLPS-91064.bin',
     },
     'SLPS91402': {
         'url': "games/J/A/SLPS-91402.html",
@@ -35325,6 +35337,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Armored Core/SLPS-91402.bin',
     },
     'SLPS01855': {
         'url': "games/J/A/SLPS-01855.html",
@@ -43835,6 +43848,7 @@ games = {
         'url': "games/J/G/SLPS-01322.html",
     	'id': 'SLPS01322',
 	'title': "GUNBARE! GAME TENGOKU - THE GAME PARADISE 2",
+        'pspconfig': 'pspconfigs/Gunbare Game Tengoku - The Game Paradise 2/SLPS-01322.bin',
     },
     'SCPS45299': {
         'url': "games/J/G/SCPS-45299.html",
@@ -47798,6 +47812,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a9cce407-3a52-48c3-95e1-f7350112ff51.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://psxdatacenter.com/manuals/Legaia%20Densetsu%20[SCPS-10059]%20(J).cbr',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCPS-10059.bin',
     },
     'SCPS91246': {
         'url': "games/J/L/SCPS-91246.html",
@@ -47807,6 +47822,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a9cce407-3a52-48c3-95e1-f7350112ff51.jpg',
         'snd0': 'https://www.youtube.com/watch?v=l9IvVQDtAGI&list=PL22ED14ADF2FA4F35&index=9',
         'manual': 'https://psxdatacenter.com/manuals/Legaia%20Densetsu%20[SCPS-10059]%20(J).cbr',
+        'pspconfig': 'pspconfigs/Legend of Legaia/SCPS-91246.bin',
     },
     'SIPS60002': {
         'url': "games/J/L/SIPS-60002.html",
