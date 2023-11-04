@@ -9822,6 +9822,7 @@ games = {
 	'title': "ROSCO MCQUEEN FIREFIGHTER EXTREME",
         'pic0': 'https://images.launchbox-app.com/500a1071-936e-420e-9386-166b331cbe57.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rosco%20McQueen%20Firefighter%20Extreme%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rosco McQueen - Firefighter Extreme/SLUS-00750.bin',
     },
     'SLUS01062': {
         'url': "games/U/R/SLUS-01062.html",
@@ -10807,6 +10808,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden/SLUS-00292.bin',
     },
     'SLUS00958': {
         'url': "games/U/S/SLUS-00958.html",
@@ -28193,6 +28195,7 @@ games = {
 	'title': "ROSCO MCQUEEN - FIREFIGHTER EXTREME",
         'pic0': 'https://images.launchbox-app.com/500a1071-936e-420e-9386-166b331cbe57.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rosco%20McQueen%20Firefighter%20Extreme%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rosco McQueen - Firefighter Extreme/SCES-00257.bin',
     },
     'SLES02591': {
         'url': "games/P/R/SLES-02591.html",
@@ -29962,6 +29965,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLES-02442.bin',
     },
     'SLES02443': {
         'url': "games/P/S/SLES-02443.html",
@@ -29971,6 +29975,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLES-02443.bin',
     },
     'SLES02444': {
         'url': "games/P/S/SLES-02444.html",
@@ -29980,6 +29985,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLES-02444.bin',
     },
     'SLES02445': {
         'url': "games/P/S/SLES-02445.html",
@@ -29989,6 +29995,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLES-02445.bin',
     },
     'SLES02446': {
         'url': "games/P/S/SLES-02446.html",
@@ -29998,6 +30005,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLES-02446.bin',
     },
     'SLES04045': {
         'url': "games/P/S/SLES-04045.html",
@@ -42186,6 +42194,7 @@ games = {
         'url': "games/J/F/SCPS-10055.html",
     	'id': 'SCPS10055',
 	'title': "FIRE PANIC - MACK NO RESCUE DAISAKUSEN",
+        'pspconfig': 'pspconfigs/Rosco McQueen - Firefighter Extreme/SCPS-10055.bin',
     },
     'SLPS02065': {
         'url': "games/J/F/SLPS-02065.html",
@@ -43167,6 +43176,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden/SCPS-45184.bin',
     },
     'SLPS00097': {
         'url': "games/J/G/SLPS-00097.html",
@@ -43175,6 +43185,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden/SLPS-00097.bin',
     },
     'SLPM86017': {
         'url': "games/J/G/SLPM-86017.html",
@@ -43183,6 +43194,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden/SLPM-86017.bin',
     },
     'SLPM87099': {
         'url': "games/J/G/SLPM-87099.html",
@@ -43191,6 +43203,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden/SLPM-87099.bin',
     },
     'SCPS45369': {
         'url': "games/J/G/SCPS-45369.html",
@@ -43200,6 +43213,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SCPS-45369.bin',
     },
     'SLPM86168': {
         'url': "games/J/G/SLPM-86168.html",
@@ -43209,6 +43223,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLPM-86168.bin',
     },
     'SLPM86389': {
         'url': "games/J/G/SLPM-86389.html",
@@ -43218,6 +43233,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLPM-86389.bin',
     },
     'SLPM87100': {
         'url': "games/J/G/SLPM-87100.html",
@@ -43227,6 +43243,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f45bafe5-8f7d-434d-856b-56de4d57201f.jpg',
         'snd0': "https://www.youtube.com/watch?v=K34SwBtnLm8&list=PLGLnRhR0_m7_vthMEalaral0TDUkhGu0o&index=2",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20II%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Suikoden II/SLPM-87100.bin',
     },
     'SLPM86986': {
         'url': "games/J/G/SLPM-86986.html",
