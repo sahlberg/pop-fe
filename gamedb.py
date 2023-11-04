@@ -4262,6 +4262,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Cyberia/SLUS-00053.bin',
     },
     'SLUS00008': {
         'url': "games/U/C/SLUS-00008.html",
@@ -10110,6 +10111,7 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLUS-00028.bin',
     },
     'SLUS00137': {
         'url': "games/U/S/SLUS-00028.html",
@@ -10117,6 +10119,7 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLUS-00137.bin',
     },
     'SLUS01308': {
         'url': "games/U/S/SLUS-01308.html",
@@ -10462,6 +10465,7 @@ games = {
 	'title': "SPONGEBOB SQUAREPANTS - SUPERSPONGE",
         'pic0': 'https://images.launchbox-app.com/1ae0e4ef-d483-4798-9b13-719dba55c67e.png',
         'pic1': 'https://images.launchbox-app.com/dad4441a-0a16-4a63-af64-4fb54a4b3bad.jpg',
+        'pspconfig': 'pspconfigs/Nickelodeon SpongeBob SquarePants - SuperSponge/SLUS-01352.bin',
     },
     'SLUS00655': {
         'url': "games/U/S/SLUS-00655.html",
@@ -10579,6 +10583,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin' 
     },
     'SLUS00562': {
         'url': "games/U/S/SLUS-00562.html",
@@ -12316,6 +12321,7 @@ games = {
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
         'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wayne%20Gretzky%27s%203D%20Hockey%20%2798%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Wayne Gretzky's 3D Hockey '98/SLUS-00147.bin",
     },
     'SLUS01274': {
         'url': "games/U/W/SLUS-01274.html",
@@ -23907,6 +23913,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Cyberia/SLES-00233.bin',
     },
     'SLES00272': {
         'url': "games/P/C/SLES-00272.html",
@@ -23915,6 +23922,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Cyberia%20[SLUS-00053]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Cyberia/SLES-00272.bin',
     },
     'SLES02370': {
         'url': "games/P/C/SLES-02370.html",
@@ -28674,7 +28682,8 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
-        'ps3config': 'ps3configs/Shockwave Assault/SLES-00071.BIN',
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLES-00071.bin',
+        'ps3config': 'ps3configs/Shockwave Assault/SLES-00071.BIN',        
     },
     'SLES10071': {
         'url': "games/P/S/SLES-00071.html",
@@ -28682,6 +28691,7 @@ games = {
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLES-10071.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLES-10071.BIN',
     },
     'SLES04176': {
@@ -29251,6 +29261,7 @@ games = {
 	'title': "SPONGEBOB SQUAREPANTS - SUPERSPONGE",
         'pic0': 'https://images.launchbox-app.com/1ae0e4ef-d483-4798-9b13-719dba55c67e.png',
         'pic1': 'https://images.launchbox-app.com/dad4441a-0a16-4a63-af64-4fb54a4b3bad.jpg',
+        'pspconfig': 'pspconfigs/Nickelodeon SpongeBob SquarePants - SuperSponge/SLES-03704.bin',
     },
     'SLES01361': {
         'url': "games/P/S/SLES-01361.html",
@@ -33013,6 +33024,7 @@ games = {
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
         'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wayne%20Gretzky%27s%203D%20Hockey%20%2798%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Wayne Gretzky's 3D Hockey '98/SLES-01160.bin",
     },
     'SLES03168': {
         'url': "games/P/W/SLES-03168.html",
@@ -38928,6 +38940,7 @@ games = {
 	'title': "CYBERIA",
         'pic0': 'https://images.launchbox-app.com/b6877850-1238-4f55-913c-3b609ed239c9.png',
         'pic1': 'https://cdn.mobygames.com/promos/3961061-cyberia-screenshot.jpg',
+        'pspconfig': 'pspconfigs/Cyberia/SLPS-00218.bin',
     },
     'SLPS01912': {
         'url': "games/J/C/SLPS-01912.html",
@@ -56635,12 +56648,14 @@ games = {
         'url': "games/J/S/SLPS-00419.html",
     	'id': 'SLPS00419',
 	'title': "SHOCKWAVE",
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLPS-00419.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLPS-00419.BIN',
     },
     'SLPS00516': {
         'url': "games/J/S/SLPS-00516.html",
     	'id': 'SLPS00516',
 	'title': "SHOCKWAVE - OPERATION JUMPGATE",
+        'pspconfig': 'pspconfigs/Shockwave Assault/SLPS-00516.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLPS-00516.BIN',
     },
     'SLPS00139': {
