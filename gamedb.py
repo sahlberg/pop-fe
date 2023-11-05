@@ -5610,6 +5610,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ee97b6e-0e75-430c-9bf6-be25557a6474.png',
         'pic1': 'https://images.launchbox-app.com/5d46b98a-12d8-4aac-af89-56b503d78c69.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Anthology%20-%20Final%20Fantasy%20V%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SLUS-00879.bin',
     },
     'SLUS00900': {
         'url': "games/U/F/SLUS-00879.html",
@@ -15840,6 +15841,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ee97b6e-0e75-430c-9bf6-be25557a6474.png',
         'pic1': 'https://images.launchbox-app.com/5d46b98a-12d8-4aac-af89-56b503d78c69.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Anthology%20-%20Final%20Fantasy%20VI%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SCES-13840.bin',
         'ps3config': 'ps3configs/Final Fantasy Anthology/SCES-13840.BIN',
     },
     'SLES04034': {
@@ -41666,6 +41668,7 @@ games = {
     	'id': 'SLPS01949',
 	'title': "FINAL FANTASY COLLECTION",
         'pic0': 'https://images.launchbox-app.com/40fb5d21-8e26-4d11-8382-738a428ca41d.png',
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SLPS-01949.bin',
     },
     'SLPS01950': {
         'url': "games/J/F/SLPS-01948.html",
@@ -41684,6 +41687,7 @@ games = {
     	'id': 'SLPS01946',
 	'title': "FINAL FANTASY COLLECTION - ANNIVERSARY PACKAGE",
         'pic0': 'https://images.launchbox-app.com/40fb5d21-8e26-4d11-8382-738a428ca41d.png',
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SLPS-01946.bin',
     },
     'SLPS01947': {
         'url': "games/J/F/SLPS-01945.html",
@@ -41725,11 +41729,13 @@ games = {
         'url': "games/J/F/SCPS-45214.html",
     	'id': 'SCPS45214',
 	'title': "FINAL FANTASY V",
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SCPS-45214.bin',
     },
     'SLPM86081': {
         'url': "games/J/F/SLPM-86081.html",
     	'id': 'SLPM86081',
 	'title': "FINAL FANTASY V",
+        'pspconfig': 'pspconfigs/Final Fantasy Anthology/SLPM-86081.bin',
     },
     'SCPS45387': {
         'url': "games/J/F/SCPS-45387.html",
