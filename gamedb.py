@@ -4150,6 +4150,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCUS-94244.bin',
         'ps3config': 'ps3configs/Crash Bandicoot 3/SCUS-94244.BIN',
     },
     'SCUS94570': {
@@ -23759,6 +23760,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCES-01420.bin',
         'ps3config': 'ps3configs/Crash Bandicoot 3/SCES-01420.BIN',
     },
     'SCES02834': {
@@ -34360,6 +34362,7 @@ games = {
         'pic0' : 'https://images.launchbox-app.com/4382f025-6264-4268-a2fe-340a3bc6b6dc.png',
         'snd0': 'https://www.youtube.com/watch?v=zR4XqythvOY&list=PL021FCE912747136A&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%202%20(J)%20[SLPS-00830].cbr',
+        'pspconfig': 'pspconfigs/Ace Combat 2/SLPS-91146.bin', 
     },
     'SCPS45397': {
         'url': "games/J/A/SCPS-45397.html",
@@ -36223,11 +36226,15 @@ games = {
         'url': "games/J/B/SLPM-86596.html",
     	'id': 'SLPM86596',
 	'title': "BEATMANIA - BEST HITS",
+        'pic0': 'https://images.launchbox-app.com/d2662646-7aa6-4b60-9847-c1d93436f433.png',
+        'pspconfig': 'pspconfigs/Beatmania Best Hits/SLPM-86596.bin',
     },
     'SLPM86830': {
         'url': "games/J/B/SLPM-86830.html",
     	'id': 'SLPM86830',
 	'title': "BEATMANIA - BEST HITS [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/d2662646-7aa6-4b60-9847-c1d93436f433.png',
+        'pspconfig': 'pspconfigs/Beatmania Best Hits/SLPM-86830.bin',
     },
     'SLPM86597': {
         'url': "games/J/B/SLPM-86597.html",
@@ -38784,6 +38791,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-45350.bin',
     },
     'SCPS10073': {
         'url': "games/J/C/SCPS-10073.html",
@@ -38793,6 +38801,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-10073.bin',
     },
     'SCPS91164': {
         'url': "games/J/C/SCPS-91164.html",
@@ -38802,6 +38811,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-91164.bin',
     },
     'SCPS91318': {
         'url': "games/J/C/SCPS-91318.html",
@@ -38811,6 +38821,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-91318.bin',
     },
     'SCPS45511': {
         'url': "games/J/C/SCPS-45511.html",
