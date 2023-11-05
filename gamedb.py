@@ -4291,6 +4291,7 @@ games = {
 	'title': "D",
         'pic0': 'https://images.launchbox-app.com/e08986e7-a4c6-4096-a894-4c2211006de7.png',
         'pic1': 'https://cdn.mobygames.com/promos/1974792-d-screenshot.jpg',
+        'pspconfig': 'pspconfigs/D/SLUS-00128.bin',
     },
     'SLUS00173': {
         'url': "games/U/D/SLUS-00128.html",
@@ -4298,6 +4299,7 @@ games = {
 	'title': "D",
         'pic0': 'https://images.launchbox-app.com/e08986e7-a4c6-4096-a894-4c2211006de7.png',
         'pic1': 'https://cdn.mobygames.com/promos/1974792-d-screenshot.jpg',
+        'pspconfig': 'pspconfigs/D/SLUS-00173.bin',
     },
     'SLUS00174': {
         'url': "games/U/D/SLUS-00128.html",
@@ -4305,6 +4307,7 @@ games = {
 	'title': "D",
         'pic0': 'https://images.launchbox-app.com/e08986e7-a4c6-4096-a894-4c2211006de7.png',
         'pic1': 'https://cdn.mobygames.com/promos/1974792-d-screenshot.jpg',
+        'pspconfig': 'pspconfigs/D/SLUS-00174.bin',
     },
     'SLUS01280': {
         'url': "games/U/D/SLUS-01280.html",
@@ -25320,6 +25323,7 @@ games = {
     	'id': 'SCES00163',
 	'title': "DISNEY'S MICKEY'S WILD ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/7c2f8690-9a29-42f7-885b-134ec48c27a1.png',
+        'pspconfig': "pspconfigs/Disney's Mickey's Wild Adventure/SCES-00163.bin",
     },
     'SCES02007': {
         'url': "games/P/D/SCES-02007.html",
@@ -25647,6 +25651,7 @@ games = {
     	'id': 'SCES00248',
 	'title': "DISNEY'S TOPOLINO E LE SUE AVVENTURE",
         'pic0': 'https://images.launchbox-app.com/7c2f8690-9a29-42f7-885b-134ec48c27a1.png',
+        'pspconfig': "pspconfigs/Disney's Mickey's Wild Adventure/SCES-00248.bin",
     },
     'SCES03937': {
         'url': "games/P/D/SCES-03937.html",
@@ -34605,16 +34610,22 @@ games = {
         'url': "games/J/A/SLPS-00269.html",
     	'id': 'SLPS00269',
 	'title': "AIR MANAGEMENT '96",
+        'pic0': 'https://images.launchbox-app.com/75877faa-dee7-4a53-aa9e-d4196ec24889.png',
+        'pspconfig': "pspconfigs/Air Management '96/SLPS-00269.bin",
     },
     'SLPM86788': {
         'url': "games/J/A/SLPM-86788.html",
     	'id': 'SLPM86788',
 	'title': "AIR MANAGEMENT [KOEI TEIBAN SERIES]",
+        'pic0': 'https://images.launchbox-app.com/75877faa-dee7-4a53-aa9e-d4196ec24889.png',
+        'pspconfig': "pspconfigs/Air Management '96/SLPM-86788.bin",
     },
     'SLPM86206': {
         'url': "games/J/A/SLPM-86206.html",
     	'id': 'SLPM86206',
 	'title': "AIR MANAGEMENT [KOEI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/75877faa-dee7-4a53-aa9e-d4196ec24889.png',
+        'pspconfig': "pspconfigs/Air Management '96/SLPM-86206.bin",
     },
     'SLPS01879': {
         'url': "games/J/A/SLPS-01879.html",
@@ -35281,6 +35292,7 @@ games = {
 	'title': "ARC THE LAD MONSTER GAME WITH CASINO GAME",
         'pic0': 'https://images.launchbox-app.com/247d8d46-a047-48f9-b3c1-25f1a6c1b0e5.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20Arena%20-%20Monster%20Tournament%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Arc Arena - Monster Tournament/SCPS-10040.bin',
     },
     'SCPS10041': {
         'url': "games/J/A/SCPS-10040.html",
@@ -35288,6 +35300,7 @@ games = {
 	'title': "ARC THE LAD MONSTER GAME WITH CASINO GAME",
         'pic0': 'https://images.launchbox-app.com/247d8d46-a047-48f9-b3c1-25f1a6c1b0e5.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20Arena%20-%20Monster%20Tournament%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Arc Arena - Monster Tournament/SCPS-10041.bin',
     },
     'SLPM87067': {
         'url': "games/J/A/SLPM-87067.html",
@@ -38845,11 +38858,19 @@ games = {
         'url': "games/J/C/SCPS-45470.html",
     	'id': 'SCPS45470',
 	'title': "CRASH BANDICOOT RACING",
+        'pic0': 'https://images.launchbox-app.com/5ec7a40a-22a1-4fcd-a538-4310a10c94ce.png',
+        'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SCPS-45470.bin',
+        'ps3config': 'ps3configs/Crash Team Racing/SCPS-10118.BIN',
     },
     'SCPS10118': {'pspconfigs/Cool Boarders/SLPS-91031.bin'
         'url': "games/J/C/SCPS-10118.html",
     	'id': 'SCPS10118',
 	'title': "CRASH BANDICOOT RACING",
+        'pic0': 'https://images.launchbox-app.com/5ec7a40a-22a1-4fcd-a538-4310a10c94ce.png',
+        'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
         'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SLPS-10118.bin',
         'ps3config': 'ps3configs/Crash Team Racing/SCPS-10118.BIN',
     },
@@ -38857,11 +38878,19 @@ games = {
         'url': "games/J/C/SCPS-91230.html",
     	'id': 'SCPS91230',
 	'title': "CRASH BANDICOOT RACING [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/5ec7a40a-22a1-4fcd-a538-4310a10c94ce.png',
+        'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SCPS-91230.bin',
     },
     'SCPS91328': {
         'url': "games/J/C/SCPS-91328.html",
     	'id': 'SCPS91328',
 	'title': "CRASH BANDICOOT RACING [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/5ec7a40a-22a1-4fcd-a538-4310a10c94ce.png',
+        'pic1': 'https://images.launchbox-app.com/3f2b652c-876c-42cd-8494-941294b748fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4DfgDQ7ZPQo&list=PLL-sMa2lHYj3Oq6-5ZPZJRp6Pcf5q88Sm&index=1',
+        'pspconfig': 'pspconfigs/CTR - Crash Team Racing/SCPS-91230.bin',
     },
     'SLPM86660': {
         'url': "games/J/C/SLPM-86660.html",
@@ -39075,16 +39104,19 @@ games = {
         'url': "games/J/D/SLPS-00133.html",
     	'id': 'SLPS00133',
 	'title': "D NO SHOKUTAKU [COMPLETE GRAPHICS]",
+        'pspconfig': 'pspconfigs/D/SLPS-00133.bin',
     },
     'SLPS00134': {
         'url': "games/J/D/SLPS-00133.html",
     	'id': 'SLPS00134',
 	'title': "D NO SHOKUTAKU [COMPLETE GRAPHICS]",
+        'pspconfig': 'pspconfigs/D/SLPS-00134.bin',
     },
     'SLPS00135': {
         'url': "games/J/D/SLPS-00133.html",
     	'id': 'SLPS00135',
 	'title': "D NO SHOKUTAKU [COMPLETE GRAPHICS]",
+        'pspconfig': 'pspconfigs/D/SLPS-00135.bin',
     },
     'SLPS91072': {
         'url': "games/J/D/SLPS-91072.html",
@@ -39866,6 +39898,7 @@ games = {
         'url': "games/J/D/SLPS-03211.html",
     	'id': 'SLPS03211',
 	'title': "DIGIMON TAMERS - POCKET CULUMON",
+        'pspconfig': 'pspconfigs/Digimon Tamers - Pocket Culumon/SLPS-03211.bin',
     },
     'SLPS01797': {
         'url': "games/J/D/SLPS-01797.html",
