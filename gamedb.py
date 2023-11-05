@@ -50262,6 +50262,7 @@ games = {
         'url': "games/J/M/SLPM-86143.html",
     	'id': 'SLPM86143',
 	'title': "MONSTER RACE",
+        'pspconfig': 'pspconfigs/Monster Race/SLPM-86143.bin',
     },
     'SLPS01572': {
         'url': "games/J/M/SLPS-01572.html",
