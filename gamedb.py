@@ -20090,6 +20090,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Klonoa - Door to Phantomile/SCES-01185.bin',
     },
     'SCES01186': {
         'url': "games/P/K/SCES-01186.html",
@@ -20098,6 +20099,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Klonoa - Door to Phantomile/SCES-01186.bin',
     },
     'SCES01187': {
         'url': "games/P/K/SCES-01187.html",
@@ -20106,6 +20108,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Klonoa - Door to Phantomile/SCES-01187.bin',
     },
     'SCES01188': {
         'url': "games/P/K/SCES-01188.html",
@@ -20114,6 +20117,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/249ab268-8cbf-4558-b3c1-7cb7ce2ef07f.png',
         'pic1': 'https://images.launchbox-app.com/8d3a3434-5367-4662-b650-99d0229aec26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Klonoa%20-%20Door%20to%20Phantomile%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Klonoa - Door to Phantomile/SCES-01188.bin',
     },
     'SCES03922': {
         'url': "games/P/K/SCES-03922.html",
@@ -45534,6 +45538,7 @@ games = {
         'url': "games/J/J/SLPS-03562.html",
     	'id': 'SLPS03562',
 	'title': "JALECO COLLECTION VOL.1",
+        'pspconfig': 'pspconfigs/Jaleco Collection vol.1/SLPS-03562.bin',
     },
     'SLPS01134': {
         'url': "games/J/J/SLPS-01134.html",
@@ -46860,6 +46865,7 @@ games = {
         'url': "games/J/K/SLPS-02965.html",
     	'id': 'SLPS02965',
 	'title': "KIMI NI STEADY",
+        'pspconfig': 'pspconfigs/Kimi ni Steady/SLPS-02965.bin',
     },
     'SLPS02271': {
         'url': "games/J/K/SLPS-02271.html",
