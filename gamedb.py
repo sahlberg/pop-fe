@@ -4556,6 +4556,7 @@ games = {
 	'title': "DIGIMON RUMBLE ARENA",
         'pic0': 'https://images.launchbox-app.com/8280bb9b-1885-48de-b69b-cfe97004b378.png',
         'pic1': 'https://images.launchbox-app.com/43fa7355-eff3-43d0-85fd-b7ad5a5b4aae.jpg',
+        'pspconfig': 'pspconfigs/Digimon Rumble Arena/SLUS-01404.bin',
     },
     'SLUS01032': {
         'url': "games/U/D/SLUS-01032.html",
@@ -24463,6 +24464,7 @@ games = {
 	'title': "DIGIMON - RUMBLE ARENA",
         'pic0': 'https://images.launchbox-app.com/8280bb9b-1885-48de-b69b-cfe97004b378.png',
         'pic1': 'https://images.launchbox-app.com/43fa7355-eff3-43d0-85fd-b7ad5a5b4aae.jpg',
+        'pspconfig': 'pspconfigs/Digimon Rumble Arena/SLES-03841.bin',
     },
     'SLES02914': {
         'url': "games/P/D/SLES-02914.html",
@@ -39789,6 +39791,7 @@ games = {
         'url': "games/J/D/SLPS-03357.html",
     	'id': 'SLPS03357',
 	'title': "DIGIMON TAMERS - BATTLE EVOLUTION",
+        'pspconfig': 'pspconfigs/Digimon Rumble Arena/SLPS-03357.bin',
     },
     'SLPS03211': {
         'url': "games/J/D/SLPS-03211.html",
@@ -40120,12 +40123,14 @@ games = {
     	'id': 'SLPS01038',
 	'title': "DOKI DOKI SHUTTER CHANCE",
         'pic0': 'https://images.launchbox-app.com/df0d113d-3dd3-487d-a3b2-4a11a5c2585d.png',
+        'pspconfig': 'pspconfigs/Doki Doki Shutter Chance - Koi no Puzzle o Kumitatete/SLPS-01038.bin',
     },
     'SLPM86988': {
         'url': "games/J/D/SLPM-86988.html",
     	'id': 'SLPM86988',
 	'title': "DOKI DOKI SHUTTER CHANCE [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/df0d113d-3dd3-487d-a3b2-4a11a5c2585d.png',
+        'pspconfig': 'pspconfigs/Doki Doki Shutter Chance - Koi no Puzzle o Kumitatete/SLPM-86988.bin',
     },
     'SLPS00130': {
         'url': "games/J/D/SLPS-00130.html",
@@ -40525,6 +40530,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f10afe4a-5946-4f0b-83fd-b39fd096da1a.png',
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCPS-45459.bin',
     },
     'SCPS45460': {
         'url': "games/J/D/SCPS-45459.html",
@@ -40533,6 +40539,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f10afe4a-5946-4f0b-83fd-b39fd096da1a.png',
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
+        'pspconfig': 'pspconfigs/Dragon Valor/SCPS-45460.bin',
     },
     'SLPS02190': {
         'url': "games/J/D/SLPS-02190.html",
@@ -40541,6 +40548,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f10afe4a-5946-4f0b-83fd-b39fd096da1a.png',
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
+        'pspconfig': 'pspconfigs/Dragon Valor/SLPS-02190.bin',
     },
     'SLPS02191': {
         'url': "games/J/D/SLPS-02190.html",
@@ -40549,6 +40557,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f10afe4a-5946-4f0b-83fd-b39fd096da1a.png',
         'pic1': 'https://images.launchbox-app.com/9c2e85c5-a55f-4f63-bc67-e441a1d9eb18.jpg',
         'snd0': 'https://www.youtube.com/watch?v=n_esA031TBs&list=PLD29730BCCF634E23&index=1',
+        'pspconfig': 'pspconfigs/Dragon Valor/SLPS-02191.bin',
     },
     'SLPS01482': {
         'url': "games/J/D/SLPS-01482.html",
