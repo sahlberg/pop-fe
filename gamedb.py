@@ -6158,6 +6158,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4f50d353-ce95-426c-85f9-5b2fd82c97dc.png',
         'pic1': 'https://images.launchbox-app.com/17d4c894-02d7-4102-8fa6-1457e260ea4d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P44QwfsR88Q&list=PLGjdzpLVy7LIdCEqEFwKSJlMOxrZYxVd7&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault/SLUS-01226.bin',
     },
     'SLUS01418': {
         'url': "games/U/G/SLUS-01418.html",
@@ -17321,6 +17322,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4f50d353-ce95-426c-85f9-5b2fd82c97dc.png',
         'pic1': 'https://images.launchbox-app.com/17d4c894-02d7-4102-8fa6-1457e260ea4d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P44QwfsR88Q&list=PLGjdzpLVy7LIdCEqEFwKSJlMOxrZYxVd7&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault/SLES-03650.bin',
     },
     'SLES03934': {
         'url': "games/P/G/SLES-03934.html",
@@ -43930,6 +43932,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4f50d353-ce95-426c-85f9-5b2fd82c97dc.png',
         'pic1': 'https://images.launchbox-app.com/17d4c894-02d7-4102-8fa6-1457e260ea4d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P44QwfsR88Q&list=PLGjdzpLVy7LIdCEqEFwKSJlMOxrZYxVd7&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault/SLPM-86746.bin',
     },
     'SLPS00883': {
         'url': "games/J/G/SLPS-00883.html",
@@ -43946,6 +43949,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/30c023cf-4e19-4872-962c-35f3944cd3bf.png',
         'pic1': 'https://images.launchbox-app.com/17d4c894-02d7-4102-8fa6-1457e260ea4d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0JyFw5j-138&list=PLBDD382072AAF46D0&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault/SCPS-45172.bin',
     },
     'SLPS01286': {
         'url': "games/J/G/SLPS-01286.html",
@@ -43954,6 +43958,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/30c023cf-4e19-4872-962c-35f3944cd3bf.png',
         'pic1': 'https://images.launchbox-app.com/17d4c894-02d7-4102-8fa6-1457e260ea4d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0JyFw5j-138&list=PLBDD382072AAF46D0&index=1',
+        'pspconfig': 'pspconfigs/Gundam Battle Assault/SLPS-01286.bin',
     },
     'SLPS02512': {
         'url': "games/J/G/SLPS-02512.html",
@@ -44492,16 +44497,19 @@ games = {
         'url': "games/J/H/SLPS-00471.html",
     	'id': 'SLPS00471',
 	'title': "HEROINE DREAM",
+        'pspconfig': 'pspconfigs/Heroine Dream/SLPS-00471.bin',
     },
     'SLPS00470': {
         'url': "games/J/H/SLPS-00470.html",
     	'id': 'SLPS00470',
 	'title': "HEROINE DREAM [LIMITED EDITION]",
+        'pspconfig': 'pspconfigs/Heroine Dream/SLPS-00470.bin',
     },
     'SLPS02264': {
         'url': "games/J/H/SLPS-02264.html",
     	'id': 'SLPS02264',
 	'title': "HEROINE DREAM [MOUICHIDO KIMI NI EITAI...LOVED SERIES VOL.2]",
+        'pspconfig': 'pspconfigs/Heroine Dream/SLPS-02264.bin',
     },
     'SLPS01376': {
         'url': "games/J/H/SLPS-01376.html",
@@ -45112,6 +45120,7 @@ games = {
 	'title': "I.Q. - INTELLIGENT QUBE",
         'pic0': 'https://images.launchbox-app.com/4a77e0ed-9bf6-41bf-8148-d1fd4b5c8034.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/I.Q%20-%20Intelligent%20Qube%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/I.Q - Intelligent Qube/SCPS-45036.bin',
     },
     'SCPS10029': {
         'url': "games/J/I/SCPS-10029.html",
@@ -45119,6 +45128,7 @@ games = {
 	'title': "I.Q. - INTELLIGENT QUBE",
         'pic0': 'https://images.launchbox-app.com/4a77e0ed-9bf6-41bf-8148-d1fd4b5c8034.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/I.Q%20-%20Intelligent%20Qube%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/I.Q - Intelligent Qube/SCPS-10029.bin',
     },
     'SCPS91068': {
         'url': "games/J/I/SCPS-91068.html",
@@ -45126,6 +45136,7 @@ games = {
 	'title': "I.Q. - INTELLIGENT QUBE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/4a77e0ed-9bf6-41bf-8148-d1fd4b5c8034.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/I.Q%20-%20Intelligent%20Qube%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/I.Q - Intelligent Qube/SCPS-91068.bin',
     },
     'SLPS01027': {
         'url': "games/J/I/SLPS-01027.html",
