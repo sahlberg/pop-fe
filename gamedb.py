@@ -4564,6 +4564,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLUS-01032.bin',
     },
     'SLUS01193': {
         'url': "games/U/D/SLUS-01193.html",
@@ -4579,6 +4580,7 @@ games = {
 	'title': "DIGIMON WORLD 3",
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
+        'pspconfig': 'ps3configs/Digimon World 3/SLUS-01436.bin',
         'ps3config': 'ps3configs/Digimon World 3/SLUS-01436.BIN',
     },
     'SLUS00922': {
@@ -24469,6 +24471,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLES-02914.bin',
     },
     'SLES03434': {
         'url': "games/P/D/SLES-03434.html",
@@ -24477,6 +24480,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLES-03434.bin',
     },
     'SLES03435': {
         'url': "games/P/D/SLES-03435.html",
@@ -24485,6 +24489,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLES-03435.bin',
     },
     'SLES03436': {
         'url': "games/P/D/SLES-03436.html",
@@ -24493,6 +24498,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLES-03436.bin',
     },
     'SLES03437': {
         'url': "games/P/D/SLES-03437.html",
@@ -24501,6 +24507,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLES-03437.bin',
     },
     'SLES03936': {
         'url': "games/P/D/SLES-03936.html",
@@ -24508,7 +24515,7 @@ games = {
 	'title': "DIGIMON WORLD 2003",
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
-        'pspconfig': 'pspconfigs/Digimon World 2003/SLES-03936.bin',
+        'pspconfig': 'ps3configs/Digimon World 3/SLES-03936.bin',
         'ps3config': 'ps3configs/Digimon World 3/SLES-03936.BIN',
     },
     'SLES02207': {
@@ -39795,6 +39802,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLPS-01797.bin',
     },
     'SLPS91233': {
         'url': "games/J/D/SLPS-91233.html",
@@ -39803,6 +39811,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/de5518cb-0577-4add-929f-65df4be2f30f.png',
         'pic1': 'https://images.launchbox-app.com/69d0caf6-dbcf-475a-81e0-7fffc2fcb9d8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Digimon%20World%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Digimon World/SLPS-91233.bin',
     },
     'SLPS03101': {
         'url': "games/J/D/SLPS-03101.html",
@@ -39828,6 +39837,7 @@ games = {
     	'id': 'SLPS03446',
 	'title': "DIGIMON WORLD 3 - ARATANARU BOUKEN NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
+        'pspconfig': 'ps3configs/Digimon World 3/SLPS-03446.bin',
     },
     'SLPM87103': {
         'url': "games/J/D/SLPM-87103.html",
