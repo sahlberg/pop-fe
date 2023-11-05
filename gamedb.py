@@ -50627,6 +50627,7 @@ games = {
 	'title': "MYST [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/83ea8b2e-fbdb-4c59-9a0d-23e451ab3721.png',
         'pic1': 'https://images.launchbox-app.com/77a60f5a-d683-4587-bdbd-3296df5d1d3a.jpg',
+        'pspconfig': 'pspconfigs/Myst/SLPS-91023.bin',
     },
     'SLPS91123': {
         'url': "games/J/M/SLPS-91123.html",
@@ -50634,6 +50635,7 @@ games = {
 	'title': "MYST [PLAYSTATION THE BEST] [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/83ea8b2e-fbdb-4c59-9a0d-23e451ab3721.png',
         'pic1': 'https://images.launchbox-app.com/77a60f5a-d683-4587-bdbd-3296df5d1d3a.jpg',
+        'pspconfig': 'pspconfigs/Myst/SLPS-91123.bin',
     },
     'SLPS02924': {
         'url': "games/J/M/SLPS-02924.html",
@@ -50641,6 +50643,7 @@ games = {
 	'title': "MYST [VALUE 1500]",
         'pic0': 'https://images.launchbox-app.com/83ea8b2e-fbdb-4c59-9a0d-23e451ab3721.png',
         'pic1': 'https://images.launchbox-app.com/77a60f5a-d683-4587-bdbd-3296df5d1d3a.jpg',
+        'pspconfig': 'pspconfigs/Myst/SLPS-02924.bin',
     },
     'SLPM86147': {
         'url': "games/J/M/SLPM-86147.html",
