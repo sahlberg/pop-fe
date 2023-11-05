@@ -4759,6 +4759,7 @@ games = {
 	'title': "DISNEY'S THE EMPEROR'S NEW GROOVE",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCUS-94571.bin",
     },
     'SLUS01282': {
         'url': "games/U/D/SLUS-01282.html",
@@ -24969,6 +24970,7 @@ games = {
 	'title': "DISNEY'S EIN KONIGREICH FUE EIN LAMA",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03015.bin",
     },
     'SCES03018': {
         'url': "games/P/D/SCES-03018.html",
@@ -24976,6 +24978,7 @@ games = {
 	'title': "DISNEY'S EL EMPERADOR Y SUS LOCURAS",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03018.bin",
     },
     'SCES03941': {
         'url': "games/P/D/SCES-03941.html",
@@ -25086,6 +25089,7 @@ games = {
 	'title': "DISNEY'S KEJSARENS NYA STIL",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03019.bin",
     },
     'SCES03940': {
         'url': "games/P/D/SCES-03940.html",
@@ -25106,6 +25110,7 @@ games = {
 	'title': "DISNEY'S KAIZER KUZCO",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03012.bin",
     },
     'SCES03013': {
         'url': "games/P/D/SCES-03013.html",
@@ -25113,6 +25118,7 @@ games = {
 	'title': "DISNEY'S KEISARIN UUDET KUVIOT",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03013.bin",
     },
     'SCES03014': {
         'url': "games/P/D/SCES-03014.html",
@@ -25120,6 +25126,7 @@ games = {
 	'title': "DISNEY'S KUZCO L'EMPEREUR MEGALO",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03014.bin",
     },
     'SCES03033': {
         'url': "games/P/D/SCES-03033.html",
@@ -25157,6 +25164,7 @@ games = {
 	'title': "DISNEY'S LE FOLLIE DELL'IMPERATORE",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03016.bin",
     },
     'SLES03269': {
         'url': "games/P/D/SLES-03269.html",
@@ -25565,6 +25573,7 @@ games = {
 	'title': "DISNEY'S THE EMPEROR'S NEW GROOVE",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03010.bin",
     },
     'SCES03011': {
         'url': "games/P/D/SCES-03011.html",
@@ -25572,6 +25581,7 @@ games = {
 	'title': "DISNEY'S THE EMPEROR'S NEW GROOVE",
         'pic0': 'https://images.launchbox-app.com/e58fb4a3-5d2f-4223-b6ee-6ff5659747c3.png',
         'pic1': 'https://images.launchbox-app.com/cf0da31a-9891-4a9e-b651-de0102552151.jpg',
+        'pspconfig': "pspconfigs/Disney's The Emperor's New Groove/SCES-03011.bin",
     },
     'SLES03267': {
         'url': "games/P/D/SLES-03267.html",
@@ -39325,6 +39335,8 @@ games = {
         'url': "games/J/D/SLPS-00773.html",
     	'id': 'SLPS00773',
 	'title': "DARK HUNTER - (JOU) IJIGEN GAKUEN",
+        'pic0': 'https://images.launchbox-app.com/5b8723f8-57be-4f57-8c28-293e50aa3ad2.png',
+        'pspconfig': 'pspconfigs/Dark Hunter (Jou) Ijigen Gakuen/SLPS-00773.bin',
     },
     'SLPS00789': {
         'url': "games/J/D/SLPS-00789.html",
@@ -39333,7 +39345,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ad59b0a3-4249-45b6-8f18-390ad494d3a5.png',
         'pspconfig': 'pspconfigs/Dark Hunter - Ge Youma No Mori/SLPS-00789.bin',
     },
-    'SLPS01422': {
+    'SLPS01422': {        
         'url': "games/J/D/SLPS-01422.html",
     	'id': 'SLPS01422',
 	'title': "DARK MESSIAH",
