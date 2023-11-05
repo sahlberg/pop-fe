@@ -2696,6 +2696,7 @@ games = {
     	'id': 'SLUS01030',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLUS-01030.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01030.BIN',
     },
     'SLUS01081': {
@@ -2703,6 +2704,7 @@ games = {
     	'id': 'SLUS01081',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLUS-01081.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01081.BIN',
     },
     'SLUS00670': {
@@ -23366,6 +23368,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SLES-00864.bin',
     },
     'SLES10864': {
         'url': "games/P/C/SLES-00864.html",
@@ -23373,6 +23376,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SLES-10864.bin',
     },
     'SCES01924': {
         'url': "games/P/C/SCES-01924.html",
@@ -35377,6 +35381,7 @@ games = {
     	'id': 'SLPS01855',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-01855.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01855.BIN',
     },
     'SLPS01856': {
@@ -35384,6 +35389,7 @@ games = {
     	'id': 'SLPS01856',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-01856.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01856.BIN',
     },
     'SLPS91188': {
@@ -35391,24 +35397,28 @@ games = {
     	'id': 'SLPS91188',
 	'title': "ARMORED CORE - MASTER OF ARENA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91188.bin',
     },
     'SLPS91189': {
         'url': "games/J/A/SLPS-91188.html",
     	'id': 'SLPS91189',
 	'title': "ARMORED CORE - MASTER OF ARENA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91189.bin',
     },
     'SLPS91444': {
         'url': "games/J/A/SLPS-91444.html",
     	'id': 'SLPS91444',
 	'title': "ARMORED CORE - MASTER OF ARENA [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91444.bin',
     },
     'SLPS91445': {
         'url': "games/J/A/SLPS-91444.html",
     	'id': 'SLPS91445',
 	'title': "ARMORED CORE - MASTER OF ARENA [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91445.bin',
     },
     'SLPS01130': {
         'url': "games/J/A/SLPS-01130.html",
@@ -35422,6 +35432,7 @@ games = {
     	'id': 'SLPS91110',
 	'title': "ARMORED CORE - PROJECT PHANTASMA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-91110.bin',
     },
     'SLPS91424': {
         'url': "games/J/A/SLPS-91424.html",
@@ -36044,6 +36055,8 @@ games = {
         'url': "games/J/B/SLPS-01779.html",
     	'id': 'SLPS01779',
 	'title': "BATTLE KONCHUUDEN",
+        'pic0': 'https://images.launchbox-app.com/1460ea1e-4f2c-447e-b7a2-bb680f1dcf6c.png',
+        'pspconfig': 'pspconfigs/Battle Konchuuden/SLPS-01779.bin',
     },
     'SLPS01064': {
         'url': "games/J/B/SLPS-01064.html",
@@ -38488,6 +38501,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SCPS-45254.bin',
     },
     'SCPS45255': {
         'url': "games/J/C/SCPS-45254.html",
@@ -38495,6 +38509,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SCPS-45255.bin',
     },
     'SLPS01403': {
         'url': "games/J/C/SLPS-01403.html",
@@ -38502,6 +38517,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SLPS-01403.bin',
     },
     'SLPS01404': {
         'url': "games/J/C/SLPS-01403.html",
@@ -38509,6 +38525,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Colony Wars/SLPS-01404.bin',
     },
     'SLPS02794': {
         'url': "games/J/C/SLPS-02794.html",
@@ -39313,6 +39330,8 @@ games = {
         'url': "games/J/D/SLPS-00789.html",
     	'id': 'SLPS00789',
 	'title': "DARK HUNTER - GE YOUMA NO MORI",
+        'pic0': 'https://images.launchbox-app.com/ad59b0a3-4249-45b6-8f18-390ad494d3a5.png',
+        'pspconfig': 'pspconfigs/Dark Hunter - Ge Youma No Mori/SLPS-00789.bin',
     },
     'SLPS01422': {
         'url': "games/J/D/SLPS-01422.html",
@@ -39639,16 +39658,22 @@ games = {
         'url': "games/J/D/SLPS-00100.html",
     	'id': 'SLPS00100',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK",
+        'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPS-00100.bin',
     },
     'SLPM86054': {
         'url': "games/J/D/SLPM-86054.html",
     	'id': 'SLPM86054',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPM-86054.bin',
     },
     'SLPM87322': {
         'url': "games/J/D/SLPM-87322.html",
     	'id': 'SLPM87322',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPM-87322.bin',
     },
     'SLPS01889': {
         'url': "games/J/D/SLPS-01889.html",
@@ -40475,6 +40500,8 @@ games = {
         'url': "games/J/D/SLPM-87050.html",
     	'id': 'SLPM87050',
 	'title': "DRAGON QUEST MONSTERS I & II",
+        'pic0': 'https://images.launchbox-app.com/08973893-e872-4553-af39-c1bbef4e308b.png',
+        'pspconfig': 'pspconfigs/Dragon Quest Monsters I·II - Hoshiori no Yuusha to Bokujou no Nakamatachi/SLPM-87050.bin',
     },
     'SLPM86500': {
         'url': "games/J/D/SLPM-86500.html",
