@@ -4054,6 +4054,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8a522444-d0c5-4e66-8eaa-0b955ffaafcb.png',
         'pic1': 'https://images.launchbox-app.com/e61b383b-29cf-4f83-9d34-5af10e4ddde6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders/SCUS-94356.bin',
     },
     'SCUS94358': {
         'url': "games/U/C/SCUS-94358.html",
@@ -23675,7 +23676,7 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Contra%20-%20Legacy%20of%20War%20%28USA%29_jp2.zip',
     },
     'SCES00568': {
-        'url': "games/P/C/SCES-00568.html",
+        'url': "games/P/C/SCES-00568.html",'pspconfigs/Cool Boarders/SLPS-91031.bin'
     	'id': 'SCES00568',
 	'title': "COOL BOARDERS",
         'pic0': 'https://images.launchbox-app.com/8a522444-d0c5-4e66-8eaa-0b955ffaafcb.png',
@@ -38444,7 +38445,7 @@ games = {
 	'title': "CLOCK TOWER - GHOST HEAD",
         'pic0': 'https://images.launchbox-app.com/3f03162b-0996-494c-8aa1-e23f420a6600.png',
         'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
-        'pspconfig': 'pspconfigs/Clock Tower - Ghost Head/SLUS-00695.bin',
+        'pspconfig': 'pspconfigs/Clock Tower - Ghost Head/SCPS-45173.bin',
     },
     'SLPS01290': {
         'url': "games/J/C/SLPS-01290.html",
@@ -38460,7 +38461,7 @@ games = {
 	'title': "CLOCK TOWER - GHOST HEAD [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/3f03162b-0996-494c-8aa1-e23f420a6600.png',
         'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
-        'pspconfig': 'pspconfigs/Clock Tower - Ghost Head/SLUS-00695.bin',
+        'pspconfig': 'pspconfigs/Clock Tower - Ghost Head/SLPS-91175.bin',
     },
     'SLPS00387': {
         'url': "games/J/C/SLPS-00387.html",
@@ -38613,6 +38614,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8a522444-d0c5-4e66-8eaa-0b955ffaafcb.png',
         'pic1': 'https://images.launchbox-app.com/e61b383b-29cf-4f83-9d34-5af10e4ddde6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders/SCPS-45061.bin',
     },
     'SLPS00456': {
         'url': "games/J/C/SLPS-00456.html",
@@ -38621,6 +38623,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8a522444-d0c5-4e66-8eaa-0b955ffaafcb.png',
         'pic1': 'https://images.launchbox-app.com/e61b383b-29cf-4f83-9d34-5af10e4ddde6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders/SLPS-00456.bin',
     },
     'SLPS91031': {
         'url': "games/J/C/SLPS-91031.html",
@@ -38637,6 +38640,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3a2d90b5-6885-4f7d-8fbe-b8d7e20a704b.png',
         'pic1': 'https://images.launchbox-app.com/b62ff7e2-6949-4c84-98ea-fcd7626d9f15.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%202%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders 2/SCPS-45103.bin',
     },
     'SLPS00967': {
         'url': "games/J/C/SLPS-00967.html",
@@ -38653,6 +38657,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/3a2d90b5-6885-4f7d-8fbe-b8d7e20a704b.png',
         'pic1': 'https://images.launchbox-app.com/b62ff7e2-6949-4c84-98ea-fcd7626d9f15.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%202%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders 2/SLPS-91122.bin',
     },
     'SLPS01698': {
         'url': "games/J/C/SLPS-01698.html",
@@ -38811,23 +38816,26 @@ games = {
         'url': "games/J/C/SCPS-45511.html",
     	'id': 'SCPS45511',
 	'title': "CRASH BANDICOOT CARNIVAL",
+        'pspconfig': 'pspconfigs/Crash Bash/SCPS-45511.bin',
     },
     'SCPS10140': {
         'url': "games/J/C/SCPS-10140.html",
     	'id': 'SCPS10140',
 	'title': "CRASH BANDICOOT CARNIVAL",
+        'pspconfig': 'pspconfigs/Crash Bash/SCPS-10140.bin',
     },
     'SCPS91319': {
         'url': "games/J/C/SCPS-91319.html",
     	'id': 'SCPS91319',
 	'title': "CRASH BANDICOOT CARNIVAL [PSONE BOOKS]",
+        'pspconfig': 'pspconfigs/Crash Bash/SCPS-91319.bin',
     },
     'SCPS45470': {
         'url': "games/J/C/SCPS-45470.html",
     	'id': 'SCPS45470',
 	'title': "CRASH BANDICOOT RACING",
     },
-    'SCPS10118': {
+    'SCPS10118': {'pspconfigs/Cool Boarders/SLPS-91031.bin'
         'url': "games/J/C/SCPS-10118.html",
     	'id': 'SCPS10118',
 	'title': "CRASH BANDICOOT RACING",
