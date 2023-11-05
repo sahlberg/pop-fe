@@ -6822,6 +6822,7 @@ games = {
 	'title': "KONAMI ARCADE CLASSICS",
         'pic0': 'https://images.launchbox-app.com/485ad1bc-5b53-4c1d-88f5-9f113ec4101a.png',
         'pic1': 'https://images.launchbox-app.com/808666dc-9a53-425a-9162-6153759d51e9.jpg',
+        'pspconfig': "pspconfigs/Konami 80's Arcade Gallery/SLUS-00945.bin",
     },
     'SLUS01051': {
         'url': "games/U/K/SLUS-01051.html",
@@ -7026,6 +7027,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLUS-01239.bin',
     },
     'SLUS01240': {
         'url': "games/U/L/SLUS-01071.html",
@@ -7035,6 +7037,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLUS-01240.bin',
     },
     'SLUS01257': {
         'url': "games/U/L/SLUS-01071.html",
@@ -47206,6 +47209,7 @@ games = {
         'url': "games/J/K/SLPM-86228.html",
     	'id': 'SLPM86228',
 	'title': "KONAMI 80'S ARCADE GALLERY",
+        'pspconfig': "pspconfigs/Konami 80's Arcade Gallery/SLPM-86228.bin",
     },
     'SLPM86052': {
         'url': "games/J/K/SLPM-86052.html",
@@ -47788,11 +47792,13 @@ games = {
         'url': "games/J/L/SLPS-01818.html",
     	'id': 'SLPS01818',
 	'title': "LANGRISSER IV & V",
+        'pspconfig': 'pspconfigs/Langrisser IV & V/SLPS-01818.bin',
     },
     'SLPS01819': {
         'url': "games/J/L/SLPS-01818.html",
     	'id': 'SLPS01819',
 	'title': "LANGRISSER IV & V",
+        'pspconfig': 'pspconfigs/Langrisser IV & V/SLPS-01819.bin',
     },
     'SLPS00732': {
         'url': "games/J/L/SLPS-00732.html",
@@ -48269,6 +48275,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02966.bin',
     },
     'SLPS02967': {
         'url': "games/J/L/SLPS-02966.html",
@@ -48278,6 +48285,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02967.bin',
     },
     'SLPS02968': {
         'url': "games/J/L/SLPS-02966.html",
@@ -48287,6 +48295,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
         'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02968.bin',
     },
     'SLPM86777': {
         'url': "games/J/L/SLPM-86777.html",
@@ -50088,6 +50097,7 @@ games = {
         'url': "games/J/M/SLPS-01281.html",
     	'id': 'SLPS01281',
 	'title': "MÖBIUS LINK 3D",
+        'pspconfig': 'pspconfigs/Möbius Link 3D/SLPS-01281.bin',
     },
     'SLPS00099': {
         'url': "games/J/M/SLPS-00099.html",
