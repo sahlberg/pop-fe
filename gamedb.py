@@ -8602,6 +8602,7 @@ games = {
 	'title': "NUCLEAR STRIKE",
         'pic0': 'https://images.launchbox-app.com/51a74dca-4c92-44f3-8124-94508497e202.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nuclear%20Strike%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Nuclear Strike/SLUS-00518.bin',
     },
     'SLUS00710': {
         'url': "games/U/O/SLUS-00710.html",
@@ -8840,6 +8841,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
         'manual': 'https://psxdatacenter.com/manuals/Persona%202%20-%20Eternal%20Punishment%20[SLUS-01158]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLUS-01339.bin',
     },
     'SLUS01130': {
         'url': "games/U/P/SLUS-01130.html",
@@ -50931,6 +50933,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13f5da27-4311-47f7-bdd7-67929a6183ff.png',
         'pic1': 'https://images.launchbox-app.com/1b5fa647-d54f-44a6-a06d-80349bbec0e4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Namco%20Museum%20Vol.%203%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Namco Museum Vol. 3/SLPS-91160.bin',
     },
     'SLPS00540': {
         'url': "games/J/N/SLPS-00540.html",
@@ -51260,7 +51263,7 @@ games = {
 	'title': "NEO PLANET",
         'pic0': 'https://images.launchbox-app.com/e12477f7-6414-437c-987a-c7d536878919.png',
         'pic1': 'https://images.launchbox-app.com/5c608f65-4512-45eb-a360-f8e2a77905ad.jpg',
-        'pspconfig': 'pspconfigs/Neo Planet/SLPS-00323.BIN',
+        'pspconfig': 'pspconfigs/Neo Planet/SLPS-00323.bin',
     },
     'SLPS01377': {
         'url': "games/J/N/SLPS-01377.html",
@@ -51276,16 +51279,22 @@ games = {
         'url': "games/J/N/SLPS-00823.html",
     	'id': 'SLPS00823',
 	'title': "NEORUDE",
+        'pic0': 'https://images.launchbox-app.com/6f29a997-f8c6-42ff-95e7-1f81baa748c0.png',
+        'pspconfig': 'pspconfigs/Neorude/SLPS-00823.bin',
     },
     'SLPS00824': {
         'url': "games/J/N/SLPS-00823.html",
     	'id': 'SLPS00824',
 	'title': "NEORUDE",
+        'pic0': 'https://images.launchbox-app.com/6f29a997-f8c6-42ff-95e7-1f81baa748c0.png',
+        'pspconfig': 'pspconfigs/Neorude/SLPS-00824.bin',
     },
     'SLPS02212': {
         'url': "games/J/N/SLPS-02212.html",
     	'id': 'SLPS02212',
 	'title': "NEORUDE [TECHNOSOFT COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/6f29a997-f8c6-42ff-95e7-1f81baa748c0.png',
+        'pspconfig': 'pspconfigs/Neorude/SLPS-02212.bin',
     },
     'SLPS01112': {
         'url': "games/J/N/SLPS-01112.html",
@@ -51485,6 +51494,7 @@ games = {
         'url': "games/J/N/SLPS-00494.html",
     	'id': 'SLPS00494',
 	'title': "NINJA JAJA MARUKUN - ONIKIRI NINPOUCHO",
+        'pspconfig': 'pspconfigs/Ninja Jaja Marukun Oniriki Ninpoucho/SLPS-00494.bin',
     },
     'SLPS00172': {
         'url': "games/J/N/SLPS-00172.html",
@@ -51618,16 +51628,19 @@ games = {
         'url': "games/J/N/SLPS-00106.html",
     	'id': 'SLPS00106',
 	'title': "NOBUNAGA NO YABOU - HAOUDEN",
+        'pspconfig': 'pspconfigs/Nobunaga no Yabou - Haouden/SLPS-00106.bin',
     },
     'SLPM86992': {
         'url': "games/J/N/SLPM-86992.html",
     	'id': 'SLPM86992',
 	'title': "NOBUNAGA NO YABOU - HAOUDEN [KOEI TEIBAN SERIES]",
+        'pspconfig': 'pspconfigs/Nobunaga no Yabou - Haouden/SLPM-86992.bin',
     },
     'SLPS91022': {
         'url': "games/J/N/SLPS-91022.html",
     	'id': 'SLPS91022',
 	'title': "NOBUNAGA NO YABOU - HAOUDEN [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Nobunaga no Yabou - Haouden/SLPS-91022.bin',
     },
     'SLPM86300': {
         'url': "games/J/N/SLPM-86300.html",
@@ -52155,17 +52168,25 @@ games = {
         'url': "games/J/O/SCPS-10099.html",
     	'id': 'SCPS10099',
 	'title': "ORE NO RYORI - WE COOKING",
+        'pic0': 'https://images.launchbox-app.com/e3e28443-eeb4-456b-ada5-2788fce46530.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ore%20no%20Ryouri%20(PSOne%20Books)%20[SCPS-91323].cbr',
+        'pspconfig': 'pspconfigs/Ore no Ryouri/SCPS-91207.bin',
     },
     'SCPS91207': {
         'url': "games/J/O/SCPS-91207.html",
     	'id': 'SCPS91207',
 	'title': "ORE NO RYORI - WE COOKING [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/e3e28443-eeb4-456b-ada5-2788fce46530.png',
+        'manual': 'https://psxdatacenter.com/manuals/Ore%20no%20Ryouri%20(PSOne%20Books)%20[SCPS-91323].cbr',
+        'pspconfig': 'pspconfigs/Ore no Ryouri/SCPS-91207.bin',
     },
     'SCPS91323': {
         'url': "games/J/O/SCPS-91323.html",
     	'id': 'SCPS91323',
 	'title': "ORE NO RYORI - WE COOKING [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/e3e28443-eeb4-456b-ada5-2788fce46530.png',
         'manual': 'https://psxdatacenter.com/manuals/Ore%20no%20Ryouri%20(PSOne%20Books)%20[SCPS-91323].cbr',
+        'pspconfig': 'pspconfigs/Ore no Ryouri/SCPS-91207.bin',
     },
     'SCPS10074': {
         'url': "games/J/O/SCPS-10074.html",
@@ -52440,6 +52461,8 @@ games = {
         'url': "games/J/P/SLPM-86006.html",
     	'id': 'SLPM86006',
 	'title': "PACHINKO DREAM",
+        'pic0': 'https://images.launchbox-app.com/7cf3df7d-72ad-4971-a4c9-cd1110ddeea5.png',
+        'pspconfig': 'pspconfigs/Pachinko Dream/SLPM-86006.bin',
     },
     'SLPS01089': {
         'url': "games/J/P/SLPS-01089.html",
@@ -52505,6 +52528,8 @@ games = {
         'url': "games/J/P/SLPS-01023.html",
     	'id': 'SLPS01023',
 	'title': "PACHI SLOT KANZEN KOURYAKU - CRANKY PRO",
+        'pic0': 'https://images.launchbox-app.com/adfe48ed-0f86-4b8a-82f8-a9ddac004dce.png',
+        'pspconfig': 'pspconfigs/Pachi Slot Kanzen Kouryaku - Cranky Pro/SLPS-01023.bin',
     },
     'SLPS03110': {
         'url': "games/J/P/SLPS-03110.html",
@@ -52520,11 +52545,13 @@ games = {
         'url': "games/J/P/SLPS-00752.html",
     	'id': 'SLPS00752',
 	'title': "PACHI SLOT KANZEN KOURYAKU 1 - UNIVERSAL KOUSHIKI GAIDO VOL.1",
+        'pspconfig': 'pspconfigs/Pachi Slot Kanzen Kouryaku 1 - Universal Koushiki Gaido Vol.1/SLPS-00752.bin',
     },
     'SLPS00943': {
         'url': "games/J/P/SLPS-00943.html",
     	'id': 'SLPS00943',
 	'title': "PACHI SLOT KANZEN KOURYAKU 2 - UNIVERSAL KOUSHIKI GAIDO VOL.2",
+        'pspconfig': 'pspconfigs/Pachi Slot Kanzen Kouryaku 2 - Universal Koushiki Gaido Vol.2/SLPS-00943.bin',
     },
     'SLPS01550': {
         'url': "games/J/P/SLPS-01550.html",
@@ -52840,6 +52867,8 @@ games = {
         'url': "games/J/P/SCPS-10097.html",
     	'id': 'SCPS10097',
 	'title': "PAQA",
+        'pic0': 'https://images.launchbox-app.com/8dbbdee4-4ccc-4b91-86fe-a8e9e8183dde.png',
+        'pspconfig': 'pspconfigs/Paqa/SCPS-10097.bin',
     },
     'SLPS03409': {
         'url': "games/J/P/SLPS-03409.html",
@@ -53171,6 +53200,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SCPS-45495.bin',
     },
     'SCPS45496': {
         'url': "games/J/P/SCPS-45495.html",
@@ -53179,6 +53209,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SCPS-45496.bin',
     },
     'SLPS02825': {
         'url': "games/J/P/SLPS-02825.html",
@@ -53187,6 +53218,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLPS-02825.bin',
     },
     'SLPS02826': {
         'url': "games/J/P/SLPS-02825.html",
@@ -53195,6 +53227,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLPS-02826.bin',
     },
     'SLPM86967': {
         'url': "games/J/P/SLPM-86967.html",
@@ -53203,6 +53236,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLPM-86967.bin',
     },
     'SLPS02785': {
         'url': "games/J/P/SLPS-02785.html",
@@ -53211,6 +53245,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLPS-02785.bin',
     },
     'SLPS02786': {
         'url': "games/J/P/SLPS-02785.html",
@@ -53219,6 +53254,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
         'snd0': "https://www.youtube.com/watch?v=Voyvc8c1bTE&list=PLKnNtzNfg7jci4xUDr3T_4cB8WxTNOxqG",
+        'pspconfig': 'pspconfigs/Persona 2 - Eternal Punishment/SLPS-02786.bin',
     },
     'SCPS45410': {
         'url': "games/J/P/SCPS-45410.html",
@@ -53499,16 +53535,21 @@ games = {
         'url': "games/J/P/SLPS-02498.html",
     	'id': 'SLPS02498',
 	'title': "POCKE-KANO - FUMIO UENO",
+        'pspconfig': 'pspconfigs/Pocke-Kano - Fumio Ueno/SLPS-02498.bin',
     },
     'SLPS02499': {
         'url': "games/J/P/SLPS-02499.html",
     	'id': 'SLPS02499',
 	'title': "POCKE-KANO - SHIZUKA HOUJOUIN",
+        'pic0': 'https://images.launchbox-app.com/f8ee1476-66d9-4f0e-97d9-7dfca2e6797c.png',
+        'pspconfig': 'pspconfigs/Pocke-Kano - Shizuka Houjouin/SLPS-02499.bin',
     },
     'SLPS02497': {
         'url': "games/J/P/SLPS-02497.html",
     	'id': 'SLPS02497',
 	'title': "POCKE-KANO - YUMI AIDA",
+        'pic0': 'https://images.launchbox-app.com/f9531ae8-40e4-4a27-a5ce-9b727356c7f4.png',
+        'pspconfig': 'pspconfigs/Pocke-Kano - Yumi Aida/SLPS-02497.bin',
     },
     'SLPS02800': {
         'url': "games/J/P/SLPS-02800.html",
@@ -53555,6 +53596,8 @@ games = {
         'url': "games/J/P/SCPS-10104.html",
     	'id': 'SCPS10104',
 	'title': "POCKET JIMAN",
+        'pic0': 'https://images.launchbox-app.com/14019a48-80fe-43e3-83ef-c48bce9e6966.png',
+        'pspconfig': 'pspconfigs/Pocket Jiman/SCPS-10104.bin',
     },
     'SCPS10076': {
         'url': "games/J/P/SCPS-10076.html",
