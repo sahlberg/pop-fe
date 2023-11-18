@@ -385,6 +385,7 @@ games = {
     	'id': 'SCPS45183',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
@@ -393,6 +394,7 @@ games = {
     	'id': 'SLPM86007',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
@@ -401,6 +403,7 @@ games = {
     	'id': 'SLPM86067',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
@@ -409,6 +412,7 @@ games = {
     	'id': 'SLPM87278',
 	'title': "VANDAL HEARTS - USHINAWARETA KODAI BUNMEI [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
     },
@@ -527,6 +531,8 @@ games = {
     	'id': 'SLPS01703',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLPS-01703.bin'
     },
@@ -535,6 +541,8 @@ games = {
     	'id': 'SLPS91182',
 	'title': "VIGILANTE 8 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPM86929': {
@@ -542,6 +550,8 @@ games = {
     	'id': 'SLPM86929',
 	'title': "VIGILANTE 8 [POKKIRI 1400 SERIES]",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
     },
     'SLPS02615': {
@@ -2252,7 +2262,6 @@ games = {
 	'title': "ZUTTO ISSHO - WITH ME EVERYTIME...",
         'pic0': 'https://images.launchbox-app.com/55fd34ea-8fbe-43aa-bace-3fc3440434ba.png',
         'pic1': 'https://images.launchbox-app.com/5c302738-dcbd-4506-afd4-a35c46f670b8.png',
-        'snd0': 'https://www.youtube.com/watch?v=pMr2Gwg9OL4',
     },
     'SLPM86523': {
         'url': "games/J/Z/SLPM-86523.html",
@@ -2260,7 +2269,6 @@ games = {
 	'title': "ZUTTO ISSHO - WITH ME EVERYTIME... [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/55fd34ea-8fbe-43aa-bace-3fc3440434ba.png',
         'pic1': 'https://images.launchbox-app.com/5c302738-dcbd-4506-afd4-a35c46f670b8.png',
-        'snd0': 'https://www.youtube.com/watch?v=pMr2Gwg9OL4',
     },
     'SLPS00424': {
         'url': "games/J/Z/SLPS-00424.html",
@@ -2440,7 +2448,6 @@ games = {
     	'id': 'SLUS00872',
 	'title': "ALEXI LALAS INTERNATIONAL SOCCER",
         'pic0': 'https://images.launchbox-app.com/d3bc37bb-b88e-45b9-b02e-806655bc96ad.png',
-        'snd0': 'https://www.youtube.com/watch?v=CX9z1F_kLyI',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alexi%20Lalas%20International%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLUS00633': {
@@ -2530,7 +2537,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Alundra/SLUS-00553.bin',
     },
@@ -2688,6 +2695,7 @@ games = {
     	'id': 'SLUS00164',
 	'title': "AREA 51",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
+        'pic1': 'https://images.launchbox-app.com/152d06c0-a368-49c4-8621-81d7aab0f687.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Area%2051%20%28USA%29_jp2.zip',
     },
@@ -2696,6 +2704,7 @@ games = {
     	'id': 'SCUS94182',
 	'title': "ARMORED CORE",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SCUS-94182.bin',
@@ -2705,6 +2714,7 @@ games = {
     	'id': 'SLUS01323',
 	'title': "ARMORED CORE [REPRINT]",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SLUS-01323.bin',
@@ -2714,6 +2724,8 @@ games = {
     	'id': 'SLUS01030',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLUS-01030.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01030.BIN',
     },
@@ -2722,6 +2734,8 @@ games = {
     	'id': 'SLUS01081',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLUS-01081.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLUS-01081.BIN',
     },
@@ -2730,6 +2744,8 @@ games = {
     	'id': 'SLUS00670',
 	'title': "ARMORED CORE - PROJECT PHANTASMA",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pic1': 'https://images.launchbox-app.com/c076ee24-3d20-4463-8c75-583ea66fb033.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=aF1C5ZYWZdc',
         'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLUS-00670.bin',
     },
     'SLUS01022': {
@@ -3239,7 +3255,6 @@ games = {
     	'id': 'SLUS01031',
 	'title': "BLASTER MASTER - BLASTING AGAIN",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SCUS94412': {
@@ -3248,7 +3263,6 @@ games = {
 	'title': "BLASTO",
         'pic0': 'https://images.launchbox-app.com/2d7268c0-48b9-49b5-873e-0c6b06abc1a9.png',
         'pic1': 'https://images.launchbox-app.com/d7bdb616-04ab-4f81-a10b-82071b27b235.jpg',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blasto%20%28USA%29_jp2.zip',
     },
     'SLUS00100': {
@@ -3256,8 +3270,6 @@ games = {
     	'id': 'SLUS00100',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
-        'pic1': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLUS01496': {
@@ -3274,7 +3286,6 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=QkN0aPyrQd4&list=PLiJCqXeqyAIAFAULUiPn84jgmbGG10bxw&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SCUS94199': {
@@ -3329,7 +3340,6 @@ games = {
     	'id': 'SLUS00823',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
-        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLUS01189': {
@@ -3595,7 +3605,6 @@ games = {
 	'title': "BUSHIDO BLADE 2",
         'pic0': 'https://images.launchbox-app.com/16cd9db7-67c2-449d-a92c-9a1d702dd17d.png',
         'pic1': 'https://images.launchbox-app.com/44c487ea-5117-42d2-a8ae-776ee261f4d4.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qUI2rEslZc8&list=PLaf6elz8BRfc4IYSnwzfAkdN7z09zBQaH&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%202%20%28USA%29_jp2.zip',
     },
     'SCUS94263': {
@@ -5540,7 +5549,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94164': {
@@ -5549,7 +5558,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94165': {
@@ -5558,7 +5567,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00892': {
@@ -5603,7 +5612,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01295': {
@@ -5612,7 +5621,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01296': {
@@ -5621,7 +5630,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01297': {
@@ -5630,7 +5639,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00879': {
@@ -5855,7 +5864,6 @@ games = {
 	'title': "G.DARIUS",
         'pic0': 'https://images.launchbox-app.com/11e27b8a-eb39-4e0e-8ce3-41e6bcff59ff.png',
         'pic1': 'https://images.launchbox-app.com/ecdc5987-4df6-465e-aabf-0833e4b93fba.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=CctCIaRG8UM&list=PLr3WuuAk93agvpw4aC-3zqhmqmsEpDfVl&index=3',
         'pspconfig': 'pspconfigs/G Darius/SLUS-00690.bin',
     },
     'SLUS00544': {
@@ -7047,7 +7055,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE COMPLETE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLUS-01071.bin',
     },
@@ -7057,7 +7065,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE COMPLETE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLUS-01239.bin',
     },
@@ -7067,7 +7075,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE COMPLETE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLUS-01240.bin',
     },
@@ -7077,7 +7085,7 @@ games = {
         'title': "LUNAR 2 - ETERNAL BLUE COMPLETE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01306': {
@@ -7332,7 +7340,6 @@ games = {
 	'title': "MEGAMAN LEGENDS",
         'pic0': 'https://images.launchbox-app.com/d9e75515-7ee9-48e7-bedd-b755b1744ff5.png',
         'pic1': 'https://images.launchbox-app.com/0f34c390-85f3-4990-88f7-cdf8f98c8b20.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=v_yZ0TUQS2Y&list=PL2S7vVonTF8WlB2At5RHXnUto-_QqmZl3',
         'manual': 'https://psxdatacenter.com/manuals/Megaman%20Legends%20[SLUS-00603]%20(E).cbr',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLUS-00603.bin',
     },
@@ -7342,7 +7349,6 @@ games = {
 	'title': "MEGAMAN LEGENDS 2",
         'pic0': 'https://images.launchbox-app.com/90872517-51e2-4bc9-8ceb-9569c358181b.png',
         'pic1': 'https://images.launchbox-app.com/4ee909f3-27c3-4b94-a806-4fb4c6db31f1.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UfHDt5xa82w&list=PL2S7vVonTF8UbuHnDZ8q9q8qRNvyqMV-M&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Megaman%20Legends%202%20[SLUS-01140]%20(E).cbr',
         'pspconfig': 'pspconfigs/Mega Man Legends 2/SLUS-01140.bin',
     },
@@ -7352,7 +7358,6 @@ games = {
 	'title': "MEGAMAN X4",
         'pic0': 'https://images.launchbox-app.com/64c22e75-d686-4306-9619-8698c4acbb6b.png',
         'pic1': 'https://images.launchbox-app.com/4a1538be-8446-4499-8794-eef8df249db6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=oc714KK58Fc&list=PL2S7vVonTF8UReYWU_zSVHW3ETgimF2Ux&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X4%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mega Man X4/SLUS-00561.bin',
     },
@@ -7362,7 +7367,6 @@ games = {
 	'title': "MEGAMAN X5",
         'pic0': 'https://images.launchbox-app.com/a7f87324-f8fa-4c25-aa57-c87e7f244489.png',
         'pic1': 'https://images.launchbox-app.com/063646af-add7-4385-9d54-e6565159d39f.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=or47gVq7iZs&list=PLztIUo9ulb_unGtd1ZEbMsYFK7uGRnfb7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X5%20%28USA%29_jp2.zip',
     },
     'SLUS01395': {
@@ -8763,7 +8767,7 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00668': {
@@ -8772,7 +8776,7 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS90028': {
@@ -8781,7 +8785,7 @@ games = {
 	'title': "PARASITE EVE",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS01042': {
@@ -9596,7 +9600,7 @@ games = {
 	'title': "RESIDENT EVIL - SURVIVOR",
         'pic0': 'https://images.launchbox-app.com/a6e47a08-ef9a-4874-8411-f5df5b431be4.png',
         'pic1': 'https://images.launchbox-app.com/7768f8a0-973d-46fa-96ed-7b73dcb9dd34.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
+        'snd0': 'https://www.youtube.com/watch?v=GBptW5LbsVk&list=PLEFD81C40DD9AE93C&index=1',
     },
     'SLUS00184': {
         'url': "games/U/R/SLUS-00184.html",
@@ -9900,6 +9904,8 @@ games = {
     	'id': 'SLUS00753',
 	'title': "R-TYPES",
         'pic0': 'https://images.launchbox-app.com/1ba18af1-314f-4cd4-a5d0-ec3fc48d1805.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1538442-r-types-wallpaper.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=p_UYHgGMpBI',
     },
     'SLUS01116': {
         'url': "games/U/R/SLUS-01116.html",
@@ -11832,6 +11838,7 @@ games = {
     	'id': 'SLUS00885',
 	'title': "TOMB RAIDER - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'pic1': 'https://images.launchbox-app.com/30e92abc-b3e3-41cb-bf73-739fc0090267.jpg',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
@@ -11840,6 +11847,7 @@ games = {
     	'id': 'SLUS01311',
 	'title': "TOMB RAIDER - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/0b27806e-0934-427e-9032-7931b5c6cc8f.png',
+        'pic1': 'https://images.launchbox-app.com/55d8816e-233f-4550-b02a-0454fd08938a.jpg',
         'snd0': "https://www.youtube.com/watch?v=AHdafkVxmM4&list=PLEeafQzOeklQxilKZvtXGrRtMa9S-wY5Q&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20Chronicles%20%28USA%29_jp2.zip',
     },
@@ -12169,6 +12177,7 @@ games = {
 	'title': "VANDAL HEARTS",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vandal Hearts/SLUS-00447.bin',
     },
@@ -12213,6 +12222,8 @@ games = {
     	'id': 'SLUS00510',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLUS-00510.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLUS-00510.BIN',
@@ -12736,6 +12747,8 @@ games = {
     	'id': 'SLUS00977',
 	'title': "XENA - WARRIOR PRINCESS",
         'pic0': 'https://images.launchbox-app.com/f5736a1b-27c1-442b-82c6-56e6fdcfd31f.png',
+        'pic1': 'https://images.launchbox-app.com/013d60de-c008-4547-a778-8414986ab01c.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=hszVMXhPA6U',
     },
     'SLUS00664': {
         'url': "games/U/X/SLUS-00664.html",
@@ -13583,7 +13596,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Alundra/SLES-01135.bin',
     },
@@ -13593,7 +13606,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Alundra/SLES-01198.bin',
     },
@@ -13603,7 +13616,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Alundra/SLES-01256.bin',
     },
@@ -13613,7 +13626,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Alundra/SLES-01257.bin',
     },
@@ -13623,7 +13636,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Alundra%20(S)%20[SLES-01258].cbr',
         'pspconfig': 'pspconfigs/Alundra/SLES-01258.bin',
     },
@@ -13932,6 +13945,7 @@ games = {
     	'id': 'SLES00578',
 	'title': "AREA 51",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
+        'pic1': 'https://images.launchbox-app.com/152d06c0-a368-49c4-8621-81d7aab0f687.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Area%2051%20%28USA%29_jp2.zip',
     },
@@ -13940,6 +13954,7 @@ games = {
     	'id': 'SLES03783',
 	'title': "AREA 51 [MIDWAY CLASSICS]",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
+        'pic1': 'https://images.launchbox-app.com/152d06c0-a368-49c4-8621-81d7aab0f687.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
@@ -13954,6 +13969,7 @@ games = {
     	'id': 'SCES00842',
 	'title': "ARMORED CORE",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SCES-00842.bin',
@@ -14855,7 +14871,6 @@ games = {
     	'id': 'SLES02273',
 	'title': "BLASTER MASTER - BLASTING AGAIN",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SCES01224': {
@@ -14864,7 +14879,6 @@ games = {
 	'title': "BLASTO",
         'pic0': 'https://images.launchbox-app.com/2d7268c0-48b9-49b5-873e-0c6b06abc1a9.png',
         'pic1': 'https://images.launchbox-app.com/d7bdb616-04ab-4f81-a10b-82071b27b235.jpg',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blasto%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Blasto/SCES-01224.bin',
     },
@@ -14891,8 +14905,6 @@ games = {
     	'id': 'SLES00247',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
-        'pic1': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES00305': {
@@ -14900,8 +14912,6 @@ games = {
     	'id': 'SLES00305',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
-        'pic1': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES00306': {
@@ -14909,8 +14919,6 @@ games = {
     	'id': 'SLES00306',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
-        'pic1': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES04067': {
@@ -14940,7 +14948,6 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=QkN0aPyrQd4&list=PLiJCqXeqyAIAFAULUiPn84jgmbGG10bxw&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Blood%20Omen%20Legacy%20of%20Kain%20[SLES-00075]%20(E).cbr',
     },
     'SLES00522': {
@@ -14949,7 +14956,6 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=QkN0aPyrQd4&list=PLiJCqXeqyAIAFAULUiPn84jgmbGG10bxw&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SLES00523': {
@@ -14958,7 +14964,6 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=QkN0aPyrQd4&list=PLiJCqXeqyAIAFAULUiPn84jgmbGG10bxw&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SLES01010': {
@@ -15029,7 +15034,6 @@ games = {
     	'id': 'SLES01712',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
-        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SCES01078': {
@@ -15937,9 +15941,9 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VI%20(S)%20[SCES-03828].cbr',
     },
-    'SCED-50642': {
+    'SCED50642': {
         'url': "games/P/F/SCES-03828.html",
-    	'id': 'SCED-50642',
+    	'id': 'SCED50642',
 	'title': "FINAL FANTASY VI",
         'pic0': 'https://images.launchbox-app.com/553b5753-9d56-4864-929a-a5dd33db987f.png',
         'pic1': 'https://images.launchbox-app.com/6d383c08-1d9a-46e5-adc0-9947a32b83f3.jpg',
@@ -15950,7 +15954,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES10867': {
@@ -15959,7 +15963,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES20867': {
@@ -15968,7 +15972,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES00868': {
@@ -15977,7 +15981,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES10868': {
@@ -15986,7 +15990,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES20868': {
@@ -15995,7 +15999,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES00869': {
@@ -16004,7 +16008,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES10869': {
@@ -16013,7 +16017,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES20869': {
@@ -16022,7 +16026,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES00900': {
@@ -16031,7 +16035,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES10900': {
@@ -16040,7 +16044,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES20900': {
@@ -16049,7 +16053,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02080': {
@@ -16247,7 +16251,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12965': {
@@ -16256,7 +16260,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22965': {
@@ -16265,7 +16269,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32965': {
@@ -16274,7 +16278,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02966': {
@@ -16283,7 +16287,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12966': {
@@ -16292,7 +16296,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22966': {
@@ -16301,7 +16305,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32966': {
@@ -16310,7 +16314,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02967': {
@@ -16319,7 +16323,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12967': {
@@ -16328,7 +16332,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22967': {
@@ -16337,7 +16341,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32967': {
@@ -16346,7 +16350,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02968': {
@@ -16355,7 +16359,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES12968': {
@@ -16364,7 +16368,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES22968': {
@@ -16373,7 +16377,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES32968': {
@@ -16382,7 +16386,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES02969': {
@@ -16391,7 +16395,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES12969': {
@@ -16400,7 +16404,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES22969': {
@@ -16409,7 +16413,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SLES32969': {
@@ -16418,7 +16422,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
     },
     'SCES03884': {
@@ -16789,7 +16793,6 @@ games = {
 	'title': "G.DARIUS",
         'pic0': 'https://images.launchbox-app.com/11e27b8a-eb39-4e0e-8ce3-41e6bcff59ff.png',
         'pic1': 'https://images.launchbox-app.com/ecdc5987-4df6-465e-aabf-0833e4b93fba.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=CctCIaRG8UM&list=PLr3WuuAk93agvpw4aC-3zqhmqmsEpDfVl&index=3',
         'pspconfig': 'pspconfigs/G Darius/SLES-01314.bin',
     },
     'SLES00082': {
@@ -21521,7 +21524,6 @@ games = {
 	'title': "MEGAMAN LEGENDS",
         'pic0': 'https://images.launchbox-app.com/d9e75515-7ee9-48e7-bedd-b755b1744ff5.png',
         'pic1': 'https://images.launchbox-app.com/0f34c390-85f3-4990-88f7-cdf8f98c8b20.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=v_yZ0TUQS2Y&list=PL2S7vVonTF8WlB2At5RHXnUto-_QqmZl3',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLES-01485.bin',
     },
     'SLES03556': {
@@ -21530,7 +21532,6 @@ games = {
 	'title': "MEGAMAN LEGENDS 2",
         'pic0': 'https://images.launchbox-app.com/90872517-51e2-4bc9-8ceb-9569c358181b.png',
         'pic1': 'https://images.launchbox-app.com/4ee909f3-27c3-4b94-a806-4fb4c6db31f1.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=UfHDt5xa82w&list=PL2S7vVonTF8UbuHnDZ8q9q8qRNvyqMV-M&index=1',
         'pspconfig': 'pspconfigs/Mega Man Legends 2/SLES-03556.bin',
     },
     'SLES00503': {
@@ -21548,7 +21549,6 @@ games = {
 	'title': "MEGAMAN X4",
         'pic0': 'https://images.launchbox-app.com/64c22e75-d686-4306-9619-8698c4acbb6b.png',
         'pic1': 'https://images.launchbox-app.com/4a1538be-8446-4499-8794-eef8df249db6.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=oc714KK58Fc&list=PL2S7vVonTF8UReYWU_zSVHW3ETgimF2Ux&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X4%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mega Man X4/SLES-01176.bin',
     },
@@ -21558,7 +21558,6 @@ games = {
 	'title': "MEGAMAN X5",
         'pic0': 'https://images.launchbox-app.com/a7f87324-f8fa-4c25-aa57-c87e7f244489.png',
         'pic1': 'https://images.launchbox-app.com/063646af-add7-4385-9d54-e6565159d39f.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=or47gVq7iZs&list=PLztIUo9ulb_unGtd1ZEbMsYFK7uGRnfb7&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X5%20%28USA%29_jp2.zip',
     },
     'SLES03778': {
@@ -27846,7 +27845,7 @@ games = {
 	'title': "RESIDENT EVIL - SURVIVOR",
         'pic0': 'https://images.launchbox-app.com/a6e47a08-ef9a-4874-8411-f5df5b431be4.png',
         'pic1': 'https://images.launchbox-app.com/7768f8a0-973d-46fa-96ed-7b73dcb9dd34.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
+        'snd0': 'https://www.youtube.com/watch?v=GBptW5LbsVk&list=PLEFD81C40DD9AE93C&index=1',
     },
     'SLES02744': {
         'url': "games/P/R/SLES-02744.html",
@@ -27854,7 +27853,7 @@ games = {
 	'title': "RESIDENT EVIL - SURVIVOR",
         'pic0': 'https://images.launchbox-app.com/a6e47a08-ef9a-4874-8411-f5df5b431be4.png',
         'pic1': 'https://images.launchbox-app.com/7768f8a0-973d-46fa-96ed-7b73dcb9dd34.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=D-ag233teNQ',
+        'snd0': 'https://www.youtube.com/watch?v=GBptW5LbsVk&list=PLEFD81C40DD9AE93C&index=1',
     },
     'SLES01661': {
         'url': "games/P/R/SLES-01661.html",
@@ -27925,9 +27924,9 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
-    'SCED-01832': {
+    'SCED01832': {
         'url': "games/P/R/SCES-01706.html",
-    	'id': 'SCED-01832',
+    	'id': 'SCED01832',
 	'title': "RIDGE RACER TYPE 4",
         'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
@@ -28350,6 +28349,8 @@ games = {
     	'id': 'SLES01355',
 	'title': "R-TYPES",
         'pic0': 'https://images.launchbox-app.com/1ba18af1-314f-4cd4-a5d0-ec3fc48d1805.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1538442-r-types-wallpaper.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=p_UYHgGMpBI',
         'pspconfig': 'pspconfigs/R-Types/SLES-01355.bin',
     },
     'SLES01939': {
@@ -32725,6 +32726,7 @@ games = {
     	'id': 'SLES00204',
 	'title': "VANDAL HEARTS",
         'pic0': 'https://images.launchbox-app.com/4a6d3986-c1b8-4411-b27f-dca7f185b6e2.png',
+        'pic1': 'https://images.launchbox-app.com/d7ca5857-43ee-4be3-8f93-a2d3e170f782.jpg',
         'snd0': 'https://www.youtube.com/watch?v=o8FVfsuj0lQ&list=PLp4Y6_GDFo5cmECCghxzCPTkxNddVNkpE&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vandal%20Hearts%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vandal Hearts/SLES-00204.bin',
@@ -32857,6 +32859,8 @@ games = {
     	'id': 'SLES01212',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01212.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01212.BIN',
@@ -32866,6 +32870,8 @@ games = {
     	'id': 'SLES01213',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01213.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01213.BIN',
@@ -32875,6 +32881,8 @@ games = {
     	'id': 'SLES01214',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01214.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01214.BIN',
@@ -32884,6 +32892,8 @@ games = {
     	'id': 'SLES01215',
 	'title': "VIGILANTE 8",
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
+        'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01215.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01215.BIN',
@@ -33918,24 +33928,32 @@ games = {
     	'id': 'SLES02265',
 	'title': "XENA - WARRIOR PRINCESS",
         'pic0': 'https://images.launchbox-app.com/f5736a1b-27c1-442b-82c6-56e6fdcfd31f.png',
+        'pic1': 'https://images.launchbox-app.com/013d60de-c008-4547-a778-8414986ab01c.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=hszVMXhPA6U',
     },
     'SLES02266': {
         'url': "games/P/X/SLES-02266.html",
     	'id': 'SLES02266',
 	'title': "XENA - WARRIOR PRINCESS",
         'pic0': 'https://images.launchbox-app.com/f5736a1b-27c1-442b-82c6-56e6fdcfd31f.png',
+        'pic1': 'https://images.launchbox-app.com/013d60de-c008-4547-a778-8414986ab01c.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=hszVMXhPA6U',
     },
     'SLES02267': {
         'url': "games/P/X/SLES-02267.html",
     	'id': 'SLES02267',
 	'title': "XENA - WARRIOR PRINCESS",
         'pic0': 'https://images.launchbox-app.com/f5736a1b-27c1-442b-82c6-56e6fdcfd31f.png',
+        'pic1': 'https://images.launchbox-app.com/013d60de-c008-4547-a778-8414986ab01c.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=hszVMXhPA6U',
     },
     'SLES02268': {
         'url': "games/P/X/SLES-02268.html",
     	'id': 'SLES02268',
 	'title': "XENA - WARRIOR PRINCESS",
         'pic0': 'https://images.launchbox-app.com/f5736a1b-27c1-442b-82c6-56e6fdcfd31f.png',
+        'pic1': 'https://images.launchbox-app.com/013d60de-c008-4547-a778-8414986ab01c.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=hszVMXhPA6U',
     },
     'SLES00811': {
         'url': "games/P/X/SLES-00811.html",
@@ -34952,7 +34970,7 @@ games = {
 	'title': "ALUNDRA",
         'pic0': 'https://images.launchbox-app.com/ecd84719-4218-464a-99d7-c018e17c156f.png',
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=wKmZTw7bmI0&list=PL2S7vVonTF8UZrKK17J8FBksvYbnqyHz-&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
     },
     'SCPS45449': {
@@ -35426,6 +35444,7 @@ games = {
     	'id': 'SLPS00726',
 	'title': "AREA 51",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
+        'pic1': 'https://images.launchbox-app.com/152d06c0-a368-49c4-8621-81d7aab0f687.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Area%2051%20%28USA%29_jp2.zip',
     },
@@ -35434,6 +35453,7 @@ games = {
     	'id': 'SLPS00725',
 	'title': "AREA 51 SPECIAL PACK",
         'pic0': 'https://images.launchbox-app.com/ec04da27-ee8b-4c62-aa7b-b5b74bfef94b.png',
+        'pic1': 'https://images.launchbox-app.com/152d06c0-a368-49c4-8621-81d7aab0f687.jpg',
         'snd0': 'https://www.youtube.com/watch?v=_cWXyCeolGA&list=PLGydgd_GzzkNy66MftvuC1rjl7nOtF1Ne&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Area%2051%20%28USA%29_jp2.zip',
     },
@@ -35462,6 +35482,7 @@ games = {
     	'id': 'SCPS45060',
 	'title': "ARMORED CORE",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SCPS-45060.bin',
@@ -35471,6 +35492,7 @@ games = {
     	'id': 'SLPS00900',
 	'title': "ARMORED CORE",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SLPS-00900.bin',
@@ -35480,6 +35502,7 @@ games = {
     	'id': 'SLPS91064',
 	'title': "ARMORED CORE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SLPS-91064.bin',
@@ -35489,6 +35512,7 @@ games = {
     	'id': 'SLPS91402',
 	'title': "ARMORED CORE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
+        'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Armored Core/SLPS-91402.bin',
@@ -35498,6 +35522,8 @@ games = {
     	'id': 'SLPS01855',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-01855.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01855.BIN',
     },
@@ -35506,6 +35532,8 @@ games = {
     	'id': 'SLPS01856',
 	'title': "ARMORED CORE - MASTER OF ARENA",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-01856.bin',
         'ps3config': 'ps3configs/Armored Core - Master of Arena/SLPS-01856.BIN',
     },
@@ -35514,6 +35542,8 @@ games = {
     	'id': 'SLPS91188',
 	'title': "ARMORED CORE - MASTER OF ARENA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91188.bin',
     },
     'SLPS91189': {
@@ -35521,6 +35551,8 @@ games = {
     	'id': 'SLPS91189',
 	'title': "ARMORED CORE - MASTER OF ARENA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91189.bin',
     },
     'SLPS91444': {
@@ -35528,6 +35560,8 @@ games = {
     	'id': 'SLPS91444',
 	'title': "ARMORED CORE - MASTER OF ARENA [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/06f158c7-64a3-4cc3-bd4b-21580cbd0802.png',
+        'pic1': 'https://images.launchbox-app.com/389e4abe-0442-4a74-a47d-13743d99805e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=4KzTE-BBpH4&list=PL-0zRu73HqOSHG2lvok9z8Vr34qW7t6q5&index=1',
         'pspconfig': 'pspconfigs/Armored Core - Master of Arena/SLPS-91444.bin',
     },
     'SLPS91445': {
@@ -35542,6 +35576,8 @@ games = {
     	'id': 'SLPS01130',
 	'title': "ARMORED CORE - PROJECT PHANTASMA",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pic1': 'https://images.launchbox-app.com/c076ee24-3d20-4463-8c75-583ea66fb033.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=aF1C5ZYWZdc',
         'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-01130.bin',
     },
     'SLPS91110': {
@@ -35549,6 +35585,8 @@ games = {
     	'id': 'SLPS91110',
 	'title': "ARMORED CORE - PROJECT PHANTASMA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pic1': 'https://images.launchbox-app.com/c076ee24-3d20-4463-8c75-583ea66fb033.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=aF1C5ZYWZdc',
         'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-91110.bin',
     },
     'SLPS91424': {
@@ -35556,6 +35594,8 @@ games = {
     	'id': 'SLPS91424',
 	'title': "ARMORED CORE - PROJECT PHANTASMA [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/714d6474-1db4-4f62-83b9-4b6b8252b58a.png',
+        'pic1': 'https://images.launchbox-app.com/c076ee24-3d20-4463-8c75-583ea66fb033.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=aF1C5ZYWZdc',
         'pspconfig': 'pspconfigs/Armored Core - Project Phantasma/SLPS-91424.bin',
     },
     'SLPM86502': {
@@ -36649,7 +36689,6 @@ games = {
     	'id': 'SLPS02617',
 	'title': "BLASTER MASTER",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SLPS03269': {
@@ -36657,7 +36696,6 @@ games = {
     	'id': 'SLPS03269',
 	'title': "BLASTER MASTER [VALUE 1500]",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
-        'snd0': 'https://assets.mubicdn.net/images/film/323436/image-w1280.jpg?1635642069',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SLPS01209': {
@@ -36906,7 +36944,6 @@ games = {
     	'id': 'SLPS01525',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
-        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPS91138': {
@@ -36914,7 +36951,6 @@ games = {
     	'id': 'SLPS91138',
 	'title': "BOMBERMAN FANTASY RACE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
-        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPM87102': {
@@ -36922,7 +36958,6 @@ games = {
     	'id': 'SLPM87102',
 	'title': "BOMBERMAN FANTASY RACE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
-        'snd0': "https://www.youtube.com/watch?v=snt1lnwVgLk&list=PLjyLjyXJQJUPvRn0JlMfmweRgeAnQ3mTH&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPS03002': {
@@ -37320,7 +37355,6 @@ games = {
 	'title': "BUSHIDO BLADE 2",
         'pic0': 'https://images.launchbox-app.com/16cd9db7-67c2-449d-a92c-9a1d702dd17d.png',
         'pic1': 'https://images.launchbox-app.com/44c487ea-5117-42d2-a8ae-776ee261f4d4.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qUI2rEslZc8&list=PLaf6elz8BRfc4IYSnwzfAkdN7z09zBQaH&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%202%20%28USA%29_jp2.zip',
     },
     'SLPS01294': {
@@ -37329,7 +37363,6 @@ games = {
 	'title': "BUSHIDO BLADE 2",
         'pic0': 'https://images.launchbox-app.com/16cd9db7-67c2-449d-a92c-9a1d702dd17d.png',
         'pic1': 'https://images.launchbox-app.com/44c487ea-5117-42d2-a8ae-776ee261f4d4.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qUI2rEslZc8&list=PLaf6elz8BRfc4IYSnwzfAkdN7z09zBQaH&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%202%20%28USA%29_jp2.zip',
     },
     'SLPM87404': {
@@ -37338,7 +37371,6 @@ games = {
 	'title': "BUSHIDO BLADE 2 [LEGENDARY HITS]",
         'pic0': 'https://images.launchbox-app.com/16cd9db7-67c2-449d-a92c-9a1d702dd17d.png',
         'pic1': 'https://images.launchbox-app.com/44c487ea-5117-42d2-a8ae-776ee261f4d4.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qUI2rEslZc8&list=PLaf6elz8BRfc4IYSnwzfAkdN7z09zBQaH&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bushido%20Blade%202%20%28USA%29_jp2.zip',
     },
     'SLPS01237': {
@@ -40071,9 +40103,9 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=QgWaKPkyZ48&list=PL320F454B86DDDFA0&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Dino%20Crisis%20[SLPS-02180]%20(J).cbr',
     },
-    'CPCS-00701': {
+    'CPCS00701': {
         'url': "games/J/D/CPCS-00701.html",
-    	'id': 'CPCS-00701',
+    	'id': 'CPCS00701',
 	'title': "DINO CRISIS 5TH ANNIVERSARY [3 DISCS]",
         'pic0': 'https://images.launchbox-app.com/0b8fc4dc-cfe4-489b-b115-f619c0ccafcb.png',
         'pic1': 'https://images.launchbox-app.com/66f84629-58ed-4947-b6f5-373955271b6b.jpg',
@@ -41973,7 +42005,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS00701': {
@@ -41982,7 +42014,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS00702': {
@@ -41991,7 +42023,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45007': {
@@ -42000,7 +42032,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45008': {
@@ -42009,7 +42041,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SCPS45009': {
@@ -42018,7 +42050,7 @@ games = {
 	'title': "FINAL FANTASY VII",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20(J)%20[SLPS-00700].cbr',
     },
     'SLPS01057': {
@@ -42027,7 +42059,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01058': {
@@ -42036,7 +42068,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01059': {
@@ -42045,7 +42077,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS01060': {
@@ -42054,7 +42086,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91440': {
@@ -42063,7 +42095,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91441': {
@@ -42072,7 +42104,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91442': {
@@ -42081,7 +42113,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPS91443': {
@@ -42090,7 +42122,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87380': {
@@ -42099,7 +42131,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87381': {
@@ -42108,7 +42140,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87382': {
@@ -42117,7 +42149,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SLPM87383': {
@@ -42126,7 +42158,7 @@ games = {
 	'title': "FINAL FANTASY VII INTERNATIONAL [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2aed1267-b7be-48ad-a5c4-9a27d29fd6ea.png',
         'pic1': 'https://images.launchbox-app.com/a7f86e75-0eff-43c0-80ed-4c89e74ee862.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=qDL8s5_RNN0&list=PLglUu7rOaMDvQbKouUvnZsPBfgcnTfixn&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=TCtZyTbg-Y4&list=PL6lW_xFizAS16-0GeyBOD5hykJDjqW8iz&index=4',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20VII%20International%20(J)%20[SLPS-01057-60].cbr',
     },
     'SCPS45375': {
@@ -42243,7 +42275,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45501': {
@@ -42252,7 +42284,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45502': {
@@ -42261,7 +42293,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45503': {
@@ -42270,7 +42302,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02000': {
@@ -42279,7 +42311,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02001': {
@@ -42288,7 +42320,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02002': {
@@ -42297,7 +42329,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPS02003': {
@@ -42306,7 +42338,7 @@ games = {
 	'title': "FINAL FANTASY IX",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87388': {
@@ -42315,7 +42347,7 @@ games = {
 	'title': "FINAL FANTASY IX [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87389': {
@@ -42324,7 +42356,7 @@ games = {
 	'title': "FINAL FANTASY IX [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87390': {
@@ -42333,7 +42365,7 @@ games = {
 	'title': "FINAL FANTASY IX [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SLPM87391': {
@@ -42342,7 +42374,7 @@ games = {
 	'title': "FINAL FANTASY IX [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/de2eb709-947d-4a53-b719-9c2353ec3690.png',
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=cVoyLkvYj4s&list=PLqrlkIVyDLs9DC_MrpLB7DE0pnIigqrXh&index=1',
+        'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
     },
     'SCPS45087': {
@@ -42852,7 +42884,6 @@ games = {
 	'title': "G.DARIUS",
         'pic0': 'https://images.launchbox-app.com/11e27b8a-eb39-4e0e-8ce3-41e6bcff59ff.png',
         'pic1': 'https://images.launchbox-app.com/ecdc5987-4df6-465e-aabf-0833e4b93fba.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=CctCIaRG8UM&list=PLr3WuuAk93agvpw4aC-3zqhmqmsEpDfVl&index=3',
     },
     'SLPS01348': {
         'url': "games/J/G/SLPS-01348.html",
@@ -42860,7 +42891,6 @@ games = {
 	'title': "G.DARIUS",
         'pic0': 'https://images.launchbox-app.com/11e27b8a-eb39-4e0e-8ce3-41e6bcff59ff.png',
         'pic1': 'https://images.launchbox-app.com/ecdc5987-4df6-465e-aabf-0833e4b93fba.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=CctCIaRG8UM&list=PLr3WuuAk93agvpw4aC-3zqhmqmsEpDfVl&index=3',
     },
     'SLPM86453': {
         'url': "games/J/G/SLPM-86453.html",
@@ -42868,7 +42898,6 @@ games = {
 	'title': "G.DARIUS [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/11e27b8a-eb39-4e0e-8ce3-41e6bcff59ff.png',
         'pic1': 'https://images.launchbox-app.com/ecdc5987-4df6-465e-aabf-0833e4b93fba.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=CctCIaRG8UM&list=PLr3WuuAk93agvpw4aC-3zqhmqmsEpDfVl&index=3',
     },
     'SCPS10065': {
         'url': "games/J/G/SCPS-10065.html",
@@ -43844,17 +43873,17 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
         'pspconfig': 'pspconfigs/Gran Turismo 2/SCPS-10117.bin',
     },
-    'SCAJ-01001': {
+    'SCAJ01001': {
         'url': "games/J/G/SCAJ-01001.html",
-    	'id': 'SCAJ-01001',
+    	'id': 'SCAJ01001',
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gran%20Turismo%202%20%28USA%29%20%28Arcade%20Mode%29_jp2.zip',
     },
-    'SCAJ-01002': {
+    'SCAJ01002': {
         'url': "games/J/G/SCAJ-01001.html",
-    	'id': 'SCAJ-01002',
+    	'id': 'SCAJ01002',
 	'title': "GRAN TURISMO 2 - THE REAL DRIVING SIMULATOR [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/4af88efb-f755-4f91-88d0-a78e7839726d.png',
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
@@ -45362,9 +45391,9 @@ games = {
     	'id': 'SLPS01027',
 	'title': "IBARADO RAPTURE NO KAERU MACHI",
     },
-    'ESPM-70001': {
+    'ESPM70001': {
         'url': "games/J/I/ESPM-70001.html",
-    	'id': 'ESPM-70001',
+    	'id': 'ESPM70001',
 	'title': "ICEMAN - DIGITAL PLAYSTAGE",
     },
     'SLPS02199': {
@@ -48479,7 +48508,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02081.bin',
     },
@@ -48489,7 +48518,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02082.bin',
     },
@@ -48499,7 +48528,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02083.bin',
     },
@@ -48509,7 +48538,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE [KADOKAWA BEST]",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02966.bin',
     },
@@ -48519,7 +48548,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE [KADOKAWA BEST]",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02967.bin',
     },
@@ -48529,7 +48558,7 @@ games = {
 	'title': "LUNAR 2 - ETERNAL BLUE [KADOKAWA BEST]",
         'pic0': 'https://images.launchbox-app.com/487277a1-19fd-4e3c-b102-dd03fe65c99c.png',
         'pic1': 'https://images.launchbox-app.com/39258e13-fa27-4db2-8f48-f94992b55436.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=AEw1a391H6k',
+        'snd0': 'https://www.youtube.com/watch?v=09tKYpI1B3A&list=PL9DrD0xrCyHKCPeqJ92kq8caWKCgLjef5&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Lunar%202%20-%20Eternal%20Blue%20Complete%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Lunar 2 - Eternal Blue/SLPS-02968.bin',
     },
@@ -52990,7 +53019,7 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45204': {
@@ -52999,7 +53028,7 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Parasite%20Eve%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01230': {
@@ -53008,7 +53037,7 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Parasite%20Eve%20[SLPS-01230]%20(J).cbr',
     },
     'SLPS01231': {
@@ -53017,7 +53046,7 @@ games = {
 	'title': "PARASITE EVE [ 2 DISCS ]",
         'pic0': 'https://images.launchbox-app.com/b1ca4034-7082-4134-bfcc-f7ca5de00de0.png',
         'pic1': 'https://images.launchbox-app.com/d39f12f4-90c5-4bd9-ad94-e30d3fe71942.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=t_9qYTDc-CA&list=PL1ABF2EE23EC6F8F4&index=3',
+        'snd0': 'https://www.youtube.com/watch?v=Y9_azx0wqVw&list=PLTLXyHxNV4azQtL26W-7l6fTrOa3rJgLo&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Parasite%20Eve%20[SLPS-01230]%20(J).cbr',
     },
     'SCPS45467': {
@@ -54225,9 +54254,9 @@ games = {
     	'id': 'SLPM86545',
 	'title': "PUCHI CARAT [REPRINT]",
     },
-    'ESPM-70003': {
+    'ESPM70003': {
         'url': "games/J/P/ESPM-70003.html",
-    	'id': 'ESPM-70003',
+    	'id': 'ESPM70003',
 	'title': "PUFFY - P.S. I LOVE YOU",
     },
     'SLPS00409': {
@@ -55291,9 +55320,9 @@ games = {
         'pic0': 'https://images.launchbox-app.com/374e5635-599d-427d-ae43-6877f965f5fc.png',
         'pic1': 'https://images.launchbox-app.com/9efb0c57-5baa-4f14-a978-2905d182d3d1.jpg',
     },
-    'ESPM-70002': {
+    'ESPM70002': {
         'url': "games/J/R/ESPM-70002.html",
-    	'id': 'ESPM-70002',
+    	'id': 'ESPM70002',
 	'title': "ROBOTS - VIDEO ALCHEMY",
     },
     'SLPS02220': {
@@ -55600,12 +55629,16 @@ games = {
     	'id': 'SLPS01236',
 	'title': "R-TYPES",
         'pic0': 'https://images.launchbox-app.com/1ba18af1-314f-4cd4-a5d0-ec3fc48d1805.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1538442-r-types-wallpaper.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=p_UYHgGMpBI',
     },
     'SLPS03310': {
         'url': "games/J/R/SLPS-03310.html",
     	'id': 'SLPS03310',
 	'title': "R-TYPES [R'S BEST]",
         'pic0': 'https://images.launchbox-app.com/1ba18af1-314f-4cd4-a5d0-ec3fc48d1805.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1538442-r-types-wallpaper.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=p_UYHgGMpBI',
     },
     'SLPS02637': {
         'url': "games/J/R/SLPS-02637.html",
@@ -62545,6 +62578,7 @@ games = {
     	'id': 'SLPS02803',
 	'title': "TOMB RAIDER - THE LAST REVELATION",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'pic1': 'https://images.launchbox-app.com/30e92abc-b3e3-41cb-bf73-739fc0090267.jpg',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
@@ -62553,6 +62587,7 @@ games = {
     	'id': 'SLPM86896',
 	'title': "TOMB RAIDER - THE LAST REVELATION [CAPKORE]",
         'pic0': 'https://images.launchbox-app.com/861e9c5c-4464-40ad-8827-5a98a0c71124.png',
+        'pic1': 'https://images.launchbox-app.com/30e92abc-b3e3-41cb-bf73-739fc0090267.jpg',
         'snd0': "https://www.youtube.com/watch?v=ksSmkFmX2Fk&list=PLEeafQzOeklT1L1Hxnh-BE0eTqelADGJe&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29_jp2.zip',
     },
