@@ -6279,6 +6279,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLUS00348': {
         'url': "games/U/H/SLUS-00348.html",
@@ -9245,6 +9246,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rage Racer/SLUS-00403.bin',
         'ps3config': 'ps3configs/Rage Racer/SLUS-00403.BIN',
     },
     'SLUS01461': {
@@ -9340,6 +9342,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rayman/SLUS-00005.bin',
         'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
@@ -9646,6 +9649,7 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Igp2JXYqJlQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rising Zan - The Samurai Gunman/SLUS-00829.bin',
     },
@@ -9682,6 +9686,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLUS-00535.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00535.BIN',
     },
     'SLUS00563': {
@@ -9691,6 +9696,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLUS-00563.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00563.BIN',
     },
     'SLUS00564': {
@@ -9700,7 +9706,8 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
-        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00563.BIN',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLUS-00564.bin',
+        'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00564.BIN',
     },
     'SLUS00565': {
         'url': "games/U/R/SLUS-00535.html",
@@ -9709,6 +9716,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLUS-00565.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00565.BIN',
     },
     'SLUS00580': {
@@ -9718,6 +9726,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLUS-00580.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLUS-00580.BIN',
     },
     'SLUS00204': {
@@ -17646,6 +17655,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLES00642': {
         'url': "games/P/H/SLES-00642.html",
@@ -17653,6 +17663,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLES00645': {
         'url': "games/P/H/SLES-00645.html",
@@ -17660,6 +17671,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLES00653': {
         'url': "games/P/H/SLES-00653.html",
@@ -17667,6 +17679,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLES00655': {
         'url': "games/P/H/SLES-00655.html",
@@ -17674,6 +17687,7 @@ games = {
 	'title': "HERC'S ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
         'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
+        'snd0': 'https://www.youtube.com/watch?v=N7xjVHpSYv4&list=PLE3AE389DDE0DDCF7&index=1',
     },
     'SLES04124': {
         'url': "games/P/H/SLES-04124.html",
@@ -21466,6 +21480,7 @@ games = {
 	'title': "MEGAMAN - BATTLE & CHASE",
         'pic0': 'https://images.launchbox-app.com/7be8c091-0bb4-43fe-95a9-632e6719e8f1.png',
         'pic1': 'https://images.launchbox-app.com/a48a7768-48fa-4d8f-bb5a-9fa2aa71bd81.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Ed-GRY889ps&list=PL7A432A7635643B1F&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Megaman%20-%20Battle%20%26%20Chase%20%28Europe%29_jp2.zip',
         'pspconfig': 'pspconfigs/Megaman - Battle & Chase/SLES-00766.bin',
     },
@@ -21494,6 +21509,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c217d49e-a5e5-43d8-87bc-8ed85e1a6f32.png',
         'pic1': 'https://images.launchbox-app.com/9063b797-efc4-486f-8ff0-3feeba234b6b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=-Am1XppfNos&list=PL5FC0CB98B5C6676C&index=2',
+        'pspconfig': 'pspconfigs/Megaman X3/SLES-00503.bin',
     },
     'SLES01176': {
         'url': "games/P/M/SLES-01176.html",
@@ -27249,6 +27265,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rage Racer/SCES-00650.bin',
         'ps3config': 'ps3configs/Rage Racer/SCES-00650.BIN',
     },
     'SLES03511': {
@@ -27373,6 +27390,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rayman/SLES-00049.bin',
         'ps3config': 'ps3configs/Rayman/SLES-00049.BIN',
@@ -27903,6 +27921,7 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Igp2JXYqJlQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rising Zan - The Samurai Gunman/SLES-01779.bin',
     },
@@ -27939,6 +27958,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-00963.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-00963.BIN',
     },
     'SLES10963': {
@@ -27948,6 +27968,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-10963.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-10963.BIN',
     },
     'SLES20963': {
@@ -27957,6 +27978,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-20963.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-20963.BIN',
     },
     'SLES30963': {
@@ -27966,6 +27988,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-30963.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-30963.BIN',
     },
     'SLES40963': {
@@ -27975,6 +27998,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-40963.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-40963.BIN',
     },
     'SLES01099': {
@@ -27984,6 +28008,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-01099.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-01099.BIN',
     },
     'SLES11099': {
@@ -27993,6 +28018,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-11099.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-11099.BIN',
     },
     'SLES21099': {
@@ -28002,6 +28028,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-21099.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-21099.BIN',
     },
     'SLES31099': {
@@ -28011,6 +28038,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-31099.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-31099.BIN',
     },
     'SLES41099': {
@@ -28020,6 +28048,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-41099.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-41099.BIN',
     },
     'SLES01100': {
@@ -28029,6 +28058,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-01100.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-01100.BIN',
     },
     'SLES11100': {
@@ -28038,6 +28068,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-11100.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-11100.BIN',
     },
     'SLES21100': {
@@ -28047,6 +28078,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-21100.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-21100.BIN',
     },
     'SLES31100': {
@@ -28056,6 +28088,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-31100.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-31100.BIN',
     },
     'SLES41100': {
@@ -28065,6 +28098,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLES-41100.bin',
         'ps3config': 'ps3configs/Riven - The Sequel to Myst/SLES-41100.BIN',
     },
     'SLES00223': {
@@ -54559,6 +54593,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6fcdd974-a43d-4930-82a1-54d41675bf35.jpg',
         'snd0': 'https://www.youtube.com/watch?v=P3wovETLN3Q&list=PL1uOv7mbWtoXbbRk0JfKo_5alqDg48mKV&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rage%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Rage Racer/SLPS-00600.bin',
         'ps3config': 'ps3configs/Rage Racer/SLPS-00600.BIN',
     },
     'SCPS45019': {
@@ -54700,6 +54735,7 @@ games = {
 	'title': "RAYMAN",
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rayman/SLPS-00026.bin',
     },
@@ -54942,11 +54978,19 @@ games = {
         'url': "games/J/R/SLPS-00192.html",
     	'id': 'SLPS00192',
 	'title': "RETURN TO ZORK",
+        'pic0': 'https://images.launchbox-app.com/83bef290-560c-4ccb-b2c1-9695fbf62487.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1387366-return-to-zork-screenshot.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FQur2gB2f9U',
+        'pspconfig': 'pspconfigs/Return to Zork/SLPS-00192.bin',
     },
     'SLPS00193': {
         'url': "games/J/R/SLPS-00192.html",
     	'id': 'SLPS00193',
 	'title': "RETURN TO ZORK",
+        'pic0': 'https://images.launchbox-app.com/83bef290-560c-4ccb-b2c1-9695fbf62487.png',
+        'pic1': 'https://cdn.mobygames.com/promos/1387366-return-to-zork-screenshot.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FQur2gB2f9U',
+        'pspconfig': 'pspconfigs/Return to Zork/SLPS-00193.bin',
     },
     'SLPS00143': {
         'url': "games/J/R/SLPS-00143.html",
@@ -55062,6 +55106,7 @@ games = {
 	'title': "RISING ZAN - THE SAMURAI GUNMAN",
         'pic0': 'https://images.launchbox-app.com/725212df-5c99-43c4-8145-00c856ea30e8.png',
         'pic1': 'https://images.launchbox-app.com/90e66dc7-d332-449d-a3ed-359d11437a69.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Igp2JXYqJlQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rising%20Zan%20-%20The%20Samurai%20Gunman%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rising Zan - The Samurai Gunman/SLES-01691.bin',
     },
@@ -55102,6 +55147,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLPS-01180.bin',
     },
     'SLPS01181': {
         'url': "games/J/R/SLPS-01180.html",
@@ -55110,6 +55156,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLPS-01181.bin',
     },
     'SLPS01182': {
         'url': "games/J/R/SLPS-01180.html",
@@ -55118,6 +55165,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLPS-01182.bin',
     },
     'SLPS01183': {
         'url': "games/J/R/SLPS-01180.html",
@@ -55126,6 +55174,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLPS-01183.bin',
     },
     'SLPS01184': {
         'url': "games/J/R/SLPS-01180.html",
@@ -55134,6 +55183,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/72b46a34-f26a-428e-94a4-e55bf53e912d.png',
         'pic1': 'https://images.launchbox-app.com/dfab1e84-c552-45af-b0b9-2fb9a9e2d9c4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Riven%20-%20The%20Sequel%20to%20Myst%20[SLUS-00535]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Riven - The sequel to Myst/SLPS-01184.bin',
     },
     'SLPS00327': {
         'url': "games/J/R/SLPS-00327.html",
@@ -55286,7 +55336,9 @@ games = {
 	'title': "ROCKMAN - BATTLE & CHASE",
         'pic0': 'https://images.launchbox-app.com/7852a9e3-cfd0-4fda-a22d-20002382ba3b.png',
         'pic1': 'https://images.launchbox-app.com/a48a7768-48fa-4d8f-bb5a-9fa2aa71bd81.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Ed-GRY889ps&list=PL7A432A7635643B1F&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Megaman%20-%20Battle%20%26%20Chase%20%28Europe%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Megaman - Battle & Chase/SLPS-00764.bin',
     },
     'SLPS91093': {
         'url': "games/J/R/SLPS-91093.html",
@@ -55294,6 +55346,7 @@ games = {
 	'title': "ROCKMAN - BATTLE & CHASE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/7852a9e3-cfd0-4fda-a22d-20002382ba3b.png',
         'pic1': 'https://images.launchbox-app.com/a48a7768-48fa-4d8f-bb5a-9fa2aa71bd81.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Ed-GRY889ps&list=PL7A432A7635643B1F&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Megaman%20-%20Battle%20%26%20Chase%20%28Europe%29_jp2.zip',
         'pspconfig': 'pspconfigs/Megaman - Battle & Chase/SLPS-91093.bin',
     },
@@ -55303,6 +55356,7 @@ games = {
 	'title': "ROCKMAN - BATTLE & CHASE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/7852a9e3-cfd0-4fda-a22d-20002382ba3b.png',
         'pic1': 'https://images.launchbox-app.com/a48a7768-48fa-4d8f-bb5a-9fa2aa71bd81.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Ed-GRY889ps&list=PL7A432A7635643B1F&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Megaman%20-%20Battle%20%26%20Chase%20%28Europe%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-91094.bin',
     },
@@ -55316,6 +55370,7 @@ games = {
         'url': "games/J/R/SLPS-91135.html",
     	'id': 'SLPS91135',
 	'title': "ROCKMAN DASH - HAGANE NO BOUKENSHI [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-91135.bin',
     },
     'SLPS02711': {
         'url': "games/J/R/SLPS-02711.html",
@@ -55332,11 +55387,19 @@ games = {
         'url': "games/J/R/SLPS-00283.html",
     	'id': 'SLPS00283',
 	'title': "ROCKMAN X3",
+        'pic0': 'https://images.launchbox-app.com/1e9738a6-30eb-4daa-9b96-b7ab6fa495eb.png',
+        'pic1': 'https://images.launchbox-app.com/9063b797-efc4-486f-8ff0-3feeba234b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-Am1XppfNos&list=PL5FC0CB98B5C6676C&index=2',
+        'pspconfig': 'pspconfigs/Megaman X3/SLPS-00283.bin',
     },
     'SLPS91192': {
         'url': "games/J/R/SLPS-91192.html",
     	'id': 'SLPS91192',
 	'title': "ROCKMAN X3 [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/1e9738a6-30eb-4daa-9b96-b7ab6fa495eb.png',
+        'pic1': 'https://images.launchbox-app.com/9063b797-efc4-486f-8ff0-3feeba234b6b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-Am1XppfNos&list=PL5FC0CB98B5C6676C&index=2',
+        'pspconfig': 'pspconfigs/Megaman X3/SLPS-91192.bin',
     },
     'SLPS00902': {
         'url': "games/J/R/SLPS-00902.html",
@@ -55348,21 +55411,25 @@ games = {
         'url': "games/J/R/SLPS-91106.html",
     	'id': 'SLPS91106',
 	'title': "ROCKMAN X4 [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Mega Man X4/SLPS-91106.bin',
     },
     'SLPS91107': {
         'url': "games/J/R/SLPS-91106.html",
     	'id': 'SLPS91107',
 	'title': "ROCKMAN X4 [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-91107.bin',
     },
     'SLPM87315': {
         'url': "games/J/R/SLPM-87315.html",
     	'id': 'SLPM87315',
 	'title': "ROCKMAN X4 [PSONE BOOKS]",
+        'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-91107.bin',
     },
     'SLPS00901': {
         'url': "games/J/R/SLPS-00901.html",
     	'id': 'SLPS00901',
 	'title': "ROCKMAN X4 [SPECIAL EDITION]",
+        'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-00901.bin',
     },
     'SLPM86666': {
         'url': "games/J/R/SLPM-86666.html",
