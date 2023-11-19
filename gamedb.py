@@ -10072,7 +10072,7 @@ games = {
     	'id': 'SCUS94110',
 	'title': "SENTIENT",
         'pic0': 'https://images.launchbox-app.com/2963d4b5-8c04-43c9-a2a7-f05966524a4b.png',
-        'manual': 'https://images.launchbox-app.com/6db6805b-8748-434e-8e06-ddbb2def080e.jpg',
+        'pic1': 'https://images.launchbox-app.com/6db6805b-8748-434e-8e06-ddbb2def080e.jpg',
     },
     'SLUS00604': {
         'url': "games/U/S/SLUS-00604.html",
@@ -11742,7 +11742,6 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
-        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
         'pspconfig': 'pspconfigs/Tobal No. 1/SCUS-94208.bin',
     },
     'SCUS94961': {
@@ -11751,7 +11750,6 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
-        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
     },
     'SLUS00611': {
         'url': "games/U/T/SLUS-00611.html",
@@ -28624,7 +28622,6 @@ games = {
     	'id': 'SLES00106',
 	'title': "SENTIENT - EXPLORE THE INFINITE",
         'pic0': 'https://images.launchbox-app.com/2963d4b5-8c04-43c9-a2a7-f05966524a4b.png',
-        'manual': 'https://images.launchbox-app.com/6db6805b-8748-434e-8e06-ddbb2def080e.jpg',
     },
     'SLES01051': {
         'url': "games/P/S/SLES-01051.html",
@@ -31815,7 +31812,6 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
-        'manual': 'https://images.launchbox-app.com/69c957ab-766a-4eb0-8d9d-085a48dd81f8.jpg',
         'pspconfig': 'pspconfigs/Tobal No. 1/SCES-00497.bin',
     },
     'SLES00376': {
@@ -37050,14 +37046,12 @@ games = {
     	'id': 'SLPS01479',
 	'title': "BOUNTY SWORD - DOUBLE EDGE",
         'pic0': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
-        'manual': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
     },
     'SLPM86625': {
         'url': "games/J/B/SLPM-86625.html",
     	'id': 'SLPM86625',
 	'title': "BOUNTY SWORD - DOUBLE EDGE [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
-        'manual': 'https://images.launchbox-app.com/ff8f5ae2-c110-4392-97ca-9fcdbf25476f.png',
     },
     'SLPS00033': {
         'url': "games/J/B/SLPS-00033.html",
