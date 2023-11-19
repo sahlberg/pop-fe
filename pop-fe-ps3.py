@@ -758,7 +758,7 @@ class PopFePs3App:
         if self.snd0_disabled == 'off':
             snd0 = self.builder.get_variable('snd0_variable').get()
             if snd0[:24] == 'https://www.youtube.com/':
-                snd0 = popfe.get_snd0_from_link(snd0)
+                snd0 = popfe.get_snd0_from_link(snd0, subdir=self.subdir)
                 if snd0:
                     temp_files.append(snd0)
 

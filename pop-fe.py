@@ -450,6 +450,17 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
 
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
+    _h = hashlib.md5(link.encode('utf-8')).hexdigest()
+    f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/snd0/' + _h
+    ret = requests.get(f, stream=True)
+    if ret.status_code == 200:
+        print('Found cached prebuilt SND0', f)
+        _d = subdir + 'SND0.tmp'
+        with open(_d, 'wb') as o:
+            o.write(ret.content)
+            temp_files.append(_d)
+        return _d
+
     if not have_pytube:
         return None
     try:
@@ -2660,7 +2671,7 @@ if __name__ == "__main__":
             snd0 = 'https://www.youtube.com/watch?v=' + a.results[0].video_id
             print('Found Youtube link', 'https://www.youtube.com/watch?v=' + a.results[0].video_id)
         if snd0 and snd0[:24] == 'https://www.youtube.com/':
-            snd0 = get_snd0_from_link(snd0)
+            snd0 = get_snd0_from_link(snd0, subdir=subdir)
             if snd0:
                 temp_files.append(snd0)
 
