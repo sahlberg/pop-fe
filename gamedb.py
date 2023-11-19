@@ -2248,6 +2248,7 @@ games = {
     	'id': 'SLPS00534',
 	'title': "ZOOP",
         'pic0': 'https://images.launchbox-app.com/13bc30f1-f379-40f1-b3a1-7f2d96d93e51.png',
+        'pic1': 'https://images.launchbox-app.com/b05dd838-42e0-4afc-a5d2-f8c1382dbe83.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Zoop%20-%20America%27s%20Largest%20Killer%20of%20Time%21%20%28USA%29_jp2.zip',
     },
     'SLPS00271': {
@@ -2579,6 +2580,7 @@ games = {
     	'id': 'SLUS01010',
 	'title': "ANIMORPHS - SHATTERED REALITY",
         'pic0': 'https://images.launchbox-app.com/05bd800b-6891-43c3-9bec-6f6e6f9c06d6.png',
+        'pic1': 'https://images.launchbox-app.com/e23f8dd3-03ef-4f1e-aaf8-8f73dd3f68a0.jpg',
     },
     'SCUS94423': {
         'url': "games/U/A/SCUS-94423.html",
@@ -3218,6 +3220,7 @@ games = {
     	'id': 'SLUS00321',
 	'title': "BLACK DAWN",
         'pic0': 'https://images.launchbox-app.com/66079ae0-2963-4b7e-8ff2-ddfe492b715e.png',
+        'pic1': 'https://images.launchbox-app.com/e1191843-caf2-4ed0-99a4-c69992d8de99.jpg',
     },
     'SLUS01215': {
         'url': "games/U/B/SLUS-01215.html",
@@ -3247,6 +3250,7 @@ games = {
     	'id': 'SLUS00642',
 	'title': "BLAST RADIUS",
         'pic0': 'https://images.launchbox-app.com/04b11a6b-a63b-4b1e-a717-b862a91cf3da.png',
+        'pic1': 'https://images.launchbox-app.com/d35ffc34-7141-4925-8df4-7bd2903616dc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FjTJ85BuAMc&list=PL683F0A1DE6BDF850&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blast%20Radius%20%28USA%29_jp2.zip',
     },
@@ -7622,6 +7626,8 @@ games = {
     	'id': 'SLUS00743',
 	'title': "MONSTERSEED",
         'pic0': 'https://images.launchbox-app.com/ce11e224-e064-46dc-aaa6-02e43fc1e1b2.png',
+        'pic1': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9051b033-caa0-446c-8311-634b4fb6a3cf/d52it3d-d047c39e-dfc7-4aa8-aa9a-967d27d60085.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwNTFiMDMzLWNhYTAtNDQ2Yy04MzExLTYzNGI0ZmI2YTNjZlwvZDUyaXQzZC1kMDQ3YzM5ZS1kZmM3LTRhYTgtYWE5YS05NjdkMjdkNjAwODUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZSHLN5qWCzECCAI3tSxpZz30dWdkdIu0hJHb_OqRwJA',
+        'snd0': 'https://www.youtube.com/watch?v=zMbGtyn_ZRE&list=PLqIqEcsG0RYQvvvAnzSlm1ckygWeJkC9W&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Monsterseed%20[SLUS-00743]%20(E).cbr',
     },
     'SLUS01021': {
@@ -8670,6 +8676,7 @@ games = {
     	'id': 'SLUS00467',
 	'title': "OGRE BATTLE - THE MARCH OF THE BLACK QUEEN",
         'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'pic1': 'https://images.launchbox-app.com/020caf4e-22dd-459a-8cbf-31758590d636.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLUS00156': {
@@ -8915,6 +8922,7 @@ games = {
     	'id': 'SLUS01494',
 	'title': "PINOBEE",
         'pic0': 'https://images.launchbox-app.com/75d02a91-b3fd-4798-b289-50a909923f68.png',
+        'pic1': 'https://images.launchbox-app.com/326cb353-6fb0-4538-93ed-f81ad23c2b35.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Pinobee%20(E)%20[SLUS-01494].cbr',
     },
     'SLUS01409': {
@@ -9847,6 +9855,7 @@ games = {
     	'id': 'SLUS00800',
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
+        'pic1': 'https://images.launchbox-app.com/96890c99-45ba-4cfb-ba46-3772489a1b68.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rollcage/SLUS-00800.bin',
     },
@@ -9855,6 +9864,7 @@ games = {
     	'id': 'SLUS00867',
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
+        'pic1': 'https://images.launchbox-app.com/fec33293-f54a-41eb-9123-6cdee7ae2177.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rollcage - Stage II/SLUS-00867.bin',
     },
@@ -10170,6 +10180,7 @@ games = {
     	'id': 'SLUS00028',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'pic1': 'https://fmvworld.com/pics/images_shockwaveassault_03.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
         'pspconfig': 'pspconfigs/Shockwave Assault/SLUS-00028.bin',
     },
@@ -10178,6 +10189,7 @@ games = {
     	'id': 'SLUS00137',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'pic1': 'https://fmvworld.com/pics/images_shockwaveassault_03.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
         'pspconfig': 'pspconfigs/Shockwave Assault/SLUS-00137.bin',
     },
@@ -10232,6 +10244,8 @@ games = {
     	'id': 'SLUS00728',
 	'title': "SILHOUETTE MIRAGE",
         'pic0': 'https://images.launchbox-app.com/953c7c57-8646-4b41-815a-1d5369e7fbd9.png',
+        'pic1': 'https://images.timeextension.com/74b5a8b821218/silhouette-mirage.large.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=BExMPC-w19g&list=PL6zFPfLZbcW9rBEXjeRn6G5vzwFme9YKJ&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Silhouette%20Mirage%20[SLUS-00728]%20(E).cbr',
     },
     'SLUS00050': {
@@ -10952,6 +10966,7 @@ games = {
     	'id': 'SLUS00262',
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
+        'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SCUS94240': {
@@ -12849,6 +12864,7 @@ games = {
     	'id': 'SLUS00078',
 	'title': "ZOOP",
         'pic0': 'https://images.launchbox-app.com/13bc30f1-f379-40f1-b3a1-7f2d96d93e51.png',
+        'pic1': 'https://images.launchbox-app.com/b05dd838-42e0-4afc-a5d2-f8c1382dbe83.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Zoop%20-%20America%27s%20Largest%20Killer%20of%20Time%21%20%28USA%29_jp2.zip',
     },
     'SLES03134': {
@@ -14799,6 +14815,7 @@ games = {
     	'id': 'SLES00407',
 	'title': "BLACK DAWN",
         'pic0': 'https://images.launchbox-app.com/66079ae0-2963-4b7e-8ff2-ddfe492b715e.png',
+        'pic1': 'https://images.launchbox-app.com/e1191843-caf2-4ed0-99a4-c69992d8de99.jpg',
     },
     'SLES03213': {
         'url': "games/P/B/SLES-03213.html",
@@ -14853,6 +14870,7 @@ games = {
     	'id': 'SLES01169',
 	'title': "BLAST RADIUS",
         'pic0': 'https://images.launchbox-app.com/04b11a6b-a63b-4b1e-a717-b862a91cf3da.png',
+        'pic1': 'https://images.launchbox-app.com/d35ffc34-7141-4925-8df4-7bd2903616dc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FjTJ85BuAMc&list=PL683F0A1DE6BDF850&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blast%20Radius%20%28USA%29_jp2.zip',
     },
@@ -14861,6 +14879,7 @@ games = {
     	'id': 'SLES01192',
 	'title': "BLAST RADIUS",
         'pic0': 'https://images.launchbox-app.com/04b11a6b-a63b-4b1e-a717-b862a91cf3da.png',
+        'pic1': 'https://images.launchbox-app.com/d35ffc34-7141-4925-8df4-7bd2903616dc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FjTJ85BuAMc&list=PL683F0A1DE6BDF850&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blast%20Radius%20%28USA%29_jp2.zip',
     },
@@ -19683,6 +19702,7 @@ games = {
         'url': "games/P/E/SLES-00501.html",
     	'id': 'SLES00501',
 	'title': "EXTREME SNOW BREAK",
+        'pic0': 'https://images.launchbox-app.com/5f64b5a7-c99a-4107-8a93-011c3a76dac4.png',
     },
     'SLES00416':       {
         'url': "games/P/F/SLES-00416.html",
@@ -21928,6 +21948,8 @@ games = {
     	'id': 'SLES01540',
 	'title': "MONSTERSEED",
         'pic0': 'https://images.launchbox-app.com/ce11e224-e064-46dc-aaa6-02e43fc1e1b2.png',
+        'pic1': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9051b033-caa0-446c-8311-634b4fb6a3cf/d52it3d-d047c39e-dfc7-4aa8-aa9a-967d27d60085.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwNTFiMDMzLWNhYTAtNDQ2Yy04MzExLTYzNGI0ZmI2YTNjZlwvZDUyaXQzZC1kMDQ3YzM5ZS1kZmM3LTRhYTgtYWE5YS05NjdkMjdkNjAwODUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZSHLN5qWCzECCAI3tSxpZz30dWdkdIu0hJHb_OqRwJA',
+        'snd0': 'https://www.youtube.com/watch?v=zMbGtyn_ZRE&list=PLqIqEcsG0RYQvvvAnzSlm1ckygWeJkC9W&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Monsterseed%20[SLUS-00743]%20(E).cbr',
     },
     'SLES03813': {
@@ -26755,6 +26777,7 @@ games = {
     	'id': 'SLES04014',
 	'title': "PINOBEE",
         'pic0': 'https://images.launchbox-app.com/75d02a91-b3fd-4798-b289-50a909923f68.png',
+        'pic1': 'https://images.launchbox-app.com/326cb353-6fb0-4538-93ed-f81ad23c2b35.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Pinobee%20(E)%20[SLUS-01494].cbr',
     },
     'SLES03400': {
@@ -28278,6 +28301,7 @@ games = {
     	'id': 'SLES01660',
 	'title': "ROLLCAGE",
         'pic0': 'https://images.launchbox-app.com/21dda173-5944-4330-891c-8d88cfa4ad6e.png',
+        'pic1': 'https://images.launchbox-app.com/96890c99-45ba-4cfb-ba46-3772489a1b68.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rollcage/SLES-01660.bin',
     },
@@ -28286,6 +28310,7 @@ games = {
     	'id': 'SCES01922',
 	'title': "ROLLCAGE - STAGE II",
         'pic0': 'https://images.launchbox-app.com/5f34608e-46d5-440a-92d6-ff6af3430740.png',
+        'pic1': 'https://images.launchbox-app.com/fec33293-f54a-41eb-9123-6cdee7ae2177.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rollcage%20-%20Stage%20II%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Rollcage - Stage II/SCES-01922.bin',
     },
@@ -28816,6 +28841,7 @@ games = {
     	'id': 'SLES00071',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'pic1': 'https://fmvworld.com/pics/images_shockwaveassault_03.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
         'pspconfig': 'pspconfigs/Shockwave Assault/SLES-00071.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLES-00071.BIN',        
@@ -28825,6 +28851,7 @@ games = {
     	'id': 'SLES10071',
 	'title': "SHOCKWAVE ASSAULT",
         'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'pic1': 'https://fmvworld.com/pics/images_shockwaveassault_03.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Shockwave%20Assault%20[SLUS-00028].cbr',
         'pspconfig': 'pspconfigs/Shockwave Assault/SLES-10071.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLES-10071.BIN',
@@ -30289,6 +30316,7 @@ games = {
     	'id': 'SLES00212',
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
+        'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SLES00213': {
@@ -30296,6 +30324,7 @@ games = {
     	'id': 'SLES00213',
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
+        'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SCES01910': {
@@ -36604,6 +36633,7 @@ games = {
     	'id': 'SLPS00663',
 	'title': "BLACK DAWN",
         'pic0': 'https://images.launchbox-app.com/66079ae0-2963-4b7e-8ff2-ddfe492b715e.png',
+        'pic1': 'https://images.launchbox-app.com/e1191843-caf2-4ed0-99a4-c69992d8de99.jpg',
     },
     'SLPS03573': {
         'url': "games/J/B/SLPS-03573.html",
@@ -39693,6 +39723,7 @@ games = {
     	'id': 'SLPS00481',
 	'title': "DENSETSU NO OGRE BATTLE - THE MARCH OF THE BLACK QUEEN",
         'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'pic1': 'https://images.launchbox-app.com/020caf4e-22dd-459a-8cbf-31758590d636.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLPS91083': {
@@ -39700,6 +39731,7 @@ games = {
     	'id': 'SLPS91083',
 	'title': "DENSETSU NO OGRE BATTLE - THE MARCH OF THE BLACK QUEEN [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/bca79e07-22bf-4a77-a9d8-5796bdb5136d.png',
+        'pic1': 'https://images.launchbox-app.com/020caf4e-22dd-459a-8cbf-31758590d636.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ogre%20Battle%20-%20Limited%20Edition%20%28USA%29_jp2.zip',
     },
     'SLPS01753': {
@@ -50538,6 +50570,8 @@ games = {
     	'id': 'SLPS01572',
 	'title': "MONSTERSEED",
         'pic0': 'https://images.launchbox-app.com/ce11e224-e064-46dc-aaa6-02e43fc1e1b2.png',
+        'pic1': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9051b033-caa0-446c-8311-634b4fb6a3cf/d52it3d-d047c39e-dfc7-4aa8-aa9a-967d27d60085.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwNTFiMDMzLWNhYTAtNDQ2Yy04MzExLTYzNGI0ZmI2YTNjZlwvZDUyaXQzZC1kMDQ3YzM5ZS1kZmM3LTRhYTgtYWE5YS05NjdkMjdkNjAwODUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZSHLN5qWCzECCAI3tSxpZz30dWdkdIu0hJHb_OqRwJA',
+        'snd0': 'https://www.youtube.com/watch?v=zMbGtyn_ZRE&list=PLqIqEcsG0RYQvvvAnzSlm1ckygWeJkC9W&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Monsterseed%20[SLUS-00743]%20(E).cbr',
     },
     'SLPS03281': {
@@ -50545,6 +50579,8 @@ games = {
     	'id': 'SLPS03281',
 	'title': "MONSTERSEED [VALUE 1500]",
         'pic0': 'https://images.launchbox-app.com/ce11e224-e064-46dc-aaa6-02e43fc1e1b2.png',
+        'pic1': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9051b033-caa0-446c-8311-634b4fb6a3cf/d52it3d-d047c39e-dfc7-4aa8-aa9a-967d27d60085.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwNTFiMDMzLWNhYTAtNDQ2Yy04MzExLTYzNGI0ZmI2YTNjZlwvZDUyaXQzZC1kMDQ3YzM5ZS1kZmM3LTRhYTgtYWE5YS05NjdkMjdkNjAwODUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZSHLN5qWCzECCAI3tSxpZz30dWdkdIu0hJHb_OqRwJA',
+        'snd0': 'https://www.youtube.com/watch?v=zMbGtyn_ZRE&list=PLqIqEcsG0RYQvvvAnzSlm1ckygWeJkC9W&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Monsterseed%20[SLUS-00743]%20(E).cbr',
     },
     'SLPS01031': {
@@ -53477,6 +53513,8 @@ games = {
         'url': "games/J/P/SLPM-87110.html",
     	'id': 'SLPM87110',
 	'title': "PINOBEE NO DAIBOUKEN [HUDSON THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/75d02a91-b3fd-4798-b289-50a909923f68.png',
+        'pic1': 'https://images.launchbox-app.com/326cb353-6fb0-4538-93ed-f81ad23c2b35.jpg',
     },
     'SLPS01587': {
         'url': "games/J/P/SLPS-01587.html",
@@ -57094,6 +57132,8 @@ games = {
         'url': "games/J/S/SLPS-00419.html",
     	'id': 'SLPS00419',
 	'title': "SHOCKWAVE",
+        'pic0': 'https://images.launchbox-app.com/c08a182c-50dc-4b76-9455-a3ffe69ed3ed.png',
+        'pic1': 'https://fmvworld.com/pics/images_shockwaveassault_03.jpg',
         'pspconfig': 'pspconfigs/Shockwave Assault/SLPS-00419.bin',
         'ps3config': 'ps3configs/Shockwave Assault/SLPS-00419.BIN',
     },
@@ -57292,6 +57332,8 @@ games = {
     	'id': 'SLPS01449',
 	'title': "SILHOUETTE MIRAGE - REPROGRAMMED HOPE",
         'pic0': 'https://images.launchbox-app.com/d61a29ae-0649-4c1f-9469-33bfee529714.png',
+        'pic1': 'https://images.timeextension.com/74b5a8b821218/silhouette-mirage.large.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=BExMPC-w19g&list=PL6zFPfLZbcW9rBEXjeRn6G5vzwFme9YKJ&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Silhouette%20Mirage%20[SLUS-00728]%20(E).cbr',
     },
     'SLPS00374': {
@@ -58441,11 +58483,13 @@ games = {
         'url': "games/J/S/SCPS-45157.html",
     	'id': 'SCPS45157',
 	'title': "SNOW BREAK",
+        'pic0': 'https://images.launchbox-app.com/5f64b5a7-c99a-4107-8a93-011c3a76dac4.png',
     },
     'SLPS01170': {
         'url': "games/J/S/SLPS-01170.html",
     	'id': 'SLPS01170',
 	'title': "SNOW BREAK",
+        'pic0': 'https://images.launchbox-app.com/5f64b5a7-c99a-4107-8a93-011c3a76dac4.png',
     },
     'SLPS01463': {
         'url': "games/J/S/SLPS-01463.html",
@@ -58457,6 +58501,7 @@ games = {
         'url': "games/J/S/SLPS-00597.html",
     	'id': 'SLPS00597',
 	'title': "SOLD OUT",
+        'pic0': 'https://images.launchbox-app.com/55ae5fff-cd85-49e8-80a7-8222d745f7a6.png',
     },
     'SLPS01319': {
         'url': "games/J/S/SLPS-01319.html",
