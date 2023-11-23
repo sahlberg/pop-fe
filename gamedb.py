@@ -18147,6 +18147,8 @@ games = {
         'url': "games/P/I/SLES-00511.html",
     	'id': 'SLES00511',
 	'title': "INTERNATIONAL SUPERSTAR SOCCER DELUXE",
+        'pic0': 'https://images.launchbox-app.com/cc24cb66-ee6b-403e-a020-bc6e1f38b1e6.png',
+        'pspconfig': 'pspconfigs/International Superstar Soccer Deluxe/SLES-00511.bin',
     },
     'SLES02550': {
         'url': "games/P/I/SLES-02550.html",
