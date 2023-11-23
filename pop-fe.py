@@ -340,6 +340,14 @@ def get_pic_from_game(pic, game_id, game, filename):
         # pic None-ed out in gamedb
         if not games[game_id][pic]:
             return None
+
+        _h = hashlib.md5(games[game_id][pic].encode('utf-8')).hexdigest()
+        f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/' + pic + '/' + _h
+        ret = requests.get(f, stream=True)
+        if ret.status_code == 200:
+            print('Found cached prebuilt', pic.upper(), f)
+            return Image.open(io.BytesIO(ret.content))
+    
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
             try:
