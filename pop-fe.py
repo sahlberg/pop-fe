@@ -182,6 +182,8 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
             print('MD5 fingerprint', h)
             if h in gameid_by_md5sum:
                 return gameid_by_md5sum[h]['id']
+    if game_id not in games and buf[:9] in games:
+        return buf[:9]
     return game_id
 
 

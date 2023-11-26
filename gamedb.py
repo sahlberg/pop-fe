@@ -29,6 +29,30 @@ games = {
         'pic0': None,
         'pic1': None,
     },
+    'LSP990121': {
+    	'id': 'LSP990121',
+	'title': "16 Tales 1",
+        'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
+        'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
+    },
+    'LSP990122': {
+    	'id': 'LSP990122',
+	'title': "16 Tales 2",
+        'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
+        'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
+    },
+    'LSP990123': {
+    	'id': 'LSP990123',
+	'title': "16 Tales 3",
+        'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
+        'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
+    },
+    'LSP990124': {
+    	'id': 'LSP990124',
+	'title': "16 Tales 4",
+        'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
+        'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
+    },
     'PBPX95001': {
     	'id': 'PBPX95001',
 	'title': "DEMO ONE",
