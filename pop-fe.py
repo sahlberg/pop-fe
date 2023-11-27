@@ -188,7 +188,10 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
 
 
 def fetch_cached_file(path):
-    ret = requests.get(PSX_SITE + path)
+    try:
+        ret = requests.get(PSX_SITE + path)
+    except:
+        return None
     print('get', PSX_SITE + path) if verbose else None
     if ret.status_code != 200:
         raise Exception('Failed to fetch file ', PSX_SITE + path)
@@ -352,14 +355,10 @@ def get_pic_from_game(pic, game_id, game, filename):
     
         ret = requests.get(games[game_id][pic], stream=True)
         if ret.status_code == 200:
-            try:
-                if ret.apparent_encoding:
-                    return Image.open(io.BytesIO(ret.content.decode(ret.apparent_encoding)))
-                else:
-                    return Image.open(io.BytesIO(ret.content))
-            except:
-                print('Failed to parse file', games[game_id][pic])
-                return None
+            if ret.apparent_encoding:
+                return Image.open(io.BytesIO(ret.content.decode(ret.apparent_encoding)))
+            else:
+                return Image.open(io.BytesIO(ret.content))
     if not game or game_id[:4] == 'UNKN':
         return Image.new("RGBA", (80, 80), (255,255,255,0))
     
@@ -372,7 +371,10 @@ def get_pic_from_game(pic, game_id, game, filename):
     return Image.open(io.BytesIO(fcb))
 
 def get_pic0_from_game(game_id, game, cue):
-    pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
+    try:
+        pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
+    except:
+        return None
     if not pic0:
         return None
     # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
@@ -398,7 +400,10 @@ def get_pic0_from_game(game_id, game, cue):
     return pic0
 
 def get_pic1_from_game(game_id, game, cue):
-    return get_pic_from_game('pic1', game_id, game, cue[:-4] + '_pic1.png')
+    try:
+        return get_pic_from_game('pic1', game_id, game, cue[:-4] + '_pic1.png')
+    except:
+        return None
 
 def get_pic1_from_bc(game_id, game, cue):
     if game_id[:4] == 'UNKN':
@@ -462,7 +467,10 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
 def get_snd0_from_link(link, subdir='./'):
     _h = hashlib.md5(link.encode('utf-8')).hexdigest()
     f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/snd0/' + _h
-    ret = requests.get(f, stream=True)
+    try:
+        ret = requests.get(f, stream=True)
+    except:
+        return None
     if ret.status_code == 200:
         print('Found cached prebuilt SND0', f)
         _d = subdir + 'SND0.tmp'
@@ -1947,7 +1955,10 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
     if gameid in games and 'manual' in games[gameid]:
         _h = hashlib.md5(games[gameid]['manual'].encode('utf-8')).hexdigest()
         f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/manual/' + _h + '.DAT'
-        ret = requests.get(f, stream=True)
+        try:
+            ret = requests.get(f, stream=True)
+        except:
+            return None
         if ret.status_code == 200:
             print('Found cached prebuilt manual', f)
             _d = subdir + 'DOC.DAT'
