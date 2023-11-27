@@ -853,11 +853,13 @@ games = {
         'url': "games/J/W/SLPS-00190.html",
     	'id': 'SLPS00190',
 	'title': "WELCOME HOUSE",
+        'pic0': 'https://images.launchbox-app.com/14def6ee-dc71-494d-9a68-1d82c04e5936.png',
     },
     'SLPS00633': {
         'url': "games/J/W/SLPS-00633.html",
     	'id': 'SLPS00633',
 	'title': "WELCOME HOUSE 2 - KEATON & HIS UNCLE",
+        'pic0': 'https://images.launchbox-app.com/56e7bbbd-9749-43a5-a5e0-b8549d171241.png',
     },
     'SLPS01887': {
         'url': "games/J/W/SLPS-01887.html",
@@ -52396,6 +52398,7 @@ games = {
         'url': "games/J/O/SLPM-87047.html",
     	'id': 'SLPM87047',
 	'title': "OTENKI KORORIN (WEATHER TIME PHOSPHORUS)",
+        'pic0': 'https://images.launchbox-app.com/2a900aa6-1b7e-4ca0-aed6-b4ff3ba602a8.png',
     },
     'SLPS00136': {
         'url': "games/J/O/SLPS-00136.html",
@@ -63321,6 +63324,12 @@ gameid_by_md5sum = {
     },
     '9c0798e23361853dd8556829e47688b9': {
         'id': 'SLPS00015',
+    },
+    'eb7b79a3c6d2fe1a7ebf6c65c4d97876': {
+        'id': 'SLPS00190',
+    },
+    '72deae28ec987056bb17aed39aaa34ff': {
+    	'id': 'SLPM87047',
     },
 }
 
