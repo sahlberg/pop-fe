@@ -5648,6 +5648,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLUS-01251.bin',
     },
     'SLUS01295': {
         'url': "games/U/F/SLUS-01251.html",
@@ -5657,6 +5658,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLUS-01295.bin',
     },
     'SLUS01296': {
         'url': "games/U/F/SLUS-01251.html",
@@ -5666,6 +5668,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLUS-01296.bin',
     },
     'SLUS01297': {
         'url': "games/U/F/SLUS-01251.html",
@@ -5675,6 +5678,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLUS-01297.bin',
     },
     'SLUS00879': {
         'url': "games/U/F/SLUS-00879.html",
@@ -16300,6 +16304,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-02965.bin',
     },
     'SLES12965': {
         'url': "games/P/F/SLES-02965.html",
@@ -16309,6 +16314,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-12965.bin',
     },
     'SLES22965': {
         'url': "games/P/F/SLES-02965.html",
@@ -16318,6 +16324,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-22965.bin',
     },
     'SLES32965': {
         'url': "games/P/F/SLES-02965.html",
@@ -16327,6 +16334,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-32965.bin',
     },
     'SLES02966': {
         'url': "games/P/F/SLES-02966.html",
@@ -16336,6 +16344,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-02966.bin',
     },
     'SLES12966': {
         'url': "games/P/F/SLES-02966.html",
@@ -16345,6 +16354,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-12966.bin',
     },
     'SLES22966': {
         'url': "games/P/F/SLES-02966.html",
@@ -16354,6 +16364,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-22966.bin',
     },
     'SLES32966': {
         'url': "games/P/F/SLES-02966.html",
@@ -16363,6 +16374,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-32966.bin',
     },
     'SLES02967': {
         'url': "games/P/F/SLES-02967.html",
@@ -16372,6 +16384,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-02967.bin',
     },
     'SLES12967': {
         'url': "games/P/F/SLES-02967.html",
@@ -16381,6 +16394,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-12967.bin',
     },
     'SLES22967': {
         'url': "games/P/F/SLES-02967.html",
@@ -16390,6 +16404,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-22967.bin',
     },
     'SLES32967': {
         'url': "games/P/F/SLES-02967.html",
@@ -16399,6 +16414,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-32967.bin',
     },
     'SLES02968': {
         'url': "games/P/F/SLES-02968.html",
@@ -16408,6 +16424,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-02968.bin',
     },
     'SLES12968': {
         'url': "games/P/F/SLES-02968.html",
@@ -16417,6 +16434,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-12968.bin',
     },
     'SLES22968': {
         'url': "games/P/F/SLES-02968.html",
@@ -16426,6 +16444,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-22968.bin',
     },
     'SLES32968': {
         'url': "games/P/F/SLES-02968.html",
@@ -16435,6 +16454,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20IX%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-32968.bin',
     },
     'SLES02969': {
         'url': "games/P/F/SLES-02969.html",
@@ -16444,6 +16464,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-02969.bin',
     },
     'SLES12969': {
         'url': "games/P/F/SLES-02969.html",
@@ -16453,6 +16474,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-12969.bin',
     },
     'SLES22969': {
         'url': "games/P/F/SLES-02969.html",
@@ -16462,6 +16484,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-22969.bin',
     },
     'SLES32969': {
         'url': "games/P/F/SLES-02969.html",
@@ -16471,6 +16494,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(S)%20[SLES-02969].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLES-32969.bin',
     },
     'SCES03884': {
         'url': "games/P/F/SCES-03884.html",
@@ -42335,6 +42359,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SCPS-45500.bin',
     },
     'SCPS45501': {
         'url': "games/J/F/SCPS-45500.html",
@@ -42344,6 +42369,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SCPS-45501.bin',
     },
     'SCPS45502': {
         'url': "games/J/F/SCPS-45500.html",
@@ -42353,6 +42379,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SCPS-45502.bin',
     },
     'SCPS45503': {
         'url': "games/J/F/SCPS-45500.html",
@@ -42362,6 +42389,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SCPS-45503.bin',
     },
     'SLPS02000': {
         'url': "games/J/F/SLPS-02000.html",
@@ -42371,6 +42399,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPS-02000.bin',
     },
     'SLPS02001': {
         'url': "games/J/F/SLPS-02000.html",
@@ -42380,6 +42409,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPS-02001.bin',
     },
     'SLPS02002': {
         'url': "games/J/F/SLPS-02000.html",
@@ -42389,6 +42419,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPS-02002.bin',
     },
     'SLPS02003': {
         'url': "games/J/F/SLPS-02000.html",
@@ -42398,6 +42429,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPS-02003.bin',
     },
     'SLPM87388': {
         'url': "games/J/F/SLPM-87388.html",
@@ -42407,6 +42439,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPM-87388.bin',
     },
     'SLPM87389': {
         'url': "games/J/F/SLPM-87388.html",
@@ -42416,6 +42449,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPM-87389.bin',
     },
     'SLPM87390': {
         'url': "games/J/F/SLPM-87388.html",
@@ -42425,6 +42459,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPM-87390.bin',
     },
     'SLPM87391': {
         'url': "games/J/F/SLPM-87388.html",
@@ -42434,6 +42469,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/49579049-287f-4fa8-8fa4-509afd5c18e5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2z3RM2uUWB0&list=PL08A3B2B9E728BF6F&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Final%20Fantasy%20IX%20(J)%20[SLPS-02000].cbr',
+        'pspconfig': 'pspconfigs/Final Fantasy IX/SLPM-87391.bin',
     },
     'SCPS45087': {
         'url': "games/J/F/SCPS-45087.html",
