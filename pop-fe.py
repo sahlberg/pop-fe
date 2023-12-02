@@ -1017,9 +1017,9 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=1.00', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=1.00', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
@@ -1195,9 +1195,9 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=1.00', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=1.00', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None

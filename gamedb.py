@@ -7043,6 +7043,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2f6e8e5f-8155-4227-be26-700f52bad973.png',
         'pic1': 'https://images.launchbox-app.com/2f2b0402-50f8-4763-861a-0b2b6c3fdbea.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Looney%20Tunes%20-%20Sheep%20Raider%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Looney Tunes - Sheep Raider/SLUS-01369.bin',
     },
     'SLUS01145': {
         'url': "games/U/L/SLUS-01145.html",
@@ -21044,6 +21045,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2f6e8e5f-8155-4227-be26-700f52bad973.png',
         'pic1': 'https://images.launchbox-app.com/2f2b0402-50f8-4763-861a-0b2b6c3fdbea.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Looney%20Tunes%20-%20Sheep%20Raider%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Looney Tunes - Sheep Raider/SLES-02895.bin',
     },
     'SLES02951': {
         'url': "games/P/L/SLES-02951.html",
