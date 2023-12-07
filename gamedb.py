@@ -29,6 +29,13 @@ games = {
         'pic0': None,
         'pic1': None,
     },
+    'MAGC00000' : {
+        'id': 'MAGC00000',
+        'title': 'MAGIC CASTLE',
+        'icon0': 'https://images.launchbox-app.com/b8ec3135-3150-4502-8a70-5b5b08acaf33.jpg',
+        'pic0': 'https://images.launchbox-app.com/bf8cb1eb-9110-48a7-8741-4814a1d0c2d1.png',
+        'pic1': 'https://images.launchbox-app.com/233ebc69-4c55-40fe-a742-d42bcbe1217c.png',
+    },
     'LSP990121': {
     	'id': 'LSP990121',
 	'title': "16 Tales 1",
@@ -63270,21 +63277,25 @@ games = {
         'url': "games/J/U/SLPS-01521.html",
     	'id': 'SLPS01521',
 	'title': "UKI UKI TSURI TENGOKU - KAWA MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/ce13598a-8f0c-4a00-8951-09e877a9ebff.png',
     },
     'SLPS00983': {
         'url': "games/J/U/SLPS-00983.html",
     	'id': 'SLPS00983',
 	'title': "UKI UKI TSURI TENGOKU - NINGYO DENSETSU NO NAZO",
+        'pic0': 'https://images.launchbox-app.com/2fdc0c56-8eae-4c26-b474-2978992a0761.png',
     },
     'SLPS01571': {
         'url': "games/J/U/SLPS-01571.html",
     	'id': 'SLPS01571',
 	'title': "UKI UKI TSURI TENGOKU - NINGYO DENSETSU NO NAZO [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/2fdc0c56-8eae-4c26-b474-2978992a0761.png',
     },
     'SLPS02579': {
         'url': "games/J/U/SLPS-02579.html",
     	'id': 'SLPS02579',
 	'title': "UKI UKI TSURI TENGOKU - UOKAMI DENSETSU OE",
+        'pic0': 'https://images.launchbox-app.com/e54ada3a-c4fe-4fa6-a1c7-3523568e5b86.png',
     },
     'SLPS00742': {
         'url': "games/J/U/SLPS-00742.html",
@@ -63304,21 +63315,25 @@ games = {
         'url': "games/J/U/SLPS-01248.html",
     	'id': 'SLPS01248',
 	'title': "ULTRAMAN ULTIMATE FIGHTING EVOLUTION",
+        'pic0': 'https://images.launchbox-app.com/446e0d0e-ad45-4bda-9e31-eaaafdffbb83.png',
     },
     'SLPS91145': {
         'url': "games/J/U/SLPS-91145.html",
     	'id': 'SLPS91145',
 	'title': "ULTRAMAN ULTIMATE FIGHTING EVOLUTION [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/446e0d0e-ad45-4bda-9e31-eaaafdffbb83.png',
     },
     'SLPS01455': {
         'url': "games/J/U/SLPS-01455.html",
     	'id': 'SLPS01455',
 	'title': "ULTRAMAN TIGA & ULTRAMAN DYNA FIGHTING EVOLUTION - NEW GENERATIONS",
+        'pic0': 'https://images.launchbox-app.com/bad6152a-fbf5-4f86-8633-11e6a2c2603a.png',
     },
     'SLPS00652': {
         'url': "games/J/U/SLPS-00652.html",
     	'id': 'SLPS00652',
 	'title': "ULTRAMAN ZEARTH",
+        'pic0': 'https://images.launchbox-app.com/e4b0a293-d021-47e4-80bb-ff247fc457df.png',
     },
     'SCPS45391': {
         'url': "games/J/U/SCPS-45391.html",
@@ -63350,6 +63365,10 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # Magic Castle
+    'a51941d8dcda81bd7d0ef11c7fd20d6f': {
+        'id': 'MAGC00000',
+    },
     # Fan translation to spanish. Both disks merged into a single disk
     '1808dd8b039de821d347167930b0bcf1': {
         'id': 'SLUS01179',
