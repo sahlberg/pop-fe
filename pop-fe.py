@@ -2484,13 +2484,11 @@ if __name__ == "__main__":
             if disc_id in games and 'pspconfig' in games[disc_id]:
                 print('Found an external config for', disc_id)
                 with open(games[disc_id]['pspconfig'], 'rb') as f:
-                      f.seek(8)
                       pspconfigs[i] = f.read()
             try:
                 os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
                 print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
                 with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
-                      f.seek(8)
                       pspconfigs[-1] = f.read()
             except:
                 True

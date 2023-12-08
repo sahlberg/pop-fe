@@ -363,13 +363,11 @@ class PopFePs3App:
         if disc_id in games and 'pspconfig' in games[disc_id]:
             print('Found an external config for', disc_id)
             with open(games[disc_id]['pspconfig'], 'rb') as f:
-                      f.seek(8)
                       self.configs[-1] = f.read()
         try:
             os.stat(cue_file[:-3]+'pspconfig').st_size
             print('Found an external config ', cue_file[:-3]+'pspconfig')
             with open(cue_file[:-3]+'pspconfig', 'rb') as f:
-                      f.seek(8)
                       self.configs[-1] = f.read()
         except:
             True
@@ -574,11 +572,11 @@ class PopFePs3App:
             for i in range(len(self.configs)):
                 if not self.configs[i]:
                     # skip the revision header
-                    self.configs[i] = EMPTY_CONFIG[8:]
+                    self.configs[i] = EMPTY_CONFIG[:]
                 self.configs[i] = bytearray(self.configs[i])
                 # Set NTSC bit in configs
-                self.configs[i][0x03] |= 0x10
-                self.configs[i][0x87] |= 0x10
+                self.configs[i][0x0b] |= 0x10
+                self.configs[i][0x8f] |= 0x10
                 
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,

@@ -2728,8 +2728,7 @@ class popstation(object):
             if _l:
                 if self._complevel:
                     # PSP
-                    buf[0x20:0x20 + 8] = bytes([0x70, 0x00, 0x07, 0x06, 0x00, 0x00, 0x06, 0x06])
-                    buf[0x28:0x28 + _l] = self._configs[disc_num]
+                    buf[0x20:0x20 + _l] = self._configs[disc_num]
                 else:
                     # PS3
                     buf[0x24:0x24 + 8] = bytes([0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00])
