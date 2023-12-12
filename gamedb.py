@@ -29,7 +29,15 @@ games = {
         'pic0': None,
         'pic1': None,
     },
-    'MAGC00000' : {
+    'TTGM00000': {
+        'id': 'TTGM00000',
+        'title': 'TETRIS THE GRAND MASTER',
+        'icon0': 'https://archive.org/download/tgm_20210207/TGM_thumb.jpg',
+        'pic0': None,
+        'pic1': 'https://archive.org/download/tgm_20210207/TGM.png',
+        'snd0': None,
+    },
+    'MAGC00000': {
         'id': 'MAGC00000',
         'title': 'MAGIC CASTLE',
         'icon0': 'https://images.launchbox-app.com/b8ec3135-3150-4502-8a70-5b5b08acaf33.jpg',
@@ -63365,6 +63373,10 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # Tetris the grand master
+    '6cd9bfe61a3bfbf7b3039d3a3743af6f': {
+        'id': 'TTGM00000',
+    },
     # Magic Castle
     'a51941d8dcda81bd7d0ef11c7fd20d6f': {
         'id': 'MAGC00000',
