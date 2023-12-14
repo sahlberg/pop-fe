@@ -32252,7 +32252,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/13db73e1-a99e-4581-bcdc-e620b53730e9.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
-        'pspconfig': 'pspconfigs/Tombi 2/SCES-02686.bin',
+        'pspconfig': 'pspconfigs/Tomba! 2 - The Evil Swine Return/SCES-02686.bin',
         'ps3config': 'ps3configs/Tombi 2/SCES-02686.BIN',
     },
     'SCES02687': {
