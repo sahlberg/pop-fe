@@ -11031,6 +11031,7 @@ games = {
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
         'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Cp4svigzhc0',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SCUS94240': {
@@ -11039,6 +11040,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
     },
     'SCUS94451': {
@@ -11046,6 +11048,8 @@ games = {
     	'id': 'SCUS94451',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94492': {
@@ -11053,6 +11057,8 @@ games = {
     	'id': 'SCUS94492',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94640': {
@@ -11061,6 +11067,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SLUS00813': {
         'url': "games/U/T/SLUS-00813.html",
@@ -30427,6 +30434,7 @@ games = {
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
         'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Cp4svigzhc0',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SLES00213': {
@@ -30435,6 +30443,7 @@ games = {
 	'title': "SYNDICATE WARS",
         'pic0': 'https://images.launchbox-app.com/7579c6ee-4c55-4fa0-a41e-d2e84f54d98a.png',
         'pic1': 'https://images.launchbox-app.com/3e8d404b-f39f-46f4-9dc3-db2c64647321.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Cp4svigzhc0',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syndicate%20Wars%20%28USA%29_jp2.zip',
     },
     'SCES01910': {
@@ -30443,6 +30452,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SCES-01910.bin',
     },
@@ -30452,6 +30462,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SCES-01911.bin',
     },
@@ -30461,6 +30472,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SCES-01912.bin',
     },
@@ -30470,6 +30482,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SCES-01913.bin',
     },
@@ -30479,6 +30492,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SCES-01914.bin',
     },
@@ -30487,6 +30501,8 @@ games = {
     	'id': 'SCES02285',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12285': {
@@ -30494,6 +30510,8 @@ games = {
     	'id': 'SCES12285',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES02286': {
@@ -30501,6 +30519,8 @@ games = {
     	'id': 'SCES02286',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12286': {
@@ -30508,6 +30528,8 @@ games = {
     	'id': 'SCES12286',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES02287': {
@@ -30515,6 +30537,8 @@ games = {
     	'id': 'SCES02287',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12287': {
@@ -30522,6 +30546,8 @@ games = {
     	'id': 'SCES12287',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES02288': {
@@ -30529,6 +30555,8 @@ games = {
     	'id': 'SCES02288',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12288': {
@@ -30536,6 +30564,8 @@ games = {
     	'id': 'SCES12288',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES02289': {
@@ -30543,6 +30573,8 @@ games = {
     	'id': 'SCES02289',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES12289': {
@@ -30550,6 +30582,8 @@ games = {
     	'id': 'SCES12289',
 	'title': "SYPHON FILTER 2",
         'pic0': 'https://images.launchbox-app.com/43ddd417-d1b4-42ff-83ea-732c3f080204.png',
+        'pic1': 'https://cdn.mobygames.com/promos/11641171-syphon-filter-2-other.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kgbwaWCY2HE&list=PLA_6nw_SiTT38Qo6ijRTBbTIBeaIZ_7ax&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03697': {
@@ -30558,6 +30592,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SCES03698': {
         'url': "games/P/S/SCES-03698.html",
@@ -30565,6 +30600,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SCES03699': {
         'url': "games/P/S/SCES-03699.html",
@@ -30572,6 +30608,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SCES03700': {
         'url': "games/P/S/SCES-03700.html",
@@ -30579,6 +30616,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SCES03701': {
         'url': "games/P/S/SCES-03701.html",
@@ -30586,6 +30624,7 @@ games = {
 	'title': "SYPHON FILTER 3",
         'pic0': 'https://images.launchbox-app.com/0a0f6aa3-c90d-4798-b7f7-4070f610ffd1.png',
         'pic1': 'https://images.launchbox-app.com/9151007d-399d-45da-a77f-4da83284a422.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bfhlkh9vSyg&list=PLBQUdr4MNN5Qz3HcltvOBGRzwwc2vZR3R&index=1',
     },
     'SLES01473':       {
         'url': "games/P/T/SLES-01473.html",
@@ -60355,6 +60394,7 @@ games = {
 	'title': "SYPHON FILTER",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Syphon Filter/SLPS-02216.bin',
     },
@@ -60364,6 +60404,7 @@ games = {
 	'title': "SYPHON FILTER [SPIKE LIBRARY]",
         'pic0': 'https://images.launchbox-app.com/c065d9a5-0167-43e1-b6cb-91ce51ce6d8f.png',
         'pic1': 'https://images.launchbox-app.com/d05ffb9f-1691-4af5-bf4b-86bc50972e78.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=btcXN6Zoqrw&list=PLUSVaejtkOBc7vQpyUw0bvka67nxtHJcD&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Syphon%20Filter%20%28USA%29_jp2.zip',
     },
     'SLPS00276': {
