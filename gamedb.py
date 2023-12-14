@@ -2890,6 +2890,7 @@ games = {
 	'title': "ASSAULT RETRIBUTION",
         'pic0': 'https://images.launchbox-app.com/08b11b1c-65bd-4598-9bdc-87301cbbd417.png',
         'pic1': 'https://images.launchbox-app.com/ad7b3c0e-b64f-4e90-924d-78d28db402ef.jpg',
+        'pspconfig': 'pspconfigs/Assault - Retribution/SLUS-00713.bin',
     },
     'SCUS94405': {
         'url': "games/U/A/SCUS-94405.html",
@@ -6569,6 +6570,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4926d1a5-13c6-4a8c-87ab-86bf5768b08a.png',
         'snd0': 'https://www.youtube.com/watch?v=aHzBucyfHPA&list=PLx5ku0WebrmerKvTO635RDVhzmaIu7X5E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/B-Movie%20%28Europe%29_jp2.zip',
+        'pspconfig': 'pspconfigs/B-Movie/SLUS-00709.bin',
     },
     'SLUS00378': {
         'url': "games/U/I/SLUS-00378.html",
@@ -9140,6 +9142,7 @@ games = {
     	'id': 'SLUS01196',
 	'title': "POWER SPIKE PRO BEACH VOLLEYBALL",
         'pic0': 'https://images.launchbox-app.com/1098a94b-8d08-40de-9573-cf9b82129896.png',
+        'pspconfig': 'pspconfigs/Power Spike Pro Beach Volleyball/SLUS-01196.bin',
     },
     'SLUS00102': {
         'url': "games/U/P/SLUS-00102.html",
@@ -12015,6 +12018,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SLUS-00430.bin',
     },
     'SLUS00979': {
         'url': "games/U/T/SLUS-00979.html",
@@ -14196,6 +14200,7 @@ games = {
 	'title': "ASSAULT",
         'pic0': 'https://images.launchbox-app.com/08b11b1c-65bd-4598-9bdc-87301cbbd417.png',
         'pic1': 'https://images.launchbox-app.com/ad7b3c0e-b64f-4e90-924d-78d28db402ef.jpg',
+        'pspconfig': 'pspconfigs/Assault - Retribution/SLES-01244.bin',
     },
     'SLES00093': {
         'url': "games/P/A/SLES-00093.html",
@@ -14497,6 +14502,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/65e210d9-5087-4d90-8e0e-f2cc6b224049.png',
         'snd0': 'https://www.youtube.com/watch?v=aHzBucyfHPA&list=PLx5ku0WebrmerKvTO635RDVhzmaIu7X5E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/B-Movie%20%28Europe%29_jp2.zip',
+        'pspconfig': 'pspconfigs/B-Movie/SLES-01260.bin',
     },
     'SLES01550': {
         'url': "games/P/B/SLES-01550.html",
@@ -14505,6 +14511,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/65e210d9-5087-4d90-8e0e-f2cc6b224049.png',
         'snd0': 'https://www.youtube.com/watch?v=aHzBucyfHPA&list=PLx5ku0WebrmerKvTO635RDVhzmaIu7X5E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/B-Movie%20%28Europe%29_jp2.zip',
+        'pspconfig': 'pspconfigs/B-Movie/SLES-01550.bin',
     },
     'SLES03991': {
         'url': "games/P/B/SLES-03991.html",
@@ -14798,7 +14805,7 @@ games = {
         'url': "games/P/B/SLES-02808.html",
     	'id': 'SLES02808',
 	'title': "BEACH VOLLEYBALL",
-        'pspconfig': 'https://images.launchbox-app.com/1098a94b-8d08-40de-9573-cf9b82129896.png',
+        'pspconfig': 'pspconfigs/Power Spike Pro Beach Volleyball/SLES-02808.bin',
     },
     'SLES03598': {
         'url': "games/P/B/SLES-03598.html",
@@ -18351,6 +18358,7 @@ games = {
     	'id': 'SLES00480',
 	'title': "IZNOGOUD",
         'pic0': 'https://images.launchbox-app.com/7c7fae60-8333-4a7f-9a76-4e0ab795e6e1.png',
+        'pspconfig': 'pspconfigs/Iznogoud/SLES-00480.bin',
     },
     'SCES01444':       {
         'url': "games/P/J/SCES-01444.html",
@@ -20633,6 +20641,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/4926d1a5-13c6-4a8c-87ab-86bf5768b08a.png',
         'snd0': 'https://www.youtube.com/watch?v=aHzBucyfHPA&list=PLx5ku0WebrmerKvTO635RDVhzmaIu7X5E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/B-Movie%20%28Europe%29_jp2.zip',
+        'pspconfig': 'pspconfigs/B-Movie/SLES-01573.bin',
     },
     'SLES02682': {
         'url': "games/P/L/SLES-02682.html",
@@ -32455,6 +32464,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-00850.bin',
     },
     'SCES01070': {
         'url': "games/P/T/SCES-01070.html",
@@ -32462,6 +32472,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01070.bin',
     },
     'SCES01071': {
         'url': "games/P/T/SCES-01071.html",
@@ -32469,6 +32480,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01071.bin',
     },
     'SCES01072': {
         'url': "games/P/T/SCES-01072.html",
@@ -32476,6 +32488,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01072.bin',
     },
     'SCES01073': {
         'url': "games/P/T/SCES-01073.html",
@@ -32483,6 +32496,7 @@ games = {
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01073.bin',
     },
     'SLES04062': {
         'url': "games/P/T/SLES-04062.html",
