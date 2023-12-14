@@ -587,6 +587,7 @@ games = {
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8/SLPS-91182.bin',
     },
     'SLPM86929': {
         'url': "games/J/V/SLPM-86929.html",
@@ -596,6 +597,7 @@ games = {
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8/SLPM-86929.bin',
     },
     'SLPS02615': {
         'url': "games/J/V/SLPS-02615.html",
@@ -603,6 +605,7 @@ games = {
 	'title': "VIGILANTE 8 - SECOND BATTLE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLPS-02615.bin',
     },
     'SLPM86928': {
         'url': "games/J/V/SLPM-86928.html",
@@ -610,6 +613,7 @@ games = {
 	'title': "VIGILANTE 8 - SECOND BATTLE [POKKIRI 1400 SERIES]",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLPM-86928.bin',
     },
     'SLPS00892': {
         'url': "games/J/V/SLPS-00892.html",
@@ -3698,6 +3702,7 @@ games = {
 	'title': "BUSTER BROS. COLLECTION",
         'pic0': 'https://images.launchbox-app.com/6bbc899f-c9c2-4424-8e9f-6e7e09d993ad.png',
         'pic1': 'https://images.launchbox-app.com/f28719cd-558b-4e50-aaf6-83f1461f8a2d.jpg',
+        'pspconfig': 'pspconfigs/Buster Bros Collection/SLPS-00360.bin',
     },
     'SLUS00499': {
         'url': "games/U/C/SLUS-00499.html",
@@ -9923,6 +9928,7 @@ games = {
     	'id': 'SLUS00195',
 	'title': "ROMANCE OF THE THREE KINGDOMS IV - WALL OF FIRE",
         'pic0': 'https://images.launchbox-app.com/65d8d268-d6f0-4b40-8a1b-eb5f8d1f7039.png',
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SLUS-00195.bin',
     },
     'SLUS00918': {
         'url': "games/U/R/SLUS-00918.html",
@@ -10197,6 +10203,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e4b66591-f0bf-4dad-a58a-7f8057b0b8d6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UNY8SYsLHAw',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Shadow%20Tower_jp2.zip',
+        'pspconfig': 'pspconfigs/Shadow Tower/SLUS-00863.bin',
         'ps3config': 'ps3configs/Shadow Tower/SLUS-00863.BIN',
     },
     'SLUS00795': {
@@ -10319,6 +10326,7 @@ games = {
 	'title': "SIMCITY 2000",
         'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
         'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
+        'pspconfig': 'pspconfigs/SimCity 2000/SLUS-00113.bin',
     },
     'SLUS00209': {
         'url': "games/U/S/SLUS-00209.html",
@@ -10454,6 +10462,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f682374d-2321-41a4-b5d4-3ba95e6b9255.png',
         'pic1': 'https://images.launchbox-app.com/ab957c18-e92a-41de-8c28-7177b0c7cb93.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Soviet%20Strike%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Soviet Strike/SLUS-00061.bin',
     },
     'SLUS00153': {
         'url': "games/U/S/SLUS-00153.html",
@@ -10541,6 +10550,7 @@ games = {
     	'id': 'SLUS01218',
 	'title': "SPEEDBALL 2100",
         'pic0': 'https://images.launchbox-app.com/2e453faf-3a84-474c-8ec0-e376a63494f9.png',
+        'pspconfig': 'pspconfigs/Speedball 2100/SLUS-01218.bin',
     },
     'SLUS00723': {
         'url': "games/U/S/SLUS-00723.html",
@@ -11105,6 +11115,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLUS-01355.bin',
     },
     'SLUS01367': {
         'url': "games/U/T/SLUS-01355.html",
@@ -11114,6 +11125,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLUS-01367.bin',
     },
     'SLUS01368': {
         'url': "games/U/T/SLUS-01355.html",
@@ -11123,6 +11135,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a9d2094f-f84e-403b-a82d-ac42f0c360ac.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Xmuc_Jn-fU0&list=PL5725F527C51B73D1&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20II%20[SLUS-01355]%20(E).cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLUS-01368.bin',
     },
     'SLUS01547': {
         'url': "games/U/T/SLUS-01547.html",
@@ -12297,6 +12310,7 @@ games = {
 	'title': "VIGILANTE 8 - 2ND OFFENSE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLUS-00868.bin',
     },
     'SLUS01341': {
         'url': "games/U/V/SLUS-01341.html",
@@ -14724,11 +14738,19 @@ games = {
         'pic1': 'https://images.launchbox-app.com/3da32fb7-7b77-4a5a-832f-8c33989cb764.jpg',
         'pspconfig': 'pspconfigs/Battle Arena Toshinden 3/SCES-00700.bin',
     },
+    'SLPS02022': {
+        'url': "games/P/B/SLES-02493.html",
+    	'id': 'SLPS02022',
+	'title': "BATTLE ARENA TOSHINDEN 4",
+        'pic0': 'https://images.launchbox-app.com/55596932-9782-497b-98c6-feeff7127a72.png',
+        'pspconfig': 'pspconfigs/Toshinden 4/SLPS-02022.bin',
+    },
     'SLES02493': {
         'url': "games/P/B/SLES-02493.html",
     	'id': 'SLES02493',
 	'title': "BATTLE ARENA TOSHINDEN 4",
         'pic0': 'https://images.launchbox-app.com/55596932-9782-497b-98c6-feeff7127a72.png',
+        'pspconfig': 'pspconfigs/Toshinden 4/SLES-02493.bin',
     },
     'SLES02773': {
         'url': "games/P/B/SLES-02773.html",
@@ -22401,6 +22423,7 @@ games = {
     	'id': 'SCES00263',
 	'title': "NAMCO TENNIS SMASH COURT",
         'pic0': 'https://images.launchbox-app.com/55ae3964-375e-4bf1-b595-238488db890b.png',
+        'pspconfig': 'pspconfigs/Smash Court/SCES-00263.bin',
     },
     'SLES00329': {
         'url': "games/P/N/SLES-00329.html",
@@ -29015,6 +29038,7 @@ games = {
 	'title': "SIMCITY 2000",
         'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
         'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
+        'pspconfig': 'pspconfigs/SimCity 2000/SLES-00471.bin',
     },
     'SLES04152': {
         'url': "games/P/S/SLES-04152.html",
@@ -29209,6 +29233,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f682374d-2321-41a4-b5d4-3ba95e6b9255.png',
         'pic1': 'https://images.launchbox-app.com/ab957c18-e92a-41de-8c28-7177b0c7cb93.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Soviet%20Strike%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Soviet Strike/SLES-00507.bin',
     },
     'SLES00508': {
         'url': "games/P/S/SLES-00508.html",
@@ -29343,6 +29368,7 @@ games = {
     	'id': 'SLES02782',
 	'title': "SPEEDBALL 2100",
         'pic0': 'https://images.launchbox-app.com/2e453faf-3a84-474c-8ec0-e376a63494f9.png',
+        'pspconfig': 'pspconfigs/Speedball 2100/SLES-02782.bin',
     },
     'SLES00575': {
         'url': "games/P/S/SLES-00575.html",
@@ -30252,6 +30278,7 @@ games = {
 	'title': "SUPER PANG COLLECTION",
         'pic0': 'https://images.launchbox-app.com/6bbc899f-c9c2-4424-8e9f-6e7e09d993ad.png',
         'pic1': 'https://images.launchbox-app.com/f28719cd-558b-4e50-aaf6-83f1461f8a2d.jpg',
+        'pspconfig': 'pspconfigs/Buster Bros Collection/SLES-00043.bin',
         'ps3config': 'ps3configs/Super Pang Collection/SLES-00043.BIN',
     },
     'SLES00605': {
@@ -33002,6 +33029,7 @@ games = {
 	'title': "VIGILANTE 8 - 2ND OFFENSE",
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLES-02162.bin',
     },
     'SLES01302': {
         'url': "games/P/V/SLES-01302.html",
@@ -50111,6 +50139,7 @@ games = {
         'url': "games/J/M/SLPS-02693.html",
     	'id': 'SLPS02693',
 	'title': "MIGI HADARI U-SA",
+        'pspconfig': 'pspconfigs/Theme Park World/SLPS-02643.bin',
     },
     'SLPS01611': {
         'url': "games/J/M/SLPS-01611.html",
@@ -56202,26 +56231,31 @@ games = {
         'url': "games/J/S/SCPS-45003.html",
     	'id': 'SCPS45003',
 	'title': "SANGOKUSHI IV",
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SCPS-45003.bin',
     },
     'SLPS00114': {
         'url': "games/J/S/SLPS-00114.html",
     	'id': 'SLPS00114',
 	'title': "SANGOKUSHI IV",
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SLPS-00114.bin',
     },
     'SLPM87179': {
         'url': "games/J/S/SLPM-87179.html",
     	'id': 'SLPM87179',
 	'title': "SANGOKUSHI IV [KOEI THE BEST]",
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SLPM-87179.bin',
     },
     'SLPS91052': {
         'url': "games/J/S/SLPS-91052.html",
     	'id': 'SLPS91052',
 	'title': "SANGOKUSHI IV [PLAYSTATION THE BEST]",
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SLPS-91052.bin',
     },
     'SLPS00979': {
         'url': "games/J/S/SLPS-00979.html",
     	'id': 'SLPS00979',
 	'title': "SANGOKUSHI IV [WITH POWER UP KIT]",
+        'pspconfig': 'pspconfigs/Romance of the Three Kingdoms IV - Wall of fire/SLPS-00979.bin',
     },
     'SCPS45128': {
         'url': "games/J/S/SCPS-45128.html",
@@ -56824,6 +56858,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/e4b66591-f0bf-4dad-a58a-7f8057b0b8d6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=UNY8SYsLHAw',
         'manual': 'https://psxdatacenter.com/manuals/Shadow%20Tower%20(J)%20[SLPS-01420].cbr',
+        'pspconfig': 'pspconfigs/Shadow Tower/SLPS-01420.bin',
     },
     'SLPS01472': {
         'url': "games/J/S/SLPS-01472.html",
@@ -57095,6 +57130,7 @@ games = {
         'url': "games/J/S/SLPS-00414.html",
     	'id': 'SLPS00414',
 	'title': "SHINGATA KURURIN PA!",
+        'pspconfig': 'pspconfigs/Shingata Kururin Pa!/SLPS-00414.bin',
     },
     'SCPS45402': {
         'url': "games/J/S/SCPS-45402.html",
@@ -57198,6 +57234,7 @@ games = {
         'url': "games/J/S/SLPM-86750.html",
     	'id': 'SLPM86750',
 	'title': "SHIRITSU JUSTICE GAKUEN - NEKKETSU SEISHUN NIKKI 2 [CAPKORE]",
+        'pspconfig': 'pspconfigs/Shiritsu Justice Gakuen - Nekketsu Seisyun Nikki 2/SLPM-86750.bin',
     },
     'SLPS01648': {
         'url': "games/J/S/SLPS-01648.html",
@@ -57427,6 +57464,7 @@ games = {
     	'id': 'SLPS00374',
 	'title': "SILHOUETTE STORIES",
         'pic0': 'https://images.launchbox-app.com/701ddf73-5a8f-4e72-a8ee-5c7c040020ce.png',
+        'pspconfig': 'pspconfigs/Silhouette Stories/SLPS-00374.bin',
     },
     'SLPS02320': {
         'url': "games/J/S/SLPS-02320.html",
@@ -57444,6 +57482,7 @@ games = {
 	'title': "SIMCITY 2000",
         'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
         'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
+        'pspconfig': 'pspconfigs/SimCity 2000/SLPS-00420.bin',
     },
     'SLPS91098': {
         'url': "games/J/S/SLPS-91098.html",
@@ -57451,6 +57490,7 @@ games = {
 	'title': "SIMCITY 2000 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/b035db15-eee3-40a5-aede-d7cef9601da6.png',
         'pic1': 'https://images.launchbox-app.com/bbfbfd27-f37e-41a7-b2be-e8c102342987.jpg',
+        'pspconfig': 'pspconfigs/SimCity 2000/SLPS-91098.bin',
     },
     'SLPS02842': {
         'url': "games/J/S/SLPS-02842.html",
@@ -58527,18 +58567,21 @@ games = {
     	'id': 'SLPS00450',
 	'title': "SMASH COURT",
         'pic0': 'https://images.launchbox-app.com/55ae3964-375e-4bf1-b595-238488db890b.png',
+        'pspconfig': 'pspconfigs/Smash Court/SLPS-00450.bin',
     },
     'SLPS91053': {
         'url': "games/J/S/SLPS-91053.html",
     	'id': 'SLPS91053',
 	'title': "SMASH COURT [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/55ae3964-375e-4bf1-b595-238488db890b.png',
+        'pspconfig': 'pspconfigs/Smash Court/SLPS-91053.bin',
     },
     'SLPS91407': {
         'url': "games/J/S/SLPS-91407.html",
     	'id': 'SLPS91407',
 	'title': "SMASH COURT [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/55ae3964-375e-4bf1-b595-238488db890b.png',
+        'pspconfig': 'pspconfigs/Smash Court/SLPS-91407.bin',
     },
     'SLPS01693': {
         'url': "games/J/S/SLPS-01693.html",
@@ -58927,6 +58970,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f682374d-2321-41a4-b5d4-3ba95e6b9255.png',
         'pic1': 'https://images.launchbox-app.com/ab957c18-e92a-41de-8c28-7177b0c7cb93.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Soviet%20Strike%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Soviet Strike/SLPS-00735.bin',
     },
     'SCPS19005': {
         'url': "games/J/S/SCPS-19005.html",
@@ -59134,6 +59178,7 @@ games = {
     	'id': 'SLPM87061',
 	'title': "SPEEDBALL 2100 [WORLD GREATEST HITS SERIES]",
         'pic0': 'https://images.launchbox-app.com/2e453faf-3a84-474c-8ec0-e376a63494f9.png',
+        'pspconfig': 'pspconfigs/Speedball 2100/SLPM-87061.bin',
     },
     'SCPS45068': {
         'url': "games/J/S/SCPS-45068.html",
@@ -59401,6 +59446,7 @@ games = {
         'url': "games/J/S/SLPM-86809.html",
     	'id': 'SLPM86809',
 	'title': "STARTLING ADVENTURES - KUUSOU DAIBOUKEN X3",
+        'pspconfig': 'pspconfigs/Startling Adventures - Kuusou Daibouken X3/SLPM-86809.bin',
     },
     'SLPS02043': {
         'url': "games/J/S/SLPS-02043.html",
@@ -59745,13 +59791,13 @@ games = {
         'url': "games/J/S/SLPS-91517.html",
     	'id': 'SLPS91517',
 	'title': "SUMMON NIGHT 2 [PSONE BOOKS]",
-        'pspconfig': 'pspconfigs/Summon Night 2/SLPS-03237.bin',
+        'pspconfig': 'pspconfigs/Summon Night 2/SLPS-91517.bin',
     },
     'SLPS91518': {
         'url': "games/J/S/SLPS-91517.html",
     	'id': 'SLPS91518',
 	'title': "SUMMON NIGHT 2 [PSONE BOOKS]",
-        'pspconfig': 'pspconfigs/Summon Night 2/SLPS-03237.bin',
+        'pspconfig': 'pspconfigs/Summon Night 2/SLPS-91518.bin',
     },
     'SLPS02858': {
         'url': "games/J/S/SLPS-02858.html",
@@ -59792,6 +59838,7 @@ games = {
         'url': "games/J/S/SCPS-45084.html",
     	'id': 'SCPS45084',
 	'title': "SUPER BLACK BASS X",
+        'pspconfig': 'pspconfigs/Super Black Bass/SCPS-45084.bin',
     },
     'SLPS00839': {
         'url': "games/J/S/SLPS-00839.html",
@@ -59803,7 +59850,7 @@ games = {
         'url': "games/J/S/SLPS-02053.html",
     	'id': 'SLPS02053',
 	'title': "SUPER BLACK BASS X [GOOD PRICE]",
-        'pspconfig': 'pspconfigs/Super Black Bass/SLPS-00839.bin',
+        'pspconfig': 'pspconfigs/Super Black Bass/SLPS-02053.bin',
     },
     'SLPS02392': {
         'url': "games/J/S/SLPS-02392.html",
@@ -59883,6 +59930,7 @@ games = {
 	'title': "SUPER PANG COLLECTION",
         'pic0': 'https://images.launchbox-app.com/6bbc899f-c9c2-4424-8e9f-6e7e09d993ad.png',
         'pic1': 'https://images.launchbox-app.com/f28719cd-558b-4e50-aaf6-83f1461f8a2d.jpg',
+        'pspconfig': 'pspconfigs/Buster Bros Collection/SLPS-00360.bin',        
     },
     'SLPS03226': {
         'url': "games/J/S/SLPS-03226.html",
@@ -59938,6 +59986,7 @@ games = {
         'url': "games/J/S/SCPS-45476.html",
     	'id': 'SCPS45476',
 	'title': "SUPER ROBOT WARS ALPHA",
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha/SCPS-45476.bin',
     },
     'SLPS02636': {
         'url': "games/J/S/SLPS-02636.html",
@@ -59949,17 +59998,19 @@ games = {
         'url': "games/J/S/SLPS-02528.html",
     	'id': 'SLPS02528',
 	'title': "SUPER ROBOT WARS ALPHA [LIMITED EDITION]",
-
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha/SLPS-02528.bin',
     },
     'SLPS91408': {
         'url': "games/J/S/SLPS-91408.html",
     	'id': 'SLPS91408',
 	'title': "SUPER ROBOT WARS ALPHA [PSONE BOOKS]",
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha/SLPS-91408.bin',
     },
     'SCPS45513': {
         'url': "games/J/S/SCPS-45513.html",
     	'id': 'SCPS45513',
 	'title': "SUPER ROBOT WARS ALPHA GAIDEN",
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha Gaiden/SCPS-45513.bin',
     },
     'SLPS03148': {
         'url': "games/J/S/SLPS-03148.html",
@@ -59971,11 +60022,13 @@ games = {
         'url': "games/J/S/SLPS-03147.html",
     	'id': 'SLPS03147',
 	'title': "SUPER ROBOT WARS ALPHA GAIDEN [LIMITED EDITION]",
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha Gaiden/SLPS-03147.bin',
     },
     'SLPS91506': {
         'url': "games/J/S/SLPS-91506.html",
     	'id': 'SLPS91506',
 	'title': "SUPER ROBOT WARS ALPHA GAIDEN [PSONE BOOKS]",
+        'pspconfig': 'pspconfigs/Super Robot Taisen Alpha Gaiden/SLPS-91506.bin',
     },
     'SLPS02070': {
         'url': "games/J/S/SLPS-02070.html",
@@ -60272,6 +60325,7 @@ games = {
         'url': "games/J/S/SLPM-86513.html",
     	'id': 'SLPM86513',
 	'title': "SUZUKI BAKUHATSU",
+        'pspconfig': 'pspconfigs/Suzuki Bakahatsu/SLPM-86513.bin',
     },
     'SLPM86626': {
         'url': "games/J/S/SLPM-86626.html",
@@ -60489,18 +60543,21 @@ games = {
     	'id': 'SCPS45507',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45507.bin',
     },
     'SCPS45508': {
         'url': "games/J/T/SCPS-45507.html",
     	'id': 'SCPS45508',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45508.bin',
     },
     'SCPS45509': {
         'url': "games/J/T/SCPS-45507.html",
     	'id': 'SCPS45509',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45509.bin',
     },
     'SLPS03050': {
         'url': "games/J/T/SLPS-03050.html",
@@ -60508,6 +60565,7 @@ games = {
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03050.bin',
     },
     'SLPS03051': {
         'url': "games/J/T/SLPS-03050.html",
@@ -60515,6 +60573,7 @@ games = {
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03051.bin',
     },
     'SLPS03052': {
         'url': "games/J/T/SLPS-03050.html",
@@ -60522,6 +60581,7 @@ games = {
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03052.bin',
     },
     'SLPS03045': {
         'url': "games/J/T/SLPS-03045.html",
@@ -60529,6 +60589,7 @@ games = {
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03045.bin',
     },
     'SLPS03046': {
         'url': "games/J/T/SLPS-03045.html",
@@ -60536,6 +60597,7 @@ games = {
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03046.bin',
     },
     'SLPS03047': {
         'url': "games/J/T/SLPS-03045.html",
@@ -60543,24 +60605,28 @@ games = {
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03047.bin',
     },
     'SLPS91247': {
         'url': "games/J/T/SLPS-91247.html",
     	'id': 'SLPS91247',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91247.bin',
     },
     'SLPS91248': {
         'url': "games/J/T/SLPS-91247.html",
     	'id': 'SLPS91248',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91248.bin',
     },
     'SLPS91249': {
         'url': "games/J/T/SLPS-91247.html",
     	'id': 'SLPS91249',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91249.bin',
     },
     'SLPS03375': {
         'url': "games/J/T/SLPS-03375.html",
@@ -60581,6 +60647,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
         'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
+        'pspconfig': 'pspconfigs/Tales of Phantasia/SCPS-45367.bin',
     },
     'SLPS01770': {
         'url': "games/J/T/SLPS-01770.html",
@@ -60589,6 +60656,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
         'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
+        'pspconfig': 'pspconfigs/Tales of Phantasia/SLPS-01770.bin',
     },
     'SLPS91210': {
         'url': "games/J/T/SLPS-91210.html",
@@ -60597,6 +60665,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5f499cc3-bf0f-4644-a538-5f7908cbe650.png',
         'pic1': 'https://images.launchbox-app.com/7c2055b2-388b-4027-9309-50827a6921d3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Phantasia%20(J)%20[SLPS-01770].cbr',
+        'pspconfig': 'pspconfigs/Tales of Phantasia/SLPS-91210.bin',
     },
     'SLPS02366': {
         'url': "games/J/T/SLPS-02366.html",
@@ -60669,11 +60738,13 @@ games = {
         'url': "games/J/T/SLPS-00544.html",
     	'id': 'SLPS00544',
 	'title': "TANTEI JINGUUJI SABURO - MIKAN NO REPORT",
+        'pspconfig': 'pspconfigs/Tantei Jinguuji Saburo - Mikan No Rupo/SLPS-00544.bin',
     },
     'SLPS03016': {
         'url': "games/J/T/SLPS-03016.html",
     	'id': 'SLPS03016',
 	'title': "TANTEI JINGUUJI SABURO - MIKAN NO REPORT [POPULAR EDITION]",
+        'pspconfig': 'pspconfigs/Tantei Jinguuji Saburo - Mikan No Rupo/SLPS-03016.bin',
     },
     'SLPS02427': {
         'url': "games/J/T/SLPS-02427.html",
@@ -61279,6 +61350,7 @@ games = {
 	'title': "THE GREAT BATTLE VI",
         'pic0': 'https://images.launchbox-app.com/18acbe0a-d4fd-461e-b6b7-de2abab37821.png',
         'snd0': 'https://www.youtube.com/watch?v=n4xWWFEhImo',
+        'pspconfig': 'pspconfigs/The Great Battle VI/SLPS-00719.bin',
     },
     'SLPS03178': {
         'url': "games/J/T/SLPS-03178.html",
@@ -62756,6 +62828,7 @@ games = {
         'url': "games/J/T/SLPS-02113.html",
     	'id': 'SLPS02113',
 	'title': "TONDEMO CRISIS!",
+        'pspconfig': 'pspconfigs/Incredible Crisis/SLPS-02113.bin',
     },
     'SLPM86429': {
         'url': "games/J/T/SLPM-86429.html",
@@ -63185,6 +63258,7 @@ games = {
     	'id': 'SLPS00015',
 	'title': "TWINBEE TAISEN PUZZLE DAMA",
         'pic0': 'https://images.launchbox-app.com/19017c0c-f601-4f72-9458-ae17d7e2cb1a.png',
+        'pspconfig': 'pspconfigs/Twinbee Taisen Puzzle Dama/SLPS-00015.bin',
     },
     'SLPS02126': {
         'url': "games/J/T/SLPS-02126.html",
