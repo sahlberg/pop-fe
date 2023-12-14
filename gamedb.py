@@ -43,6 +43,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/b8ec3135-3150-4502-8a70-5b5b08acaf33.jpg',
         'pic0': 'https://images.launchbox-app.com/bf8cb1eb-9110-48a7-8741-4814a1d0c2d1.png',
         'pic1': 'https://images.launchbox-app.com/233ebc69-4c55-40fe-a742-d42bcbe1217c.png',
+        'pspconfig': 'pspconfigs/Magic Castle/Magic Castle.bin',
     },
     'LSP990121': {
     	'id': 'LSP990121',
