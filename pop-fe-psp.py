@@ -206,7 +206,7 @@ class PopFePs3App:
         game = popfe.get_game_from_gamelist(disc_id)
         if self.snd0_disabled == 'off':
             snd0 = None
-            print('Fetching SND0')
+            print('Fetching SND0') if verbose else None
             if self._theme != '':
                 snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-psp-work')
                 if snd0:
