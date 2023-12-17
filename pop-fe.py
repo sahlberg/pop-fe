@@ -373,6 +373,19 @@ def get_pic_from_game(pic, game_id, game, filename):
 def get_pic0_from_game(game_id, game, cue):
     try:
         pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
+        # If we need to rescale, paste the image into a larger transparent
+        # canvas first before we rescale it below
+        if 'pic0-scaling' in games[game_id]:
+            i = Image.new(pic0.mode,
+                    (int(pic0.size[0] / games[game_id]['pic0-scaling']),
+                     int(pic0.size[1] / games[game_id]['pic0-scaling'])),
+                    (0,0,0)).convert('RGBA')
+            i.putalpha(0)
+            ns = (int((i.size[0] - pic0.size[0]) / 2),
+                  int((i.size[1] - pic0.size[1]) / 2))
+            i.paste(pic0, ns)
+            pic0 = i
+    
         # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
         ar = pic0.height / pic0.width
         if pic0.height * ar > 560:
@@ -387,13 +400,18 @@ def get_pic0_from_game(game_id, game, cue):
             i.paste(pic0, ns)
             pic0 = i
         else:
-            pic0 = pic0.resize((1000, int(1000 * ar)), Image.Resampling.NEAREST)
+            ns = (1000, int(1000 * ar))
+            if ns[1] > 500:
+                ns = (int(ns[0] * 500 / ns[1]), int(ns[1] * 500 / ns[1]))
+            pic0 = pic0.resize(ns, Image.Resampling.NEAREST)
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
-            i.paste(pic0, (0, int((560 - pic0.size[1]) / 2)))
+            i.paste(pic0, (int((1000 - pic0.size[0]) / 2),
+                           int((560 - pic0.size[1]) / 2)))
             pic0 = i
     except:
         return None
+
     return pic0
 
 def get_pic1_from_game(game_id, game, cue):
