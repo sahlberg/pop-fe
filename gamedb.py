@@ -1432,22 +1432,33 @@ games = {
     	'id': 'SLPS00547',
 	'title': "WORMS",
         'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202306/0716/ac85989d4e5e41c8775c35ee11a9a3039827f43d4ff62797.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KEXFfm8qBz4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLPS02852': {
         'url': "games/J/W/SLPS-02852.html",
     	'id': 'SLPS02852',
 	'title': "WTC - WORLD TOURING CAR CHAMPIONSHIP",
+        'pic0': 'https://images.launchbox-app.com/7cc84c83-55cf-4998-a87e-571c442ff923.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLPS91488': {
         'url': "games/J/W/SLPS-91488.html",
     	'id': 'SLPS91488',
 	'title': "WTC - WORLD TOURING CAR CHAMPIONSHIP [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/7cc84c83-55cf-4998-a87e-571c442ff923.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLPS03303': {
         'url': "games/J/W/SLPS-03303.html",
     	'id': 'SLPS03303',
 	'title': "WTC - WORLD TOURING CAR CHAMPIONSHIP [SPIKE LIBRARY #009]",
+        'pic0': 'https://images.launchbox-app.com/7cc84c83-55cf-4998-a87e-571c442ff923.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLPM86487': {
         'url': "games/J/W/SLPM-86487.html",
@@ -6666,6 +6677,8 @@ games = {
     	'id': 'SLUS01139',
 	'title': "JARRETT & LABONTE STOCK CAR RACING",
         'pic0': 'https://images.launchbox-app.com/11249716-cd6e-4c42-a526-55b4c7c16057.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLUS00682': {
         'url': "games/U/J/SLUS-00682.html",
@@ -6709,6 +6722,7 @@ games = {
 	'title': "JET MOTO",
         'pic0': 'https://images.launchbox-app.com/4335e4d6-ddb6-49e8-9a58-f1dc0bedccbc.png',
         'pic1': 'https://images.launchbox-app.com/4d63ec6b-9625-4a86-8b88-4414b332e77d.png',
+        'snd0': 'https://www.youtube.com/watch?v=Z3_sURHVmso&list=PL7398B78C1901A21F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%20%28USA%29_jp2.zip',
     },
     'SCUS94167': {
@@ -6717,6 +6731,7 @@ games = {
 	'title': "JET MOTO 2",
         'pic0': 'https://images.launchbox-app.com/d991e7f2-e850-4dfb-ac98-0e4623369d3a.png',
         'pic1': 'https://images.launchbox-app.com/90aadbef-c25a-428d-a0e5-e53cefc0a4a1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=llpy5nC0hY4&list=PLEQ9gzIIRt0Ch8cdQeCSbes3iEaH_GyAI&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%202%20%28USA%29_jp2.zip',
     },
     'SCUS94555': {
@@ -6724,6 +6739,8 @@ games = {
     	'id': 'SCUS94555',
 	'title': "JET MOTO 3",
         'pic0': 'https://images.launchbox-app.com/20d02dd6-1c5d-4a7d-9253-cc9d404867c6.png',
+        'pic1': 'https://images.launchbox-app.com/8021fbd8-29d7-49f9-8291-64ea21559e50.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=MysUvZs1GjY&list=PLHbjFKwV9a1eWD1m8ySYJ3cNikhh0PUG6&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%203%20%28USA%29_jp2.zip',
     },
     'SLUS01509': {
@@ -6750,6 +6767,7 @@ games = {
 	'title': "JOHNNY BAZOOKATONE",
         'pic0': 'https://images.launchbox-app.com/a8a01841-25f6-4414-b6f6-72213f11fe47.png',
         'pic1': 'https://images.launchbox-app.com/0751ac93-2cc2-4f8d-adec-7d094f02c518.png',
+        'snd0': 'https://www.youtube.com/watch?v=AHd6YI0vW9g&list=PLonEjMHqKRrN0FJ4TzcSsCcbyGqEu7TTo&index=1',
     },
     'SLUS01060': {
         'url': "games/U/J/SLUS-01060.html",
@@ -6757,6 +6775,7 @@ games = {
 	'title': "JOJO'S BIZARRE ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/32f1831b-5cd4-4473-9efe-06966daec7c7.png',
         'pic1': 'https://images.launchbox-app.com/8ffe81b2-b506-42ac-98ab-63d7be1c6a40.png',
+        'snd0': 'https://www.youtube.com/watch?v=IBB9d6lSLjE&list=PLKeX7BXkVWnx_HCg7A-Z4a068jWS3LS0Y&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/JoJo%27s%20Bizarre%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLUS00630': {
@@ -6765,6 +6784,7 @@ games = {
 	'title': "JUDGE DREDD",
         'pic0': 'https://images.launchbox-app.com/f23e7171-2aac-48c5-acc5-958d8624e6dd.png',
         'pic1': 'https://images.launchbox-app.com/404be3da-e3dc-4b6c-b130-b90f2f599dd5.png',
+        'snd0': 'https://www.youtube.com/watch?v=7qiA56ulXMw&list=PLohYzz4btpaTXFsBUTgkhi7U4S6RBTKt0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Judge%20Dredd%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Judge Dredd/SLUS-00630.BIN',
     },
@@ -6773,18 +6793,21 @@ games = {
     	'id': 'SLUS00894',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLUS00988': {
         'url': "games/U/J/SLUS-00894.html",
     	'id': 'SLUS00988',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLUS00989': {
         'url': "games/U/J/SLUS-00894.html",
     	'id': 'SLUS00989',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SCUS94103': {
         'url': "games/U/J/SCUS-94103.html",
@@ -6792,6 +6815,7 @@ games = {
 	'title': "JUMPING FLASH!",
         'pic0': 'https://images.launchbox-app.com/8498d258-5b53-49c4-a166-d8c4b6ce8b86.png',
         'pic1': 'https://images.launchbox-app.com/8fffb905-6fa8-4f5b-815b-2c3fecbd45e1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=VPeAKMm53eg&list=PLFDF8CD4D80251CA2&index=1',
         'manual': 'https://archive.org/download/sony-playstation-classic-game-manuals/b07-jumping-flash-en_jp2.zip',
     },
     'SCUS94108': {
@@ -6799,6 +6823,8 @@ games = {
     	'id': 'SCUS94108',
 	'title': "JUMPING FLASH! 2",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
+        'pic1': 'https://kresnik258gaming.files.wordpress.com/2018/01/maxresdefault3.jpg?w=816',
+        'snd0': 'https://www.youtube.com/watch?v=7RUIugPuwZc&list=PL2BC2C40DD5096388&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Jumping Flash! 2/SCUS-94108.BIN',
     },
@@ -7372,12 +7398,15 @@ games = {
 	'title': "MDK",
         'pic0': 'https://images.launchbox-app.com/de065562-25b3-4d6e-9a00-65b68a294442.png',
         'pic1': 'https://images.launchbox-app.com/b90ad36a-9476-4194-abb8-719a7b7fae0f.png',
+        'snd0': 'https://www.youtube.com/watch?v=FjoxKMhsrRw&list=PLEFA9715058A0B756&index=2',
     },
     'SLUS00401': {
         'url': "games/U/M/SLUS-00401.html",
     	'id': 'SLUS00401',
 	'title': "MECHWARRIOR 2",
-        'pic0': 'https://images.launchbox-app.com/281a079c-63f6-484b-808d-4018fd627c27.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/50e3f93e-9f3a-48da-a878-504078b99659.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GM3MwpkVYKQ&list=PL3E409CD81FFF6F55&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MechWarrior%202%20-%2031st%20Century%20Combat%20%28USA%29_jp2.zip',
     },
     'SLUS00974': {
@@ -7423,6 +7452,7 @@ games = {
 	'title': "MEGAMAN 8",
         'pic0': 'https://images.launchbox-app.com/47bc3a86-3676-4b26-8661-38de4b526243.png',
         'pic1': 'https://images.launchbox-app.com/aebcc271-b135-4be3-a21e-7d2a7ed2b8c1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3NstM8QYsGs&list=PLA6F99A15ABED7763&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Megaman 8/SLUS-00453.bin',
     },
@@ -7432,6 +7462,7 @@ games = {
 	'title': "MEGAMAN LEGENDS",
         'pic0': 'https://images.launchbox-app.com/d9e75515-7ee9-48e7-bedd-b755b1744ff5.png',
         'pic1': 'https://images.launchbox-app.com/0f34c390-85f3-4990-88f7-cdf8f98c8b20.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=u7zKoN5jwoQ&list=PL1muB85JLGI-NncsBwBoh-rySF1D04Vnw&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Megaman%20Legends%20[SLUS-00603]%20(E).cbr',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLUS-00603.bin',
     },
@@ -7441,6 +7472,7 @@ games = {
 	'title': "MEGAMAN LEGENDS 2",
         'pic0': 'https://images.launchbox-app.com/90872517-51e2-4bc9-8ceb-9569c358181b.png',
         'pic1': 'https://images.launchbox-app.com/4ee909f3-27c3-4b94-a806-4fb4c6db31f1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=xPkLgzCRzqM&list=PL240060BE31AF9338&index=79',
         'manual': 'https://psxdatacenter.com/manuals/Megaman%20Legends%202%20[SLUS-01140]%20(E).cbr',
         'pspconfig': 'pspconfigs/Mega Man Legends 2/SLUS-01140.bin',
     },
@@ -7450,6 +7482,7 @@ games = {
 	'title': "MEGAMAN X4",
         'pic0': 'https://images.launchbox-app.com/64c22e75-d686-4306-9619-8698c4acbb6b.png',
         'pic1': 'https://images.launchbox-app.com/4a1538be-8446-4499-8794-eef8df249db6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=WAwnAx3TGBY&list=PL0E834C316E91075E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X4%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mega Man X4/SLUS-00561.bin',
     },
@@ -7459,6 +7492,7 @@ games = {
 	'title': "MEGAMAN X5",
         'pic0': 'https://images.launchbox-app.com/a7f87324-f8fa-4c25-aa57-c87e7f244489.png',
         'pic1': 'https://images.launchbox-app.com/063646af-add7-4385-9d54-e6565159d39f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3YtsB8DoyJE&list=PLB032C5B78488986A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X5%20%28USA%29_jp2.zip',
     },
     'SLUS01395': {
@@ -7511,6 +7545,7 @@ games = {
 	'title': "METAL SLUG X",
         'pic0': 'https://images.launchbox-app.com/c3d33c45-790b-4017-bdfe-2a9921508fe0.png',
         'pic1': 'https://images.launchbox-app.com/0f35b3f8-f07d-405a-b807-1095c740de94.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JAbqYRObNNw&list=PLSp4sdyszHDNtVrPkvyeqUAt7SN7u_HX9&index=3',
     },
     'SLUS01229': {
         'url': "games/U/M/SLUS-01229.html",
@@ -7524,6 +7559,7 @@ games = {
 	'title': "MICRO MACHINES V3",
         'pic0': 'https://images.launchbox-app.com/e2c7f4e6-95a4-41ca-8dce-617cde696183.png',
         'pic1': 'https://images.launchbox-app.com/e52a6c8d-a725-4879-a6fd-acbac893ea62.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=yL_ROBLj7IQ&list=PL7YuVu11Ud-KsjK2VuSQ654Am23Lva827&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Micro%20Machines%20V3%20%28USA%29_jp2.zip',
     },
     'SLUS01129': {
@@ -7531,6 +7567,8 @@ games = {
     	'id': 'SLUS01129',
 	'title': "MICRO MANIACS RACING",
         'pic0': 'https://images.launchbox-app.com/6827390a-5cae-4af8-a4c6-32892eff1453.png',
+        'pic1': 'https://images.launchbox-app.com/31ac37fc-bda5-4a4c-886c-4f223982c845.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=ebV_mKyA2KU&list=PLV9wNuHzx_fNMnVDoPhDCun7yF564qSn4&index=2',
     },
     'SLUS01162': {
         'url': "games/U/M/SLUS-01162.html",
@@ -7565,6 +7603,7 @@ games = {
 	'title': "MISSION IMPOSSIBLE",
         'pic0': 'https://images.launchbox-app.com/073deaa0-c183-4f9d-adfd-2cd01e6c943a.png',
         'pic1': 'https://images.launchbox-app.com/99a4c351-3b25-4c19-b88b-bc591e3ee2fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GPq8XzG-lVs&list=PL16A6F60445CD8178&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mission%20-%20Impossible%20%28USA%29_jp2.zip',
     },
     'SCUS94170': {
@@ -7665,6 +7704,8 @@ games = {
     	'id': 'SLUS00930',
 	'title': "MONKEY MAGIC",
         'pic0': 'https://images.launchbox-app.com/4c37a02f-d793-4a2b-8ec6-d63b99f93d45.png',
+        'pic1': 'https://images.launchbox-app.com/19d2b5e9-281d-4724-9baf-299395e3a63f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=mUEaaCivEks',
     },
     'SLUS00507': {
         'url': "games/U/M/SLUS-00507.html",
@@ -7683,7 +7724,9 @@ games = {
         'url': "games/U/M/SLUS-00568.html",
     	'id': 'SLUS00568',
 	'title': "MONSTER RANCHER",
-        'pic0': 'https://images.launchbox-app.com/c0b9fe04-bbe9-4a05-b30e-ba803bd5f3a8.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/894a49bd-0aa7-4f77-9113-d6e091172ec6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YyvYr184ZIA&list=PLkpN6XM4MafRaCJurByWLrRI26Dp9vUUF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Monster%20Rancher%20%28USA%29_jp2.zip',
     },
     'SLUS01178': {
@@ -7706,6 +7749,8 @@ games = {
     	'id': 'SLUS00917',
 	'title': "MONSTER RANCHER 2",
         'pic0': 'https://images.launchbox-app.com/33290946-1ab8-4e42-8cc1-dd77dd8ec950.png',
+        'pic1': 'https://images.launchbox-app.com/457a72b3-2dfe-45d4-81dd-f86425c5a7de.png',
+        'snd0': 'https://www.youtube.com/watch?v=Hi-On2y1DTA&list=PLgZeAmCfHh28xN2JjsjOpUhSdOEaybyC6&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Monster%20Rancher%202%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Monster Rancher 2/SLUS-00917.BIN',
     },
@@ -7755,6 +7800,7 @@ games = {
 	'title': "MORTAL KOMBAT MYTHOLOGIES - SUB-ZERO",
         'pic0': 'https://images.launchbox-app.com/451a0e8c-936a-414d-af16-e21a79232f54.png',
         'pic1': 'https://images.launchbox-app.com/b8e6c223-becd-4579-91ea-5f69fe1a7cbd.png',
+        'snd0': 'https://www.youtube.com/watch?v=iihTfgQI67o&list=PLBC2C7BA4527E3358&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Mythologies%20-%20Sub-Zero%20%28USA%29_jp2.zip',
     },
     'SLUS00824': {
@@ -7763,6 +7809,7 @@ games = {
 	'title': "MORTAL KOMBAT - SPECIAL FORCES",
         'pic0': 'https://images.launchbox-app.com/e512acc6-6efd-4d5c-a459-7fca2bbe59c9.png',
         'pic1': 'https://images.launchbox-app.com/6baf5060-76be-4831-9203-6e56827cc39b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oXk1veMu8Wo&list=PLz02_Ni7726lXqxMEl_PBFUii6MCNN4Rr&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20-%20Special%20Forces%20%28USA%29_jp2.zip',
     },
     'SLUS00330': {
@@ -7771,6 +7818,7 @@ games = {
 	'title': "MORTAL KOMBAT TRILOGY",
         'pic0': 'https://images.launchbox-app.com/2fa1a6a3-0b4a-4b66-9459-61926121f1f2.png',
         'pic1': 'https://images.launchbox-app.com/954602b1-2833-4a44-b12b-bb5b361f2644.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YWXTv9YLamw&list=PLErsx10Ke4uxG1ngSikLLvDW7BW9t-op-&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Trilogy%20%28USA%29_jp2.zip',
     },
     'SLUS00498': {
@@ -7779,6 +7827,7 @@ games = {
 	'title': "MOTO RACER",
         'pic0': 'https://images.launchbox-app.com/5d6b5a05-c292-47b2-aca1-3ed7bb0ec0bb.png',
         'pic1': 'https://images.launchbox-app.com/7537df3d-99e7-4a69-b5a8-7b32e533e5c9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FRuWvVE2V_U&list=PLLspNbLxNzJSm4N9-3N-GTaPTJlxQOXNW&index=1',
         'pspconfig': 'pspconfigs/Moto Racer/SLUS-00498.bin',
     },
     'SLUS00738': {
@@ -7787,6 +7836,7 @@ games = {
 	'title': "MOTO RACER 2",
         'pic0': 'https://images.launchbox-app.com/15855b4f-4296-471b-9079-212d71ccff17.png',
         'pic1': 'https://images.launchbox-app.com/565a6ab3-73c8-413b-bb5d-594edd674008.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Yxzu1toCWzI&list=PLC3B5940F3C322300&index=12',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Moto%20Racer%202%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Moto Racer 2/SLUS-00738.bin',
     },
@@ -7830,6 +7880,7 @@ games = {
 	'title': "MR. DRILLER",
         'pic0': 'https://images.launchbox-app.com/50ee7dc7-7b1e-44b6-9547-0a9dcab4152d.png',
         'pic1': 'https://images.launchbox-app.com/49db5002-63c3-4a4c-b88c-36e54afa862a.png',
+        'snd0': 'https://www.youtube.com/watch?v=Q93vFD_9yE0&list=PLCWQXbmG5BhL8AzzOFCpQhJPXKDiD2eO8&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mr.%20Driller%20%28USA%29_jp2.zip',
     },
     'SLUS01018': {
@@ -12762,6 +12813,8 @@ games = {
     	'id': 'SLUS00336',
 	'title': "WORMS",
         'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202306/0716/ac85989d4e5e41c8775c35ee11a9a3039827f43d4ff62797.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KEXFfm8qBz4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLUS00888': {
@@ -12777,7 +12830,8 @@ games = {
     	'id': 'SLUS01448',
 	'title': "WORMS WORLD PARTY",
         'pic0': 'https://images.launchbox-app.com/12bfc04c-5eb9-48b5-80d4-5b0270154a18.png',
-        'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png',
+        'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png', 
+        'snd0': 'https://www.youtube.com/watch?v=KkDolOm2UlY&list=PL2CAB64D6B77AD3ED&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
     },
     'SLUS00587': {
@@ -18590,6 +18644,7 @@ games = {
 	'title': "JOHNNY BAZOOKATONE",
         'pic0': 'https://images.launchbox-app.com/a8a01841-25f6-4414-b6f6-72213f11fe47.png',
         'pic1': 'https://images.launchbox-app.com/0751ac93-2cc2-4f8d-adec-7d094f02c518.png',
+        'snd0': 'https://www.youtube.com/watch?v=AHd6YI0vW9g&list=PLonEjMHqKRrN0FJ4TzcSsCcbyGqEu7TTo&index=1',
     },
     'SLES02599': {
         'url': "games/P/J/SLES-02599.html",
@@ -18597,6 +18652,7 @@ games = {
 	'title': "JOJO'S BIZARRE ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/32f1831b-5cd4-4473-9efe-06966daec7c7.png',
         'pic1': 'https://images.launchbox-app.com/8ffe81b2-b506-42ac-98ab-63d7be1c6a40.png',
+        'snd0': 'https://www.youtube.com/watch?v=IBB9d6lSLjE&list=PLKeX7BXkVWnx_HCg7A-Z4a068jWS3LS0Y&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/JoJo%27s%20Bizarre%20Adventure%20%28USA%29_jp2.zip',
     },
     'SLES00377': {
@@ -18617,6 +18673,7 @@ games = {
 	'title': "JUDGE DREDD",
         'pic0': 'https://images.launchbox-app.com/f23e7171-2aac-48c5-acc5-958d8624e6dd.png',
         'pic1': 'https://images.launchbox-app.com/404be3da-e3dc-4b6c-b130-b90f2f599dd5.png',
+        'snd0': 'https://www.youtube.com/watch?v=7qiA56ulXMw&list=PLohYzz4btpaTXFsBUTgkhi7U4S6RBTKt0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Judge%20Dredd%20%28USA%29_jp2.zip',
     },
     'SCES00003': {
@@ -18625,6 +18682,7 @@ games = {
 	'title': "JUMPING FLASH!",
         'pic0': 'https://images.launchbox-app.com/8498d258-5b53-49c4-a166-d8c4b6ce8b86.png',
         'pic1': 'https://images.launchbox-app.com/8fffb905-6fa8-4f5b-815b-2c3fecbd45e1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=VPeAKMm53eg&list=PLFDF8CD4D80251CA2&index=1',
         'manual': 'https://archive.org/download/sony-playstation-classic-game-manuals/b07-jumping-flash-en_jp2.zip',
     },
     'SCES00111': {
@@ -18632,6 +18690,8 @@ games = {
     	'id': 'SCES00111',
 	'title': "JUMPING FLASH! 2",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
+        'pic1': 'https://kresnik258gaming.files.wordpress.com/2018/01/maxresdefault3.jpg?w=816',
+        'snd0': 'https://www.youtube.com/watch?v=7RUIugPuwZc&list=PL2BC2C40DD5096388&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Jumping Flash! 2/SCES-00111.bin', 
         'ps3config': 'ps3configs/Jumping Flash! 2/SCES-00111.BIN',
@@ -21540,26 +21600,33 @@ games = {
 	'title': "MDK",
         'pic0': 'https://images.launchbox-app.com/de065562-25b3-4d6e-9a00-65b68a294442.png',
         'pic1': 'https://images.launchbox-app.com/b90ad36a-9476-4194-abb8-719a7b7fae0f.png',
+        'snd0': 'https://www.youtube.com/watch?v=FjoxKMhsrRw&list=PLEFA9715058A0B756&index=2',
     },
     'SLES00340': {
         'url': "games/P/M/SLES-00340.html",
     	'id': 'SLES00340',
 	'title': "MECHWARRIOR 2",
-        'pic0': 'https://images.launchbox-app.com/281a079c-63f6-484b-808d-4018fd627c27.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/50e3f93e-9f3a-48da-a878-504078b99659.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GM3MwpkVYKQ&list=PL3E409CD81FFF6F55&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MechWarrior%202%20-%2031st%20Century%20Combat%20%28USA%29_jp2.zip',
     },
     'SLES00374': {
         'url': "games/P/M/SLES-00374.html",
     	'id': 'SLES00374',
 	'title': "MECHWARRIOR 2",
-        'pic0': 'https://images.launchbox-app.com/281a079c-63f6-484b-808d-4018fd627c27.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/50e3f93e-9f3a-48da-a878-504078b99659.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GM3MwpkVYKQ&list=PL3E409CD81FFF6F55&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MechWarrior%202%20-%2031st%20Century%20Combat%20%28USA%29_jp2.zip',
     },
     'SLES00375': {
         'url': "games/P/M/SLES-00375.html",
     	'id': 'SLES00375',
 	'title': "MECHWARRIOR 2",
-        'pic0': 'https://images.launchbox-app.com/281a079c-63f6-484b-808d-4018fd627c27.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/50e3f93e-9f3a-48da-a878-504078b99659.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GM3MwpkVYKQ&list=PL3E409CD81FFF6F55&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MechWarrior%202%20-%2031st%20Century%20Combat%20%28USA%29_jp2.zip',
     },
     'SLES02470': {
@@ -21701,6 +21768,7 @@ games = {
 	'title': "MEGAMAN 8",
         'pic0': 'https://images.launchbox-app.com/47bc3a86-3676-4b26-8661-38de4b526243.png',
         'pic1': 'https://images.launchbox-app.com/aebcc271-b135-4be3-a21e-7d2a7ed2b8c1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3NstM8QYsGs&list=PLA6F99A15ABED7763&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Megaman 8/SLES-01064.bin',
     },
@@ -21720,6 +21788,7 @@ games = {
 	'title': "MEGAMAN LEGENDS",
         'pic0': 'https://images.launchbox-app.com/d9e75515-7ee9-48e7-bedd-b755b1744ff5.png',
         'pic1': 'https://images.launchbox-app.com/0f34c390-85f3-4990-88f7-cdf8f98c8b20.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=u7zKoN5jwoQ&list=PL1muB85JLGI-NncsBwBoh-rySF1D04Vnw&index=1',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLES-01485.bin',
     },
     'SLES03556': {
@@ -21728,6 +21797,7 @@ games = {
 	'title': "MEGAMAN LEGENDS 2",
         'pic0': 'https://images.launchbox-app.com/90872517-51e2-4bc9-8ceb-9569c358181b.png',
         'pic1': 'https://images.launchbox-app.com/4ee909f3-27c3-4b94-a806-4fb4c6db31f1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=xPkLgzCRzqM&list=PL240060BE31AF9338&index=79',
         'pspconfig': 'pspconfigs/Mega Man Legends 2/SLES-03556.bin',
     },
     'SLES00503': {
@@ -21745,6 +21815,7 @@ games = {
 	'title': "MEGAMAN X4",
         'pic0': 'https://images.launchbox-app.com/64c22e75-d686-4306-9619-8698c4acbb6b.png',
         'pic1': 'https://images.launchbox-app.com/4a1538be-8446-4499-8794-eef8df249db6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=WAwnAx3TGBY&list=PL0E834C316E91075E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X4%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mega Man X4/SLES-01176.bin',
     },
@@ -21754,6 +21825,7 @@ games = {
 	'title': "MEGAMAN X5",
         'pic0': 'https://images.launchbox-app.com/a7f87324-f8fa-4c25-aa57-c87e7f244489.png',
         'pic1': 'https://images.launchbox-app.com/063646af-add7-4385-9d54-e6565159d39f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3YtsB8DoyJE&list=PLB032C5B78488986A&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mega%20Man%20X5%20%28USA%29_jp2.zip',
     },
     'SLES03778': {
@@ -21933,6 +22005,7 @@ games = {
 	'title': "METAL SLUG X",
         'pic0': 'https://images.launchbox-app.com/c3d33c45-790b-4017-bdfe-2a9921508fe0.png',
         'pic1': 'https://images.launchbox-app.com/0f35b3f8-f07d-405a-b807-1095c740de94.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JAbqYRObNNw&list=PLSp4sdyszHDNtVrPkvyeqUAt7SN7u_HX9&index=3',
     },
     'SLES01594': {
         'url': "games/P/M/SLES-01594.html",
@@ -21964,6 +22037,7 @@ games = {
 	'title': "MICRO MACHINES V3",
         'pic0': 'https://images.launchbox-app.com/e2c7f4e6-95a4-41ca-8dce-617cde696183.png',
         'pic1': 'https://images.launchbox-app.com/e52a6c8d-a725-4879-a6fd-acbac893ea62.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=yL_ROBLj7IQ&list=PL7YuVu11Ud-KsjK2VuSQ654Am23Lva827&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Micro%20Machines%20V3%20%28USA%29_jp2.zip',
     },
     'SLES01921': {
@@ -21971,6 +22045,8 @@ games = {
     	'id': 'SLES01921',
 	'title': "MICRO MANIACS",
         'pic0': 'https://images.launchbox-app.com/6827390a-5cae-4af8-a4c6-32892eff1453.png',
+        'pic1': 'https://images.launchbox-app.com/31ac37fc-bda5-4a4c-886c-4f223982c845.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=ebV_mKyA2KU&list=PLV9wNuHzx_fNMnVDoPhDCun7yF564qSn4&index=2',
     },
     'SLES02499': {
         'url': "games/P/M/SLES-02499.html",
@@ -22037,6 +22113,7 @@ games = {
 	'title': "MISSION IMPOSSIBLE",
         'pic0': 'https://images.launchbox-app.com/073deaa0-c183-4f9d-adfd-2cd01e6c943a.png',
         'pic1': 'https://images.launchbox-app.com/99a4c351-3b25-4c19-b88b-bc591e3ee2fd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GPq8XzG-lVs&list=PL16A6F60445CD8178&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mission%20-%20Impossible%20%28USA%29_jp2.zip',
     },
     'SLES02574': {
@@ -22110,7 +22187,9 @@ games = {
         'url': "games/P/M/SCES-02872.html",
     	'id': 'SCES02872',
 	'title': "MONSTER RANCHER",
-        'pic0': 'https://images.launchbox-app.com/c0b9fe04-bbe9-4a05-b30e-ba803bd5f3a8.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/894a49bd-0aa7-4f77-9113-d6e091172ec6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YyvYr184ZIA&list=PLkpN6XM4MafRaCJurByWLrRI26Dp9vUUF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Monster%20Rancher%20%28USA%29_jp2.zip',
     },
     'SLES00314': {
@@ -22201,6 +22280,7 @@ games = {
 	'title': "MORTAL KOMBAT MYTHOLOGIES - SUB-ZERO",
         'pic0': 'https://images.launchbox-app.com/451a0e8c-936a-414d-af16-e21a79232f54.png',
         'pic1': 'https://images.launchbox-app.com/b8e6c223-becd-4579-91ea-5f69fe1a7cbd.png',
+        'snd0': 'https://www.youtube.com/watch?v=iihTfgQI67o&list=PLBC2C7BA4527E3358&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Mythologies%20-%20Sub-Zero%20%28USA%29_jp2.zip',
     },
     'SLES02338': {
@@ -22209,6 +22289,7 @@ games = {
 	'title': "MORTAL KOMBAT - SPECIAL FORCES",
         'pic0': 'https://images.launchbox-app.com/e512acc6-6efd-4d5c-a459-7fca2bbe59c9.png',
         'pic1': 'https://images.launchbox-app.com/6baf5060-76be-4831-9203-6e56827cc39b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oXk1veMu8Wo&list=PLz02_Ni7726lXqxMEl_PBFUii6MCNN4Rr&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20-%20Special%20Forces%20%28USA%29_jp2.zip',
     },
     'SLES00528': {
@@ -22217,6 +22298,7 @@ games = {
 	'title': "MORTAL KOMBAT TRILOGY",
         'pic0': 'https://images.launchbox-app.com/2fa1a6a3-0b4a-4b66-9459-61926121f1f2.png',
         'pic1': 'https://images.launchbox-app.com/954602b1-2833-4a44-b12b-bb5b361f2644.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YWXTv9YLamw&list=PLErsx10Ke4uxG1ngSikLLvDW7BW9t-op-&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Trilogy%20%28USA%29_jp2.zip',
     },
     'SLES02509': {
@@ -22225,6 +22307,7 @@ games = {
 	'title': "MORTAL KOMBAT TRILOGY [MIDWAY CLASSIC RELEASE]",
         'pic0': 'https://images.launchbox-app.com/2fa1a6a3-0b4a-4b66-9459-61926121f1f2.png',
         'pic1': 'https://images.launchbox-app.com/954602b1-2833-4a44-b12b-bb5b361f2644.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YWXTv9YLamw&list=PLErsx10Ke4uxG1ngSikLLvDW7BW9t-op-&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Trilogy%20%28USA%29_jp2.zip',
     },
     'SLES02954': {
@@ -22239,6 +22322,7 @@ games = {
 	'title': "MOTO RACER",
         'pic0': 'https://images.launchbox-app.com/5d6b5a05-c292-47b2-aca1-3ed7bb0ec0bb.png',
         'pic1': 'https://images.launchbox-app.com/7537df3d-99e7-4a69-b5a8-7b32e533e5c9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FRuWvVE2V_U&list=PLLspNbLxNzJSm4N9-3N-GTaPTJlxQOXNW&index=1',
         'pspconfig': 'pspconfigs/Moto Racer/SLES-00469.bin',
     },
     'SLES01184': {
@@ -22247,6 +22331,7 @@ games = {
 	'title': "MOTO RACER 2",
         'pic0': 'https://images.launchbox-app.com/15855b4f-4296-471b-9079-212d71ccff17.png',
         'pic1': 'https://images.launchbox-app.com/565a6ab3-73c8-413b-bb5d-594edd674008.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Yxzu1toCWzI&list=PLC3B5940F3C322300&index=12',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Moto%20Racer%202%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Moto Racer 2/SLES-01184.bin',
     },
@@ -22296,6 +22381,7 @@ games = {
 	'title': "MR. DRILLER",
         'pic0': 'https://images.launchbox-app.com/50ee7dc7-7b1e-44b6-9547-0a9dcab4152d.png',
         'pic1': 'https://images.launchbox-app.com/49db5002-63c3-4a4c-b88c-36e54afa862a.png',
+        'snd0': 'https://www.youtube.com/watch?v=Q93vFD_9yE0&list=PLCWQXbmG5BhL8AzzOFCpQhJPXKDiD2eO8&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mr.%20Driller%20%28USA%29_jp2.zip',
     },
     'SCES03085': {
@@ -32105,12 +32191,16 @@ games = {
     	'id': 'SLES02572',
 	'title': "TOCA - WORLD TOURING CARS",
         'pic0': 'https://images.launchbox-app.com/7cc84c83-55cf-4998-a87e-571c442ff923.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLES02573': {
         'url': "games/P/T/SLES-02573.html",
     	'id': 'SLES02573',
 	'title': "TOCA - WORLD TOURING CARS",
         'pic0': 'https://images.launchbox-app.com/7cc84c83-55cf-4998-a87e-571c442ff923.png',
+        'pic1': 'https://preview.redd.it/mjj7fjkgyd1c1.jpg?width=1920&format=pjpg&auto=webp&s=4958eb9a0687efee1247dbe33d3fb8d40379f586',
+        'snd0': 'https://www.youtube.com/watch?v=_mP1sHbHlQ4&list=PLFlOuAKlgRWZrof8hOUCuGnZlGCR8u3U3&index=1',
     },
     'SLES01542': {
         'url': "games/P/T/SLES-01542.html",
@@ -34016,6 +34106,8 @@ games = {
     	'id': 'SLES00119',
 	'title': "WORMS",
         'pic0': 'https://images.launchbox-app.com/b0994633-17b4-4672-a0db-63b8bd60fbc7.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202306/0716/ac85989d4e5e41c8775c35ee11a9a3039827f43d4ff62797.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=KEXFfm8qBz4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20%28USA%29_jp2.zip',
     },
     'SLES02217': {
@@ -34054,6 +34146,7 @@ games = {
 	'title': "WORMS WORLD PARTY",
         'pic0': 'https://images.launchbox-app.com/12bfc04c-5eb9-48b5-80d4-5b0270154a18.png',
         'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png',
+        'snd0': 'https://www.youtube.com/watch?v=KkDolOm2UlY&list=PL2CAB64D6B77AD3ED&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
     },
     'SCES03907': {
@@ -34887,6 +34980,7 @@ games = {
     	'id': 'SCPS10126',
 	'title': "ADDIE NO OKURIMONO - TO MOZE FROM ADDIE",
         'pic0': 'https://images.launchbox-app.com/f411abc7-4f95-4eec-a4a9-6bbbe55c2ab7.png',
+        'snd0': 'https://www.youtube.com/watch?v=VwJXI9IgPCk',
         'manual': 'https://psxdatacenter.com/manuals/Addie%20No%20Okurimono%20-%20To%20Moze%20from%20Addie%20(J)%20[SCPS-10126].cbr',
     },
     'SLPS01689': {
@@ -46221,6 +46315,7 @@ games = {
 	'title': "JET MOTO",
         'pic0': 'https://images.launchbox-app.com/4335e4d6-ddb6-49e8-9a58-f1dc0bedccbc.png',
         'pic1': 'https://images.launchbox-app.com/4d63ec6b-9625-4a86-8b88-4414b332e77d.png',
+        'snd0': 'https://www.youtube.com/watch?v=Z3_sURHVmso&list=PL7398B78C1901A21F&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Jet Moto/SIPS-60020.bin',
     },
@@ -46486,6 +46581,7 @@ games = {
 	'title': "JOHNNY BAZOOKA",
         'pic0': 'https://images.launchbox-app.com/a8a01841-25f6-4414-b6f6-72213f11fe47.png',
         'pic1': 'https://images.launchbox-app.com/0751ac93-2cc2-4f8d-adec-7d094f02c518.png',
+        'snd0': 'https://www.youtube.com/watch?v=AHd6YI0vW9g&list=PLonEjMHqKRrN0FJ4TzcSsCcbyGqEu7TTo&index=1',
     },
     'SLPS02236': {
         'url': "games/J/J/SLPS-02236.html",
@@ -46518,36 +46614,42 @@ games = {
     	'id': 'SLPS01671',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS01672': {
         'url': "games/J/J/SLPS-01671.html",
     	'id': 'SLPS01672',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS01673': {
         'url': "games/J/J/SLPS-01671.html",
     	'id': 'SLPS01673',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02916': {
         'url': "games/J/J/SLPS-02916.html",
     	'id': 'SLPS02916',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02917': {
         'url': "games/J/J/SLPS-02916.html",
     	'id': 'SLPS02917',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02918': {
         'url': "games/J/J/SLPS-02916.html",
     	'id': 'SLPS02918',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SCPS10007': {
         'url': "games/J/J/SCPS-10007.html",
@@ -46555,6 +46657,7 @@ games = {
 	'title': "JUMPING FLASH! - ALOHA DANSHAKU FUNKY DAISAKUSEN NO KAN",
         'pic0': 'https://images.launchbox-app.com/8498d258-5b53-49c4-a166-d8c4b6ce8b86.png',
         'pic1': 'https://images.launchbox-app.com/8fffb905-6fa8-4f5b-815b-2c3fecbd45e1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=VPeAKMm53eg&list=PLFDF8CD4D80251CA2&index=1',
         'manual': 'https://archive.org/download/sony-playstation-classic-game-manuals/b07-jumping-flash-en_jp2.zip',
     },
     'SCPS45052': {
@@ -46562,6 +46665,8 @@ games = {
     	'id': 'SCPS45052',
 	'title': "JUMPING FLASH! 2 - ALOHA VOLUME OF BARON LARGE WEAKENING",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
+        'pic1': 'https://kresnik258gaming.files.wordpress.com/2018/01/maxresdefault3.jpg?w=816',
+        'snd0': 'https://www.youtube.com/watch?v=7RUIugPuwZc&list=PL2BC2C40DD5096388&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
     },
     'SCPS10021': {
@@ -46569,6 +46674,8 @@ games = {
     	'id': 'SCPS10021',
 	'title': "JUMPING FLASH! 2 - ALOHA VOLUME OF BARON LARGE WEAKENING",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
+        'pic1': 'https://kresnik258gaming.files.wordpress.com/2018/01/maxresdefault3.jpg?w=816',
+        'snd0': 'https://www.youtube.com/watch?v=7RUIugPuwZc&list=PL2BC2C40DD5096388&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
     },
     'SCPS10022': {
@@ -46576,6 +46683,8 @@ games = {
     	'id': 'SCPS10022',
 	'title': "JUMPING FLASH! 2 - ALOHA VOLUME OF BARON LARGE WEAKENING",
         'pic0': 'https://images.launchbox-app.com/ae99595a-7dc7-42e5-8317-1db39b138c69.png',
+        'pic1': 'https://kresnik258gaming.files.wordpress.com/2018/01/maxresdefault3.jpg?w=816',
+        'snd0': 'https://www.youtube.com/watch?v=7RUIugPuwZc&list=PL2BC2C40DD5096388&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jumping%20Flash%21%202%20%28USA%29_jp2.zip',
     },
     'SLPM86080': {
@@ -49557,11 +49666,17 @@ games = {
         'url': "games/J/M/SLPS-03220.html",
     	'id': 'SLPS03220',
 	'title': "MATSUMOTO REIJI - STORY OF GALAXY EXPRESS 999",
+        'pic0': 'https://images.launchbox-app.com/4fa57da9-467b-4ada-a0f4-47b4a75d6b34.png',
+        'pic1': 'https://images.launchbox-app.com/c229a9ee-ca67-4101-8ec2-fd723fd02e11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eCncU6fPWyA',
     },
     'SLPS03221': {
         'url': "games/J/M/SLPS-03220.html",
     	'id': 'SLPS03221',
 	'title': "MATSUMOTO REIJI - STORY OF GALAXY EXPRESS 999",
+        'pic0': 'https://images.launchbox-app.com/4fa57da9-467b-4ada-a0f4-47b4a75d6b34.png',
+        'pic1': 'https://images.launchbox-app.com/c229a9ee-ca67-4101-8ec2-fd723fd02e11.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=eCncU6fPWyA',
     },
     'SLPM87119': {
         'url': "games/J/M/SLPM-87119.html",
@@ -49611,12 +49726,15 @@ games = {
 	'title': "MDK",
         'pic0': 'https://images.launchbox-app.com/de065562-25b3-4d6e-9a00-65b68a294442.png',
         'pic1': 'https://images.launchbox-app.com/b90ad36a-9476-4194-abb8-719a7b7fae0f.png',
+        'snd0': 'https://www.youtube.com/watch?v=FjoxKMhsrRw&list=PLEFA9715058A0B756&index=2',
     },
     'SLPS00937': {
         'url': "games/J/M/SLPS-00937.html",
     	'id': 'SLPS00937',
 	'title': "MECHWARRIOR 2",
-        'pic0': 'https://images.launchbox-app.com/281a079c-63f6-484b-808d-4018fd627c27.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com/50e3f93e-9f3a-48da-a878-504078b99659.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=GM3MwpkVYKQ&list=PL3E409CD81FFF6F55&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/MechWarrior%202%20-%2031st%20Century%20Combat%20%28USA%29_jp2.zip',
     },
     'SLPS02414': {
@@ -50237,6 +50355,7 @@ games = {
 	'title': "METAL SLUG X",
         'pic0': 'https://images.launchbox-app.com/c3d33c45-790b-4017-bdfe-2a9921508fe0.png',
         'pic1': 'https://images.launchbox-app.com/0f35b3f8-f07d-405a-b807-1095c740de94.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JAbqYRObNNw&list=PLSp4sdyszHDNtVrPkvyeqUAt7SN7u_HX9&index=3',
     },
     'SLPM86456': {
         'url': "games/J/M/SLPM-86456.html",
@@ -50244,6 +50363,7 @@ games = {
 	'title': "METAL SLUG X",
         'pic0': 'https://images.launchbox-app.com/c3d33c45-790b-4017-bdfe-2a9921508fe0.png',
         'pic1': 'https://images.launchbox-app.com/0f35b3f8-f07d-405a-b807-1095c740de94.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JAbqYRObNNw&list=PLSp4sdyszHDNtVrPkvyeqUAt7SN7u_HX9&index=3',
     },
     'SLPS03449': {
         'url': "games/J/M/SLPS-03449.html",
@@ -50251,6 +50371,7 @@ games = {
 	'title': "METAL SLUG X [SNK BEST COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/c3d33c45-790b-4017-bdfe-2a9921508fe0.png',
         'pic1': 'https://images.launchbox-app.com/0f35b3f8-f07d-405a-b807-1095c740de94.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JAbqYRObNNw&list=PLSp4sdyszHDNtVrPkvyeqUAt7SN7u_HX9&index=3',
     },
     'SLPS00680': {
         'url': "games/J/M/SLPS-00680.html",
@@ -50313,6 +50434,7 @@ games = {
 	'title': "MICRO MACHINES V3",
         'pic0': 'https://images.launchbox-app.com/e2c7f4e6-95a4-41ca-8dce-617cde696183.png',
         'pic1': 'https://images.launchbox-app.com/e52a6c8d-a725-4879-a6fd-acbac893ea62.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=yL_ROBLj7IQ&list=PL7YuVu11Ud-KsjK2VuSQ654Am23Lva827&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Micro%20Machines%20V3%20%28USA%29_jp2.zip',
     },
     'SLPM86022': {
@@ -50799,12 +50921,16 @@ games = {
     	'id': 'SLPS02583',
 	'title': "MONKEY MAGIC",
         'pic0': 'https://images.launchbox-app.com/4c37a02f-d793-4a2b-8ec6-d63b99f93d45.png',
+        'pic1': 'https://images.launchbox-app.com/19d2b5e9-281d-4724-9baf-299395e3a63f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=mUEaaCivEks',
     },
     'SLPS03300': {
         'url': "games/J/M/SLPS-03300.html",
     	'id': 'SLPS03300',
 	'title': "MONKEY MAGIC [VALUE 1500]",
         'pic0': 'https://images.launchbox-app.com/4c37a02f-d793-4a2b-8ec6-d63b99f93d45.png',
+        'pic1': 'https://images.launchbox-app.com/19d2b5e9-281d-4724-9baf-299395e3a63f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=mUEaaCivEks',
     },
     'SLPS00741': {
         'url': "games/J/M/SLPS-00741.html",
@@ -51005,6 +51131,7 @@ games = {
 	'title': "MORTAL KOMBAT TRILOGY",
         'pic0': 'https://images.launchbox-app.com/2fa1a6a3-0b4a-4b66-9459-61926121f1f2.png',
         'pic1': 'https://images.launchbox-app.com/954602b1-2833-4a44-b12b-bb5b361f2644.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=YWXTv9YLamw&list=PLErsx10Ke4uxG1ngSikLLvDW7BW9t-op-&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mortal%20Kombat%20Trilogy%20%28USA%29_jp2.zip',
     },
     'SLPS01163': {
@@ -51013,6 +51140,7 @@ games = {
 	'title': "MOTO RACER",
         'pic0': 'https://images.launchbox-app.com/5d6b5a05-c292-47b2-aca1-3ed7bb0ec0bb.png',
         'pic1': 'https://images.launchbox-app.com/7537df3d-99e7-4a69-b5a8-7b32e533e5c9.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FRuWvVE2V_U&list=PLLspNbLxNzJSm4N9-3N-GTaPTJlxQOXNW&index=1',
     },
     'SLPS02040': {
         'url': "games/J/M/SLPS-02040.html",
@@ -51020,6 +51148,7 @@ games = {
 	'title': "MOTO RACER 2",
         'pic0': 'https://images.launchbox-app.com/15855b4f-4296-471b-9079-212d71ccff17.png',
         'pic1': 'https://images.launchbox-app.com/565a6ab3-73c8-413b-bb5d-594edd674008.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Yxzu1toCWzI&list=PLC3B5940F3C322300&index=12',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Moto%20Racer%202%20%28USA%29_jp2.zip',
     },
     'SCPS10001': {
@@ -51096,6 +51225,7 @@ games = {
 	'title': "MR. DRILLER",
         'pic0': 'https://images.launchbox-app.com/50ee7dc7-7b1e-44b6-9547-0a9dcab4152d.png',
         'pic1': 'https://images.launchbox-app.com/49db5002-63c3-4a4c-b88c-36e54afa862a.png',
+        'snd0': 'https://www.youtube.com/watch?v=Q93vFD_9yE0&list=PLCWQXbmG5BhL8AzzOFCpQhJPXKDiD2eO8&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mr.%20Driller%20%28USA%29_jp2.zip',
     },
     'SLPS02600': {
@@ -51104,6 +51234,7 @@ games = {
 	'title': "MR. DRILLER",
         'pic0': 'https://images.launchbox-app.com/50ee7dc7-7b1e-44b6-9547-0a9dcab4152d.png',
         'pic1': 'https://images.launchbox-app.com/49db5002-63c3-4a4c-b88c-36e54afa862a.png',
+        'snd0': 'https://www.youtube.com/watch?v=Q93vFD_9yE0&list=PLCWQXbmG5BhL8AzzOFCpQhJPXKDiD2eO8&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mr.%20Driller%20%28USA%29_jp2.zip',
     },
     'SLPS03336': {
@@ -51112,6 +51243,7 @@ games = {
 	'title': "MR. DRILLER G",
         'pic0': 'https://images.launchbox-app.com/50ee7dc7-7b1e-44b6-9547-0a9dcab4152d.png',
         'pic1': 'https://images.launchbox-app.com/49db5002-63c3-4a4c-b88c-36e54afa862a.png',
+        'snd0': 'https://www.youtube.com/watch?v=2RYcZhx31pA',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mr.%20Driller%20%28USA%29_jp2.zip',
     },
     'SLPS02226': {
