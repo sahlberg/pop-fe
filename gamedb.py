@@ -749,11 +749,15 @@ games = {
         'url': "games/J/V/SLPS-03140.html",
     	'id': 'SLPS03140',
 	'title': "VOLFOSS",
+        'pic0': 'https://images.launchbox-app.com/4336bc4b-6450-4f04-a19d-966cfd726cc2.png',
+        'pic1': 'https://www.svg.com/img/gallery/the-playstation-1-tactical-rpg-you-probably-never-played/intro-1604330903.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wcA9EfvUF1I',
     },
     'SLPS02639':       {
         'url': "games/J/W/SLPS-02639.html",
     	'id': 'SLPS02639',
 	'title': "WAANEBA ISLAND - WORLD NEVERLAND SERIES",
+        'pic1': 'https://images.launchbox-app.com/de9d9696-088c-45d7-bc07-0c85c37dcaea.png',
     },
     'SLPM87220': {
         'url': "games/J/W/SLPM-87220.html",
@@ -913,6 +917,7 @@ games = {
         'url': "games/J/W/SLPS-02352.html",
     	'id': 'SLPS02352',
 	'title': "WHITE DIAMOND",
+        'pic0': 'https://images.launchbox-app.com/c2c937ff-85a1-4583-9586-1dcc05de6353.png',
     },
     'SLPS02937': {
         'url': "games/J/W/SLPS-02937.html",
@@ -2092,6 +2097,9 @@ games = {
         'url': "games/J/Z/SLPS-03354.html",
     	'id': 'SLPS03354',
 	'title': "ZANAC X ZANAC",
+        'pic0': 'https://images.launchbox-app.com/ef675b15-0c05-43dd-8b46-905bc839b46c.png',
+        'pic1': 'https://images.launchbox-app.com/580d31ec-f1a5-43b7-8f7f-0a1655f9f4fa.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=WIFwAzk2YqU&list=PL8x7wHq_i5Dc7nnu4-Zt38kj64yPY1N8b&index=1',
     },
     'SLPS00909': {
         'url': "games/J/Z/SLPS-00909.html",
@@ -2163,18 +2171,24 @@ games = {
     	'id': 'SLPS00083',
 	'title': "ZERO DIVIDE",
         'pic0': 'https://images.launchbox-app.com/d3166d17-eef6-42c1-90fb-fd570ab541d4.png',
+        'pic1': 'https://images.launchbox-app.com/eec165a8-fada-465a-aeb7-853241196636.png',
+        'snd0': 'https://www.youtube.com/watch?v=kwEgayJgFbw&list=PLD85490F0EB909E28&index=1',
     },
     'SCPS45079': {
         'url': "games/J/Z/SCPS-45079.html",
     	'id': 'SCPS45079',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
     },
     'SLPS00891': {
         'url': "games/J/Z/SLPS-00891.html",
     	'id': 'SLPS00891',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
     },
     'SCPS10049': {
         'url': "games/J/Z/SCPS-10049.html",
@@ -6529,6 +6543,8 @@ games = {
     	'id': 'SLUS01293',
 	'title': "HOT WHEELS - EXTREME RACING",
         'pic0': 'https://images.launchbox-app.com/fb0ee549-1308-40b9-859e-0d1b255d25b3.png',
+        'pic1': 'https://images.launchbox-app.com/b894eade-7885-452e-a621-fc42564dbf8b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UP2zyI8PQnE&list=PLBcpQYpkx5WrEkqaJZu6qbJPPfw2iKB7n&index=1',
     },
     'SLUS00964': {
         'url': "games/U/H/SLUS-00964.html",
@@ -6536,6 +6552,7 @@ games = {
 	'title': "HOT WHEELS - TURBO RACING",
         'pic0': 'https://images.launchbox-app.com/a0df0425-3b03-46d1-bccc-4d1a30bbb49e.png',
         'pic1': 'https://images.launchbox-app.com/7f906c57-35f3-4e7d-8b89-d261d6a5a758.png',
+        'snd0': 'https://www.youtube.com/watch?v=KoygLzcLhMA&list=PL_HxMmu_Z3DNNkDKkep3GFwM-EY-TVfvv&index=1',
     },
     'SLUS01559': {
         'url': "games/U/H/SLUS-01559.html",
@@ -13112,6 +13129,8 @@ games = {
     	'id': 'SLUS00183',
 	'title': "ZERO DIVIDE",
         'pic0': 'https://images.launchbox-app.com/be2f96cb-4beb-4f58-aafb-d7091a7b7aa7.png',
+        'pic1': 'https://images.launchbox-app.com/eec165a8-fada-465a-aeb7-853241196636.png',
+        'snd0': 'https://www.youtube.com/watch?v=kwEgayJgFbw&list=PLD85490F0EB909E28&index=1',
         'pspconfig': 'pspconfigs/Zero Divide/SLUS-00183.bin',
         'ps3config': 'ps3configs/Zero Divide/SLUS-00183.BIN',
     },
@@ -18226,6 +18245,8 @@ games = {
     	'id': 'SLES03595',
 	'title': "HOT WHEELS - EXTREME RACING",
         'pic0': 'https://images.launchbox-app.com/fb0ee549-1308-40b9-859e-0d1b255d25b3.png',
+        'pic1': 'https://images.launchbox-app.com/b894eade-7885-452e-a621-fc42564dbf8b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UP2zyI8PQnE&list=PLBcpQYpkx5WrEkqaJZu6qbJPPfw2iKB7n&index=1',
     },
     'SLES02198': {
         'url': "games/P/H/SLES-02198.html",
@@ -18233,6 +18254,7 @@ games = {
 	'title': "HOT WHEELS - TURBO RACING",
         'pic0': 'https://images.launchbox-app.com/a0df0425-3b03-46d1-bccc-4d1a30bbb49e.png',
         'pic1': 'https://images.launchbox-app.com/7f906c57-35f3-4e7d-8b89-d261d6a5a758.png',
+        'snd0': 'https://www.youtube.com/watch?v=KoygLzcLhMA&list=PL_HxMmu_Z3DNNkDKkep3GFwM-EY-TVfvv&index=1',
     },
     'SLES01164': {
         'url': "games/P/H/SLES-01164.html",
@@ -34765,6 +34787,8 @@ games = {
     	'id': 'SLES00159',
 	'title': "ZERO DIVIDE",
         'pic0': 'https://images.launchbox-app.com/42ecb4cd-015a-44d9-af9e-e6a47ff82035.png',
+        'pic1': 'https://images.launchbox-app.com/eec165a8-fada-465a-aeb7-853241196636.png',
+        'snd0': 'https://www.youtube.com/watch?v=kwEgayJgFbw&list=PLD85490F0EB909E28&index=1',
         'pspconfig': 'pspconfigs/Zero Divide/SLES-00159.bin',
         'ps3config': 'ps3configs/Zero Divide/SLES-00159.BIN',
     },
@@ -34773,6 +34797,8 @@ games = {
     	'id': 'SCES01094',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
         'pspconfig': 'pspconfigs/Zero Divide 2 - The Secret Wish/SCES-01094.bin',
     },
     'SCES01287': {
@@ -34780,6 +34806,8 @@ games = {
     	'id': 'SCES01287',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
         'pspconfig': 'pspconfigs/Zero Divide 2 - The Secret Wish/SCES-01287.bin',
     },
     'SCES01288': {
@@ -34787,6 +34815,8 @@ games = {
     	'id': 'SCES01288',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
         'pspconfig': 'pspconfigs/Zero Divide 2 - The Secret Wish/SCES-01288.bin',
     },
     'SCES01289': {
@@ -34794,6 +34824,8 @@ games = {
     	'id': 'SCES01289',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
         'pspconfig': 'pspconfigs/Zero Divide 2 - The Secret Wish/SCES-01289.bin',
     },
     'SCES01290': {
@@ -34801,6 +34833,8 @@ games = {
     	'id': 'SCES01290',
 	'title': "ZERO DIVIDE 2",
         'pic0': 'https://images.launchbox-app.com/e32d5d30-fd70-4883-b081-5340d9f16d91.png',
+        'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
+        'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
         'pspconfig': 'pspconfigs/Zero Divide 2 - The Secret Wish/SCES-01290.bin',
     },
     'SLPS01986': {
