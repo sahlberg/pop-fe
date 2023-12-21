@@ -1568,7 +1568,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45171': {
@@ -1577,7 +1577,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS01160': {
@@ -1586,7 +1586,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS01161': {
@@ -1595,7 +1595,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91436': {
@@ -1604,7 +1604,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS91437': {
@@ -1613,7 +1613,7 @@ games = {
 	'title': "XENOGEARS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02773': {
@@ -1622,7 +1622,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02774':    {
@@ -1631,7 +1631,7 @@ games = {
 	'title': "XENOGEARS [VAN HOUTEN EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02775': {
@@ -1640,7 +1640,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS02776':    {
@@ -1649,7 +1649,7 @@ games = {
 	'title': "XENOGEARS [WONG FEI FONG EDITION] [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
     },
     'SLPS00750': {
@@ -3905,6 +3905,7 @@ games = {
     	'id': 'SLUS01245',
 	'title': "CASPER - FRIENDS AROUND THE WORLD",
         'pic0': 'https://images.launchbox-app.com/f0b7b9b4-5f4c-46e2-88e5-a04e10b260f6.png',
+        'pic1': 'https://images.launchbox-app.com/1103676e-61d3-4f90-9430-0c2208436e0c.jpg',
     },
     'SLUS00067': {
         'url': "games/U/C/SLUS-00067.html",
@@ -3935,6 +3936,7 @@ games = {
     	'id': 'SLUS00807',
 	'title': "CENTIPEDE",
         'pic0': 'https://images.launchbox-app.com/ac595563-12a4-43e1-8b69-2c7251b9607e.png',
+        'pic1': 'https://images.launchbox-app.com/3fb1ed69-03b1-445a-8220-58ab7246032a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Centipede%20%28USA%29_jp2.zip',
     },
     'SLUS01084': {
@@ -3956,6 +3958,7 @@ games = {
     	'id': 'SLUS01230',
 	'title': "CHAMPIONSHIP MOTOCROSS 2001 - FEATURING RICKY CARMICHAEL",
         'pic0': 'https://images.launchbox-app.com/6cf20a1a-9e8a-42a3-a8da-474cea76715b.png',
+        'pic1': 'https://images.launchbox-app.com/4d79bfd1-8b01-4e8a-a7cd-4b5044ca1d68.jpg',
         'pspconfig': 'pspconfigs/Championship Motocross 2001 featuring Ricky Carmichael/SLUS-01230.bin',
     },
     'SLUS01216': {
@@ -4010,12 +4013,14 @@ games = {
     	'id': 'SCUS94700',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SCUS94701': {
         'url': "games/U/C/SCUS-94700.html",
     	'id': 'SCUS94701',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLUS01041': {
         'url': "games/U/C/SLUS-01041.html",
@@ -4038,6 +4043,7 @@ games = {
     	'id': 'SLUS00697',
 	'title': "CIRCUIT BREAKERS",
         'pic0': 'https://images.launchbox-app.com/c92f136e-889c-4a5f-9a37-0dc6cec351a7.png',
+        'pic1': 'https://images.launchbox-app.com/e0d92aa9-3677-4c35-8be2-3fcb154f9bff.jpg',
         'snd0': 'https://www.youtube.com/watch?v=XulukDW5mHg&list=PL397D184388FFA97A&index=1',
     },
     'SLUS00792': {
@@ -4069,6 +4075,7 @@ games = {
     	'id': 'SLUS00695',
 	'title': "CLOCK TOWER 2 - THE STRUGGLE WITHIN",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'pic1': 'https://images.launchbox-app.com/c1592255-59be-40b9-91a3-bb2d7edb99c8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
         'pspconfig': 'pspconfigs/Clock Tower - Ghost Head/SLUS-00695.bin',
     },
@@ -4107,6 +4114,7 @@ games = {
     	'id': 'SLUS00543',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00554': {
@@ -4114,6 +4122,7 @@ games = {
     	'id': 'SLUS00554',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00722': {
@@ -7470,6 +7479,8 @@ games = {
     	'id': 'SLUS00462',
 	'title': "MASS DESTRUCTION",
         'pic0': 'https://images.launchbox-app.com/fe9ad06e-edff-4b3c-be5c-ad8dcdcefc0b.png',
+        'pic1': 'https://images.launchbox-app.com/d4a2b7ff-3094-42b1-824e-fe3bf40e88bf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=I10wdVXC4cw&list=PLjnMOFltV-kHak3iw4mVhkSkDEP86_aAP&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mass%20Destruction%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Mass Destruction/SLES-00098.bin',
     },
@@ -13092,7 +13103,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00669': {
@@ -13101,7 +13112,7 @@ games = {
 	'title': "XENOGEARS",
         'pic0': 'https://images.launchbox-app.com/9f3d2112-b9b2-4bf8-8c8a-bb51538a306d.png',
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3YJsCGo_X-M&list=PLud1ibWgJ1mZSyl53a4i3_aP5eMvbRKQ9&index=2',
+        'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00461': {
@@ -16036,6 +16047,7 @@ games = {
     	'id': 'SLES03113',
 	'title': "CASPER - FRIENDS AROUND THE WORLD",
         'pic0': 'https://images.launchbox-app.com/f0b7b9b4-5f4c-46e2-88e5-a04e10b260f6.png',
+        'pic1': 'https://images.launchbox-app.com/1103676e-61d3-4f90-9430-0c2208436e0c.jpg',
     },
     'SLES00524': {
         'url': "games/P/C/SLES-00524.html",
@@ -21819,6 +21831,8 @@ games = {
     	'id': 'SLES00098',
 	'title': "MASS DESTRUCTION",
         'pic0': 'https://images.launchbox-app.com/fe9ad06e-edff-4b3c-be5c-ad8dcdcefc0b.png',
+        'pic1': 'https://images.launchbox-app.com/d4a2b7ff-3094-42b1-824e-fe3bf40e88bf.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=I10wdVXC4cw&list=PLjnMOFltV-kHak3iw4mVhkSkDEP86_aAP&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mass%20Destruction%20%28USA%29_jp2.zip',
     },
     'SLES00244': {
@@ -23526,6 +23540,7 @@ games = {
     	'id': 'SLES01664',
 	'title': "CENTIPEDE",
         'pic0': 'https://images.launchbox-app.com/ac595563-12a4-43e1-8b69-2c7251b9607e.png',
+        'pic1': 'https://images.launchbox-app.com/3fb1ed69-03b1-445a-8220-58ab7246032a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Centipede%20%28USA%29_jp2.zip',
     },
     'SLES01900': {
@@ -23533,6 +23548,7 @@ games = {
     	'id': 'SLES01900',
 	'title': "CENTIPEDE",
         'pic0': 'https://images.launchbox-app.com/ac595563-12a4-43e1-8b69-2c7251b9607e.png',
+        'pic1': 'https://images.launchbox-app.com/3fb1ed69-03b1-445a-8220-58ab7246032a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Centipede%20%28USA%29_jp2.zip',
     },
     'SLES02775': {
@@ -23561,6 +23577,7 @@ games = {
     	'id': 'SLES03252',
 	'title': "CHAMPIONSHIP MOTOCROSS 2001 - FEATURING RICKY CARMICHAEL",
         'pic0': 'https://images.launchbox-app.com/6cf20a1a-9e8a-42a3-a8da-474cea76715b.png',
+        'pic1': 'https://images.launchbox-app.com/4d79bfd1-8b01-4e8a-a7cd-4b5044ca1d68.jpg',
         'pspconfig': 'pspconfigs/Championship Motocross 2001 featuring Ricky Carmichael/SLES-03252.bin',
     },
     'SLES03427': {
@@ -23733,60 +23750,70 @@ games = {
     	'id': 'SLES00165',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES10165': {
         'url': "games/P/C/SLES-00165.html",
     	'id': 'SLES10165',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES00166': {
         'url': "games/P/C/SLES-00166.html",
     	'id': 'SLES00166',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES10166': {
         'url': "games/P/C/SLES-00166.html",
     	'id': 'SLES10166',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES00167': {
         'url': "games/P/C/SLES-00167.html",
     	'id': 'SLES00167',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES10167': {
         'url': "games/P/C/SLES-00167.html",
     	'id': 'SLES10167',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES00191': {
         'url': "games/P/C/SLES-00191.html",
     	'id': 'SLES00191',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES10191': {
         'url': "games/P/C/SLES-00191.html",
     	'id': 'SLES10191',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES00192': {
         'url': "games/P/C/SLES-00192.html",
     	'id': 'SLES00192',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES10192': {
         'url': "games/P/C/SLES-00192.html",
     	'id': 'SLES10192',
 	'title': "CHRONICLES OF THE SWORD",
         'pic0': 'https://images.launchbox-app.com/eebef7be-7959-4779-888f-7d87d4b98cf5.png',
+        'pic1': 'https://images.launchbox-app.com/b29080a3-249e-4392-be7d-48944d87cca8.jpg',
     },
     'SLES02296': {
         'url': "games/P/C/SLES-02296.html",
@@ -23813,6 +23840,7 @@ games = {
     	'id': 'SLES00753',
 	'title': "CIRCUIT BREAKERS",
         'pic0': 'https://images.launchbox-app.com/c92f136e-889c-4a5f-9a37-0dc6cec351a7.png',
+        'pic1': 'https://images.launchbox-app.com/e0d92aa9-3677-4c35-8be2-3fcb154f9bff.jpg',
         'snd0': 'https://www.youtube.com/watch?v=XulukDW5mHg&list=PL397D184388FFA97A&index=1',
     },
     'SLES01794': {
@@ -23937,6 +23965,7 @@ games = {
     	'id': 'SLES00860',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10860': {
@@ -23944,6 +23973,7 @@ games = {
     	'id': 'SLES10860',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00861': {
@@ -23951,6 +23981,7 @@ games = {
     	'id': 'SLES00861',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10861': {
@@ -23958,6 +23989,7 @@ games = {
     	'id': 'SLES10861',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00862': {
@@ -23965,6 +23997,7 @@ games = {
     	'id': 'SLES00862',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10862': {
@@ -23972,6 +24005,7 @@ games = {
     	'id': 'SLES10862',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00863': {
@@ -23979,6 +24013,7 @@ games = {
     	'id': 'SLES00863',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10863': {
@@ -23986,6 +24021,7 @@ games = {
     	'id': 'SLES10863',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00864': {
@@ -23993,6 +24029,7 @@ games = {
     	'id': 'SLES00864',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLES-00864.bin',
     },
@@ -24001,6 +24038,7 @@ games = {
     	'id': 'SLES10864',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLES-10864.bin',
     },
@@ -39371,6 +39409,7 @@ games = {
     	'id': 'SLPS00657',
 	'title': "CLOCK TOWER 2",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'pic1': 'https://images.launchbox-app.com/c1592255-59be-40b9-91a3-bb2d7edb99c8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
         'pspconfig': 'pspconfigs/Clock Tower/SLPS-00657.bin',
     },
@@ -39379,6 +39418,7 @@ games = {
     	'id': 'SLPS91056',
 	'title': "CLOCK TOWER 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/fdc4954d-6b6a-4ffb-9ab6-eb2900e8a16f.png',
+        'pic1': 'https://images.launchbox-app.com/c1592255-59be-40b9-91a3-bb2d7edb99c8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=HxEc7pOvDSg',
         'manual': 'https://psxdatacenter.com/manuals/Clock%20Tower%202%20[Playstation%20the%20Best]%20[SLPS-91056]%20(J).cbr',
         'pspconfig': 'pspconfigs/Clock Tower/SLPS-91056.bin',
@@ -39467,6 +39507,7 @@ games = {
     	'id': 'SCPS45254',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SCPS-45254.bin',
     },
@@ -39475,6 +39516,7 @@ games = {
     	'id': 'SCPS45255',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SCPS-45255.bin',
     },
@@ -39483,6 +39525,7 @@ games = {
     	'id': 'SLPS01403',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLPS-01403.bin',
     },
@@ -39491,6 +39534,7 @@ games = {
     	'id': 'SLPS01404',
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
+        'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLPS-01404.bin',
     },
