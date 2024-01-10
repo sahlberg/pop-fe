@@ -45,6 +45,14 @@ games = {
         'pic1': 'https://images.launchbox-app.com/233ebc69-4c55-40fe-a742-d42bcbe1217c.png',
         'pspconfig': 'pspconfigs/Magic Castle/Magic Castle.bin',
     },
+    'SLUS00752': {
+    	'id': 'SLUS00752',
+	'title': "THRILL KILL",
+        'icon0': 'https://images.launchbox-app.com/0840d7cd-f740-4b4b-bc7a-e4f586624f85.jpg',
+        'pic0': 'https://images.launchbox-app.com/c71af4fb-587e-46ed-ab72-19000c8e1d3f.png',
+        'pic1': 'https://images.launchbox-app.com/1202d7d4-74a2-4f21-bc70-9614f395ed60.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=jvIennhY7Ak&list=PL5751488110032386&index=1',
+    },
     'LSP990121': {
     	'id': 'LSP990121',
 	'title': "16 Tales 1",
