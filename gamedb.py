@@ -2533,6 +2533,8 @@ games = {
     	'id': 'SLUS00023',
 	'title': "AGILE WARRIOR F-111X",
         'pic0': 'https://images.launchbox-app.com/193b04ce-36df-4283-9726-dd74733f5861.png',
+        'pic1': 'https://images.launchbox-app.com/873ec844-857c-4d1a-8ee6-0bc593633329.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=jkl3Olq3jL0',
     },
     'SLUS00001': {
         'url': "games/U/A/SLUS-00001.html",
@@ -2549,6 +2551,8 @@ games = {
     	'id': 'SLUS01467',
 	'title': "AIR HOCKEY",
         'pic0': 'https://images.launchbox-app.com/c36d9983-ea28-46ec-9d91-5ff08f38e16c.png',
+        'pic1': 'https://images.launchbox-app.com/29051360-870c-4c20-9418-ad5a019f7e7a.png',
+        'snd0': 'https://www.youtube.com/watch?v=PceodgyXc10',
         'manual': 'https://psxdatacenter.com/manuals/Air%20Hockey%20(E)%20[SLUS-01467].cbr',
     },
     'SLUS00715': {
@@ -5825,6 +5829,8 @@ games = {
     	'id': 'SLUS01360',
 	'title': "FINAL FANTASY CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/f25e1070-bb4c-47b0-a3d5-b5c57c57c737.png',
+        'pic1': 'https://images.launchbox-app.com/b9e551a9-54d1-41d7-a208-ed8e434064a0.png',
+        'snd0': 'https://www.youtube.com/watch?v=KI0ggsiNJP4&list=PLOtHyoIBfBLtwThQP3jBIwUr_VBnJ4WmL',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Chronicles%20-%20Final%20Fantasy%20IV%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Final Fantasy IV/SLUS-01360.BIN',
     },
@@ -5833,6 +5839,8 @@ games = {
     	'id': 'SLUS01363',
 	'title': "FINAL FANTASY CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/6d737835-7e0c-4929-96e4-028cb6b76613.png',
+        'pic1': 'https://images.launchbox-app.com/b9e551a9-54d1-41d7-a208-ed8e434064a0.png',
+        'snd0': 'https://www.youtube.com/watch?v=KI0ggsiNJP4&list=PLOtHyoIBfBLtwThQP3jBIwUr_VBnJ4WmL',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20Chronicles%20-%20Chrono%20Trigger%20%28USA%29_jp2.zip',
     },
     'SLUS01541': {
@@ -6731,6 +6739,8 @@ games = {
     	'id': 'SLUS01061',
 	'title': "IRON SOLDIER 3",
         'pic0': 'https://images.launchbox-app.com/dc769420-fbea-44e9-bbfe-f8f3c4a0e3a3.png',
+        'pic1': 'https://images.launchbox-app.com/92fc6a9b-8788-425a-ac97-179eda678bef.png',
+        'snd0': 'https://www.youtube.com/watch?v=EizbqZYLjXM',
     },
     'SLUS00775': {
         'url': "games/U/I/SLUS-00775.html",
@@ -7325,6 +7335,8 @@ games = {
     	'id': 'SLUS00383',
 	'title': "MACHINE HEAD",
         'pic0': 'https://images.launchbox-app.com/35dc00da-3386-42a3-aaea-5e9bcd941060.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
+        'snd0': 'https://www.youtube.com/watch?v=FcI2jYy9O0I&list=PLRtaAHG_k8HCidBUbg9G8iYO1UgC076ew',
     },
     'SLUS00470': {
         'url': "games/U/M/SLUS-00470.html",
@@ -9629,7 +9641,6 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
         'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
-        'pspconfig': 'pspconfigs/Rayman/SLUS-00005.bin',
         'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
     },
     'SLUS01235': {
@@ -13669,6 +13680,8 @@ games = {
     	'id': 'SLES00124',
 	'title': "AGILE WARRIOR F-111X",
         'pic0': 'https://images.launchbox-app.com/193b04ce-36df-4283-9726-dd74733f5861.png',
+        'pic1': 'https://images.launchbox-app.com/873ec844-857c-4d1a-8ee6-0bc593633329.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=jkl3Olq3jL0',
     },
     'SCES00007': {
         'url': "games/P/A/SCES-00007.html",
@@ -13683,6 +13696,8 @@ games = {
     	'id': 'SLES03743',
 	'title': "AIR HOCKEY!!",
         'pic0': 'https://images.launchbox-app.com/c36d9983-ea28-46ec-9d91-5ff08f38e16c.png',
+        'pic1': 'https://images.launchbox-app.com/29051360-870c-4c20-9418-ad5a019f7e7a.png',
+        'snd0': 'https://www.youtube.com/watch?v=PceodgyXc10',
         'manual': 'https://psxdatacenter.com/manuals/Air%20Hockey%20(E)%20[SLUS-01467].cbr',
     },
     'SLES00762': {
@@ -18698,6 +18713,8 @@ games = {
     	'id': 'SLES03250',
 	'title': "IRON SOLDIER 3",
         'pic0': 'https://images.launchbox-app.com/dc769420-fbea-44e9-bbfe-f8f3c4a0e3a3.png',
+        'pic1': 'https://images.launchbox-app.com/92fc6a9b-8788-425a-ac97-179eda678bef.png',
+        'snd0': 'https://www.youtube.com/watch?v=EizbqZYLjXM',
     },
     'SLES01218': {
         'url': "games/P/I/SLES-01218.html",
@@ -28032,7 +28049,6 @@ games = {
         'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
         'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rayman%20%28USA%29_jp2.zip',
-        'pspconfig': 'pspconfigs/Rayman/SLES-00049.bin',
         'ps3config': 'ps3configs/Rayman/SLES-00049.BIN',
     },
     'SLES02905': {
@@ -35481,6 +35497,8 @@ games = {
     	'id': 'SLPS00179',
 	'title': "AGILE WARRIOR",
         'pic0': 'https://images.launchbox-app.com/193b04ce-36df-4283-9726-dd74733f5861.png',
+        'pic1': 'https://images.launchbox-app.com/873ec844-857c-4d1a-8ee6-0bc593633329.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=jkl3Olq3jL0',
     },
     'SLPS02411': {
         'url': "games/J/A/SLPS-02411.html",
@@ -46056,6 +46074,9 @@ games = {
         'url': "games/J/H/SLPM-86488.html",
     	'id': 'SLPM86488',
 	'title': "HOOOCKEY!! [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/2fabbcd0-2516-4b7a-9d1d-6cd06e589af2.png',
+        'pic1': 'https://images.launchbox-app.com/29051360-870c-4c20-9418-ad5a019f7e7a.png',
+        'snd0': 'https://www.youtube.com/watch?v=PceodgyXc10',
     },
     'SCPS10016': {
         'url': "games/J/H/SCPS-10016.html",
