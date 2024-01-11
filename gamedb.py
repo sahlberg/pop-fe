@@ -1,9 +1,18 @@
 # some manuals from here in pdf format
 # https://www.gamesdatabase.org/list.aspx?DM=0&system=sony_playstation&manual=1&sort=Game
+# Add more demo disks from
+# https://crimson-ceremony.net/demopals/ps1-master.php
 games = {
     'UNKN00000': {
     	'id': 'UNKN00000',
 	'title': "UNKNOWN",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'SCED01152': {
+    	'id': 'SCED01152',
+	'title': "EURO DEMO 42",
         'icon0': None,
         'pic0': None,
         'pic1': None,
