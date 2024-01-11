@@ -19661,6 +19661,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/67dcb932-a330-4e33-bb89-52c3b61b330a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=uqtrBptsFYs&list=PLzTwdXm7QQlz2j4r8du5LuNrmqWVbo9ua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%20-%20You%20Are%20the%20Wheelman%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver/SLES-01975.BIN',
     },
     'SLES01976': {
         'url': "games/P/D/SLES-01976.html",
@@ -19670,6 +19671,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/67dcb932-a330-4e33-bb89-52c3b61b330a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=uqtrBptsFYs&list=PLzTwdXm7QQlz2j4r8du5LuNrmqWVbo9ua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%20-%20You%20Are%20the%20Wheelman%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver/SLES-01976.BIN',
     },
     'SLES01977': {
         'url': "games/P/D/SLES-01977.html",
@@ -19679,6 +19681,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/67dcb932-a330-4e33-bb89-52c3b61b330a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=uqtrBptsFYs&list=PLzTwdXm7QQlz2j4r8du5LuNrmqWVbo9ua&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%20-%20You%20Are%20the%20Wheelman%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Driver/SLES-01977.BIN',
     },
     'SLES01978': {
         'url': "games/P/D/SLES-01978.html",
@@ -19688,6 +19691,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/67dcb932-a330-4e33-bb89-52c3b61b330a.jpg',
         'snd0': 'https://www.youtube.com/watch?v=uqtrBptsFYs&list=PLzTwdXm7QQlz2j4r8du5LuNrmqWVbo9ua&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Driver%20[SLES-01978]%20(Platinum)%20(S).cbr',
+        'pspconfig': 'pspconfigs/Driver/SLES-01978.BIN',
     },
     'SLES02993': {
         'url': "games/P/D/SLES-02993.html",
