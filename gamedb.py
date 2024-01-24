@@ -14,8 +14,8 @@ games = {
         'id': 'SLUS99999',
 	'title': "RE1.5 MAGIC ZOMBIE DOOR",
         'icon0': 'https://cdromance.com/wp-content/uploads/2022/03/Resident-Evil-1.jpg',
-        'pic0': None,
-        'pic1': None,
+        'pic0': 'https://images.launchbox-app.com/aec46d88-a71b-4ca5-9e24-dc042eef7e71.png',
+        'pic1': 'https://images.launchbox-app.com/c99a4bcf-708d-4678-9568-bd5f13211900.jpg',
     },
     'SCED01152': {
     	'id': 'SCED01152',
