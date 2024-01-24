@@ -10,6 +10,13 @@ games = {
         'pic0': None,
         'pic1': None,
     },
+    'SLUS99999': {
+        'id': 'SLUS99999',
+	'title': "RE1.5 MAGIC ZOMBIE DOOR",
+        'icon0': 'https://cdromance.com/wp-content/uploads/2022/03/Resident-Evil-1.jpg',
+        'pic0': None,
+        'pic1': None,
+    },
     'SCED01152': {
     	'id': 'SCED01152',
 	'title': "EURO DEMO 42",
@@ -64331,6 +64338,10 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # RE1.5
+    'c9c004a9263fd99e3a296913bb2c1f78': {
+        'id': 'SLUS99999',
+    },
     # Martian gothic
     'f9f7c667f300a34ad8ece3200f9641a4': {
     	'id': 'SLUS01148',
