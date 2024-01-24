@@ -90,7 +90,7 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
-def get_gameid_from_iso(path='NORMAL01.iso'):
+def _get_gameid_from_iso(path='NORMAL01.iso'):
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
@@ -186,6 +186,11 @@ def get_gameid_from_iso(path='NORMAL01.iso'):
         return buf[:9]
     return game_id
 
+def get_gameid_from_iso(path='NORMAL01.iso'):
+    game_id = _get_gameid_from_iso(path=path)
+    if game_id not in games:
+        game_id = 'UNKN00000'
+    return game_id
 
 def fetch_cached_file(path):
     try:
