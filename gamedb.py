@@ -64339,6 +64339,10 @@ games = {
 
 gameid_by_md5sum = {
     # RE1.5
+    'fa456e05ebc9d71cad1d0a0add977315': {
+        'id': 'SLUS99999',
+    },
+    # RE1.5
     'c9c004a9263fd99e3a296913bb2c1f78': {
         'id': 'SLUS99999',
     },
