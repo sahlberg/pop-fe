@@ -92,6 +92,7 @@ class PopFePs3App:
         self.watermark = 'on'
         self.cdda = 'off'
         self.pic0_disabled = 'off'
+        self.pic1_disabled = 'off'
         self.snd0_disabled = 'off'
         self.configs = []
         self.subdir='pop-fe-psp-work/'
@@ -106,6 +107,7 @@ class PopFePs3App:
             'on_icon0_clicked': self.on_icon0_clicked,
             'on_pic0_clicked': self.on_pic0_clicked,
             'on_pic0_disabled': self.on_pic0_disabled,
+            'on_pic1_disabled': self.on_pic1_disabled,
             'on_snd0_disabled': self.on_snd0_disabled,
             'on_pic1_clicked': self.on_pic1_clicked,
             'on_path_changed': self.on_path_changed,
@@ -416,8 +418,10 @@ class PopFePs3App:
 
                 return False
 
-        if not self.pic1:
-            return
+        if self.pic1_disabled == 'on' and self.pic0_disabled == 'off':
+            self.pic1 = Image.new(self.pic0.mode, (1920, 1080), (0,0,0)).convert('RGBA')
+            self.pic1.putalpha(0)
+
         if self.pic0 and self.pic0.mode == 'P':
             self.pic0 = self.pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
@@ -464,6 +468,10 @@ class PopFePs3App:
 
     def on_pic0_disabled(self):
         self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
+        self.update_preview()
+
+    def on_pic1_disabled(self):
+        self.pic1_disabled = self.builder.get_variable('pic1_disabled_variable').get()
         self.update_preview()
 
     def on_snd0_disabled(self):
@@ -581,7 +589,7 @@ class PopFePs3App:
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
-                         self.pic1,
+                         self.pic1 if self.pic1_disabled =='off' else None,
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, subdir=self.subdir, snd0=snd0,
                          watermark=True if self.watermark=='on' else False,
