@@ -2769,6 +2769,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
 def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False):
     # Convert ICON0 to a file object
     if icon0:
+        image = icon0
         if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
             if icon0.size != (80,80):
                 image = icon0.resize((80, 80), Image.Resampling.HAMMING)
