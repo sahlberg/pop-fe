@@ -171,7 +171,6 @@ class PopFePs3App:
         self.pic0_tk = None
         self.pic1 = None
         self.pic1_tk = None
-        self.pkgdir = None
         self.preview_tk = None
         self.configs = []
         self.builder.get_variable('watermark_variable').set(self.watermark)

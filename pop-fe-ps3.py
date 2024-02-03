@@ -179,7 +179,6 @@ class PopFePs3App:
         self.back = None
         self.disc = None
         self.preview_tk = None
-        self.pkgdir = None
         self.configs = []
         
         for idx in range(1,6):
