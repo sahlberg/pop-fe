@@ -219,20 +219,20 @@ class PopFePs3App:
             p1 = Image.new("RGBA", (382,216), (255,255,255,0))
         else:
             if self.pic1_bc == 'off':
-                p1 = self.pic1.resize((382,216), Image.Resampling.BILINEAR)
+                p1 = self.pic1.resize((382,216), Image.Resampling.HAMMING)
             else:
-                p1 = self.back.resize((382,216), Image.Resampling.BILINEAR)
+                p1 = self.back.resize((382,216), Image.Resampling.HAMMING)
         if self.pic0 and self.pic0_disabled == 'off':
-            p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.BILINEAR)
+            p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
             else:
                 Image.Image.paste(p1, p0, box=(148,79))
         i0 = None
         if self.icon0 and self.icon0_disc == 'off':
-                i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.BILINEAR)
+                i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.HAMMING)
         if self.disc and self.icon0_disc == 'on':
-                i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.BILINEAR)
+                i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.HAMMING)
         if i0:
             if has_transparency(i0):
                 Image.Image.paste(p1, i0, box=(100,79), mask=i0)
@@ -279,11 +279,11 @@ class PopFePs3App:
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', add_psn_frame=True)
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((176,176),(138,138)))
             
         if self.icon0:
             temp_files.append(self.subdir + 'ICON0.PNG')
-            self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+            self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
             self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
             c = self.builder.get_object('icon0_canvas', self.master)
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -298,7 +298,7 @@ class PopFePs3App:
             self.pic0 = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig)
         if self.pic0:
             temp_files.append(self.subdir + 'PIC0.PNG')
-            self.pic0.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC0.PNG')
+            self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
             self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
             c = self.builder.get_object('pic0_canvas', self.master)
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
@@ -313,7 +313,7 @@ class PopFePs3App:
             self.pic1 = popfe.get_pic1_from_game(disc_id, game, self.cue_file_orig)
         if self.pic1:
             temp_files.append(self.subdir + 'PIC1.PNG')
-            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+            self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
             self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
             c = self.builder.get_object('pic1_canvas', self.master)
             c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
@@ -486,7 +486,7 @@ class PopFePs3App:
         if not self.icon0:
             return
         temp_files.append(self.subdir + 'ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+        self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
         self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -503,7 +503,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append(self.subdir + 'ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+        self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
         self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -542,7 +542,7 @@ class PopFePs3App:
         if not self.pic0:
             return
         temp_files.append(self.subdir + 'PIC0.PNG')
-        self.pic0.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC0.PNG')
+        self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
         self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
@@ -559,7 +559,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append(self.subdir + 'PIC0.PNG')
-        self.pic0.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC0.PNG')
+        self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
         self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
@@ -598,7 +598,7 @@ class PopFePs3App:
         if not self.pic1:
             return
         temp_files.append(self.subdir + 'PIC1.PNG')
-        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+        self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
         self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
@@ -615,7 +615,7 @@ class PopFePs3App:
         except:
             return
         temp_files.append(self.subdir + 'PIC1.PNG')
-        self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+        self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
         self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
@@ -659,7 +659,7 @@ class PopFePs3App:
             self.master.update()
             d = popfe.get_icon0_from_disc(disc_id, game, self.cue_files[0], 'DISC.PNG')
             size = (176,176)
-            d = d.resize(size, Image.Resampling.BILINEAR)
+            d = d.resize(size, Image.Resampling.HAMMING)
             bigsize = (d.size[0] * 3, d.size[1] * 3)
             mask = Image.new('L', bigsize, 0)
             draw = ImageDraw.Draw(mask) 
@@ -671,9 +671,9 @@ class PopFePs3App:
 
         self.builder.get_object('icon0_or_disc', self.master).config(text='COVER' if self.icon0_disc == 'off' else 'DISC')
         if self.icon0_disc == 'off':
-            self.icon0.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+            self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
         else:
-            self.disc.resize((80,80), Image.Resampling.BILINEAR).save(self.subdir + 'ICON0.PNG')
+            self.disc.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
         self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
         c = self.builder.get_object('icon0_canvas', self.master)
         c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
@@ -691,9 +691,9 @@ class PopFePs3App:
             self.master.config(cursor='')
         self.builder.get_object('pic1_or_back', self.master).config(text='PIC1' if self.pic1_bc == 'off' else 'BACK')
         if self.pic1_bc == 'off':
-            self.pic1.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+            self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
         else:
-            self.back.resize((128,80), Image.Resampling.BILINEAR).save(self.subdir + 'PIC1.PNG')
+            self.back.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
         self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
         c = self.builder.get_object('pic1_canvas', self.master)
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
