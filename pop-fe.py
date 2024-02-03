@@ -3018,7 +3018,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             snd0 = None
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
 
-    image = None
+    image = icon0
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
         if icon0.size != (176, 176):
             icon0 = icon0.resize((176, 176), Image.Resampling.HAMMING)
