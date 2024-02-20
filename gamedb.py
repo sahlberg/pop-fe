@@ -51,7 +51,6 @@ games = {
         'icon0': 'https://archive.org/download/tgm_20210207/TGM_thumb.jpg',
         'pic0': None,
         'pic1': 'https://archive.org/download/tgm_20210207/TGM.png',
-        'snd0': None,
     },
     'MAGC00000': {
         'id': 'MAGC00000',
@@ -64356,6 +64355,9 @@ gameid_by_md5sum = {
     },
     # Tetris the grand master
     '6cd9bfe61a3bfbf7b3039d3a3743af6f': {
+        'id': 'TTGM00000',
+    },
+    '48615d361ff1026873ef5a1161a75e36': {
         'id': 'TTGM00000',
     },
     # Magic Castle
