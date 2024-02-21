@@ -417,16 +417,22 @@ class PopFePs3App:
 
                 return False
 
-        if self.pic1_disabled == 'on' and self.pic0_disabled == 'off':
-            self.pic1 = Image.new(self.pic0.mode, (1920, 1080), (0,0,0)).convert('RGBA')
-            self.pic1.putalpha(0)
+        if self.pic0_disabled == 'on':
+            _pic0 = None
+        else:
+            _pic0 = self.pic0
+        if self.pic1_disabled == 'on':
+            _pic1 = Image.new(self.pic0.mode, (1920, 1080), (0,0,0)).convert('RGBA')
+            _pic1.putalpha(0)
+        else:
+            _pic1 = self.pic1
 
-        if self.pic0 and self.pic0.mode == 'P':
-            self.pic0 = self.pic0.convert(mode='RGBA')
+        if _pic0 and self.pic0.mode == 'P':
+            _pic0 = _pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
-        p1 = self.pic1.resize((382,216), Image.Resampling.HAMMING)
-        if self.pic0 and self.pic0_disabled == 'off':
-            p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
+        p1 = _pic1.resize((382,216), Image.Resampling.HAMMING)
+        if _pic0: 
+            p0 = _pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
             else:
