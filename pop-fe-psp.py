@@ -588,8 +588,10 @@ class PopFePs3App:
                     self.configs[i] = EMPTY_CONFIG[:]
                 self.configs[i] = bytearray(self.configs[i])
                 # Set NTSC bit in configs
-                self.configs[i][0x0b] |= 0x10
-                self.configs[i][0x8f] |= 0x10
+                if len(self.configs[i]) > 0x0b:
+                    self.configs[i][0x0b] |= 0x10
+                if len(self.configs[i]) > 0x8f:
+                    self.configs[i][0x8f] |= 0x10
                 
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,

@@ -3815,7 +3815,7 @@ games = {
 	'title': "BUSTER BROS. COLLECTION",
         'pic0': 'https://images.launchbox-app.com/6bbc899f-c9c2-4424-8e9f-6e7e09d993ad.png',
         'pic1': 'https://images.launchbox-app.com/f28719cd-558b-4e50-aaf6-83f1461f8a2d.jpg',
-        'pspconfig': 'pspconfigs/Buster Bros Collection/SLPS-00360.bin',
+        'pspconfig': 'pspconfigs/Buster Bros Collection/SLUS-00208.bin',
     },
     'SLUS00499': {
         'url': "games/U/C/SLUS-00499.html",
