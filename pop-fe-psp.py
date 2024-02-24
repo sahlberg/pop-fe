@@ -592,6 +592,18 @@ class PopFePs3App:
                     self.configs[i][0x0b] |= 0x10
                 if len(self.configs[i]) > 0x8f:
                     self.configs[i][0x8f] |= 0x10
+
+        if self.cdda == 'on':
+            for i in range(len(self.configs)):
+                if not self.configs[i]:
+                    # skip the revision header
+                    self.configs[i] = EMPTY_CONFIG[:]
+                self.configs[i] = bytearray(self.configs[i])
+                # Set CDDA bit in configs
+                if len(self.configs[i]) > 0x09:
+                    self.configs[i][0x09] |= 0x20 # same effect as cdda_enabler
+                if len(self.configs[i]) > 0x8d:
+                    self.configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
                 
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,

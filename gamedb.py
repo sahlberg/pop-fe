@@ -20227,6 +20227,7 @@ games = {
     	'id': 'SLES02220',
 	'title': "EXTREME 500",
         'pic0': 'https://images.launchbox-app.com/94cabe0f-e47f-4186-969a-8fa61c14ff54.png',
+        'pspconfig': 'pspconfigs/Extreme 500/SLES-02220.bin',
     },
     'SLES03990': {
         'url': "games/P/E/SLES-03990.html",
