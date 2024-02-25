@@ -422,7 +422,7 @@ class PopFePs3App:
         else:
             _pic0 = self.pic0
         if self.pic1_disabled == 'on':
-            _pic1 = Image.new(self.pic0.mode, (1920, 1080), (0,0,0)).convert('RGBA')
+            _pic1 = Image.new(self.pic1.mode, (1920, 1080), (0,0,0)).convert('RGBA')
             _pic1.putalpha(0)
         else:
             _pic1 = self.pic1
