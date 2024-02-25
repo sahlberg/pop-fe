@@ -17138,36 +17138,27 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
-    'SCES02080': {
+    'SLES12080': {
         'url': "games/P/F/SLES-02080.html",
-    	'id': 'SCES02080',
+    	'id': 'SLES12080',
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
-    'SCES12080': {
-        'url': "games/P/F/SCES-02080.html",
-    	'id': 'SCES12080',
+    'SLES22080': {
+        'url': "games/P/F/SLES-02080.html",
+    	'id': 'SLES22080',
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
         'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
-    'SCES22080': {
-        'url': "games/P/F/SCES-02080.html",
-    	'id': 'SCES22080',
-	'title': "FINAL FANTASY VIII",
-        'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
-        'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=v8rvbxT9b6U',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Final%20Fantasy%20VIII%20%28USA%29%20%28Disc%201%29_jp2.zip',
-    },
-    'SCES32080': {
-        'url': "games/P/F/SCES-02080.html",
-    	'id': 'SCES32080',
+    'SLES32080': {
+        'url': "games/P/F/SLES-02080.html",
+    	'id': 'SLES32080',
 	'title': "FINAL FANTASY VIII",
         'pic0': 'https://images.launchbox-app.com/0a44847c-2097-4c8f-81cc-3e295ded8062.png',
         'pic1': 'https://images.launchbox-app.com/9c0dd978-7b76-4f00-819f-122a90534767.jpg',
@@ -64955,6 +64946,10 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # FF VIII Europe/Australia disc 2
+    '25fc59f87fd358f8feec6d8d84165a1e': {
+        'id': 'SLES12080',
+    },
     # RE1.5
     'fa456e05ebc9d71cad1d0a0add977315': {
         'id': 'SLUS99999',
