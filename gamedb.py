@@ -47525,6 +47525,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/01db1958-8c92-45fc-8d30-b72608d9a35c.png',
         'snd0': 'https://www.youtube.com/watch?v=3kikv89Qmtw&list=PLAdIErLpAnQAOwIJmO4V1O_joEVqcg1Fs&index=1',
 	'title': "JIKKYOU OSHABERI PARODIUS - FOREVER WITH ME",
+        'pspconfig': 'pspconfigs/International Superstar Soccer Deluxe/SLES-00511.bin',
     },
     'SLPS00016': {
         'url': "games/J/J/SLPS-00016.html",
