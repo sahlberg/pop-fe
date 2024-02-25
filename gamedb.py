@@ -20227,6 +20227,7 @@ games = {
     	'id': 'SLES02220',
 	'title': "EXTREME 500",
         'pic0': 'https://images.launchbox-app.com/94cabe0f-e47f-4186-969a-8fa61c14ff54.png',
+        'pspconfig': 'pspconfigs/Extreme 500/SLES-02220.bin',
     },
     'SLES03990': {
         'url': "games/P/E/SLES-03990.html",
@@ -45688,7 +45689,6 @@ games = {
     	'id': 'SCPS10012',
 	'title': "HERMIE HOPPERHEAD SCRAP PANIC",
         'pic0': 'https://images.launchbox-app.com/aec4112d-00d9-4cc0-9411-0e9b63da389b.png',
-        '
     },
     'SCPS91016': {
         'url': "games/J/H/SCPS-91016.html",
