@@ -640,7 +640,7 @@ games = {
         'id': 'TTGM00000',
         'title': 'TETRIS THE GRAND MASTER',
         'icon0': 'https://archive.org/download/tgm_20210207/TGM_thumb.jpg',
-        'pic0': None,
+        'pic0': 'https://images.launchbox-app.com/98b030fc-f3da-4077-9b6f-bafcb94b4aac.png',
         'pic1': 'https://archive.org/download/tgm_20210207/TGM.png',
     },
     'MAGC00000': {
@@ -64971,10 +64971,10 @@ gameid_by_md5sum = {
     '6cd9bfe61a3bfbf7b3039d3a3743af6f': {
         'id': 'TTGM00000',
     },
-    '02845EB8994681DF8B2FFFD07331F8A2': {
+    '02845eb8994681df8b2fffd07331f8a2': {
         'id': 'TTGM00000',
     },
-    'AE38BE5123981A060BCCFD788FEA8D06': {
+    'ae38be5123981a060bccfd788fea8d06': {
         'id': 'TTGM00000',
     },
     # Magic Castle
@@ -65000,7 +65000,7 @@ gameid_by_md5sum = {
     '72deae28ec987056bb17aed39aaa34ff': {
     	'id': 'SLPM87047',
     },
-    '4B0B3D09698C04D0422456F3D1D67DF1': {
+    '4b0b3d09698c04d0422456f3d1d67df1': {
     	'id': 'SCPS10012'
     },
 }
