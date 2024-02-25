@@ -741,21 +741,25 @@ games = {
         'url': "games/J/U/SLPS-01623.html",
     	'id': 'SLPS01623',
 	'title': "UMI NO OH! YAH!",
+        'pic0': 'https://images.launchbox-app.com/6416d0ed-522e-4f74-aed7-7ef1720c0411.png',
     },
     'SLPS00643': {
         'url': "games/J/U/SLPS-00643.html",
     	'id': 'SLPS00643',
 	'title': "UMIHARA KAWASE SHUN",
+        'pic0': 'https://images.launchbox-app.com/02718025-7f22-4f95-bab2-732ec21e2de6.png',
     },
     'SLPS02549': {
         'url': "games/J/U/SLPS-02549.html",
     	'id': 'SLPS02549',
 	'title': "UMIHARA KAWASE SHUN - SECOND EDITION [MARUAN SERIES 1]",
+        'pic0': 'https://images.launchbox-app.com/02718025-7f22-4f95-bab2-732ec21e2de6.png',
     },
     'SLPS03380': {
         'url': "games/J/U/SLPS-03380.html",
     	'id': 'SLPS03380',
 	'title': "UNDOU FUSOKU KAISHOU PUNCH DE DIET",
+        'pic0': 'https://images.launchbox-app.com/1eedf9ce-e859-4d5a-81a7-dafb65e75623.png',
     },
     'SLPM87055': {
         'url': "games/J/U/SLPM-87055.html",
@@ -885,6 +889,7 @@ games = {
         'url': "games/J/V/SLPS-00352.html",
     	'id': 'SLPS00352',
 	'title': "VADIMS",
+        'pic0': 'https://images.launchbox-app.com/3c7e6964-d9e5-4090-8cd2-e735ad7a090e.png',
     },
     'SCPS45486': {
         'url': "games/J/V/SCPS-45486.html",
@@ -1002,11 +1007,14 @@ games = {
         'url': "games/J/V/SLPS-01932.html",
     	'id': 'SLPS01932',
 	'title': "VAMPIR KYUUKETSUKI DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/627c11a0-4b7a-4664-a3fc-c637627fe28f.png',
     },
     'SLPS00036': {
         'url': "games/J/V/SLPS-00036.html",
     	'id': 'SLPS00036',
 	'title': "VAMPIRE - THE NIGHT WARRIORS",
+        'pic0': 'https://images.launchbox-app.com/330482ec-58b3-48d7-93e8-b2d0716191d4.png',
+        'pic1': 'https://images.launchbox-app.com/8b43385d-9f94-462f-bfb9-d3251b84313b.png',
     },
     'SLPS02477': {
         'url': "games/J/V/SLPS-02477.html",
@@ -1041,11 +1049,13 @@ games = {
         'url': "games/J/V/SLPS-01700.html",
     	'id': 'SLPS01700',
 	'title': "VAMPIRE SAVIOR - EX EDITION",
+        'pic0': 'https://images.launchbox-app.com/c4e6d16c-25bf-4585-9516-0ed43a9db99b.png',
     },
     'SLPM86815': {
         'url': "games/J/V/SLPM-86815.html",
     	'id': 'SLPM86815',
 	'title': "VAMPIRE SAVIOR - EX EDITION [CAPKORE]",
+        'pic0': 'https://images.launchbox-app.com/c4e6d16c-25bf-4585-9516-0ed43a9db99b.png',
     },
     'SCPS45183': {
         'url': "games/J/V/SCPS-45183.html",
@@ -1128,16 +1138,19 @@ games = {
         'url': "games/J/V/SLPS-00232.html",
     	'id': 'SLPS00232',
 	'title': "VEHICLE CAVALIER",
+        'pic0': 'https://images.launchbox-app.com/ccc930c1-3baa-4145-aa53-0d004d6f476c.png',
     },
     'SCPS10027': {
         'url': "games/J/V/SCPS-10027.html",
     	'id': 'SCPS10027',
 	'title': "VELLDESELBA SENKI - TSUBASA NO KUNSHOU",
+        'pic0': 'https://images.launchbox-app.com/5c42478d-5ad6-46a7-b1ba-7d81957664d9.png',
     },
     'SLPS00558': {
         'url': "games/J/V/SLPS-00558.html",
     	'id': 'SLPS00558',
 	'title': "VERMIN KIDS",
+        'pic0': 'https://images.launchbox-app.com/4f392e84-c4ae-497a-bbc8-abdb98b8f097.png',
     },
     'SCPS45469': {
         'url': "games/J/V/SCPS-45469.html",
@@ -1407,6 +1420,7 @@ games = {
         'url': "games/J/W/SLPM-86657.html",
     	'id': 'SLPM86657',
 	'title': "WAI WAI TRUMP TAISEN",
+        'pic0': 'https://images.launchbox-app.com/0bb04e49-84a4-4b10-9554-8be128714353.png',
     },
     'SLPS01966': {
         'url': "games/J/W/SLPS-01966.html",
@@ -1442,6 +1456,7 @@ games = {
         'url': "games/J/W/SCPS-10072.html",
     	'id': 'SCPS10072',
 	'title': "WANDER TREK",
+        'pic0': 'https://images.launchbox-app.com/86a86b21-6739-43e1-a008-47125bfe1cee.png',
     },
     'SLPS01213': {
         'url': "games/J/W/SLPS-01213.html",
@@ -1998,16 +2013,19 @@ games = {
         'url': "games/J/W/SLPM-86600.html",
     	'id': 'SLPM86600',
 	'title': "WORLD SOCCER JIKKYOU WINNING ELEVEN 2000 - U-23 MEDAL E NO CHOUSEN",
+        'pic0': 'https://images.launchbox-app.com/5cb40b23-9dea-4c99-a6ff-e01f2098cb72.png',
     },
     'SLPM86162': {
         'url': "games/J/W/SLPM-86162.html",
     	'id': 'SLPM86162',
 	'title': "WORLD SOCCER JIKKYOU WINNING ELEVEN 3 - FINAL VERSION",
+        'pic0': 'https://images.launchbox-app.com/80788405-bb2e-46fb-a6cc-805d3ba95d82.png',
     },
     'SLPM86086': {
         'url': "games/J/W/SLPM-86086.html",
     	'id': 'SLPM86086',
 	'title': "WORLD SOCCER JIKKYOU WINNING ELEVEN 3 - WORLD CUP FRANCE '98",
+        'pic0': 'https://images.launchbox-app.com/a7b7dea2-2995-4d9f-a7f8-2133201070ef.png',
     },
     'SLPM86291': {
         'url': "games/J/W/SLPM-86291.html",
@@ -47284,11 +47302,13 @@ games = {
         'url': "games/J/J/SLPM-86010.html",
     	'id': 'SLPM86010',
 	'title': "J.LEAGUE JIKKYOU WINNING ELEVEN '97",
+        'pic0': 'https://images.launchbox-app.com/d03feb49-39b7-47f3-8ce6-eb309c40fee2.png',
     },
     'SLPM86055': {
         'url': "games/J/J/SLPM-86055.html",
     	'id': 'SLPM86055',
 	'title': "J.LEAGUE JIKKYOU WINNING ELEVEN 3",
+        'pic0': 'https://images.launchbox-app.com/a7b7dea2-2995-4d9f-a7f8-2133201070ef.png',
     },
     'SLPS02436': {
         'url': "games/J/J/SLPS-02436.html",
@@ -47689,6 +47709,7 @@ games = {
         'url': "games/J/J/SLPS-02727.html",
     	'id': 'SLPS02727',
 	'title': "JITSUMEI JIKKYOU KEIBA - DREAM CLASSIC",
+        'pic0': 'https://images.launchbox-app.com/aadcc968-87bf-4ac5-8339-4911448be4bb.png',
     },
     'SLPS00429': {
         'url': "games/J/J/SLPS-00429.html",
