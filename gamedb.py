@@ -46919,6 +46919,9 @@ games = {
     'SLPM86008': {
         'url': "games/J/J/SLPM-86008.html",
     	'id': 'SLPM86008',
+        'pic0': 'https://images.launchbox-app.com/67c548fd-bc46-414b-8f04-4c59daa2acf5.png',
+        'pic1': 'https://images.launchbox-app.com/01db1958-8c92-45fc-8d30-b72608d9a35c.png',
+        'snd0': 'https://www.youtube.com/watch?v=3kikv89Qmtw&list=PLAdIErLpAnQAOwIJmO4V1O_joEVqcg1Fs&index=1',
 	'title': "JIKKYOU OSHABERI PARODIUS - FOREVER WITH ME",
     },
     'SLPS00016': {
