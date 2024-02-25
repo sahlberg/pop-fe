@@ -4160,7 +4160,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ceddf30e-213b-4a91-9e69-6cc752198aa1.png',
         'pic1': 'https://images.launchbox-app.com/93cb884b-b954-4636-8fc2-4beb7d90890a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20-%20Vengeance%20%28USA%29_jp2.zip',
-        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLES-00722.bin',
+        'pspconfig': 'pspconfigs/Colony Wars - Vengeance/SLUS-00722.bin',
     },
     'SLUS00866': {
         'url': "games/U/C/SLUS-00866.html",
@@ -20227,7 +20227,6 @@ games = {
     	'id': 'SLES02220',
 	'title': "EXTREME 500",
         'pic0': 'https://images.launchbox-app.com/94cabe0f-e47f-4186-969a-8fa61c14ff54.png',
-        'pspconfig': 'pspconfigs/Extreme 500/SLES-02220.bin',
     },
     'SLES03990': {
         'url': "games/P/E/SLES-03990.html",
@@ -45688,11 +45687,14 @@ games = {
         'url': "games/J/H/SCPS-10012.html",
     	'id': 'SCPS10012',
 	'title': "HERMIE HOPPERHEAD SCRAP PANIC",
+        'pic0': 'https://images.launchbox-app.com/aec4112d-00d9-4cc0-9411-0e9b63da389b.png',
+        '
     },
     'SCPS91016': {
         'url': "games/J/H/SCPS-91016.html",
     	'id': 'SCPS91016',
 	'title': "HERMIE HOPPERHEAD SCRAP PANIC [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/aec4112d-00d9-4cc0-9411-0e9b63da389b.png',
     },
     'SLPS00471': {
         'url': "games/J/H/SLPS-00471.html",
@@ -64358,7 +64360,10 @@ gameid_by_md5sum = {
     '6cd9bfe61a3bfbf7b3039d3a3743af6f': {
         'id': 'TTGM00000',
     },
-    '48615d361ff1026873ef5a1161a75e36': {
+    '02845EB8994681DF8B2FFFD07331F8A2': {
+        'id': 'TTGM00000',
+    },
+    'AE38BE5123981A060BCCFD788FEA8D06': {
         'id': 'TTGM00000',
     },
     # Magic Castle
@@ -64383,6 +64388,9 @@ gameid_by_md5sum = {
     },
     '72deae28ec987056bb17aed39aaa34ff': {
     	'id': 'SLPM87047',
+    },
+    '4B0B3D09698C04D0422456F3D1D67DF1': {
+    	'id': 'SCPS10012'
     },
 }
 
