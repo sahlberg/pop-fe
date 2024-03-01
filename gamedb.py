@@ -11979,6 +11979,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tales%20of%20Destiny%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Tales of Destiny/SLUS-00626',
     },
     'SLUS01355': {
         'url': "games/U/T/SLUS-01355.html",
@@ -62020,6 +62021,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20(J)%20[SLPS-01100].cbr',
+        'pspconfig': 'pspconfigs/Tales of Destiny/SLPS-01100',
     },
     'SLPS91111': {
         'url': "games/J/T/SLPS-91111.html",
@@ -62029,6 +62031,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/43cf458a-623a-4af2-8e60-c1c0ff846abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Kuz7QJQzmhs&list=PL5EC46797CBA51ACF&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Destiny%20(J)%20[SLPS-01100].cbr',
+        'pspconfig': 'pspconfigs/Tales of Destiny/SLPS-01100',
     },
     'SCPS45507': {
         'url': "games/J/T/SCPS-45507.html",
