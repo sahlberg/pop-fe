@@ -3247,6 +3247,15 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=MIwJuGpdHd0&list=PLV9swtL3jg9_OR9a1zwKftc5_eNiWFzwW&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/3Xtreme%20%28USA%29_jp2.zip',
     },
+    'SCUD94231': {
+        'url': "games/U/0-9/SCUS-94231.html",
+    	'id': 'SCUS94231',
+	'title': "3XTREME [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/2bfacaa4-e215-40d6-9a19-56ea94e5a15f.png',
+        'pic1': 'https://images.launchbox-app.com/ca71643c-ec54-4356-98f7-54a471be58aa.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=MIwJuGpdHd0&list=PLV9swtL3jg9_OR9a1zwKftc5_eNiWFzwW&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/3Xtreme%20%28USA%29_jp2.zip',
+    },
     'SLUS00874': {
         'url': "games/U/0-9/SLUS-00874.html",
     	'id': 'SLUS00874',
@@ -35871,6 +35880,11 @@ games = {
     	'id': 'SLPS02298',
 	'title': "1 ON 1 [RERELEASE]",
     },
+    'SLPD02298': {
+        'url': "games/J/0-9/SLPS-02298.html",
+    	'id': 'SLPS02298',
+	'title': "1 ON 1 [DEMO]",
+    },
     'SLPS02348': {
         'url': "games/J/0-9/SLPS-02348.html",
     	'id': 'SLPS02348',
@@ -35938,6 +35952,16 @@ games = {
     	'id': 'SLPS01499',
 	'title': "3X3 EYES - TENRINOU GENMU",
     },
+    'SLPD01498': {
+        'url': "games/J/0-9/SLPS-01497.html",
+    	'id': 'SLPS01498',
+	'title': "3X3 EYES - TENRINOU GENMU [DEMO]",
+    },
+    'SLPD01499': {
+        'url': "games/J/0-9/SLPS-01497.html",
+    	'id': 'SLPS01499',
+	'title': "3X3 EYES - TENRINOU GENMU [DEMO]",
+    },
     'SLPS01995': {
         'url': "games/J/0-9/SLPS-01995.html",
     	'id': 'SLPS01995',
@@ -35966,6 +35990,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/35eeda39-ad1c-4440-b0a0-c77e25599648.png',
         'manual': "https://psxdatacenter.com/manuals/70's%20Robot%20Anime%20-%20Geppy-X%20(J)%20[SLPS-01995-8].cbr",
     },
+    'SLPD01995': {
+        'url': "games/J/0-9/SLPS-01995.html",
+    	'id': 'SLPS01995',
+	'title': "70'S ROBOT ANIME - GEPPY-X - THE SUPER BOOSTED ARMOR [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/35eeda39-ad1c-4440-b0a0-c77e25599648.png',
+        'manual': "https://psxdatacenter.com/manuals/70's%20Robot%20Anime%20-%20Geppy-X%20(J)%20[SLPS-01995-8].cbr",
+    },
     'SLPS01204': {
         'url': "games/J/0-9/SLPS-01204.html",
     	'id': 'SLPS01204',
@@ -35978,6 +36009,12 @@ games = {
 	'title': "'98 KOSHIEN [MAGICAL 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/912f47c0-6fed-4de9-b4f7-febfe0b4d424.png',
     },
+    'SLPD03086': {
+        'url': "games/J/0-9/SLPS-03086.html",
+    	'id': 'SLPS03086',
+	'title': "'98 KOSHIEN [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/912f47c0-6fed-4de9-b4f7-febfe0b4d424.png',
+    },
     'SLPS02110': {
         'url': "games/J/0-9/SLPS-02110.html",
     	'id': 'SLPS02110',
@@ -35987,6 +36024,11 @@ games = {
         'url': "games/J/0-9/SLPS-03085.html",
     	'id': 'SLPS03085',
 	'title': "'99 KOSHIEN [MAGICAL 1500 SERIES]",
+    },
+    'SLPD03085': {
+        'url': "games/J/0-9/SLPS-03085.html",
+    	'id': 'SLPS03085',
+	'title': "'99 KOSHIEN [DEMO]",
     },
     'SLPS00004':       {
         'url': "games/J/A/SLPS-00004.html",
@@ -36074,6 +36116,14 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a2b82d68-bea5-457c-81a0-465152d69b85.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Abe%20a%20GoGo%20(J)%20[SLPS-01118].cbr',
     },
+    'SLPD01118': {
+        'url': "games/J/A/SLPS-01118.html",
+    	'id': 'SLPS01118',
+	'title': "ABE A GO GO [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/6d70bb87-befa-4be1-b294-0cad179330eb.png',
+        'pic1': 'https://images.launchbox-app.com/a2b82d68-bea5-457c-81a0-465152d69b85.jpg',
+        'manual': 'https://psxdatacenter.com/manuals/Abe%20a%20GoGo%20(J)%20[SLPS-01118].cbr',
+    },
     'SLPS02095': {
         'url': "games/J/A/SLPS-02095.html",
     	'id': 'SLPS02095',
@@ -36095,6 +36145,12 @@ games = {
         'url': "games/J/A/SLPS-91005.html",
     	'id': 'SLPS91005',
 	'title': "ACE COMBAT [PLAYSTATION THE BEST]",
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[Playstation%20the%20Best]%20[SLPS-91005].cbr',
+    },
+    'SLPD91005': {
+        'url': "games/J/A/SLPS-91005.html",
+    	'id': 'SLPS91005',
+	'title': "ACE COMBAT [DEMO]",
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[Playstation%20the%20Best]%20[SLPS-91005].cbr',
     },
     'SLPS00830': {
@@ -36171,6 +36227,15 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
+    'SLPD91215': {
+        'url': "games/J/A/SLPS-91214.html",
+    	'id': 'SLPS91215',
+	'title': "ACE COMBAT 3 - ELECTROSPHERE [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
+        'pic1': 'https://images.launchbox-app.com/ef289ac4-c8e5-4443-b9bd-4464a9e40306.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
+    },
     'SLPS02119': {
         'url': "games/J/A/SLPS-02119.html",
     	'id': 'SLPS02119',
@@ -36181,6 +36246,12 @@ games = {
         'url': "games/J/A/SLPM-86589.html",
     	'id': 'SLPM86589',
 	'title': "ACID [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/e37d95fb-102c-42f6-9a2d-80e3165739e0.png',
+    },
+    'SLPD02119': {
+        'url': "games/J/A/SLPS-02119.html",
+    	'id': 'SLPS02119',
+	'title': "ACID [DEMO]",
         'pic0': 'https://images.launchbox-app.com/e37d95fb-102c-42f6-9a2d-80e3165739e0.png',
     },
     'SCPS10131': {
@@ -65728,6 +65799,39 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'b5511c205738653f86570fe17e0cdd09': {
+        'id': 'SLPD03085',
+    },
+    '1c5ed1f5bcffc567e4ff6ce8db62bdf1': {
+        'id': 'SLPD03086',
+    },
+    '823484e8923d2e054076c66ee4014bf3': {
+        'id': 'SLPD01998',
+    },
+    '3c000296764e82c04ed35971944bf540': {
+        'id': 'SCUD94231',
+    },
+    '6522238bc55482ee6cbcf03e9aca42a0': {
+        'id': 'SLPD01499',
+    },
+    '8c7e449657a7bf8b1f4b04d85a221f7d': {
+        'id': 'SLPD01498',
+    },
+    '8572ff7a08020077fcb41f4041613e0d': {
+        'id': 'SLPD02298',
+    },
+    '80eede37cdb739de28eb404da9885b7e': {
+        'id': 'SLPD01118',
+    },
+    'e5f86971089994a36dfeaffa3ba9354f': {
+        'id': 'SLPD91005',
+    },
+    'e29d1de18f515145f386abd51e7d4e52': {
+        'id': 'SLPD91215',
+    },
+    '19cb2cae72cecad0698a7b3eb9005976': {
+        'id': 'SLPD02119',
+    },
     # FF VIII Europe/Australia disc 2
     '25fc59f87fd358f8feec6d8d84165a1e': {
         'id': 'SLES12080',
