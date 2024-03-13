@@ -894,6 +894,20 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=pXuuROdpHk0&list=PL0543FCACF475E1A6&index=1',
         'pspconfig': 'pspconfigs/V-Rally/SLPM-80191.bin',
     },
+    'SLPM80643': {
+        'id': 'SLPM80643',
+	'title': "10TH ANNIVERSARY MEMORIAL SAVE DATA",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'SLPM80181':       {
+	'id': 'SLPM80181',
+	'title': "19-JI 03-PUN: UENO-HATSU YAKOU RESSHA",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
     'SLPS01149':       {
         'url': "games/J/V/SLPS-01149.html",
     	'id': 'SLPS01149',
@@ -65863,6 +65877,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'de04d1142698cfa84f5f4007f29f11ba': {
+        'id': 'SLPM80181',
+    },
+    'a040057f536ddb73ec827ab9a3cbeb2b': {
+        'id': 'SLPM80643',
+    },
     '8bc2ab966c29c834a82769094c672bc3': {
         'id': 'SLES04108',
     },
