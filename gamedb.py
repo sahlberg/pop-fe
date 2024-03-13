@@ -3455,6 +3455,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
+    'SLUD00715': {
+        'url': "games/U/A/SLUS-00715.html",
+    	'id': 'SLUS00715',
+	'title': "AKUJI THE HEARTLESS [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
+    },
     'SLUS00872': {
         'url': "games/U/A/SLUS-00872.html",
     	'id': 'SLUS00872',
@@ -7618,6 +7625,12 @@ games = {
         'url': "games/U/I/SLUS-00378.html",
     	'id': 'SLUS00378',
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT",
+        'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
+    },
+    'SLUD00378': {
+        'url': "games/U/I/SLUS-00378.html",
+    	'id': 'SLUS00378',
+	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
     },
     'SLUS00235': {
@@ -36592,6 +36605,12 @@ games = {
 	'title': "AITAKUTE... YOUR SMILES IN MY HEART",
         'pic0': 'https://images.launchbox-app.com/c32a4086-8610-41c4-8475-b8c75e1ca45e.png',
     },
+    'SLPM80162': {
+        'url': "games/J/A/SLPM-86254.html",
+    	'id': 'SLPM86257',
+	'title': "AITAKUTE... YOUR SMILES IN MY HEART: [INTRODUCTION DISC]",
+        'pic0': 'https://images.launchbox-app.com/c32a4086-8610-41c4-8475-b8c75e1ca45e.png',
+    },
     'SCPS45302': {
         'url': "games/J/A/SCPS-45302.html",
     	'id': 'SCPS45302',
@@ -36772,6 +36791,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
         'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
     },
+    'SLPD01189': {
+        'url': "games/J/A/SLPS-01187.html",
+    	'id': 'SLPD01189',
+	'title': "ALNAM NO TSUBASA - WING OF ALNAM [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
+    },
     'SLPM87005': {
         'url': "games/J/A/SLPM-87005.html",
     	'id': 'SLPM87005',
@@ -36824,6 +36850,15 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
     },
+    'SCPD10115': {
+        'url': "games/J/A/SCPS-10115.html",
+    	'id': 'SCPD10115',
+	'title': "ALUNDRA 2 - MASHINKA NO NAZO [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/5a9df718-5cda-4cd5-9b45-f39b3f4778ad.png',
+        'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
+    },
     'SLPS00241': {
         'url': "games/J/A/SLPS-00241.html",
     	'id': 'SLPS00241',
@@ -36845,6 +36880,41 @@ games = {
 	'title': "ANCIENT ROMAN - POWER OF THE DARK SIDE",
         'pic0': 'https://images.launchbox-app.com/a3111693-803d-4bea-9c7e-c165a2cb488b.png',
         'manual': 'https://psxdatacenter.com/manuals/Ancient%20Roman%20(J)%20[SLPS-01108-9].cbr',
+    },
+    'AFLX00000': {
+    	'id': 'AFLX00000',
+	'title': "AEON FLUX [PROTO]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'SLPM80141': {
+    	'id': 'SLPM80141',
+	'title': "ANCIENT ROMAN EXTRA [DEMO]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'PTPX97002': {
+    	'id': 'PTPX97002',
+	'title': "AGING DISK",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ACSD00000': {
+    	'id': 'ACSD00000',
+	'title': "ANALOG CONTROLLER SERVICE DISC [USA]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ACSD00001': {
+    	'id': 'ACSD00001',
+	'title': "ANALOG CONTROLLER SERVICE DISC [EUROPE]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
     },
     'SLPS01109': {
         'url': "games/J/A/SLPS-01108.html",
@@ -65877,6 +65947,60 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '11a31e432c4d713ad31816e0af7665db': {
+        'id': 'SLUD00378',
+    },
+    '39af0ebb0a75efedaf0c04ef6d50fe4f': {
+        'id': 'AFLX00000',
+    },
+    'e6208d764e22fc38db536537e3d56d6e': {
+        'id': 'PTPX97002',
+    },
+    'a183dafa00a9b0f5554a9f425d8335a5': {
+        'id': 'SLUS01467',
+    },
+    '48a1b00f93da243b370cd3c17bfca18f': {
+        'id': 'SLPM80162',
+    },
+    'c474d063b1b1d26caeae97d9dad3f2e8': {
+        'id': 'SLPM86257',
+    },
+    'a36e3ae1d70bf2802bc1dd7d1e5c3d0a': {
+        'id': 'SLPM86256',
+    },
+    '0a945fa5a5ea5bb4c84c2a1df6f308c5': {
+        'id': 'SLPM86255',
+    },
+    '46dd1b950f4fe3c3a34ac41effe39622': {
+        'id': 'SLPM86254',
+    },
+    '23216ddab4d89804a90b7a35fe2818bd': {
+        'id': 'SLUD00715',
+    },
+    'b634ae9e40d9d94ac12e9316735dd804': {
+        'id': 'SLES03933',
+    },
+    '783da274ab39ce57d436f9ed55394ebf': {
+        'id': 'SLUS01510',
+    },
+    '365035682760e8bd53858090668227db': {
+        'id': 'SLES04060',
+    },
+    '02f22a36b78a629ab54aefc408cc8f46': {
+        'id': 'SLPD01189',
+    },
+    'c26e96bf4bd9d8ffb5f2bf0b40ad43d7': {
+        'id': 'SCPD10115',
+    },
+    '9500aba068aad4fec53a877532aff65b': {
+        'id': 'ACSD00001',
+    },
+    '51d61e69aaa5ca0ca74f0a6e2a52e539': {
+        'id': 'ACSD00000',
+    },
+    '1744dc992b4dea4705d71933f671bd5f': {
+        'id': 'SLPM80141',
+    },
     'de04d1142698cfa84f5f4007f29f11ba': {
         'id': 'SLPM80181',
     },
