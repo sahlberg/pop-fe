@@ -10,6 +10,70 @@ games = {
         'pic0': None,
         'pic1': None,
     },
+    # Action Replay disks
+    'ARPL00000': {
+    	'id': 'ARPL00000',
+	'title': "ACTION REPLAY [EUROPE]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00001': {
+    	'id': 'ARPL00001',
+	'title': "ACTION REPLAY 2 [FRANCE] [DISC2]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00002': {
+    	'id': 'ARPL00002',
+	'title': "ACTION REPLAY 2 CODE ARCHIVE DISK [GERMANY] [DISC2]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00003': {
+    	'id': 'ARPL00003',
+	'title': "ACTION REPLAY 2 [USA] [DISC2]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00004': {
+    	'id': 'ARPL00004',
+	'title': "ACTION REPLAY 2 V2 [USA] [DISC2]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00005': {
+    	'id': 'ARPL00005',
+	'title': "ACTION REPLAY 2 VERSION 2.23 [EUROPE] [DISC2]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00006': {
+    	'id': 'ARPL00006',
+	'title': "ACTION REPLAY CDX VERSION 3.3 [FRANCE]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00007': {
+    	'id': 'ARPL00007',
+	'title': "ACTION REPLAY FOR PSX & PSONE [USA]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'ARPL00008': {
+    	'id': 'ARPL00008',
+	'title': "ACTION REPLAY ULTIMATE CODES FOR FINAL FANTASY [USA]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
     'SLUS99999': {
         'id': 'SLUS99999',
 	'title': "RE1.5 MAGIC ZOMBIE DOOR",
@@ -65799,6 +65863,33 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'b2fcbb14ad0a3c96e0497c6cdb81555c': {
+        'id': 'ARPL00008',
+    },
+    '5f834db11be1679af94f46f0692b5b63': {
+        'id': 'ARPL00007',
+    },
+    '75ed443342c7adb025ef9d84e557bf55': {
+        'id': 'ARPL00006',
+    },
+    '226470cf1b78d6678ef6ab78f8000cc3': {
+        'id': 'ARPL00005',
+    },
+    'cdcf7a14dc822dbb4c5ec0f1d6a1908d': {
+        'id': 'ARPL00004',
+    },
+    '474eaa0e6adf97aae331f24ed5dfb10b': {
+        'id': 'ARPL00003',
+    },
+    '86168747cd4bb13d299fb283a741ae38': {
+        'id': 'ARPL00002',
+    },
+    'e0a9648d5b11893acde4ccafef9880ab': {
+        'id': 'ARPL00001',
+    },
+    '0cf39663ce4a4243234cad0526bd6ed9': {
+        'id': 'ARPL00000',
+    },
     'b5511c205738653f86570fe17e0cdd09': {
         'id': 'SLPD03085',
     },
