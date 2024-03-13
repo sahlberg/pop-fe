@@ -53,7 +53,14 @@ EMPTY_CONFIG = bytes([
     0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF
 ])
 
-def get_disc_id(cue, tmp):
+def get_disc_id(cue, tmp, cue_file_orig):
+    try:
+        with open(popfe.create_path(cue_file_orig, 'GAME_ID'), 'r') as d:
+            gid = d.read()[:9]
+            print('Read disc id from', popfe.create_path(cue_file_orig, 'GAME_ID'))
+            return gid
+    except:
+        True
     print('Convert ' + cue + ' to a normal style ISO') if verbose else None
     bc = bchunk()
     bc.verbose = False
@@ -345,7 +352,7 @@ class PopFePs3App:
             
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
-        disc_id = get_disc_id(cue_file, tmp)
+        disc_id = get_disc_id(cue_file, tmp, self.cue_file_orig)
         print('ID', disc_id)
         temp_files.append(tmp)
 
@@ -430,8 +437,11 @@ class PopFePs3App:
         if _pic0 and self.pic0.mode == 'P':
             _pic0 = _pic0.convert(mode='RGBA')
         c = self.builder.get_object('preview_canvas', self.master)
-        p1 = _pic1.resize((382,216), Image.Resampling.HAMMING)
-        if _pic0: 
+        if _pic1:
+            p1 = _pic1.resize((382,216), Image.Resampling.HAMMING)
+        else:
+            p1 = Image.new('RGBA', (382,216), (0,0,0))
+        if _pic0:
             p0 = _pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)
