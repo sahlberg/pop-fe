@@ -65863,6 +65863,15 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'd2b2230a7a1b058b9098fc4d586460d4': {
+        'id': 'SLPS00004',
+    },
+    '9aa67185b086b2e2b10fb3b225850414': {
+        'id': 'SLPS00004',
+    },
+    '13458d54db04b0e77994012c49e185dd': {
+        'id': 'SLPS00004',
+    },
     'b2fcbb14ad0a3c96e0497c6cdb81555c': {
         'id': 'ARPL00008',
     },
