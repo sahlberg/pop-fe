@@ -3611,6 +3611,24 @@ games = {
         'pspconfig': 'pspconfigs/Ape Escape/SCUS-94423.bin',
         'ps3config': 'ps3configs/Ape Escape/SCUS-94423.BIN',
     },
+    'SCUS94489': {
+        'url': "games/U/A/SCUS-94423.html",
+    	'id': 'SCUS94489',
+	'title': "APE ESCAPE [DEMO 2]",
+        'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
+        'pic1': 'https://images.launchbox-app.com/0faf4c0b-d7a1-4ace-8fd1-e7909ed71bc6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+    },
+    'SCUS94470': {
+        'url': "games/U/A/SCUS-94423.html",
+    	'id': 'SCUS94470',
+	'title': "APE ESCAPE [DEMO 1]",
+        'pic0': 'https://images.launchbox-app.com/b31bc55f-7388-411f-af97-4ae2b413e02a.png',
+        'pic1': 'https://images.launchbox-app.com/0faf4c0b-d7a1-4ace-8fd1-e7909ed71bc6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+    },
     'SLUS00373': {
         'url': "games/U/A/SLUS-00373.html",
     	'id': 'SLUS00373',
@@ -37103,6 +37121,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/00dbb218-a071-4ba5-a966-f674063c916f.png',
         'manual': 'https://psxdatacenter.com/manuals/Another%20Mind%20[SLPS-01655]%20(J).cbr',
     },
+    'SLPM80321': {
+        'url': "games/J/A/SLPS-01655.html",
+    	'id': 'SLPM80321',
+	'title': "ANOTHER MIND [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/00dbb218-a071-4ba5-a966-f674063c916f.png',
+        'manual': 'https://psxdatacenter.com/manuals/Another%20Mind%20[SLPS-01655]%20(J).cbr',
+    },
     'SLPS02940': {
         'url': "games/J/A/SLPS-02940.html",
     	'id': 'SLPS02940',
@@ -65947,6 +65972,15 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '573979882d9faa0fbdd156dd635ac83e': {
+        'id': 'SLPM80321',
+    },
+    '8fd73e9a7a77b41f4d52372063c7eecd': {
+        'id': 'SCUS94470',
+    },
+    '0834711dc136d9936f2e475c18df36b8': {
+        'id': 'SCUS94489',
+    },
     '11a31e432c4d713ad31816e0af7665db': {
         'id': 'SLUD00378',
     },
