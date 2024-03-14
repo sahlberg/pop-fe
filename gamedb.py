@@ -35971,9 +35971,9 @@ games = {
     	'id': 'SLPS02298',
 	'title': "1 ON 1 [RERELEASE]",
     },
-    'SLPD02298': {
+    'SLPD80351': {
         'url': "games/J/0-9/SLPS-02298.html",
-    	'id': 'SLPS02298',
+    	'id': 'SLPM80351',
 	'title': "1 ON 1 [DEMO]",
     },
     'SLPS02348': {
@@ -66068,7 +66068,7 @@ gameid_by_md5sum = {
         'id': 'SLPD01498',
     },
     '8572ff7a08020077fcb41f4041613e0d': {
-        'id': 'SLPD02298',
+        'id': 'SLPD80351',
     },
     '80eede37cdb739de28eb404da9885b7e': {
         'id': 'SLPD01118',
