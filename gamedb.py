@@ -37213,6 +37213,11 @@ games = {
     	'id': 'SLPS02141',
 	'title': "AQUANAUT NO KYUUJITSU 2",
     },
+    'SLPM80449': {
+        'url': "games/J/A/SLPS-02141.html",
+    	'id': 'SLPM80449',
+	'title': "AQUANAUT NO KYUUJITSU 2 [DEMO]",
+    },
     'SLPS02919': {
         'url': "games/J/A/SLPS-02919.html",
     	'id': 'SLPS02919',
@@ -37234,7 +37239,7 @@ games = {
     'SCPS91004': {
         'url': "games/J/A/SCPS-91004.html",
     	'id': 'SCPS91004',
-	'title': "ARC THE LAD [PLAYSTATION THE BEST]",
+	'title': "ARC THE LAD [REV 1]",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
@@ -37328,6 +37333,14 @@ games = {
         'url': "games/J/A/SCPS-91316.html",
     	'id': 'SCPS91317',
 	'title': "ARC THE LAD III [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/3fb4e846-c727-46c3-99b4-1c8733d534aa.png',
+        'snd0': 'https://www.youtube.com/watch?v=-VnWD0QuIeg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20III%20%28USA%29%20%28Disc%201%29_jp2.zip',
+    },
+    'PCPX96176': {
+        'url': "games/J/A/SCPS-91316.html",
+    	'id': 'PCPX96176',
+	'title': "ARC THE LAD III [DEMO 2]",
         'pic0': 'https://images.launchbox-app.com/3fb4e846-c727-46c3-99b4-1c8733d534aa.png',
         'snd0': 'https://www.youtube.com/watch?v=-VnWD0QuIeg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20III%20%28USA%29%20%28Disc%201%29_jp2.zip',
@@ -65972,13 +65985,28 @@ games = {
 }
 
 gameid_by_md5sum = {
-    '573979882d9faa0fbdd156dd635ac83e': {
+    '3022cf3beffa4469ae40751b165e2903': { #144
+        'id': 'SLPS00060',
+    },
+    '155d6f30dfe4e13dde59b3b1314575ab': { #145
+        'id': 'SLPM80449',
+    },
+    'e1202a25ba906bfe012f515338072d32': { #146
+        'id': 'SCPS91004',
+    },
+    '6338691eb20e371e0b05099a5babd874': { #147
+        'id': 'SCPS10008',
+    },
+    'dcb49206304032cbf7c64a3e137ca8e7': { #148
+        'id': 'PCPX96176',
+    },
+    '573979882d9faa0fbdd156dd635ac83e': { #140
         'id': 'SLPM80321',
     },
-    '8fd73e9a7a77b41f4d52372063c7eecd': {
+    '8fd73e9a7a77b41f4d52372063c7eecd': { #141
         'id': 'SCUS94470',
     },
-    '0834711dc136d9936f2e475c18df36b8': {
+    '0834711dc136d9936f2e475c18df36b8': { #143
         'id': 'SCUS94489',
     },
     '11a31e432c4d713ad31816e0af7665db': {
