@@ -14975,6 +14975,10 @@ games = {
         'pspconfig': 'pspconfigs/Alundra 2/SLES-02602.bin',
         'ps3config': 'ps3configs/Alundra 2/SLES-02602.BIN',
     },
+    'SLES12345': {
+    	'id': 'SLES12345',
+	'title': "ALFRED CHICKEN [PROTO]",
+    },
     'SLES04037': {
         'url': "games/P/A/SLES-04037.html",
     	'id': 'SLES04037',
@@ -36788,6 +36792,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/97bfa5dc-d00d-4d5e-9b9b-5e0c4f2a3f75.png',
         'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Kiba%20(J)%20[SLPS-00173].cbr',
     },
+    'SLPM80069': {
+        'url': "games/J/A/SLPS-01187.html",
+    	'id': 'SLPM80069',
+	'title': "ALNAM NO TSUBASA - WING OF ALNAM [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
+        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
+    },
     'SLPS01187': {
         'url': "games/J/A/SLPS-01187.html",
     	'id': 'SLPS01187',
@@ -36806,13 +36817,6 @@ games = {
         'url': "games/J/A/SLPS-01187.html",
     	'id': 'SLPS01189',
 	'title': "ALNAM NO TSUBASA - WING OF ALNAM",
-        'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
-        'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
-    },
-    'SLPD01189': {
-        'url': "games/J/A/SLPS-01187.html",
-    	'id': 'SLPD01189',
-	'title': "ALNAM NO TSUBASA - WING OF ALNAM [DEMO]",
         'pic0': 'https://images.launchbox-app.com/b6f925fe-56c5-4a59-820c-a161161ecf0b.png',
         'manual': 'https://psxdatacenter.com/manuals/Alnam%20no%20Tsubasa%20(J)%20[SLPS-01187-9].cbr',
     },
@@ -36868,9 +36872,9 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=CyN3Qgj7qbc&list=PLtYR840GpBWMvg0opI-dyzAuqrQPRz1dg&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%202%20-%20A%20New%20Legend%20Begins%20%28USA%29_jp2.zip',
     },
-    'SCPD10115': {
+    'PAPX90097': {
         'url': "games/J/A/SCPS-10115.html",
-    	'id': 'SCPD10115',
+    	'id': 'PAPX90097',
 	'title': "ALUNDRA 2 - MASHINKA NO NAZO [DEMO]",
         'pic0': 'https://images.launchbox-app.com/5a9df718-5cda-4cd5-9b45-f39b3f4778ad.png',
         'pic1': 'https://images.launchbox-app.com/6e84b0ea-55b9-419b-972a-de40fc4afc18.jpg',
@@ -36959,6 +36963,11 @@ games = {
         'url': "games/J/A/SLPM-86960.html",
     	'id': 'SLPM86960',
 	'title': "ANGEL BLADE - NEO TOKYO GUARDIANS [MAJOE WAVE SERIES]",
+    },
+    'SLPM80094': {
+        'url': "games/J/A/SLPM-86960.html",
+    	'id': 'SLPM80094',
+	'title': "ANGEL BLADE - NEO TOKYO GUARDIANS [DEMO]",
     },
     'SLPS00163': {
         'url': "games/J/A/SLPS-00163.html",
@@ -65985,6 +65994,45 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '': { #
+        'id': '',
+    },
+    '1328832ec7a768fb921a1dca83598547': { #136
+        'id': 'SLES12345',
+    },
+    '08cb31faf575bcd528279aabceeef3f0': { #138
+        'id': 'SLPM80094',
+    },
+    '45dda140047e6fc24aa4a7ff8a792128': { #139
+        'id': 'SLES04036',
+    },
     '3022cf3beffa4469ae40751b165e2903': { #144
         'id': 'SLPS00060',
     },
@@ -66045,22 +66093,22 @@ gameid_by_md5sum = {
     '783da274ab39ce57d436f9ed55394ebf': {
         'id': 'SLUS01510',
     },
-    '365035682760e8bd53858090668227db': {
+    '365035682760e8bd53858090668227db': { #130
         'id': 'SLES04060',
     },
-    '02f22a36b78a629ab54aefc408cc8f46': {
-        'id': 'SLPD01189',
+    '02f22a36b78a629ab54aefc408cc8f46': { #131
+        'id': 'SLPM80069',
     },
-    'c26e96bf4bd9d8ffb5f2bf0b40ad43d7': {
-        'id': 'SCPD10115',
+    'c26e96bf4bd9d8ffb5f2bf0b40ad43d7': { # 132
+        'id': 'PAPX90097',
     },
-    '9500aba068aad4fec53a877532aff65b': {
+    '9500aba068aad4fec53a877532aff65b': { #133
         'id': 'ACSD00001',
     },
-    '51d61e69aaa5ca0ca74f0a6e2a52e539': {
+    '51d61e69aaa5ca0ca74f0a6e2a52e539': { #134
         'id': 'ACSD00000',
     },
-    '1744dc992b4dea4705d71933f671bd5f': {
+    '1744dc992b4dea4705d71933f671bd5f': { #135
         'id': 'SLPM80141',
     },
     'de04d1142698cfa84f5f4007f29f11ba': {
