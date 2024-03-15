@@ -107,7 +107,7 @@ games = {
     'SCED00273': {'id': 'SCED00273', 'title': 'Autumn/Christmas Releases', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00277': {'id': 'SCES00277', 'title': 'Lone Soldier/ Actua Soccer/ Total NBA \'96/ Mickey\'s Wild Adventure/ Thunderhawk 2/ Assault Rigs', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED00287': {'id': 'SCED00287', 'title': 'Point Blank Demo', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLES00288': {'id': 'SLES00288', 'title': 'Alien Trilogy', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLES00288': {'id': 'SLES00288', 'title': 'ALIEN TRILOGY [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLES00335': {'id': 'SLES00335', 'title': 'Resident Evil', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLES00355': {'id': 'SLES00355', 'title': 'Resident Evil', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED00360': {'id': 'SCED00360', 'title': 'Adidas Power Soccer/ Resident Evil/ Shellshock/ Descent', 'icon0': None, 'pic0': None, 'pic1': None,},
@@ -282,10 +282,10 @@ games = {
     'SLED01305': {'id': 'SLED01305', 'title': 'Crime Killer', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED01306': {'id': 'SCED01306', 'title': 'Autorennen Spezial \'98', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED01307': {'id': 'SCED01307', 'title': 'Fussball Spezial 01 deutsch', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLED01308': {'id': 'SLED01308', 'title': 'The Adventures Of Alundra', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLED01310': {'id': 'SLED01310', 'title': 'Adidas Power Soccer 98', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLED01311': {'id': 'SLED01311', 'title': 'Adidas Power Soccer 98', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLED01329': {'id': 'SLED01329', 'title': 'Tommi Mäkinen Rally', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED01308': {'id': 'SLED01308', 'title': 'ALUNDRA [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED01310': {'id': 'SLED01310', 'title': 'ADIDAS POWER SOCCER 98 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED01311': {'id': 'SLED01311', 'title': 'ADIDAS POWER SOCCER 98 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED01329': {'id': 'SLED01329', 'title': 'Tommi Mäkinen Rally', 'Icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01339': {'id': 'SLED01339', 'title': 'Beast Wars', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01340': {'id': 'SLED01340', 'title': 'Net Yaroze', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01351': {'id': 'SLED01351', 'title': 'Heart Of Darkness', 'icon0': None, 'pic0': None, 'pic1': None,},
@@ -323,7 +323,7 @@ games = {
     'SLED01552': {'id': 'SLED01552', 'title': 'Moto Racer 2', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01553': {'id': 'SLED01553', 'title': 'Station 1', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01557': {'id': 'SLED01557', 'title': 'The Unholy War', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLED01560': {'id': 'SLED01560', 'title': 'All Star Tennis \'99', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED01560': {'id': 'SLED01560', 'title': 'ALL STAR TENNIS \'99 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED01561': {'id': 'SLED01561', 'title': 'Live Wire!', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED01570': {'id': 'SCED01570', 'title': 'Australian Summer Special', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED01571': {'id': 'SCED01571', 'title': 'Medievil Special français', 'icon0': None, 'pic0': None, 'pic1': None,},
@@ -3325,9 +3325,9 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=MIwJuGpdHd0&list=PLV9swtL3jg9_OR9a1zwKftc5_eNiWFzwW&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/3Xtreme%20%28USA%29_jp2.zip',
     },
-    'SCUD94231': {
+    'SCUS94365': {
         'url': "games/U/0-9/SCUS-94231.html",
-    	'id': 'SCUS94231',
+    	'id': 'SCUS94365',
 	'title': "3XTREME [DEMO]",
         'pic0': 'https://images.launchbox-app.com/2bfacaa4-e215-40d6-9a19-56ea94e5a15f.png',
         'pic1': 'https://images.launchbox-app.com/ca71643c-ec54-4356-98f7-54a471be58aa.jpg',
@@ -35993,7 +35993,7 @@ games = {
     	'id': 'SLPS02298',
 	'title': "1 ON 1 [RERELEASE]",
     },
-    'SLPD80351': {
+    'SLPM80351': {
         'url': "games/J/0-9/SLPS-02298.html",
     	'id': 'SLPM80351',
 	'title': "1 ON 1 [DEMO]",
@@ -36065,16 +36065,6 @@ games = {
     	'id': 'SLPS01499',
 	'title': "3X3 EYES - TENRINOU GENMU",
     },
-    'SLPD01498': {
-        'url': "games/J/0-9/SLPS-01497.html",
-    	'id': 'SLPS01498',
-	'title': "3X3 EYES - TENRINOU GENMU [DEMO]",
-    },
-    'SLPD01499': {
-        'url': "games/J/0-9/SLPS-01497.html",
-    	'id': 'SLPS01499',
-	'title': "3X3 EYES - TENRINOU GENMU [DEMO]",
-    },
     'SLPS01995': {
         'url': "games/J/0-9/SLPS-01995.html",
     	'id': 'SLPS01995',
@@ -36103,9 +36093,9 @@ games = {
         'pic0': 'https://images.launchbox-app.com/35eeda39-ad1c-4440-b0a0-c77e25599648.png',
         'manual': "https://psxdatacenter.com/manuals/70's%20Robot%20Anime%20-%20Geppy-X%20(J)%20[SLPS-01995-8].cbr",
     },
-    'SLPD01995': {
+    'SLPM80387': {
         'url': "games/J/0-9/SLPS-01995.html",
-    	'id': 'SLPS01995',
+    	'id': 'SLPM80387',
 	'title': "70'S ROBOT ANIME - GEPPY-X - THE SUPER BOOSTED ARMOR [DEMO]",
         'pic0': 'https://images.launchbox-app.com/35eeda39-ad1c-4440-b0a0-c77e25599648.png',
         'manual': "https://psxdatacenter.com/manuals/70's%20Robot%20Anime%20-%20Geppy-X%20(J)%20[SLPS-01995-8].cbr",
@@ -36122,9 +36112,9 @@ games = {
 	'title': "'98 KOSHIEN [MAGICAL 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/912f47c0-6fed-4de9-b4f7-febfe0b4d424.png',
     },
-    'SLPD03086': {
+    'SLPM80238': {
         'url': "games/J/0-9/SLPS-03086.html",
-    	'id': 'SLPS03086',
+    	'id': 'SLPM80238',
 	'title': "'98 KOSHIEN [DEMO]",
         'pic0': 'https://images.launchbox-app.com/912f47c0-6fed-4de9-b4f7-febfe0b4d424.png',
     },
@@ -36138,9 +36128,9 @@ games = {
     	'id': 'SLPS03085',
 	'title': "'99 KOSHIEN [MAGICAL 1500 SERIES]",
     },
-    'SLPD03085': {
+    'SLPM80421': {
         'url': "games/J/0-9/SLPS-03085.html",
-    	'id': 'SLPS03085',
+    	'id': 'SLPM80421',
 	'title': "'99 KOSHIEN [DEMO]",
     },
     'SLPS00004':       {
@@ -36229,9 +36219,9 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a2b82d68-bea5-457c-81a0-465152d69b85.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Abe%20a%20GoGo%20(J)%20[SLPS-01118].cbr',
     },
-    'SLPD01118': {
+    'SLPM80175': {
         'url': "games/J/A/SLPS-01118.html",
-    	'id': 'SLPS01118',
+    	'id': 'SLPM80175',
 	'title': "ABE A GO GO [DEMO]",
         'pic0': 'https://images.launchbox-app.com/6d70bb87-befa-4be1-b294-0cad179330eb.png',
         'pic1': 'https://images.launchbox-app.com/a2b82d68-bea5-457c-81a0-465152d69b85.jpg',
@@ -36258,12 +36248,6 @@ games = {
         'url': "games/J/A/SLPS-91005.html",
     	'id': 'SLPS91005',
 	'title': "ACE COMBAT [PLAYSTATION THE BEST]",
-        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[Playstation%20the%20Best]%20[SLPS-91005].cbr',
-    },
-    'SLPD91005': {
-        'url': "games/J/A/SLPS-91005.html",
-    	'id': 'SLPS91005',
-	'title': "ACE COMBAT [DEMO]",
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%20(J)%20[Playstation%20the%20Best]%20[SLPS-91005].cbr',
     },
     'SLPS00830': {
@@ -36340,10 +36324,10 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
-    'SLPD91215': {
+    'SLPM80175': {
         'url': "games/J/A/SLPS-91214.html",
-    	'id': 'SLPS91215',
-	'title': "ACE COMBAT 3 - ELECTROSPHERE [DEMO]",
+    	'id': 'SLPM80175',
+	'title': "ACE COMBAT 3 - ELECTROSPHERE [DiSC]",
         'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
         'pic1': 'https://images.launchbox-app.com/ef289ac4-c8e5-4443-b9bd-4464a9e40306.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
@@ -66181,34 +66165,34 @@ gameid_by_md5sum = {
         'id': 'ARPL00000',
     },
     'b5511c205738653f86570fe17e0cdd09': {
-        'id': 'SLPD03085',
+        'id': 'SLPM80421',
     },
     '1c5ed1f5bcffc567e4ff6ce8db62bdf1': {
-        'id': 'SLPD03086',
+        'id': 'SLPM80238',
     },
     '823484e8923d2e054076c66ee4014bf3': {
-        'id': 'SLPD01998',
+        'id': 'SLPM80387',
     },
     '3c000296764e82c04ed35971944bf540': {
-        'id': 'SCUD94231',
+        'id': 'SCUS94365',
     },
     '6522238bc55482ee6cbcf03e9aca42a0': {
-        'id': 'SLPD01499',
+        'id': 'SLPS00072',
     },
     '8c7e449657a7bf8b1f4b04d85a221f7d': {
-        'id': 'SLPD01498',
+        'id': 'SLPS00071',
     },
     '8572ff7a08020077fcb41f4041613e0d': {
-        'id': 'SLPD80351',
+        'id': 'SLPM80351',
     },
     '80eede37cdb739de28eb404da9885b7e': {
-        'id': 'SLPD01118',
+        'id': 'SLPM80175',
     },
     'e5f86971089994a36dfeaffa3ba9354f': {
-        'id': 'SLPD91005',
+        'id': 'SLPS00061',
     },
     'e29d1de18f515145f386abd51e7d4e52': {
-        'id': 'SLPD91215',
+        'id': 'SLPM80453',
     },
     '19cb2cae72cecad0698a7b3eb9005976': { #102
         'id': 'SLPM80430',
