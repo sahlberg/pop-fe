@@ -36361,9 +36361,9 @@ games = {
 	'title': "ACID [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/e37d95fb-102c-42f6-9a2d-80e3165739e0.png',
     },
-    'SLPD02119': {
+    'SLPM80430': {
         'url': "games/J/A/SLPS-02119.html",
-    	'id': 'SLPS02119',
+    	'id': 'SLPM80430',
 	'title': "ACID [DEMO]",
         'pic0': 'https://images.launchbox-app.com/e37d95fb-102c-42f6-9a2d-80e3165739e0.png',
     },
@@ -66210,8 +66210,8 @@ gameid_by_md5sum = {
     'e29d1de18f515145f386abd51e7d4e52': {
         'id': 'SLPD91215',
     },
-    '19cb2cae72cecad0698a7b3eb9005976': {
-        'id': 'SLPD02119',
+    '19cb2cae72cecad0698a7b3eb9005976': { #102
+        'id': 'SLPM80430',
     },
     # FF VIII Europe/Australia disc 2
     '25fc59f87fd358f8feec6d8d84165a1e': {
