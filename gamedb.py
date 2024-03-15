@@ -3455,9 +3455,9 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
-    'SLUD00715': {
+    'SLUS80715': {
         'url': "games/U/A/SLUS-00715.html",
-    	'id': 'SLUS00715',
+    	'id': 'SLUS80715',
 	'title': "AKUJI THE HEARTLESS [DEMO]",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
@@ -7645,9 +7645,9 @@ games = {
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
     },
-    'SLUD00378': {
+    'SLUS00212': {
         'url': "games/U/I/SLUS-00378.html",
-    	'id': 'SLUS00378',
+    	'id': 'SLUS00212',
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
     },
@@ -36440,6 +36440,14 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=VwJXI9IgPCk',
         'manual': 'https://psxdatacenter.com/manuals/Addie%20No%20Okurimono%20-%20To%20Moze%20from%20Addie%20(J)%20[SCPS-10126].cbr',
     },
+    'PAPX90105': {
+        'url': "games/J/A/SCPS-10126.html",
+    	'id': 'PAPX90105',
+	'title': "ADDIE NO OKURIMONO - TO MOZE FROM ADDIE [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/f411abc7-4f95-4eec-a4a9-6bbbe55c2ab7.png',
+        'snd0': 'https://www.youtube.com/watch?v=VwJXI9IgPCk',
+        'manual': 'https://psxdatacenter.com/manuals/Addie%20No%20Okurimono%20-%20To%20Moze%20from%20Addie%20(J)%20[SCPS-10126].cbr',
+    },
     'SLPS01689': {
         'url': "games/J/A/SLPS-01689.html",
     	'id': 'SLPS01689',
@@ -36450,6 +36458,12 @@ games = {
         'url': "games/J/A/SLPS-00208.html",
     	'id': 'SLPS00208',
 	'title': "ADVANCED V.G.",
+        'pic0': 'https://images.launchbox-app.com/307e400e-280a-4b4e-adb6-297d92824cb2.png',
+    },
+    'SLPM80017': {
+        'url': "games/J/A/SLPS-00208.html",
+    	'id': 'SLPM80017',
+	'title': "ADVANCED V.G.[AUTO DEMO]",
         'pic0': 'https://images.launchbox-app.com/307e400e-280a-4b4e-adb6-297d92824cb2.png',
     },
     'SLPM87122': {
@@ -36906,6 +36920,13 @@ games = {
     'AFLX00000': {
     	'id': 'AFLX00000',
 	'title': "AEON FLUX [PROTO]",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
+    'SLPM80552': {
+    	'id': 'SLPM80552',
+	'title': "AFFECT TAIKENBAN VOL. 1",
         'icon0': None,
         'pic0': None,
         'pic1': None,
@@ -66018,11 +66039,11 @@ gameid_by_md5sum = {
     '': { #
         'id': '',
     },
-    '': { #
-        'id': '',
+    'd96399493a57d26cef1e4ce0283549ce': { #119
+        'id': 'SLPM80017',
     },
-    '': { #
-        'id': '',
+    '2bdb76db404b56cc1ae6b26ffb507e24': { #121
+        'id': 'SLPM80552',
     },
     '1328832ec7a768fb921a1dca83598547': { #136
         'id': 'SLES12345',
@@ -66057,40 +66078,40 @@ gameid_by_md5sum = {
     '0834711dc136d9936f2e475c18df36b8': { #143
         'id': 'SCUS94489',
     },
-    '11a31e432c4d713ad31816e0af7665db': {
-        'id': 'SLUD00378',
+    '11a31e432c4d713ad31816e0af7665db': { #118
+        'id': 'SLUS00212',
     },
-    '39af0ebb0a75efedaf0c04ef6d50fe4f': {
+    '39af0ebb0a75efedaf0c04ef6d50fe4f': { #120
         'id': 'AFLX00000',
     },
-    'e6208d764e22fc38db536537e3d56d6e': {
+    'e6208d764e22fc38db536537e3d56d6e': { #122
         'id': 'PTPX97002',
     },
-    'a183dafa00a9b0f5554a9f425d8335a5': {
+    'a183dafa00a9b0f5554a9f425d8335a5': { #123
         'id': 'SLUS01467',
     },
-    '48a1b00f93da243b370cd3c17bfca18f': {
+    '48a1b00f93da243b370cd3c17bfca18f': { #125
         'id': 'SLPM80162',
     },
-    'c474d063b1b1d26caeae97d9dad3f2e8': {
+    'c474d063b1b1d26caeae97d9dad3f2e8': { #126
         'id': 'SLPM86257',
     },
-    'a36e3ae1d70bf2802bc1dd7d1e5c3d0a': {
+    'a36e3ae1d70bf2802bc1dd7d1e5c3d0a': { #126
         'id': 'SLPM86256',
     },
-    '0a945fa5a5ea5bb4c84c2a1df6f308c5': {
+    '0a945fa5a5ea5bb4c84c2a1df6f308c5': { #126
         'id': 'SLPM86255',
     },
-    '46dd1b950f4fe3c3a34ac41effe39622': {
+    '46dd1b950f4fe3c3a34ac41effe39622': { #126
         'id': 'SLPM86254',
     },
-    '23216ddab4d89804a90b7a35fe2818bd': {
-        'id': 'SLUD00715',
+    '23216ddab4d89804a90b7a35fe2818bd': { #127
+        'id': 'SLUS80715',
     },
-    'b634ae9e40d9d94ac12e9316735dd804': {
+    'b634ae9e40d9d94ac12e9316735dd804': { #128
         'id': 'SLES03933',
     },
-    '783da274ab39ce57d436f9ed55394ebf': {
+    '783da274ab39ce57d436f9ed55394ebf': { #129
         'id': 'SLUS01510',
     },
     '365035682760e8bd53858090668227db': { #130
@@ -66117,25 +66138,25 @@ gameid_by_md5sum = {
     'a040057f536ddb73ec827ab9a3cbeb2b': {
         'id': 'SLPM80643',
     },
-    '8bc2ab966c29c834a82769094c672bc3': {
+    '8bc2ab966c29c834a82769094c672bc3': { #116
         'id': 'SLES04108',
     },
-    '1704e1fd703d5f2a59c7d6b9a6fffcad': {
-        'id': 'SCPS10126',
+    '1704e1fd703d5f2a59c7d6b9a6fffcad': { #115
+        'id': 'PAPX90105',
     },
-    'd2b2230a7a1b058b9098fc4d586460d4': {
+    'd2b2230a7a1b058b9098fc4d586460d4': { #112
+        'id': 'SLPS00011',
+    },
+    '9aa67185b086b2e2b10fb3b225850414': { #113
         'id': 'SLPS00004',
     },
-    '9aa67185b086b2e2b10fb3b225850414': {
+    '13458d54db04b0e77994012c49e185dd': { #114
         'id': 'SLPS00004',
     },
-    '13458d54db04b0e77994012c49e185dd': {
-        'id': 'SLPS00004',
-    },
-    'b2fcbb14ad0a3c96e0497c6cdb81555c': {
+    'b2fcbb14ad0a3c96e0497c6cdb81555c': { #111
         'id': 'ARPL00008',
     },
-    '5f834db11be1679af94f46f0692b5b63': {
+    '5f834db11be1679af94f46f0692b5b63': { #110
         'id': 'ARPL00007',
     },
     '75ed443342c7adb025ef9d84e557bf55': {
