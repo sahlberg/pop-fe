@@ -19595,6 +19595,7 @@ games = {
         'url': "games/P/I/SLES-03149.html",
     	'id': 'SLES03149',
 	'title': "INTERNATIONAL SUPERSTAR SOCCER 2000",
+        'pspconfig': 'pspconfigs/International Superstar Soccer/SLES-03149.bin',
     },
     'SLES00559': {
         'url': "games/P/I/SLES-00559.html",
