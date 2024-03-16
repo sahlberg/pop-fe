@@ -82,6 +82,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c99a4bcf-708d-4678-9568-bd5f13211900.jpg',
     },
     # Demo Discs
+    'SLES00181': {'id': 'SLES00181', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 3 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED00038': {'id': 'SLED00038', 'title': 'CROC [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00048': {'id': 'SCES00048', 'title': 'DEMO ONE EUR/U.K. [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00064': {'id': 'SCES00064', 'title': 'DEMO ONE GER [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
@@ -93,7 +94,6 @@ games = {
     'SCES00121': {'id': 'SCES00121', 'title': 'DEMO ONE GER [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLES00150': {'id': 'SLES00150', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 2 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLES00157': {'id': 'SLES00157', 'title': 'DOOM [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SLES00181': {'id': 'SLES00181', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 3 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00182': {'id': 'SCES00182', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 4 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00183': {'id': 'SCES00183', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 5 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCES00184': {'id': 'SCES00184', 'title': 'OFFICIAL UK PLAYSTATION MAGAZINE CD 6 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
