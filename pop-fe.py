@@ -1881,6 +1881,12 @@ else:
     font = 'DejaVuSansMono.ttf'
 
 def _get_gameid_from_iso(path='NORMAL01.iso'):
+    with open(path, 'rb') as f:
+        h = hashlib.md5(f.read(1024*1024)).hexdigest()
+        print('MD5 fingerprint', h)
+        if h in gameid_by_md5sum:
+            return gameid_by_md5sum[h]['id']
+
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
@@ -1966,12 +1972,6 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
     # Special handling of games with broken id in system.cnf
     if game_id in gameid_translation:
         game_id = gameid_translation[game_id]['id']
-    if game_id not in games:
-        with open(path, 'rb') as f:
-            h = hashlib.md5(f.read(1024*1024)).hexdigest()
-            print('MD5 fingerprint', h)
-            if h in gameid_by_md5sum:
-                return gameid_by_md5sum[h]['id']
     if game_id not in games and buf[:9] in games:
         return buf[:9]
     return game_id
