@@ -8366,6 +8366,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/f2c6c872-7db4-4460-af58-55f6f4f7097d.png',
         'pic1': 'https://images.launchbox-app.com/357d1d95-cf83-47d7-94c8-c615415f6fda.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jackie%20Chan%20Stuntmaster%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Jackie Chan Stuntmaster/SLUS-00684.bin',
     },
     'SLUS00854': {
         'url': "games/U/J/SLUS-00854.html",
@@ -67549,6 +67550,11 @@ ppf_fixes = {
     'SLUS00888': {
         'desc': 'PPF for Worms Armageddon',
         'ppf': 'ppf/SLUS-00888.ppf',
+        'tags': ['psp',],
+    },
+    'SLUS00684': {
+        'desc': 'PPF for Jackie Chan Stuntmaster',
+        'ppf': 'ppf/SLUS-00684.ppf',
         'tags': ['psp',],
     },
     'SLUS00884': {
