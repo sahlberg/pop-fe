@@ -2720,7 +2720,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None):
     print('Create PBP file for', game_title) if verbose else None
 
     SECTLEN = 2352
@@ -2731,6 +2731,8 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
     p.subchannels = subchannels
     if configs:
         p.configs = configs
+    if logo:
+        p.logo = logo
     if icon0:
         p.icon0 = icon0
     if pic0:
@@ -2766,7 +2768,17 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
+    # Convert LOGO to a file object
+    if logo:
+        image = logo
+        if image.size != (480,272):
+            image = image.resize((480, 272), Image.Resampling.HAMMING)
+        i = io.BytesIO()
+        image.save(i, format='PNG')
+        i.seek(0)
+        logo = i.read()
+
     # Convert ICON0 to a file object
     if icon0:
         image = icon0
@@ -2848,7 +2860,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     if use_cdda:
         aea_files = []
         whole_disk = True
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo)
 
     if manual:
         print('Installing manual as', f + '/DOCUMENT.DAT')
@@ -4089,6 +4101,8 @@ if __name__ == "__main__":
                         help='PIC0/screenshot image to use')
     parser.add_argument('--pic1',
                         help='PIC1/screenshot image to use')
+    parser.add_argument('--logo',
+                        help='Boot/logo image to use')
     parser.add_argument('--watermark', action='store_true',
                     help='Add a disc-id/game-title watermark for PSP/PSC')
     parser.add_argument('--list-themes', action='store_true',
@@ -4392,6 +4406,12 @@ if __name__ == "__main__":
             pfs = ((80,80),(62,62))
         icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg')
 
+    # LOGO.PNG
+    logo = None
+    if args.logo:
+        print('Get LOGO from', args.logo)
+        logo = Image.open(args.logo)
+        
     # PIC0.PNG
     pic0 = None
     if args.pic0:
@@ -4517,7 +4537,7 @@ if __name__ == "__main__":
                 temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
