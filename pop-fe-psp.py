@@ -195,6 +195,8 @@ class PopFePs3App:
         self.builder.get_variable('title_variable').set('')
         self.builder.get_variable('snd0_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
+        self.builder.get_variable('logo_variable').set('')
+        self.builder.get_object('logo', self.master).config(filetypes=[('Audio files', ['.png', '.PNG']), ('All Files', ['*.*', '*'])])
 
         self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
         self.builder.get_variable('manual_variable').set('')
@@ -614,7 +616,11 @@ class PopFePs3App:
                     self.configs[i][0x09] |= 0x20 # same effect as cdda_enabler
                 if len(self.configs[i]) > 0x8d:
                     self.configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
-                
+
+        logo = None
+        if self.builder.get_variable('logo_variable').get():
+            logo = Image.open(self.builder.get_variable('logo_variable').get())
+
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -624,7 +630,8 @@ class PopFePs3App:
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual,
                          configs=self.configs,
-                         use_cdda=True if self.cdda=='on' else False)
+                         use_cdda=True if self.cdda=='on' else False,
+                         logo=logo)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
