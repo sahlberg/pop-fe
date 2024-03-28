@@ -59881,6 +59881,8 @@ games = {
         'url': "games/J/S/SCPS-10011.html",
     	'id': 'SCPS10011',
 	'title': "SENGOKU CYBER - FUJIMARU JIGOKUHEN",
+        'pic0': 'https://images.launchbox-app.com/c822724d-c6c4-4d14-8b83-2397a023287d.png',
+        'snd0': 'https://www.youtube.com/watch?v=QpSo9tvaP4g',
     },
     'SLPS03151': {
         'url': "games/J/S/SLPS-03151.html",
