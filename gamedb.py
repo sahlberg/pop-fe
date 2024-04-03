@@ -12172,6 +12172,7 @@ games = {
 	'title': "SKULLMONKEYS",
         'pic0': 'https://images.launchbox-app.com/864ca84b-8908-4dbe-bd66-aa52d9fcd947.png',
         'pic1': 'https://images.launchbox-app.com/aa3fa2e6-6cca-46e7-83db-8c62497982ea.jpg',
+        'ppf': 'ppf/SLUS-00601.ppf',
     },
     'SLUS01392': {
         'url': "games/U/S/SLUS-01392.html",
@@ -66675,6 +66676,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '015f07b3e52befbb72db3ebd60657ffa': {
+        'id': 'SLPS01853',
+    },
+    '86ab07971eb0729ff6d0401078d7ef6a': {
+        'id': 'SLPS01853',
+    },
     '228b364257cb4a6856e6eabef5076162': {
         'id': 'SCES00182',
     },
