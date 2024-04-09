@@ -3895,6 +3895,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 #
 def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
     for i in range(len(real_disc_ids)):
+        ppf = None
         disc_id = real_disc_ids[i]
         if disc_id not in ppf_fixes:
             continue
