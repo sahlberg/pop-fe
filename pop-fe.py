@@ -2001,10 +2001,10 @@ def fetch_cached_binary(path):
         ret = requests.get(PSX_SITE + path, stream=True)
     except:
         print('fetch_cached_binary: Failed to fetch file ', PSX_SITE + path)
-        return NULL
+        return None
     if ret.status_code != 200:
         print('fetch_cached_binary: Failed to fetch file ', PSX_SITE + path)
-        return NULL
+        return None
 
     return ret.content
 
