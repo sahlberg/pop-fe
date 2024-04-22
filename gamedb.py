@@ -16885,12 +16885,14 @@ games = {
     'SLES03693': {
         'url': "games/P/B/SLES-03693.html",
     	'id': 'SLES03693',
-	'title': "BARBIE AVENTURIRE",
+	'title': "BARBIE AVENTURIERE",
+        'pic0': 'https://images.launchbox-app.com/8303aea0-6c7a-49b6-85c2-53c8f2b1e85a.png',
     },
     'SCES02366': {
         'url': "games/P/B/SCES-02366.html",
     	'id': 'SCES02366',
 	'title': "BARBIE AVENTURE EQUESTRE",
+        'pic0': 'https://images.launchbox-app.com/c9f8f9bf-dee0-4010-be69-1df866ca13f6.png',
     },
     'SLES03692': {
         'url': "games/P/B/SLES-03692.html",
@@ -17437,6 +17439,7 @@ games = {
         'url': "games/P/B/SLES-01893.html",
     	'id': 'SLES01893',
 	'title': "BOMBERMAN",
+        'pic0': 'https://images.launchbox-app.com/1cb1895e-36dc-4e1d-b0d7-2b12cf2ff975.png',
         'pspconfig': 'pspconfigs/Bomberman/SLES-01893.bin',
     },
     'SLES01712': {
@@ -17668,6 +17671,7 @@ games = {
         'url': "games/P/B/SLES-00458.html",
     	'id': 'SLES00458',
 	'title': "BUBBLE BOBBLE 2 - BUBBLE SYMPHONY",
+        'pic0': 'https://images.launchbox-app.com/75e9866c-28d5-4328-b417-b17a4447318f.png',
     },
     'SLES00122': {
         'url': "games/P/B/SLES-00122.html",
@@ -17795,6 +17799,8 @@ games = {
         'url': "games/P/B/SLES-00991.html",
     	'id': 'SLES00991',
 	'title': "BUST-A-MOVE 3 DX",
+        'pic0': 'https://images.launchbox-app.com/fcc6cca7-fc3a-46ec-bab0-20f574927830.png',
+        'pic1': 'https://images.launchbox-app.com/ffcfc13e-c8b9-442b-9308-8e3af22bba96.jpg',
         'pspconfig': 'pspconfigs/Puzzle Bobble 3 DX/SLES-00991.bin',
     },
     'SLES01389': {
@@ -24940,6 +24946,7 @@ games = {
 	'title': "NASCAR 2000",
         'pic0': 'https://images.launchbox-app.com/01eb01df-5866-4cc5-a6fa-1342a94c45b9.png',
         'pic1': 'https://images.launchbox-app.com/65de5f08-f0db-4eca-aa77-03b481272446.jpg',
+        'pspconfig': 'pspconfigs/Nascar 2000/SLES-02191.bin',
     },
     'SLES02299': {
         'url': "games/P/N/SLES-02299.html",
@@ -38874,7 +38881,7 @@ games = {
         'url': "games/J/A/SLPS-01606.html",
     	'id': 'SLPS01606',
 	'title': "AUBIRDFORCE AFTER",
-        'pic': 'https://images.launchbox-app.com/55aa2ea9-fc1e-404e-a94d-7894c9b2bdbc.png',
+        'pic0': 'https://images.launchbox-app.com/55aa2ea9-fc1e-404e-a94d-7894c9b2bdbc.png',
     },
     'SLPS02390': {
         'url': "games/J/A/SLPS-02390.html",
@@ -38955,6 +38962,7 @@ games = {
         'url': "games/J/B/SLPS-01459.html",
     	'id': 'SLPS01459',
 	'title': "B.L.U.E. - LEGEND OF WATER",
+        'pic0': 'https://images.launchbox-app.com/da899f08-c14d-4aad-abbc-242783e2eb3e.png',
     },
     'SCPS18006': {
         'url': "games/J/B/SCPS-18006.html",
@@ -38966,26 +38974,31 @@ games = {
         'url': "games/J/B/SLPS-01217.html",
     	'id': 'SLPS01217',
 	'title': "BACKGAINER - YOMIGAERU YUUSHA-TACHI: KAKUSEI-HEN GAINER TENSEI",
+        'pic0': 'https://images.launchbox-app.com/ef797f5b-a9f6-4917-aeaa-dac578cf9f47.png',
     },
     'SLPS01218': {
         'url': "games/J/B/SLPS-01217.html",
     	'id': 'SLPS01218',
 	'title': "BACKGAINER - YOMIGAERU YUUSHA-TACHI: KAKUSEI-HEN GAINER TENSEI",
+        'pic0': 'https://images.launchbox-app.com/ef797f5b-a9f6-4917-aeaa-dac578cf9f47.png',
     },
     'SLPS01446': {
         'url': "games/J/B/SLPS-01446.html",
     	'id': 'SLPS01446',
 	'title': "BACKGAINER - YOMIGAERU YUUSHA-TACHI: HISHOU-HEN URAGIRI NO SENJOU",
+        'pic0': 'https://images.launchbox-app.com/53b145ec-1d99-4589-aa6d-516280de7dbb.png',
     },
     'SLPS01447':    {
         'url': "games/J/B/SLPS-01446.html",
     	'id': 'SLPS01447',
 	'title': "BACKGAINER - YOMIGAERU YUUSHA-TACHI: HISHOU-HEN URAGIRI NO SENJOU",
+        'pic0': 'https://images.launchbox-app.com/53b145ec-1d99-4589-aa6d-516280de7dbb.png',
     },
     'SLPS01448':    {
         'url': "games/J/B/SLPS-01446.html",
     	'id': 'SLPS01448',
 	'title': "BACKGAINER - YOMIGAERU YUUSHA-TACHI: HISHOU-HEN URAGIRI NO SENJOU",
+        'pic0': 'https://images.launchbox-app.com/53b145ec-1d99-4589-aa6d-516280de7dbb.png',
     },
     'SLPS01782': {
         'url': "games/J/B/SLPS-01782.html",
@@ -39001,11 +39014,13 @@ games = {
         'url': "games/J/B/SLPS-02729.html",
     	'id': 'SLPS02729',
 	'title': "BACKGAMMON 2000",
+        'pic0': 'https://images.launchbox-app.com/da9a3c55-a656-4c21-8df9-5475c26f1a44.png',
     },
     'SLPM86733': {
         'url': "games/J/B/SLPM-86733.html",
     	'id': 'SLPM86733',
 	'title': "BACKGAMMON 2000",
+        'pic0': 'https://images.launchbox-app.com/da9a3c55-a656-4c21-8df9-5475c26f1a44.png',
     },
     'SCPS45382': {
         'url': "games/J/B/SCPS-45382.html",
@@ -39032,6 +39047,7 @@ games = {
         'url': "games/J/B/SLPS-00236.html",
     	'id': 'SLPS00236',
 	'title': "BAKURETSU AKINDO",
+        'pic0': 'https://images.launchbox-app.com/502f6333-4605-4334-9a17-82385292bfb4.png',
     },
     'SLPS00541': {
         'url': "games/J/B/SLPS-00541.html",
@@ -39042,6 +39058,7 @@ games = {
         'url': "games/J/B/SLPS-00718.html",
     	'id': 'SLPS00718',
 	'title': "BAKURETSU HUNTER - SOREZORE NO OMOI - NOWAAN CHATTE",
+        'pic0': 'https://images.launchbox-app.com/10a6092d-237b-4659-9ab0-e4f0ca74d743.png',
     },
     'SLPS03437': {
         'url': "games/J/B/SLPS-03437.html",
@@ -39164,6 +39181,7 @@ games = {
         'url': "games/J/B/SLPM-86540.html",
     	'id': 'SLPM86540',
 	'title': "BAROQUE SYNDROME",
+        'pic0': 'https://images.launchbox-app.com/e67b70a5-42b1-4660-9147-c0a3cd3bf545.png',
     },
     'SLPM86939': {
         'url': "games/J/B/SLPM-86939.html",
@@ -39175,11 +39193,13 @@ games = {
         'url': "games/J/B/SLPS-00687.html",
     	'id': 'SLPS00687',
 	'title': "BASEBALL NAVIGATOR",
+        'pic0': 'https://images.launchbox-app.com/37b99378-6a1c-4865-a7c8-fcf95741986d.png',
     },
     'SLPS01123': {
         'url': "games/J/B/SLPS-01123.html",
     	'id': 'SLPS01123',
 	'title': "BASEBALL NAVIGATOR [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/37b99378-6a1c-4865-a7c8-fcf95741986d.png',
     },
     'SLPS03055': {
         'url': "games/J/B/SLPS-03055.html",
@@ -39299,26 +39319,31 @@ games = {
         'url': "games/J/B/SLPS-01133.html",
     	'id': 'SLPS01133',
 	'title': "BATTLE ATHLETESS - DAIUNDOUKAI ALTERNATIVE",
+        'pic0': 'https://images.launchbox-app.com/a121e8dd-4b05-403a-a0cd-021207271ee0.png',
     },
     'SLPM86525': {
         'url': "games/J/B/SLPM-86525.html",
     	'id': 'SLPM86525',
 	'title': "BATTLE ATHLETESS - DAIUNDOUKAI ALTERNATIVE [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/a121e8dd-4b05-403a-a0cd-021207271ee0.png',
     },
     'SLPS01548': {
         'url': "games/J/B/SLPS-01548.html",
     	'id': 'SLPS01548',
 	'title': "BATTLE ATHLETESS - DAIUNDOUKAI GTO",
+        'pic0': 'https://images.launchbox-app.com/e8b7218e-1677-4596-b71d-ec0b2f5b0232.png',
     },
     'SLPM86526': {
         'url': "games/J/B/SLPM-86526.html",
     	'id': 'SLPM86526',
 	'title': "BATTLE ATHLETESS - DAIUNDOUKAI GTO [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/e8b7218e-1677-4596-b71d-ec0b2f5b0232.png',
     },
     'SLPS00991': {
         'url': "games/J/B/SLPS-00991.html",
     	'id': 'SLPS00991',
 	'title': "BATTLE BUGS",
+        'pic0': 'https://images.launchbox-app.com/3ca89307-5de8-43e1-afb2-335f7b0f810f.png',
     },
     'SLPS00968': {
         'url': "games/J/B/SLPS-00968.html",
@@ -39336,11 +39361,13 @@ games = {
         'url': "games/J/B/SLPS-01064.html",
     	'id': 'SLPS01064',
 	'title': "BATTLE MASTER",
+        'pic0': 'https://images.launchbox-app.com/0791639d-f884-4856-b284-d81c4d9b6b95.png',
     },
     'SLPM86519': {
         'url': "games/J/B/SLPM-86519.html",
     	'id': 'SLPM86519',
 	'title': "BATTLE MASTER [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/0791639d-f884-4856-b284-d81c4d9b6b95.png',
     },
     'SLPM86400': {
         'url': "games/J/B/SLPM-86400.html",
@@ -39351,11 +39378,13 @@ games = {
         'url': "games/J/B/SLPS-01127.html",
     	'id': 'SLPS01127',
 	'title': "BATTLEROUND USA",
+        'pic0': 'https://images.launchbox-app.com/21df18bc-3bcd-4e99-be7e-a080dfb08438.png',
     },
     'SCPS10138': {
         'url': "games/J/B/SCPS-10138.html",
     	'id': 'SCPS10138',
 	'title': "BEALPHARETH",
+        'pic0': 'https://images.launchbox-app.com/773b802c-fdd2-4fd4-89b5-4aca8c5e721c.png',
     },
     'SLPS01076': {
         'url': "games/J/B/SLPS-01076.html",
@@ -39391,6 +39420,7 @@ games = {
         'url': "games/J/B/SCPS-18013.html",
     	'id': 'SCPS18013',
 	'title': "BEAT PLANET MUSIC",
+        'pic0': 'https://images.launchbox-app.com/b0406721-017d-409d-a69a-50faf24ae48e.png',
     },
     'SLPM86126': {
         'url': "games/J/B/SLPM-86126.html",
@@ -39550,12 +39580,14 @@ games = {
         'url': "games/J/B/SLPS-00459.html",
     	'id': 'SLPS00459',
 	'title': "BIG CHALLENGE GOLF - TOKYO YOMIURI COUNTRY CLUB HEN",
+        'pic0': 'https://images.launchbox-app.com/3003d0c4-41c6-44ce-95a6-6ce6d02101f2.png',
         'manual': 'https://psxdatacenter.com/manuals/Big%20Challenge%20Golf%20-%20Tokyo%20Yomiuri%20Country%20Club%20Hen%20[SLPS-00459]%20(J).cbr',
     },
     'SLPS03368': {
         'url': "games/J/B/SLPS-03368.html",
     	'id': 'SLPS03368',
 	'title': "BILLIARD KING [NICE PRICE SERIES VOL.04]",
+        'pic0': 'https://images.launchbox-app.com/88a47938-e239-470b-82a5-ac28f4eebad8.png',
     },
     'SLPS00222': {
         'url': "games/J/B/SLPS-00222.html",
@@ -39675,12 +39707,16 @@ games = {
         'url': "games/J/B/SLPM-86770.html",
     	'id': 'SLPM86770',
 	'title': "BIOHAZARD 5TH ANNIVERSARY - NIGHTMARE RETURNS [LIMITED EDITION IN ALUMINUM]",
+        'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
+        'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Biohazard%20[SLPS-00222]%20(J).cbr',
     },
     'SLPM86123': {
         'url': "games/J/B/SLPM-86123.html",
     	'id': 'SLPM86123',
 	'title': "BISHI BASHI SPECIAL",
-        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic0': 'https://images.launchbox-app.com/89a0639d-2e30-4dca-94a4-8bfc1872f108.png',
         'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
         'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
         'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
@@ -39689,7 +39725,7 @@ games = {
         'url': "games/J/B/SLPM-86825.html",
     	'id': 'SLPM86825',
 	'title': "BISHI BASHI SPECIAL [KONAMI THE BEST]",
-        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic0': 'https://images.launchbox-app.com/89a0639d-2e30-4dca-94a4-8bfc1872f108.png',
         'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
         'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
         'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
@@ -39698,7 +39734,7 @@ games = {
         'url': "games/J/B/SLPM-87206.html",
     	'id': 'SLPM87206',
 	'title': "BISHI BASHI SPECIAL [PSONE BOOKS]",
-        'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
+        'pic0': 'https://images.launchbox-app.com/89a0639d-2e30-4dca-94a4-8bfc1872f108.png',
         'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
         'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
         'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
@@ -39707,26 +39743,31 @@ games = {
         'url': "games/J/B/SLPM-86267.html",
     	'id': 'SLPM86267',
 	'title': "BISHI BASHI SPECIAL 2",
+        'pic0': 'https://images.launchbox-app.com/d8979c6f-4fe9-4371-be3d-01cfc7f9082c.png'
     },
     'SLPM86925': {
         'url': "games/J/B/SLPM-86925.html",
     	'id': 'SLPM86925',
 	'title': "BISHI BASHI SPECIAL 2 [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/d8979c6f-4fe9-4371-be3d-01cfc7f9082c.png'
     },
     'SLPM87207': {
         'url': "games/J/B/SLPM-87207.html",
     	'id': 'SLPM87207',
 	'title': "BISHI BASHI SPECIAL 2 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/d8979c6f-4fe9-4371-be3d-01cfc7f9082c.png'
     },
     'SLPM86539': {
         'url': "games/J/B/SLPM-86539.html",
     	'id': 'SLPM86539',
 	'title': "BISHI BASHI SPECIAL 3 - STEP CHAMP",
+        'pic0': 'https://images.launchbox-app.com/9223d138-99b3-4eb0-9688-25848ad6f899.png',
     },
     'SLPM87208': {
         'url': "games/J/B/SLPM-87208.html",
     	'id': 'SLPM87208',
 	'title': "BISHI BASHI SPECIAL 3 - STEP CHAMP [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/9223d138-99b3-4eb0-9688-25848ad6f899.png',
     },
     'SLPS00262': {
         'url': "games/J/B/SLPS-00262.html",
@@ -40129,16 +40170,19 @@ games = {
         'url': "games/J/B/SLPS-03002.html",
     	'id': 'SLPS03002',
 	'title': "BOMBERMAN LAND",
+        'pic0': 'https://images.launchbox-app.com/29871ef7-74f5-4c6a-b66f-58bb6bc9604a.png',
     },
     'SLPM87080': {
         'url': "games/J/B/SLPM-87080.html",
     	'id': 'SLPM87080',
 	'title': "BOMBERMAN LAND [HUDSON THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/29871ef7-74f5-4c6a-b66f-58bb6bc9604a.png',
     },
     'SLPM87364': {
         'url': "games/J/B/SLPM-87364.html",
     	'id': 'SLPM87364',
 	'title': "BOMBERMAN LAND [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/29871ef7-74f5-4c6a-b66f-58bb6bc9604a.png',
     },
     'SCPS45225': {
         'url': "games/J/B/SCPS-45225.html",
@@ -40182,6 +40226,7 @@ games = {
         'url': "games/J/B/SLPS-00333.html",
     	'id': 'SLPS00333',
 	'title': "BONOGURASHI KORE DE KANPEKI DISU",
+        'pic0': 'https://images.launchbox-app.com/e504350c-bfb0-4e2b-baef-5fc0d320cb17.png',
     },
     'SLPM86004': {
         'url': "games/J/B/SLPM-86004.html",
@@ -40420,6 +40465,7 @@ games = {
         'url': "games/J/B/SCPS-10105.html",
     	'id': 'SCPS10105',
 	'title': "BRIGHTIS",
+        'pic0': 'https://images.launchbox-app.com/0381fbbc-2520-45ed-8238-2198d85bb7b3.png',
     },
     'SLPM86065': {
         'url': "games/J/B/SLPM-86065.html",
@@ -40450,6 +40496,7 @@ games = {
         'url': "games/J/B/SLPS-00497.html",
     	'id': 'SLPS00497',
 	'title': "BUILDING CRUSH!",
+        'pic0': 'https://images.launchbox-app.com/adc5fcb9-6f61-47a1-8ae3-003bdc60e773.png',
     },
     'SLPS00888': {
         'url': "games/J/B/SLPS-00888.html",
@@ -42897,11 +42944,13 @@ games = {
         'url': "games/J/D/SLPS-00108.html",
     	'id': 'SLPS00108',
 	'title': "DARKSEED",
+        'pic0': 'https://images.launchbox-app.com/360a8510-ffa1-4538-b3b4-8f2a03cd4b92.png',
     },
     'SLPS00938': {
         'url': "games/J/D/SLPS-00938.html",
     	'id': 'SLPS00938',
 	'title': "DARKSEED II",
+        'pic0': 'https://images.launchbox-app.com/ac52f612-3bca-4ea7-9523-267f431d6019.png',
     },
     'SLPM86682': {
         'url': "games/J/D/SLPM-86682.html",
@@ -58416,11 +58465,15 @@ games = {
         'url': "games/J/P/SLPS-01065.html",
     	'id': 'SLPS01065',
 	'title': "PUZZLE BOBBLE 3 DX",
+        'pic0': 'https://images.launchbox-app.com/904dc6bd-3223-4267-9221-045b37e413ce.png',
+        'pic1': 'https://images.launchbox-app.com/ffcfc13e-c8b9-442b-9308-8e3af22bba96.jpg',
     },
     'SLPS91075': {
         'url': "games/J/P/SLPS-91075.html",
     	'id': 'SLPS91075',
 	'title': "PUZZLE BOBBLE 3 DX [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/904dc6bd-3223-4267-9221-045b37e413ce.png',
+        'pic1': 'https://images.launchbox-app.com/ffcfc13e-c8b9-442b-9308-8e3af22bba96.jpg',
     },
     'SLPS01492': {
         'url': "games/J/P/SLPS-01492.html",
