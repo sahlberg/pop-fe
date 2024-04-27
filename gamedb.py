@@ -10145,6 +10145,7 @@ games = {
 	'title': "NASCAR 2000",
         'pic0': 'https://images.launchbox-app.com/01eb01df-5866-4cc5-a6fa-1342a94c45b9.png',
         'pic1': 'https://images.launchbox-app.com/65de5f08-f0db-4eca-aa77-03b481272446.jpg',
+        'pspconfig': 'pspconfigs/Nascar 2000/SLUS-00962.bin',
     },
     'SLUS01263': {
         'url': "games/U/N/SLUS-01263.html",
