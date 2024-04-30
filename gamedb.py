@@ -36561,6 +36561,7 @@ games = {
     	'id': 'SLES00483',
 	'title': "WORMS PINBALL",
         'pic0': 'https://images.launchbox-app.com/c342ab9a-fbae-4e04-8d63-f0bc07f36bba.png',
+        'pspconfig': 'pspconfigs/Worms Pinball/SLES-00483.bin',
     },
     'SLES03804': {
         'url': "games/P/W/SLES-03804.html",
