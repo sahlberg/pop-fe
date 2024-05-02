@@ -4005,6 +4005,7 @@ def generate_cu2_files(cue_files, img_files, subdir):
 def generate_aea_files(cue_files, img_files, subdir):
     aea_files = []
 
+    extra_data_track_found = False
     for d in range(len(cue_files)):
         cue_file = cue_files[d]
         img_file = img_files[d]
@@ -4014,6 +4015,12 @@ def generate_aea_files(cue_files, img_files, subdir):
         bc.towav = True
         bc.open(cue_file)
         for i in range(2, len(bc.cue) + 1):
+            if extra_data_track_found:
+                continue
+            if bc.tracks[i]['MODE'] != 'AUDIO':
+                aea_files[d] = []
+                extra_data_track_found = True
+                continue
             f = subdir + 'TRACK_%d_%02d.wav' % (d, i)
             bc.writetrack(i, f)
             temp_files.append(f)
@@ -4030,7 +4037,7 @@ def generate_aea_files(cue_files, img_files, subdir):
                 break
             aea_files[d].append(aea_file)    
 
-    return aea_files
+    return aea_files, extra_data_track_found
 
 
 #
@@ -4352,8 +4359,12 @@ if __name__ == "__main__":
     cu2_files = generate_cu2_files(cue_files, img_files, subdir)
 
     if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
-        aea_files = generate_aea_files(cue_files, img_files, subdir)
-    
+        aea_files, extra_data_tracks = generate_aea_files(cue_files, img_files, subdir)
+        if extra_data_tracks:
+            args.whole_disk = True
+            args.psp_use_cdda = False
+            print('Extra data tracks found, forcing WHOLE DISK encoding')
+
     if args.game_id:
         args.game_id = args.game_id.split(',')
         # override the disc_ids with the content of --game_id

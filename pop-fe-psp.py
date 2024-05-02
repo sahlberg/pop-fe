@@ -590,7 +590,9 @@ class PopFePs3App:
 
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
 
-        aea_files = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
+        aea_files, extra_data_tracks = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
+        if extra_data_tracks:
+            self.cdda = 'on'
 
         if self.builder.get_variable('force_ntsc_variable').get() == 'on':
             for i in range(len(self.configs)):
