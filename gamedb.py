@@ -67742,6 +67742,10 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # urban chaos has wrong discid in system.cnf
+    '573d7c4f54b9b934e6741d5733c9e611': {
+        'id': 'SLUS01091',
+    },
     'efccdeaa687299e9ffd838df4edef8cf': {
         'id': 'USPM00001',
     },
