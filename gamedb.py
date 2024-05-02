@@ -14747,7 +14747,7 @@ games = {
         'url': "games/U/W/SCUS-94644.html",
     	'id': 'SCUS94644',
 	'title': "WHO WANTS TO BE A MILLIONAIRE - 3RD EDITION",
-        'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic0': 'https://github.com/sahlberg/pop-fe/assets/168254312/3ac03b0d-fb4b-46de-b26d-44e959f92baf',
     },
     'SLUS00425': {
         'url': "games/U/W/SLUS-00425.html",
