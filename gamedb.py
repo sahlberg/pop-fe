@@ -68783,6 +68783,14 @@ games = {
 }
 
 gameid_by_md5sum = {
+    # tales of destiny with spanish translation
+    '6a9cf2aa79bb282048ee0f121c76d488': {
+    	'id': 'SLUS00626',
+    },
+    # tales of destiny with spanish translation
+    'e02babf39484755432d988a3d545d312': {
+    	'id': 'SLUS00626',
+    },
     '34c8084680338e417ff5760e9951992a': {
         'id': 'SLUS01429',
     },
