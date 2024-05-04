@@ -68331,16 +68331,22 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
 	'SCUS94480': {
-		     'id': 'SCUS94480',
-		     'title': 'Pizza Hut Disc 1',
+	    'id': 'SCUS94480',
+	    'title': 'Pizza Hut Disc 1',
+            'icon0': 'https://images.launchbox-app.com/716022b2-6e64-4364-9edf-77271f79d330.jpg',
+            'pic0': 'https://images.launchbox-app.com/65723258-9c92-4cd8-86ad-993c5cb2f9e2.png',
+            'pic1': 'https://images.launchbox-app.com/8f1b755a-e6a8-441f-8358-ea95fdfe9c78.jpg',
 	},
 	'SCUS94481': {
-		     'id': 'SCUS94481',
-		     'title': 'Pizza Hut Disc 2',
+	    'id': 'SCUS94481',
+	    'title': 'Pizza Hut Disc 2',
+            'icon0': 'https://images.launchbox-app.com/a6d86e98-433e-4537-bc1e-1777fead7796.jpg',
+            'pic0': 'https://images.launchbox-app.com/84a2c7b6-fbd2-43d0-9b22-e479e30bdfa0.png',
+            'pic1': 'https://images.launchbox-app.com/fca5dee6-2685-417f-85b0-1d9d69fb9343.jpg',
 	},
 	'SCUS94472': {
-		     'id': 'SCUS94472',
-		     'title': 'Slim Jim',
+	    'id': 'SCUS94472',
+	    'title': 'Slim Jim',
 	},
 	'SCUS94176': {
 		     'id': 'SCUS94176',
