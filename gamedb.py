@@ -68330,9 +68330,849 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=LAxD6e_t9vM&list=PLOqYa2mCm4JHWMZ04U5018dP0WLitlAAI&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
+	'SCUS94480': {
+		     'id': 'SCUS94480',
+		     'title': 'Pizza Hut Disc 1',
+	},
+	'SCUS94481': {
+		     'id': 'SCUS94481',
+		     'title': 'Pizza Hut Disc 2',
+	},
+	'SCUS94472': {
+		     'id': 'SCUS94472',
+		     'title': 'Slim Jim',
+	},
+	'SCUS94176': {
+		     'id': 'SCUS94176',
+		     'title': 'Jampack Vol. 1',
+	},
+	'SCUS94197': {
+		     'id': 'SCUS94197',
+		     'title': 'Jampack Vol. 2',
+	},
+	'LSP200110': {
+		     'id': 'LSP200110',
+		     'title': "Calamity 1 - The Natural World",
+	},
+	'LSP200220': {
+		     'id': 'LSP200220',
+		     'title': "Calamity 2 - People and Traditions",
+	},
+	'LSP903426': {
+		     'id': 'LSP903426',
+		     'title': "Cali's Geo Tools",
+	},
+	'LSP905154': {
+		     'id': 'LSP905154',
+		     'title': "Cosmic Cookoff - Language Arts",
+	},
+	'LSP080240': {
+		     'id': 'LSP080240',
+		     'title': "Cosmic Cookoff - Mathematics",
+	},
+	'LSP130110': {
+		     'id': 'LSP130110',
+		     'title': "Creative Camp",
+	},
+	'LSP903167': {
+		     'id': 'LSP903167',
+		     'title': "Creative Isle",
+	},
+	'LSP905109': {
+		     'id': 'LSP905109',
+		     'title': "Creative Journey",
+	},
+	'LSP907097': {
+		     'id': 'LSP907097',
+		     'title': "Creative Voyage",
+	},
+	'LSP990191': {
+		     'id': 'LSP990191',
+		     'title': "Every Child Can Succeed 1",
+	},
+	'LSP990192': {
+		     'id': 'LSP990192',
+		     'title': "Every Child Can Succeed 2",
+	},
+	'LSP990193': {
+		     'id': 'LSP990193',
+		     'title': "Every Child Can Succeed 3",
+	},
+	'LSP990194': {
+		     'id': 'LSP990194',
+		     'title': "Every Child Can Succeed 4",
+	},
+	'LSP990195': {
+		     'id': 'LSP990195',
+		     'title': "Every Child Can Succeed 5",
+	},
+	'LSP990196': {
+		     'id': 'LSP990196',
+		     'title': "Every Child Can Succeed 6",
+	},
+	'LSP990197': {
+		     'id': 'LSP990197',
+		     'title': "Every Child Can Succeed 7",
+	},
+	'LSP080130': {
+		     'id': 'LSP080130',
+		     'title': "Faire Games - Language Arts",
+	},
+	'LSP905420': {
+		     'id': 'LSP905420',
+		     'title': "Faire Games - Mathematics",
+	},
+	'LSP150200': {
+		     'id': 'LSP150200',
+		     'title': "Family Connection - A Guide to Lightspan",
+	},
+	'LSP905062': {
+		     'id': 'LSP905062',
+		     'title': "K9.5 1 - Live in Airedale",
+	},
+	'LSP905079': {
+		     'id': 'LSP905079',
+		     'title': "K9.5 2 - We Are the Dogs!",
+	},
+	'LSP905086': {
+		     'id': 'LSP905086',
+		     'title': "K9.5 3 - WebTunes",
+	},
+	'LSP905093': {
+		     'id': 'LSP905093',
+		     'title': "K9.5 4 - The Tail-Wag Tour",
+	},
+	'LSP907103': {
+		     'id': 'LSP907103',
+		     'title': "K9.5 5 - The Howlywood Premiere",
+	},
+	'LSP905123': {
+		     'id': 'LSP905123',
+		     'title': "KazMania 1 - Trail of Gems",
+	},
+	'LSP905130': {
+		     'id': 'LSP905130',
+		     'title': "KazMania 2 - Chaos in KazMania",
+	},
+	'LSP010150': {
+		     'id': 'LSP010150',
+		     'title': "Liquid Books Adventure 1 - Lety's Favorite Stories",
+	},
+	'LSP010250': {
+		     'id': 'LSP010250',
+		     'title': "Liquid Books Adventure 2 - Amrita's Trees & Cerdito and the Coyote",
+	},
+	'LSP010350': {
+		     'id': 'LSP010350',
+		     'title': "Liquid Books Adventure 3 - Far-Fetched Frontier Tales",
+	},
+	'LSP903136': {
+		     'id': 'LSP903136',
+		     'title': "Liquid Books Adventure 4 - The Adventures of Adelita and Bo",
+	},
+	'LSP903143': {
+		     'id': 'LSP903143',
+		     'title': "Liquid Books Adventure 5 - Pop-Out Prose",
+	},
+	'LSP905147': {
+		     'id': 'LSP905147',
+		     'title': "Liquid Books Adventure 6 - The Wandering Path",
+	},
+	'LSP010180': {
+		     'id': 'LSP010180',
+		     'title': "Mars Moose Adventure - WalkAbout 1 - The Natural History Museum",
+	},
+	'LSP010280': {
+		     'id': 'LSP010280',
+		     'title': "Mars Moose Adventure - WalkAbout 2 - The Shakespeare Festival",
+	},
+	'LSP010380': {
+		     'id': 'LSP010380',
+		     'title': "Mars Moose Adventure - WalkAbout 3 - World Sports Day",
+	},
+	'LSP010170': {
+		     'id': 'LSP010170',
+		     'title': "Mars Moose Cosmic Quest 1 - City Sights",
+	},
+	'LSP010270': {
+		     'id': 'LSP010270',
+		     'title': "Mars Moose Cosmic Quest 2 - Fairy Tale Island",
+	},
+	'LSP010370': {
+		     'id': 'LSP010370',
+		     'title': "Mars Moose Cosmic Quest 3 - Race Through France",
+	},
+	'LSP010160': {
+		     'id': 'LSP010160',
+		     'title': "Mars Moose Stay and Play 1 - In the Clubhouse",
+	},
+	'LSP010260': {
+		     'id': 'LSP010260',
+		     'title': "Mars Moose Stay and Play 2 - In Mars' Bedroom",
+	},
+	'LSP010360': {
+		     'id': 'LSP010360',
+		     'title': "Mars Moose Stay and Play 3 - In Lonnie's Classroom",
+	},
+	'LSP903433': {
+		     'id': 'LSP903433',
+		     'title': "Math Gallery - Collection 1",
+	},
+	'LSP903440': {
+		     'id': 'LSP903440',
+		     'title': "Math Gallery - Collection 2",
+	},
+	'LSP100112': {
+		     'id': 'LSP100112',
+		     'title': "Math on the Move! 1 - Addition-Subtraction Advanced",
+	},
+	'LSP905390': {
+		     'id': 'LSP905390',
+		     'title': "Math on the Move! 1 - Addition-Subtraction Intermediate",
+	},
+	'LSP100113': {
+		     'id': 'LSP100113',
+		     'title': "Math on the Move! 2 - Multiplication-Division Advanced",
+	},
+	'LSP905406': {
+		     'id': 'LSP905406',
+		     'title': "Math on the Move! 2 - Multiplication-Division Intermediate",
+	},
+	'LSP050101': {
+		     'id': 'LSP050101',
+		     'title': "Mona & Moki 1 - Drive Me Wild!",
+	},
+	'LSP050102': {
+		     'id': 'LSP050102',
+		     'title': "Mona & Moki 2 - Drive Me Wilder!",
+	},
+	'LSP905383': {
+		     'id': 'LSP905383',
+		     'title': "P.K.'s Math Studio",
+	},
+	'LSP905345': {
+		     'id': 'LSP905345',
+		     'title': "P.K.'s Place 1 - Party on the Patio!",
+	},
+	'LSP905352': {
+		     'id': 'LSP905352',
+		     'title': "P.K.'s Place 2 - Hoopo at Sea!",
+	},
+	'LSP905369': {
+		     'id': 'LSP905369',
+		     'title': "P.K.'s Place 3 - Carlos at the Races!",
+	},
+	'LSP180410': {
+		     'id': 'LSP180410',
+		     'title': "P.K.'s Place 4 - Daphne and the Seventh Wonder",
+	},
+	'LSP060101': {
+		     'id': 'LSP060101',
+		     'title': "Quaddle Family Mysteries, The 1 - The Case of the Scarce Scarab - Lobby & Kitchen",
+	},
+	'LSP060102': {
+		     'id': 'LSP060102',
+		     'title': "Quaddle Family Mysteries, The 2 - The Case of the Scarce Scarab - Garden",
+	},
+	'LSP060103': {
+		     'id': 'LSP060103',
+		     'title': "Quaddle Family Mysteries, The 3 - The Case of the Scarce Scarab - Parlor & Family Room",
+	},
+	'LSP907127': {
+		     'id': 'LSP907127',
+		     'title': "Road Writer",
+	},
+	'LSP990161': {
+		     'id': 'LSP990161',
+		     'title': "Science Is Elementary 1",
+	},
+	'LSP990162': {
+		     'id': 'LSP990162',
+		     'title': "Science Is Elementary 2",
+	},
+	'LSP990163': {
+		     'id': 'LSP990163',
+		     'title': "Science Is Elementary 3",
+	},
+	'LSP020160': {
+		     'id': 'LSP020160',
+		     'title': "Secret of Googol 1a, The - Reshaping Googol - The Submarine",
+	},
+	'LSP020150': {
+		     'id': 'LSP020150',
+		     'title': "Secret of Googol 1b, The - Reshaping Googol - The Tower",
+	},
+	'LSP020180': {
+		     'id': 'LSP020180',
+		     'title': "Secret of Googol 2a, The - Reshaping Googol - The Castle",
+	},
+	'LSP020170': {
+		     'id': 'LSP020170',
+		     'title': "Secret of Googol 2b, The - Reshaping Googol - Under the Ocean",
+	},
+	'LSP020260': {
+		     'id': 'LSP020260',
+		     'title': "Secret of Googol 3, The - The Googol Counting Fair - Midways",
+	},
+	'LSP020280': {
+		     'id': 'LSP020280',
+		     'title': "Secret of Googol 4, The - The Googol Counting Fair - Corral & Fun House",
+	},
+	'LSP020450': {
+		     'id': 'LSP020450',
+		     'title': "Secret of Googol 5, The - Googolfest - Party Isle & Toy Isle",
+	},
+	'LSP020570': {
+		     'id': 'LSP020570',
+		     'title': "Secret of Googol 6, The - Googolfest - Arcade Isle & Moon Feast Isle",
+	},
+	'LSP020650': {
+		     'id': 'LSP020650',
+		     'title': "Secret of Googol 7, The - Eggs All Around - Egg Trek & Balloon Picnic",
+	},
+	'LSP020780': {
+		     'id': 'LSP020780',
+		     'title': "Secret of Googol 8, The - Googol Gulch - General Store & Math Arcade",
+	},
+	'LSP990141': {
+		     'id': 'LSP990141',
+		     'title': "Story Lane Theater 1",
+	},
+	'LSP990142': {
+		     'id': 'LSP990142',
+		     'title': "Story Lane Theater 2",
+	},
+	'LSP990143': {
+		     'id': 'LSP990143',
+		     'title': "Story Lane Theater 3",
+	},
+	'LSP990144': {
+		     'id': 'LSP990144',
+		     'title': "Story Lane Theater 4",
+	},
+	'LSP990145': {
+		     'id': 'LSP990145',
+		     'title': "Story Lane Theater 5",
+	},
+	'LSP030101': {
+		     'id': 'LSP030101',
+		     'title': "Str.at.e.s. 1 - Match-A-Batch",
+	},
+	'LSP030102': {
+		     'id': 'LSP030102',
+		     'title': "Str.at.e.s. 2 - Matchamania!",
+	},
+	'LSP030103': {
+		     'id': 'LSP030103',
+		     'title': "Str.at.e.s. 3 - Title This! Title That!",
+	},
+	'LSP030104': {
+		     'id': 'LSP030104',
+		     'title': "Str.at.e.s. 4 - Titlerama!",
+	},
+	'LSP030105': {
+		     'id': 'LSP030105',
+		     'title': "Str.at.e.s. 5 - Parallel Lives!",
+	},
+	'LSP030106': {
+		     'id': 'LSP030106',
+		     'title': "Str.at.e.s. 6 - Analogy-ology!",
+	},
+	'LSP030107': {
+		     'id': 'LSP030107',
+		     'title': "Str.at.e.s. 7 - Riddle Roundup!",
+	},
+	'LSP030108': {
+		     'id': 'LSP030108',
+		     'title': "Str.at.e.s. 8 - Riddle Wrangler!",
+	},
+	'LSP903174': {
+		     'id': 'LSP903174',
+		     'title': "Three Decoders 1, The - Riddle of the Ring",
+	},
+	'LSP903181': {
+		     'id': 'LSP903181',
+		     'title': "Three Decoders 2, The - Key to the Carousel",
+	},
+	'LSP907387': {
+		     'id': 'LSP907387',
+		     'title': "Timeless Jade Trade",
+	},
+	'LSP040110': {
+		     'id': 'LSP040110',
+		     'title': "Timeless Math 1 - Maya, Search and Rescue",
+	},
+	'LSP040210': {
+		     'id': 'LSP040210',
+		     'title': "Timeless Math 2 - Maya, Observatory",
+	},
+	'LSP040310': {
+		     'id': 'LSP040310',
+		     'title': "Timeless Math 3 - Maya, King Jaguar's Village",
+	},
+	'LSP040410': {
+		     'id': 'LSP040410',
+		     'title': "Timeless Math 4 - Lunar Base",
+	},
+	'LSP040510': {
+		     'id': 'LSP040510',
+		     'title': "Timeless Math 5 - Space Flight Rescue",
+	},
+	'LSP040610': {
+		     'id': 'LSP040610',
+		     'title': "Timeless Math 6 - Brainswarm",
+	},
+	'LSP040710': {
+		     'id': 'LSP040710',
+		     'title': "Timeless Math 7 - Rover Recovery",
+	},
+	'LSP909015': {
+		     'id': 'LSP909015',
+		     'title': "Unknown Variable 1 - Masque Manor",
+	},
+	'LSP909022': {
+		     'id': 'LSP909022',
+		     'title': "Unknown Variable 2 - Raven's Ridge",
+	},
+	'LSP170110': {
+		     'id': 'LSP170110',
+		     'title': "Write Away 1",
+	},
+	'LSP170111': {
+		     'id': 'LSP170111',
+		     'title': "Write Away 2",
+	},
+	'LSP170112': {
+		     'id': 'LSP170112',
+		     'title': "Write Away 3",
+	},
+	'LSP170113': {
+		     'id': 'LSP170113',
+		     'title': "Write Away 4",
+	},
+	'LSP170114': {
+		     'id': 'LSP170114',
+		     'title': "Write Away 5",
+	},
+	'LSP170115': {
+		     'id': 'LSP170115',
+		     'title': "Write Away 6",
+	},
+	'LSP170116': {
+		     'id': 'LSP170116',
+		     'title': "Write Away 7",
+	},
+	'LSP170117': {
+		     'id': 'LSP170117',
+		     'title': "Write Away 8",
+	},
+	'LSP170118': {
+		     'id': 'LSP170118',
+		     'title': "Write Away 9",
+	},
+	'LSP170119': {
+		     'id': 'LSP170119',
+		     'title': "Write Away 10",
+	},
 }
 
 gameid_by_md5sum = {
+    '34c8084680338e417ff5760e9951992a': {
+        'id': 'SLUS01429',
+    },
+    '45f777e606fcdb95997710a2402ca7ea': {
+        'id': 'SLUS01579',
+    },
+    '36aa3aae0a290d1b1276d8c8ab480eb1': {
+        'id': 'SLUS01491',
+    },
+    '2cf42fd5bcabb2d2bf94b832a475cd22': {
+        'id': 'SLUS01451',
+    },
+    'fc02241d174adcd61cce9d98470eee20': {
+        'id': 'SCUS94480',
+    },
+    '430c7fcc05459e562f02539d7458cc6e': {
+        'id': 'SCUS94481',
+    },
+    '8a149aba4ada65852c2408ef027a3c58': {
+        'id': 'SLUS00889',
+    },
+    'd2f52499f5b3e48ef0f4b7665f54d6e7': {
+        'id': 'SCUS94472',
+    },
+    'bd93203627de58ebe71e5d3b3b858c02': {
+        'id': 'SLUS01555',
+    },
+    'de46d2b13e0661492e141c4285674a48': {
+        'id': 'SLUS01459',
+    },
+    '0acbe31c41d2466c0627c17b984c31bd': {
+        'id': 'SLUS01508',
+    },
+    '8dbce03ff3420af7e98c3f70a15c1bbb': {
+        'id': 'SLUS01474',
+    },
+    'f452b03de1d582d6c63f9813892fd370': {
+        'id': 'SLUS01454',
+    },
+    '9dcaffcefea9c7425f1134320e5df340': {
+        'id': 'SLUS00744',
+    },
+    'ff79b62a0ee0621404686faf54dbad61': {
+        'id': 'SLUS01122',
+    },
+    '604b3654f6db5bd30fb43a498ee6b9a7': {
+        'id': 'SLUS00055',
+    },
+    'fa3b0f29e113157f877f93a199ea9bf0': {
+        'id': 'SLUS01466',
+    },
+    '46f267e0f014538bc4cde894230365fd': {
+        'id': 'SLUS01414',
+    },
+    '819a3f19ad4940531ff1d87f9ed9d77b': {
+        'id': 'SCUS94176',
+    },
+    '15aab3899ab372fc48a6c3591309ed76': {
+        'id': 'SCUS94197',
+    },
+    '89b14f1ad627024b1023c02c5ea0f38f': {
+        'id': 'SLUS01524',
+    },
+    '993551418f8d5b87cb567d8caff39b7f': {
+        'id': 'SLES04057',
+    },
+    'f484ef56f200ad936d6b547b5d103864': {
+        'id': 'SCUS94653',
+    },
+    '53b97eb71df0365f04e733b3c2639782': {
+        'id': 'SCUS94689',
+    },
+    '36a662a3d6f6cd244a31e6fe76473d8c': {
+        'id': 'SCUS94692',
+    },
+    '8c72e73aafa3bcd8f96cc427304b914b': {
+        'id': 'SLUS01528',
+    },
+    '7d6558b349c08881e43f284a20852d17': {
+        'id': 'LSP200110',
+    },
+    '31c4b55c716f0551aef55cd8b390a60f': {
+        'id': 'LSP200220',
+    },
+    'fa7035741e5443120e4df53d6b6904d0': {
+        'id': 'LSP903426',
+    },
+    'c7b4d3fc60d73681d1479d5e06a52710': {
+        'id': 'LSP905154',
+    },
+    '8ba3a9acee008cc0dceeb085c0845fcb': {
+        'id': 'LSP080240',
+    },
+    '727958a0866c056425c484062770b2d2': {
+        'id': 'LSP130110',
+    },
+    'f7c002b59da3acc6f6c91cd03955bbeb': {
+        'id': 'LSP903167',
+    },
+    '2558ca8ca299f3b537322076c1735502': {
+        'id': 'LSP905109',
+    },
+    '4b29f047ca6ee12f3d329020b005299c': {
+        'id': 'LSP907097',
+    },
+    'dad14b50799847212dec221ca5eefb1c': {
+        'id': 'LSP990191',
+    },
+    '97f158a1b35ca5310cbdeb137fe06777': {
+        'id': 'LSP990192',
+    },
+    'ae2f242b3a8baa17e14206837e2023da': {
+        'id': 'LSP990193',
+    },
+    'c499e338c80910172e27457edcb8d06b': {
+        'id': 'LSP990194',
+    },
+    'ec7df6b7acb512e31fd83fc777694632': {
+        'id': 'LSP990195',
+    },
+    '21ffe2a798cd3206fd0571b58375cf62': {
+        'id': 'LSP990196',
+    },
+    '052b73ef64533bb504e1f321f9ffde40': {
+        'id': 'LSP990197',
+    },
+    'b58b3de4ad614e34fd53291f2053f991': {
+        'id': 'LSP080130',
+    },
+    '2587da71d33b62c44984b324523bb1ad': {
+        'id': 'LSP905420',
+    },
+    '88285b2a8680368ac9d256fa35c5e6a0': {
+        'id': 'LSP150200',
+    },
+    '5e43a096e6878456addb7b133e5e0566': {
+        'id': 'LSP905062',
+    },
+    '7212758bf979ee10f8cbb95204847488': {
+        'id': 'LSP905079',
+    },
+    '9586e77bbf1aa87d43460e42b64f28c5': {
+        'id': 'LSP905086',
+    },
+    '0d3538e9a34681ec2a4041a43ad38735': {
+        'id': 'LSP905093',
+    },
+    'f8a032da8e2cce34bf560f5b9473e7a6': {
+        'id': 'LSP907103',
+    },
+    'fa0cf274e28ba7f988f6bd56cd65105b': {
+        'id': 'LSP905123',
+    },
+    '5d3eac5c80cfc1974d8a4393164f7ed5': {
+        'id': 'LSP905130',
+    },
+    '702884bb585512a5ddd1b55943579e6d': {
+        'id': 'LSP010150',
+    },
+    'de5ee797c657fa28c7c1311a7d407a7f': {
+        'id': 'LSP010250',
+    },
+    '966165aa8c8a7001da78260fc298f946': {
+        'id': 'LSP010350',
+    },
+    'f59a5c2e7dca49104dc199da1bbf76e0': {
+        'id': 'LSP903136',
+    },
+    '9d612f8a8112e48be81a26887c5e0b6e': {
+        'id': 'LSP903143',
+    },
+    '274b84c56f69f39cbc87bdf850cf3422': {
+        'id': 'LSP905147',
+    },
+    'aeeb6616446c185f45f3bf95860f318e': {
+        'id': 'LSP010180',
+    },
+    '83ac47630980c2c81c842ed6bd84bbdf': {
+        'id': 'LSP010280',
+    },
+    'bb56ee1d3e8cd7e32585c3ff4b8bcb3c': {
+        'id': 'LSP010380',
+    },
+    '9449705822cb66340d8f68942ca8ebcc': {
+        'id': 'LSP010170',
+    },
+    '0ce8e8b86cf3d4511d4cb4a56870d42c': {
+        'id': 'LSP010270',
+    },
+    'eb51f7c6e1dda347d6e85ea80692e3bf': {
+        'id': 'LSP010370',
+    },
+    'dfe55e26e8a8299f98b54d1a3aa41d15': {
+        'id': 'LSP010160',
+    },
+    'a1931085f7035889a0af564789ba2bf3': {
+        'id': 'LSP010260',
+    },
+    'ddb8f70829037ab394d81a28ebb1309b': {
+        'id': 'LSP010360',
+    },
+    '9492f3635b64893c4e9beffb5276573a': {
+        'id': 'LSP903433',
+    },
+    '5ec9bf2002d64c6ec308146f73d95e6a': {
+        'id': 'LSP903440',
+    },
+    '5b0b759408aab2a593fbe9cf10d9a150': {
+        'id': 'LSP100112',
+    },
+    'c16b616af8b5ebcb3b0eba6484c6ade9': {
+        'id': 'LSP905390',
+    },
+    '5d06a8d465d0621efd837195d53aa12a': {
+        'id': 'LSP100113',
+    },
+    '85a50440db2385693ee58900d487a446': {
+        'id': 'LSP905406',
+    },
+    '1511580f98683123f6e1679d8c105b41': {
+        'id': 'LSP050101',
+    },
+    '4f2f19fc43eaf90d1c66fcbd94546cbb': {
+        'id': 'LSP050102',
+    },
+    '80fa9c616f4316add45156daf6efdeac': {
+        'id': 'LSP905383',
+    },
+    'dbd5344c6bf59f0f71e585793fe529be': {
+        'id': 'LSP905345',
+    },
+    '4483c78faa1c268a69f25e1588a86705': {
+        'id': 'LSP905352',
+    },
+    'aa64ab216902a18e2f52ec55bf4fb6de': {
+        'id': 'LSP905369',
+    },
+    '6904262b619ac70ccf1ac2acca5834f5': {
+        'id': 'LSP180410',
+    },
+    'c200d3b865f6dec112a7c14912e9128a': {
+        'id': 'LSP060101',
+    },
+    'd8cd835ecb2588e0da4fa4300d0d9e6b': {
+        'id': 'LSP060102',
+    },
+    'd888f94b30e76522847a2941a8a490f9': {
+        'id': 'LSP060103',
+    },
+    '190833f5b4064a116f56017460da154b': {
+        'id': 'LSP907127',
+    },
+    '033a64fe9f6af12468455b27e894f246': {
+        'id': 'LSP990161',
+    },
+    '5e4542916ee13be4084f0942d0078a3c': {
+        'id': 'LSP990162',
+    },
+    'aeb9d7f5d0ac8fd080c2cf962d6bb603': {
+        'id': 'LSP990163',
+    },
+    '641fdd36ef042cf49893acfacf60b465': {
+        'id': 'LSP020160',
+    },
+    'f2b609e1847c6025ee29777f8d0bd54e': {
+        'id': 'LSP020150',
+    },
+    '4cffeac07d0489ca45c1ff8bf98a635f': {
+        'id': 'LSP020180',
+    },
+    '26e1dd639f8bb1731f43bbf8ee619652': {
+        'id': 'LSP020170',
+    },
+    '05af9b8f1ef488c8bfe5466c764ff4aa': {
+        'id': 'LSP020260',
+    },
+    '92bdf2e6014da0347f13b85d4ec75109': {
+        'id': 'LSP020280',
+    },
+    'f42e82c0a5f94c9a5a14e06f6e5f955c': {
+        'id': 'LSP020450',
+    },
+    '2eecc8476b802ca60f37245b3f2031ea': {
+        'id': 'LSP020570',
+    },
+    '7573e6eee04af3e18d456682eb4af70d': {
+        'id': 'LSP020650',
+    },
+    'f94caa174a2c3c8fb647d60eca422cd3': {
+        'id': 'LSP020780',
+    },
+    'f942a17cd9563d08eba69359a668e723': {
+        'id': 'LSP990141',
+    },
+    '3a6153df0e986e48250d1e0a43a03336': {
+        'id': 'LSP990142',
+    },
+    '33be56dd55a3eeb58c8b22e001075e31': {
+        'id': 'LSP990143',
+    },
+    'd5e6814ffba7aff633b4ac5dbadaa895': {
+        'id': 'LSP990144',
+    },
+    '9a75b76e838c426d33922143a872ee3e': {
+        'id': 'LSP990145',
+    },
+    'f276edbcfab1342845c2c4f62d63cef7': {
+        'id': 'LSP030101',
+    },
+    'd927826ff3fb510ac8138a3acc2c8f94': {
+        'id': 'LSP030102',
+    },
+    '9fbd6e9838bee38ccb0d04701104bbf0': {
+        'id': 'LSP030103',
+    },
+    '300527b386ea96c215c875ab7fe79369': {
+        'id': 'LSP030104',
+    },
+    'a6848df5c8072d9e14c901991b44c1de': {
+        'id': 'LSP030105',
+    },
+    '6eb7267205cd2ec953fa71d567b22bc2': {
+        'id': 'LSP030106',
+    },
+    'c5d70e360974692d4be582e3ce2e1dcd': {
+        'id': 'LSP030107',
+    },
+    '7c3f8693037f18ed7186de49c9f701ba': {
+        'id': 'LSP030108',
+    },
+    'e49bd3ee708dccd2e475d7e7126ce674': {
+        'id': 'LSP903174',
+    },
+    '4af75af942964885f7b01495cfabf1de': {
+        'id': 'LSP903181',
+    },
+    '0575a8997ec87881b993cd8819ed0a69': {
+        'id': 'LSP907387',
+    },
+    '70c4fb72947fa27d8f4374a1849c5c75': {
+        'id': 'LSP040110',
+    },
+    '5550261311413f909afbffa144acbd44': {
+        'id': 'LSP040210',
+    },
+    'eba1aadfea5a02d4cd886047e2a1ebad': {
+        'id': 'LSP040310',
+    },
+    'a442e0bbd07dfcadeed1462ee30e1be6': {
+        'id': 'LSP040410',
+    },
+    'c901ed6e947a3f365842930dd4bf6dff': {
+        'id': 'LSP040510',
+    },
+    'e38c1ee821b754ffb871216d6dba561d': {
+        'id': 'LSP040610',
+    },
+    'f20c9f9ddfc0b08dfc385c63bdc61e02': {
+        'id': 'LSP040710',
+    },
+    '0c5b0275ac889424d1fbe1d256ecfca6': {
+        'id': 'LSP909015',
+    },
+    '88a46af00512f30d9acdec150702c3a1': {
+        'id': 'LSP909022',
+    },
+    'a412def520029adf527f8fe879426cd8': {
+        'id': 'LSP170110',
+    },
+    '95ba3583f41937a9f2eb825d62064f8c': {
+        'id': 'LSP170111',
+    },
+    'afd042c6f90ef45a25383c37119f6037': {
+        'id': 'LSP170112',
+    },
+    'bf236220a50e8da234e767e4fa2f3466': {
+        'id': 'LSP170113',
+    },
+    'bed5a239dbb3220e9792b71f8a5b1ba9': {
+        'id': 'LSP170114',
+    },
+    '378015a20085e12eda42d03e83f29777': {
+        'id': 'LSP170115',
+    },
+    '7a3067f02e1c06d2eab3bb251fbcc078': {
+        'id': 'LSP170116',
+    },
+    '93962674ecacf957ddf7eed5654b8016': {
+        'id': 'LSP170117',
+    },
+    'f50e3880447454c4127280e00237d77b': {
+        'id': 'LSP170118',
+    },
+    'c76cbdf3fa0d5ee8bf510884448b26f5': {
+        'id': 'LSP170119',
+    },
     # urban chaos has wrong discid in system.cnf
     '573d7c4f54b9b934e6741d5733c9e611': {
         'id': 'SLUS01091',
