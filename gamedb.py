@@ -45630,12 +45630,16 @@ games = {
         'url': "games/J/F/SCPS-45214.html",
     	'id': 'SCPS45214',
 	'title': "FINAL FANTASY V",
+        'pic0': 'https://images.launchbox-app.com/39d579d0-65a3-40a0-a31e-7d0132992aff.png',
+        'pic1': 'https://images.launchbox-app.com/b4a6fa0c-01bc-4b76-8195-ec5da489c692.jpg',
         'pspconfig': 'pspconfigs/Final Fantasy Anthology/SCPS-45214.bin',
     },
     'SLPM86081': {
         'url': "games/J/F/SLPM-86081.html",
     	'id': 'SLPM86081',
 	'title': "FINAL FANTASY V",
+        'pic0': 'https://images.launchbox-app.com/39d579d0-65a3-40a0-a31e-7d0132992aff.png',
+        'pic1': 'https://images.launchbox-app.com/b4a6fa0c-01bc-4b76-8195-ec5da489c692.jpg',
         'pspconfig': 'pspconfigs/Final Fantasy Anthology/SLPM-86081.bin',
     },
     'SCPS45387': {
@@ -46119,16 +46123,19 @@ games = {
         'url': "games/J/F/SLPS-02065.html",
     	'id': 'SLPS02065',
 	'title': "FIRE PRO WRESTLING G",
+        'pic0': 'https://images.launchbox-app.com/c274477c-612c-4ba3-b1a9-3321a9384b98.png',
     },
     'SLPS02817': {
         'url': "games/J/F/SLPS-02817.html",
     	'id': 'SLPS02817',
 	'title': "FIRE PRO WRESTLING G [SPIKE LIBRARY #001]",
+        'pic0': 'https://images.launchbox-app.com/c274477c-612c-4ba3-b1a9-3321a9384b98.png',
     },
     'SLPS00277': {
         'url': "games/J/F/SLPS-00277.html",
     	'id': 'SLPS00277',
 	'title': "FIRE PRO WRESTLING IRON SLAM '96",
+        'pic0': 'https://images.launchbox-app.com/7a673ee4-de5d-4e65-999a-e481d261d454.png',
     },
     'SLPS01315': {
         'url': "games/J/F/SLPS-01315.html",
@@ -46147,16 +46154,19 @@ games = {
         'url': "games/J/F/SLPS-01708.html",
     	'id': 'SLPS01708',
 	'title': "FIRST KISS STAR MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/baaee52d-3d30-42e0-932d-c5aa631047c9.png',
     },
     'SLPS01709': {
         'url': "games/J/F/SLPS-01708.html",
     	'id': 'SLPS01709',
 	'title': "FIRST KISS STAR MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/baaee52d-3d30-42e0-932d-c5aa631047c9.png',
     },
     'SLPS00604': {
         'url': "games/J/F/SLPS-00604.html",
     	'id': 'SLPS00604',
 	'title': "FIRST QUEEN IV - VARCIA SENKI",
+        'pic0': 'https://images.launchbox-app.com/c09fd7ce-fc13-4711-b4bd-dc89c76b5c3d.png',
     },
     'SLPS00463': {
         'url': "games/J/F/SLPS-00463.html",
@@ -46197,6 +46207,7 @@ games = {
         'url': "games/J/F/SLPS-01943.html",
     	'id': 'SLPS01943',
 	'title': "FISHER'S ROAD",
+        'pic0': 'https://images.launchbox-app.com/a9c290c4-2f5f-432d-80eb-1c888af73b48.png',
     },
     'SLPM86622': {
         'url': "games/J/F/SLPM-86622.html",
@@ -46217,26 +46228,31 @@ games = {
         'url': "games/J/F/SLPS-01931.html",
     	'id': 'SLPS01931',
 	'title': "FISHING FREAKS - BASSRISE",
+        'pic0': 'https://images.launchbox-app.com/a0aad9eb-4e8e-4ebc-8fff-e9370f102f53.png',
     },
     'SLPS01930': {
         'url': "games/J/F/SLPS-01930.html",
     	'id': 'SLPS01930',
 	'title': "FISHING FREAKS - BASSRISE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/a0aad9eb-4e8e-4ebc-8fff-e9370f102f53.png',
     },
     'SLPS02572': {
         'url': "games/J/F/SLPS-02572.html",
     	'id': 'SLPS02572',
 	'title': "FISHING FREAKS - BASSRISE PLUS",
+        'pic0': 'https://images.launchbox-app.com/a0aad9eb-4e8e-4ebc-8fff-e9370f102f53.png',
     },
     'SLPS00749': {
         'url': "games/J/F/SLPS-00749.html",
     	'id': 'SLPS00749',
 	'title': "FISHING KOSHIEN II",
+        'pic0': 'https://images.launchbox-app.com/0b6d7a82-aecd-4986-97b4-7b87d40d81af.png',
     },
     'SLPS00538': {
         'url': "games/J/F/SLPS-00538.html",
     	'id': 'SLPS00538',
 	'title': "FIST",
+        'pic0': 'https://images.launchbox-app.com/41f8493b-0115-43bc-a251-bb806f840568.png',
     },
     'SLPS02719': {
         'url': "games/J/F/SLPS-02719.html",
@@ -46258,21 +46274,25 @@ games = {
         'url': "games/J/F/SLPS-03191.html",
     	'id': 'SLPS03191',
 	'title': "FORGET ME NOT - PALETTE",
+        'pic0': 'https://images.launchbox-app.com/32bb6170-5f57-4115-9418-58d8689b64bb.png',
     },
     'SLPS00762': {
         'url': "games/J/F/SLPS-00762.html",
     	'id': 'SLPS00762',
 	'title': "FORMATION SOCCER '97 - THE ROAD TO FRANCE",
+        'pic0': 'https://images.launchbox-app.com/8b58aab6-5e36-4e6b-a269-85628fb3bf6c.png',
     },
     'SLPS01419': {
         'url': "games/J/F/SLPS-01419.html",
     	'id': 'SLPS01419',
 	'title': "FORMATION SOCCER '98 - GANBARE NIPPON IN FRANCE",
+        'pic0': 'https://images.launchbox-app.com/fd38865a-e2be-4734-b9a2-d9b8693cb096.png',
     },
     'SLPM86640': {
         'url': "games/J/F/SLPM-86640.html",
     	'id': 'SLPM86640',
 	'title': "FORMATION SOCCER '98 - GANBARE NIPPON IN FRANCE [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/fd38865a-e2be-4734-b9a2-d9b8693cb096.png',
     },
     'SCPS45077': {
         'url': "games/J/F/SCPS-45077.html",
@@ -46298,11 +46318,14 @@ games = {
         'url': "games/J/F/SLPS-00358.html",
     	'id': 'SLPS00358',
 	'title': "FORMULA CIRCUS",
+        'pic0': 'https://images.launchbox-app.com/a787eda2-0704-497e-9ab7-9422e839a04a.png',
+        'pic1': 'https://images.launchbox-app.com/b537c2ca-f498-449b-a7c5-beca5e487cfe.jpg',
     },
     'SLPS01154': {
         'url': "games/J/F/SLPS-01154.html",
     	'id': 'SLPS01154',
 	'title': "FORMULA GRAND PRIX 1997 - TEAM UNEI SIMULATION 2",
+        'pic0': 'https://images.launchbox-app.com/5d080d28-dca3-408a-a3cc-74d6e51de71c.png',
     },
     'SLPS02259': {
         'url': "games/J/F/SLPS-02259.html",
@@ -46343,11 +46366,13 @@ games = {
         'url': "games/J/F/SLPS-00985.html",
     	'id': 'SLPS00985',
 	'title': "FREE TALK STUDIO - MARI NO KIMAMANA OSHABERI",
+        'pic0': 'https://images.launchbox-app.com/3f2de87a-07e7-43f8-af1e-af0b45aa2570.png',
     },
     'SLPS02655': {
         'url': "games/J/F/SLPS-02655.html",
     	'id': 'SLPS02655',
 	'title': "FREE TALK STUDIO - MARI NO KIMAMANA OSHABERI [BEST OF THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/3f2de87a-07e7-43f8-af1e-af0b45aa2570.png',
     },
     'SLPS01399': {
         'url': "games/J/F/SLPS-01399.html",
@@ -46499,16 +46524,19 @@ games = {
         'url': "games/J/F/SLPS-02307.html",
     	'id': 'SLPS02307',
 	'title': "FUN! FUN! PINGU",
+        'pic0': 'https://images.launchbox-app.com/d513d420-cb5c-45ba-9102-ead28a277624.png',
     },
     'SLPS02306': {
         'url': "games/J/F/SLPS-02306.html",
     	'id': 'SLPS02306',
 	'title': "FUN! FUN! PINGU [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/d513d420-cb5c-45ba-9102-ead28a277624.png',
     },
     'SLPS03496': {
         'url': "games/J/F/SLPS-03496.html",
     	'id': 'SLPS03496',
 	'title': "FUNKY BOXERS",
+        'pic0': 'https://images.launchbox-app.com/975e9992-97a0-4de1-9bd7-242102f70479.png',
     },
     'SLPM86808': {
         'url': "games/J/F/SLPM-86808.html",
@@ -46662,56 +46690,68 @@ games = {
         'url': "games/J/G/SLPS-00624.html",
     	'id': 'SLPS00624',
 	'title': "GAIA SEED - PROJECT SEED TRAP",
+        'pic0': 'https://images.launchbox-app.com/3ca3c521-2055-42fe-b364-8afaac475fdc.png',
+        'pic1': 'https://images.launchbox-app.com/15248294-8dc4-4722-ad91-ca44c5a7979a.jpg',
     },
     'SLPS00404': {
         'url': "games/J/G/SLPS-00404.html",
     	'id': 'SLPS00404',
 	'title': "GAKKOU DEATTA KOWAI HANASHI S",
+        'pic0': 'https://images.launchbox-app.com/ffdd4284-cea6-4b85-9391-fa50605b1007.png',
     },
     'SLPS00078': {
         'url': "games/J/G/SLPS-00078.html",
     	'id': 'SLPS00078',
 	'title': "GAKKOU NO KAWAI UWASA - HANAKO SANGAKITA!!",
+        'pic0': 'https://images.launchbox-app.com/a8589126-1d4d-4198-b116-d0cd2906c86a.png',
     },
     'SLPS02998': {
         'url': "games/J/G/SLPS-02998.html",
     	'id': 'SLPS02998',
 	'title': "GAKKOU O TSUKUROU!! - KOUSHOU SENSEI MONOGATARI!!",
+        'pic0': 'https://images.launchbox-app.com/c5d02f6d-d6ab-448c-aaad-970ca4dd734b.png',
     },
     'SLPS03313': {
         'url': "games/J/G/SLPS-03313.html",
     	'id': 'SLPS03313',
 	'title': "GAKKOU O TSUKUROU!! - KOUSHOU SENSEI MONOGATARI!! [VICTOR INTERACTIVE SOFTWARE BEST]",
+        'pic0': 'https://images.launchbox-app.com/c5d02f6d-d6ab-448c-aaad-970ca4dd734b.png',
     },
     'SLPS01103': {
         'url': "games/J/G/SLPS-01103.html",
     	'id': 'SLPS01103',
 	'title': "GAKKOU O TSUKUROU!! - LET'S MAKE A SCHOOL!!",
+        'pic0': 'https://images.launchbox-app.com/856fc8e8-7904-4c52-ba88-134081035677.png',
     },
     'SLPS91120': {
         'url': "games/J/G/SLPS-91120.html",
     	'id': 'SLPS91120',
 	'title': "GAKKOU O TSUKUROU!! - LET'S MAKE A SCHOOL!! [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/856fc8e8-7904-4c52-ba88-134081035677.png',
     },
     'SLPS91508': {
         'url': "games/J/G/SLPS-91508.html",
     	'id': 'SLPS91508',
 	'title': "GAKKOU O TSUKUROU!! - LET'S MAKE A SCHOOL!! [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/856fc8e8-7904-4c52-ba88-134081035677.png',
     },
     'SLPS01660': {
         'url': "games/J/G/SLPS-01660.html",
     	'id': 'SLPS01660',
 	'title': "GAKKOU O TSUKUROU!! 2",
+        'pic0': 'https://images.launchbox-app.com/ef98f0c5-6eb2-4b22-af1a-1af7ef575cb7.png',
     },
     'SLPS91485': {
         'url': "games/J/G/SLPS-91485.html",
     	'id': 'SLPS91485',
 	'title': "GAKKOU O TSUKUROU!! 2 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/ef98f0c5-6eb2-4b22-af1a-1af7ef575cb7.png',
     },
     'SLPS01852': {
         'url': "games/J/G/SLPS-01852.html",
     	'id': 'SLPS01852',
 	'title': "GAKUEN SENTAI SOLBLAST",
+        'pic0': 'https://images.launchbox-app.com/5de6e804-bcb9-4f66-87ff-fecd9d5ed098.png',
     },
     'SLPS00270': {
         'url': "games/J/G/SLPS-00270.html",
@@ -46730,16 +46770,19 @@ games = {
         'url': "games/J/G/SLPS-02596.html",
     	'id': 'SLPS02596',
 	'title': "GALE GUNNER",
+        'pic0': 'https://images.launchbox-app.com/79df9e48-ad15-430a-86a7-6512de5d061b.png',
     },
     'SLPS03305': {
         'url': "games/J/G/SLPS-03305.html",
     	'id': 'SLPS03305',
 	'title': "GALE GUNNER [ASCII CASUAL COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/79df9e48-ad15-430a-86a7-6512de5d061b.png',
     },
     'SLPS00621': {
         'url': "games/J/G/SLPS-00621.html",
     	'id': 'SLPS00621',
 	'title': "GALEOZ",
+        'pic0': 'https://images.launchbox-app.com/8ef573a1-55e5-42ff-a34d-f5e94fe6ed04.png',
     },
     'SLPS02192': {
         'url': "games/J/G/SLPS-02192.html",
@@ -46799,16 +46842,19 @@ games = {
         'url': "games/J/G/SLPS-02623.html",
     	'id': 'SLPS02623',
 	'title': "GALLOP RACER 2000",
+        'pic0': 'https://images.launchbox-app.com/c016b54b-c3e0-4458-bf59-a98b6a9d5602.png',
     },
     'SLPS91234': {
         'url': "games/J/G/SLPS-91234.html",
     	'id': 'SLPS91234',
 	'title': "GALLOP RACER 2000 [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/c016b54b-c3e0-4458-bf59-a98b6a9d5602.png',
     },
     'SLPS02509': {
         'url': "games/J/G/SLPS-02509.html",
     	'id': 'SLPS02509',
 	'title': "GAMBLER JIKO CHUUSHINKA IPPATSUSHOUBU! - TOKYO MAHJONG LAND",
+        'pic0': 'https://images.launchbox-app.com/89b27a67-a179-4dfa-abd9-01be82779c7b.png',
     },
     'SLPS01306': {
         'url': "games/J/G/SLPS-01306.html",
@@ -46831,26 +46877,31 @@ games = {
         'url': "games/J/G/SLPS-00030.html",
     	'id': 'SLPS00030',
 	'title': "GAME NO TATSUJIN",
+        'pic0': 'https://images.launchbox-app.com/ca6a58ee-6253-42a1-a886-754f5250f38c.png',
     },
     'SLPS02052': {
         'url': "games/J/G/SLPS-02052.html",
     	'id': 'SLPS02052',
 	'title': "GAME NO TATSUJIN [SUNSOFT BEST]",
+        'pic0': 'https://images.launchbox-app.com/ca6a58ee-6253-42a1-a886-754f5250f38c.png',
     },
     'SLPS03298': {
         'url': "games/J/G/SLPS-03298.html",
     	'id': 'SLPS03298',
 	'title': "GAME NO TATSUJIN [VALUE 1500]",
+        'pic0': 'https://images.launchbox-app.com/ca6a58ee-6253-42a1-a886-754f5250f38c.png',
     },
     'SLPS00213': {
         'url': "games/J/G/SLPS-00213.html",
     	'id': 'SLPS00213',
 	'title': "GAME NO TATSUJIN 2",
+        'pic0': 'https://images.launchbox-app.com/70001135-2d55-4b5a-927b-f4d7765c3753.png',
     },
     'SLPS03297': {
         'url': "games/J/G/SLPS-03297.html",
     	'id': 'SLPS03297',
 	'title': "GAME NO TATSUJIN 2 [SUNKORE BEST]",
+        'pic0': 'https://images.launchbox-app.com/70001135-2d55-4b5a-927b-f4d7765c3753.png',
     },
     'SLPS00096': {
         'url': "games/J/G/SLPS-00096.html",
@@ -46863,11 +46914,15 @@ games = {
         'url': "games/J/G/SLPS-00833.html",
     	'id': 'SLPS00833',
 	'title': "GAMERA 2000",
+        'pic0': 'https://images.launchbox-app.com/e1c0993a-16cf-43c6-b3a1-9d24cb653c02.png',
+        'pic1': 'https://images.launchbox-app.com/3d57c7bf-8826-402f-8770-c759a44eabb5.jpg',
     },
     'SLPM86890': {
         'url': "games/J/G/SLPM-86890.html",
     	'id': 'SLPM86890',
 	'title': "GAMERA 2000 [CYCLONES BEST]",
+        'pic0': 'https://images.launchbox-app.com/e1c0993a-16cf-43c6-b3a1-9d24cb653c02.png',
+        'pic1': 'https://images.launchbox-app.com/3d57c7bf-8826-402f-8770-c759a44eabb5.jpg',
     },
     'SLPS01607': {
         'url': "games/J/G/SLPS-01607.html",
@@ -46878,26 +46933,31 @@ games = {
         'url': "games/J/G/SLPM-86155.html",
     	'id': 'SLPM86155',
 	'title': "GANBARE GOEMON - KURUNARAKOI! AYASHI GEIKKA NO KUROIKAGE!",
+        'pic0': 'https://images.launchbox-app.com/24a855df-6ac1-41c7-adc8-910a3f0b605e.png',
     },
     'SLPM86572': {
         'url': "games/J/G/SLPM-86572.html",
     	'id': 'SLPM86572',
 	'title': "GANBARE GOEMON - KURUNARAKOI! AYASHI GEIKKA NO KUROIKAGE! [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/24a855df-6ac1-41c7-adc8-910a3f0b605e.png',
     },
     'SLPM86774': {
         'url': "games/J/G/SLPM-86774.html",
     	'id': 'SLPM86774',
 	'title': "GANBARE GOEMON - OOEDO DAIKAITEN",
+        'pic0': 'https://images.launchbox-app.com/bda99f06-823e-4378-9ec3-2ea583c143db.png',
     },
     'SLPM86940': {
         'url': "games/J/G/SLPM-86940.html",
     	'id': 'SLPM86940',
 	'title': "GANBARE GOEMON - OOEDO DAIKAITEN [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/bda99f06-823e-4378-9ec3-2ea583c143db.png',
     },
     'SLPM87197': {
         'url': "games/J/G/SLPM-87197.html",
     	'id': 'SLPM87197',
 	'title': "GANBARE GOEMON - OOEDO DAIKAITEN [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/bda99f06-823e-4378-9ec3-2ea583c143db.png',
     },
     'SLPS00217': {
         'url': "games/J/G/SLPS-00217.html",
@@ -46951,26 +47011,31 @@ games = {
         'url': "games/J/G/SLPS-01468.html",
     	'id': 'SLPS01468',
 	'title': "GANGWAY MONSTERS",
+        'pic0': 'https://images.launchbox-app.com/09f70bde-2d64-4c8f-a54f-644747421474.png',
     },
     'SLPS01373': {
         'url': "games/J/G/SLPS-01373.html",
     	'id': 'SLPS01373',
 	'title': "GANSO FAMILY MAHJONG",
+        'pic0': 'https://images.launchbox-app.com/262787fa-267f-406f-9748-c01c0967430a.png',
     },
     'SLPS02787': {
         'url': "games/J/G/SLPS-02787.html",
     	'id': 'SLPS02787',
 	'title': "GANSO FAMILY MAHJONG [NICHIBUTSU SELECT]",
+        'pic0': 'https://images.launchbox-app.com/262787fa-267f-406f-9748-c01c0967430a.png',
     },
     'SLPS02094': {
         'url': "games/J/G/SLPS-02094.html",
     	'id': 'SLPS02094',
 	'title': "GANSO FAMILY MAHJONG 2",
+        'pic0': 'https://images.launchbox-app.com/4b80bad0-8923-41c8-af82-81558e0fc8b8.png',
     },
     'SLPS03102': {
         'url': "games/J/G/SLPS-03102.html",
     	'id': 'SLPS03102',
 	'title': "GANSO FAMILY MAHJONG 2 [NICHIBUTSU SELECT VOL.5]",
+        'pic0': 'https://images.launchbox-app.com/4b80bad0-8923-41c8-af82-81558e0fc8b8.png',
     },
     'SCPS45409': {
         'url': "games/J/G/SCPS-45409.html",
@@ -47006,17 +47071,23 @@ games = {
         'url': "games/J/G/SLPS-03189.html",
     	'id': 'SLPS03189',
 	'title': "GEAR FIGHTER DENDOH",
+        'pic0': 'https://images.launchbox-app.com/5f590893-cd0d-4749-9616-ed87110e58e2.png',
+        'pic1': 'https://images.launchbox-app.com/049c89b7-1e70-48f5-9d23-cc9a4d8c0855.jpg',
         'pspconfig': 'pspconfigs/Gear Fighter Dendoh/SLPS-03189.bin',
     },
     'SLPM87286': {
         'url': "games/J/G/SLPM-87286.html",
     	'id': 'SLPM87286',
 	'title': "GEGEGE NO KITAROU - GYAKUSHUU! YOUMA DAIKESSEN",
+        'pic0': 'https://images.launchbox-app.com/a09f6e58-6343-407d-b07f-9eb187c841c7.png',
+        'pic1': 'https://images.launchbox-app.com/aa38645b-d174-4c60-9d9c-f913ddebcc01.jpg',
     },
     'SLPM87342': {
         'url': "games/J/G/SLPM-87342.html",
     	'id': 'SLPM87342',
 	'title': "GEGEGE NO KITAROU - GYAKUSHUU! YOUMA DAIKESSEN [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/a09f6e58-6343-407d-b07f-9eb187c841c7.png',
+        'pic1': 'https://images.launchbox-app.com/aa38645b-d174-4c60-9d9c-f913ddebcc01.jpg',
     },
     'SLPS00644': {
         'url': "games/J/G/SLPS-00644.html",
@@ -47063,61 +47134,73 @@ games = {
         'url': "games/J/G/SLPS-00421.html",
     	'id': 'SLPS00421',
 	'title': "GEKKA NI NO KISHI - O RYUSEN",
+        'pic0': 'https://images.launchbox-app.com/075ccf47-603e-48f3-be51-ca0997d50c53.png',
     },
     'SLPS00491': {
         'url': "games/J/G/SLPS-00491.html",
     	'id': 'SLPS00491',
 	'title': "GENEI TOUGI - SHADOW STRUGGLE",
+        'pic0': 'https://images.launchbox-app.com/5a5956dd-baee-45e0-999d-1c2e8f8d1f1a.png',
     },
     'SLPM86175': {
         'url': "games/J/G/SLPM-86175.html",
     	'id': 'SLPM86175',
 	'title': "GENGHIS KHAN - AOKI OOKAMI TO SHIROKI MEJIKA IV",
+        'pic0': 'https://images.launchbox-app.com/e86307e1-3acd-461e-b5ae-de90213a16d9.png',
     },
     'SLPM87276': {
         'url': "games/J/G/SLPM-87276.html",
     	'id': 'SLPM87276',
 	'title': "GENGHIS KHAN - AOKI OOKAMI TO SHIROKI MEJIKA IV [KOEI TEIBAN SERIES]",
+        'pic0': 'https://images.launchbox-app.com/e86307e1-3acd-461e-b5ae-de90213a16d9.png',
     },
     'SLPM86593': {
         'url': "games/J/G/SLPM-86593.html",
     	'id': 'SLPM86593',
 	'title': "GENGHIS KHAN - AOKI OOKAMI TO SHIROKI MEJIKA IV [KOEI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/e86307e1-3acd-461e-b5ae-de90213a16d9.png',
     },
     'SLPM86287': {
         'url': "games/J/G/SLPM-86287.html",
     	'id': 'SLPM86287',
 	'title': "GENGHIS KHAN - AOKI OOKAMI TO SHIROKI MEJIKA IV [KOEI SUMMER CAMPAIGN]",
+        'pic0': 'https://images.launchbox-app.com/e86307e1-3acd-461e-b5ae-de90213a16d9.png',
     },
     'SLPM86637': {
         'url': "games/J/G/SLPM-86637.html",
     	'id': 'SLPM86637',
 	'title': "GENSO SUIKO GAIDEN VOL.1 - HARMONIA NO KENSHI",
+        'pic0': 'https://images.launchbox-app.com/6c9d4404-f9a9-45f0-994f-c9abe6c12aa6.png',
     },
     'SLPM86883': {
         'url': "games/J/G/SLPM-86883.html",
     	'id': 'SLPM86883',
 	'title': "GENSO SUIKO GAIDEN VOL.1 - HARMONIA NO KENSHI [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/6c9d4404-f9a9-45f0-994f-c9abe6c12aa6.png',
     },
     'SLPM87261': {
         'url': "games/J/G/SLPM-87261.html",
     	'id': 'SLPM87261',
 	'title': "GENSO SUIKO GAIDEN VOL.1 - HARMONIA NO KENSHI [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/6c9d4404-f9a9-45f0-994f-c9abe6c12aa6.png',
     },
     'SLPM86663': {
         'url': "games/J/G/SLPM-86663.html",
     	'id': 'SLPM86663',
 	'title': "GENSO SUIKO GAIDEN VOL.2 - CRYSTAL VALLET NO KETTOU",
+        'pic0': 'https://images.launchbox-app.com/b3c96443-35c9-437a-8896-7ab72b5d39f1.png',
     },
     'SLPM86953': {
         'url': "games/J/G/SLPM-86953.html",
     	'id': 'SLPM86953',
 	'title': "GENSO SUIKO GAIDEN VOL.2 - CRYSTAL VALLET NO KETTOU [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/b3c96443-35c9-437a-8896-7ab72b5d39f1.png',
     },
     'SLPM87262': {
         'url': "games/J/G/SLPM-87262.html",
     	'id': 'SLPM87262',
 	'title': "GENSO SUIKO GAIDEN VOL.2 - CRYSTAL VALLET NO KETTOU [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/b3c96443-35c9-437a-8896-7ab72b5d39f1.png',
     },
     'SCPS45184': {
         'url': "games/J/G/SCPS-45184.html",
@@ -47206,6 +47289,7 @@ games = {
         'url': "games/J/G/SLPS-02563.html",
     	'id': 'SLPS02563',
 	'title': "GENSOU NO ALTEMIS - ACTRESS SCHOOL MYSTERY ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/72c78185-69cc-43ff-ab00-9d3b12fbf0da.png',
     },
     'SLPS00007': {
         'url': "games/J/G/SLPS-00007.html",
@@ -47218,6 +47302,7 @@ games = {
         'url': "games/J/G/SLPS-01575.html",
     	'id': 'SLPS01575',
 	'title': "GEOMETRY DUEL",
+        'pic0': 'https://images.launchbox-app.com/97633bcd-a80e-4a91-8670-faa4ed393b8f.png',
     },
     'SLPS02107': {
         'url': "games/J/G/SLPS-02107.html",
@@ -47325,6 +47410,7 @@ games = {
         'url': "games/J/G/SLPM-86200.html",
     	'id': 'SLPM86200',
 	'title': "GLINT GLITTERS",
+        'pic0': 'https://images.launchbox-app.com/3588f9c8-f4d0-4b3d-8648-591901cbf5b5.png',
     },
     'SCPS10082': {
         'url': "games/J/G/SCPS-10082.html",
@@ -47342,6 +47428,7 @@ games = {
         'url': "games/J/G/SLPS-00528.html",
     	'id': 'SLPS00528',
 	'title': "GO II PROFESSIONAL TAIKYOKU IGO",
+        'pic0': 'https://images.launchbox-app.com/0557de3e-527d-427f-a009-c812d45b9869.png',
     },
     'SCPS45165': {
         'url': "games/J/G/SCPS-45165.html",
@@ -47373,6 +47460,7 @@ games = {
         'url': "games/J/G/SLPS-01470.html",
     	'id': 'SLPS01470',
 	'title': "GODZILLA TRADING BATTLE",
+        'pic0': 'https://images.launchbox-app.com/dc99456a-92a3-47cd-af92-12c95ec9e718.png',
     },
     'SLPM86997': {
         'url': "games/J/G/SLPM-86997.html",
@@ -47402,16 +47490,19 @@ games = {
         'url': "games/J/G/SLPS-01542.html",
     	'id': 'SLPS01542',
 	'title': "GOIKEN MUYOU II",
+        'pic0': 'https://images.launchbox-app.com/b2737156-4400-43b9-a39d-75fa08cabf74.png',
     },
     'SLPS01471': {
         'url': "games/J/G/SLPS-01471.html",
     	'id': 'SLPS01471',
 	'title': "GO-JIN SENKI",
+        'pic0': 'https://images.launchbox-app.com/3fb84c71-f7ac-4a48-86c1-0ef3cfad351d.png',
     },
     'SLPS02866': {
         'url': "games/J/G/SLPS-02866.html",
     	'id': 'SLPS02866',
 	'title': "GO-JIN SENKI [BEST PRICE]",
+        'pic0': 'https://images.launchbox-app.com/3fb84c71-f7ac-4a48-86c1-0ef3cfad351d.png',
     },
     'SLPS00002': {
         'url': "games/J/G/SLPS-00002.html",
@@ -47438,6 +47529,7 @@ games = {
         'url': "games/J/G/SLPS-00048.html",
     	'id': 'SLPS00048',
 	'title': "GOKUU DENSETSU - MAGIC BEAST WARRIORS",
+        'pic0': 'https://images.launchbox-app.com/fb990ccc-e269-4817-960c-997455dfaef2.png',
     },
     'SLPS02004': {
         'url': "games/J/G/SLPS-02004.html",
@@ -47448,6 +47540,7 @@ games = {
         'url': "games/J/G/SLPS-01712.html",
     	'id': 'SLPS01712',
 	'title': "GOLGO 13 - 1 - KARAIRU NO YABOU",
+        'pic1': 'https://images.launchbox-app.com/d8c97abc-584c-4145-acdb-d4de555b0eac.jpg',
     },
     'SLPS01713': {
         'url': "games/J/G/SLPS-01713.html",
@@ -47458,11 +47551,13 @@ games = {
         'url': "games/J/G/SCPS-45434.html",
     	'id': 'SCPS45434',
 	'title': "GOO! GOO! SOUNDY",
+        'pic0': 'https://images.launchbox-app.com/4afae1fb-4b25-46e7-9927-b10b97364356.png',
     },
     'SLPM86250': {
         'url': "games/J/G/SLPM-86250.html",
     	'id': 'SLPM86250',
 	'title': "GOO! GOO! SOUNDY",
+        'pic0': 'https://images.launchbox-app.com/4afae1fb-4b25-46e7-9927-b10b97364356.png',
     },
     'SLPM86148': {
         'url': "games/J/G/SLPM-86148.html",
@@ -47473,6 +47568,7 @@ games = {
         'url': "games/J/G/SLPS-01620.html",
     	'id': 'SLPS01620',
 	'title': "GORYUJIN + ELECTRO",
+        'pic0': 'https://images.launchbox-app.com/0ce8595b-f42e-4940-8e88-db98ca90bdae.png',
     },
     'SLPS00422': {
         'url': "games/J/G/SLPS-00422.html",
@@ -47483,21 +47579,27 @@ games = {
         'url': "games/J/G/SLPS-03552.html",
     	'id': 'SLPS03552',
 	'title': "GOTOUCHI HELLO KITTY SUGOROKU MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/8aee2909-6b4e-4cb0-a686-0e1fe2eeefb3.png',
     },
     'SLPS00104': {
         'url': "games/J/G/SLPS-00104.html",
     	'id': 'SLPS00104',
 	'title': "GOUKETSUJI ICHIZOKU 2 - CHOTTODAKE SAIKYOU DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/dd1645e6-eab3-42d9-bf8b-3e69d3d393f8.png',
+        'pic1': 'https://images.launchbox-app.com/ec3583a9-350a-4812-845a-d1c0c8f2e8a8.png',
     },
     'SLPS03381': {
         'url': "games/J/G/SLPS-03381.html",
     	'id': 'SLPS03381',
 	'title': "GOURMET ACTION GAME - MANPUKU!! NABE KAZOKU",
+        'pic0': 'https://images.launchbox-app.com/77a7e053-4392-4369-87ba-a335bdd7e70d.png',
     },
     'SLPS00303': {
         'url': "games/J/G/SLPS-00303.html",
     	'id': 'SLPS00303',
 	'title': "GRADIUS DELUXE PACK",
+        'pic0': 'https://images.launchbox-app.com/a11b345c-3240-4a25-8f65-afffaedfc089.png',
+        'pic1': 'https://images.launchbox-app.com/b1428747-200a-4185-807d-aaec4413100e.jpg',
     },
     'SLPM86042': {
         'url': "games/J/G/SLPM-86042.html",
@@ -47694,6 +47796,7 @@ games = {
         'url': "games/J/G/SLPM-86125.html",
     	'id': 'SLPM86125',
 	'title': "GREAT HITS",
+        'pic0': 'https://images.launchbox-app.com/ac1f9311-1da3-4799-88fe-9380b3e3a33b.png',
     },
     'SLPS01268': {
         'url': "games/J/G/SLPS-01268.html",
@@ -47722,21 +47825,25 @@ games = {
         'url': "games/J/G/SLPS-00211.html",
     	'id': 'SLPS00211',
 	'title': "GRILLE LOGIC",
+        'pic0': 'https://images.launchbox-app.com/118d1401-8159-4ab6-b076-e0d92d42e977.png',
     },
     'SLPS00615': {
         'url': "games/J/G/SLPS-00615.html",
     	'id': 'SLPS00615',
 	'title': "GRITZ - THE PYRAMID ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/1e24f369-69f3-41d3-8a66-4b59ea3e0946.png',
     },
     'SLPM87138': {
         'url': "games/J/G/SLPM-87138.html",
     	'id': 'SLPM87138',
 	'title': "GROOVE ADVENTURE RAVE - MIKAN NO HISEKI",
+        'pic0': 'https://images.launchbox-app.com/2094bde1-e602-42af-8cf5-83867e05c2c7.png',
     },
     'SLPM87288': {
         'url': "games/J/G/SLPM-87288.html",
     	'id': 'SLPM87288',
 	'title': "GROOVE ADVENTURE RAVE - MIKAN NO HISEKI [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/2094bde1-e602-42af-8cf5-83867e05c2c7.png',
     },
     'SLPM87121': {
         'url': "games/J/G/SLPM-87121.html",
@@ -47747,16 +47854,19 @@ games = {
         'url': "games/J/G/SLPM-87011.html",
     	'id': 'SLPM87011',
 	'title': "GROOVE ADVENTURE RAVE - YUKYU NO KIZUNA",
+        'pic0': 'https://images.launchbox-app.com/f600b3a7-0327-455a-b613-bd02359e7d3a.png',
     },
     'SLPM87203': {
         'url': "games/J/G/SLPM-87203.html",
     	'id': 'SLPM87203',
 	'title': "GROOVE ADVENTURE RAVE - YUKYU NO KIZUNA [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/f600b3a7-0327-455a-b613-bd02359e7d3a.png',
     },
     'SLPM87289': {
         'url': "games/J/G/SLPM-87289.html",
     	'id': 'SLPM87289',
 	'title': "GROOVE ADVENTURE RAVE - YUKYU NO KIZUNA [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/f600b3a7-0327-455a-b613-bd02359e7d3a.png',
     },
     'SLPS01205': {
         'url': "games/J/G/SLPS-01205.html",
@@ -47806,11 +47916,13 @@ games = {
         'url': "games/J/G/SLPS-01297.html",
     	'id': 'SLPS01297',
 	'title': "GUARDIAN RECALL",
+        'pic0': 'https://images.launchbox-app.com/db42704c-e411-4a83-b552-f6f4ed74e437.png',
     },
     'SLPS01298': {
         'url': "games/J/G/SLPS-01297.html",
     	'id': 'SLPS01298',
 	'title': "GUARDIAN RECALL",
+        'pic0': 'https://images.launchbox-app.com/db42704c-e411-4a83-b552-f6f4ed74e437.png',
     },
     'SLPS01537': {
         'url': "games/J/G/SLPS-01537.html",
@@ -47857,6 +47969,7 @@ games = {
         'url': "games/J/G/SLPM-86446.html",
     	'id': 'SLPM86446',
 	'title': "GUITAR FREAKS APPEND 2ND MIX",
+        'pic0': 'https://images.launchbox-app.com/7341752b-8c78-409d-99b0-716b629ea8fa.png',
     },
     'SLPS03100': {
         'url': "games/J/G/SLPS-03100.html",
@@ -47867,6 +47980,7 @@ games = {
         'url': "games/J/G/SLPS-01322.html",
     	'id': 'SLPS01322',
 	'title': "GUNBARE! GAME TENGOKU - THE GAME PARADISE 2",
+        'pic0': 'https://images.launchbox-app.com/6b1c5c1f-1f04-46c7-b4e1-01d7a027f628.png',
         'pspconfig': 'pspconfigs/Gunbare Game Tengoku - The Game Paradise 2/SLPS-01322.bin',
     },
     'SCPS45299': {
@@ -47888,6 +48002,8 @@ games = {
         'url': "games/J/G/SLPS-00157.html",
     	'id': 'SLPS00157',
 	'title': "GUNBIRD",
+        'pic0': 'https://images.launchbox-app.com/d2f7b009-9c73-4b00-a3c3-ab4210f414a9.png',
+        'pic1': 'https://images.launchbox-app.com/605027aa-2768-43b8-83a3-ab20463d7d8f.png',
     },
     'SLPS00930': {
         'url': "games/J/G/SLPS-00930.html",
@@ -47977,6 +48093,7 @@ games = {
         'url': "games/J/G/SLPS-01902.html",
     	'id': 'SLPS01902',
 	'title': "GUNHO BRIGADE",
+        'pic0': 'https://images.launchbox-app.com/590e4515-3569-4079-8b23-b30a2a553182.png',
     },
     'SCPS10006': {
         'url': "games/J/G/SCPS-10006.html",
@@ -47987,6 +48104,7 @@ games = {
         'url': "games/J/G/SLPS-01408.html",
     	'id': 'SLPS01408',
 	'title': "GUNNM - KASEI NO KIOKU [MARTIAN MEMORY]",
+        'pic0': 'https://images.launchbox-app.com/d5faacab-ddce-47b6-9776-5df5753e16f5.png',
     },
     'SCPS10136': {
         'url': "games/J/G/SCPS-10136.html",
@@ -47997,6 +48115,7 @@ games = {
         'url': "games/J/G/SLPS-02485.html",
     	'id': 'SLPS02485',
 	'title': "GUNPEY",
+        'pic0': 'https://images.launchbox-app.com/b627eebe-851f-41d9-8563-d5a300723747.png',
     },
     'SLPS00495': {
         'url': "games/J/G/SLPS-00495.html",
@@ -48010,6 +48129,7 @@ games = {
         'url': "games/J/G/SLPS-01106.html",
     	'id': 'SLPS01106',
 	'title': "GUNTU - WESTERN FRONT JUNE, 1944",
+        'pic0': 'https://images.launchbox-app.com/294c3366-08d1-4195-a02f-1e02cb811ac6.png',
     },
     'SLPS00041': {
         'url': "games/J/G/SLPS-00041.html",
