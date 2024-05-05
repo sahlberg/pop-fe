@@ -8145,7 +8145,7 @@ games = {
         'url': "games/U/G/SLUS-00295.html",
     	'id': 'SLUS00295',
 	'title': "GOAL STORM '97",
-        'pic0': 'https://images.launchbox-app.com/28e41606-d95d-4320-a4b0-1ead09091ef3.png',
+        'pic0': 'https://images.launchbox-app.com/e47b387f-1fe0-4e04-95ee-e836354588aa.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Goal%20Storm%20%2797%20%28USA%29_jp2.zip',
     },
     'SLUS00319': {
