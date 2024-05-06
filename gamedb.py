@@ -2,6 +2,9 @@
 # https://www.gamesdatabase.org/list.aspx?DM=0&system=sony_playstation&manual=1&sort=Game
 # Add more demo disks from
 # https://crimson-ceremony.net/demopals/ps1-master.php
+#
+# The LSP games refuse to work on PSP and PS3 unless they are named SCUS.....
+# Use SCUS8.... as the ID for the LSP games.
 games = {
     'UNKN00000': {
     	'id': 'UNKN00000',
@@ -1771,30 +1774,30 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1202d7d4-74a2-4f21-bc70-9614f395ed60.jpg',
         'snd0': 'https://www.youtube.com/watch?v=jvIennhY7Ak&list=PL5751488110032386&index=1',
     },
-    'LSP990121': {
-    	'id': 'LSP990121',
-	'title': "16 Tales 1",
+    'SCUS80000': {
+    	'id': 'SCUS80000',
+	'title': "16 Tales 1 (LSP990121)",
         'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
         'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
         'pic1': 'https://psxdatacenter.com/images/screens/U/L/LSP-990122/ss3.jpg',
     },
-    'LSP990122': {
-    	'id': 'LSP990122',
-	'title': "16 Tales 2",
+    'SCUS80001': {
+    	'id': 'SCUS80001',
+	'title': "16 Tales 2 (LSP990122)",
         'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
         'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
         'pic1': 'https://psxdatacenter.com/images/screens/U/L/LSP-990122/ss4.jpg',
     },
-    'LSP990123': {
-    	'id': 'LSP990123',
-	'title': "16 Tales 3",
+    'SCUS80002': {
+    	'id': 'SCUS80002',
+	'title': "16 Tales 3 (LSP990123)",
         'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
         'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
         'pic1': 'https://psxdatacenter.com/images/screens/U/L/LSP-990122/ss7.jpg',
     },
-    'LSP990124': {
-    	'id': 'LSP990124',
-	'title': "16 Tales 4",
+    'SCUS80003': {
+    	'id': 'SCUS80003',
+	'title': "16 Tales 4 (LSP990124)",
         'icon0': 'https://images.launchbox-app.com/b921e8da-89ab-4e20-8bac-fba07aeffab0.jpg',
         'pic0': 'https://images.launchbox-app.com/d45113f3-158f-4241-bf51-419002b8a5af.png',
         'pic1': 'https://psxdatacenter.com/images/screens/U/L/LSP-990122/ss11.jpg',
@@ -68553,429 +68556,429 @@ games = {
 	'id': 'SCUS94197',
 	'title': 'Jampack Vol. 2',
     },
-    'LSP200110': {
-	'id': 'LSP200110',
-	'title': "Calamity 1 - The Natural World",
-    },
-    'LSP200220': {
-	'id': 'LSP200220',
-	'title': "Calamity 2 - People and Traditions",
-    },
-    'LSP903426': {
-	'id': 'LSP903426',
-	'title': "Cali's Geo Tools",
-    },
-    'LSP905154': {
-	'id': 'LSP905154',
-	'title': "Cosmic Cookoff - Language Arts",
-    },
-    'LSP080240': {
-	'id': 'LSP080240',
-	'title': "Cosmic Cookoff - Mathematics",
-    },
-    'LSP130110': {
-	'id': 'LSP130110',
-	'title': "Creative Camp",
-    },
-    'LSP903167': {
-	'id': 'LSP903167',
-	'title': "Creative Isle",
-    },
-    'LSP905109': {
-	'id': 'LSP905109',
-	'title': "Creative Journey",
-    },
-    'LSP907097': {
-	'id': 'LSP907097',
-	'title': "Creative Voyage",
-    },
-    'LSP990191': {
-	'id': 'LSP990191',
-	'title': "Every Child Can Succeed 1",
-    },
-    'LSP990192': {
-	'id': 'LSP990192',
-	'title': "Every Child Can Succeed 2",
-    },
-    'LSP990193': {
-	'id': 'LSP990193',
-	'title': "Every Child Can Succeed 3",
-    },
-    'LSP990194': {
-	'id': 'LSP990194',
-	'title': "Every Child Can Succeed 4",
-    },
-    'LSP990195': {
-	'id': 'LSP990195',
-	'title': "Every Child Can Succeed 5",
-    },
-    'LSP990196': {
-	'id': 'LSP990196',
-	'title': "Every Child Can Succeed 6",
-    },
-    'LSP990197': {
-	'id': 'LSP990197',
-	'title': "Every Child Can Succeed 7",
-    },
-    'LSP080130': {
-	'id': 'LSP080130',
-	'title': "Faire Games - Language Arts",
-    },
-    'LSP905420': {
-	'id': 'LSP905420',
-	'title': "Faire Games - Mathematics",
-    },
-    'LSP150200': {
-	'id': 'LSP150200',
-	'title': "Family Connection - A Guide to Lightspan",
-    },
-    'LSP905062': {
-	'id': 'LSP905062',
-	'title': "K9.5 1 - Live in Airedale",
-    },
-    'LSP905079': {
-	'id': 'LSP905079',
-	'title': "K9.5 2 - We Are the Dogs!",
-    },
-    'LSP905086': {
-	'id': 'LSP905086',
-	'title': "K9.5 3 - WebTunes",
-    },
-    'LSP905093': {
-	'id': 'LSP905093',
-	'title': "K9.5 4 - The Tail-Wag Tour",
-    },
-    'LSP907103': {
-	'id': 'LSP907103',
-	'title': "K9.5 5 - The Howlywood Premiere",
-    },
-    'LSP905123': {
-	'id': 'LSP905123',
-	'title': "KazMania 1 - Trail of Gems",
-    },
-    'LSP905130': {
-	'id': 'LSP905130',
-	'title': "KazMania 2 - Chaos in KazMania",
-    },
-    'LSP010150': {
-	'id': 'LSP010150',
-	'title': "Liquid Books Adventure 1 - Lety's Favorite Stories",
-    },
-    'LSP010250': {
-	'id': 'LSP010250',
-	'title': "Liquid Books Adventure 2 - Amrita's Trees & Cerdito and the Coyote",
-    },
-    'LSP010350': {
-	'id': 'LSP010350',
-	'title': "Liquid Books Adventure 3 - Far-Fetched Frontier Tales",
-    },
-    'LSP903136': {
-	'id': 'LSP903136',
-	'title': "Liquid Books Adventure 4 - The Adventures of Adelita and Bo",
-    },
-    'LSP903143': {
-	'id': 'LSP903143',
-	'title': "Liquid Books Adventure 5 - Pop-Out Prose",
-    },
-    'LSP905147': {
-	'id': 'LSP905147',
-	'title': "Liquid Books Adventure 6 - The Wandering Path",
-    },
-    'LSP010180': {
-	'id': 'LSP010180',
-		     'title': "Mars Moose Adventure - WalkAbout 1 - The Natural History Museum",
-    },
-    'LSP010280': {
-	'id': 'LSP010280',
-	'title': "Mars Moose Adventure - WalkAbout 2 - The Shakespeare Festival",
-    },
-    'LSP010380': {
-	'id': 'LSP010380',
-	'title': "Mars Moose Adventure - WalkAbout 3 - World Sports Day",
-    },
-    'LSP010170': {
-	'id': 'LSP010170',
-	'title': "Mars Moose Cosmic Quest 1 - City Sights",
-    },
-    'LSP010270': {
-	'id': 'LSP010270',
-	'title': "Mars Moose Cosmic Quest 2 - Fairy Tale Island",
-    },
-    'LSP010370': {
-	'id': 'LSP010370',
-	'title': "Mars Moose Cosmic Quest 3 - Race Through France",
-    },
-    'LSP010160': {
-	'id': 'LSP010160',
-	'title': "Mars Moose Stay and Play 1 - In the Clubhouse",
-    },
-    'LSP010260': {
-	'id': 'LSP010260',
-	'title': "Mars Moose Stay and Play 2 - In Mars' Bedroom",
-    },
-    'LSP010360': {
-	'id': 'LSP010360',
-	'title': "Mars Moose Stay and Play 3 - In Lonnie's Classroom",
-    },
-    'LSP903433': {
-	'id': 'LSP903433',
-	'title': "Math Gallery - Collection 1",
-    },
-    'LSP903440': {
-	'id': 'LSP903440',
-	'title': "Math Gallery - Collection 2",
-    },
-    'LSP100112': {
-	'id': 'LSP100112',
-	'title': "Math on the Move! 1 - Addition-Subtraction Advanced",
-    },
-    'LSP905390': {
-	'id': 'LSP905390',
-	'title': "Math on the Move! 1 - Addition-Subtraction Intermediate",
-    },
-    'LSP100113': {
-	'id': 'LSP100113',
-	'title': "Math on the Move! 2 - Multiplication-Division Advanced",
-    },
-    'LSP905406': {
-	'id': 'LSP905406',
-	'title': "Math on the Move! 2 - Multiplication-Division Intermediate",
-    },
-    'LSP050101': {
-	'id': 'LSP050101',
-	'title': "Mona & Moki 1 - Drive Me Wild!",
-    },
-    'LSP050102': {
-	'id': 'LSP050102',
-	'title': "Mona & Moki 2 - Drive Me Wilder!",
-    },
-    'LSP905383': {
-	'id': 'LSP905383',
-	'title': "P.K.'s Math Studio",
-    },
-    'LSP905345': {
-	'id': 'LSP905345',
-	'title': "P.K.'s Place 1 - Party on the Patio!",
-    },
-    'LSP905352': {
-	'id': 'LSP905352',
-	'title': "P.K.'s Place 2 - Hoopo at Sea!",
-    },
-    'LSP905369': {
-	'id': 'LSP905369',
-	'title': "P.K.'s Place 3 - Carlos at the Races!",
-    },
-    'LSP180410': {
-	'id': 'LSP180410',
-	'title': "P.K.'s Place 4 - Daphne and the Seventh Wonder",
-    },
-    'LSP060101': {
-	'id': 'LSP060101',
-	'title': "Quaddle Family Mysteries, The 1 - The Case of the Scarce Scarab - Lobby & Kitchen",
-    },
-    'LSP060102': {
-	'id': 'LSP060102',
-	'title': "Quaddle Family Mysteries, The 2 - The Case of the Scarce Scarab - Garden",
-    },
-    'LSP060103': {
-	'id': 'LSP060103',
-	'title': "Quaddle Family Mysteries, The 3 - The Case of the Scarce Scarab - Parlor & Family Room",
-    },
-    'LSP907127': {
-	'id': 'LSP907127',
-	'title': "Road Writer",
-    },
-    'LSP990161': {
-        'id': 'LSP990161',
-        'title': "Science Is Elementary 1",
-    },
-    'LSP990162': {
-	'id': 'LSP990162',
-	'title': "Science Is Elementary 2",
-    },
-    'LSP990163': {
-	'id': 'LSP990163',
-	'title': "Science Is Elementary 3",
-    },
-    'LSP020160': {
-	'id': 'LSP020160',
-	'title': "Secret of Googol 1a, The - Reshaping Googol - The Submarine",
-    },
-    'LSP020150': {
-	'id': 'LSP020150',
-	'title': "Secret of Googol 1b, The - Reshaping Googol - The Tower",
-    },
-    'LSP020180': {
-	'id': 'LSP020180',
-	'title': "Secret of Googol 2a, The - Reshaping Googol - The Castle",
-    },
-    'LSP020170': {
-	'id': 'LSP020170',
-	'title': "Secret of Googol 2b, The - Reshaping Googol - Under the Ocean",
-    },
-    'LSP020260': {
-	'id': 'LSP020260',
-	'title': "Secret of Googol 3, The - The Googol Counting Fair - Midways",
-    },
-    'LSP020280': {
-	'id': 'LSP020280',
-	'title': "Secret of Googol 4, The - The Googol Counting Fair - Corral & Fun House",
-    },
-    'LSP020450': {
-	'id': 'LSP020450',
-	'title': "Secret of Googol 5, The - Googolfest - Party Isle & Toy Isle",
-    },
-    'LSP020570': {
-	'id': 'LSP020570',
-	'title': "Secret of Googol 6, The - Googolfest - Arcade Isle & Moon Feast Isle",
-    },
-    'LSP020650': {
-	'id': 'LSP020650',
-	'title': "Secret of Googol 7, The - Eggs All Around - Egg Trek & Balloon Picnic",
-    },
-    'LSP020780': {
-	'id': 'LSP020780',
-	'title': "Secret of Googol 8, The - Googol Gulch - General Store & Math Arcade",
-    },
-    'LSP990141': {
-	'id': 'LSP990141',
-	'title': "Story Lane Theater 1",
-    },
-    'LSP990142': {
-	'id': 'LSP990142',
-	'title': "Story Lane Theater 2",
-    },
-    'LSP990143': {
-	'id': 'LSP990143',
-	'title': "Story Lane Theater 3",
-    },
-    'LSP990144': {
-	'id': 'LSP990144',
-	'title': "Story Lane Theater 4",
-    },
-    'LSP990145': {
-	'id': 'LSP990145',
-	'title': "Story Lane Theater 5",
-    },
-    'LSP030101': {
-	'id': 'LSP030101',
-	'title': "Str.at.e.s. 1 - Match-A-Batch",
-    },
-    'LSP030102': {
-	'id': 'LSP030102',
-	'title': "Str.at.e.s. 2 - Matchamania!",
-    },
-    'LSP030103': {
-	'id': 'LSP030103',
-	'title': "Str.at.e.s. 3 - Title This! Title That!",
-    },
-    'LSP030104': {
-	'id': 'LSP030104',
-	'title': "Str.at.e.s. 4 - Titlerama!",
-    },
-    'LSP030105': {
-	'id': 'LSP030105',
-	'title': "Str.at.e.s. 5 - Parallel Lives!",
-    },
-    'LSP030106': {
-	'id': 'LSP030106',
-	'title': "Str.at.e.s. 6 - Analogy-ology!",
-    },
-    'LSP030107': {
-	'id': 'LSP030107',
-	'title': "Str.at.e.s. 7 - Riddle Roundup!",
-    },
-    'LSP030108': {
-	'id': 'LSP030108',
-	'title': "Str.at.e.s. 8 - Riddle Wrangler!",
-    },
-    'LSP903174': {
-	'id': 'LSP903174',
-	'title': "Three Decoders 1, The - Riddle of the Ring",
-    },
-    'LSP903181': {
-	'id': 'LSP903181',
-	'title': "Three Decoders 2, The - Key to the Carousel",
-    },
-    'LSP907387': {
-	'id': 'LSP907387',
-	'title': "Timeless Jade Trade",
-    },
-    'LSP040110': {
-	'id': 'LSP040110',
-	'title': "Timeless Math 1 - Maya, Search and Rescue",
-    },
-    'LSP040210': {
-	'id': 'LSP040210',
-	'title': "Timeless Math 2 - Maya, Observatory",
-    },
-    'LSP040310': {
-	'id': 'LSP040310',
-	'title': "Timeless Math 3 - Maya, King Jaguar's Village",
-    },
-    'LSP040410': {
-	'id': 'LSP040410',
-		     'title': "Timeless Math 4 - Lunar Base",
-    },
-    'LSP040510': {
-	'id': 'LSP040510',
-	'title': "Timeless Math 5 - Space Flight Rescue",
-    },
-    'LSP040610': {
-	'id': 'LSP040610',
-	'title': "Timeless Math 6 - Brainswarm",
-    },
-    'LSP040710': {
-	'id': 'LSP040710',
-	'title': "Timeless Math 7 - Rover Recovery",
-    },
-    'LSP909015': {
-		     'id': 'LSP909015',
-	'title': "Unknown Variable 1 - Masque Manor",
-    },
-    'LSP909022': {
-	'id': 'LSP909022',
-	'title': "Unknown Variable 2 - Raven's Ridge",
-    },
-    'LSP170110': {
-	'id': 'LSP170110',
-	'title': "Write Away 1",
-    },
-    'LSP170111': {
-	'id': 'LSP170111',
-	'title': "Write Away 2",
-    },
-    'LSP170112': {
-	'id': 'LSP170112',
-	'title': "Write Away 3",
-    },
-    'LSP170113': {
-	'id': 'LSP170113',
-	'title': "Write Away 4",
-    },
-    'LSP170114': {
-	'id': 'LSP170114',
-	'title': "Write Away 5",
-    },
-    'LSP170115': {
-	'id': 'LSP170115',
-		     'title': "Write Away 6",
-    },
-    'LSP170116': {
-	'id': 'LSP170116',
-	'title': "Write Away 7",
-    },
-    'LSP170117': {
-	'id': 'LSP170117',
-	'title': "Write Away 8",
-    },
-    'LSP170118': {
-	'id': 'LSP170118',
-		     'title': "Write Away 9",
-    },
-    'LSP170119': {
-	'id': 'LSP170119',
-	'title': "Write Away 10",
+    'SCUS80110': {
+	'id': 'SCUS80110',
+	'title': "Calamity 1 - The Natural World (LSP200110)",
+    },
+    'SCUS80109': {
+	'id': 'SCUS80109',
+	'title': "Calamity 2 - People and Traditions (LSP200220)",
+    },
+    'SCUS80108': {
+	'id': 'SCUS80108',
+	'title': "Cali's Geo Tools (LSP903426)",
+    },
+    'SCUS80107': {
+	'id': 'SCUS80107',
+	'title': "Cosmic Cookoff - Language Arts (LSP905154)",
+    },
+    'SCUS80106': {
+	'id': 'SCUS80106',
+	'title': "Cosmic Cookoff - Mathematics (LSP080240)",
+    },
+    'SCUS80105': {
+	'id': 'SCUS80105',
+	'title': "Creative Camp (LSP130110)",
+    },
+    'SCUS80104': {
+	'id': 'SCUS80104',
+	'title': "Creative Isle (LSP903167)",
+    },
+    'SCUS80103': {
+	'id': 'SCUS80103',
+	'title': "Creative Journey (LSP905109)",
+    },
+    'SCUS80102': {
+	'id': 'SCUS80102',
+	'title': "Creative Voyage (LSP907097)",
+    },
+    'SCUS80101': {
+	'id': 'SCUS80101',
+	'title': "Every Child Can Succeed 1 (LSP990191)",
+    },
+    'SCUS80100': {
+	'id': 'SCUS80100',
+	'title': "Every Child Can Succeed 2 (LSP990192)",
+    },
+    'SCUS80099': {
+	'id': 'SCUS80099',
+	'title': "Every Child Can Succeed 3 (LSP990193)",
+    },
+    'SCUS80098': {
+	'id': 'SCUS80098',
+	'title': "Every Child Can Succeed 4 (LSP990194)",
+    },
+    'SCUS80097': {
+	'id': 'SCUS80097',
+	'title': "Every Child Can Succeed 5 (LSP990195)",
+    },
+    'SCUS80096': {
+	'id': 'SCUS80096',
+	'title': "Every Child Can Succeed 6 (LSP990196)",
+    },
+    'SCUS80095': {
+	'id': 'SCUS80095',
+	'title': "Every Child Can Succeed 7 (LSP990197)",
+    },
+    'SCUS80094': {
+	'id': 'SCUS80094',
+	'title': "Faire Games - Language Arts (LSP080130)",
+    },
+    'SCUS80093': {
+	'id': 'SCUS80093',
+	'title': "Faire Games - Mathematics (LSP905420)",
+    },
+    'SCUS80092': {
+	'id': 'SCUS80092',
+	'title': "Family Connection - A Guide to Lightspan (LSP150200)",
+    },
+    'SCUS80091': {
+	'id': 'SCUS80091',
+	'title': "K9.5 1 - Live in Airedale (LSP905062)",
+    },
+    'SCUS80090': {
+	'id': 'SCUS80090',
+	'title': "K9.5 2 - We Are the Dogs! (LSP905079)",
+    },
+    'SCUS80089': {
+	'id': 'SCUS80089',
+	'title': "K9.5 3 - WebTunes (LSP905086)",
+    },
+    'SCUS80088': {
+	'id': 'SCUS80088',
+	'title': "K9.5 4 - The Tail-Wag Tour (LSP905093)",
+    },
+    'SCUS80087': {
+	'id': 'SCUS80087',
+	'title': "K9.5 5 - The Howlywood Premiere (LSP907103)",
+    },
+    'SCUS80086': {
+	'id': 'SCUS80086',
+	'title': "KazMania 1 - Trail of Gems (LSP905123)",
+    },
+    'SCUS80085': {
+	'id': 'SCUS80085',
+	'title': "KazMania 2 - Chaos in KazMania (LSP905130)",
+    },
+    'SCUS80084': {
+	'id': 'SCUS80084',
+	'title': "Liquid Books Adventure 1 - Lety's Favorite Stories (LSP010150)",
+    },
+    'SCUS80083': {
+	'id': 'SCUS80083',
+	'title': "Liquid Books Adventure 2 - Amrita's Trees & Cerdito and the Coyote (LSP010250)",
+    },
+    'SCUS80082': {
+	'id': 'SCUS80082',
+	'title': "Liquid Books Adventure 3 - Far-Fetched Frontier Tales (LSP010350)",
+    },
+    'SCUS80081': {
+	'id': 'SCUS80081',
+	'title': "Liquid Books Adventure 4 - The Adventures of Adelita and Bo (LSP903136)",
+    },
+    'SCUS80080': {
+	'id': 'SCUS80080',
+	'title': "Liquid Books Adventure 5 - Pop-Out Prose (LSP903143)",
+    },
+    'SCUS80079': {
+	'id': 'SCUS80079',
+	'title': "Liquid Books Adventure 6 - The Wandering Path (LSP905147)",
+    },
+    'SCUS80078': {
+	'id': 'SCUS80078',
+	'title': "Mars Moose Adventure - WalkAbout 1 - The Natural History Museum (LSP010180)",
+    },
+    'SCUS80077': {
+	'id': 'SCUS80077',
+	'title': "Mars Moose Adventure - WalkAbout 2 - The Shakespeare Festival (LSP010280)",
+    },
+    'SCUS80076': {
+	'id': 'SCUS80076',
+	'title': "Mars Moose Adventure - WalkAbout 3 - World Sports Day (LSP010380)",
+    },
+    'SCUS80075': {
+	'id': 'SCUS80075',
+	'title': "Mars Moose Cosmic Quest 1 - City Sights (LSP010170)",
+    },
+    'SCUS80074': {
+	'id': 'SCUS80074',
+	'title': "Mars Moose Cosmic Quest 2 - Fairy Tale Island (LSP010270)",
+    },
+    'SCUS80073': {
+	'id': 'SCUS80073',
+	'title': "Mars Moose Cosmic Quest 3 - Race Through France (LSP010370)",
+    },
+    'SCUS80072': {
+	'id': 'SCUS80072',
+	'title': "Mars Moose Stay and Play 1 - In the Clubhouse (LSP010160)",
+    },
+    'SCUS80071': {
+	'id': 'SCUS80071',
+	'title': "Mars Moose Stay and Play 2 - In Mars' Bedroom (LSP010260)",
+    },
+    'SCUS80070': {
+	'id': 'SCUS80070',
+	'title': "Mars Moose Stay and Play 3 - In Lonnie's Classroom (LSP010360)",
+    },
+    'SCUS80069': {
+	'id': 'SCUS80069',
+	'title': "Math Gallery - Collection 1 (LSP903433)",
+    },
+    'SCUS80068': {
+	'id': 'SCUS80068',
+	'title': "Math Gallery - Collection 2 (LSP903440)",
+    },
+    'SCUS80067': {
+	'id': 'SCUS80067',
+	'title': "Math on the Move! 1 - Addition-Subtraction Advanced (LSP100112)",
+    },
+    'SCUS80066': {
+	'id': 'SCUS80066',
+	'title': "Math on the Move! 1 - Addition-Subtraction Intermediate (LSP905390)",
+    },
+    'SCUS80065': {
+	'id': 'SCUS80065',
+	'title': "Math on the Move! 2 - Multiplication-Division Advanced (LSP100113)",
+    },
+    'SCUS80064': {
+	'id': 'SCUS80064',
+	'title': "Math on the Move! 2 - Multiplication-Division Intermediate (LSP905406)",
+    },
+    'SCUS80063': {
+	'id': 'SCUS80063',
+	'title': "Mona & Moki 1 - Drive Me Wild! (LSP050101)",
+    },
+    'SCUS80062': {
+	'id': 'SCUS80062',
+	'title': "Mona & Moki 2 - Drive Me Wilder! (LSP050102)",
+    },
+    'SCUS80061': {
+	'id': 'SCUS80061',
+	'title': "P.K.'s Math Studio (LSP905383)",
+    },
+    'SCUS80060': {
+	'id': 'SCUS80060',
+	'title': "P.K.'s Place 1 - Party on the Patio! (LSP905345)",
+    },
+    'SCUS80059': {
+	'id': 'SCUS80059',
+	'title': "P.K.'s Place 2 - Hoopo at Sea! (LSP905352)",
+    },
+    'SCUS80058': {
+	'id': 'SCUS80058',
+	'title': "P.K.'s Place 3 - Carlos at the Races! (LSP905369)",
+    },
+    'SCUS80057': {
+	'id': 'SCUS80057',
+	'title': "P.K.'s Place 4 - Daphne and the Seventh Wonder (LSP180410)",
+    },
+    'SCUS80056': {
+	'id': 'SCUS80056',
+	'title': "Quaddle Family Mysteries, The 1 - The Case of the Scarce Scarab - Lobby & Kitchen (LSP060101)",
+    },
+    'SCUS80055': {
+	'id': 'SCUS80055',
+	'title': "Quaddle Family Mysteries, The 2 - The Case of the Scarce Scarab - Garden (LSP060102)",
+    },
+    'SCUS80054': {
+	'id': 'SCUS80054',
+	'title': "Quaddle Family Mysteries, The 3 - The Case of the Scarce Scarab - Parlor & Family Room (LSP060103)",
+    },
+    'SCUS80053': {
+	'id': 'SCUS80053',
+	'title': "Road Writer (LSP907127)",
+    },
+    'SCUS80052': {
+        'id': 'SCUS80052',
+        'title': "Science Is Elementary 1 (LSP990161)",
+    },
+    'SCUS80051': {
+	'id': 'SCUS80051',
+	'title': "Science Is Elementary 2 (LSP990162)",
+    },
+    'SCUS80050': {
+	'id': 'SCUS80050',
+	'title': "Science Is Elementary 3 (LSP990163)",
+    },
+    'SCUS80049': {
+	'id': 'SCUS80049',
+	'title': "Secret of Googol 1a, The - Reshaping Googol - The Submarine (LSP020160)",
+    },
+    'SCUS80048': {
+	'id': 'SCUS80048',
+	'title': "Secret of Googol 1b, The - Reshaping Googol - The Tower (LSP020150)",
+    },
+    'SCUS80047': {
+	'id': 'SCUS80047',
+	'title': "Secret of Googol 2a, The - Reshaping Googol - The Castle (LSP020180)",
+    },
+    'SCUS80046': {
+	'id': 'SCUS80046',
+	'title': "Secret of Googol 2b, The - Reshaping Googol - Under the Ocean (LSP020170)",
+    },
+    'SCUS80045': {
+	'id': 'SCUS80045',
+	'title': "Secret of Googol 3, The - The Googol Counting Fair - Midways (LSP020260)",
+    },
+    'SCUS80044': {
+	'id': 'SCUS80044',
+	'title': "Secret of Googol 4, The - The Googol Counting Fair - Corral & Fun House (LSP020280)",
+    },
+    'SCUS80043': {
+	'id': 'SCUS80043',
+	'title': "Secret of Googol 5, The - Googolfest - Party Isle & Toy Isle (LSP020450)",
+    },
+    'SCUS80042': {
+	'id': 'SCUS80042',
+	'title': "Secret of Googol 6, The - Googolfest - Arcade Isle & Moon Feast Isle (LSP020570)",
+    },
+    'SCUS80041': {
+	'id': 'SCUS80041',
+	'title': "Secret of Googol 7, The - Eggs All Around - Egg Trek & Balloon Picnic (LSP020650)",
+    },
+    'SCUS80040': {
+	'id': 'SCUS80040',
+	'title': "Secret of Googol 8, The - Googol Gulch - General Store & Math Arcade (LSP020780)",
+    },
+    'SCUS80039': {
+	'id': 'SCUS80039',
+	'title': "Story Lane Theater 1 (LSP990141)",
+    },
+    'SCUS80038': {
+	'id': 'SCUS80038',
+	'title': "Story Lane Theater 2 (LSP990142)",
+    },
+    'SCUS80037': {
+	'id': 'SCUS80037',
+	'title': "Story Lane Theater 3 (LSP990143)",
+    },
+    'SCUS80036': {
+	'id': 'SCUS80036',
+	'title': "Story Lane Theater 4 (LSP990144)",
+    },
+    'SCUS80035': {
+	'id': 'SCUS80035',
+	'title': "Story Lane Theater 5 (LSP990145)",
+    },
+    'SCUS80034': {
+	'id': 'SCUS80034',
+	'title': "Str.at.e.s. 1 - Match-A-Batch (LSP030101)",
+    },
+    'SCUS80033': {
+	'id': 'SCUS80033',
+	'title': "Str.at.e.s. 2 - Matchamania! (LSP030102)",
+    },
+    'SCUS80032': {
+	'id': 'SCUS80032',
+	'title': "Str.at.e.s. 3 - Title This! Title That! (LSP030103)",
+    },
+    'SCUS80031': {
+	'id': 'SCUS80031',
+	'title': "Str.at.e.s. 4 - Titlerama! (LSP030104)",
+    },
+    'SCUS80030': {
+	'id': 'SCUS80030',
+	'title': "Str.at.e.s. 5 - Parallel Lives! (LSP030105)",
+    },
+    'SCUS80029': {
+	'id': 'SCUS80029',
+	'title': "Str.at.e.s. 6 - Analogy-ology! (LSP030106)",
+    },
+    'SCUS80028': {
+	'id': 'SCUS80028',
+	'title': "Str.at.e.s. 7 - Riddle Roundup! (LSP030107)",
+    },
+    'SCUS80027': {
+	'id': 'SCUS80027',
+	'title': "Str.at.e.s. 8 - Riddle Wrangler! (LSP030108)",
+    },
+    'SCUS80026': {
+	'id': 'SCUS80026',
+	'title': "Three Decoders 1, The - Riddle of the Ring (LSP903174)",
+    },
+    'SCUS80025': {
+	'id': 'SCUS80025',
+	'title': "Three Decoders 2, The - Key to the Carousel (LSP903181)",
+    },
+    'SCUS80024': {
+	'id': 'SCUS80024',
+	'title': "Timeless Jade Trade (LSP907387)",
+    },
+    'SCUS80023': {
+	'id': 'SCUS80023',
+	'title': "Timeless Math 1 - Maya, Search and Rescue (LSP040110)",
+    },
+    'SCUS80022': {
+	'id': 'SCUS80022',
+	'title': "Timeless Math 2 - Maya, Observatory (LSP040210)",
+    },
+    'SCUS80021': {
+	'id': 'SCUS80021',
+	'title': "Timeless Math 3 - Maya, King Jaguar's Village (LSP040310)",
+    },
+    'SCUS80020': {
+	'id': 'SCUS80020',
+	'title': "Timeless Math 4 - Lunar Base (LSP040410)",
+    },
+    'SCUS80019': {
+	'id': 'SCUS80019',
+	'title': "Timeless Math 5 - Space Flight Rescue (LSP040510)",
+    },
+    'SCUS80018': {
+	'id': 'SCUS80018',
+	'title': "Timeless Math 6 - Brainswarm (LSP040610)",
+    },
+    'SCUS80017': {
+	'id': 'SCUS80017',
+	'title': "Timeless Math 7 - Rover Recovery (LSP040710)",
+    },
+    'SCUS80016': {
+	'id': 'SCUS80016',
+	'title': "Unknown Variable 1 - Masque Manor (LSP909015)",
+    },
+    'SCUS80015': {
+	'id': 'SCUS80015',
+	'title': "Unknown Variable 2 - Raven's Ridge (LSP909022)",
+    },
+    'SCUS80014': {
+	'id': 'SCUS80014',
+	'title': "Write Away 1 (LSP170110)",
+    },
+    'SCUS80013': {
+	'id': 'SCUS80013',
+	'title': "Write Away 2 (LSP170111)",
+    },
+    'SCUS80012': {
+	'id': 'SCUS80012',
+	'title': "Write Away 3 (LSP170112)",
+    },
+    'SCUS80011': {
+	'id': 'SCUS80011',
+	'title': "Write Away 4 (LSP170113)",
+    },
+    'SCUS80010': {
+	'id': 'SCUS80010',
+	'title': "Write Away 5 (LSP170114)",
+    },
+    'SCUS80009': {
+	'id': 'SCUS80009',
+	'title': "Write Away 6 (LSP170115)",
+    },
+    'SCUS80007': {
+	'id': 'SCUS80007',
+	'title': "Write Away 7 (LSP170116)",
+    },
+    'SCUS80006': {
+	'id': 'SCUS80006',
+	'title': "Write Away 8 (LSP170117)",
+    },
+    'SCUS80005': {
+	'id': 'SCUS80005',
+	'title': "Write Away 9 (LSP170118)",
+    },
+    'SCUS80004': {
+	'id': 'SCUS80004',
+	'title': "Write Away 10 (LSP170119)",
     },
 }
 
@@ -69121,322 +69124,334 @@ gameid_by_md5sum = {
         'id': 'SLUS01528',
     },
     '7d6558b349c08881e43f284a20852d17': {
-        'id': 'LSP200110',
+        'id': 'SCUS80110',
     },
     '31c4b55c716f0551aef55cd8b390a60f': {
-        'id': 'LSP200220',
+        'id': 'SCUS80109',
     },
     'fa7035741e5443120e4df53d6b6904d0': {
-        'id': 'LSP903426',
+        'id': 'SCUS80108',
     },
     'c7b4d3fc60d73681d1479d5e06a52710': {
-        'id': 'LSP905154',
+        'id': 'SCUS80107',
     },
     '8ba3a9acee008cc0dceeb085c0845fcb': {
-        'id': 'LSP080240',
+        'id': 'SCUS80106',
     },
     '727958a0866c056425c484062770b2d2': {
-        'id': 'LSP130110',
+        'id': 'SCUS80105',
     },
     'f7c002b59da3acc6f6c91cd03955bbeb': {
-        'id': 'LSP903167',
+        'id': 'SCUS80104',
     },
     '2558ca8ca299f3b537322076c1735502': {
-        'id': 'LSP905109',
+        'id': 'SCUS80103',
     },
     '4b29f047ca6ee12f3d329020b005299c': {
-        'id': 'LSP907097',
+        'id': 'SCUS80102',
     },
     'dad14b50799847212dec221ca5eefb1c': {
-        'id': 'LSP990191',
+        'id': 'SCUS80101',
     },
     '97f158a1b35ca5310cbdeb137fe06777': {
-        'id': 'LSP990192',
+        'id': 'SCUS80100',
     },
     'ae2f242b3a8baa17e14206837e2023da': {
-        'id': 'LSP990193',
+        'id': 'SCUS80099',
     },
     'c499e338c80910172e27457edcb8d06b': {
-        'id': 'LSP990194',
+        'id': 'SCUS80098',
     },
     'ec7df6b7acb512e31fd83fc777694632': {
-        'id': 'LSP990195',
+        'id': 'SCUS80097',
     },
     '21ffe2a798cd3206fd0571b58375cf62': {
-        'id': 'LSP990196',
+        'id': 'SCUS80096',
     },
     '052b73ef64533bb504e1f321f9ffde40': {
-        'id': 'LSP990197',
+        'id': 'SCUS80095',
     },
     'b58b3de4ad614e34fd53291f2053f991': {
-        'id': 'LSP080130',
+        'id': 'SCUS80094',
     },
     '2587da71d33b62c44984b324523bb1ad': {
-        'id': 'LSP905420',
+        'id': 'SCUS80093',
     },
     '88285b2a8680368ac9d256fa35c5e6a0': {
-        'id': 'LSP150200',
+        'id': 'SCUS80092',
     },
     '5e43a096e6878456addb7b133e5e0566': {
-        'id': 'LSP905062',
+        'id': 'SCUS80091',
     },
     '7212758bf979ee10f8cbb95204847488': {
-        'id': 'LSP905079',
+        'id': 'SCUS80090',
     },
     '9586e77bbf1aa87d43460e42b64f28c5': {
-        'id': 'LSP905086',
+        'id': 'SCUS80089',
     },
     '0d3538e9a34681ec2a4041a43ad38735': {
-        'id': 'LSP905093',
+        'id': 'SCUS80088',
     },
     'f8a032da8e2cce34bf560f5b9473e7a6': {
-        'id': 'LSP907103',
+        'id': 'SCUS80087',
     },
     'fa0cf274e28ba7f988f6bd56cd65105b': {
-        'id': 'LSP905123',
+        'id': 'SCUS80086',
     },
     '5d3eac5c80cfc1974d8a4393164f7ed5': {
-        'id': 'LSP905130',
+        'id': 'SCUS80085',
     },
     '702884bb585512a5ddd1b55943579e6d': {
-        'id': 'LSP010150',
+        'id': 'SCUS80084',
     },
     'de5ee797c657fa28c7c1311a7d407a7f': {
-        'id': 'LSP010250',
+        'id': 'SCUS80083',
     },
     '966165aa8c8a7001da78260fc298f946': {
-        'id': 'LSP010350',
+        'id': 'SCUS80082',
     },
     'f59a5c2e7dca49104dc199da1bbf76e0': {
-        'id': 'LSP903136',
+        'id': 'SCUS80081',
     },
     '9d612f8a8112e48be81a26887c5e0b6e': {
-        'id': 'LSP903143',
+        'id': 'SCUS80080',
     },
     '274b84c56f69f39cbc87bdf850cf3422': {
-        'id': 'LSP905147',
+        'id': 'SCUS80079',
     },
     'aeeb6616446c185f45f3bf95860f318e': {
-        'id': 'LSP010180',
+        'id': 'SCUS80078',
     },
     '83ac47630980c2c81c842ed6bd84bbdf': {
-        'id': 'LSP010280',
+        'id': 'SCUS80077',
     },
     'bb56ee1d3e8cd7e32585c3ff4b8bcb3c': {
-        'id': 'LSP010380',
+        'id': 'SCUS80076',
     },
     '9449705822cb66340d8f68942ca8ebcc': {
-        'id': 'LSP010170',
+        'id': 'SCUS80075',
     },
     '0ce8e8b86cf3d4511d4cb4a56870d42c': {
-        'id': 'LSP010270',
+        'id': 'SCUS80074',
     },
     'eb51f7c6e1dda347d6e85ea80692e3bf': {
-        'id': 'LSP010370',
+        'id': 'SCUS80073',
     },
     'dfe55e26e8a8299f98b54d1a3aa41d15': {
-        'id': 'LSP010160',
+        'id': 'SCUS80072',
     },
     'a1931085f7035889a0af564789ba2bf3': {
-        'id': 'LSP010260',
+        'id': 'SCUS80071',
     },
     'ddb8f70829037ab394d81a28ebb1309b': {
-        'id': 'LSP010360',
+        'id': 'SCUS80070',
     },
     '9492f3635b64893c4e9beffb5276573a': {
-        'id': 'LSP903433',
+        'id': 'SCUS80069',
     },
     '5ec9bf2002d64c6ec308146f73d95e6a': {
-        'id': 'LSP903440',
+        'id': 'SCUS80068',
     },
     '5b0b759408aab2a593fbe9cf10d9a150': {
-        'id': 'LSP100112',
+        'id': 'SCUS80067',
     },
     'c16b616af8b5ebcb3b0eba6484c6ade9': {
-        'id': 'LSP905390',
+        'id': 'SCUS80066',
     },
     '5d06a8d465d0621efd837195d53aa12a': {
-        'id': 'LSP100113',
+        'id': 'SCUS80065',
     },
     '85a50440db2385693ee58900d487a446': {
-        'id': 'LSP905406',
+        'id': 'SCUS80064',
     },
     '1511580f98683123f6e1679d8c105b41': {
-        'id': 'LSP050101',
+        'id': 'SCUS80063',
     },
     '4f2f19fc43eaf90d1c66fcbd94546cbb': {
-        'id': 'LSP050102',
+        'id': 'SCUS80062',
     },
     '80fa9c616f4316add45156daf6efdeac': {
-        'id': 'LSP905383',
+        'id': 'SCUS80061',
     },
     'dbd5344c6bf59f0f71e585793fe529be': {
-        'id': 'LSP905345',
+        'id': 'SCUS80060',
     },
     '4483c78faa1c268a69f25e1588a86705': {
-        'id': 'LSP905352',
+        'id': 'SCUS80059',
     },
     'aa64ab216902a18e2f52ec55bf4fb6de': {
-        'id': 'LSP905369',
+        'id': 'SCUS80058',
     },
     '6904262b619ac70ccf1ac2acca5834f5': {
-        'id': 'LSP180410',
+        'id': 'SCUS80057',
     },
     'c200d3b865f6dec112a7c14912e9128a': {
-        'id': 'LSP060101',
+        'id': 'SCUS80056',
     },
     'd8cd835ecb2588e0da4fa4300d0d9e6b': {
-        'id': 'LSP060102',
+        'id': 'SCUS80055',
     },
     'd888f94b30e76522847a2941a8a490f9': {
-        'id': 'LSP060103',
+        'id': 'SCUS80054',
     },
     '190833f5b4064a116f56017460da154b': {
-        'id': 'LSP907127',
+        'id': 'SCUS80053',
     },
     '033a64fe9f6af12468455b27e894f246': {
-        'id': 'LSP990161',
+        'id': 'SCUS80052',
     },
     '5e4542916ee13be4084f0942d0078a3c': {
-        'id': 'LSP990162',
+        'id': 'SCUS80051',
     },
     'aeb9d7f5d0ac8fd080c2cf962d6bb603': {
-        'id': 'LSP990163',
+        'id': 'SCUS80050',
     },
     '641fdd36ef042cf49893acfacf60b465': {
-        'id': 'LSP020160',
+        'id': 'SCUS80049',
     },
     'f2b609e1847c6025ee29777f8d0bd54e': {
-        'id': 'LSP020150',
+        'id': 'SCUS80048',
     },
     '4cffeac07d0489ca45c1ff8bf98a635f': {
-        'id': 'LSP020180',
+        'id': 'SCUS80047',
     },
     '26e1dd639f8bb1731f43bbf8ee619652': {
-        'id': 'LSP020170',
+        'id': 'SCUS80046',
     },
     '05af9b8f1ef488c8bfe5466c764ff4aa': {
-        'id': 'LSP020260',
+        'id': 'SCUS80045',
     },
     '92bdf2e6014da0347f13b85d4ec75109': {
-        'id': 'LSP020280',
+        'id': 'SCUS80044',
     },
     'f42e82c0a5f94c9a5a14e06f6e5f955c': {
-        'id': 'LSP020450',
+        'id': 'SCUS80043',
     },
     '2eecc8476b802ca60f37245b3f2031ea': {
-        'id': 'LSP020570',
+        'id': 'SCUS80042',
     },
     '7573e6eee04af3e18d456682eb4af70d': {
-        'id': 'LSP020650',
+        'id': 'SCUS80041',
     },
     'f94caa174a2c3c8fb647d60eca422cd3': {
-        'id': 'LSP020780',
+        'id': 'SCUS80040',
     },
     'f942a17cd9563d08eba69359a668e723': {
-        'id': 'LSP990141',
+        'id': 'SCUS80039',
     },
     '3a6153df0e986e48250d1e0a43a03336': {
-        'id': 'LSP990142',
+        'id': 'SCUS80038',
     },
     '33be56dd55a3eeb58c8b22e001075e31': {
-        'id': 'LSP990143',
+        'id': 'SCUS80037',
     },
     'd5e6814ffba7aff633b4ac5dbadaa895': {
-        'id': 'LSP990144',
+        'id': 'SCUS80036',
     },
     '9a75b76e838c426d33922143a872ee3e': {
-        'id': 'LSP990145',
+        'id': 'SCUS80035',
     },
     'f276edbcfab1342845c2c4f62d63cef7': {
-        'id': 'LSP030101',
+        'id': 'SCUS80034',
     },
     'd927826ff3fb510ac8138a3acc2c8f94': {
-        'id': 'LSP030102',
+        'id': 'SCUS80033',
     },
     '9fbd6e9838bee38ccb0d04701104bbf0': {
-        'id': 'LSP030103',
+        'id': 'SCUS80032',
     },
     '300527b386ea96c215c875ab7fe79369': {
-        'id': 'LSP030104',
+        'id': 'SCUS80031',
     },
     'a6848df5c8072d9e14c901991b44c1de': {
-        'id': 'LSP030105',
+        'id': 'SCUS80030',
     },
     '6eb7267205cd2ec953fa71d567b22bc2': {
-        'id': 'LSP030106',
+        'id': 'SCUS80029',
     },
     'c5d70e360974692d4be582e3ce2e1dcd': {
-        'id': 'LSP030107',
+        'id': 'SCUS80028',
     },
     '7c3f8693037f18ed7186de49c9f701ba': {
-        'id': 'LSP030108',
+        'id': 'SCUS80027',
     },
     'e49bd3ee708dccd2e475d7e7126ce674': {
-        'id': 'LSP903174',
+        'id': 'SCUS80026',
     },
     '4af75af942964885f7b01495cfabf1de': {
-        'id': 'LSP903181',
+        'id': 'SCUS80025',
     },
     '0575a8997ec87881b993cd8819ed0a69': {
-        'id': 'LSP907387',
+        'id': 'SCUS80024',
     },
     '70c4fb72947fa27d8f4374a1849c5c75': {
-        'id': 'LSP040110',
+        'id': 'SCUS80023',
     },
     '5550261311413f909afbffa144acbd44': {
-        'id': 'LSP040210',
+        'id': 'SCUS80022',
     },
     'eba1aadfea5a02d4cd886047e2a1ebad': {
-        'id': 'LSP040310',
+        'id': 'SCUS80021',
     },
     'a442e0bbd07dfcadeed1462ee30e1be6': {
-        'id': 'LSP040410',
+        'id': 'SCUS80020',
     },
     'c901ed6e947a3f365842930dd4bf6dff': {
-        'id': 'LSP040510',
+        'id': 'SCUS80019',
     },
     'e38c1ee821b754ffb871216d6dba561d': {
-        'id': 'LSP040610',
+        'id': 'SCUS80018',
     },
     'f20c9f9ddfc0b08dfc385c63bdc61e02': {
-        'id': 'LSP040710',
+        'id': 'SCUS80017',
     },
     '0c5b0275ac889424d1fbe1d256ecfca6': {
-        'id': 'LSP909015',
+        'id': 'SCUS80016',
     },
     '88a46af00512f30d9acdec150702c3a1': {
-        'id': 'LSP909022',
+        'id': 'SCUS80015',
     },
     'a412def520029adf527f8fe879426cd8': {
-        'id': 'LSP170110',
+        'id': 'SCUS80014',
     },
     '95ba3583f41937a9f2eb825d62064f8c': {
-        'id': 'LSP170111',
+        'id': 'SCUS80013',
     },
     'afd042c6f90ef45a25383c37119f6037': {
-        'id': 'LSP170112',
+        'id': 'SCUS80012',
     },
     'bf236220a50e8da234e767e4fa2f3466': {
-        'id': 'LSP170113',
+        'id': 'SCUS80011',
     },
     'bed5a239dbb3220e9792b71f8a5b1ba9': {
-        'id': 'LSP170114',
+        'id': 'SCUS80010',
     },
     '378015a20085e12eda42d03e83f29777': {
-        'id': 'LSP170115',
+        'id': 'SCUS80009',
     },
     '7a3067f02e1c06d2eab3bb251fbcc078': {
-        'id': 'LSP170116',
+        'id': 'SCUS80007',
     },
     '93962674ecacf957ddf7eed5654b8016': {
-        'id': 'LSP170117',
+        'id': 'SCUS80006',
     },
     'f50e3880447454c4127280e00237d77b': {
-        'id': 'LSP170118',
+        'id': 'SCUS80005',
     },
     'c76cbdf3fa0d5ee8bf510884448b26f5': {
-        'id': 'LSP170119',
+        'id': 'SCUS80004',
+    },
+    '028dc6db090340e7d75ccaa826af41eb': {
+        'id': 'SCUS80003',
+    },
+    '48e822264b862bde9016311d92bddfa5': {
+        'id': 'SCUS80002',
+    },
+    '6f002fe39805e37ef309ad297a4ef3f5': {
+        'id': 'SCUS80001',
+    },
+    'e9dffc3142742be8b93414ea706d58bd': {
+        'id': 'SCUS80000',
     },
     # urban chaos has wrong discid in system.cnf
     '573d7c4f54b9b934e6741d5733c9e611': {
