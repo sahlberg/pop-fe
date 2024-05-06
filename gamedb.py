@@ -1729,6 +1729,28 @@ games = {
     'PSUG00014': {'id': 'PSUG00014', 'title': 'PLAYSTATION UNDERGROUND NUMBER 3 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
     'PSUG00015': {'id': 'PSUG00015', 'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
     'PSUG00016': {'id': 'PSUG00016', 'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00017': {'id': 'PSUG00017', 'title': 'PLAYSTATION UNDERGROUND JAMPACK - FALL 2001 (USA)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00018': {'id': 'PSUG00018', 'title': 'PLAYSTATION UNDERGROUND JAMPACK - SUMMER 2K (USA)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00019': {'id': 'PSUG00019', 'title': "PLAYSTATION UNDERGROUND JAMPACK - SUMMER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00020': {'id': 'PSUG00020', 'title': "PLAYSTATION UNDERGROUND JAMPACK (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00021': {'id': 'PSUG00021', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER 2000 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00022': {'id': 'PSUG00022', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '98 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00023': {'id': 'PSUG00023', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00024': {'id': 'PSUG00024', 'title': "PLAYSTATION UNDERGROUND 3.1 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00025': {'id': 'PSUG00025', 'title': "PLAYSTATION UNDERGROUND 3.1 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00026': {'id': 'PSUG00026', 'title': "PLAYSTATION UNDERGROUND 3.2 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00027': {'id': 'PSUG00027', 'title': "PLAYSTATION UNDERGROUND 3.2 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00028': {'id': 'PSUG00028', 'title': "PLAYSTATION UNDERGROUND 3.3 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00029': {'id': 'PSUG00029', 'title': "PLAYSTATION UNDERGROUND 3.3 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00030': {'id': 'PSUG00030', 'title': "PLAYSTATION UNDERGROUND 3.4 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00031': {'id': 'PSUG00031', 'title': "PLAYSTATION UNDERGROUND 3.4 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00032': {'id': 'PSUG00032', 'title': "PLAYSTATION UNDERGROUND 4.1 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00033': {'id': 'PSUG00033', 'title': "PLAYSTATION UNDERGROUND 4.1 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00034': {'id': 'PSUG00034', 'title': "PLAYSTATION UNDERGROUND 4.2 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00035': {'id': 'PSUG00035', 'title': "PLAYSTATION UNDERGROUND 4.2 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00036': {'id': 'PSUG00036', 'title': "PLAYSTATION UNDERGROUND 4.3 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00037': {'id': 'PSUG00037', 'title': "PLAYSTATION UNDERGROUND 4.3 (USA) (DISC 2)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00038': {'id': 'PSUG00038', 'title': "PLAYSTATION UNDERGROUND 4.4 (USA) (DISC 1)", 'icon0': None, 'pic0': None, 'pic1': None,},
     # end Demo discs
     'NETY00001': {
     	'id': 'NETY00001',
@@ -68997,6 +69019,72 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '9e4389f44c0fc60df60f72895d42a88b': {
+        'id': 'PSUG00038',
+    },
+    '57051906b50639027d374ce1aed567d0': {
+        'id': 'PSUG00037',
+    },
+    'd41a1a29c181674e196282e09835ba2a': {
+        'id': 'PSUG00036',
+    },
+    '0f7a646e4d70c90033a8ca5e62e197b5': {
+        'id': 'PSUG00035',
+    },
+    '1da42fd377ad10f51bc5933eeaf79117': {
+        'id': 'PSUG00034',
+    },
+    '65c3814644bc68c03e967793bde4bd9e': {
+        'id': 'PSUG00033',
+    },
+    '812073b84d21d3eee4be484e3b65796d': {
+        'id': 'PSUG00032',
+    },
+    'ad8e96d2a0785218623e416670d22b60': {
+        'id': 'PSUG00031',
+    },
+    '4ee31226fef1c1bdca3c7f82d1c7ed98': {
+        'id': 'PSUG00030',
+    },
+    '7e6ffb21ee1478964c795a0ddba7d921': {
+        'id': 'PSUG00029',
+    },
+    '89b126fdc475db0d519c55b9221efeea': {
+        'id': 'PSUG00028',
+    },
+    '8e24a72da1249e311ac84a05835f1678': {
+        'id': 'PSUG00027',
+    },
+    '91804e9ea4c27aba8514a5b5d1f2e11a': {
+        'id': 'PSUG00026',
+    },
+    '0dba18f38f61b712c0d9fdc7b9ee49fb': {
+        'id': 'PSUG00025',
+    },
+    '6f01ee8ae1119292bbb15c095f9b301e': {
+        'id': 'PSUG00024',
+    },
+    '426d23621b8e8f0b58c32b6133e87d49': {
+        'id': 'PSUG00023',
+    },
+    '89d98de78368661aab5a61f86ae378de': {
+        'id': 'PSUG00022',
+    },
+    '4be56c4d8ad1d62a884a1a6e901892e1': {
+        'id': 'PSUG00021',
+    },
+    '640173dfeb39366ed4613a8f83ed3cb0': {
+        'id': 'PSUG00020',
+    },
+    '7ef0a943409d8d63787d8fa68ce49df9': {
+        'id': 'PSUG00019',
+    },
+    '5ad5262f832157807993c204e5d62de9': {
+        'id': 'PSUG00018',
+    },
+    '5ad5262f832157807993c204e5d62de9': {
+        'id': 'PSUG00017',
+    },
     'ea7c9c048a26e26cb67469a8087b86aa': {
         'id': 'PSUG00016',
     },
