@@ -1707,6 +1707,25 @@ games = {
     'PBPX95001': {'id': 'PBPX95001', 'title': 'DEMO 1 VERSION 5 [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'PBPX95007': {'id': 'PBPX95007', 'title': 'DEMO ONE EUROPE [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'PBPX95008': {'id': 'PBPX95008', 'title': 'DEMO ONE EUROPE [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SLED00038': {'id': 'SLED00038', 'title': 'CROC [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94482': {'id': 'SCUS94482', 'title': 'PLAYSTATION DEMO DISC - SHOCK YOUR SYSTEM!', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94496': {'id': 'SCUS94496', 'title': 'PLAYSTATION DEMO DISC - SHOCK YOUR SYSTEM!', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00002': {'id': 'PSUG00002', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 1 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00003': {'id': 'PSUG00003', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 1 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00005': {'id': 'PSUG00005', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 2 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00006': {'id': 'PSUG00006', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 2 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00001': {'id': 'PSUG00001', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 3 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00004': {'id': 'PSUG00004', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 3 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00007': {'id': 'PSUG00007', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 4 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00008': {'id': 'PSUG00008', 'title': 'PLAYSTATION UNDERGROUND VOLUME 2 ISSUE 4 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00009': {'id': 'PSUG00009', 'title': 'PLAYSTATION UNDERGROUND NUMBER 1 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00010': {'id': 'PSUG00010', 'title': 'PLAYSTATION UNDERGROUND NUMBER 1 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00011': {'id': 'PSUG00011', 'title': 'PLAYSTATION UNDERGROUND NUMBER 2 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00012': {'id': 'PSUG00012', 'title': 'PLAYSTATION UNDERGROUND NUMBER 2 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00013': {'id': 'PSUG00013', 'title': 'PLAYSTATION UNDERGROUND NUMBER 3 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00014': {'id': 'PSUG00014', 'title': 'PLAYSTATION UNDERGROUND NUMBER 3 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00015': {'id': 'PSUG00015', 'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 1)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSUG00016': {'id': 'PSUG00016', 'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 2)', 'icon0': None, 'pic0': None, 'pic1': None,},
     # end Demo discs
     'NETY00001': {
     	'id': 'NETY00001',
@@ -68508,459 +68527,513 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=LAxD6e_t9vM&list=PLOqYa2mCm4JHWMZ04U5018dP0WLitlAAI&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Um%20Jammer%20Lammy%20%28USA%29_jp2.zip',
     },
-	'SCUS94480': {
-	    'id': 'SCUS94480',
-	    'title': 'Pizza Hut Disc 1',
-            'icon0': 'https://images.launchbox-app.com/716022b2-6e64-4364-9edf-77271f79d330.jpg',
-            'pic0': 'https://images.launchbox-app.com/65723258-9c92-4cd8-86ad-993c5cb2f9e2.png',
-            'pic1': 'https://images.launchbox-app.com/8f1b755a-e6a8-441f-8358-ea95fdfe9c78.jpg',
-	},
-	'SCUS94481': {
-	    'id': 'SCUS94481',
-	    'title': 'Pizza Hut Disc 2',
-            'icon0': 'https://images.launchbox-app.com/a6d86e98-433e-4537-bc1e-1777fead7796.jpg',
-            'pic0': 'https://images.launchbox-app.com/84a2c7b6-fbd2-43d0-9b22-e479e30bdfa0.png',
-            'pic1': 'https://images.launchbox-app.com/fca5dee6-2685-417f-85b0-1d9d69fb9343.jpg',
-	},
-	'SCUS94472': {
-	    'id': 'SCUS94472',
-	    'title': 'Slim Jim',
-	},
-	'SCUS94176': {
-		     'id': 'SCUS94176',
-		     'title': 'Jampack Vol. 1',
-	},
-	'SCUS94197': {
-		     'id': 'SCUS94197',
-		     'title': 'Jampack Vol. 2',
-	},
-	'LSP200110': {
-		     'id': 'LSP200110',
-		     'title': "Calamity 1 - The Natural World",
-	},
-	'LSP200220': {
-		     'id': 'LSP200220',
-		     'title': "Calamity 2 - People and Traditions",
-	},
-	'LSP903426': {
-		     'id': 'LSP903426',
-		     'title': "Cali's Geo Tools",
-	},
-	'LSP905154': {
-		     'id': 'LSP905154',
-		     'title': "Cosmic Cookoff - Language Arts",
-	},
-	'LSP080240': {
-		     'id': 'LSP080240',
-		     'title': "Cosmic Cookoff - Mathematics",
-	},
-	'LSP130110': {
-		     'id': 'LSP130110',
-		     'title': "Creative Camp",
-	},
-	'LSP903167': {
-		     'id': 'LSP903167',
-		     'title': "Creative Isle",
-	},
-	'LSP905109': {
-		     'id': 'LSP905109',
-		     'title': "Creative Journey",
-	},
-	'LSP907097': {
-		     'id': 'LSP907097',
-		     'title': "Creative Voyage",
-	},
-	'LSP990191': {
-		     'id': 'LSP990191',
-		     'title': "Every Child Can Succeed 1",
-	},
-	'LSP990192': {
-		     'id': 'LSP990192',
-		     'title': "Every Child Can Succeed 2",
-	},
-	'LSP990193': {
-		     'id': 'LSP990193',
-		     'title': "Every Child Can Succeed 3",
-	},
-	'LSP990194': {
-		     'id': 'LSP990194',
-		     'title': "Every Child Can Succeed 4",
-	},
-	'LSP990195': {
-		     'id': 'LSP990195',
-		     'title': "Every Child Can Succeed 5",
-	},
-	'LSP990196': {
-		     'id': 'LSP990196',
-		     'title': "Every Child Can Succeed 6",
-	},
-	'LSP990197': {
-		     'id': 'LSP990197',
-		     'title': "Every Child Can Succeed 7",
-	},
-	'LSP080130': {
-		     'id': 'LSP080130',
-		     'title': "Faire Games - Language Arts",
-	},
-	'LSP905420': {
-		     'id': 'LSP905420',
-		     'title': "Faire Games - Mathematics",
-	},
-	'LSP150200': {
-		     'id': 'LSP150200',
-		     'title': "Family Connection - A Guide to Lightspan",
-	},
-	'LSP905062': {
-		     'id': 'LSP905062',
-		     'title': "K9.5 1 - Live in Airedale",
-	},
-	'LSP905079': {
-		     'id': 'LSP905079',
-		     'title': "K9.5 2 - We Are the Dogs!",
-	},
-	'LSP905086': {
-		     'id': 'LSP905086',
-		     'title': "K9.5 3 - WebTunes",
-	},
-	'LSP905093': {
-		     'id': 'LSP905093',
-		     'title': "K9.5 4 - The Tail-Wag Tour",
-	},
-	'LSP907103': {
-		     'id': 'LSP907103',
-		     'title': "K9.5 5 - The Howlywood Premiere",
-	},
-	'LSP905123': {
-		     'id': 'LSP905123',
-		     'title': "KazMania 1 - Trail of Gems",
-	},
-	'LSP905130': {
-		     'id': 'LSP905130',
-		     'title': "KazMania 2 - Chaos in KazMania",
-	},
-	'LSP010150': {
-		     'id': 'LSP010150',
-		     'title': "Liquid Books Adventure 1 - Lety's Favorite Stories",
-	},
-	'LSP010250': {
-		     'id': 'LSP010250',
-		     'title': "Liquid Books Adventure 2 - Amrita's Trees & Cerdito and the Coyote",
-	},
-	'LSP010350': {
-		     'id': 'LSP010350',
-		     'title': "Liquid Books Adventure 3 - Far-Fetched Frontier Tales",
-	},
-	'LSP903136': {
-		     'id': 'LSP903136',
-		     'title': "Liquid Books Adventure 4 - The Adventures of Adelita and Bo",
-	},
-	'LSP903143': {
-		     'id': 'LSP903143',
-		     'title': "Liquid Books Adventure 5 - Pop-Out Prose",
-	},
-	'LSP905147': {
-		     'id': 'LSP905147',
-		     'title': "Liquid Books Adventure 6 - The Wandering Path",
-	},
-	'LSP010180': {
-		     'id': 'LSP010180',
+    'SCUS94480': {
+	'id': 'SCUS94480',
+	'title': 'Pizza Hut Disc 1',
+        'icon0': 'https://images.launchbox-app.com/716022b2-6e64-4364-9edf-77271f79d330.jpg',
+        'pic0': 'https://images.launchbox-app.com/65723258-9c92-4cd8-86ad-993c5cb2f9e2.png',
+        'pic1': 'https://images.launchbox-app.com/8f1b755a-e6a8-441f-8358-ea95fdfe9c78.jpg',
+    },
+    'SCUS94481': {
+	'id': 'SCUS94481',
+	'title': 'Pizza Hut Disc 2',
+        'icon0': 'https://images.launchbox-app.com/a6d86e98-433e-4537-bc1e-1777fead7796.jpg',
+        'pic0': 'https://images.launchbox-app.com/84a2c7b6-fbd2-43d0-9b22-e479e30bdfa0.png',
+        'pic1': 'https://images.launchbox-app.com/fca5dee6-2685-417f-85b0-1d9d69fb9343.jpg',
+    },
+    'SCUS94472': {
+	'id': 'SCUS94472',
+	'title': 'Slim Jim',
+    },
+    'SCUS94176': {
+	'id': 'SCUS94176',
+	'title': 'Jampack Vol. 1',
+    },
+    'SCUS94197': {
+	'id': 'SCUS94197',
+	'title': 'Jampack Vol. 2',
+    },
+    'LSP200110': {
+	'id': 'LSP200110',
+	'title': "Calamity 1 - The Natural World",
+    },
+    'LSP200220': {
+	'id': 'LSP200220',
+	'title': "Calamity 2 - People and Traditions",
+    },
+    'LSP903426': {
+	'id': 'LSP903426',
+	'title': "Cali's Geo Tools",
+    },
+    'LSP905154': {
+	'id': 'LSP905154',
+	'title': "Cosmic Cookoff - Language Arts",
+    },
+    'LSP080240': {
+	'id': 'LSP080240',
+	'title': "Cosmic Cookoff - Mathematics",
+    },
+    'LSP130110': {
+	'id': 'LSP130110',
+	'title': "Creative Camp",
+    },
+    'LSP903167': {
+	'id': 'LSP903167',
+	'title': "Creative Isle",
+    },
+    'LSP905109': {
+	'id': 'LSP905109',
+	'title': "Creative Journey",
+    },
+    'LSP907097': {
+	'id': 'LSP907097',
+	'title': "Creative Voyage",
+    },
+    'LSP990191': {
+	'id': 'LSP990191',
+	'title': "Every Child Can Succeed 1",
+    },
+    'LSP990192': {
+	'id': 'LSP990192',
+	'title': "Every Child Can Succeed 2",
+    },
+    'LSP990193': {
+	'id': 'LSP990193',
+	'title': "Every Child Can Succeed 3",
+    },
+    'LSP990194': {
+	'id': 'LSP990194',
+	'title': "Every Child Can Succeed 4",
+    },
+    'LSP990195': {
+	'id': 'LSP990195',
+	'title': "Every Child Can Succeed 5",
+    },
+    'LSP990196': {
+	'id': 'LSP990196',
+	'title': "Every Child Can Succeed 6",
+    },
+    'LSP990197': {
+	'id': 'LSP990197',
+	'title': "Every Child Can Succeed 7",
+    },
+    'LSP080130': {
+	'id': 'LSP080130',
+	'title': "Faire Games - Language Arts",
+    },
+    'LSP905420': {
+	'id': 'LSP905420',
+	'title': "Faire Games - Mathematics",
+    },
+    'LSP150200': {
+	'id': 'LSP150200',
+	'title': "Family Connection - A Guide to Lightspan",
+    },
+    'LSP905062': {
+	'id': 'LSP905062',
+	'title': "K9.5 1 - Live in Airedale",
+    },
+    'LSP905079': {
+	'id': 'LSP905079',
+	'title': "K9.5 2 - We Are the Dogs!",
+    },
+    'LSP905086': {
+	'id': 'LSP905086',
+	'title': "K9.5 3 - WebTunes",
+    },
+    'LSP905093': {
+	'id': 'LSP905093',
+	'title': "K9.5 4 - The Tail-Wag Tour",
+    },
+    'LSP907103': {
+	'id': 'LSP907103',
+	'title': "K9.5 5 - The Howlywood Premiere",
+    },
+    'LSP905123': {
+	'id': 'LSP905123',
+	'title': "KazMania 1 - Trail of Gems",
+    },
+    'LSP905130': {
+	'id': 'LSP905130',
+	'title': "KazMania 2 - Chaos in KazMania",
+    },
+    'LSP010150': {
+	'id': 'LSP010150',
+	'title': "Liquid Books Adventure 1 - Lety's Favorite Stories",
+    },
+    'LSP010250': {
+	'id': 'LSP010250',
+	'title': "Liquid Books Adventure 2 - Amrita's Trees & Cerdito and the Coyote",
+    },
+    'LSP010350': {
+	'id': 'LSP010350',
+	'title': "Liquid Books Adventure 3 - Far-Fetched Frontier Tales",
+    },
+    'LSP903136': {
+	'id': 'LSP903136',
+	'title': "Liquid Books Adventure 4 - The Adventures of Adelita and Bo",
+    },
+    'LSP903143': {
+	'id': 'LSP903143',
+	'title': "Liquid Books Adventure 5 - Pop-Out Prose",
+    },
+    'LSP905147': {
+	'id': 'LSP905147',
+	'title': "Liquid Books Adventure 6 - The Wandering Path",
+    },
+    'LSP010180': {
+	'id': 'LSP010180',
 		     'title': "Mars Moose Adventure - WalkAbout 1 - The Natural History Museum",
-	},
-	'LSP010280': {
-		     'id': 'LSP010280',
-		     'title': "Mars Moose Adventure - WalkAbout 2 - The Shakespeare Festival",
-	},
-	'LSP010380': {
-		     'id': 'LSP010380',
-		     'title': "Mars Moose Adventure - WalkAbout 3 - World Sports Day",
-	},
-	'LSP010170': {
-		     'id': 'LSP010170',
-		     'title': "Mars Moose Cosmic Quest 1 - City Sights",
-	},
-	'LSP010270': {
-		     'id': 'LSP010270',
-		     'title': "Mars Moose Cosmic Quest 2 - Fairy Tale Island",
-	},
-	'LSP010370': {
-		     'id': 'LSP010370',
-		     'title': "Mars Moose Cosmic Quest 3 - Race Through France",
-	},
-	'LSP010160': {
-		     'id': 'LSP010160',
-		     'title': "Mars Moose Stay and Play 1 - In the Clubhouse",
-	},
-	'LSP010260': {
-		     'id': 'LSP010260',
-		     'title': "Mars Moose Stay and Play 2 - In Mars' Bedroom",
-	},
-	'LSP010360': {
-		     'id': 'LSP010360',
-		     'title': "Mars Moose Stay and Play 3 - In Lonnie's Classroom",
-	},
-	'LSP903433': {
-		     'id': 'LSP903433',
-		     'title': "Math Gallery - Collection 1",
-	},
-	'LSP903440': {
-		     'id': 'LSP903440',
-		     'title': "Math Gallery - Collection 2",
-	},
-	'LSP100112': {
-		     'id': 'LSP100112',
-		     'title': "Math on the Move! 1 - Addition-Subtraction Advanced",
-	},
-	'LSP905390': {
-		     'id': 'LSP905390',
-		     'title': "Math on the Move! 1 - Addition-Subtraction Intermediate",
-	},
-	'LSP100113': {
-		     'id': 'LSP100113',
-		     'title': "Math on the Move! 2 - Multiplication-Division Advanced",
-	},
-	'LSP905406': {
-		     'id': 'LSP905406',
-		     'title': "Math on the Move! 2 - Multiplication-Division Intermediate",
-	},
-	'LSP050101': {
-		     'id': 'LSP050101',
-		     'title': "Mona & Moki 1 - Drive Me Wild!",
-	},
-	'LSP050102': {
-		     'id': 'LSP050102',
-		     'title': "Mona & Moki 2 - Drive Me Wilder!",
-	},
-	'LSP905383': {
-		     'id': 'LSP905383',
-		     'title': "P.K.'s Math Studio",
-	},
-	'LSP905345': {
-		     'id': 'LSP905345',
-		     'title': "P.K.'s Place 1 - Party on the Patio!",
-	},
-	'LSP905352': {
-		     'id': 'LSP905352',
-		     'title': "P.K.'s Place 2 - Hoopo at Sea!",
-	},
-	'LSP905369': {
-		     'id': 'LSP905369',
-		     'title': "P.K.'s Place 3 - Carlos at the Races!",
-	},
-	'LSP180410': {
-		     'id': 'LSP180410',
-		     'title': "P.K.'s Place 4 - Daphne and the Seventh Wonder",
-	},
-	'LSP060101': {
-		     'id': 'LSP060101',
-		     'title': "Quaddle Family Mysteries, The 1 - The Case of the Scarce Scarab - Lobby & Kitchen",
-	},
-	'LSP060102': {
-		     'id': 'LSP060102',
-		     'title': "Quaddle Family Mysteries, The 2 - The Case of the Scarce Scarab - Garden",
-	},
-	'LSP060103': {
-		     'id': 'LSP060103',
-		     'title': "Quaddle Family Mysteries, The 3 - The Case of the Scarce Scarab - Parlor & Family Room",
-	},
-	'LSP907127': {
-		     'id': 'LSP907127',
-		     'title': "Road Writer",
-	},
-	'LSP990161': {
-		     'id': 'LSP990161',
-		     'title': "Science Is Elementary 1",
-	},
-	'LSP990162': {
-		     'id': 'LSP990162',
-		     'title': "Science Is Elementary 2",
-	},
-	'LSP990163': {
-		     'id': 'LSP990163',
-		     'title': "Science Is Elementary 3",
-	},
-	'LSP020160': {
-		     'id': 'LSP020160',
-		     'title': "Secret of Googol 1a, The - Reshaping Googol - The Submarine",
-	},
-	'LSP020150': {
-		     'id': 'LSP020150',
-		     'title': "Secret of Googol 1b, The - Reshaping Googol - The Tower",
-	},
-	'LSP020180': {
-		     'id': 'LSP020180',
-		     'title': "Secret of Googol 2a, The - Reshaping Googol - The Castle",
-	},
-	'LSP020170': {
-		     'id': 'LSP020170',
-		     'title': "Secret of Googol 2b, The - Reshaping Googol - Under the Ocean",
-	},
-	'LSP020260': {
-		     'id': 'LSP020260',
-		     'title': "Secret of Googol 3, The - The Googol Counting Fair - Midways",
-	},
-	'LSP020280': {
-		     'id': 'LSP020280',
-		     'title': "Secret of Googol 4, The - The Googol Counting Fair - Corral & Fun House",
-	},
-	'LSP020450': {
-		     'id': 'LSP020450',
-		     'title': "Secret of Googol 5, The - Googolfest - Party Isle & Toy Isle",
-	},
-	'LSP020570': {
-		     'id': 'LSP020570',
-		     'title': "Secret of Googol 6, The - Googolfest - Arcade Isle & Moon Feast Isle",
-	},
-	'LSP020650': {
-		     'id': 'LSP020650',
-		     'title': "Secret of Googol 7, The - Eggs All Around - Egg Trek & Balloon Picnic",
-	},
-	'LSP020780': {
-		     'id': 'LSP020780',
-		     'title': "Secret of Googol 8, The - Googol Gulch - General Store & Math Arcade",
-	},
-	'LSP990141': {
-		     'id': 'LSP990141',
-		     'title': "Story Lane Theater 1",
-	},
-	'LSP990142': {
-		     'id': 'LSP990142',
-		     'title': "Story Lane Theater 2",
-	},
-	'LSP990143': {
-		     'id': 'LSP990143',
-		     'title': "Story Lane Theater 3",
-	},
-	'LSP990144': {
-		     'id': 'LSP990144',
-		     'title': "Story Lane Theater 4",
-	},
-	'LSP990145': {
-		     'id': 'LSP990145',
-		     'title': "Story Lane Theater 5",
-	},
-	'LSP030101': {
-		     'id': 'LSP030101',
-		     'title': "Str.at.e.s. 1 - Match-A-Batch",
-	},
-	'LSP030102': {
-		     'id': 'LSP030102',
-		     'title': "Str.at.e.s. 2 - Matchamania!",
-	},
-	'LSP030103': {
-		     'id': 'LSP030103',
-		     'title': "Str.at.e.s. 3 - Title This! Title That!",
-	},
-	'LSP030104': {
-		     'id': 'LSP030104',
-		     'title': "Str.at.e.s. 4 - Titlerama!",
-	},
-	'LSP030105': {
-		     'id': 'LSP030105',
-		     'title': "Str.at.e.s. 5 - Parallel Lives!",
-	},
-	'LSP030106': {
-		     'id': 'LSP030106',
-		     'title': "Str.at.e.s. 6 - Analogy-ology!",
-	},
-	'LSP030107': {
-		     'id': 'LSP030107',
-		     'title': "Str.at.e.s. 7 - Riddle Roundup!",
-	},
-	'LSP030108': {
-		     'id': 'LSP030108',
-		     'title': "Str.at.e.s. 8 - Riddle Wrangler!",
-	},
-	'LSP903174': {
-		     'id': 'LSP903174',
-		     'title': "Three Decoders 1, The - Riddle of the Ring",
-	},
-	'LSP903181': {
-		     'id': 'LSP903181',
-		     'title': "Three Decoders 2, The - Key to the Carousel",
-	},
-	'LSP907387': {
-		     'id': 'LSP907387',
-		     'title': "Timeless Jade Trade",
-	},
-	'LSP040110': {
-		     'id': 'LSP040110',
-		     'title': "Timeless Math 1 - Maya, Search and Rescue",
-	},
-	'LSP040210': {
-		     'id': 'LSP040210',
-		     'title': "Timeless Math 2 - Maya, Observatory",
-	},
-	'LSP040310': {
-		     'id': 'LSP040310',
-		     'title': "Timeless Math 3 - Maya, King Jaguar's Village",
-	},
-	'LSP040410': {
-		     'id': 'LSP040410',
+    },
+    'LSP010280': {
+	'id': 'LSP010280',
+	'title': "Mars Moose Adventure - WalkAbout 2 - The Shakespeare Festival",
+    },
+    'LSP010380': {
+	'id': 'LSP010380',
+	'title': "Mars Moose Adventure - WalkAbout 3 - World Sports Day",
+    },
+    'LSP010170': {
+	'id': 'LSP010170',
+	'title': "Mars Moose Cosmic Quest 1 - City Sights",
+    },
+    'LSP010270': {
+	'id': 'LSP010270',
+	'title': "Mars Moose Cosmic Quest 2 - Fairy Tale Island",
+    },
+    'LSP010370': {
+	'id': 'LSP010370',
+	'title': "Mars Moose Cosmic Quest 3 - Race Through France",
+    },
+    'LSP010160': {
+	'id': 'LSP010160',
+	'title': "Mars Moose Stay and Play 1 - In the Clubhouse",
+    },
+    'LSP010260': {
+	'id': 'LSP010260',
+	'title': "Mars Moose Stay and Play 2 - In Mars' Bedroom",
+    },
+    'LSP010360': {
+	'id': 'LSP010360',
+	'title': "Mars Moose Stay and Play 3 - In Lonnie's Classroom",
+    },
+    'LSP903433': {
+	'id': 'LSP903433',
+	'title': "Math Gallery - Collection 1",
+    },
+    'LSP903440': {
+	'id': 'LSP903440',
+	'title': "Math Gallery - Collection 2",
+    },
+    'LSP100112': {
+	'id': 'LSP100112',
+	'title': "Math on the Move! 1 - Addition-Subtraction Advanced",
+    },
+    'LSP905390': {
+	'id': 'LSP905390',
+	'title': "Math on the Move! 1 - Addition-Subtraction Intermediate",
+    },
+    'LSP100113': {
+	'id': 'LSP100113',
+	'title': "Math on the Move! 2 - Multiplication-Division Advanced",
+    },
+    'LSP905406': {
+	'id': 'LSP905406',
+	'title': "Math on the Move! 2 - Multiplication-Division Intermediate",
+    },
+    'LSP050101': {
+	'id': 'LSP050101',
+	'title': "Mona & Moki 1 - Drive Me Wild!",
+    },
+    'LSP050102': {
+	'id': 'LSP050102',
+	'title': "Mona & Moki 2 - Drive Me Wilder!",
+    },
+    'LSP905383': {
+	'id': 'LSP905383',
+	'title': "P.K.'s Math Studio",
+    },
+    'LSP905345': {
+	'id': 'LSP905345',
+	'title': "P.K.'s Place 1 - Party on the Patio!",
+    },
+    'LSP905352': {
+	'id': 'LSP905352',
+	'title': "P.K.'s Place 2 - Hoopo at Sea!",
+    },
+    'LSP905369': {
+	'id': 'LSP905369',
+	'title': "P.K.'s Place 3 - Carlos at the Races!",
+    },
+    'LSP180410': {
+	'id': 'LSP180410',
+	'title': "P.K.'s Place 4 - Daphne and the Seventh Wonder",
+    },
+    'LSP060101': {
+	'id': 'LSP060101',
+	'title': "Quaddle Family Mysteries, The 1 - The Case of the Scarce Scarab - Lobby & Kitchen",
+    },
+    'LSP060102': {
+	'id': 'LSP060102',
+	'title': "Quaddle Family Mysteries, The 2 - The Case of the Scarce Scarab - Garden",
+    },
+    'LSP060103': {
+	'id': 'LSP060103',
+	'title': "Quaddle Family Mysteries, The 3 - The Case of the Scarce Scarab - Parlor & Family Room",
+    },
+    'LSP907127': {
+	'id': 'LSP907127',
+	'title': "Road Writer",
+    },
+    'LSP990161': {
+        'id': 'LSP990161',
+        'title': "Science Is Elementary 1",
+    },
+    'LSP990162': {
+	'id': 'LSP990162',
+	'title': "Science Is Elementary 2",
+    },
+    'LSP990163': {
+	'id': 'LSP990163',
+	'title': "Science Is Elementary 3",
+    },
+    'LSP020160': {
+	'id': 'LSP020160',
+	'title': "Secret of Googol 1a, The - Reshaping Googol - The Submarine",
+    },
+    'LSP020150': {
+	'id': 'LSP020150',
+	'title': "Secret of Googol 1b, The - Reshaping Googol - The Tower",
+    },
+    'LSP020180': {
+	'id': 'LSP020180',
+	'title': "Secret of Googol 2a, The - Reshaping Googol - The Castle",
+    },
+    'LSP020170': {
+	'id': 'LSP020170',
+	'title': "Secret of Googol 2b, The - Reshaping Googol - Under the Ocean",
+    },
+    'LSP020260': {
+	'id': 'LSP020260',
+	'title': "Secret of Googol 3, The - The Googol Counting Fair - Midways",
+    },
+    'LSP020280': {
+	'id': 'LSP020280',
+	'title': "Secret of Googol 4, The - The Googol Counting Fair - Corral & Fun House",
+    },
+    'LSP020450': {
+	'id': 'LSP020450',
+	'title': "Secret of Googol 5, The - Googolfest - Party Isle & Toy Isle",
+    },
+    'LSP020570': {
+	'id': 'LSP020570',
+	'title': "Secret of Googol 6, The - Googolfest - Arcade Isle & Moon Feast Isle",
+    },
+    'LSP020650': {
+	'id': 'LSP020650',
+	'title': "Secret of Googol 7, The - Eggs All Around - Egg Trek & Balloon Picnic",
+    },
+    'LSP020780': {
+	'id': 'LSP020780',
+	'title': "Secret of Googol 8, The - Googol Gulch - General Store & Math Arcade",
+    },
+    'LSP990141': {
+	'id': 'LSP990141',
+	'title': "Story Lane Theater 1",
+    },
+    'LSP990142': {
+	'id': 'LSP990142',
+	'title': "Story Lane Theater 2",
+    },
+    'LSP990143': {
+	'id': 'LSP990143',
+	'title': "Story Lane Theater 3",
+    },
+    'LSP990144': {
+	'id': 'LSP990144',
+	'title': "Story Lane Theater 4",
+    },
+    'LSP990145': {
+	'id': 'LSP990145',
+	'title': "Story Lane Theater 5",
+    },
+    'LSP030101': {
+	'id': 'LSP030101',
+	'title': "Str.at.e.s. 1 - Match-A-Batch",
+    },
+    'LSP030102': {
+	'id': 'LSP030102',
+	'title': "Str.at.e.s. 2 - Matchamania!",
+    },
+    'LSP030103': {
+	'id': 'LSP030103',
+	'title': "Str.at.e.s. 3 - Title This! Title That!",
+    },
+    'LSP030104': {
+	'id': 'LSP030104',
+	'title': "Str.at.e.s. 4 - Titlerama!",
+    },
+    'LSP030105': {
+	'id': 'LSP030105',
+	'title': "Str.at.e.s. 5 - Parallel Lives!",
+    },
+    'LSP030106': {
+	'id': 'LSP030106',
+	'title': "Str.at.e.s. 6 - Analogy-ology!",
+    },
+    'LSP030107': {
+	'id': 'LSP030107',
+	'title': "Str.at.e.s. 7 - Riddle Roundup!",
+    },
+    'LSP030108': {
+	'id': 'LSP030108',
+	'title': "Str.at.e.s. 8 - Riddle Wrangler!",
+    },
+    'LSP903174': {
+	'id': 'LSP903174',
+	'title': "Three Decoders 1, The - Riddle of the Ring",
+    },
+    'LSP903181': {
+	'id': 'LSP903181',
+	'title': "Three Decoders 2, The - Key to the Carousel",
+    },
+    'LSP907387': {
+	'id': 'LSP907387',
+	'title': "Timeless Jade Trade",
+    },
+    'LSP040110': {
+	'id': 'LSP040110',
+	'title': "Timeless Math 1 - Maya, Search and Rescue",
+    },
+    'LSP040210': {
+	'id': 'LSP040210',
+	'title': "Timeless Math 2 - Maya, Observatory",
+    },
+    'LSP040310': {
+	'id': 'LSP040310',
+	'title': "Timeless Math 3 - Maya, King Jaguar's Village",
+    },
+    'LSP040410': {
+	'id': 'LSP040410',
 		     'title': "Timeless Math 4 - Lunar Base",
-	},
-	'LSP040510': {
-		     'id': 'LSP040510',
-		     'title': "Timeless Math 5 - Space Flight Rescue",
-	},
-	'LSP040610': {
-		     'id': 'LSP040610',
-		     'title': "Timeless Math 6 - Brainswarm",
-	},
-	'LSP040710': {
-		     'id': 'LSP040710',
-		     'title': "Timeless Math 7 - Rover Recovery",
-	},
-	'LSP909015': {
+    },
+    'LSP040510': {
+	'id': 'LSP040510',
+	'title': "Timeless Math 5 - Space Flight Rescue",
+    },
+    'LSP040610': {
+	'id': 'LSP040610',
+	'title': "Timeless Math 6 - Brainswarm",
+    },
+    'LSP040710': {
+	'id': 'LSP040710',
+	'title': "Timeless Math 7 - Rover Recovery",
+    },
+    'LSP909015': {
 		     'id': 'LSP909015',
-		     'title': "Unknown Variable 1 - Masque Manor",
-	},
-	'LSP909022': {
-		     'id': 'LSP909022',
-		     'title': "Unknown Variable 2 - Raven's Ridge",
-	},
-	'LSP170110': {
-		     'id': 'LSP170110',
-		     'title': "Write Away 1",
-	},
-	'LSP170111': {
-		     'id': 'LSP170111',
-		     'title': "Write Away 2",
-	},
-	'LSP170112': {
-		     'id': 'LSP170112',
-		     'title': "Write Away 3",
-	},
-	'LSP170113': {
-		     'id': 'LSP170113',
-		     'title': "Write Away 4",
-	},
-	'LSP170114': {
-		     'id': 'LSP170114',
-		     'title': "Write Away 5",
-	},
-	'LSP170115': {
-		     'id': 'LSP170115',
+	'title': "Unknown Variable 1 - Masque Manor",
+    },
+    'LSP909022': {
+	'id': 'LSP909022',
+	'title': "Unknown Variable 2 - Raven's Ridge",
+    },
+    'LSP170110': {
+	'id': 'LSP170110',
+	'title': "Write Away 1",
+    },
+    'LSP170111': {
+	'id': 'LSP170111',
+	'title': "Write Away 2",
+    },
+    'LSP170112': {
+	'id': 'LSP170112',
+	'title': "Write Away 3",
+    },
+    'LSP170113': {
+	'id': 'LSP170113',
+	'title': "Write Away 4",
+    },
+    'LSP170114': {
+	'id': 'LSP170114',
+	'title': "Write Away 5",
+    },
+    'LSP170115': {
+	'id': 'LSP170115',
 		     'title': "Write Away 6",
-	},
-	'LSP170116': {
-		     'id': 'LSP170116',
-		     'title': "Write Away 7",
-	},
-	'LSP170117': {
-		     'id': 'LSP170117',
-		     'title': "Write Away 8",
-	},
-	'LSP170118': {
-		     'id': 'LSP170118',
+    },
+    'LSP170116': {
+	'id': 'LSP170116',
+	'title': "Write Away 7",
+    },
+    'LSP170117': {
+	'id': 'LSP170117',
+	'title': "Write Away 8",
+    },
+    'LSP170118': {
+	'id': 'LSP170118',
 		     'title': "Write Away 9",
-	},
-	'LSP170119': {
-		     'id': 'LSP170119',
-		     'title': "Write Away 10",
-	},
+    },
+    'LSP170119': {
+	'id': 'LSP170119',
+	'title': "Write Away 10",
+    },
 }
 
 gameid_by_md5sum = {
+    'ea7c9c048a26e26cb67469a8087b86aa': {
+        'id': 'PSUG00016',
+    },
+    '006e0b00cb4833542bd095088f73c52a': {
+        'id': 'PSUG00015',
+    },
+    'e43b3179788c16bc0642c532cc40240c': {
+        'id': 'PSUG00014',
+    },
+    '4056fa249c8bdabb6d74b767a7e5640a': {
+        'id': 'PSUG00013',
+    },
+    '27163e2caaaa68150c925303a2683ee9': {
+        'id': 'PSUG00012',
+    },
+    '5d9edd649d38c6d2d6de0c562fc49c2a': {
+        'id': 'PSUG00011',
+    },
+    'a172d0bea9fb92d8dd6598951f782fae': {
+        'id': 'PSUG00010',
+    },
+    'a2476ecc059a1710a09ceb52e71780b4': {
+        'id': 'PSUG00009',
+    },
+    'ff06fac972a453368fff623e8414729b': {
+        'id': 'PSUG00008',
+    },
+    '0b148a17c75086343e7fabe8fe060ace': {
+        'id': 'PSUG00007',
+    },
+    'a8c453578812a17ede42bcd81b1fd53f': {
+        'id': 'PSUG00006',
+    },
+    '62c67fff04ec8b7b80d82731e40734c0': {
+        'id': 'PSUG00005',
+    },
+    'a0941a3e7efd4951e3fa1cdcbeab46b0': {
+        'id': 'PSUG00004',
+    },
+    '4edadd3c3ae1e32616d1396bca6fe25a': {
+        'id': 'PSUG00003',
+    },
+    '62eda7fde0b34f92ab8c9d2984d9b1cc': {
+        'id': 'PSUG00002',
+    },
+    'a4a862e930990c2f28e4202a284f8925': {
+        'id': 'PSUG00001',
+    },
+    '300444a1aa7aae32ca9ca608614ecc7a': {
+        'id': 'SCUS94496',
+    },
+    'c028e9df050b59d2aeff869ab050dd10': {
+        'id': 'SCUS94482',
+    },
     # tales of destiny with spanish translation
     '6a9cf2aa79bb282048ee0f121c76d488': {
     	'id': 'SLUS00626',
