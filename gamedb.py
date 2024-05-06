@@ -6928,6 +6928,14 @@ games = {
         'pic1': 'https://images.launchbox-app.com/65557d46-b50f-49d3-bd01-bbd07024d3ff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Tarzan%20%28USA%29_jp2.zip',
     },
+    'SLUS01537': {
+        'url': "games/U/D/SCUS-94456.html",
+    	'id': 'SLUS01537',
+	'title': "DISNEY'S TARZAN",
+        'pic0': 'https://images.launchbox-app.com/bd508506-d042-467b-b509-c58b69b75737.png',
+        'pic1': 'https://images.launchbox-app.com/65557d46-b50f-49d3-bd01-bbd07024d3ff.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Disney%27s%20Tarzan%20%28USA%29_jp2.zip',
+    },
     'SCUS94571': {
         'url': "games/U/D/SCUS-94571.html",
     	'id': 'SCUS94571',
@@ -6953,6 +6961,12 @@ games = {
     'SLUS01210': {
         'url': "games/U/D/SLUS-01210.html",
     	'id': 'SLUS01210',
+	'title': "DISNEY'S TIGGER'S HONEY HUNT",
+        'pic0': 'https://images.launchbox-app.com/25893c60-f212-4972-9316-e91939698cee.png',
+    },
+    'SLUS01536': {
+        'url': "games/U/D/SLUS-01210.html",
+    	'id': 'SLUS01536',
 	'title': "DISNEY'S TIGGER'S HONEY HUNT",
         'pic0': 'https://images.launchbox-app.com/25893c60-f212-4972-9316-e91939698cee.png',
     },
@@ -69044,6 +69058,12 @@ gameid_by_md5sum = {
     # tales of destiny with spanish translation
     'e02babf39484755432d988a3d545d312': {
     	'id': 'SLUS00626',
+    },
+    '6a7edbbdd909310bc182efa7c29d3b18': {
+        'id': 'SLUS01536',
+    },
+    'f8b44e2d3e2d01996b5ff58c938ec97b': {
+        'id': 'SLUS01537',
     },
     '34c8084680338e417ff5760e9951992a': {
         'id': 'SLUS01429',
