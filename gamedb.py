@@ -27465,7 +27465,7 @@ games = {
         'pic1': 'https://assets-prd.ignimgs.com/2022/04/16/digiw3-1650069173106.jpg?width=560&crop=16%3A9',
         'snd0': 'https://www.youtube.com/watch?v=1OFeJb3fAJw&list=PLavPZQO7N5ecIGa3zmHmH1Kots3ehyv5F&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
-        'pspconfig': 'ps3configs/Digimon World 3/SLES-03936.bin',
+        'pspconfig': 'pspconfigs/Digimon World 3/SLES-03936.bin',
         'ps3config': 'ps3configs/Digimon World 3/SLES-03936.BIN',
     },
     'SLES02207': {
@@ -43829,7 +43829,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/e900fc33-8c30-48b2-8d96-458d06dc768b.png',
         'pic1': 'https://assets-prd.ignimgs.com/2022/04/16/digiw3-1650069173106.jpg?width=560&crop=16%3A9',
         'snd0': 'https://www.youtube.com/watch?v=1OFeJb3fAJw&list=PLavPZQO7N5ecIGa3zmHmH1Kots3ehyv5F&index=1',
-        'pspconfig': 'ps3configs/Digimon World 3/SLPS-03446.bin',
+        'pspconfig': 'pspconfigs/Digimon World 3/SLPS-03446.bin',
     },
     'SLPM87103': {
         'url': "games/J/D/SLPM-87103.html",
