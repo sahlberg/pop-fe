@@ -1940,6 +1940,8 @@ games = {
     'PSPK00002': {'id': 'PSPK00002', 'title': "PLAYSTATION PICKS (USA) (SCUS-94960)", 'icon0': None, 'pic0': None, 'pic1': None,},
     'PSDD00001': {'id': 'PSDD00001', 'title': "PLAYSTATION DEMO DISC VERSION 1.3 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
     'PSDD00002': {'id': 'PSDD00002', 'title': "PLAYSTATION DEMO DISC VERSION 1.5 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSDD00003': {'id': 'PSDD00003', 'title': "PLAYSTATION DEVELOPER'S DEMO DISC (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'PSDD00004': {'id': 'PSDD00004', 'title': "PLAYSTATION KIOSK DEMO DISC VERSION 1.16 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
     # end Demo discs
     'NETY00001': {
     	'id': 'NETY00001',
@@ -6969,7 +6971,7 @@ games = {
         'pic1': 'https://assets-prd.ignimgs.com/2022/04/16/digiw3-1650069173106.jpg?width=560&crop=16%3A9',
         'snd0': 'https://www.youtube.com/watch?v=1OFeJb3fAJw&list=PLavPZQO7N5ecIGa3zmHmH1Kots3ehyv5F&index=1',
         'manual': 'https://archive.org/download/all-ps1-rpg-manuals/Digimon%20World%203_SP_jp2.zip',
-        'pspconfig': 'ps3configs/Digimon World 3/SLUS-01436.bin',
+        'pspconfig': 'pspconfigs/Digimon World 3/SLUS-01436.bin',
         'ps3config': 'ps3configs/Digimon World 3/SLUS-01436.BIN',
     },
     'SLUS00922': {
@@ -52688,11 +52690,13 @@ games = {
         'url': "games/J/L/SLPS-00732.html",
     	'id': 'SLPS00732',
 	'title': "LAS VEGAS DREAM 2",
+        'pic0': 'https://images.launchbox-app.com/41c8caf8-a596-4541-ae96-2391b1a54124.png',
     },
     'SLPM86491': {
         'url': "games/J/L/SLPM-86491.html",
     	'id': 'SLPM86491',
 	'title': "LATTICE 200EC7",
+        'pic0': 'https://images.launchbox-app.com/ab6e1e19-1b1a-4489-8c40-e185d42a97e1.png',
     },
     'SLPS02344': {
         'url': "games/J/L/SLPS-02344.html",
@@ -52722,11 +52726,13 @@ games = {
         'url': "games/J/L/SLPS-01886.html",
     	'id': 'SLPS01886',
 	'title': "LEADING JOCKEY '99",
+        'pic0': 'https://images.launchbox-app.com/af368a47-1d7d-46ec-918b-ee07f3111fc3.png',
     },
     'SLPS00348': {
         'url': "games/J/L/SLPS-00348.html",
     	'id': 'SLPS00348',
 	'title': "LEADING JOCKEY HIGHBRED",
+        'pic0': 'https://images.launchbox-app.com/2f1cb081-e124-46cb-a10d-e26c8c81b8d0.png',
     },
     'SCPS10059': {
         'url': "games/J/L/SCPS-10059.html",
@@ -52880,11 +52886,13 @@ games = {
         'url': "games/J/L/SLPS-02376.html",
     	'id': 'SLPS02376',
 	'title': "LITTLE PRINCESS - MARU OUKOKU NO NINGYOU HIME 2",
+        'pic0': 'https://images.launchbox-app.com/7bc0b868-dec7-4168-b3e4-1eacab91afad.png',
     },
     'SLPS91414': {
         'url': "games/J/L/SLPS-91414.html",
     	'id': 'SLPS91414',
 	'title': "LITTLE PRINCESS - MARU OUKOKU NO NINGYOU HIME 2 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/7bc0b868-dec7-4168-b3e4-1eacab91afad.png',
     },
     'SLPS03012': {
         'url': "games/J/L/SLPS-03012.html",
@@ -52924,6 +52932,7 @@ games = {
         'url': "games/J/L/SLPS-00641.html",
     	'id': 'SLPS00641',
 	'title': "LODE RUNNER EXTRA",
+        'pic0': 'https://images.launchbox-app.com/58bb7396-2869-483c-8e4b-24ee3c26730f.png',
     },
     'SLPS00642': {
         'url': "games/J/L/SLPS-00642.html",
@@ -52953,11 +52962,13 @@ games = {
         'url': "games/J/L/SLPS-03011.html",
     	'id': 'SLPS03011',
 	'title': "LOGIC PRO ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/6f7df66f-0f52-4091-994d-6337cc9a53c0.png',
     },
     'SLPS00268': {
         'url': "games/J/L/SLPS-00268.html",
     	'id': 'SLPS00268',
 	'title': "LOGIC PUZZLE RAINBOW TOWN",
+        'pic0': 'https://images.launchbox-app.com/d725b698-81cd-4019-969f-f3ba5eec51fd.png',
     },
     'SLPS00987': {
         'url': "games/J/L/SLPS-00987.html",
@@ -52982,11 +52993,13 @@ games = {
         'url': "games/J/L/SLPS-01728.html",
     	'id': 'SLPS01728',
 	'title': "LORD MONARCH - SHIN GAIA OUKOKUKI",
+        'pic0': 'https://images.launchbox-app.com/e99f9583-a9ae-4afa-850b-a53ea52d31ba.png',
     },
     'SLPM86524': {
         'url': "games/J/L/SLPM-86524.html",
     	'id': 'SLPM86524',
 	'title': "LORD MONARCH - SHIN GAIA OUKOKUKI [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/e99f9583-a9ae-4afa-850b-a53ea52d31ba.png',
     },
     'SLPS02168': {
         'url': "games/J/L/SLPS-02168.html",
@@ -52997,6 +53010,7 @@ games = {
         'url': "games/J/L/SCPS-10086.html",
     	'id': 'SCPS10086',
 	'title': "LORD OF MONSTERS",
+        'pic0': 'https://images.launchbox-app.com/1b2eff7b-ae5a-49f0-a69d-dedc10d2278f.png',
     },
     'SLPS01307': {
         'url': "games/J/L/SLPS-01307.html",
@@ -53007,21 +53021,26 @@ games = {
         'url': "games/J/L/SCPS-10124.html",
     	'id': 'SCPS10124',
 	'title': "LOVE & DESTROY",
+        'pic0': 'https://images.launchbox-app.com/9c42b7aa-a1b9-4fe9-9796-08e533756003.png',
+        'pic1': 'https://images.launchbox-app.com/7fdd519c-0f17-4d8a-a901-451a60def3cf.jpg',
     },
     'SLPS00686': {
         'url': "games/J/L/SLPS-00686.html",
     	'id': 'SLPS00686',
 	'title': "LOVE GAME'S - WAI WAI TENNIS",
+        'pic0': 'https://images.launchbox-app.com/3d2f40b1-521d-476d-9485-9e0f78de7d8f.png',
     },
     'SLPM86541': {
         'url': "games/J/L/SLPM-86541.html",
     	'id': 'SLPM86541',
 	'title': "LOVE GAME'S - WAI WAI TENNIS [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/3d2f40b1-521d-476d-9485-9e0f78de7d8f.png',
     },
     'SLPS01647': {
         'url': "games/J/L/SLPS-01647.html",
     	'id': 'SLPS01647',
 	'title': "LOVE GAME'S - WAI WAI TENNIS [SERVICE PRICE EDITION]",
+        'pic0': 'https://images.launchbox-app.com/3d2f40b1-521d-476d-9485-9e0f78de7d8f.png',
     },
     'SLPS02510': {
         'url': "games/J/L/SLPS-02510.html",
@@ -53037,51 +53056,62 @@ games = {
         'url': "games/J/L/SLPM-86899.html",
     	'id': 'SLPM86899',
 	'title': "LOVE GAME'S - WAI WAI TENNIS PLUS",
+        'pic0': 'https://images.launchbox-app.com/ef12cfc1-ebea-4e64-b6a2-b2d1b12989ba.png',
     },
     'SLPM86652': {
         'url': "games/J/L/SLPM-86652.html",
     	'id': 'SLPM86652',
 	'title': "LOVE HINA - AI HA KOTOBA NO NAKA NI",
+        'pic0': 'https://images.launchbox-app.com/7438f588-8659-4c98-9b10-dc2fe315bd4b.png',
     },
     'SLPM86677': {
         'url': "games/J/L/SLPM-86677.html",
     	'id': 'SLPM86677',
 	'title': "LOVE HINA 2 - KOTOBA WA KONAYUKI NO YOUNI",
+        'pic0': 'https://images.launchbox-app.com/ee3928ee-3b53-4ec7-9686-fab952d67506.png',
     },
     'SLPS03097': {
         'url': "games/J/L/SLPS-03097.html",
     	'id': 'SLPS03097',
 	'title': "LOVE PARA - LOVELY TOKYO PARA-PARA MUSUME [FUKYUUBAN 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/ab08d659-e6f8-4604-82cc-eb5340dfe01d.png',
     },
     'SLPS01370': {
         'url': "games/J/L/SLPS-01370.html",
     	'id': 'SLPS01370',
 	'title': "LOVE THERAPY",
+        'pic0': 'https://images.launchbox-app.com/6d2db0ef-fc41-4c73-8912-b5855750a373.png',
     },
     'SLPS02112': {
         'url': "games/J/L/SLPS-02112.html",
     	'id': 'SLPS02112',
 	'title': "LOVE LOVE TOROKKO (LOVE TRUCK 2)",
+        'pic0': 'https://images.launchbox-app.com/e9650d60-e52f-4b53-8452-ebf6a57a81ae.png',
     },
     'SLPS01642': {
         'url': "games/J/L/SLPS-01642.html",
     	'id': 'SLPS01642',
 	'title': "LSD - DREAM EMULATOR",
+        'pic0': 'https://images.launchbox-app.com/4fa6aa24-2491-4bbd-b06e-057a56be8363.png',
     },
     'SLPS01556': {
         'url': "games/J/L/SLPS-01556.html",
     	'id': 'SLPS01556',
 	'title': "LSD - DREAM EMULATOR [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/4fa6aa24-2491-4bbd-b06e-057a56be8363.png',
     },
     'SLPS01784': {
         'url': "games/J/L/SLPS-01784.html",
     	'id': 'SLPS01784',
 	'title': "LUCIFER RING",
+        'pic0': 'https://images.launchbox-app.com/daa94f9c-1663-4edf-b359-1d0bb953d5c5.png',
+        'pic1': 'https://images.launchbox-app.com/01867768-a9c1-45db-92c6-7c60fde068f0.png',
     },
     'SLPS00811': {
         'url': "games/J/L/SLPS-00811.html",
     	'id': 'SLPS00811',
 	'title': "LUCIFERD - PSYCHOLOGICAL ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/e599f048-3d72-4b15-a0bf-15f0c294262e.png',
     },
     'SLPS01674': {
         'url': "games/J/L/SLPS-01674.html",
@@ -53095,11 +53125,13 @@ games = {
         'url': "games/J/L/SLPS-01832.html",
     	'id': 'SLPS01832',
 	'title': "LUFTWAFFE - DOITSU KUUGUN O SHIKI SEYO",
+        'pic0': 'https://images.launchbox-app.com/1ff6c67e-480f-4304-b36f-a40dc831622d.png',
     },
     'SLPS00560': {
         'url': "games/J/L/SLPS-00560.html",
     	'id': 'SLPS00560',
 	'title': "LULU",
+        'pic0': 'https://images.launchbox-app.com/ef2645e1-d563-4083-acde-d8b1b84bae12.png',
     },
     'SLPS01397': {
         'url': "games/J/L/SLPS-01397.html",
@@ -53299,6 +53331,7 @@ games = {
         'url': "games/J/L/SLPS-02805.html",
     	'id': 'SLPS02805',
 	'title': "LUPIN THE 3RD - PUNCH THE MONKEY! - GAME EDITION",
+        'pic0': 'https://images.launchbox-app.com/5e1e4ae6-c339-4c67-adf0-8d3d449628bb.png',
     },
     'SLPS00393':       {
         'url': "games/J/M/SLPS-00393.html",
@@ -69208,6 +69241,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '4fcb22b59ff522eb981285339218915a': {
+        'id': 'PSDD00004',
+    },
+    '73e95bb28f0b139862ef8cc87e9642f1': {
+        'id': 'PSDD00003',
+    },
     '26a02f8451b126279d139747d2e08bad': {
         'id': 'PSDD00002',
     },
