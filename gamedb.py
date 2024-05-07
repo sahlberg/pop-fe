@@ -68814,6 +68814,26 @@ games = {
 	'id': 'SCUS94197',
 	'title': 'Jampack Vol. 2',
     },
+    'SCUS80115': {
+	'id': 'SCUS80115',
+	'title': "Calamity 3 - Around the World (USA)",
+    },
+    'SCUS80114': {
+	'id': 'SCUS80114',
+	'title': "Head to Toe 1 (USA)",
+    },
+    'SCUS80113': {
+	'id': 'SCUS80113',
+	'title': "Head to Toe 2 (USA)",
+    },
+    'SCUS80112': {
+	'id': 'SCUS80112',
+	'title': "Head to Toe 3 (USA)",
+    },
+    'SCUS80111': {
+	'id': 'SCUS80111',
+	'title': "Head to Toe 4 (USA)",
+    },
     'SCUS80110': {
 	'id': 'SCUS80110',
 	'title': "Calamity 1 - The Natural World (LSP200110)",
@@ -69470,6 +69490,21 @@ gameid_by_md5sum = {
     },
     '8c72e73aafa3bcd8f96cc427304b914b': {
         'id': 'SLUS01528',
+    },
+    'feb5c6a42599d27b56743aa4d6165e8a':	{
+        'id': 'SCUS80115',
+    },
+    '0d602018093381fea580b5fb9c403743': {
+        'id': 'SCUS80114',
+    },
+    '37fb282f882f4d206f2a30cd3786275b': {
+        'id': 'SCUS80113',
+    },
+    '30432e38ea5672c9f86769e6c2936954': {
+        'id': 'SCUS80112',
+    },
+    'c7c1b24b3e27582fbb1f0e47fe111ddf': {
+        'id': 'SCUS80111',
     },
     '7d6558b349c08881e43f284a20852d17': {
         'id': 'SCUS80110',
