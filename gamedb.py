@@ -5789,8 +5789,9 @@ games = {
         'url': "games/U/B/SLUS-00488.html",
     	'id': 'SLUS00488',
 	'title': "BRAVO AIR RACE",
-        'pic0': 'https://images.launchbox-app.com/9e01c474-9782-445b-9409-b0a221a7fdda.png',
+        'pic0': 'https://images.launchbox-app.com/b9f357c5-7624-4cab-b7e9-0888291d873d.png',
         'pic1': 'https://images.launchbox-app.com/667e8f56-44a9-4e4e-8d71-1a78ddfd86b4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lk9plv-r0SU&list=PLC7DB18A12079A457&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bravo%20Air%20Race%20%28USA%29_jp2.zip',
     },
     'SLUS01170': {
@@ -15928,6 +15929,7 @@ games = {
 	'title': "AIR RACE",
         'pic0': 'https://images.launchbox-app.com/9e01c474-9782-445b-9409-b0a221a7fdda.png',
         'pic1': 'https://images.launchbox-app.com/667e8f56-44a9-4e4e-8d71-1a78ddfd86b4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lk9plv-r0SU&list=PLC7DB18A12079A457&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bravo%20Air%20Race%20%28USA%29_jp2.zip',
     },
     'SLES02137': {
@@ -59978,6 +59980,7 @@ games = {
 	'title': "RECIPROHEAT 5000",
         'pic0': 'https://images.launchbox-app.com/2426f0a0-a262-4998-884a-9c5f62f18000.png',
         'pic1': 'https://images.launchbox-app.com/667e8f56-44a9-4e4e-8d71-1a78ddfd86b4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=lk9plv-r0SU&list=PLC7DB18A12079A457&index=1',
     },
     'SLPS00744': {
         'url': "games/J/R/SLPS-00744.html",
