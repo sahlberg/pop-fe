@@ -57705,21 +57705,25 @@ games = {
         'url': "games/J/P/SLPS-02122.html",
     	'id': 'SLPS02122',
 	'title': "PACAPACA PASSION",
+        'pic0': 'https://images.launchbox-app.com/8ac3defa-801f-4fec-a429-61ba8958480d.png',
     },
     'SLPS02720': {
         'url': "games/J/P/SLPS-02720.html",
     	'id': 'SLPS02720',
 	'title': "PACAPACA PASSION 2",
+        'pic0': 'https://images.launchbox-app.com/c36303c6-3fdb-4a20-9bcd-c5fd69375578.png',
     },
     'SLPS02895': {
         'url': "games/J/P/SLPS-02895.html",
     	'id': 'SLPS02895',
 	'title': "PACAPACA PASSION SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/9ba37a13-718b-404d-af40-76155470c30d.png',
     },
     'SLPS03420': {
         'url': "games/J/P/SLPS-03420.html",
     	'id': 'SLPS03420',
 	'title': "PACAPACA PASSION SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/9ba37a13-718b-404d-af40-76155470c30d.png',
     },
     'SLPS00288': {
         'url': "games/J/P/SLPS-00288.html",
@@ -58028,6 +58032,7 @@ games = {
         'url': "games/J/P/SLPS-02419.html",
     	'id': 'SLPS02419',
 	'title': "PACHITTE CHONMAGE",
+        'pic0': 'https://images.launchbox-app.com/39f1aab9-66c9-4337-8ded-3a61c8de2216.png',
     },
     'SLPS02575': {
         'url': "games/J/P/SLPS-02575.html",
@@ -58040,6 +58045,7 @@ games = {
         'url': "games/J/P/SLPS-03422.html",
     	'id': 'SLPS03422',
 	'title': "PACHITTE CHONMAGE 3",
+        'pic0': 'https://images.launchbox-app.com/60f2ba99-0d90-4068-abef-97603d8aca42.png',
     },
     'SCPS45445': {
         'url': "games/J/P/SCPS-45445.html",
@@ -58061,36 +58067,43 @@ games = {
         'url': "games/J/P/SLPS-00346.html",
     	'id': 'SLPS00346',
 	'title': "PAL - SHINKEN DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/ecb61fdd-2c63-4738-8838-8c5d2d7173ea.png',
     },
     'SLPS91067': {
         'url': "games/J/P/SLPS-91067.html",
     	'id': 'SLPS91067',
 	'title': "PAL - SHINKEN DENSETSU [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/ecb61fdd-2c63-4738-8838-8c5d2d7173ea.png',
     },
     'SLPS01820': {
         'url': "games/J/P/SLPS-01820.html",
     	'id': 'SLPS01820',
 	'title': "PALM TOWN",
+        'pic0': 'https://images.launchbox-app.com/80383e71-539f-4303-a397-ccf27a917c0c.png',
     },
     'SLPM87018': {
         'url': "games/J/P/SLPM-87018.html",
     	'id': 'SLPM87018',
 	'title': "PALM TOWN [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/80383e71-539f-4303-a397-ccf27a917c0c.png',
     },
     'SLPS00347': {
         'url': "games/J/P/SLPS-00347.html",
     	'id': 'SLPS00347',
 	'title': "PANDORA PROJECT - THE LOGIC MASTER",
+        'pic0': 'https://images.launchbox-app.com/975cd738-2981-49e5-a921-5d07ab63085c.png',
     },
     'SCPS10096': {
         'url': "games/J/P/SCPS-10096.html",
     	'id': 'SCPS10096',
 	'title': "PANEKIT - INFINITIVE CRAFTING CASE",
+        'pic0': 'https://images.launchbox-app.com/88d55029-57c8-4e14-8de1-0a3f077c7fed.png',
     },
     'SLPS01162': {
         'url': "games/J/P/SLPS-01162.html",
     	'id': 'SLPS01162',
 	'title': "PANEL QUIZ ATTACK 25",
+        'pic0': 'https://images.launchbox-app.com/8510a8ad-4bc3-465f-a3d4-8e95599fa9d0.png',
     },
     'SLPM86276': {
         'url': "games/J/P/SLPM-86276.html",
@@ -58101,6 +58114,8 @@ games = {
         'url': "games/J/P/SLPS-00899.html",
     	'id': 'SLPS00899',
 	'title': "PANZER BANDIT",
+        'pic0': 'https://images.launchbox-app.com/701a1af8-bfb9-4394-b10c-f2f0443434a7.png',
+        'pic1': 'https://images.launchbox-app.com/964480fb-02ac-49a7-abf2-6292c869afe0.jpg',
     },
     'SLPS02503': {
         'url': "games/J/P/SLPS-02503.html",
@@ -58131,11 +58146,13 @@ games = {
         'url': "games/J/P/SLPM-86695.html",
     	'id': 'SLPM86695',
 	'title': "PAO LEEMING KANSHUU - FUUSUI NYUUMON",
+        'pic0': 'https://images.launchbox-app.com/21a7787f-70c0-4b17-8b24-b7f5a78aad40.png',
     },
     'SLPM87069': {
         'url': "games/J/P/SLPM-87069.html",
     	'id': 'SLPM87069',
 	'title': "PAO LEEMING KANSHUU - FUUSUI NYUUMON [SUPERLITE 1500]",
+        'pic0': 'https://images.launchbox-app.com/21a7787f-70c0-4b17-8b24-b7f5a78aad40.png',
     },
     'SCPS10097': {
         'url': "games/J/P/SCPS-10097.html",
@@ -58148,11 +58165,13 @@ games = {
         'url': "games/J/P/SLPS-03409.html",
     	'id': 'SLPS03409',
 	'title': "PARADISE CASINO [NICE PRICE VOL.09]",
+        'pic0': 'https://images.launchbox-app.com/4b2fc32b-1805-4b89-b031-e3f9f2e436b2.png',
     },
     'SLPS01375': {
         'url': "games/J/P/SLPS-01375.html",
     	'id': 'SLPS01375',
 	'title': "PARANOIA SCAPE",
+        'pic0': 'https://images.launchbox-app.com/1f58fad5-ef9b-4bfb-85c8-19b1c88e45b4.png',
     },
     'SCPS45051': {
         'url': "games/J/P/SCPS-45051.html",
@@ -58294,21 +58313,25 @@ games = {
         'url': "games/J/P/SLPS-01539.html",
     	'id': 'SLPS01539',
 	'title': "PARLOR STATION",
+        'pic0': 'https://images.launchbox-app.com/f5c28d9b-70e2-4526-9c44-72db4fbe54e8.png',
     },
     'SLPS02732': {
         'url': "games/J/P/SLPS-02732.html",
     	'id': 'SLPS02732',
 	'title': "PARLOR STATION",
+        'pic0': 'https://images.launchbox-app.com/f5c28d9b-70e2-4526-9c44-72db4fbe54e8.png',
     },
     'SLPS00838': {
         'url': "games/J/P/SLPS-00838.html",
     	'id': 'SLPS00838',
 	'title': "PARLOR! PRO",
+        'pic0': 'https://images.launchbox-app.com/d43f4dec-582e-41b1-9f88-22eb60009d94.png',
     },
     'SLPS91183': {
         'url': "games/J/P/SLPS-91183.html",
     	'id': 'SLPS91183',
 	'title': "PARLOR! PRO [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/d43f4dec-582e-41b1-9f88-22eb60009d94.png',
     },
     'SLPS01043': {
         'url': "games/J/P/SLPS-01043.html",
@@ -58408,21 +58431,25 @@ games = {
         'url': "games/J/P/SLPM-86016.html",
     	'id': 'SLPM86016',
 	'title': "PARO WARS",
+        'pic0': 'https://images.launchbox-app.com/f0a2a452-f553-4273-959b-1c4f5118b494.png',
     },
     'SLPM86392': {
         'url': "games/J/P/SLPM-86392.html",
     	'id': 'SLPM86392',
 	'title': "PARO WARS [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/f0a2a452-f553-4273-959b-1c4f5118b494.png',
     },
     'SCPS45112': {
         'url': "games/J/P/SCPS-45112.html",
     	'id': 'SCPS45112',
 	'title': "PASTEL MUSES",
+        'pic0': 'https://images.launchbox-app.com/a77b4a8d-1c6e-40a9-943a-88b86cd56ccc.png',
     },
     'SLPS00959': {
         'url': "games/J/P/SLPS-00959.html",
     	'id': 'SLPS00959',
 	'title': "PASTEL MUSES",
+        'pic0': 'https://images.launchbox-app.com/a77b4a8d-1c6e-40a9-943a-88b86cd56ccc.png',
     },
     'SLPS00195': {
         'url': "games/J/P/SLPS-00195.html",
