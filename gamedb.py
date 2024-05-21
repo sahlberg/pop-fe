@@ -55935,43 +55935,54 @@ games = {
         'url': "games/J/N/SLPS-02500.html",
     	'id': 'SLPS02500',
 	'title': "NAINAI NO MEI-TANTEI",
+        'pic0': 'https://images.launchbox-app.com/67758be0-3023-4181-9d9d-30bc19533b77.png',
     },
     'SLPM86601': {
         'url': "games/J/N/SLPM-86601.html",
     	'id': 'SLPM86601',
 	'title': "NAJAVU NO DAIBOUKEN - MY FAVORITE NAMJATOWN",
+        'pic0': 'https://images.launchbox-app.com/a7121981-0d69-4820-b012-95da0dfb7b4b.png',
     },
     'SLPS01220': {
         'url': "games/J/N/SLPS-01220.html",
     	'id': 'SLPS01220',
 	'title': "NAMCO ANTHOLOGY VOL. 01",
+        'pic0': 'https://images.launchbox-app.com/f7d05543-3fe8-4b07-9537-4c3f90277bec.png',
         'pspconfig': 'pspconfigs/Namco Anthology 1/SLPS-01220.BIN',
     },
     'SLPS01221': {
         'url': "games/J/N/SLPS-01221.html",
     	'id': 'SLPS01221',
 	'title': "NAMCO ANTHOLOGY VOL. 02",
+        'pic0': 'https://images.launchbox-app.com/527e0fc5-b0f0-4db6-956a-dccd2b0821b7.png',
         'pspconfig': 'pspconfigs/Namco Anthology 2/SLPS-01221.bin',
     },
     'SLPS00074': {
         'url': "games/J/N/SLPS-00074.html",
     	'id': 'SLPS00074',
 	'title': "NAMCO MAHJONG SPARROW GARDEN",
+        'pic0': 'https://images.launchbox-app.com/a5c025c9-2043-4bdc-881c-da8ea62590fb.png',
     },
     'SLPS01050': {
         'url': "games/J/N/SLPS-01050.html",
     	'id': 'SLPS01050',
 	'title': "NAMCO MUSEUM ENCORE",
+        'pic0': 'https://images.launchbox-app.com/1eeab6a6-b903-4077-85fb-49e1b0d427f7.png',
+        'pic1': 'https://images.launchbox-app.com/3d655ede-068b-4a65-8234-10b840502704.jpg',
     },
     'SLPS00765': {
         'url': "games/J/N/SLPS-00765.html",
     	'id': 'SLPS00765',
 	'title': "NAMCO MUSEUM ENCORE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/1eeab6a6-b903-4077-85fb-49e1b0d427f7.png',
+        'pic1': 'https://images.launchbox-app.com/3d655ede-068b-4a65-8234-10b840502704.jpg',
     },
     'SLPS91163': {
         'url': "games/J/N/SLPS-91163.html",
     	'id': 'SLPS91163',
 	'title': "NAMCO MUSEUM ENCORE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/1eeab6a6-b903-4077-85fb-49e1b0d427f7.png',
+        'pic1': 'https://images.launchbox-app.com/3d655ede-068b-4a65-8234-10b840502704.jpg',
     },
     'SLPS00107': {
         'url': "games/J/N/SLPS-00107.html",
@@ -56096,11 +56107,13 @@ games = {
         'url': "games/J/N/SLPS-03049.html",
     	'id': 'SLPS03049',
 	'title': "NANIWA NINYUU MICHI - AOKI YUUJI NO SEKEN MUNAZANYOU",
+        'pic0': 'https://images.launchbox-app.com/e737be2c-7653-4dbe-88ff-509ddcf11700.png',
     },
     'SLPS00768': {
         'url': "games/J/N/SLPS-00768.html",
     	'id': 'SLPS00768',
 	'title': "NANIWA NO AKINDO - FUTTE NANBO NO SAIKORO JINSEI",
+        'pic0': 'https://images.launchbox-app.com/c9075d0e-5c02-4b53-b918-f86df8274bbb.png',
     },
     'SLPS01206': {
         'url': "games/J/N/SLPS-01206.html",
@@ -56156,6 +56169,7 @@ games = {
         'url': "games/J/N/SLPS-03553.html",
     	'id': 'SLPS03553',
 	'title': "NARUTO - SHINOBI NO SATO NO JINTORI KASSEN",
+        'pic0': 'https://images.launchbox-app.com/c6b5bf14-3192-4788-82e8-246ee3185a7d.png',
     },
     'SLPS01295': {
         'url': "games/J/N/SLPS-01295.html",
@@ -56340,6 +56354,7 @@ games = {
         'url': "games/J/N/SLPS-02597.html",
     	'id': 'SLPS02597',
 	'title': "NEMU LU MAYU - SLEEPING COCOON",
+        'pic0': 'https://images.launchbox-app.com/86f3d507-2448-456a-ac02-8a68c996742b.png',
     },
     'SLPS01212': {
         'url': "games/J/N/SLPS-01212.html",
@@ -56450,6 +56465,7 @@ games = {
         'url': "games/J/N/SLPM-86163.html",
     	'id': 'SLPM86163',
 	'title': "NETZ MAGAZINE - ALTEZZA",
+        'pic0': 'https://images.launchbox-app.com/89dd299e-72c1-448a-9670-ec1ba3108252.png',
     },
     'SLPS02559': {
         'url': "games/J/N/SLPS-02559.html",
@@ -56521,11 +56537,13 @@ games = {
         'url': "games/J/N/SLPS-03369.html",
     	'id': 'SLPS03369',
 	'title': "NICE PRICE SERIES VOL. 03 - HANAFUDA & CARD GAME",
+        'pic0': 'https://images.launchbox-app.com/ae9fe79a-fbfb-46d5-ac5a-b93037e23917.png',
     },
     'SLPS03410': {
         'url': "games/J/N/SLPS-03410.html",
     	'id': 'SLPS03410',
 	'title': "NICE PRICE SERIES VOL. 10 - IGO WO UTOU!",
+        'pic0': 'https://images.launchbox-app.com/9189b6ec-44cc-4312-9d51-43cc248223b3.png',
     },
     'SLPS00721': {
         'url': "games/J/N/SLPS-00721.html",
@@ -56543,11 +56561,14 @@ games = {
         'url': "games/J/N/SLPS-00184.html",
     	'id': 'SLPS00184',
 	'title': "NICHIBUTSU ARCADE CLASSICS",
+        'pic0': 'https://images.launchbox-app.com/40be041d-d912-47c3-854e-2662e5cbaf54.png',
+        'pic1': 'https://images.launchbox-app.com/41cd4822-5f40-4c93-87f9-7c710daf19f3.png',
     },
     'SLPS00038': {
         'url': "games/J/N/SLPS-00038.html",
     	'id': 'SLPS00038',
 	'title': "NICHIBUTSU MAHJONG",
+        'pic0': 'https://images.launchbox-app.com/67c1f6f9-78b8-4cfd-821a-cfa372de7f6c.png',
     },
     'SLPS00111': {
         'url': "games/J/N/SLPS-00111.html",
@@ -56632,17 +56653,20 @@ games = {
         'url': "games/J/N/SLPS-02854.html",
     	'id': 'SLPS02854',
 	'title': "NINGYO NO RAKUIN",
+        'pic0': 'https://images.launchbox-app.com/86e9800f-f0ba-4b7f-9c44-6485d42cc21c.png',
     },
     'SLPS00494': {
         'url': "games/J/N/SLPS-00494.html",
     	'id': 'SLPS00494',
 	'title': "NINJA JAJA MARUKUN - ONIKIRI NINPOUCHO",
+        'pic0': 'https://images.launchbox-app.com/59efd0b4-b1ff-4809-b806-cda3a6f0a12d.png',
         'pspconfig': 'pspconfigs/Ninja Jaja Marukun Oniriki Ninpoucho/SLPS-00494.bin',
     },
     'SLPS00172': {
         'url': "games/J/N/SLPS-00172.html",
     	'id': 'SLPS00172',
 	'title': "NINKU",
+        'pic0': 'https://images.launchbox-app.com/e6e5d9d1-c8c1-43c9-a854-f8a7d1d3618b.png',
     },
     'SLPS03493': {
         'url': "games/J/N/SLPS-03493.html",
@@ -56656,6 +56680,7 @@ games = {
         'url': "games/J/N/SLPS-01757.html",
     	'id': 'SLPS01757',
 	'title': "NINTEI-OU",
+        'pic0': 'https://images.launchbox-app.com/676eb68b-eadc-4ffd-a5fd-6fffffc05647.png',
     },
     'SLPS00658': {
         'url': "games/J/N/SLPS-00658.html",
@@ -56741,11 +56766,13 @@ games = {
         'url': "games/J/N/SLPS-00265.html",
     	'id': 'SLPS00265',
 	'title': "NO-APPOINTMENT GALS OLYMPOS",
+        'pic0': 'https://images.launchbox-app.com/e38a6b73-f53f-43b3-baec-3f72f579f199.png',
     },
     'SLPS00493': {
         'url': "games/J/N/SLPS-00493.html",
     	'id': 'SLPS00493',
 	'title': "NO-APPOINTMENT GALS OLYMPOS",
+        'pic0': 'https://images.launchbox-app.com/e38a6b73-f53f-43b3-baec-3f72f579f199.png',
     },
     'SLPS00862': {
         'url': "games/J/N/SLPS-00862.html",
@@ -57023,6 +57050,7 @@ games = {
         'url': "games/J/N/SLPS-00274.html",
     	'id': 'SLPS00274',
 	'title': "NOT TREASURE HUNTER",
+        'pic0': 'https://images.launchbox-app.com/37847b2f-9b37-4e75-9ee9-7685da4877d2.png',
     },
     'SLPS00314': {
         'url': "games/J/N/SLPS-00314.html",
@@ -57042,21 +57070,25 @@ games = {
         'url': "games/J/N/SLPS-02009.html",
     	'id': 'SLPS02009',
 	'title': "NOVELS - GAME CENTER ARASHI R",
+        'pic0': 'https://images.launchbox-app.com/30cfc7fa-9e92-464e-a65f-582302579145.png',
     },
     'SLPM86880': {
         'url': "games/J/N/SLPM-86880.html",
     	'id': 'SLPM86880',
 	'title': "NUKUMORI NO NAKADE IN THE WARMTH",
+        'pic0': 'https://images.launchbox-app.com/25d00cfb-da79-475b-84f3-e5e7144dfebf.png',
     },
     'SLPS00294': {
         'url': "games/J/N/SLPS-00294.html",
     	'id': 'SLPS00294',
 	'title': "NUPA - NUMERIC PAINT PUZZLE",
+        'pic0': 'https://images.launchbox-app.com/2cf8dec6-be14-4e50-a71f-0c445ba171a6.png',
     },
     'SLPS01939': {
         'url': "games/J/N/SLPS-01939.html",
     	'id': 'SLPS01939',
 	'title': "NURSE STORY",
+        'pic0': 'https://images.launchbox-app.com/c0b36e22-d94b-4a26-a44c-c4931e73f3ad.png',
     },
     'SLPS02336': {
         'url': "games/J/N/SLPS-02336.html",
@@ -57134,6 +57166,7 @@ games = {
         'url': "games/J/O/SLPM-86681.html",
     	'id': 'SLPM86681',
 	'title': "OCHANOMA BATTLE",
+        'pic0': 'https://images.launchbox-app.com/5067fc26-c34c-4af1-a85c-bb93089c335c.png',
     },
     'SLPS01595': {
         'url': "games/J/O/SLPS-01595.html",
@@ -57262,11 +57295,13 @@ games = {
         'url': "games/J/O/SLPS-01876.html",
     	'id': 'SLPS01876',
 	'title': "OMISE DE TENSYU",
+        'pic0': 'https://images.launchbox-app.com/ad766692-c71c-4859-801e-2d0973e6b6ca.png',
     },
     'SLPS02815': {
         'url': "games/J/O/SLPS-02815.html",
     	'id': 'SLPS02815',
 	'title': "OMIZU NO HANAMICHI",
+        'pic0': 'https://images.launchbox-app.com/00584d7e-3644-4251-98d3-3a800f6cb66e.png',
     },
     'SLPS01812': {
         'url': "games/J/O/SLPS-01812.html",
@@ -57286,16 +57321,19 @@ games = {
         'url': "games/J/O/SLPS-02585.html",
     	'id': 'SLPS02585',
 	'title': "ONE TWO SMASH - TANOSHII TENNIS [1300YEN RELEASE]",
+        'pic0': 'https://images.launchbox-app.com/540f0294-9e8c-405d-8ce7-cdd7afd8e8a7.png',
     },
     'SLPS00903': {
         'url': "games/J/O/SLPS-00903.html",
     	'id': 'SLPS00903',
 	'title': "ONGAKU TSUKURU - KANADE-RU 2",
+        'pic0': 'https://images.launchbox-app.com/a0f40e1c-3585-4622-a585-d5ef855970c5.png',
     },
     'SLPS02684': {
         'url': "games/J/O/SLPS-02684.html",
     	'id': 'SLPS02684',
 	'title': "ONGAKU TSUKURU - KANADE-RU 2",
+        'pic0': 'https://images.launchbox-app.com/a0f40e1c-3585-4622-a585-d5ef855970c5.png',
     },
     'SLPS03161': {
         'url': "games/J/O/SLPS-03161.html",
@@ -57306,6 +57344,7 @@ games = {
         'url': "games/J/O/SLPS-03106.html",
     	'id': 'SLPS03106',
 	'title': "ONI ZERO FUKKATSU [PANDORA MAX SERIES VOL.6]",
+        'pic0': 'https://images.launchbox-app.com/a186c54f-63c8-4500-8387-ede84d732c15.png',
     },
     'SLPS01062': {
         'url': "games/J/O/SLPS-01062.html",
@@ -57317,51 +57356,61 @@ games = {
         'url': "games/J/O/SLPS-02814.html",
     	'id': 'SLPS02814',
 	'title': "OOEDO HUUSUI INGARITSU HANABI 2",
+        'pic0': 'https://images.launchbox-app.com/76958363-8e75-4042-9556-be2086787497.png',
     },
     'SLPS03112': {
         'url': "games/J/O/SLPS-03112.html",
     	'id': 'SLPS03112',
 	'title': "OOEDO HUUSUI INGARITSU HANABI 2 [MAGICAL 1500]",
+        'pic0': 'https://images.launchbox-app.com/76958363-8e75-4042-9556-be2086787497.png',
     },
     'SLPS01207': {
         'url': "games/J/O/SLPS-01207.html",
     	'id': 'SLPS01207',
 	'title': "OPTION TUNING CAR BATTLE",
+        'pic0': 'https://images.launchbox-app.com/81e3cace-d3c0-410b-a202-9b43639fcb0e.png',
     },
     'SLPS91037': {
         'url': "games/J/O/SLPS-91037.html",
     	'id': 'SLPS91037',
 	'title': "OPTION TUNING CAR BATTLE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/81e3cace-d3c0-410b-a202-9b43639fcb0e.png',
     },
     'SLPS01857': {
         'url': "games/J/O/SLPS-01857.html",
     	'id': 'SLPS01857',
 	'title': "OPTION TUNING CAR BATTLE 2",
+        'pic0': 'https://images.launchbox-app.com/877aa204-c20b-484d-a891-eac0090c1025.png',
     },
     'SLPS02573': {
         'url': "games/J/O/SLPS-02573.html",
     	'id': 'SLPS02573',
 	'title': "OPTION TUNING CAR BATTLE 2 [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/877aa204-c20b-484d-a891-eac0090c1025.png',
     },
     'SLPS02587': {
         'url': "games/J/O/SLPS-02587.html",
     	'id': 'SLPS02587',
 	'title': "OPTION TUNING CAR BATTLE - SPEC R",
+        'pic0': 'https://images.launchbox-app.com/e212abc0-c549-443a-8fbe-0e147fed411a.png',
     },
     'SLPS02951': {
         'url': "games/J/O/SLPS-02951.html",
     	'id': 'SLPS02951',
 	'title': "OPTION TUNING CAR BATTLE - SPEC R [RACE THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/e212abc0-c549-443a-8fbe-0e147fed411a.png',
     },
     'SLPM87164': {
         'url': "games/J/O/SLPM-87164.html",
     	'id': 'SLPM87164',
 	'title': "OPTION TUNING CAR BATTLE - SPEC R [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/e212abc0-c549-443a-8fbe-0e147fed411a.png',
     },
     'SLPS00240': {
         'url': "games/J/O/SLPS-00240.html",
     	'id': 'SLPS00240',
 	'title': "ORACLE NO HOUSEKI [JEWELS OF THE ORACLE]",
+        'pic0': 'https://images.launchbox-app.com/84a1126c-47b3-4624-bcda-a0419a51fd28.png',
     },
     'SCPS10099': {
         'url': "games/J/O/SCPS-10099.html",
@@ -57391,16 +57440,19 @@ games = {
         'url': "games/J/O/SCPS-10074.html",
     	'id': 'SCPS10074',
 	'title': "ORE NO SHIKABANE WO KOETE YUKE",
+        'pic0': 'https://images.launchbox-app.com/79d31009-7af0-41ad-b9f6-029527075dfc.png',
     },
     'SCPS91198': {
         'url': "games/J/O/SCPS-91198.html",
     	'id': 'SCPS91198',
 	'title': "ORE NO SHIKABANE WO KOETE YUKE [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/79d31009-7af0-41ad-b9f6-029527075dfc.png',
     },
     'SCPS91330': {
         'url': "games/J/O/SCPS-91330.html",
     	'id': 'SCPS91330',
 	'title': "ORE NO SHIKABANE WO KOETE YUKE [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/79d31009-7af0-41ad-b9f6-029527075dfc.png',
     },
     'SLPS01144': {
         'url': "games/J/O/SLPS-01144.html",
@@ -57420,11 +57472,13 @@ games = {
         'url': "games/J/O/SLPS-03056.html",
     	'id': 'SLPS03056',
 	'title': "OSHIGOTOSHIKI JINSEI GAME",
+        'pic0': 'https://images.launchbox-app.com/8a8b0dd6-829c-4c4b-849f-435627432a7d.png',
     },
     'SLPM87316': {
         'url': "games/J/O/SLPM-87316.html",
     	'id': 'SLPM87316',
 	'title': "OSHIGOTOSHIKI JINSEI GAME [THE BEST TAKARAMONO]",
+        'pic0': 'https://images.launchbox-app.com/8a8b0dd6-829c-4c4b-849f-435627432a7d.png',
     },
     'SLPM87047': {
         'url': "games/J/O/SLPM-87047.html",
@@ -57436,11 +57490,13 @@ games = {
         'url': "games/J/O/SLPS-00136.html",
     	'id': 'SLPS00136',
 	'title': "OTHELLO WORLD II - YUME TO MICHI E NO CHOUSEN",
+        'pic0': 'https://images.launchbox-app.com/c18dd1b4-1983-4795-a2f5-b3a909132762.png',
     },
     'SLPS01174': {
         'url': "games/J/O/SLPS-01174.html",
     	'id': 'SLPS01174',
 	'title': "OTHELLO WORLD II - YUME TO MICHI E NO CHOUSEN [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/c18dd1b4-1983-4795-a2f5-b3a909132762.png',
     },
     'SLPM86047': {
         'url': "games/J/O/SLPM-86047.html",
@@ -57464,11 +57520,13 @@ games = {
         'url': "games/J/O/SLPS-02459.html",
     	'id': 'SLPS02459',
 	'title': "OTONA NO ASOBI [NICHIBUTSU COLLECTION 2000]",
+        'pic0': 'https://images.launchbox-app.com/cc165d28-37ec-43ed-8e80-584dbf98bdf0.png',
     },
     'SLPS03412': {
         'url': "games/J/O/SLPS-03412.html",
     	'id': 'SLPS03412',
 	'title': "OUJI SAMA LV.1",
+        'pic0': 'https://images.launchbox-app.com/8a27df34-ae2c-4cc6-b71e-20e3fa7884a9.png',
     },
     'SLPS03534': {
         'url': "games/J/O/SLPS-03534.html",
@@ -57479,31 +57537,37 @@ games = {
         'url': "games/J/O/SLPS-00438.html",
     	'id': 'SLPS00438',
 	'title': "OUKYUU NO HIHOU TENSION",
+        'pic0': 'https://images.launchbox-app.com/3d39b2c7-e3ca-4e21-8fee-01d9d716b5aa.png',
     },
     'SLPS02594': {
         'url': "games/J/O/SLPS-02594.html",
     	'id': 'SLPS02594',
 	'title': "OUKYUU NO HIHOU TENSION [VAP BEST THANKS 1800]",
+        'pic0': 'https://images.launchbox-app.com/3d39b2c7-e3ca-4e21-8fee-01d9d716b5aa.png',
     },
     'SLPS03235': {
         'url': "games/J/O/SLPS-03235.html",
     	'id': 'SLPS03235',
 	'title': "OUMAGATOKI",
+        'pic0': 'https://images.launchbox-app.com/f2d0b2c6-5d1e-4950-bfae-45d3472d656a.png',
     },
     'SLPS91521': {
         'url': "games/J/O/SLPS-91521.html",
     	'id': 'SLPS91521',
 	'title': "OUMAGATOKI [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/f2d0b2c6-5d1e-4950-bfae-45d3472d656a.png',
     },
     'SLPS03272': {
         'url': "games/J/O/SLPS-03272.html",
     	'id': 'SLPS03272',
 	'title': "OUMAGATOKI 2",
+        'pic0': 'https://images.launchbox-app.com/c92a24c7-8f9a-4bef-aaa5-eeb359ab1006.png',
     },
     'SLPS91522': {
         'url': "games/J/O/SLPS-91522.html",
     	'id': 'SLPS91522',
 	'title': "OUMAGATOKI 2 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/c92a24c7-8f9a-4bef-aaa5-eeb359ab1006.png',
     },
     'SLPS00746': {
         'url': "games/J/O/SLPS-00746.html",
@@ -57542,6 +57606,7 @@ games = {
         'url': "games/J/O/SLPS-01024.html",
     	'id': 'SLPS01024',
 	'title': "OVER DRIVIN' SKYLINE MEMORIAL",
+        'pic0': 'https://images.launchbox-app.com/a27f5826-c90b-43b4-b315-79bf99ca8d27.png',
     },
     'SLPS00392': {
         'url': "games/J/O/SLPS-00392.html",
@@ -57604,31 +57669,37 @@ games = {
         'url': "games/J/O/SLPS-02591.html",
     	'id': 'SLPS02591',
 	'title': "OYAJI NO JIKAN - NECHAN HANAFUDA DE SHOUBA YA!",
+        'pic0': 'https://images.launchbox-app.com/7741fa01-bfed-4f57-9f51-4cfe2938961c.png',
     },
     'SLPS03261': {
         'url': "games/J/O/SLPS-03261.html",
     	'id': 'SLPS03261',
 	'title': "OYAJI NO JIKAN - NECHAN HANAFUDA DE SHOUBA YA!",
+        'pic0': 'https://images.launchbox-app.com/7741fa01-bfed-4f57-9f51-4cfe2938961c.png',
     },
     'SLPS02592': {
         'url': "games/J/O/SLPS-02592.html",
     	'id': 'SLPS02592',
 	'title': "OYAJI NO JIKAN - NECHAN MAHJONG DE SHOUBU YA!",
+        'pic0': 'https://images.launchbox-app.com/f157451f-ca50-41bf-913e-e5afa793bde3.png',
     },
     'SLPS03262': {
         'url': "games/J/O/SLPS-03262.html",
     	'id': 'SLPS03262',
 	'title': "OYAJI NO JIKAN - NECHAN MAHJONG DE SHOUBU YA!",
+        'pic0': 'https://images.launchbox-app.com/f157451f-ca50-41bf-913e-e5afa793bde3.png',
     },
     'SLPS02590': {
         'url': "games/J/O/SLPS-02590.html",
     	'id': 'SLPS02590',
 	'title': "OYAJI NO JIKAN - NECHAN TSURI IKU DE!",
+        'pic0': 'https://images.launchbox-app.com/afc1ed23-61a4-479b-8bb4-1e66723e26bc.png',
     },
     'SLPS03260': {
         'url': "games/J/O/SLPS-03260.html",
     	'id': 'SLPS03260',
 	'title': "OYAJI NO JIKAN - NECHAN TSURI IKU DE!",
+        'pic0': 'https://images.launchbox-app.com/afc1ed23-61a4-479b-8bb4-1e66723e26bc.png',
     },
     'SLPS02122':       {
         'url': "games/J/P/SLPS-02122.html",
