@@ -7,6 +7,7 @@ WORKDIR /pop-fe
 RUN apt-get update && apt-get install -y \
   libsndfile-dev \
   ffmpeg \
+  mame-tools \
   cmake && \
   rm -rf /var/lib/apt/lists/*
 
