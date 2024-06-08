@@ -2058,12 +2058,14 @@ games = {
     	'id': 'SLPS02172',
 	'title': "UMI NO NUSHI TSURI - TAKARAJIMA NI MUKATTE",
         'pic0': 'https://images.launchbox-app.com/a3bea48d-2a41-4556-929d-97ef160488fd.png',
+        'pic1': 'https://images.launchbox-app.com/19ea899d-efd3-4533-bf54-439557800559.jpg',
     },
     'SLPS91491': {
         'url': "games/J/U/SLPS-91491.html",
     	'id': 'SLPS91491',
 	'title': "UMI NO NUSHI TSURI - TAKARAJIMA NI MUKATTE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/a3bea48d-2a41-4556-929d-97ef160488fd.png',
+        'pic1': 'https://images.launchbox-app.com/19ea899d-efd3-4533-bf54-439557800559.jpg',
     },
     'SLPS01623': {
         'url': "games/J/U/SLPS-01623.html",
@@ -2679,6 +2681,7 @@ games = {
         'url': "games/J/V/SLPS-00338.html",
     	'id': 'SLPS00338',
 	'title': "VIRTUAL KIRYU NO KEN",
+        'pic0': 'https://images.launchbox-app.com/469cfd8e-6e52-4e84-af3f-d3ddacd9f6de.png',
     },
     'SLPS01396': {
         'url': "games/J/V/SLPS-01396.html",
@@ -4728,6 +4731,7 @@ games = {
     	'id': 'SLUS00715',
 	'title': "AKUJI THE HEARTLESS",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'pic1': 'https://images.launchbox-app.com/07031927-a0fd-44d8-94f1-ac3c1f0897c0.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
     'SLUS80715': {
@@ -4735,6 +4739,7 @@ games = {
     	'id': 'SLUS80715',
 	'title': "AKUJI THE HEARTLESS [DEMO]",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'pic1': 'https://images.launchbox-app.com/07031927-a0fd-44d8-94f1-ac3c1f0897c0.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
     'SLUS00872': {
@@ -6597,6 +6602,7 @@ games = {
     	'id': 'SLUS00634',
 	'title': "CROC 2",
         'pic0': 'https://images.launchbox-app.com/e6109a43-ec9b-47f1-8129-d6f9bea9f526.png',
+        'pic1': 'https://images.launchbox-app.com/cbe1c4f6-07e5-409a-bc64-72db3d873932.jpg',
     },
     'SLUS01342': {
         'url': "games/U/C/SLUS-01342.html",
@@ -11664,24 +11670,28 @@ games = {
     	'id': 'SLUS00165',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00166': {
         'url': "games/U/P/SLUS-00165.html",
     	'id': 'SLUS00166',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00167': {
         'url': "games/U/P/SLUS-00165.html",
     	'id': 'SLUS00167',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00419': {
         'url': "games/U/P/SLUS-00419.html",
     	'id': 'SLUS00419',
 	'title': "PSYCHIC FORCE",
         'pic0': 'https://images.launchbox-app.com/b7295b37-ea32-49de-b97b-6df1d73e318f.png',
+        'pic1': 'https://images.launchbox-app.com/28697393-adaf-4c3a-bc0e-1b4c3ec7e5c2.png',
     },
     'SLUS00579':    {
         'url': "games/U/P/SLUS-00579.html",
@@ -15944,6 +15954,7 @@ games = {
     	'id': 'SLES01298',
 	'title': "AKUJI THE HEARTLESS",
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
+        'pic1': 'https://images.launchbox-app.com/07031927-a0fd-44d8-94f1-ac3c1f0897c0.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
     },
     'SLES03150': {
@@ -17490,18 +17501,21 @@ games = {
     	'id': 'SLES00349',
 	'title': "BLAM! MACHINEHEAD",
         'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
     },
     'SLES00350': {
         'url': "games/P/B/SLES-00350.html",
     	'id': 'SLES00350',
 	'title': "BLAM! MACHINEHEAD",
         'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
     },
     'SLES00351': {
         'url': "games/P/B/SLES-00351.html",
     	'id': 'SLES00351',
 	'title': "BLAM! MACHINEHEAD",
         'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
     },
     'SLES00476': {
         'url': "games/P/B/SLES-00476.html",
@@ -26762,6 +26776,7 @@ games = {
     	'id': 'SLES02088',
 	'title': "CROC 2",
         'pic0': 'https://images.launchbox-app.com/e6109a43-ec9b-47f1-8129-d6f9bea9f526.png',
+        'pic1': 'https://images.launchbox-app.com/cbe1c4f6-07e5-409a-bc64-72db3d873932.jpg',
     },
     'SLES00587': {
         'url': "games/P/C/SLES-00587.html",
@@ -30047,24 +30062,28 @@ games = {
     	'id': 'SLES00070',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLES10070': {
         'url': "games/P/P/SLES-00070.html",
     	'id': 'SLES10070',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLES20070': {
         'url': "games/P/P/SLES-00070.html",
     	'id': 'SLES20070',
 	'title': "PSYCHIC DETECTIVE",
         'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLES00629': {
         'url': "games/P/P/SLES-00629.html",
     	'id': 'SLES00629',
 	'title': "PSYCHIC FORCE",
         'pic0': 'https://images.launchbox-app.com/b7295b37-ea32-49de-b97b-6df1d73e318f.png',
+        'pic1': 'https://images.launchbox-app.com/28697393-adaf-4c3a-bc0e-1b4c3ec7e5c2.png',
     },
     'SLES02557': {
         'url': "games/P/P/SLES-02557.html",
@@ -40148,12 +40167,14 @@ games = {
     	'id': 'SCPS45067',
 	'title': "BLAM! MACHINEHEAD",
         'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
     },
     'SLPS00798': {
         'url': "games/J/B/SLPS-00798.html",
     	'id': 'SLPS00798',
 	'title': "BLAM! MACHINEHEAD",
         'pic0': 'https://images.launchbox-app.com/b4b0baed-297d-4929-9b41-60b303adec36.png',
+        'pic1': 'https://images.launchbox-app.com/97ff31a2-a938-4a19-bc0f-c692b48fa19e.png',
     },
     'SLPS02617': {
         'url': "games/J/B/SLPS-02617.html",
@@ -42624,6 +42645,7 @@ games = {
     	'id': 'SCPS45511',
 	'title': "CRASH BANDICOOT CARNIVAL",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
+        'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-45511.bin',
     },
     'SCPS10140': {
@@ -42631,6 +42653,7 @@ games = {
     	'id': 'SCPS10140',
 	'title': "CRASH BANDICOOT CARNIVAL",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
+        'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-10140.bin',
     },
     'SCPS91319': {
@@ -42638,6 +42661,7 @@ games = {
     	'id': 'SCPS91319',
 	'title': "CRASH BANDICOOT CARNIVAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
+        'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-91319.bin',
     },
     'SCPS45470': {
@@ -46698,6 +46722,7 @@ games = {
     	'id': 'SCPS45116',
 	'title': "FRONT MISSION 2",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'pic1': 'https://images.launchbox-app.com/4c44e595-22fa-4dda-89f1-a8d4b3a95147.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPS01000': {
@@ -46705,6 +46730,7 @@ games = {
     	'id': 'SLPS01000',
 	'title': "FRONT MISSION 2",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'pic1': 'https://images.launchbox-app.com/4c44e595-22fa-4dda-89f1-a8d4b3a95147.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPM87397': {
@@ -46712,6 +46738,7 @@ games = {
     	'id': 'SLPM87397',
 	'title': "FRONT MISSION 2 [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/f39bbc7c-fae9-432f-b78f-ba8d4509015d.png',
+        'pic1': 'https://images.launchbox-app.com/4c44e595-22fa-4dda-89f1-a8d4b3a95147.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%202%20[SCPS-45116]%20(J).cbr',
     },
     'SLPS02222': {
@@ -46755,6 +46782,7 @@ games = {
     	'id': 'SCPS45090',
 	'title': "FRONT MISSION ALTERNATIVE",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'pic1': 'https://images.launchbox-app.com/84825f59-e622-4c91-aae9-2889b51512fe.png',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPS00953': {
@@ -46762,6 +46790,7 @@ games = {
     	'id': 'SLPS00953',
 	'title': "FRONT MISSION ALTERNATIVE",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'pic1': 'https://images.launchbox-app.com/84825f59-e622-4c91-aae9-2889b51512fe.png',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPM87398': {
@@ -46769,6 +46798,7 @@ games = {
     	'id': 'SLPM87398',
 	'title': "FRONT MISSION ALTERNATIVE [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2ddb0209-78e7-4952-8bed-924906b1c131.png',
+        'pic1': 'https://images.launchbox-app.com/84825f59-e622-4c91-aae9-2889b51512fe.png',
         'manual': 'https://psxdatacenter.com/manuals/Front%20Mission%20Alternative%20(J)%20[SLPS-00953].cbr',
     },
     'SLPS02307': {
@@ -48136,24 +48166,28 @@ games = {
     	'id': 'SLPS02380',
 	'title': "GROWLANSER",
         'pic0': 'https://images.launchbox-app.com/934676f2-d90e-4a1e-a948-f01688b7ac05.png',
+        'pic1': 'https://images.launchbox-app.com/1a2c61b9-bc82-4943-ad32-95b43077da39.png',
     },
     'SLPS02381': {
         'url': "games/J/G/SLPS-02380.html",
     	'id': 'SLPS02381',
 	'title': "GROWLANSER",
         'pic0': 'https://images.launchbox-app.com/934676f2-d90e-4a1e-a948-f01688b7ac05.png',
+        'pic1': 'https://images.launchbox-app.com/1a2c61b9-bc82-4943-ad32-95b43077da39.png',
     },
     'SLPS03240': {
         'url': "games/J/G/SLPS-03240.html",
     	'id': 'SLPS03240',
 	'title': "GROWLANSER [ATLUS BEST COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/934676f2-d90e-4a1e-a948-f01688b7ac05.png',
+        'pic1': 'https://images.launchbox-app.com/1a2c61b9-bc82-4943-ad32-95b43077da39.png',
     },
     'SLPS03241': {
         'url': "games/J/G/SLPS-03240.html",
     	'id': 'SLPS03241',
 	'title': "GROWLANSER [ATLUS BEST COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/934676f2-d90e-4a1e-a948-f01688b7ac05.png',
+        'pic1': 'https://images.launchbox-app.com/1a2c61b9-bc82-4943-ad32-95b43077da39.png',
     },
     'SLPS00219': {
         'url': "games/J/G/SLPS-00219.html",
@@ -56404,11 +56438,15 @@ games = {
         'url': "games/J/N/SLPS-01377.html",
     	'id': 'SLPS01377',
 	'title': "NEON GENESIS EVANGELION - GIRLFRIEND OF STEEL (SHIN SEIKI EVANGELION - KOUTETSU NO GIRLFRIEND)",
+        'pic0': 'https://images.launchbox-app.com/9a8be7f1-698c-4a50-921d-5c8dac572108.png',
+        'pic1': 'https://images.launchbox-app.com/3a7e7489-e0ea-47bb-9088-73eca33c6c37.png',
     },
     'SLPS01378':    {
         'url': "games/J/N/SLPS-01377.html",
     	'id': 'SLPS01378',
 	'title': "NEON GENESIS EVANGELION - GIRLFRIEND OF STEEL (SHIN SEIKI EVANGELION - KOUTETSU NO GIRLFRIEND)",
+        'pic0': 'https://images.launchbox-app.com/9a8be7f1-698c-4a50-921d-5c8dac572108.png',
+        'pic1': 'https://images.launchbox-app.com/3a7e7489-e0ea-47bb-9088-73eca33c6c37.png',
     },
     'SLPS00823': {
         'url': "games/J/N/SLPS-00823.html",
@@ -59554,6 +59592,7 @@ games = {
     	'id': 'SLPS00520',
 	'title': "PSYCHIC FORCE",
         'pic0': 'https://images.launchbox-app.com/b7295b37-ea32-49de-b97b-6df1d73e318f.png',
+        'pic1': 'https://images.launchbox-app.com/28697393-adaf-4c3a-bc0e-1b4c3ec7e5c2.png',
     },
     'SLPM86273': {
         'url': "games/J/P/SLPM-86273.html",
@@ -62629,6 +62668,7 @@ games = {
     	'id': 'SLPS01485',
 	'title': "SHIN SEIKI EVANGELION - EVA TO YUKAI NA NAKAMATACHI",
         'pic0': 'https://images.launchbox-app.com/9a8be7f1-698c-4a50-921d-5c8dac572108.png',
+        'pic1': 'https://images.launchbox-app.com/3a7e7489-e0ea-47bb-9088-73eca33c6c37.png',
     },
     'SLPS00550': {
         'url': "games/J/S/SLPS-00550.html",
@@ -65468,18 +65508,21 @@ games = {
     	'id': 'SLPS01305',
 	'title': "SUIKODEN - TENDOU 108 SEI",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
+        'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
     },
     'SLPM86991': {
         'url': "games/J/S/SLPM-86991.html",
     	'id': 'SLPM86991',
 	'title': "SUIKODEN - TENDOU 108 SEI [KOEI TEIBAN SERIES]",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
+        'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
     },
     'SLPM86308': {
         'url': "games/J/S/SLPM-86308.html",
     	'id': 'SLPM86308',
 	'title': "SUIKODEN - TENDOU 108 SEI [KOEI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
+        'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
     },
     'SLPS00521': {
         'url': "games/J/S/SLPS-00521.html",
@@ -67784,41 +67827,49 @@ games = {
         'url': "games/J/T/SLPS-02399.html",
     	'id': 'SLPS02399',
 	'title': "THE URANAI 2 - MAINICHI NO TAROT URANAI",
+        'pic0': 'https://images.launchbox-app.com/34d97a9d-b9f5-48a2-86a5-2bf34683466a.png',
     },
     'SLPS02898': {
         'url': "games/J/T/SLPS-02898.html",
     	'id': 'SLPS02898',
 	'title': "THE URANAI 3 - MAINICHI HOUI URANAI",
+        'pic0': 'https://images.launchbox-app.com/c7bfebc6-ecf3-4033-969a-d3f6d6934784.png',
     },
     'SLPS02899': {
         'url': "games/J/T/SLPS-02899.html",
     	'id': 'SLPS02899',
 	'title': "THE URANAI 4 - HARAPEKO KUMA NO KAIUN KABBALAH URANAI",
+        'pic0': 'https://images.launchbox-app.com/2fedb666-9336-41ef-bd97-211e7d5deb3a.png',
     },
     'SLPS03053': {
         'url': "games/J/T/SLPS-03053.html",
     	'id': 'SLPS03053',
 	'title': "THE URANAI 5 - SHINPI NO RUNE URANAI",
+        'pic0': 'https://images.launchbox-app.com/e00495b5-613e-4221-b8d4-672336c9c586.png',
     },
     'SLPS03054': {
         'url': "games/J/T/SLPS-03054.html",
     	'id': 'SLPS03054',
 	'title': "THE URANAI 6 - SUISEI-SAN NO TOTTEMO KYUUSEI SENSEIJUTSU",
+        'pic0': 'https://images.launchbox-app.com/83a9f011-9afe-4983-a993-bb409cb41f1a.png',
     },
     'SLPS02362': {
         'url': "games/J/T/SLPS-02362.html",
     	'id': 'SLPS02362',
 	'title': "THE URANAI - RENAI SEIZA URANAI",
+        'pic0': 'https://images.launchbox-app.com/79351ffe-23ad-4ef5-b5db-b5238148017f.png',
     },
     'SLPS01015': {
         'url': "games/J/T/SLPS-01015.html",
     	'id': 'SLPS01015',
 	'title': "THE VISION OF ESCAFLOWNE",
+        'pic0': 'https://images.launchbox-app.com/580076d3-17f5-4665-9d7f-24154759f8d5.png',
     },
     'SLPS01014': {
         'url': "games/J/T/SLPS-01014.html",
     	'id': 'SLPS01014',
 	'title': "THE VISION OF ESCAFLOWNE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/580076d3-17f5-4665-9d7f-24154759f8d5.png',
     },
     'SLPM86473': {
         'url': "games/J/T/SLPM-86473.html",
@@ -67831,16 +67882,19 @@ games = {
         'url': "games/J/T/SLPS-00872.html",
     	'id': 'SLPS00872',
 	'title': "THE WITCH OF SALZBURG",
+        'pic0': 'https://images.launchbox-app.com/f203a0c8-cbc8-4065-a9f0-519d7aacd4af.png',
     },
     'SLPS01768': {
         'url': "games/J/T/SLPS-01768.html",
     	'id': 'SLPS01768',
 	'title': "THEME AQUARIUM",
+        'pic0': 'https://images.launchbox-app.com/ee5f732a-0bc3-416a-a157-5c08031b96f2.png',
     },
     'SLPS91470': {
         'url': "games/J/T/SLPS-91470.html",
     	'id': 'SLPS91470',
 	'title': "THEME AQUARIUM [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/ee5f732a-0bc3-416a-a157-5c08031b96f2.png',
     },
     'SLPS01405': {
         'url': "games/J/T/SLPS-01405.html",
@@ -67878,16 +67932,19 @@ games = {
         'url': "games/J/T/SLPS-01324.html",
     	'id': 'SLPS01324',
 	'title': "THOROUGHBRED BREEDER - SEKAI SEIHA HEN",
+        'pic0': 'https://images.launchbox-app.com/99ebc941-bd66-4d26-ba9b-1d61ea9ff74e.png',
     },
     'SLPS00053': {
         'url': "games/J/T/SLPS-00053.html",
     	'id': 'SLPS00053',
 	'title': "THOROUGHBRED BRIDE II PLUS",
+        'pic0': 'https://images.launchbox-app.com/ebd42d24-4208-42b0-b75b-e0e2cd1bc59d.png',
     },
     'SLPS00177': {
         'url': "games/J/T/SLPS-00177.html",
     	'id': 'SLPS00177',
 	'title': "THOROUGHBRED TATSU NO EIKAN - THE VICTORIOUS THOROUGHBRED'S",
+        'pic0': 'https://images.launchbox-app.com/be4973b3-535a-41d3-8b91-a4dd8ca59cc2.png',
     },
     'SLPS01780': {
         'url': "games/J/T/SLPS-01780.html",
@@ -67967,21 +68024,25 @@ games = {
         'url': "games/J/T/SLPS-00717.html",
     	'id': 'SLPS00717',
 	'title': "TILK - AOI UMI KARA KITA SHOUJO",
+        'pic0': 'https://images.launchbox-app.com/62bc0fd9-6d14-44ea-84cf-ea553e74bf9e.png',
     },
     'SLPS03133': {
         'url': "games/J/T/SLPS-03133.html",
     	'id': 'SLPS03133',
 	'title': "TIME BOKAN GO GO GO",
+        'pic0': 'https://images.launchbox-app.com/03e24181-744e-4308-9d2d-cb61298b1e9a.png',
     },
     'SLPS00609': {
         'url': "games/J/T/SLPS-00609.html",
     	'id': 'SLPS00609',
 	'title': "TIME BOKAN SERIES - BOKAN TO IPPATSU! DORONBOO",
+        'pic0': 'https://images.launchbox-app.com/a3929a11-a1ff-413e-8494-35b7b5e71fe3.png',
     },
     'SLPS91051': {
         'url': "games/J/T/SLPS-91051.html",
     	'id': 'SLPS91051',
 	'title': "TIME BOKAN SERIES - BOKAN TO IPPATSU! DORONBOO [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/a3929a11-a1ff-413e-8494-35b7b5e71fe3.png',
     },
     'SLPS01211': {
         'url': "games/J/T/SLPS-01211.html",
@@ -68095,11 +68156,13 @@ games = {
         'url': "games/J/T/SLPS-00436.html",
     	'id': 'SLPS00436',
 	'title': "TOAPLAN SHOOTING BATTLE",
+        'pic0': 'https://images.launchbox-app.com/98110345-8658-4575-8f99-49853adfec56.png',
     },
     'SLPS02749': {
         'url': "games/J/T/SLPS-02749.html",
     	'id': 'SLPS02749',
 	'title': "TOBAKU MOKUSHIROKU KAIJI - THE GAMBLING APOCALYPSE",
+        'pic0': 'https://images.launchbox-app.com/cfd3515b-1d6a-40b5-921a-90ce068da867.png',
     },
     'SLPS00400': {
         'url': "games/J/T/SLPS-00400.html",
@@ -68185,11 +68248,13 @@ games = {
         'url': "games/J/T/SLPM-86005.html",
     	'id': 'SLPM86005',
 	'title': "TOKIMEKI MEMORIAL - TAISEN PUZZLE-DAMA",
+        'pic0': 'https://images.launchbox-app.com/f7e892fe-b674-4160-99a3-aa854c2fd197.png',
     },
     'SLPM87306': {
         'url': "games/J/T/SLPM-87306.html",
     	'id': 'SLPM87306',
 	'title': "TOKIMEKI MEMORIAL - TAISEN PUZZLE-DAMA [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/f7e892fe-b674-4160-99a3-aa854c2fd197.png',
     },
     'SLPM86036': {
         'url': "games/J/T/SLPM-86036.html",
@@ -68593,26 +68658,31 @@ games = {
         'url': "games/J/T/SLPM-86664.html",
     	'id': 'SLPM86664',
 	'title': "TOKORO-SAN NO DAIFUGOU",
+        'pic0': 'https://images.launchbox-app.com/7f21bdf3-7f3f-450d-8fe3-13b1c0e9a80f.png',
     },
     'SLPM86824': {
         'url': "games/J/T/SLPM-86824.html",
     	'id': 'SLPM86824',
 	'title': "TOKORO-SAN NO DAIFUGOU [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/7f21bdf3-7f3f-450d-8fe3-13b1c0e9a80f.png',
     },
     'SLPS03528': {
         'url': "games/J/T/SLPS-03528.html",
     	'id': 'SLPS03528',
 	'title': "TOKOTOKO TROUBLE - CHIKYUU ITADAKI!",
+        'pic0': 'https://images.launchbox-app.com/a3a69493-08ff-42a3-b27a-14f291880a6b.png',
     },
     'SLPS01259': {
         'url': "games/J/T/SLPS-01259.html",
     	'id': 'SLPS01259',
 	'title': "TOKYO 23KU SEIFUKU-WARS",
+        'pic0': 'https://images.launchbox-app.com/a80d158b-4481-4329-a6e6-3298df4a6610.png',
     },
     'SLPS00174': {
         'url': "games/J/T/SLPS-00174.html",
     	'id': 'SLPS00174',
 	'title': "TOKYO DUNGEON",
+        'pic0': 'https://images.launchbox-app.com/33311598-563d-4fab-a0a9-68494712c307.png',
     },
     'SLPS03333': {
         'url': "games/J/T/SLPS-03333.html",
@@ -68654,11 +68724,13 @@ games = {
         'url': "games/J/T/SLPS-01432.html",
     	'id': 'SLPS01432',
 	'title': "TOKYO MAJIN GAKUEN KEN KAZE TOBARI",
+        'pic0': 'https://images.launchbox-app.com/a8e158c9-f8b3-4359-877e-d070f99b047c.png',
     },
     'SLPS01433': {
         'url': "games/J/T/SLPS-01432.html",
     	'id': 'SLPS01433',
 	'title': "TOKYO MAJIN GAKUEN KEN KAZE TOBARI",
+        'pic0': 'https://images.launchbox-app.com/a8e158c9-f8b3-4359-877e-d070f99b047c.png',
     },
     'SLPS02834': {
         'url': "games/J/T/SLPS-02834.html",
@@ -68694,16 +68766,19 @@ games = {
         'url': "games/J/T/SLPM-87176.html",
     	'id': 'SLPM87176',
 	'title': "TOKYO MEW MEW (MEW ICHIGO BOX)",
+        'pic0': 'https://images.launchbox-app.com/33b4e925-5faf-4a64-b863-b304fb09a306.png',
     },
     'SLPM87177': {
         'url': "games/J/T/SLPM-87177.html",
     	'id': 'SLPM87177',
 	'title': "TOKYO MEW MEW (MEW MINT BOX)",
+        'pic0': 'https://images.launchbox-app.com/33b4e925-5faf-4a64-b863-b304fb09a306.png',
     },
     'SLPM87178': {
         'url': "games/J/T/SLPM-87178.html",
     	'id': 'SLPM87178',
 	'title': "TOKYO MEW MEW",
+        'pic0': 'https://images.launchbox-app.com/33b4e925-5faf-4a64-b863-b304fb09a306.png',
     },
     'SLPS00285': {
         'url': "games/J/T/SLPS-00285.html",
@@ -68896,11 +68971,13 @@ games = {
         'url': "games/J/T/SLPS-01935.html",
     	'id': 'SLPS01935',
 	'title': "TOMIKA TOWN O TSUKUROU!",
+        'pic0': 'https://images.launchbox-app.com/4187e9e9-33e2-4ad4-956e-6aa2fdf911b3.png',
     },
     'SLPS03347': {
         'url': "games/J/T/SLPS-03347.html",
     	'id': 'SLPS03347',
 	'title': "TONDE! TONDE! DIET",
+        'pic0': 'https://images.launchbox-app.com/20f7e4d1-6ae0-4d31-8669-eab2ed69f58c.png',
     },
     'SLPS02113': {
         'url': "games/J/T/SLPS-02113.html",
@@ -68936,6 +69013,7 @@ games = {
         'url': "games/J/T/SLPS-00430.html",
     	'id': 'SLPS00430',
 	'title': "TONZURA KUN",
+        'pic0': 'https://images.launchbox-app.com/052ce316-c41d-4bde-aea1-327ede9c4bc9.png',
     },
     'SLPS00665': {
         'url': "games/J/T/SLPS-00665.html",
@@ -68947,6 +69025,7 @@ games = {
         'url': "games/J/T/SLPS-00620.html",
     	'id': 'SLPS00620',
 	'title': "TOPOLO",
+        'pic0': 'https://images.launchbox-app.com/d93e27b0-cf32-4eb4-9bbf-8f727a637936.png',
     },
     'SLPS00855': {
         'url': "games/J/T/SLPS-00855.html",
@@ -68970,6 +69049,7 @@ games = {
         'url': "games/J/T/SLPS-01113.html",
     	'id': 'SLPS01113',
 	'title': "TOSHINDEN CARD QUEST",
+        'pic0': 'https://images.launchbox-app.com/ad60bc60-faef-43ae-9433-cd66e1146166.png',
     },
     'SLPS00105': {
         'url': "games/J/T/SLPS-00105.html",
@@ -69025,21 +69105,25 @@ games = {
         'url': "games/J/T/SLPS-00557.html",
     	'id': 'SLPS00557',
 	'title': "TOUHOU CHINYUUKI - HAFLING HEARTS!!",
+        'pic0': 'https://images.launchbox-app.com/dcc91703-b945-43b0-9a1c-1cd3fe13edc7.png',
     },
     'SLPS01168': {
         'url': "games/J/T/SLPS-01168.html",
     	'id': 'SLPS01168',
 	'title': "TOUKI DENSHOU - ANGEL EYES",
+        'pic0': 'https://images.launchbox-app.com/e6897934-4d34-4de7-b209-36be946492db.png',
     },
     'SLPS01167': {
         'url': "games/J/T/SLPS-01167.html",
     	'id': 'SLPS01167',
 	'title': "TOUR PARTY - SOTSUGYOU RYOKOU NI IKOU",
+        'pic0': 'https://images.launchbox-app.com/8d01b45e-ef0f-4944-afbe-3c6972ff791e.png',
     },
     'SLPS02567': {
         'url': "games/J/T/SLPS-02567.html",
     	'id': 'SLPS02567',
 	'title': "TOUR PARTY - SOTSUGYOU RYOKOU NI IKOU [THE BEST TAKARAMONO]",
+        'pic0': 'https://images.launchbox-app.com/8d01b45e-ef0f-4944-afbe-3c6972ff791e.png',
     },
     'SLPS00445': {
         'url': "games/J/T/SLPS-00445.html",
@@ -69062,6 +69146,7 @@ games = {
         'url': "games/J/T/SLPS-03242.html",
     	'id': 'SLPS03242',
 	'title': "TOYOMARU CLUB VOL. 1 - CR NANASY",
+        'pic0': 'https://images.launchbox-app.com/a7a12b9c-ea53-4e28-a977-07ab3157b830.png',
     },
     'SLPM80429': {
         'url': "games/J/T/SLPM-80429.html",
@@ -69072,6 +69157,7 @@ games = {
         'url': "games/J/T/SLPS-01704.html",
     	'id': 'SLPS01704',
 	'title': "TOYS DREAM",
+        'pic0': 'https://images.launchbox-app.com/a77c5102-ec78-46d9-9a32-4de1aed28cd0.png',
     },
     'SLPS00694': {
         'url': "games/J/T/SLPS-00694.html",
@@ -69091,6 +69177,7 @@ games = {
         'url': "games/J/T/SLPS-00819.html",
     	'id': 'SLPS00819',
 	'title': "TREASURE GEAR",
+        'pic0': 'https://images.launchbox-app.com/2e9a8cdf-5f17-40bf-b742-8bd37c0683d8.png',
     },
     'SLPS01860': {
         'url': "games/J/T/SLPS-01860.html",
@@ -69129,6 +69216,7 @@ games = {
         'url': "games/J/T/SLPS-02626.html",
     	'id': 'SLPS02626',
 	'title': "TRL - THE RAIL LOADERS",
+        'pic0': 'https://images.launchbox-app.com/63b3af08-0c9e-4b81-a8ea-db5237b61a2e.png',
     },
     'SLPS02108': {
         'url': "games/J/T/SLPS-02108.html",
@@ -69223,7 +69311,7 @@ games = {
         'url': "games/J/T/SLPS-01746.html",
     	'id': 'SLPS01746',
 	'title': "TSUMU",
-        'pic': 'https://images.launchbox-app.com/b63a98cd-3075-4c3e-adb3-289b895ee54d.png',
+        'pic0': 'https://images.launchbox-app.com/b63a98cd-3075-4c3e-adb3-289b895ee54d.png',
     },
     'SLPS02253': {
         'url': "games/J/T/SLPS-02253.html",
@@ -69283,16 +69371,19 @@ games = {
         'url': "games/J/T/SLPS-00334.html",
     	'id': 'SLPS00334',
 	'title': "TSUUKAI!! SLOT SHOOTING",
+        'pic0': 'https://images.launchbox-app.com/39a794db-5f37-4ba5-a886-abf1ef19b397.png',
     },
     'SLPS00388': {
         'url': "games/J/T/SLPS-00388.html",
     	'id': 'SLPS00388',
 	'title': "TURF WIND '96 - TAKE YUTAKA KYOUSOUBA IKUSEI GAME",
+        'pic0': 'https://images.launchbox-app.com/28b13d06-332b-4e1a-b8f3-572fb61c8584.png',
     },
     'SLPS03459': {
         'url': "games/J/T/SLPS-03459.html",
     	'id': 'SLPS03459',
 	'title': "TV ANIMATION X - UNMEI NO TATAKAI",
+        'pic0': 'https://images.launchbox-app.com/07c72727-d710-41a7-bb80-ced27d473366.png',
     },
     'SLPM86393': {
         'url': "games/J/T/SLPM-86393.html",
@@ -69380,6 +69471,7 @@ games = {
         'url': "games/J/T/SLPS-02126.html",
     	'id': 'SLPS02126',
 	'title': "TWINS STORY - KIMI NI TSUTAETAKUTE",
+        'pic0': 'https://images.launchbox-app.com/9ad2fee9-df58-44cb-8160-133c2242c347.png',
     },
     'SIPS60007': {
         'url': "games/J/T/SIPS-60007.html",
@@ -69393,6 +69485,7 @@ games = {
         'url': "games/J/T/SIPS-60021.html",
     	'id': 'SIPS60021',
 	'title': "TWISTED METAL EX",
+        'pic1': 'https://images.launchbox-app.com/d799f5d8-ef7a-44e5-83db-ffd4fae5bfab.jpg',
     },
     'SLPS00131': {
         'url': "games/J/T/SLPS-00131.html",
