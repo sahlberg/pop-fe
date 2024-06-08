@@ -15598,11 +15598,14 @@ games = {
         'url': "games/P/0-9/SLES-00095.html",
     	'id': 'SLES00095',
 	'title': "4-4-2 SOCCER",
+        'pic0': 'https://images.launchbox-app.com/2823d4f6-bbf8-4728-9b08-6e5be20c3e5e.png',
+        'pic1': 'https://images.launchbox-app.com/bca8217f-21d6-47a4-a775-86f8408bf107.jpg',
     },
     'SLES02017': {
         'url': "games/P/0-9/SLES-02017.html",
     	'id': 'SLES02017',
 	'title': "4X4 WORLD TROPHY",
+        'pic0': 'https://images.launchbox-app.com/8cd6b297-969e-4dbc-bd8b-80d6b7a82b21.png',
     },
     'SLES04064': {
         'url': "games/P/0-9/SLES-04064.html",
@@ -15789,7 +15792,7 @@ games = {
         'url': "games/P/A/SLES-00190.html",
     	'id': 'SLES00190',
 	'title': "ACTUA SOCCER - CLUB EDITION",
-        'png0': 'https://images.launchbox-app.com/499c4991-2fbc-4259-aa3a-0446f88f1fd6.png',
+        'pic0': 'https://images.launchbox-app.com/499c4991-2fbc-4259-aa3a-0446f88f1fd6.png',
     },
     'SLES00021': {
         'url': "games/P/A/SLES-00021.html",
@@ -19772,6 +19775,7 @@ games = {
         'url': "games/P/G/SLES-00596.html",
     	'id': 'SLES00596',
 	'title': "GEX 3D - RETURN OF THE GECKO",
+        'pic1': 'https://images.launchbox-app.com/6a373200-a4b9-4470-a696-6eb3db09edf3.jpg',
         'ps3config': 'ps3configs/Gex - Enter the Gecko/SLES-00596.BIN',
     },
     'SLES01299': {
@@ -66391,6 +66395,7 @@ games = {
     	'id': 'SCPS45507',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45507.bin',
     },
     'SCPS45508': {
@@ -66398,6 +66403,7 @@ games = {
     	'id': 'SCPS45508',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45508.bin',
     },
     'SCPS45509': {
@@ -66405,6 +66411,7 @@ games = {
     	'id': 'SCPS45509',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SCPS-45509.bin',
     },
     'SLPS03050': {
@@ -66412,6 +66419,7 @@ games = {
     	'id': 'SLPS03050',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03050.bin',
     },
@@ -66420,6 +66428,7 @@ games = {
     	'id': 'SLPS03051',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03051.bin',
     },
@@ -66428,6 +66437,7 @@ games = {
     	'id': 'SLPS03052',
 	'title': "TALES OF ETERNIA",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03050-2].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03052.bin',
     },
@@ -66436,6 +66446,7 @@ games = {
     	'id': 'SLPS03045',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03045.bin',
     },
@@ -66444,6 +66455,7 @@ games = {
     	'id': 'SLPS03046',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03046.bin',
     },
@@ -66452,6 +66464,7 @@ games = {
     	'id': 'SLPS03047',
 	'title': "TALES OF ETERNIA [PREMIUM BOX]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Tales%20of%20Eternia%20(J)%20[SLPS-03045-7].cbr',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-03047.bin',
     },
@@ -66460,6 +66473,7 @@ games = {
     	'id': 'SLPS91247',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91247.bin',
     },
     'SLPS91248': {
@@ -66467,6 +66481,7 @@ games = {
     	'id': 'SLPS91248',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91248.bin',
     },
     'SLPS91249': {
@@ -66474,6 +66489,7 @@ games = {
     	'id': 'SLPS91249',
 	'title': "TALES OF ETERNIA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e58da2c2-d75d-4054-b405-454336902a80.png',
+        'pic1': 'https://images.launchbox-app.com/ea236397-fff3-4a1c-89f0-47b538ffcdf6.jpg',
         'pspconfig': 'pspconfigs/Tales of Eternia/SLPS-91249.bin',
     },
     'SLPS03375': {
@@ -67178,6 +67194,7 @@ games = {
         'url': "games/J/T/SLPS-01836.html",
     	'id': 'SLPS01836',
 	'title': "THE DREAM CIRCUS",
+        'pic0': 'https://images.launchbox-app.com/6e5fb1d6-8bf7-410f-947b-f189e96e4730.png',
     },
     'SLPS01516': {
         'url': "games/J/T/SLPS-01516.html",
@@ -67654,6 +67671,7 @@ games = {
         'url': "games/J/T/SLPS-01553.html",
     	'id': 'SLPS01553',
 	'title': "THE RAPID ANGEL",
+        'pic0': 'https://images.launchbox-app.com/138f3195-c61b-4f15-8ede-c2f6d4c9c50e.png',
     },
     'SLPS02702': {
         'url': "games/J/T/SLPS-02702.html",
@@ -68190,18 +68208,21 @@ games = {
     	'id': 'SCPS45025',
 	'title': "TOBAL 2",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
+        'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
     },
     'SLPM86033': {
         'url': "games/J/T/SLPM-86033.html",
     	'id': 'SLPM86033',
 	'title': "TOBAL 2",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
+        'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
     },
     'SLPM87406': {
         'url': "games/J/T/SLPM-87406.html",
     	'id': 'SLPM87406',
 	'title': "TOBAL 2 [LEGENDARY HITS]",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
+        'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
     },
     'SLPS01410': {
         'url': "games/J/T/SLPS-01410.html",
@@ -69418,11 +69439,13 @@ games = {
         'url': "games/J/T/SLPS-01442.html",
     	'id': 'SLPS01442',
 	'title': "TWILIGHT SYNDROME - SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/4fd3bbe0-5c33-450a-bbee-da0e722cb5da.png',
     },
     'SLPS01443': {
         'url': "games/J/T/SLPS-01442.html",
     	'id': 'SLPS01443',
 	'title': "TWILIGHT SYNDROME - SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/ef048cb6-4d74-4e3c-a52c-8abcb149c85f.png',
     },
     'SLPS00102': {
         'url': "games/J/T/SLPS-00102.html",
@@ -69485,6 +69508,7 @@ games = {
         'url': "games/J/T/SIPS-60021.html",
     	'id': 'SIPS60021',
 	'title': "TWISTED METAL EX",
+        'pic0': 'https://images.launchbox-app.com/b034b79b-e691-49f4-be81-c0e42ca2f2a5.png',
         'pic1': 'https://images.launchbox-app.com/d799f5d8-ef7a-44e5-83db-ffd4fae5bfab.jpg',
     },
     'SLPS00131': {
@@ -69558,11 +69582,13 @@ games = {
         'url': "games/J/U/SLPS-02032.html",
     	'id': 'SLPS02032',
 	'title': "UFO - A DAY IN THE LIFE",
+        'pic0': 'https://images.launchbox-app.com/067bb6e3-284e-4885-a2ff-8f93d87742b8.png',
     },
     'SLPS02973': {
         'url': "games/J/U/SLPS-02973.html",
     	'id': 'SLPS02973',
 	'title': "UFO - A DAY IN THE LIFE [ASCII CASUAL COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/067bb6e3-284e-4885-a2ff-8f93d87742b8.png',
     },
     'SLPS00391': {
         'url': "games/J/U/SLPS-00391.html",
