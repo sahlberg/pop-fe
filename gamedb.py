@@ -4407,6 +4407,7 @@ games = {
         'url': "games/J/Z/SLPS-01483.html",
     	'id': 'SLPS01483',
 	'title': "ZIG ZAG BALL",
+        'pic0': 'https://images.launchbox-app.com/1a21bd5e-ea40-47b6-9323-e667671d4f7a.png',
     },
     'SLPM86311': {
         'url': "games/J/Z/SLPM-86311.html",
@@ -5255,6 +5256,7 @@ games = {
     	'id': 'SLUS00659',
 	'title': "BACKSTREET BILLIARDS",
         'pic0': 'https://images.launchbox-app.com/fb887410-a95e-4778-8adf-dfd9aafcfda5.png',
+        'pic1': 'https://images.launchbox-app.com/c9a884f2-8c1a-4928-91dc-d2286213d345.jpg',
         'snd0': 'https://www.youtube.com/watch?v=Szgo8s4uKB8&list=PL5jkteZpdNzDM1JhBgUC4d_DOV5yQQbON&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Backstreet%20Billiards%20%28USA%29_jp2.zip',
     },
@@ -16068,6 +16070,7 @@ games = {
         'url': "games/P/A/SLES-00747.html",
     	'id': 'SLES00747',
 	'title': "ALL STAR SOCCER",
+        'pic0': 'https://images.launchbox-app.com/a1555467-57a8-4be1-b87b-1fd12675f9b8.png',
     },
     'SLES03963': {
         'url': "games/P/A/SLES-03963.html",
@@ -20907,11 +20910,13 @@ games = {
         'url': "games/P/I/SLES-04040.html",
     	'id': 'SLES04040',
 	'title': "INTERNATIONAL KARATE +",
+        'pic0': 'https://images.launchbox-app.com/39f21d55-a060-4e94-bb55-3491b4a57b9a.png',
     },
     'SLES00099': {
         'url': "games/P/I/SLES-00099.html",
     	'id': 'SLES00099',
 	'title': "INTERNATIONAL MOTO X",
+        'pic0': 'https://images.launchbox-app.com/bdd3d210-a702-439b-ab3b-a273d38d6c6e.png',
     },
     'SLES00511': {
         'url': "games/P/I/SLES-00511.html",
@@ -22333,6 +22338,7 @@ games = {
         'url': "games/P/E/SLES-04038.html",
     	'id': 'SLES04038',
 	'title': "ELEMENTAL PINBALL",
+        'pic0': 'https://images.launchbox-app.com/8c4cc244-8149-43d5-a15f-9830722b28ad.png',
     },
     'SLES01364': {
         'url': "games/P/E/SLES-01364.html",
@@ -22400,6 +22406,7 @@ games = {
         'url': "games/P/E/SLES-03082.html",
     	'id': 'SLES03082',
 	'title': "EUROPEAN SUPER LEAGUE",
+        'pic0': 'https://images.launchbox-app.com/fe025d7f-c2aa-4e5e-a198-c95eabf0c07f.png',
     },
     'SCES00983': {
         'url': "games/P/E/SCES-00983.html",
@@ -22441,6 +22448,8 @@ games = {
         'url': "games/P/E/SLES-01871.html",
     	'id': 'SLES01871',
 	'title': "EVO'S SPACE ADVENTURES",
+        'pic0': 'https://images.launchbox-app.com/c0bee1c2-f05f-4f9f-9552-778bbd65c6d0.png',
+        'pic1': 'https://images.launchbox-app.com/a5e72abb-7aa9-440b-8d81-e3cc6f560182.jpg',
     },
     'SLES00478': {
         'url': "games/P/E/SLES-00478.html",
@@ -22500,6 +22509,7 @@ games = {
         'url': "games/P/F/SLES-00416.html",
     	'id': 'SLES00416',
 	'title': "F.A. MANAGER",
+        'pic0': 'https://images.launchbox-app.com/d31b8a1b-c33f-4912-a716-02e957c0e3b8.png',
     },
     'SLES02722': {
         'url': "games/P/F/SLES-02722.html",
@@ -22898,11 +22908,13 @@ games = {
         'url': "games/P/K/SLES-02916.html",
     	'id': 'SLES02916',
 	'title': "KING OF BOWLING 2",
+        'pic0': 'https://images.launchbox-app.com/0a9b4141-cc89-46d5-bfbd-9c5ae70f16b1.png',
     },
     'SLES04049': {
         'url': "games/P/K/SLES-04049.html",
     	'id': 'SLES04049',
 	'title': "KING OF BOWLING 3",
+        'pic0': 'https://images.launchbox-app.com/a11dff2c-58d4-452b-af2c-8494fdd3c8f4.png',
     },
     'SCES00510': {
         'url': "games/P/K/SCES-00510.html",
@@ -23056,6 +23068,7 @@ games = {
         'url': "games/P/K/SLES-00337.html",
     	'id': 'SLES00337',
 	'title': "KONAMI OPEN GOLF",
+        'pic0': 'https://images.launchbox-app.com/9855edda-a629-4994-a478-f8ee56f478e1.png',
     },
     'SLES04007': {
         'url': "games/P/K/SLES-04007.html",
@@ -23355,6 +23368,7 @@ games = {
         'url': "games/P/L/SLES-01362.html",
     	'id': 'SLES01362',
 	'title': "LE MANS 24 HOURS",
+        'pic0': 'https://images.launchbox-app.com/122896ee-d78e-4ba7-a198-731f7b757100.png',
     },
     'SCES01701': {
         'url': "games/P/L/SCES-01701.html",
@@ -27021,6 +27035,7 @@ games = {
         'url': "games/P/D/SLES-04161.html",
     	'id': 'SLES04161',
 	'title': "DANCE UK EXTRA TRAX",
+        'pic0': 'https://images.launchbox-app.com/d607721f-d005-4475-b0a7-ad2f02a1777c.png',
     },
     'SLES03384': {
         'url': "games/P/D/SLES-03384.html",
@@ -37318,21 +37333,25 @@ games = {
         'url': "games/J/0-9/SLPS-01730.html",
     	'id': 'SLPS01730',
 	'title': "100 MANYEN QUIZ HUNTER",
+        'pic0': 'https://images.launchbox-app.com/2f52a7c6-4344-44be-a522-a769e453a553.png',
     },
     'SLPS01054': {
         'url': "games/J/0-9/SLPS-01054.html",
     	'id': 'SLPS01054',
 	'title': "10101 - WILL THE STARSHIP",
+        'pic0': 'https://images.launchbox-app.com/bf922a70-d6ec-4a22-a608-a11107a3629c.png',
     },
     'SLPS01865': {
         'url': "games/J/0-9/SLPS-01865.html",
     	'id': 'SLPS01865',
 	'title': "19:03 AGANO HATSU YAKOU RESSHA",
+        'pic0': 'https://images.launchbox-app.com/8d2fd26b-3480-437b-9ff7-8ce3da621043.png',
     },
     'SLPS02881': {
         'url': "games/J/0-9/SLPS-02881.html",
     	'id': 'SLPS02881',
 	'title': "19:03 AGANO HATSU YAKOU RESSHA [RERELEASE]",
+        'pic0': 'https://images.launchbox-app.com/8d2fd26b-3480-437b-9ff7-8ce3da621043.png',
     },
     'SLPS01706': {
         'url': "games/J/0-9/SLPS-01706.html",
@@ -37356,21 +37375,25 @@ games = {
         'url': "games/J/0-9/SLPS-02348.html",
     	'id': 'SLPS02348',
 	'title': "20 SEIKI STRIKER RETSUDEN - THE 20TH CENTURY'S STRIKERS",
+        'pic0': 'https://images.launchbox-app.com/fdb47dfd-1f33-4f23-b2b7-5ce1bb4b9ae6.png',
     },
     'SLPS02857': {
         'url': "games/J/0-9/SLPS-02857.html",
     	'id': 'SLPS02857',
 	'title': "20 SEIKI STRIKER RETSUDEN - THE 20TH CENTURY'S STRIKERS",
+        'pic0': 'https://images.launchbox-app.com/fdb47dfd-1f33-4f23-b2b7-5ce1bb4b9ae6.png',
     },
     'SLPS91416': {
         'url': "games/J/0-9/SLPS-91416.html",
     	'id': 'SLPS91416',
 	'title': "20 SEIKI STRIKER RETSUDEN - THE 20TH CENTURY'S STRIKERS [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/fdb47dfd-1f33-4f23-b2b7-5ce1bb4b9ae6.png',
     },
     'SCPS19004': {
         'url': "games/J/0-9/SCPS-19004.html",
     	'id': 'SCPS19004',
 	'title': "2999 GAME KIDS [PLAYSTATION COMIC]",
+        'pic0': 'https://images.launchbox-app.com/6d0c4e1e-2692-4300-90eb-ee102f52b220.png',
     },
     'SLPS00693': {
         'url': "games/J/0-9/SLPS-00693.html",
@@ -37383,6 +37406,7 @@ games = {
         'url': "games/J/0-9/SLPS-01434.html",
     	'id': 'SLPS01434',
 	'title': "3D KAKUTOU TSUKURU",
+        'pic0': 'https://images.launchbox-app.com/76d9a197-b7cd-4bb3-a6c6-4658430b4ed5.png',
     },
     'SLPS00461': {
         'url': "games/J/0-9/SLPS-00461.html",
@@ -37960,6 +37984,7 @@ games = {
         'url': "games/J/A/SIPS-60005.html",
     	'id': 'SIPS60005',
 	'title': "AIRASSAULTS",
+        'pic0': 'https://images.launchbox-app.com/141e8917-9ebc-4736-8063-d8fce7ac9f1d.png',
     },
     'SLPS00559': {
         'url': "games/J/A/SLPS-00559.html",
@@ -38365,11 +38390,13 @@ games = {
         'url': "games/J/A/SLPS-00163.html",
     	'id': 'SLPS00163',
 	'title': "ANGEL GRAFFITI - ANATHE NO PROFILE",
+        'pic0': 'https://images.launchbox-app.com/876de3e4-11c5-4e16-8fcf-186cafff654e.png',
     },
     'SLPS00306': {
         'url': "games/J/A/SLPS-00306.html",
     	'id': 'SLPS00306',
 	'title': "ANGEL GRAFFITI - ANATHE NO PROFILE [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/876de3e4-11c5-4e16-8fcf-186cafff654e.png',
     },
     'SLPS01337': {
         'url': "games/J/A/SLPS-01337.html",
@@ -38484,16 +38511,19 @@ games = {
         'url': "games/J/A/SLPM-86278.html",
     	'id': 'SLPM86278',
 	'title': "ANGOLMOIS '99 [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/faba6b69-e456-4ee5-831e-6cdbd418eb79.png',
     },
     'SLPS01830': {
         'url': "games/J/A/SLPS-01830.html",
     	'id': 'SLPS01830',
 	'title': "ANIMETIC STORY GAME CARD CAPTOR SAKURA",
+        'pic0': 'https://images.launchbox-app.com/e7f5911c-77fd-4b27-abf6-9a26be359e83.png',
     },
     'SLPS01831': {
         'url': "games/J/A/SLPS-01830.html",
     	'id': 'SLPS01831',
 	'title': "ANIMETIC STORY GAME CARD CAPTOR SAKURA",
+        'pic0': 'https://images.launchbox-app.com/e7f5911c-77fd-4b27-abf6-9a26be359e83.png',
     },
     'SLPS01068': {
         'url': "games/J/A/SLPS-01068.html",
@@ -38517,6 +38547,7 @@ games = {
         'url': "games/J/A/SLPS-01431.html",
     	'id': 'SLPS01431',
 	'title': "ANOTHER MEMORIES",
+        'pic0': 'https://images.launchbox-app.com/c55c8a69-ba8d-407c-b253-2c4527d7b59a.png',
     },
     'SLPS01655': {
         'url': "games/J/A/SLPS-01655.html",
@@ -38548,6 +38579,7 @@ games = {
         'url': "games/J/A/SLPS-03564.html",
     	'id': 'SLPS03564',
 	'title': "AO ZORA TO NAKAMA TACHI - YUME NO BOUKEN",
+        'pic0': 'https://images.launchbox-app.com/ba508b7a-58fc-4e68-9b60-ecf6651222d6.png',
     },
     'SLPS01579': {
         'url': "games/J/A/SLPS-01579.html",
@@ -38779,32 +38811,42 @@ games = {
         'url': "games/J/A/SLPM-87067.html",
     	'id': 'SLPM87067',
 	'title': "ARCADE HITS - CRAZY CLIMBER [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/02b3c4aa-8b9d-43ff-bf25-cbe7ab504c30.png',
+        'pic1': 'https://images.launchbox-app.com/e0cd1ea7-a46b-437c-8414-0bac244aea96.jpg',
     },
     'SLPM87118': {
         'url': "games/J/A/SLPM-87118.html",
     	'id': 'SLPM87118',
 	'title': "ARCADE HITS - FRISKY TOM [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/5dd76445-af14-4fac-9fa0-bebec06c41ad.png',
+        'pic1': 'https://images.launchbox-app.com/100a505b-48b0-4f5c-819e-97d8f6e4e55c.jpg',
     },
     'SLPM87082': {
         'url': "games/J/A/SLPM-87082.html",
     	'id': 'SLPM87082',
 	'title': "ARCADE HITS - MOON CRESTA [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/0c2e0d8b-b154-4bd5-a0b4-58eeffd50cf5.png',
+        'pic1': 'https://images.launchbox-app.com/716e341b-81ff-49e4-8dff-3531a53cac62.png',
     },
     'SLPM86613': {
         'url': "games/J/A/SLPM-86613.html",
     	'id': 'SLPM86613',
 	'title': "ARCADE HITS - RAIDEN [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/1bf724cd-3d05-4ef9-b870-b0cc5f6746b9.png',
+        'pic1': 'https://images.launchbox-app.com/02f64ee0-5103-4705-a4d3-bf5718763cf4.jpg',
         'pspconfig': 'pspconfigs/The Raiden Project/SLPM-86613.bin',
     },
     'SLPM87228': {
         'url': "games/J/A/SLPM-87228.html",
     	'id': 'SLPM87228',
 	'title': "ARCADE HITS - SHIENRYU [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/853951c1-e2bd-4f7e-91b0-a3abfda5e0e5.png',
     },
     'SLPM87255': {
         'url': "games/J/A/SLPM-87255.html",
     	'id': 'SLPM87255',
 	'title': "ARCADE HITS - SOUKYU-GURENTAI [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/19c954bc-d79b-4813-978a-40c7dba9a58c.png',
     },
     'SLPM87145': {
         'url': "games/J/A/SLPM-87145.html",
@@ -41201,6 +41243,8 @@ games = {
         'url': "games/J/C/SLPS-01486.html",
     	'id': 'SLPS01486',
 	'title': "CAROM SHOT 2",
+        'pic0': 'https://images.launchbox-app.com/0d61af9b-ee40-4493-b5e4-b05e77105e99.png',
+        'pic1': 'https://images.launchbox-app.com/c9a884f2-8c1a-4928-91dc-d2286213d345.jpg',
         'pspconfig': 'pspconfigs/Carom Shot 2/SLPS-01486.bin',
     },
     'SLPS02935': {
@@ -41263,21 +41307,25 @@ games = {
         'url': "games/J/C/SLPS-02422.html",
     	'id': 'SLPS02422',
 	'title': "CHAKUSIN MELODY DAMON",
+        'pic0': 'https://images.launchbox-app.com/1ac65ba1-75e8-4fdc-a50f-a40a3a14b9c8.png',
     },
     'SLPS02847': {
         'url': "games/J/C/SLPS-02847.html",
     	'id': 'SLPS02847',
 	'title': "CHAKUSIN MELODY DAMON GOLD",
+        'pic0': 'https://images.launchbox-app.com/44b231b8-bc19-49b2-88d1-c3c99bc0148d.png',
     },
     'SLPS02556': {
         'url': "games/J/C/SLPS-02556.html",
     	'id': 'SLPS02556',
 	'title': "CHAKUSIN MELODY DAMON VOLUME.2",
+        'pic0': 'https://images.launchbox-app.com/a1903873-c40a-43b6-807e-2d095dfa5d3d.png',
     },
     'SLPS02601': {
         'url': "games/J/C/SLPS-02601.html",
     	'id': 'SLPS02601',
 	'title': "CHAKUSIN MELODY DAMON VOLUME.3",
+        'pic0': 'https://images.launchbox-app.com/406dbf80-a21c-4d9d-bc08-ded3a233561c.png',
     },
     'SLPS02707': {
         'url': "games/J/C/SLPS-02707.html",
@@ -41389,16 +41437,19 @@ games = {
         'url': "games/J/C/SLPS-03383.html",
     	'id': 'SLPS03383',
 	'title': "CHESS & REVERSI [NICE PRICE SERIES VOL.05]",
+        'pic0': 'https://images.launchbox-app.com/1c02c1e0-8427-439c-9f11-11021a319bec.png',
     },
     'SLPS02624': {
         'url': "games/J/C/SLPS-02624.html",
     	'id': 'SLPS02624',
 	'title': "CHESS 2000",
+        'pic0': 'https://images.launchbox-app.com/0053c76e-2723-4709-9f7f-c7c89333f183.png',
     },
     'SLPS00166': {
         'url': "games/J/C/SLPS-00166.html",
     	'id': 'SLPS00166',
 	'title': "CHIBI MARUKO-CHAN - MARUKO ENIKKI WORLD",
+        'pic0': 'https://images.launchbox-app.com/3fcb6835-4d85-4f25-9a33-56cb2c1e5b6a.png',
     },
     'SLPS02027': {
         'url': "games/J/C/SLPS-02027.html",
@@ -41469,6 +41520,7 @@ games = {
         'url': "games/J/C/SLPS-02788.html",
     	'id': 'SLPS02788',
 	'title': "CHINMOKU NO KANITA - THE SILENT SERVICE",
+        'pic0': 'https://images.launchbox-app.com/90cabc2f-68bd-42e3-998f-4dd5c94ce88a.png',
     },
     'SLPS01853': {
         'url': "games/J/C/SLPS-01853.html",
@@ -41493,31 +41545,37 @@ games = {
         'url': "games/J/C/SCPS-45473.html",
     	'id': 'SCPS45473',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SCPS45474': {
         'url': "games/J/C/SCPS-45473.html",
     	'id': 'SCPS45474',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SCPS45475': {
         'url': "games/J/C/SCPS-45473.html",
     	'id': 'SCPS45475',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SLPS02521': {
         'url': "games/J/C/SLPS-02521.html",
     	'id': 'SLPS02521',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SLPS02522': {
         'url': "games/J/C/SLPS-02521.html",
     	'id': 'SLPS02522',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SLPS02523': {
         'url': "games/J/C/SLPS-02521.html",
     	'id': 'SLPS02523',
 	'title': "CHOCOBO COLLECTION - HAPPY 10TH ANNIVERSARY!",
+        'pic0': 'https://i.postimg.cc/G27q8r2Q/Untitled.png',
     },
     'SCPS45163': {
         'url': "games/J/C/SCPS-45163.html",
@@ -41637,6 +41695,7 @@ games = {
         'url': "games/J/C/SLPS-02123.html",
     	'id': 'SLPS02123',
 	'title': "CHO-NAZO-OH",
+        'pic0': 'https://images.launchbox-app.com/b20d9de4-7f1b-4783-b45f-f8e304ac8ab7.png',
     },
     'SLPS00242': {
         'url': "games/J/C/SLPS-00242.html",
@@ -41726,6 +41785,7 @@ games = {
         'url': "games/J/C/SLPS-02205.html",
     	'id': 'SLPS02205',
 	'title': "CHORO Q WONDERFUL!",
+        'pic0': 'https://images.launchbox-app.com/e37d212d-2b98-4be1-a3e4-676bf2f1d19f.png',
     },
     'SLPM86902': {
         'url': "games/J/C/SLPM-86902.html",
@@ -41743,6 +41803,7 @@ games = {
         'url': "games/J/C/SLPM-86299.html",
     	'id': 'SLPM86299',
 	'title': "CHOU HATSUMEI BOY KANIPAN - HIRAMEKI WONDERLAND",
+        'pic0': 'https://images.launchbox-app.com/313ad680-eea6-4ccd-913c-e1e92d6f7ec9.png',
     },
     'SLPS00935': {
         'url': "games/J/C/SLPS-00935.html",
@@ -41766,6 +41827,7 @@ games = {
         'url': "games/J/C/SLPS-00527.html",
     	'id': 'SLPS00527',
 	'title': "CHOUJIN GAKUEN GOWCAIZER",
+        'pic0': 'https://images.launchbox-app.com/76aa37d0-6bc2-4a1c-bacf-d477533b0508.png',
         'pic1': 'https://images.launchbox-app.com/7bd16b26-35e0-4165-9419-bc3bbecd44ea.png',
     },
     'SLPS01368': {
@@ -42155,6 +42217,7 @@ games = {
         'url': "games/J/C/SLPS-00311.html",
     	'id': 'SLPS00311',
 	'title': "CIRCUIT BEAT",
+        'pic0': 'https://images.launchbox-app.com/a6d30f7c-286d-458b-89bf-34e2d690fadc.png',
     },
     'SLPS00361': {
         'url': "games/J/C/SLPS-00361.html",
@@ -42263,6 +42326,7 @@ games = {
         'url': "games/J/C/SLPS-01838.html",
     	'id': 'SLPS01838',
 	'title': "CLICK MEDIC",
+        'pic0': 'https://images.launchbox-app.com/f0dc6079-96ef-4c4d-afef-e8d818d83fa9.png',
     },
     'SLPS00917': {
         'url': "games/J/C/SLPS-00917.html",
@@ -42448,17 +42512,20 @@ games = {
         'url': "games/J/C/SLPS-01429.html",
     	'id': 'SLPS01429',
 	'title': "COMBINATION PRO SOCCER",
+        'pic0': 'https://images.launchbox-app.com/0f349218-b5a7-4c27-9895-41c9f0225890.png',
     },
     'SLPS00976': {
         'url': "games/J/C/SLPS-00976.html",
     	'id': 'SLPS00976',
 	'title': "COMMAND & CONQUER COMPLETE",
+        'pic0': 'https://images.launchbox-app.com/43e3b7f1-400a-4e77-b7d3-31bb2e744dbe.png',
         'pspconfig': 'pspconfigs/Command & Conquer/SLPS-00976.bin',
     },
     'SLPS00977': {
         'url': "games/J/C/SLPS-00976.html",
     	'id': 'SLPS00977',
 	'title': "COMMAND & CONQUER COMPLETE",
+        'pic0': 'https://images.launchbox-app.com/43e3b7f1-400a-4e77-b7d3-31bb2e744dbe.png',
         'pspconfig': 'pspconfigs/Command & Conquer/SLPS-00977.bin',
     },
     'SLPS00817': {
@@ -42557,6 +42624,8 @@ games = {
         'url': "games/J/C/SLPM-87211.html",
     	'id': 'SLPM87211',
 	'title': "COTTON 100% [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/6ddcc7e7-b9fb-41a6-95ee-303026f88db4.png',
+        'pic1': 'https://images.launchbox-app.com/a727e56b-44c0-4eb2-8c3a-3c1e3b9ed76d.jpg',
     },
     'SLPS02504': {
         'url': "games/J/C/SLPS-02504.html",
@@ -42752,11 +42821,13 @@ games = {
         'url': "games/J/C/SLPM-86660.html",
     	'id': 'SLPM86660',
 	'title': "CRAZY BALLOON 2000 [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/1dc43f7e-7be7-4f9b-8ce8-2eecfc992fc9.png',
     },
     'SLPS02582': {
         'url': "games/J/C/SLPS-02582.html",
     	'id': 'SLPS02582',
 	'title': "CRAZY CLIMBER 2000",
+        'pic0': 'https://images.launchbox-app.com/1625d191-5c2c-47a7-a72f-86bafaae1ff3.png',
     },
     'SLPS00120': {
         'url': "games/J/C/SLPS-00120.html",
@@ -42774,11 +42845,13 @@ games = {
         'url': "games/J/C/SCPS-10003.html",
     	'id': 'SCPS10003',
 	'title': "CRIME CRACKERS",
+        'pic0': 'https://images.launchbox-app.com/c275ce35-acb8-410b-9094-8ebc0f115beb.png',
     },
     'SCPS10037': {
         'url': "games/J/C/SCPS-10037.html",
     	'id': 'SCPS10037',
 	'title': "CRIME CRACKERS 2",
+        'pic0': 'https://images.launchbox-app.com/c8f36c49-56d2-4d5c-94b2-51b4bbd40a4d.png',
     },
     'SLPS01430': {
         'url': "games/J/C/SLPS-01430.html",
@@ -42797,6 +42870,7 @@ games = {
         'url': "games/J/C/SLPS-01044.html",
     	'id': 'SLPS01044',
 	'title': "CRITICAL BLOW",
+        'pic0': 'https://images.launchbox-app.com/4c2b6258-3b1f-4722-9c47-72ababbbf710.png',
     },
     'SLPS00229': {
         'url': "games/J/C/SLPS-00229.html",
@@ -42857,36 +42931,43 @@ games = {
         'url': "games/J/C/SLPM-86639.html",
     	'id': 'SLPM86639',
 	'title': "CROSS TANTEI MONOGATARI 1 - KOUHEN [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/4853f752-405b-4a15-91a4-97887a0c68f0.png',
     },
     'SLPM86638': {
         'url': "games/J/C/SLPM-86638.html",
     	'id': 'SLPM86638',
 	'title': "CROSS TANTEI MONOGATARI 1 - ZENPEN [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/4853f752-405b-4a15-91a4-97887a0c68f0.png',
     },
     'SLPS00220': {
         'url': "games/J/C/SLPS-00220.html",
     	'id': 'SLPS00220',
 	'title': "CRW - COUNTER REVOLUTION WAR",
+        'pic0': 'https://images.launchbox-app.com/437c3768-0f33-42f8-8aea-a3df67683570.png',
     },
     'SLPM86223': {
         'url': "games/J/C/SLPM-86223.html",
     	'id': 'SLPM86223',
 	'title': "CULDCEPT EXPANSION",
+        'pic0': 'https://images.launchbox-app.com/0325001e-8fae-4a17-92c0-c907b39c1937.png',
     },
     'SLPM86658': {
         'url': "games/J/C/SLPM-86658.html",
     	'id': 'SLPM86658',
 	'title': "CULDCEPT EXPANSION PLUS",
+        'pic0': 'https://images.launchbox-app.com/ad2d914d-aeed-4488-9f6c-e60d79c25f90.png',
     },
     'SLPS01026': {
         'url': "games/J/C/SLPS-01026.html",
     	'id': 'SLPS01026',
 	'title': "CU-ON-PA",
+        'pic0': 'https://images.launchbox-app.com/c6851ab1-2d0c-4de8-b558-c78194072635.png',
     },
     'SLPS01711': {
         'url': "games/J/C/SLPS-01711.html",
     	'id': 'SLPS01711',
 	'title': "CURIOSITY KILLS THE CAT? KOUKISHIN WA NEKO O KOROSU KA",
+        'pic0': 'https://images.launchbox-app.com/d6006b2e-633d-49a8-b6a6-a8a0cdfb9737.png',
     },
     'SLPS01864': {
         'url': "games/J/C/SLPS-01864.html",
@@ -42934,6 +43015,7 @@ games = {
         'url': "games/J/C/SLPS-01011.html",
     	'id': 'SLPS01011',
 	'title': "CYBERBOTS - FULL METAL MADNESS",
+        'pic0': 'https://images.launchbox-app.com/3113e879-9108-4250-ade6-cb73bd80bfdb.png',
     },
     'SLPS00218': {
         'url': "games/J/C/SLPS-00218.html",
@@ -43343,6 +43425,7 @@ games = {
         'url': "games/J/D/SLPS-02316.html",
     	'id': 'SLPS02316',
 	'title': "DARK TALES FROM THE LOST SOUL",
+        'pic0': 'https://images.launchbox-app.com/a647e659-1a66-4f92-bfc4-63ea6fed491e.png',
     },
     'SLPS00108': {
         'url': "games/J/D/SLPS-00108.html",
@@ -43401,6 +43484,7 @@ games = {
         'url': "games/J/D/SLPS-01036.html",
     	'id': 'SLPS01036',
 	'title': "DEADLY SKIES",
+        'pic0': 'https://images.launchbox-app.com/902766bc-bb1f-46d2-b717-c0ccbafe7502.png',
     },
     'SLPS00225': {
         'url': "games/J/D/SLPS-00225.html",
@@ -43424,6 +43508,7 @@ games = {
         'url': "games/J/D/SLPS-01229.html",
     	'id': 'SLPS01229',
 	'title': "DEBUT 21",
+        'pic0': 'https://images.launchbox-app.com/6b1dda5a-c28d-4a4b-a73d-eea25e4bb514.png',
     },
     'SLPS01817': {
         'url': "games/J/D/SLPS-01817.html",
@@ -43524,21 +43609,26 @@ games = {
         'url': "games/J/D/SLPS-01215.html",
     	'id': 'SLPS01215',
 	'title': "DENGEKI CONSTRUCTION - OCHIGE - YAROUZE!",
+        'pic0': 'https://images.launchbox-app.com/73f5aced-1dcb-4ada-beba-06ad33cb5c85.png',
     },
     'SLPS02851': {
         'url': "games/J/D/SLPS-02851.html",
     	'id': 'SLPS02851',
 	'title': "DENKOU SEKKA MICRO RUNNER",
+        'pic0': 'https://images.launchbox-app.com/8456ad33-ad4f-4eb7-acfd-340daf1f8a35.png',
+        'pic1': 'https://images.launchbox-app.com/31ac37fc-bda5-4a4c-886c-4f223982c845.jpg',
     },
     'SLPS91429': {
         'url': "games/J/D/SLPS-91429.html",
     	'id': 'SLPS91429',
 	'title': "DENKOU SEKKA MICRO RUNNER [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/8456ad33-ad4f-4eb7-acfd-340daf1f8a35.png',
     },
     'SLPS01287': {
         'url': "games/J/D/SLPS-01287.html",
     	'id': 'SLPS01287',
 	'title': "DENPA SHOUNENTEKI GAME",
+        'pic0': 'https://images.launchbox-app.com/4e653005-af7f-4a35-849e-8c08ad1ec4e7.png',
     },
     'SLPS00481': {
         'url': "games/J/D/SLPS-00481.html",
@@ -43630,16 +43720,19 @@ games = {
         'url': "games/J/D/SLPS-03131.html",
     	'id': 'SLPS03131',
 	'title': "DERBY JOCKEY 2001",
+        'pic0': 'https://images.launchbox-app.com/5d4d3d1b-0007-4f29-a9ac-4fca2b1e1b4b.png',
     },
     'SLPS00616': {
         'url': "games/J/D/SLPS-00616.html",
     	'id': 'SLPS00616',
 	'title': "DERBY JOCKEY R",
+        'pic0': 'https://images.launchbox-app.com/de85afc5-575c-4137-932d-8e28f957f205.png',
     },
     'SLPS00180': {
         'url': "games/J/D/SLPS-00180.html",
     	'id': 'SLPS00180',
 	'title': "DERON DERO DERO",
+        'pic0': 'https://images.launchbox-app.com/7dfb60ae-e11e-40e8-ac36-c8f39f0bd86b.png',
     },
     'SLPS00212': {
         'url': "games/J/D/SLPS-00212.html",
@@ -43653,6 +43746,7 @@ games = {
         'url': "games/J/D/SLPS-00602.html",
     	'id': 'SLPS00602',
 	'title': "DESERTED ISLAND",
+        'pic0': 'https://images.launchbox-app.com/a6fd1f39-a567-47a7-abb0-e592a6bddc7f.png',
     },
     'SLPS01591': {
         'url': "games/J/D/SLPS-01591.html",
@@ -43723,6 +43817,7 @@ games = {
         'url': "games/J/D/SLPS-01889.html",
     	'id': 'SLPS01889',
 	'title': "DEVICEREIGN",
+        'pic0': 'https://images.launchbox-app.com/b95ac2c3-31fe-4b8f-bc23-6321bad2d557.png',
     },
     'SLPS01921': {
         'url': "games/J/D/SLPS-01921.html",
@@ -43776,24 +43871,28 @@ games = {
         'url': "games/J/D/SCPS-45436.html",
     	'id': 'SCPS45436',
 	'title': "DEWPRISM",
+        'pic0': 'https://images.launchbox-app.com/c8a512ae-ed85-49ec-85fe-836f5065b29a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
     },
     'SLPS02330': {
         'url': "games/J/D/SLPS-02330.html",
     	'id': 'SLPS02330',
 	'title': "DEWPRISM",
+        'pic0': 'https://images.launchbox-app.com/c8a512ae-ed85-49ec-85fe-836f5065b29a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
     },
     'SLPS91455': {
         'url': "games/J/D/SLPS-91455.html",
     	'id': 'SLPS91455',
 	'title': "DEWPRISM [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/c8a512ae-ed85-49ec-85fe-836f5065b29a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
     },
     'SLPM87402': {
         'url': "games/J/D/SLPM-87402.html",
     	'id': 'SLPM87402',
 	'title': "DEWPRISM [LEGENDARY HITS]",
+        'pic0': 'https://images.launchbox-app.com/c8a512ae-ed85-49ec-85fe-836f5065b29a.png',
         'pic1': 'https://images.launchbox-app.com/be5d2a90-ce4a-4b7e-b5ed-2cea44f2507b.jpg',
     },
     'SLPS01503': {
@@ -43861,27 +43960,32 @@ games = {
         'url': "games/J/D/SCPS-10133.html",
     	'id': 'SCPS10133',
 	'title': "DIG-A-DIG PUKKA",
+        'pic0': 'https://images.launchbox-app.com/e8090c0d-20b3-420f-9946-bee9e542cf02.png',
     },
     'SLPS00549': {
         'url': "games/J/D/SLPS-00549.html",
     	'id': 'SLPS00549',
 	'title': "DIGCRO - DIGITAL NUMBER CROSSWORD",
+        'pic0': 'https://images.launchbox-app.com/18862f42-a6e3-4c8c-9a6c-c814c70c767a.png',
     },
     'SLPM86038': {
         'url': "games/J/D/SLPM-86038.html",
     	'id': 'SLPM86038',
 	'title': "DIGICAL LEAGUE",
+        'pic0': 'https://images.launchbox-app.com/c0c57f74-6b24-4204-bdc3-b7160efa3f93.png',
     },
     'SLPS03357': {
         'url': "games/J/D/SLPS-03357.html",
     	'id': 'SLPS03357',
 	'title': "DIGIMON TAMERS - BATTLE EVOLUTION",
+        'pic0': 'https://images.launchbox-app.com/353dfd9a-338b-46e3-b4f5-45a92fd4a609.png',
         'pspconfig': 'pspconfigs/Digimon Rumble Arena/SLPS-03357.bin',
     },
     'SLPS03211': {
         'url': "games/J/D/SLPS-03211.html",
     	'id': 'SLPS03211',
 	'title': "DIGIMON TAMERS - POCKET CULUMON",
+        'pic0': 'https://images.launchbox-app.com/072449fc-343d-449f-8d80-25f98cf36fde.png',
         'pspconfig': 'pspconfigs/Digimon Tamers - Pocket Culumon/SLPS-03211.bin',
     },
     'SLPS01797': {
@@ -43937,31 +44041,37 @@ games = {
         'url': "games/J/D/SLPM-87103.html",
     	'id': 'SLPM87103',
 	'title': "DIGITAL EHON VOL.1 - IMADOKI NO MOMOTARO",
+        'pic0': 'https://images.launchbox-app.com/4cac205d-92df-4b85-87c9-ecf8945eb5ee.png',
     },
     'SLPM87104': {
         'url': "games/J/D/SLPM-87104.html",
     	'id': 'SLPM87104',
 	'title': "DIGITAL EHON VOL.2 - IMADOKI NO KAGUYA HIME",
+        'pic0': 'https://images.launchbox-app.com/ada73be4-31f5-484b-8eba-df253683abf3.png',
     },
     'SLPM87105': {
         'url': "games/J/D/SLPM-87105.html",
     	'id': 'SLPM87105',
-	'title': "DIGITAL EHON VOL.2 - IMADOKI NO SARU KANI",
+	'title': "DIGITAL EHON VOL.3 - IMADOKI NO SARU KANI",
+        'pic0': 'https://images.launchbox-app.com/9baaa661-f4a1-4c92-a774-358710845862.png',
     },
     'SLPM87106': {
         'url': "games/J/D/SLPM-87106.html",
     	'id': 'SLPM87106',
 	'title': "DIGITAL EHON VOL.4 - IMADOKI NO HANASAKA JIISAN",
+        'pic0': 'https://images.launchbox-app.com/46db94ad-320a-4b9a-872b-fd4e3a302967.png',
     },
     'SLPM87107': {
         'url': "games/J/D/SLPM-87107.html",
     	'id': 'SLPM87107',
 	'title': "DIGITAL EHON VOL.5 - IMADOKI NO URASHIMA TARO",
+        'pic0': 'https://images.launchbox-app.com/5909c0e8-370e-47a2-82d6-995d4e2a53f0.png',
     },
     'SLPS01481': {
         'url': "games/J/D/SLPS-01481.html",
     	'id': 'SLPS01481',
 	'title': "DIGITAL FIGURE IINA",
+        'pic0': 'https://images.launchbox-app.com/1185a248-0db8-4a4c-82bc-0566bf2a36d7.png',
     },
     'SLPS02276': {
         'url': "games/J/D/SLPS-02276.html",
@@ -44048,6 +44158,7 @@ games = {
         'url': "games/J/D/SLPS-02146.html",
     	'id': 'SLPS02146',
 	'title': "DIRT CHAMP - MOTOCROSS No.1",
+        'pic0': 'https://images.launchbox-app.com/c1ea457a-b4b8-44de-b01d-55bc765af4c2.png',
     },
     'SLPS02428': {
         'url': "games/J/D/SLPS-02428.html",
@@ -44150,6 +44261,7 @@ games = {
         'url': "games/J/D/SCPS-10129.html",
     	'id': 'SCPS10129',
 	'title': "DOCCHI MECHA!",
+        'pic0': 'https://images.launchbox-app.com/bc03d032-cf2d-4ec7-a4a4-1f21bedc92b2.png',
     },
     'SLPS01362': {
         'url': "games/J/D/SLPS-01362.html",
@@ -44250,16 +44362,19 @@ games = {
         'url': "games/J/D/SLPS-02819.html",
     	'id': 'SLPS02819',
 	'title': "DOKODEMO HAMSTER 2",
+        'pic0': 'https://images.launchbox-app.com/3ef74560-d01a-4626-bd32-436068f28b80.png',
     },
     'SLPS03250': {
         'url': "games/J/D/SLPS-03250.html",
     	'id': 'SLPS03250',
 	'title': "DOKODEMO HAMSTER 4",
+        'pic0': 'https://images.launchbox-app.com/ad7db664-20d3-49ca-a0a3-dd492d460b35.png',
     },
     'SLPS03356': {
         'url': "games/J/D/SLPS-03356.html",
     	'id': 'SLPS03356',
 	'title': "DOKODEMO HAMSTER B! QUICK CLUB",
+        'pic0': 'https://images.launchbox-app.com/3ac99227-3ab5-4017-9466-a8d4f04f8c66.png',
     },
     'SCPS10092': {
         'url': "games/J/D/SCPS-10092.html",
@@ -63656,6 +63771,7 @@ games = {
         'url': "games/J/S/SLPS-02922.html",
     	'id': 'SLPS02922',
 	'title': "SIMPLE 1500 SERIES VOL.032 - THE BOXING",
+        'pic0': 'https://images.launchbox-app.com/9f14628f-a4db-487c-9e13-7fe9a08fc144.png',
     },
     'SLPS02908': {
         'url': "games/J/S/SLPS-02908.html",
