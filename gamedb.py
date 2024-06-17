@@ -2773,11 +2773,13 @@ games = {
         'url': "games/J/W/SLPM-87220.html",
     	'id': 'SLPM87220',
 	'title': "WAGAMAMA FAIRY MIRUMO DE PON! - MIRUMO NO MAHOU GAKKOU MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/6b24896a-c3bb-4237-8388-3405bd49a10a.png',
     },
     'SLPM86696': {
         'url': "games/J/W/SLPM-86696.html",
     	'id': 'SLPM86696',
 	'title': "WAI WAI 3-NIN UCHI MAHJONG",
+        'pic0': 'https://images.launchbox-app.com/af659140-7807-4d4b-a66d-ecaa7a78ec9d.png',
     },
     'SLPM87225': {
         'url': "games/J/W/SLPM-87225.html",
@@ -2788,16 +2790,19 @@ games = {
         'url': "games/J/W/SLPM-86544.html",
     	'id': 'SLPM86544',
 	'title': "WAI WAI JANSOU",
+        'pic0': 'https://images.launchbox-app.com/7182c0aa-db9f-4f12-83c2-ccca1d8eaa4a.png',
     },
     'SLPM87230': {
         'url': "games/J/W/SLPM-87230.html",
     	'id': 'SLPM87230',
 	'title': "WAI WAI KART [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/ac52f19a-2a2c-4206-9a64-d810899070ea.png',
     },
     'SLPM87244': {
         'url': "games/J/W/SLPM-87244.html",
     	'id': 'SLPM87244',
 	'title': "WAI WAI KUSA YAKYUU [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/dc8d7d75-da31-419b-93c1-3fa304d3d6f2.png',
     },
     'SLPM86657': {
         'url': "games/J/W/SLPM-86657.html",
@@ -35882,6 +35887,14 @@ games = {
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
         'pspconfig': 'pspconfigs/Vib-Ribbon/SCES-02873.bin',
     },
+    'SCUS02873': {
+        'url': "games/P/V/SCES-02873.html",
+    	'id': 'SCES02873',
+	'title': "VIB RIBBON",
+        'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
+        'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'pspconfig': 'pspconfigs/Vib-Ribbon/SCES-02873.bin',
+    },
     'SLES01393': {
         'url': "games/P/V/SLES-01393.html",
     	'id': 'SLES01393',
@@ -39455,6 +39468,7 @@ games = {
         'url': "games/J/B/SLPS-02429.html",
     	'id': 'SLPS02429',
 	'title': "BAKURYU",
+        'pic0': 'https://images.launchbox-app.com/37e1297d-d82e-4d55-90fb-7a8400a879d8.png',
     },
     'SLPS00158': {
         'url': "games/J/B/SLPS-00158.html",
@@ -41961,6 +41975,7 @@ games = {
         'url': "games/J/C/SLPS-01186.html",
     	'id': 'SLPS01186',
 	'title': "CHUSHINGURA",
+        'pic0': 'https://images.launchbox-app.com/685c4d8e-82bd-4c9f-871b-3034ebcf0f83.png',
     },
     'SLPM86241': {
         'url': "games/J/C/SLPM-86241.html",
@@ -42896,6 +42911,7 @@ games = {
         'url': "games/J/C/SLPM-86310.html",
     	'id': 'SLPM86310',
 	'title': "CROC ADVENTURE",
+        'pic0': 'https://images.launchbox-app.com/0bd04a6c-e809-4935-ae9a-c0720f905921.png',
     },
     'SLPS01055': {
         'url': "games/J/C/SLPS-01055.html",
@@ -43581,6 +43597,7 @@ games = {
         'url': "games/J/D/SLPS-00853.html",
     	'id': 'SLPS00853',
 	'title': "DEFEAT LIGHTNING",
+        'pic0': 'https://images.launchbox-app.com/73c75594-bc26-4edd-8546-59bd3989bfce.png',
     },
     'SCPS45072': {
         'url': "games/J/D/SCPS-45072.html",
@@ -44309,11 +44326,13 @@ games = {
         'url': "games/J/D/SLPS-01573.html",
     	'id': 'SLPS01573',
 	'title': "DOKI DOKI POYATCHIO!!",
+        'pic0': 'https://images.launchbox-app.com/ee625c37-166b-4293-a96b-12dac3cc3ccc.png',
     },
     'SLPS03125': {
         'url': "games/J/D/SLPS-03125.html",
     	'id': 'SLPS03125',
 	'title': "DOKI DOKI POYATCHIO!!",
+        'pic0': 'https://images.launchbox-app.com/ee625c37-166b-4293-a96b-12dac3cc3ccc.png',
     },
     'SLPS00756': {
         'url': "games/J/D/SLPS-00756.html",
@@ -44433,6 +44452,7 @@ games = {
         'url': "games/J/D/SLPM-86122.html",
     	'id': 'SLPM86122',
 	'title': "DOLPHIN'S DREAM",
+        'pic0': 'https://images.launchbox-app.com/f9522e52-56bc-40b5-bfe3-042912a2e98e.png',
     },
     'SLPS01095': {
         'url': "games/J/D/SLPS-01095.html",
@@ -54182,31 +54202,37 @@ games = {
         'url': "games/J/M/SLPS-02240.html",
     	'id': 'SLPS02240',
 	'title': "MARIA 2",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPS02241': {
         'url': "games/J/M/SLPS-02240.html",
     	'id': 'SLPS02241',
 	'title': "MARIA 2",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPS02242': {
         'url': "games/J/M/SLPS-02240.html",
     	'id': 'SLPS02242',
 	'title': "MARIA 2",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPM86850': {
         'url': "games/J/M/SLPM-86850.html",
     	'id': 'SLPM86850',
 	'title': "MARIA 2 [CYCLONE REPRINT]",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPM86851': {
         'url': "games/J/M/SLPM-86850.html",
     	'id': 'SLPM86851',
 	'title': "MARIA 2 [CYCLONE REPRINT]",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPM86852': {
         'url': "games/J/M/SLPM-86850.html",
     	'id': 'SLPM86852',
 	'title': "MARIA 2 [CYCLONE REPRINT]",
+        'pic0': 'https://images.launchbox-app.com/c42f5bcb-de00-440d-9176-f48e4640c958.png',
     },
     'SLPS00964': {
         'url': "games/J/M/SLPS-00964.html",
@@ -65098,47 +65124,62 @@ games = {
     	'id': 'SLPS01900',
 	'title': "SPACE BATTLESHIP YAMATO DISTANT ISKANDAR [UCHUU SENKAN YAMATO]",
         'pic0': 'https://images.launchbox-app.com/c344bd1c-6cdd-44f2-a9fb-4c07ff1972c8.png',
+        'pic1': 'https://images.launchbox-app.com/e7740b78-2fe5-47c0-8668-e2edc2ca3607.png',
     },
     'SLPS03234': {
         'url': "games/J/S/SLPS-03234.html",
     	'id': 'SLPS03234',
 	'title': "SPACE BATTLESHIP YAMATO DISTANT ISKANDAR [UCHUU SENKAN YAMATO] [BANDAI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/c344bd1c-6cdd-44f2-a9fb-4c07ff1972c8.png',
+        'pic1': 'https://images.launchbox-app.com/e7740b78-2fe5-47c0-8668-e2edc2ca3607.png',
     },
     'SLPS02952': {
         'url': "games/J/S/SLPS-02952.html",
     	'id': 'SLPS02952',
 	'title': "SPACE BATTLESHIP YAMATO - EIYUU NO KISEKI - PART 1 FAN DISC",
+        'pic1': 'https://images.launchbox-app.com/e7740b78-2fe5-47c0-8668-e2edc2ca3607.png',
     },
     'SLPS02761': {
         'url': "games/J/S/SLPS-02761.html",
     	'id': 'SLPS02761',
 	'title': "SPACE BATTLESHIP YAMATO 2",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPS02762': {
         'url': "games/J/S/SLPS-02761.html",
     	'id': 'SLPS02762',
 	'title': "SPACE BATTLESHIP YAMATO 2",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPS02763': {
         'url': "games/J/S/SLPS-02761.html",
     	'id': 'SLPS02763',
 	'title': "SPACE BATTLESHIP YAMATO 2",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPS02733': {
         'url': "games/J/S/SLPS-02733.html",
     	'id': 'SLPS02733',
 	'title': "SPACE BATTLESHIP YAMATO 2 [DX PACK]",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPS02734':    {
         'url': "games/J/S/SLPS-02733.html",
     	'id': 'SLPS02734',
 	'title': "SPACE BATTLESHIP YAMATO 2 [DX PACK]",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPS02735':    {
         'url': "games/J/S/SLPS-02733.html",
     	'id': 'SLPS02735',
 	'title': "SPACE BATTLESHIP YAMATO 2 [DX PACK]",
+        'pic0': 'https://images.launchbox-app.com/90cfc46f-b328-4f3b-8fb5-6b9a414e1d85.png',
+        'pic1': 'https://images.launchbox-app.com/37ff91ce-1029-4dbd-8d8e-60e8b57f2307.png',
     },
     'SLPM86661':    {
         'url': "games/J/S/SLPM-86661.html",
@@ -69706,16 +69747,19 @@ games = {
         'url': "games/J/T/SLPS-01440.html",
     	'id': 'SLPS01440',
 	'title': "TRUMP SHIYOUYO!",
+        'pic0': 'https://images.launchbox-app.com/f078c417-19e1-4849-8d0d-edfed48b574e.png',
     },
     'SLPS02225': {
         'url': "games/J/T/SLPS-02225.html",
     	'id': 'SLPS02225',
 	'title': "TRUMP SHIYOUYO! [BOTTOM UP BEST]",
+        'pic0': 'https://images.launchbox-app.com/f078c417-19e1-4849-8d0d-edfed48b574e.png',
     },
     'SLPS02612': {
         'url': "games/J/T/SLPS-02612.html",
     	'id': 'SLPS02612',
 	'title': "TRUMP SHIYOUYO! [PURE SOUND REPRINT]",
+        'pic0': 'https://images.launchbox-app.com/f078c417-19e1-4849-8d0d-edfed48b574e.png',
     },
     'SLPS01746': {
         'url': "games/J/T/SLPS-01746.html",
@@ -70886,6 +70930,9 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'SCUS02873': {
+        'id': 'beb515901781c14bbe2991a20ff7388e',
+    },
     '4fcb22b59ff522eb981285339218915a': {
         'id': 'PSDD00004',
     },
