@@ -28,7 +28,10 @@ from PIL import Image, ImageDraw
 from bchunk import bchunk
 import importlib  
 from gamedb import games, libcrypt, themes
-popfe = importlib.import_module("pop-fe")
+try:
+    import popfe
+except:
+    popfe = importlib.import_module("pop-fe")
 from cue import parse_ccd, ccd2cue, write_cue
 
 verbose = False
