@@ -2545,7 +2545,9 @@ def get_imgs_from_bin(cue):
             # FILE
             if re.search('^\s*FILE', line):
                 f = get_file_name(line)
-                if f[0] != '/':
+                # unix absilute paths start with /
+                # windows absolute patsh start with ?:/
+                if f[0] != '/' and f[1:3] != '://':
                     s = cue.split('/')
                     if len(s) > 1:
                         f = '/'.join(s[:-1]) + '/' + f
