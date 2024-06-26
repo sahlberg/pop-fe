@@ -4250,6 +4250,9 @@ if __name__ == "__main__":
                 f.write('    INDEX 01 00:00:00\n')
 
             cue_file = tmpcue
+            # we didn't actually have a CUE file to start with so just
+            # replace the "real" cue filename with our temporary one
+            real_cue_files[-1] = cue_file
 
         if cue_file[-3:] == 'ccd':
             tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
