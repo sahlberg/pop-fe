@@ -4418,7 +4418,7 @@ if __name__ == "__main__":
             pfs = ((176,176),(138,138))
         if args.psp_dir:
             pfs = ((80,80),(62,62))
-        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg')
+        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', pfs)
 
     # LOGO.PNG
     logo = None
