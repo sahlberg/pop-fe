@@ -3783,21 +3783,6 @@ def create_sbi(sbi, magic_word):
 # https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf
 def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
-    if gameid in games and 'manual' in games[gameid]:
-        _h = hashlib.md5(games[gameid]['manual'].encode('utf-8')).hexdigest()
-        f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/manual/' + _h + '.DAT'
-        try:
-            ret = requests.get(f, stream=True)
-        except:
-            return None
-        if ret.status_code == 200:
-            print('Found cached prebuilt manual', f)
-            _d = subdir + 'DOC.DAT'
-            with open(_d, 'wb') as o:
-                o.write(ret.content)
-            temp_files.append(_d)
-            return _d
-
     # already have a manual in the proper format
     if source[-7:] == '.manual':
         return source
@@ -3820,6 +3805,22 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     print('Create DOCUMENT.DAT from', source)
     if source[:8] == 'https://':
+        if (gameid in games and 'manual' in games[gameid] and
+            games[gameid]['manual'] == source):
+            _h = hashlib.md5(games[gameid]['manual'].encode('utf-8')).hexdigest()
+            f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/manual/' + _h + '.DAT'
+            try:
+                ret = requests.get(f, stream=True)
+            except:
+                return None
+            if ret.status_code == 200:
+                print('Found cached prebuilt manual', f)
+                _d = subdir + 'DOC.DAT'
+                with open(_d, 'wb') as o:
+                    o.write(ret.content)
+                temp_files.append(_d)
+                return _d
+
         print('Download manual from', source)
         try:
             tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
@@ -4250,6 +4251,9 @@ if __name__ == "__main__":
                 f.write('    INDEX 01 00:00:00\n')
 
             cue_file = tmpcue
+            # we didn't actually have a CUE file to start with so just
+            # replace the "real" cue filename with our temporary one
+            real_cue_files[-1] = cue_file
 
         if cue_file[-3:] == 'ccd':
             tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
@@ -4418,7 +4422,7 @@ if __name__ == "__main__":
             pfs = ((176,176),(138,138))
         if args.psp_dir:
             pfs = ((80,80),(62,62))
-        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg')
+        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', pfs)
 
     # LOGO.PNG
     logo = None

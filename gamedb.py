@@ -35711,12 +35711,13 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=pXuuROdpHk0&list=PL0543FCACF475E1A6&index=1',
         'pspconfig': 'pspconfigs/V-Rally/SLES-00250.bin',
     },
-    'SLES00250': {
+    'SLES00250P': {
         'url': "games/P/V/SLES-00250P.html",
     	'id': 'SLES00250',
 	'title': "V-RALLY - CHAMPIONSHIP EDITION [PLATINUM VERSION]",
         'pic0': 'https://images.launchbox-app.com/154a88a3-3e50-402f-ad46-79d1df13031c.png',
         'snd0': 'https://www.youtube.com/watch?v=pXuuROdpHk0&list=PL0543FCACF475E1A6&index=1',
+        'pspconfig': 'pspconfigs/V-Rally/SLES-00250.bin',
     },
     'SLED02124': {
         'url': "games/P/V/SLES-01907.html",
@@ -71912,6 +71913,10 @@ gameid_by_md5sum = {
     },
     '4b0b3d09698c04d0422456f3d1d67df1': {
     	'id': 'SCPS10012'
+    },
+    # V-Rally (Eur) Platinum edition with extra car
+    '1c6374b6388f965ada6b2d654552827c': {
+        'id': 'SLES00250P',
     },
 }
 
