@@ -411,11 +411,12 @@ class PopFePs3App:
         self.configs.append(bytes())
 
         try:
-            os.stat(cue_file[:-3]+'ps3config').st_size
-            print('Found an external config ', cue_file[:-3]+'ps3config')
-            with open(cue_file[:-3]+'ps3config', 'rb') as f:
+            os.stat(self.cue_file_orig[:-3]+'ps3config').st_size
+            print('Found an external config ', self.cue_file_orig[:-3]+'ps3config')
+            with open(self.cue_file_orig[:-3]+'ps3config', 'rb') as f:
                       f.seek(8)
                       self.configs[-1] = self.configs[-1] + f.read()
+                      print('Read external config ', self.cue_file_orig[:-3]+'ps3config')
         except:
             True
         if disc_id in games and 'ps3config' in games[disc_id]:

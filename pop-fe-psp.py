@@ -377,10 +377,11 @@ class PopFePs3App:
             with open(games[disc_id]['pspconfig'], 'rb') as f:
                       self.configs[-1] = f.read()
         try:
-            os.stat(cue_file[:-3]+'pspconfig').st_size
-            print('Found an external config ', cue_file[:-3]+'pspconfig')
-            with open(cue_file[:-3]+'pspconfig', 'rb') as f:
+            os.stat(self.cue_file_orig[:-3]+'pspconfig').st_size
+            print('Found an external config ', self.cue_file_orig[:-3]+'pspconfig')
+            with open(self.cue_file_orig[:-3]+'pspconfig', 'rb') as f:
                       self.configs[-1] = f.read()
+                      print('Read external config ', self.cue_file_orig[:-3]+'pspconfig')
         except:
             True
         if disc == 'd1':
