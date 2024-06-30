@@ -45753,11 +45753,13 @@ games = {
         'url': "games/J/E/SLPM-86729.html",
     	'id': 'SLPM86729',
 	'title': "EXCITING BASS 3",
+        'pic0': 'https://images.launchbox-app.com/cce8edd3-18a8-4f8a-9186-f22b081e77c2.png',
     },
     'SLPM86949': {
         'url': "games/J/E/SLPM-86949.html",
     	'id': 'SLPM86949',
 	'title': "EXCITING BASS 3 [KONAMI THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/cce8edd3-18a8-4f8a-9186-f22b081e77c2.png',
     },
     'SLPS02885': {
         'url': "games/J/E/SLPS-02885.html",
@@ -45769,11 +45771,13 @@ games = {
         'url': "games/J/E/SLPS-03122.html",
     	'id': 'SLPS03122',
 	'title': "EXCITING PRO WRESTLING 2",
+        'pic0': 'https://images.launchbox-app.com/1af59d48-b272-4e3c-a828-d37d5c333a4b.png',
     },
     'SLPS91497': {
         'url': "games/J/E/SLPS-91497.html",
     	'id': 'SLPS91497',
 	'title': "EXCITING PRO WRESTLING 2 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/1af59d48-b272-4e3c-a828-d37d5c333a4b.png',
     },
     'SLPS00091': {
         'url': "games/J/E/SLPS-00091.html",
@@ -46769,31 +46773,37 @@ games = {
         'url': "games/J/F/SLPS-00463.html",
     	'id': 'SLPS00463',
 	'title': "FISH EYES",
+        'pic0': 'https://images.launchbox-app.com/02b8f250-a89e-4cd2-a20b-e4cea4b2c0cb.png',
     },
     'SLPS91040': {
         'url': "games/J/F/SLPS-91040.html",
     	'id': 'SLPS91040',
 	'title': "FISH EYES [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/02b8f250-a89e-4cd2-a20b-e4cea4b2c0cb.png',
     },
     'SLPS91458': {
         'url': "games/J/F/SLPS-91458.html",
     	'id': 'SLPS91458',
 	'title': "FISH EYES [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/02b8f250-a89e-4cd2-a20b-e4cea4b2c0cb.png',
     },
     'SLPS02383': {
         'url': "games/J/F/SLPS-02383.html",
     	'id': 'SLPS02383',
 	'title': "FISH EYES II",
+        'pic0': 'https://images.launchbox-app.com/75473095-dad4-4f61-9747-03df51a122bd.png',
     },
     'SLPS91526': {
         'url': "games/J/F/SLPS-91526.html",
     	'id': 'SLPS91526',
 	'title': "FISH EYES II [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/75473095-dad4-4f61-9747-03df51a122bd.png',
     },
     'SLPS03417': {
         'url': "games/J/F/SLPS-03417.html",
     	'id': 'SLPS03417',
 	'title': "FISH EYES II [VICTOR INTERACTIVE SOFTWARE BEST]",
+        'pic0': 'https://images.launchbox-app.com/75473095-dad4-4f61-9747-03df51a122bd.png',
     },
     'SLPS02288': {
         'url': "games/J/F/SLPS-02288.html",
@@ -46855,11 +46865,13 @@ games = {
         'url': "games/J/F/SLPS-02719.html",
     	'id': 'SLPS02719',
 	'title': "FLAMBERGE NO SEIREI",
+        'pic0': 'https://images.launchbox-app.com/a0a0c7a8-1960-44a7-ac57-05d33fb380ef.png',
     },
     'SLPM86711': {
         'url': "games/J/F/SLPM-86711.html",
     	'id': 'SLPM86711',
 	'title': "FLAMBERGE NO SEIREI [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/a0a0c7a8-1960-44a7-ac57-05d33fb380ef.png',
     },
     'SLPS00147': {
         'url': "games/J/F/SLPS-00147.html",
@@ -48085,11 +48097,13 @@ games = {
         'url': "games/J/G/SLPS-03061.html",
     	'id': 'SLPS03061',
 	'title': "GOGO I-LAND",
+        'pic0': 'https://images.launchbox-app.com/811599e6-ac70-4779-a1ee-50a36f0b784f.png',
     },
     'SLPS03062': {
         'url': "games/J/G/SLPS-03061.html",
     	'id': 'SLPS03062',
 	'title': "GOGO I-LAND",
+        'pic0': 'https://images.launchbox-app.com/811599e6-ac70-4779-a1ee-50a36f0b784f.png',
     },
     'SLPS01542': {
         'url': "games/J/G/SLPS-01542.html",
@@ -51176,11 +51190,13 @@ games = {
         'url': "games/J/K/SLPS-01794.html",
     	'id': 'SLPS01794',
 	'title': "KAMAITACHI NO YORU TOKUBETSU-HEN",
+        'pic0': 'https://images.launchbox-app.com/63ed2eb2-699c-4222-a8ae-50bf53985bed.png',
     },
     'SLPS91187': {
         'url': "games/J/K/SLPS-91187.html",
     	'id': 'SLPS91187',
 	'title': "KAMAITACHI NO YORU TOKUBETSU-HEN [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/63ed2eb2-699c-4222-a8ae-50bf53985bed.png',
     },
     'SLPS01570': {
         'url': "games/J/K/SLPS-01570.html",
@@ -53428,11 +53444,13 @@ games = {
         'url': "games/J/L/SLPS-02510.html",
     	'id': 'SLPS02510',
 	'title': "LOVE GAME'S - WAI WAI TENNIS 2",
+        'pic0': 'https://images.launchbox-app.com/63ed2eb2-699c-4222-a8ae-50bf53985bed.png',
     },
     'SLPS02983': {
         'url': "games/J/L/SLPS-02983.html",
     	'id': 'SLPS02983',
 	'title': "LOVE GAME'S - WAI WAI TENNIS 2 [VALUE 1500]",
+        'pic0': 'https://images.launchbox-app.com/63ed2eb2-699c-4222-a8ae-50bf53985bed.png',
     },
     'SLPM86899': {
         'url': "games/J/L/SLPM-86899.html",
