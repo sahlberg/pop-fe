@@ -45467,21 +45467,25 @@ games = {
         'url': "games/J/E/SLPS-03216.html",
     	'id': 'SLPS03216',
 	'title': "EMMYREA",
+        'pic0': 'https://images.launchbox-app.com/86787051-b09b-4126-9aff-e11c1cf0b11a.png',
     },
     'SLPM87043': {
         'url': "games/J/E/SLPM-87043.html",
     	'id': 'SLPM87043',
 	'title': "EMMYREA [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/86787051-b09b-4126-9aff-e11c1cf0b11a.png',
     },
     'SLPS01584': {
         'url': "games/J/E/SLPS-01584.html",
     	'id': 'SLPS01584',
 	'title': "END SECTOR",
+        'pic0': 'https://images.launchbox-app.com/57cdee33-1ee6-4877-aa5b-a0ac3c485ee5.png',
     },
     'SLPS02972': {
         'url': "games/J/E/SLPS-02972.html",
     	'id': 'SLPS02972',
 	'title': "END SECTOR [ASCII CASUAL COLLECTION]",
+        'pic0': 'https://images.launchbox-app.com/57cdee33-1ee6-4877-aa5b-a0ac3c485ee5.png',
     },
     'SLPM86259': {
         'url': "games/J/E/SLPM-86259.html",
@@ -45509,11 +45513,13 @@ games = {
         'url': "games/J/E/SLPS-01351.html",
     	'id': 'SLPS01351',
 	'title': "ENIGMA",
+        'pic0': 'https://images.launchbox-app.com/f551cddc-f471-4338-b309-e33dcf32a67c.png',
     },
     'SLPS01352': {
         'url': "games/J/E/SLPS-01351.html",
     	'id': 'SLPS01352',
 	'title': "ENIGMA",
+        'pic0': 'https://images.launchbox-app.com/f551cddc-f471-4338-b309-e33dcf32a67c.png',
     },
     'SLPS00820': {
         'url': "games/J/E/SLPS-00820.html",
@@ -45757,6 +45763,7 @@ games = {
         'url': "games/J/E/SLPS-02885.html",
     	'id': 'SLPS02885',
 	'title': "EXCITING PRO WRESTLING",
+        'pic0': 'https://images.launchbox-app.com/0a91f5a8-9054-48aa-8c51-6945649c8d01.png',
     },
     'SLPS03122': {
         'url': "games/J/E/SLPS-03122.html",
