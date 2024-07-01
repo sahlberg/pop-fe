@@ -2785,6 +2785,7 @@ games = {
         'url': "games/J/W/SLPM-87225.html",
     	'id': 'SLPM87225',
 	'title': "WAI WAI BOWLING [MAJOR WAVE SERIES]",
+        'pic0': 'https://images.launchbox-app.com/53f740d2-b7eb-49ec-9262-d12d86c08138.png',
     },
     'SLPM86544': {
         'url': "games/J/W/SLPM-86544.html",
@@ -13239,6 +13240,7 @@ games = {
         'url': "games/U/S/SLUS-0XXXX.html",
     	'id': 'SLUS0XXXX',
 	'title': "STARCON (PROTOTYPE)",
+        'pic0': 'https://images.launchbox-app.com/ec6f57a5-8e19-4ad3-b405-92a05561d816.png',
     },
     'SLUS00094': {
         'url': "games/U/S/SLUS-00094.html",
@@ -44043,6 +44045,7 @@ games = {
         'url': "games/J/D/SLPS-03101.html",
     	'id': 'SLPS03101',
 	'title': "DIGIMON WORLD - DIGITAL CARD ARENA",
+        'pic0': 'https://images.launchbox-app.com/edbfff5b-ed04-4b68-b48c-6712bf2188a1.png',
     },
     'SLPS02506': {
         'url': "games/J/D/SLPS-02506.html",
@@ -44459,11 +44462,13 @@ games = {
         'url': "games/J/D/SLPS-01095.html",
     	'id': 'SLPS01095',
 	'title': "DOMINO-KUN O TOMENAIDE",
+        'pic0': 'https://images.launchbox-app.com/b572c6fd-9868-4ddd-9355-057001c2b805.png',
     },
     'SLPS02536': {
         'url': "games/J/D/SLPS-02536.html",
     	'id': 'SLPS02536',
 	'title': "DOMINO-KUN O TOMENAIDE [ARTDINK BEST CHOICE]",
+        'pic0': 'https://images.launchbox-app.com/b572c6fd-9868-4ddd-9355-057001c2b805.png',
     },
     'SLPS00548': {
         'url': "games/J/D/SLPS-00548.html",
@@ -44541,6 +44546,8 @@ games = {
         'url': "games/J/D/SLPS-00191.html",
     	'id': 'SLPS00191',
 	'title': "DOUBLE DRAGON",
+        'pic0': 'https://images.launchbox-app.com/9175f846-1354-4b9b-b5c4-aa4518ae16a8.png',
+        'pic1': 'https://images.launchbox-app.com/526f160b-f2f8-4745-92be-9e0f1f4da21c.jpg',
     },
     'SLPS03526': {
         'url': "games/J/D/SLPS-03526.html",
@@ -45441,6 +45448,7 @@ games = {
         'url': "games/J/E/SLPS-00778.html",
     	'id': 'SLPS00778',
 	'title': "ELFIN PARADISE",
+        'pic0': 'https://images.launchbox-app.com/20f8d532-9c95-4385-b1ac-912db40eaf5c.png',
     },
     'SLPS00117': {
         'url': "games/J/E/SLPS-00117.html",
@@ -45508,6 +45516,7 @@ games = {
         'url': "games/J/E/SLPS-02263.html",
     	'id': 'SLPS02263',
 	'title': "ENGACHO!",
+        'pic0': 'https://images.launchbox-app.com/9ddb48c7-a784-4ad1-ae8d-9e82ed61e824.png',
     },
     'SLPS01351': {
         'url': "games/J/E/SLPS-01351.html",
@@ -45530,7 +45539,7 @@ games = {
     'SLPS01465': {
         'url': "games/J/E/SLPS-01465.html",
     	'id': 'SLPS01465',
-	'title': "EPICA ESTELLA",
+	'title': "EPICA STELLA",
     },
     'SCPS40001': {
         'url': "games/J/E/SCPS-40001.html",
@@ -47605,16 +47614,19 @@ games = {
         'url': "games/J/G/SCPS-45070.html",
     	'id': 'SCPS45070',
 	'title': "GANBARE MORIKAWA KIME 2ND - PET IN TV",
+        'pic0': 'https://images.launchbox-app.com/5cafae2d-c320-457c-9c5a-182021c03fbe.png',
     },
     'SCPS10036': {
         'url': "games/J/G/SCPS-10036.html",
     	'id': 'SCPS10036',
 	'title': "GANBARE MORIKAWA KIME 2ND - PET IN TV",
+        'pic0': 'https://images.launchbox-app.com/5cafae2d-c320-457c-9c5a-182021c03fbe.png',
     },
     'SCPS10033': {
         'url': "games/J/G/SCPS-10033.html",
     	'id': 'SCPS10033',
 	'title': "GANBARE MORIKAWA KIME 2ND - PET IN TV [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/5cafae2d-c320-457c-9c5a-182021c03fbe.png',
     },
     'SLPM86482': {
         'url': "games/J/G/SLPM-86482.html",
@@ -47656,18 +47668,21 @@ games = {
         'url': "games/J/G/SCPS-45409.html",
     	'id': 'SCPS45409',
 	'title': "GAROU DENSETSU - WILD AMBITION",
+        'pic0': 'https://images.launchbox-app.com/61b06a5a-17db-4045-97c4-7e56ae8fab26.png',
         'pic1': 'https://images.launchbox-app.com/6b76a80b-e0b9-4d4a-b02f-b4d916234df3.png',
     },
     'SLPM86236': {
         'url': "games/J/G/SLPM-86236.html",
     	'id': 'SLPM86236',
 	'title': "GAROU DENSETSU - WILD AMBITION",
+        'pic0': 'https://images.launchbox-app.com/61b06a5a-17db-4045-97c4-7e56ae8fab26.png',
         'pic1': 'https://images.launchbox-app.com/6b76a80b-e0b9-4d4a-b02f-b4d916234df3.png',
     },
     'SLPM86576': {
         'url': "games/J/G/SLPM-86576.html",
     	'id': 'SLPM86576',
 	'title': "GAROU DENSETSU - WILD AMBITION [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/61b06a5a-17db-4045-97c4-7e56ae8fab26.png',
         'pic1': 'https://images.launchbox-app.com/6b76a80b-e0b9-4d4a-b02f-b4d916234df3.png',
     },
     'SLPS02246': {
@@ -47729,11 +47744,13 @@ games = {
         'url': "games/J/G/SCPS-10134.html",
     	'id': 'SCPS10134',
 	'title': "GEKITOTSU TOMA L'ARC - L'ARC EN CIEL VS. TOMARUNNER",
+        'pic0': 'https://images.launchbox-app.com/98e6a6cc-3c60-4160-9183-af316aefa6c8.png',
     },
     'SCPS91320': {
         'url': "games/J/G/SCPS-91320.html",
     	'id': 'SCPS91320',
 	'title': "GEKITOTSU TOMA L'ARC - L'ARC EN CIEL VS. TOMARUNNER [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/98e6a6cc-3c60-4160-9183-af316aefa6c8.png',
     },
     'SLPS00926': {
         'url': "games/J/G/SLPS-00926.html",
@@ -47983,11 +48000,13 @@ games = {
         'url': "games/J/G/SCPS-45229.html",
     	'id': 'SCPS45229',
 	'title': "GINGA EIYUU DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/37885fe9-66ac-49e7-a602-12b02171dc84.png',
     },
     'SLPS01358': {
         'url': "games/J/G/SLPS-01358.html",
     	'id': 'SLPS01358',
 	'title': "GINGA EIYUU DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/37885fe9-66ac-49e7-a602-12b02171dc84.png',
     },
     'SLPS01451': {
         'url': "games/J/G/SLPS-01451.html",
@@ -49670,11 +49689,13 @@ games = {
         'url': "games/J/H/SLPS-02297.html",
     	'id': 'SLPS02297',
 	'title': "HOLE OF THE LEGEND MONSTER - MONSTER COMPLETE WORLD VER.2",
+        'pic0': 'https://images.launchbox-app.com/4c5c1b31-532f-46e4-bb0f-028161acb15c.png',
     },
     'SLPM87115': {
         'url': "games/J/H/SLPM-87115.html",
     	'id': 'SLPM87115',
 	'title': "HOLE OF THE LEGEND MONSTER - MONSTER COMPLETE WORLD VER.2 [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/4c5c1b31-532f-46e4-bb0f-028161acb15c.png',
     },
     'SLPS01075': {
         'url': "games/J/H/SLPS-01075.html",
@@ -51966,11 +51987,13 @@ games = {
         'url': "games/J/K/SLPS-02747.html",
     	'id': 'SLPS02747',
 	'title': "KILLER BASS",
+        'pic0': 'https://images.launchbox-app.com/65f6f011-d910-4fb9-8891-db607ce11f94.png',
     },
     'SLPS03113': {
         'url': "games/J/K/SLPS-03113.html",
     	'id': 'SLPS03113',
 	'title': "KILLER BASS [MAGICAL 1500]",
+        'pic0': 'https://images.launchbox-app.com/65f6f011-d910-4fb9-8891-db607ce11f94.png',
     },
     'SLPS00296': {
         'url': "games/J/K/SLPS-00296.html",
@@ -52026,21 +52049,25 @@ games = {
         'url': "games/J/K/SLPS-01340.html",
     	'id': 'SLPS01340',
 	'title': "KINDAICHI SHOUNEN NO JIKENBO 2 - JIGOKU YUUEN SATSUJIN JIKEN",
+        'pic0': 'https://images.launchbox-app.com/a3b1e4fb-9b96-4f69-9a7d-3ae58e3d157d.png',
     },
     'SLPS01341': {
         'url': "games/J/K/SLPS-01340.html",
     	'id': 'SLPS01341',
 	'title': "KINDAICHI SHOUNEN NO JIKENBO 2 - JIGOKU YUUEN SATSUJIN JIKEN",
+        'pic0': 'https://images.launchbox-app.com/a3b1e4fb-9b96-4f69-9a7d-3ae58e3d157d.png',
     },
     'SLPS02223': {
         'url': "games/J/K/SLPS-02223.html",
     	'id': 'SLPS02223',
 	'title': "KINDAICHI SHOUNEN NO JIKENBO 3 - SHOURYUU DENSETSU SATSUJIN JIKEN",
+        'pic0': 'https://images.launchbox-app.com/ffcbc751-e05b-4968-9250-f30b0303f976.png',
     },
     'SLPS02224':    {
         'url': "games/J/K/SLPS-02223.html",
     	'id': 'SLPS02224',
 	'title': "KINDAICHI SHOUNEN NO JIKENBO 3 - SHOURYUU DENSETSU SATSUJIN JIKEN",
+        'pic0': 'https://images.launchbox-app.com/ffcbc751-e05b-4968-9250-f30b0303f976.png',
     },
     'SLPS00092': {
         'url': "games/J/K/SLPS-00092.html",
@@ -62634,11 +62661,13 @@ games = {
         'url': "games/J/S/SLPS-00740.html",
     	'id': 'SLPS00740',
 	'title': "SEIKOKU 1092 - SOUHEIDEN",
+        'pic0': 'https://images.launchbox-app.com/5c4cf0ff-33f7-4298-aa4e-41cd280d8751.png',
     },
     'SLPS00596': {
         'url': "games/J/S/SLPS-00596.html",
     	'id': 'SLPS00596',
 	'title': "SEIKOKU 1092 - SOUHEIDEN [LIMITED EDITION]",
+        'pic0': 'https://images.launchbox-app.com/5c4cf0ff-33f7-4298-aa4e-41cd280d8751.png',
     },
     'SLPS02652': {
         'url': "games/J/S/SLPS-02652.html",
@@ -62805,6 +62834,7 @@ games = {
         'url': "games/J/S/SLPS-01081.html",
     	'id': 'SLPS01081',
 	'title': "SEROFANS",
+        'pic0': 'https://images.launchbox-app.com/cbb8f424-63f1-43cb-b1d5-ede174d86440.png',
     },
     'SLPM86009': {
         'url': "games/J/S/SLPM-86009.html",
@@ -63145,12 +63175,14 @@ games = {
     'SCPS45402': {
         'url': "games/J/S/SCPS-45402.html",
     	'id': 'SCPS45402',
-	'title': "SHINJI DAIGEKI ACTION - RASETSU NO KEN",
+	'title': "SHIN JIDAIGEKI ACTION: RASETSU NO KEN",
+        'pic0': 'https://images.launchbox-app.com/fef638ec-508f-4d2b-b8ec-986bb708fd2b.png',
     },
     'SLPM86177': {
         'url': "games/J/S/SLPM-86177.html",
     	'id': 'SLPM86177',
-	'title': "SHINJI DAIGEKI ACTION - RASETSU NO KEN",
+	'title': "SHIN JIDAIGEKI ACTION: RASETSU NO KEN",
+        'pic0': 'https://images.launchbox-app.com/fef638ec-508f-4d2b-b8ec-986bb708fd2b.png',
     },
     'SLPM86364': {
         'url': "games/J/S/SLPM-86364.html",
