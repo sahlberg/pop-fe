@@ -48091,6 +48091,7 @@ games = {
         'url': "games/J/G/SLPS-00944.html",
     	'id': 'SLPS00944',
 	'title': "G.O.D. PURE - GROWTH OR DEVOLUTION",
+        'pic0': 'https://images.launchbox-app.com/6b2a33f7-4ece-4636-9d00-3b398bdd8e66.png',
     },
     'SLPS01470': {
         'url': "games/J/G/SLPS-01470.html",
@@ -49396,6 +49397,7 @@ games = {
         'url': "games/J/H/SLPS-02351.html",
     	'id': 'SLPS02351',
 	'title': "HIGH SCHOOL OF BLITZ",
+        'pic0': 'https://images.launchbox-app.com/afb8f258-a2ce-4da8-9a60-5c9ce1f32c29.png',
     },
     'SLPS02305': {
         'url': "games/J/H/SLPS-02305.html",
@@ -53199,6 +53201,7 @@ games = {
         'url': "games/J/L/SLPS-01827.html",
     	'id': 'SLPS01827',
 	'title': "LET'S GO FLYFISHING",
+        'pic0': 'https://images.launchbox-app.com/57f88f5e-2b66-4084-b190-726e2ff8889a.png',
     },
     'SCPS45343': {
         'url': "games/J/L/SCPS-45343.html",
@@ -53322,16 +53325,19 @@ games = {
         'url': "games/J/L/SLPS-03012.html",
     	'id': 'SLPS03012',
 	'title': "LITTLE PRINCESS +1 - MARU OUKOKU NO NINGYOU HIME 2",
+        'pic0': 'https://images.launchbox-app.com/7bc0b868-dec7-4168-b3e4-1eacab91afad.png',
     },
     'SLPS03013': {
         'url': "games/J/L/SLPS-03012.html",
     	'id': 'SLPS03013',
 	'title': "LITTLE PRINCESS +1 - MARU OUKOKU NO NINGYOU HIME 2",
+        'pic0': 'https://images.launchbox-app.com/7bc0b868-dec7-4168-b3e4-1eacab91afad.png',
     },
     'SLPS01850': {
         'url': "games/J/L/SLPS-01850.html",
     	'id': 'SLPS01850',
 	'title': "LITTLE WITCHING MISCHIEFS",
+        'pic0': 'https://images.launchbox-app.com/74395a93-ccf8-425d-b2ad-aa80ff1fbba3.png',
     },
     'SLPS00182': {
         'url': "games/J/L/SLPS-00182.html",
@@ -57686,11 +57692,15 @@ games = {
         'url': "games/J/O/SCPS-45491.html",
     	'id': 'SCPS45491',
 	'title': "OH! BAKYUUUN",
+        'pic0': 'https://images.launchbox-app.com/b8e683eb-ae05-4cc6-a141-c43d952d0c4b.png',
+        'pic1': 'https://images.launchbox-app.com/657ad72f-be97-4a10-9a4c-c7dff1a9cc4b.jpg',
     },
     'SLPS02680': {
         'url': "games/J/O/SLPS-02680.html",
     	'id': 'SLPS02680',
 	'title': "OH! BAKYUUUN",
+        'pic0': 'https://images.launchbox-app.com/b8e683eb-ae05-4cc6-a141-c43d952d0c4b.png',
+        'pic1': 'https://images.launchbox-app.com/657ad72f-be97-4a10-9a4c-c7dff1a9cc4b.jpg',
     },
     'SLPM86603': {
         'url': "games/J/O/SLPM-86603.html",
@@ -59453,11 +59463,13 @@ games = {
         'url': "games/J/P/SLPM-86034.html",
     	'id': 'SLPM86034',
 	'title': "POITTER'S POINT",
+        'pic0': 'https://images.launchbox-app.com/2fa4dbf9-36c4-49e7-91b1-13ef27d954e9.png',
     },
     'SLPM86061': {
         'url': "games/J/P/SLPM-86061.html",
     	'id': 'SLPM86061',
 	'title': "POITTER'S POINT 2 - SODOM NO INBOU",
+        'pic0': 'https://images.launchbox-app.com/fa9f24d7-b397-4354-bd63-f324f6533e83.png',
     },
     'SLPS00439': {
         'url': "games/J/P/SLPS-00439.html",
@@ -60084,6 +60096,7 @@ games = {
         'url': "games/J/P/SLPS-00409.html",
     	'id': 'SLPS00409',
 	'title': "PUKUNPA - JOSHIKOUSEI NO HOUKAGO",
+        'pic0': 'https://images.launchbox-app.com/4beddbf7-86f8-477e-afd8-dc9102c31ead.png',
     },
     'SLPS00928': {
         'url': "games/J/P/SLPS-00928.html",
@@ -62088,16 +62101,19 @@ games = {
         'url': "games/J/S/SLPS-00731.html",
     	'id': 'SLPS00731',
 	'title': "SANGOKU MUSOU",
+        'pic0': 'https://images.launchbox-app.com/bee1d76f-eb2e-4968-affa-7a57d1ddcf40.png',
     },
     'SLPM86151': {
         'url': "games/J/S/SLPM-86151.html",
     	'id': 'SLPM86151',
 	'title': "SANGOKU MUSOU [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/bee1d76f-eb2e-4968-affa-7a57d1ddcf40.png',
     },
     'SLPM86860': {
         'url': "games/J/S/SLPM-86860.html",
     	'id': 'SLPM86860',
 	'title': "SANGOKU MUSOU [KOEI TEIBAN SERIES]",
+        'pic0': 'https://images.launchbox-app.com/bee1d76f-eb2e-4968-affa-7a57d1ddcf40.png',
     },
     'SLPS00309': {
         'url': "games/J/S/SLPS-00309.html",
@@ -69580,11 +69596,13 @@ games = {
         'url': "games/J/T/SLPS-00592.html",
     	'id': 'SLPS00592',
 	'title': "TOUGE MAX - SAISOKU DRIFT MASTER",
+        'pic0': 'https://images.launchbox-app.com/23a04acc-5d1e-4043-8265-c11e2af76790.png',
     },
     'SLPS91041': {
         'url': "games/J/T/SLPS-91041.html",
     	'id': 'SLPS91041',
 	'title': "TOUGE MAX - SAISOKU DRIFT MASTER [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/23a04acc-5d1e-4043-8265-c11e2af76790.png',
     },
     'SLPS01574': {
         'url': "games/J/T/SLPS-01574.html",
