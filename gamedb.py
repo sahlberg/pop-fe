@@ -10278,6 +10278,8 @@ games = {
     	'id': 'SLUS01231',
 	'title': "MTV SPORTS - PURE RIDE",
         'pic0': 'https://images.launchbox-app.com/481ee050-c34d-4835-b3da-3162cc958e72.png',
+        'pspconfig': 'pspconfigs/MTV Sports - Pure Ride/SLUS-01231.bin',
+        'ppf': 'ppf/SLUS-01231.ppf',
     },
     'SLUS01232': {
         'url': "games/U/M/SLUS-01232.html",
@@ -38449,26 +38451,31 @@ games = {
         'url': "games/J/A/SLPM-86506.html",
     	'id': 'SLPM86506',
 	'title': "ANGELIQUE HISTORY",
+        'pic0': 'https://i.postimg.cc/Hxnby6mh/Untitled-upscayl-3x-realesrgan-x4plus-anime.png',
     },
     'SLPM86507': {
         'url': "games/J/A/SLPM-86506.html",
     	'id': 'SLPM86507',
 	'title': "ANGELIQUE HISTORY",
+        'pic0': 'https://i.postimg.cc/Hxnby6mh/Untitled-upscayl-3x-realesrgan-x4plus-anime.png',
     },
     'SLPM86508': {
         'url': "games/J/A/SLPM-86506.html",
     	'id': 'SLPM86508',
 	'title': "ANGELIQUE HISTORY",
+        'pic0': 'https://i.postimg.cc/Hxnby6mh/Untitled-upscayl-3x-realesrgan-x4plus-anime.png',
     },
     'SLPM86509': {
         'url': "games/J/A/SLPM-86506.html",
     	'id': 'SLPM86509',
 	'title': "ANGELIQUE HISTORY",
+        'pic0': 'https://i.postimg.cc/Hxnby6mh/Untitled-upscayl-3x-realesrgan-x4plus-anime.png',
     },
     'SLPM86510': {
         'url': "games/J/A/SLPM-86506.html",
     	'id': 'SLPM86510',
 	'title': "ANGELIQUE HISTORY",
+        'pic0': 'https://i.postimg.cc/Hxnby6mh/Untitled-upscayl-3x-realesrgan-x4plus-anime.png',
     },
     'SLPS00320': {
         'url': "games/J/A/SLPS-00320.html",
