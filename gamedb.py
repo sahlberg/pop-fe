@@ -14959,6 +14959,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6774cba2-1d9b-4777-8ff5-020166db2193.png',
         'snd0': 'https://www.youtube.com/watch?v=JgW8Sx1jReQ&list=PL_7SZhTmUFWmi_RInUl0DeqHpJdoNkpGL&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Warriors of Might and Magic (USA)/SLUS-01204.bin',
     },
     'SLUS00819': {
         'url': "games/U/W/SLUS-00819.html",
@@ -36226,6 +36227,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6774cba2-1d9b-4777-8ff5-020166db2193.png',
         'snd0': 'https://www.youtube.com/watch?v=JgW8Sx1jReQ&list=PL_7SZhTmUFWmi_RInUl0DeqHpJdoNkpGL&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Warriors of Might and Magic (Europe)/SLES-03263.bin',
     },
     'SLES03330': {
         'url': "games/P/W/SLES-03330.html",
@@ -36235,6 +36237,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6774cba2-1d9b-4777-8ff5-020166db2193.png',
         'snd0': 'https://www.youtube.com/watch?v=JgW8Sx1jReQ&list=PL_7SZhTmUFWmi_RInUl0DeqHpJdoNkpGL&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Warriors%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Warriors of Might and Magic (Europe)/SLES-03330.bin',
     },
     'SLES00937': {
         'url': "games/P/W/SLES-00937.html",
