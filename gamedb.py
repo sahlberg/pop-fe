@@ -6647,6 +6647,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crusaders of Might and Magic (USA)/SLUS-00799.bin',
     },
     'SLUS00335': {
         'url': "games/U/C/SLUS-00335.html",
@@ -26855,6 +26856,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02582.bin',
     },
     'SLES02583': {
         'url': "games/P/C/SLES-02583.html",
@@ -26862,6 +26864,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02583.bin',
     },
     'SLES02584': {
         'url': "games/P/C/SLES-02584.html",
@@ -26869,6 +26872,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02584.bin',
     },
     'SLES02691': {
         'url': "games/P/C/SLES-02691.html",
@@ -26876,13 +26880,15 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
-    },
+         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02691.bin',
+   },
     'SLES02692': {
         'url': "games/P/C/SLES-02692.html",
     	'id': 'SLES02692',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
+         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02692.bin',
     },
     'SLES00292': {
         'url': "games/P/C/SLES-00292.html",
