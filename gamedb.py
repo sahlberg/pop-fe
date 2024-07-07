@@ -12177,6 +12177,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/92fbf2c1-76c5-4b08-b9c7-a01c5a87780b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=kMTPYVWnTTU&list=PL5MAATZlrqOhGQ6trLJ-iFCg2_TrGuEOU&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer/SCUS-94300.bin',
     },
     'SLUS00540': {
         'url': "games/U/R/SLUS-00540.html",
@@ -12186,6 +12187,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/92fbf2c1-76c5-4b08-b9c7-a01c5a87780b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=kMTPYVWnTTU&list=PL5MAATZlrqOhGQ6trLJ-iFCg2_TrGuEOU&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer/SLUS-00540.bin',
     },
     'SLUS00214': {
         'url': "games/U/R/SLUS-00214.html",
@@ -30866,6 +30868,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/92fbf2c1-76c5-4b08-b9c7-a01c5a87780b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=kMTPYVWnTTU&list=PL5MAATZlrqOhGQ6trLJ-iFCg2_TrGuEOU&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer/SCES-00001.bin',
     },
     'SCES00242': {
         'url': "games/P/R/SCES-00242.html",
@@ -61073,6 +61076,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/92fbf2c1-76c5-4b08-b9c7-a01c5a87780b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=kMTPYVWnTTU&list=PL5MAATZlrqOhGQ6trLJ-iFCg2_TrGuEOU&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ridge%20Racer%20[SLPS-00001]%20(J).cbr',
+        'pspconfig': 'pspconfigs/Ridge Racer/SLPS-00001.bin',
     },
     'SLPS91001': {
         'url': "games/J/R/SLPS-91001.html",
@@ -61082,6 +61086,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/92fbf2c1-76c5-4b08-b9c7-a01c5a87780b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=kMTPYVWnTTU&list=PL5MAATZlrqOhGQ6trLJ-iFCg2_TrGuEOU&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ridge%20Racer%20[SLPS-00001]%20(J).cbr',
+        'pspconfig': 'pspconfigs/Ridge Racer/SLPS-91001.bin',
     },
     'SLPS00150': {
         'url': "games/J/R/SLPS-00150.html",
