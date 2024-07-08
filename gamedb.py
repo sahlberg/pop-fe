@@ -10294,6 +10294,8 @@ games = {
 	'title': "MTV SPORTS - SNOWBOARDING",
         'pic0': 'https://images.launchbox-app.com/64838fa6-c813-47ae-8324-a840e523558b.png',
         'pic1': 'https://images.launchbox-app.com/3faf8641-e2f1-43e0-a769-30573f25c15f.jpg',
+        'pspconfig': 'pspconfigs/MTV Sports - Snowboarding/SLUS-00990.bin',
+        'ppf': 'ppf/SLUS-00990.ppf',
     },
     'SLUS01233': {
         'url': "games/U/M/SLUS-01233.html",
