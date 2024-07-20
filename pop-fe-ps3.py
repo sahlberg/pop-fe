@@ -19,7 +19,7 @@ import zipfile
 
 have_pytube = False
 try:
-    import pytube
+    import pytubefix as pytube
     have_pytube = True
 except:
     True

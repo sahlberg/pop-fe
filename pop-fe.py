@@ -37,8 +37,8 @@ except:
     True
 have_pytube = False
 try:
-    from pytube import YouTube
-    from pytube.contrib.search import Search
+    from pytubefix import YouTube
+    from pytubefix.contrib.search import Search
     have_pytube = True
 except:
     True
@@ -3603,11 +3603,11 @@ def install_deps():
         subprocess.call(['pip', 'install', 'Crypto'])
     # pytube
     try:
-        from pytube import YouTube
+        from pytubefix import YouTube
         print('Pytube is already installed')
     except:
         print('Installing python pytube')
-        subprocess.call(['pip', 'install', 'git+https://github.com/nficano/pytube'])
+        subprocess.call(['pip', 'install', 'pytubefix'])
     # opencv-contrib-python
     try:
         import cv2
