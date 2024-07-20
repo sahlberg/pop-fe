@@ -70,7 +70,7 @@ jobs:
           pip install pygubu
           pip install rarfile
           pip install tkinterDnD2
-          pip install git+https://github.com/nficano/pytube
+          pip install pytubefix
           pip install opencv-contrib-python
           pip install scikit-learn
           pip install scipy

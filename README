@@ -606,7 +606,7 @@ git clone https://github.com/sahlberg/pop-fe.git
 git clone https://github.com/NRGDEAD/Cue2cu2.git
 git clone https://github.com/putnam/binmerge.git
 git clone https://github.com/dcherednik/atracdenc.git
-pip3 install git+https://github.com/nficano/pytube
+pip3 install pytubefix
 pip3 install PyPDF2
 pip3 install requests
 pip3 install pycdlib  (or pip3 install pycdio)
@@ -729,4 +729,4 @@ docker run -it --entrypoint /bin/bash pop-fe:latest
 #     └── PSP/
 #         └── GAME/
 docker run -it --volume "$(pwd):/psp" pop-fe:latest --psp-dir=/psp/pspemu /psp/game.cue
- 
+
