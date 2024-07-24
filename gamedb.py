@@ -10280,7 +10280,6 @@ games = {
 	'title': "MTV SPORTS - PURE RIDE",
         'pic0': 'https://images.launchbox-app.com/481ee050-c34d-4835-b3da-3162cc958e72.png',
         'pspconfig': 'pspconfigs/MTV Sports - Pure Ride/SLUS-01231.bin',
-        'ppf': 'ppf/SLUS-01231.ppf',
     },
     'SLUS01232': {
         'url': "games/U/M/SLUS-01232.html",
@@ -10295,7 +10294,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/64838fa6-c813-47ae-8324-a840e523558b.png',
         'pic1': 'https://images.launchbox-app.com/3faf8641-e2f1-43e0-a769-30573f25c15f.jpg',
         'pspconfig': 'pspconfigs/MTV Sports - Snowboarding/SLUS-00990.bin',
-        'ppf': 'ppf/SLUS-00990.ppf',
     },
     'SLUS01233': {
         'url': "games/U/M/SLUS-01233.html",
@@ -12833,7 +12831,6 @@ games = {
 	'title': "SKULLMONKEYS",
         'pic0': 'https://images.launchbox-app.com/864ca84b-8908-4dbe-bd66-aa52d9fcd947.png',
         'pic1': 'https://images.launchbox-app.com/aa3fa2e6-6cca-46e7-83db-8c62497982ea.jpg',
-        'ppf': 'ppf/SLUS-00601.ppf',
     },
     'SLUS01392': {
         'url': "games/U/S/SLUS-01392.html",
@@ -72600,6 +72597,22 @@ themes = {
 }
 
 ppf_fixes = {
+    'SLUS00925': {
+	'desc': 'Fix for FOX SPORTS NHL CHAMPIONSHIP 2000',
+        'ppf': 'ppf/NHL Championship 2000 (USA) (Track 1).ppf',
+    },
+    'SLUS00601': {
+	'desc': 'Fix for SKULLMONKEYS',
+        'ppf': 'ppf/SLUS-00601.ppf',
+    },
+    'SLUS00990': {
+	'desc': 'Fix for MTV SPORTS - SNOWBOARDING',
+        'ppf': 'ppf/MTV Sports - Snowboarding (USA) (Track 1).ppf',
+    },
+    'SLUS01231': {
+	'desc': 'Fix for MTV SPORTS - PURE RIDE',
+        'ppf': 'ppf/MTV Sports - Pure Ride (USA) (Track 1).ppf',
+    },
     'TEST01040': {
         'desc': 'Trainer for VS',
         'ppf': 'tmp/pdx-vs5p.ppf'
@@ -72655,8 +72668,7 @@ ppf_fixes = {
     },
     'SLUS00684': {
         'desc': 'PPF for Jackie Chan Stuntmaster',
-        'ppf': 'ppf/SLUS-00684.ppf',
-        'tags': ['psp',],
+        'ppf': 'ppf/Jackie Chan Stuntmaster (USA).ppf',
     },
     'SLUS00884': {
         'desc': 'Fix for Vita',

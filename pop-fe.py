@@ -3903,9 +3903,7 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
         if disc_id not in ppf_fixes:
             continue
         if 'tags' in ppf_fixes[disc_id]:
-            if not tag:
-                continue
-            if tag not in ppf_fixes[disc_id]['tags']:
+            if tag and tag not in ppf_fixes[disc_id]['tags']:
                 continue
         if 'ppf' in ppf_fixes[disc_id]:
             ppf = ppf_fixes[disc_id]['ppf']
