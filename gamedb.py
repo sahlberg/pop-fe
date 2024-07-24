@@ -72597,6 +72597,14 @@ themes = {
 }
 
 ppf_fixes = {
+    'SLUS01448': {
+	'desc': 'Fix for WORMS WORLD PARTY',
+        'ppf': 'ppf/SLUS-01448.bin',
+    },
+    'SLES03804': {
+	'desc': 'Fix for WORMS WORLD PARTY',
+        'ppf': 'ppf/SLES-03804.bin',
+    },
     'SLUS00925': {
 	'desc': 'Fix for FOX SPORTS NHL CHAMPIONSHIP 2000',
         'ppf': 'ppf/NHL Championship 2000 (USA) (Track 1).ppf',
