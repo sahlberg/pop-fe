@@ -15253,6 +15253,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png', 
         'snd0': 'https://www.youtube.com/watch?v=KkDolOm2UlY&list=PL2CAB64D6B77AD3ED&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Worms World Party/SLUS-01448.bin',
     },
     'SLUS00587': {
         'url': "games/U/W/SLUS-00587.html",
@@ -36913,6 +36914,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a8954614-36cb-4d11-ba71-9b24e50cda94.png',
         'snd0': 'https://www.youtube.com/watch?v=KkDolOm2UlY&list=PL2CAB64D6B77AD3ED&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Worms%20World%20Party%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Worms World Party/SLES-03804.bin',
     },
     'SCES03907': {
         'url': "games/P/W/SCES-03907.html",
@@ -72597,14 +72599,6 @@ themes = {
 }
 
 ppf_fixes = {
-    'SLUS01448': {
-	'desc': 'Fix for WORMS WORLD PARTY',
-        'ppf': 'ppf/SLUS-01448.bin',
-    },
-    'SLES03804': {
-	'desc': 'Fix for WORMS WORLD PARTY',
-        'ppf': 'ppf/SLES-03804.bin',
-    },
     'SLUS00925': {
 	'desc': 'Fix for FOX SPORTS NHL CHAMPIONSHIP 2000',
         'ppf': 'ppf/NHL Championship 2000 (USA) (Track 1).ppf',
