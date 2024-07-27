@@ -72219,11 +72219,11 @@ libcrypt = {
                      'ppf': 'libcrypt/Radikal Bikers (Europe) '
                             '(En,Fr,De,Es,It).ppf',
                      'url': 'http://redump.org/disc/25908/'},
-    'SLES02024 ': {   'credit': 'Libcrypt patch contributed by krHACKen',
-                      'magic_word': 7025,
-                      'ppf': 'libcrypt/Legacy of Kain - Soul Reaver '
-                             '(France).ppf',
-                      'url': 'http://redump.org/disc/24279/'},
+    'SLES02024': {   'credit': 'Libcrypt patch contributed by krHACKen',
+                     'magic_word': 7025,
+                     'ppf': 'libcrypt/Legacy of Kain - Soul Reaver '
+                            '(France).ppf',
+                     'url': 'http://redump.org/disc/24279/'},
     'SLES02025': {'magic_word': 51790, 'url': 'http://redump.org/disc/393/'},
     'SLES02026': {'magic_word': 4463, 'url': 'http://redump.org/disc/27944/'},
     'SLES02027': {'magic_word': 14947, 'url': 'http://redump.org/disc/28167/'},
