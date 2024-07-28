@@ -2722,7 +2722,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, magic_word, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None):
     print('Create PBP file for', game_title) if verbose else None
 
     SECTLEN = 2352
@@ -2731,6 +2731,8 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
     p.disc_ids = disc_ids
     p.game_title = game_title
     p.subchannels = subchannels
+    if magic_word:
+        p.magic_word = magic_word
     if configs:
         p.configs = configs
     if logo:
@@ -2770,7 +2772,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
     # Convert LOGO to a file object
     if logo:
         image = logo
@@ -2862,7 +2864,10 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     if use_cdda:
         aea_files = []
         whole_disk = True
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo)
+    for i in range(len(magic_word)):
+        magic_word[i] = magic_word[i] & 0x72D0EE59
+
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, magic_word, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo)
 
     if manual:
         print('Installing manual as', f + '/DOCUMENT.DAT')
@@ -2918,7 +2923,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     
     dest_file = dest + '/Games/' + game_title + '.PBP'
     print('Install EBOOT as', dest_file) if verbose else None
-    generate_pbp(dest_file, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, [])
+    generate_pbp(dest_file, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, [], None)
 
     try:
         os.sync()
@@ -4553,7 +4558,7 @@ if __name__ == "__main__":
                 temp_files.append(snd0)
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
@@ -4586,7 +4591,7 @@ if __name__ == "__main__":
             i.seek(0)
             pic1 = i.read()
         
-        generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, aea_files)
+        generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, aea_files, None)
     if args.retroarch_thumbnail_dir:
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 

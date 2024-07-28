@@ -2760,8 +2760,8 @@ class popstation(object):
         buf[12:12 + len(b)] = b
         # where the magic word is stored
         if disc_num < len(self._magic_word):
-            print('Injecting MAGIC WORD 0x%04x for disc %d' % (self._magic_word[disc_num], disc_num))
-            struct.pack_into('<H', buf, 144, self._magic_word[disc_num]) 
+            print('Injecting MAGIC WORD 0x%08x for disc %d' % (self._magic_word[disc_num], disc_num))
+            struct.pack_into('<I', buf, 144, self._magic_word[disc_num]) 
 
         fh.write(buf)
 
