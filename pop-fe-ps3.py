@@ -47,8 +47,8 @@ def get_disc_id(cue, tmp):
     bc.open(cue)
     bc.writetrack(1, tmp)
 
-    gid = popfe.get_gameid_from_iso(tmp)
-    return gid
+    gid, md5 = popfe.get_gameid_from_iso(tmp)
+    return gid, md5
 
 
 class FinishedDialog(tk.Toplevel):
@@ -68,6 +68,7 @@ class PopFePs3App:
         self.cu2_files = None
         self.img_files = None
         self.disc_ids = None
+        self.md5_sums = None
         self.real_disc_ids = None
         self.icon0 = None
         self.icon0_tk = None
@@ -172,6 +173,7 @@ class PopFePs3App:
         self.cu2_files = []
         self.img_files = []
         self.disc_ids = []
+        self.md5_sums = []
         self.real_disc_ids = []
         self.icon0 = None
         self.icon0_tk = None
@@ -400,12 +402,13 @@ class PopFePs3App:
             
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
-        disc_id = get_disc_id(cue_file, tmp)
+        disc_id, md5_sum = get_disc_id(cue_file, tmp)
 
         self.builder.get_variable('disci%s_variable' % (disc)).set(disc_id)
 
         self.img_files.append(img_file)
         self.disc_ids.append(disc_id)
+        self.md5_sums.append(md5_sum)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
         self.configs.append(bytes())
@@ -772,7 +775,7 @@ class PopFePs3App:
         #
         # Apply all PPF fixes we might need
         #
-        self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.subdir)
+        self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.md5_sums, self.subdir)
 
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
         

@@ -72641,7 +72641,16 @@ ppf_fixes = {
     },
     'SLUS00330': {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',
-        'ppf': 'ppf/SLUS-00330.ppf'
+        'hashes': {
+            # rev 1.0
+            '92d8e70c652f3e5938f8c9fddaa74534': {
+                'ppf': 'ppf/SLUS-00330.ppf'
+            },
+            # rev 1.1
+            'b828aac80855cfc0e452ebf161f2b365': {
+                'ppf': 'ppf/SLUS-00330 (Rev 1).ppf'
+            },
+        },
     },
     'SLES00528': {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',

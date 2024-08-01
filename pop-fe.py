@@ -1885,7 +1885,7 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
         h = hashlib.md5(f.read(1024*1024)).hexdigest()
         print('MD5 fingerprint', h)
         if h in gameid_by_md5sum:
-            return gameid_by_md5sum[h]['id']
+            return gameid_by_md5sum[h]['id'], h
 
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
@@ -1919,7 +1919,7 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
             h = hashlib.md5(f.read(1024*1024)).hexdigest()
             print('MD5 fingerprint', h)
             if h in gameid_by_md5sum:
-                return gameid_by_md5sum[h]['id']
+                return gameid_by_md5sum[h]['id'], h
 
     if not buf:
         print('Failed to read game id. Falling back to raw read')
@@ -1927,11 +1927,11 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
             f.seek(0x8028)
             buf = str(f.read(9))[2:-1]
             if buf in gameid_translation:
-                return gameid_translation[buf]['id']
+                return gameid_translation[buf]['id'], h
             if buf != '         ':
-                return buf
+                return buf, h
             else:
-                return 'UNKN00000'
+                return 'UNKN00000', h
 
     idx = buf.find('cdrom:')
     if idx < 0:
@@ -1973,14 +1973,14 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
     if game_id in gameid_translation:
         game_id = gameid_translation[game_id]['id']
     if game_id not in games and buf[:9] in games:
-        return buf[:9]
-    return game_id
+        return buf[:9], h
+    return game_id, h
 
 def get_gameid_from_iso(path='NORMAL01.iso'):
-    game_id = _get_gameid_from_iso(path=path)
+    game_id, md5 = _get_gameid_from_iso(path=path)
     if game_id not in games:
         game_id = 'UNKN00000'
-    return game_id
+    return game_id, md5
 
 def fetch_cached_file(path):
     try:
@@ -3467,10 +3467,12 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
 
 def get_disc_ids(cue_files, subdir='./'):
     disc_ids = []
+    md5_sums = []
     for idx in range(len(cue_files)):
         try:
             with open(create_path(cue_files[idx], 'GAME_ID'), 'r') as d:
                 disc_ids.append(d.read())
+                md5_sums.append('0')
                 print('Read disc id from', create_path(cue_files[idx], 'GAME_ID'))
                 continue
         except:
@@ -3482,10 +3484,11 @@ def get_disc_ids(cue_files, subdir='./'):
         fn = subdir + 'ISO%02x01.iso' % idx
         bc.writetrack(1, fn)
         temp_files.append(fn)
-        gid = get_gameid_from_iso(fn)
+        gid, md5 = get_gameid_from_iso(fn)
         disc_ids.append(gid)
+        md5_sums.append(md5)
 
-    return disc_ids
+    return disc_ids, md5_sums
 
 
 def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
@@ -3901,7 +3904,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 #
 # Apply all PPF fixes that may be needed
 #
-def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
+def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=None):
     for i in range(len(real_disc_ids)):
         ppf = None
         disc_id = real_disc_ids[i]
@@ -3914,7 +3917,7 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag=None):
             ppf = ppf_fixes[disc_id]['ppf']
         if 'hashes' in ppf_fixes[disc_id]:
             with open(img_files[i], 'rb') as f:
-                h = hashlib.md5(f.read(1024*1024)).hexdigest()
+                h = md5_sums[i]
                 if h in ppf_fixes[disc_id]['hashes']:
                     ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
         if not ppf:
@@ -4304,7 +4307,7 @@ if __name__ == "__main__":
 
     # We need to convert the first track of every ISO so we can open the
     # disk and read system.cnf
-    disc_ids = get_disc_ids(real_cue_files, subdir=subdir)
+    disc_ids, md5_sums = get_disc_ids(real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
     if args.ps3_pkg:
         for i in range(len(real_disc_ids)):
@@ -4352,7 +4355,7 @@ if __name__ == "__main__":
     #
     # Apply all PPF fixes we might need
     #
-    cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, subdir, tag='psp' if args.psp_dir else None)
+    cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag='psp' if args.psp_dir else None)
 
     #
     # Apply all romhacks
