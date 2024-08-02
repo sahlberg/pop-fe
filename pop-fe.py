@@ -3465,26 +3465,29 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     image.save(f, format='JPEG', quality=100, subsampling=0)
 
 
-def get_disc_ids(cue_files, subdir='./'):
+def get_disc_id(cue, real_cue_file, tmp):
+    try:
+        with open(create_path(real_cue_file, 'GAME_ID'), 'r') as d:
+            gid = d.read()[:9]
+            print('Read disc id from', create_path(real_cue_file, 'GAME_ID'))
+            return gid, '0'
+    except:
+        True
+    print('Convert ' + cue + ' to a normal style ISO') if verbose else None
+    bc = bchunk()
+    bc.verbose = False
+    bc.open(cue)
+    bc.writetrack(1, tmp)
+
+    gid, md5 = get_gameid_from_iso(tmp)
+    return gid, md5
+
+
+def get_disc_ids(cue_files, real_cue_files, subdir='./'):
     disc_ids = []
     md5_sums = []
     for idx in range(len(cue_files)):
-        try:
-            with open(create_path(cue_files[idx], 'GAME_ID'), 'r') as d:
-                disc_ids.append(d.read())
-                md5_sums.append('0')
-                print('Read disc id from', create_path(cue_files[idx], 'GAME_ID'))
-                continue
-        except:
-            True
-        print('Convert CUE to a normal style ISO to read the disc id', cue_files[idx]) if verbose else None
-        bc = bchunk()
-        bc.verbose = args.v
-        bc.open(cue_files[idx])
-        fn = subdir + 'ISO%02x01.iso' % idx
-        bc.writetrack(1, fn)
-        temp_files.append(fn)
-        gid, md5 = get_gameid_from_iso(fn)
+        gid, md5 = get_disc_id(cue_files[idx], real_cue_files[idx], subdir + 'ISO%02x01.iso' % idx)
         disc_ids.append(gid)
         md5_sums.append(md5)
 
@@ -3923,25 +3926,25 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
         if not ppf:
             continue
         print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
-        if subdir != cue_files[i][:len(subdir)]:
-            # Need to copy the bin/cue to the work directory.
-            # We know this is a single bin at this point as if it would have
-            # been merged into the work directory otherwise
-            _c = subdir + 'PPF%02x.cue' % i
-            _b = subdir + 'PPF%02x.bin' % i
-            print('Copy %s -> %s so we can apply PPF' % (img_files[i], _b))
-            copy_file(img_files[i], _b) 
-            temp_files.append(_b)
-            with open(cue_files[i], 'r') as fi:
-                l = fi.readlines()
-                l[0] = 'FILE "%s" BINARY\n' % ('PPF%02x.bin' % i)
-                with open(_c, 'w') as fo:
-                    fo.writelines(l)
-                    temp_files.append(_c)
-            cue_files[i] = _c
-            img_files[i] = _b
 
-        print('Applying', ppf)
+        # Need to copy the bin/cue to the work directory.
+        # We know this is a single bin at this point as if it would have
+        # been merged into the work directory otherwise
+        _c = subdir + 'PPF%02x.cue' % i
+        _b = subdir + 'PPF%02x.bin' % i
+        print('Copy %s -> %s so we can apply PPF' % (img_files[i], _b))
+        copy_file(img_files[i], _b) 
+        temp_files.append(_b)
+        with open(cue_files[i], 'r') as fi:
+            l = fi.readlines()
+            l[0] = 'FILE "%s" BINARY\n' % ('PPF%02x.bin' % i)
+            with open(_c, 'w') as fo:
+                fo.writelines(l)
+                temp_files.append(_c)
+        cue_files[i] = _c
+        img_files[i] = _b
+
+        print('Applying', ppf, 'to', img_files[i])
         ApplyPPF(img_files[i], ppf)
             
     return cue_files, img_files
@@ -4252,7 +4255,7 @@ if __name__ == "__main__":
             print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
             temp_files.append(tmpcue)
             with open(tmpcue, "w") as f:
-                f.write('FILE "%s" BINARY\n' % cue_file)
+                f.write('FILE "%s" BINARY\n' % os.path.abspath(cue_file))
                 f.write('  TRACK 01 MODE2/2352\n')
                 f.write('    INDEX 01 00:00:00\n')
 
@@ -4307,7 +4310,7 @@ if __name__ == "__main__":
 
     # We need to convert the first track of every ISO so we can open the
     # disk and read system.cnf
-    disc_ids, md5_sums = get_disc_ids(real_cue_files, subdir=subdir)
+    disc_ids, md5_sums = get_disc_ids(cue_files, real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
     if args.ps3_pkg:
         for i in range(len(real_disc_ids)):

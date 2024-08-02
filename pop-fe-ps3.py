@@ -40,16 +40,6 @@ temp_files = []
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "pop-fe-ps3.ui"
 
-def get_disc_id(cue, tmp):
-    print('Convert ' + cue + ' to a normal style ISO') if verbose else None
-    bc = bchunk()
-    bc.verbose = False
-    bc.open(cue)
-    bc.writetrack(1, tmp)
-
-    gid, md5 = popfe.get_gameid_from_iso(tmp)
-    return gid, md5
-
 
 class FinishedDialog(tk.Toplevel):
     def __init__(self, root):
@@ -402,7 +392,7 @@ class PopFePs3App:
             
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
-        disc_id, md5_sum = get_disc_id(cue_file, tmp)
+        disc_id, md5_sum = popfe.get_disc_id(cue_file, self.cue_file_orig, tmp)
 
         self.builder.get_variable('disci%s_variable' % (disc)).set(disc_id)
 
