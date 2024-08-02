@@ -4067,6 +4067,96 @@ def force_ntsc_config(ps3config):
         c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
     return c
 
+def process_disk_file(cue_file, temp_files, subdir='./'):
+    real_cue_file = cue_file
+
+    if cue_file[-4:] == '.chd':
+        print('This is a CHD file. Uncompress the file.') if verbose else None
+        chd = cue_file
+        try:
+            tmpcue = subdir + 'CDH%d.cue' % (0 if not idx else idx[0])
+            tmpbin = subdir + 'CDH%d.bin' % (0 if not idx else idx[0])
+            temp_files.append(tmpcue)
+            temp_files.append(tmpbin)
+            print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
+            subprocess.run(['chdman', 'extractcd', '-f', '-i', chd, '-ob', tmpbin, '-o', tmpcue], check=True)
+        except:
+            print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nCHDMAN not found.\nCan not convert game\nPlease see README file for how to install chdman\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+            os._exit(10)
+        cue_file = tmpcue
+        # we didn't actually have a CUE file to start with so just
+        # replace the "real" cue filename with our temporary one
+        real_cue_file = cue_file
+
+    if cue_file[-4:] == '.zip':
+        print('This is a ZIP file. Uncompress the file.') if verbose else None
+        zip = cue_file
+        with zipfile.ZipFile(zip, 'r') as zf:
+            for f in zf.namelist():
+                print('Extracting', subdir + f) if verbose else None
+                temp_files.append(subdir + f)
+                zf.extract(f, path=subdir)
+                if re.search('.cue$', f):
+                    print('Found CUE file', f) if verbose else None
+                    cue_file = subdir + f
+                    # we didn't actually have a CUE file to start with so just
+                    # replace the "real" cue filename with our temporary one
+                    real_cue_file = cue_file
+
+    if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
+        tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
+        print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
+        temp_files.append(tmpcue)
+        with open(tmpcue, "w") as f:
+            f.write('FILE "%s" BINARY\n' % os.path.abspath(cue_file))
+            f.write('  TRACK 01 MODE2/2352\n')
+            f.write('    INDEX 01 00:00:00\n')
+
+        cue_file = tmpcue
+        # we didn't actually have a CUE file to start with so just
+        # replace the "real" cue filename with our temporary one
+        real_cue_file = cue_file
+
+    if cue_file[-3:] == 'ccd':
+        tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
+        print('CCD file. Create a temporary cue file for it', tmpcue) if verbose else None
+        temp_files.append(tmpcue)
+        ccd = parse_ccd(cue_file)
+        cue = ccd2cue(ccd)
+        write_cue(cue, tmpcue)
+
+        cue_file = tmpcue
+        # we didn't actually have a CUE file to start with so just
+        # replace the "real" cue filename with our temporary one
+        real_cue_files[-1] = cue_file
+
+    if cue_file[-3:] != 'cue':
+        print('%s is not a CUE file. Skipping' % cue_file) if verbose else None
+        return None, None, None
+
+    i = get_imgs_from_bin(cue_file)
+    img_file = i[0]
+    if len(i) > 1:
+        try:
+            if os.name == 'posix':
+                os.stat('./binmerge')
+            else:
+                os.stat('binmerge.exe')
+        except:
+            raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
+        mb = 'MB%d' % (0 if not idx else idx[0])
+        temp_files.append(mb)
+        if os.name == 'posix':
+            subprocess.call(['python3', './binmerge', '-o', subdir, cue_file, mb])
+        else:
+            subprocess.call(['binmerge.exe', '-o', subdir, cue_file, mb])
+        cue_file = subdir + mb + '.cue'
+        temp_files.append(cue_file)
+        img_file = subdir + mb + '.bin'
+        temp_files.append(img_file)
+        
+    return cue_file, real_cue_file, img_file
+
 
 # ICON0 is the game cover
 # PIC0 is logo
@@ -4205,8 +4295,6 @@ if __name__ == "__main__":
                 pspconfigs = []
             pspconfigs.append(bytes())
 
-        real_cue_file = cue_file
-        real_cue_files.append(real_cue_file)
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
             mc = check_memory_card(cue_file)
@@ -4218,92 +4306,14 @@ if __name__ == "__main__":
         zip = None
         print('Processing', cue_file, '...')
 
-        if cue_file[-4:] == '.chd':
-            print('This is a CHD file. Uncompress the file.') if verbose else None
-            chd = cue_file
-            try:
-                tmpcue = subdir + 'CDH%d.cue' % (0 if not idx else idx[0])
-                tmpbin = subdir + 'CDH%d.bin' % (0 if not idx else idx[0])
-                temp_files.append(tmpcue)
-                temp_files.append(tmpbin)
-                print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
-                subprocess.run(['chdman', 'extractcd', '-f', '-i', chd, '-ob', tmpbin, '-o', tmpcue], check=True)
-            except:
-                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nCHDMAN not found.\nCan not convert game\nPlease see README file for how to install chdman\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-                os._exit(10)
-            cue_file = tmpcue
-            # we didn't actually have a CUE file to start with so just
-            # replace the "real" cue filename with our temporary one
-            real_cue_files[-1] = cue_file
-        if cue_file[-4:] == '.zip':
-            print('This is a ZIP file. Uncompress the file.') if verbose else None
-            zip = cue_file
-            with zipfile.ZipFile(zip, 'r') as zf:
-                for f in zf.namelist():
-                    print('Extracting', subdir + f) if verbose else None
-                    temp_files.append(subdir + f)
-                    zf.extract(f, path=subdir)
-                    if re.search('.cue$', f):
-                        print('Found CUE file', f) if verbose else None
-                        cue_file = subdir + f
-                        # we didn't actually have a CUE file to start with so just
-                        # replace the "real" cue filename with our temporary one
-                        real_cue_files[-1] = cue_file
+        cue_file , real_cue_file, img_file = process_disk_file(cue_file, temp_files, subdir=subdir)
 
-        if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
-            tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
-            print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
-            temp_files.append(tmpcue)
-            with open(tmpcue, "w") as f:
-                f.write('FILE "%s" BINARY\n' % os.path.abspath(cue_file))
-                f.write('  TRACK 01 MODE2/2352\n')
-                f.write('    INDEX 01 00:00:00\n')
-
-            cue_file = tmpcue
-            # we didn't actually have a CUE file to start with so just
-            # replace the "real" cue filename with our temporary one
-            real_cue_files[-1] = cue_file
-
-        if cue_file[-3:] == 'ccd':
-            tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
-            print('CCD file. Create a temporary cue file for it', tmpcue) if verbose else None
-            temp_files.append(tmpcue)
-            ccd = parse_ccd(cue_file)
-            cue = ccd2cue(ccd)
-            write_cue(cue, tmpcue)
-
-            cue_file = tmpcue
-            # we didn't actually have a CUE file to start with so just
-            # replace the "real" cue filename with our temporary one
-            real_cue_files[-1] = cue_file
-            
-        if cue_file[-3:] != 'cue':
-            print('%s is not a CUE file. Skipping' % cue_file) if verbose else None
+        if not cue_file:
             continue
-
-        i = get_imgs_from_bin(cue_file)
-        img_file = i[0]
-        if len(i) > 1:
-            try:
-                if os.name == 'posix':
-                    os.stat('./binmerge')
-                else:
-                    os.stat('binmerge.exe')
-            except:
-                raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
-            mb = 'MB%d' % (0 if not idx else idx[0])
-            temp_files.append(mb)
-            if os.name == 'posix':
-                subprocess.call(['python3', './binmerge', '-o', subdir, cue_file, mb])
-            else:
-                subprocess.call(['binmerge.exe', '-o', subdir, cue_file, mb])
-            cue_file = subdir + mb + '.cue'
-            temp_files.append(cue_file)
-            img_file = subdir + mb + '.bin'
-            temp_files.append(img_file)
 
         img_files.append(img_file)
         cue_files.append(cue_file)
+        real_cue_files.append(real_cue_file)
 
         if idx:
             idx = (idx[0] + 1, idx[1])
@@ -4521,8 +4531,8 @@ if __name__ == "__main__":
             print('#####################################')
         if patch_libcrypt:
             #
-            # Copy the CUE and BIN locally so we can patch them
-            # qqq we don't need to copy them if they are already in
+            # Copy the CUE and BIN locally so we can patch them.
+            # We don't need to copy them if they are already in
             # our temporary work directory pop-fe-work/
             i = get_imgs_from_bin(cue_files[idx])
             print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
