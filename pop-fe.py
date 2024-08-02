@@ -4067,15 +4067,15 @@ def force_ntsc_config(ps3config):
         c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
     return c
 
-def process_disk_file(cue_file, temp_files, subdir='./'):
+def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     real_cue_file = cue_file
 
     if cue_file[-4:] == '.chd':
         print('This is a CHD file. Uncompress the file.') if verbose else None
         chd = cue_file
         try:
-            tmpcue = subdir + 'CDH%d.cue' % (0 if not idx else idx[0])
-            tmpbin = subdir + 'CDH%d.bin' % (0 if not idx else idx[0])
+            tmpcue = subdir + 'CDH%d.cue' % (idx)
+            tmpbin = subdir + 'CDH%d.bin' % (idx)
             temp_files.append(tmpcue)
             temp_files.append(tmpbin)
             print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
@@ -4104,7 +4104,7 @@ def process_disk_file(cue_file, temp_files, subdir='./'):
                     real_cue_file = cue_file
 
     if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
-        tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
+        tmpcue = subdir + 'TMP%d.cue' % (idx)
         print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
         temp_files.append(tmpcue)
         with open(tmpcue, "w") as f:
@@ -4118,7 +4118,7 @@ def process_disk_file(cue_file, temp_files, subdir='./'):
         real_cue_file = cue_file
 
     if cue_file[-3:] == 'ccd':
-        tmpcue = subdir + 'TMP%d.cue' % (0 if not idx else idx[0])
+        tmpcue = subdir + 'TMP%d.cue' % (idx)
         print('CCD file. Create a temporary cue file for it', tmpcue) if verbose else None
         temp_files.append(tmpcue)
         ccd = parse_ccd(cue_file)
@@ -4144,7 +4144,7 @@ def process_disk_file(cue_file, temp_files, subdir='./'):
                 os.stat('binmerge.exe')
         except:
             raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
-        mb = 'MB%d' % (0 if not idx else idx[0])
+        mb = 'MB%d' % (idx)
         temp_files.append(mb)
         if os.name == 'posix':
             subprocess.call(['python3', './binmerge', '-o', subdir, cue_file, mb])
@@ -4306,7 +4306,7 @@ if __name__ == "__main__":
         zip = None
         print('Processing', cue_file, '...')
 
-        cue_file , real_cue_file, img_file = process_disk_file(cue_file, temp_files, subdir=subdir)
+        cue_file , real_cue_file, img_file = process_disk_file(cue_file, 0 if not idx else idx[0], temp_files, subdir=subdir)
 
         if not cue_file:
             continue

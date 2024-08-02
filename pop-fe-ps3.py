@@ -325,70 +325,10 @@ class PopFePs3App:
         print('Processing', cue_file)  if verbose else None
         disc = event.widget.cget('title')
         print('Disc', disc)  if verbose else None
+        idx = int(disc[1])
 
-        if cue_file[-4:] == '.chd':
-            print('This is a CHD file. Uncompress the file.') if verbose else None
-            chd = cue_file
-            try:
-                tmpcue = self.subdir + 'CDH%s.cue' % disc
-                tmpbin = self.subdir + 'CDH%s.bin' % disc
-                temp_files.append(tmpcue)
-                temp_files.append(tmpbin)
-                print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
-                subprocess.run(['chdman', 'extractcd', '-f', '-i', chd, '-ob', tmpbin, '-o', tmpcue], check=True)
-            except:
-                print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nCHDMAN not found.\nCan not convert game\nPlease see README file for how to install chdman\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-                os._exit(10)
-            cue_file = tmpcue
-            self.cue_file_orig = cue_file
-        if cue_file[-4:] == '.zip':
-            print('This is a ZIP file. Uncompress the file.') if verbose else None
-            zip = cue_file
-            with zipfile.ZipFile(zip, 'r') as zf:
-                for f in zf.namelist():
-                    print('Extracting', self.subdir + f) if verbose else None
-                    temp_files.append(self.subdir + f)
-                    zf.extract(f, path=self.subdir)
-                    if re.search('.cue$', f):
-                        print('Found CUE file', f) if verbose else None
-                        cue_file = self.subdir + f
-                        self.cue_file_orig = cue_file
-            
-        if cue_file[-4:] == '.ccd':
-            tmpcue = self.subdir + 'TMPCUE' + disc + '.cue'
-            temp_files.append(tmpcue)
-            ccd = parse_ccd(cue_file)
-            cue = ccd2cue(ccd)
-            write_cue(cue, tmpcue)
-            cue_file = tmpcue
-        if cue_file[-4:] == '.bin' or cue_file[-4:] == '.img':
-            tmpcue = self.subdir + 'TMPCUE' + disc + '.cue'
-            tmpimg = self.subdir + 'TMPIMG' + disc + '.bin'
-            print('Need to create a temporary cue/bin', tmpcue, tmpimg)
-            temp_files.append(tmpcue)
-            temp_files.append(tmpimg)
-            popfe.copy_file(cue_file, tmpimg)
-
-            with open(tmpcue, "w") as f:
-                f.write('FILE "%s" BINARY\n' % ('TMPIMG' + disc + '.bin'))
-                f.write('  TRACK 01 MODE2/2352\n')
-                f.write('    INDEX 01 00:00:00\n')
-            img_file = cue_file
-            cue_file = tmpcue
-        else:
-            i = popfe.get_imgs_from_bin(cue_file)
-            img_file = i[0]
-            if len(i) > 1:
-                print('Merging multi-bin disc') if verbose else None
-                mb = 'MB' + disc
-                if os.name == 'posix':
-                    subprocess.call(['python3', './binmerge', '-o', 'pop-fe-ps3-work', cue_file, mb])
-                else:
-                    subprocess.call(['binmerge.exe', '-o', 'pop-fe-ps3-work', cue_file, mb])
-                cue_file = self.subdir + mb + '.cue'
-                temp_files.append(cue_file)
-                img_file = self.subdir + mb + '.bin'
-                temp_files.append(img_file)
+        cue_file , real_cue_file, img_file = popfe.process_disk_file(cue_file, idx, temp_files, subdir=self.subdir)
+        self.cue_file_orig = real_cue_file
             
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
