@@ -2417,6 +2417,7 @@ class popstation(object):
         self._striptracks = False
         # complevel is >0 for PSP and ==0 for PS3
         self._complevel = 1
+        self._no_pstitleimg = False
         self._disc_ids = ['SLUS00000']
         self._game_title = 'TITLE'
         self._icon0 = None
@@ -2579,6 +2580,14 @@ class popstation(object):
         self._complevel = value
 
     @property
+    def no_pstitleimg(self):
+        return self._no_pstitleimg
+
+    @no_pstitleimg.setter
+    def no_pstitleimg(self, value):
+        self._no_pstitleimg = value
+
+    @property
     def striptracks(self):
         return self._striptracks
 
@@ -2719,7 +2728,7 @@ class popstation(object):
         # Block #1
         buf = bytearray(1024)
         buf[:12] = b'PSISOIMG0000'
-        struct.pack_into('<I', buf, 12, isosize + 0x100000) 
+        struct.pack_into('<I', buf, 12, isosize + 0x100000)
         fh.write(buf)
         
         # Block #2
@@ -2859,6 +2868,12 @@ class popstation(object):
 
         end_offset = end_offset + 0x2d31
 
+        # update the length at offset 0x1220
+        fh.seek(p2_offset)
+        buf = bytearray(4)
+        struct.pack_into('<I', buf, 0, end_offset)
+        fh.write(buf)
+        
         if len(att):
             fh.seek(att_offset)
             fh.write(att)
@@ -3179,16 +3194,22 @@ class popstation(object):
         fh.write(_datapspbody)
 
         # Start of DATA.PSAR
-        _pstitle = bytearray(_pstitledata)
+        if not self._no_pstitleimg:
+            _pstitle = bytearray(_pstitledata)
 
-        # skip past _pstitle, we will write it later
-        fh.seek(_psar_offset + len(_pstitle))
+            # skip past _pstitle, we will write it later
+            fh.seek(_psar_offset + len(_pstitle))
+        else:
+            # If there is no PSTITLEIMG then the PSISOIMG will be aligned
+            # on the next 0x10000 boundary.
+            fh.seek( (fh.tell() + 0x10000) & 0xffff0000 )
 
         disc_num = 0
         psiso_offsets = []
         for img_toc in self._img_toc:
             fh.seek((fh.tell() + 0x7fff) & 0xffff8000)
-            struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)
+            if not self._no_pstitleimg:
+                struct.pack_into('<I', _pstitle, 0x200 + disc_num * 4, fh.tell() - _psar_offset)
             psiso_offsets.append(fh.tell())
             self.encode_psiso(fh, disc_num, img_toc)
             fh.seek(0, 2)
@@ -3198,26 +3219,28 @@ class popstation(object):
         # Add padding before STARTDAT
         fh.seek((fh.tell() + 0x0f) & 0xfffffff0)
 
-        # update PSTITLEIMG
         x = fh.tell()
-        _pstitle[:16] = b'PSTITLEIMG000000'
-        # update offset to STARTDAT
-        struct.pack_into('<I', _pstitle, 0x10, x - _psar_offset)
-        struct.pack_into('<I', _pstitle, 0x284, x - _psar_offset + 0x2d31)
-        # Update game id
-        gid = self._disc_ids[0]
-        _pstitle[0x264:0x264 + 11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
-        # Update game name
-        _t = bytes(self._game_title, encoding='utf-8')
-        _pstitle[0x30c:0x30c + len(_t)] = _t
-        print('Writing PSTITLEIMG.DAT') if self._verbose else None
-        fh.seek(_psar_offset)
-        fh.write(_pstitle)
+        if not self._no_pstitleimg:
+            # update PSTITLEIMG
+            _pstitle[:16] = b'PSTITLEIMG000000'
+            # update offset to STARTDAT
+            struct.pack_into('<I', _pstitle, 0x10, x - _psar_offset)
+            struct.pack_into('<I', _pstitle, 0x284, x - _psar_offset + 0x2d31)
+            # Update game id
+            gid = self._disc_ids[0]
+            _pstitle[0x264:0x264 + 11] = bytes('_' + gid[0:4] + '_' + gid[4:9], encoding='utf-8')
+            # Update game name
+            _t = bytes(self._game_title, encoding='utf-8')
+            _pstitle[0x30c:0x30c + len(_t)] = _t
+            print('Writing PSTITLEIMG.DAT') if self._verbose else None
+            fh.seek(_psar_offset)
+            fh.write(_pstitle)
 
-        if self._iso_bin_dat:
-            self.create_iso_bin_dat(fh, _pstitle, psiso_offsets)
-
+            if self._iso_bin_dat:
+                self.create_iso_bin_dat(fh, _pstitle, psiso_offsets)
+            
         fh.seek(x)
+
         print('Writing STARTDAT header') if self._verbose else None
         struct.pack_into('<I', _startdatheader, 20, len(self._logo))
         fh.write(_startdatheader)
