@@ -3202,7 +3202,7 @@ class popstation(object):
         else:
             # If there is no PSTITLEIMG then the PSISOIMG will be aligned
             # on the next 0x10000 boundary.
-            fh.seek( (fh.tell() + 0x10000) & 0xffff0000 )
+            fh.seek( (fh.tell() + 0xffff) & 0xffff0000 )
 
         disc_num = 0
         psiso_offsets = []
