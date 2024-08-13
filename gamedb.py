@@ -71047,6 +71047,21 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '95fcd54014eea3ff50985c796be25489': {
+        'id': 'SLPS00026',
+    },
+    'ba8ad6d538097ac19d790c14c177382c': {
+        'id': 'SLPS00085',
+    },
+    'bbbc9342c9d564b0111d3d3c033af2e5': {
+        'id': 'SLPS00020',
+    },
+    '47911e32d3a480161ad8f2b25fad8b57': {
+        'id': 'SCPS10016',
+    },
+    '4ddfcedabce0623cfb90972f9396041f': {
+        'id': 'SLPS01334',
+    },
     '64b316a3f8ffb67b5e5b42e7be3686df': {
         'id': 'SLPS00007',
     },
