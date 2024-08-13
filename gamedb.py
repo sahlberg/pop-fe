@@ -61983,6 +61983,12 @@ games = {
 	'title': "SAIKYOU NO SHOGI",
         'pic0': 'https://images.launchbox-app.com/7b9738ee-3bb2-47cc-99d5-7a30e749ab9b.png',
     },
+    'SLPM80215': {
+        'url': "games/J/S/SLPS-01257.html",
+    	'id': 'SLPM80215',
+	'title': "SAISHUU DENSHA (DEMO)",
+        'pic0': 'https://images.launchbox-app.com/05564821-3c26-4b8d-98f7-97cd943f0279.png',
+    },
     'SLPS01257': {
         'url': "games/J/S/SLPS-01257.html",
     	'id': 'SLPS01257',
@@ -67560,6 +67566,7 @@ games = {
         'url': "games/J/T/SLPS-00051.html",
     	'id': 'SLPS00051',
 	'title': "THAT'S PON!",
+        'pic0': 'https://images.launchbox-app.com/90644c28-ead8-48bf-a7d2-9a1bf9d41f02.png',
     },
     'SLPM86340': {
         'url': "games/J/T/SLPM-86340.html",
@@ -67571,21 +67578,33 @@ games = {
         'url': "games/J/T/SLPS-01734.html",
     	'id': 'SLPS01734',
 	'title': "THE ADVENTURE OF PUPPET PRINCESS",
+        'pic0': 'https://images.launchbox-app.com/ed271467-d2e0-4d36-9805-1159d86f19c3.png',
+        'pic1': 'https://images.launchbox-app.com/ef4344c3-f83e-45f6-8fe6-6409cf0a6ff8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wFdkwjFZfXw&list=PL0f5VYB5Ne8xqfM1ppPbQ2dX5Fn2dv4hp&index=1',
     },
     'SLPS91415': {
         'url': "games/J/T/SLPS-91415.html",
     	'id': 'SLPS91415',
 	'title': "THE ADVENTURE OF PUPPET PRINCESS [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/ed271467-d2e0-4d36-9805-1159d86f19c3.png',
+        'pic1': 'https://images.launchbox-app.com/ef4344c3-f83e-45f6-8fe6-6409cf0a6ff8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wFdkwjFZfXw&list=PL0f5VYB5Ne8xqfM1ppPbQ2dX5Fn2dv4hp&index=1',
     },
     'SLPS02286': {
         'url': "games/J/T/SLPS-02286.html",
     	'id': 'SLPS02286',
 	'title': "THE ADVENTURE OF PUPPET PRINCESS +1",
+        'pic0': 'https://images.launchbox-app.com/ed271467-d2e0-4d36-9805-1159d86f19c3.png',
+        'pic1': 'https://images.launchbox-app.com/ef4344c3-f83e-45f6-8fe6-6409cf0a6ff8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wFdkwjFZfXw&list=PL0f5VYB5Ne8xqfM1ppPbQ2dX5Fn2dv4hp&index=1',
     },
     'SLPS02287': {
         'url': "games/J/T/SLPS-02286.html",
     	'id': 'SLPS02287',
 	'title': "THE ADVENTURE OF PUPPET PRINCESS +1",
+        'pic0': 'https://images.launchbox-app.com/ed271467-d2e0-4d36-9805-1159d86f19c3.png',
+        'pic1': 'https://images.launchbox-app.com/ef4344c3-f83e-45f6-8fe6-6409cf0a6ff8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=wFdkwjFZfXw&list=PL0f5VYB5Ne8xqfM1ppPbQ2dX5Fn2dv4hp&index=1',
     },
     'SLPS01916': {
         'url': "games/J/T/SLPS-01916.html",
@@ -71028,6 +71047,24 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '64b316a3f8ffb67b5e5b42e7be3686df': {
+        'id': 'SLPS00007',
+    },
+    '816fbd54e5e5e9245f6caa58d476aa5c': {
+        'id': 'SLPS00010',
+    },
+    '6226a31e099ae879d43fb965d9dbd0ce': {
+        'id': 'SLPS00091',
+    },
+    'f352886a1aec0142eb21c85aec338c02': {
+        'id': 'SLPS00135',
+    },
+    '9edcadafa686956173300d9e1033a558': {
+        'id': 'SLPS00134',
+    },
+    'bccdd6c8482bd52d7207f4c35a4f00ca': {
+        'id': 'SLPS00133',
+    },
     'b68acd371952d678370dc4fae48d833c': {
         'id': 'SLPS00142',
     },
