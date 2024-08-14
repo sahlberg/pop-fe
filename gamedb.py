@@ -5651,6 +5651,7 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IdqpUsDhyGU&list=PL3B36792A6F9E15D4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SCUS94199': {
@@ -17661,6 +17662,7 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IdqpUsDhyGU&list=PL3B36792A6F9E15D4&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Blood%20Omen%20Legacy%20of%20Kain%20[SLES-00075]%20(E).cbr',
     },
     'SLES00522': {
@@ -17669,6 +17671,7 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IdqpUsDhyGU&list=PL3B36792A6F9E15D4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SLES00523': {
@@ -17677,6 +17680,7 @@ games = {
 	'title': "BLOOD OMEN - LEGACY OF KAIN",
         'pic0': 'https://images.launchbox-app.com/1ec50723-8d9d-474b-ae27-6435ab2c9551.png',
         'pic1': 'https://images.launchbox-app.com/f967492d-f705-413a-bbe2-1ab26357a8e6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IdqpUsDhyGU&list=PL3B36792A6F9E15D4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blood%20Omen%20-%20Legacy%20of%20Kain%20%28USA%29_jp2.zip',
     },
     'SLES01010': {
@@ -45384,11 +45388,13 @@ games = {
         'url': "games/J/E/SLPS-00181.html",
     	'id': 'SLPS00181',
 	'title': "EKO EKO AZARAKU WIZARD OF DARKNESS",
+        'pic0': 'https://images.launchbox-app.com/13798743-50d0-45b1-b2e7-0cc76de625d2.png',
     },
     'SLPS00648': {
         'url': "games/J/E/SLPS-00648.html",
     	'id': 'SLPS00648',
 	'title': "EKO NO KIDS - TAGA TAME HI KANE HA NARU",
+        'pic0': 'https://images.launchbox-app.com/a14bbdb8-81f8-4097-85e8-b19296eb6d97.png',
     },
     'SLPS01925': {
         'url': "games/J/E/SLPS-01925.html",
@@ -47309,26 +47315,32 @@ games = {
         'url': "games/J/G/SLPS-01082.html",
     	'id': 'SLPS01082',
 	'title': "GADGET - PAST AS FUTURE",
+        'pic0': 'https://images.launchbox-app.com/fe729470-49c6-4eaf-a345-e85daad40884.png',
     },
     'SLPS01083': {
         'url': "games/J/G/SLPS-01082.html",
     	'id': 'SLPS01083',
 	'title': "GADGET - PAST AS FUTURE",
+        'pic0': 'https://images.launchbox-app.com/fe729470-49c6-4eaf-a345-e85daad40884.png',
     },
     'SLPS01084': {
         'url': "games/J/G/SLPS-01082.html",
     	'id': 'SLPS01084',
 	'title': "GADGET - PAST AS FUTURE",
+        'pic0': 'https://images.launchbox-app.com/fe729470-49c6-4eaf-a345-e85daad40884.png',
     },
     'SLPS01085': {
         'url': "games/J/G/SLPS-01082.html",
     	'id': 'SLPS01085',
 	'title': "GADGET - PAST AS FUTURE",
+        'pic0': 'https://images.launchbox-app.com/fe729470-49c6-4eaf-a345-e85daad40884.png',
     },
     'SLPS02075': {
         'url': "games/J/G/SLPS-02075.html",
     	'id': 'SLPS02075',
 	'title': "GAIA MASTER - KAMIGAMI NO BOARDGAME",
+        'pic0': 'https://images.launchbox-app.com/8e317517-e126-47f6-bc34-a934e4d9256d.png',
+        'pic1': 'https://images.launchbox-app.com/b60b1ba3-222f-4114-8d26-267e19961838.jpg',
     },
     'SLPS00624': {
         'url': "games/J/G/SLPS-00624.html",
@@ -48819,6 +48831,7 @@ games = {
         'url': "games/J/G/SLPS-00588.html",
     	'id': 'SLPS00588',
 	'title': "GUSSUN PARADISE",
+        'pic0': 'https://images.launchbox-app.com/fb9bc06a-0484-4278-af2c-93fd65efa27b.png',
     },
     'SLPS00626': {
         'url': "games/J/G/SLPS-00626.html",
@@ -49284,6 +49297,7 @@ games = {
         'url': "games/J/H/SLPM-86083.html",
     	'id': 'SLPM86083',
 	'title': "HELLO CHARLIE!!",
+        'pic0': 'https://images.launchbox-app.com/2a46023d-7ee1-47ca-a993-6a572db90e27.png',
     },
     'SLPM86140': {
         'url': "games/J/H/SLPM-86140.html",
@@ -51161,7 +51175,9 @@ games = {
         'url': "games/J/K/SLPS-00743.html",
     	'id': 'SLPS00743',
 	'title': "KAIN THE VAMPIRE",
+        'pic0': 'https://images.launchbox-app.com/83f4a245-19d8-4c1b-93d6-2248b8e42347.png',
         'pic1': 'https://images.launchbox-app.com/ebe79149-ff51-440b-8e0e-1586f1320aa1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=IdqpUsDhyGU&list=PL3B36792A6F9E15D4&index=1',
     },
     'SLPS03079': {
         'url': "games/J/K/SLPS-03079.html",
@@ -54622,21 +54638,25 @@ games = {
         'url': "games/J/M/SLPS-02804.html",
     	'id': 'SLPS02804',
 	'title': "MEITANTE CONAN - 3-JIN NO MEITANTEI",
+        'pic0': 'https://images.launchbox-app.com/7c28145f-a191-4c78-8685-cb7f1cbc4f6d.png',
     },
     'SLPS03456': {
         'url': "games/J/M/SLPS-03456.html",
     	'id': 'SLPS03456',
 	'title': "MEITANTE CONAN - 3-JIN NO MEITANTEI (BANDAI THE BEST)",
+        'pic0': 'https://images.launchbox-app.com/7c28145f-a191-4c78-8685-cb7f1cbc4f6d.png',
     },
     'SLPS03425': {
         'url': "games/J/M/SLPS-03425.html",
     	'id': 'SLPS03425',
 	'title': "MEITANTE CONAN - SAIKOU NO AIBOU",
+        'pic0': 'https://images.launchbox-app.com/3a853707-acf2-472e-9ed7-70d2d32537b6.png',
     },
     'SLPS03548': {
         'url': "games/J/M/SLPS-03548.html",
     	'id': 'SLPS03548',
 	'title': "MEITANTEI CONAN - TRICK TRICK VOL.1",
+        'pic0': 'https://images.launchbox-app.com/cc864770-2d56-49d3-8406-5a6b36461ed9.png',
     },
     'SLPS02649': {
         'url': "games/J/M/SLPS-02649.html",
@@ -57547,6 +57567,7 @@ games = {
         'url': "games/J/N/SLPM-86063.html",
     	'id': 'SLPM86063',
 	'title': "NOON - NEW TYPE ACTION GAME",
+        'pic0': 'https://images.launchbox-app.com/2c30fb71-9639-4f39-9179-069a4f90bbfe.png',
     },
     'SLPS00274': {
         'url': "games/J/N/SLPS-00274.html",
@@ -69751,6 +69772,7 @@ games = {
         'url': "games/J/T/SLPS-01860.html",
     	'id': 'SLPS01860',
 	'title': "TRICKY SLIDERS",
+        'pic0': 'https://images.launchbox-app.com/c84d2755-2a41-4889-8a03-aa95d49b53ed.png',
     },
     'SLPS00682': {
         'url': "games/J/T/SLPS-00682.html",
@@ -69960,6 +69982,7 @@ games = {
         'url': "games/J/T/SLPM-86393.html",
     	'id': 'SLPM86393',
 	'title': "TV KAMISHIBAI VOL.1",
+        'pic0': 'https://images.launchbox-app.com/bed1400b-6273-4e54-9ae6-356a72e26e4f.png',
     },
     'SLPS00405': {
         'url': "games/J/T/SLPS-00405.html",
@@ -71047,6 +71070,24 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'e9870f69fa34e72897e23cd5167850f2': {
+        'id': 'SCPS10009',
+    },
+    '2d422fa7b21a01f7dfcb6cae44e57ff6': {
+        'id': 'SLPS00336',
+    },
+    '8750ade82a2c39e8df6bec3cc35db31e': {
+        'id': 'SCPS10022',
+    },
+    '3e08389fcba5cd1dfe4ffbed6d47071e': {
+        'id': 'SLPS00230',
+    },
+    'a803a0c13530b98527ce469de12a138a': {
+        'id': 'SLPS01558',
+    },
+    '07a9e9ecc42b710e4c61bcf61f225584': {
+        'id': 'SLPS00009',
+    },
     '95fcd54014eea3ff50985c796be25489': {
         'id': 'SLPS00026',
     },
