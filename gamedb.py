@@ -43767,6 +43767,7 @@ games = {
         'url': "games/J/D/SLPS-01150.html",
     	'id': 'SLPS01150',
 	'title': "DENSHA DE GO! YAMANOTE LINE",
+        'pic0': 'https://images.launchbox-app.com/21250c38-a3f1-491e-af82-7d0ae02395ca.png',
     },
     'SCPS18003': {
         'url': "games/J/D/SCPS-18003.html",
@@ -45427,6 +45428,7 @@ games = {
         'url': "games/J/E/SLPS-03399.html",
     	'id': 'SLPS03399',
 	'title': "ELEMENTAL PINBALL [NICE PRICE SERIES VOL.08]",
+        'pic0': 'https://images.launchbox-app.com/8c4cc244-8149-43d5-a15f-9830722b28ad.png',
     },
     'SLPS00904': {
         'url': "games/J/E/SLPS-00904.html",
@@ -47192,11 +47194,13 @@ games = {
         'url': "games/J/F/SLPM-86808.html",
     	'id': 'SLPM86808',
 	'title': "FURIMUKEBA TONARI NI",
+        'pic0': 'https://images.launchbox-app.com/6f8bf17f-80f3-4956-bcbb-b04294cdc69a.png',
     },
     'SLPM86642': {
         'url': "games/J/F/SLPM-86642.html",
     	'id': 'SLPM86642',
 	'title': "FUSHIGI DEKA",
+        'pic0': 'https://images.launchbox-app.com/34ee5433-1a54-4cf6-b324-3ce689540319.png',
     },
     'SLPS00730': {
         'url': "games/J/F/SLPS-00730.html",
@@ -47229,6 +47233,7 @@ games = {
         'url': "games/J/F/SLPS-00441.html",
     	'id': 'SLPS00441',
 	'title': "FUUUN GOKUU NINDEN",
+        'pic0': 'https://images.launchbox-app.com/ff99452a-7164-454e-b261-93eee73515f1.png',
     },
     'SCPS45202':       {
         'url': "games/J/G/SCPS-45202.html",
@@ -66922,6 +66927,7 @@ games = {
         'url': "games/J/T/SLPS-00593.html",
     	'id': 'SLPS00593',
 	'title': "TAKLAMAKAN - TONKOUDENKI",
+        'pic0': 'https://images.launchbox-app.com/db194bb0-52ec-483c-a012-7a96464ad2f9.png',
     },
     'SLPS01100': {
         'url': "games/J/T/SLPS-01100.html",
@@ -67119,16 +67125,25 @@ games = {
         'url': "games/J/T/SLPS-01729.html",
     	'id': 'SLPS01729',
 	'title': "TAMAMAYU MONOGATARI",
+        'pic0': 'https://images.launchbox-app.com/338ed980-8a3f-43d0-ade1-d0b21e817935.png',
+        'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
     },
     'SLPS91154': {
         'url': "games/J/T/SLPS-91154.html",
     	'id': 'SLPS91154',
 	'title': "TAMAMAYU MONOGATARI [PLAYSTATION THE BEST]",
+        'pic0': 'https://images.launchbox-app.com/338ed980-8a3f-43d0-ade1-d0b21e817935.png',
+        'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
     },
     'SLPS91461': {
         'url': "games/J/T/SLPS-91461.html",
     	'id': 'SLPS91461',
 	'title': "TAMAMAYU MONOGATARI [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/338ed980-8a3f-43d0-ade1-d0b21e817935.png',
+        'pic1': 'https://images.launchbox-app.com/89e95a29-67e7-4d2b-8778-9996e20a176a.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_vaG0V1v2-o&list=PLBECCC6F80285D013&index=1',
     },
     'SLPS02261': {
         'url': "games/J/T/SLPS-02261.html",
@@ -68148,6 +68163,7 @@ games = {
         'url': "games/J/T/SLPS-02704.html",
     	'id': 'SLPS02704',
 	'title': "THE MURAKASHI KINSHIRO [VALUE 1500]",
+        'pic0': 'https://images.launchbox-app.com/63aa8943-d225-44f2-a3f7-09f50da64900.png',
     },
     'SLPS02103': {
         'url': "games/J/T/SLPS-02103.html",
@@ -68309,6 +68325,7 @@ games = {
         'url': "games/J/T/SLPS-02668.html",
     	'id': 'SLPS02668',
 	'title': "THE SHINRI GAME 6",
+        'pic0': 'https://images.launchbox-app.com/e5346c0c-feeb-43f1-bbd1-e06333d877c5.png',
     },
     'SLPS02809': {
         'url': "games/J/T/SLPS-02809.html",
@@ -69570,6 +69587,7 @@ games = {
         'url': "games/J/T/SLPS-02113.html",
     	'id': 'SLPS02113',
 	'title': "TONDEMO CRISIS!",
+        'pic0': 'https://images.launchbox-app.com/e2ab6e80-8c87-44b8-b1e3-b742717efa05.png',
         'pspconfig': 'pspconfigs/Incredible Crisis/SLPS-02113.bin',
     },
     'SLPM86429': {
@@ -69741,6 +69759,7 @@ games = {
         'url': "games/J/T/SLPM-80429.html",
     	'id': 'SLPM80429',
 	'title': "TOYOTA NETZ RACING",
+        'pic0': 'https://images.launchbox-app.com/277b6818-d495-4144-8dcf-f6b5efe70a14.png',
     },
     'SLPS01704': {
         'url': "games/J/T/SLPS-01704.html",
