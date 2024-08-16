@@ -46147,6 +46147,8 @@ games = {
         'url': "games/J/F/SLPS-00822.html",
     	'id': 'SLPS00822',
 	'title': "FIGHTER'S IMPACT",
+        'pic0': 'https://images.launchbox-app.com/8ceddd9b-c71c-4a1f-90a1-10b055471dc9.png',
+        'pic1': 'https://images.launchbox-app.com/92ae2224-ec4f-4648-b839-4e0dced0b5d4.png',
     },
     'SLPS01313': {
         'url': "games/J/F/SLPS-01313.html",
@@ -46910,16 +46912,19 @@ games = {
         'url': "games/J/F/SLPM-86622.html",
     	'id': 'SLPM86622',
 	'title': "FISHING CLUB - BOAT NO TSURIKEN [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/0b998b4c-b9eb-4f6e-8268-be3797b1bee3.png',
     },
     'SLPM86623': {
         'url': "games/J/F/SLPM-86623.html",
     	'id': 'SLPM86623',
 	'title': "FISHING CLUB - BOUHATEI NO TSURIKEN [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/7c620d1d-b91f-4829-9a46-e5d5503d9521.png',
     },
     'SLPM86624': {
         'url': "games/J/F/SLPM-86624.html",
     	'id': 'SLPM86624',
 	'title': "FISHING CLUB - HAMA NO TSURIKEN [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/a4b033ad-d819-4dfd-84c2-91208edd3860.png',
     },
     'SLPS01931': {
         'url': "games/J/F/SLPS-01931.html",
@@ -66810,6 +66815,7 @@ games = {
         'url': "games/J/T/SLPS-02181.html",
     	'id': 'SLPS02181',
 	'title': "TACTICAL ARMOR CUSTOM GASARAKI",
+        'pic0': 'https://images.launchbox-app.com/5b5e4d88-0ac3-4c3b-aac7-57fbd5026828.png',
     },
     'SLPS00767': {
         'url': "games/J/T/SLPS-00767.html",
@@ -67446,6 +67452,8 @@ games = {
         'url': "games/J/T/SLPS-01243.html",
     	'id': 'SLPS01243',
 	'title': "TENANT WARS",
+        'pic0': 'https://images.launchbox-app.com/f51879f3-7fe4-4227-9445-332e1d076f87.png',
+        'pic1': 'https://images.launchbox-app.com/48ec6dd3-3b87-446e-8fba-f2d97fcca407.jpg',
     },
     'SLPM86240': {
         'url': "games/J/T/SLPM-86240.html",
@@ -67805,6 +67813,8 @@ games = {
         'url': "games/J/T/SLPM-86237.html",
     	'id': 'SLPM86237',
 	'title': "THE CURLING [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/45d0d0e1-6aaa-4bde-a74a-72070778397c.png',
+        'pic1': 'https://images.launchbox-app.com/52111a45-2586-436f-a831-1a6d3c03f16d.jpg',
     },
     'SLPS00501': {
         'url': "games/J/T/SLPS-00501.html",
@@ -68446,6 +68456,7 @@ games = {
         'url': "games/J/T/SLPM-86581.html",
     	'id': 'SLPM86581',
 	'title': "THE TETRIS [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/cca1d7ce-7639-4e45-907b-a2496bf21c44.png',
     },
     'SLPS00606': {
         'url': "games/J/T/SLPS-00606.html",
@@ -68864,6 +68875,7 @@ games = {
         'url': "games/J/T/SLPS-01410.html",
     	'id': 'SLPS01410',
 	'title': "TOCA - TOURING CAR CHAMPIONSHIP",
+        'pic0': 'https://images.launchbox-app.com/76c3318a-5f18-4375-ab78-62532ff90acb.png',
     },
     'SLPS00065': {
         'url': "games/J/T/SLPS-00065.html",
@@ -69719,11 +69731,15 @@ games = {
         'url': "games/J/T/SIPS-60008.html",
     	'id': 'SIPS60008',
 	'title': "TOTAL NBA '96",
+        'pic0': 'https://images.launchbox-app.com/7af20612-78ba-452f-8214-29935d6a52c7.png',
+        'pic1': 'https://images.launchbox-app.com/173a37fa-780e-4bf7-ab67-af6b96b51736.jpg',
     },
     'SIPS60015': {
         'url': "games/J/T/SIPS-60015.html",
     	'id': 'SIPS60015',
 	'title': "TOTAL NBA '97",
+        'pic0': 'https://images.launchbox-app.com/c701f12c-b70b-4231-95cc-d119f4835a77.png',
+        'pic1': 'https://images.launchbox-app.com/895f8060-6246-45b5-a12f-8533a565b335.jpg',
     },
     'SLPS00592': {
         'url': "games/J/T/SLPS-00592.html",
@@ -69789,6 +69805,7 @@ games = {
         'url': "games/J/T/SLPS-00445.html",
     	'id': 'SLPS00445',
 	'title': "TOURNAMENT LEADER",
+        'pic0': 'https://images.launchbox-app.com/b4acf482-5e31-4637-90c7-d9152db778fa.png',
     },
     'SLPS01789': {
         'url': "games/J/T/SLPS-01789.html",
