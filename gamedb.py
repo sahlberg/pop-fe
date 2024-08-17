@@ -84,6 +84,116 @@ games = {
         'pic0': 'https://images.launchbox-app.com/aec46d88-a71b-4ca5-9e24-dc042eef7e71.png',
         'pic1': 'https://images.launchbox-app.com/c99a4bcf-708d-4678-9568-bd5f13211900.jpg',
     },
+    # DemoDemo Playstation disks
+    'PCPX96003': {
+        'id': 'PCPX96003',
+        'title': 'DEMODEMO PLAYSTATION VOL. 1',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201021.jpg',
+    },
+    'PCPX96005': {
+        'id': 'PCPX96005',
+        'title': 'DEMODEMO PLAYSTATION VOL. 2',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201022.jpg',
+    },
+    'PCPX96006': {
+        'id': 'PCPX96006',
+        'title': 'DEMODEMO PLAYSTATION VOL. 3',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201023.jpg',
+    },
+    'PCPX96007': {
+        'id': 'PCPX96007',
+        'title': 'DEMODEMO PLAYSTATION VOL. 4',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201024.jpg',
+    },
+    'PCPX96008': {
+        'id': 'PCPX96008',
+        'title': 'DEMODEMO PLAYSTATION VOL. 5',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201025.jpg',
+    },
+    'PCPX96009': {
+        'id': 'PCPX96009',
+        'title': 'DEMODEMO PLAYSTATION VOL. 6',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201026.jpg',
+    },
+    'PCPX96010': {
+        'id': 'PCPX96010',
+        'title': 'DEMODEMO PLAYSTATION VOL. 7',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201027.jpg',
+    },
+    'PCPX96011': {
+        'id': 'PCPX96011',
+        'title': 'DEMODEMO PLAYSTATION VOL. 8',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201028.jpg',
+    },
+    'PCPX96013': {
+        'id': 'PCPX96013',
+        'title': 'DEMODEMO PLAYSTATION VOL. 9',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201030.jpg',
+    },
+    'PCPX96014': {
+        'id': 'PCPX96014',
+        'title': 'DEMODEMO PLAYSTATION VOL. 10',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201031.jpg',
+    },
+    'PCPX96016': {
+        'id': 'PCPX96016',
+        'title': 'DEMODEMO PLAYSTATION VOL. 11',
+        'icon0': 'https://vgcollect.com/images/front-box-art/201032.jpg',
+    },
+    'PCPX96018': {
+        'id': 'PCPX96018',
+        'title': 'DEMODEMO PLAYSTATION VOL. 12',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005724.jpg.webp',
+    },
+    'PCPX96019': {
+        'id': 'PCPX96019',
+        'title': 'DEMODEMO PLAYSTATION VOL. 13',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005725.jpg.webp',
+    },
+    'PCPX96021': {
+        'id': 'PCPX96021',
+        'title': 'DEMODEMO PLAYSTATION VOL. 14',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005726.jpg.webp',
+    },
+    'PCPX96022': {
+        'id': 'PCPX96022',
+        'title': 'DEMODEMO PLAYSTATION VOL. 15',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005727.jpg.webp',
+    },
+    'PCPX96025': {
+        'id': 'PCPX96025',
+        'title': 'DEMODEMO PLAYSTATION VOL. 16',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005685.jpg.webp',
+    },
+    'PCPX96026': {
+        'id': 'PCPX96026',
+        'title': 'DEMODEMO PLAYSTATION VOL. 17',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005549.jpg.webp',
+    },
+    'PCPX96027': {
+        'id': 'PCPX96027',
+        'title': 'DEMODEMO PLAYSTATION VOL. 18',
+    },
+    'PCPX96032': {
+        'id': 'PCPX96032',
+        'title': 'DEMODEMO PLAYSTATION VOL. 19',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005548.jpg.webp',
+    },
+    'PCPX96036': {
+        'id': 'PCPX96036',
+        'title': 'DEMODEMO PLAYSTATION VOL. 20',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005728.jpg.webp',
+    },
+    'PCPX96038': {
+        'id': 'PCPX96038',
+        'title': 'DEMODEMO PLAYSTATION VOL. 21',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005729.jpg.webp',
+    },
+    'PCPX96042': {
+        'id': 'PCPX96042',
+        'title': 'DEMODEMO PLAYSTATION VOL. 22',
+        'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005730.jpg.webp',
+    },
     # PAL Demo Discs
     'SCED02327': {
         'id': 'SCED02327',
@@ -4183,26 +4293,31 @@ games = {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02325',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
+        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02326': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02326',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
+        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02327': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02327',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
+        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02328': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02328',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
+        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02329': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02329',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
+        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02911': {
         'url': "games/J/Y/SLPS-02911.html",
@@ -4412,6 +4527,7 @@ games = {
         'url': "games/J/Z/SLPS-02318.html",
     	'id': 'SLPS02318',
 	'title': "ZEUS II - CARNAGE HEART",
+        'pic0': 'https://images.launchbox-app.com/f6c2b415-1db6-41f1-9625-3b0753201924.png',
         'pic1': 'https://images.launchbox-app.com/a4220972-2c00-4fa9-9f40-944edae60914.png',
     },
     'SLPS01483': {
@@ -8591,7 +8707,7 @@ games = {
     	'id': 'SCUS94568',
 	'title': "GRIND SESSION",
         'pic0': 'https://images.launchbox-app.com/bd4248d2-1862-47e7-a749-476b3015cbf3.png',
-        'pic1':' https://images.launchbox-app.com/d79b61df-389d-49e1-a395-412af39403c6.png',
+        'pic1': 'https://images.launchbox-app.com/d79b61df-389d-49e1-a395-412af39403c6.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Grind%20Session%20%28USA%29_jp2.zip',
     },
     'SLUS01150': {
@@ -20147,7 +20263,7 @@ games = {
     	'id': 'SCES02885',
 	'title': "GRIND SESSION",
         'pic0': 'https://images.launchbox-app.com/bd4248d2-1862-47e7-a749-476b3015cbf3.png',
-        'pic1':' https://images.launchbox-app.com/d79b61df-389d-49e1-a395-412af39403c6.png',
+        'pic1': 'https://images.launchbox-app.com/d79b61df-389d-49e1-a395-412af39403c6.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Grind%20Session%20%28USA%29_jp2.zip',
     },
     'SLES02223': {
@@ -40985,6 +41101,7 @@ games = {
         'url': "games/J/B/SLPS-01710.html",
     	'id': 'SLPS01710',
 	'title': "BUBBLEGUN KID",
+        'pic0': 'https://images.launchbox-app.com/61d773ef-2225-4c7d-ab6d-06ca13ee8c13.png',
     },
     'SLPS01105': {
         'url': "games/J/B/SLPS-01105.html",
@@ -42998,6 +43115,8 @@ games = {
         'url': "games/J/C/SLPS-01055.html",
     	'id': 'SLPS01055',
 	'title': "CROC! PAU PAU ISLAND",
+        'pic0': 'https://images.launchbox-app.com/4082fe23-fb4a-44b4-8ed4-dd7b074b61d9.png',
+        'pic1': 'https://images.launchbox-app.com/13216496-3bc4-442c-952f-486c844d4b63.jpg',
     },
     'SLPM87235': {
         'url': "games/J/C/SLPM-87235.html",
@@ -45210,6 +45329,7 @@ games = {
         'url': "games/J/E/SLPS-00525.html",
     	'id': 'SLPS00525',
 	'title': "EAST END X YURI / EEXY LIFE",
+        'pic0': 'https://images.launchbox-app.com/24de618b-13ad-47b1-b309-49c47e7211c9.png',
     },
     'SLPS00844': {
         'url': "games/J/E/SLPS-00844.html",
@@ -47098,21 +47218,21 @@ games = {
     	'id': 'SLPS03252',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN!",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://wallpapers.com/images/high/ps4-anime-q4jd4d0lzfoi4ce5.webp',
+        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03555': {
         'url': "games/J/F/SLPS-03555.html",
     	'id': 'SLPS03555',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN! [BANDAI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://wallpapers.com/images/high/ps4-anime-q4jd4d0lzfoi4ce5.webp',
+        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03251': {
         'url': "games/J/F/SLPS-03251.html",
     	'id': 'SLPS03251',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN! [POCKETSTATION PACKAGE]",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://wallpapers.com/images/high/ps4-anime-q4jd4d0lzfoi4ce5.webp',
+        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03164': {
         'url': "games/J/F/SLPS-03164.html",
@@ -47136,16 +47256,19 @@ games = {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87330',
 	'title': "FRONT MISSION HISTORY",
+        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87331': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87331',
 	'title': "FRONT MISSION HISTORY",
+        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87332': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87332',
 	'title': "FRONT MISSION HISTORY",
+        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SCPS45116': {
         'url': "games/J/F/SCPS-45116.html",
@@ -47648,6 +47771,7 @@ games = {
         'url': "games/J/G/SLPS-01607.html",
     	'id': 'SLPS01607',
 	'title': "GAMESOFT WO TSUKUROU - LET'S BE A SUPER GAME CREATOR",
+        'pic0': 'https://images.launchbox-app.com/1c112893-230b-4609-a506-4bf8058b6fa5.png',
     },
     'SLPM86155': {
         'url': "games/J/G/SLPM-86155.html",
@@ -48270,6 +48394,7 @@ games = {
         'url': "games/J/G/SLPS-02004.html",
     	'id': 'SLPS02004',
 	'title': "GOLF NI IHOU! TOURNAMENT LEADER",
+        'pic0': 'https://images.launchbox-app.com/b4acf482-5e31-4637-90c7-d9152db778fa.png',
     },
     'SLPS01712': {
         'url': "games/J/G/SLPS-01712.html",
@@ -48309,6 +48434,7 @@ games = {
         'url': "games/J/G/SLPS-00422.html",
     	'id': 'SLPS00422',
 	'title': "GOTHA II - TENKUU NO KISHI",
+        'pic0': 'https://images.launchbox-app.com/fdad0981-a977-4288-9d55-79ad42a7d03c.png',
     },
     'SLPS03552': {
         'url': "games/J/G/SLPS-03552.html",
@@ -49126,12 +49252,14 @@ games = {
         'url': "games/J/H/SLPS-03492.html",
     	'id': 'SLPS03492',
 	'title': "HARRY POTTER TO HIMITSU NO HEYA",
+        'pic0': 'https://images.launchbox-app.com/e4e75bab-c270-43b1-8fbe-bc971dec5997.png',
         'pic1': 'https://images.launchbox-app.com/9a40633f-7dc1-4dfc-839c-28a34ac70d7e.png',
     },
     'SLPS03355': {
         'url': "games/J/H/SLPS-03355.html",
     	'id': 'SLPS03355',
 	'title': "HARRY POTTER TO KENJA NO ISHI",
+        'pic0': 'https://images.launchbox-app.com/996db9f4-ceca-4177-9d99-01ceaa5ea1f2.png',
         'pic1': 'https://images.launchbox-app.com/7ae403e9-e84c-479d-8c50-b5ff1e35be98.jpg',
     },
     'SLPM86466': {
@@ -50407,7 +50535,7 @@ games = {
         'url': "games/J/I/SLPS-00341.html",
     	'id': 'SLPS00341',
 	'title': "IREM ARCADE CLASSICS",
-        'pic0': 'ohttps://images.launchbox-app.com/79dcdb6c-d85f-49d5-a1c4-2d3064611f43.png',
+        'pic0': 'https://images.launchbox-app.com/79dcdb6c-d85f-49d5-a1c4-2d3064611f43.png',
     },
     'SLPS00455': {
         'url': "games/J/I/SLPS-00455.html",
@@ -54575,6 +54703,7 @@ games = {
         'url': "games/J/M/SLPS-02398.html",
     	'id': 'SLPS02398',
 	'title': "MAX SURFING 2000",
+        'pic0': 'https://images.launchbox-app.com/aa7c31b7-d301-40e3-827e-32ffcb528c6c.png',
     },
     'SLPS02871': {
         'url': "games/J/M/SLPS-02871.html",
@@ -71167,6 +71296,36 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '05a9be0adcdb3611158e099cad926805': {
+        'id': 'PCPX96016',
+    },
+    '39cc24b77bbc02cbec0153a6e9621ae4': {
+        'id': 'PCPX96014',
+    },
+    'ece278956af270ef664a859b013a2ace': {
+        'id': 'PCPX96013',
+    },
+    '8af116d1969ccfad4690ca5692b0fd3e': {
+        'id': 'PCPX96011',
+    },
+    '807245f1afb5fbd0b7518552934f494a': {
+        'id': 'PCPX96010',
+    },
+    '2bb8dfd9e4507e94c4cb65d1c3f4ffc1': {
+        'id': 'PCPX96009',
+    },
+    '61a18d24ea31c75d5e63be1485da1340': {
+        'id': 'PCPX96008',
+    },
+    '41048119ad240b31377fe9dfc37b8073': {
+        'id': 'PCPX96007',
+    },
+    '289785f410b56f254b201385add858a0': {
+        'id': 'PCPX96006',
+    },
+    'a4329201607d24e4fd21cba15277fd00': {
+        'id': 'PCPX96005',
+    },
     'e9870f69fa34e72897e23cd5167850f2': {
         'id': 'SCPS10009',
     },
