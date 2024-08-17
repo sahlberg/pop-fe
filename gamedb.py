@@ -33317,12 +33317,13 @@ games = {
         'url': "games/P/S/SLES-02032.html",
     	'id': 'SLES02032',
 	'title': "SWING",
-        'pic0': 'https://images.launchbox-app.com/795d96c1-7d31-4ee7-96a5-bba7a43db325.png',
+        'pic0': 'https://images.launchbox-app.com/42817fef-6fcc-459e-aec7-5fcd94bb7a7c.png',
     },
     'SLES01626': {
         'url': "games/P/S/SLES-01626.html",
     	'id': 'SLES01626',
 	'title': "SWING - TOTAL MINDCONTROL",
+        'pic0': 'https://images.launchbox-app.com/b0a7f41c-7df5-4ed7-955f-90bb0559f9e4.png',
     },
     'SLES02857': {
         'url': "games/P/S/SLES-02857.html",
@@ -66685,6 +66686,7 @@ games = {
         'url': "games/J/S/SLPM-86957.html",
     	'id': 'SLPM86957',
 	'title': "SUPERLITE 3 IN 1 - NANKURO SYUU",
+        'pic0': 'https://images.launchbox-app.com/547b4e49-70a7-403d-97d2-8fe4700fd147.png',
     },
     'SLPM86955': {
         'url': "games/J/S/SLPM-86955.html",
@@ -66804,6 +66806,7 @@ games = {
         'url': "games/J/S/SLPS-00276.html",
     	'id': 'SLPS00276',
 	'title': "SYUSSE MAHJONG DAISETTAI",
+        'pic0': 'https://images.launchbox-app.com/b74b7146-83f3-4049-a438-a667291507e5.png',
     },
     'SLPS01350':       {
         'url': "games/J/T/SLPS-01350.html",
@@ -67500,6 +67503,7 @@ games = {
         'url': "games/J/T/SLPM-86584.html",
     	'id': 'SLPM86584',
 	'title': "TENKUU NO RESTAURANT",
+        'pic0': 'https://images.launchbox-app.com/aea795d2-c89c-4d66-8d85-752f36abbea3.png',
     },
     'SLPM86734': {
         'url': "games/J/T/SLPM-86734.html",
@@ -67511,6 +67515,7 @@ games = {
         'url': "games/J/T/SLPS-91452.html",
     	'id': 'SLPS91452',
 	'title': "TENKUU NO RESTAURANT [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com/aea795d2-c89c-4d66-8d85-752f36abbea3.png',
     },
     'SLPS01303': {
         'url': "games/J/T/SLPS-01303.html",
@@ -67573,6 +67578,7 @@ games = {
         'url': "games/J/T/SLPS-03531.html",
     	'id': 'SLPS03531',
 	'title': "TENSHI NO SHIPPO",
+        'pic0': 'https://images.launchbox-app.com/9352fc40-0d7e-47f0-ba8f-78c0a9935399.png',
     },
     'SLPS03132': {
         'url': "games/J/T/SLPS-03132.html",
@@ -67719,6 +67725,7 @@ games = {
         'url': "games/J/T/SLPS-02752.html",
     	'id': 'SLPS02752',
 	'title': "THE BLUE MARLIN",
+        'pic0': 'https://images.launchbox-app.com/a3d6a0e7-c611-4377-9699-a82ff23d4a51.png',
     },
     'SLPS00866': {
         'url': "games/J/T/SLPS-00866.html",
@@ -67971,6 +67978,7 @@ games = {
         'url': "games/J/T/SLPM-86961.html",
     	'id': 'SLPM86961',
 	'title': "THE HOUSOUKYOUKU - SATELLITV [MAJOR WAVE 1500]",
+        'pic0': 'https://images.launchbox-app.com/0c4d3dd4-d9bb-4ef2-af16-1407b879767b.png',
     },
     'SLPS00351': {
         'url': "games/J/T/SLPS-00351.html",
