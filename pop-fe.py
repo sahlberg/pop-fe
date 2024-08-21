@@ -3637,28 +3637,30 @@ def install_deps():
         print('Installing python scipy scikit-learn')
         subprocess.call(['pip', 'install', 'scipy', 'scikit-learn'])
     # cue2cu2
+    if os.name == 'posix':
+        cue2cu2_path = 'Cue2cu2/cue2cu2.py'
+        os.makedirs('Cue2cu2', exist_ok=True)
+    else:
+        cue2cu2_path = 'cue2cu2.exe'
     try:
-        if os.name == 'posix':
-            os.stat('cue2cu2.py')
-            print('cue2cu2.py is already installed')
-        else:
-            os.stat('cue2cu2.exe')
-            print('cue2cu2.py is already installed')
+        os.stat(cue2cu2_path)
+        print('cue2cu2.py is already installed')
     except:
         print('Downloading cue2cu2.py')
         ret = requests.get('https://raw.githubusercontent.com/NRGDEAD/Cue2cu2/master/cue2cu2.py')
         if ret.status_code != 200:
             print('Failed to download cue2cu2. Aborting install.')
             exit(1)
-        if os.name == 'posix':
-            with open('cue2cu2.py', 'wb') as f:
-                f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
-        else:
-            with open('cue2cu2.exe', 'wb') as f:
-                f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
+        with open(cue2cu2_path, 'wb') as f:
+            f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
     # binmerge
+    if os.name == 'posix':
+        binmerge_path = 'binmerge/binmerge'
+        os.makedirs('binmerge', exist_ok=True)
+    else:
+        binmerge_path = 'binmerge'
     try:
-        os.stat('binmerge')
+        os.stat(binmerge_path)
         print('binmerge is already installed')
     except:
         print('Downloading binmerge')
@@ -3666,7 +3668,7 @@ def install_deps():
         if ret.status_code != 200:
             print('Failed to download binmerge. Aborting install.')
             exit(1)
-        with open('binmerge', 'wb') as f:
+        with open(binmerge_path, 'wb') as f:
             f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
     if os.name == 'posix':
         # atracdenc
@@ -4009,7 +4011,7 @@ def generate_cu2_files(cue_files, img_files, subdir):
             cu2_file = subdir + 'TMP%d.cu2' % (i)
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
             if os.name == 'posix':
-                subprocess.call(['python3', './cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+                subprocess.call(['python3', 'Cue2cu2/cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             else:
                 subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
             temp_files.append(cu2_file)
@@ -4142,7 +4144,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     if len(i) > 1:
         try:
             if os.name == 'posix':
-                os.stat('./binmerge')
+                os.stat('binmerge/binmerge')
             else:
                 os.stat('binmerge.exe')
         except:
@@ -4150,7 +4152,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         mb = 'MB%d' % (idx)
         temp_files.append(mb)
         if os.name == 'posix':
-            subprocess.call(['python3', './binmerge', '-o', subdir, cue_file, mb])
+            subprocess.call(['python3', 'binmerge/binmerge', '-o', subdir, cue_file, mb])
         else:
             subprocess.call(['binmerge.exe', '-o', subdir, cue_file, mb])
         cue_file = subdir + mb + '.cue'
@@ -4269,7 +4271,7 @@ if __name__ == "__main__":
         
     try:
         if os.name == 'posix':
-            os.stat('./cue2cu2.py')
+            os.stat('Cue2cu2/cue2cu2.py')
         else:
             os.stat('cue2cu2.exe')
     except:
