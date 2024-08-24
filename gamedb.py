@@ -9216,6 +9216,16 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=llpy5nC0hY4&list=PLEQ9gzIIRt0Ch8cdQeCSbes3iEaH_GyAI&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%202%20%28USA%29_jp2.zip',
     },
+    'SDUS94167': {
+        'url': "games/U/J/SCUS-94167.html",
+    	'id': 'SCUS94167',
+	'title': "JET MOTO 2",
+        'icon0': 'https://images.launchbox-app.com/82a75bd6-2a1f-47a4-98b9-9143075d4e7c.png',
+        'pic0': 'https://images.launchbox-app.com/30a74bcd-415b-495f-a7c6-946a3c424959.png',
+        'pic1': 'https://images.launchbox-app.com/90aadbef-c25a-428d-a0e5-e53cefc0a4a1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=llpy5nC0hY4&list=PLEQ9gzIIRt0Ch8cdQeCSbes3iEaH_GyAI&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Jet%20Moto%202%20%28USA%29_jp2.zip',
+    },
     'SCUS94555': {
         'url': "games/U/J/SCUS-94555.html",
     	'id': 'SCUS94555',
@@ -11279,6 +11289,7 @@ games = {
         'url': "games/U/N/SCUS-94404.html",
     	'id': 'SCUS94407',
 	'title': "NOVASTORM",
+        'icon0': 'https://images.launchbox-app.com/3f4e9fcb-53d9-4ffc-b89c-6e5336537283.png',
         'pic0': 'https://images.launchbox-app.com/c24ad73e-6960-4816-9aac-86a287b5f209.png',
         'pic1': 'https://images.launchbox-app.com/e24b1f4f-1751-41f4-8c9c-5d9292fd2377.jpg',
     },
@@ -11843,21 +11854,23 @@ games = {
     	'id': 'SLUS00165',
 	'title': "PSYCHIC DETECTIVE",
         'icon0': 'https://images.launchbox-app.com/92bc3158-78a0-41f9-a02d-d80d355f080b.png',
-        'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'pic0': 'https://images.launchbox-app.com/0939e77a-cf61-4d3c-8d5a-62c5d12a856e.png',
         'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00166': {
         'url': "games/U/P/SLUS-00165.html",
     	'id': 'SLUS00166',
 	'title': "PSYCHIC DETECTIVE",
-        'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'icon0': 'https://images.launchbox-app.com/92bc3158-78a0-41f9-a02d-d80d355f080b.png',
+        'pic0': 'https://images.launchbox-app.com/0939e77a-cf61-4d3c-8d5a-62c5d12a856e.png',
         'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00167': {
         'url': "games/U/P/SLUS-00165.html",
     	'id': 'SLUS00167',
 	'title': "PSYCHIC DETECTIVE",
-        'pic0': 'https://images.launchbox-app.com/7e4b0e14-b27f-4ffd-b95d-a6cc4c3b379a.png',
+        'icon0': 'https://images.launchbox-app.com/92bc3158-78a0-41f9-a02d-d80d355f080b.png',
+        'pic0': 'https://images.launchbox-app.com/0939e77a-cf61-4d3c-8d5a-62c5d12a856e.png',
         'pic1': 'https://images.launchbox-app.com/e2f4d66b-ded8-4b02-87fc-275a9d2f9e3b.jpg',
     },
     'SLUS00419': {
@@ -14191,6 +14204,15 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a398d203-6ce6-466c-87d6-2d838b677fc6.png',
         'manual': 'https://psxdatacenter.com/manuals/The%20Lost%20World%20-%20Jurassic%20Park%20-%20Special%20Edition%20(E)%20[SLUS-00515].cbr',
     },
+    'SDUS00515': {
+        'url': "games/U/T/SLUS-00515.html",
+    	'id': 'SLUS00515',
+	'title': "THE LOST WORLD - JURASSIC PARK",
+        'icon0': 'https://images.launchbox-app.com/ac0ae6f8-0fe4-4632-99d7-45958971627c.jpg',
+        'pic0': 'https://images.launchbox-app.com/6a12fdc6-e272-442b-8ce9-1a7a2a287f3d.png',
+        'pic1': 'https://images.launchbox-app.com/a398d203-6ce6-466c-87d6-2d838b677fc6.png',
+        'manual': 'https://psxdatacenter.com/manuals/The%20Lost%20World%20-%20Jurassic%20Park%20-%20Special%20Edition%20(E)%20[SLUS-00515].cbr',
+    },
     'SLUS00896': {
         'url': "games/U/T/SLUS-00896.html",
     	'id': 'SLUS00896',
@@ -15475,7 +15497,7 @@ games = {
     	'id': 'SLUS00013',
 	'title': "WWF WRESTLEMANIA - THE ARCADE GAME",
         'icon0': 'https://images.launchbox-app.com/98d392ac-6bca-455f-958c-8cd3e5a52b74.png',
-        'pic0': 'https://images.launchbox-app.com/f401b4c3-f4ba-458c-b8a0-ce3367d2a499.png',
+        'pic0': 'https://images.launchbox-app.com/63dcdee1-cf79-4d1a-b688-5f86a52f7971.png',
         'pic1': 'https://images.launchbox-app.com/648c2c4e-d271-4252-bf19-2eb92bda9394.png',
     },
     'SLUS01444':       {
@@ -72366,6 +72388,18 @@ gameid_by_md5sum = {
     # V-Rally (Eur) Platinum edition with extra car
     '1c6374b6388f965ada6b2d654552827c': {
         'id': 'SLES00250P',
+    },
+    'da413fb5c0f1747d6fb4006f8e2a7ce4': {
+        'id': 'SCUS94167',
+    },
+    '71d81692b02e6ba72929d7bddfc54519': {
+        'id': 'SDUS94167',
+    },
+    '4d69e6a639b9bedcfd6089b3a429ab81': {
+        'id': 'SLUS00515',
+    },
+    '346e813e1cd8466d599403f7c9836fc3': {
+        'id': 'SDUS00515',
     },
 }
 
