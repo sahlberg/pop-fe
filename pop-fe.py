@@ -2774,7 +2774,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, subdir = './', snd0=None, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
     # Convert LOGO to a file object
     if logo:
         image = logo
@@ -2868,8 +2868,9 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         whole_disk = True
     for i in range(len(magic_word)):
         magic_word[i] = magic_word[i] & 0x72D0EE59
+    if len(disc_ids) > 1:
+        no_pstitleimg = False
 
-    no_pstitleimg = True if len(disc_ids) == 1 else False
     generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, magic_word, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo, no_pstitleimg=no_pstitleimg)
 
     if manual:
@@ -4129,9 +4130,6 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         write_cue(cue, tmpcue)
 
         cue_file = tmpcue
-        # we didn't actually have a CUE file to start with so just
-        # replace the "real" cue filename with our temporary one
-        real_cue_files[-1] = cue_file
 
     if cue_file[-3:] != 'cue':
         print('%s is not a CUE file. Skipping' % cue_file) if verbose else None

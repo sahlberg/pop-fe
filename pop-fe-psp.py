@@ -84,6 +84,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
+        self.nopstitleimg = 'off'
         self.cdda = 'off'
         self.pic0_disabled = 'off'
         self.pic1_disabled = 'off'
@@ -107,6 +108,7 @@ class PopFePs3App:
             'on_path_changed': self.on_path_changed,
             'on_dir_changed': self.on_dir_changed,
             'on_watermark': self.on_watermark,
+            'on_nopstitleimg': self.on_nopstitleimg,
             'on_youtube_audio': self.on_youtube_audio,
             'on_create_eboot': self.on_create_eboot,
             'on_reset': self.on_reset,
@@ -168,6 +170,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.preview_tk = None
         self.configs = []
+        self.builder.get_variable('nopstitleimg_variable').set(self.nopstitleimg)
         self.builder.get_variable('watermark_variable').set(self.watermark)
         self.builder.get_variable('cdda_variable').set(self.cdda)
         for idx in range(1,6):
@@ -393,6 +396,9 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
         
 
+    def on_nopstitleimg(self):
+        self.nopstitleimg = self.builder.get_variable('nopstitleimg_variable').get()
+        
     def on_watermark(self):
         self.watermark = self.builder.get_variable('watermark_variable').get()
         
@@ -560,6 +566,7 @@ class PopFePs3App:
                          self.pic1 if self.pic1_disabled =='off' else None,
                          self.cue_files, self.cu2_files, self.img_files, [],
                          aea_files, magic_word, subdir=self.subdir, snd0=snd0,
+                         no_pstitleimg=True if self.nopstitleimg=='on' else False,
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual,
                          configs=self.configs,
