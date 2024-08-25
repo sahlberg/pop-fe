@@ -154,7 +154,7 @@ jobs:
           cp -r -Force dist/pop-fe/* dist/pop-fe-ps3/.
           cp -r -Force dist/pop-fe-psp/* dist/pop-fe-ps3/.
       - name: Upload pop-fe-ui artefact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with: 
           name: pop-fe-ui
           path: dist/pop-fe-ps3
