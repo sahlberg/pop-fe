@@ -42086,6 +42086,7 @@ games = {
         'url': "games/J/C/SLPS-01871.html",
     	'id': 'SLPS01871',
 	'title': "CHOUSENTAI KYUUGI - THE ULTIMATE BALLGAME VAN BORG",
+        'pic0': 'https://images.launchbox-app.com/e6fa39ff-1496-4a0c-bd41-c50f32651db3.png',
     },
     'SCPS45447': {
         'url': "games/J/C/SCPS-45447.html",
@@ -44654,11 +44655,13 @@ games = {
         'url': "games/J/D/SCPS-10142.html",
     	'id': 'SCPS10142',
 	'title': "DOKO DEMO ISSYO DELUXE PACK",
+        'pic0': 'https://images.launchbox-app.com/8eb47feb-b990-4deb-9064-2fc535321c60.png',
     },
     'SCPS10143': {
         'url': "games/J/D/SCPS-10142.html",
     	'id': 'SCPS10143',
 	'title': "DOKO DEMO ISSYO DELUXE PACK",
+        'pic0': 'https://images.launchbox-app.com/8eb47feb-b990-4deb-9064-2fc535321c60.png',
     },
     'SLPS03393': {
         'url': "games/J/D/SLPS-03393.html",
@@ -46121,6 +46124,7 @@ games = {
         'url': "games/J/F/SLPS-01665.html",
     	'id': 'SLPS01665',
 	'title': "FAMIRES E YOUKOSOU! (WELCOME TO FAMILY RESTAURANT)",
+        'pic0': 'https://images.launchbox-app.com/130d00c8-bacb-4247-912e-0e18eca53cec.png',
     },
     'SLPS03214': {
         'url': "games/J/F/SLPS-03214.html",
@@ -47278,18 +47282,21 @@ games = {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87330',
 	'title': "FRONT MISSION HISTORY",
+        'pic0': 'https://ibb.co/5kW0vYQ',
         'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87331': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87331',
 	'title': "FRONT MISSION HISTORY",
+        'pic0': 'https://ibb.co/5kW0vYQ',
         'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87332': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87332',
 	'title': "FRONT MISSION HISTORY",
+        'pic0': 'https://ibb.co/5kW0vYQ',
         'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SCPS45116': {
@@ -49554,6 +49561,8 @@ games = {
         'url': "games/J/H/SLPS-01061.html",
     	'id': 'SLPS01061',
 	'title': "HERAKLES NO DAIBOUKEN",
+        'pic0': 'https://images.launchbox-app.com/8fe508f8-f192-4db3-9fd9-e890974d0b59.png',
+        'pic1': 'https://images.launchbox-app.com/1e171b08-d8db-4b83-9aba-f3954c7a5c27.png',
     },
     'SCPS10012': {
         'url': "games/J/H/SCPS-10012.html",
