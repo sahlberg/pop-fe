@@ -89,12 +89,11 @@ jobs:
           pyinstaller cue2cu2.py
       - name: Build binmerge
         run:   |
-          git clone https://github.com/putnam/binmerge.git bm
+          git clone https://github.com/putnam/binmerge.git
           dir
-          dir bm
-          dir bm/binmerge
-          cp bm/binmerge .
-          pyinstaller binmerge
+          dir binmerge
+          cp binmerge/binmerge binmerge.py
+          pyinstaller binmerge.py
       - name: Build sign3
         run:   |
           pyinstaller sign3.py
