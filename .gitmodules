@@ -1,0 +1,12 @@
+[submodule "Cue2cu2"]
+	path = Cue2cu2
+	url = https://github.com/NRGDEAD/Cue2cu2.git
+[submodule "binmerge"]
+	path = binmerge
+	url = https://github.com/putnam/binmerge.git
+[submodule "atracdenc"]
+	path = atracdenc
+	url = https://github.com/dcherednik/atracdenc.git
+[submodule "PSL1GHT"]
+	path = PSL1GHT
+	url = https://github.com/sahlberg/PSL1GHT.git

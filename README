@@ -522,6 +522,7 @@ pip3 install pycdlib
 
 cue2cu2
 -------
+Note: this is now a submodule so I am not sure what to change here
 This is a small program that parses a CUE and reformats it into CU2 format.
 It is used by PSIO but also to create the TOC structure we need for PSP
 EBOOTs when a CCD file is not present.
@@ -535,6 +536,7 @@ chmod +x cue2cu2.py
 
 binmerge
 --------
+Note: this is now a submodule so I am not sure what to change here
 This is a small python program to merge multi-bin files into a single bin.
 This is required if you intend to use pop-fe with multi-bin disks.
 
@@ -602,10 +604,6 @@ sudo apt install python-is-python3
 sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
-git clone https://github.com/sahlberg/pop-fe.git
-git clone https://github.com/NRGDEAD/Cue2cu2.git
-git clone https://github.com/putnam/binmerge.git
-git clone https://github.com/dcherednik/atracdenc.git
 pip3 install pytubefix
 pip3 install PyPDF2
 pip3 install requests
@@ -616,20 +614,19 @@ pip3 install opencv-contrib-python
 pip3 install rarfile
 pip3 install scikit-learn
 pip3 install scipy
-cd pop-fe
-cp ../Cue2cu2/cue2cu2.py .
-chmod +x cue2cu2.py
-cp ../binmerge/binmerge .
-chmod +x binmerge
-git clone http://github.com/sahlberg/PSL1GHT
-cd PSL1GHT/tools/ps3py
-git checkout origin/use-python3
-make
-cd ../../..
-cd atracdenc/src/
-cmake .
-make
-cd ../..
+git clone --recursive https://github.com/sahlberg/pop-fe.git
+make -C pop-fe/PSL1GHT/tools/ps3py/
+cmake -B pop-fe/atracdenc/src/ -S pop-fe/atracdenc/src/
+make -C pop-fe/atracdenc/src/
+
+Android (Termux https://f-droid.org/en/packages/com.termux/) Manual Install:
+------------------------
+pkg install build-essential git patchelf python-pip python-pillow opencv-python ninja libsndfile
+pip install pytubefix PyPDF2 requests pycdlib ecdsa tkinterdnd2 rarfile pycryptodome
+git clone --recursive https://github.com/sahlberg/pop-fe.git
+make -C pop-fe/PSL1GHT/tools/ps3py/
+cmake -B pop-fe/atracdenc/src/ -S pop-fe/atracdenc/src/
+make -C pop-fe/atracdenc/src/
 
 Windows (x86_64)
 ----------------
