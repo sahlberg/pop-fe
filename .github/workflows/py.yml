@@ -90,7 +90,7 @@ jobs:
       - name: Build binmerge
         run:   |
           git clone https://github.com/putnam/binmerge.git bm
-          cp bm/binmerge .
+          cp bm/binmerge/binmerge .
           pyinstaller binmerge
       - name: Build sign3
         run:   |
