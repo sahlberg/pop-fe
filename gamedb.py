@@ -72994,6 +72994,10 @@ themes = {
 }
 
 ppf_fixes = {
+    'SLUS00870': {
+	'desc': 'Fix for Formula One 99',
+        'ppf': 'ppf/SLUS-00870.ppf',
+    },
     'SLUS00925': {
 	'desc': 'Fix for FOX SPORTS NHL CHAMPIONSHIP 2000',
         'ppf': 'ppf/NHL Championship 2000 (USA) (Track 1).ppf',
