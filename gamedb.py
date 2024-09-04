@@ -37957,6 +37957,15 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
     },
+    'SLPM80453': {
+        'url': "games/J/A/SLPS-91214.html",
+        'id': 'SLPM80453',
+	'title': "ACE COMBAT 3 - ELECTROSPHERE DIRECT AUDIO WITH APPENDISC",
+        'pic0': 'https://images.launchbox-app.com/2b408709-578d-4be6-9a3d-99dd45cb6c7b.png',
+        'pic1': 'https://images.launchbox-app.com/ef289ac4-c8e5-4443-b9bd-4464a9e40306.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=0S5ZpFWA16g&list=PLDD61C76EF278E530&index=1',
+        'manual': 'https://psxdatacenter.com/manuals/Ace%20Combat%203%20(J)%20[SLPS-02020-1].cbr',
+    },
     'SLPM80175': {
         'url': "games/J/A/SLPS-91214.html",
     	'id': 'SLPM80175',
