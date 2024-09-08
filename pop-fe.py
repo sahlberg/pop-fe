@@ -4575,6 +4575,9 @@ if __name__ == "__main__":
             snd0 = get_snd0_from_link(snd0, subdir=subdir)
             if snd0:
                 temp_files.append(snd0)
+    if snd0 == 'no':
+        print('Disable SND0')
+        snd0 = None
 
     if args.psp_dir:
         create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo)

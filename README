@@ -173,6 +173,7 @@ Command line arguments are:
 			This requires that you have xdelta3 installed.
 --snd0                : Provide an audio file to be played when this game
 		        is focused on the XMB. See the SND0.AT3 section below.
+			To disable snd0 use --snd0=no
 --auto-libcrypt       : Try to automatically create and apply a patch for
                         libcrypt. This can be used if there is no proper PPF
 			file available. This is not 100% reliable.
