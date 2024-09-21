@@ -3711,6 +3711,7 @@ games = {
         'url': "games/J/X/SLPS-01063.html",
     	'id': 'SLPS01063',
 	'title': "X.RACING",
+        'pic0': 'https://images.launchbox-app.com/4c129d26-05a5-4999-bf61-d2a66b7d2b30.png',
     },
     'SLPS00766': {
         'url': "games/J/X/SLPS-00766.html",
@@ -5877,6 +5878,7 @@ games = {
     	'id': 'SLUS01309',
 	'title': "BOXING",
         'pic0': 'https://images.launchbox-app.com/117ea5f5-4b6f-4324-a78e-88749902352b.png',
+        'pic1': 'https://images.launchbox-app.com/06fe0b22-aaa6-4060-b5be-a562019d59ba.jpg',
     },
     'SLUS00444': {
         'url': "games/U/B/SLUS-00444.html",
@@ -16259,6 +16261,8 @@ games = {
         'url': "games/P/A/SLES-03958.html",
     	'id': 'SLES03958',
 	'title': "ALL STAR BOXING",
+        'pic0': 'https://images.launchbox-app.com/6c79d145-16e5-4e54-980c-fcd40e5510cc.png',
+        'pic1': 'https://images.launchbox-app.com/06fe0b22-aaa6-4060-b5be-a562019d59ba.jpg',
     },
     'SLES03740': {
         'url': "games/P/A/SLES-03740.html",
@@ -64240,6 +64244,7 @@ games = {
     	'id': 'SLPS02922',
 	'title': "SIMPLE 1500 SERIES VOL.032 - THE BOXING",
         'pic0': 'https://images.launchbox-app.com/9f14628f-a4db-487c-9e13-7fe9a08fc144.png',
+        'pic1': 'https://images.launchbox-app.com/06fe0b22-aaa6-4060-b5be-a562019d59ba.jpg',
     },
     'SLPS02908': {
         'url': "games/J/S/SLPS-02908.html",
@@ -67631,6 +67636,8 @@ games = {
         'url': "games/J/T/SLPM-86240.html",
     	'id': 'SLPM86240',
 	'title': "TENANT WARS ALPHA [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/f51879f3-7fe4-4227-9445-332e1d076f87.png',
+        'pic1': 'https://images.launchbox-app.com/48ec6dd3-3b87-446e-8fba-f2d97fcca407.jpg',
     },
     'SLPS00451': {
         'url': "games/J/T/SLPS-00451.html",
@@ -68128,6 +68135,7 @@ games = {
         'url': "games/J/T/SLPS-03178.html",
     	'id': 'SLPS03178',
 	'title': "THE HEIWA OTENKI STUDIO",
+        'pic0': 'https://images.launchbox-app.com/193d63a8-af5e-4e91-a5b2-cb336e1f2b6f.png',
     },
     'SLPS00325': {
         'url': "games/J/T/SLPS-00325.html",
@@ -68498,7 +68506,8 @@ games = {
     'SLPS02702': {
         'url': "games/J/T/SLPS-02702.html",
     	'id': 'SLPS02702',
-	'title': "THE RON RON [VALUE 1500]",
+	'title': "THE RONG RONG [VALUE 1500]",
+        'pic0': 'https://images.launchbox-app.com/72192262-796f-4dd8-8706-eb15d50b0475.png',
     },
     'SLPS02703': {
         'url': "games/J/T/SLPS-02703.html",
