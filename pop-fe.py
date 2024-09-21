@@ -4076,7 +4076,7 @@ def force_ntsc_config(ps3config):
 def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     real_cue_file = cue_file
 
-    if cue_file[-4:] == '.chd':
+    if cue_file[-4:].lower() == '.chd':
         print('This is a CHD file. Uncompress the file.') if verbose else None
         chd = cue_file
         try:
@@ -4094,7 +4094,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         # replace the "real" cue filename with our temporary one
         real_cue_file = cue_file
 
-    if cue_file[-4:] == '.zip':
+    if cue_file[-4:].lower() == '.zip':
         print('This is a ZIP file. Uncompress the file.') if verbose else None
         zip = cue_file
         with zipfile.ZipFile(zip, 'r') as zf:
@@ -4109,7 +4109,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
                     # replace the "real" cue filename with our temporary one
                     real_cue_file = cue_file
 
-    if cue_file[-3:] == 'img' or cue_file[-3:] == 'bin':
+    if cue_file[-3:].lower() == 'img' or cue_file[-3:].lower() == 'bin':
         tmpcue = subdir + 'TMP%d.cue' % (idx)
         print('IMG or BIN file. Create a temporary cue file for it', tmpcue) if verbose else None
         temp_files.append(tmpcue)
@@ -4123,7 +4123,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         # replace the "real" cue filename with our temporary one
         real_cue_file = cue_file
 
-    if cue_file[-3:] == 'ccd':
+    if cue_file[-3:].lower() == 'ccd':
         tmpcue = subdir + 'TMP%d.cue' % (idx)
         print('CCD file. Create a temporary cue file for it', tmpcue) if verbose else None
         temp_files.append(tmpcue)
@@ -4133,7 +4133,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
 
         cue_file = tmpcue
 
-    if cue_file[-3:] != 'cue':
+    if cue_file[-3:].lower() != 'cue':
         print('%s is not a CUE file. Skipping' % cue_file) if verbose else None
         return None, None, None
 
