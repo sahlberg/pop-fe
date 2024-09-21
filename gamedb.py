@@ -84,6 +84,11 @@ games = {
         'pic0': 'https://images.launchbox-app.com/aec46d88-a71b-4ca5-9e24-dc042eef7e71.png',
         'pic1': 'https://images.launchbox-app.com/c99a4bcf-708d-4678-9568-bd5f13211900.jpg',
     },
+    'SLUS99998': {
+        'id': 'SLUS99998',
+	'title': "TORC: LEGEND OF THE OGRE CROWN",
+        'icon0': 'https://files.hiddenpalace.org/3/30/Torc_PS1_Title.png',
+    },
     # DemoDemo Playstation disks
     'PCPX96003': {
         'id': 'PCPX96003',
@@ -61745,6 +61750,13 @@ games = {
         'pic1': 'https://images.launchbox-app.com/0f34c390-85f3-4990-88f7-cdf8f98c8b20.jpg',
         'pspconfig': 'pspconfigs/Mega Man Legends/SLPS-91135.bin',
     },
+    'SLPS02109': {
+    	'id': 'SLPS02109',
+	'title': "ROCKMAN DASH 2 - 'ROLL-CHAN KIKIIPPATSU!' NO MAKI",
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
     'SLPS02711': {
         'url': "games/J/R/SLPS-02711.html",
     	'id': 'SLPS02711',
@@ -70098,14 +70110,6 @@ games = {
         'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
         'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02108.bin',
     },
-    'SLPS02109': {
-        'url': "games/J/T/SLPS-02108.html",
-    	'id': 'SLPS02109',
-	'title': "TRON NI KOBUN - THE MISSADVENTURES OF TRON BONNE",
-        'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
-        'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
-        'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02109.bin',
-    },
     'SLPS91203': {
         'url': "games/J/T/SLPS-91203.html",
     	'id': 'SLPS91203',
@@ -71352,6 +71356,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '55a11627cd4514e37365bed37c724ab4': {
+        'id': 'SLPS02109',
+    },
+    '5497fdb95f7ffcbb5868f3c8aaf9eabe': {
+        'id': 'SLUS99998',
+    },
     '05a9be0adcdb3611158e099cad926805': {
         'id': 'PCPX96016',
     },
