@@ -31,6 +31,9 @@ jobs:
       - name: Test building a PS3 package
         run:   |
           ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets testimages/vs/vs.cue
+      - name: Test building a PS3 package with UPPER CASE .CUE
+        run:   |
+          ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets testimages/vs/vs.CUE
       - name: Test building a multidisc PS3 package
         run:   |
           ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets testimages/vs/vs.cue testimages/vs/vs.cue
