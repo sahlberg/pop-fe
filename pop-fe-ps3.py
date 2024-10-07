@@ -178,7 +178,7 @@ class PopFePs3App:
         
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
-            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.bin', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
+            self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('discid%d_variable' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
