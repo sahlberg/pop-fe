@@ -984,358 +984,358 @@ games = {
         'pic0': None,
         'pic1': 'https://archive.org/download/platinum-special-demo-ps-demo/platinumspecial-uk-1.jpg',
     },
-    'USPM00001': {
-        'id': 'USPM00001',
+    'SCUS94189': {
+        'id': 'SCUS94189',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 01 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1457855562_OfficialU.S.PlayStationMagazineVolume1Issue01(October1997).jpg.131001a9d6d86c8a1de078927eba3afe.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1457855562_OfficialU.S.PlayStationMagazineVolume1Issue01(October1997).jpg.131001a9d6d86c8a1de078927eba3afe.jpg',
     },
-    'USPM00002': {
-        'id': 'USPM00002',
+    'SCUS94198': {
+        'id': 'SCUS94198',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 02 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.648318322_OfficialU.S.PlayStationMagazineVolume1Issue02(November1997).jpg.75600576eb5554eb6be314d7ba006b5a.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.648318322_OfficialU.S.PlayStationMagazineVolume1Issue02(November1997).jpg.75600576eb5554eb6be314d7ba006b5a.jpg',
     },
-    'USPM00003': {
-        'id': 'USPM00003',
+    'SCUS94210': {
+        'id': 'SCUS94210',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 03 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1960213272_OfficialU.S.PlayStationMagazineVolume1Issue03(December1997).jpg.529a7954a70f1667b3921ddda5cef3c3.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1960213272_OfficialU.S.PlayStationMagazineVolume1Issue03(December1997).jpg.529a7954a70f1667b3921ddda5cef3c3.jpg',
     },
-    'USPM00004': {
-        'id': 'USPM00004',
+    'SCUS94211': {
+        'id': 'SCUS94211',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 04 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.15858547_OfficialU.S.PlayStationMagazineVolume1Issue04(January1998).jpg.ad0879a9f5671217247d6dfd22118a44.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.15858547_OfficialU.S.PlayStationMagazineVolume1Issue04(January1998).jpg.ad0879a9f5671217247d6dfd22118a44.jpg',
     },
-    'USPM00005': {
-        'id': 'USPM00005',
+    'SCUS94212': {
+        'id': 'SCUS94212',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 05 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.401595582_OfficialU.S.PlayStationMagazineVolume1Issue05(February1998).jpg.7a34a240e9ce6a34b2b5e985144fcabc.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.401595582_OfficialU.S.PlayStationMagazineVolume1Issue05(February1998).jpg.7a34a240e9ce6a34b2b5e985144fcabc.jpg',
     },
-    'USPM00006': {
-        'id': 'USPM00006',
+    'SCUS94213': {
+        'id': 'SCUS94213',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 06 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.944441311_OfficialU.S.PlayStationMagazineVolume1Issue06(March1998).jpg.b2e6da44354db75b5d008c64a861f948.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.944441311_OfficialU.S.PlayStationMagazineVolume1Issue06(March1998).jpg.b2e6da44354db75b5d008c64a861f948.jpg',
     },
-    'USPM00007': {
-        'id': 'USPM00007',
+    'SCUS94214': {
+        'id': 'SCUS94214',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 07 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.954339334_OfficialU.S.PlayStationMagazineVolume1Issue07(April1998).jpg.1cc93e52029d9a95b47f5f1f24335ba8.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.954339334_OfficialU.S.PlayStationMagazineVolume1Issue07(April1998).jpg.1cc93e52029d9a95b47f5f1f24335ba8.jpg',
     },
-    'USPM00008': {
-        'id': 'USPM00008',
+    'SCUS94215': {
+        'id': 'SCUS94215',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 08 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1595020440_OfficialU.S.PlayStationMagazineVolume1Issue08(May1998).jpg.175c1f7827740f1749536730f0b804a4.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1595020440_OfficialU.S.PlayStationMagazineVolume1Issue08(May1998).jpg.175c1f7827740f1749536730f0b804a4.jpg',
     },
-    'USPM00009': {
-        'id': 'USPM00009',
+    'SCUS94216': {
+        'id': 'SCUS94216',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 09 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.155299131_OfficialU.S.PlayStationMagazineVolume1Issue09(June1998).jpg.01f00fd015e4549e88358d497873784c.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.155299131_OfficialU.S.PlayStationMagazineVolume1Issue09(June1998).jpg.01f00fd015e4549e88358d497873784c.jpg',
     },
-    'USPM00010': {
-        'id': 'USPM00010',
+    'SCUS94217': {
+        'id': 'SCUS94217',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 10 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1897698466_OfficialU.S.PlayStationMagazineVolume1Issue10(July1998).jpg.5305eb727945c9c0f33435e9dc9c3518.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1897698466_OfficialU.S.PlayStationMagazineVolume1Issue10(July1998).jpg.5305eb727945c9c0f33435e9dc9c3518.jpg',
     },
-    'USPM00011': {
-        'id': 'USPM00011',
+    'SCUS94218': {
+        'id': 'SCUS94218',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 11 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.1225712726_OfficialU.S.PlayStationMagazineIssue011(August1998).jpg.e0783b74311dc45086ac238f18ee64d3.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.1225712726_OfficialU.S.PlayStationMagazineIssue011(August1998).jpg.e0783b74311dc45086ac238f18ee64d3.jpg',
     },
-    'USPM00012': {
-        'id': 'USPM00012',
+    'SCUS94219': {
+        'id': 'SCUS94219',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 12 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_05/large.105942645_000-retromags_com.jpg.f97df5c48acf9d3dbfab2d463faa91fb.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_05/large.105942645_000-retromags_com.jpg.f97df5c48acf9d3dbfab2d463faa91fb.jpg',
     },
-    'USPM00013': {
-        'id': 'USPM00013',
+    'SCUS94275': {
+        'id': 'SCUS94275',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 13 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_10/large.1.jpg.e8a15d59b357a5c069bc5c80dba63cd5.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_10/large.1.jpg.e8a15d59b357a5c069bc5c80dba63cd5.jpg',
     },
-    'USPM00014': {
-        'id': 'USPM00014',
+    'SCUS94276': {
+        'id': 'SCUS94276',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 14 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_8883_59_722763.jpg.6d080a31316333436d176685a1fedc41.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_8883_59_722763.jpg.6d080a31316333436d176685a1fedc41.jpg',
     },
-    'USPM00015': {
-        'id': 'USPM00015',
+    'SCUS94277': {
+        'id': 'SCUS94277',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 15 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_9_96196.jpg.813d75e5ab01ac6b7c4fb00247288686.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_9_96196.jpg.813d75e5ab01ac6b7c4fb00247288686.jpg',
     },
-    'USPM00016': {
-        'id': 'USPM00016',
+    'SCUS94278': {
+        'id': 'SCUS94278',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 16 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.1899436232_OfficialU.S.PlayStationMagazineIssue016(January1999).jpg.bcae1073caab5b9bd4cf377c45ff346c.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.1899436232_OfficialU.S.PlayStationMagazineIssue016(January1999).jpg.bcae1073caab5b9bd4cf377c45ff346c.jpg',
     },
-    'USPM00017': {
-        'id': 'USPM00017',
+    'SCUS94279': {
+        'id': 'SCUS94279',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 17 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_9_213467.jpg.e5d0078989170373e91f783bda8566e0.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_9_213467.jpg.e5d0078989170373e91f783bda8566e0.jpg',
     },
-    'USPM00018': {
-        'id': 'USPM00018',
+    'SCUS94280': {
+        'id': 'SCUS94280',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 18 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_10/large.1412593214_OfficialU.S.PlayStationMagazineIssue018(March1999)page001.jpg.95a55acd8877e4f6cf0f4495d7e31bdc.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_10/large.1412593214_OfficialU.S.PlayStationMagazineIssue018(March1999)page001.jpg.95a55acd8877e4f6cf0f4495d7e31bdc.jpg',
     },
-    'USPM00019': {
-        'id': 'USPM00019',
+    'SCUS94281': {
+        'id': 'SCUS94281',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 19 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.222376717_OfficialU.S.PlayStationMagazineIssue019(April1999).jpg.a9631119b02fecd6893eae032b24634a.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_10/large.222376717_OfficialU.S.PlayStationMagazineIssue019(April1999).jpg.a9631119b02fecd6893eae032b24634a.jpg',
     },
-    'USPM00020': {
-        'id': 'USPM00020',
+    'SCUS94282': {
+        'id': 'SCUS94282',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 20 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1379109064_OfficialU.S.PlayStationMagazineVolume2Issue08(May1999).jpg.8d43f0ccf55c0c2a6c48bbe12283bac8.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2021_08/large.1379109064_OfficialU.S.PlayStationMagazineVolume2Issue08(May1999).jpg.8d43f0ccf55c0c2a6c48bbe12283bac8.jpg',
     },
-    'USPM00021': {
-        'id': 'USPM00021',
+    'SCUS94429': {
+        'id': 'SCUS94429',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 21 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.1668238493_OfficialU.S.PlayStationMagazineIssue021(June1999).jpg.21c5c207a3fa0d06dd0496aa313724ba.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.1668238493_OfficialU.S.PlayStationMagazineIssue021(June1999).jpg.21c5c207a3fa0d06dd0496aa313724ba.jpg',
     },
-    'USPM00022': {
-        'id': 'USPM00022',
+    'SCUS94430': {
+        'id': 'SCUS94430',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 22 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.39728561_OfficialU.S.PlayStationMagazineIssue022(July1999).jpg.ad547006a591cd3aee1b58c4441827e1.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.39728561_OfficialU.S.PlayStationMagazineIssue022(July1999).jpg.ad547006a591cd3aee1b58c4441827e1.jpg',
     },
-    'USPM00023': {
-        'id': 'USPM00023',
+    'SCUS94431': {
+        'id': 'SCUS94431',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 23 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.1310491804_OfficialU.S.PlayStationMagazineIssue023(August1999).jpg.311ccc0715da8d058ff38cd272e23069.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_11/large.1310491804_OfficialU.S.PlayStationMagazineIssue023(August1999).jpg.311ccc0715da8d058ff38cd272e23069.jpg',
     },
-    'USPM00024': {
-        'id': 'USPM00024',
+    'SCUS94432': {
+        'id': 'SCUS94432',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 24 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.988896549_OfficialU.S.PlayStationMagazineIssue024(September1999).jpg.c3b9fe5289e72b1ec5913226d02c288d.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.988896549_OfficialU.S.PlayStationMagazineIssue024(September1999).jpg.c3b9fe5289e72b1ec5913226d02c288d.jpg',
     },
-    'USPM00025': {
-        'id': 'USPM00025',
+    'SCUS94433': {
+        'id': 'SCUS94433',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 25 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.572289703_OfficialU.S.PlayStationMagazineIssue025(October1999).jpg.e49de2005e85ae84e7e0f79f4bf02843.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.572289703_OfficialU.S.PlayStationMagazineIssue025(October1999).jpg.e49de2005e85ae84e7e0f79f4bf02843.jpg',
     },
-    'USPM00026': {
-        'id': 'USPM00026',
+    'SCUS94434': {
+        'id': 'SCUS94434',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 26 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.464474131_OfficialU.S.PlayStationMagazineIssue026(November1999).jpg.8dcf69217029c09412025db83939db29.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.464474131_OfficialU.S.PlayStationMagazineIssue026(November1999).jpg.8dcf69217029c09412025db83939db29.jpg',
     },
-    'USPM00027': {
-        'id': 'USPM00027',
+    'SCUS94435': {
+        'id': 'SCUS94435',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 27 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.134105384_OfficialU.S.PlayStationMagazineIssue027(December1999).jpg.733e3b447d05e493e3be356539c9b2cc.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.134105384_OfficialU.S.PlayStationMagazineIssue027(December1999).jpg.733e3b447d05e493e3be356539c9b2cc.jpg',
     },
-    'USPM00028': {
-        'id': 'USPM00028',
+    'SCUS94436': {
+        'id': 'SCUS94436',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 28 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.304003527_OfficialU.S.PlayStationMagazineIssue028(January2000).jpg.2af5a613352d0061de644432576947dd.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_12/large.304003527_OfficialU.S.PlayStationMagazineIssue028(January2000).jpg.2af5a613352d0061de644432576947dd.jpg',
     },
-    'USPM00029': {
-        'id': 'USPM00029',
+    'SCUS94437': {
+        'id': 'SCUS94437',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 29 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_02/large.937673706_OfficialU.S.PlaystationMagazineIssue29February2000page001.jpg.a03df944b5bcd92d4a306155d5421e93.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_02/large.937673706_OfficialU.S.PlaystationMagazineIssue29February2000page001.jpg.a03df944b5bcd92d4a306155d5421e93.jpg',
     },
-    'USPM00030': {
-        'id': 'USPM00030',
+    'SCUS94438': {
+        'id': 'SCUS94438',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 30 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_08/large.ouspm.jpg.b400c0f7e8d061ed2a15128f1f5318e6.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2020_08/large.ouspm.jpg.b400c0f7e8d061ed2a15128f1f5318e6.jpg',
     },
-    'USPM00031': {
-        'id': 'USPM00031',
+    'SCUS94499': {
+        'id': 'SCUS94499',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 31 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_18528_59_134316.jpg.3e3cb6d694e2524c399fc8ef9b47fe77.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_18528_59_134316.jpg.3e3cb6d694e2524c399fc8ef9b47fe77.jpg',
     },
-    'USPM00032': {
-        'id': 'USPM00032',
+    'SCUS94583': {
+        'id': 'SCUS94583',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 32 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_04/large.1036522711_OfficialU.S.PlaystationMagazineIssue32May2000.jpg.f4fcad065c982ac3c15bfe0599449bc9.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_04/large.1036522711_OfficialU.S.PlaystationMagazineIssue32May2000.jpg.f4fcad065c982ac3c15bfe0599449bc9.jpg',
     },
-    'USPM00033': {
-        'id': 'USPM00033',
+    'SCUS94591': {
+        'id': 'SCUS94591',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 33 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_04/large.814990018_OfficialU.S.PlaystationMagazineIssue33June2000.jpg.01e5c08ed685fb97978038cdb4855bcc.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_04/large.814990018_OfficialU.S.PlaystationMagazineIssue33June2000.jpg.01e5c08ed685fb97978038cdb4855bcc.jpg',
     },
-    'USPM00034': {
-        'id': 'USPM00034',
+    'SCUS94593': {
+        'id': 'SCUS94593',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 34 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1149380755_OfficialU.S.PlaystationMagazineIssue34-01.jpg.776ee029de6b5448a25f675a23353b4f.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1149380755_OfficialU.S.PlaystationMagazineIssue34-01.jpg.776ee029de6b5448a25f675a23353b4f.jpg',
     },
-    'USPM00035': {
-        'id': 'USPM00035',
+    'SCUS94596': {
+        'id': 'SCUS94596',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 35 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.778760609_OfficialU.S.PlaystationMagazineIssue35-01.jpg.dbe88762e0ea6c4554f89e35b17b4b07.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.778760609_OfficialU.S.PlaystationMagazineIssue35-01.jpg.dbe88762e0ea6c4554f89e35b17b4b07.jpg',
     },
-    'USPM00036': {
-        'id': 'USPM00036',
+    'SCUS94599': {
+        'id': 'SCUS94599',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 36 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_08/large.409925647_OfficialU.S.PlaystationMagazineIssue36(September2000).jpg.a08efb7abc4c176404df6a68c68abfd5.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_08/large.409925647_OfficialU.S.PlaystationMagazineIssue36(September2000).jpg.a08efb7abc4c176404df6a68c68abfd5.jpg',
     },
-    'USPM00037': {
-        'id': 'USPM00037',
+    'SCUS94614': {
+        'id': 'SCUS94614',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 37 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_08/large.2051008207_OfficialU.S.PlaystationMagazineIssue37(October2000).jpg.61c63764c50d8532b2ba9244b377f8e6.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_08/large.2051008207_OfficialU.S.PlaystationMagazineIssue37(October2000).jpg.61c63764c50d8532b2ba9244b377f8e6.jpg',
     },
-    'USPM00038': {
-        'id': 'USPM00038',
+    'SCUS94617': {
+        'id': 'SCUS94617',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 38 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1799672728_OfficialU.S.PlaystationMagazineIssue38-01.jpg.1dadc06ed655c8d58e6d8faea7bf4ccb.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1799672728_OfficialU.S.PlaystationMagazineIssue38-01.jpg.1dadc06ed655c8d58e6d8faea7bf4ccb.jpg',
     },
-    'USPM00039': {
-        'id': 'USPM00039',
+    'SCUS94622': {
+        'id': 'SCUS94622',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 39 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1444033532_OfficialU.S.PlaystationMagazineIssue39-01.jpg.fcffa8a0866eaea080ec526d0fffbfda.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.1444033532_OfficialU.S.PlaystationMagazineIssue39-01.jpg.fcffa8a0866eaea080ec526d0fffbfda.jpg',
     },
-    'USPM00040': {
-        'id': 'USPM00040',
+    'SCUS94628': {
+        'id': 'SCUS94628',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 40 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.2136168439_OfficialU.S.PlaystationMagazineIssue40-01.jpg.9694f932fc2f9e5e69036fc782621e33.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.2136168439_OfficialU.S.PlaystationMagazineIssue40-01.jpg.9694f932fc2f9e5e69036fc782621e33.jpg',
     },
-    'USPM00041': {
-        'id': 'USPM00041',
+    'SCUS94630': {
+        'id': 'SCUS94630',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 41 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.891110063_OfficialU.S.PlaystationMagazineIssue41-01.jpg.f586fac4856afd985c80222718776c42.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.891110063_OfficialU.S.PlaystationMagazineIssue41-01.jpg.f586fac4856afd985c80222718776c42.jpg',
     },
-    'USPM00042': {
-        'id': 'USPM00042',
+    'SCUS94631': {
+        'id': 'SCUS94631',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 42 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.166553092_OfficialU.S.PlaystationMagazineIssue42-01.jpg.f971685e89051fe3e5ac94b2179cc36d.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_07/large.166553092_OfficialU.S.PlaystationMagazineIssue42-01.jpg.f971685e89051fe3e5ac94b2179cc36d.jpg',
     },
-    'USPM00043': {
-        'id': 'USPM00043',
+    'SCUS94634': {
+        'id': 'SCUS94634',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 43 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.683308490_OfficialUSPlaystationMagazine43.jpeg.6a8104fe917e00f6a5dd0ffa5a9dd2d8.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.683308490_OfficialUSPlaystationMagazine43.jpeg.6a8104fe917e00f6a5dd0ffa5a9dd2d8.jpeg',
     },
-    'USPM00044': {
-        'id': 'USPM00044',
+    'SCUS94637': {
+        'id': 'SCUS94637',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 44 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.1227952695_OfficialUSPlaystationMagazine44.jpeg.8866a18aaef78fcbf391dd3d3eb504e8.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.1227952695_OfficialUSPlaystationMagazine44.jpeg.8866a18aaef78fcbf391dd3d3eb504e8.jpeg',
     },
-    'USPM00045': {
-        'id': 'USPM00045',
+    'SCUS94645': {
+        'id': 'SCUS94645',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 45 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.513864523_OfficialUSPlaystationMagazine45.jpeg.01a333363a1851d9eb74a1eabdd0eeb3.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.513864523_OfficialUSPlaystationMagazine45.jpeg.01a333363a1851d9eb74a1eabdd0eeb3.jpeg',
     },
-    'USPM00046': {
-        'id': 'USPM00046',
+    'SCUS94649': {
+        'id': 'SCUS94649',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 46 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_03/large.ousp46.jpg.3c7ec89a5231c5137a841c5874c9f951.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_03/large.ousp46.jpg.3c7ec89a5231c5137a841c5874c9f951.jpg',
     },
-    'USPM00047': {
-        'id': 'USPM00047',
+    'SCUS94652': {
+        'id': 'SCUS94652',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 47 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.1584092704_OfficialUSPlaystationMagazine47.jpeg.1eec381fd694259c1949aa3bb86de4a4.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.1584092704_OfficialUSPlaystationMagazine47.jpeg.1eec381fd694259c1949aa3bb86de4a4.jpeg',
     },
-    'USPM00048': {
-        'id': 'USPM00048',
+    'SCUS94655': {
+        'id': 'SCUS94655',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 48 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.705822859_OfficialUSPlaystationMagazine48.jpeg.651a874abdc450fa0cba894377b242af.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.705822859_OfficialUSPlaystationMagazine48.jpeg.651a874abdc450fa0cba894377b242af.jpeg',
     },
-    'USPM00050': {
-        'id': 'USPM00050',
+    'SCUS94658': {
+        'id': 'SCUS94658',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 50 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_05/large.32c6bf939275c3bd47a8ded550d245e7.jpg.d3ba3785b043ffbe4e3171432a999344.jpg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_05/large.32c6bf939275c3bd47a8ded550d245e7.jpg.d3ba3785b043ffbe4e3171432a999344.jpg',
     },
-    'USPM00052': {
-        'id': 'USPM00052',
+    'SCUS94662': {
+        'id': 'SCUS94662',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 52 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.554825229_OfficialUSPlaystationMagazine52.jpeg.17bc16321b4d2af50a63733227987e93.jpeg',
         'pic0': None,
         'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2022_01/large.554825229_OfficialUSPlaystationMagazine52.jpeg.17bc16321b4d2af50a63733227987e93.jpeg',
     },
-    'USPM00054': {
-        'id': 'USPM00054',
+    'SCUS94664': {
+        'id': 'SCUS94664',
         'title': 'OFFICIAL U.S. PLAYSTATION MAGAZINE 54 [DEMO]',
         'icon0': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2019_11/large.ouspmtombraider.jpg.c74bbf4488b2466859e4aaf1ceec00b1.jpg',
         'pic0': None,
@@ -72079,157 +72079,157 @@ gameid_by_md5sum = {
         'id': 'SLUS01091',
     },
     'efccdeaa687299e9ffd838df4edef8cf': {
-        'id': 'USPM00001',
+        'id': 'SCUS94189',
     },
     '5a4b8736e8c0edfdad51b6f798552cfd': {
-        'id': 'USPM00002',
+        'id': 'SCUS94198',
     },
     '3ae824efa30efdd7e453a4fb6afe77a9': {
-        'id': 'USPM00003',
+        'id': 'SCUS94210',
     },
     'd2eb6b9988750ef6e0c15fd3307a6e09': {
-        'id': 'USPM00004',
+        'id': 'SCUS94211',
     },
     'a950f6c9e9ae180699f6f8eb65b89cab': {
-        'id': 'USPM00005',
+        'id': 'SCUS94212',
     },
     'cb2c07e4ba4deab215a90c8a328dbdf2': {
-        'id': 'USPM00006',
+        'id': 'SCUS94213',
     },
     '406b42ac7e4eaa918ba0ed7388c3221f': {
-        'id': 'USPM00007',
+        'id': 'SCUS94214',
     },
     'fab98dbeca7808f08fe01453d48fd04a': {
-        'id': 'USPM00008',
+        'id': 'SCUS94215',
     },
     '5168d9ee50883112ddb6350c066a28df': {
-        'id': 'USPM00009',
+        'id': 'SCUS94216',
     },
     'bf16daff466796ab76612f18ab676a5a': {
-        'id': 'USPM00010',
+        'id': 'SCUS94217',
     },
     '85194af97aa6416bf329cf37700ea76f': {
-        'id': 'USPM00011',
+        'id': 'SCUS94218',
     },
     '03a558261457533ef8dd5e1f02b69cc3': {
-        'id': 'USPM00012',
+        'id': 'SCUS94219',
     },
     '25b644bbeb0c0b8ee49c06dcc925a7c4': {
-        'id': 'USPM00013',
+        'id': 'SCUS94275',
     },
     '4efe370e12cecdcce88b276828580abf': {
-        'id': 'USPM00014',
+        'id': 'SCUS94276',
     },
     'a1d4e5d5db1d2320e1db5ae760d56ef2': {
-        'id': 'USPM00015',
+        'id': 'SCUS94277',
     },
     'e2a70ef6d5b7096627d1cb52daec43cb': {
-        'id': 'USPM00016',
+        'id': 'SCUS94278',
     },
     '79da00bf77ddf4d04b4d2a27035e4ea2': {
-        'id': 'USPM00017',
+        'id': 'SCUS94279',
     },
     '671a6de480ee7d67324d293b3064f94d': {
-        'id': 'USPM00018',
+        'id': 'SCUS94280',
     },
     'c5e6a4f2a957e6e2adb6ca63961f6ca7': {
-        'id': 'USPM00019',
+        'id': 'SCUS94281',
     },
     '33fbf8b9ca0362af23d5fc4e139b44b1': {
-        'id': 'USPM00020',
+        'id': 'SCUS94282',
     },
     '95e219ecdc20fad974ee924ce84076f9': {
-        'id': 'USPM00021',
+        'id': 'SCUS94429',
     },
     '7641ac41a34147e6e2ca15fc9ea53edf': {
-        'id': 'USPM00022',
+        'id': 'SCUS94430',
     },
     'af1e672aac3f600ff0551e75525f530b': {
-        'id': 'USPM00023',
+        'id': 'SCUS94431',
     },
     '399167ce483e4af6de0bdf868b733a56': {
-        'id': 'USPM00024',
+        'id': 'SCUS94432',
     },
     '5c920c2fd992d1288203e0d8f5e05eb5': {
-        'id': 'USPM00025',
+        'id': 'SCUS94433',
     },
     '45d9a07bc516be2f983cdbebed39e035': {
-        'id': 'USPM00026',
+        'id': 'SCUS94434',
     },
     '7f238ef9817416d050f3782d0962634f': {
-        'id': 'USPM00027',
+        'id': 'SCUS94435',
     },
     'd4e6daa27e2ed47bf30976df3b344ca5': {
-        'id': 'USPM00028',
+        'id': 'SCUS94436',
     },
     '9395bbcd8ce248c94f749484473debef': {
-        'id': 'USPM00029',
+        'id': 'SCUS94437',
     },
     '1cc8fc69696f1e2b03cc8a6987809606': {
-        'id': 'USPM00030',
+        'id': 'SCUS94438',
     },
     '1e7e7e585ef08ba7f0e6eb2a238dba7f': {
-        'id': 'USPM00031',
+        'id': 'SCUS94499',
     },
     '4e3f5ca98949470087e556a9f232917c': {
-        'id': 'USPM00032',
+        'id': 'SCUS94583',
     },
     'e0f89ca3ed6ece5d2da8ad31f8263ea3': {
-        'id': 'USPM00033',
+        'id': 'SCUS94591',
     },
     '33d0d3a31b807c666def4d782b59fa98': {
-        'id': 'USPM00034',
+        'id': 'SCUS94593',
     },
     '9f4e42cc22aab9bbbd5a679cb6a9100b': {
-        'id': 'USPM00035',
+        'id': 'SCUS94596',
     },
     'dc0765e1100de954ebe73297060042fb': {
-        'id': 'USPM00036',
+        'id': 'SCUS94599',
     },
     '5c5139c00b4d52e5e52e736fe75266b3': {
-        'id': 'USPM00037',
+        'id': 'SCUS94614',
     },
     'bcd92a7bfd0ae425bf7ae1052ad3baf7': {
-        'id': 'USPM00038',
+        'id': 'SCUS94617',
     },
     '2cbdc75283df96cf35afd652d752ba26': {
-        'id': 'USPM00039',
+        'id': 'SCUS94622',
     },
     'fec728d09f9cea0b95d69c9355f7d2d5': {
-        'id': 'USPM00040',
+        'id': 'SCUS94628',
     },
     '9102304445261df56a3c73f810eb9ede': {
-        'id': 'USPM00041',
+        'id': 'SCUS94630',
     },
     '67bbd0a0905e59c5eb5b874a0aac1911': {
-        'id': 'USPM00042',
+        'id': 'SCUS94631',
     },
     'b5d1059531f7bd13322fbe9e0a093a65': {
-        'id': 'USPM00043',
+        'id': 'SCUS94634',
     },
     '8d54b4ec50338b991c13bfde189fa5f6': {
-        'id': 'USPM00044',
+        'id': 'SCUS94637',
     },
     '230f2faece5625e4ae7872120553d28b': {
-        'id': 'USPM00045',
+        'id': 'SCUS94645',
     },
     '7fe9d7dde4af009e0407f56725b21914': {
-        'id': 'USPM00046',
+        'id': 'SCUS94649',
     },
     '2866ac27b54aa15bb941f1b63759b669': {
-        'id': 'USPM00054',
+        'id': 'SCUS94664',
     },
     '4168a9ac854d1d0d7c211c78b6846cc6': {
-        'id': 'USPM00052',
+        'id': 'SCUS94662',
     },
     '2a8e66a7180dfe5018c51efccedf5400': {
-        'id': 'USPM00050',
+        'id': 'SCUS94658',
     },
     '5afd13bf8840e560ffc8a616af241d4b': {
-        'id': 'USPM00048',
+        'id': 'SCUS94655',
     },
     'bb9fedcc07429c555c0eff53345d74b8': {
-        'id': 'USPM00047',
+        'id': 'SCUS94652',
     },
     '015f07b3e52befbb72db3ebd60657ffa': {
         'id': 'SLPS01853',
