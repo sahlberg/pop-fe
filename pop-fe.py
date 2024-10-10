@@ -3545,6 +3545,8 @@ def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
 
 def install_deps():
     print(os.name)
+    subprocess.call(['git', 'submodule', 'update', '--init'])
+
     # PyPDF2
     try:
         import PyPDF2

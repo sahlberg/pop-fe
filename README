@@ -582,7 +582,7 @@ sudo dnf install pip3
 sudo dnf install python3-devel
 sudo dnf install libsndfile-devel
 sudo dnf install ffmpeg
-git clone https://github.com/sahlberg/pop-fe.git
+git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
 
@@ -594,7 +594,7 @@ sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install ffmpeg
-git clone https://github.com/sahlberg/pop-fe.git
+git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
 
