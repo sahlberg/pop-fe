@@ -16,6 +16,7 @@ import datetime
 import hashlib
 import io
 import os
+import re
 import struct
 import sys
 import zlib
@@ -2413,6 +2414,7 @@ class popstation(object):
         self._configs = None
         self._magic_word = []
         self._subchannels = []
+        self._hotfixes = None
         self._verbose = False
         self._striptracks = False
         # complevel is >0 for PSP and ==0 for PS3
@@ -2456,6 +2458,14 @@ class popstation(object):
     @magic_word.setter
     def magic_word(self, magic_word):
         self._magic_word = magic_word
+
+    @property
+    def hotfixes(self):
+        return self._hotfixes
+
+    @hotfixes.setter
+    def hotfixes(self, hotfixes):
+        self._hotfixes = hotfixes
 
     @property
     def subchannels(self):
@@ -2815,6 +2825,9 @@ class popstation(object):
                 break
             if len(buf) < 0x9300:
                 buf = buf + bytearray(0x9300 - len(buf))
+            if self._hotfixes and fi.tell() < 1048576:
+                for fix in self._hotfixes:
+                    buf = buf.replace(fix[0], fix[1])
             c = buf
             if self._complevel != 0:
                 c = zlib.compress(buf, self._complevel)

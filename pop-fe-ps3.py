@@ -677,7 +677,7 @@ class PopFePs3App:
                 magic_word.append(0)
                 subchannels.append(None)
                 
-        if disc_id[:4] == 'SLES' or disc_id[:4] == 'SCES':
+        if disc_id[:3] == 'SLE' or disc_id[:3] == 'SCE':
             print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
             resolution = 2
         if self.builder.get_variable('force_pal_variable').get() == 'on':

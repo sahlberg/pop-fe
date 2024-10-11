@@ -2967,6 +2967,9 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             bc.open(cue_files[i])
             # store how big the data track is
             p.add_track0_size(bc.tracks[1]['INDEX'][1]['STOPSECT'] * SECTLEN)
+    if disc_ids[0][:4] == 'SLED':
+        print('Apply hotfix for SLED games')
+        p.hotfixes = [ (b'SLED', b'SLES'), ]
 
     # create directory structure
     f = subdir + disc_ids[0]
@@ -4408,7 +4411,7 @@ if __name__ == "__main__":
         quit()
 
     resolution = 1
-    if args.ps3_pkg and (real_disc_ids[0][:4] == 'SLES' or real_disc_ids[0][:4] == 'SCES'):
+    if args.ps3_pkg and (real_disc_ids[0][:3] == 'SLE' or real_disc_ids[0][:3] == 'SCE'):
         print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
         resolution = 2
     if args.resolution:

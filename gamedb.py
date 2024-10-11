@@ -233,7 +233,7 @@ games = {
         'title': 'THE OFFICIAL PLAYSTATION MAGAZINE 1 [DEMO]',
         'icon0': 'https://crimson-ceremony.net/demopals/eurodemo/uk001-1.jpg',
         'pic0': None,
-        'pic1': 'https://crimson-ceremony.net/demopals/eurodemo/uk001-1.jpg',
+        'pic1': 'https://www.retromags.com/rmg_fs/gallery_imgs/monthly_2018_09/large.gallery_19000_268_46987.jpg.eb09ba9596e5ad389d38135272295ef7.jpg',
     },
     'SLES00150': {
         'id': 'SLES00150',
