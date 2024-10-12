@@ -1457,7 +1457,13 @@ games = {
     'SCED00780': {'id': 'SCED00780', 'title': 'EURO DEMO 17 FRA [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED00781': {'id': 'SCED00781', 'title': 'EURO DEMO 18 FRA [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED00782': {'id': 'SCED00782', 'title': 'EURO DEMO 20 FRA [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'SCED00789': {'id': 'SCED00789', 'title': 'NAMCO DEMO [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCED00789': {
+        'id': 'SCED00789',
+        'title': 'NAMCO DEMO [DEMO]',
+        'icon0': 'https://i0.wp.com/www.retrobros.dk/wp-content/uploads/2020/12/image-83-scaled.jpg?fit=1920%2C2560&ssl=1',
+        'pic0': None,
+        'pic1': 'https://i.ytimg.com/vi/08HeUS0IJ0c/maxresdefault.jpg',
+    },
     'SLED00796': {'id': 'SLED00796', 'title': 'INTERNATIONAL SUPERSTAR SOCCER PRO [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SLED00797': {'id': 'SLED00797', 'title': 'EXCALIBUR 2555AD [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCED00816': {

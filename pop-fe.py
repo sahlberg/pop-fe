@@ -2970,6 +2970,9 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     if disc_ids[0][:4] == 'SLED':
         print('Apply hotfix for SLED games')
         p.hotfixes = [ (b'SLED', b'SLES'), ]
+    if disc_ids[0][:4] == 'SCED':
+        print('Apply hotfix for SCED games')
+        p.hotfixes = [ (b'SCED', b'SCES'), ]
 
     # create directory structure
     f = subdir + disc_ids[0]
