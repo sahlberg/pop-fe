@@ -31122,6 +31122,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
         'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Re-Volt/SLES-01973.bin',
     },
     'SLES00129': {
         'url': "games/P/R/SLES-00129.html",
@@ -61380,6 +61381,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/8ceabbc0-30b7-46da-8469-0a952603e3b8.png',
         'pic1': 'https://images.launchbox-app.com/10658c81-1306-41c6-84ac-1c1da9e3e9c4.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Re-Volt%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Re-Volt/SLPM-86332.bin',
     },
     'SLPS00258': {
         'url': "games/J/R/SLPS-00258.html",
