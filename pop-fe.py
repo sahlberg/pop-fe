@@ -4153,7 +4153,7 @@ def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
             if os.name == 'posix':
                 subprocess.run(['./lcp', img_files[idx]], check=True)
             else:
-                subprocess.run(['./lcp.exe', img_files[idx]], check=True)
+                subprocess.run(['lcp.exe', img_files[idx]], check=True)
     return cue_files, img_files
 
 
