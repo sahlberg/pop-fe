@@ -3500,51 +3500,6 @@ def get_disc_ids(cue_files, real_cue_files, subdir='./'):
     return disc_ids, md5_sums
 
 
-def apply_ppf(img, disc_id, magic_word, auto_libcrypt):
-    if auto_libcrypt:
-        # https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
-        print('Try to automatically generate libcrypt patch for', img)
-        with open(img, 'rb+') as f:
-            while True:
-                off = f.tell()
-                buf = bytearray(f.read(0x9300))
-                if not buf:
-                    break
-                pos = buf.find(bytes([0x25, 0x30, 0x86, 0x00]))
-                if pos > 0:
-                    print('Found libcrypt signature. Patching it')
-                    struct.pack_into('<H', buf, pos, magic_word)
-                    struct.pack_into('<H', buf, pos + 2, 0x34c6)
-                    f.seek(off)
-                    f.write(buf)
-        return
-    if 'credit' in libcrypt[disc_id]:
-        print(libcrypt[disc_id]['credit'])
-    if 'ppf' in libcrypt[disc_id]:
-        print('Patching ', disc_id, 'to remove libcrypt')
-        ApplyPPF(img, libcrypt[disc_id]['ppf'])
-        return
-    if not 'ppfzip' in libcrypt[disc_id]:
-        print('##################################')
-        print('WARNING! No PPF found for', disc_id, 'the game might not work unless you have already patched the image file')
-        print('##################################')
-        return
-    print('Fetching PPF for', disc_id)  if verbose else None
-    ret = requests.get(libcrypt[disc_id]['ppfzip'][0])
-    if ret.status_code != 200:
-        print('##################################')
-        print('WARNING! PPF to remove libcrypt was not found for %s. Game might not work.')
-        print('##################################')
-        return
-
-    z = zipfile.ZipFile(io.BytesIO(ret.content))
-    print('Extracting PPF ', libcrypt[disc_id]['ppfzip'][1]) if verbose else None
-    z.extract(libcrypt[disc_id]['ppfzip'][1])
-    temp_files.append(libcrypt[disc_id]['ppfzip'][1])
-
-    print('Patching ', disc_id, 'to remove libcrypt')
-    ApplyPPF(img, libcrypt[disc_id]['ppfzip'][1])
-
 def install_deps():
     print(os.name)
     subprocess.call(['git', 'submodule', 'update', '--init'])
@@ -4175,6 +4130,32 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         
     return cue_file, real_cue_file, img_file
 
+def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
+    print('Patch libcrypt')
+    for idx in range(len(real_disc_ids)):
+        if real_disc_ids[idx] not in libcrypt:
+            continue
+        print('Need to patch libcrypt for', real_disc_ids[idx])
+        if len(cue_files[idx]) < len(subdir) or cue_files[idx][:len(subdir)] != subdir:
+            print('Copy the files')
+            i = get_imgs_from_bin(cue_files[idx])
+            print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) #if verbose else None
+            copy_file(i[0], subdir + 'LCP%02x.bin' % idx) 
+            temp_files.append('LCP%02x.bin' % idx)
+            with open(cue_files[idx], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('LCP%02x.bin' % idx)
+                with open(subdir + 'LCP%02x.cue' % idx, 'w') as fo:
+                    fo.writelines(l)
+                temp_files.append('LCP%02x.cue' % idx)
+            cue_files[idx] = subdir + 'LCP%02x.cue' % idx
+            img_files[idx] = subdir + 'LCP%02x.bin' % idx
+            if os.name == 'posix':
+                subprocess.run(['./lcp', img_files[idx]], check=True)
+            else:
+                subprocess.run(['./lcp.exe', img_files[idx]], check=True)
+    return cue_files, img_files
+
 
 # ICON0 is the game cover
 # PIC0 is logo
@@ -4215,8 +4196,6 @@ if __name__ == "__main__":
                         help='Do not download any assets for this')
     parser.add_argument('--title',
                     help='Force title for this iso')
-    parser.add_argument('--ps3-libcrypt', action='store_true', help='Apply libcrypt patches also for PS3 Packages')
-    parser.add_argument('--auto-libcrypt', action='store_true', help='Apply automatically generated libcrypt patches')
     parser.add_argument('--resolution',
                         help='Force setting resolution to 1: NTSC 2: PAL')
     parser.add_argument('--install', action='store_true', help='Install/Build all required dependencies')
@@ -4469,27 +4448,27 @@ if __name__ == "__main__":
         
     # PIC0.PNG
     pic0 = None
-    if args.pic0:
+    if args.pic0 and args.pic0.lower() != 'none':
         print('Get PIC0/Screenshot from', args.pic0)
         pic0 = Image.open(args.pic0)
     if args.theme:
         pic0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC0.PNG')
         if not pic0:
             pic0 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC0.png')
-    if not pic0:
+    if not pic0 and not args.pic0:
         print('Fetch PIC0 for', game_title) if verbose else None
         pic0 = get_pic0_from_game(disc_ids[0], game, args.files[0])
-        
+
     # PIC1.PNG
     pic1 = None
-    if args.pic1:
+    if args.pic1 and args.pic1.lower() != 'none':
         print('Get PIC1/Screenshot from', args.pic1)
         pic1 = Image.open(args.pic1)
     if args.theme:
         pic1 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC1.PNG')
         if not pic1:
             pic1 = get_image_from_theme(args.theme, disc_ids[0], subdir, 'PIC1.png')
-    if not pic1:
+    if not pic1 and not args.pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
 
@@ -4511,9 +4490,6 @@ if __name__ == "__main__":
         
     print('Id:', disc_ids[0])
     print('Title:', game_title)
-    print('Cue Files', cue_files) if verbose else None
-    print('Imb Files', img_files) if verbose else None
-    print('Disc IDs', disc_ids) if verbose else None
 
     subchannels = []
     magic_word = []
@@ -4528,44 +4504,12 @@ if __name__ == "__main__":
         magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
         subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
 
-        patch_libcrypt = False
-        if args.auto_libcrypt:
-            patch_libcrypt = True
-        if args.ps3_pkg and args.ps3_libcrypt:
-            patch_libcrypt = True
-        if args.ps2_dir or args.psio_dir:
-            print('#####################################')
-            print('WARNING! This disc is protected with libcrypt.')
-            print('Will attempt to apply libcrypt PPF patch')
-            print('#####################################')
-            patch_libcrypt = True
-        if args.ps3_pkg:
-            print('#####################################')
-            print('WARNING! This disc is protected with libcrypt.')
-            print('Will attempt to inject MagicWord and Subchannel data')
-            print('into ISO.BIN.DAT')
-            print('This should work for most games. If not then try')
-            print('creating the package again with --ps3-libcrypt')
-            print('#####################################')
-        if patch_libcrypt:
-            #
-            # Copy the CUE and BIN locally so we can patch them.
-            # We don't need to copy them if they are already in
-            # our temporary work directory pop-fe-work/
-            i = get_imgs_from_bin(cue_files[idx])
-            print('Copy %s to LCP%02x.bin so we can patch libcrypt' % (i[0], idx)) if verbose else None
-            copy_file(i[0], 'LCP%02x.bin' % idx) 
-            temp_files.append('LCP%02x.bin' % idx)
-            with open(cue_files[idx], 'r') as fi:
-                l = fi.readlines()
-                l[0] = 'FILE "%s" BINARY\n' % ('LCP%02x.bin' % idx)
-                with open('LCP%02x.cue' % idx, 'w') as fo:
-                    fo.writelines(l)
-                temp_files.append('LCP%02x.cue' % idx)
-            cue_files[idx] = 'LCP%02x.cue' % idx
-            img_files[idx] = 'LCP%02x.bin' % idx
-            apply_ppf(img_files[idx], real_disc_ids[idx], magic_word[idx], args.auto_libcrypt)
+    cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
 
+    print('Cue Files', cue_files) if verbose else None
+    print('Img Files', img_files) if verbose else None
+    print('Real Disc IDs', real_disc_ids) if verbose else None
+    
     snd0 = args.snd0
     if not args.force_no_assets:
         # if we did not get an --snd0 argument see if can find one in the gamedb
