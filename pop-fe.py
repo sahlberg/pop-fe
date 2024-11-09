@@ -3698,6 +3698,17 @@ def install_deps():
             subprocess.call(['git', 'checkout', 'origin/use-python3'])
             subprocess.call(['make'])
             os.chdir('../../..')
+
+    if os.name == 'posix':
+        # libcrypt-patcher
+        try:
+            os.stat('Xlibcrypt-patcher')
+            print('libcrypt-patcher is already installed')
+        except:
+            print('Cloning libcrypt-patcher')
+            subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip'])
+            subprocess.call(['unzip', '-j', 'libcrypt-patcher-v1.0.8-linux-i386-static.zip', '*/lcp'])
+
             
 def generate_subchannels(magic_word):
     def generate_subchannel(sector, is_corrupt):
