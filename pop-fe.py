@@ -4186,6 +4186,8 @@ if __name__ == "__main__":
                     help='Name of the PS3 pckage to create')
     parser.add_argument('--psc-dir',
                     help='Where the PS Classic/AutoBleem memory card is mounted')
+    parser.add_argument('--no-libcrypt', action='store_true',
+                    help='Do not patch libcrypt')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -4504,7 +4506,8 @@ if __name__ == "__main__":
         magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
         subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
 
-    cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
+    if not args.no_libcrypt:
+        cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
 
     print('Cue Files', cue_files) if verbose else None
     print('Img Files', img_files) if verbose else None
