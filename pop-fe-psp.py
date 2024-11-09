@@ -490,14 +490,11 @@ class PopFePs3App:
             d = self.builder.get_variable('discid%d_variable' % (idx + 1)).get()
             disc_ids.append(d)
         resolution = 1
-        magic_word = []
         subchannels = []
         for idx in range(len(self.cue_files)):
             if self.real_disc_ids[idx] in libcrypt:
-                magic_word.append(libcrypt[self.real_disc_ids[idx]]['magic_word'] & 0x72D0EE59)
                 subchannels.append(popfe.generate_subchannels(libcrypt[self.real_disc_ids[idx]]['magic_word']))
             else:
-                magic_word.append(0)
                 subchannels.append(None)
 
         if disc_id[:3] == 'SLE' or disc_id[:3] == 'SCE':
@@ -565,7 +562,7 @@ class PopFePs3App:
                          self.pic0 if self.pic0_disabled =='off' else None,
                          self.pic1 if self.pic1_disabled =='off' else None,
                          self.cue_files, self.cu2_files, self.img_files, [],
-                         aea_files, magic_word, subdir=self.subdir, snd0=snd0,
+                         aea_files, subdir=self.subdir, snd0=snd0,
                          no_pstitleimg=True if self.nopstitleimg=='on' else False,
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual,
