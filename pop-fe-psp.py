@@ -523,6 +523,9 @@ class PopFePs3App:
         #
         self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.md5_sums, self.subdir, tag="psp")
 
+        # Apply libcrypt
+        self.cue_files, self.img_files = popfe.patch_libcrypt(self.real_disc_ids, self.cue_files, self.img_files, subdir=self.subdir)
+        
         self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
 
         aea_files, extra_data_tracks = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)

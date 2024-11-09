@@ -132,6 +132,7 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe/.
           cp atracdenc.exe dist/pop-fe/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe/.
+          cp lcp.exe dist/pop-fe/.
           mkdir dist/pop-fe/libcrypt
           cp libcrypt/*.* dist/pop-fe/libcrypt
           mkdir dist/pop-fe/ppf
@@ -148,6 +149,7 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
+          cp lcp.exe dist/pop-fe/.
           cp dist/pop-fe-ps3/_internal/PS3LOGO.DAT dist/pop-fe-ps3/.
           mkdir dist/pop-fe-ps3/libcrypt
           cp libcrypt/*.* dist/pop-fe-ps3/libcrypt

@@ -159,10 +159,6 @@ Command line arguments are:
 			single disc PBPs :-(
 			Specify --psc-dir=auto and it will scan all connected
 			devices to try to find the one with AutoBleem.
---ps3-libcrypt        : Apply libcrypt patches also when building PS3 Packages.
-		        This should normally not be needed as we automatically
-			inject the magic word to the emulator running on the
-			PS3.
 --ps1_newemu          : This only applies for PS3 PKGs. This switches the
                         emulator to use to ps1_newemu instead of the default
 			ps1_netemu.
@@ -174,9 +170,6 @@ Command line arguments are:
 --snd0                : Provide an audio file to be played when this game
 		        is focused on the XMB. See the SND0.AT3 section below.
 			To disable snd0 use --snd0=no
---auto-libcrypt       : Try to automatically create and apply a patch for
-                        libcrypt. This can be used if there is no proper PPF
-			file available. This is not 100% reliable.
 --retroarch-bin-dir  : The directory where retroarch game bins are to be
                         installed, inside a subfolder. Includes an m3u file 
                         for correctly loading multi-dics games.
@@ -488,14 +481,8 @@ https://red-j.github.io/Libcrypt-PS1-Protection-bible/index.htm
 The protection is based on careful corruption of the subchannel data of the
 disk and may prevent the converted games from running on PSP/PS3.
 
-PSP/VITA
---------
-When converting to PSP/VITA pop-fe will try to locate and apply a PPF patch
-file to disable the libcrypt protection, making it possible to run the
-game on PSP/VITA.
-This is provided through a curated list of URLs for where to download
-the fix. This list is very incomplete and needs to be extended, patches
-welcome.  See gamedb.py/libcrypt
+Libcrypt games are automatically patched using
+https://github.com/alex-free/libcrypt-patcher/
 
 PS3
 ---
@@ -504,8 +491,6 @@ into the package file.
 (The MagicWord is a compact representation of the subchannel corruption)
 This should be sufficient to allow any games to work when converted to
 a PS3 package.
-If not, you can use the --ps3-libcrypt argument to force pop-fe to try to find
-and apply PPF patches for this game.
 
 ADDITONAL DEPENDENCIES:
 =======================
