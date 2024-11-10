@@ -4131,7 +4131,6 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     return cue_file, real_cue_file, img_file
 
 def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
-    print('Patch libcrypt')
     for idx in range(len(real_disc_ids)):
         if real_disc_ids[idx] not in libcrypt:
             continue
