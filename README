@@ -604,6 +604,9 @@ git clone --recursive https://github.com/sahlberg/pop-fe.git
 make -C pop-fe/PSL1GHT/tools/ps3py/
 cmake -B pop-fe/atracdenc/src/ -S pop-fe/atracdenc/src/
 make -C pop-fe/atracdenc/src/
+wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip
+unzip -j libcrypt-patcher-v1.0.8-linux-i386-static.zip */lcp
+
 
 Android (Termux https://f-droid.org/en/packages/com.termux/) Manual Install:
 ------------------------
@@ -658,6 +661,8 @@ make
 cd ../../..
 wget https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip
 unzip -j atracdenc-x86_0.0.3 -x README.TXT
+wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip
+unzip -j libcrypt-patcher-v1.0.8-linux-i386-static.zip */lcp
 pip install pyinstaller
 pip install pygubu
 pyinstaller PSL1GHT/tools/ps3py/pkg.py
