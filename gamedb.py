@@ -21564,6 +21564,7 @@ games = {
         'url': "games/P/J/SLES-02750.html",
     	'id': 'SLES02750',
 	'title': "JUNGLA DE CRISTAL TRILOGIA 2 - VIVA LAS VEGAS",
+        'pic1': 'https://images.launchbox-app.com/2331f31e-e915-448d-a4e9-3741e407c84c.png',
     },
     'SLES03579': {
         'url': "games/P/J/SLES-03579.html",
