@@ -228,6 +228,48 @@ games = {
         'pic0': None,
         'pic1': 'https://archive.org/download/best-ps-one-games-ever-ps-demo/bestpsone-uk-1.jpg',
     },
+    'UTIL00001': {
+        'id': 'UTIL00001',
+        'title': 'GameGenius Ver. 5.0',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'UTIL00002': {
+        'id': 'UTIL00002',
+        'title': 'Pro Action Replay CDX2 Demo (Version 2)',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'UTIL00003': {
+        'id': 'UTIL00003',
+        'title': 'Pro Action Replay CDX2 Sampler',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'UTIL00004': {
+        'id': 'UTIL00004',
+        'title': 'Karat PS-PS2-you Catalog and Taikenban (Japan)',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'BETA00001': {
+        'id': 'BETA00001',
+        'title': 'Psalm 69 (BETA)',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'BETA00002': {
+        'id': 'BETA00002',
+        'title': 'Virtuoso (BETA)',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
     'HBRW00001': {
         'id': 'HBRW00001',
         'title': 'Virtual Fireplace Screensaver',
@@ -45473,6 +45515,11 @@ games = {
     	'id': 'SLPS01414',
 	'title': "DYNAMITE SOCCER '98",
     },
+    'SLPD01414': {
+        'url': "games/J/D/SLPS-01414.html",
+    	'id': 'SLPD01414',
+	'title': "DYNAMITE SOCCER '98 (DEMO)",
+    },
     'SLPS02554': {
         'url': "games/J/D/SLPS-02554.html",
     	'id': 'SLPS02554',
@@ -51379,6 +51426,15 @@ games = {
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
+    },
+    'SCPD10007': {
+        'url': "games/J/J/SCPS-10007.html",
+    	'id': 'SCPD10007',
+	'title': "JUMPING FLASH! - ALOHA DANSHAKU FUNKY DAISAKUSEN NO KAN (DEMO)",
+        'pic0': 'https://images.launchbox-app.com/8498d258-5b53-49c4-a166-d8c4b6ce8b86.png',
+        'pic1': 'https://images.launchbox-app.com/8fffb905-6fa8-4f5b-815b-2c3fecbd45e1.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=VPeAKMm53eg&list=PLFDF8CD4D80251CA2&index=1',
+        'manual': 'https://archive.org/download/sony-playstation-classic-game-manuals/b07-jumping-flash-en_jp2.zip',
     },
     'SCPS10007': {
         'url': "games/J/J/SCPS-10007.html",
@@ -71475,6 +71531,42 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '957b19af754413e1696f16ce8ad77d69': {
+        'id': 'UTIL00004',
+    },
+    '013215ebcaa2ca35b94efa99e78ba6c2': {
+        'id': 'SCPD10007',
+    },
+    'b55176ffa8ef56d2751d18b3dd050e97': {
+        'id': 'SCPS10007',
+    },
+    '0913fd4db0ad1bf5d0bedba95ff4e177': {
+        'id': 'UTIL00003',
+    },
+    '7bace4e348f90b8827a9a4a27a930569': {
+        'id': 'UTIL00002',
+    },
+    '99dba790b5c9fc18638ca371a72b05e4': {
+        'id': 'UTIL00001',
+    },
+    '53fedb298b8633d7eac322bf8a832998': {
+        'id': 'BETA00002',
+    },
+    '884152e02a9640d8e18183d2d7ba53f4': {
+        'id': 'BETA00001',
+    },
+    'e18b93a400234fecc4a92e00a8b3fb60': {
+        'id': 'SLPS00008',
+    },
+    '0e50e34940dd73ed9c5eba352ad14e55': {
+        'id': 'SLPS00033',
+    },
+    '00255cce08ab64ba0c5a03fe3d42200e': {
+        'id': 'SLPS00033',
+    },
+    'ffccf6b516808f445d9a4d4d661fce68': {
+        'id': 'SLPD01414',
+    },
     'e8e1e0981e0b8ab8c90b5f09eb259d6f': {
         'id': 'SLES04147',
     },
