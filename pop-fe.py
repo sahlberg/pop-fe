@@ -4499,7 +4499,12 @@ if __name__ == "__main__":
         subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
 
     if not args.no_libcrypt:
-        cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
+        try:
+            # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
+            cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
+        except:
+            print('patch_libcrypt cashed :-(')
+            True
 
     print('Cue Files', cue_files) if verbose else None
     print('Img Files', img_files) if verbose else None
