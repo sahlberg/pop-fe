@@ -228,6 +228,41 @@ games = {
         'pic0': None,
         'pic1': 'https://archive.org/download/best-ps-one-games-ever-ps-demo/bestpsone-uk-1.jpg',
     },
+    'HBRW00001': {
+        'id': 'HBRW00001',
+        'title': 'Virtual Fireplace Screensaver',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'HBRW00002': {
+        'id': 'HBRW00002',
+        'title': 'Virtual Aquarium Screensaver',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00001': {
+        'id': 'RUSS00001',
+        'title': 'Lyapis Trubets',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00002': {
+        'id': 'RUSS00002',
+        'title': 'Vacuum - Videoclips',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00003': {
+        'id': 'RUSS00003',
+        'title': 'Virtual Sex',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
     'SLED00107': {
         'id': 'SLED00107',
         'title': 'THE OFFICIAL PLAYSTATION MAGAZINE 1 [DEMO]',
@@ -71440,6 +71475,42 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'e8e1e0981e0b8ab8c90b5f09eb259d6f': {
+        'id': 'SLES04147',
+    },
+    'f5e9bd8ae400fe097c63da4ffde7fa71': {
+        'id': 'SLES04148',
+    },
+    '7e8602e6fa38b0ccb91d856b45fd25cf': {
+        'id': 'SLES04053',
+    },
+    '68b4cfd50853630522d5179f7c9bfc31': {
+        'id': 'HBRW00002',
+    },
+    '9f9dc1dcf69773e30a29c0bcfff68ea9': {
+        'id': 'HBRW00001',
+    },
+    '798873f4f76c8ec9c65d4932062b1b25': {
+        'id': 'RUSS00003',
+    },
+    '92acb85d0224ebfa4ff44cd382ad6517': {
+        'id': 'RUSS00002',
+    },
+    '75e8d6a6326705a0a1a4900add71cd48': {
+        'id': 'SCPS10010',
+    },
+    'a7bd8c18511c43d097d5bf9032717943': {
+        'id': 'SLES03994',
+    },
+    'b0943dfeb655e48e81cca7a8a383c2f3': {
+        'id': 'SLES03881',
+    },
+    '28ea87c36e225a2fad4484818083a1a4': {
+        'id': 'RUSS00001',
+    },
+    '55cfc5673df081968ef8bb77e21fb177': {
+        'id': 'SLES04052',
+    },
     '6a5e62fdadceadde4679286bfb70de99': {
         'id': 'SLPS00069',
     },
