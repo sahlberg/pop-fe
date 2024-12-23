@@ -1915,13 +1915,6 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
             True
 
     if not buf:
-        with open(path, 'rb') as f:
-            h = hashlib.md5(f.read(1024*1024)).hexdigest()
-            print('MD5 fingerprint', h)
-            if h in gameid_by_md5sum:
-                return gameid_by_md5sum[h]['id'], h
-
-    if not buf:
         print('Failed to read game id. Falling back to raw read')
         with open(path, 'rb') as f:
             f.seek(0x8028)
