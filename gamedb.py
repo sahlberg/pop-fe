@@ -39500,6 +39500,12 @@ games = {
 	'title': "ASSAULT RIGS",
         'pic0': 'https://images.launchbox-app.com/52bb844e-b468-40c1-a1a4-0fec6e6b8292.png',
     },
+    'SCPD45420': {
+        'url': "games/J/A/SCPS-45420.html",
+    	'id': 'SCPD45420',
+	'title': "ASSAULT SUITS VALKEN 2 (DEMO)",
+        'pic0': 'https://images.launchbox-app.com/f91ed498-2228-41f8-a481-ecb128d9e33d.png',
+    },
     'SCPS45420': {
         'url': "games/J/A/SCPS-45420.html",
     	'id': 'SCPS45420',
@@ -71531,6 +71537,51 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'aebfb0d6a5242f3887c1d9abc05f48bc': {
+        'id': 'SLPS00104',
+    },
+    '7a01174cae6fe791bd71a6a31ff80324': {
+        'id': 'SLPS00878',
+    },
+    '5633358b628c2a0e9ef592839827bca9': {
+        'id': 'SLPS00092',
+    },
+    'ad81023f27022511dc3edba2702d0e3c': {
+        'id': 'SCPS10014',
+    },
+    '11a624413974798c2b093c47cd628af9': {
+        'id': 'SLPS00337',
+    },
+    'b89487aaf393ef30356c6b450ccd06e1': {
+        'id': 'SLPS00146',
+    },
+    'c583b3b4f5d191c25de82e0c6c71dc51': {
+        'id': 'SLPS00063',
+    },
+    '5e75fb957c4be11c95c95e26cdacbdfc': {
+        'id': 'SCPS10002',
+    },
+    'b175b9f7ee89d51547c96f0ffcd234b0': {
+        'id': 'SCPD45420',
+    },
+    '1e37130261abe2b9fed33274883778df': {
+        'id': 'SLPS00093',
+    },
+    'a6d8825213c3a1a0eedc0286199dc133': {
+        'id': 'SLPS00895',
+    },
+    'b8d815055a8efbbe4ffa2d5675e0196a': {
+        'id': 'SLPS00108',
+    },
+    'ebc515d7c5df23c07731df6de43dfc6e': {
+        'id': 'SLPS03490',
+    },
+    '16f7c97a3b8734928e8cf6ac80abf47c': {
+        'id': 'SLPS00128',
+    },
+    'b4d60a3327ddf97ff58e3777375fd8c3': {
+        'id': 'SLPS00005',
+    },
     '957b19af754413e1696f16ce8ad77d69': {
         'id': 'UTIL00004',
     },
