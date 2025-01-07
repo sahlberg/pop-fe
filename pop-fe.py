@@ -2512,7 +2512,7 @@ def get_imgs_from_bin(cue):
         # strip off leading 'FILE '
         pos = line.lower().index('file ')
         line = line[pos + 5:]
-        # strip off leading 'FILE '
+        # strip off trailing 'binary '
         pos = line.lower().index(' binary')
         line = line[:pos+1]
         #strip off leading ' '
@@ -2522,10 +2522,10 @@ def get_imgs_from_bin(cue):
         while line[-1] == ' ':
             line = line[:-1]
         # remove double quotes
-        if line[0] == '"':
+        if line[0] == '"' and line[-1] == '"':
             line = line[1:-1]
         # remove single quotes
-        if line[0] == '\'':
+        if line[0] == '\'' and line[-1] == '\'':
             line = line[1:-1]
         return line
     
@@ -4102,6 +4102,7 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
 
     i = get_imgs_from_bin(cue_file)
     img_file = i[0]
+
     if len(i) > 1:
         try:
             if os.name == 'posix':
