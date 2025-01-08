@@ -4856,6 +4856,14 @@ games = {
 	'title': "ZXE-D - LEGEND OF PLASMALITE",
         'pic0': 'https://images.launchbox-app.com/b73da9aa-a1f6-446f-b749-89bba3a9889a.png',
     },
+    'SLUS00978': {
+        'url': "games/U/0-9/SLUS-01272.html",
+    	'id': 'SLUS00978',
+	'title': "007 - THE WORLD IS NOT ENOUGH (BETA)",
+        'pic0': 'https://images.launchbox-app.com/4b753094-2cdd-4475-93ef-d456ef9f55ba.png',
+        'pic1': 'https://images.launchbox-app.com/cb072a3c-6460-41ea-9e27-bb54cf8122c5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fn4yiE2bcS8&list=PLA_6nw_SiTT0MYG8oU948hy4dPq-4qWjd&index=20',
+    },
     'SLUS01272': {
         'url': "games/U/0-9/SLUS-01272.html",
     	'id': 'SLUS01272',
@@ -14335,6 +14343,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94584': {
@@ -14343,6 +14352,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94585': {
@@ -14351,6 +14361,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCUS94586': {
@@ -14359,6 +14370,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLUS00515': {
@@ -15782,7 +15794,13 @@ games = {
 	'title': "XS MOTO",
         'pic0': 'https://images.launchbox-app.com/0dfef7bf-2cba-4e82-827f-74dd75f28826.png',
     },
-    'SLUS00716':       {
+    'SLUS90061': {
+        'url': "games/U/Y/SLUS-00716.html",
+    	'id': 'SLUS90061',
+	'title': "YOU DON'T KNOW JACK (DEMO)",
+        'pic0': 'https://images.launchbox-app.com/323749a7-c793-445d-9149-849fe511449f.png',
+    },
+    'SLUS00716': {
         'url': "games/U/Y/SLUS-00716.html",
     	'id': 'SLUS00716',
 	'title': "YOU DON'T KNOW JACK",
@@ -15807,7 +15825,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
-    'SLUS00183':       {
+    'SLUS00183': {
         'url': "games/U/Z/SLUS-00183.html",
     	'id': 'SLUS00183',
 	'title': "ZERO DIVIDE",
@@ -34472,6 +34490,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES13043': {
@@ -34480,6 +34499,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES23043': {
@@ -34488,6 +34508,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES33043': {
@@ -34496,6 +34517,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCES03044': {
@@ -34504,6 +34526,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-03044.bin',
     },
@@ -34513,6 +34536,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-13044.bin',
     },
@@ -34522,6 +34546,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-23044.bin',
     },
@@ -34531,6 +34556,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-33044.bin',
     },
@@ -34540,6 +34566,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-03045.bin',
     },
@@ -34549,6 +34576,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-13045.bin',
     },
@@ -34558,6 +34586,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-23045.bin',
     },
@@ -34567,6 +34596,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-33045.bin',
     },
@@ -34576,6 +34606,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-03046.bin',
     },
@@ -34585,6 +34616,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-13046.bin',
     },
@@ -34594,6 +34626,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-23046.bin',
     },
@@ -34603,6 +34636,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-33046.bin',
     },
@@ -34612,6 +34646,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-03047.bin',
     },
@@ -34621,6 +34656,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-13047.bin',
     },
@@ -34630,6 +34666,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-23047.bin',
     },
@@ -34639,6 +34676,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legend%20of%20Dragoon%2C%20The%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Legend of Dragoon/SCES-33047.bin',
     },
@@ -39500,9 +39538,9 @@ games = {
 	'title': "ASSAULT RIGS",
         'pic0': 'https://images.launchbox-app.com/52bb844e-b468-40c1-a1a4-0fec6e6b8292.png',
     },
-    'SCPD45420': {
+    'SLPM80452': {
         'url': "games/J/A/SCPS-45420.html",
-    	'id': 'SCPD45420',
+    	'id': 'SLPM80452',
 	'title': "ASSAULT SUITS VALKEN 2 (DEMO)",
         'pic0': 'https://images.launchbox-app.com/f91ed498-2228-41f8-a481-ecb128d9e33d.png',
     },
@@ -68488,6 +68526,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10120': {
@@ -68496,6 +68535,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10121': {
@@ -68504,6 +68544,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS10122': {
@@ -68512,6 +68553,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45461': {
@@ -68520,6 +68562,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45462': {
@@ -68528,6 +68571,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45463': {
@@ -68536,6 +68580,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SCPS45464': {
@@ -68544,6 +68589,7 @@ games = {
 	'title': "THE LEGEND OF DRAGOON",
         'pic0': 'https://images.launchbox-app.com/d9842c38-39ef-4da3-a673-4835cc1c63cb.png',
         'pic1': 'https://images.launchbox-app.com/085c073a-ab86-443a-862a-004d1260bfa8.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=CZkeBfG4GVM&list=PL08FEE6C0B34C86B6&index=4',
         'manual': 'https://psxdatacenter.com/manuals/The%20Legend%20of%20Dragoon%20(J)%20[SCPS-10119-22].cbr',
     },
     'SLPS01323': {
@@ -71537,6 +71583,39 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'c7fde99e09ebf9546ed24a45a39d68b2': {
+        'id': 'SLPS00022',
+    },
+    'a7d0cc9d5311a5de842d2121efbb9a1c': {
+        'id': 'SLPS00012',
+    },
+    'eb5b028ba5dd061945671b3ed081c891': {
+        'id': 'SLPS00012',
+    },
+    'e4431de9053bebd82d5124e890ca59e2': {
+        'id': 'SLPS00001',
+    },
+    'fcc9312756dcf179233838d9e9816b0b': {
+        'id': 'SLUS00978',
+    },
+    'af6cedfde4f27f390dff0c99c8a68773': {
+        'id': 'SLPS00013',
+    },
+    'ccaf77696aa6eceaaba6918486e3f441': {
+        'id': 'SLPS00057',
+    },
+    '4bd2e11c5ad242778cdb5a343ce9c8b4': {
+        'id': 'SLPS00056',
+    },
+    'fe79cc23073b8fb7827f2b76385ad173': {
+        'id': 'SLPS00055',
+    },
+    '48bbefe366fdb56269bafd0306c78f81': {
+        'id': 'SLPS00023',
+    },
+    '2b70330d00babc01283aa7a288c8894f': {
+        'id': 'SCPS10003',
+    },
     'f3926d4312bf2d7ff58fb9215c36156f': {
         'id': 'SLES04152',
     },
@@ -71586,7 +71665,7 @@ gameid_by_md5sum = {
         'id': 'SCPS10002',
     },
     'b175b9f7ee89d51547c96f0ffcd234b0': {
-        'id': 'SCPD45420',
+        'id': 'SLPM80452',
     },
     '1e37130261abe2b9fed33274883778df': {
         'id': 'SLPS00093',
