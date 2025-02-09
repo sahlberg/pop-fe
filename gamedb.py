@@ -52481,6 +52481,7 @@ games = {
         'url': "games/J/K/SLPS-00170.html",
     	'id': 'SLPS00170',
 	'title': "KILEAK - THE BLOOD 2 - REASON IN MADNESS",
+        'pic0': 'https://images.launchbox-app.com/10c2e437-800d-48dc-bc23-ebe898279770.png',
     },
     'SLPS02747': {
         'url': "games/J/K/SLPS-02747.html",
@@ -53453,6 +53454,8 @@ games = {
         'url': "games/J/K/SLPS-00622.html",
     	'id': 'SLPS00622',
 	'title': "KYUU BAKUKKU",
+        'pic0': 'https://images.launchbox-app.com/2137df54-d22d-4e22-84c3-f6de499d012f.png',
+        'pic1': 'https://images.launchbox-app.com/62bf3e55-845b-42b9-9267-c32a97ad60ea.jpg'
     },
     'SLPS00214': {
         'url': "games/J/K/SLPS-00214.html",
@@ -55319,6 +55322,7 @@ games = {
         'url': "games/J/M/SLPS-01164.html",
     	'id': 'SLPS01164',
 	'title': "METAL FIST",
+        'pic1': 'https://images.launchbox-app.com/da61b604-8da0-43d6-a553-5cc78e50fd02.png',
         'pspconfig': 'pspconfigs/Fighting Force/SLPS-01164.bin',
         'ps3config': 'ps3configs/Fighting Force/SLPS-01164.BIN',
     },
@@ -57248,11 +57252,13 @@ games = {
         'url': "games/J/N/SLPS-00188.html",
     	'id': 'SLPS00188',
 	'title': "NBA POWER DUNKERS",
+        'pic0': 'https://images.launchbox-app.com/2262be31-e89a-4b30-9428-20940862ccf2.png',
     },
     'SLPM86011': {
         'url': "games/J/N/SLPM-86011.html",
     	'id': 'SLPM86011',
 	'title': "NBA POWER DUNKERS 2",
+        'pic1': 'https://images.launchbox-app.com/eca6f9ad-f9f7-472d-982c-a71ab7b567de.jpg',
     },
     'SLPM86060': {
         'url': "games/J/N/SLPM-86060.html",
@@ -57263,6 +57269,7 @@ games = {
         'url': "games/J/N/SLPM-86176.html",
     	'id': 'SLPM86176',
 	'title': "NBA POWER DUNKERS 4",
+        'pic1': 'https://images.launchbox-app.com/101ceb77-07af-47f0-86f7-56ce18d8a500.png',
     },
     'SLPM86397': {
         'url': "games/J/N/SLPM-86397.html",
@@ -60692,6 +60699,8 @@ games = {
         'url': "games/J/P/SLPS-02663.html",
     	'id': 'SLPS02663',
 	'title': "PUZZ LOOP",
+        'pic0' :'https://images.launchbox-app.com/366f683e-4517-4cc1-8ab9-53e84d58792b.png',
+        'pic1': 'https://images.launchbox-app.com/f2b35141-af3e-4b7e-8722-4ee009a22f5c.jpg',
     },
     'SLPS00879': {
         'url': "games/J/P/SLPS-00879.html",
@@ -65258,6 +65267,8 @@ games = {
         'url': "games/J/S/SLPS-01693.html",
     	'id': 'SLPS01693',
 	'title': "SMASH COURT 2",
+        'pic0': 'https://images.launchbox-app.com/db13b2c9-7ada-490e-9490-c50e449eb554.png',
+        'pic1': 'https://images.launchbox-app.com/32309104-6a30-4680-92ba-f8127d1909e5.jpg',
     },
     'SLPS03001': {
         'url': "games/J/S/SLPS-03001.html",
@@ -65484,6 +65495,8 @@ games = {
         'url': "games/J/S/SLPS-02091.html",
     	'id': 'SLPS02091',
 	'title': "SOUKOU KIDOUTAI L.A.P.D.",
+        'pic0': 'https://images.launchbox-app.com/d59c4990-f961-4983-a8b9-ee66001cedba.png',
+        'pic1': 'https://images.launchbox-app.com/e36ea1a9-d206-4943-beb1-02951b09afda.jpg',
     },
     'SCPS45115': {
         'url': "games/J/S/SCPS-45115.html",
@@ -66403,6 +66416,8 @@ games = {
         'url': "games/J/S/SIPS-60019.html",
     	'id': 'SIPS60019',
 	'title': "STREET GAMES '97",
+        'pic0': 'https://images.launchbox-app.com/f0855fa7-f919-473b-8e55-40aac3a03654.png',
+        'pic1': 'https://images.launchbox-app.com/70c8f55e-29f0-46cc-9146-e2acd3732709.jpg',
     },
     'SLPS00610': {
         'url': "games/J/S/SLPS-00610.html",
@@ -66502,16 +66517,19 @@ games = {
         'url': "games/J/S/SLPS-02234.html",
     	'id': 'SLPS02234',
 	'title': "SUBMARINE HUNTER SYA-CHI",
+        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS91509': {
         'url': "games/J/S/SLPS-91509.html",
     	'id': 'SLPS91509',
 	'title': "SUBMARINE HUNTER SYA-CHI [PSONE BOOKS]",
+        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS03294': {
         'url': "games/J/S/SLPS-03294.html",
     	'id': 'SLPS03294',
 	'title': "SUBMARINE HUNTER SYA-CHI [VICTOR INTERACTIVE SOFTWARE BEST]",
+        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS01264': {
         'url': "games/J/S/SLPS-01264.html",
@@ -66664,34 +66682,43 @@ games = {
         'url': "games/J/S/SCPS-45084.html",
     	'id': 'SCPS45084',
 	'title': "SUPER BLACK BASS X",
+        'pic0': 'https://images.launchbox-app.com/87aa4b67-d46e-460f-8bce-ff4227f72c4e.png',
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
         'pspconfig': 'pspconfigs/Super Black Bass/SCPS-45084.bin',
     },
     'SLPS00839': {
         'url': "games/J/S/SLPS-00839.html",
     	'id': 'SLPS00839',
 	'title': "SUPER BLACK BASS X",
+        'pic0': 'https://images.launchbox-app.com/87aa4b67-d46e-460f-8bce-ff4227f72c4e.png',
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
         'pspconfig': 'pspconfigs/Super Black Bass/SLPS-00839.bin',
     },
     'SLPS02053': {
         'url': "games/J/S/SLPS-02053.html",
     	'id': 'SLPS02053',
 	'title': "SUPER BLACK BASS X [GOOD PRICE]",
+        'pic0': 'https://images.launchbox-app.com/87aa4b67-d46e-460f-8bce-ff4227f72c4e.png',
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
         'pspconfig': 'pspconfigs/Super Black Bass/SLPS-02053.bin',
     },
     'SLPS02392': {
         'url': "games/J/S/SLPS-02392.html",
     	'id': 'SLPS02392',
 	'title': "SUPER BLACK BASS X2",
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
     },
     'SLPM86717': {
         'url': "games/J/S/SLPM-86717.html",
     	'id': 'SLPM86717',
 	'title': "SUPER BLACK BASS 2 & THE BLUE MARLIN",
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
     },
     'SLPM86718': {
         'url': "games/J/S/SLPM-86717.html",
     	'id': 'SLPM86718',
 	'title': "SUPER BLACK BASS 2 & THE BLUE MARLIN",
+        'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
     },
     'SLPS00467': {
         'url': "games/J/S/SLPS-00467.html",
