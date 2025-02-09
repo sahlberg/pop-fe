@@ -2765,7 +2765,15 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None):
+    if not no_libcrypt:
+        try:
+            # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
+            cue_files, img_files = patch_libcrypt(disc_ids, cue_files, img_files, subdir=subdir)
+        except:
+            print('patch_libcrypt crashed :-(')
+            True
+    
     # Convert LOGO to a file object
     if logo:
         image = logo
@@ -2925,9 +2933,17 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], configs=None):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], configs=None, no_libcrypt=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
+    if not no_libcrypt:
+        try:
+            # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
+            cue_files, img_files = patch_libcrypt(disc_ids, cue_files, img_files, subdir=subdir)
+        except:
+            print('patch_libcrypt crashed :-(')
+            True
+    
     SECTLEN = 2352
     p = popstation()
     p.verbose = verbose
@@ -4499,14 +4515,15 @@ if __name__ == "__main__":
         magic_word.append(libcrypt[real_disc_ids[idx]]['magic_word'])
         subchannels.append(generate_subchannels(libcrypt[real_disc_ids[idx]]['magic_word']))
 
-    if not args.no_libcrypt:
+    # for psp and ps3 we patch libcrypt in the respective create_[pps|ps3] functions
+    if not args.no_libcrypt and not args.ps3_pkg and not args.psp_dir:
         try:
             # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
-            cue_files, img_files = patch_libcrypt(real_disc_ids, cue_files, img_files, subdir=subdir)
+            cue_files, img_files = patch_libcrypt(disc_ids, cue_files, img_files, subdir=subdir)
         except:
-            print('patch_libcrypt cashed :-(')
+            print('patch_libcrypt crashed :-(')
             True
-
+    
     print('Cue Files', cue_files) if verbose else None
     print('Img Files', img_files) if verbose else None
     print('Real Disc IDs', real_disc_ids) if verbose else None
@@ -4540,11 +4557,11 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs, no_libcrypt=args.no_libcrypt)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
     if args.fetch_metadata:

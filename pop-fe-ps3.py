@@ -717,7 +717,7 @@ class PopFePs3App:
             print('Enable swapdisc for all discs')
             for idx in range(len(self.cue_files)):
                 self.configs[idx] = bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
-        
+
         #
         # Force NEWEMU
         #
