@@ -5491,6 +5491,7 @@ games = {
     	'id': 'SCUS94405',
 	'title': "ASSAULT RIGS",
         'pic0': 'https://images.launchbox-app.com/52bb844e-b468-40c1-a1a4-0fec6e6b8292.png',
+        'pic1': 'https://images.launchbox-app.com/2706f2bc-ed6e-4e07-8a2e-687fd20f0b5d.jpg',
     },
     'SLUS00773': {
         'url': "games/U/A/SLUS-00773.html",
@@ -5520,6 +5521,7 @@ games = {
     	'id': 'SLUS01545',
 	'title': "ATV MANIA",
         'pic0': 'https://images.launchbox-app.com/18158fa5-0cff-4064-9962-54e2b0085544.png',
+        'pic1': 'https://images.launchbox-app.com/8060733a-fed5-4dde-83c7-77b8777a4401.jpg',
     },
     'SLUS01572': {
         'url': "games/U/A/SLUS-01572.html",
@@ -17191,6 +17193,7 @@ games = {
     	'id': 'SLES00093',
 	'title': "ASSAULT RIGS",
         'pic0': 'https://images.launchbox-app.com/52bb844e-b468-40c1-a1a4-0fec6e6b8292.png',
+        'pic1': 'https://images.launchbox-app.com/2706f2bc-ed6e-4e07-8a2e-687fd20f0b5d.jpg',
     },
     'SLES01416': {
         'url': "games/P/A/SLES-01416.html",
@@ -17404,6 +17407,7 @@ games = {
     	'id': 'SLES04099',
 	'title': "ATV MANIA",
         'pic0': 'https://images.launchbox-app.com/18158fa5-0cff-4064-9962-54e2b0085544.png',
+        'pic1': 'https://images.launchbox-app.com/8060733a-fed5-4dde-83c7-77b8777a4401.jpg',
     },
     'SLES02822': {
         'url': "games/P/A/SLES-02822.html",
@@ -39537,6 +39541,7 @@ games = {
     	'id': 'SLPS00512',
 	'title': "ASSAULT RIGS",
         'pic0': 'https://images.launchbox-app.com/52bb844e-b468-40c1-a1a4-0fec6e6b8292.png',
+        'pic1': 'https://images.launchbox-app.com/2706f2bc-ed6e-4e07-8a2e-687fd20f0b5d.jpg',
     },
     'SLPM80452': {
         'url': "games/J/A/SCPS-45420.html",
@@ -55997,11 +56002,15 @@ games = {
         'url': "games/J/M/SCPS-45241.html",
     	'id': 'SCPS45241',
 	'title': "MIRACLE JUMPERS",
+        'pic0': 'https://ibb.co/Lzb2F7sx',
+        'pic1': 'https://images.launchbox-app.com/cff3f31c-f92d-4041-95f5-02de4abf80f2.jpg',
     },
     'SLPS01224': {
         'url': "games/J/M/SLPS-01224.html",
     	'id': 'SLPS01224',
 	'title': "MIRACLE JUMPERS",
+        'pic0': 'https://ibb.co/Lzb2F7sx',
+        'pic1': 'https://images.launchbox-app.com/cff3f31c-f92d-4041-95f5-02de4abf80f2.jpg',
     },
     'SLPS00110': {
         'url': "games/J/M/SLPS-00110.html",
