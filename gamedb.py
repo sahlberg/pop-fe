@@ -5,6 +5,8 @@
 #
 # The LSP games refuse to work on PSP and PS3 unless they are named SCUS.....
 # Use SCUS8.... as the ID for the LSP games.
+#
+# Use https://github.com/xlenore/psx-covers as primary source for icon0
 games = {
     'UNKN00000': {
     	'id': 'UNKN00000',
@@ -38050,6 +38052,7 @@ games = {
     	'id': 'SLPS01280',
 	'title': "ABALABURN",
         'pic0': 'https://images.launchbox-app.com/c27aa08c-2243-43b9-bf2d-e68273a62793.png',
+        'pic1': 'https://ibb.co/hx6Vspts',
     },
     'SLPS01118': {
         'url': "games/J/A/SLPS-01118.html",
@@ -48669,6 +48672,7 @@ games = {
         'url': "games/J/G/SLPS-01713.html",
     	'id': 'SLPS01713',
 	'title': "GOLGO 13 - 2 - MIENAI GUNTAI",
+        'pic1': 'https://images.launchbox-app.com/99a81da5-e4e5-4bb0-aad4-99dc638475f3.jpg',
     },
     'SCPS45434': {
         'url': "games/J/G/SCPS-45434.html",
@@ -48926,16 +48930,19 @@ games = {
         'url': "games/J/G/SLPS-01268.html",
     	'id': 'SLPS01268',
 	'title': "GREAT RUGBY JIKKYOU '98 - WORLD CUP E NO MICHI",
+        'pic1': 'https://images.launchbox-app.com/8428dcfa-e2dc-4b19-bf08-7059fec313a4.jpg',
     },
     'SLPS02057': {
         'url': "games/J/G/SLPS-02057.html",
     	'id': 'SLPS02057',
 	'title': "GREAT RUGBY JIKKYOU '98 - WORLD CUP E NO MICHI [NICE PRICE!]",
+        'pic1': 'https://images.launchbox-app.com/8428dcfa-e2dc-4b19-bf08-7059fec313a4.jpg',
     },
     'SLPS91417': {
         'url': "games/J/G/SLPS-91417.html",
     	'id': 'SLPS91417',
 	'title': "GREAT RUGBY JIKKYOU '98 - WORLD CUP E NO MICHI [PSONE BOOKS]",
+        'pic1': 'https://images.launchbox-app.com/8428dcfa-e2dc-4b19-bf08-7059fec313a4.jpg',
     },
     'SLPS00659': {
         'url': "games/J/G/SLPS-00659.html",
@@ -52423,10 +52430,12 @@ games = {
         'url': "games/J/K/SLPS-02848.html",
     	'id': 'SLPS02848',
 	'title': "KIDS STATION - SOREIKE! ANPANMAN",
+        'pic0': 'https://images.launchbox-app.com/d038f855-6477-4333-af21-61406fc4f861.png',
     },
     'SLPS02700': {
         'url': "games/J/K/SLPS-02700.html",
     	'id': 'SLPS02700',
+        'pic0': 'https://images.launchbox-app.com/d038f855-6477-4333-af21-61406fc4f861.png',
 	'title': "KIDS STATION - SOREIKE! ANPANMAN (CONTROLLER SET)",
     },
     'SLPS03197': {
@@ -55997,6 +56006,7 @@ games = {
         'url': "games/J/M/SLPS-02859.html",
     	'id': 'SLPS02859',
 	'title': "MIRACLE JIM NO BASSING BEAT 2",
+        'pic0': 'https://images.launchbox-app.com/a6558083-c68d-4935-bba9-c6b795ac992c.png',
     },
     'SCPS45241': {
         'url': "games/J/M/SCPS-45241.html",
@@ -58349,6 +58359,7 @@ games = {
         'url': "games/J/O/SLPS-03161.html",
     	'id': 'SLPS03161',
 	'title': "ONGAKU TSUKURU 3",
+        'pic0': 'https://images.launchbox-app.com/c2a20531-5be5-47da-8f3e-b2e65d6471d3.png',
     },
     'SLPS03106': {
         'url': "games/J/O/SLPS-03106.html",
@@ -63463,6 +63474,7 @@ games = {
         'url': "games/J/S/SLPM-86764.html",
     	'id': 'SLPM86764',
 	'title': "SHANGHAI DYNASTY [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com/c6d69910-56f0-4faf-81d0-c74049c1b32f.png',
     },
     'SLPS01552': {
         'url': "games/J/S/SLPS-01552.html",
@@ -64706,6 +64718,7 @@ games = {
         'url': "games/J/S/SLPM-86871.html",
     	'id': 'SLPM86871',
 	'title': "SIMPLE 1500 SERIES VOL.072 - THE BEACH VOLLEY",
+        'pic0': 'https://images.launchbox-app.com/8682c9da-2d06-4dc4-ac8a-cc8b0bfa99ff.png',
     },
     'SLPM86900': {
         'url': "games/J/S/SLPM-86900.html",
@@ -66058,6 +66071,7 @@ games = {
         'url': "games/J/S/SCPS-10128.html",
     	'id': 'SCPS10128',
 	'title': "SPYRO X SPARX - TONDEMO TOURS",
+        'pic1': 'https://images.launchbox-app.com/a93ed873-0ac1-4659-b769-a4331f167967.png',
     },
     'SLPS00957': {
         'url': "games/J/S/SLPS-00957.html",
@@ -73596,6 +73610,10 @@ ppf_fixes = {
         'hashes': {
             # rev 1.0
             '5a2ed39e908fcc437faf02969b76b8ee': {
+                'ppf': 'ppf/SLUS-00884-psp.ppf',
+            },
+            # Another rev 1.0 rip
+            'bd561bc8e682f49ba91c0ce0112977b5': {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
         },

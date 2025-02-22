@@ -8,6 +8,8 @@
 
 # clean ppf patches for libcrypt
 # https://archive.org/details/lib-crypt-ppf-patches
+#
+# Configs for PSP: https://www.psdevwiki.com/psp/POPS
 
 try:
     from PIL import Image, ImageDraw, ImageFont
