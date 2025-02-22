@@ -3023,7 +3023,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         'TITLE_ID': {
             'data_fmt': 516,
             'data_max_len': 16,
-            'data': disc_ids[0]},
+            'data': games[disc_ids[0]]['id']},
         'VERSION': {
             'data_fmt': 516,
             'data_max_len': 8,
@@ -3200,7 +3200,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         'SAVEDATA_DIRECTORY': {
             'data_fmt': 516,
             'data_max_len': 4,
-            'data': disc_ids[0]},
+            'data': games[disc_ids[0]]['id']},
         'SAVEDATA_FILE_LIST': {
             'data_fmt': 4,
             'data_max_len': 3168,
@@ -4501,7 +4501,7 @@ if __name__ == "__main__":
         if manual:
             manual = create_manual(manual, disc_ids[0])
         
-    print('Id:', disc_ids[0])
+    print('Id:', games[disc_ids[0]]['id'])
     print('Title:', game_title)
 
     subchannels = []

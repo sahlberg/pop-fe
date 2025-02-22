@@ -21,6 +21,8 @@ import struct
 import sys
 import zlib
 
+from gamedb import games
+
 _basic_toc = bytes([
     0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
     0x41, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00,
@@ -2554,7 +2556,7 @@ class popstation(object):
 
     @disc_ids.setter
     def disc_ids(self, value):
-        self._sfo['DISC_ID']['data'] = value[0]
+        self._sfo['DISC_ID']['data'] = games[value[0]]['id']
         self._disc_ids = value
     
     @property
@@ -3334,7 +3336,7 @@ if __name__ == "__main__":
             p.add_img((i, None))
         if args.disc_id:
             p.disc_ids = [args.disc_id]
-            print('disc id', p.disc_ids)
+            print('disc id', games[p.disc_ids]['id'])
         if args.title:
             p.game_title = args.title
             print('title', p.game_title)

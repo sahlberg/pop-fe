@@ -13548,6 +13548,24 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
+    'SLUS00884_DEMO': {
+        'url': "games/U/S/SLUS-00884.html",
+    	'id': 'SLUS00884',
+	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (DEMO)",
+        'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
+        'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
+    },
+    'SLUS00884_R1.1': {
+        'url': "games/U/S/SLUS-00884.html",
+    	'id': 'SLUS00884',
+	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (Rev 1.1)",
+        'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
+        'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
+    },
     'SLUS00884': {
         'url': "games/U/S/SLUS-00884.html",
     	'id': 'SLUS00884',
@@ -71633,6 +71651,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '9975c33595ee115d026ab2e22af973e9': {
+        'id': 'SLUS00884_R1.1',
+    },
+    'eb9af280eba78c8afac5bb176a5230f8': {
+        'id': 'SLUS00884_DEMO',
+    },
     'c7fde99e09ebf9546ed24a45a39d68b2': {
         'id': 'SLPS00022',
     },
