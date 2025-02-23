@@ -2103,7 +2103,10 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, psn_frame_size=None):
         fcb = ret.content
     else:
         if not game or game_id[:4] == 'UNKN':
-            return Image.new("RGBA", psn_frame_size[0], (255,255,255,0))
+            if psn_frame_size:
+                return Image.new("RGBA", psn_frame_size[0], (255,255,255,0))
+            else:
+                return Image.new("RGBA", (80,80), (255,255,255,0))
 
         l = 'https://raw.githubusercontent.com/xlenore/psx-covers/main/covers/default/' + game_id[:4] + '-' + game_id[4:9] +'.jpg'
         ret = requests.get(l, stream=True)
