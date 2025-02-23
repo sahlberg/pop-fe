@@ -91,7 +91,7 @@ games = {
 	'title': "TORC: LEGEND OF THE OGRE CROWN",
         'icon0': 'https://files.hiddenpalace.org/3/30/Torc_PS1_Title.png',
     },
-    # DemoDemo Playstation disks
+    # PCPX discs
     'PCPX96003': {
         'id': 'PCPX96003',
         'title': 'DEMODEMO PLAYSTATION VOL. 1',
@@ -131,6 +131,11 @@ games = {
         'id': 'PCPX96011',
         'title': 'DEMODEMO PLAYSTATION VOL. 8',
         'icon0': 'https://vgcollect.com/images/front-box-art/201028.jpg',
+    },
+    'PCPX96012': {
+        'id': 'PCPX96012',
+        'title': 'PHILOSOMA [DEMO]',
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2023/01/22/21/02/42/7d8fd5f3-96b5-4e8f-8ed1-55d95e6b5b36/file.jpg',
     },
     'PCPX96013': {
         'id': 'PCPX96013',
@@ -181,10 +186,24 @@ games = {
         'id': 'PCPX96027',
         'title': 'DEMODEMO PLAYSTATION VOL. 18',
     },
+    'PCPX96028': {
+        'id': 'PCPX96028',
+        'title': 'VOL 3',
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/02/28/21/32/14/f4396b74-2ceb-44b7-9051-405c012b6b05/file.jpg',
+    },
     'PCPX96032': {
         'id': 'PCPX96032',
         'title': 'DEMODEMO PLAYSTATION VOL. 19',
         'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005548.jpg.webp',
+    },
+    'PCPX96034': {
+        'id': 'PCPX96034',
+        'title': 'WILD ARMS [DEMO]',
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/16/36/46/fe3c61b8-0394-44be-be39-78c9534b8392/file.jpg',
+    },
+    'PCPX96035': {
+        'id': 'PCPX96035',
+        'title': 'TOBAL NO.1 [DEMO]',
     },
     'PCPX96036': {
         'id': 'PCPX96036',
@@ -196,10 +215,200 @@ games = {
         'title': 'DEMODEMO PLAYSTATION VOL. 21',
         'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005729.jpg.webp',
     },
+    'PCPX96039': {
+        'id': 'PCPX96039',
+        'title': 'VOL 4',
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/03/01/04/53/07/85dd203c-19ea-4eb9-b247-960d8e7a7c45/file.jpg',
+    },
+    'PCPX96041': {
+        'id': 'PCPX96041',
+        'title': 'AIR ASSAULT [DEMO]',
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/03/08/15/51/55/b56b7af9-65d6-493e-9450-db5c37fc2482/file.jpg',
+    },
     'PCPX96042': {
         'id': 'PCPX96042',
         'title': 'DEMODEMO PLAYSTATION VOL. 22',
         'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005730.jpg.webp',
+    },
+    'PCPX96049': {
+    	'id': 'PCPX96049',
+	'title': "PARAPPA THE RAPPER [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/12/26/15/13/04/a443b738-0506-409a-bd34-958e603bda1c/file.jpg',
+    },
+    'PCPX96058': {
+    	'id': 'PCPX96058',
+	'title': "I.Q. [DEMO]",
+    },
+    'PCPX96067': {
+    	'id': 'PCPX96067',
+	'title': "STREET GAMES '97 TRIAL DISC [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2023/01/12/21/24/19/57bf6826-5a36-485c-a589-c508a3232670/file.jpg',
+    },
+    'PCPX96068': {
+    	'id': 'PCPX96068',
+	'title': "GHOST IN THE SHELL [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2023/08/15/01/00/54/fe66806c-0668-4e81-88bc-f9a511991a45/file.jpg',
+    },
+    'PCPX96072': {
+    	'id': 'PCPX96072',
+	'title': "unknown [DEMO]",
+    },
+    'PCPX96081': {
+    	'id': 'PCPX96081',
+	'title': "ZERO DIVIDE 2 [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/11/02/14/41/05/c17116e6-3a4b-4c3a-b056-4c48240b2e8b/file.jpg',
+    },
+    'PCPX96088': {
+    	'id': 'PCPX96088',
+	'title': "GRAN TURISMO TEST DRIVE DISC [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/04/21/18/03/27/e090cd86-24f5-40ee-8658-6916d0ee41d9/file.jpg',
+    },
+    'PCPX96091': {
+    	'id': 'PCPX96091',
+	'title': "ELEMENTAL GEARBOLT [DEMO]",
+    },
+    'PCPX96096': {
+    	'id': 'PCPX96096',
+	'title': "GRAN TURISMO [DEMO]",
+    },
+    'PCPX96098': {
+    	'id': 'PCPX96098',
+	'title': "CRASH BANDICOOT 2 [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/10/12/12/26/26/cb3a51b6-3701-4b0d-83b1-edd4addba055/file.jpg',
+    },
+    'PCPX96101': {
+    	'id': 'PCPX96101',
+	'title': "NIGHTMARE CREATURES [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/02/03/01/11/33/9b6bd01d-7d96-463e-bdc4-42903190445b/file.jpg',
+    },
+    'PCPX96110': {
+    	'id': 'PCPX96110',
+	'title': "unknown [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/10/13/18/06/37/c2634fae-96dd-426c-8b27-1a53e8178c0a/file.jpg',
+    },
+    'PCPX96112': {
+    	'id': 'PCPX96112',
+	'title': "TOMOYASU HOTEI STOLEN SONG [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/15/15/46/33/7062ec96-9b12-4fe4-b832-7a47846954cc/file.jpg',
+    },
+    'PCPX96121': {
+    	'id': 'PCPX96121',
+	'title': "KULA QUEST [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/01/03/20/47/06/ca23a3d1-d3f1-4ab2-bf21-0a10b0a13967/file.jpg',
+    },
+    'PCPX96125': {
+    	'id': 'PCPX96125',
+	'title': "G-POLICE [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/05/15/00/04/19/f3d10ee6-021d-4091-9dc3-5fb493c3dc01/file.jpg',
+    },
+    'PCPX96128': {
+    	'id': 'PCPX96128',
+	'title': "YUKIWARI NO HANA [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/17/45/36/87932913-c56d-4aa5-ae28-3dbeae684f81/file.jpg',
+    },
+    'PCPX96130': {
+    	'id': 'PCPX96130',
+	'title': "unknown [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/11/11/21/14/10/88bb53bf-04b0-4070-adcd-1894be1b56d4/file.jpg',
+    },
+    'PCPX96135': {
+    	'id': 'PCPX96135',
+	'title': "PLAYSTATION COMIC [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/17/26/40/10d3c4c9-b250-4ea2-8112-98ecd008e5ba/file.jpg',
+    },
+    'PCPX96136': {
+    	'id': 'PCPX96136',
+	'title': "PLAYSTATION COMIC [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/20/10/45/47/1acd17b1-50ba-4832-b31f-f543802cd084/file.jpg',
+    },
+    'PCPX96137': {
+    	'id': 'PCPX96137',
+	'title': "I.Q. FINAL [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/05/15/19/30/30/59fa4cb9-8ffa-4c88-bfe0-6c71e31be870/file.jpg',
+    },
+    'PCPX96145': {
+    	'id': 'PCPX96145',
+	'title': "CRASH 3 [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/21/13/15/30/0cf6af69-b67d-47dd-9bb8-d816edb66a6e/file.jpg',
+    },
+    'PCPX96146': {
+    	'id': 'PCPX96146',
+	'title': "GLOBAL FORCE [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/03/08/15/09/40/7f78badc-03bf-4785-ae01-e1208191dc5c/file.jpg',
+    },
+    'PCPX96150': {
+    	'id': 'PCPX96150',
+	'title': "unknown [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/01/20/48/18e364ea-b201-4dd6-bc62-15d6fce2318e/file.jpg',
+    },
+    'PCPX96161': {
+    	'id': 'PCPX96161',
+	'title': "WILD ARMS 2ND IGNITION [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/00/13/35/fac512dc-8529-487a-a6f6-78ce3dae252c/file.jpg',
+    },
+    'PCPX96163': {
+    	'id': 'PCPX96163',
+	'title': "THE BOOK OF WATERMARKS [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/07/20/05/49/15/b7a47ac5-1b5e-4a2f-9c29-97e72dadffd3/file.jpg',
+    },
+    'PCPX96166': {
+    	'id': 'PCPX96166',
+	'title': "APE ESCAPE [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/07/04/14/44/48/d2f6be10-52bc-4316-9d9b-15a56f656c5b/file.jpg',
+    },
+    'PCPX96171': {
+    	'id': 'PCPX96171',
+	'title': "WILD ARMS 2ND IGNITION [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/04/25/21/39/54/049b672b-9874-4b7c-87e0-4e512c6fbb2e/file.jpg',
+    },
+    'PCPX96176': {
+        'url': "games/J/A/SCPS-91316.html",
+    	'id': 'PCPX96176',
+	'title': "ARC THE LAD III [DEMO 2]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/21/17/25/48/89312d5e-b020-4f50-831d-58c0a71b8a52/file.jpg',
+        'pic0': 'https://images.launchbox-app.com/3fb4e846-c727-46c3-99b4-1c8733d534aa.png',
+        'snd0': 'https://www.youtube.com/watch?v=-VnWD0QuIeg',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20III%20%28USA%29%20%28Disc%201%29_jp2.zip',
+    },
+    'PCPX96177': {
+    	'id': 'PCPX96177',
+	'title': "unknown [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/21/18/29/02/e37609f6-9425-421d-a55b-fd95e201b48c/file.jpg',
+    },
+    'PCPX96180': {
+    	'id': 'PCPX96180',
+	'title': "PET IN TV WITH MY DEAR DOG [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/04/12/13/34/05/153fe8d6-8790-4784-9ff9-eb713fe082ce/file.jpg',
+    },
+    'PCPX96183': {
+    	'id': 'PCPX96183',
+	'title': "CRASH TEAM RACING [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/04/12/13/34/05/153fe8d6-8790-4784-9ff9-eb713fe082ce/file.jpg',
+    },
+    'PCPX96187': {
+    	'id': 'PCPX96187',
+	'title': "PLUS 002 [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2024/01/03/18/02/35/bc2baff8-1dcb-48bb-a0e4-c72431564167/file.jpg',
+    },
+    'PCPX96189': {
+    	'id': 'PCPX96189',
+	'title': "CHASE THE EXPRESS [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/08/10/07/03/55/db09d4d7-da79-41ff-8c4a-5734159df301/file.jpg',
+    },
+    'PCPX96191': {
+    	'id': 'PCPX96191',
+	'title': "SPYRO THE DRAGON [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/00/13/35/fac512dc-8529-487a-a6f6-78ce3dae252c/file.jpg',
+    },
+    'PCPX96193': {
+    	'id': 'PCPX96193',
+	'title': "BEAT PLANET MUSIC [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/06/10/07/01/26/0c8fa901-8cc3-4535-89a0-4a8dffcf0474/file.jpg',
+    },
+    'PCPX96195': {
+    	'id': 'PCPX96195',
+	'title': "POPOLOCROIS II [DEMO]",
+        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/21/12/57/07/8fb2dae6-a8b1-4aeb-bc85-df2789a94401/file.jpg',
     },
     # PAL Demo Discs
     'SCED02327': {
@@ -39267,14 +39476,6 @@ games = {
         'url': "games/J/A/SCPS-91316.html",
     	'id': 'SCPS91317',
 	'title': "ARC THE LAD III [PSONE BOOKS]",
-        'pic0': 'https://images.launchbox-app.com/3fb4e846-c727-46c3-99b4-1c8733d534aa.png',
-        'snd0': 'https://www.youtube.com/watch?v=-VnWD0QuIeg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20III%20%28USA%29%20%28Disc%201%29_jp2.zip',
-    },
-    'PCPX96176': {
-        'url': "games/J/A/SCPS-91316.html",
-    	'id': 'PCPX96176',
-	'title': "ARC THE LAD III [DEMO 2]",
         'pic0': 'https://images.launchbox-app.com/3fb4e846-c727-46c3-99b4-1c8733d534aa.png',
         'snd0': 'https://www.youtube.com/watch?v=-VnWD0QuIeg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Arc%20the%20Lad%20Collection%20-%20Arc%20the%20Lad%20III%20%28USA%29%20%28Disc%201%29_jp2.zip',
