@@ -339,6 +339,12 @@ vmp.py is a utility to convert between signed VMP memory card images
 Memory Card Annihilator on the PS2.
 
 
+YOUTUBE
+=======
+Downloadding audio from youtube requires that the python package pytubefix is installed.
+This package currently has a dependency so you MUST also install the nnodejs package
+on your platform.
+
 SND0.AT3
 ========
 For PS3/PSP this is the audio that will be played when this games icon is
@@ -567,6 +573,7 @@ sudo dnf install pip3
 sudo dnf install python3-devel
 sudo dnf install libsndfile-devel
 sudo dnf install ffmpeg
+sudo dnf install nodejs
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
@@ -579,6 +586,7 @@ sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install ffmpeg
+sudo apt install nodejs
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
@@ -590,6 +598,7 @@ sudo apt install python-is-python3
 sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
+sudo apt install nodejs
 pip3 install pytubefix
 pip3 install PyPDF2
 pip3 install requests
