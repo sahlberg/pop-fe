@@ -4870,6 +4870,14 @@ games = {
         'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
         'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
     },
+    'SCPS10049_R1.1': {
+        'url': "games/J/Z/SCPS-10049.html",
+    	'id': 'SCPS10049',
+	'title': "ZERO PILOT - GINYOKU NO SENSHI [REV 1]",
+        'pic0': 'https://images.launchbox-app.com/240f8514-9a6f-4b75-9e4c-d04ad0c2b4a7.png',
+        'pic1': 'https://images.launchbox-app.com/8c1fa6aa-6955-4165-adfe-77d33a9e9938.png',
+        'snd0': 'https://www.youtube.com/watch?v=7bYnE_DW3t0&list=PLKcRYOLZS5obZmIFhuzjd4jyadwzUH-3d',
+    },
     'SCPS10049': {
         'url': "games/J/Z/SCPS-10049.html",
     	'id': 'SCPS10049',
@@ -4910,6 +4918,13 @@ games = {
     	'id': 'SLPS01483',
 	'title': "ZIG ZAG BALL",
         'pic0': 'https://images.launchbox-app.com/1a21bd5e-ea40-47b6-9323-e667671d4f7a.png',
+    },
+    'SLPM86311_R1.1': {
+        'url': "games/J/Z/SLPM-86311.html",
+    	'id': 'SLPM86311',
+	'title': "ZILL O'LL [REV 1.1]",
+        'pic0': 'https://images.launchbox-app.com/9e8c7a7a-1291-47da-bb8a-f30390223515.png',
+        'manual': "https://psxdatacenter.com/manuals/Zill%20O'll%20[SLPM-86311]%20(J).cbr",
     },
     'SLPM86311': {
         'url': "games/J/Z/SLPM-86311.html",
@@ -71935,6 +71950,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'c5fad589d46950da8c17453a96758402': {
+        'id': 'SCPS10049_R1.1',
+    },
+    'b11bdd56e6df4aef0515ac2084eb8130': {
+        'id': 'SLPM86311_R1.1',
+    },
     '4bc5c70d87cdb42d4985b2b1473b044e': {
         'id': 'PCPX96038',
     },
