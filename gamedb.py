@@ -60753,6 +60753,7 @@ games = {
     	'id': 'SLPS02387',
 	'title': "PRISONER",
         'pic0': 'https://images.launchbox-app.com/1fac9f69-5aa2-404d-861e-f82cef53b9e2.png',
+        'pic1': 'https://ibb.co/bj5YLGPm',
     },
     'SLPS01129': {
         'url': "games/J/P/SLPS-01129.html",
