@@ -55,9 +55,9 @@ def parse_riff(riff):
         return None
     
     _len = struct.unpack_from('<I', buf, 4)[0]
-    if _len + 8 != os.stat(riff).st_size:
-        print('RIFF Header length invalid. Was', _len, 'but expected', os.stat(riff).st_size - 8)
-        return None
+    #if _len + 8 < os.stat(riff).st_size:
+    #    print('RIFF Header length invalid. Was', _len, 'but expected', os.stat(riff).st_size - 8)
+    #    return None
     
     if buf[8:12] != b'WAVE':
         print('Not a RIFF/WAVE File.')

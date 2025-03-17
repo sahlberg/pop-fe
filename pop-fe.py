@@ -2854,12 +2854,18 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
+        # Patch it back to 44100 to make atracdenc happy, the XMB will play it at 48000 anyway
+        with open(snd0, 'rb+') as ff:
+            _b = bytearray(4)
+            struct.pack_into('<I', _b, 0, 0xac44)
+            ff.seek(0x18)
+            ff.write(_b)
     if snd0:
         if convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir):
             with open(subdir + 'SND0.AT3', 'rb') as i:
@@ -3049,12 +3055,18 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-filter:a', 'atempo=0.91', '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
+        # Patch it back to 44100 to make atracdenc happy, the XMB will play it at 48000 anyway
+        with open(snd0, 'rb+') as ff:
+            _b = bytearray(4)
+            struct.pack_into('<I', _b, 0, 0xac44)
+            ff.seek(0x18)
+            ff.write(_b)
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
 
     image = icon0
