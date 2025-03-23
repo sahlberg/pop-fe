@@ -62743,6 +62743,7 @@ games = {
 	'title': "SAGA FRONTIER II [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPS02767': {
@@ -62751,6 +62752,7 @@ games = {
 	'title': "SAGA FRONTIER II [SQUARESOFT MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPM87376': {
@@ -62759,6 +62761,7 @@ games = {
 	'title': "SAGA FRONTIER II [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/2e0d0dd7-c73a-431e-9ea1-c210905c72de.png',
         'pic1': 'https://images.launchbox-app.com/cb67d700-44c2-4c27-9418-64fb0ac22658.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=TdyW2WwARZc&list=PL33021FE67F7DCC92&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/SaGa%20Frontier%202%20%28USA%29_jp2.zip',
     },
     'SLPS02611': {
@@ -67316,16 +67319,19 @@ games = {
         'url': "games/J/S/SLPM-87165.html",
     	'id': 'SLPM87165',
 	'title': "SUPERLITE 1500 SERIES - BATTLE QIX",
+        'pic0': 'https://images.launchbox-app.com//93754421-ba82-404f-9a62-f26d101029b9.png',
     },
     'SLPM87090': {
         'url': "games/J/S/SLPM-87090.html",
     	'id': 'SLPM87090',
 	'title': "SUPERLITE 1500 SERIES - BOMB BOAT",
+        'pic0': 'https://images.launchbox-app.com//804f4b77-038f-454b-9c91-43294757ff25.png',
     },
     'SLPM86298': {
         'url': "games/J/S/SLPM-86298.html",
     	'id': 'SLPM86298',
 	'title': "SUPERLITE 1500 SERIES - CARD II",
+        'pic0': 'https://images.launchbox-app.com//193b6c45-c66f-4487-86e9-72a743001800.png',
     },
     'SLPM86426': {
         'url': "games/J/S/SLPM-86426.html",
@@ -71951,6 +71957,9 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '6e7f696c6a19c32e001a3e8f4628300e': { # resident evil 1.5
+        'id': 'SLUS99999',
+    },
     'c5fad589d46950da8c17453a96758402': {
         'id': 'SCPS10049_R1.1',
     },
