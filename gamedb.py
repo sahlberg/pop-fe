@@ -7271,6 +7271,7 @@ games = {
 	'title': "DANCE DANCE REVOLUTION - KONAMIX",
         'pic0': 'https://images.launchbox-app.com/b3e3fd29-0aae-482d-ac19-f495327438a8.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dance%20Dance%20Revolution%20Konamix%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Dance Dance Revolution - Konamix/SLUS-01446.bin',
     },
     'SLUS00881': {
         'url': "games/U/D/SLUS-00881.html",
@@ -44078,6 +44079,7 @@ games = {
     	'id': 'SLPM86752',
 	'title': "DANCE DANCE REVOLUTION - 4TH MIX",
         'pic0': 'https://images.launchbox-app.com/e3fbdc33-f246-418f-8532-11c260049c0d.png',
+        'pspconfig': 'pspconfigs/Dance Dance Revolution - 4th Mix/SLPM-86572.bin',
     },
     'SLPM86897': {
         'url': "games/J/D/SLPM-86897.html",
