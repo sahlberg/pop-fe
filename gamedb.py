@@ -44079,7 +44079,7 @@ games = {
     	'id': 'SLPM86752',
 	'title': "DANCE DANCE REVOLUTION - 4TH MIX",
         'pic0': 'https://images.launchbox-app.com/e3fbdc33-f246-418f-8532-11c260049c0d.png',
-        'pspconfig': 'pspconfigs/Dance Dance Revolution - 4th Mix/SLPM-86572.bin',
+        'pspconfig': 'pspconfigs/Dance Dance Revolution - 4th Mix/SLPM-86752.bin',
     },
     'SLPM86897': {
         'url': "games/J/D/SLPM-86897.html",
