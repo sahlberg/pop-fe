@@ -9962,6 +9962,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLUS-00708.bin",
     },
     'SCUS94254': {
         'url': "games/U/L/SCUS-94254.html",
@@ -12785,6 +12786,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVyguZa1UBw&list=PLZpKQiFHRb0Z8H3rbjvmvQWt3L659oU7r&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer Revolution/SLUS-00214.bin',
     },
     'SLUS00186': {
         'url': "games/U/R/SLUS-00186.html",
@@ -24122,6 +24124,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLES-01301.bin",
     },
     'SLES02024': {
         'url': "games/P/L/SLES-02024.html",
@@ -24131,6 +24134,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLES-02024.bin",
     },
     'SLES02025': {
         'url': "games/P/L/SLES-02025.html",
@@ -24140,6 +24144,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLES-02025.bin",
     },
     'SLES02026': {
         'url': "games/P/L/SLES-02026.html",
@@ -24149,6 +24154,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLES-02026.bin",
     },
     'SLES02027': {
         'url': "games/P/L/SLES-02027.html",
@@ -24158,6 +24164,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/a55fe114-6051-434f-8fd3-926fa420aec1.png',
         'snd0': 'https://www.youtube.com/watch?v=a6YZIX6ofWE&list=PLllLTey98Ce46CXE-nHCE3IDbrjySPBL3&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Legacy%20of%20Kain%20-%20Soul%20Reaver%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Legacy of Kain - Soul Reaver/SLES-02027.bin",
     },
     'SLES00730': {
         'url': "games/P/L/SLES-00730.html",
@@ -31580,6 +31587,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVyguZa1UBw&list=PLZpKQiFHRb0Z8H3rbjvmvQWt3L659oU7r&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer Revolution/SCES-00242.bin',
     },
     'SCES01706': {
         'url': "games/P/R/SCES-01706.html",
@@ -61933,6 +61941,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVyguZa1UBw&list=PLZpKQiFHRb0Z8H3rbjvmvQWt3L659oU7r&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer Revolution/SLPS-00150.bin',
     },
     'SLPS91028': {
         'url': "games/J/R/SLPS-91028.html",
@@ -61942,6 +61951,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/6a1cfbff-c2e7-41b2-98c9-b1980c46f56b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VVyguZa1UBw&list=PLZpKQiFHRb0Z8H3rbjvmvQWt3L659oU7r&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ridge%20Racer%20Revolution%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Ridge Racer Revolution/SLPS-91028.bin',
     },
     'SLPM87210': {
         'url': "games/J/R/SLPM-87210.html",
