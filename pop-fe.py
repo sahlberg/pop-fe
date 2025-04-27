@@ -4246,7 +4246,9 @@ if __name__ == "__main__":
                         help='Theme to use')
     parser.add_argument('--romhacks', help='Romhacks to apply')
     parser.add_argument('--ps1-newemu', action='store_true',
-                    help='Use the ps1_newemu emulator (only valid for PS3 PKG')
+                    help='Use the ps1_newemu emulator (only valid for PS3 PKG, overrides other configs)')
+    parser.add_argument('--swap-discs', action='store_true',
+                    help='Enable swap_discs option (only valid for PS3 PKG, overrides other configs)')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -4390,6 +4392,13 @@ if __name__ == "__main__":
         for i in range(len(real_disc_ids)):
             ps3configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
 
+    #
+    # Force use of swap-discs, this disables all other config settings
+    #
+    if args.swap_discs and args.ps3_pkg:
+        print('Forcing swap_discs on all disks for this game')
+        for i in range(len(real_disc_ids)):
+            ps3configs[i] = bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
     #
     # Apply all PPF fixes we might need
     #
