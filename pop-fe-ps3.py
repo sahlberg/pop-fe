@@ -716,7 +716,10 @@ class PopFePs3App:
         if self.builder.get_variable('allow_discswap_variable').get() == 'on':
             print('Enable swapdisc for all discs')
             for idx in range(len(self.cue_files)):
-                self.configs[idx] = bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+                if len(self.configs[idx])/8 < 8:
+                    self.configs[idx] = self.configs[idx] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+                else:
+                    raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
 
         #
         # Force NEWEMU
