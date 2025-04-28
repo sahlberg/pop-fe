@@ -4248,7 +4248,7 @@ if __name__ == "__main__":
     parser.add_argument('--ps1-newemu', action='store_true',
                     help='Use the ps1_newemu emulator (only valid for PS3 PKG, overrides other configs)')
     parser.add_argument('--swap-discs', action='store_true',
-                    help='Enable swap_discs option (only valid for PS3 PKG, overrides other configs)')
+                    help='Enable swap_discs option (only valid for PS3 PKG)')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -4383,6 +4383,17 @@ if __name__ == "__main__":
                       pspconfigs[-1] = f.read()
             except:
                 True
+
+    #
+    # Add a ps1_netemu swap-dics command, this enables the swap disc/reset disc command for multidisc games
+    #
+    if args.swap_discs and args.ps3_pkg:
+        print('Forcing swap_discs on all disks for this game')
+        for i in range(len(real_disc_ids)):
+            if len(ps3configs[i])/8 < 8:
+                ps3configs[i] = ps3configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+            else:
+                raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
                 
     #
     # Force use of ps1_newemu, this disables all other config settings
@@ -4392,13 +4403,6 @@ if __name__ == "__main__":
         for i in range(len(real_disc_ids)):
             ps3configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
 
-    #
-    # Force use of swap-discs, this disables all other config settings
-    #
-    if args.swap_discs and args.ps3_pkg:
-        print('Forcing swap_discs on all disks for this game')
-        for i in range(len(real_disc_ids)):
-            ps3configs[i] = bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
     #
     # Apply all PPF fixes we might need
     #
