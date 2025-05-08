@@ -257,6 +257,7 @@ games = {
     	'id': 'PCPX96081',
 	'title': "ZERO DIVIDE 2 [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/11/02/14/41/05/c17116e6-3a4b-4c3a-b056-4c48240b2e8b/file.jpg',
+        'pic0': 'https://images.launchbox-app.com//38c93d60-fda6-4c45-a080-5f9fad9131c4.png',
     },
     'PCPX96088': {
     	'id': 'PCPX96088',
@@ -6377,9 +6378,10 @@ games = {
     	'id': 'SLUS01324',
 	'title': "BREATH OF FIRE IV",
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
-        'pic1': 'https://images.launchbox-app.com/5ba4fb57-4e9a-4c3e-aa71-df55cb566d50.png',
+        'pic1': 'https://images.launchbox-app.com//e625a78b-f913-4d57-8f6d-486e91837822.jpg',
         'snd0': 'https://www.youtube.com/watch?v=LkUVcfzoH68',
         'ps3config': 'ps3configs/Breath of Fire IV/SLUS-01324.BIN',
+        'manual': 'https://www.videogamemanual.com/ps1/Breath%20of%20Fire%20IV%20(USA).pdf',
     },
     'SLUS00687': {
         'url': "games/U/B/SLUS-00687.html",
@@ -41684,6 +41686,8 @@ games = {
         'url': "games/J/B/SLPM-86133.html",
     	'id': 'SLPM86133',
 	'title': "BUGI",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_87705ed0-afbc-4eee-814b-f275a1c20165.png',
+        'pic1': 'https://images.launchbox-app.com//ca0014ae-cedb-4a56-871c-a8f0c4fd7dee.png',
     },
     'SLPS00497': {
         'url': "games/J/B/SLPS-00497.html",
@@ -54288,6 +54292,7 @@ games = {
         'url': "games/J/L/SLPS-01307.html",
     	'id': 'SLPS01307',
 	'title': "LOST SWORD",
+        'pic1': 'https://images.launchbox-app.com//c9f27270-4612-48de-b8e4-c1bc8d4d2143.jpg',
     },
     'SCPS10124': {
         'url': "games/J/L/SCPS-10124.html",
@@ -67782,6 +67787,7 @@ games = {
         'url': "games/J/T/SLPS-00362.html",
     	'id': 'SLPS00362',
 	'title': "TAKEO OSHIMA MAHJONG TEIOU",
+        'pic0': 'https://images.launchbox-app.com//80a4710c-5cb9-4e69-8a07-e40867744f3a.png',
     },
     'SLPS00593': {
         'url': "games/J/T/SLPS-00593.html",
