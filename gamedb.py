@@ -2998,6 +2998,7 @@ games = {
 	'title': "VIB RIBBON",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
     },
     'SCPS18012': {
         'url': "games/J/V/SCPS-18012.html",
@@ -3005,6 +3006,7 @@ games = {
 	'title': "VIB RIBBON",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
         'pspconfig': 'pspconfigs/Vib-Ribbon/SCPS-18012.bin',
     },
     'SCPS91213': {
@@ -3013,6 +3015,7 @@ games = {
 	'title': "VIB RIBBON [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
     },
     'SCPS91308': {
         'url': "games/J/V/SCPS-91308.html",
@@ -3020,6 +3023,7 @@ games = {
 	'title': "VIB RIBBON [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
     },
     'SLPS02740': {
         'url': "games/J/V/SLPS-02740.html",
@@ -4300,6 +4304,7 @@ games = {
 	'title': "YAKATA NIGHTMARE PROJECT",
         'pic0': 'https://images.launchbox-app.com/33fad6df-d7d6-471a-8649-564beead0180.png',
         'pic1': 'https://images.launchbox-app.com/db637720-b71a-44ef-a67d-936feedb4737.png',
+        'snd0': 'https://www.youtube.com/watch?v=dUbF7PoM0Q4&list=PLR2E-Wfy3Ulgf3e-sql-o0YzBSzm3glN1&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS01046': {
@@ -4308,6 +4313,7 @@ games = {
 	'title': "YAKATA NIGHTMARE PROJECT",
         'pic0': 'https://images.launchbox-app.com/33fad6df-d7d6-471a-8649-564beead0180.png',
         'pic1': 'https://images.launchbox-app.com/db637720-b71a-44ef-a67d-936feedb4737.png',
+        'snd0': 'https://www.youtube.com/watch?v=dUbF7PoM0Q4&list=PLR2E-Wfy3Ulgf3e-sql-o0YzBSzm3glN1&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS01047': {
@@ -4316,6 +4322,7 @@ games = {
 	'title': "YAKATA NIGHTMARE PROJECT",
         'pic0': 'https://images.launchbox-app.com/33fad6df-d7d6-471a-8649-564beead0180.png',
         'pic1': 'https://images.launchbox-app.com/db637720-b71a-44ef-a67d-936feedb4737.png',
+        'snd0': 'https://www.youtube.com/watch?v=dUbF7PoM0Q4&list=PLR2E-Wfy3Ulgf3e-sql-o0YzBSzm3glN1&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Yakata%20Nightmare%20Project%20[SLPS-01045]%20(J).cbr',
     },
     'SLPS03209': {
@@ -5774,6 +5781,7 @@ games = {
     	'id': 'SLUS01137',
 	'title': "ATV QUAD POWER RACING",
         'pic0': 'https://images.launchbox-app.com/28412c7d-553b-4d62-8cb2-81aba2b91d4e.png',
+        'pic1': 'https://images.launchbox-app.com//58c12241-2c66-45d8-b251-42242c09bcc8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=00mdK81Kpcs',
         'manual': 'https://www.videogamemanual.com/ps1/ATV%20-%20Quad%20Power%20Racing%20(USA).pdf',
     },
@@ -5791,6 +5799,7 @@ games = {
     	'id': 'SLUS01572',
 	'title': "ATV RACERS",
         'pic0': 'https://images.launchbox-app.com/2b3750d7-9071-4c2f-8bfd-36d1c9daed7f.png',
+        'pic1': 'https://images.launchbox-app.com//e8999ac7-a8d0-4c97-81d1-0bd170e678ff.jpg',
         'snd0': 'https://www.youtube.com/watch?v=-zPo1DNtLLQ',
         'manual': 'https://www.videogamemanual.com/ps1/ATV%20Racers%20(USA).pdf',
     },
@@ -5799,6 +5808,7 @@ games = {
     	'id': 'SLUS01456',
 	'title': "AUSTIN POWERS PINBALL",
         'pic0': 'https://images.launchbox-app.com/fa3c1b3e-70ad-4ac4-8fd2-4b034d0dda8a.png',
+        'pic1': 'https://images.launchbox-app.com//a27b0730-6fa6-4119-916a-2bb137279abf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=6oQG_KGePPM',
         'manual': 'https://www.videogamemanual.com/ps1/Austin%20Powers%20Pinball%20(USA).pdf',
     },
@@ -5807,6 +5817,7 @@ games = {
     	'id': 'SLUS00522',
 	'title': "AUTO DESTRUCT",
         'pic0': 'https://images.launchbox-app.com/6b3ea97c-6df4-4cf9-b2fa-a1f51ad85bba.png',
+        'pic1': 'https://images.launchbox-app.com//92ff7e7f-2c13-4bf9-96b1-12e0f9516749.jpg',
         'snd0': 'https://www.youtube.com/watch?v=wwYLW5bEVz4&list=PLqlDgnsQRwV5U5gnutk2ePQFblwCXrIOP&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Auto%20Destruct%20(USA).pdf',
     },
@@ -6169,6 +6180,7 @@ games = {
 	'title': "BLADE",
         'pic0': 'https://images.launchbox-app.com/f691ac96-b3e7-4179-8db9-085d5a46a23f.png',
         'pic1': 'https://images.launchbox-app.com/bc7e0ef9-bf21-4670-b17a-a3f4a3596eac.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Be8MCJHU75A&list=PLrXMK3Wvsjgs0VST6W4LBY1nmEKC0DoOV&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Blade%20(USA).pdf',
     },
     'SLUS00219': {
@@ -6370,6 +6382,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bgbdgHI6acE&list=PLCr-UuoUUJaB4EAKi4R6tenCcWz117V74&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/BrainDead%2013%20(LB)%20(USA).pdf',
         'ps3config': 'ps3configs/Brain Dead 13/SLUS-00083.bin',
         'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00083.bin',
@@ -6380,6 +6393,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bgbdgHI6acE&list=PLCr-UuoUUJaB4EAKi4R6tenCcWz117V74&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/BrainDead%2013%20(LB)%20(USA).pdf',
         'ps3config': 'ps3configs/Brain Dead 13/SLUS-00171.bin',
         'pspconfig': 'pspconfigs/Brain Dead 13/SLUS-00171.bin',
@@ -6769,6 +6783,7 @@ games = {
 	'title': "CASTLEVANIA - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/eaae2192-9d6f-450a-9bc8-4ebe48974890.png',
         'pic1': 'https://images.launchbox-app.com/2424005f-0d16-4582-9b77-b91bbddde689.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Z0pe81QFl4A&list=PLGx1dfF47ADub9j_OfpRwJCaHcvqxbZsx&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Castlevania%20Chronicles%20(USA).pdf',
     },
     'SLUS00882': {
@@ -6880,6 +6895,7 @@ games = {
 	'title': "CHRONO CROSS  - ",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Chrono%20Cross%20(USA).pdf',
     },
     'SLUS01080': {
@@ -6888,6 +6904,7 @@ games = {
 	'title': "CHRONO CROSS  - ",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Chrono%20Cross%20(USA).pdf',
     },
     'SLUS00697': {
@@ -6973,6 +6990,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Colony%20Wars%20(USA).pdf',
     },
     'SLUS00554': {
@@ -6981,6 +6999,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Colony%20Wars%20(USA).pdf',
     },
     'SLUS00722': {
@@ -8122,6 +8141,7 @@ games = {
 	'title': "DRIVER 2 - THE WHEELMAN IS BACK",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Driver%202%20(GH)%20(USA).pdf',
         'pspconfig': 'pspconfigs/Driver 2/SLUS-01161.bin',
     },
@@ -8528,6 +8548,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://www.videogamemanual.com/ps1/Fear%20Effect%202%20-%20Retro%20Helix%20(USA).pdf',
     },
     'SLUS01275': {
@@ -8536,6 +8557,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://www.videogamemanual.com/ps1/Fear%20Effect%202%20-%20Retro%20Helix%20(USA).pdf',
     },
     'SLUS01276': {
@@ -8544,6 +8566,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://www.videogamemanual.com/ps1/Fear%20Effect%202%20-%20Retro%20Helix%20(USA).pdf',
     },
     'SLUS01277': {
@@ -8552,6 +8575,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://www.videogamemanual.com/ps1/Fear%20Effect%202%20-%20Retro%20Helix%20(USA).pdf',
     },
     'SLUS00533': {
@@ -9035,6 +9059,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
         'manual': 'https://www.videogamemanual.com/ps1/G-Police%20-%20Weapons%20of%20Justice%20(USA).pdf',
     },
     'SLUS01258': {
@@ -9296,6 +9321,7 @@ games = {
     	'id': 'SLUS00846',
 	'title': "GRAND THEFT AUTO - MISSION PACK #1 - LONDON 1969",
         'pic0': 'https://images.launchbox-app.com/6ce46acb-608c-483a-be7e-5e54f899c30c.png',
+        'snd0': 'https://www.youtube.com/watch?v=WlOUgJIn3NQ',
         'manual': 'https://www.videogamemanual.com/ps1/Grand%20Theft%20Auto%20-%20Mission%20Pack%201%20-%20London%201969%20(USA).pdf',
     },
     'SCUS94457': {
@@ -9794,6 +9820,7 @@ games = {
 	'title': "JACKIE CHAN'S STUNTMASTER",
         'pic0': 'https://images.launchbox-app.com/f2c6c872-7db4-4460-af58-55f6f4f7097d.png',
         'pic1': 'https://images.launchbox-app.com/357d1d95-cf83-47d7-94c8-c615415f6fda.png',
+        'snd0': 'https://www.youtube.com/watch?v=UUIeFEFLqFA&list=PLhwL_3lZ3YPg47OgIod9fJLNnhMTorVik&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Jackie%20Chan%20Stuntmaster%20(USA).pdf',
         'pspconfig': 'pspconfigs/Jackie Chan Stuntmaster/SLUS-00684.bin',
     },
@@ -13985,6 +14012,7 @@ games = {
 	'title': "SOUTH PARK",
         'pic0': 'https://images.launchbox-app.com/7cc8fc4c-7bfa-4e1d-b2d2-214a93a24381.png',
         'pic1': 'https://images.launchbox-app.com/9f14c187-b229-4a45-91e0-142619853b6a.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/South%20Park%20(USA).pdf',
     },
     'SLUS00997': {
@@ -13993,6 +14021,7 @@ games = {
 	'title': "SOUTH PARK - CHEF'S LUV SHACK",
         'pic0': 'https://images.launchbox-app.com/9c4acf07-2156-49c4-a715-f5573ceec421.png',
         'pic1': 'https://images.launchbox-app.com/edc64128-6a8c-43b6-a9ec-82d4e5f5b704.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/South%20Park%20-%20Chef\'s%20Luv%20Shack%20(USA).pdf',
     },
     'SLUS00984': {
@@ -14001,6 +14030,7 @@ games = {
 	'title': "SOUTH PARK RALLY",
         'pic0': 'https://images.launchbox-app.com/add73e24-6ae5-4d3a-993a-0a277a15508d.png',
         'pic1': 'https://images.launchbox-app.com/21ea34ab-ac9e-48fa-a3a2-1d47460ff845.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/South%20Park%20Rally%20(USA).pdf',
     },
     'SLUS00061': {
@@ -14372,6 +14402,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/ef4a700a-419a-45a9-9796-e5a99dbd6446.png',
         'pic0': 'https://images.launchbox-app.com/9477045b-462b-44d7-9ce8-6721bf661174.png',
         'pic1': 'https://images.launchbox-app.com/0bcc2d0b-30b1-4907-a01f-ac00d874e089.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dM9x_430eo0&list=PLB075C11C8B2AF864&index=14',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20-%20The%20Movie%20(LB)%20(USA).pdf',
     },
     'SLUS00197': {
@@ -14381,6 +14412,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/29d8289e-c0d6-4439-a439-19011f9b6651.png',
         'pic0': 'https://images.launchbox-app.com/557704f4-6c69-4522-a2c9-a05228158371.png',
         'pic1': 'https://images.launchbox-app.com/b56e3150-bdf3-4606-b716-5e31e6320774.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nVNpTt6BzNI&list=PLUMK3YtI3p3NdK9khyF1yW_y41_OZyFDK&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20Alpha%20-%20Warriors\'%20Dreams%20(LB)%20(USA).pdf',
     },
     'SLUS00258': {
@@ -14389,6 +14421,7 @@ games = {
 	'title': "STREET FIGHTER ALPHA 2",
         'pic0': 'https://images.launchbox-app.com/20a5bf43-e6f6-4456-b169-74a83509141f.png',
         'pic1': 'https://images.launchbox-app.com/a84149a8-93f8-4d3e-ac60-7a7bd3c124fb.png',
+        'snd0': 'https://www.youtube.com/watch?v=z6qGPmaXeK8&list=PLUMK3YtI3p3MSaYkg1s03dc7MqC7MAw7n&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20Alpha%202%20(USA).pdf',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 2/SLUS-00258.bin',
     },
@@ -14398,6 +14431,7 @@ games = {
 	'title': "STREET FIGHTER ALPHA 3",
         'pic0': 'https://images.launchbox-app.com/5997d69b-1ad6-4052-bb5a-cbe409cad7b4.png',
         'pic1': 'https://images.launchbox-app.com/fedfedc3-1633-445f-8379-0585dd4b4a38.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Mhb7uKAlRac&list=PLUMK3YtI3p3OviGPsLXZkcSnIvddSbr00&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20Alpha%203%20(USA).pdf',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 3/SLUS-00821.bin',
     },
@@ -14433,6 +14467,7 @@ games = {
 	'title': "STREET FIGHTER EX PLUS ALPHA",
         'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
         'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_VQ8Q9eq83A&list=PLE4B2BD2F4DF31136&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20EX%20Plus%20Alpha%20(USA).pdf',
     },
     'SLUS01105': {
@@ -14441,6 +14476,7 @@ games = {
 	'title': "STREET FIGHTER EX 2 PLUS",
         'pic0': 'https://images.launchbox-app.com/2245ace0-c41b-4ccd-9f8e-84c9929555cf.png',
         'pic1': 'https://images.launchbox-app.com/1762b00a-42d3-4fa8-826e-5932f5c50ba5.jpg',
+        'sd0': 'https://www.youtube.com/watch?v=BN5398Ra2HU&list=PL233346A2A730E205&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Fighter%20EX2%20Plus%20(USA).pdf',
     },
     'SLUS00099': {
@@ -14448,6 +14484,7 @@ games = {
     	'id': 'SLUS00099',
 	'title': "STREET RACER",
         'pic0': 'https://images.launchbox-app.com/23a7ea2c-7cd8-469a-8a76-49df18988510.png',
+        'pic1': 'https://images.launchbox-app.com//fd65fb36-a8ae-432d-8561-477130306a8f.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Racer%20(USA).pdf',
     },
     'SLUS01450': {
@@ -15491,6 +15528,7 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Tobal%20No.%201%20(USA).pdf',
         'pspconfig': 'pspconfigs/Tobal No. 1/SCUS-94208.bin',
     },
@@ -15500,6 +15538,7 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Tobal%20No.%201%20(USA).pdf',
     },
     'SLUS00611': {
@@ -15608,6 +15647,7 @@ games = {
 	'title': "TOMBA!",
         'pic0': 'https://images.launchbox-app.com/64817db9-e231-4786-8715-6c9506057b37.png',
         'pic1': 'https://images.launchbox-app.com/4890e420-0cc1-4cc5-a40f-e44b99c2b3e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=fBw0LUOGA1c&list=PLBIPM3zhv-eHyvlOTW8U0oH6VSlmjoQ1P&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Tomba!%20(USA).pdf',
         'pspconfig': 'pspconfigs/Tomba/SCUS-94236.bin',
     },
@@ -15617,6 +15657,7 @@ games = {
 	'title': "TOMBA! 2 - THE EVIL SWINE RETURNS",
         'pic0': 'https://images.launchbox-app.com/8bd8b591-f89e-424c-b459-ae79db2b58f5.png',
         'pic1': 'https://images.launchbox-app.com/bdc70061-88b6-4446-92eb-9c1e0115a89e.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=LclTb9qMTew&list=PLEBDDD5AB732E542E&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Tomba!%202%20-%20The%20Evil%20Swine%20Return%20(USA).pdf',
         'pspconfig': 'pspconfigs/Tomba! 2 - The Evil Swine Return/SCUS-94454.bin',
     },
@@ -18183,6 +18224,8 @@ games = {
     	'id': 'SLES01603',
 	'title': "ATLANTIS - DAS SAGENHAFTE ABENTEUER",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES11603': {
@@ -18190,6 +18233,8 @@ games = {
     	'id': 'SLES11603',
 	'title': "ATLANTIS - DAS SAGENHAFTE ABENTEUER",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES21603': {
@@ -18197,6 +18242,8 @@ games = {
     	'id': 'SLES21603',
 	'title': "ATLANTIS - DAS SAGENHAFTE ABENTEUER",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES01602': {
@@ -18204,6 +18251,8 @@ games = {
     	'id': 'SLES01602',
 	'title': "ATLANTIS - SECRETS D'UN MONDE OUBLIE",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES11602': {
@@ -18211,6 +18260,8 @@ games = {
     	'id': 'SLES11602',
 	'title': "ATLANTIS - SECRETS D'UN MONDE OUBLIE",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES21602': {
@@ -18218,6 +18269,8 @@ games = {
     	'id': 'SLES21602',
 	'title': "ATLANTIS - SECRETS D'UN MONDE OUBLIE",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES01604': {
@@ -18225,6 +18278,8 @@ games = {
     	'id': 'SLES01604',
 	'title': "ATLANTIS - SEGRETI D'UN MONDO PERDUTO",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES11604': {
@@ -18232,6 +18287,8 @@ games = {
     	'id': 'SLES11604',
 	'title': "ATLANTIS - SEGRETI D'UN MONDO PERDUTO",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES21604': {
@@ -18239,6 +18296,8 @@ games = {
     	'id': 'SLES21604',
 	'title': "ATLANTIS - SEGRETI D'UN MONDO PERDUTO",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES01291': {
@@ -18246,6 +18305,8 @@ games = {
     	'id': 'SLES01291',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Atlantis%20-%20The%20Lost%20Tales%20(E)(S)(Du)(Sw)%20[SLES-01605].cbr',
     },
     'SLES11291': {
@@ -18253,30 +18314,40 @@ games = {
     	'id': 'SLES11291',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
     },
     'SLES21291': {
         'url': "games/P/A/SLES-01605.html",
     	'id': 'SLES21291',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
     },
     'SLES01605': {
         'url': "games/P/A/SLES-01605.html",
     	'id': 'SLES01605',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
     },
     'SLES11605': {
         'url': "games/P/A/SLES-01605.html",
     	'id': 'SLES11605',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
     },
     'SLES21605': {
         'url': "games/P/A/SLES-01605.html",
     	'id': 'SLES21605',
 	'title': "ATLANTIS - THE LOST TALES",
         'pic0': 'https://images.launchbox-app.com/0fb888ad-44c7-4acf-b141-dbd50b295349.png',
+        'pic1': 'https://images.launchbox-app.com//917a07a3-714d-4719-b20d-05b563273389.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_bbCbSS-VIk&list=PL139A1613B72BD2D2&index=1',
     },
     'SLES01718': {
         'url': "games/P/A/SLES-01718.html",
@@ -18297,6 +18368,7 @@ games = {
     	'id': 'SLES02822',
 	'title': "ATV QUAD POWER RACING",
         'pic0': 'https://images.launchbox-app.com/28412c7d-553b-4d62-8cb2-81aba2b91d4e.png',
+        'pic1': 'https://images.launchbox-app.com//58c12241-2c66-45d8-b251-42242c09bcc8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=00mdK81Kpcs',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/ATV%20-%20Quad%20Power%20Racing%20%28USA%29_jp2.zip',
     },
@@ -18305,6 +18377,7 @@ games = {
     	'id': 'SLES04059',
 	'title': "ATV RACERS",
         'pic0': 'https://images.launchbox-app.com/2b3750d7-9071-4c2f-8bfd-36d1c9daed7f.png',
+        'pic1': 'https://images.launchbox-app.com//e8999ac7-a8d0-4c97-81d1-0bd170e678ff.jpg',
         'snd0': 'https://www.youtube.com/watch?v=-zPo1DNtLLQ',
     },
     'SLES03945': {
@@ -18312,6 +18385,7 @@ games = {
     	'id': 'SLES03945',
 	'title': "AUSTIN POWERS PINBALL",
         'pic0': 'https://images.launchbox-app.com/fa3c1b3e-70ad-4ac4-8fd2-4b034d0dda8a.png',
+        'pic1': 'https://images.launchbox-app.com//a27b0730-6fa6-4119-916a-2bb137279abf.jpg',
         'snd0': 'https://www.youtube.com/watch?v=6oQG_KGePPM',
     },
     'SLES00909': {
@@ -18319,6 +18393,7 @@ games = {
     	'id': 'SLES00909',
 	'title': "AUTO DESTRUCT",
         'pic0': 'https://images.launchbox-app.com/6b3ea97c-6df4-4cf9-b2fa-a1f51ad85bba.png',
+        'pic1': 'https://images.launchbox-app.com//92ff7e7f-2c13-4bf9-96b1-12e0f9516749.jpg',
         'snd0': 'https://www.youtube.com/watch?v=wwYLW5bEVz4&list=PLqlDgnsQRwV5U5gnutk2ePQFblwCXrIOP&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Auto%20Destruct%20%28USA%29_jp2.zip',
     },
@@ -18783,6 +18858,7 @@ games = {
 	'title': "BLADE",
         'pic0': 'https://images.launchbox-app.com/f691ac96-b3e7-4179-8db9-085d5a46a23f.png',
         'pic1': 'https://images.launchbox-app.com/bc7e0ef9-bf21-4670-b17a-a3f4a3596eac.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Be8MCJHU75A&list=PLrXMK3Wvsjgs0VST6W4LBY1nmEKC0DoOV&index=2',
     },
     'SLES03214': {
         'url': "games/P/B/SLES-03214.html",
@@ -18790,6 +18866,7 @@ games = {
 	'title': "BLADE",
         'pic0': 'https://images.launchbox-app.com/f691ac96-b3e7-4179-8db9-085d5a46a23f.png',
         'pic1': 'https://images.launchbox-app.com/bc7e0ef9-bf21-4670-b17a-a3f4a3596eac.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Be8MCJHU75A&list=PLrXMK3Wvsjgs0VST6W4LBY1nmEKC0DoOV&index=2',
     },
     'SLES03215': {
         'url': "games/P/B/SLES-03215.html",
@@ -18797,6 +18874,7 @@ games = {
 	'title': "BLADE",
         'pic0': 'https://images.launchbox-app.com/f691ac96-b3e7-4179-8db9-085d5a46a23f.png',
         'pic1': 'https://images.launchbox-app.com/bc7e0ef9-bf21-4670-b17a-a3f4a3596eac.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Be8MCJHU75A&list=PLrXMK3Wvsjgs0VST6W4LBY1nmEKC0DoOV&index=2',
     },
     'SLES00349': {
         'url': "games/P/B/SLES-00349.html",
@@ -19637,6 +19715,7 @@ games = {
 	'title': "CASTLEVANIA - CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/eaae2192-9d6f-450a-9bc8-4ebe48974890.png',
         'pic1': 'https://images.launchbox-app.com/2424005f-0d16-4582-9b77-b91bbddde689.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Z0pe81QFl4A&list=PLGx1dfF47ADub9j_OfpRwJCaHcvqxbZsx&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Castlevania%20Chronicles%20%28USA%29_jp2.zip',
     },
     'SLES01182': {
@@ -20895,6 +20974,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
     },
     'SCES01917': {
         'url': "games/P/G/SCES-01917.html",
@@ -20902,6 +20982,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
     },
     'SCES01918': {
         'url': "games/P/G/SCES-01918.html",
@@ -20909,6 +20990,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
     },
     'SCES01919': {
         'url': "games/P/G/SCES-01919.html",
@@ -20916,6 +20998,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
     },
     'SCES01920': {
         'url': "games/P/G/SCES-01920.html",
@@ -20923,6 +21006,7 @@ games = {
 	'title': "G-POLICE - WEAPONS OF JUSTICE",
         'pic0': 'https://images.launchbox-app.com/16e2a723-84b6-4ca1-99fe-072f39e9303b.png',
         'pic1': 'https://images.launchbox-app.com/599cce01-bd94-46f2-898a-41a7e056d8de.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=O-wC9PxIVU4',
     },
     'SLES02212': {
         'url': "games/P/G/SLES-02212.html",
@@ -21263,12 +21347,14 @@ games = {
     	'id': 'SLES03389',
 	'title': "GRAND THEFT AUTO - LONDON [SPECIAL EDITION]",
         'pic0': 'https://images.launchbox-app.com/6ce46acb-608c-483a-be7e-5e54f899c30c.png',
+        'snd0': 'https://www.youtube.com/watch?v=WlOUgJIn3NQ',
     },
     'SLES01714': {
         'url': "games/P/G/SLES-01714.html",
     	'id': 'SLES01714',
 	'title': "GRAND THEFT AUTO - MISSION PACK #1 - LONDON 1969",
         'pic0': 'https://images.launchbox-app.com/6ce46acb-608c-483a-be7e-5e54f899c30c.png',
+        'snd0': 'https://www.youtube.com/watch?v=WlOUgJIn3NQ',
     },
     'SLES01404': {
         'url': "games/P/G/SLES-01404.html",
@@ -22346,6 +22432,7 @@ games = {
 	'title': "JACKIE CHAN'S STUNTMASTER",
         'pic0': 'https://images.launchbox-app.com/f2c6c872-7db4-4460-af58-55f6f4f7097d.png',
         'pic1': 'https://images.launchbox-app.com/357d1d95-cf83-47d7-94c8-c615415f6fda.png',
+        'snd0': 'https://www.youtube.com/watch?v=UUIeFEFLqFA&list=PLhwL_3lZ3YPg47OgIod9fJLNnhMTorVik&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jackie%20Chan%20Stuntmaster%20%28USA%29_jp2.zip',
     },
     'SLES02201': {
@@ -23274,6 +23361,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-02993.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02993.BIN',
@@ -23284,6 +23372,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-12993.bin',
     },
@@ -23294,6 +23383,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'pspconfig': 'pspconfigs/Driver 2/SLES-02994.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02994.BIN',
     },
@@ -23303,6 +23393,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-12994.bin',
     },
@@ -23312,6 +23403,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-02995.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02995.BIN',
@@ -23322,6 +23414,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-12995.bin',
     },
@@ -23331,6 +23424,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-02996.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02996.BIN',
@@ -23341,6 +23435,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-12996.bin',
     },
@@ -23350,6 +23445,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-02997.bin',
         'ps3config': 'ps3configs/Driver 2/SLES-02997.BIN',
@@ -23360,6 +23456,7 @@ games = {
 	'title': "DRIVER 2 - BACK ON THE STREETS",
         'pic0': 'https://images.launchbox-app.com/6c36afff-d6a9-4f8c-be8c-ebcc78c9392a.png',
         'pic1': 'https://images.launchbox-app.com/8c95b281-450a-4914-aa28-c0bb429cfef5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bVGMo1lw8yo&list=PLd-tEkuc6BZXTas1JY5n5kxrX-S1wWXtZ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Driver%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Driver 2/SLES-12997.bin',
     },
@@ -24042,6 +24139,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES13386': {
@@ -24050,6 +24148,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES23386': {
@@ -24058,6 +24157,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES33386': {
@@ -24066,6 +24166,7 @@ games = {
 	'title': "FEAR EFFECT 2 - RETRO HELIX",
         'pic0': 'https://images.launchbox-app.com/71177a10-b1b3-4866-8d6f-c853acaeac33.png',
         'pic1': 'https://images.launchbox-app.com/71d24c26-3c82-4828-aa63-a4f9d1134118.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=sS_r19roUos&list=PLMOCAXd3GYy_-diZWgA1IlkdB-m3Zs0Lb&index=22',
         'manual': 'https://psxdatacenter.com/manuals/Fear%20Effect%202%20[SLUS-01266]%20(E).cbr',
     },
     'SLES00940': {
@@ -27620,6 +27721,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10860': {
@@ -27628,6 +27730,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00861': {
@@ -27636,6 +27739,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10861': {
@@ -27644,6 +27748,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00862': {
@@ -27652,6 +27757,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10862': {
@@ -27660,6 +27766,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00863': {
@@ -27668,6 +27775,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES10863': {
@@ -27676,6 +27784,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00864': {
@@ -27684,6 +27793,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLES-00864.bin',
     },
@@ -27693,6 +27803,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLES-10864.bin',
     },
@@ -33412,6 +33523,7 @@ games = {
 	'title': "SOUTH PARK",
         'pic0': 'https://images.launchbox-app.com/7cc8fc4c-7bfa-4e1d-b2d2-214a93a24381.png',
         'pic1': 'https://images.launchbox-app.com/9f14c187-b229-4a45-91e0-142619853b6a.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/South%20Park%20%28USA%29_jp2.zip',
     },
     'SLES01972': {
@@ -33419,6 +33531,7 @@ games = {
     	'id': 'SLES01972',
 	'title': "SOUTH PARK - CHEF'S LUV SHACK",
         'pic0': 'https://images.launchbox-app.com/9c4acf07-2156-49c4-a715-f5573ceec421.png',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'pic1': 'https://images.launchbox-app.com/edc64128-6a8c-43b6-a9ec-82d4e5f5b704.jpg',
     },
     'SLES02352': {
@@ -33427,6 +33540,7 @@ games = {
 	'title': "SOUTH PARK RALLY",
         'pic0': 'https://images.launchbox-app.com/add73e24-6ae5-4d3a-993a-0a277a15508d.png',
         'pic1': 'https://images.launchbox-app.com/21ea34ab-ac9e-48fa-a3a2-1d47460ff845.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/South%20Park%20Rally%20%28USA%29_jp2.zip',
     },
     'SLES02690': {
@@ -33435,6 +33549,7 @@ games = {
 	'title': "SOUTH PARK RALLY",
         'pic0': 'https://images.launchbox-app.com/add73e24-6ae5-4d3a-993a-0a277a15508d.png',
         'pic1': 'https://images.launchbox-app.com/21ea34ab-ac9e-48fa-a3a2-1d47460ff845.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=P8YSulRvwPw&list=PLUuvFcvrmryvBt-uU0HUTj9yLzD-xeym5&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/South%20Park%20Rally%20%28USA%29_jp2.zip',
     },
     'SLES00507': {
@@ -34187,6 +34302,7 @@ games = {
 	'title': "STREET FIGHTER - THE MOVIE",
         'pic0': 'https://images.launchbox-app.com/9477045b-462b-44d7-9ce8-6721bf661174.png',
         'pic1': 'https://images.launchbox-app.com/0bcc2d0b-30b1-4907-a01f-ac00d874e089.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dM9x_430eo0&list=PLB075C11C8B2AF864&index=14',
     },
     'SLES00199': {
         'url': "games/P/S/SLES-00199.html",
@@ -34194,6 +34310,7 @@ games = {
 	'title': "STREET FIGHTER ALPHA - WARRIORS' DREAMS",
         'pic0': 'https://images.launchbox-app.com/557704f4-6c69-4522-a2c9-a05228158371.png',
         'pic1': 'https://images.launchbox-app.com/b56e3150-bdf3-4606-b716-5e31e6320774.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=nVNpTt6BzNI&list=PLUMK3YtI3p3NdK9khyF1yW_y41_OZyFDK&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Street%20Fighter%20Alpha%20-%20Warriors%27%20Dreams%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Street Fighter Alpha - Warriors\' Dreams/SLES-00199.bin',
     },
@@ -34203,6 +34320,7 @@ games = {
 	'title': "STREET FIGHTER ALPHA 2",
         'pic0': 'https://images.launchbox-app.com/20a5bf43-e6f6-4456-b169-74a83509141f.png',
         'pic1': 'https://images.launchbox-app.com/a84149a8-93f8-4d3e-ac60-7a7bd3c124fb.png',
+        'snd0': 'https://www.youtube.com/watch?v=z6qGPmaXeK8&list=PLUMK3YtI3p3MSaYkg1s03dc7MqC7MAw7n&index=2',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 2/SLES-00496.bin',
     },
     'SLES01863': {
@@ -34211,6 +34329,7 @@ games = {
 	'title': "STREET FIGHTER ALPHA 3",
         'pic0': 'https://images.launchbox-app.com/5997d69b-1ad6-4052-bb5a-cbe409cad7b4.png',
         'pic1': 'https://images.launchbox-app.com/fedfedc3-1633-445f-8379-0585dd4b4a38.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Mhb7uKAlRac&list=PLUMK3YtI3p3OviGPsLXZkcSnIvddSbr00&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Street%20Fighter%20Alpha%203%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 3/SLES-01863.bin',
     },
@@ -34243,6 +34362,7 @@ games = {
 	'title': "STREET FIGHTER EX PLUS ALPHA",
         'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
         'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_VQ8Q9eq83A&list=PLE4B2BD2F4DF31136&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX%20Plus%20Alpha%20[SLUS-00548]%20(E).cbr',
     },
     'SLES02598': {
@@ -34251,6 +34371,7 @@ games = {
 	'title': "STREET FIGHTER EX 2 PLUS",
         'pic0': 'https://images.launchbox-app.com/2245ace0-c41b-4ccd-9f8e-84c9929555cf.png',
         'pic1': 'https://images.launchbox-app.com/1762b00a-42d3-4fa8-826e-5932f5c50ba5.jpg',
+        'sd0': 'https://www.youtube.com/watch?v=BN5398Ra2HU&list=PL233346A2A730E205&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX2%20Plus%20SLES-02598%20(F)(G).cbr',
     },
     'SLES00296': {
@@ -34258,6 +34379,7 @@ games = {
     	'id': 'SLES00296',
 	'title': "STREET RACER",
         'pic0': 'https://images.launchbox-app.com/23a7ea2c-7cd8-469a-8a76-49df18988510.png',
+        'pic1': 'https://images.launchbox-app.com//fd65fb36-a8ae-432d-8561-477130306a8f.jpg',
     },
     'SLES02528': {
         'url': "games/P/S/SLES-02528.html",
@@ -36232,6 +36354,7 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
         'pspconfig': 'pspconfigs/Tobal No. 1/SCES-00497.bin',
     },
     'SLES00376': {
@@ -37251,6 +37374,7 @@ games = {
 	'title': "VIB RIBBON",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
         'pspconfig': 'pspconfigs/Vib-Ribbon/SCES-02873.bin',
     },
     'SCUS02873': {
@@ -37259,6 +37383,7 @@ games = {
 	'title': "VIB RIBBON",
         'pic0': 'https://images.launchbox-app.com/967c3d80-384f-4074-ba26-b73415d124cf.png',
         'pic1': 'https://images.launchbox-app.com/97f3513d-95b7-406e-8bbc-c995763b5535.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=K6tmA6oTA9I&list=PLUBRITPk2Ku2pu7FklNqAf8vmRicLPfPY&index=1',
         'pspconfig': 'pspconfigs/Vib-Ribbon/SCES-02873.bin',
     },
     'SLES01393': {
@@ -40643,6 +40768,7 @@ games = {
     	'id': 'SLPM86636',
 	'title': "ATV QUAD POWER RACING",
         'pic0': 'https://images.launchbox-app.com/28412c7d-553b-4d62-8cb2-81aba2b91d4e.png',
+        'pic1': 'https://images.launchbox-app.com//58c12241-2c66-45d8-b251-42242c09bcc8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=00mdK81Kpcs',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/ATV%20-%20Quad%20Power%20Racing%20%28USA%29_jp2.zip',
     },
@@ -42105,6 +42231,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bgbdgHI6acE&list=PLCr-UuoUUJaB4EAKi4R6tenCcWz117V74&index=1',
         'ps3config': 'ps3configs/Brain Dead 13/SLPS-00514.bin',
     },
     'SLPS00515': {
@@ -42113,6 +42240,7 @@ games = {
 	'title': "BRAIN DEAD 13",
         'pic0': 'https://images.launchbox-app.com/a6a86370-33e8-4de8-b13d-3a78327ccd7d.png',
         'pic1': 'https://images.launchbox-app.com/ce467e3c-6bd3-4eb7-bf9f-c4fcc0af33cc.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=bgbdgHI6acE&list=PLCr-UuoUUJaB4EAKi4R6tenCcWz117V74&index=1',
         'ps3config': 'ps3configs/Brain Dead 13/SLPS-00515.bin',
     },
     'SCPS45291': {
@@ -43263,6 +43391,7 @@ games = {
 	'title': "CHRONO CROSS",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45448': {
@@ -43271,6 +43400,7 @@ games = {
 	'title': "CHRONO CROSS",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02364': {
@@ -43279,6 +43409,7 @@ games = {
 	'title': "CHRONO CROSS",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02365': {
@@ -43287,6 +43418,7 @@ games = {
 	'title': "CHRONO CROSS",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91464': {
@@ -43295,6 +43427,7 @@ games = {
 	'title': "CHRONO CROSS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS91465': {
@@ -43303,6 +43436,7 @@ games = {
 	'title': "CHRONO CROSS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02777': {
@@ -43311,6 +43445,7 @@ games = {
 	'title': "CHRONO CROSS [SQUARE MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPS02778': {
@@ -43319,6 +43454,7 @@ games = {
 	'title': "CHRONO CROSS [SQUARE MILLENNIUM COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87395': {
@@ -43327,6 +43463,7 @@ games = {
 	'title': "CHRONO CROSS [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLPM87396': {
@@ -43335,6 +43472,7 @@ games = {
 	'title': "CHRONO CROSS [ULTIMATE HITS]",
         'pic0': 'https://images.launchbox-app.com/064a1c3c-637d-4ed5-a963-6c9db6c1d1a7.png',
         'pic1': 'https://images.launchbox-app.com/f4be22d8-9db3-4848-97b5-267b1dfdb471.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=40BZyMdDG4s&list=PLNWsysQ4t2gL2Ypx2MhL9I10a_JMfDw3b&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Chrono%20Cross%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SCPS45446': {
@@ -43860,6 +43998,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SCPS-45254.bin',
     },
@@ -43869,6 +44008,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SCPS-45255.bin',
     },
@@ -43878,6 +44018,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLPS-01403.bin',
     },
@@ -43887,6 +44028,7 @@ games = {
 	'title': "COLONY WARS",
         'pic0': 'https://images.launchbox-app.com/89389c27-c8a7-4cf4-adfc-c03ebeb6d33b.png',
         'pic1': 'https://images.launchbox-app.com/10836d0e-d3c0-491e-81f9-f7b422710630.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=NTK8a7Yc8yM&list=PLCD1B75C56036303E&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Colony%20Wars%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'pspconfig': 'pspconfigs/Colony Wars/SLPS-01404.bin',
     },
@@ -67308,6 +67450,7 @@ games = {
 	'title': "STREET FIGHTER - THE MOVIE",
         'pic0': 'https://images.launchbox-app.com/9477045b-462b-44d7-9ce8-6721bf661174.png',
         'pic1': 'https://images.launchbox-app.com/0bcc2d0b-30b1-4907-a01f-ac00d874e089.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=dM9x_430eo0&list=PLB075C11C8B2AF864&index=14',
     },
     'SLPS00800': {
         'url': "games/J/S/SLPS-00800.html",
@@ -67330,6 +67473,7 @@ games = {
 	'title': "STREET FIGHTER EX PLUS ALPHA",
         'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
         'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_VQ8Q9eq83A&list=PLE4B2BD2F4DF31136&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX%20Plus%20Alpha%20[SLUS-00548]%20(E).cbr',
     },
     'SLPM86041': {
@@ -67338,6 +67482,7 @@ games = {
 	'title': "STREET FIGHTER EX PLUS ALPHA",
         'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
         'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_VQ8Q9eq83A&list=PLE4B2BD2F4DF31136&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX%20Plus%20Alpha%20[SLUS-00548]%20(E).cbr',
     },
     'SLPS91088': {
@@ -67346,6 +67491,7 @@ games = {
 	'title': "STREET FIGHTER EX PLUS ALPHA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e21db0bd-f977-4264-9292-4dafb09ae7ca.png',
         'pic1': 'https://images.launchbox-app.com/f5a13654-086e-405c-af3f-dc657f2b5ab0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=_VQ8Q9eq83A&list=PLE4B2BD2F4DF31136&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX%20Plus%20Alpha%20[SLUS-00548]%20(E).cbr',
     },
     'SLPS02508': {
@@ -67354,6 +67500,7 @@ games = {
 	'title': "STREET FIGHTER EX 2 PLUS",
         'pic0': 'https://images.launchbox-app.com/2245ace0-c41b-4ccd-9f8e-84c9929555cf.png',
         'pic1': 'https://images.launchbox-app.com/1762b00a-42d3-4fa8-826e-5932f5c50ba5.jpg',
+        'sd0': 'https://www.youtube.com/watch?v=BN5398Ra2HU&list=PL233346A2A730E205&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Street%20Fighter%20EX2%20Plus%20SLES-02598%20(F)(G).cbr',
     },
     'SLPS00176': {
@@ -67370,6 +67517,7 @@ games = {
 	'title': "STREET FIGHTER ZERO 2",
         'pic0': 'https://images.launchbox-app.com/d188274a-ed61-4aef-9a1a-9ee28d33fa0d.png',
         'pic1': 'https://images.launchbox-app.com/fedfedc3-1633-445f-8379-0585dd4b4a38.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=z6qGPmaXeK8&list=PLUMK3YtI3p3MSaYkg1s03dc7MqC7MAw7n&index=2',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 2/SLPS-00415.bin',
     },
     'SLPS91105': {
@@ -67378,6 +67526,7 @@ games = {
 	'title': "STREET FIGHTER ZERO 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/d188274a-ed61-4aef-9a1a-9ee28d33fa0d.png',
         'pic1': 'https://images.launchbox-app.com/fedfedc3-1633-445f-8379-0585dd4b4a38.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=z6qGPmaXeK8&list=PLUMK3YtI3p3MSaYkg1s03dc7MqC7MAw7n&index=2',
         'pspconfig': 'pspconfigs/Street Fighter Alpha 2/SLPS-91105.bin',
     },
     'SLPS01777': {
@@ -70280,6 +70429,7 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
     },
     'SLPS00401': {
         'url': "games/J/T/SLPS-00400.html",
@@ -70287,6 +70437,7 @@ games = {
 	'title': "TOBAL No.1",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
     },
     'SLPM87405': {
         'url': "games/J/T/SLPM-87405.html",
@@ -70294,6 +70445,7 @@ games = {
 	'title': "TOBAL No.1 [LEGENDARY HITS]",
         'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
         'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
     },
     'SCPS45025': {
         'url': "games/J/T/SCPS-45025.html",
