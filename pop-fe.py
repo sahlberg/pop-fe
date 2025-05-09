@@ -2120,8 +2120,8 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, psn_frame_size=None):
 
     if psn_frame_size:
         im0 = Image.open(io.BytesIO(i0))
-        im0 = im0.resize(psn_frame_size[0], Image.Resampling.HAMMING)
-        i = i.resize(psn_frame_size[1], Image.Resampling.HAMMING)
+        im0 = im0.resize(psn_frame_size[0], Image.Resampling.LANCZOS)
+        i = i.resize(psn_frame_size[1], Image.Resampling.LANCZOS)
         Image.Image.paste(im0, i,
                 box=((psn_frame_size[0][0] - psn_frame_size[1][0]) // 2,
                      (psn_frame_size[0][1] - psn_frame_size[1][1]) // 2))
@@ -2185,10 +2185,10 @@ def get_pic0_from_game(game_id, game, cue):
         ar = pic0.height / pic0.width
         if pic0.height * ar > 560:
             if int(560 / ar) < 1000:
-                pic0 = pic0.resize((int(560 / ar), 560), Image.Resampling.NEAREST)
+                pic0 = pic0.resize((int(560 / ar), 560), Image.Resampling.LANCZOS)
             else:
                 ar = 1000 / pic0.width
-                pic0 = pic0.resize((1000, int(pic0.height * ar)), Image.Resampling.NEAREST)
+                pic0 = pic0.resize((1000, int(pic0.height * ar)), Image.Resampling.LANCZOS)
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
             ns = (int((1000 - pic0.size[0]) / 2), 0)
@@ -2198,7 +2198,7 @@ def get_pic0_from_game(game_id, game, cue):
             ns = (1000, int(1000 * ar))
             if ns[1] > 500:
                 ns = (int(ns[0] * 500 / ns[1]), int(ns[1] * 500 / ns[1]))
-            pic0 = pic0.resize(ns, Image.Resampling.NEAREST)
+            pic0 = pic0.resize(ns, Image.Resampling.LANCZOS)
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
             i.paste(pic0, (int((1000 - pic0.size[0]) / 2),
@@ -2430,7 +2430,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         except:
             os.mkdir(dest + '/Named_Boxarts')
     
-        image = icon0.resize((256,256), Image.Resampling.BILINEAR)
+        image = icon0.resize((256,256), Image.Resampling.LANCZOS)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Boxarts/' + game_title + '.png'
         print('Save cover as', f) if verbose else None
@@ -2440,7 +2440,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
             os.stat(args.retroarch_thumbnail_dir + '/Named_Snaps')
         except:
             os.mkdir(args.retroarch_thumbnail_dir + '/Named_Snaps')
-        image = pic1.resize((512,256), Image.Resampling.BILINEAR)
+        image = pic1.resize((512,256), Image.Resampling.LANCZOS)
         #The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: &*/:`<>?\|
         f = args.retroarch_thumbnail_dir + '/Named_Snaps/' + game_title + '.png'
         print('Save snap as', f) if verbose else None
@@ -2602,7 +2602,7 @@ def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
         True
 
     with open(f + '/' + game_id[0:4] + '-' + game_id[4:9] + '.bmp', 'wb') as d:
-        image = icon0.resize((80,84), Image.Resampling.BILINEAR)
+        image = icon0.resize((80,84), Image.Resampling.LANCZOS)
         i = io.BytesIO()
         image.save(i, format='BMP')
         i.seek(0)
@@ -2783,7 +2783,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     if logo:
         image = logo
         if image.size != (480,272):
-            image = image.resize((480, 272), Image.Resampling.HAMMING)
+            image = image.resize((480, 272), Image.Resampling.LANCZOS)
         i = io.BytesIO()
         image.save(i, format='PNG')
         i.seek(0)
@@ -2794,10 +2794,10 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image = icon0
         if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
             if icon0.size != (80,80):
-                image = icon0.resize((80, 80), Image.Resampling.HAMMING)
+                image = icon0.resize((80, 80), Image.Resampling.LANCZOS)
         else:
             if icon0.size != (144,80):
-                image = icon0.resize((144, 80), Image.Resampling.HAMMING)
+                image = icon0.resize((144, 80), Image.Resampling.LANCZOS)
         i = io.BytesIO()
         image.save(i, format='PNG')
         i.seek(0)
@@ -2805,7 +2805,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
 
     # Convert PIC0 to a file object
     if pic0:
-        pic0 = pic0.resize((310, 180), Image.Resampling.BILINEAR).convert("RGBA")
+        pic0 = pic0.resize((310, 180), Image.Resampling.LANCZOS).convert("RGBA")
         i = io.BytesIO()
         pic0.save(i, format='PNG')
         i.seek(0)
@@ -2813,7 +2813,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     
     # Convert PIC1 to a file object
     if pic1:
-        pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
+        pic1 = pic1.resize((480, 272), Image.Resampling.LANCZOS).convert("RGBA")
         if watermark:
             try:
                 pic1 = add_image_text(pic1, game_title, disc_ids[0])
@@ -2915,14 +2915,14 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     print('Create PS Classics/AutoBleem EBOOT.PBP for', game_title) if verbose else None
 
     # Convert ICON0 to a file object
-    image = icon0.resize((80,80), Image.Resampling.BILINEAR)
+    image = icon0.resize((80,80), Image.Resampling.LANCZOS)
     i = io.BytesIO()
     image.save(i, format='PNG')
     i.seek(0)
     icon0 = i.read()
 
     # Convert PIC1 to a file object
-    pic1 = pic1.resize((480, 272), Image.Resampling.BILINEAR).convert("RGBA")
+    pic1 = pic1.resize((480, 272), Image.Resampling.LANCZOS).convert("RGBA")
     if watermark:
         try:
             pic1 = add_image_text(pic1, game_title, disc_ids[0])
@@ -3072,13 +3072,13 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     image = icon0
     if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
         if icon0.size != (176, 176):
-            icon0 = icon0.resize((176, 176), Image.Resampling.HAMMING)
+            icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
         image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
         image.putalpha(0)
         image.paste(icon0, (72,0))
     else:
         if icon0.size != (320, 176):
-            image = icon0.resize((320, 176), Image.Resampling.HAMMING)
+            image = icon0.resize((320, 176), Image.Resampling.LANCZOS)
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')
 
@@ -3094,12 +3094,12 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             pp.putalpha(0)
             pp.paste(pic0, (int((pic0.size[1] * 1.777 - pic0.size[0]) / 2),0))
 
-        image = pp.resize((1000, 560), Image.Resampling.NEAREST)
+        image = pp.resize((1000, 560), Image.Resampling.LANCZOS)
         image.save(f + '/PIC0.PNG', format='PNG')
         temp_files.append(f + '/PIC0.PNG')
 
     if pic1:
-        image = pic1.resize((1920, 1080), Image.Resampling.NEAREST)
+        image = pic1.resize((1920, 1080), Image.Resampling.LANCZOS)
         image.save(f + '/PIC1.PNG', format='PNG')
         temp_files.append(f + '/PIC1.PNG')
     
@@ -3115,7 +3115,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
             pp.putalpha(0)
             pp.paste(pic0, (0, int((pic0.size[0] / 1.333 - pic0.size[1]) / 2)))
 
-        image = pp.resize((310, 250), Image.Resampling.NEAREST)
+        image = pp.resize((310, 250), Image.Resampling.LANCZOS)
         image.save(f + '/PIC2.PNG', format='PNG')
         temp_files.append(f + '/PIC2.PNG')
     
@@ -3181,7 +3181,7 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         os.mkdir(f)
     except:
         True
-    image = icon0.resize((80,80), Image.Resampling.BILINEAR)
+    image = icon0.resize((80,80), Image.Resampling.LANCZOS)
     i = io.BytesIO()
     image.save(f + '/ICON0.PNG', format='PNG')
     temp_files.append(f + '/ICON0.PNG')    
@@ -4603,7 +4603,7 @@ if __name__ == "__main__":
     if args.retroarch_pbp_dir:
         new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
         if icon0:
-            image = icon0.resize((80,80), Image.Resampling.BILINEAR)
+            image = icon0.resize((80,80), Image.Resampling.LANCZOS)
             i = io.BytesIO()
             image.save(i, format='PNG')
             i.seek(0)
