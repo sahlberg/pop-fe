@@ -27980,12 +27980,13 @@ games = {
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Contra%20-%20Legacy%20of%20War%20%28USA%29_jp2.zip',
     },
     'SCES00568': {
-        'url': "games/P/C/SCES-00568.html",'pspconfigs/Cool Boarders/SLPS-91031.bin'
+        'url': "games/P/C/SCES-00568.html",
     	'id': 'SCES00568',
 	'title': "COOL BOARDERS",
         'pic0': 'https://images.launchbox-app.com/8a522444-d0c5-4e66-8eaa-0b955ffaafcb.png',
         'pic1': 'https://images.launchbox-app.com/e61b383b-29cf-4f83-9d34-5af10e4ddde6.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Cool%20Boarders%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Cool Boarders/SLPS-91031.bin',
     },
     'SCES00992': {
         'url': "games/P/C/SCES-00992.html",
