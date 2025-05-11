@@ -8014,6 +8014,8 @@ games = {
     	'id': 'SLUS01284',
 	'title': "DRACULA - THE RESURRECTION",
         'pic0': 'https://images.launchbox-app.com/0c71e8c6-fcba-479e-bb8d-8f4d632fdfa1.png',
+        'pic1': 'https://images.launchbox-app.com//3d30ee75-26c1-4aee-afb3-8bb80a67159b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-9H3DAoYEMA',
         'manual': 'https://www.videogamemanual.com/ps1/Dracula%20-%20The%20Resurrection%20(USA).pdf',
     },
     'SLUS01316': {
@@ -8021,6 +8023,8 @@ games = {
     	'id': 'SLUS01316',
 	'title': "DRACULA - THE RESURRECTION",
         'pic0': 'https://images.launchbox-app.com/0c71e8c6-fcba-479e-bb8d-8f4d632fdfa1.png',
+        'pic1': 'https://images.launchbox-app.com//3d30ee75-26c1-4aee-afb3-8bb80a67159b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-9H3DAoYEMA',
         'manual': 'https://www.videogamemanual.com/ps1/Dracula%20-%20The%20Resurrection%20(USA).pdf',
     },
     'SLUS01440': {
@@ -8028,6 +8032,8 @@ games = {
     	'id': 'SLUS01440',
 	'title': "DRACULA 2 - THE LAST SANCTUARY",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://www.videogamemanual.com/ps1/Dracula%20-%20The%20Last%20Sanctuary%20(USA).pdf',
     },
     'SLUS01443': {
@@ -8035,6 +8041,8 @@ games = {
     	'id': 'SLUS01443',
 	'title': "DRACULA 2 - THE LAST SANCTUARY",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://www.videogamemanual.com/ps1/Dracula%20-%20The%20Last%20Sanctuary%20(USA).pdf',
     },
     'SLUS00493': {
@@ -14282,6 +14290,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=iLsOx-jCLXg&list=PLlMTQ4uzWB0gqTubjIu3Oh2aTN80ty78l&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Dark%20Forces%20(USA).pdf',
     },
     'SLUS01183': {
@@ -14290,6 +14299,7 @@ games = {
 	'title': "STAR WARS - DEMOLITION",
         'pic0': 'https://images.launchbox-app.com/6053b7c9-5bb3-438b-abae-8fa91b537d1f.png',
         'pic1': 'https://images.launchbox-app.com/6e9edbba-9131-4ff3-b61f-4c1513bda656.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FnqZNVcGnhc&list=PLhPt7n-ALrSCfE4YrfbyHFM0tdZ1Y1WEx&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Demolition%20(USA).pdf',
     },
     'SLUS01046': {
@@ -14298,6 +14308,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20(USA).pdf',
     },
     'SLUS00884_DEMO': {
@@ -14306,6 +14317,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (DEMO)",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20(USA).pdf',
         'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
     },
@@ -14315,6 +14327,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (Rev 1.1)",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20(USA).pdf',
         'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
     },
@@ -14324,6 +14337,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20(USA).pdf',
         'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
     },
@@ -14573,6 +14587,7 @@ games = {
 	'title': "SUIKODEN",
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Suikoden%20(USA).pdf',
         'pspconfig': 'pspconfigs/Suikoden/SLUS-00292.bin',
     },
@@ -15129,6 +15144,8 @@ games = {
     	'id': 'SLUS01457',
 	'title': "THE ITALIAN JOB",
         'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
+        'pic1': 'https://images.launchbox-app.com//66b6d1a7-6a76-4fe6-9d0e-9f009dc2f859.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JXqIDWYtBKs&list=PLrzjKKD7LIrpfdBBlDV_wsBHUyVT0pWDK&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Italian%20Job,%20The%20(USA).pdf',
     },
     'SCUS94205': {
@@ -15910,6 +15927,8 @@ games = {
     	'id': 'SLUS01091',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'pic1': 'https://images.launchbox-app.com//91ea7859-9ee2-49fa-a7e8-351ae55d4897.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=W9Hd1QuG5Zc&list=PL269891A93CAB7588&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Urban%20Chaos%20(USA).pdf',
     },
     'SLUS01228':       {
@@ -22974,18 +22993,24 @@ games = {
     	'id': 'SLES02757',
 	'title': "DRACULA - THE RESURRECTION",
         'pic0': 'https://images.launchbox-app.com/0c71e8c6-fcba-479e-bb8d-8f4d632fdfa1.png',
+        'pic1': 'https://images.launchbox-app.com//3d30ee75-26c1-4aee-afb3-8bb80a67159b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-9H3DAoYEMA',
     },
     'SLES12757': {
         'url': "games/P/D/SLES-02757.html",
     	'id': 'SLES12757',
 	'title': "DRACULA - THE RESURRECTION",
         'pic0': 'https://images.launchbox-app.com/0c71e8c6-fcba-479e-bb8d-8f4d632fdfa1.png',
+        'pic1': 'https://images.launchbox-app.com//3d30ee75-26c1-4aee-afb3-8bb80a67159b.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=-9H3DAoYEMA',
     },
     'SLES03350': {
         'url': "games/P/D/SLES-03350.html",
     	'id': 'SLES03350',
 	'title': "DRACULA 2 - DIE LETZE ZUFLUCHTSSTTTE",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES13350': {
@@ -22993,6 +23018,8 @@ games = {
     	'id': 'SLES13350',
 	'title': "DRACULA 2 - DIE LETZE ZUFLUCHTSSTTTE",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES03352': {
@@ -23000,6 +23027,8 @@ games = {
     	'id': 'SLES03352',
 	'title': "DRACULA 2 - EL ALTIMO SANTUARIO",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES13352': {
@@ -23007,6 +23036,8 @@ games = {
     	'id': 'SLES13352',
 	'title': "DRACULA 2 - EL ALTIMO SANTUARIO",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES03349': {
@@ -23014,6 +23045,8 @@ games = {
     	'id': 'SLES03349',
 	'title': "DRACULA 2 - LE DERNIER SANCTUAIRE",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES13349': {
@@ -23021,6 +23054,8 @@ games = {
     	'id': 'SLES13349',
 	'title': "DRACULA 2 - LE DERNIER SANCTUAIRE",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES03351': {
@@ -23028,6 +23063,8 @@ games = {
     	'id': 'SLES03351',
 	'title': "DRACULA 2 - L'ULTIMO SANTUARIO",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES13351': {
@@ -23035,6 +23072,8 @@ games = {
     	'id': 'SLES13351',
 	'title': "DRACULA 2 - L'ULTIMO SANTUARIO",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES03348': {
@@ -23042,6 +23081,8 @@ games = {
     	'id': 'SLES03348',
 	'title': "DRACULA 2 - THE LAST SANCTUARY",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES13348': {
@@ -23049,6 +23090,8 @@ games = {
     	'id': 'SLES13348',
 	'title': "DRACULA 2 - THE LAST SANCTUARY",
         'pic0': 'https://images.launchbox-app.com/8a8c1cb5-94ee-472b-bc79-570688e7c35c.png',
+        'pic1': 'https://images.launchbox-app.com//dde022a1-b4db-4a51-aed3-f65f695f2149.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=Lou92TUKraQ',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dracula%20-%20The%20Last%20Sanctuary%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
     'SLES00964': {
@@ -34025,6 +34068,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=iLsOx-jCLXg&list=PLlMTQ4uzWB0gqTubjIu3Oh2aTN80ty78l&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Dark%20Forces%20%28USA%29_jp2.zip',
     },
     'SLES00640': {
@@ -34033,6 +34077,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=iLsOx-jCLXg&list=PLlMTQ4uzWB0gqTubjIu3Oh2aTN80ty78l&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Dark%20Forces%20%28USA%29_jp2.zip',
     },
     'SLES00646': {
@@ -34041,6 +34086,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=iLsOx-jCLXg&list=PLlMTQ4uzWB0gqTubjIu3Oh2aTN80ty78l&index=1',
         'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20Dark%20Forces%20[SLES-00646]%20(S).cbr',
     },
     'SLES03273': {
@@ -34049,6 +34095,7 @@ games = {
 	'title': "STAR WARS - DEMOLITION",
         'pic0': 'https://images.launchbox-app.com/6053b7c9-5bb3-438b-abae-8fa91b537d1f.png',
         'pic1': 'https://images.launchbox-app.com/6e9edbba-9131-4ff3-b61f-4c1513bda656.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FnqZNVcGnhc&list=PLhPt7n-ALrSCfE4YrfbyHFM0tdZ1Y1WEx&index=1',
     },
     'SLES03274': {
         'url': "games/P/S/SLES-03274.html",
@@ -34056,6 +34103,7 @@ games = {
 	'title': "STAR WARS - DEMOLITION",
         'pic0': 'https://images.launchbox-app.com/6053b7c9-5bb3-438b-abae-8fa91b537d1f.png',
         'pic1': 'https://images.launchbox-app.com/6e9edbba-9131-4ff3-b61f-4c1513bda656.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FnqZNVcGnhc&list=PLhPt7n-ALrSCfE4YrfbyHFM0tdZ1Y1WEx&index=1',
     },
     'SLES03275': {
         'url': "games/P/S/SLES-03275.html",
@@ -34063,6 +34111,7 @@ games = {
 	'title': "STAR WARS - DEMOLITION",
         'pic0': 'https://images.launchbox-app.com/6053b7c9-5bb3-438b-abae-8fa91b537d1f.png',
         'pic1': 'https://images.launchbox-app.com/6e9edbba-9131-4ff3-b61f-4c1513bda656.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=FnqZNVcGnhc&list=PLhPt7n-ALrSCfE4YrfbyHFM0tdZ1Y1WEx&index=1',
     },
     'SLES02607': {
         'url': "games/P/S/SLES-02607.html",
@@ -34070,6 +34119,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
     'SLES02608': {
@@ -34078,6 +34128,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
     'SLES02609': {
@@ -34086,6 +34137,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
     'SLES02610': {
@@ -34094,6 +34146,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
     'SLES02611': {
@@ -34102,6 +34155,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - JEDI POWER BATTLES",
         'pic0': 'https://images.launchbox-app.com/22ca9c28-a484-4cc8-8f8c-c60d410f2fe9.png',
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
+        'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20%28USA%29_jp2.zip',
     },
     'SLES02034': {
@@ -34110,6 +34164,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
     },
     'SLES02035': {
@@ -34544,6 +34599,7 @@ games = {
 	'title': "SUIKODEN",
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Suikoden/SLES-00527.bin',
     },
@@ -35486,12 +35542,16 @@ games = {
     	'id': 'SLES03489',
 	'title': "THE ITALIAN JOB",
         'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
+        'pic1': 'https://images.launchbox-app.com//66b6d1a7-6a76-4fe6-9d0e-9f009dc2f859.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JXqIDWYtBKs&list=PLrzjKKD7LIrpfdBBlDV_wsBHUyVT0pWDK&index=1',
     },
     'SLES03626': {
         'url': "games/P/T/SLES-03626.html",
     	'id': 'SLES03626',
 	'title': "THE ITALIAN JOB",
         'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
+        'pic1': 'https://images.launchbox-app.com//66b6d1a7-6a76-4fe6-9d0e-9f009dc2f859.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JXqIDWYtBKs&list=PLrzjKKD7LIrpfdBBlDV_wsBHUyVT0pWDK&index=1',
         'manual': 'https://psxdatacenter.com/manuals/The%20Italian%20Job%20[SLES-03626]%20(S).cbr',
     },
     'SLES03648': {
@@ -35499,6 +35559,8 @@ games = {
     	'id': 'SLES03648',
 	'title': "THE ITALIAN JOB",
         'pic0': 'https://images.launchbox-app.com/15512405-6670-46b0-bf4c-43ba76ef93fc.png',
+        'pic1': 'https://images.launchbox-app.com//66b6d1a7-6a76-4fe6-9d0e-9f009dc2f859.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=JXqIDWYtBKs&list=PLrzjKKD7LIrpfdBBlDV_wsBHUyVT0pWDK&index=1',
     },
     'SCES00562': {
         'url': "games/P/T/SCES-00562.html",
@@ -37157,6 +37219,8 @@ games = {
     	'id': 'SLES02071',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'pic1': 'https://images.launchbox-app.com//91ea7859-9ee2-49fa-a7e8-351ae55d4897.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=W9Hd1QuG5Zc&list=PL269891A93CAB7588&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES02354': {
@@ -37164,6 +37228,8 @@ games = {
     	'id': 'SLES02354',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'pic1': 'https://images.launchbox-app.com//91ea7859-9ee2-49fa-a7e8-351ae55d4897.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=W9Hd1QuG5Zc&list=PL269891A93CAB7588&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES02355': {
@@ -37171,6 +37237,8 @@ games = {
     	'id': 'SLES02355',
 	'title': "URBAN CHAOS",
         'pic0': 'https://images.launchbox-app.com/8e793774-1645-4944-93b5-bff5f86d0320.png',
+        'pic1': 'https://images.launchbox-app.com//91ea7859-9ee2-49fa-a7e8-351ae55d4897.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=W9Hd1QuG5Zc&list=PL269891A93CAB7588&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Urban%20Chaos%20%28USA%29_jp2.zip',
     },
     'SLES03810': {
@@ -48600,22 +48668,16 @@ games = {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87330',
 	'title': "FRONT MISSION HISTORY",
-        'pic0': 'https://ibb.co/5kW0vYQ',
-        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87331': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87331',
 	'title': "FRONT MISSION HISTORY",
-        'pic0': 'https://ibb.co/5kW0vYQ',
-        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SLPM87332': {
         'url': "games/J/F/SLPM-87330.html",
     	'id': 'SLPM87332',
 	'title': "FRONT MISSION HISTORY",
-        'pic0': 'https://ibb.co/5kW0vYQ',
-        'pic1': 'https://ibb.co/VDXJ6DR',
     },
     'SCPS45116': {
         'url': "games/J/F/SCPS-45116.html",
@@ -49407,6 +49469,7 @@ games = {
 	'title': "GENSO SUIKODEN",
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Suikoden/SCPS-45184.bin',
     },
@@ -49417,6 +49480,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'pspconfig': 'pspconfigs/Suikoden/SLPS-00097.bin',
     },
     'SLPM86017': {
@@ -49425,6 +49489,7 @@ games = {
 	'title': "GENSO SUIKODEN [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Suikoden/SLPM-86017.bin',
     },
@@ -49434,6 +49499,7 @@ games = {
 	'title': "GENSO SUIKODEN [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/50b73820-5885-49dd-be81-d35dac62bc4b.png',
         'pic1': 'https://images.launchbox-app.com/43b39774-e816-43ad-b432-7d2d80e2c42d.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Suikoden%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Suikoden/SLPM-87099.bin',
     },
@@ -67291,6 +67357,7 @@ games = {
 	'title': "STAR WARS - DARK FORCES",
         'pic0': 'https://images.launchbox-app.com/0438c82b-e87f-439b-972c-0d1d60d09d45.png',
         'pic1': 'https://images.launchbox-app.com/6f204581-ad22-4faf-b914-9ba78a91e7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=iLsOx-jCLXg&list=PLlMTQ4uzWB0gqTubjIu3Oh2aTN80ty78l&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Dark%20Forces%20%28USA%29_jp2.zip',
     },
     'SLPS02153': {
@@ -67299,6 +67366,7 @@ games = {
 	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE",
         'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
     },
     'SLPS01464': {
@@ -67685,6 +67753,7 @@ games = {
 	'title': "SUIKODEN - TENDOU 108 SEI",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
         'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPM86991': {
         'url': "games/J/S/SLPM-86991.html",
@@ -67692,6 +67761,7 @@ games = {
 	'title': "SUIKODEN - TENDOU 108 SEI [KOEI TEIBAN SERIES]",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
         'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPM86308': {
         'url': "games/J/S/SLPM-86308.html",
@@ -67699,6 +67769,7 @@ games = {
 	'title': "SUIKODEN - TENDOU 108 SEI [KOEI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/bc37e909-12b7-486d-8bfb-5ccc888f830e.png',
         'pic1': 'https://images.launchbox-app.com/dd0405f0-c30e-4ec8-a5fb-d53ac91acdfc.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPS00521': {
         'url': "games/J/S/SLPS-00521.html",
@@ -67706,6 +67777,7 @@ games = {
 	'title': "SUIKODEN - TENMEI NO CHIKAI",
         'pic0': 'https://images.launchbox-app.com/a0d4ee28-e7f4-4a4a-847e-bdc70d3e08c8.png',
         'pic1': 'https://images.launchbox-app.com/5b3db549-fa26-4064-b8d4-22bced6351e9.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPM86743': {
         'url': "games/J/S/SLPM-86743.html",
@@ -67713,6 +67785,7 @@ games = {
 	'title': "SUIKODEN - TENMEI NO CHIKAI [KOEI TEIBAN SERIES]",
         'pic0': 'https://images.launchbox-app.com/a0d4ee28-e7f4-4a4a-847e-bdc70d3e08c8.png',
         'pic1': 'https://images.launchbox-app.com/5b3db549-fa26-4064-b8d4-22bced6351e9.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPM86188': {
         'url': "games/J/S/SLPM-86188.html",
@@ -67720,6 +67793,7 @@ games = {
 	'title': "SUIKODEN - TENMEI NO CHIKAI [KOEI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/a0d4ee28-e7f4-4a4a-847e-bdc70d3e08c8.png',
         'pic1': 'https://images.launchbox-app.com/5b3db549-fa26-4064-b8d4-22bced6351e9.png',
+        'snd0': 'https://www.youtube.com/watch?v=RYQF7269Mwc&list=PLGLnRhR0_m790484gaatVznLKhEi2onOZ&index=2',
     },
     'SLPS01809': {
         'url': "games/J/S/SLPS-01809.html",
