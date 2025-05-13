@@ -2181,6 +2181,11 @@ def get_pic0_from_game(game_id, game, cue):
             i.paste(pic0, ns)
             pic0 = i
     
+        if 'pic0-offset' in games[game_id]:
+            off = games[game_id]['pic0-offset']
+        else:
+            off = (0,0)
+
         # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
         ar = pic0.height / pic0.width
         if pic0.height * ar > 560:
@@ -2191,8 +2196,8 @@ def get_pic0_from_game(game_id, game, cue):
                 pic0 = pic0.resize((1000, int(pic0.height * ar)), Image.Resampling.LANCZOS)
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
-            ns = (int((1000 - pic0.size[0]) / 2), 0)
-            i.paste(pic0, ns)
+            ns = (int((1000 - pic0.size[0]) / 2 + off[0]), 0 + off[1])
+            i.paste(pic0, ns, off)
             pic0 = i
         else:
             ns = (1000, int(1000 * ar))
@@ -2201,8 +2206,8 @@ def get_pic0_from_game(game_id, game, cue):
             pic0 = pic0.resize(ns, Image.Resampling.LANCZOS)
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
-            i.paste(pic0, (int((1000 - pic0.size[0]) / 2),
-                           int((560 - pic0.size[1]) / 2)))
+            i.paste(pic0, (int((1000 - pic0.size[0]) / 2 + off[0]),
+                           int((560 - pic0.size[1]) / 2) + off[1]))
             pic0 = i
     except:
         return None
@@ -3098,11 +3103,6 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image.save(f + '/PIC0.PNG', format='PNG')
         temp_files.append(f + '/PIC0.PNG')
 
-    if pic1:
-        image = pic1.resize((1920, 1080), Image.Resampling.LANCZOS)
-        image.save(f + '/PIC1.PNG', format='PNG')
-        temp_files.append(f + '/PIC1.PNG')
-    
     if pic0:
         # 4:3 == 1.333   16:9 == 1.7777
         aspect = pic0.size[0] / pic0.size[1]
@@ -3118,6 +3118,13 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image = pp.resize((310, 250), Image.Resampling.LANCZOS)
         image.save(f + '/PIC2.PNG', format='PNG')
         temp_files.append(f + '/PIC2.PNG')
+
+    if pic1:
+        image = pic1.resize((1920, 1080), Image.Resampling.LANCZOS)
+        image.save(f + '/PIC1.PNG', format='PNG')
+        temp_files.append(f + '/PIC1.PNG')
+
+    Image.Image.paste(image, pic0, box=(1920-1060,1080-590), mask=pic0)
     
     with open('PS3LOGO.DAT', 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:

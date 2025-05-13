@@ -4677,31 +4677,26 @@ games = {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02325',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
-        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02326': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02326',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
-        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02327': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02327',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
-        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02328': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02328',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
-        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02329': {
         'url': "games/J/Y/SLPS-02325.html",
     	'id': 'SLPS02329',
 	'title': "YUKYU GENSOUKYOKU - PERPETUAL COLLECTION",
-        'pic0': 'https://ibb.co/mB8Rjgc',
     },
     'SLPS02911': {
         'url': "games/J/Y/SLPS-02911.html",
@@ -25983,6 +25978,8 @@ games = {
     	'id': 'SLES01370',
 	'title': "METAL GEAR SOLID",
         'pic0': 'https://images.launchbox-app.com/c030fe16-176d-4425-8c85-e9f14baeb7c6.png',
+        #'pic0-scaling': 0.5,
+        #'pic0-offset': (200,100),
         'pic1': 'https://images.launchbox-app.com/303f39ec-057c-491c-bc42-25e164f99e31.jpg',
         'snd0': 'https://www.youtube.com/watch?v=EzzJ9Z2sF5Y&list=PL31382B41F1B268A4&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Metal%20Gear%20Solid%20%28USA%29%20%28Disc%201%29_jp2.zip',
@@ -39185,7 +39182,6 @@ games = {
     	'id': 'SLPS01280',
 	'title': "ABALABURN",
         'pic0': 'https://images.launchbox-app.com/c27aa08c-2243-43b9-bf2d-e68273a62793.png',
-        'pic1': 'https://ibb.co/hx6Vspts',
     },
     'SLPS01118': {
         'url': "games/J/A/SLPS-01118.html",
@@ -48630,21 +48626,18 @@ games = {
     	'id': 'SLPS03252',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN!",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03555': {
         'url': "games/J/F/SLPS-03555.html",
     	'id': 'SLPS03555',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN! [BANDAI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03251': {
         'url': "games/J/F/SLPS-03251.html",
     	'id': 'SLPS03251',
 	'title': "FROM TV ANIMATION - ONE PIECE - TOBIDASE KAIZOKUDAN! [POCKETSTATION PACKAGE]",
         'pic0': 'https://images.launchbox-app.com/5013eca0-3bfc-4eaa-b7e4-f64edd0433d7.png',
-        'pic1': 'https://ibb.co/Sdk9rMv',
     },
     'SLPS03164': {
         'url': "games/J/F/SLPS-03164.html",
@@ -57171,14 +57164,12 @@ games = {
         'url': "games/J/M/SCPS-45241.html",
     	'id': 'SCPS45241',
 	'title': "MIRACLE JUMPERS",
-        'pic0': 'https://ibb.co/Lzb2F7sx',
         'pic1': 'https://images.launchbox-app.com/cff3f31c-f92d-4041-95f5-02de4abf80f2.jpg',
     },
     'SLPS01224': {
         'url': "games/J/M/SLPS-01224.html",
     	'id': 'SLPS01224',
 	'title': "MIRACLE JUMPERS",
-        'pic0': 'https://ibb.co/Lzb2F7sx',
         'pic1': 'https://images.launchbox-app.com/cff3f31c-f92d-4041-95f5-02de4abf80f2.jpg',
     },
     'SLPS00110': {
@@ -61595,7 +61586,6 @@ games = {
     	'id': 'SLPS02387',
 	'title': "PRISONER",
         'pic0': 'https://images.launchbox-app.com/1fac9f69-5aa2-404d-861e-f82cef53b9e2.png',
-        'pic1': 'https://ibb.co/bj5YLGPm',
     },
     'SLPS01129': {
         'url': "games/J/P/SLPS-01129.html",
@@ -67716,19 +67706,16 @@ games = {
         'url': "games/J/S/SLPS-02234.html",
     	'id': 'SLPS02234',
 	'title': "SUBMARINE HUNTER SYA-CHI",
-        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS91509': {
         'url': "games/J/S/SLPS-91509.html",
     	'id': 'SLPS91509',
 	'title': "SUBMARINE HUNTER SYA-CHI [PSONE BOOKS]",
-        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS03294': {
         'url': "games/J/S/SLPS-03294.html",
     	'id': 'SLPS03294',
 	'title': "SUBMARINE HUNTER SYA-CHI [VICTOR INTERACTIVE SOFTWARE BEST]",
-        'pic0': 'https://ibb.co/jv1GsQ1x',
     },
     'SLPS01264': {
         'url': "games/J/S/SLPS-01264.html",
