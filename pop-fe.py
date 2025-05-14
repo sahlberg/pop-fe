@@ -2215,7 +2215,7 @@ def get_pic0_from_game(game_id, game, cue):
             i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
             i.putalpha(0)
             ns = (int((1000 - pic0.size[0]) / 2 + off[0]), 0 + off[1])
-            i.paste(pic0, ns, off)
+            i.paste(pic0, ns)
             pic0 = i
         else:
             ns = (1000, int(1000 * ar))
