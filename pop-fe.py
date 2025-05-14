@@ -1882,6 +1882,22 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
+def has_transparency(img):
+    if img.info.get("transparency", None) is not None:
+        return True
+    if img.mode == "P":
+        transparent = img.info.get("transparency", -1)
+        for _, index in img.getcolors():
+            if index == transparent:
+                return True
+    elif img.mode == "RGBA":
+        extrema = img.getextrema()
+        if extrema[3][0] < 255:
+            return True
+
+        return False
+
+    
 def _get_gameid_from_iso(path='NORMAL01.iso'):
     with open(path, 'rb') as f:
         h = hashlib.md5(f.read(1024*1024)).hexdigest()
@@ -3124,8 +3140,6 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
         image.save(f + '/PIC1.PNG', format='PNG')
         temp_files.append(f + '/PIC1.PNG')
 
-    Image.Image.paste(image, pic0, box=(1920-1060,1080-590), mask=pic0)
-    
     with open('PS3LOGO.DAT', 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:
             o.write(i.read())
