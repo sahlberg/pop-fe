@@ -10363,8 +10363,6 @@ games = {
     	'id': 'SLUS00628',
 	'title': "LUNAR - SILVER STAR STORY COMPLETE",
         'pic0': 'https://images.launchbox-app.com/fc9d35e9-e01e-4d7d-8344-6fbcb490d508.png',
-        'pic0-scaling': 0.6,
-        'pic0-offset': (100,100),
         'pic1': 'https://images.launchbox-app.com/6d261091-0116-48bf-93a1-3fced9956b9c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=k2-x4VhKPaM',
         'manual': 'https://www.videogamemanual.com/ps1/Lunar%20-%20Silver%20Star%20Story%20Complete%20(USA).pdf',
