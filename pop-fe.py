@@ -2196,9 +2196,11 @@ def get_pic0_from_game(game_id, game, cue):
                   int((i.size[1] - pic0.size[1]) / 2))
             i.paste(pic0, ns)
             pic0 = i
-    
+
+        # pic0 is operated on in the native PS3 resolution, 1000x560
         if 'pic0-offset' in games[game_id]:
-            off = games[game_id]['pic0-offset']
+            off = (int(1000 * games[game_id]['pic0-offset'][0]),
+                   int(560 * games[game_id]['pic0-offset'][1]))
         else:
             off = (0,0)
 

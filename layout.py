@@ -28,9 +28,12 @@ if __name__ == "__main__":
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
-    #pic1 = popfe.get_pic_from_game(None, None, None, 'PIC1.PNG')
-    pic1 = popfe.get_pic1_from_game(args.gameid, None, 'nothing')
-    pic0 = popfe.get_pic0_from_game(args.gameid, None, 'nothing')
+    p1 = popfe.get_pic1_from_game(args.gameid, None, 'nothing')
+    p0 = popfe.get_pic0_from_game(args.gameid, None, 'nothing')
+
+    # PS3
+    pic0 = p0.resize((1000,560), Image.Resampling.LANCZOS)
+    pic1 = p1.resize((1920,1080), Image.Resampling.LANCZOS)
     if has_transparency(pic0):
         Image.Image.paste(pic1, pic0,
                           box=(760,425,1760,985), mask=pic0)
@@ -40,6 +43,20 @@ if __name__ == "__main__":
 
     img1 = ImageDraw.Draw(pic1)
     img1.rectangle([(760,425),(1760,985)], outline ="red") 
+    pic1.show()
+
+    # PSP
+    pic0 = p0.resize((280,170), Image.Resampling.LANCZOS)
+    pic1 = p1.resize((480,272), Image.Resampling.LANCZOS)
+    if has_transparency(pic0):
+        Image.Image.paste(pic1, pic0,
+                          box=(190,100,470,270), mask=pic0)
+    else:
+        Image.Image.paste(pic1, pic0,
+                          box=(190,100,470,270))
+
+    img1 = ImageDraw.Draw(pic1)
+    img1.rectangle([(190,100),(470,270)], outline ="red") 
     pic1.show()
     
     # PIC0 at  760, 425   1760, 985
