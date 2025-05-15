@@ -162,6 +162,9 @@ Command line arguments are:
 --ps1_newemu          : This only applies for PS3 PKGs. This switches the
                         emulator to use to ps1_newemu instead of the default
 			ps1_netemu.
+--swap-discs          : This only applies for PS3 PKGs. This adds a ps3 netemu
+                        command that enables switching and resetting to disks in
+			ps1_netemu.
 --romhacks            : Comma separated list of romhacks to apply.
 		        Only supported types are .ppf and .xdelta files.
 			There must be one romhack for each disk image in the
