@@ -72837,6 +72837,9 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'e2135fbe4cf58381401ec2aebad1593f': { # Italian translation of vagrant story
+        'id': 'SLES02754',
+    },
     '6e7f696c6a19c32e001a3e8f4628300e': { # resident evil 1.5
         'id': 'SLUS99999',
     },
