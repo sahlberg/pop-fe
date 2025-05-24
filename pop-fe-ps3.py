@@ -216,6 +216,7 @@ class PopFePs3App:
             else:
                 p1 = self.back.resize((382,216), Image.Resampling.HAMMING)
         if self.pic0 and self.pic0_disabled == 'off':
+            p1 = p1.convert('RGBA')
             p0 = self.pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
             if has_transparency(p0):
                 Image.Image.paste(p1, p0, box=(148,79), mask=p0)

@@ -377,6 +377,7 @@ class PopFePs3App:
             p1 = _pic1.resize((382,216), Image.Resampling.HAMMING)
         else:
             p1 = Image.new('RGBA', (382,216), (0,0,0))
+        p1 = p1.convert('RGBA')
         if _pic0:
             p0 = _pic0.resize((int(p1.size[0] * 0.55) , int(p1.size[1] * 0.58)), Image.Resampling.HAMMING)
             if has_transparency(p0):
