@@ -41,6 +41,7 @@ if __name__ == "__main__":
         Image.Image.paste(pic1, pic0,
                           box=(760,425,1760,985))
 
+    pic1 = pic1.convert('RGBA')
     img1 = ImageDraw.Draw(pic1)
     img1.rectangle([(760,425),(1760,985)], outline ="red") 
     pic1.show()
