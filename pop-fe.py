@@ -2187,46 +2187,19 @@ def get_pic0_from_game(game_id, game, cue):
         # If we need to rescale, paste the image into a larger transparent
         # canvas first before we rescale it below
         if 'pic0-scaling' in games[game_id]:
-            i = Image.new(pic0.mode,
-                    (int(pic0.size[0] / games[game_id]['pic0-scaling']),
-                     int(pic0.size[1] / games[game_id]['pic0-scaling'])),
-                    (0,0,0)).convert('RGBA')
-            i.putalpha(0)
-            ns = (int((i.size[0] - pic0.size[0]) / 2),
-                  int((i.size[1] - pic0.size[1]) / 2))
-            i.paste(pic0, ns)
-            pic0 = i
-
-        # pic0 is operated on in the native PS3 resolution, 1000x560
+            sc = games[game_id]['pic0-scaling']
+        else:
+            sc = (0.6, 0.6)
         if 'pic0-offset' in games[game_id]:
-            off = (int(1000 * games[game_id]['pic0-offset'][0]),
-                   int(560 * games[game_id]['pic0-offset'][1]))
+            of = games[gameid]['pic0-offset']
         else:
-            off = (0,0)
+            of = (0.30, 0.30)
 
-        # resize to maximum 1000,560 (ps3 PIC0 size) keeping aspect ratio
-        ar = pic0.height / pic0.width
-        if pic0.height * ar > 560:
-            if int(560 / ar) < 1000:
-                pic0 = pic0.resize((int(560 / ar), 560), Image.Resampling.LANCZOS)
-            else:
-                ar = 1000 / pic0.width
-                pic0 = pic0.resize((1000, int(pic0.height * ar)), Image.Resampling.LANCZOS)
-            i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
-            i.putalpha(0)
-            ns = (int((1000 - pic0.size[0]) / 2 + off[0]), 0 + off[1])
-            i.paste(pic0, ns)
-            pic0 = i
-        else:
-            ns = (1000, int(1000 * ar))
-            if ns[1] > 500:
-                ns = (int(ns[0] * 500 / ns[1]), int(ns[1] * 500 / ns[1]))
-            pic0 = pic0.resize(ns, Image.Resampling.LANCZOS)
-            i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
-            i.putalpha(0)
-            i.paste(pic0, (int((1000 - pic0.size[0]) / 2 + off[0]),
-                           int((560 - pic0.size[1]) / 2) + off[1]))
-            pic0 = i
+        pic0 = pic0.resize((int(1000 * sc[0]), int(560 * sc[1])), Image.Resampling.LANCZOS)
+        i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
+        i.putalpha(0)
+        i.paste(pic0, (int(1000 * of[0]), int(560 * of[1])))
+        pic0 = i
     except:
         return None
 
