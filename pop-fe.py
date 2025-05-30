@@ -2191,7 +2191,7 @@ def get_pic0_from_game(game_id, game, cue):
         else:
             sc = (0.6, 0.6)
         if 'pic0-offset' in games[game_id]:
-            of = games[gameid]['pic0-offset']
+            of = games[game_id]['pic0-offset']
         else:
             of = (0.30, 0.30)
 

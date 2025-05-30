@@ -64589,12 +64589,16 @@ games = {
     	'id': 'SLPS01940',
 	'title': "SEPTENTRION - OUT OF THE BLUE",
         'pic0': 'https://images.launchbox-app.com/919e9522-e7b4-4eeb-8294-2e12954df06b.png',
+        'pic1': 'https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_1920,h_960,g_auto/dpr_auto/f_auto/q_auto:eco/v1/sinking-of-the-titanic-gettyimages-542907919-1?_a=BAVAZGDX0',
+        'snd0': 'https://www.youtube.com/watch?v=EE_EjpZGPYk',
     },
     'SLPM86612': {
         'url': "games/J/S/SLPM-86612.html",
     	'id': 'SLPM86612',
 	'title': "SEPTENTRION - OUT OF THE BLUE [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/919e9522-e7b4-4eeb-8294-2e12954df06b.png',
+        'pic1': 'https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_1920,h_960,g_auto/dpr_auto/f_auto/q_auto:eco/v1/sinking-of-the-titanic-gettyimages-542907919-1?_a=BAVAZGDX0',
+        'snd0': 'https://www.youtube.com/watch?v=EE_EjpZGPYk',
     },
     'SLPS01603': {
         'url': "games/J/S/SLPS-01603.html",
