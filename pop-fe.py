@@ -2847,21 +2847,17 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
                     snd0_data = s.read()
                     snd0 = None
     if snd0:
+        # PSP converts directly to 44100 as opposed to PS3 due to
+        # XMB differences
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
             if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stderr=subprocess.DEVNULL)
             else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stderr=subprocess.DEVNULL)
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
-        # Patch it back to 44100 to make atracdenc happy, the XMB will play it at 48000 anyway
-        with open(snd0, 'rb+') as ff:
-            _b = bytearray(4)
-            struct.pack_into('<I', _b, 0, 0xac44)
-            ff.seek(0x18)
-            ff.write(_b)
     if snd0:
         if convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir):
             with open(subdir + 'SND0.AT3', 'rb') as i:
