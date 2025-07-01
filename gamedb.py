@@ -517,6 +517,48 @@ games = {
         'pic0': '',
         'pic1': '',
     },
+    'RUSS00004': {
+        'id': 'RUSS00004',
+        'title': 'Randevu s neznakomkoj',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00005': {
+        'id': 'RUSS00005',
+        'title': 'Randevu s neznakomkoj',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00006': {
+        'id': 'RUSS00006',
+        'title': 'Randevu s neznakomkoj 2',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00007': {
+        'id': 'RUSS00007',
+        'title': 'Randevu s neznakomkoj 2',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00008': {
+        'id': 'RUSS00008',
+        'title': 'Randevu s neznakomkoj 3 - Kurortnyj roman',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
+    'RUSS00009': {
+        'id': 'RUSS00009',
+        'title': 'Randevu s neznakomkoj 3 - Kurortnyj roman',
+        'icon0': '',
+        'pic0': '',
+        'pic1': '',
+    },
     'SLED00107': {
         'id': 'SLED00107',
         'title': 'THE OFFICIAL PLAYSTATION MAGAZINE 1 [DEMO]',
@@ -9221,6 +9263,15 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e5fc586-52f2-4197-8a6d-32097460bc21.png',
         'manual': 'https://www.videogamemanual.com/ps1/Golden%20Nugget%20(USA).pdf',
     },
+    'SCUD94194_RACEMASTER': {
+        'url': "games/U/G/SCUS-94194.html",
+    	'id': 'SCUD94194',
+	'title': "RaceMaster - Gran Turismo Edition",
+        'pic0': 'https://images.launchbox-app.com/0fef30ad-3a03-48a2-ab26-fb4f44f69301.png',
+        'pic1': 'https://images.launchbox-app.com/6d25daa8-4fc9-4e9f-97ec-7cb8fbb19a23.png',
+        'snd0': 'https://www.youtube.com/watch?v=T-QJxdB4_U4&list=PL9635BCDB0EE8943B&index=1',
+        'manual': 'https://www.videogamemanual.com/ps1/Gran%20Turismo%20(USA).pdf',
+    },
     'SCUS94194': {
         'url': "games/U/G/SCUS-94194.html",
     	'id': 'SCUS94194',
@@ -12854,6 +12905,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
     },
+    'SCUS94247_DEMO': {
+        'url': "games/U/R/SCUS-94247.html",
+    	'id': 'SCUS94247',
+	'title': "RALLY CROSS 2 [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
+    },
     'SLUS01065': {
         'url': "games/U/R/SLUS-01065.html",
     	'id': 'SLUS01065',
@@ -12881,6 +12939,13 @@ games = {
         'url': "games/U/R/SLUS-00542.html",
     	'id': 'SLUS00542',
 	'title': "RASCAL",
+        'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Rascal%20(USA).pdf',
+    },
+    'SLUS00542_DEMO': {
+        'url': "games/U/R/SLUS-00542.html",
+    	'id': 'SLUS00542',
+	'title': "RASCAL [DEMO]",
         'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
         'manual': 'https://www.videogamemanual.com/ps1/Rascal%20(USA).pdf',
     },
@@ -12928,10 +12993,29 @@ games = {
         'manual': 'https://www.videogamemanual.com/ps1/Rayman%20(GH)%20(USA).pdf',
         'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
     },
+    'SLUS00005_DEMO': {
+        'url': "games/U/R/SLUS-00005.html",
+    	'id': 'SLUS00005',
+	'title': "RAYMAN [DEMO]",
+        'icon0': 'https://images.launchbox-app.com/09b793bd-683c-48b2-9d51-d5b371ae68c2.jpg',
+        'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
+        'pic1': 'https://images.launchbox-app.com/4fabedc0-2701-41b5-b8c1-86b8ee7cae82.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
+        'manual': 'https://www.videogamemanual.com/ps1/Rayman%20(GH)%20(USA).pdf',
+        'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
+    },
     'SLUS01235': {
         'url': "games/U/R/SLUS-01235.html",
     	'id': 'SLUS01235',
 	'title': "RAYMAN 2 - THE GREAT ESCAPE",
+        'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
+        'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Rayman%202%20-%20The%20Great%20Escape%20(USA).pdf',
+    },
+    'SLUS01235_DEMO': {
+        'url': "games/U/R/SLUS-01235.html",
+    	'id': 'SLUS01235',
+	'title': "RAYMAN 2 - THE GREAT ESCAPE [DEMO]",
         'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
         'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Rayman%202%20-%20The%20Great%20Escape%20(USA).pdf',
@@ -32104,6 +32188,15 @@ games = {
         'url': "games/P/R/SLES-00228.html",
     	'id': 'SLES00228',
 	'title': "RESIDENT EVIL",
+        'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
+        'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%20%28USA%29_jp2.zip',
+    },
+    'SLES00228_DEMO': {
+        'url': "games/P/R/SLES-00228.html",
+    	'id': 'SLES00228',
+	'title': "RESIDENT EVIL [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
         'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
@@ -62179,6 +62272,15 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
     },
+    'SCPS45354_KOREAN': {
+        'url': "games/J/R/SCPS-45354.html",
+    	'id': 'SCPS45354',
+	'title': "R4 - RIDGE RACER TYPE 4 [KOREAN]",
+        'pic0': 'https://images.launchbox-app.com/d3864855-d291-4287-90b3-9cb64a0481c4.png',
+        'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=g4KItJqhyTI&list=PLiYBePS6877engJr76JyPGRgyzhb-6l6_&index=1',
+        'manual': 'https://archive.org/download/SonyPlaystationManuals/R4%20-%20Ridge%20Racer%20Type%204%20%28USA%29%20%28Disc%201%29_jp2.zip',
+    },
     'SCPS45355': {
         'url': "games/J/R/SCPS-45354.html",
     	'id': 'SCPS45355',
@@ -62361,6 +62463,12 @@ games = {
 	'title': "RALLY DE AFRICA",
         'pic0': 'https://images.launchbox-app.com/d9328b43-3831-4aa8-a44e-d52ca8d87256.png',
     },
+    'SLPS01601_DEMO': {
+        'url': "games/J/R/SLPS-01601.html",
+    	'id': 'SLPS01601',
+	'title': "RALLY DE AFRICA [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/d9328b43-3831-4aa8-a44e-d52ca8d87256.png',
+    },
     'SLPS02258': {
         'url': "games/J/R/SLPS-02258.html",
     	'id': 'SLPS02258',
@@ -62430,6 +62538,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/1e0bd3f0-6798-4eb8-80a5-6b003e0c1b98.png',
         'pic1': 'https://images.launchbox-app.com/cd01ac68-7272-429f-bac0-d272fb05cf6b.jpg',
     },
+    'SCPS45487_DEMO': {
+        'url': "games/J/R/SCPS-45487.html",
+    	'id': 'SCPS45487',
+	'title': "RAYCRISIS [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/1e0bd3f0-6798-4eb8-80a5-6b003e0c1b98.png',
+        'pic1': 'https://images.launchbox-app.com/cd01ac68-7272-429f-bac0-d272fb05cf6b.jpg',
+    },
     'SLPM86450': {
         'url': "games/J/R/SLPM-86450.html",
     	'id': 'SLPM86450',
@@ -62476,6 +62591,13 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c1bc7469-f5fc-41a4-b665-ea062bfb2f00.png',
         'pic1': 'https://images.launchbox-app.com/afedcf11-e07e-4196-bcc0-a289f3a11e5c.png',
     },
+    'SLPM86546_DEMO': {
+        'url': "games/J/R/SLPM-86546.html",
+    	'id': 'SLPM86546',
+	'title': "RC DE GO! [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/c1bc7469-f5fc-41a4-b665-ea062bfb2f00.png',
+        'pic1': 'https://images.launchbox-app.com/afedcf11-e07e-4196-bcc0-a289f3a11e5c.png',
+    },
     'SLPM86635': {
         'url': "games/J/R/SLPM-86635.html",
     	'id': 'SLPM86635',
@@ -62508,6 +62630,13 @@ games = {
         'url': "games/J/R/SCPS-45033.html",
     	'id': 'SCPS45033',
 	'title': "REAL BOUT GAROU DENSETSU",
+        'pic0': 'https://images.launchbox-app.com/57bc2613-191b-4800-9671-604ba623fc66.png',
+        'pic1': 'https://images.launchbox-app.com/730c8bcc-a2d1-4ddb-912d-6a9800c9b552.jpg',
+    },
+    'SCPS45033_DEMO': {
+        'url': "games/J/R/SCPS-45033.html",
+    	'id': 'SCPS45033',
+	'title': "REAL BOUT GAROU DENSETSU [DEMO]",
         'pic0': 'https://images.launchbox-app.com/57bc2613-191b-4800-9671-604ba623fc66.png',
         'pic1': 'https://images.launchbox-app.com/730c8bcc-a2d1-4ddb-912d-6a9800c9b552.jpg',
     },
@@ -62781,10 +62910,22 @@ games = {
 	'title': "RIDEGEAR GUYBRAVE",
         'pic0': 'https://images.launchbox-app.com/b091efc9-2f88-4ead-a6cf-775f85eafd56.png',
     },
+    'SLPS00905_DEMO': {
+        'url': "games/J/R/SLPS-00905.html",
+    	'id': 'SLPS00905',
+	'title': "RIDEGEAR GUYBRAVE [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/b091efc9-2f88-4ead-a6cf-775f85eafd56.png',
+    },
     'SLPS01643': {
         'url': "games/J/R/SLPS-01643.html",
     	'id': 'SLPS01643',
 	'title': "RIDEGEAR GUYBRAVE II",
+        'pic0': 'https://images.launchbox-app.com/f8dfa70d-3d1f-4c01-8813-0c90ff1fa980.png',
+    },
+    'SLPS01643_DEMO': {
+        'url': "games/J/R/SLPS-01643.html",
+    	'id': 'SLPS01643',
+	'title': "RIDEGEAR GUYBRAVE II [DEMO]",
         'pic0': 'https://images.launchbox-app.com/f8dfa70d-3d1f-4c01-8813-0c90ff1fa980.png',
     },
     'SLPS01644': {
@@ -72882,9 +73023,97 @@ games = {
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/986b860a-09e9-496a-88d0-59bbd7416987.jpg',
     },
+    'UNRL00001': {
+        'id': 'UNRL00001',
+        'title': 'The Redeemer [UNRELEASED]',
+        'icon0': None,
+        'pic0': None,
+        'pic1': None,
+    },
 }
 
 gameid_by_md5sum = {
+    'b87b5dea53a4fc5f74f134c9007ca883': {
+        'id': 'SLES04054',
+    },
+    'ca40ee80ec2310a253c6fd47b9a85d69': {
+        'id': 'SLPS00905_DEMO',
+    },
+    '8d15223caa1c60528ffc1d744d2e0c9e': {
+        'id': 'SLPS01643_DEMO',
+    },
+    '4b3dda5c4f0218e0ca2e076681798a59': {
+        'id': 'SLES00228_DEMO',
+    },
+    '07304d09af933a66b66b84eee3df559f': {
+        'id': 'SLES03726',
+    },
+    'fb938f56780164a3e396716253c05326': {
+        'id': 'SCPS45418',
+    },
+    'e82a0eab7c962f97550db067884e3235': {
+        'id': 'UNRL00001',
+    },
+    '80a66e09b289136cfee26f8f1d6882f6': {
+        'id': 'SCPS45033_DEMO',
+    },
+    '02a3cb13008f98c56061de50c3eed335': {
+        'id': 'SLPM86546_DEMO',
+    },
+    '35b19c8c0d20af0306b642f1e40cd6b7': {
+        'id': 'SCPS45477',
+    },
+    '52c5e511d59cc0845b189e00ff3b4be4': {
+        'id': 'SLUS00005_DEMO',
+    },
+    '7cb72acb31605220987c7bada7435e51': {
+        'id': 'SLUS01235_DEMO',
+    },
+    '1dd53d9621f829e128d3d6c5eb15ae6a': {
+        'id': 'SCPS45487_DEMO',
+    },
+    'f07e5f709a5f5f83252c23848abd5ca3': {
+        'id': 'SLES00519',
+    },
+    '6a180bc8e6ef67107aa971e609cd938f': {
+        'id': 'SLES10039',
+    },
+    '4d71d33e5dfdb35da7b1df91bf11ce5b': {
+        'id': 'SLUS00542_DEMO',
+    },
+    '1c4404d181d104e23a90bd5f725cf38b': {
+        'id': 'SLPS01601_DEMO',
+    },
+    '62391737fb4e4f066e11184833977d62': {
+        'id': 'SCUS94247_DEMO',
+    },
+    'c9ea8595fb416cb49f9d6eecff363f59': { # RaceMaster - Gran Turismo Edition
+        'id': 'SCUD94194_RACEMASTER',
+    },
+    'e510afa6402d4a6a89c8bee01e22b7d5': {
+        'id': 'SCPS45354_KOREAN',
+    },
+    '9597032591fab3e3538e453b2e3d6c41': {
+        'id': 'SLED02231',
+    },
+    'a2455a5d22e6b692557aa3358cfca1f6': { # Randevu s neznakomkoj 3 - Kurortnyj roman (Russia) (Disc 2)
+        'id': 'RUSS00009',
+    },
+    '3686aa52a1a432716202b5a1fb4c31d7': { # Randevu s neznakomkoj 3 - Kurortnyj roman (Russia) (Disc 1)
+        'id': 'RUSS00008',
+    },
+    '00ec0677b03c7d14550a838be98c43c8': { # Randevu s neznakomkoj 2 (Russia) (Disc 2)
+        'id': 'RUSS00007',
+    },
+    '6ad47503b842cf281faf88d661473af0': { # Randevu s neznakomkoj 2 (Russia) (Disc 1)
+        'id': 'RUSS00006',
+    },
+    'ecb3077d733ae994e91d2f7a0d8b83a3': { # Randevu s neznakomkoj Disc 2
+        'id': 'RUSS00005',
+    },
+    '38f0deed6ab9cd11ec4c02528f521872': { # Randevu s neznakomkoj Disc 1
+        'id': 'RUSS00004',
+    },
     'e2135fbe4cf58381401ec2aebad1593f': { # Italian translation of vagrant story
         'id': 'SLES02754',
     },
