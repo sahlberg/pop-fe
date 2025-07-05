@@ -4473,12 +4473,6 @@ if __name__ == "__main__":
             pfs = ((80,80),(62,62))
         icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', pfs)
 
-    # LOGO.PNG
-    logo = None
-    if args.logo:
-        print('Get LOGO from', args.logo)
-        logo = Image.open(args.logo)
-        
     # PIC0.PNG
     pic0 = None
     if args.pic0 and args.pic0.lower() != 'none':
@@ -4504,6 +4498,16 @@ if __name__ == "__main__":
     if not pic1 and not args.pic1:
         print('Fetch PIC1 for', game_title) if verbose else None
         pic1 = get_pic1_from_game(disc_ids[0], game, args.files[0])
+
+    # LOGO.PNG
+    logo = None
+    if args.logo:
+        if args.logo.lower() == 'pic1':
+            print('Get LOGO from PIC1')
+            logo = pic1
+        else:
+            print('Get LOGO from', args.logo)
+            logo = Image.open(args.logo)
 
     manual = None
     if not args.force_no_assets and (args.psp_dir or args.fetch_metadata):

@@ -84,8 +84,9 @@ Command line arguments are:
 			 handling will always use the id from the cue/bin.
 --cover                : Image to use as the game icon. If not specified pop-fe
 		         will automatically fetch one from the internet.
---logo                 : Image to use as the Boot logo on PSP. If not specified
-		         the default P.O.P.S one will be used.
+--logo                 : Image to use as the Boot logo on PSP.
+			 'pic1' means the image for PIC1 will be used.
+		         If not specified the default P.O.P.S one will be used.
 --pic0                 : Image to use as the PIC0/Screenshot. If not specified
 		         pop-fe will automatically fetch one from the internet.
 --pic1                 : Image to use as the PIC1/Screenshot. If not specified
