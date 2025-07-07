@@ -230,25 +230,127 @@
               <property name="sticky">n</property>
             </layout>
             <child>
-              <object class="ttk.Label" id="label4">
-                <property name="text" translatable="yes">Preview:</property>
+              <object class="ttk.Frame" id="frame8">
+                <property name="height">200</property>
+                <property name="width">200</property>
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">0</property>
+                  <property name="columnspan">3</property>
+                  <property name="row">2</property>
+                  <property name="sticky">nw</property>
                 </layout>
+                <child>
+                  <object class="ttk.Label" id="label4">
+                    <property name="text" translatable="yes">Preview:</property>
+                    <layout manager="pack" />
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Canvas" id="preview_canvas">
+                    <property name="background">white</property>
+                    <property name="borderwidth">1</property>
+                    <property name="height">216</property>
+                    <property name="width">384</property>
+                    <layout manager="pack" />
+                  </object>
+                </child>
               </object>
             </child>
             <child>
-              <object class="tk.Canvas" id="preview_canvas">
-                <property name="background">white</property>
-                <property name="borderwidth">1</property>
-                <property name="height">216</property>
-                <property name="width">384</property>
+              <object class="ttk.Frame" id="frame10">
+                <property name="height">200</property>
+                <property name="width">200</property>
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">1</property>
-                  <property name="sticky">n</property>
+                  <property name="row">3</property>
+                  <property name="sticky">w</property>
                 </layout>
+                <child>
+                  <object class="ttk.Label" id="label6">
+                    <property name="text" translatable="yes">PIC0 Scale:</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="pic0scaling" named="True">
+                    <property name="textvariable">string:pic0scaling_variable</property>
+                    <property name="width">4</property>
+                    <bind sequence="&lt;KeyRelease&gt;" handler="on_pic0_scaling" add="" />
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Frame" id="frame11">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">3</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label7">
+                    <property name="text" translatable="yes">PIC0 X-Shift:</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="pic0xoffset" named="True">
+                    <property name="textvariable">string:pic0xoffset_variable</property>
+                    <property name="width">4</property>
+                    <bind sequence="&lt;KeyRelease&gt;" handler="on_pic0_xoffset" add="" />
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Frame" id="frame12">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">2</property>
+                  <property name="row">3</property>
+                </layout>
+                <child>
+                  <object class="ttk.Label" id="label8">
+                    <property name="text" translatable="yes">PIC0 Y-Shift:</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Entry" id="pic0yoffset" named="True">
+                    <property name="textvariable">string:pic0yoffset_variable</property>
+                    <property name="width">4</property>
+                    <bind sequence="&lt;KeyRelease&gt;" handler="on_pic0_yoffset" add="" />
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
@@ -575,7 +677,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="ttk.Entry" id="entry2">
+                  <object class="ttk.Entry" id="title" named="True">
                     <property name="textvariable">string:title_variable</property>
                     <layout manager="grid">
                       <property name="column">1</property>

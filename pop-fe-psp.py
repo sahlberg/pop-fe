@@ -92,6 +92,9 @@ class PopFePs3App:
         self.snd0_disabled = 'off'
         self.configs = []
         self.subdir='pop-fe-psp-work/'
+        self.pic0scaling = 0.6
+        self.pic0xoffset = 0.3
+        self.pic0yoffset = 0.3
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -117,6 +120,9 @@ class PopFePs3App:
             'on_cdda': self.on_cdda,
             'on_theme_selected': self.on_theme_selected,
             'on_force_ntsc': self.on_force_ntsc,
+            'on_pic0_scaling': self.on_pic0_scaling,
+            'on_pic0_xoffset': self.on_pic0_xoffset,
+            'on_pic0_yoffset': self.on_pic0_yoffset,
         }
 
         builder.connect_callbacks(callbacks)
@@ -185,6 +191,9 @@ class PopFePs3App:
         self.builder.get_object('disc1', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
+        self.builder.get_object('pic0scaling', self.master).config(state='disabled')
+        self.builder.get_object('pic0xoffset', self.master).config(state='disabled')
+        self.builder.get_object('pic0yoffset', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_variable('snd0_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
@@ -193,12 +202,33 @@ class PopFePs3App:
 
         self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
         self.builder.get_variable('manual_variable').set('')
+        self.builder.get_variable('pic0scaling_variable').set('')
+        self.builder.get_variable('pic0xoffset_variable').set('')
+        self.builder.get_variable('pic0yoffset_variable').set('')
         
     def on_theme_selected(self, event):
         self.master.config(cursor='watch')
         self._theme = self.builder.get_object('theme', self.master).get()
         self.update_assets()
         self.master.config(cursor='')
+
+    def fetch_pic0(self):
+        disc_id = self.disc_ids[0]
+        game = popfe.get_game_from_gamelist(disc_id)
+        
+        self.pic0 = None
+        if self._theme != '':
+            self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
+            if not self.pic0:
+                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
+        if not self.pic0:
+            self.pic0 = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig)
+        if self.pic0:
+            temp_files.append(self.subdir + 'PIC0.PNG')
+            self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
+            self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
+            c = self.builder.get_object('pic0_canvas', self.master)
+            c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
         
     def update_assets(self):
         if not self.disc_ids:
@@ -239,20 +269,8 @@ class PopFePs3App:
             c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
             
         print('Fetching PIC0') if verbose else None
-        self.pic0 = None
-        if self._theme != '':
-            self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
-            if not self.pic0:
-                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
-        if not self.pic0:
-            self.pic0 = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig)
-        if self.pic0:
-            temp_files.append(self.subdir + 'PIC0.PNG')
-            self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
-            self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
-            c = self.builder.get_object('pic0_canvas', self.master)
-            c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
-            
+        self.fetch_pic0()
+        
         print('Fetching PIC1') if verbose else None
         self.pic1 = None
         if self._theme != '':
@@ -321,6 +339,24 @@ class PopFePs3App:
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
+
+            if disc_id in games and 'pic0-scaling' in games[disc_id]:
+               self.pic0scaling = games[disc_id]['pic0-scaling']
+            else:
+                self.pic0scaling = 0.6
+            self.builder.get_variable('pic0scaling_variable').set(self.pic0scaling)
+            self.builder.get_object('pic0scaling', self.master).config(state='enabled')
+
+            if disc_id in games and 'pic0-offset' in games[disc_id]:
+               self.pic0xoffset = games[disc_id]['pic0-offset'][0]
+               self.pic0yoffset = games[disc_id]['pic0-offset'][1]
+            else:
+                self.pic0xoffset = 0.3
+                self.pic0yoffset = 0.3
+            self.builder.get_variable('pic0xoffset_variable').set(self.pic0xoffset)
+            self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
+            self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
+            self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
             self.update_assets()
             
             self.builder.get_object('disc1', self.master).config(state='disabled')
@@ -472,6 +508,42 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
 
+    def on_pic0_scaling(self, event):
+        try:
+            v = float(self.builder.get_variable('pic0scaling_variable').get())
+        except:
+            return
+
+        if v > 0.1 and v != self.pic0scaling and self.disc_ids:
+            self.pic0scaling = v
+            games[self.disc_ids[0]]['pic0-scaling'] = self.pic0scaling
+            self.fetch_pic0()
+            self.update_preview()
+
+    def on_pic0_xoffset(self, event):
+        try:
+            v = float(self.builder.get_variable('pic0xoffset_variable').get())
+        except:
+            return
+
+        if v >= 0.0 and v != self.pic0xoffset and self.disc_ids:
+            self.pic0xoffset = v
+            games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
+            self.fetch_pic0()
+            self.update_preview()
+            
+    def on_pic0_yoffset(self, event):
+        try:
+            v = float(self.builder.get_variable('pic0yoffset_variable').get())
+        except:
+            return
+
+        if v >= 0.0 and v != self.pic0yoffset and self.disc_ids:
+            self.pic0yoffset = v
+            games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
+            self.fetch_pic0()
+            self.update_preview()
+            
     def on_dir_changed(self, event):
         self.pkgdir = event.widget.cget('path')
 
