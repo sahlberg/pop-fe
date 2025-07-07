@@ -6,6 +6,7 @@ import hashlib
 import importlib
 import io
 import requests
+import time
 from PIL import Image, ImageDraw, ImageFont
 from gamedb import games
 
@@ -158,7 +159,8 @@ if __name__ == "__main__":
     img1 = ImageDraw.Draw(pic1)
     img1.rectangle([(190,100),(470,270)], outline ="red") 
     pic1.show()
-    
+
+    time.sleep(10)
     # PIC0 at  760, 425   1760, 985
     # ICON at  49, 43      66, 60
     # +        'pic0-scaling': 0.6,
