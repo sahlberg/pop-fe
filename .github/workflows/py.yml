@@ -117,6 +117,9 @@ jobs:
       - name: Build pop-fe
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
+      - name: Build layout
+        run:   |
+          pyinstaller layout.py
       - name: Build pop-fe-ps3
         run:   |
           cp pop-fe.py popfe.py
@@ -134,6 +137,7 @@ jobs:
           cp dist/pkg/pkg.exe dist/pop-fe/.
           cp dist/pkg/pkgcrypt*.pyd dist/pop-fe/.
           cp dist/sign3/sign3.exe dist/pop-fe/.
+          cp dist/layout/layout.exe dist/pop-fe/.
           cp atracdenc.exe dist/pop-fe/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe/.
           cp chdman.exe dist/pop-fe/.
@@ -152,6 +156,7 @@ jobs:
           cp dist/cue2cu2/cue2cu2.exe dist/pop-fe-ps3/.
           cp pop-fe-psp.ui dist/pop-fe-ps3/_internal/.
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
+          cp dist/layout/layout.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
           cp chdman.exe dist/pop-fe-ps3/.
