@@ -6746,6 +6746,7 @@ games = {
 	'title': "CAPCOM VS SNK - MILLENNIUM FIGHT 2000 PRO",
         'pic0': 'https://images.launchbox-app.com/2fa5a0cd-a649-4f20-b344-f04f77d2d2f6.png',
         'pic1': 'https://images.launchbox-app.com/91fbcb15-c8d0-4c0b-a146-8e12b7abd4ed.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=cR7rWHTo-so',
         'manual': 'https://www.videogamemanual.com/ps1/Capcom%20vs.%20SNK%20Pro%20(USA).pdf',
     },
     'SLUS00494': {
@@ -19747,6 +19748,7 @@ games = {
 	'title': "CAPCOM VS SNK MILLENNIUM FIGHT 2000 PRO",
         'pic0': 'https://images.launchbox-app.com/2fa5a0cd-a649-4f20-b344-f04f77d2d2f6.png',
         'pic1': 'https://images.launchbox-app.com/91fbcb15-c8d0-4c0b-a146-8e12b7abd4ed.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=cR7rWHTo-so',
     },
     'SLES03206': {
         'url': "games/P/C/SLES-03206.html",
@@ -42897,6 +42899,7 @@ games = {
 	'title': "CAPCOM VS SNK MILLENNIUM FIGHT 2000 PRO",
         'pic0': 'https://images.launchbox-app.com/2fa5a0cd-a649-4f20-b344-f04f77d2d2f6.png',
         'pic1': 'https://images.launchbox-app.com/91fbcb15-c8d0-4c0b-a146-8e12b7abd4ed.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=cR7rWHTo-so',
     },
     'SLPS01567': {
         'url': "games/J/C/SLPS-01567.html",
