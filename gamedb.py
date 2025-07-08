@@ -65051,6 +65051,8 @@ games = {
     	'id': 'SLPS03170',
 	'title': "SHIN MEGAMI TENSEI",
         'pic0': 'https://images.launchbox-app.com/445281f3-4d75-404e-b4f6-5ccc1d40e00a.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.4),
         'pic1': 'https://images.launchbox-app.com/b28336ba-eb06-469e-8dce-0fa6828e9129.jpg',
         'snd0': 'https://www.youtube.com/watch?v=rYPgFs5gEoY&list=PLivGIjvUj3M2jrRbfnZv8tTFTdhx1E7Xp&index=2',
     },
@@ -65059,6 +65061,8 @@ games = {
     	'id': 'SLPM86924',
 	'title': "SHIN MEGAMI TENSEI II",
         'pic0': 'https://images.launchbox-app.com/3efd2e44-d777-4aed-92a7-d93c7080ae71.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.4),
         'pic1': 'https://images.launchbox-app.com/1da56c46-8970-44ce-a5d5-991ae5b649bd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VW9b6Y5YyOE&list=PLivGIjvUj3M36qR_5QwPZv-8lh8w8BXhU',
     },
@@ -65067,6 +65071,7 @@ games = {
     	'id': 'SLPM87040',
 	'title': "SHIN MEGAMI TENSEI - DEVIL CHILDREN - KURO NO SHO - AKA NO SHO",
         'pic0': 'https://images.launchbox-app.com/c329f32c-5c14-4525-b732-d9173b0dade4.png',
+        'pic1': 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/shin-megami-tensei-devil-childern.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5',
         'snd0': 'https://www.youtube.com/watch?v=C0yubvZW1u4&list=PLjdSC-ENw036K-2l6wcclUrtoo3b14NGw&index=1',
     },
     'SLPM87154': {
@@ -65074,6 +65079,7 @@ games = {
     	'id': 'SLPM87154',
 	'title': "SHIN MEGAMI TENSEI IF...",
         'pic0': 'https://images.launchbox-app.com/157b97a3-1b22-453d-846c-4c259d92519b.png',
+        'pic1': 'https://personacentral.com/wp-content/uploads/2021/09/SMT-If-Cover-Header-696x331.jpg',
         'snd0': 'https://www.youtube.com/watch?v=XfTSHb4Ai5U&list=PLN2wgGwM9KmjdSvDG77dHrfv0p4aNRS_i&index=1',
     },
     'SLPM87153': {
@@ -65081,6 +65087,7 @@ games = {
     	'id': 'SLPM87153',
 	'title': "SHIN MEGAMI TENSEI IF...[KARUKO SAKATAKA-KOU 50TH ANIIVERSARY PACK]",
         'pic0': 'https://images.launchbox-app.com/157b97a3-1b22-453d-846c-4c259d92519b.png',
+        'pic1': 'https://personacentral.com/wp-content/uploads/2021/09/SMT-If-Cover-Header-696x331.jpg',
         'snd0': 'https://www.youtube.com/watch?v=XfTSHb4Ai5U&list=PLN2wgGwM9KmjdSvDG77dHrfv0p4aNRS_i&index=1',
     },
     'SLPS00084': {
