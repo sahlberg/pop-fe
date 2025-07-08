@@ -41331,19 +41331,34 @@ games = {
         'url': "games/J/B/SLPM-86341.html",
     	'id': 'SLPM86341',
 	'title': "BAROQUE",
+        'icon0': 'https://images.launchbox-app.com//1df4193c-d90e-4832-a694-f596535a5caf.jpg', # Bad pic upstream
         'pic0': 'https://images.launchbox-app.com/5cbfd1b5-d8d9-4e46-84d1-6fa8db8041ab.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.4),
+        'pic1': 'https://images.launchbox-app.com//cb6fa6e9-49f9-4268-98bf-5a7cd4d1d267.png',
+        'snd0': 'https://www.youtube.com/watch?v=9f536rE8BSo&list=PLMJZ_JgbivJYCkC5GZF2PwWVyUH0hgZZR&index=1',
     },
     'SLPM86759': {
         'url': "games/J/B/SLPM-86759.html",
     	'id': 'SLPM86759',
 	'title': "BAROQUE [MAJOR WAVE 1500]",
+        'icon0': 'https://images.launchbox-app.com//1df4193c-d90e-4832-a694-f596535a5caf.jpg', # Bad pic upstream
         'pic0': 'https://images.launchbox-app.com/5cbfd1b5-d8d9-4e46-84d1-6fa8db8041ab.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.4),
+        'pic1': 'https://images.launchbox-app.com//cb6fa6e9-49f9-4268-98bf-5a7cd4d1d267.png',
+        'snd0': 'https://www.youtube.com/watch?v=9f536rE8BSo&list=PLMJZ_JgbivJYCkC5GZF2PwWVyUH0hgZZR&index=1',
     },
     'SLPM86328': {
         'url': "games/J/B/SLPM-86328.html",
     	'id': 'SLPM86328',
 	'title': "BAROQUE [LIMITED EDITION]",
+        'icon0': 'https://images.launchbox-app.com//1df4193c-d90e-4832-a694-f596535a5caf.jpg', # Bad pic upstream
         'pic0': 'https://images.launchbox-app.com/5cbfd1b5-d8d9-4e46-84d1-6fa8db8041ab.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.4),
+        'pic1': 'https://images.launchbox-app.com//cb6fa6e9-49f9-4268-98bf-5a7cd4d1d267.png',
+        'snd0': 'https://www.youtube.com/watch?v=9f536rE8BSo&list=PLMJZ_JgbivJYCkC5GZF2PwWVyUH0hgZZR&index=1',
     },
     'SLPM86540': {
         'url': "games/J/B/SLPM-86540.html",
