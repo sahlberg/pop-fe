@@ -2189,11 +2189,11 @@ def get_pic0_from_game(game_id, game, cue):
         if 'pic0-scaling' in games[game_id]:
             sc = games[game_id]['pic0-scaling']
         else:
-            sc = 0.6
+            sc = 0.9
         if 'pic0-offset' in games[game_id]:
             of = games[game_id]['pic0-offset']
         else:
-            of = (0.30, 0.30)
+            of = (0.1, 0.1)
 
         # First, try to scale Y axis to 560 pixels
         syf = 560 / pic0.size[1]

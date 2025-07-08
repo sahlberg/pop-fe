@@ -343,7 +343,7 @@ class PopFePs3App:
             if disc_id in games and 'pic0-scaling' in games[disc_id]:
                self.pic0scaling = games[disc_id]['pic0-scaling']
             else:
-                self.pic0scaling = 0.6
+                self.pic0scaling = 0.9
             self.builder.get_variable('pic0scaling_variable').set(self.pic0scaling)
             self.builder.get_object('pic0scaling', self.master).config(state='enabled')
 
@@ -351,8 +351,8 @@ class PopFePs3App:
                self.pic0xoffset = games[disc_id]['pic0-offset'][0]
                self.pic0yoffset = games[disc_id]['pic0-offset'][1]
             else:
-                self.pic0xoffset = 0.3
-                self.pic0yoffset = 0.3
+                self.pic0xoffset = 0.1
+                self.pic0yoffset = 0.1
             self.builder.get_variable('pic0xoffset_variable').set(self.pic0xoffset)
             self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)

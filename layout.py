@@ -39,12 +39,12 @@ if __name__ == "__main__":
     if 'pic0-scaling' in games[args.gameid]:
         print('pic0 scaling:', games[args.gameid]['pic0-scaling'])
     else:
-        print('pic0 scaling: DEFAULT 0.6')
+        print('pic0 scaling: DEFAULT 0.9')
         
     if 'pic0-offset' in games[args.gameid]:
         print('pic0 offset:', games[args.gameid]['pic0-offset'])
     else:
-        print('pic0 offset: DEFAULT (0.3, 0.3)')
+        print('pic0 offset: DEFAULT (0.1, 0.1)')
         
     p1 = popfe.get_pic1_from_game(args.gameid, None, 'nothing')
     p0 = popfe.get_pic0_from_game(args.gameid, None, 'nothing')
