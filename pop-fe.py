@@ -2181,32 +2181,44 @@ def get_pic_from_game(pic, game_id, game, filename):
         return None
     return Image.open(io.BytesIO(fcb))
 
-def get_pic0_from_game(game_id, game, cue):
-    try:
-        pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
-        # If we need to rescale, paste the image into a larger transparent
-        # canvas first before we rescale it below
+def rescale_pic0(pic0, sc, of):
+    if not pic0:
+        return None
+
+    # First, try to scale Y axis to 560 pixels
+    syf = 560 / pic0.size[1]
+    ns = (int(pic0.size[0] * syf), int(pic0.size[1] * syf))
+    if ns[0] > 1000:
+        # Fitting by Y size made it too big. Scale X axis to 1000 instead
+        sxf = 1000 / pic0.size[0]
+        ns = (int(pic0.size[0] * sxf), int(pic0.size[1] * sxf))
+    pic0 = pic0.resize((int(ns[0] * sc), int(ns[1] * sc)), Image.Resampling.LANCZOS)
+    i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
+    i.putalpha(0)
+    i.paste(pic0, (int(1000 * of[0]), int(560 * of[1])))
+    return i
+
+def get_pic0_scaling(game_id):
         if 'pic0-scaling' in games[game_id]:
             sc = games[game_id]['pic0-scaling']
         else:
             sc = 0.9
+        return sc
+    
+def get_pic0_offset(game_id):
         if 'pic0-offset' in games[game_id]:
             of = games[game_id]['pic0-offset']
         else:
             of = (0.1, 0.1)
-
-        # First, try to scale Y axis to 560 pixels
-        syf = 560 / pic0.size[1]
-        ns = (int(pic0.size[0] * syf), int(pic0.size[1] * syf))
-        if ns[0] > 1000:
-            # Fitting by Y size made it too big. Scale X axis to 1000 instead
-            sxf = 1000 / pic0.size[0]
-            ns = (int(pic0.size[0] * sxf), int(pic0.size[1] * sxf))
-        pic0 = pic0.resize((int(ns[0] * sc), int(ns[1] * sc)), Image.Resampling.LANCZOS)
-        i = Image.new(pic0.mode, (1000, 560), (0,0,0)).convert('RGBA')
-        i.putalpha(0)
-        i.paste(pic0, (int(1000 * of[0]), int(560 * of[1])))
-        pic0 = i
+        return of
+    
+def get_pic0_from_game(game_id, game, cue, no_scaling=False):
+    try:
+        pic0 = get_pic_from_game('pic0', game_id, game, cue[:-4] + '_pic0.png')
+        # If we need to rescale, paste the image into a larger transparent
+        # canvas first before we rescale it below
+        if not no_scaling:
+            pic0 = rescale_pic0(pic0, get_pic0_scaling(game_id), get_pic0_offset(game_id))
     except:
         return None
 

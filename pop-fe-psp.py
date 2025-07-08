@@ -79,6 +79,7 @@ class PopFePs3App:
         self.icon0 = None
         self.icon0_tk = None
         self.pic0 = None
+        self.pic0_orig = None
         self.pic0_tk = None
         self.pic1 = None
         self.pic1_tk = None
@@ -173,6 +174,7 @@ class PopFePs3App:
         self.icon0 = None
         self.icon0_tk = None
         self.pic0 = None
+        self.pic0_orig = None
         self.pic0_tk = None
         self.pic1 = None
         self.pic1_tk = None
@@ -218,11 +220,13 @@ class PopFePs3App:
         
         self.pic0 = None
         if self._theme != '':
-            self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
+            self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
             if not self.pic0:
-                self.pic0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
+                self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
+            self.pic0 = self.pic0_orig
         if not self.pic0:
-            self.pic0 = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig)
+            self.pic0_orig = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig, no_scaling=True)
+            self.pic0 = popfe.rescale_pic0(self.pic0_orig, popfe.get_pic0_scaling(disc_id), popfe.get_pic0_offset(disc_id))
         if self.pic0:
             temp_files.append(self.subdir + 'PIC0.PNG')
             self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
@@ -402,7 +406,7 @@ class PopFePs3App:
         if self.pic0_disabled == 'on':
             _pic0 = None
         else:
-            _pic0 = self.pic0
+            _pic0 = popfe.rescale_pic0(self.pic0_orig, popfe.get_pic0_scaling(self.disc_ids[0]), popfe.get_pic0_offset(self.disc_ids[0]))
         if self.pic1_disabled == 'on':
             _pic1 = Image.new('RGBA', (1920, 1080), (0,0,0))
             _pic1.putalpha(0)
@@ -517,7 +521,6 @@ class PopFePs3App:
         if v > 0.1 and v != self.pic0scaling and self.disc_ids:
             self.pic0scaling = v
             games[self.disc_ids[0]]['pic0-scaling'] = self.pic0scaling
-            self.fetch_pic0()
             self.update_preview()
 
     def on_pic0_xoffset(self, event):
@@ -529,7 +532,6 @@ class PopFePs3App:
         if v >= 0.0 and v != self.pic0xoffset and self.disc_ids:
             self.pic0xoffset = v
             games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
-            self.fetch_pic0()
             self.update_preview()
             
     def on_pic0_yoffset(self, event):
@@ -541,7 +543,6 @@ class PopFePs3App:
         if v >= 0.0 and v != self.pic0yoffset and self.disc_ids:
             self.pic0yoffset = v
             games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
-            self.fetch_pic0()
             self.update_preview()
             
     def on_dir_changed(self, event):
