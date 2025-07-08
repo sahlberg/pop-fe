@@ -55427,12 +55427,16 @@ games = {
     	'id': 'SLPS01642',
 	'title': "LSD - DREAM EMULATOR",
         'pic0': 'https://images.launchbox-app.com/4fa6aa24-2491-4bbd-b06e-057a56be8363.png',
+        'pic1': 'https://images.launchbox-app.com//d3f2f146-9c72-4db7-8beb-1a9ce43e674e.png',
+        'snd0': 'https://www.youtube.com/watch?v=QOkgss6KQrM&list=PLdTe6xbTnLE4qYVMebmpErzDzbs7OjNSn&index=1',
     },
     'SLPS01556': {
         'url': "games/J/L/SLPS-01556.html",
     	'id': 'SLPS01556',
 	'title': "LSD - DREAM EMULATOR [LIMITED EDITION]",
         'pic0': 'https://images.launchbox-app.com/4fa6aa24-2491-4bbd-b06e-057a56be8363.png',
+        'pic1': 'https://images.launchbox-app.com//d3f2f146-9c72-4db7-8beb-1a9ce43e674e.png',
+        'snd0': 'https://www.youtube.com/watch?v=QOkgss6KQrM&list=PLdTe6xbTnLE4qYVMebmpErzDzbs7OjNSn&index=1',
     },
     'SLPS01784': {
         'url': "games/J/L/SLPS-01784.html",
@@ -57505,7 +57509,10 @@ games = {
     	'id': 'SLPS01783',
 	'title': "MIZZURNA FALLS",
         'pic0': 'https://images.launchbox-app.com/eaa318cd-a749-43c0-9e3f-040ef7dd3069.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/b0823e5f-885c-4043-ada5-bf3a0a18c7e2.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=AUqmDoPIiNY',
     },
     'SLPS02239': {
         'url': "games/J/M/SLPS-02239.html",
@@ -62451,6 +62458,7 @@ games = {
 	'title': "RACING LAGOON",
         'pic0': 'https://images.launchbox-app.com/ebad85b8-f203-470a-a2e3-6397ca48716b.png',
         'pic1': 'https://images.launchbox-app.com/3c19914f-1272-4fb4-b289-212078ee2b18.JPG',
+        'snd0': 'https://www.youtube.com/watch?v=3gH_8l8FHug&list=PLhUEOosVlT05SUcZ2x9R5JQiLB4vfFLb6&index=2',
     },
     'SLPS02038': {
         'url': "games/J/R/SLPS-02038.html",
@@ -62458,6 +62466,7 @@ games = {
 	'title': "RACING LAGOON",
         'pic0': 'https://images.launchbox-app.com/ebad85b8-f203-470a-a2e3-6397ca48716b.png',
         'pic1': 'https://images.launchbox-app.com/3c19914f-1272-4fb4-b289-212078ee2b18.JPG',
+        'snd0': 'https://www.youtube.com/watch?v=3gH_8l8FHug&list=PLhUEOosVlT05SUcZ2x9R5JQiLB4vfFLb6&index=2',
         'pspconfig': 'pspconfigs/Racing Lagoon/SLPS-02038.bin',
     },
     'SLPS91487': {
@@ -62466,6 +62475,7 @@ games = {
 	'title': "RACING LAGOON [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/ebad85b8-f203-470a-a2e3-6397ca48716b.png',
         'pic1': 'https://images.launchbox-app.com/3c19914f-1272-4fb4-b289-212078ee2b18.JPG',
+        'snd0': 'https://www.youtube.com/watch?v=3gH_8l8FHug&list=PLhUEOosVlT05SUcZ2x9R5JQiLB4vfFLb6&index=2',
     },
     'SLPS00417': {
         'url': "games/J/R/SLPS-00417.html",
