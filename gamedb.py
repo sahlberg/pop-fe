@@ -55727,18 +55727,24 @@ games = {
     	'id': 'SLPS00386',
 	'title': "MACROSS DIGITAL MISSION VF-X",
         'pic0': 'https://images.launchbox-app.com/b5b5821e-685a-4a43-a451-36eecb2b8d4b.png',
+        'pic1': 'https://images.launchbox-app.com//d94ec8ca-ce71-4662-8297-15c318f8c469.png',
+        'snd0': 'https://www.youtube.com/watch?v=09hUvh5dk14&list=PLAF2A68F01900CA5A&index=1',
     },
     'SCPS45021': {
         'url': "games/J/M/SCPS-45021.html",
     	'id': 'SCPS45021',
 	'title': "MACROSS DIGITAL MISSION VF-X",
         'pic0': 'https://images.launchbox-app.com/b5b5821e-685a-4a43-a451-36eecb2b8d4b.png',
+        'pic1': 'https://images.launchbox-app.com//d94ec8ca-ce71-4662-8297-15c318f8c469.png',
+        'snd0': 'https://www.youtube.com/watch?v=09hUvh5dk14&list=PLAF2A68F01900CA5A&index=1',
     },
     'SLPS91058': {
         'url': "games/J/M/SLPS-91058.html",
     	'id': 'SLPS91058',
 	'title': "MACROSS DIGITAL MISSION VF-X [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/b5b5821e-685a-4a43-a451-36eecb2b8d4b.png',
+        'pic1': 'https://images.launchbox-app.com//d94ec8ca-ce71-4662-8297-15c318f8c469.png',
+        'snd0': 'https://www.youtube.com/watch?v=09hUvh5dk14&list=PLAF2A68F01900CA5A&index=1',
     },
     'SCPS45405': {
         'url': "games/J/M/SCPS-45405.html",
@@ -63221,6 +63227,10 @@ games = {
     	'id': 'SCPS10103',
 	'title': "ROBBIT MON DIEU",
         'pic0': 'https://images.launchbox-app.com/fd318cb7-4be6-4ac1-95e2-4388bb749a22.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
+        'pic1': 'https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2018/10/jumping-flash-eu.png',
+        'snd0': 'https://www.youtube.com/watch?v=a7QflHAWt1k',
     },
     'SLPS02501': {
         'url': "games/J/R/SLPS-02501.html",
@@ -70846,6 +70856,7 @@ games = {
 	'title': "TOBAL 2",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
         'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HwK0IqVf3Bg&list=PL5c1ikTIe3yAy0RTuOFMz5SDHOSXOm7k0&index=1',
     },
     'SLPM86033': {
         'url': "games/J/T/SLPM-86033.html",
@@ -70853,6 +70864,7 @@ games = {
 	'title': "TOBAL 2",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
         'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HwK0IqVf3Bg&list=PL5c1ikTIe3yAy0RTuOFMz5SDHOSXOm7k0&index=1',
     },
     'SLPM87406': {
         'url': "games/J/T/SLPM-87406.html",
@@ -70860,6 +70872,7 @@ games = {
 	'title': "TOBAL 2 [LEGENDARY HITS]",
         'pic0': 'https://images.launchbox-app.com/842cfb05-8f42-487d-b3f5-797e294ac970.png',
         'pic1': 'https://images.launchbox-app.com/bb983bd0-6e44-4d6b-9ca5-f5ad823edba4.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HwK0IqVf3Bg&list=PL5c1ikTIe3yAy0RTuOFMz5SDHOSXOm7k0&index=1',
     },
     'SLPS01410': {
         'url': "games/J/T/SLPS-01410.html",
