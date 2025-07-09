@@ -93,9 +93,9 @@ class PopFePs3App:
         self.snd0_disabled = 'off'
         self.configs = []
         self.subdir='pop-fe-psp-work/'
-        self.pic0scaling = 0.6
-        self.pic0xoffset = 0.3
-        self.pic0yoffset = 0.3
+        self.pic0scaling = 0.9
+        self.pic0xoffset = 0.1
+        self.pic0yoffset = 0.1
         
         self.master = master
         self.builder = builder = pygubu.Builder()
