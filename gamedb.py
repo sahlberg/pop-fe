@@ -147,10 +147,18 @@ games = {
         'title': 'DEMODEMO PLAYSTATION VOL. 10',
         'icon0': 'https://vgcollect.com/images/front-box-art/201031.jpg',
     },
+    'PCPX96015': {
+        'id': 'PCPX96015',
+        'title': 'DEMODEMO PLAYSTATION SPECIAL',
+    },
     'PCPX96016': {
         'id': 'PCPX96016',
         'title': 'DEMODEMO PLAYSTATION VOL. 11',
         'icon0': 'https://vgcollect.com/images/front-box-art/201032.jpg',
+    },
+    'PCPX96017': {
+    	'id': 'PCPX96017',
+	'title': "Pure Pure Vol. 1 [DEMO]",
     },
     'PCPX96018': {
         'id': 'PCPX96018',
@@ -172,6 +180,10 @@ games = {
         'title': 'DEMODEMO PLAYSTATION VOL. 15',
         'icon0': 'https://cdn.suruga-ya.com/database/pics_webp/game/140005727.jpg.webp',
     },
+    'PCPX96023': {
+    	'id': 'PCPX96023',
+	'title': "Pure Pure Vol. 2 [DEMO]",
+    },
     'PCPX96025': {
         'id': 'PCPX96025',
         'title': 'DEMODEMO PLAYSTATION VOL. 16',
@@ -188,7 +200,7 @@ games = {
     },
     'PCPX96028': {
         'id': 'PCPX96028',
-        'title': 'VOL 3',
+	'title': "Pure Pure Vol. 3 [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/02/28/21/32/14/f4396b74-2ceb-44b7-9051-405c012b6b05/file.jpg',
     },
     'PCPX96032': {
@@ -217,7 +229,7 @@ games = {
     },
     'PCPX96039': {
         'id': 'PCPX96039',
-        'title': 'VOL 4',
+	'title': "Pure Pure Vol. 4 [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/03/01/04/53/07/85dd203c-19ea-4eb9-b247-960d8e7a7c45/file.jpg',
     },
     'PCPX96041': {
@@ -235,9 +247,27 @@ games = {
 	'title': "PARAPPA THE RAPPER [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/12/26/15/13/04/a443b738-0506-409a-bd34-958e603bda1c/file.jpg',
     },
+    'PCPX96055': {
+        'id': 'PCPX96055',
+	'title': "Pure Pure Vol. 5 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/1wQAAOSw1WlkkCdt/s-l1600.webp',
+    },
+    'PCPX96056': {
+        'id': 'PCPX96056',
+	'title': "Pure Pure Vol. 5 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/1wQAAOSw1WlkkCdt/s-l1600.webp',
+    },
     'PCPX96058': {
     	'id': 'PCPX96058',
 	'title': "I.Q. [DEMO]",
+    },
+    'PCPX96063': {
+        'id': 'PCPX96063',
+	'title': "Pure Pure Vol. 6 (disc 1) [DEMO]",
+    },
+    'PCPX96064': {
+        'id': 'PCPX96064',
+	'title': "Pure Pure Vol. 6 (disc 2) [DEMO]",
     },
     'PCPX96067': {
     	'id': 'PCPX96067',
@@ -253,11 +283,20 @@ games = {
     	'id': 'PCPX96072',
 	'title': "unknown [DEMO]",
     },
+    'PCPX96075': {
+    	'id': 'PCPX96075',
+	'title': "Pure Pure Vol. 7 [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/7wEAAOSw7GlkkClZ/s-l1600.webp',
+    },
     'PCPX96081': {
     	'id': 'PCPX96081',
 	'title': "ZERO DIVIDE 2 [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/11/02/14/41/05/c17116e6-3a4b-4c3a-b056-4c48240b2e8b/file.jpg',
         'pic0': 'https://images.launchbox-app.com//38c93d60-fda6-4c45-a080-5f9fad9131c4.png',
+    },
+    'PCPX96084': {
+    	'id': 'PCPX96084',
+	'title': "Pure Pure Vol. 8 [DEMO]",
     },
     'PCPX96088': {
     	'id': 'PCPX96088',
@@ -267,6 +306,16 @@ games = {
     'PCPX96091': {
     	'id': 'PCPX96091',
 	'title': "ELEMENTAL GEARBOLT [DEMO]",
+    },
+    'PCPX96093': {
+    	'id': 'PCPX96093',
+	'title': "Pure Pure Vol. 9 (disc 1) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-pp09-front.jpg',
+    },
+    'PCPX96094': {
+    	'id': 'PCPX96094',
+	'title': "Pure Pure Vol. 9 (disc 2) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-pp09-front.jpg',
     },
     'PCPX96096': {
     	'id': 'PCPX96096',
@@ -282,6 +331,21 @@ games = {
 	'title': "NIGHTMARE CREATURES [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/02/03/01/11/33/9b6bd01d-7d96-463e-bdc4-42903190445b/file.jpg',
     },
+    'PCPX96103': {
+    	'id': 'PCPX96103',
+	'title': "Pure Pure Vol. 10 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/63QAAOSwvyVkk6BL/s-l1600.webp',
+    },
+    'PCPX96104': {
+    	'id': 'PCPX96104',
+	'title': "Pure Pure Vol. 10 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/63QAAOSwvyVkk6BL/s-l1600.webp',
+    },
+    'PCPX96108': {
+    	'id': 'PCPX96108',
+	'title': "Pure Pure Vol. 11 [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/ewkAAOSwHwhkk6HQ/s-l1600.webp',
+    },
     'PCPX96110': {
     	'id': 'PCPX96110',
 	'title': "unknown [DEMO]",
@@ -291,6 +355,20 @@ games = {
     	'id': 'PCPX96112',
 	'title': "TOMOYASU HOTEI STOLEN SONG [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/15/15/46/33/7062ec96-9b12-4fe4-b832-7a47846954cc/file.jpg',
+    },
+    'PCPX96114': {
+    	'id': 'PCPX96114',
+	'title': "Pure Pure Vol. 12 [DEMO]",
+    },
+    'PCPX96118': {
+    	'id': 'PCPX96118',
+	'title': "Pure Pure Vol. 13 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/1CAAAOSw0olkm4v5/s-l1600.webp',
+    },
+    'PCPX96119': {
+    	'id': 'PCPX96119',
+	'title': "Pure Pure Vol. 13 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/1CAAAOSw0olkm4v5/s-l1600.webp',
     },
     'PCPX96121': {
     	'id': 'PCPX96121',
@@ -302,6 +380,16 @@ games = {
 	'title': "G-POLICE [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/05/15/00/04/19/f3d10ee6-021d-4091-9dc3-5fb493c3dc01/file.jpg',
     },
+    'PCPX96126': {
+    	'id': 'PCPX96126',
+	'title': "Pure Pure Vol. 14 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/XfsAAOSwJ55km40i/s-l1600.webp',
+    },
+    'PCPX96127': {
+    	'id': 'PCPX96127',
+	'title': "Pure Pure Vol. 14 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/XfsAAOSwJ55km40i/s-l1600.webp',
+    },
     'PCPX96128': {
     	'id': 'PCPX96128',
 	'title': "YUKIWARI NO HANA [DEMO]",
@@ -311,6 +399,16 @@ games = {
     	'id': 'PCPX96130',
 	'title': "unknown [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/11/11/21/14/10/88bb53bf-04b0-4070-adcd-1894be1b56d4/file.jpg',
+    },
+    'PCPX96133': {
+    	'id': 'PCPX96133',
+	'title': "Pure Pure Vol. 15 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/TgMAAOSwkfpknbiR/s-l1600.webp',
+    },
+    'PCPX96134': {
+    	'id': 'PCPX96134',
+	'title': "Pure Pure Vol. 15 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/TgMAAOSwkfpknbiR/s-l1600.webp',
     },
     'PCPX96135': {
     	'id': 'PCPX96135',
@@ -327,6 +425,16 @@ games = {
 	'title': "I.Q. FINAL [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/05/15/19/30/30/59fa4cb9-8ffa-4c88-bfe0-6c71e31be870/file.jpg',
     },
+    'PCPX96142': {
+    	'id': 'PCPX96142',
+	'title': "Pure Pure Vol. 16 (disc 1) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-pp16-front.jpg',
+    },
+    'PCPX96143': {
+    	'id': 'PCPX96143',
+	'title': "Pure Pure Vol. 16 (disc 2) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-pp16-front.jpg',
+    },
     'PCPX96145': {
     	'id': 'PCPX96145',
 	'title': "CRASH 3 [DEMO]",
@@ -337,10 +445,28 @@ games = {
 	'title': "GLOBAL FORCE [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/03/08/15/09/40/7f78badc-03bf-4785-ae01-e1208191dc5c/file.jpg',
     },
+    'PCPX96148': {
+    	'id': 'PCPX96148',
+	'title': "Pure Pure Vol. 17 (disc 1) [DEMO]",
+    },
+    'PCPX96149': {
+    	'id': 'PCPX96149',
+	'title': "Pure Pure Vol. 17 (disc 2) [DEMO]",
+    },
     'PCPX96150': {
     	'id': 'PCPX96150',
 	'title': "unknown [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/08/14/01/20/48/18e364ea-b201-4dd6-bc62-15d6fce2318e/file.jpg',
+    },
+    'PCPX96156': {
+    	'id': 'PCPX96156',
+	'title': "Pure Pure Vol. 18 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/HCYAAOSwHwhknb1v/s-l1600.webp',
+    },
+    'PCPX96157': {
+    	'id': 'PCPX96157',
+	'title': "Pure Pure Vol. 18 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/HCYAAOSwHwhknb1v/s-l1600.webp',
     },
     'PCPX96161': {
     	'id': 'PCPX96161',
@@ -357,10 +483,30 @@ games = {
 	'title': "APE ESCAPE [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2022/07/04/14/44/48/d2f6be10-52bc-4316-9d9b-15a56f656c5b/file.jpg',
     },
+    'PCPX96167': {
+    	'id': 'PCPX96167',
+	'title': "Pure Pure Vol. 19 (disc 1) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/VVwAAOSwhgNkn2of/s-l1600.webp',
+    },
+    'PCPX96168': {
+    	'id': 'PCPX96168',
+	'title': "Pure Pure Vol. 19 (disc 2) [DEMO]",
+        'icon0': 'https://i.ebayimg.com/images/g/VVwAAOSwhgNkn2of/s-l1600.webp',
+    },
     'PCPX96171': {
     	'id': 'PCPX96171',
 	'title': "WILD ARMS 2ND IGNITION [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/04/25/21/39/54/049b672b-9874-4b7c-87e0-4e512c6fbb2e/file.jpg',
+    },
+    'PCPX96173': {
+    	'id': 'PCPX96173',
+	'title': "Pure Pure Plus 001 (disc 1) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-ppp001-front.jpg',
+    },
+    'PCPX96174': {
+    	'id': 'PCPX96174',
+	'title': "Pure Pure Plus 001 (disc 2) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-ppp001-front.jpg',
     },
     'PCPX96176': {
         'url': "games/J/A/SCPS-91316.html",
@@ -386,15 +532,24 @@ games = {
 	'title': "CRASH TEAM RACING [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/04/12/13/34/05/153fe8d6-8790-4784-9ff9-eb713fe082ce/file.jpg',
     },
+    'PCPX96186': {
+    	'id': 'PCPX96186',
+	'title': "Pure Pure Plus 002 (disc 1) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-ppp002-front.jpg',
+    },
     'PCPX96187': {
     	'id': 'PCPX96187',
-	'title': "PLUS 002 [DEMO]",
-        'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2024/01/03/18/02/35/bc2baff8-1dcb-48bb-a0e4-c72431564167/file.jpg',
+	'title': "Pure Pure Plus 002 (disc 2) [DEMO]",
+        'icon0': 'https://crimson-ceremony.net/lostreleases/redemo/ps1-jpn-ppp002-front.jpg',
     },
     'PCPX96189': {
     	'id': 'PCPX96189',
 	'title': "CHASE THE EXPRESS [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/08/10/07/03/55/db09d4d7-da79-41ff-8c4a-5734159df301/file.jpg',
+    },
+    'PCPX96190': {
+    	'id': 'PCPX96190',
+	'title': "Pure Pure Plus 003 [DEMO]",
     },
     'PCPX96191': {
     	'id': 'PCPX96191',
@@ -410,6 +565,22 @@ games = {
     	'id': 'PCPX96195',
 	'title': "POPOLOCROIS II [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2020/11/21/12/57/07/8fb2dae6-a8b1-4aeb-bc85-df2789a94401/file.jpg',
+    },
+    'PCPX96198': {
+    	'id': 'PCPX96198',
+	'title': "Pure Pure Plus 004 [DEMO]",
+    },
+    'PCPX96199': {
+    	'id': 'PCPX96199',
+	'title': "Pure Pure Plus 005 [DEMO]",
+    },
+    'PCPX96201': {
+    	'id': 'PCPX96201',
+	'title': "Pure Pure Plus 006 [DEMO]",
+    },
+    'PCPX96203': {
+    	'id': 'PCPX96203',
+	'title': "Pure Pure Plus 007 [DEMO]",
     },
     # PAL Demo Discs
     'SCED02327': {
@@ -73338,6 +73509,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '57fb5996e43d49a49248de5bf8dba348': {
+        'id': 'PCPX96075',
+    },
+    '2e925ec10219aa4e14b1568c547ce50c': {
+        'id': 'SLPS00070',
+    },
     '55a109c1e993919fafc8bf4d2f16252d': {
         'id': 'SLPS01818_ENGLISH',
     },
