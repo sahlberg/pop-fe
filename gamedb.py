@@ -74017,6 +74017,13 @@ games = {
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/986b860a-09e9-496a-88d0-59bbd7416987.jpg',
     },
+    'resevil0d': {
+        'id': 'resevil0d',
+        'title': "Resident Evil 0 Demake",
+        'icon0': 'https://images.launchbox-app.com//0a6157e1-01f5-4888-8277-95d15f812fe6.jpg',
+        'pic0': 'https://images.launchbox-app.com//fc20b839-5162-4b95-8401-776746d09991.png',
+        'pic1': 'https://images.launchbox-app.com//8fd1dc98-c5e7-4272-b01f-be8f6ddd73ed.jpg',
+    },
     'UNRL00001': {
         'id': 'UNRL00001',
         'title': 'The Redeemer [UNRELEASED]',
@@ -74027,6 +74034,9 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '0954167366bfc1971f5191a725278658': {
+        'id': 'resevil0d',
+    },
     'c73f2bbd43cd48b87fbcc5e89aae6d61': {
         'id': 'SLUS01087',
     },
