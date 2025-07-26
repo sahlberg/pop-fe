@@ -70,7 +70,7 @@ try:
     from make_isoedat import pack
 except:
     True
-from cue import parse_ccd, ccd2cue, write_cue
+from cue import parse_ccd, parse_cue, ccd2cue, write_cue
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
@@ -2610,6 +2610,14 @@ def create_retroarch_cue(dest, game_title, cue_files, img_files, magic_word):
                 create_sbi(dest + '/' + p + '.sbi', magic_word[i])
                 
 def create_psio(dest, game_id, game_title, icon0, cue_files, img_files, subdir = './'):
+    try:
+        if os.name == 'posix':
+            os.stat('Cue2cu2/cue2cu2.py')
+        else:
+            os.stat('cue2cu2.exe')
+    except:
+        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
+
     f = dest + '/' + game_title
     try:
         os.mkdir(f)
@@ -2736,6 +2744,93 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
+def get_toc_from_cue(cue_file):
+    def bcd(i):
+        return int(i % 10) + 16 * (int(i / 10) % 10)
+
+    _toc_header = bytes([
+        0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
+        0x01, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x01, 0x00, 0xa2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+        ])
+    
+    toc = bytearray(_toc_header)
+
+    cue = parse_cue(cue_file)
+    # number of tracks
+    num_tracks = len(cue['TRACKS'])
+    toc[17] = bcd(num_tracks)
+
+    num_sectors = 0
+    for i in cue['TRACKS'][num_tracks]['INDEX']:
+        ss = int(cue['TRACKS'][num_tracks]['INDEX'][i]['STOPSECT']) + 1
+        if ss > num_sectors:
+            num_sectors = ss
+
+    f = num_sectors % 75
+    num_sectors = int(num_sectors / 75)
+    s = num_sectors % 60
+    num_sectors = int(num_sectors / 60)
+    m = num_sectors
+    
+    # lead-out is the next frame
+    f = f + 1
+    if f == 75:
+        s = s + 1
+        f = 0
+    if s == 60:
+        m = m + 1
+        s = 0
+    toc[27] = bcd(m)
+    toc[28] = bcd(s)
+    toc[29] = bcd(f)
+
+    for t in cue['TRACKS']:
+        buf = bytearray(10)
+        if t == 1:
+            m = 0
+            s = 2
+            f = 0
+            buf[0] = 0x41
+            buf[2] = bcd(t)
+            buf[3] = bcd(m)
+            buf[4] = bcd(s)
+            buf[5] = 1
+            buf[7] = m
+            buf[8] = s
+            buf[9] = f
+        else:
+            num_indices = len(cue['TRACKS'][t]['INDEX'])
+            num_sectors = int(cue['TRACKS'][t]['INDEX'][num_indices - 1]['STARTSECT'])
+            f = num_sectors % 75
+            num_sectors = int(num_sectors / 75)
+            s = num_sectors % 60
+            num_sectors = int(num_sectors / 60)
+            m = num_sectors
+            if f >= 75:
+                f = f - 75
+                s = s + 1
+            if s >= 60:
+                s = s - 60
+                m = m + 1
+    
+            buf[0] = 0x01
+            buf[2] = bcd(t)
+            buf[3] = bcd(m)
+            buf[4] = bcd(s)
+            buf[5] = bcd(f)
+            s = s + 2
+            if s >= 60:
+                s = s - 60
+                m = m + 1
+            buf[7] = bcd(m)
+            buf[8] = bcd(s)
+            buf[9] = bcd(f)
+        toc = toc + buf
+        
+    return toc
+
+
 def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None, no_pstitleimg=False, subdir = './'):
     print('Create PBP file for', game_title) if verbose else None
 
@@ -2761,11 +2856,10 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         p.aea = aea_files
     if snd0:
         p.snd0 = snd0
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
-        toc = get_toc_from_cu2(cu2_files[i])
+        toc = get_toc_from_cue(cue_files[i])
 
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
@@ -2984,11 +3078,10 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         p.aea = aea_files
     if configs:
         p.configs = configs
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
-        toc = get_toc_from_cu2(cu2_files[i])
+        toc = get_toc_from_cue(cue_files[i])
         p.add_img((f, toc))
         
         if not whole_disk:
@@ -3443,11 +3536,10 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, su
             else:
                 discs_txt = discs_txt + pp
 
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
-        toc = get_toc_from_cu2(cu2_files[i])
+        toc = get_toc_from_cue(cue_files[i])
 
         print('Add image', f) if verbose else None
         p.add_img((f, toc))
@@ -4176,6 +4268,11 @@ def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
                 subprocess.run(['lcp.exe', img_files[idx]], check=True)
     return cue_files, img_files
 
+def print_toc(toc):
+    print('TOC', toc[:30].hex(), toc[30:].hex())
+    print('num tracks', toc[17])
+    for i in range(toc[17]):
+        print(i, toc[30 + i * 10:40 + i * 10].hex(), '%02x:%02x:%02x' % (toc[30 + i * 10 + 7], toc[30 + i * 10 + 8], toc[30 + i * 10 + 9]))
 
 # ICON0 is the game cover
 # PIC0 is logo
@@ -4285,14 +4382,6 @@ if __name__ == "__main__":
     shutil.rmtree(subdir, ignore_errors=True)
     os.mkdir(subdir)
         
-    try:
-        if os.name == 'posix':
-            os.stat('Cue2cu2/cue2cu2.py')
-        else:
-            os.stat('cue2cu2.exe')
-    except:
-        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
-
     try:
         os.unlink('NORMAL01.iso')
     except:
