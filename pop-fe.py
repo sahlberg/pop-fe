@@ -2609,7 +2609,7 @@ def create_retroarch_cue(dest, game_title, cue_files, img_files, magic_word):
                 print('Create magic word for disc', i)
                 create_sbi(dest + '/' + p + '.sbi', magic_word[i])
                 
-def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
+def create_psio(dest, game_id, game_title, icon0, cue_files, img_files, subdir = './'):
     f = dest + '/' + game_title
     try:
         os.mkdir(f)
@@ -2627,6 +2627,7 @@ def create_psio(dest, game_id, game_title, icon0, cu2_files, img_files):
         os.unlink(f + '/MULTIDISC.LST')
     except:
         True
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     with open(f + '/MULTIDISC.LST', 'wb') as md:
         for i in range(len(img_files)):
             g = game_title
@@ -4595,7 +4596,7 @@ if __name__ == "__main__":
     if args.fetch_metadata:
         create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual)
     if args.psio_dir:
-        create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cu2_files, img_files)
+        create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cue_files, img_files, subdir=subdir)
     if args.retroarch_bin_dir:
         new_path = args.retroarch_bin_dir + '/' + game_title
         create_retroarch_bin(new_path, game_title, cue_files, img_files)
