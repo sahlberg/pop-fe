@@ -71,7 +71,6 @@ class PopFePs3App:
         self.myrect = None
         self.cue_file_orig = None
         self.cue_files = None
-        self.cu2_files = None
         self.img_files = None
         self.disc_ids = None
         self.md5_sums = None
@@ -166,7 +165,6 @@ class PopFePs3App:
         os.mkdir(self.subdir)
 
         self.cue_files = []
-        self.cu2_files = []
         self.img_files = []
         self.disc_ids = []
         self.md5_sums = []
@@ -603,8 +601,6 @@ class PopFePs3App:
         #
         self.cue_files, self.img_files = popfe.apply_ppf_fixes(self.real_disc_ids, self.cue_files, self.img_files, self.md5_sums, self.subdir, tag="psp")
 
-        self.cu2_files = popfe.generate_cu2_files(self.cue_files, self.img_files, self.subdir)
-
         aea_files, extra_data_tracks = popfe.generate_aea_files(self.cue_files, self.img_files, self.subdir)
         if extra_data_tracks:
             self.cdda = 'on'
@@ -641,7 +637,7 @@ class PopFePs3App:
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          self.pic1 if self.pic1_disabled =='off' else None,
-                         self.cue_files, self.cu2_files, self.img_files, [],
+                         self.cue_files, self.img_files, [],
                          aea_files, subdir=self.subdir, snd0=snd0,
                          no_pstitleimg=True if self.nopstitleimg=='on' else False,
                          watermark=True if self.watermark=='on' else False,

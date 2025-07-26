@@ -2785,7 +2785,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None):
     if not no_libcrypt:
         try:
             # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
@@ -2890,6 +2890,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_fil
     if len(disc_ids) > 1:
         no_pstitleimg = False
 
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo, no_pstitleimg=no_pstitleimg)
 
     if manual:
@@ -4581,7 +4582,7 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
     if args.ps3_pkg:
