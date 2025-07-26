@@ -2556,7 +2556,10 @@ class popstation(object):
 
     @disc_ids.setter
     def disc_ids(self, value):
-        self._sfo['DISC_ID']['data'] = games[value[0]]['id']
+        if value[0] in games:
+            self._sfo['DISC_ID']['data'] = games[value[0]]['id']
+        else:
+            self._sfo['DISC_ID']['data'] = value[0]
         self._disc_ids = value
     
     @property
