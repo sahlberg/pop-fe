@@ -2736,7 +2736,7 @@ def get_toc_from_cu2(cu2):
         return toc
 
 
-def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None, no_pstitleimg=False):
+def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, aea_files, snd0=None, whole_disk=True, subchannels=[], configs=None, logo=None, no_pstitleimg=False, subdir = './'):
     print('Create PBP file for', game_title) if verbose else None
 
     SECTLEN = 2352
@@ -2761,6 +2761,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         p.aea = aea_files
     if snd0:
         p.snd0 = snd0
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
@@ -2891,8 +2892,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
     if len(disc_ids) > 1:
         no_pstitleimg = False
 
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
-    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, cu2_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo, no_pstitleimg=no_pstitleimg)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, aea_files, snd0=snd0_data, whole_disk=whole_disk, subchannels=subchannels, configs=configs, logo=logo, no_pstitleimg=no_pstitleimg, subdir=subdir)
 
     if manual:
         print('Installing manual as', f + '/DOCUMENT.DAT')
@@ -2948,8 +2948,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
     
     dest_file = dest + '/Games/' + game_title + '.PBP'
     print('Install EBOOT as', dest_file) if verbose else None
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
-    generate_pbp(dest_file, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, [], None)
+    generate_pbp(dest_file, disc_ids, game_title, icon0, None, pic1, cue_files, img_files, [], None, subdir=subdir)
 
     try:
         os.sync()
@@ -4414,8 +4413,6 @@ if __name__ == "__main__":
             os._exit(1)
         cue_files, img_files = apply_romhacks(real_disc_ids, cue_files, img_files, romhacks, subdir)
     
-    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
-
     if args.psp_dir or args.ps3_pkg or args.retroarch_pbp_dir:
         aea_files, extra_data_tracks = generate_aea_files(cue_files, img_files, subdir)
         if extra_data_tracks:
@@ -4619,7 +4616,7 @@ if __name__ == "__main__":
             i.seek(0)
             pic1 = i.read()
         
-        generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, aea_files, None)
+        generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, img_files, aea_files, None, subdir=subdir)
     if args.retroarch_thumbnail_dir:
         create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
 
