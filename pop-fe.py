@@ -2923,7 +2923,7 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
             True
 
 
-def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True):
+def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True, subdir = './'):
     print('Create PS Classics/AutoBleem EBOOT.PBP for', game_title) if verbose else None
 
     # Convert ICON0 to a file object
@@ -2947,6 +2947,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
     
     dest_file = dest + '/Games/' + game_title + '.PBP'
     print('Install EBOOT as', dest_file) if verbose else None
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     generate_pbp(dest_file, disc_ids, game_title, icon0, None, pic1, cue_files, cu2_files, img_files, [], None)
 
     try:
@@ -4590,7 +4591,7 @@ if __name__ == "__main__":
     if args.ps3_pkg:
         create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs, no_libcrypt=args.no_libcrypt)
     if args.psc_dir:
-        create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files, watermark=True if args.watermark else False)
+        create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
         create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual)
     if args.psio_dir:
