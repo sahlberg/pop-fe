@@ -3408,7 +3408,7 @@ def create_blank_mc(mc):
             f.write(buf)
 
             
-def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files):
+def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir = './'):
     print('Create PS2 VCD for', game_title) if verbose else None
     print('Install VCD in', dest + '/POPS')
 
@@ -3442,6 +3442,7 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, im
             else:
                 discs_txt = discs_txt + pp
 
+    cu2_files = generate_cu2_files(cue_files, img_files, subdir)
     for i in range(len(img_files)):
         f = img_files[i]
         print('Need to create a TOC') if verbose else None
@@ -4585,7 +4586,7 @@ if __name__ == "__main__":
     if args.psp_dir:
         create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
     if args.ps2_dir:
-        create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, cu2_files, img_files)
+        create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
         create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs, no_libcrypt=args.no_libcrypt)
     if args.psc_dir:
