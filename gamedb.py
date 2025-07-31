@@ -72924,7 +72924,7 @@ games = {
 	'title': "TRON NI KOBUN - THE MISSADVENTURES OF TRON BONNE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
         'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
-        'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02109.bin',
+        'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02108.bin',
     },
     'SLPS91204':    {
         'url': "games/J/T/SLPS-91203.html",
