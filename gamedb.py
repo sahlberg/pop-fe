@@ -12431,6 +12431,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Nightmare%20Creatures%20(USA).pdf',
         'ps3config': 'ps3configs/Nightmare Creatures/SLUS-00582.BIN',
+        'pspconfig': 'pspconfigs/Nightmare Creatures/SLUS-00582.BIN',
     },
     'SLUS01112': {
         'url': "games/U/N/SLUS-01112.html",
@@ -31127,6 +31128,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Nightmare Creatures/SCES-00582.BIN',
+        'pspconfig': 'pspconfigs/Nightmare Creatures/SCES-00582.BIN',
     },
     'SCES00684': {
         'url': "games/P/N/SCES-00684.html",
@@ -31135,7 +31137,8 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d2420487-0076-43c4-b73c-c77c73151331.png',
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
-        'ps3config': 'ps3configs/Nightmare Creatures/SCES-00864.BIN',
+        'ps3config': 'ps3configs/Nightmare Creatures/SCES-00684.BIN',
+        'pspconfig': 'pspconfigs/Nightmare Creatures/SCES-00684.BIN',
     },
     'SLES02751': {
         'url': "games/P/N/SLES-02751.html",
@@ -59919,6 +59922,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/d2420487-0076-43c4-b73c-c77c73151331.png',
         'pic1': 'https://images.launchbox-app.com/5e468433-fdd0-4e16-a7c7-e96ee80ccee3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Nightmare%20Creatures%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Nightmare Creatures/SIPS-60027.BIN',
     },
     'SLPS00561': {
         'url': "games/J/N/SLPS-00561.html",
@@ -72920,7 +72924,7 @@ games = {
 	'title': "TRON NI KOBUN - THE MISSADVENTURES OF TRON BONNE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/773d1efd-1600-4711-a378-8913993088d6.png',
         'pic1': 'https://images.launchbox-app.com/c23389d0-93ed-4b0f-8374-b3c1eb628004.jpg',
-        'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02109.bin',
+        'pspconfig': 'pspconfigs/The Misadventures of Tron Bonne/SLPS-02108.bin',
     },
     'SLPS91204':    {
         'url': "games/J/T/SLPS-91203.html",
