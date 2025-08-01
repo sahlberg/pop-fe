@@ -34678,6 +34678,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Spyro%20the%20Dragon%20(Platinum)%20(E)(F)(G)(I)(S)(Du)%20[SCES-01438].cbr',
+        'pspconfig': 'pspconfigs/Spyro the Dragon/SCES-01438.bin',
     },
     'SCES02104': {
         'url': "games/P/S/SCES-02104.html",
@@ -68493,6 +68494,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20the%20Dragon%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Spyro the Dragon/SCPS-45395.bin',
     },
     'SCPS10085': {
         'url': "games/J/S/SCPS-10085.html",
@@ -68501,6 +68503,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20the%20Dragon%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Spyro the Dragon/SCPS-10085.bin',
     },
     'SCPS10083': {
         'url': "games/J/S/SCPS-10083.html",
@@ -68509,6 +68512,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c39142a1-656c-45be-af6c-04235146d4c6.png',
         'pic1': 'https://images.launchbox-app.com/dbbc19b3-f065-4602-b85a-3ef3db3b95a3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Spyro%20the%20Dragon%20%28USA%29_jp2.zip',
+        'pspconfig': 'pspconfigs/Spyro the Dragon/SCPS-10083.bin',
     },
     'SCPS10084': {
         'url': "games/J/S/SCPS-10083.html",
