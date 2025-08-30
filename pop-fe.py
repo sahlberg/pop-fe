@@ -2556,7 +2556,7 @@ def get_imgs_from_bin(cue):
         lines = f.readlines()
         for line in lines:
             # FILE
-            if re.search('^\s*FILE', line):
+            if re.search(r'^\s*FILE', line):
                 f = get_file_name(line)
                 # unix absilute paths start with /
                 # windows absolute patsh start with ?:/
