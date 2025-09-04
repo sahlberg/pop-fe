@@ -82,11 +82,12 @@ def decrypt_document(data):
     if struct.unpack_from('<I', msg, 0x00)[0] != 0xffffffff:
         print('Marker mismatch')
         os._exit(1)
-    print('Image count 0x%08x PSP?' % (struct.unpack_from('<I', msg, 0x04)[0]))
-    image_count = struct.unpack_from('<I', msg, 0x3188)[0]
-    print('Image count 0x%08x PS3' % (image_count))
+    psp_image_count = struct.unpack_from('<I', msg, 0x04)[0]
+    print('Image count 0x%08x PSP?' % (psp_image_count))
+    ps3_image_count = struct.unpack_from('<I', msg, 0x3188)[0]
+    print('Image count 0x%08x PS3' % (ps3_image_count))
     
-    for i in range(image_count + 2):
+    for i in range(max(ps3_image_count, psp_image_count)):
         print('%d FP:0x%08x ES:0x%08x FP:0x%08x ES:0x%08x' % (i,
                                          struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0],
                                          struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0],
