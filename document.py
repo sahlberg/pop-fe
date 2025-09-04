@@ -88,12 +88,20 @@ def decrypt_document(data):
     print('Image count 0x%08x PS3' % (ps3_image_count))
     
     for i in range(max(ps3_image_count, psp_image_count)):
+        psp_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0]
+        psp_es = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0]
+        ps3_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x10)[0]
+        ps3_es = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x1c)[0]
         print('%d FP:0x%08x ES:0x%08x FP:0x%08x ES:0x%08x' % (i,
-                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0],
-                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0],
-                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x10)[0],
-                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x1c)[0]))
-                                         
+                                         psp_fp, psp_es,
+                                         ps3_fp, ps3_es))
+        offset = ps3_fp
+        length = ps3_es
+        hdr = data[offset:offset + length]
+        msg = decrypt_blob(hdr, 'PNG #%d' % i)
+        with open('PIC.dat', 'wb') as f:
+            f.write(msg)
+        os._exit(0)
     
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.decrypt(data[16:])
