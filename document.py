@@ -28,45 +28,62 @@ des_key = bytes([0x39, 0xF7, 0xEF, 0xA1, 0x6C, 0xCE, 0x5F, 0x4C])
 des_iv  = bytes([0xA8, 0x19, 0xC4, 0xF5, 0xE1, 0x54, 0xE3, 0x0B])
 pgd_hdr = bytes([0x00, 0x50, 0x47, 0x44, 0x01, 0x00, 0x00, 0x00,
                  0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+def decrypt_blob(hdr, name):
+    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+    msg = cipher.decrypt(hdr[:-32])
+    print(name)
+    for i in range(0x00, len(hdr), 0x10):
+        if i < 0x20 or i > len(hdr) - 0x30:
+            print('%04x ' % i, hdr[i:i+16].hex())
+    print('Decrypted', name)
+    for i in range(0x00, len(msg), 0x10):
+        if i < 0x20 or i > len(msg) - 0x30:
+            print('%04x ' % i, msg[i:i+16].hex())
+    print('SHA1 of', name, hashlib.sha1(hdr[:-32]).digest()[:16].hex())
+    if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
+        print('SHA1 mismatch')
+        os._exit(1)
+    return msg
+
 
 def decrypt_document(data):
     # Offsets in DAT file
     # 0x00000010 | 0x60 | DOC header           | Encrypted, data vary.
     # 0x00000070 | 0x10 | Unknown              | Some kind of hash or key.
     # 0x00000080 | 0x10 | DOC header SHA1 part | First 16 bytes of SHA1 calculated from encrypted DOC header
-    print('DOC header 0x10/0x80')
-    hdr = data[0x10:0x70]
-    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-    msg = cipher.decrypt(hdr[:-32])
-    for i in range(0x00, 0x80, 0x10):
-        print('%04x ' % i, hdr[i:i+16].hex())
-    print('Decrypted DOC header')
-    for i in range(0x00, 0x60, 0x10):
-        print('%04x ' % i, msg[i:i+16].hex())
-    print('SHA1 of DOC header', hashlib.sha1(data[0x10:0x70]).digest()[:16].hex())
-    if hashlib.sha1(data[0x10:0x70]).digest()[:16] != data[0x80:0x90]:
-        print('Header SHA1 mismatch')
+
+    #
+    # DOC Header
+    #
+    offset = 0x10
+    length = 0x60
+    hdr = data[offset:offset + length + 0x20]
+    msg = decrypt_blob(hdr, 'DOC Header')
     print('Magic', msg[:4])
     if msg[:4] != b'DOC ':
         print('Magic mismatch')
+        os._exit(1)
+    print('Unk %08x %08x' % (struct.unpack_from('<I', msg, 0x04)[0], struct.unpack_from('<I', msg, 0x08)[0]))
+    if struct.unpack_from('<I', msg, 0x04)[0] != 0x00010000 or struct.unpack_from('<I', msg, 0x08)[0] != 0x00010000:
+        print('Unk mismatch')
+        os._exit(1)
     print('Gameid', msg[0x0c:0x1c])
     print('Size', struct.unpack_from('<I', msg, 0x1c)[0])
     print()
 
-    print('Info block @ 0x90 (small)')
-    hdr = data[0x90:0x90 + 0x3208]
-    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-    msg = cipher.decrypt(hdr[:-32])
-    for i in range(0x00, 0x3208, 0x10):
-        if i < 0x30 or i > 0x31c0:
-            print('%04x ' % i, hdr[i:i+16].hex())
-    print('Decrypted info block')
-    for i in range(0x00, 0x31e8, 0x10):
-        if i < 0x30 or i > 0x31c0:
-            print('%04x ' % i, msg[i:i+16].hex())
-    print('SHA1 of info block', hashlib.sha1(hdr[:-32]).digest()[:16].hex())
-    if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
-        print('Info block SHA1 mismatch')
+    #
+    # INFO Block
+    #
+    offset = 0x90
+    length = 0x31e8
+    hdr = data[offset:offset + length + 0x20]
+    msg = decrypt_blob(hdr, 'Info block (small)')
+    print('Marker %08x' % (struct.unpack_from('<I', msg, 0x00)[0]))
+    if struct.unpack_from('<I', msg, 0x00)[0] != 0xffffffff:
+        print('Marker mismatch')
+        os._exit(1)
+    print('Image count 0x%08x PSP?' % (struct.unpack_from('<I', msg, 0x04)[0]))
+    print('Image count 0x%08x PS3' % (struct.unpack_from('<I', msg, 0x3188)[0]))
     
     
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
