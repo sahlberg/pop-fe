@@ -35,10 +35,11 @@ def decrypt_document(data):
     # 0x00000070 | 0x10 | Unknown              | Some kind of hash or key.
     # 0x00000080 | 0x10 | DOC header SHA1 part | First 16 bytes of SHA1 calculated from encrypted DOC header
     print('DOC header 0x10/0x80')
-    for i in range(0x10, 0x90, 0x10):
-        print('%04x ' % i, data[i:i+16].hex())
+    hdr = data[0x10:0x70]
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-    msg = cipher.decrypt(data[0x10:0x70])
+    msg = cipher.decrypt(hdr[:-32])
+    for i in range(0x00, 0x80, 0x10):
+        print('%04x ' % i, hdr[i:i+16].hex())
     print('Decrypted DOC header')
     for i in range(0x00, 0x60, 0x10):
         print('%04x ' % i, msg[i:i+16].hex())
@@ -53,18 +54,19 @@ def decrypt_document(data):
     print()
 
     print('Info block @ 0x90 (small)')
-    for i in range(0x90, 0x90 + 0x3208, 0x10):
-        if i < 0xb0 or i > 0x3260:
-            print('%04x ' % i, data[i:i+16].hex())
+    hdr = data[0x90:0x90 + 0x3208]
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-    msg = cipher.decrypt(data[0x90:0x90 + 0x3208])
+    msg = cipher.decrypt(hdr[:-32])
+    for i in range(0x00, 0x3208, 0x10):
+        if i < 0x30 or i > 0x31c0:
+            print('%04x ' % i, hdr[i:i+16].hex())
     print('Decrypted info block')
-    for i in range(0x00, 0x3218, 0x10):
+    for i in range(0x00, 0x31e8, 0x10):
         if i < 0x30 or i > 0x31c0:
             print('%04x ' % i, msg[i:i+16].hex())
-    print('SHA1 of info block', hashlib.sha1(data[0x90:0x90 + 0x31e8]).digest()[:16].hex())
-    #if hashlib.sha1(data[0x10:0x70]).digest()[:16] != data[0x80:0x90]:
-    #    print('Header SHA1 mismatch')
+    print('SHA1 of info block', hashlib.sha1(hdr[:-32]).digest()[:16].hex())
+    if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
+        print('Info block SHA1 mismatch')
     
     
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
