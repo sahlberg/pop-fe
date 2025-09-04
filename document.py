@@ -37,7 +37,7 @@ def decrypt_blob(hdr, name):
             print('%04x ' % i, hdr[i:i+16].hex())
     print('Decrypted', name)
     for i in range(0x00, len(msg), 0x10):
-        if i < 0x20 or i > len(msg) - 0x30:
+        if i < 0x120 or i > len(msg) - 0x30:
             print('%04x ' % i, msg[i:i+16].hex())
     print('SHA1 of', name, hashlib.sha1(hdr[:-32]).digest()[:16].hex())
     if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
@@ -83,8 +83,16 @@ def decrypt_document(data):
         print('Marker mismatch')
         os._exit(1)
     print('Image count 0x%08x PSP?' % (struct.unpack_from('<I', msg, 0x04)[0]))
-    print('Image count 0x%08x PS3' % (struct.unpack_from('<I', msg, 0x3188)[0]))
+    image_count = struct.unpack_from('<I', msg, 0x3188)[0]
+    print('Image count 0x%08x PS3' % (image_count))
     
+    for i in range(image_count + 2):
+        print('%d FP:0x%08x ES:0x%08x FP:0x%08x ES:0x%08x' % (i,
+                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0],
+                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0],
+                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x10)[0],
+                                         struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x1c)[0]))
+                                         
     
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.decrypt(data[16:])
