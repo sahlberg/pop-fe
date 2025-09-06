@@ -144,10 +144,6 @@ def encrypt_document(f, gameid, pages):
 
     msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
     f.write(msg)
-    for i in range(0x00, len(msg), 0x10):
-        if i < 0x30 or i > len(msg) - 0x30:
-            print('%04x ' % i, msg[i:i+16].hex())
-    print('SHA1 of header', hashlib.sha1(msg).digest()[:16].hex())
 
     #
     # Info Block
@@ -169,24 +165,21 @@ def encrypt_document(f, gameid, pages):
 
     msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
     f.write(msg)
-    print('SHA1 of Info Block', hashlib.sha1(msg).digest()[:16].hex())
 
     #
     # File data
     #
     fp = 0x3298
     for i, p in enumerate(pages):
-        print('P', i)
+        print('Encrypting and writing pic', i)
+        p = p[0x00:0x10] + p[0x10:0x20] + p[0x20:0x30] + p[0x30:0x40] + p[0x40:]
         for i in range(0x00, len(p), 0x10):
-            if i < 0x40 or i > len(p) - 0x30:
+            if i < 0x40:
                 print('%04x ' % i, p[i:i+16].hex())
-        print('Encode pic', i)
+
         cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
         msg = cipher.encrypt(bytes(p))
         msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
-        for i in range(0x00, len(msg), 0x10):
-            if i < 0x30 or i > len(msg) - 0x30:
-                print('%04x ' % i, msg[i:i+16].hex())
         f.write(msg)
         fp += len(msg)
 
