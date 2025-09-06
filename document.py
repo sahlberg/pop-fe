@@ -87,7 +87,7 @@ def decrypt_document(data):
     ps3_image_count = struct.unpack_from('<I', msg, 0x3188)[0]
     print('Image count 0x%08x PS3' % (ps3_image_count))
     
-    for i in range(max(ps3_image_count, psp_image_count)):
+    for i in range(ps3_image_count):
         psp_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0]
         psp_es = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0]
         ps3_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x10)[0]
@@ -98,10 +98,9 @@ def decrypt_document(data):
         offset = ps3_fp
         length = ps3_es
         hdr = data[offset:offset + length]
-        msg = decrypt_blob(hdr, 'PNG #%d' % i)
-        with open('PIC.dat', 'wb') as f:
-            f.write(msg)
-        os._exit(0)
+        png = decrypt_blob(hdr, 'PNG #%d' % i)
+        with open('pages/%03d.dat' % i, 'wb') as f:
+            f.write(png)
     
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.decrypt(data[16:])
