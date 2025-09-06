@@ -21,6 +21,8 @@ import struct
 import sys
 import zipfile
 
+from pathlib import Path
+
 verbose = False
 
 
@@ -37,7 +39,7 @@ def decrypt_blob(hdr, name):
             print('%04x ' % i, hdr[i:i+16].hex())
     print('Decrypted', name)
     for i in range(0x00, len(msg), 0x10):
-        if i < 0x120 or i > len(msg) - 0x30:
+        if i < 0x50 or i > len(msg) - 0x30:
             print('%04x ' % i, msg[i:i+16].hex())
     print('SHA1 of', name, hashlib.sha1(hdr[:-32]).digest()[:16].hex())
     if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
@@ -70,7 +72,7 @@ def decrypt_document(data):
     print('Gameid', msg[0x0c:0x1c])
     print('Size', struct.unpack_from('<I', msg, 0x1c)[0])
     print()
-
+    
     #
     # INFO Block
     #
@@ -86,6 +88,7 @@ def decrypt_document(data):
     print('Image count 0x%08x PSP?' % (psp_image_count))
     ps3_image_count = struct.unpack_from('<I', msg, 0x3188)[0]
     print('Image count 0x%08x PS3' % (ps3_image_count))
+
     
     for i in range(ps3_image_count):
         psp_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0]
@@ -101,16 +104,91 @@ def decrypt_document(data):
         png = decrypt_blob(hdr, 'PNG #%d' % i)
         with open('pages/%03d.dat' % i, 'wb') as f:
             f.write(png)
-    
+        png_size = struct.unpack_from('<I', png, 0)[0]
+        print('PNG Size %x , file size %x' % (png_size, len(png)))
+        if png_size != len(png) + 0x20:
+            print('PNG len mismatch')
+            os._exit(0)
+        if png_size != ps3_es:
+            print('PNG entry size mismatch')
+            os._exit(0)
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.decrypt(data[16:])
     return msg
 
 
-def encrypt_document(data):
-    cipher = DES.new(des_key, DES.MODE_CBC, iv=des_iv)
-    msg = cipher.encrypt(data)
-    return pgd_hdr + msg
+def encrypt_document(f, gameid, pages):
+    def create_header(gameid):
+        buf = bytearray(0x60)
+        struct.pack_into('<I', buf, 0x00, 0x20434F44)
+        struct.pack_into('<I', buf, 0x04, 0x10000)
+        struct.pack_into('<I', buf, 0x08, 0x10000)
+        buf[12:21] = bytes(gameid, encoding='utf-8')
+        struct.pack_into('<I', buf, 0x1c, 0)
+        struct.pack_into('<I', buf, 0x1c, 0 if len(pages) < 100 else 1)
+        return buf
+    
+    print('Encrypt', gameid)
+
+    #
+    # PGD header
+    #
+    f.write(pgd_hdr)
+
+    #
+    # DOC Header
+    #
+    hdr = create_header(gameid)
+    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+    msg = cipher.encrypt(bytes(hdr))
+
+    msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
+    f.write(msg)
+    for i in range(0x00, len(msg), 0x10):
+        if i < 0x30 or i > len(msg) - 0x30:
+            print('%04x ' % i, msg[i:i+16].hex())
+    print('SHA1 of header', hashlib.sha1(msg).digest()[:16].hex())
+
+    #
+    # Info Block
+    # file data starts at 0x3298
+    #
+    fp = 0x3298
+    ib = bytearray(0x31e8)
+    struct.pack_into('<I', ib, 0x00, 0xffffffff)
+    struct.pack_into('<I', ib, 0x04, len(pages))
+    struct.pack_into('<I', ib, 0x3188, len(pages))
+    for i, p in enumerate(pages):
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x00, fp)
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x0c, len(p) + 0x20)
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x10, fp)
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x1c, len(p) + 0x20)
+        fp += len(p) + 0x20
+    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+    msg = cipher.encrypt(bytes(ib))
+
+    msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
+    f.write(msg)
+    print('SHA1 of Info Block', hashlib.sha1(msg).digest()[:16].hex())
+
+    #
+    # File data
+    #
+    fp = 0x3298
+    for i, p in enumerate(pages):
+        print('P', i)
+        for i in range(0x00, len(p), 0x10):
+            if i < 0x40 or i > len(p) - 0x30:
+                print('%04x ' % i, p[i:i+16].hex())
+        print('Encode pic', i)
+        cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+        msg = cipher.encrypt(bytes(p))
+        msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
+        for i in range(0x00, len(msg), 0x10):
+            if i < 0x30 or i > len(msg) - 0x30:
+                print('%04x ' % i, msg[i:i+16].hex())
+        f.write(msg)
+        fp += len(msg)
 
 
 def create_document(source, gameid, maxysize, output):
@@ -196,30 +274,24 @@ if __name__ == "__main__":
 
     if args.decrypt:
         print('Decrypt', args.decrypt)
-        with open(args.decrypt[0], 'rb+') as f:
+        with open(args.decrypt[0], 'rb') as f:
             buf = f.read(4)
             if buf != bytes([0x00, 0x50, 0x47, 0x44]):
                 print('Not a PGD document. Can not decrypt.')
                 sys.exit()
             f.seek(0)
             buf = decrypt_document(f.read())
-            #f.seek(0)
-            #f.truncate(0)
-            #f.write(buf)
         sys.exit()
 
     if args.encrypt:
         print('Encrypt', args.encrypt)
-        with open(args.encrypt[0], 'rb+') as f:
-            buf = f.read(4)
-            if buf != bytes([0x44, 0x4f, 0x43, 0x20]):
-                print('Not a DOC document. Can not encrypt.')
-                sys.exit()
-            f.seek(0)
-            buf = encrypt_document(f.read())
-            f.seek(0)
-            f.truncate(0)
-            f.write(buf)
+        pages = []
+        p = Path('pages')
+        for png in p.iterdir():
+            with open(png, 'rb') as f:
+                pages.append(f.read())
+        with open(args.encrypt[0], 'wb') as f:
+            encrypt_document(f, 'SCUS94457', pages)
         sys.exit()
         
     print('Convert', args.source[0], 'to', args.document[0]) if verbose else None
