@@ -138,7 +138,7 @@ jobs:
           mkdir dist/pop-fe-ps3/libcrypt
           cp libcrypt/*.* dist/pop-fe-ps3/libcrypt
       - name: Upload pop-fe-ui artefact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with: 
           name: pop-fe-ui
           path: dist/pop-fe-ps3
