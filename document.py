@@ -167,11 +167,12 @@ def encrypt_document(f, gameid, pages):
     struct.pack_into('<I', ib, 0x04, len(pages))
     struct.pack_into('<I', ib, 0x3188, len(pages))
     for i, p in enumerate(pages):
+        png_len = len(p) + 0x20
         struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x00, fp)
-        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x0c, len(p) + 0x20)
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x0c, png_len + 0x20)
         struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x10, fp)
-        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x1c, len(p) + 0x20)
-        fp += len(p) + 0x20
+        struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x1c, png_len + 0x20)
+        fp += png_len + 0x20
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.encrypt(bytes(ib))
 
@@ -184,16 +185,18 @@ def encrypt_document(f, gameid, pages):
     fp = 0x3298
     for i, p in enumerate(pages):
         print('Encrypting and writing pic', i)
-        p = p[0x00:0x10] + p[0x10:0x20] + p[0x20:0x28] + p[0x28:0x30] + p[0x30:0x40] + p[0x40:]
-        for i in range(0x00, len(p), 0x10):
-            if i < 0x60:
-                print('%04x ' % i, p[i:i+16].hex())
-
+        png_len = len(p) + 0x20
+        
+        png_info_head = bytearray(0x20)
+        struct.pack_into('<I', png_info_head, 0, png_len + 0x20)
         cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-        msg = cipher.encrypt(bytes(p))
-        msg = msg + bytes(16) + hashlib.sha1(msg).digest()[:16]
-        f.write(msg)
-        fp += len(msg)
+        png_info_head = cipher.encrypt(bytes(png_info_head))
+
+        p = png_info_head + p
+        p = p + bytes(16) + hashlib.sha1(p).digest()[:16]
+
+        f.write(p)
+        fp += len(p)
 
 
 def create_document(source, gameid, maxysize, output):
