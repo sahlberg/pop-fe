@@ -102,6 +102,10 @@ def decrypt_document(data):
         length = ps3_es
         hdr = data[offset:offset + length]
 
+        if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
+            print('PNG SHA1 mismatch')
+            os._exit(1)
+
         cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
         png_info_head = cipher.decrypt(hdr[:0x20])
         
