@@ -101,20 +101,28 @@ def decrypt_document(data):
         offset = ps3_fp
         length = ps3_es
         hdr = data[offset:offset + length]
-        png = decrypt_blob(hdr, 'PNG #%d' % i)
-        with open('pages/%03d.dat' % i, 'wb') as f:
+
+        cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+        png_info_head = cipher.decrypt(hdr[:0x20])
+        
+        enc_chunks = struct.unpack_from('<I', png_info_head, 0x08)[0]
+        png_size = struct.unpack_from('<I', png_info_head, 0x00)[0]
+        write_size = png_size - (8 * enc_chunks) - 0x40;
+
+        cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+        png_head = cipher.decrypt(hdr[0x20:0x20 + 8 * enc_chunks])
+
+        png = hdr[0x20 + 8 * enc_chunks:][:write_size]
+        for k in range(enc_chunks):
+                dec_size = struct.unpack_from('<I', png_head, k * 8 + 4)[0]
+                dec_offset = struct.unpack_from('<I', png_head, k * 8 + 0)[0]
+
+                cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
+                _b = cipher.decrypt(png[dec_offset:dec_offset + dec_size])
+                png = png[:dec_offset] + _b + png[dec_offset + dec_size:]
+
+        with open('pages/%03d.png' % i, 'wb') as f:
             f.write(png)
-        png_size = struct.unpack_from('<I', png, 0)[0]
-        print('PNG Size %x , file size %x' % (png_size, len(png)))
-        if png_size != len(png) + 0x20:
-            print('PNG len mismatch')
-            os._exit(0)
-        if png_size != ps3_es:
-            print('PNG entry size mismatch')
-            os._exit(0)
-    cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
-    msg = cipher.decrypt(data[16:])
-    return msg
 
 
 def encrypt_document(f, gameid, pages):
@@ -172,9 +180,9 @@ def encrypt_document(f, gameid, pages):
     fp = 0x3298
     for i, p in enumerate(pages):
         print('Encrypting and writing pic', i)
-        p = p[0x00:0x10] + p[0x10:0x20] + p[0x20:0x30] + p[0x30:0x40] + p[0x40:]
+        p = p[0x00:0x10] + p[0x10:0x20] + p[0x20:0x28] + p[0x28:0x30] + p[0x30:0x40] + p[0x40:]
         for i in range(0x00, len(p), 0x10):
-            if i < 0x40:
+            if i < 0x60:
                 print('%04x ' % i, p[i:i+16].hex())
 
         cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
@@ -273,7 +281,7 @@ if __name__ == "__main__":
                 print('Not a PGD document. Can not decrypt.')
                 sys.exit()
             f.seek(0)
-            buf = decrypt_document(f.read())
+            decrypt_document(f.read())
         sys.exit()
 
     if args.encrypt:
