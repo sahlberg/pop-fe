@@ -64,7 +64,7 @@ except:
     True
 from pathlib import Path
 from bchunk import bchunk
-from document import create_document
+from document import create_document, encrypt_document
 from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
 try:
     from make_isoedat import pack
@@ -3051,7 +3051,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], configs=None, no_libcrypt=None):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     if not no_libcrypt:
@@ -3236,6 +3236,10 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         os.mkdir(f)
     except:
         True
+
+    if manual:
+        print('Installing manual as', subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
+        copy_file(manual, subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
 
     p.eboot = subdir + disc_ids[0] + '/USRDIR/CONTENT/EBOOT.PBP'
     p.iso_bin_dat = subdir + disc_ids[0] + '/USRDIR/ISO.BIN.DAT'
@@ -3877,10 +3881,10 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][0]))
                 f.write(generate_sbi(sector_pairs[i][1]))
 
-# Convert scans of the manual into a DOCUMENT.DAT for PSP
+# Convert scans of the manual into a DOCUMENT.DAT for PSP and PS3
 # XXX add support for pdf manuals
 # https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf
-def create_manual(source, gameid, subdir='./pop-fe-work/'):
+def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
     # already have a manual in the proper format
     if source[-7:] == '.manual':
@@ -3986,7 +3990,30 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     tmpfile = subdir + '/DOCUMENT.DAT'
     temp_files.append(tmpfile)
-    tmpfile = create_document(files, gameid, 480, tmpfile)
+    if ps3_manual:
+        print('Create PS3 manual')
+        pages = []
+        for p in files:
+            print('F', p)
+            pic = Image.open(p)
+
+            maxysize = 480
+            sf = 480 / pic.size[0]
+            ns = (480, int(sf * pic.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = pic.resize(ns, Image.Resampling.BILINEAR)
+            f = io.BytesIO()
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
+
+        with open(tmpfile, 'wb') as f:
+            encrypt_document(f, gameid, pages)
+        print('Created PS3 manual in', tmpfile)
+        return tmpfile
+    else:
+        tmpfile = create_document(files, gameid, 480, tmpfile)
     if not tmpfile:
         print('Failed to create DOCUMENT.DAT')
     return tmpfile
@@ -4599,7 +4626,9 @@ if __name__ == "__main__":
             logo = Image.open(args.logo)
 
     manual = None
-    if not args.force_no_assets and (args.psp_dir or args.fetch_metadata):
+    psp_manual = None
+    ps3_manual = None
+    if not args.force_no_assets and (args.psp_dir or args.ps3_pkg):
         if args.manual:
             manual = args.manual
         if not manual:
@@ -4609,10 +4638,15 @@ if __name__ == "__main__":
                 print('Use locally stored manual from', manual)
             except:
                 True
-        if disc_ids[0] in games and not manual and 'manual' in games[disc_ids[0]]:
+        if not manual and disc_ids[0] in games and 'manual' in games[disc_ids[0]]:
             manual = games[disc_ids[0]]['manual']
         if manual:
-            manual = create_manual(manual, disc_ids[0])
+            if args.ps3_pkg:
+                print('Create PS3 manual from', manual)
+                ps3_manual = create_manual(manual, disc_ids[0], ps3_manual=True)
+            if args.psp_dir:
+                print('Create PSP manual from', manual)
+                psp_manual = create_manual(manual, disc_ids[0])
         
     print('Id:', games[disc_ids[0]]['id'])
     print('Title:', game_title)
@@ -4672,11 +4706,11 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs, no_libcrypt=args.no_libcrypt)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
