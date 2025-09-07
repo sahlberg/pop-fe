@@ -55,11 +55,9 @@ def decrypt_document(data, directory):
     length = 0x60
     hdr = data[offset:offset + length + 0x20]
     msg = decrypt_blob(hdr, 'DOC Header')
-    print('Magic', msg[:4])
     if msg[:4] != b'DOC ':
         print('Magic mismatch')
         os._exit(1)
-    print('Unk %08x %08x' % (struct.unpack_from('<I', msg, 0x04)[0], struct.unpack_from('<I', msg, 0x08)[0]))
     if struct.unpack_from('<I', msg, 0x04)[0] != 0x00010000 or struct.unpack_from('<I', msg, 0x08)[0] != 0x00010000:
         print('Unk mismatch')
         os._exit(1)
@@ -79,7 +77,9 @@ def decrypt_document(data, directory):
     print('Image count 0x%08x PSP?' % (psp_image_count))
     ps3_image_count = struct.unpack_from('<I', msg, 0x3188)[0]
     print('Image count 0x%08x PS3' % (ps3_image_count))
-
+    if image_count >= 100:
+        print('Can not handle large documents yet')
+        os._exit(0)
     
     for i in range(ps3_image_count):
         psp_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0]
@@ -133,6 +133,9 @@ def encrypt_document(f, gameid, pages):
         return buf
     
     print('Encrypt', gameid)
+    if len(pages) >= 100:
+        print('Can not handle large documents yet')
+        os._exit(0)
 
     #
     # PGD header

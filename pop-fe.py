@@ -3994,7 +3994,6 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
         print('Create PS3 manual')
         pages = []
         for p in files:
-            print('F', p)
             pic = Image.open(p)
 
             maxysize = 480
