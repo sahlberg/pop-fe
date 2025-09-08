@@ -32,15 +32,6 @@ pgd_hdr = bytes([0x00, 0x50, 0x47, 0x44, 0x01, 0x00, 0x00, 0x00,
 def decrypt_blob(hdr, name):
     cipher = DES.new(des_key, DES.MODE_CBC, IV=des_iv)
     msg = cipher.decrypt(hdr[:-32])
-    print(name)
-    for i in range(0x00, len(hdr), 0x10):
-        if i < 0x20 or i > len(hdr) - 0x30:
-            print('%04x ' % i, hdr[i:i+16].hex())
-    print('Decrypted', name)
-    for i in range(0x00, len(msg), 0x10):
-        if i < 0x50 or i > len(msg) - 0x30:
-            print('%04x ' % i, msg[i:i+16].hex())
-    print('SHA1 of', name, hashlib.sha1(hdr[:-32]).digest()[:16].hex())
     if hashlib.sha1(hdr[:-32]).digest()[:16] != hdr[-16:]:
         print('SHA1 mismatch')
         os._exit(1)
@@ -62,12 +53,13 @@ def decrypt_document(data, directory):
         print('Unk mismatch')
         os._exit(1)
     print('Gameid', msg[0x0c:0x1c])
-    
+    info_block_size = 0x1f3e8 if struct.unpack_from('<I', msg, 0x1c)[0] else 0x31e8
+          
     #
     # INFO Block
     #
     offset = 0x90
-    length = 0x31e8
+    length = info_block_size
     hdr = data[offset:offset + length + 0x20]
     msg = decrypt_blob(hdr, 'Info block (small)')
     if struct.unpack_from('<I', msg, 0x00)[0] != 0xffffffff:
@@ -77,18 +69,12 @@ def decrypt_document(data, directory):
     print('Image count 0x%08x PSP?' % (psp_image_count))
     ps3_image_count = struct.unpack_from('<I', msg, 0x3188)[0]
     print('Image count 0x%08x PS3' % (ps3_image_count))
-    if image_count >= 100:
-        print('Can not handle large documents yet')
-        os._exit(0)
     
     for i in range(ps3_image_count):
         psp_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80)[0]
         psp_es = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x0c)[0]
         ps3_fp = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x10)[0]
         ps3_es = struct.unpack_from('<I', msg, 0x08 + i * 0x80 + 0x1c)[0]
-        print('%d FP:0x%08x ES:0x%08x FP:0x%08x ES:0x%08x' % (i,
-                                         psp_fp, psp_es,
-                                         ps3_fp, ps3_es))
         offset = ps3_fp
         length = ps3_es
         hdr = data[offset:offset + length]
@@ -133,9 +119,7 @@ def encrypt_document(f, gameid, pages):
         return buf
     
     print('Encrypt', gameid)
-    if len(pages) >= 100:
-        print('Can not handle large documents yet')
-        os._exit(0)
+    info_block_size = 0x1f3e8 if len(pages) >= 100 else 0x31e8
 
     #
     # PGD header
@@ -154,10 +138,10 @@ def encrypt_document(f, gameid, pages):
 
     #
     # Info Block
-    # file data starts at 0x3298
+    # file data starts at 0x3298 / 0x1f498
     #
-    fp = 0x3298
-    ib = bytearray(0x31e8)
+    fp = info_block_size + 0x20 + 0x90 
+    ib = bytearray(info_block_size)
     struct.pack_into('<I', ib, 0x00, 0xffffffff)
     struct.pack_into('<I', ib, 0x04, len(pages))
     struct.pack_into('<I', ib, 0x3188, len(pages))
@@ -177,7 +161,7 @@ def encrypt_document(f, gameid, pages):
     #
     # File data
     #
-    fp = 0x3298
+    fp = info_block_size + 0x20 + 0x90 
     for i, p in enumerate(pages):
         print('Encrypting and writing pic', i)
         png_len = len(p) + 0x20
