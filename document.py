@@ -316,7 +316,7 @@ def extract_document(document, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
-    parser.add_argument('command', nargs=1, choices=['create', 'view', 'extract', 'decrypt'], help='Command')
+    parser.add_argument('command', nargs=1, choices=['create', 'view', 'extract', 'decrypt', 'encrypt'], help='Command')
     parser.add_argument('--document', help='Name of DOCUMENT.DAT')
     parser.add_argument('--page', help='Page number')
     parser.add_argument('--output', help='Output file/directory')
@@ -328,6 +328,13 @@ if __name__ == "__main__":
         verbose = True
 
     if args.command[0] == 'decrypt':
+        if not args.directory:
+            print('Must specify --directory')
+            os._exit(1)
+        if not args.document:
+            print('Must specify --document')
+            os._exit(1)
+    if args.command[0] == 'encrypt':
         if not args.directory:
             print('Must specify --directory')
             os._exit(1)
@@ -377,13 +384,13 @@ if __name__ == "__main__":
             decrypt_document(f.read(), args.directory)
         sys.exit()
 
-    if args.encrypt:
-        print('Encrypt', args.encrypt)
+    if args.command[0] == 'encrypt':
+        print('Encrypt', args.document)
         pages = []
-        p = Path('pages')
+        p = Path(args.directory)
         for png in p.iterdir():
             with open(png, 'rb') as f:
                 pages.append(f.read())
-        with open(args.encrypt[0], 'wb') as f:
+        with open(args.document, 'wb') as f:
             encrypt_document(f, args.gameid if args.gameid else 'UNKN00000', pages)
         sys.exit()
