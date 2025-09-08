@@ -80,6 +80,7 @@ class PopFePs3App:
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
+        self.manual = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -180,7 +181,8 @@ class PopFePs3App:
         self.disc = None
         self.preview_tk = None
         self.configs = []
-        
+        self.manual = None
+            
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
@@ -196,6 +198,9 @@ class PopFePs3App:
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
         self.builder.get_variable('snd0_variable').set('')
+        self.builder.get_object('manual', self.master).config(state='disabled')
+        self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
+        self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
         self.builder.get_variable('pic0yoffset_variable').set('')
@@ -378,6 +383,11 @@ class PopFePs3App:
                       print('Read external config ', self.cue_file_orig[:-3]+'ps3config')
         except:
             True
+        print('DISC ID', disc_id)
+        if disc_id in games and 'manual' in games[disc_id]:
+            print('Found an MANUAL for', disc_id)
+            self.manual = games[disc_id]['manual']
+            
         if disc_id in games and 'ps3config' in games[disc_id]:
             print('Found an external config for', disc_id)
             with open(games[disc_id]['ps3config'], 'rb') as f:
@@ -412,6 +422,8 @@ class PopFePs3App:
             self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
+            self.builder.get_variable('manual_variable').set(self.manual)
+            self.builder.get_object('manual', self.master).config(state='enabled')
             self.update_assets()
             
         elif disc == 'd2':
@@ -780,6 +792,12 @@ class PopFePs3App:
         if self.pic1_disabled == 'on':
             p1 = None
 
+        manual = self.builder.get_variable('manual_variable').get()
+        if manual and len(manual):
+            manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir, ps3_manual=True)
+        else:
+            manual = None
+
         #
         # Apply all PPF fixes we might need
         #
@@ -804,7 +822,7 @@ class PopFePs3App:
             print('Forcing ps1_newemu for all discs')
             for idx in range(len(self.cue_files)):
                 self.configs[idx] = bytes([0x38, 0x00, 0x00, 0x00, 0x02,  0x00, 0x00, 0x00])
-            
+
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -812,7 +830,7 @@ class PopFePs3App:
                          self.cue_files,
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir=self.subdir, snd0=snd0,
-                         subchannels=subchannels,
+                         subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
                          configs=self.configs)
         self.master.config(cursor='')

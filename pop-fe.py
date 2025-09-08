@@ -4001,7 +4001,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
             ns = (480, int(sf * pic.size[1]))
             if ns[1] > maxysize:
                 ns = (480, maxysize)
-            image = pic.resize(ns, Image.Resampling.BILINEAR)
+            image = pic.resize(ns, Image.Resampling.LANCZOS)
             f = io.BytesIO()
             image.save(f, 'PNG')
             f.seek(0)
