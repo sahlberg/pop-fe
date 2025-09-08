@@ -95,6 +95,7 @@ class PopFePs3App:
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
+        self.manual = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -178,6 +179,7 @@ class PopFePs3App:
         self.pic1_tk = None
         self.preview_tk = None
         self.configs = []
+        self.manual = None
         self.builder.get_variable('nopstitleimg_variable').set(self.nopstitleimg)
         self.builder.get_variable('pic1aslogo_variable').set(self.pic1aslogo)
         self.builder.get_variable('watermark_variable').set(self.watermark)
@@ -200,6 +202,7 @@ class PopFePs3App:
         self.builder.get_variable('logo_variable').set('')
         self.builder.get_object('logo', self.master).config(filetypes=[('Audio files', ['.png', '.PNG']), ('All Files', ['*.*', '*'])])
 
+        self.builder.get_object('manual', self.master).config(state='disabled')
         self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
         self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
@@ -322,6 +325,9 @@ class PopFePs3App:
         self.cue_files.append(cue_file)
         self.configs.append(None)
 
+        if disc_id in games and 'manual' in games[disc_id]:
+            print('Found an MANUAL for', disc_id)
+            self.manual = games[disc_id]['manual']
         if disc_id in games and 'psp-use-cdda' in games[disc_id]:
             self.cdda = 'on'
             self.builder.get_variable('cdda_variable').set(self.cdda)
@@ -359,6 +365,8 @@ class PopFePs3App:
             self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
+            self.builder.get_variable('manual_variable').set(self.manual)
+            self.builder.get_object('manual', self.master).config(state='enabled')
             self.update_assets()
             
             self.builder.get_object('disc1', self.master).config(state='disabled')

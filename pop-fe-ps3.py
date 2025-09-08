@@ -383,11 +383,9 @@ class PopFePs3App:
                       print('Read external config ', self.cue_file_orig[:-3]+'ps3config')
         except:
             True
-        print('DISC ID', disc_id)
         if disc_id in games and 'manual' in games[disc_id]:
             print('Found an MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
-            
         if disc_id in games and 'ps3config' in games[disc_id]:
             print('Found an external config for', disc_id)
             with open(games[disc_id]['ps3config'], 'rb') as f:
