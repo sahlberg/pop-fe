@@ -18087,7 +18087,7 @@ games = {
         'pic0-offset': (0.1, 0.1),
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Alundra%20(USA).pdf',
         'pspconfig': 'pspconfigs/Alundra/SLES-01135.bin',
     },
     'SLES01198': {
@@ -18099,7 +18099,7 @@ games = {
         'pic0-offset': (0.1, 0.1),
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Alundra%20(USA).pdf',
         'pspconfig': 'pspconfigs/Alundra/SLES-01198.bin',
     },
     'SLES01256': {
@@ -18111,7 +18111,7 @@ games = {
         'pic0-offset': (0.1, 0.1),
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Alundra%20(USA).pdf',
         'pspconfig': 'pspconfigs/Alundra/SLES-01256.bin',
     },
     'SLES01257': {
@@ -18123,7 +18123,7 @@ games = {
         'pic0-offset': (0.1, 0.1),
         'pic1': 'https://images.launchbox-app.com/0ee20cc4-e1bc-4b1e-b13d-b28719d7df38.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2zdI5WYDzXQ&list=PLErsx10Ke4uybQXf223_tA1ibPkmRwmvG&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Alundra%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Alundra%20(USA).pdf',
         'pspconfig': 'pspconfigs/Alundra/SLES-01257.bin',
     },
     'SLES01258': {
