@@ -371,8 +371,7 @@ if __name__ == "__main__":
     if args.command[0] == 'encrypt':
         print('Encrypt', args.document)
         pages = []
-        p = Path(args.directory)
-        for png in p.iterdir():
+        for png in sorted(Path(args.directory).iterdir()):
             image = Image.open(png)
             maxysize = 480
             sf = 480 / image.size[0]
