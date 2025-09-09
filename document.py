@@ -373,8 +373,17 @@ if __name__ == "__main__":
         pages = []
         p = Path(args.directory)
         for png in p.iterdir():
-            with open(png, 'rb') as f:
-                pages.append(f.read())
+            image = Image.open(png)
+            maxysize = 480
+            sf = 480 / image.size[0]
+            ns = (480, int(sf * image.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = image.resize(ns, Image.Resampling.LANCZOS)
+            f = io.BytesIO()
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
         with open(args.document, 'wb') as f:
             encrypt_document(f, args.gameid if args.gameid else 'UNKN00000', pages)
         sys.exit()
