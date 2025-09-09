@@ -43425,6 +43425,11 @@ games = {
     	'id': 'SCPS10105',
 	'title': "BRIGHTIS",
         'pic0': 'https://images.launchbox-app.com/0381fbbc-2520-45ed-8238-2198d85bb7b3.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
+        'pic1': 'https://images.launchbox-app.com//e8f8df22-dabc-45ee-a6ef-dc9e94f386f5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=HVXrnb81Rqc&list=PLyBdOvy00DewYzV4RQ6jYGyg0ozMDX8id&index=1',
+        'manual': 'https://archive.org/download/BrightisManual/Brightis%20%28Japan%29%20manual%20scans%20%5Bshimasterc%5D_jp2.zip',
     },
     'SLPM86065': {
         'url': "games/J/B/SLPM-86065.html",
