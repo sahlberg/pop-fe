@@ -3090,6 +3090,7 @@ games = {
     	'id': 'SLPS01932',
 	'title': "VAMPIR KYUUKETSUKI DENSETSU",
         'pic0': 'https://images.launchbox-app.com/627c11a0-4b7a-4664-a3fc-c637627fe28f.png',
+        'manual': 'https://archive.org/download/vampir-kyuuketsuki-densetsu-manual-scan-jp-play-station-psx/Vampir%20Kyuuketsuki%20Densetsu%20%28Manual%29%28Scan%29%28JP%29%28PlayStation%29%28PSX%29_jp2.zip',
     },
     'SLPS00036': {
         'url': "games/J/V/SLPS-00036.html",
@@ -3313,7 +3314,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLPS-01703.bin'
     },
     'SLPS91182': {
@@ -3323,7 +3323,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLPS-91182.bin',
     },
     'SLPM86929': {
@@ -3333,7 +3332,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLPM-86929.bin',
     },
     'SLPS02615': {
@@ -3343,7 +3341,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'pic1': 'https://images.launchbox-app.com/a6651a0c-fda9-4f6e-89ed-2372a4f10778.png',
         'snd0': 'https://www.youtube.com/watch?v=ICtEXJuLnHw&list=PLrz4JsN6dw-yT_ekZD4TF1QeQWBYyybBa&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLPS-02615.bin',
     },
     'SLPM86928': {
@@ -3353,7 +3350,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'pic1': 'https://images.launchbox-app.com/a6651a0c-fda9-4f6e-89ed-2372a4f10778.png',
         'snd0': 'https://www.youtube.com/watch?v=ICtEXJuLnHw&list=PLrz4JsN6dw-yT_ekZD4TF1QeQWBYyybBa&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLPM-86928.bin',
     },
     'SLPS00892': {
@@ -4009,18 +4005,21 @@ games = {
     	'id': 'SLPS01279',
 	'title': "WIZARDRY - LLYLGAMYN SAGA",
         'pic0': 'https://images.launchbox-app.com/61010e25-3f61-4b45-a219-71b74d7bc96b.png',
+        'manual': 'https://archive.org/download/wizardry-lllygamyn-saga-manual-ps-1/Wizardry_Lllygamyn_Saga_Manual_PS1_jp2.zip',
     },
     'SLPS91118': {
         'url': "games/J/W/SLPS-91118.html",
     	'id': 'SLPS91118',
 	'title': "WIZARDRY - LLYLGAMYN SAGA [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/61010e25-3f61-4b45-a219-71b74d7bc96b.png',
+        'manual': 'https://archive.org/download/wizardry-lllygamyn-saga-manual-ps-1/Wizardry_Lllygamyn_Saga_Manual_PS1_jp2.zip',
     },
     'SLPM87037': {
         'url': "games/J/W/SLPM-87037.html",
     	'id': 'SLPM87037',
 	'title': "WIZARDRY - LLYLGAMYN SAGA [SUPERLITE GOLD]",
         'pic0': 'https://images.launchbox-app.com/61010e25-3f61-4b45-a219-71b74d7bc96b.png',
+        'manual': 'https://archive.org/download/wizardry-lllygamyn-saga-manual-ps-1/Wizardry_Lllygamyn_Saga_Manual_PS1_jp2.zip',
     },
     'SLPS02349': {
         'url': "games/J/W/SLPS-02349.html",
@@ -4424,7 +4423,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SCPS45171': {
         'url': "games/J/X/SCPS-45170.html",
@@ -4435,7 +4434,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Xenogears%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS01160': {
         'url': "games/J/X/SLPS-01160.html",
@@ -4446,7 +4445,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS01161': {
         'url': "games/J/X/SLPS-01160.html",
@@ -4457,7 +4456,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS91436': {
         'url': "games/J/X/SLPS-91436.html",
@@ -4468,7 +4467,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS91437': {
         'url': "games/J/X/SLPS-91436.html",
@@ -4479,7 +4478,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS02773': {
         'url': "games/J/X/SLPS-02773.html",
@@ -4490,7 +4489,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS02774':    {
         'url': "games/J/X/SLPS-02773.html",
@@ -4501,7 +4500,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS02775': {
         'url': "games/J/X/SLPS-02775.html",
@@ -4512,7 +4511,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS02776':    {
         'url': "games/J/X/SLPS-02775.html",
@@ -4523,7 +4522,7 @@ games = {
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/de820259-d103-411d-b2bb-fd5717c9972c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=FeWcGJYNHQU&list=PL5cemfFA-WTNcESiEHazFwkFyLj4CenCJ&index=3',
-        'manual': 'https://psxdatacenter.com/manuals/Xenogears%20(J)%20[SLPS-01160].cbr',
+        'manual': 'https://archive.org/compress/slps011601_booklet/formats=JPEG&file=/slps011601_booklet.zip',
     },
     'SLPS00750': {
         'url': "games/J/X/SLPS-00750.html",
@@ -38360,7 +38359,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01212.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01212.BIN',
     },
@@ -38371,7 +38369,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01213.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01213.BIN',
     },
@@ -38382,7 +38379,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01214.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01214.BIN',
     },
@@ -38393,7 +38389,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/68b9ff25-ae94-4d4d-b60d-b19dc1596680.png',
         'pic1': 'https://img.nerdburglars.net/wp-content/uploads/2023/06/vigilante-8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=twy4vVs0tnU&list=PL8E83F8C239D665DA&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8/SLES-01215.bin',
         'ps3config': 'ps3configs/Vigilante 8/SLES-01215.BIN',
     },
@@ -38404,7 +38399,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/731a6c0a-aba1-4d8a-adb1-c0ffe54feee7.png',
         'pic1': 'https://images.launchbox-app.com/a6651a0c-fda9-4f6e-89ed-2372a4f10778.png',
         'snd0': 'https://www.youtube.com/watch?v=ICtEXJuLnHw&list=PLrz4JsN6dw-yT_ekZD4TF1QeQWBYyybBa&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Vigilante%208%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Vigilante 8 - 2nd Offense/SLES-02162.bin',
     },
     'SLES01302': {
@@ -40362,12 +40356,14 @@ games = {
     	'id': 'SLPS01318',
 	'title': "ADVANCED V.G. 2",
         'pic0': 'https://images.launchbox-app.com/654a7aec-680c-44c9-b945-f27f33f4fa3d.png',
+        'manual': 'https://archive.org/download/advanced-v.-g.-2-ntsc-j/Advanced%20V.G.%202%20%28NTSC-J%29_jp2.zip',
     },
     'SLPM87226': {
         'url': "games/J/A/SLPM-87226.html",
     	'id': 'SLPM87226',
 	'title': "ADVANCED V.G. 2 [SUPERLITE 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/654a7aec-680c-44c9-b945-f27f33f4fa3d.png',
+        'manual': 'https://archive.org/download/advanced-v.-g.-2-ntsc-j/Advanced%20V.G.%202%20%28NTSC-J%29_jp2.zip',
     },
     'SLPS02367': {
         'url': "games/J/A/SLPS-02367.html",
@@ -40492,6 +40488,7 @@ games = {
     	'id': 'SLPS00559',
 	'title': "AIRGRAVE",
         'pic0': 'https://images.launchbox-app.com/5cb621ec-31d3-43ea-9d00-c7922369a92a.png',
+        'manual': 'https://archive.org/compress/airgrave-playstation-manual/formats=JPEG&file=/airgrave-playstation-manual.zip',
     },
     'SLPS01096': {
         'url': "games/J/A/SLPS-01096.html",
@@ -41195,7 +41192,6 @@ games = {
 	'title': "ARC THE LAD",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS91004': {
         'url': "games/J/A/SCPS-91004.html",
@@ -41203,7 +41199,6 @@ games = {
 	'title': "ARC THE LAD [REV 1]",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS91302': {
         'url': "games/J/A/SCPS-91302.html",
@@ -41211,7 +41206,6 @@ games = {
 	'title': "ARC THE LAD [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/3156a0b2-f4a1-4e87-94cc-4ee9ec075204.png',
         'snd0': 'https://www.youtube.com/watch?v=cSxwfTbDeoA&list=PLj5Yt8f5jUDTxiN2Ko7rPliZald60yNy0&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Area%2051%20(F)(G)(S)(I)(Du)%20[SLES-03783].cbr',
     },
     'SCPS10026': {
         'url': "games/J/A/SCPS-10026.html",
@@ -41657,12 +41651,14 @@ games = {
     	'id': 'SLPS01097',
 	'title': "ASUNCIA - STRATEGIC FANTASY ROLE PLAYING GAME",
         'pic0': 'https://images.launchbox-app.com/745e2865-9345-4a1c-9954-a1d84a851d66.png',
+        'manual': 'https://archive.org/download/asuncia-manual-scan-jp-play-station-psx/Asuncia%20%28Manual%29%28Scan%29%28JP%29%28PlayStation%29%28PSX%29_jp2.zip',
     },
     'SLPS03075': {
         'url': "games/J/A/SLPS-03075.html",
     	'id': 'SLPS03075',
 	'title': "ASUNCIA - STRATEGIC FANTASY ROLE PLAYING GAME [XING MARUYASU SERIES 9]",
         'pic0': 'https://images.launchbox-app.com/745e2865-9345-4a1c-9954-a1d84a851d66.png',
+        'manual': 'https://archive.org/download/asuncia-manual-scan-jp-play-station-psx/Asuncia%20%28Manual%29%28Scan%29%28JP%29%28PlayStation%29%28PSX%29_jp2.zip',
     },
     'SLPS01751': {
         'url': "games/J/A/SLPS-01751.html",
@@ -42423,6 +42419,7 @@ games = {
         'url': "games/J/B/SLPM-86574.html",
     	'id': 'SLPM86574',
 	'title': "BEATMANIA APPEND GOTTAMIX 2 - GOING GLOBAL",
+        'manual': 'https://archive.org/download/bmgottamix2/bmgottamix2_jp2.zip',
     },
     'SLPM86596': {
         'url': "games/J/B/SLPM-86596.html",
@@ -42512,7 +42509,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Biohazard%20[SLPS-00222]%20(J).cbr',
+        'manual': 'https://archive.org/compress/bio-hazard-manual/formats=JPEG&file=/bio-hazard-manual.zip',
     },
     'SLPS00998': {
         'url': "games/J/B/SLPS-00998.html",
@@ -42521,7 +42518,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manual': "https://psxdatacenter.com/manuals/Bio%20Hazard%20Director's%20Cut%20(J)%20[SLPS-00998].cbr",
+        'manual': 'https://archive.org/compress/bio-hazard-manual/formats=JPEG&file=/bio-hazard-manual.zip',
     },
     'SLPS00999': {
         'url': "games/J/B/SLPS-00998.html",
@@ -42539,7 +42536,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/338b6f74-7f84-4837-851b-2f6d7caea798.png',
         'pic1': 'https://images.launchbox-app.com/edc55221-8e45-4c08-aa35-21b212c350c5.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manual': "https://psxdatacenter.com/manuals/BioHazard%20-%20Director's%20Cut%20-%20Dual%20Shock%20(J)%20[SLPS-01512].cbr",
+        'manual': 'https://archive.org/compress/bio-hazard-manual/formats=JPEG&file=/bio-hazard-manual.zip',
     },
     'SLPS01513': {
         'url': "games/J/B/SLPS-01512.html",
@@ -43413,12 +43410,14 @@ games = {
     	'id': 'SLPS02661',
 	'title': "BRIGANDINE - GRAND EDITION",
         'pic0': 'https://images.launchbox-app.com/0caff446-d46a-47b3-ad2c-03fe7d283656.png',
+        'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
     },
     'SLPS02662': {
         'url': "games/J/B/SLPS-02661.html",
     	'id': 'SLPS02662',
 	'title': "BRIGANDINE - GRAND EDITION",
         'pic0': 'https://images.launchbox-app.com/0caff446-d46a-47b3-ad2c-03fe7d283656.png',
+        'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
     },
     'SCPS10105': {
         'url': "games/J/B/SCPS-10105.html",
@@ -45296,7 +45295,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/93d9cd45-c6a2-4d51-9edd-0c6020bcfd4b.png',
         'pic1': 'https://images.launchbox-app.com/d9029bf7-22d3-4cfe-843d-102435d34096.jpg',
         'snd0': 'https://www.youtube.com/watch?v=9LYNLbbVA0I&list=PL75F88CFDC09037C2&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20%28USA%29_jp2.zip',
     },
     'SCPS91057': {
         'url': "games/J/C/SCPS-91057.html",
@@ -45304,7 +45302,6 @@ games = {
 	'title': "CRASH BANDICOOT [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/93d9cd45-c6a2-4d51-9edd-0c6020bcfd4b.png',
         'pic1': 'https://images.launchbox-app.com/d9029bf7-22d3-4cfe-843d-102435d34096.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20%28USA%29_jp2.zip',
     },
     'SCPS91304': {
         'url': "games/J/C/SCPS-91304.html",
@@ -45312,7 +45309,6 @@ games = {
 	'title': "CRASH BANDICOOT [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/93d9cd45-c6a2-4d51-9edd-0c6020bcfd4b.png',
         'pic1': 'https://images.launchbox-app.com/d9029bf7-22d3-4cfe-843d-102435d34096.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20%28USA%29_jp2.zip',
     },
     'SCPS10047': {
         'url': "games/J/C/SCPS-10047.html",
@@ -45321,7 +45317,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5c5bd83e-49df-4c1f-a2a7-8f0a20e880ef.png',
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%202%20-%20Cortex%20Strikes%20Back%20%28USA%29_jp2.zip',
     },
     'SCPS91092': {
         'url': "games/J/C/SCPS-91092.html",
@@ -45330,7 +45325,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5c5bd83e-49df-4c1f-a2a7-8f0a20e880ef.png',
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%202%20-%20Cortex%20Strikes%20Back%20%28USA%29_jp2.zip',
     },
     'SCPS91309': {
         'url': "games/J/C/SCPS-91309.html",
@@ -45339,7 +45333,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5c5bd83e-49df-4c1f-a2a7-8f0a20e880ef.png',
         'pic1': 'https://images.launchbox-app.com/c017b82e-9932-4bfe-b6c5-c2dd77443abc.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8-CKzIIzHBY&list=PL95335ECA1F46DFB8&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%202%20-%20Cortex%20Strikes%20Back%20%28USA%29_jp2.zip',
     },
     'SCPS45350': {
         'url': "games/J/C/SCPS-45350.html",
@@ -45348,7 +45341,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9e389ffc-dcd9-4a1b-925c-c592ad8161ca.png',
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-45350.bin',
     },
     'SCPS10073': {
@@ -45358,7 +45350,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9e389ffc-dcd9-4a1b-925c-c592ad8161ca.png',
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-10073.bin',
     },
     'SCPS91164': {
@@ -45368,7 +45359,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9e389ffc-dcd9-4a1b-925c-c592ad8161ca.png',
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-91164.bin',
     },
     'SCPS91318': {
@@ -45378,7 +45368,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/9e389ffc-dcd9-4a1b-925c-c592ad8161ca.png',
         'pic1': 'https://images.launchbox-app.com/ba797b07-cdc8-43cd-ba96-4e783c3aa17c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=F6PoWt8lFgs&list=PLL-sMa2lHYj1bMY21NPKsOaqIMiqjfiua&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Crash%20Bandicoot%20-%20Warped%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crash Bandicoot 3 - Warped/SCPS-91318.bin',
     },
     'SCPS45511': {
@@ -45387,6 +45376,7 @@ games = {
 	'title': "CRASH BANDICOOT CARNIVAL",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
         'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
+        'manual': 'https://archive.org/compress/crash-bandicoot-carnival-japanese-manual/formats=TIFF&file=/crash-bandicoot-carnival-japanese-manual.zip',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-45511.bin',
     },
     'SCPS10140': {
@@ -45395,6 +45385,7 @@ games = {
 	'title': "CRASH BANDICOOT CARNIVAL",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
         'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
+        'manual': 'https://archive.org/compress/crash-bandicoot-carnival-japanese-manual/formats=TIFF&file=/crash-bandicoot-carnival-japanese-manual.zip',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-10140.bin',
     },
     'SCPS91319': {
@@ -45403,6 +45394,7 @@ games = {
 	'title': "CRASH BANDICOOT CARNIVAL [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/7f6ca7a4-21f1-43e3-95a8-4ee0e4534519.png',
         'pic1': 'https://images.launchbox-app.com/1401911f-d48d-408c-a7d8-1aab9c26e6f2.jpg',
+        'manual': 'https://archive.org/compress/crash-bandicoot-carnival-japanese-manual/formats=TIFF&file=/crash-bandicoot-carnival-japanese-manual.zip',
         'pspconfig': 'pspconfigs/Crash Bash/SCPS-91319.bin',
     },
     'SCPS45470': {
@@ -45587,6 +45579,7 @@ games = {
     	'id': 'SLPM86223',
 	'title': "CULDCEPT EXPANSION",
         'pic0': 'https://images.launchbox-app.com/0325001e-8fae-4a17-92c0-c907b39c1937.png',
+        'manual': 'https://archive.org/download/culdceptexpansionmanualscanjpplaystationpsx/Culdcept%20Expansion%20%28Manual%29%28Scan%29%28JP%29%28PlayStation%29%28PSX%29_jp2.zip',
     },
     'SLPM86658': {
         'url': "games/J/C/SLPM-86658.html",
@@ -46340,12 +46333,14 @@ games = {
     	'id': 'SLPM86378',
 	'title': "DENSHA DE GO! - PROFESSIONAL",
         'pic0': 'https://images.launchbox-app.com/1bfc24b2-32e2-4d95-88d6-7929b2f5ad0f.png',
+        'manual': 'https://archive.org/download/Densha-de-Go-Professional-hires-scans/%E9%9B%BB%E8%BB%8A%E3%81%A7GO%21%20%E3%83%97%E3%83%AD%E3%83%95%E3%82%A7%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E4%BB%95%E6%A7%98%20Manual_jp2.zip',
     },
     'SLPM86705': {
         'url': "games/J/D/SLPM-86705.html",
     	'id': 'SLPM86705',
 	'title': "DENSHA DE GO! - PROFESSIONAL [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/1bfc24b2-32e2-4d95-88d6-7929b2f5ad0f.png',
+        'manual': 'https://archive.org/download/Densha-de-Go-Professional-hires-scans/%E9%9B%BB%E8%BB%8A%E3%81%A7GO%21%20%E3%83%97%E3%83%AD%E3%83%95%E3%82%A7%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E4%BB%95%E6%A7%98%20Manual_jp2.zip',
     },
     'SLPS01150': {
         'url': "games/J/D/SLPS-01150.html",
@@ -46439,6 +46434,7 @@ games = {
     	'id': 'SLPS00100',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK",
         'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'manual': 'https://archive.org/download/detana-twinbee-yahoo-deluxe-pack/Detana%21%21%20Twinbee%20Yahoo%21%20Deluxe%20Pack_jp2.zip',
         'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPS-00100.bin',
     },
     'SLPM86054': {
@@ -46446,6 +46442,7 @@ games = {
     	'id': 'SLPM86054',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'manual': 'https://archive.org/download/detana-twinbee-yahoo-deluxe-pack/Detana%21%21%20Twinbee%20Yahoo%21%20Deluxe%20Pack_jp2.zip',
         'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPM-86054.bin',
     },
     'SLPM87322': {
@@ -46453,6 +46450,7 @@ games = {
     	'id': 'SLPM87322',
 	'title': "DETANA TWINBEE YAHOO! DELUXE PACK [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/22590c15-c078-43ec-a12b-83a339d3765e.png',
+        'manual': 'https://archive.org/download/detana-twinbee-yahoo-deluxe-pack/Detana%21%21%20Twinbee%20Yahoo%21%20Deluxe%20Pack_jp2.zip',
         'pspconfig': 'pspconfigs/Detana Twinbee Yahoo! Deluxe Pack/SLPM-87322.bin',
     },
     'SLPS01889': {
@@ -55773,6 +55771,7 @@ games = {
     	'id': 'SLPS00475',
 	'title': "KYUUKUOKU NO SOUKOBAN - 3D PUZZLE & CINEMA",
         'pic0': 'https://images.launchbox-app.com/e2617391-e8d0-4b5b-8243-18ba5ff0fefa.png',
+        'manual': 'https://archive.org/download/usoko/usoko_jp2.zip',
     },
     'SLPS00031': {
         'url': "games/J/K/SLPS-00031.html",
@@ -56221,6 +56220,7 @@ games = {
     	'id': 'SLPS00987',
 	'title': "LOMAX",
         'pic0': 'https://images.launchbox-app.com/cde46971-48ab-467d-9f01-d972e2725e79.png',
+        'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
     },
     'SLPS01787': {
         'url': "games/J/L/SLPS-01787.html",
@@ -61971,6 +61971,7 @@ games = {
 	'title': "PERSONA 2 - INNOCENT SIN",
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
+        'manual': 'https://archive.org/compress/image-20240826-0023/formats=JPEG&file=/image-20240826-0023.zip',
     },
     'SLPS91211': {
         'url': "games/J/P/SLPS-91211.html",
@@ -61978,6 +61979,7 @@ games = {
 	'title': "PERSONA 2 - INNOCENT SIN [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/60559e2d-ba06-4296-9e7b-2e0f4e3029e8.png',
         'pic1': 'https://images.launchbox-app.com/c9627e53-4a46-43db-86c4-095139a144ac.jpg',
+        'manual': 'https://archive.org/compress/image-20240826-0023/formats=JPEG&file=/image-20240826-0023.zip',
     },
     'SCPS10111': {
         'url': "games/J/P/SCPS-10111.html",
@@ -62475,6 +62477,7 @@ games = {
     	'id': 'SLPM86183',
 	'title': "POP'N MUSIC",
         'pic0': 'https://images.launchbox-app.com/8b02eea5-5f27-4d13-8de7-e340875be090.png',
+        'manual': 'https://archive.org/download/popn1manual/popn1manual_jp2.zip',
     },
     'SCPS45433': {
         'url': "games/J/P/SCPS-45433.html",
@@ -64539,6 +64542,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/31a90a60-3887-4f8f-b53a-750f22b215df.png',
         'pic1': 'https://images.launchbox-app.com/3564eb2c-1a72-47f3-ab53-35061ccaa42e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3YzEahP2DAI&list=PLD65D0E124217B2AB&index=1',
+        'manual': 'https://archive.org/compress/rockman-x5-manual-jpn/formats=JPEG&file=/rockman-x5-manual-jpn.zip',
     },
     'SLPM87021': {
         'url': "games/J/R/SLPM-87021.html",
@@ -64547,6 +64551,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/31a90a60-3887-4f8f-b53a-750f22b215df.png',
         'pic1': 'https://images.launchbox-app.com/3564eb2c-1a72-47f3-ab53-35061ccaa42e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3YzEahP2DAI&list=PLD65D0E124217B2AB&index=1',
+        'manual': 'https://archive.org/compress/rockman-x5-manual-jpn/formats=JPEG&file=/rockman-x5-manual-jpn.zip',
     },
     'SLPM86959': {
         'url': "games/J/R/SLPM-86959.html",
@@ -64555,6 +64560,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b837fc03-2eea-4959-a87d-d07fec362f37.png',
         'pic1': 'https://images.launchbox-app.com/6d9d9ea6-d0b9-4da2-86b0-f76145874cfd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=w_yBbgTTJHY&list=PL4A8AB89813F3F126',
+        'manual': 'https://archive.org/compress/rockman-x6-manual-jpn/formats=JPEG&file=/rockman-x6-manual-jpn.zip',
     },
     'SLPM87183': {
         'url': "games/J/R/SLPM-87183.html",
@@ -64563,6 +64569,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/b837fc03-2eea-4959-a87d-d07fec362f37.png',
         'pic1': 'https://images.launchbox-app.com/6d9d9ea6-d0b9-4da2-86b0-f76145874cfd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=w_yBbgTTJHY&list=PL4A8AB89813F3F126',
+        'manual': 'https://archive.org/compress/rockman-x6-manual-jpn/formats=JPEG&file=/rockman-x6-manual-jpn.zip',
     },
     'SLPM87113': {
         'url': "games/J/R/SLPM-87113.html",
@@ -64769,12 +64776,14 @@ games = {
     	'id': 'SLPS01309',
 	'title': "S.Q. - SOUND QUBE",
         'pic0': 'https://images.launchbox-app.com/10772f6d-d2f0-4dc1-b693-b8d3a3477604.png',
+        'manual': 'https://archive.org/download/sound-qube-psx-manual/soundqube_jp2.zip',
     },
     'SLPS02716': {
         'url': "games/J/S/SLPS-02716.html",
     	'id': 'SLPS02716',
 	'title': "S.Q. - SOUND QUBE [BEST OF THE BEST]",
         'pic0': 'https://images.launchbox-app.com/10772f6d-d2f0-4dc1-b693-b8d3a3477604.png',
+        'manual': 'https://archive.org/download/sound-qube-psx-manual/soundqube_jp2.zip',
     },
     'SLPS00739': {
         'url': "games/J/S/SLPS-00739.html",
@@ -68829,12 +68838,14 @@ games = {
     	'id': 'SLPS02035',
 	'title': "STRAY SHEEP - THE ADVENTURE OF POE & MERRY",
         'pic0': 'https://images.launchbox-app.com/a0c6f8bf-687f-43fd-879d-e316d796956c.png',
+        'manual': 'https://archive.org/download/stray-sheep-psx-manual/stray-sheep-psx-manual_jp2.zip',
     },
     'SLPS03498': {
         'url': "games/J/S/SLPS-03498.html",
     	'id': 'SLPS03498',
 	'title': "STRAY SHEEP - THE ADVENTURE OF POE & MERRY",
         'pic0': 'https://images.launchbox-app.com/a0c6f8bf-687f-43fd-879d-e316d796956c.png',
+        'manual': 'https://archive.org/download/stray-sheep-psx-manual/stray-sheep-psx-manual_jp2.zip',
     },
     'SLPS01622': {
         'url': "games/J/S/SLPS-01622.html",

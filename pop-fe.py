@@ -4027,6 +4027,7 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
         print('Create PSP manual')
         with open(tmpfile, 'wb') as f:
             create_document(f, gameid, pages)
+        print('Created PSP manual in', tmpfile)
 
     return tmpfile
 
