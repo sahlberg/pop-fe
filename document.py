@@ -179,76 +179,38 @@ def encrypt_document(f, gameid, pages):
 
 
 
-def create_document(files, gameid, maxysize, output):
-    def create_header(gameid, imgs):
+def create_document(f, gameid, pages):
+    def create_header(gameid, pages):
         buf = bytearray(136)
         struct.pack_into('<I', buf, 0, 0x20434F44)
         struct.pack_into('<I', buf, 4, 0x10000)
         struct.pack_into('<I', buf, 8, 0x10000)
         buf[12:21] = bytes(gameid, encoding='utf-8')
-        struct.pack_into('<I', buf, 28, 1 if len(imgs) <= 100 else 1)
+        struct.pack_into('<I', buf, 28, 0 if len(pages) < 100 else 1)
         struct.pack_into('<I', buf, 128, 0xffffffff)
-        struct.pack_into('<I', buf, 132, len(imgs))
+        struct.pack_into('<I', buf, 132, len(pages))
         return buf
     
-    def generate_document_entry(f, pos):
+    def generate_document_entry(p, pos):
         buf = bytearray(128)
         struct.pack_into('<I', buf, 0, pos) # offset low
-        struct.pack_into('<I', buf, 12, f.tell()) # size low
+        struct.pack_into('<I', buf, 12, len(p)) # size low
 
         return buf
 
-    def generate_png(pic, maxysize):
-        sf = 480 / pic.size[0]
-        ns = (480, int(sf * pic.size[1]))
-        if ns[1] > maxysize:
-            ns = (480, maxysize)
-        image = pic.resize(ns, Image.Resampling.BILINEAR)
-        f = io.BytesIO()
-        image.save(f, 'PNG')
-        return f
-
-    files.sort()
-    imgs = []
-    for file in files:
-        try:
-            pic = Image.open(file)
-        except:
-            continue
-
-        # images are supposed to be ~square but some scans contain two pages
-        # side by side. Split them.
-        if pic.size[0] > pic.size[1] * 1.75:
-            box = (0, 0, int(pic.size[0] / 2), pic.size[1])
-            imgs.append(generate_png(pic.crop(box), maxysize))
-            
-            box = (int(pic.size[0] / 2), 0, pic.size[0], pic.size[1])
-            imgs.append(generate_png(pic.crop(box), maxysize))
-        else:
-            f = generate_png(pic, maxysize)
-            imgs.append(f)
-
-    if not imgs:
-        print('No images found. Can not create DOCUMENT.DAT')
-        return
-
-    with open(output, 'wb') as o:
-        o.write(create_header(gameid, imgs)) # size 0x88
-        for i in range(len(imgs)):
-            o.write(bytes(128))              # size 0x80
-        o.write(bytes(8))                    # size 0x08, padding
+    f.write(create_header(gameid, pages)) # size 0x88
+    for i in range(len(pages)):
+        f.write(bytes(128))              # size 0x80
+        f.write(bytes(8))                # size 0x08, padding
         
-        for idx, f in enumerate(imgs):
-            b = generate_document_entry(f, o.tell())
-            o.seek(0x88 + 0x80 * idx)
-            o.write(b)
-            o.seek(0, 2)
-            f.seek(0)
-            o.write(f.read())
+    for idx, p in enumerate(pages):
+            b = generate_document_entry(p, f.tell())
+            f.seek(0x88 + 0x80 * idx)
+            f.write(b)
+            f.seek(0, 2)
+            f.write(p)
 
-    return output
-
-
+            
 def view_document(document, page):
     with open(document, 'rb') as i:
         buf = i.read(136)
@@ -326,18 +288,23 @@ if __name__ == "__main__":
             print('Must specify --document')
             os._exit(1)
     if args.command[0] == 'create':
-        if not args.directory:
-            print('Must specify --directory')
-            os._exit(1)
-        if not args.document:
-            print('Must specify --document')
-            os._exit(1)
-        if not args.gameid:
-            print('Must specify --gameid')
-            os._exit(1)
-        print('Convert', args.directory, 'to', args.document) if verbose else None
-        if not create_document(args.directory, args.gameid, 480, args.document):
-            print('Failed to create DOCUMENT')
+        print('Create', args.document)
+        pages = []
+        for png in sorted(Path(args.directory).iterdir()):
+            image = Image.open(png)
+            maxysize = 480
+            sf = 480 / image.size[0]
+            ns = (480, int(sf * image.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = image.resize(ns, Image.Resampling.LANCZOS)
+            f = io.BytesIO()
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
+        with open(args.document, 'wb') as f:
+            create_document(f, args.gameid if args.gameid else 'UNKN00000', pages)
+        sys.exit()
 
     if args.command[0] == 'view':
         if not args.document:

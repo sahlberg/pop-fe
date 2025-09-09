@@ -3993,41 +3993,41 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
     tmpfile = subdir + '/DOCUMENT.DAT'
     temp_files.append(tmpfile)
+    pages = []
+    for p in sorted(files):
+        def add_pic(pic):
+            maxysize = 480
+            sf = 480 / pic.size[0]
+            ns = (480, int(sf * pic.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = pic.resize(ns, Image.Resampling.LANCZOS)
+            f = io.BytesIO()
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
+                
+        pic = Image.open(p)
+        # It is common that scans contains two pages side by side
+        # so check for that and split the image if needed
+        if pic.size[0] > int(pic.size[1] * 1.8):
+            pic1 = pic.crop((0, 0, int(pic.size[0] / 2), pic.size[1]))
+            pic2 = pic.crop((int(pic.size[0] / 2), 0 , pic.size[0], pic.size[1]))
+            add_pic(pic1)
+            add_pic(pic2)
+        else:
+            add_pic(pic)
+
     if ps3_manual:
         print('Create PS3 manual')
-        pages = []
-        for p in sorted(files):
-            def add_pic(pic):
-                maxysize = 480
-                sf = 480 / pic.size[0]
-                ns = (480, int(sf * pic.size[1]))
-                if ns[1] > maxysize:
-                    ns = (480, maxysize)
-                image = pic.resize(ns, Image.Resampling.LANCZOS)
-                f = io.BytesIO()
-                image.save(f, 'PNG')
-                f.seek(0)
-                pages.append(f.read())
-                
-            pic = Image.open(p)
-            # It is common that scans contains two pages side by side
-            # so check for that and split the image if needed
-            if pic.size[0] > int(pic.size[1] * 1.8):
-                pic1 = pic.crop((0, 0, int(pic.size[0] / 2), pic.size[1]))
-                pic2 = pic.crop((int(pic.size[0] / 2), 0 , pic.size[0], pic.size[1]))
-                add_pic(pic1)
-                add_pic(pic2)
-            else:
-                add_pic(pic)
-
         with open(tmpfile, 'wb') as f:
             encrypt_document(f, gameid, pages)
         print('Created PS3 manual in', tmpfile)
-        return tmpfile
     else:
-        tmpfile = create_document(files, gameid, 480, tmpfile)
-    if not tmpfile:
-        print('Failed to create DOCUMENT.DAT')
+        print('Create PSP manual')
+        with open(tmpfile, 'wb') as f:
+            create_document(f, gameid, pages)
+
     return tmpfile
 
 
