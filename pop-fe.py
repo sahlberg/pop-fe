@@ -3882,8 +3882,6 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][1]))
 
 # Convert scans of the manual into a DOCUMENT.DAT for PSP and PS3
-# XXX add support for pdf manuals
-# https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf
 def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
     # already have a manual in the proper format
@@ -3908,22 +3906,6 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
     print('Create DOCUMENT.DAT from', source)
     if source[:8] == 'https://':
-        if (gameid in games and 'manual' in games[gameid] and
-            games[gameid]['manual'] == source):
-            _h = hashlib.md5(games[gameid]['manual'].encode('utf-8')).hexdigest()
-            f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/manual/' + _h + '.DAT'
-            try:
-                ret = requests.get(f, stream=True)
-            except:
-                return None
-            if ret.status_code == 200:
-                print('Found cached prebuilt manual', f)
-                _d = subdir + 'DOC.DAT'
-                with open(_d, 'wb') as o:
-                    o.write(ret.content)
-                temp_files.append(_d)
-                return _d
-
         print('Download manual from', source)
         try:
             tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
