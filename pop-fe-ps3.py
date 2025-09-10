@@ -315,7 +315,7 @@ class PopFePs3App:
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((80,80),(62,62)))
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((176,176),(138,138)))
             
         if self.icon0:
             temp_files.append(self.subdir + 'ICON0.PNG')
@@ -384,7 +384,7 @@ class PopFePs3App:
         except:
             True
         if disc_id in games and 'manual' in games[disc_id]:
-            print('Found an MANUAL for', disc_id)
+            print('Found a MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
         if disc_id in games and 'ps3config' in games[disc_id]:
             print('Found an external config for', disc_id)

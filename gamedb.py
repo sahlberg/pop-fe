@@ -6763,6 +6763,7 @@ games = {
         'url': "games/U/B/SLUS-01324.html",
     	'id': 'SLUS01324',
 	'title': "BREATH OF FIRE IV",
+        'icon0': 'https://images.launchbox-app.com//5a4c6ce5-d38f-4bb2-929f-9bf088a65a6c.jpg',
         'pic0': 'https://images.launchbox-app.com/e7e92e0d-b731-4554-850f-4c47f0512b24.png',
         'pic0-scaling': 0.85,
         'pic0-offset': (0.1, 0.15),
