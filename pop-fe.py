@@ -3176,18 +3176,19 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
             ff.write(_b)
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
 
-    image = icon0
-    if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
-        if icon0.size != (176, 176):
-            icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
-        image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
-        image.putalpha(0)
-        image.paste(icon0, (72,0))
-    else:
-        if icon0.size != (320, 176):
-            image = icon0.resize((320, 176), Image.Resampling.LANCZOS)
-    image.save(f + '/ICON0.PNG', format='PNG')
-    temp_files.append(f + '/ICON0.PNG')
+    if icon0:
+        image = icon0
+        if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
+            if icon0.size != (176, 176):
+                icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
+            image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
+            image.putalpha(0)
+            image.paste(icon0, (72,0))
+        else:
+            if icon0.size != (320, 176):
+                image = icon0.resize((320, 176), Image.Resampling.LANCZOS)
+        image.save(f + '/ICON0.PNG', format='PNG')
+        temp_files.append(f + '/ICON0.PNG')
 
     if pic0:
         if pic0.size != (1000, 560):
@@ -3271,10 +3272,11 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         os.mkdir(f)
     except:
         True
-    image = icon0.resize((80,80), Image.Resampling.LANCZOS)
-    i = io.BytesIO()
-    image.save(f + '/ICON0.PNG', format='PNG')
-    temp_files.append(f + '/ICON0.PNG')    
+    if icon0:
+        image = icon0.resize((80,80), Image.Resampling.LANCZOS)
+        i = io.BytesIO()
+        image.save(f + '/ICON0.PNG', format='PNG')
+        temp_files.append(f + '/ICON0.PNG')    
 
     if len(mem_cards) < 1:
         create_blank_mc(f + '/SCEVMC0.VMP')

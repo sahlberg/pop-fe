@@ -597,7 +597,7 @@ class PopFePs3App:
                 temp_files.append(snd0)
 
         manual = self.builder.get_variable('manual_variable').get()
-        if manual and len(manual):
+        if manual and len(manual) and manual != 'None':
             manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir)
         else:
             manual = None

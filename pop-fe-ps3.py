@@ -791,7 +791,7 @@ class PopFePs3App:
             p1 = None
 
         manual = self.builder.get_variable('manual_variable').get()
-        if manual and len(manual):
+        if manual and len(manual) and manual != 'None':
             manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir, ps3_manual=True)
         else:
             manual = None
