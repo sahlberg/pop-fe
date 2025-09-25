@@ -8135,7 +8135,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
-        # QQQ broken ? 'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Hercules%20Action%20Game%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Hercules%20Action%20Game%20(USA).pdf',
         'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SLUS-00529.bin',
     },
     'SLUS01029': {
@@ -8144,7 +8144,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
-        # QQQ broken ? 'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Hercules%20Action%20Game%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Hercules%20Action%20Game%20(USA).pdf',
         'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SLUS-01029.bin',
     },
     'SCUS94646': {
