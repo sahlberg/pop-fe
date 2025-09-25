@@ -5446,7 +5446,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/2bfacaa4-e215-40d6-9a19-56ea94e5a15f.png',
         'pic1': 'https://images.launchbox-app.com/ca71643c-ec54-4356-98f7-54a471be58aa.jpg',
         'snd0': 'https://www.youtube.com/watch?v=MIwJuGpdHd0&list=PLV9swtL3jg9_OR9a1zwKftc5_eNiWFzwW&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/3Xtreme%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/3Xtreme%20(USA).pdf',
     },
     'SLUS00874': {
         'url': "games/U/0-9/SLUS-00874.html",
@@ -5587,7 +5587,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/6f647b5a-0a9c-49ab-8cbc-e434c9fe5009.png',
         'pic1': 'https://images.launchbox-app.com/07031927-a0fd-44d8-94f1-ac3c1f0897c0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=59S1Gihiyb0&list=PLdqd62uSV6pppilRgzD1wrJy-mYJJzcIH&index=1',
-        'manual': 'https://psxdatacenter.com/manuals/Akuji%20the%20Heartless%20(S)(I)%20[SLES-01298].cbr',
+        'manual': 'https://www.videogamemanual.com/ps1/3Xtreme%20(USA).pdf',
     },
     'SLUS00872': {
         'url': "games/U/A/SLUS-00872.html",
@@ -5764,7 +5764,7 @@ games = {
         'pic0-offset': (0.3, 0.05),
         'pic1': 'https://images.launchbox-app.com/0faf4c0b-d7a1-4ace-8fd1-e7909ed71bc6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Ape%20Escape%20(USA).pdf',
     },
     'SCUS94470': {
         'url': "games/U/A/SCUS-94423.html",
@@ -5775,7 +5775,7 @@ games = {
         'pic0-offset': (0.3, 0.05),
         'pic1': 'https://images.launchbox-app.com/0faf4c0b-d7a1-4ace-8fd1-e7909ed71bc6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3Yu1dSlFgxc&list=PL3qKGTUJcGDrfEsK9YrH4oaaAY1QDE-Va&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ape%20Escape%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Ape%20Escape%20(USA).pdf',
     },
     'SLUS00373': {
         'url': "games/U/A/SLUS-00373.html",
@@ -5895,7 +5895,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/faf11948-998f-4f8e-82a8-db1f855069e6.png',
         'pic1': 'https://images.launchbox-app.com/64b2a8a7-a751-4b47-b198-1484c9d592e1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=8vBquJL4REs&list=PL48C29B22778C558A&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Armored%20Core%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Armored%20Core%20(USA).pdf',
         'pspconfig': 'pspconfigs/Armored Core/SCUS-94182.bin',
     },
     'SLUS01323': {
@@ -8089,7 +8089,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c834e577-aad5-455b-be7b-d67ddc95a7ec.png',
         'pic1': 'https://images.launchbox-app.com/0d4bf0ee-653d-46c7-8c57-5f606b8bf20d.jpg',
         'snd0': 'https://www.youtube.com/watch?v=DVT0z_J0-ps&list=PLO4jlmGoc6uA-h7rIVIT6QRwC0kgeGotC&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/A%20Bug%27s%20Life%20%28USA%29_jp2.zip',
     },
     'SCUS94569': {
         'url': "games/U/D/SCUS-94569.html",
@@ -8145,6 +8144,7 @@ games = {
 	'title': "DISNEY'S HERCULES - THE ACTION GAME [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/5b3e3e9c-deb6-4d31-a70e-50ded0949ba6.png',
         'pic1': 'https://images.launchbox-app.com/35917eb6-9df1-44af-a2fe-486deeea2815.jpg',
+        # QQQ broken ? 'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Hercules%20Action%20Game%20(USA).pdf',
         'pspconfig': 'pspconfigs/Disneys Hercules Action Game/SLUS-01029.bin',
     },
     'SCUS94646': {
@@ -8691,6 +8691,7 @@ games = {
     	'id': 'SLUS00704',
 	'title': "ESPN X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
+        'manual': 'https://www.videogamemanual.com/ps1/X%20Games%20Pro%20Boarder%20(USA).pdf',
     },
     'SLUS01034': {
         'url': "games/U/E/SLUS-01034.html",
@@ -8706,7 +8707,7 @@ games = {
 	'title': "EVIL DEAD - HAIL TO THE KING",
         'pic0': 'https://images.launchbox-app.com/b03dc3b4-babe-4cf4-9190-3a3d373e7c13.png',
         'pic1': 'https://images.launchbox-app.com/0c79f522-16d2-4f7f-99e8-74099c0b5102.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Evil%20Dead%20-%20Hail%20to%20the%20King%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Evil%20Dead%20-%20Hail%20to%20the%20King%20(USA).pdf',
     },
     'SLUS01326': {
         'url': "games/U/E/SLUS-01072.html",
@@ -9310,7 +9311,7 @@ games = {
     	'id': 'SLUS00925',
 	'title': "FOX SPORTS NHL CHAMPIONSHIP 2000",
         'pic0': 'https://images.launchbox-app.com/a7be1bce-de76-4d25-adc1-7d37c52c3a1f.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20Championship%202000%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/NHL%20Championship%202000%20(USA).pdf',
     },
     'SLUS00635': {
         'url': "games/U/F/SLUS-00635.html",
@@ -9392,7 +9393,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/ac643164-3a88-4684-a909-199bb0148e7c.png',
         'pic1': 'https://images.launchbox-app.com/829fcf9d-5c4c-40e5-8d9e-e18b62d4bbdd.jpg',
         'snd0': 'https://www.youtube.com/watch?v=WmbMaDkkJOU&list=PLo1HpTI8PrTDf5BrzcJdp7GiSTAt1zPxF&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/G-Police%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/G-Police%20(USA).pdf',
         'pspconfig': 'pspconfigs/G-Police/SLUS-00544.bin',
     },
     'SLUS00556': {
@@ -9720,6 +9721,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/208dfc0e-a709-4897-b959-4749e65fe387.png',
         'pic1': 'https://images.launchbox-app.com/a4e72817-f696-49db-badd-4b94c447bdfc.png',
         'snd0': 'https://www.youtube.com/watch?v=Xd-5AmjAA4M&list=PL6F6E4A8721A500C4&index=1',
+        'manual': 'https://www.videogamemanual.com/ps1/Grid%20Runner%20(USA).pdf',
     },
     'SCUS94568': {
         'url': "games/U/G/SCUS-94568.html",
@@ -10008,7 +10010,7 @@ games = {
 	'title': "IAN LIVINGSTONE'S DEATHTRAP DUNGEON",
         'pic0': 'https://images.launchbox-app.com/e7c40b59-9f6f-4630-8386-3053e644f844.png',
         'pic1': 'https://images.launchbox-app.com/4705826e-3c49-4cce-afd6-bc6d4e2af970.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Ian%20Livingstone%27s%20Deathtrap%20Dungeon%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Ian%20Livingstone\'s%20Deathtrap%20Dungeon%20(USA).pdf',
     },
     'SLUS01097': {
         'url': "games/U/I/SLUS-01097.html",
@@ -10228,21 +10230,21 @@ games = {
 	'title': "JEOPARDY! - 2ND EDITION",
         'pic0': 'https://images.launchbox-app.com/f552c3a9-8454-4465-9bd1-9785de209e20.png',
         'pic1': 'https://images.launchbox-app.com/f76f78d0-6684-45a1-abc4-56e89690ba29.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeopardy%21%202nd%20Edition%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Jeopardy!%202nd%20Edition%20(USA).pdf',
     },
     'SLUS00479': {
         'url': "games/U/J/SLUS-00479.html",
     	'id': 'SLUS00479',
 	'title': "JEREMY MCGRATH SUPERCROSS '98",
         'pic0': 'https://images.launchbox-app.com/995ebb6d-4dda-4376-887b-e36255f88739.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeremy%20McGrath%20Supercross%2098%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Jeremy%20McGrath%20Supercross%2098%20(USA).pdf',
     },
     'SLUS00832': {
         'url': "games/U/J/SLUS-00832.html",
     	'id': 'SLUS00832',
 	'title': "JEREMY MCGRATH SUPERCROSS 2000",
         'pic0': 'https://images.launchbox-app.com/935a1a54-4c76-44c9-bf3f-39e6c2a51ff9.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeremy%20McGrath%20Supercross%202000%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Jeremy%20McGrath%20Supercross%202000%20(USA).pdf',
     },
     'SCUS94907': {
         'url': "games/U/J/SCUS-94907.html",
@@ -10250,7 +10252,7 @@ games = {
 	'title': "JERSEY DEVIL",
         'pic0': 'https://images.launchbox-app.com/165f12df-a04d-40b9-b6f0-ca5e8a44d097.png',
         'pic1': 'https://images.launchbox-app.com/475e902d-2532-4134-a272-fe0d9a37ba38.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Jersey%20Devil%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Jersey%20Devil%20(USA).pdf',
     },
     'SCUS94309': {
         'url': "games/U/J/SCUS-94309.html",
@@ -10353,6 +10355,7 @@ games = {
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
+        'manual': 'https://www.videogamemanual.com/ps1/Juggernaut%20(USA).pdf',
     },
     'SLUS00989': {
         'url': "games/U/J/SLUS-00894.html",
@@ -10499,7 +10502,7 @@ games = {
     	'id': 'SLUS00801',
 	'title': "KINGSLEY'S ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/10a1ea69-7cdb-4ef1-92d6-51b9ec8668a3.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Kingsley%27s%20Adventure%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Kingsley\'s%20Adventure%20(USA).pdf',
     },
     'SLUS01366': {
         'url': "games/U/K/SLUS-01366.html",
@@ -12400,6 +12403,7 @@ games = {
     	'id': 'SCUS94577',
 	'title': "NHL FACE OFF 2001",
         'pic0': 'https://images.launchbox-app.com/f3bc7169-4f52-4034-af27-381ef4d3fdea.png',
+        'manual': 'https://www.videogamemanual.com/ps1/NHL%20FaceOff%202001%20(USA).pdf',
     },
     'SLUS00327': {
         'url': "games/U/N/SLUS-00327.html",
@@ -13088,6 +13092,7 @@ games = {
     	'id': 'SLUS00045',
 	'title': "PROJECT OVERKILL",
         'pic0': 'https://images.launchbox-app.com/35ee60f6-bd5e-4885-9c5b-e3350e901816.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Project%20Overkill%20(USA).pdf',
     },
     'SLUS00730': {
         'url': "games/U/P/SLUS-00730.html",
@@ -13233,7 +13238,7 @@ games = {
     	'id': 'SLUS00808',
 	'title': "RAILROAD TYCOON II",
         'pic0': 'https://images.launchbox-app.com/c9f170ee-d958-49b2-95a3-7012f63736c1.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Railroad%20Tycoon%20II%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
     'SCUS94308': {
         'url': "games/U/R/SCUS-94308.html",
@@ -13241,27 +13246,28 @@ games = {
 	'title': "RALLY CROSS",
         'pic0': 'https://images.launchbox-app.com/d61331b3-2230-4332-bb76-d525181ad3c7.png',
         'pic1': 'https://images.launchbox-app.com/a56eafe9-9427-4358-8629-f1b653f5e82b.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Rally%20Cross%20(USA).pdf',
     },
     'SCUS94247': {
         'url': "games/U/R/SCUS-94247.html",
     	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
     'SCUS94247_DEMO': {
         'url': "games/U/R/SCUS-94247.html",
     	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2 [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rally%20Cross%202%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
     'SLUS01065': {
         'url': "games/U/R/SLUS-01065.html",
     	'id': 'SLUS01065',
 	'title': "RAMPAGE THROUGH TIME",
         'pic0': 'https://images.launchbox-app.com/bc259f02-4961-42e7-a202-38b2058195e2.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20Through%20Time%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Rampage%20-%20Through%20Time%20(USA).pdf',
     },
     'SLUS00549': {
         'url': "games/U/R/SLUS-00549.html",
@@ -13269,7 +13275,7 @@ games = {
 	'title': "RAMPAGE WORLD TOUR",
         'pic0': 'https://images.launchbox-app.com/8740c804-5e9e-4d7f-9398-4a30eef525f1.png',
         'pic1': 'https://images.launchbox-app.com/d4d322fb-bc96-4fa4-8a87-7a9ba449ee97.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%20-%20World%20Tour%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Rampage%20-%20World%20Tour%20(USA).pdf',
     },
     'SLUS00742': {
         'url': "games/U/R/SLUS-00742.html",
@@ -13277,7 +13283,7 @@ games = {
 	'title': "RAMPAGE 2 - UNIVERSAL TOUR",
         'pic0': 'https://images.launchbox-app.com/d90e8c9b-d253-4a60-997f-44216c9ab1d2.png',
         'pic1': 'https://images.launchbox-app.com/bb9dbe96-4ef0-4e34-a7b5-7c9f8bcd2147.jpg',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Rampage%202%20-%20Universal%20Tour%20%28USA%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Rampage%202%20-%20Universal%20Tour%20(USA).pdf',
     },
     'SLUS00542': {
         'url': "games/U/R/SLUS-00542.html",
@@ -13525,7 +13531,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
         'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manaul': 'https://www.videogamemanual.com/ps1/Resident%20Evil%20-%20Director\'s%20Cut%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Resident%20Evil%20-%20Director\'s%20Cut%20(USA).pdf',
     },
     'SLUS90009': {
         'url': "games/U/R/SLUS-00551.html",
@@ -13534,7 +13540,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
         'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manaul': 'https://www.videogamemanual.com/ps1/Resident%20Evil%20-%20Director\'s%20Cut%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Resident%20Evil%20-%20Director\'s%20Cut%20(USA).pdf',
     },
     'SLUS00747': {
         'url': "games/U/R/SLUS-00747.html",
@@ -15761,6 +15767,7 @@ games = {
     	'id': 'SLUS01008',
 	'title': "THE SMURFS",
         'pic0': 'https://images.launchbox-app.com/59bb728f-d76b-4995-a6df-04d353c96131.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Smurfs,%20The%20(USA).pdf',
     },
     'SLUS01227': {
         'url': "games/U/T/SLUS-01227.html",
@@ -15873,7 +15880,7 @@ games = {
         'pic0-offset': (0.1, 0.2),
         'pic1': 'https://images.launchbox-app.com/072c848c-d245-40d6-a94d-f4d3cf1b2c48.jpg',
         'snd0': 'https://www.youtube.com/watch?v=nqUgKLsKOUA&list=PLIlvAC102YfcB33uHi_Q2qSgwnwUYEMdk&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Thousand%20Arms%20%28USA%29%20%28Disc%201%29_jp2.zip',
+        'manual': 'https://www.videogamemanual.com/ps1/Thousand%20Arms%20(USA).pdf',
         'ps3config': 'ps3configs/Thousand Arms/SLUS-00858.BIN',
     },
     'SLUS00935': {
@@ -73480,6 +73487,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/a6103bed-d8a3-4ca7-a953-5bcf9f8ddf9c.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/bfb7db72-2905-4b6e-bc3a-611d80c6cc53.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Calamity%203%20-%20Around%20the%20World%20(USA).pdf',
     },
     'SCUS80114': {
         'id': 'SCUS80114',
@@ -73515,6 +73523,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8bf18a99-73c7-4098-a996-86526e0ec580.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/9a3f8b0b-3725-46c9-9de1-e6b5e5f38f42.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Calamity%201%20-%20The%20Natural%20World%20(USA).pdf',
     },
     'SCUS80109': {
         'id': 'SCUS80109',
@@ -73522,6 +73531,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/feefc404-aeaa-4e28-ab80-03bd4a708d46.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/09a2e2cf-0a7c-4843-9adc-47b42e539080.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Calamity%202%20-%20People%20and%20Traditions%20(USA).pdf',
     },
     'SCUS80108': {
         'id': 'SCUS80108',
@@ -73529,6 +73539,7 @@ games = {
         'icon0': 'https://vgcollect.com/images/front-box-art/6822.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/ed96240d-85ba-4f3e-b111-f9dc719ba5bc.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Cali\'s%20Geo%20Tools%20(USA).pdf',
     },
     'SCUS80107': {
         'id': 'SCUS80107',
@@ -73536,6 +73547,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/ab04fd5e-c3c1-4627-9f0f-48227234ec7e.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/d681578d-3d72-4626-8f49-d2434b9205c2.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Cosmic%20Cookoff%20-%20Language%20Arts%20(USA).pdf',
     },
     'SCUS80106': {
         'id': 'SCUS80106',
@@ -73543,6 +73555,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/7783e4e0-95f6-4586-a98f-3373c3da34e9.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/eba2c133-6d5b-40ef-bb9f-4f1fc4610142.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Cosmic%20Cookoff%20-%20Mathematics%20(USA).pdf',
     },
     'SCUS80105': {
         'id': 'SCUS80105',
@@ -73550,6 +73563,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/7b78a42e-a7f0-47fd-91d0-52eb5051468b.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/2ff3de51-7ced-47a9-a14a-6cb77c9c68fe.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Creative%20Camp%20(USA).pdf',
     },
     'SCUS80104': {
         'id': 'SCUS80104',
@@ -73557,6 +73571,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/4090c551-8d3e-4907-895b-161f3052dd08.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/285a8c25-f612-4697-9d73-06c32ac5df53.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Creative%20Isle%20(USA).pdf',
     },
     'SCUS80103': {
         'id': 'SCUS80103',
@@ -73564,6 +73579,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8f158b23-4219-45a7-9359-4da783b5fe7a.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/4e194d54-4713-47c5-bc50-5b08708de21d.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Creative%20Journey%20(USA).pdf',
     },
     'SCUS80102': {
         'id': 'SCUS80102',
@@ -73571,6 +73587,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/4535b6f5-d41e-4b85-9cf4-48c998afa067.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/b78ecec8-63d2-4350-893d-5f7f38df9f1a.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Creative%20Voyage%20(USA).pdf',
     },
     'SCUS80101': {
         'id': 'SCUS80101',
@@ -73627,6 +73644,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9ce25791-4792-4878-b5dc-a89568f852ec.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/2214fbea-12b1-4587-a594-0bd45d1f2e87.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Faire%20Games%20-%20Language%20Arts%20(USA).pdf',
     },
     'SCUS80093': {
         'id': 'SCUS80093',
@@ -73634,6 +73652,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/5275bb47-ce8f-4562-9474-20306418aa0b.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/6686ac66-0232-4fc8-aa8a-0c98e50bb675.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Faire%20Games%20-%20Mathematics%20(USA).pdf',
     },
     'SCUS80092': {
         'id': 'SCUS80092',
@@ -73641,6 +73660,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_famconn/psx_famconn_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/ee437e43-965a-4835-9b32-3e7293f0b29c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Family%20Connection%20-%20A%20Guide%20to%20Lightspan%20(USA).pdf',
     },
     'SCUS80091': {
         'id': 'SCUS80091',
@@ -73648,6 +73668,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/c497a74d-3b2c-463d-b7a2-18808b1dabfd.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/4bd1b0fb-eb6a-4dc8-abec-241b95e55abd.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%201%20-%20Live%20in%20Airedale%20(USA).pdf',
     },
     'SCUS80090': {
         'id': 'SCUS80090',
@@ -73655,6 +73676,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8bb1c2ff-2279-4c85-8b87-50a838f55ffc.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/35d1cb1d-d470-4fe4-a6c0-e8196e696b92.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%202%20-%20We%20Are%20the%20Dogs!%20(USA).pdf',
     },
     'SCUS80089': {
         'id': 'SCUS80089',
@@ -73662,6 +73684,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_k95_3/psx_k95_3_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/09cdcbbb-e175-4189-9a43-48f9bfa9c082.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%203%20-%20WebTunes%20(USA).pdf',
     },
     'SCUS80088': {
         'id': 'SCUS80088',
@@ -73669,6 +73692,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_k95_4/psx_k95_4_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/70045ed6-e11f-4927-9680-715094b36c11.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%203%20-%20WebTunes%20(USA).pdf',
     },
     'SCUS80087': {
         'id': 'SCUS80087',
@@ -73676,6 +73700,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/2292efcf-90f5-49b2-90db-3daf8796e356.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/2c7d0545-b395-4c26-8445-2349e487ce55.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%205%20-%20The%20Howlywood%20Premiere%20(USA).pdf',
     },
     'SCUS80086': {
         'id': 'SCUS80086',
@@ -73683,6 +73708,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8c7c7935-84a7-46cf-81fd-e011181fa07c.jpg',
         'pic0': 'https://images.launchbox-app.com/1ada25da-16d0-4330-9404-f00997ab57af.png',
         'pic1': 'https://images.launchbox-app.com/7db67219-af1a-47c5-8ba4-b134e14d7bb2.png',
+        'manual': 'https://www.videogamemanual.com/ps1/K9.5%205%20-%20The%20Howlywood%20Premiere%20(USA).pdf',
     },
     'SCUS80085': {
         'id': 'SCUS80085',
@@ -73690,6 +73716,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/86678987-10ad-4289-9bc7-bc826801c201.jpg',
         'pic0': 'https://images.launchbox-app.com/897836fb-a595-44e4-805b-af95f69a347a.png',
         'pic1': 'https://images.launchbox-app.com/89604aa1-7792-49bc-bfa1-b5a0a8b9be3b.png',
+        'manual': 'https://www.videogamemanual.com/ps1/KazMania%202%20-%20Chaos%20in%20KazMania%20(USA).pdf',
     },
     'SCUS80084': {
         'id': 'SCUS80084',
@@ -73697,6 +73724,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb1/psx_liquidb1_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/031f5e70-b69a-462b-a02c-edb6e6934ce8.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%201%20-%20Lety\'s%20Favorite%20Stories%20(USA).pdf',
     },
     'SCUS80083': {
         'id': 'SCUS80083',
@@ -73704,6 +73732,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb2/psx_liquidb2_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/e4eece35-e8d8-4c39-8052-b5b3a1ee46a7.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%202%20-%20Amrita\'s%20Trees%20&%20Cerdito%20and%20the%20Coyote%20(USA).pdf',
     },
     'SCUS80082': {
         'id': 'SCUS80082',
@@ -73711,6 +73740,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb3/psx_liquidb3_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/87865aa5-9ac1-4c25-88de-2bf1ea813a0b.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%203%20-%20Far-Fetched%20Frontier%20Tales%20(USA).pdf',
     },
     'SCUS80081': {
         'id': 'SCUS80081',
@@ -73718,6 +73748,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb4/psx_liquidb4_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/95e240a5-f11b-4987-9692-430b967425f7.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%204%20-%20The%20Adventures%20of%20Adelita%20and%20Bo%20(USA).pdf',
     },
     'SCUS80080': {
         'id': 'SCUS80080',
@@ -73725,6 +73756,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb5/psx_liquidb5_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/029fb1ac-8505-4b8c-8a6d-62edb3f148ae.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%205%20-%20Pop-Out%20Prose%20(USA).pdf',
     },
     'SCUS80079': {
         'id': 'SCUS80079',
@@ -73732,6 +73764,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_liquidb6/psx_liquidb6_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/69c2f228-0cb9-40f6-aa22-e67ea6aae5c4.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Liquid%20Books%20Adventure%206%20-%20The%20Wandering%20Path%20(USA).pdf',
     },
     'SCUS80078': {
         'id': 'SCUS80078',
@@ -73739,6 +73772,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/580fe171-3c36-45e2-9e3d-1eeaeb0f8b2f.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/9a7cf5cf-8985-4351-b645-f18ffd7fd379.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Adventure%20-%20WalkAbout%201%20-%20The%20Natural%20History%20Museum%20(USA).pdf',
     },
     'SCUS80077': {
         'id': 'SCUS80077',
@@ -73746,6 +73780,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/328b2fbe-a006-4933-b3af-bdd2fbc0e659.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/2ff7160b-6fae-4700-9c23-875b6f3712c9.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Adventure%20-%20WalkAbout%202%20-%20The%20Shakespeare%20Festival%20(USA).pdf',
     },
     'SCUS80076': {
         'id': 'SCUS80076',
@@ -73753,6 +73788,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/25a595f4-d0eb-4e21-bc98-27131c8f4cd4.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/d7a1afba-8bf9-47a1-affd-9fb872b0d4cd.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Adventure%20-%20WalkAbout%203%20-%20World%20Sports%20Day%20(USA).pdf',
     },
     'SCUS80075': {
         'id': 'SCUS80075',
@@ -73760,6 +73796,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmcq1/psx_mmcq1_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/190965f0-250e-44f5-a45f-57d664e69611.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Cosmic%20Quest%201%20-%20City%20Sights%20(USA).pdf',
     },
     'SCUS80074': {
         'id': 'SCUS80074',
@@ -73767,6 +73804,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmcq2/psx_mmcq2_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/0f629639-81ed-4030-8f66-d46e9e3b3590.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Cosmic%20Quest%202%20-%20Fairy%20Tale%20Island%20(USA).pdf',
     },
     'SCUS80073': {
         'id': 'SCUS80073',
@@ -73774,6 +73812,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmcq3/psx_mmcq3_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/e6c797f5-f0f3-4ecf-bbe8-3705e41f1a2b.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Cosmic%20Quest%203%20-%20Race%20Through%20France%20(USA).pdf',
     },
     'SCUS80072': {
         'id': 'SCUS80072',
@@ -73781,6 +73820,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmsnp1/psx_mmsnp1_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/4082846c-1cf9-4e6f-af3f-622f9cf72dea.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Stay%20and%20Play%201%20-%20In%20the%20Clubhouse%20(USA).pdf',
     },
     'SCUS80071': {
         'id': 'SCUS80071',
@@ -73788,6 +73828,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmsnp2/psx_mmsnp2_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dbcf1c5-f92a-4de4-8af8-b30812a1fc33.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Stay%20and%20Play%202%20-%20In%20Mars\'%20Bedroom%20(USA).pdf',
     },
     'SCUS80070': {
         'id': 'SCUS80070',
@@ -73795,6 +73836,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mmsnp3/psx_mmsnp3_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/0062134f-faa8-43a1-8fe0-4d0b35ad3340.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mars%20Moose%20Stay%20and%20Play%203%20-%20In%20Lonnie\'s%20Classroom%20(USA).pdf',
     },
     'SCUS80069': {
         'id': 'SCUS80069',
@@ -73802,6 +73844,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mathcol1/psx_mathcol1_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/b01db4f2-5520-4cc9-83c6-e78fdbf4e7ea.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20Gallery%20-%20Collection%201%20(USA).pdf',
     },
     'SCUS80068': {
         'id': 'SCUS80068',
@@ -73809,6 +73852,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_mathcol2/psx_mathcol2_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/94bfa3ac-754d-4636-a0ee-96f17c865f59.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20Gallery%20-%20Collection%202%20(USA).pdf',
     },
     'SCUS80067': {
         'id': 'SCUS80067',
@@ -73816,6 +73860,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/e5b2dd03-c3f4-48ed-82c5-26da472baf7d.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/11b671f3-4d77-4d5c-bc6c-2de2541c9250.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20on%20the%20Move!%201%20-%20Addition-Subtraction%20Advanced%20(USA).pdf',
     },
     'SCUS80066': {
         'id': 'SCUS80066',
@@ -73823,6 +73868,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/e5b2dd03-c3f4-48ed-82c5-26da472baf7d.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/d697d139-dca8-4112-b8c5-38fd47eb75ff.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20on%20the%20Move!%201%20-%20Addition-Subtraction%20Intermediate%20(USA).pdf',
     },
     'SCUS80065': {
         'id': 'SCUS80065',
@@ -73830,6 +73876,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/a77b4b10-4134-4112-b32a-b3d5336e9031.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/d9bb6e0a-fc0b-4d9a-af53-a6bd15211fec.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20on%20the%20Move!%202%20-%20Multiplication-Division%20Advanced%20(USA).pdf',
     },
     'SCUS80064': {
         'id': 'SCUS80064',
@@ -73837,6 +73884,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/a77b4b10-4134-4112-b32a-b3d5336e9031.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/33dc172e-2a37-44ba-9d68-ec8b525e4a5e.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Math%20on%20the%20Move!%202%20-%20Multiplication-Division%20Intermediate%20(USA).pdf',
     },
     'SCUS80063': {
         'id': 'SCUS80063',
@@ -73844,6 +73892,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/0ca2b4a1-e3a4-48f5-a57e-de04742de678.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/2723ba74-197b-4ba8-94b3-a245419be889.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mona%20&%20Moki%201%20-%20Drive%20Me%20Wild!%20(USA).pdf',
     },
     'SCUS80062': {
         'id': 'SCUS80062',
@@ -73851,6 +73900,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/b9d6b326-8eca-456c-86d8-b6d1c877fac1.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/8bbd95be-0ce1-4b11-92fc-27a5dfe3d586.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Mona%20&%20Moki%202%20-%20Drive%20Me%20Wilder!%20(USA).pdf',
     },
     'SCUS80061': {
         'id': 'SCUS80061',
@@ -73858,6 +73908,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/fdbe8115-4fcf-4825-8805-18af48bf25fd.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/de95846c-877a-4087-ab39-aaf452e94281.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/P.K.\'s%20Math%20Studio%20(USA).pdf',
     },
     'SCUS80060': {
         'id': 'SCUS80060',
@@ -73865,6 +73916,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/22c771dd-f8e3-427c-9ce7-a47c0cbc6f23.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7d9dfaa1-ae03-4a56-9d7e-aaf752cdfd6c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/P.K.\'s%20Place%201%20-%20Party%20on%20the%20Patio!%20(USA).pdf',
     },
     'SCUS80059': {
         'id': 'SCUS80059',
@@ -73872,6 +73924,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/aacc4b42-cc4a-4bb9-a0d6-7b55aec1eb9e.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7d9dfaa1-ae03-4a56-9d7e-aaf752cdfd6c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/P.K.\'s%20Place%202%20-%20Hoopo%20at%20Sea!%20(USA).pdf',
     },
     'SCUS80058': {
         'id': 'SCUS80058',
@@ -73879,6 +73932,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/a4a5711e-6136-45a7-b345-bc5dbeefd9fc.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7d9dfaa1-ae03-4a56-9d7e-aaf752cdfd6c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/P.K.\'s%20Place%203%20-%20Carlos%20at%20the%20Races!%20(USA).pdf',
     },
     'SCUS80057': {
         'id': 'SCUS80057',
@@ -73886,6 +73940,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/95c7802c-2c68-4a10-8f91-c0d00ad5002e.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7d9dfaa1-ae03-4a56-9d7e-aaf752cdfd6c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/P.K.\'s%20Place%204%20-%20Daphne%20and%20the%20Seventh%20Wonder%20(USA).pdf',
     },
     'SCUS80056': {
         'id': 'SCUS80056',
@@ -73893,6 +73948,7 @@ games = {
         'icon0': 'https://psxdatacenter.com/images/covers/U/L/LSP-060101.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/f02155fb-84f5-48b5-93d7-b3eaf51486f3.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Quaddle%20Family%20Mysteries,%20The%201%20-%20The%20Case%20of%20the%20Scarce%20Scarab%20-%20Lobby%20&%20Kitchen%20(USA).pdf',
     },
     'SCUS80055': {
         'id': 'SCUS80055',
@@ -73900,6 +73956,7 @@ games = {
         'icon0': 'https://psxdatacenter.com/images/covers/U/L/LSP-060102.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/f02155fb-84f5-48b5-93d7-b3eaf51486f3.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Quaddle%20Family%20Mysteries,%20The%202%20-%20The%20Case%20of%20the%20Scarce%20Scarab%20-%20Garden%20(USA).pdf',
     },
     'SCUS80054': {
         'id': 'SCUS80054',
@@ -73907,6 +73964,7 @@ games = {
         'icon0': 'https://psxdatacenter.com/images/covers/U/L/LSP-060103.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/f02155fb-84f5-48b5-93d7-b3eaf51486f3.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Quaddle%20Family%20Mysteries,%20The%203%20-%20The%20Case%20of%20the%20Scarce%20Scarab%20-%20Parlor%20&%20Family%20Room%20(USA).pdf',
     },
     'SCUS80053': {
         'id': 'SCUS80053',
@@ -73914,6 +73972,7 @@ games = {
         'icon0': 'https://archive.org/serve/psx_roadwrit/psx_roadwrit_screenshot.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/a5e3653c-56aa-489b-8412-510d39e7a7fe.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Road%20Writer%20(USA).pdf',
     },
     'SCUS80052': {
         'id': 'SCUS80052',
@@ -73942,6 +74001,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/878ff3df-b592-498c-9b00-f49c937dd9ab.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/39baadfb-cd2d-4ff1-bcda-e9b85dcb453e.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%201a,%20The%20-%20Reshaping%20Googol%20-%20The%20Submarine%20(USA).pdf',
     },
     'SCUS80048': {
         'id': 'SCUS80048',
@@ -73949,6 +74009,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/fdf7fd4a-5ffb-4f40-a44d-f38d2f257018.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/19ab74df-45fc-4d11-ad89-f2cfc0119b8b.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%201b,%20The%20-%20Reshaping%20Googol%20-%20The%20Tower%20(USA).pdf',
     },
     'SCUS80047': {
         'id': 'SCUS80047',
@@ -73956,6 +74017,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/6197e91a-ae8c-490c-a217-214ff6bd0d93.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/51b24b11-85ab-4aaf-948c-d76e52feb000.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%202a,%20The%20-%20Reshaping%20Googol%20-%20The%20Castle%20(USA).pdf',
     },
     'SCUS80046': {
         'id': 'SCUS80046',
@@ -73963,6 +74025,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/7e940172-2ff5-468c-b7aa-91030318beb7.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/d0a231aa-6076-483d-a294-751bb905319a.jpg',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%202b,%20The%20-%20Reshaping%20Googol%20-%20Under%20the%20Ocean%20(USA).pdf',
     },
     'SCUS80045': {
         'id': 'SCUS80045',
@@ -73970,6 +74033,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/edc31518-95a8-4fa9-8488-d643f6f8c5af.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/18d0e1cf-893b-4b6b-a498-05b2077435f4.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%203,%20The%20-%20The%20Googol%20Counting%20Fair%20-%20Midways%20(USA).pdf',
     },
     'SCUS80044': {
         'id': 'SCUS80044',
@@ -73977,6 +74041,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8987238c-9eb5-4682-8403-3f6eb35b0b79.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/8953705d-9130-47e1-8660-66acc2f21f1c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%204,%20The%20-%20The%20Googol%20Counting%20Fair%20-%20Corral%20&%20Fun%20House%20(USA).pdf',
     },
     'SCUS80043': {
         'id': 'SCUS80043',
@@ -73984,6 +74049,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/668f7da1-47a5-4a7f-b017-e5e4f699a8cd.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/b6938ad6-b40e-48a4-b232-7ff5e20f6635.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%205,%20The%20-%20Googolfest%20-%20Party%20Isle%20&%20Toy%20Isle%20(USA).pdf',
     },
     'SCUS80042': {
         'id': 'SCUS80042',
@@ -73991,6 +74057,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/de3f359a-4cc9-49cc-8faa-c1dc71ea1734.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/e7c66ba9-67a5-41d4-bd65-67314dfb42f9.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%206,%20The%20-%20Googolfest%20-%20Arcade%20Isle%20&%20Moon%20Feast%20Isle%20(USA).pdf',
     },
     'SCUS80041': {
         'id': 'SCUS80041',
@@ -73998,6 +74065,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/1f61c4bb-1f6a-4872-b735-bfb1df28a509.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/9c451fa0-73f9-4c4f-8464-ff8de13b1858.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%207,%20The%20-%20Eggs%20All%20Around%20-%20Egg%20Trek%20&%20Balloon%20Picnic%20(USA).pdf',
     },
     'SCUS80040': {
         'id': 'SCUS80040',
@@ -74005,6 +74073,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/5b756891-d98d-4f9d-bbdc-51dcaaa832f7.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/a0f5679b-6462-493a-9052-5c91ce86ea2f.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Secret%20of%20Googol%208,%20The%20-%20Googol%20Gulch%20-%20General%20Store%20&%20Math%20Arcade%20(USA).pdf',
     },
     'SCUS80039': {
         'id': 'SCUS80039',
@@ -74047,6 +74116,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8573a64f-75a9-4913-b4e6-13f668a97280.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%201%20-%20Match-A-Batch%20(USA).pdf',
     },
     'SCUS80033': {
         'id': 'SCUS80033',
@@ -74054,6 +74124,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/8573a64f-75a9-4913-b4e6-13f668a97280.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%202%20-%20Matchamania!%20(USA).pdf',
     },
     'SCUS80032': {
         'id': 'SCUS80032',
@@ -74061,6 +74132,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9ee6bba1-f3c6-441c-b2e6-49a19100fa3a.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%203%20-%20Title%20This!%20Title%20That!%20(USA).pdf',
     },
     'SCUS80031': {
         'id': 'SCUS80031',
@@ -74068,6 +74140,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9ee6bba1-f3c6-441c-b2e6-49a19100fa3a.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%204%20-%20Titlerama!%20(USA).pdf',
     },
     'SCUS80030': {
         'id': 'SCUS80030',
@@ -74075,6 +74148,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9a3ee44f-b563-4a19-ad0b-69dd4cccc4b1.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%205%20-%20Parallel%20Lives!%20(USA).pdf',
     },
     'SCUS80029': {
         'id': 'SCUS80029',
@@ -74082,6 +74156,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9a3ee44f-b563-4a19-ad0b-69dd4cccc4b1.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%206%20-%20Analogy-ology!%20(USA).pdf',
     },
     'SCUS80028': {
         'id': 'SCUS80028',
@@ -74089,6 +74164,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/80757a91-5ec2-4d35-973f-951877f91788.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%207%20-%20Riddle%20Roundup!%20(USA).pdf',
     },
     'SCUS80027': {
         'id': 'SCUS80027',
@@ -74096,6 +74172,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/80757a91-5ec2-4d35-973f-951877f91788.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7dd5f4db-b37e-45a7-b4e1-10c839aac789.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Str.at.e.s.%208%20-%20Riddle%20Wrangler!%20(USA).pdf',
     },
     'SCUS80026': {
         'id': 'SCUS80026',
@@ -74103,6 +74180,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/9db7afd1-0420-4211-9230-ea6a492455cd.png',
         'pic0': 'https://images.launchbox-app.com/7a6c2eb1-8a99-406b-8e8d-d478dfae1f85.png',
         'pic1': 'https://images.launchbox-app.com/33258ad6-dee7-4e76-bfcf-1ed2352dc24d.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Three%20Decoders%201,%20The%20-%20Riddle%20of%20the%20Ring%20(USA).pdf',
     },
     'SCUS80025': {
         'id': 'SCUS80025',
@@ -74110,6 +74188,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/738f3b10-e6a9-4e24-89fb-1affb032d22f.jpg',
         'pic0': 'https://images.launchbox-app.com/7a6c2eb1-8a99-406b-8e8d-d478dfae1f85.png',
         'pic1': 'https://images.launchbox-app.com/2c26a2a1-6c06-4b2e-9753-0304bee6fb24.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Three%20Decoders%202,%20The%20-%20Key%20to%20the%20Carousel%20(USA).pdf',
     },
     'SCUS80024': {
         'id': 'SCUS80024',
@@ -74117,6 +74196,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/7065056d-a560-47c2-ba96-fa3edfc86675.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/f32061cc-7a67-48b3-a72f-cc9188852381.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Jade%20Trade%20(USA).pdf',
     },
     'SCUS80023': {
         'id': 'SCUS80023',
@@ -74124,6 +74204,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/a10c5274-c960-4847-b71e-21de0703da79.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/f1f4fee1-8908-41fe-8321-f3921c30e826.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%201%20-%20Maya,%20Search%20and%20Rescue%20(USA).pdf',
     },
     'SCUS80022': {
         'id': 'SCUS80022',
@@ -74131,6 +74212,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/0e12bc62-9a95-40ec-9edc-adeaacbbafd2.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/728dc10d-0788-40c9-9755-f5024b1a3b6c.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%202%20-%20Maya,%20Observatory%20(USA).pdf',
     },
     'SCUS80021': {
         'id': 'SCUS80021',
@@ -74138,6 +74220,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/cb70a8af-a59b-416d-9504-2fe874c5b4a7.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/30c07dc1-1db5-4b84-aeaa-0f135d206bdf.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%203%20-%20Maya,%20King%20Jaguar\'s%20Village%20(USA).pdf',
     },
     'SCUS80020': {
         'id': 'SCUS80020',
@@ -74145,6 +74228,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/e43cbae7-74b7-4aeb-9632-66da56ba8e32.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/4b40a409-6f44-4779-b906-7888b7cdf5d8.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%204%20-%20Lunar%20Base%20(USA).pdf',
     },
     'SCUS80019': {
         'id': 'SCUS80019',
@@ -74152,6 +74236,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/0dedc95b-68aa-4d55-b5f1-d44d3baafe74.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/7c9620a7-200a-4c84-933d-256d0a8c7f4f.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%205%20-%20Space%20Flight%20Rescue%20(USA).pdf',
     },
     'SCUS80018': {
         'id': 'SCUS80018',
@@ -74159,6 +74244,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/09bb9d4e-f1ed-48ef-8bb0-8996ee6f3d5d.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/723c858c-071e-499a-ade8-ff05765355b1.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%206%20-%20Brainswarm%20(USA).pdf',
     },
     'SCUS80017': {
         'id': 'SCUS80017',
@@ -74166,6 +74252,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/39085759-0582-451a-ac5e-e1b2c0e9fab7.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/102a0e41-3192-4b8d-8868-fb9023f6b269.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Timeless%20Math%207%20-%20Rover%20Recovery%20(USA).pdf',
     },
     'SCUS80016': {
         'id': 'SCUS80016',
@@ -74173,6 +74260,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/d99ad038-a6a3-47b7-bbbb-dd59e55e6f40.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/da523605-9169-4e27-b49d-3aacc4f06010.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Unknown%20Variable%201%20-%20Masque%20Manor%20(USA).pdf',
     },
     'SCUS80015': {
         'id': 'SCUS80015',
@@ -74180,6 +74268,7 @@ games = {
         'icon0': 'https://images.launchbox-app.com/d99ad038-a6a3-47b7-bbbb-dd59e55e6f40.jpg',
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/016cffb8-fd68-40b1-9758-12de3c0194ae.png',
+        'manual': 'https://www.videogamemanual.com/ps1/Unknown%20Variable%202%20-%20Raven\'s%20Ridge%20(USA).pdf',
     },
     'SCUS80014': {
         'id': 'SCUS80014',
