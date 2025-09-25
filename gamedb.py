@@ -8996,7 +8996,7 @@ games = {
     	'id': 'SLUS01585',
 	'title': "FIFA SOCCER 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
-        # QQQ broken ? 'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202005%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202005%20(USA).pdf',
     },
     'SLUS00641': {
         'url': "games/U/F/SLUS-00641.html",
@@ -10033,7 +10033,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/649a130e-1d07-436a-83b0-df4ce596dcdf.png',
         'pic1': 'https://images.launchbox-app.com/5c1b2d5b-8f85-40d5-b5fc-1ddfdb68b5f4.jpg',
         'snd0': 'https://www.youtube.com/watch?v=y3mtit-7etI',
-        # QQQ broken? 'manual': 'https://www.videogamemanual.com/ps1/In%20Cold%20Blood%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/In%20Cold%20Blood%20(USA).pdf',
         'pspconfig': 'pspconfigs/In Cold Blood/SLUS-01294.bin',
     },
     'SLUS01314': {
@@ -10043,7 +10043,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/649a130e-1d07-436a-83b0-df4ce596dcdf.png',
         'pic1': 'https://images.launchbox-app.com/5c1b2d5b-8f85-40d5-b5fc-1ddfdb68b5f4.jpg',
         'snd0': 'https://www.youtube.com/watch?v=y3mtit-7etI',
-        # QQQ broken? ''manual': 'https://www.videogamemanual.com/ps1/In%20Cold%20Blood%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/In%20Cold%20Blood%20(USA).pdf',
         'pspconfig': 'pspconfigs/In Cold Blood/SLUS-01314.bin',
     },
     'SLUS00172': {
@@ -10548,7 +10548,7 @@ games = {
 	'title': "KONAMI ARCADE CLASSICS",
         'pic0': 'https://images.launchbox-app.com/485ad1bc-5b53-4c1d-88f5-9f113ec4101a.png',
         'pic1': 'https://images.launchbox-app.com/808666dc-9a53-425a-9162-6153759d51e9.jpg',
-        # QQQ broken ? 'manual': 'https://www.videogamemanual.com/ps1/Konami%20Arcade%20Classics%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Konami%20Arcade%20Classics%20(USA).pdf',
         'pspconfig': "pspconfigs/Konami 80's Arcade Gallery/SLUS-00945.bin",
     },
     'SLUS01051': {
@@ -11827,7 +11827,7 @@ games = {
 	'title': "NBA IN THE ZONE 2",
         'pic0': 'https://images.launchbox-app.com/b6405899-508f-42b7-961b-c1bfc3de966f.png',
         'pic1': 'https://images.launchbox-app.com/eca6f9ad-f9f7-472d-982c-a71ab7b567de.jpg',
-        # QQQ broken? 'manual': 'https://www.videogamemanual.com/ps1/NBA%20in%20the%20Zone%202%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/NBA%20in%20the%20Zone%202%20(USA).pdf',
     },
     'SLUS00445': {
         'url': "games/U/N/SLUS-00445.html",
@@ -12584,7 +12584,7 @@ games = {
 	'title': "OMEGA BOOST",
         'pic0': 'https://images.launchbox-app.com/626d14ff-4e0b-4275-a5a9-fb95c59fe473.png',
         'pic1': 'https://images.launchbox-app.com/4dc7f607-d46b-411f-9a9b-df29d6c933eb.png',
-        #QQQ broken? 'manual': 'https://www.videogamemanual.com/ps1/Omega%20Boost%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Omega%20Boost%20(USA).pdf',
     },
     'SLUS00469': {
         'url': "games/U/O/SLUS-00469.html",
