@@ -64,7 +64,7 @@ except:
     True
 from pathlib import Path
 from bchunk import bchunk
-from document import create_document, encrypt_document
+from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
 from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
 try:
     from make_isoedat import pack
@@ -2147,7 +2147,7 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, psn_frame_size=None):
 def get_pic_from_game(pic, game_id, game, filename):
     try:
         image = Image.open(filename)
-        print('Use existing', filename, 'as', pic) if verbose else None
+        print('Use existing', filename, 'as', pic)
         return image
     except:
         True
@@ -3886,10 +3886,24 @@ def create_sbi(sbi, magic_word):
 # Convert scans of the manual into a DOCUMENT.DAT for PSP and PS3
 def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
-    # already have a manual in the proper format
     if source[-7:] == '.manual':
-        return source
-    
+        with open(source, 'rb') as f:
+            _b = f.read(4)
+            f.seek(0)
+            if _b == b'\x00PGD' and  ps3_manual:
+                print('Found a manual already in PS3 DOCUMENT.DAT format')
+                return source
+            if _b == b'\x00PGD':
+                print('Need to convert to kludgy PSP DOCUMENT.DAT format')
+                _d = subdir + '/PSP-DOCUMENT'
+                os.mkdir(_d)
+                decrypt_document(f.read(), _d)
+                print('Decrypted and extracted document to', _d)
+                _m = subdir + '/DOCUMENT.PSP'
+                create_document_from_dir(gameid, _d, _m)
+                print('Created PSP document')
+                return _m
+
     print('Create manual', source)
     files = []
 

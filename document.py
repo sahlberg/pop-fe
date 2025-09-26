@@ -257,7 +257,22 @@ def extract_document(document, output):
             with open(output + '/%04d.png' % page, 'wb') as o:
                 o.write(i.read(size_low))
 
-        
+def create_document_from_dir(gameid, dir, doc):
+        pages = []
+        for png in sorted(Path(dir).iterdir()):
+            image = Image.open(png)
+            maxysize = 480
+            sf = 480 / image.size[0]
+            ns = (480, int(sf * image.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = image.resize(ns, Image.Resampling.LANCZOS)
+            f = io.BytesIO()
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
+        with open(doc, 'wb') as f:
+            create_document(f, gameid if gameid else 'UNKN00000', pages)
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -289,21 +304,7 @@ if __name__ == "__main__":
             os._exit(1)
     if args.command[0] == 'create':
         print('Create', args.document)
-        pages = []
-        for png in sorted(Path(args.directory).iterdir()):
-            image = Image.open(png)
-            maxysize = 480
-            sf = 480 / image.size[0]
-            ns = (480, int(sf * image.size[1]))
-            if ns[1] > maxysize:
-                ns = (480, maxysize)
-            image = image.resize(ns, Image.Resampling.LANCZOS)
-            f = io.BytesIO()
-            image.save(f, 'PNG')
-            f.seek(0)
-            pages.append(f.read())
-        with open(args.document, 'wb') as f:
-            create_document(f, args.gameid if args.gameid else 'UNKN00000', pages)
+        create_document_from_dir(args.gameid, args.directory, args.document)
         sys.exit()
 
     if args.command[0] == 'view':
