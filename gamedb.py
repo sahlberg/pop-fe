@@ -65922,6 +65922,22 @@ games = {
 	'title': "SENTOU KOKKA KAI IMPROVED [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/4307580a-41be-4ecf-aefd-ff517fbce67c.png',
     },
+    'SLPS01940_ENG_10': {
+        'url': "games/J/S/SLPS-01940.html",
+    	'id': 'SLPS01940',
+	'title': "SEPTENTRION - OUT OF THE BLUE (ENGLISH 1.0)",
+        'pic0': 'https://images.launchbox-app.com/919e9522-e7b4-4eeb-8294-2e12954df06b.png',
+        'pic1': 'https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_1920,h_960,g_auto/dpr_auto/f_auto/q_auto:eco/v1/sinking-of-the-titanic-gettyimages-542907919-1?_a=BAVAZGDX0',
+        'snd0': 'https://www.youtube.com/watch?v=EE_EjpZGPYk',
+    },
+    'SLPS01940_ENG_101': {
+        'url': "games/J/S/SLPS-01940.html",
+    	'id': 'SLPS01940',
+	'title': "SEPTENTRION - OUT OF THE BLUE (ENGLISH 1.0.1)",
+        'pic0': 'https://images.launchbox-app.com/919e9522-e7b4-4eeb-8294-2e12954df06b.png',
+        'pic1': 'https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_1920,h_960,g_auto/dpr_auto/f_auto/q_auto:eco/v1/sinking-of-the-titanic-gettyimages-542907919-1?_a=BAVAZGDX0',
+        'snd0': 'https://www.youtube.com/watch?v=EE_EjpZGPYk',
+    },
     'SLPS01940': {
         'url': "games/J/S/SLPS-01940.html",
     	'id': 'SLPS01940',
@@ -74387,6 +74403,12 @@ games = {
 }
 
 gameid_by_md5sum = {
+    '7c1b3596b4483b9420b843cbbfbb59b6': {
+        'id': 'SLPS01940_ENG_101',
+    },
+    '32f0b75422d9a5ccd241e40807c284f2': {
+        'id': 'SLPS01940_ENG_10',
+    },
     'cad5543f2ed270abcd5a9a4dd243f9fa': {
         'id': 'POPF00001',
     },
@@ -76523,4 +76545,14 @@ ppf_fixes = {
         },
         'tags': ['psp',],
     },
+    'SLPS01940': {
+        'desc': 'Fix for Septentrion English fan-translation for Vita',
+        'hashes': {
+            # Septentrion fan translation v1.0.1
+            '7c1b3596b4483b9420b843cbbfbb59b6': {
+                'xdelta': 'romhacks/Septentrion_videofix_pspvita.xdelta',
+            },
+        },
+        'tags': ['psp',],
+    }
 }

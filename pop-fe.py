@@ -4032,13 +4032,26 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
     return tmpfile
 
 
+def ApplyXDELTA(img, romhack):
+    print('Applying XDELTA', romhack)
+    _tmp = img + 'tmp'
+    try:
+        subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
+    except:
+        print('Could not apply xdelta3 patch. Is xdelta3 installed?')
+        return
+    os.remove(img)
+    os.rename(_tmp, img)
+
+
 #
 # Apply all PPF fixes that may be needed
 #
 def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=None):
     for i in range(len(real_disc_ids)):
         ppf = None
-        disc_id = real_disc_ids[i]
+        xdelta = None
+        disc_id = games[real_disc_ids[i]]['id']
         if disc_id not in ppf_fixes:
             continue
         if 'tags' in ppf_fixes[disc_id]:
@@ -4050,10 +4063,13 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
             with open(img_files[i], 'rb') as f:
                 h = md5_sums[i]
                 if h in ppf_fixes[disc_id]['hashes']:
-                    ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
-        if not ppf:
+                    print('Check', ppf_fixes[disc_id]['hashes'][h])
+                    if 'ppf' in ppf_fixes[disc_id]['hashes'][h]:
+                        ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
+                    if 'xdelta' in ppf_fixes[disc_id]['hashes'][h]:
+                        xdelta = ppf_fixes[disc_id]['hashes'][h]['xdelta']
+        if not ppf and not xdelta:
             continue
-        print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
 
         # Need to copy the bin/cue to the work directory.
         # We know this is a single bin at this point as if it would have
@@ -4072,22 +4088,17 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
         cue_files[i] = _c
         img_files[i] = _b
 
-        print('Applying', ppf, 'to', img_files[i])
-        ApplyPPF(img_files[i], ppf)
+        if ppf:
+            print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
+            print('Applying', ppf, 'to', img_files[i])
+            ApplyPPF(img_files[i], ppf)
+        if xdelta:
+            print('Found XDELTA:', ppf_fixes[disc_id]['desc'], xdelta)
+            print('Applying', xdelta, 'to', img_files[i])
+            ApplyXDELTA(img_files[i], xdelta)
             
     return cue_files, img_files
 
-
-def ApplyXDELTA(img, romhack):
-    print('Applying XDELTA', romhack)
-    _tmp = img + 'tmp'
-    try:
-        subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
-    except:
-        print('Could not apply xdelta3 patch. Is xdelta3 installed?')
-        return
-    os.remove(img)
-    os.rename(_tmp, img)
 
 #
 # Apply all romhacks
