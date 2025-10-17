@@ -4294,6 +4294,14 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         temp_files.append(cue_file)
         img_file = subdir + mb + '.bin'
         temp_files.append(img_file)
+
+    if cue_file[:3] == 'C:\\' or cue_file[:3] == 'D:\\' or cue_file[:3] == 'E:\\':
+        new_bin = '\\'.join(cue_file.split('\\')[:-1]) + '\\' + i[0]
+        copy_file(new_bin, subdir + '\\' + i[0])
+        img_file = new_bin
+        new_cue = subdir + '/' + cue_file.split('\\')[-1]
+        copy_file(cue_file, new_cue)
+        cue_file = new_cue
         
     return cue_file, real_cue_file, img_file
 
