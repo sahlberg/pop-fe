@@ -102,10 +102,6 @@ jobs:
         run:   |
           Invoke-WebRequest -OutFile atracdenc-x86_0.1.1.zip https://github.com/dcherednik/atracdenc/releases/download/0.1.1/atracdenc-win-x86_0.1.1.zip
           unzip -j atracdenc-x86_0.1.1 -x README.TXT
-      - name: Install CHDMAN
-        run:   |
-          Invoke-WebRequest -OutFile chdman.zip https://wiki.recalbox.com/tutorials/utilities/rom-conversion/chdman/chdman.zip
-          unzip -j chdman.zip chdman.exe
       - name: Install FFMPEG
         run:   |
           Invoke-WebRequest -OutFile ffmpeg-release-essentials.zip https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
@@ -136,7 +132,6 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe/.
           cp atracdenc.exe dist/pop-fe/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe/.
-          cp chdman.exe dist/pop-fe/.
           cp lcp.exe dist/pop-fe/.
           mkdir dist/pop-fe/libcrypt
           cp libcrypt/*.* dist/pop-fe/libcrypt
@@ -154,7 +149,6 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
-          cp chdman.exe dist/pop-fe-ps3/.
           cp lcp.exe dist/pop-fe/.
           cp dist/pop-fe-ps3/_internal/PS3LOGO.DAT dist/pop-fe-ps3/.
           mkdir dist/pop-fe-ps3/libcrypt
