@@ -3926,7 +3926,16 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
         try:
             tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
             temp_files.append(tmpfile)
-            subprocess.run(['wget', source, '-O', tmpfile], timeout=240, check=True)
+            ret = requests.get(source)
+            if ret.status_code != 200:
+                print('Failed to download manual from', source)
+                return None
+            if ret.apparent_encoding:
+                buf = ret.content.decode(ret.apparent_encoding)
+            else:
+                buf = ret.content
+            with open(tmpfile, 'wb') as f:
+                f.write(buf)
             print('Downloaded manual as', tmpfile)
             source = tmpfile
         except:
