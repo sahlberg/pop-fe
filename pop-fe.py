@@ -3622,6 +3622,13 @@ def install_deps():
     print(os.name)
     subprocess.call(['git', 'submodule', 'update', '--init'])
 
+    # pygubu
+    try:
+        import pygubu
+        print('pygubu is already installed')
+    except:
+        print('Installing python pygubu')
+        subprocess.call(['pip', 'install', 'pygubu'])
     # PyPDF2
     try:
         import PyPDF2
@@ -3748,29 +3755,23 @@ def install_deps():
             exit(1)
         with open(binmerge_path, 'wb') as f:
             f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
-    if os.name == 'posix':
+    if os.name == 'posix': 
         # atracdenc
         try:
             os.stat('atracdenc/src/atracdenc')
             print('atracdenc is already installed')
         except:
-            print('Cloning atracdenc')
-            subprocess.call(['git', 'clone', 'https://github.com/dcherednik/atracdenc.git'])
+            print('Compiling atracdenc')
+            #subprocess.call(['git', 'clone', 'https://github.com/dcherednik/atracdenc.git'])
             os.chdir('atracdenc/src')
             subprocess.call(['cmake', '.'])
             subprocess.call(['make'])
             os.chdir('../..')
         # PSL1GHT
-        try:
-            os.stat('PSL1GHT')
-            print('PSL1GHT is already installed')
-        except:
-            print('Cloning PSL1GHT')
-            subprocess.call(['git', 'clone', 'http://github.com/sahlberg/PSL1GHT'])
-            os.chdir('PSL1GHT/tools/ps3py')
-            subprocess.call(['git', 'checkout', 'origin/use-python3'])
-            subprocess.call(['make'])
-            os.chdir('../../..')
+        os.chdir('PSL1GHT/tools/ps3py')
+        subprocess.call(['git', 'checkout', 'origin/use-python3'])
+        subprocess.call(['make'])
+        os.chdir('../../..')
 
     if os.name == 'posix':
         # libcrypt-patcher
@@ -3780,7 +3781,7 @@ def install_deps():
         except:
             print('Cloning libcrypt-patcher')
             subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip'])
-            subprocess.call(['unzip', '-j', 'libcrypt-patcher-v1.0.8-linux-i386-static.zip', '*/lcp'])
+            subprocess.call(['unzip', '-f', '-j', 'libcrypt-patcher-v1.0.8-linux-i386-static.zip', '*/lcp'])
 
             
 def generate_subchannels(magic_word):
