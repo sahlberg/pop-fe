@@ -3780,8 +3780,8 @@ def install_deps():
             print('libcrypt-patcher is already installed')
         except:
             print('Cloning libcrypt-patcher')
-            subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip'])
-            subprocess.call(['unzip', '-f', '-j', 'libcrypt-patcher-v1.0.8-linux-i386-static.zip', '*/lcp'])
+            subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-linux-i386-static.zip'])
+            subprocess.call(['unzip', '-f', '-j', 'libcrypt-patcher-v1.0.9-linux-i386-static.zip', '*/lcp'])
 
             
 def generate_subchannels(magic_word):

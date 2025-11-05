@@ -108,8 +108,8 @@ jobs:
           unzip -j ffmpeg-release-essentials.zip -x */doc/* -x */presets/* -x */README.txt -x */LICENSE -x */bin/ffplay.exe -x */bin/ffprobe.exe
       - name: Install LibCrypt Patcher
         run:   |
-          Invoke-WebRequest -OutFile libcrypt-patcher-v1.0.8-windows-x86_64-static.zip https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-windows-x86_64-static.zip
-          unzip -j libcrypt-patcher-v1.0.8-windows-x86_64-static.zip */lcp.exe
+          Invoke-WebRequest -OutFile libcrypt-patcher-v1.0.9-windows-x86_64-static.zip https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-windows-x86_64-static.zip
+          unzip -j libcrypt-patcher-v1.0.9-windows-x86_64-static.zip */lcp.exe
       - name: Build pop-fe
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
