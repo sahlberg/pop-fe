@@ -9085,6 +9085,7 @@ games = {
         'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/da61b604-8da0-43d6-a553-5cc78e50fd02.png',
         'manual': 'https://www.videogamemanual.com/ps1/Fighting%20Force%20(USA).pdf',
+        'snd0': 'https://www.youtube.com/watch?v=tI6SZmTTBfc',
     },
     'SLUS00934': {
         'url': "games/U/F/SLUS-00934.html",
@@ -9588,6 +9589,7 @@ games = {
         'pic0-offset': (0.1, 0.2),
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
         'manual': 'https://www.videogamemanual.com/ps1/Gex%20(USA).pdf',
+        'snd0': 'https://www.youtube.com/watch?v=SLIhZea0EmM',
     },
     'SLUS00598': {
         'url': "games/U/G/SLUS-00598.html",
@@ -9598,6 +9600,7 @@ games = {
         'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/6a373200-a4b9-4470-a696-6eb3db09edf3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Gex%20-%20Enter%20the%20Gecko%20(USA).pdf',
+        'snd0': 'https://www.youtube.com/watch?v=Ga9wY3CzEJQ',
     },
     'SLUS00806': {
         'url': "games/U/G/SLUS-00806.html",
@@ -9608,6 +9611,7 @@ games = {
         'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/1a187051-61ab-4969-8e26-a92c9999cb9d.png',
         'manual': 'https://www.videogamemanual.com/ps1/Gex%203%20-%20Deep%20Cover%20Gecko%20(USA).pdf',
+        'snd0': 'https://www.youtube.com/watch?v=aJk6vVunTQA',
     },
     'SLUS00552': {
         'url': "games/U/G/SLUS-00552.html",
@@ -21988,6 +21992,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Gex/SLES-00133.BIN',
+        'snd0': 'https://www.youtube.com/watch?v=SLIhZea0EmM',
     },
     'SLES00596': {
         'url': "games/P/G/SLES-00596.html",
@@ -22004,6 +22009,7 @@ games = {
         'pic0-scaling': 0.9,
         'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/1a187051-61ab-4969-8e26-a92c9999cb9d.png',
+        'snd0': 'https://www.youtube.com/watch?v=aJk6vVunTQA',
     },
     'SLES01908': {
         'url': "games/P/G/SLES-01908.html",
@@ -22014,6 +22020,7 @@ games = {
         'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/1a187051-61ab-4969-8e26-a92c9999cb9d.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%203%20-%20Deep%20Cover%20Gecko%20%28USA%29_jp2.zip',
+        'snd0': 'https://www.youtube.com/watch?v=aJk6vVunTQA',
     },
     'SCES01050': {
         'url': "games/P/G/SCES-01050.html",
@@ -51146,6 +51153,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/857525e8-64a4-4bd8-a691-0af9e4d63f7f.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Gex%20%28USA%29_jp2.zip',
         'ps3config': 'ps3configs/Gex/SLPS-00244.BIN',
+        'snd0': 'https://www.youtube.com/watch?v=SLIhZea0EmM',
     },
     'SCPS45092': {
         'url': "games/J/G/SCPS-45092.html",
