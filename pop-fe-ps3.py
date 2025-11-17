@@ -387,11 +387,6 @@ class PopFePs3App:
         if disc_id in games and 'manual' in games[disc_id]:
             print('Found a MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
-        if disc_id in games and 'ps3config' in games[disc_id]:
-            print('Found an external config for', disc_id)
-            with open(games[disc_id]['ps3config'], 'rb') as f:
-                      f.seek(8)
-                      self.configs[-1] = self.configs[-1] + f.read()
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
@@ -819,7 +814,7 @@ class PopFePs3App:
         if self.builder.get_variable('allow_discswap_variable').get() == 'on':
             swap = True
 
-        popfe.create_ps3(pkg, disc_ids, title,
+        popfe.create_ps3(pkg, disc_ids, self.real_disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          p1,

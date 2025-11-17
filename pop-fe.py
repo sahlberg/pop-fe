@@ -3053,7 +3053,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
+def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
     #
     # This one is special since the same command may be used for other things
     # so we need to merge the argument if teh command is already there
@@ -3102,7 +3102,14 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
             print('Force NTSC in config')
             configs[i] = force_ntsc_config(configs[i])
                 
-    
+        disc_id = real_disc_ids[i]
+        if disc_id in games and 'ps3config' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['ps3config'], 'rb') as f:
+                f.seek(8)
+                configs[i] = configs[i] + f.read()
+
+
     SECTLEN = 2352
     p = popstation()
     p.verbose = verbose
@@ -4571,12 +4578,6 @@ if __name__ == "__main__":
             except:
                 True
                 
-            disc_id = real_disc_ids[i]
-            if disc_id in games and 'ps3config' in games[disc_id]:
-                print('Found an external config for', disc_id) if verbose else None
-                with open(games[disc_id]['ps3config'], 'rb') as f:
-                      f.seek(8)
-                      ps3configs[i] = ps3configs[i] + f.read()
     if args.psp_dir:
         for i in range(len(real_disc_ids)):
             disc_id = real_disc_ids[i]
@@ -4789,7 +4790,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs)
+        create_ps3(args.ps3_pkg, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
