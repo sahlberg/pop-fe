@@ -3054,6 +3054,21 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
 
             
 def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
+    #
+    # This one is special since the same command may be used for other things
+    # so we need to merge the argument if teh command is already there
+    #
+    def force_ntsc_config(config):
+        c = bytearray(config)
+        merged = False
+        for i in range(0, len(c), 8):
+            if c[i] == 0x20:
+                c[i + 4] = c[i + 4] | 0x40
+                merged = True
+        if not merged:
+            c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
+        return c
+
     print('Create PS3 PKG for', game_title) if verbose else None
 
     if not no_libcrypt:
@@ -3083,6 +3098,9 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
                 configs[i] = configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
             else:
                 raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
+        if resolution == 1:
+            print('Force NTSC in config')
+            configs[i] = force_ntsc_config(configs[i])
                 
     
     SECTLEN = 2352
@@ -4232,21 +4250,6 @@ def generate_aea_files(cue_files, img_files, subdir):
     return aea_files, extra_data_track_found
 
 
-#
-# This one is special since the same command may be used for other things
-# so we need to merge the argument if teh command is already there
-#
-def force_ntsc_config(ps3config):
-    c = bytearray(ps3config)
-    merged = False
-    for i in range(0, len(c), 8):
-        if c[i] == 0x20:
-            c[i + 4] = c[i + 4] | 0x40
-            merged = True
-    if not merged:
-        c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
-    return c
-
 def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     real_cue_file = cue_file
 
@@ -4574,9 +4577,6 @@ if __name__ == "__main__":
                 with open(games[disc_id]['ps3config'], 'rb') as f:
                       f.seek(8)
                       ps3configs[i] = ps3configs[i] + f.read()
-            if args.resolution == '1':
-                print('Inject config to force NTSC') if verbose else None
-                ps3configs[i] = force_ntsc_config(ps3configs[i])
     if args.psp_dir:
         for i in range(len(real_disc_ids)):
             disc_id = real_disc_ids[i]
