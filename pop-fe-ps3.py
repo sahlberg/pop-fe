@@ -55,6 +55,7 @@ class PopFePs3App:
         self.myrect = None
         self.cue_file_orig = None
         self.cue_files = None
+        self.real_cue_files = None
         self.img_files = None
         self.disc_ids = None
         self.md5_sums = None
@@ -75,7 +76,6 @@ class PopFePs3App:
         self.preview_tk = None
         self.pkgdir = None
         self.data_track_only = 'off'
-        self.configs = []
         self.subdir = 'pop-fe-ps3-work/'
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
@@ -167,6 +167,7 @@ class PopFePs3App:
         os.mkdir(self.subdir)
 
         self.cue_files = []
+        self.real_cue_files = []
         self.img_files = []
         self.disc_ids = []
         self.md5_sums = []
@@ -181,7 +182,6 @@ class PopFePs3App:
         self.back = None
         self.disc = None
         self.preview_tk = None
-        self.configs = []
         self.manual = None
             
         for idx in range(1,6):
@@ -373,17 +373,8 @@ class PopFePs3App:
         self.md5_sums.append(md5_sum)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
-        self.configs.append(bytes())
+        self.real_cue_files.append(real_cue_file)
 
-        try:
-            os.stat(self.cue_file_orig[:-3]+'ps3config').st_size
-            print('Found an external config ', self.cue_file_orig[:-3]+'ps3config')
-            with open(self.cue_file_orig[:-3]+'ps3config', 'rb') as f:
-                      f.seek(8)
-                      self.configs[-1] = self.configs[-1] + f.read()
-                      print('Read external config ', self.cue_file_orig[:-3]+'ps3config')
-        except:
-            True
         if disc_id in games and 'manual' in games[disc_id]:
             print('Found a MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
@@ -818,12 +809,12 @@ class PopFePs3App:
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          p1,
-                         self.cue_files,
+                         self.cue_files, self.real_cue_files,
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir=self.subdir, snd0=snd0,
                          subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
-                         configs=self.configs, psx_undither=undither,
+                         psx_undither=undither,
                          ps1_newemu=newemu, enable_swap=swap)
         self.master.config(cursor='')
 
