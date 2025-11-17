@@ -809,14 +809,6 @@ class PopFePs3App:
         if extra_data_tracks:
             self.data_track_only = 'on'
         
-        if self.builder.get_variable('allow_discswap_variable').get() == 'on':
-            print('Enable swapdisc for all discs')
-            for idx in range(len(self.cue_files)):
-                if len(self.configs[idx])/8 < 8:
-                    self.configs[idx] = self.configs[idx] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
-                else:
-                    raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
-
         undither = False
         if self.builder.get_variable('psx_undither_variable').get() == 'on':
                 undither = True
@@ -824,6 +816,10 @@ class PopFePs3App:
         newemu = False
         if self.builder.get_variable('force_newemu_variable').get() == 'on':
                 newemu = True
+
+        swap = False
+        if self.builder.get_variable('allow_discswap_variable').get() == 'on':
+            swap = True
 
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
@@ -835,7 +831,7 @@ class PopFePs3App:
                          subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
                          configs=self.configs, psx_undither=undither,
-                         ps1_newemu=newemu)
+                         ps1_newemu=newemu, enable_swap=swap)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

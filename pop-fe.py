@@ -3053,7 +3053,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     if not no_libcrypt:
@@ -3077,7 +3077,13 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
             print('Forcing ps1_newemu on all disks for this game')
             configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
             continue
-    
+        if enable_swap:
+            print('Enable swapdisc for all discs')
+            if len(configs[i])/8 < 8:
+                configs[i] = configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+            else:
+                raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
+                
     
     SECTLEN = 2352
     p = popstation()
@@ -4587,17 +4593,6 @@ if __name__ == "__main__":
                 True
 
     #
-    # Add a ps1_netemu swap-dics command, this enables the swap disc/reset disc command for multidisc games
-    #
-    if args.swap_discs and args.ps3_pkg:
-        print('Forcing swap_discs on all disks for this game')
-        for i in range(len(real_disc_ids)):
-            if len(ps3configs[i])/8 < 8:
-                ps3configs[i] = ps3configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
-            else:
-                raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
-                
-    #
     # Apply all PPF fixes we might need
     #
     cue_files, img_files = apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag='psp' if args.psp_dir else None)
@@ -4794,7 +4789,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
