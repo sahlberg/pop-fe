@@ -95,6 +95,14 @@ Command line arguments are:
                          scans of the manual or an already processed file in
 			 DOCUMENT.DAT format.
 			 See Manual section below.
+--no-libcrypt          : Do not patch out libcrypt.
+			 The default is that libcrypt will be automatically patched
+			 our using:
+			 https://github.com/alex-free/libcrypt-patcher
+			 This argument will skip libcrypt-patcher.
+--psx-undither         : This removed dithering for some games by using:
+			 https://github.com/alex-free/psx-undither
+			 to patch the bin file.
 --resolution	       : By default resolution is set to '2' (640x512)
 		         for PAL games. I.e. games with a GameId that starts
 			 with SCES or SLES.
@@ -582,6 +590,7 @@ sudo dnf install -y python-tkinter
 sudo dnf install -y libsndfile-devel
 sudo dnf install -y ffmpeg
 sudo dnf install -y nodejs
+sudo dnf install -y glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
@@ -595,6 +604,7 @@ sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install ffmpeg
 sudo apt install nodejs
+sudo apt install glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install

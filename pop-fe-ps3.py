@@ -111,6 +111,7 @@ class PopFePs3App:
             'on_force_ntsc': self.on_force_ntsc,
             'on_force_newemu': self.on_force_newemu,
             'on_allow_swapdisc': self.on_allow_swapdisc,
+            'on_psx_undither': self.on_psx_undither,
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
@@ -625,6 +626,9 @@ class PopFePs3App:
     def on_allow_swapdisc(self):
         True
         
+    def on_psx_undither(self):
+        True
+        
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
         self.update_preview()
@@ -821,6 +825,10 @@ class PopFePs3App:
             for idx in range(len(self.cue_files)):
                 self.configs[idx] = bytes([0x38, 0x00, 0x00, 0x00, 0x02,  0x00, 0x00, 0x00])
 
+        undither = False
+        if self.builder.get_variable('psx_undither_variable').get() == 'on':
+                undither = True
+                
         popfe.create_ps3(pkg, disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -830,7 +838,7 @@ class PopFePs3App:
                          resolution, subdir=self.subdir, snd0=snd0,
                          subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
-                         configs=self.configs)
+                         configs=self.configs, psx_undither=undither)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

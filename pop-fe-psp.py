@@ -124,6 +124,7 @@ class PopFePs3App:
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
+            'on_psx_undither': self.on_psx_undither,
         }
 
         builder.connect_callbacks(callbacks)
@@ -641,6 +642,10 @@ class PopFePs3App:
         if self.builder.get_variable('logo_variable').get():
             logo = Image.open(self.builder.get_variable('logo_variable').get())
 
+        undither = False
+        if self.builder.get_variable('psx_undither_variable').get() == 'on':
+                undither = True
+                
         popfe.create_psp(ebootdir, disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -652,7 +657,8 @@ class PopFePs3App:
                          subchannels=subchannels, manual=manual,
                          configs=self.configs,
                          use_cdda=True if self.cdda=='on' else False,
-                         logo=self.pic1 if self.pic1aslogo=='on' else logo)
+                         logo=self.pic1 if self.pic1aslogo=='on' else logo,
+                         psx_undither=undither)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
@@ -668,6 +674,9 @@ class PopFePs3App:
     def on_force_ntsc(self):
         True
 
+    def on_psx_undither(self):
+        True
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')

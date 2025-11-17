@@ -209,6 +209,20 @@
             </layout>
           </object>
         </child>
+        <child>
+          <object class="ttk.Checkbutton" id="checkbutton1">
+            <property name="command" type="command" cbtype="simple">on_psx_undither</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Use PSX-Undither</property>
+            <property name="variable">string:psx_undither_variable</property>
+            <layout manager="grid">
+              <property name="column">2</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
       </object>
     </child>
     <child>

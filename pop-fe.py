@@ -2881,7 +2881,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None):
+def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None):
     if not no_libcrypt:
         try:
             # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
@@ -2889,6 +2889,8 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         except:
             print('patch_libcrypt crashed :-(')
             True
+    if psx_undither:
+        cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
     
     # Convert LOGO to a file object
     if logo:
@@ -3051,7 +3053,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None):
+def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, configs=None, no_libcrypt=None, psx_undither=None):
     print('Create PS3 PKG for', game_title) if verbose else None
 
     if not no_libcrypt:
@@ -3061,6 +3063,8 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         except:
             print('patch_libcrypt crashed :-(')
             True
+    if psx_undither:
+        cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
     
     SECTLEN = 2352
     p = popstation()
@@ -3772,6 +3776,11 @@ def install_deps():
         subprocess.call(['git', 'checkout', 'origin/use-python3'])
         subprocess.call(['make'])
         os.chdir('../../..')
+        # psx-undither
+        os.chdir('psx-undither')
+        subprocess.call(['git', 'submodule', 'update'])
+        subprocess.call(['make'])
+        os.chdir('..')
 
     if os.name == 'posix':
         # libcrypt-patcher
@@ -4334,10 +4343,33 @@ def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
                 temp_files.append('LCP%02x.cue' % idx)
             cue_files[idx] = subdir + 'LCP%02x.cue' % idx
             img_files[idx] = subdir + 'LCP%02x.bin' % idx
-            if os.name == 'posix':
-                subprocess.run(['./lcp', img_files[idx]], check=True)
-            else:
-                subprocess.run(['lcp.exe', img_files[idx]], check=True)
+        if os.name == 'posix':
+            subprocess.run(['./lcp', img_files[idx]], check=True)
+        else:
+            subprocess.run(['lcp.exe', img_files[idx]], check=True)
+    return cue_files, img_files
+
+def patch_undither(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
+    for idx in range(len(real_disc_ids)):
+        print('Need to apply psx-undither for', real_disc_ids[idx])
+        if len(cue_files[idx]) < len(subdir) or cue_files[idx][:len(subdir)] != subdir:
+            print('Copy the files')
+            i = get_imgs_from_bin(cue_files[idx])
+            print('Copy %s to UD%02x.bin so we can patch libcrypt' % (i[0], idx)) #if verbose else None
+            copy_file(i[0], subdir + 'UD%02x.bin' % idx) 
+            temp_files.append('UD%02x.bin' % idx)
+            with open(cue_files[idx], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('UD%02x.bin' % idx)
+                with open(subdir + 'UD%02x.cue' % idx, 'w') as fo:
+                    fo.writelines(l)
+                temp_files.append('UD%02x.cue' % idx)
+            cue_files[idx] = subdir + 'UD%02x.cue' % idx
+            img_files[idx] = subdir + 'UD%02x.bin' % idx
+        if os.name == 'posix':
+            subprocess.run(['./psx-undither/build/psxund', img_files[idx]], check=True)
+        else:
+            subprocess.run(['psxund.exe', img_files[idx].replace("/", "\\")], check=True)
     return cue_files, img_files
 
 def print_toc(toc):
@@ -4377,6 +4409,8 @@ if __name__ == "__main__":
                     help='Where the PS Classic/AutoBleem memory card is mounted')
     parser.add_argument('--no-libcrypt', action='store_true',
                     help='Do not patch libcrypt')
+    parser.add_argument('--psx-undither', action='store_true',
+                    help='Use PSX-Undither to reduce dithering')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
@@ -4751,11 +4785,11 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
+        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt)
+        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, configs=ps3configs, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
