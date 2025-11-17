@@ -3785,10 +3785,10 @@ def install_deps():
     if os.name == 'posix':
         # libcrypt-patcher
         try:
-            os.stat('Xlibcrypt-patcher')
+            os.stat('lcp')
             print('libcrypt-patcher is already installed')
         except:
-            print('Cloning libcrypt-patcher')
+            print('Installing libcrypt-patcher')
             subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-linux-i386-static.zip'])
             subprocess.call(['unzip', '-f', '-j', 'libcrypt-patcher-v1.0.9-linux-i386-static.zip', '*/lcp'])
 
