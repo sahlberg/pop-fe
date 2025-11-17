@@ -169,7 +169,7 @@ Command line arguments are:
 			single disc PBPs :-(
 			Specify --psc-dir=auto and it will scan all connected
 			devices to try to find the one with AutoBleem.
---ps1_newemu          : This only applies for PS3 PKGs. This switches the
+--ps1-newemu          : This only applies for PS3 PKGs. This switches the
                         emulator to use to ps1_newemu instead of the default
 			ps1_netemu.
 --swap-discs          : This only applies for PS3 PKGs. This adds a ps3 netemu
