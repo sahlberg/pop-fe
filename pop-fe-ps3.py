@@ -793,17 +793,9 @@ class PopFePs3App:
         if extra_data_tracks:
             self.data_track_only = 'on'
         
-        undither = False
-        if self.builder.get_variable('psx_undither_variable').get() == 'on':
-                undither = True
-
-        newemu = False
-        if self.builder.get_variable('force_newemu_variable').get() == 'on':
-                newemu = True
-
-        swap = False
-        if self.builder.get_variable('allow_discswap_variable').get() == 'on':
-            swap = True
+        undither = self.builder.get_variable('psx_undither_variable').get() == 'on'
+        newemu   = self.builder.get_variable('force_newemu_variable').get() == 'on'
+        swap     = self.builder.get_variable('allow_discswap_variable').get() == 'on'
 
         popfe.create_ps3(pkg, disc_ids, self.real_disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,

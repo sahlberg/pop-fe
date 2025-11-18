@@ -2881,7 +2881,27 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None):
+def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None, force_ntsc=False, cdda=False):
+    EMPTY_CONFIG = bytes([
+        0x70,0x00,0x07,0x06,0x00,0x00,0x06,0x06,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF
+    ])
+    
     if not no_libcrypt:
         try:
             # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
@@ -2889,9 +2909,42 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         except:
             print('patch_libcrypt crashed :-(')
             True
+
     if psx_undither:
         cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
-    
+
+    configs = []
+    for i in range(len(disc_ids)):
+        configs.append(EMPTY_CONFIG[:])
+        try:
+            os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
+            print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
+            with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
+                configs[i] = f.read()
+        except:
+            True
+        disc_id = real_disc_ids[i]
+        if disc_id in games and 'pspconfig' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['pspconfig'], 'rb') as f:
+                configs[i] = f.read()
+        if force_ntsc == 1:
+            print('Force NTSC in config')
+            configs[i] = bytearray(configs[i])
+            # Set NTSC bit in configs
+            if len(configs[i]) > 0x0b:
+                configs[i][0x0b] |= 0x10
+            if len(configs[i]) > 0x8f:
+                configs[i][0x8f] |= 0x10
+        if cdda:
+            configs[i] = bytearray(configs[i])
+            # Set CDDA bit in configs
+            if len(configs[i]) > 0x09:
+                configs[i][0x09] |= 0x20 # same effect as cdda_enabler
+            if len(configs[i]) > 0x8d:
+                configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
+
+
     # Convert LOGO to a file object
     if logo:
         image = logo
@@ -3085,8 +3138,6 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     configs = []
     for i in range(len(disc_ids)):
         configs.append(bytes())
-
-    for i in range(len(disc_ids)):
         if ps1_newemu:
             print('Forcing ps1_newemu on all disks for this game')
             configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
@@ -3100,7 +3151,6 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         if resolution == 1:
             print('Force NTSC in config')
             configs[i] = force_ntsc_config(configs[i])
-                
         try:
             os.stat(real_cue_files[i][:-3]+'ps3config').st_size
             print('Found an external config ', real_cue_files[i][:-3]+'ps3config')
@@ -3109,7 +3159,6 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
                 configs[-1] = configs[-1] + f.read()
         except:
             True
-
         disc_id = real_disc_ids[i]
         if disc_id in games and 'ps3config' in games[disc_id]:
             print('Found an external config for', disc_id)
@@ -4508,8 +4557,6 @@ if __name__ == "__main__":
         install_deps()
         exit(0)
 
-    pspconfigs = None
-    
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
 
@@ -4538,11 +4585,6 @@ if __name__ == "__main__":
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
-        if args.psp_dir:
-            if not pspconfigs:
-                pspconfigs = []
-            pspconfigs.append(bytes())
-
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
             mc = check_memory_card(cue_file)
@@ -4571,21 +4613,6 @@ if __name__ == "__main__":
     disc_ids, md5_sums = get_disc_ids(cue_files, real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
                 
-    if args.psp_dir:
-        for i in range(len(real_disc_ids)):
-            disc_id = real_disc_ids[i]
-            if disc_id in games and 'pspconfig' in games[disc_id]:
-                print('Found an external config for', disc_id)
-                with open(games[disc_id]['pspconfig'], 'rb') as f:
-                      pspconfigs[i] = f.read()
-            try:
-                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
-                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
-                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
-                      pspconfigs[-1] = f.read()
-            except:
-                True
-
     #
     # Apply all PPF fixes we might need
     #
@@ -4779,7 +4806,7 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither)
+        create_psp(args.psp_dir, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
