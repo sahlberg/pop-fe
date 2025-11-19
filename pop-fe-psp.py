@@ -5,6 +5,7 @@ import argparse
 import os
 import pathlib
 import pygubu
+import pygubu.widgets.simpletooltip as tooltip
 import re
 import shutil
 import struct
@@ -108,6 +109,36 @@ class PopFePs3App:
         }
 
         builder.connect_callbacks(callbacks)
+
+        # Tooltips
+        self.use_psx_undither = builder.get_object("use_psx_undither")
+        tooltip.create(self.use_psx_undither, "Use PSX-Undither to patch the game.\nThis will remove dithering effects.")
+        self.pic1aslogo = builder.get_object("pic1aslogo")
+        tooltip.create(self.pic1aslogo , "Use pic1 as the LOGO instead of the default P.O.P.S logo")
+        self.nopstitleimg = builder.get_object("nopstitleimg")
+        tooltip.create(self.nopstitleimg , "Disable the use of PSTITLEIMG for single disc games.\nDo not use unless you know what this means.")
+        self.force_ntsc = builder.get_object("force_ntsc")
+        tooltip.create(self.force_ntsc , "Encode this game as NTSC even if it is actually PAL")
+        self.use_cdda = builder.get_object("use_cdda")
+        tooltip.create(self.use_cdda , "Use CDDA audio instead of the default ATRAC3 audio.\nDo not use this unless you need to as it reduces compatibility.\nV-Rally 2 needs this option.")
+        self.watermark = builder.get_object("watermark")
+        tooltip.create(self.watermark , "Put a small watermark containing the disc-id in the background image")
+        self.disable_snd0 = builder.get_object("disable_snd0")
+        tooltip.create(self.disable_snd0 , "Disable the SND0 audio that would play when the game icon is\nhighlighted on the XMB")
+        self.disable_pic1 = builder.get_object("disable_pic1")
+        tooltip.create(self.disable_pic1 , "Disable the background image that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.disable_pic0 = builder.get_object("disable_pic0")
+        tooltip.create(self.disable_pic0 , "Disable the game logo that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.pic0scaling = builder.get_object("pic0scaling")
+        tooltip.create(self.pic0scaling , "Change the scaling of the game logo.\n1.0 is 100% of original.\n0.5 is 50%, etc.")
+        self.pic0xoffset = builder.get_object("pic0xoffset")
+        tooltip.create(self.pic0xoffset , "Shift the placement of pic0 horizontally.\n0.1 means shift 10% to the right.\n-0.1 means shift 10% to the left.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        self.pic0yoffset = builder.get_object("pic0yoffset")
+        tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        #self. = builder.get_object("")
+        #tooltip.create(self. , "")
+        
+        
         self._theme = ''
         o = ['']
         for theme in themes:

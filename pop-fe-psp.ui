@@ -140,7 +140,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Checkbutton" id="cdda">
+          <object class="ttk.Checkbutton" id="use_cdda" named="True">
             <property name="command" type="command" cbtype="simple">on_cdda</property>
             <property name="offvalue">off</property>
             <property name="onvalue">on</property>
@@ -210,7 +210,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Checkbutton" id="checkbutton1">
+          <object class="ttk.Checkbutton" id="use_psx_undither" named="True">
             <property name="command" type="command" cbtype="simple">on_psx_undither</property>
             <property name="offvalue">off</property>
             <property name="onvalue">on</property>
