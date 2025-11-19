@@ -7,6 +7,7 @@ import io
 import os
 import pathlib
 import pygubu
+import pygubu.widgets.simpletooltip as tooltip
 import re
 import requests
 import shutil
@@ -127,6 +128,38 @@ class PopFePs3App:
         c = self.builder.get_object('pic1_canvas', self.master)
         c.drop_target_register(DND_FILES)
         c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
+
+        # Tooltips
+        self.use_psx_undither = builder.get_object("use_psx_undither")
+        tooltip.create(self.use_psx_undither, "Use PSX-Undither to patch the game.\nThis will remove dithering effects.")
+        self.allow_swapdisc = builder.get_object("allow_swapdisc")
+        tooltip.create(self.allow_swapdisc, "Allow swapping disks even if the game is not requesting it.\nThis is only needed on a handful of games that do not\nuse the normal way to handle multi-discs.")
+        self.force_newemu = builder.get_object("force_newemu")
+        tooltip.create(self.force_newemu , "Use the psx_newemu emulator instead of psx_netemu\nVery few games need this.\nDo not enable unless you must since the psx_newemu emulator\nhas worse compatibility than psx_newemu")
+        self.force_ntsc = builder.get_object("force_ntsc")
+        tooltip.create(self.force_ntsc , "Encode this game as NTSC even if it is actually PAL")
+        self.force_pal = builder.get_object("force_pal")
+        tooltip.create(self.force_pal , "Encode this game as PAL even if it is actually NTSC")
+        self.disc_as_icon0 = builder.get_object("disc_as_icon0")
+        tooltip.create(self.disc_as_icon0 , "Use a scan of the disc as the icon")
+        self.pic1_as_background = builder.get_object("pic1_as_background")
+        tooltip.create(self.pic1_as_background , "Use the back of the game box as the background image")
+        self.data_track_only = builder.get_object("data_track_only")
+        tooltip.create(self.data_track_only , "Only encode the data track and skip all CDDA tracks\nwhen creating the EBOOT.\nThis makes the EBOOT smaller but you can no longer convert the EBOOT back into a BIN/CUE file.\nMusic will still work since it is always converted to ATRAC3.\n")
+        self.disable_snd0 = builder.get_object("disable_snd0")
+        tooltip.create(self.disable_snd0 , "Disable the SND0 audio that would play when the game icon is\nhighlighted on the XMB")
+        self.disable_pic1 = builder.get_object("disable_pic1")
+        tooltip.create(self.disable_pic1 , "Disable the background image that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.disable_pic0 = builder.get_object("disable_pic0")
+        tooltip.create(self.disable_pic0 , "Disable the game logo that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.pic0scaling = builder.get_object("pic0scaling")
+        tooltip.create(self.pic0scaling , "Change the scaling of the game logo.\n1.0 is 100% of original.\n0.5 is 50%, etc.")
+        self.pic0xoffset = builder.get_object("pic0xoffset")
+        tooltip.create(self.pic0xoffset , "Shift the placement of pic0 horizontally.\n0.1 means shift 10% to the right.\n-0.1 means shift 10% to the left.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        self.pic0yoffset = builder.get_object("pic0yoffset")
+        tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        #self. = builder.get_object("")
+        #tooltip.create(self. , "")
 
         self._theme = ''
         o = ['']

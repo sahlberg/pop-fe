@@ -643,7 +643,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Checkbutton" id="checkbutton1">
+          <object class="ttk.Checkbutton" id="use_psx_undither" named="True">
             <property name="command" type="command" cbtype="simple">on_psx_undither</property>
             <property name="offvalue">off</property>
             <property name="onvalue">on</property>
@@ -700,7 +700,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Frame" id="frame4">
+          <object class="ttk.Frame" id="pic0_scaling" named="True">
             <property name="height">200</property>
             <property name="width">200</property>
             <layout manager="grid">
@@ -732,7 +732,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Frame" id="frame5">
+          <object class="ttk.Frame" id="pic0_x_shift" named="True">
             <property name="height">200</property>
             <property name="width">200</property>
             <layout manager="grid">
@@ -764,7 +764,7 @@
           </object>
         </child>
         <child>
-          <object class="ttk.Frame" id="frame7">
+          <object class="ttk.Frame" id="pic0_y_shift" named="True">
             <property name="height">200</property>
             <property name="width">200</property>
             <layout manager="grid">
