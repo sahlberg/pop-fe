@@ -7,6 +7,7 @@ import io
 import os
 import pathlib
 import pygubu
+import pygubu.widgets.simpletooltip as tooltip
 import re
 import requests
 import shutil
@@ -55,6 +56,7 @@ class PopFePs3App:
         self.myrect = None
         self.cue_file_orig = None
         self.cue_files = None
+        self.real_cue_files = None
         self.img_files = None
         self.disc_ids = None
         self.md5_sums = None
@@ -75,11 +77,11 @@ class PopFePs3App:
         self.preview_tk = None
         self.pkgdir = None
         self.data_track_only = 'off'
-        self.configs = []
         self.subdir = 'pop-fe-ps3-work/'
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
+        self.manual = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -110,6 +112,7 @@ class PopFePs3App:
             'on_force_ntsc': self.on_force_ntsc,
             'on_force_newemu': self.on_force_newemu,
             'on_allow_swapdisc': self.on_allow_swapdisc,
+            'on_psx_undither': self.on_psx_undither,
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
@@ -125,6 +128,38 @@ class PopFePs3App:
         c = self.builder.get_object('pic1_canvas', self.master)
         c.drop_target_register(DND_FILES)
         c.dnd_bind('<<Drop>>', self.on_pic1_dropped)
+
+        # Tooltips
+        self.use_psx_undither = builder.get_object("use_psx_undither")
+        tooltip.create(self.use_psx_undither, "Use PSX-Undither to patch the game.\nThis will remove dithering effects.")
+        self.allow_swapdisc = builder.get_object("allow_swapdisc")
+        tooltip.create(self.allow_swapdisc, "Allow swapping disks even if the game is not requesting it.\nThis is only needed on a handful of games that do not\nuse the normal way to handle multi-discs.")
+        self.force_newemu = builder.get_object("force_newemu")
+        tooltip.create(self.force_newemu , "Use the psx_newemu emulator instead of psx_netemu\nVery few games need this.\nDo not enable unless you must since the psx_newemu emulator\nhas worse compatibility than psx_newemu")
+        self.force_ntsc = builder.get_object("force_ntsc")
+        tooltip.create(self.force_ntsc , "Encode this game as NTSC even if it is actually PAL")
+        self.force_pal = builder.get_object("force_pal")
+        tooltip.create(self.force_pal , "Encode this game as PAL even if it is actually NTSC")
+        self.disc_as_icon0 = builder.get_object("disc_as_icon0")
+        tooltip.create(self.disc_as_icon0 , "Use a scan of the disc as the icon")
+        self.pic1_as_background = builder.get_object("pic1_as_background")
+        tooltip.create(self.pic1_as_background , "Use the back of the game box as the background image")
+        self.data_track_only = builder.get_object("data_track_only")
+        tooltip.create(self.data_track_only , "Only encode the data track and skip all CDDA tracks\nwhen creating the EBOOT.\nThis makes the EBOOT smaller but you can no longer convert the EBOOT back into a BIN/CUE file.\nMusic will still work since it is always converted to ATRAC3.\n")
+        self.disable_snd0 = builder.get_object("disable_snd0")
+        tooltip.create(self.disable_snd0 , "Disable the SND0 audio that would play when the game icon is\nhighlighted on the XMB")
+        self.disable_pic1 = builder.get_object("disable_pic1")
+        tooltip.create(self.disable_pic1 , "Disable the background image that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.disable_pic0 = builder.get_object("disable_pic0")
+        tooltip.create(self.disable_pic0 , "Disable the game logo that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.pic0scaling = builder.get_object("pic0scaling")
+        tooltip.create(self.pic0scaling , "Change the scaling of the game logo.\n1.0 is 100% of original.\n0.5 is 50%, etc.")
+        self.pic0xoffset = builder.get_object("pic0xoffset")
+        tooltip.create(self.pic0xoffset , "Shift the placement of pic0 horizontally.\n0.1 means shift 10% to the right.\n-0.1 means shift 10% to the left.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        self.pic0yoffset = builder.get_object("pic0yoffset")
+        tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        #self. = builder.get_object("")
+        #tooltip.create(self. , "")
 
         self._theme = ''
         o = ['']
@@ -165,6 +200,7 @@ class PopFePs3App:
         os.mkdir(self.subdir)
 
         self.cue_files = []
+        self.real_cue_files = []
         self.img_files = []
         self.disc_ids = []
         self.md5_sums = []
@@ -179,8 +215,8 @@ class PopFePs3App:
         self.back = None
         self.disc = None
         self.preview_tk = None
-        self.configs = []
-        
+        self.manual = None
+            
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
@@ -196,6 +232,9 @@ class PopFePs3App:
         self.builder.get_variable('title_variable').set('')
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
         self.builder.get_variable('snd0_variable').set('')
+        self.builder.get_object('manual', self.master).config(state='disabled')
+        self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
+        self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
         self.builder.get_variable('pic0yoffset_variable').set('')
@@ -310,7 +349,7 @@ class PopFePs3App:
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((80,80),(62,62)))
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((176,176),(138,138)))
             
         if self.icon0:
             temp_files.append(self.subdir + 'ICON0.PNG')
@@ -367,22 +406,11 @@ class PopFePs3App:
         self.md5_sums.append(md5_sum)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
-        self.configs.append(bytes())
+        self.real_cue_files.append(real_cue_file)
 
-        try:
-            os.stat(self.cue_file_orig[:-3]+'ps3config').st_size
-            print('Found an external config ', self.cue_file_orig[:-3]+'ps3config')
-            with open(self.cue_file_orig[:-3]+'ps3config', 'rb') as f:
-                      f.seek(8)
-                      self.configs[-1] = self.configs[-1] + f.read()
-                      print('Read external config ', self.cue_file_orig[:-3]+'ps3config')
-        except:
-            True
-        if disc_id in games and 'ps3config' in games[disc_id]:
-            print('Found an external config for', disc_id)
-            with open(games[disc_id]['ps3config'], 'rb') as f:
-                      f.seek(8)
-                      self.configs[-1] = self.configs[-1] + f.read()
+        if disc_id in games and 'manual' in games[disc_id]:
+            print('Found a MANUAL for', disc_id)
+            self.manual = games[disc_id]['manual']
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
@@ -412,6 +440,8 @@ class PopFePs3App:
             self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
+            self.builder.get_variable('manual_variable').set(self.manual)
+            self.builder.get_object('manual', self.master).config(state='enabled')
             self.update_assets()
             
         elif disc == 'd2':
@@ -615,6 +645,9 @@ class PopFePs3App:
     def on_allow_swapdisc(self):
         True
         
+    def on_psx_undither(self):
+        True
+        
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
         self.update_preview()
@@ -762,8 +795,6 @@ class PopFePs3App:
             resolution = 2
         if self.builder.get_variable('force_ntsc_variable').get() == 'on':
             resolution = 1
-            for idx in range(len(self.cue_files)):
-                self.configs[idx] = popfe.force_ntsc_config(self.configs[idx])
 
         self.master.config(cursor='watch')
         self.master.update()
@@ -780,6 +811,12 @@ class PopFePs3App:
         if self.pic1_disabled == 'on':
             p1 = None
 
+        manual = self.builder.get_variable('manual_variable').get()
+        if manual and len(manual) and manual != 'None':
+            manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir, ps3_manual=True)
+        else:
+            manual = None
+
         #
         # Apply all PPF fixes we might need
         #
@@ -789,32 +826,21 @@ class PopFePs3App:
         if extra_data_tracks:
             self.data_track_only = 'on'
         
-        if self.builder.get_variable('allow_discswap_variable').get() == 'on':
-            print('Enable swapdisc for all discs')
-            for idx in range(len(self.cue_files)):
-                if len(self.configs[idx])/8 < 8:
-                    self.configs[idx] = self.configs[idx] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
-                else:
-                    raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
+        undither = self.builder.get_variable('psx_undither_variable').get() == 'on'
+        newemu   = self.builder.get_variable('force_newemu_variable').get() == 'on'
+        swap     = self.builder.get_variable('allow_discswap_variable').get() == 'on'
 
-        #
-        # Force NEWEMU
-        #
-        if self.builder.get_variable('force_newemu_variable').get() == 'on':
-            print('Forcing ps1_newemu for all discs')
-            for idx in range(len(self.cue_files)):
-                self.configs[idx] = bytes([0x38, 0x00, 0x00, 0x00, 0x02,  0x00, 0x00, 0x00])
-            
-        popfe.create_ps3(pkg, disc_ids, title,
+        popfe.create_ps3(pkg, disc_ids, self.real_disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          p1,
-                         self.cue_files,
+                         self.cue_files, self.real_cue_files,
                          self.img_files, [], aea_files, magic_word,
                          resolution, subdir=self.subdir, snd0=snd0,
-                         subchannels=subchannels,
+                         subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
-                         configs=self.configs)
+                         psx_undither=undither,
+                         ps1_newemu=newemu, enable_swap=swap)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

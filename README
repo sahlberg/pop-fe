@@ -92,8 +92,17 @@ Command line arguments are:
 --pic1                 : Image to use as the PIC1/Screenshot. If not specified
 		         pop-fe will automatically fetch one from the internet.
 --manual               : Specify a http link, zip-file or a directory containing
-                         scans of the manual. This is only supported for
-			 PSP at the moment. See Manual section below.
+                         scans of the manual or an already processed file in
+			 DOCUMENT.DAT format.
+			 See Manual section below.
+--no-libcrypt          : Do not patch out libcrypt.
+			 The default is that libcrypt will be automatically patched
+			 our using:
+			 https://github.com/alex-free/libcrypt-patcher
+			 This argument will skip libcrypt-patcher.
+--psx-undither         : This removed dithering for some games by using:
+			 https://github.com/alex-free/psx-undither
+			 to patch the bin file.
 --resolution	       : By default resolution is set to '2' (640x512)
 		         for PAL games. I.e. games with a GameId that starts
 			 with SCES or SLES.
@@ -160,7 +169,7 @@ Command line arguments are:
 			single disc PBPs :-(
 			Specify --psc-dir=auto and it will scan all connected
 			devices to try to find the one with AutoBleem.
---ps1_newemu          : This only applies for PS3 PKGs. This switches the
+--ps1-newemu          : This only applies for PS3 PKGs. This switches the
                         emulator to use to ps1_newemu instead of the default
 			ps1_netemu.
 --swap-discs          : This only applies for PS3 PKGs. This adds a ps3 netemu
@@ -399,27 +408,26 @@ $ ffmpeg -i Azure\ Dreams\ OST\ 3.\ Overture.3gp  -ar 44100 -ac 2 Azure\ Dreams\
 
 MANUAL
 ======
-Pop-fe can create a "Software Manual" for PSP. Use the --manual command line
-argument and spepcify either a https-link, a zip-file, a cbr-file (==rar)
-or a directory containing scans of the manual to use to generate DOCUMENT.DAT.
-The files can be in any format and will be converted to PNG and re-scaled to
-480 pixels wide to match the PSP screen.
+Pop-fe can create a "Software Manual" for PSP and PS3.
+The manual is provided using the --manual command line option.
+This can either be a file or a https link to a document to use.
+The following extensions are supported :
 
-The image filenames must contain a format that pop-fe understands to match
-page numbers. The naming format that is supported right now are
-* Filename must contain a four digit substrung that matches the page number.
-  Example: '0000'
-* Filename must contain 'pag' followed by two digits that matches a page number.
-  Example: 'pag00'
-Page-numbering start at either 0 or 1.
+.manual : A file/link already already prepared in the native
+          PS3 DOCUMENT.DAT format.
+.zip    : A ZIP file containing images	  
+.cbr    : A CBR file
+.pdf    : A PDF document containing scanned pages.
+or it can also just be a local directory containing a the images to
+use for the manual.
+zip/cbr/directories will have all the individual image files sorted
+alphabetically when they are joined together into the manual.
 
-You can also store the manual locally alongside the cue file.
-The file needs to have the same name as the cue but the extension .manual
-The format of this file can either be a pre-processed DOCUMENT.DAT file
-or it can be a zip file containing image scans.
-
-If this file exist then pop-fe will use it as the manual, overriding any
-any default manual that may be specified in gamedb.py.
+If there is a file with the same filename as the .cue file but the extension
+.manual then this will be used as the manual. This file must be in
+DOCUMENT.DAT format.
+"document.py encrypt ..." can be used to create such files from a colelction
+of image files.
 
 
 PSIO
@@ -570,14 +578,19 @@ For installations on Linux/Posix/ you need to have a build environment.
 Make sure you have 'git', 'gcc', 'g++', 'make', 'cmake' installed.
 
 
-Fedora36 Automatic Install:
--------------------------
-sudo dnf install python-is-python3
-sudo dnf install pip3
-sudo dnf install python3-devel
-sudo dnf install libsndfile-devel
-sudo dnf install ffmpeg
-sudo dnf install nodejs
+Fedora42 Automatic Install:
+---------------------------
+sudo dnf group install -y development-tools
+sudo dnf install -y g++
+sudo dnf install -y cmake
+sudo dnf install -y python-is-python3
+sudo dnf install -y pip3
+sudo dnf install -y python3-devel
+sudo dnf install -y python-tkinter
+sudo dnf install -y libsndfile-devel
+sudo dnf install -y ffmpeg
+sudo dnf install -y nodejs
+sudo dnf install -y glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
@@ -591,6 +604,7 @@ sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install ffmpeg
 sudo apt install nodejs
+sudo apt install glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
 ./pop-fe.py --install
@@ -617,8 +631,8 @@ git clone --recursive https://github.com/sahlberg/pop-fe.git
 make -C pop-fe/PSL1GHT/tools/ps3py/
 cmake -B pop-fe/atracdenc/src/ -S pop-fe/atracdenc/src/
 make -C pop-fe/atracdenc/src/
-wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip
-unzip -j libcrypt-patcher-v1.0.8-linux-i386-static.zip */lcp
+wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-linux-i386-static.zip
+unzip -j libcrypt-patcher-v1.0.9-linux-i386-static.zip */lcp
 
 
 Android (Termux https://f-droid.org/en/packages/com.termux/) Manual Install:
@@ -674,8 +688,8 @@ make
 cd ../../..
 wget https://github.com/dcherednik/atracdenc/releases/download/0.0.3/atracdenc-x86_0.0.3.zip
 unzip -j atracdenc-x86_0.0.3 -x README.TXT
-wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip
-unzip -j libcrypt-patcher-v1.0.8-linux-i386-static.zip */lcp
+wget https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-linux-i386-static.zip
+unzip -j libcrypt-patcher-v1.0.9-linux-i386-static.zip */lcp
 pip install pyinstaller
 pip install pygubu
 pyinstaller PSL1GHT/tools/ps3py/pkg.py

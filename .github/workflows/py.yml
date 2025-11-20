@@ -102,18 +102,18 @@ jobs:
         run:   |
           Invoke-WebRequest -OutFile atracdenc-x86_0.1.1.zip https://github.com/dcherednik/atracdenc/releases/download/0.1.1/atracdenc-win-x86_0.1.1.zip
           unzip -j atracdenc-x86_0.1.1 -x README.TXT
-      - name: Install CHDMAN
-        run:   |
-          Invoke-WebRequest -OutFile chdman.zip https://wiki.recalbox.com/tutorials/utilities/rom-conversion/chdman/chdman.zip
-          unzip -j chdman.zip chdman.exe
       - name: Install FFMPEG
         run:   |
           Invoke-WebRequest -OutFile ffmpeg-release-essentials.zip https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
           unzip -j ffmpeg-release-essentials.zip -x */doc/* -x */presets/* -x */README.txt -x */LICENSE -x */bin/ffplay.exe -x */bin/ffprobe.exe
       - name: Install LibCrypt Patcher
         run:   |
-          Invoke-WebRequest -OutFile libcrypt-patcher-v1.0.8-windows-x86_64-static.zip https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-windows-x86_64-static.zip
-          unzip -j libcrypt-patcher-v1.0.8-windows-x86_64-static.zip */lcp.exe
+          Invoke-WebRequest -OutFile libcrypt-patcher-v1.0.9-windows-x86_64-static.zip https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-windows-x86_64-static.zip
+          unzip -j libcrypt-patcher-v1.0.9-windows-x86_64-static.zip */lcp.exe
+      - name: Install PSX-Undither
+        run:   |
+          Invoke-WebRequest -OutFile psx-undither-v1.0-windows-i686-static.zip https://github.com/alex-free/psx-undither/releases/download/v1.0/psx-undither-v1.0-windows-i686-static.zip
+          unzip -j psx-undither-v1.0-windows-i686-static.zip */psxund.exe
       - name: Build pop-fe
         run:   |
           pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
@@ -136,8 +136,8 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe/.
           cp atracdenc.exe dist/pop-fe/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe/.
-          cp chdman.exe dist/pop-fe/.
           cp lcp.exe dist/pop-fe/.
+          cp psxund.exe dist/pop-fe/.
           mkdir dist/pop-fe/libcrypt
           cp libcrypt/*.* dist/pop-fe/libcrypt
           mkdir dist/pop-fe/ppf
@@ -154,8 +154,8 @@ jobs:
           cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
           cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
           cp ffmpeg.exe dist/pop-fe-ps3/.
-          cp chdman.exe dist/pop-fe-ps3/.
           cp lcp.exe dist/pop-fe/.
+          cp psxund.exe dist/pop-fe/.
           cp dist/pop-fe-ps3/_internal/PS3LOGO.DAT dist/pop-fe-ps3/.
           mkdir dist/pop-fe-ps3/libcrypt
           cp libcrypt/*.* dist/pop-fe-ps3/libcrypt

@@ -5,6 +5,7 @@ import argparse
 import os
 import pathlib
 import pygubu
+import pygubu.widgets.simpletooltip as tooltip
 import re
 import shutil
 import struct
@@ -36,26 +37,6 @@ temp_files = []
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "pop-fe-psp.ui"
 
-EMPTY_CONFIG = bytes([
-    0x70,0x00,0x07,0x06,0x00,0x00,0x06,0x06,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
-    0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
-    0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF
-])
-
 
 class FinishedDialog(tk.Toplevel):
     def __init__(self, root):
@@ -71,6 +52,7 @@ class PopFePs3App:
         self.myrect = None
         self.cue_file_orig = None
         self.cue_files = None
+        self.real_cue_files = None
         self.img_files = None
         self.disc_ids = None
         self.md5_sums = None
@@ -90,11 +72,11 @@ class PopFePs3App:
         self.pic0_disabled = 'off'
         self.pic1_disabled = 'off'
         self.snd0_disabled = 'off'
-        self.configs = []
         self.subdir='pop-fe-psp-work/'
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
+        self.manual = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -123,9 +105,40 @@ class PopFePs3App:
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
+            'on_psx_undither': self.on_psx_undither,
         }
 
         builder.connect_callbacks(callbacks)
+
+        # Tooltips
+        self.use_psx_undither = builder.get_object("use_psx_undither")
+        tooltip.create(self.use_psx_undither, "Use PSX-Undither to patch the game.\nThis will remove dithering effects.")
+        self.pic1aslogo = builder.get_object("pic1aslogo")
+        tooltip.create(self.pic1aslogo , "Use pic1 as the LOGO instead of the default P.O.P.S logo")
+        self.nopstitleimg = builder.get_object("nopstitleimg")
+        tooltip.create(self.nopstitleimg , "Disable the use of PSTITLEIMG for single disc games.\nDo not use unless you know what this means.")
+        self.force_ntsc = builder.get_object("force_ntsc")
+        tooltip.create(self.force_ntsc , "Encode this game as NTSC even if it is actually PAL")
+        self.use_cdda = builder.get_object("use_cdda")
+        tooltip.create(self.use_cdda , "Use CDDA audio instead of the default ATRAC3 audio.\nDo not use this unless you need to as it reduces compatibility.\nV-Rally 2 needs this option.")
+        self.watermark = builder.get_object("watermark")
+        tooltip.create(self.watermark , "Put a small watermark containing the disc-id in the background image")
+        self.disable_snd0 = builder.get_object("disable_snd0")
+        tooltip.create(self.disable_snd0 , "Disable the SND0 audio that would play when the game icon is\nhighlighted on the XMB")
+        self.disable_pic1 = builder.get_object("disable_pic1")
+        tooltip.create(self.disable_pic1 , "Disable the background image that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.disable_pic0 = builder.get_object("disable_pic0")
+        tooltip.create(self.disable_pic0 , "Disable the game logo that would show up on the XMB\nwhen the gameicon is highlighted")
+        self.pic0scaling = builder.get_object("pic0scaling")
+        tooltip.create(self.pic0scaling , "Change the scaling of the game logo.\n1.0 is 100% of original.\n0.5 is 50%, etc.")
+        self.pic0xoffset = builder.get_object("pic0xoffset")
+        tooltip.create(self.pic0xoffset , "Shift the placement of pic0 horizontally.\n0.1 means shift 10% to the right.\n-0.1 means shift 10% to the left.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        self.pic0yoffset = builder.get_object("pic0yoffset")
+        tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        #self. = builder.get_object("")
+        #tooltip.create(self. , "")
+        
+        
         self._theme = ''
         o = ['']
         for theme in themes:
@@ -165,6 +178,7 @@ class PopFePs3App:
         os.mkdir(self.subdir)
 
         self.cue_files = []
+        self.real_cue_files = []
         self.img_files = []
         self.disc_ids = []
         self.md5_sums = []
@@ -177,7 +191,7 @@ class PopFePs3App:
         self.pic1 = None
         self.pic1_tk = None
         self.preview_tk = None
-        self.configs = []
+        self.manual = None
         self.builder.get_variable('nopstitleimg_variable').set(self.nopstitleimg)
         self.builder.get_variable('pic1aslogo_variable').set(self.pic1aslogo)
         self.builder.get_variable('watermark_variable').set(self.watermark)
@@ -200,6 +214,7 @@ class PopFePs3App:
         self.builder.get_variable('logo_variable').set('')
         self.builder.get_object('logo', self.master).config(filetypes=[('Audio files', ['.png', '.PNG']), ('All Files', ['*.*', '*'])])
 
+        self.builder.get_object('manual', self.master).config(state='disabled')
         self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
         self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
@@ -320,24 +335,15 @@ class PopFePs3App:
         self.md5_sums.append(md5)
         self.real_disc_ids.append(disc_id)
         self.cue_files.append(cue_file)
-        self.configs.append(None)
+        self.real_cue_files.append(real_cue_file)
 
+        if disc_id in games and 'manual' in games[disc_id]:
+            print('Found an MANUAL for', disc_id)
+            self.manual = games[disc_id]['manual']
         if disc_id in games and 'psp-use-cdda' in games[disc_id]:
             self.cdda = 'on'
             self.builder.get_variable('cdda_variable').set(self.cdda)
         
-        if disc_id in games and 'pspconfig' in games[disc_id]:
-            print('Found an external config for', disc_id)
-            with open(games[disc_id]['pspconfig'], 'rb') as f:
-                      self.configs[-1] = f.read()
-        try:
-            os.stat(self.cue_file_orig[:-3]+'pspconfig').st_size
-            print('Found an external config ', self.cue_file_orig[:-3]+'pspconfig')
-            with open(self.cue_file_orig[:-3]+'pspconfig', 'rb') as f:
-                      self.configs[-1] = f.read()
-                      print('Read external config ', self.cue_file_orig[:-3]+'pspconfig')
-        except:
-            True
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
@@ -359,6 +365,8 @@ class PopFePs3App:
             self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
+            self.builder.get_variable('manual_variable').set(self.manual)
+            self.builder.get_object('manual', self.master).config(state='enabled')
             self.update_assets()
             
             self.builder.get_object('disc1', self.master).config(state='disabled')
@@ -589,7 +597,7 @@ class PopFePs3App:
                 temp_files.append(snd0)
 
         manual = self.builder.get_variable('manual_variable').get()
-        if manual and len(manual):
+        if manual and len(manual) and manual != 'None':
             manual = popfe.create_manual(manual, self.disc_ids[0], subdir=self.subdir)
         else:
             manual = None
@@ -605,46 +613,26 @@ class PopFePs3App:
         if extra_data_tracks:
             self.cdda = 'on'
 
-        if self.builder.get_variable('force_ntsc_variable').get() == 'on':
-            for i in range(len(self.configs)):
-                if not self.configs[i]:
-                    # skip the revision header
-                    self.configs[i] = EMPTY_CONFIG[:]
-                self.configs[i] = bytearray(self.configs[i])
-                # Set NTSC bit in configs
-                if len(self.configs[i]) > 0x0b:
-                    self.configs[i][0x0b] |= 0x10
-                if len(self.configs[i]) > 0x8f:
-                    self.configs[i][0x8f] |= 0x10
-
-        if self.cdda == 'on':
-            for i in range(len(self.configs)):
-                if not self.configs[i]:
-                    # skip the revision header
-                    self.configs[i] = EMPTY_CONFIG[:]
-                self.configs[i] = bytearray(self.configs[i])
-                # Set CDDA bit in configs
-                if len(self.configs[i]) > 0x09:
-                    self.configs[i][0x09] |= 0x20 # same effect as cdda_enabler
-                if len(self.configs[i]) > 0x8d:
-                    self.configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
-
         logo = None
         if self.builder.get_variable('logo_variable').get():
             logo = Image.open(self.builder.get_variable('logo_variable').get())
 
-        popfe.create_psp(ebootdir, disc_ids, title,
+        undither = self.builder.get_variable('psx_undither_variable').get() == 'on'
+        ntsc     = self.builder.get_variable('force_ntsc_variable').get() == 'on'
+        cdda     = self.cdda == 'on'
+
+        popfe.create_psp(ebootdir, disc_ids, self.real_disc_ids, title,
                          self.icon0,
                          self.pic0 if self.pic0_disabled =='off' else None,
                          self.pic1 if self.pic1_disabled =='off' else None,
-                         self.cue_files, self.img_files, [],
+                         self.cue_files, self.real_cue_files, self.img_files, [],
                          aea_files, subdir=self.subdir, snd0=snd0,
                          no_pstitleimg=True if self.nopstitleimg=='on' else False,
                          watermark=True if self.watermark=='on' else False,
                          subchannels=subchannels, manual=manual,
-                         configs=self.configs,
                          use_cdda=True if self.cdda=='on' else False,
-                         logo=self.pic1 if self.pic1aslogo=='on' else logo)
+                         logo=self.pic1 if self.pic1aslogo=='on' else logo,
+                         psx_undither=undither, force_ntsc=ntsc, cdda=cdda)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
@@ -660,6 +648,9 @@ class PopFePs3App:
     def on_force_ntsc(self):
         True
 
+    def on_psx_undither(self):
+        True
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')

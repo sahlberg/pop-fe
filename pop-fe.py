@@ -64,7 +64,7 @@ except:
     True
 from pathlib import Path
 from bchunk import bchunk
-from document import create_document
+from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
 from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
 try:
     from make_isoedat import pack
@@ -2147,7 +2147,7 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, psn_frame_size=None):
 def get_pic_from_game(pic, game_id, game, filename):
     try:
         image = Image.open(filename)
-        print('Use existing', filename, 'as', pic) if verbose else None
+        print('Use existing', filename, 'as', pic)
         return image
     except:
         True
@@ -2556,7 +2556,7 @@ def get_imgs_from_bin(cue):
         lines = f.readlines()
         for line in lines:
             # FILE
-            if re.search('^\s*FILE', line):
+            if re.search(r'^\s*FILE', line):
                 f = get_file_name(line)
                 # unix absilute paths start with /
                 # windows absolute patsh start with ?:/
@@ -2881,7 +2881,27 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, configs=None, use_cdda=False, logo=None, no_libcrypt=None):
+def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None, force_ntsc=False, cdda=False):
+    EMPTY_CONFIG = bytes([
+        0x70,0x00,0x07,0x06,0x00,0x00,0x06,0x06,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,
+        0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
+        0xFF,0xFF,0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0xFF,0xFF,0xFF
+    ])
+    
     if not no_libcrypt:
         try:
             # The libcrypt patcher crashes on some games like 'This Is Football (Europe) (Fr,Nl)'
@@ -2889,7 +2909,42 @@ def create_psp(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         except:
             print('patch_libcrypt crashed :-(')
             True
-    
+
+    if psx_undither:
+        cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
+
+    configs = []
+    for i in range(len(disc_ids)):
+        configs.append(EMPTY_CONFIG[:])
+        try:
+            os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
+            print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
+            with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
+                configs[i] = f.read()
+        except:
+            True
+        disc_id = real_disc_ids[i]
+        if disc_id in games and 'pspconfig' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['pspconfig'], 'rb') as f:
+                configs[i] = f.read()
+        if force_ntsc == 1:
+            print('Force NTSC in config')
+            configs[i] = bytearray(configs[i])
+            # Set NTSC bit in configs
+            if len(configs[i]) > 0x0b:
+                configs[i][0x0b] |= 0x10
+            if len(configs[i]) > 0x8f:
+                configs[i][0x8f] |= 0x10
+        if cdda:
+            configs[i] = bytearray(configs[i])
+            # Set CDDA bit in configs
+            if len(configs[i]) > 0x09:
+                configs[i][0x09] |= 0x20 # same effect as cdda_enabler
+            if len(configs[i]) > 0x8d:
+                configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
+
+
     # Convert LOGO to a file object
     if logo:
         image = logo
@@ -3051,7 +3106,22 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], configs=None, no_libcrypt=None):
+def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
+    #
+    # This one is special since the same command may be used for other things
+    # so we need to merge the argument if teh command is already there
+    #
+    def force_ntsc_config(config):
+        c = bytearray(config)
+        merged = False
+        for i in range(0, len(c), 8):
+            if c[i] == 0x20:
+                c[i + 4] = c[i + 4] | 0x40
+                merged = True
+        if not merged:
+            c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
+        return c
+
     print('Create PS3 PKG for', game_title) if verbose else None
 
     if not no_libcrypt:
@@ -3061,7 +3131,42 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         except:
             print('patch_libcrypt crashed :-(')
             True
-    
+
+    if psx_undither:
+        cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
+
+    configs = []
+    for i in range(len(disc_ids)):
+        configs.append(bytes())
+        if ps1_newemu:
+            print('Forcing ps1_newemu on all disks for this game')
+            configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
+            continue
+        if enable_swap:
+            print('Enable swapdisc for all discs')
+            if len(configs[i])/8 < 8:
+                configs[i] = configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
+            else:
+                raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
+        if resolution == 1:
+            print('Force NTSC in config')
+            configs[i] = force_ntsc_config(configs[i])
+        try:
+            os.stat(real_cue_files[i][:-3]+'ps3config').st_size
+            print('Found an external config ', real_cue_files[i][:-3]+'ps3config')
+            with open(real_cue_files[i][:-3]+'ps3config', 'rb') as f:
+                f.seek(8)
+                configs[-1] = configs[-1] + f.read()
+        except:
+            True
+        disc_id = real_disc_ids[i]
+        if disc_id in games and 'ps3config' in games[disc_id]:
+            print('Found an external config for', disc_id)
+            with open(games[disc_id]['ps3config'], 'rb') as f:
+                f.seek(8)
+                configs[i] = configs[i] + f.read()
+
+
     SECTLEN = 2352
     p = popstation()
     p.verbose = verbose
@@ -3176,18 +3281,19 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
             ff.write(_b)
         convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
 
-    image = icon0
-    if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
-        if icon0.size != (176, 176):
-            icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
-        image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
-        image.putalpha(0)
-        image.paste(icon0, (72,0))
-    else:
-        if icon0.size != (320, 176):
-            image = icon0.resize((320, 176), Image.Resampling.LANCZOS)
-    image.save(f + '/ICON0.PNG', format='PNG')
-    temp_files.append(f + '/ICON0.PNG')
+    if icon0:
+        image = icon0
+        if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
+            if icon0.size != (176, 176):
+                icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
+            image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
+            image.putalpha(0)
+            image.paste(icon0, (72,0))
+        else:
+            if icon0.size != (320, 176):
+                image = icon0.resize((320, 176), Image.Resampling.LANCZOS)
+        image.save(f + '/ICON0.PNG', format='PNG')
+        temp_files.append(f + '/ICON0.PNG')
 
     if pic0:
         if pic0.size != (1000, 560):
@@ -3237,6 +3343,10 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
     except:
         True
 
+    if manual:
+        print('Installing manual as', subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
+        copy_file(manual, subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
+
     p.eboot = subdir + disc_ids[0] + '/USRDIR/CONTENT/EBOOT.PBP'
     p.iso_bin_dat = subdir + disc_ids[0] + '/USRDIR/ISO.BIN.DAT'
     try:
@@ -3267,10 +3377,11 @@ def create_ps3(dest, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_fil
         os.mkdir(f)
     except:
         True
-    image = icon0.resize((80,80), Image.Resampling.LANCZOS)
-    i = io.BytesIO()
-    image.save(f + '/ICON0.PNG', format='PNG')
-    temp_files.append(f + '/ICON0.PNG')    
+    if icon0:
+        image = icon0.resize((80,80), Image.Resampling.LANCZOS)
+        i = io.BytesIO()
+        image.save(f + '/ICON0.PNG', format='PNG')
+        temp_files.append(f + '/ICON0.PNG')    
 
     if len(mem_cards) < 1:
         create_blank_mc(f + '/SCEVMC0.VMP')
@@ -3616,6 +3727,13 @@ def install_deps():
     print(os.name)
     subprocess.call(['git', 'submodule', 'update', '--init'])
 
+    # pygubu
+    try:
+        import pygubu
+        print('pygubu is already installed')
+    except:
+        print('Installing python pygubu')
+        subprocess.call(['pip', 'install', 'pygubu'])
     # PyPDF2
     try:
         import PyPDF2
@@ -3742,39 +3860,38 @@ def install_deps():
             exit(1)
         with open(binmerge_path, 'wb') as f:
             f.write(bytes(ret.content.decode(ret.apparent_encoding), encoding='utf-8'))
-    if os.name == 'posix':
+    if os.name == 'posix': 
         # atracdenc
         try:
             os.stat('atracdenc/src/atracdenc')
             print('atracdenc is already installed')
         except:
-            print('Cloning atracdenc')
-            subprocess.call(['git', 'clone', 'https://github.com/dcherednik/atracdenc.git'])
+            print('Compiling atracdenc')
+            #subprocess.call(['git', 'clone', 'https://github.com/dcherednik/atracdenc.git'])
             os.chdir('atracdenc/src')
             subprocess.call(['cmake', '.'])
             subprocess.call(['make'])
             os.chdir('../..')
         # PSL1GHT
-        try:
-            os.stat('PSL1GHT')
-            print('PSL1GHT is already installed')
-        except:
-            print('Cloning PSL1GHT')
-            subprocess.call(['git', 'clone', 'http://github.com/sahlberg/PSL1GHT'])
-            os.chdir('PSL1GHT/tools/ps3py')
-            subprocess.call(['git', 'checkout', 'origin/use-python3'])
-            subprocess.call(['make'])
-            os.chdir('../../..')
+        os.chdir('PSL1GHT/tools/ps3py')
+        subprocess.call(['git', 'checkout', 'origin/use-python3'])
+        subprocess.call(['make'])
+        os.chdir('../../..')
+        # psx-undither
+        os.chdir('psx-undither')
+        subprocess.call(['git', 'submodule', 'update'])
+        subprocess.call(['make'])
+        os.chdir('..')
 
     if os.name == 'posix':
         # libcrypt-patcher
         try:
-            os.stat('Xlibcrypt-patcher')
+            os.stat('lcp')
             print('libcrypt-patcher is already installed')
         except:
-            print('Cloning libcrypt-patcher')
-            subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.8/libcrypt-patcher-v1.0.8-linux-i386-static.zip'])
-            subprocess.call(['unzip', '-j', 'libcrypt-patcher-v1.0.8-linux-i386-static.zip', '*/lcp'])
+            print('Installing libcrypt-patcher')
+            subprocess.call(['wget', 'https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-linux-i386-static.zip'])
+            subprocess.call(['unzip', '-f', '-j', 'libcrypt-patcher-v1.0.9-linux-i386-static.zip', '*/lcp'])
 
             
 def generate_subchannels(magic_word):
@@ -3877,15 +3994,27 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][0]))
                 f.write(generate_sbi(sector_pairs[i][1]))
 
-# Convert scans of the manual into a DOCUMENT.DAT for PSP
-# XXX add support for pdf manuals
-# https://www.gamesdatabase.org/Media/SYSTEM/Sony_Playstation//Manual/formated/Air_Combat_-_1995_-_Namco_Limited.pdf
-def create_manual(source, gameid, subdir='./pop-fe-work/'):
+# Convert scans of the manual into a DOCUMENT.DAT for PSP and PS3
+def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
 
-    # already have a manual in the proper format
     if source[-7:] == '.manual':
-        return source
-    
+        with open(source, 'rb') as f:
+            _b = f.read(4)
+            f.seek(0)
+            if _b == b'\x00PGD' and  ps3_manual:
+                print('Found a manual already in PS3 DOCUMENT.DAT format')
+                return source
+            if _b == b'\x00PGD':
+                print('Need to convert to kludgy PSP DOCUMENT.DAT format')
+                _d = subdir + '/PSP-DOCUMENT'
+                os.mkdir(_d)
+                decrypt_document(f.read(), _d)
+                print('Decrypted and extracted document to', _d)
+                _m = subdir + '/DOCUMENT.PSP'
+                create_document_from_dir(gameid, _d, _m)
+                print('Created PSP document')
+                return _m
+
     print('Create manual', source)
     files = []
 
@@ -3904,27 +4033,20 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     print('Create DOCUMENT.DAT from', source)
     if source[:8] == 'https://':
-        if (gameid in games and 'manual' in games[gameid] and
-            games[gameid]['manual'] == source):
-            _h = hashlib.md5(games[gameid]['manual'].encode('utf-8')).hexdigest()
-            f = 'https://github.com/sahlberg/pop-fe-assets/raw/master/manual/' + _h + '.DAT'
-            try:
-                ret = requests.get(f, stream=True)
-            except:
-                return None
-            if ret.status_code == 200:
-                print('Found cached prebuilt manual', f)
-                _d = subdir + 'DOC.DAT'
-                with open(_d, 'wb') as o:
-                    o.write(ret.content)
-                temp_files.append(_d)
-                return _d
-
         print('Download manual from', source)
         try:
             tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
             temp_files.append(tmpfile)
-            subprocess.run(['wget', source, '-O', tmpfile], timeout=240, check=True)
+            ret = requests.get(source)
+            if ret.status_code != 200:
+                print('Failed to download manual from', source)
+                return None
+            if ret.apparent_encoding:
+                buf = ret.content.decode(ret.apparent_encoding)
+            else:
+                buf = ret.content
+            with open(tmpfile, 'wb') as f:
+                f.write(buf)
             print('Downloaded manual as', tmpfile)
             source = tmpfile
         except:
@@ -3935,9 +4057,12 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
         subdir = subdir + '/DOCUMENT-tmp'
         os.mkdir(subdir)
         temp_files.append(subdir)
-                
+
         z = zipfile.ZipFile(source)
         for f in z.namelist():
+            # Skip any subdirectories that might be created
+            if f[-1] == '/' or f[-1] == '\\':
+                continue
             f = z.extract(f, path=subdir)
             temp_files.append(f)
             files.append(f)
@@ -3986,10 +4111,60 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 
     tmpfile = subdir + '/DOCUMENT.DAT'
     temp_files.append(tmpfile)
-    tmpfile = create_document(files, gameid, 480, tmpfile)
-    if not tmpfile:
-        print('Failed to create DOCUMENT.DAT')
+    pages = []
+    for p in sorted(files):
+        def add_pic(pic):
+            maxysize = 480
+            sf = 480 / pic.size[0]
+            ns = (480, int(sf * pic.size[1]))
+            if ns[1] > maxysize:
+                ns = (480, maxysize)
+            image = pic.resize(ns, Image.Resampling.LANCZOS)
+            f = io.BytesIO()
+            if image.mode == 'CMYK':
+                image = image.convert("RGB")
+            image.save(f, 'PNG')
+            f.seek(0)
+            pages.append(f.read())
+                
+        pic = Image.open(p)
+        # It is common that scans contains two pages side by side
+        # so check for that and split the image if needed
+        if pic.size[0] > int(pic.size[1] * 1.8):
+            pic1 = pic.crop((0, 0, int(pic.size[0] / 2), pic.size[1]))
+            pic2 = pic.crop((int(pic.size[0] / 2), 0 , pic.size[0], pic.size[1]))
+            add_pic(pic1)
+            add_pic(pic2)
+        else:
+            add_pic(pic)
+
+    if ps3_manual:
+        print('Create PS3 manual')
+        with open(tmpfile, 'wb') as f:
+            encrypt_document(f, gameid, pages)
+        print('Created PS3 manual in', tmpfile)
+    else:
+        print('Create PSP manual')
+        with open(tmpfile, 'wb') as f:
+            create_document(f, gameid, pages)
+        print('Created PSP manual in', tmpfile)
+
     return tmpfile
+
+
+def ApplyXDELTA(img, romhack):
+    print('Applying XDELTA', romhack)
+    _tmp = img + 'tmp'
+    try:
+        if os.name == 'posix':
+            subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
+        else:
+            subprocess.run(['xdelta3', 'decode', '-s', img.replace("/", "\\"), romhack.replace("/", "\\"), _tmp.replace("/", "\\")], timeout=30, check=True)
+    except:
+        print('Could not apply xdelta3 patch. Is xdelta3 installed?')
+        return
+    os.remove(img)
+    os.rename(_tmp, img)
 
 
 #
@@ -3998,7 +4173,8 @@ def create_manual(source, gameid, subdir='./pop-fe-work/'):
 def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=None):
     for i in range(len(real_disc_ids)):
         ppf = None
-        disc_id = real_disc_ids[i]
+        xdelta = None
+        disc_id = games[real_disc_ids[i]]['id']
         if disc_id not in ppf_fixes:
             continue
         if 'tags' in ppf_fixes[disc_id]:
@@ -4010,10 +4186,13 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
             with open(img_files[i], 'rb') as f:
                 h = md5_sums[i]
                 if h in ppf_fixes[disc_id]['hashes']:
-                    ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
-        if not ppf:
+                    print('Check', ppf_fixes[disc_id]['hashes'][h])
+                    if 'ppf' in ppf_fixes[disc_id]['hashes'][h]:
+                        ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
+                    if 'xdelta' in ppf_fixes[disc_id]['hashes'][h]:
+                        xdelta = ppf_fixes[disc_id]['hashes'][h]['xdelta']
+        if not ppf and not xdelta:
             continue
-        print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
 
         # Need to copy the bin/cue to the work directory.
         # We know this is a single bin at this point as if it would have
@@ -4032,22 +4211,17 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
         cue_files[i] = _c
         img_files[i] = _b
 
-        print('Applying', ppf, 'to', img_files[i])
-        ApplyPPF(img_files[i], ppf)
+        if ppf:
+            print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
+            print('Applying', ppf, 'to', img_files[i])
+            ApplyPPF(img_files[i], ppf)
+        if xdelta:
+            print('Found XDELTA:', ppf_fixes[disc_id]['desc'], xdelta)
+            print('Applying', xdelta, 'to', img_files[i])
+            ApplyXDELTA(img_files[i], xdelta)
             
     return cue_files, img_files
 
-
-def ApplyXDELTA(img, romhack):
-    print('Applying XDELTA', romhack)
-    _tmp = img + 'tmp'
-    try:
-        subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
-    except:
-        print('Could not apply xdelta3 patch. Is xdelta3 installed?')
-        return
-    os.remove(img)
-    os.rename(_tmp, img)
 
 #
 # Apply all romhacks
@@ -4140,21 +4314,6 @@ def generate_aea_files(cue_files, img_files, subdir):
     return aea_files, extra_data_track_found
 
 
-#
-# This one is special since the same command may be used for other things
-# so we need to merge the argument if teh command is already there
-#
-def force_ntsc_config(ps3config):
-    c = bytearray(ps3config)
-    merged = False
-    for i in range(0, len(c), 8):
-        if c[i] == 0x20:
-            c[i + 4] = c[i + 4] | 0x40
-            merged = True
-    if not merged:
-        c = c + bytes([0x20, 0x00, 0x00, 0x00, 0x40,  0x00, 0x00, 0x00])
-    return c
-
 def process_disk_file(cue_file, idx, temp_files, subdir='./'):
     real_cue_file = cue_file
 
@@ -4240,6 +4399,14 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         temp_files.append(cue_file)
         img_file = subdir + mb + '.bin'
         temp_files.append(img_file)
+
+    if cue_file[:3] == 'C:\\' or cue_file[:3] == 'D:\\' or cue_file[:3] == 'E:\\':
+        new_bin = '\\'.join(cue_file.split('\\')[:-1]) + '\\' + i[0]
+        copy_file(new_bin, subdir + '\\' + i[0])
+        img_file = new_bin
+        new_cue = subdir + '/' + cue_file.split('\\')[-1]
+        copy_file(cue_file, new_cue)
+        cue_file = new_cue
         
     return cue_file, real_cue_file, img_file
 
@@ -4262,10 +4429,33 @@ def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
                 temp_files.append('LCP%02x.cue' % idx)
             cue_files[idx] = subdir + 'LCP%02x.cue' % idx
             img_files[idx] = subdir + 'LCP%02x.bin' % idx
-            if os.name == 'posix':
-                subprocess.run(['./lcp', img_files[idx]], check=True)
-            else:
-                subprocess.run(['lcp.exe', img_files[idx]], check=True)
+        if os.name == 'posix':
+            subprocess.run(['./lcp', img_files[idx]], check=True)
+        else:
+            subprocess.run(['lcp.exe', img_files[idx]], check=True)
+    return cue_files, img_files
+
+def patch_undither(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
+    for idx in range(len(real_disc_ids)):
+        print('Need to apply psx-undither for', real_disc_ids[idx])
+        if len(cue_files[idx]) < len(subdir) or cue_files[idx][:len(subdir)] != subdir:
+            print('Copy the files')
+            i = get_imgs_from_bin(cue_files[idx])
+            print('Copy %s to UD%02x.bin so we can patch libcrypt' % (i[0], idx)) #if verbose else None
+            copy_file(i[0], subdir + 'UD%02x.bin' % idx) 
+            temp_files.append('UD%02x.bin' % idx)
+            with open(cue_files[idx], 'r') as fi:
+                l = fi.readlines()
+                l[0] = 'FILE "%s" BINARY\n' % ('UD%02x.bin' % idx)
+                with open(subdir + 'UD%02x.cue' % idx, 'w') as fo:
+                    fo.writelines(l)
+                temp_files.append('UD%02x.cue' % idx)
+            cue_files[idx] = subdir + 'UD%02x.cue' % idx
+            img_files[idx] = subdir + 'UD%02x.bin' % idx
+        if os.name == 'posix':
+            subprocess.run(['./psx-undither/build/psxund', img_files[idx]], check=True)
+        else:
+            subprocess.run(['psxund.exe', img_files[idx].replace("/", "\\")], check=True)
     return cue_files, img_files
 
 def print_toc(toc):
@@ -4305,12 +4495,14 @@ if __name__ == "__main__":
                     help='Where the PS Classic/AutoBleem memory card is mounted')
     parser.add_argument('--no-libcrypt', action='store_true',
                     help='Do not patch libcrypt')
+    parser.add_argument('--psx-undither', action='store_true',
+                    help='Use PSX-Undither to reduce dithering')
     parser.add_argument('--fetch-metadata', action='store_true',
                     help='Just fetch metadata for the game')
     parser.add_argument('--game_id',
                         help='Force game_id for this iso.')
     parser.add_argument('--manual',
-                        help='Directory/Zip/HTTP-link containing images for themanual')
+                        help='Directory/Zip/HTTP-link containing images for the manual')
     parser.add_argument('--force-no-assets', action='store_true',
                         help='Do not download any assets for this')
     parser.add_argument('--title',
@@ -4365,9 +4557,6 @@ if __name__ == "__main__":
         install_deps()
         exit(0)
 
-    ps3configs = None
-    pspconfigs = None
-    
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
 
@@ -4396,15 +4585,6 @@ if __name__ == "__main__":
     if len(args.files) > 1:
         idx = (1, len(args.files))
     for cue_file in args.files:
-        if args.ps3_pkg:
-            if not ps3configs:
-                ps3configs = []
-            ps3configs.append(bytes())
-        if args.psp_dir:
-            if not pspconfigs:
-                pspconfigs = []
-            pspconfigs.append(bytes())
-
         # Try to find which ones are memory cards
         if os.stat(cue_file).st_size <= 262144:
             mc = check_memory_card(cue_file)
@@ -4432,60 +4612,7 @@ if __name__ == "__main__":
     # disk and read system.cnf
     disc_ids, md5_sums = get_disc_ids(cue_files, real_cue_files, subdir=subdir)
     real_disc_ids = disc_ids[:]
-    if args.ps3_pkg:
-        for i in range(len(real_disc_ids)):
-            try:
-                os.stat(real_cue_files[i][:-3]+'ps3config').st_size
-                print('Found an external config ', real_cue_files[i][:-3]+'ps3config')
-                with open(real_cue_files[i][:-3]+'ps3config', 'rb') as f:
-                      f.seek(8)
-                      ps3configs[-1] = ps3configs[-1] + f.read()
-            except:
-                True
                 
-            disc_id = real_disc_ids[i]
-            if disc_id in games and 'ps3config' in games[disc_id]:
-                print('Found an external config for', disc_id) if verbose else None
-                with open(games[disc_id]['ps3config'], 'rb') as f:
-                      f.seek(8)
-                      ps3configs[i] = ps3configs[i] + f.read()
-            if args.resolution == '1':
-                print('Inject config to force NTSC') if verbose else None
-                ps3configs[i] = force_ntsc_config(ps3configs[i])
-    if args.psp_dir:
-        for i in range(len(real_disc_ids)):
-            disc_id = real_disc_ids[i]
-            if disc_id in games and 'pspconfig' in games[disc_id]:
-                print('Found an external config for', disc_id)
-                with open(games[disc_id]['pspconfig'], 'rb') as f:
-                      pspconfigs[i] = f.read()
-            try:
-                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
-                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
-                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
-                      pspconfigs[-1] = f.read()
-            except:
-                True
-
-    #
-    # Add a ps1_netemu swap-dics command, this enables the swap disc/reset disc command for multidisc games
-    #
-    if args.swap_discs and args.ps3_pkg:
-        print('Forcing swap_discs on all disks for this game')
-        for i in range(len(real_disc_ids)):
-            if len(ps3configs[i])/8 < 8:
-                ps3configs[i] = ps3configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
-            else:
-                raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
-                
-    #
-    # Force use of ps1_newemu, this disables all other config settings
-    #
-    if args.ps1_newemu and args.ps3_pkg:
-        print('Forcing ps1_newemu on all disks for this game')
-        for i in range(len(real_disc_ids)):
-            ps3configs[i] = bytes([0x38, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00])
-
     #
     # Apply all PPF fixes we might need
     #
@@ -4599,7 +4726,9 @@ if __name__ == "__main__":
             logo = Image.open(args.logo)
 
     manual = None
-    if not args.force_no_assets and (args.psp_dir or args.fetch_metadata):
+    psp_manual = None
+    ps3_manual = None
+    if not args.force_no_assets and (args.psp_dir or args.ps3_pkg):
         if args.manual:
             manual = args.manual
         if not manual:
@@ -4609,10 +4738,15 @@ if __name__ == "__main__":
                 print('Use locally stored manual from', manual)
             except:
                 True
-        if disc_ids[0] in games and not manual and 'manual' in games[disc_ids[0]]:
+        if not manual and disc_ids[0] in games and 'manual' in games[disc_ids[0]]:
             manual = games[disc_ids[0]]['manual']
         if manual:
-            manual = create_manual(manual, disc_ids[0])
+            if args.ps3_pkg:
+                print('Create PS3 manual from', manual)
+                ps3_manual = create_manual(manual, disc_ids[0], ps3_manual=True)
+            if args.psp_dir:
+                print('Create PSP manual from', manual)
+                psp_manual = create_manual(manual, disc_ids[0])
         
     print('Id:', games[disc_ids[0]]['id'])
     print('Title:', game_title)
@@ -4672,11 +4806,11 @@ if __name__ == "__main__":
         snd0 = None
 
     if args.psp_dir:
-        create_psp(args.psp_dir, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=manual, configs=pspconfigs, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt)
+        create_psp(args.psp_dir, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, snd0=snd0, subdir=subdir, watermark=args.watermark, subchannels=subchannels, manual=psp_manual, use_cdda=args.psp_use_cdda, logo=logo, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither)
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, game_title, icon0, pic0, pic1, cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, configs=ps3configs, no_libcrypt=args.no_libcrypt)
+        create_ps3(args.ps3_pkg, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
