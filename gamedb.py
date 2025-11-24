@@ -10692,6 +10692,7 @@ games = {
 	'title': "KINGSLEY'S ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/10a1ea69-7cdb-4ef1-92d6-51b9ec8668a3.png',
         'manual': 'https://www.videogamemanual.com/ps1/Kingsley\'s%20Adventure%20(USA).pdf',
+        'pspconfig': "pspconfigs/Kingsley's Adventure/SLUS-00801.bin",
     },
     'SLUS01366': {
         'url': "games/U/K/SLUS-01366.html",
@@ -13804,6 +13805,7 @@ games = {
 	'title': "RED ASPHALT - ROCK'N' ROLL RACING II",
         'pic0': 'https://images.launchbox-app.com/cc37125e-b87a-4be1-b99a-12fe36a4d945.png',
         'manual': 'https://www.videogamemanual.com/ps1/Red%20Asphalt%20(USA).pdf',
+        'pspconfig': "pspconfigs/Red Asphalt/SLUS-00282.bin",
     },
     'SLUS00440': {
         'url': "games/U/R/SLUS-00440.html",
@@ -25671,6 +25673,7 @@ games = {
 	'title': "KINGSLEY'S ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/10a1ea69-7cdb-4ef1-92d6-51b9ec8668a3.png',
         'manual': 'https://www.videogamemanual.com/ps1/Kingsley\'s%20Adventure%20(USA).pdf',
+        'pspconfig': "pspconfigs/Kingsley's Adventure/SCES-01659.bin",
     },
     'SLES03676': {
         'url': "games/P/K/SLES-03676.html",
@@ -34395,6 +34398,7 @@ games = {
     	'id': 'SLES00056',
 	'title': "ROCK'N ROLL RACING 2 - RED ASPHALT",
         'pic0': 'https://images.launchbox-app.com/cc37125e-b87a-4be1-b99a-12fe36a4d945.png',
+        'pspconfig': "pspconfigs/Red Asphalt/SLES-00056.bin",
     },
     'SLES02976': {
         'url': "games/P/R/SLES-02976.html",
