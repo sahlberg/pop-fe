@@ -6403,6 +6403,7 @@ games = {
     	'id': 'SCUS94702',
 	'title': "BEYOND THE BEYOND",
         'pic0': 'https://images.launchbox-app.com/b07ca6ed-d998-48c6-92ce-79fbb70a7b90.png',
+        'pic1': 'https://images.launchbox-app.com//b404812f-2bee-4843-9e34-169796d536b0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=hjrAr67kiWg&list=PL7YuVu11Ud-LEPF6zfqRoH22VJS8DFMJG&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Beyond%20the%20Beyond%20(USA).pdf',
     },
@@ -6616,6 +6617,7 @@ games = {
     	'id': 'SCUS94307',
 	'title': "BOGEY DEAD 6",
         'pic0': 'https://images.launchbox-app.com/1cfa452a-4565-4248-af37-d32248ab39cc.png',
+        'pic1': 'https://images.launchbox-app.com//734a2059-d1b4-4075-9d92-bd6d99afe891.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Bogey%20Dead%206%20(USA).pdf',
     },
     'SLUS00823': {
@@ -8311,6 +8313,7 @@ games = {
     	'id': 'SCUS94647',
 	'title': "DISNEY'S TREASURE PLANET",
         'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
+        'pic1': 'https://images.launchbox-app.com//01ebd2cc-4594-4ab6-8ab4-a4411095f23e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Treasure%20Planet%20(USA).pdf',
         'ps3config': 'ps3configs/Disney\'s Treasure Planet/SCUS-94647.BIN',
         'pspconfig': 'pspconfigs/Disney\'s Treasure Planet/SCUS-94647.bin',
@@ -8637,6 +8640,7 @@ games = {
     	'id': 'SLUS01319',
 	'title': "EA SPORTS SUPERCROSS 2001",
         'pic0': 'https://images.launchbox-app.com/a9493b56-2fbf-4235-9bb1-43ec1109e4c2.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXnHzFA8oXW56jaKZrczR0rcJr9O4VbNmwQ&s',
         'manual': 'https://www.videogamemanual.com/ps1/EA%20Sports%20Supercross%20(USA).pdf',
     },
     'SLUS00943': {
@@ -9353,6 +9357,7 @@ games = {
     	'id': 'SCUS94353',
 	'title': "FORMULA 1",
         'pic0': 'https://images.launchbox-app.com/bb1b1df5-8384-4e28-a38e-051da3f1586a.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_d0bc6908-f2a1-47b8-a3a8-c9b922284db5.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Formula%201%20(USA).pdf',
     },
     'SLUS00744': {
@@ -9360,6 +9365,7 @@ games = {
     	'id': 'SLUS00744',
 	'title': "FORMULA 1 '98",
         'pic0': 'https://images.launchbox-app.com/ca7f484e-1c49-447f-aa3d-2d6d7f6c879c.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3799febc-b82d-4b18-9ccb-cc06539c9b2a.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Formula%201%2098%20(USA).pdf',
     },
     'SLUS00546': {
@@ -9367,6 +9373,7 @@ games = {
     	'id': 'SLUS00546',
 	'title': "FORMULA 1 - CHAMPIONSHIP EDITION",
         'pic0': 'https://images.launchbox-app.com/741c1b57-4ecc-4ad5-81bd-5325c4c36b68.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_d0bc6908-f2a1-47b8-a3a8-c9b922284db5.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Formula%201%20Championship%20Edition%20(USA).pdf',
     },
     'SLUS00870': {
@@ -10101,6 +10108,7 @@ games = {
     	'id': 'SCUS94188',
 	'title': "HOT SHOTS GOLF",
         'pic0': 'https://images.launchbox-app.com/8f912cec-57c4-4a19-9c39-880d08d9dc13.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_da33a358-1cd1-4d91-9a7f-29c86c6d26e0.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Hot%20Shots%20Golf%20(USA).pdf',
     },
     'SCUS94476': {
@@ -10108,6 +10116,7 @@ games = {
     	'id': 'SCUS94476',
 	'title': "HOT SHOTS GOLF 2",
         'pic0': 'https://images.launchbox-app.com/91344c39-c823-4582-9aaf-1fc00eebec7d.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_P71I0CkjlBhe3d4VD4PD2cKNMTmpAIL3bL-dIpVH1xl9OVCGi5kByiO6NbaFl-lLpE&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/Hot%20Shots%20Golf%202%20(USA).pdf',
     },
     'SLUS01293': {
@@ -10385,6 +10394,7 @@ games = {
     	'id': 'SLUS00479',
 	'title': "JEREMY MCGRATH SUPERCROSS '98",
         'pic0': 'https://images.launchbox-app.com/995ebb6d-4dda-4376-887b-e36255f88739.png',
+        'pic1': 'https://cdn.artphotolimited.com/images/65369095bd40b8a3f9b4e169/1000x1000/la-legende-jeremy-mcgrath-dans-les-whoops-de-bercy-en-1998.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Jeremy%20McGrath%20Supercross%2098%20(USA).pdf',
     },
     'SLUS00832': {
@@ -10392,6 +10402,7 @@ games = {
     	'id': 'SLUS00832',
 	'title': "JEREMY MCGRATH SUPERCROSS 2000",
         'pic0': 'https://images.launchbox-app.com/935a1a54-4c76-44c9-bf3f-39e6c2a51ff9.png',
+        'pic1': 'https://cdn.sanity.io/images/8oyzogbt/production/a51da4f14335dec9c2a2063062c022a751f79586-1024x667.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Jeremy%20McGrath%20Supercross%202000%20(USA).pdf',
     },
     'SCUS94907': {
@@ -12434,6 +12445,7 @@ games = {
     	'id': 'SCUS94505',
 	'title': "NFL GAMEDAY",
         'pic0': 'https://images.launchbox-app.com/09d2eb90-fb6b-4f77-9799-043142407dde.png',
+        'pic1': 'https://res.cloudinary.com/ybmedia/image/upload/c_crop,h_1123,w_2000,x_0,y_185/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/7/d/7d96b26498d2e7c127de129b0823ed7d48753233/looking-back-1996-nfl-draft-25-years-later.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%20(LB)%20(USA).pdf',
     },
     'SCUS94510': {
@@ -12449,6 +12461,7 @@ games = {
     	'id': 'SCUS94173',
 	'title': "NFL GAMEDAY 98",
         'pic0': 'https://images.launchbox-app.com/9921a0ce-989f-40e5-889a-ba88a1e7aae9.png',
+        'pic1': 'https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/falcons/yfopokolnft9ucdcvlh0',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%2098%20(USA).pdf',
     },
     'SCUS94234': {
@@ -12456,6 +12469,7 @@ games = {
     	'id': 'SCUS94234',
 	'title': "NFL GAMEDAY 99",
         'pic0': 'https://images.launchbox-app.com/336327ac-814d-450f-a739-64b4d291f4d2.png',
+        'pic1': 'https://legacymedia.sportsplatform.io/image/upload/v1689678686/lynjofvucijz0yilltl0.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%2099%20(USA).pdf',
     },
     'SCUS94556': {
@@ -12479,6 +12493,7 @@ games = {
     	'id': 'SCUS94639',
 	'title': "NFL GAMEDAY 2002",
         'pic0': 'https://images.launchbox-app.com/02e5b526-830e-4a48-9eb0-ea6d2baef5d1.png',
+        'pic1': 'https://www.sportinglife.com/images/news/945x532/1638a162-8558-4853-9d6d-2d06a576fdfc.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%202002%20(USA).pdf',
     },
     'SCUS94665': {
@@ -12486,6 +12501,7 @@ games = {
     	'id': 'SCUS94665',
 	'title': "NFL GAMEDAY 2003",
         'pic0': 'https://images.launchbox-app.com/8c2a9f31-7312-4b8c-b423-d09831b77810.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFrYtPb9j5maFnCLtNGIVXUXTfWgcH7-_h0Q&s',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%202003%20(USA).pdf',
     },
     'SCUS94690': {
@@ -12493,6 +12509,7 @@ games = {
     	'id': 'SCUS94690',
 	'title': "NFL GAMEDAY 2004",
         'pic0': 'https://images.launchbox-app.com/18005809-a533-4b4c-b1ce-147274ea280a.png',
+        'pic1': 'https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/susave3v2ndxnglebyug',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%202004%20(USA).pdf',
     },
     'SCUS94695': {
@@ -12500,6 +12517,7 @@ games = {
     	'id': 'SCUS94695',
 	'title': "NFL GAMEDAY 2005",
         'pic0': 'https://images.launchbox-app.com/579d9b7d-5082-404c-9852-da77a4931ef4.png',
+        'pic1': 'https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/steelers/phoc7qgtwn7ianv2kwxg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20GameDay%202005%20(USA).pdf',
     },
     'SLUS00011': {
@@ -12507,6 +12525,7 @@ games = {
     	'id': 'SLUS00011',
 	'title': "NFL QUARTERBACK CLUB '97",
         'pic0': 'https://images.launchbox-app.com/bb6cc282-e353-4cc8-b462-bca1eded7542.png',
+        'pic1': 'https://static.clubs.nfl.com/image/private/t_new_photo_album/broncos/tlbf24a5b8ggtxwzj3kb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20Quarterback%20Club%2097%20(USA).pdf',
     },
     'SCUS94245': {
@@ -12514,6 +12533,7 @@ games = {
     	'id': 'SCUS94245',
 	'title': "NFL XTREME",
         'pic0': 'https://images.launchbox-app.com/cf275311-de37-47bf-ae30-b744b19a32e2.png',
+        'pic1': 'https://cdn2.unrealengine.com/the-super-bowl-concludes-the-nfl-season-but-there-s-still-plenty-of-football-left-in-madden-24-1920x1080-5a2655f237f2.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20Xtreme%20(USA).pdf',
     },
     'SCUS94420': {
@@ -12521,6 +12541,7 @@ games = {
     	'id': 'SCUS94420',
 	'title': "NFL XTREME 2",
         'pic0': 'https://images.launchbox-app.com/7cf6ee42-ffc9-4a65-9fde-8d8fcf42a330.png',
+        'pic1': 'https://contentful-asset-proxy.sd.indazn.com/vhp9jnid12wf/gcAVh16eYttkXjziUVllC/817f7c91170ce961f151dbd887c0204c/04-Desktop__LRD_and_Tablet_Landscape_-_16x9_2x-25-2.jpg?fm=webp&q=35',
         'manual': 'https://www.videogamemanual.com/ps1/NFL%20Xtreme%202%20(USA).pdf',
     },
     'SLUS01155': {
@@ -12536,6 +12557,7 @@ games = {
     	'id': 'SLUS00030',
 	'title': "NHL 97",
         'pic0': 'https://images.launchbox-app.com/6d994d8d-c2cc-4d5a-804f-cb54feb0cf09.png',
+        'pic1': 'https://img.covers.com/cms/covers/f327ca6d-958b-4084-b85b-94bf97ec274f..gif',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%2097%20(USA).pdf',
     },
     'SLUS00519': {
@@ -12543,6 +12565,7 @@ games = {
     	'id': 'SLUS00519',
 	'title': "NHL 98",
         'pic0': 'https://images.launchbox-app.com/f77b9e6c-fa19-420e-9c5b-edc17b97b9db.png',
+        'pic1': 'https://preview.redd.it/rr20xjm4v6d21.jpg?width=640&crop=smart&auto=webp&s=7b5ce02030be0a35858eb05a8bb511519218d731',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%2098%20(USA).pdf',
     },
     'SLUS00735': {
@@ -12566,6 +12589,7 @@ games = {
     	'id': 'SLUS01264',
 	'title': "NHL 2001",
         'pic0': 'https://images.launchbox-app.com/e6a59bc6-02f5-49d7-8d9a-590658c675ca.png',
+        'pic1': 'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/da92a6c7-ecde-4893-9206-b790770caf1c.jpeg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%202001%20(USA).pdf',
     },
     'SLUS00825': {
@@ -12573,6 +12597,7 @@ games = {
     	'id': 'SLUS00825',
 	'title': "NHL BLADES OF STEEL 2000",
         'pic0': 'https://images.launchbox-app.com/b6fe9277-6c23-4c0b-b92c-63fe07e37c6a.png',
+        'pic1': 'https://a.espncdn.com/photo/2019/0919/r600408_1296x729_16-9.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Blades%20of%20Steel%202000%20(USA).pdf',
     },
     'SLUS00391': {
@@ -12588,6 +12613,7 @@ games = {
     	'id': 'SCUS94504',
 	'title': "NHL FACE OFF",
         'pic0': 'https://images.launchbox-app.com/5c9387b1-e59d-4894-b437-58b80dcc2ce5.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbsiho6OTBwvbLVAUhAF_lXHRMOhcsdJ6Ww&s',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Face%20Off%20(USA).pdf',
     },
     'SCUS94550': {
@@ -12595,6 +12621,7 @@ games = {
     	'id': 'SCUS94550',
 	'title': "NHL FACE OFF '97",
         'pic0': 'https://images.launchbox-app.com/b5013789-8031-4ad1-a151-4aac6a27efc0.png',
+        'pic1': 'https://s.hdnux.com/photos/46/57/20/10155033/18/rawImage.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Face%20Off%20\'97%20(USA).pdf',
     },
     'SCUS94174': {
@@ -12602,6 +12629,7 @@ games = {
     	'id': 'SCUS94174',
 	'title': "NHL FACE OFF 98",
         'pic0': 'https://images.launchbox-app.com/ce213cbb-10b8-4f84-8118-95649bb005c1.png',
+        'pic1': 'https://dims.apnews.com/dims4/default/19124dd/2147483647/strip/false/crop/3510x2342+0+0/resize/1486x992!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fbb%2Fa1%2Ff7c7a8efd3bced5228b2b1669e5c%2F52405d60ca26409893767fad72358717',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20FaceOff%2098%20(USA).pdf',
     },
     'SCUS94235': {
@@ -12609,6 +12637,7 @@ games = {
     	'id': 'SCUS94235',
 	'title': "NHL FACE OFF 99",
         'pic0': 'https://images.launchbox-app.com/18ad1465-50f8-4e7b-91f7-ecbd77c74f1f.png',
+        'pic1': 'https://library.sportingnews.com/styles/twitter_card_120x120/s3/2021-08/wayne-gretzky-new-york-rangers-032820-getty-ftrjpeg_1pv957kpd2w3t1668owvyfo1fy.jpg?itok=X8Zf5XNT',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20FaceOff%2099%20(USA).pdf',
     },
     'SCUS94558': {
@@ -12616,6 +12645,7 @@ games = {
     	'id': 'SCUS94558',
 	'title': "NHL FACE OFF 2000",
         'pic0': 'https://images.launchbox-app.com/7e774efe-91b3-40bd-a668-95bd6de232f6.png',
+        'pic1': 'https://a.espncdn.com/photo/2015/0529/nhl_a_devils-flyers01jr_B_1296x729.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20FaceOff%202000%20(USA).pdf',
     },
     'SCUS94577': {
@@ -12623,6 +12653,7 @@ games = {
     	'id': 'SCUS94577',
 	'title': "NHL FACE OFF 2001",
         'pic0': 'https://images.launchbox-app.com/f3bc7169-4f52-4034-af27-381ef4d3fdea.png',
+        'pic1': 'https://www.vmcdn.ca/f/files/shared/feeds/cp/2025/11/f64ddff44771c0b07f863913f112c1ca06527695db42e65a272da5bdc1dbcd84.jpg;w=960',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20FaceOff%202001%20(USA).pdf',
     },
     'SLUS00327': {
@@ -12630,6 +12661,7 @@ games = {
     	'id': 'SLUS00327',
 	'title': "NHL OPEN ICE 2 ON 2 CHALLENGE",
         'pic0': 'https://images.launchbox-app.com/83630b56-4f0c-46ca-927b-f9c3d29c9e61.png',
+        'pic1': 'https://a.espncdn.com/photo/2015/1124/r30055_1296x729_16-9.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Open%20Ice%20-%202%20on%202%20Challenge%20(USA).pdf',
     },
     'SLUS00227': {
@@ -12637,6 +12669,7 @@ games = {
     	'id': 'SLUS00227',
 	'title': "NHL POWERPLAY '96",
         'pic0': 'https://images.launchbox-app.com/bcb66095-02f8-45c3-9946-241ef21c6749.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzFZVX7BqxGkup9Dtxx3jmwGxO4xpI96-Tag&s',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Powerplay%20\'96%20(USA).pdf',
     },
     'SLUS00528': {
@@ -12644,6 +12677,7 @@ games = {
     	'id': 'SLUS00528',
 	'title': "NHL POWERPLAY 98",
         'pic0': 'https://images.launchbox-app.com/5108c407-572b-4fe4-9d93-7d71354b7cc2.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzFZVX7BqxGkup9Dtxx3jmwGxO4xpI96-Tag&s',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Powerplay%2098%20(USA).pdf',
     },
     'SLUS01085': {
@@ -12651,6 +12685,7 @@ games = {
     	'id': 'SLUS01085',
 	'title': "NHL ROCK THE RINK",
         'pic0': 'https://images.launchbox-app.com/7d6d2e6b-1208-4734-b312-c8766549e331.png',
+        'pic1': 'https://images.saymedia-content.com/.image/MTk4NDgzNDk0MTA2NTcyNzEx/usatsi_8742604.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Rock%20the%20Rink%20(USA).pdf',
     },
     'SLUS01047': {
@@ -13334,6 +13369,7 @@ games = {
     	'id': 'SCUS94408',
 	'title': "PROJECT - HORNED OWL",
         'pic0': 'https://images.launchbox-app.com/11499670-f019-4e1a-9410-dd275df4d13f.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1df65991-d7a0-46e4-b403-5f7c92dd75bb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Project%20-%20Horned%20Owl%20(USA).pdf',
     },
     'SLUS00045': {
@@ -13341,6 +13377,7 @@ games = {
     	'id': 'SLUS00045',
 	'title': "PROJECT OVERKILL",
         'pic0': 'https://images.launchbox-app.com/35ee60f6-bd5e-4885-9c5b-e3350e901816.png',
+        'pic1': 'https://images.launchbox-app.com//143cf581-9024-403f-9f18-ed6f0f836ee6.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Project%20Overkill%20(USA).pdf',
     },
     'SLUS00730': {
@@ -13505,6 +13542,7 @@ games = {
     	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1723250b-7f3a-4eea-aaca-dbf7c878c6bb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
     'SCUS94247_DEMO': {
@@ -13512,6 +13550,7 @@ games = {
     	'id': 'SCUS94247',
 	'title': "RALLY CROSS 2 [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1723250b-7f3a-4eea-aaca-dbf7c878c6bb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
     'SLUS01065': {
@@ -13519,6 +13558,7 @@ games = {
     	'id': 'SLUS01065',
 	'title': "RAMPAGE THROUGH TIME",
         'pic0': 'https://images.launchbox-app.com/bc259f02-4961-42e7-a202-38b2058195e2.png',
+        'pic1': 'https://images.launchbox-app.com//d909af15-546a-4d0f-9b30-9bc4165ef38f.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Rampage%20-%20Through%20Time%20(USA).pdf',
     },
     'SLUS00549': {
@@ -15376,6 +15416,7 @@ games = {
     	'id': 'SLUS01005',
 	'title': "SUPERCROSS 2000",
         'pic0': 'https://images.launchbox-app.com/a621fdfc-7e07-4043-b87e-7e066ea706ed.png',
+        'pic1': 'https://rxi.iscdn.net/2014/12/88963_david_vuillemin_2000_cudby-sm.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/EA%20Sports%20Supercross%202000%20(USA).pdf',
     },
     'SCUS94453': {
@@ -15383,6 +15424,7 @@ games = {
     	'id': 'SCUS94453',
 	'title': "SUPERCROSS CIRCUIT",
         'pic0': 'https://images.launchbox-app.com/3deb3541-01d8-4572-bec4-b549eedb8760.png',
+        'pic1': 'https://www.cyclenews.com/wp-content/uploads/2020/06/Monster-Energy-Pro-Circuit-Kawasaki-Eli-Tomac-Supercross-Round-14.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/SuperCross%20Circuit%20(USA).pdf',
     },
     'SLUS01493': {
@@ -15780,6 +15822,7 @@ games = {
     	'id': 'SCUS94150',
 	'title': "THE CITY OF LOST CHILDREN",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/City%20of%20Lost%20Children,%20The%20(USA).pdf',
     },
     'SLUS00242': {
@@ -16038,6 +16081,7 @@ games = {
 	'title': "THE RAIDEN PROJECT",
         'icon0': 'https://images.launchbox-app.com/2027f9f5-04ee-4b6e-8543-93d0334be782.png',
         'pic0': 'https://images.launchbox-app.com/66898eab-741a-4b9d-b6e6-17529c298f11.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cca45ebb-effb-4510-8229-e71a3030408e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Raiden%20Project,%20The%20(LB)%20(USA).pdf',
         'ps3config': 'ps3configs/Raiden/SCUS-94402.BIN',
@@ -16196,6 +16240,7 @@ games = {
     	'id': 'SCUS94352',
 	'title': "THUNDER TRUCK RALLY",
         'pic0': 'https://images.launchbox-app.com/8bd127a9-2996-4ddb-b6ab-9a67f3639657.png',
+        'pic1': 'https://media.wired.com/photos/59322d4a58b0d64bb35d0149/3:2/w_2560%2Cc_limit/762cb92a-0139-4070-a6d8-59de4eddcbc8-1.jpg',
         'snd0': 'https://www.youtube.com/watch?v=hbsGgY1KHFo',
         'manual': 'https://www.videogamemanual.com/ps1/Thunder%20Truck%20Rally%20(USA).pdf',
     },
@@ -16611,6 +16656,7 @@ games = {
     	'id': 'SCUS94229',
 	'title': "TURBO PROP RACING",
         'pic0': 'https://images.launchbox-app.com/1675cd47-59c5-4a6b-9eb5-d2a3f77a8d77.png',
+        'pic1': 'https://www.v8superboats.com.au/wp-content/uploads/2025/09/A64I0840-1024x683.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Turbo%20Prop%20Racing%20(USA).pdf',
         'ps3config': 'ps3configs/Rapid Racer/SCUS-94229.BIN',
         'pspconfig': 'pspconfigs/Rapid Racer/SCUS-94229.bin',
@@ -17113,6 +17159,7 @@ games = {
     	'id': 'SCUS94567',
 	'title': "WHO WANTS TO BE A MILLIONAIRE - 2ND EDITION",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.pluggedin.com/wp-content/uploads/2020/01/who-wants-to-be-a-millionaire-1024x614.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Who%20Wants%20to%20Be%20a%20Millionaire%20-%202nd%20Edition%20(USA).pdf',
     },
     'SCUS94644': {
@@ -17120,6 +17167,7 @@ games = {
     	'id': 'SCUS94644',
 	'title': "WHO WANTS TO BE A MILLIONAIRE - 3RD EDITION",
         'pic0': 'https://github.com/sahlberg/pop-fe/assets/168254312/3ac03b0d-fb4b-46de-b26d-44e959f92baf',
+        'pic1': 'https://deadline.com/wp-content/uploads/2025/04/173308_1520.jpg?w=681&h=383&crop=1',
         'manual': 'https://www.videogamemanual.com/ps1/Who%20Wants%20to%20Be%20a%20Millionaire%20-%203rd%20Edition%20(USA).pdf',
     },
     'SLUS00425': {
@@ -21630,6 +21678,7 @@ games = {
     	'id': 'SLES00298',
 	'title': "FORMULA 1",
         'pic0': 'https://images.launchbox-app.com/bb1b1df5-8384-4e28-a38e-051da3f1586a.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_d0bc6908-f2a1-47b8-a3a8-c9b922284db5.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Formula%201%20(Multi-2)%20(E)(F)%20[SLES-00298].cbr',
     },
     'SLES00859': {
@@ -21637,12 +21686,14 @@ games = {
     	'id': 'SLES00859',
 	'title': "FORMULA 1 '97",
         'pic0': 'https://images.launchbox-app.com/741c1b57-4ecc-4ad5-81bd-5325c4c36b68.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_92927428-6cce-40b4-a23e-c64c76625055.jpg',
     },
     'SLES01421': {
         'url': "games/P/F/SLES-01421.html",
     	'id': 'SLES01421',
 	'title': "FORMULA 1 '98",
         'pic0': 'https://images.launchbox-app.com/ca7f484e-1c49-447f-aa3d-2d6d7f6c879c.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3799febc-b82d-4b18-9ccb-cc06539c9b2a.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Formula%201%2098%20[SLES-01421]%20(F).cbr',
     },
     'SLES03994': {
@@ -21787,6 +21838,7 @@ games = {
     	'id': 'SLES02298',
 	'title': "FOX SPORTS NHL CHAMPIONSHIP 2000",
         'pic0': 'https://images.launchbox-app.com/a7be1bce-de76-4d25-adc1-7d37c52c3a1f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58XCeFFWpIZAan8xHg0aGc7E0WRjXQQ7xwg&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20Championship%202000%20%28USA%29_jp2.zip',
     },
     'SLES00100':       {
@@ -23602,6 +23654,7 @@ games = {
     	'id': 'SLES01281',
 	'title': "JEREMY MCGRATH SUPERCROSS '98",
         'pic0': 'https://images.launchbox-app.com/995ebb6d-4dda-4376-887b-e36255f88739.png',
+        'pic1': 'https://cdn.artphotolimited.com/images/65369095bd40b8a3f9b4e169/1000x1000/la-legende-jeremy-mcgrath-dans-les-whoops-de-bercy-en-1998.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeremy%20McGrath%20Supercross%2098%20%28USA%29_jp2.zip',
     },
     'SLES01981': {
@@ -23609,6 +23662,7 @@ games = {
     	'id': 'SLES01981',
 	'title': "JEREMY MCGRATH SUPERCROSS 2000",
         'pic0': 'https://images.launchbox-app.com/935a1a54-4c76-44c9-bf3f-39e6c2a51ff9.png',
+        'pic1': 'https://cdn.sanity.io/images/8oyzogbt/production/a51da4f14335dec9c2a2063062c022a751f79586-1024x667.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeremy%20McGrath%20Supercross%202000%20%28USA%29_jp2.zip',
     },
     'SLES00598': {
@@ -24758,6 +24812,7 @@ games = {
     	'id': 'SLES03399',
 	'title': "EA SPORTS SUPERCROSS",
         'pic0': 'https://images.launchbox-app.com/a9493b56-2fbf-4235-9bb1-43ec1109e4c2.png',
+        'pic1': 'https://grippingstories.com/wp-content/uploads/2023/08/jeremy-mcgrath-2.jpg',
     },
     'SLES01715': {
         'url': "games/P/E/SLES-01715.html",
@@ -27566,6 +27621,7 @@ games = {
     	'id': 'SLES00314',
 	'title': "MONSTER TRUCKS",
         'pic0': 'https://images.launchbox-app.com/8bd127a9-2996-4ddb-b6ab-9a67f3639657.png',
+        'pic1': 'https://www.monsterjam.com/wp-content/uploads/2023/11/jester-san-antonio.jpg',
         'snd0': 'https://www.youtube.com/watch?v=hbsGgY1KHFo',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Thunder%20Truck%20Rally%20%28USA%29_jp2.zip',
     },
@@ -28496,18 +28552,21 @@ games = {
     	'id': 'SCES00219',
 	'title': "NFL GAMEDAY",
         'pic0': 'https://images.launchbox-app.com/09d2eb90-fb6b-4f77-9799-043142407dde.png',
+        'pic1': 'https://res.cloudinary.com/ybmedia/image/upload/c_crop,h_1123,w_2000,x_0,y_185/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/7/d/7d96b26498d2e7c127de129b0823ed7d48753233/looking-back-1996-nfl-draft-25-years-later.jpg',
     },
     'SLES00449': {
         'url': "games/P/N/SLES-00449.html",
     	'id': 'SLES00449',
 	'title': "NFL QUARTERBACK CLUB '97",
         'pic0': 'https://images.launchbox-app.com/bb6cc282-e353-4cc8-b462-bca1eded7542.png',
+        'pic1': 'https://static.clubs.nfl.com/image/private/t_new_photo_album/broncos/tlbf24a5b8ggtxwzj3kb.jpg',
     },
     'SCES01490': {
         'url': "games/P/N/SCES-01490.html",
     	'id': 'SCES01490',
 	'title': "NFL XTREME",
         'pic0': 'https://images.launchbox-app.com/cf275311-de37-47bf-ae30-b744b19a32e2.png',
+        'pic1': 'https://cdn2.unrealengine.com/the-super-bowl-concludes-the-nfl-season-but-there-s-still-plenty-of-football-left-in-madden-24-1920x1080-5a2655f237f2.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NFL%20Xtreme%20%28USA%29_jp2.zip',
     },
     'SLES02086': {
@@ -28522,24 +28581,28 @@ games = {
     	'id': 'SLES00492',
 	'title': "NHL 97",
         'pic0': 'https://images.launchbox-app.com/58dec4bb-5ef3-4f5f-b15a-02772aac55e9.png',
+        'pic1': 'https://img.covers.com/cms/covers/f327ca6d-958b-4084-b85b-94bf97ec274f..gif',
     },
     'SLES00533': {
         'url': "games/P/N/SLES-00533.html",
     	'id': 'SLES00533',
 	'title': "NHL 97",
         'pic0': 'https://images.launchbox-app.com/58dec4bb-5ef3-4f5f-b15a-02772aac55e9.png',
+        'pic1': 'https://img.covers.com/cms/covers/f327ca6d-958b-4084-b85b-94bf97ec274f..gif',
     },
     'SLES00512': {
         'url': "games/P/N/SLES-00512.html",
     	'id': 'SLES00512',
 	'title': "NHL 98",
         'pic0': 'https://images.launchbox-app.com/f77b9e6c-fa19-420e-9c5b-edc17b97b9db.png',
+        'pic1': 'https://preview.redd.it/rr20xjm4v6d21.jpg?width=640&crop=smart&auto=webp&s=7b5ce02030be0a35858eb05a8bb511519218d731',
     },
     'SLES00907': {
         'url': "games/P/N/SLES-00907.html",
     	'id': 'SLES00907',
 	'title': "NHL 98",
         'pic0': 'https://images.launchbox-app.com/f77b9e6c-fa19-420e-9c5b-edc17b97b9db.png',
+        'pic1': 'https://preview.redd.it/rr20xjm4v6d21.jpg?width=640&crop=smart&auto=webp&s=7b5ce02030be0a35858eb05a8bb511519218d731',
     },
     'SLES01445': {
         'url': "games/P/N/SLES-01445.html",
@@ -28586,24 +28649,28 @@ games = {
     	'id': 'SLES03139',
 	'title': "NHL 2001",
         'pic0': 'https://images.launchbox-app.com/e6a59bc6-02f5-49d7-8d9a-590658c675ca.png',
+        'pic1': 'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/da92a6c7-ecde-4893-9206-b790770caf1c.jpeg',
     },
     'SLES03154': {
         'url': "games/P/N/SLES-03154.html",
     	'id': 'SLES03154',
 	'title': "NHL 2001",
         'pic0': 'https://images.launchbox-app.com/e6a59bc6-02f5-49d7-8d9a-590658c675ca.png',
+        'pic1': 'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/da92a6c7-ecde-4893-9206-b790770caf1c.jpeg',
     },
     'SLES03155': {
         'url': "games/P/N/SLES-03155.html",
     	'id': 'SLES03155',
 	'title': "NHL 2001",
         'pic0': 'https://images.launchbox-app.com/e6a59bc6-02f5-49d7-8d9a-590658c675ca.png',
+        'pic1': 'https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/da92a6c7-ecde-4893-9206-b790770caf1c.jpeg',
     },
     'SLES02514': {
         'url': "games/P/N/SLES-02514.html",
     	'id': 'SLES02514',
 	'title': "NHL BLADES OF STEEL 2000",
         'pic0': 'https://images.launchbox-app.com/b6fe9277-6c23-4c0b-b92c-63fe07e37c6a.png',
+        'pic1': 'https://a.espncdn.com/photo/2019/0919/r600408_1296x729_16-9.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20Blades%20of%20Steel%202000%20%28USA%29_jp2.zip',
     },
     'SLES00624': {
@@ -28618,6 +28685,7 @@ games = {
     	'id': 'SCES00220',
 	'title': "NHL FACE OFF",
         'pic0': 'https://images.launchbox-app.com/5c9387b1-e59d-4894-b437-58b80dcc2ce5.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbsiho6OTBwvbLVAUhAF_lXHRMOhcsdJ6Ww&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20Face%20Off%20%28USA%29_jp2.zip',
     },
     'SCES00392': {
@@ -28625,6 +28693,7 @@ games = {
     	'id': 'SCES00392',
 	'title': "NHL FACE OFF '97",
         'pic0': 'https://images.launchbox-app.com/b5013789-8031-4ad1-a151-4aac6a27efc0.png',
+        'pic1': 'https://s.hdnux.com/photos/46/57/20/10155033/18/rawImage.jpg',
     },
     'SLES02825': {
         'url': "games/P/C/SLES-02825.html",
@@ -31525,6 +31594,7 @@ games = {
     	'id': 'SCES03937',
 	'title': "DISNEY'S TREASURE PLANET",
         'pic0': 'https://images.launchbox-app.com/d1e9a064-064c-43b6-be30-d3c4cf507008.png',
+        'pic1': 'https://images.launchbox-app.com//01ebd2cc-4594-4ab6-8ab4-a4411095f23e.jpg',
         'pspconfig': 'pspconfigs/Disney\'s Treasure Planet/SCES-03937.bin',
     },
     'SCES03748': {
@@ -31777,6 +31847,7 @@ games = {
     	'id': 'SCES01022',
 	'title': "NHL FACE OFF 98",
         'pic0': 'https://images.launchbox-app.com/ce213cbb-10b8-4f84-8118-95649bb005c1.png',
+        'pic1': 'https://dims.apnews.com/dims4/default/19124dd/2147483647/strip/false/crop/3510x2342+0+0/resize/1486x992!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fbb%2Fa1%2Ff7c7a8efd3bced5228b2b1669e5c%2F52405d60ca26409893767fad72358717',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20FaceOff%2098%20%28USA%29_jp2.zip',
     },
     'SCES01736': {
@@ -31784,30 +31855,35 @@ games = {
     	'id': 'SCES01736',
 	'title': "NHL FACE OFF 99",
         'pic0': 'https://images.launchbox-app.com/18ad1465-50f8-4e7b-91f7-ecbd77c74f1f.png',
+        'pic1': 'https://library.sportingnews.com/styles/twitter_card_120x120/s3/2021-08/wayne-gretzky-new-york-rangers-032820-getty-ftrjpeg_1pv957kpd2w3t1668owvyfo1fy.jpg?itok=X8Zf5XNT',
     },
     'SCES02451': {
         'url': "games/P/N/SCES-02451.html",
     	'id': 'SCES02451',
 	'title': "NHL FACEOFF 2000",
         'pic0': 'https://images.launchbox-app.com/7e774efe-91b3-40bd-a668-95bd6de232f6.png',
+        'pic1': 'https://a.espncdn.com/photo/2015/0529/nhl_a_devils-flyers01jr_B_1296x729.jpg',
     },
     'SLES00313': {
         'url': "games/P/N/SLES-00313.html",
     	'id': 'SLES00313',
 	'title': "NHL POWERPLAY",
         'pic0': 'https://images.launchbox-app.com/bcb66095-02f8-45c3-9946-241ef21c6749.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjkjZ4ufCNWLn8ahC4FVtd4cHllRdt0rsnFg&s',
     },
     'SLES00418': {
         'url': "games/P/N/SLES-00418.html",
     	'id': 'SLES00418',
 	'title': "NHL POWERPLAY 98",
         'pic0': 'https://images.launchbox-app.com/5108c407-572b-4fe4-9d93-7d71354b7cc2.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzFZVX7BqxGkup9Dtxx3jmwGxO4xpI96-Tag&s',
     },
     'SLES02794': {
         'url': "games/P/N/SLES-02794.html",
     	'id': 'SLES02794',
 	'title': "NHL ROCK THE RINK",
         'pic0': 'https://images.launchbox-app.com/7d6d2e6b-1208-4734-b312-c8766549e331.png',
+        'pic1': 'https://images.saymedia-content.com/.image/MTk4NDgzNDk0MTA2NTcyNzEx/usatsi_8742604.jpg',
     },
     'SLES02960': {
         'url': "games/P/N/SLES-02960.html",
@@ -33046,6 +33122,7 @@ games = {
     	'id': 'SLES00500',
 	'title': "PROJECT OVERKILL",
         'pic0': 'https://images.launchbox-app.com/35ee60f6-bd5e-4885-9c5b-e3350e901816.png',
+        'pic1': 'https://images.launchbox-app.com//143cf581-9024-403f-9f18-ed6f0f836ee6.jpg',
     },
     'SLES00929': {
         'url': "games/P/P/SLES-00929.html",
@@ -33231,6 +33308,7 @@ games = {
     	'id': 'SCES01631',
 	'title': "RALLY CROSS 2",
         'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1723250b-7f3a-4eea-aaca-dbf7c878c6bb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Rally%20Cross%202%20(USA).pdf',
     },
     'SLES02849': {
@@ -33238,6 +33316,7 @@ games = {
     	'id': 'SLES02849',
 	'title': "RAMPAGE THROUGH TIME",
         'pic0': 'https://images.launchbox-app.com/bc259f02-4961-42e7-a202-38b2058195e2.png',
+        'pic1': 'https://images.launchbox-app.com//d909af15-546a-4d0f-9b30-9bc4165ef38f.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Rampage%20-%20Through%20Time%20(USA).pdf',
     },
     'SLES01011': {
@@ -36263,6 +36342,7 @@ games = {
     	'id': 'SLES02373',
 	'title': "SUPERCROSS 2000",
         'pic0': 'https://images.launchbox-app.com/a621fdfc-7e07-4043-b87e-7e066ea706ed.png',
+        'pic1': 'https://rxi.iscdn.net/2014/12/88963_david_vuillemin_2000_cudby-sm.jpg',
     },
     'SLES00080': {
         'url': "games/P/S/SLES-00080.html",
@@ -36892,24 +36972,28 @@ games = {
     	'id': 'SLES00170',
 	'title': "THE CITY OF LOST CHILDREN",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
     },
     'SLES00573': {
         'url': "games/P/T/SLES-00573.html",
     	'id': 'SLES00573',
 	'title': "THE CITY OF LOST CHILDREN (LA CITE DES ENFANTS PERDUS)",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
     },
     'SLES00574': {
         'url': "games/P/T/SLES-00574.html",
     	'id': 'SLES00574',
 	'title': "THE CITY OF LOST CHILDREN (DIE STADT DER VERLORENEN KINDER)",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
     },
     'SLES00638': {
         'url': "games/P/T/SLES-00638.html",
     	'id': 'SLES00638',
 	'title': "THE CITY OF LOST CHILDREN (LA CIUDAD DE LOS NIÃ‘OS PERDIDOS)",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
     },
     'SLES00279': {
         'url': "games/P/T/SLES-00279.html",
@@ -37462,6 +37546,7 @@ games = {
     	'id': 'SLES00051',
 	'title': "THE RAIDEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cca45ebb-effb-4510-8229-e71a3030408e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Raiden Project/SLES-00051.bin',
@@ -39567,30 +39652,35 @@ games = {
     	'id': 'SLES02988',
 	'title': "WHO WANTS TO BE A MILLIONAIRE?",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.rollingstone.com/wp-content/uploads/2025/07/who-wants-to-be-a-millionaire-WATCH.jpg?w=1581&h=1054&crop=1',
     },
     'SLES03583': {
         'url': "games/P/W/SLES-03583.html",
     	'id': 'SLES03583',
 	'title': "WHO WANTS TO BE A MILLIONAIRE?",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.rollingstone.com/wp-content/uploads/2025/07/who-wants-to-be-a-millionaire-WATCH.jpg?w=1581&h=1054&crop=1',
     },
     'SLES03585': {
         'url': "games/P/W/SLES-03585.html",
     	'id': 'SLES03585',
 	'title': "WHO WANTS TO BE A MILLIONAIRE?",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.rollingstone.com/wp-content/uploads/2025/07/who-wants-to-be-a-millionaire-WATCH.jpg?w=1581&h=1054&crop=1',
     },
     'SLES03589': {
         'url': "games/P/W/SLES-03589.html",
     	'id': 'SLES03589',
 	'title': "WHO WANTS TO BE A MILLIONAIRE? - 2ND EDITION",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.pluggedin.com/wp-content/uploads/2020/01/who-wants-to-be-a-millionaire-1024x614.jpg',
     },
     'SLES03592': {
         'url': "games/P/W/SLES-03592.html",
     	'id': 'SLES03592',
 	'title': "WHO WANTS TO BE A MILLIONAIRE? - JUNIOR",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://i.ebayimg.com/images/g/nZ8AAOSwholmzypB/s-l1200.jpg',
     },
     'SLES01333': {
         'url': "games/P/W/SLES-01333.html",
@@ -43294,6 +43384,7 @@ games = {
     	'id': 'SCPS10014',
 	'title': "BEYOND THE BEYOND",
         'pic0': 'https://images.launchbox-app.com/b07ca6ed-d998-48c6-92ce-79fbb70a7b90.png',
+        'pic1': 'https://images.launchbox-app.com//b404812f-2bee-4843-9e34-169796d536b0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=hjrAr67kiWg&list=PL7YuVu11Ud-LEPF6zfqRoH22VJS8DFMJG&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Beyond%20the%20Beyond%20%28USA%29_jp2.zip',
     },
@@ -50514,6 +50605,7 @@ games = {
     	'id': 'SCPS45077',
 	'title': "FORMULA 1",
         'pic0': 'https://images.launchbox-app.com/bb1b1df5-8384-4e28-a38e-051da3f1586a.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_d0bc6908-f2a1-47b8-a3a8-c9b922284db5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Formula%201%20%28USA%29_jp2.zip',
     },
     'SIPS60011': {
@@ -50521,6 +50613,7 @@ games = {
     	'id': 'SIPS60011',
 	'title': "FORMULA 1",
         'pic0': 'https://images.launchbox-app.com/bb1b1df5-8384-4e28-a38e-051da3f1586a.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_d0bc6908-f2a1-47b8-a3a8-c9b922284db5.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Formula%201%20%28USA%29_jp2.zip',
     },
     'SIPS60023': {
@@ -50528,6 +50621,7 @@ games = {
     	'id': 'SIPS60023',
 	'title': "FORMULA 1 '97",
         'pic0': 'https://images.launchbox-app.com/741c1b57-4ecc-4ad5-81bd-5325c4c36b68.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_92927428-6cce-40b4-a23e-c64c76625055.jpg',
     },
     'SLPS00358': {
         'url': "games/J/F/SLPS-00358.html",
@@ -53475,12 +53569,14 @@ games = {
     	'id': 'SCPS10016',
 	'title': "HORNED OWL",
         'pic0': 'https://images.launchbox-app.com/11499670-f019-4e1a-9410-dd275df4d13f.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1df65991-d7a0-46e4-b403-5f7c92dd75bb.jpg',
     },
     'SCPS10017': {
         'url': "games/J/H/SCPS-10017.html",
     	'id': 'SCPS10017',
 	'title': "HORNED OWL [LIMITED EDITION WITH LIGHT GUN]",
         'pic0': 'https://images.launchbox-app.com/11499670-f019-4e1a-9410-dd275df4d13f.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1df65991-d7a0-46e4-b403-5f7c92dd75bb.jpg',
     },
     'SCPS45189': {
         'url': "games/J/H/SCPS-45189.html",
@@ -54263,6 +54359,7 @@ games = {
     	'id': 'SLPM86306',
 	'title': "JEREMY MCGRATH SUPERCROSS '98",
         'pic0': 'https://images.launchbox-app.com/995ebb6d-4dda-4376-887b-e36255f88739.png',
+        'pic1': 'https://cdn.artphotolimited.com/images/65369095bd40b8a3f9b4e169/1000x1000/la-legende-jeremy-mcgrath-dans-les-whoops-de-bercy-en-1998.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Jeremy%20McGrath%20Supercross%2098%20%28USA%29_jp2.zip',
     },
     'SLPM86075': {
@@ -60855,6 +60952,7 @@ games = {
     	'id': 'SLPS00221',
 	'title': "NFL QUARTERBACK CLUB '96",
         'pic0': 'https://images.launchbox-app.com/bb6cc282-e353-4cc8-b462-bca1eded7542.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_P71I0CkjlBhe3d4VD4PD2cKNMTmpAIL3bL-dIpVH1xl9OVCGi5kByiO6NbaFl-lLpE&usqp=CAU',
     },
     'SLPM86217': {
         'url': "games/J/N/SLPM-86217.html",
@@ -60873,12 +60971,14 @@ games = {
     	'id': 'SLPS00861',
 	'title': "NHL 97",
         'pic0': 'https://images.launchbox-app.com/58dec4bb-5ef3-4f5f-b15a-02772aac55e9.png',
+        'pic1': 'https://img.covers.com/cms/covers/f327ca6d-958b-4084-b85b-94bf97ec274f..gif',
     },
     'SLPM86193': {
         'url': "games/J/N/SLPM-86193.html",
     	'id': 'SLPM86193',
 	'title': "NHL BLADES OF STEEL 2000",
         'pic0': 'https://images.launchbox-app.com/b6fe9277-6c23-4c0b-b92c-63fe07e37c6a.png',
+        'pic1': 'https://a.espncdn.com/photo/2019/0919/r600408_1296x729_16-9.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/NHL%20Blades%20of%20Steel%202000%20%28USA%29_jp2.zip',
     },
     'SLPS00595': {
@@ -60886,11 +60986,13 @@ games = {
     	'id': 'SLPS00595',
 	'title': "NHL POWERPLAY '96",
         'pic0': 'https://images.launchbox-app.com/bcb66095-02f8-45c3-9946-241ef21c6749.png',
+        'pic1': 'https://s3951.pcdn.co/wp-content/uploads/2015/09/John-Vanbiesbrouck-Panthers-scaled.jpg',
     },
     'SIPS60018': {
         'url': "games/J/N/SIPS-60018.html",
     	'id': 'SIPS60018',
 	'title': "NHL POWERRINK '97",
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1F34n06UIs-FLmQWJgvRU3H9dZKpPL-GuHQ&s',
     },
     'SLPS03369': {
         'url': "games/J/N/SLPS-03369.html",
@@ -64581,6 +64683,7 @@ games = {
     	'id': 'SLPS00013',
 	'title': "RAIDEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cca45ebb-effb-4510-8229-e71a3030408e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/The Raiden Project/SLPS-00013.bin',
@@ -64590,6 +64693,7 @@ games = {
     	'id': 'SLPS91002',
 	'title': "RAIDEN PROJECT [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cca45ebb-effb-4510-8229-e71a3030408e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
@@ -64598,6 +64702,7 @@ games = {
     	'id': 'SLPS91144',
 	'title': "RAIDEN PROJECT [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/d365b8f1-c792-4915-93d4-a70d2cfc4195.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cca45ebb-effb-4510-8229-e71a3030408e.jpg',
         'snd0': 'https://www.youtube.com/watch?v=p6jJbU_Z6xk&list=PLoK-X8ViCd5aRLsnbjk6pWtazpR03D-Xc&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Raiden%20Project%2C%20The%20%28USA%29_jp2.zip',
     },
@@ -71874,6 +71979,7 @@ games = {
     	'id': 'SLPS00971',
 	'title': "THE CITY OF LOST CHILDREN",
         'pic0': 'https://images.launchbox-app.com/bff8cc50-c7e7-4f2d-aeac-f188752fba02.png',
+        'pic1': 'https://images.launchbox-app.com//12fe927b-500b-47ea-86f5-dc3316e2b0fe.jpg',
     },
     'SLPS00782': {
         'url': "games/J/T/SLPS-00782.html",
