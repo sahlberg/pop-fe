@@ -4388,6 +4388,7 @@ games = {
     	'id': 'SLPS01944',
 	'title': "X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
+        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
         'manual': 'https://www.videogamemanual.com/ps1/X%20Games%20Pro%20Boarder%20(USA).pdf',
     },
     'SLPM86765': {
@@ -7417,6 +7418,7 @@ games = {
     	'id': 'SCUS94294',
 	'title': "CONTENDER",
         'pic0': 'https://images.launchbox-app.com/4cfe303a-5e70-4ecd-8484-b28f45365b11.png',
+        'pic1': 'https://ichef.bbci.co.uk/ace/standard/966/cpsprodpb/591d/live/b0a7ab70-c286-11f0-8f82-1189356e11bf.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Contender%20(USA).pdf',
         'pspconfig': 'pspconfigs/Victory Boxing 2/SCUS-94294.bin',
     },
@@ -7425,6 +7427,7 @@ games = {
     	'id': 'SCUS94494',
 	'title': "CONTENDER 2",
         'pic0': 'https://images.launchbox-app.com/fe329ecf-3dc9-452a-9481-644688dca8c9.png',
+        'pic1': 'https://cdn.britannica.com/76/187976-050-D8DA2DA7/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Contender%202%20(USA).pdf',
     },
     'SLUS01305': {
@@ -7432,6 +7435,7 @@ games = {
     	'id': 'SLUS01305',
 	'title': "CONTENDER 2",
         'pic0': 'https://images.launchbox-app.com/fe329ecf-3dc9-452a-9481-644688dca8c9.png',
+        'pic1': 'https://cdn.britannica.com/76/187976-050-D8DA2DA7/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Contender%202%20(USA).pdf',
     },
     'SLUS00288': {
@@ -7481,6 +7485,7 @@ games = {
     	'id': 'SCUS94597',
 	'title': "COOL BOARDERS 2001",
         'pic0': 'https://images.launchbox-app.com/9750e8c8-b068-4512-84a0-0d75457e8417.png',
+        'pic1': 'https://cdn.britannica.com/58/135658-050-24B17E09/snowboarder.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Cool%20Boarders%202001%20(USA).pdf',
     },
     'SLUS00898': {
@@ -7517,6 +7522,7 @@ games = {
     	'id': 'SLUS01151',
 	'title': "COVERT OPS - NUCLEAR DAWN",
         'pic0': 'https://images.launchbox-app.com/5c8cbdbb-e23b-4d64-90a3-d52be3949dfc.png',
+        'pic1': 'https://images.launchbox-app.com//214602c0-12d6-436e-8c26-c597eeabef32.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Covert%20Ops%20-%20Nuclear%20Dawn%20(USA).pdf',
     },
     'SLUS01157': {
@@ -7524,6 +7530,7 @@ games = {
     	'id': 'SLUS01157',
 	'title': "COVERT OPS - NUCLEAR DAWN",
         'pic0': 'https://images.launchbox-app.com/5c8cbdbb-e23b-4d64-90a3-d52be3949dfc.png',
+        'pic1': 'https://images.launchbox-app.com//214602c0-12d6-436e-8c26-c597eeabef32.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Covert%20Ops%20-%20Nuclear%20Dawn%20(USA).pdf',
     },
     'SCUS94900': {
@@ -8726,6 +8733,7 @@ games = {
     	'id': 'SCUS94152',
 	'title': "EPIDEMIC",
         'pic0': 'https://images.launchbox-app.com/f382109c-7e01-4f17-9fb0-7954dbe43816.png',
+        'pic1': 'https://images.launchbox-app.com//1fe6d5d1-5379-4068-8779-16eb27b90a0b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VdSwNPY9iQg',
         'manual': 'https://www.videogamemanual.com/ps1/Epidemic%20(USA).pdf',
     },
@@ -8734,6 +8742,7 @@ games = {
     	'id': 'SLUS01462',
 	'title': "EQUESTRIAN SHOWCASE",
         'pic0': 'https://images.launchbox-app.com/8210be38-7a0c-4526-8a2b-c1c388dd8e94.png',
+        'pic1': 'https://images.launchbox-app.com//e90a9e61-6485-455c-b1a1-11529f270ccf.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Equestrian%20Showcase%20(USA).pdf',
         'ps3config': 'ps3configs/Equestriad 2001/SLUS-01462.BIN',
     },
@@ -8750,6 +8759,7 @@ games = {
     	'id': 'SLUS01186',
 	'title': "ESPN MLS GAMENIGHT",
         'pic0': 'https://images.launchbox-app.com/748bbdcd-bcff-4596-a4e5-725151f1b699.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YcIXOT02L_U5m-ANNxrEjyny_d7V_lJGGjo6evim0Jw632WInLqA2L0P5EAsodSaVAY&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/ESPN%20MLS%20Gamenight%20(USA).pdf',
     },
     'SLUS00704': {
@@ -8757,6 +8767,7 @@ games = {
     	'id': 'SLUS00704',
 	'title': "ESPN X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
+        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
         'manual': 'https://www.videogamemanual.com/ps1/X%20Games%20Pro%20Boarder%20(USA).pdf',
     },
     'SLUS01034': {
@@ -10743,6 +10754,7 @@ games = {
 	'title': "KRAZY IVAN",
         'icon0': 'https://images.launchbox-app.com/a9f44657-a847-4ad1-9b64-c5b24214679b.png',
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://www.videogamemanual.com/ps1/Krazy%20Ivan%20(LB)%20(USA).pdf',
     },
     'SLUS01125': {
@@ -11431,6 +11443,7 @@ games = {
     	'id': 'SCUS94170',
 	'title': "MLB 98",
         'pic0': 'https://images.launchbox-app.com/f8cd796a-24ed-44c7-8c32-887d088438ae.png',
+        'pic1': 'https://kdvr.com/wp-content/uploads/sites/11/2021/04/GettyImages-96268516.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%2098%20(USA).pdf',
     },
     'SCUS94233': {
@@ -11438,6 +11451,7 @@ games = {
     	'id': 'SCUS94233',
 	'title': "MLB 99",
         'pic0': 'https://images.launchbox-app.com/8bdd5646-2bf3-444f-b62f-676a0c98121f.png',
+        'pic1': 'https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1024/mlb/kgus9hiwwuuakru7yz0u',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%2099%20(USA).pdf',
     },
     'SCUS94359': {
@@ -11445,6 +11459,7 @@ games = {
     	'id': 'SCUS94359',
 	'title': "MLB 2000",
         'pic0': 'https://images.launchbox-app.com/88ba088b-d213-4437-b629-34b2c689c7ca.png',
+        'pic1': 'https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1024,c_fill,f_jpg,dpr_3.0/mlb/zcpzl6kg2kfylkwrufvc',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202000%20(USA).pdf',
     },
     'SCUS94478': {
@@ -11452,6 +11467,7 @@ games = {
     	'id': 'SCUS94478',
 	'title': "MLB 2001",
         'pic0': 'https://images.launchbox-app.com/b6ecd6db-fa11-43f7-8dcd-53b6b2d82677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR46QT0YaeVE12B3bx6y8ziBgRfNI1ruRweQ&s',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202001%20(USA).pdf',
     },
     'SCUS94638': {
@@ -11459,6 +11475,7 @@ games = {
     	'id': 'SCUS94638',
 	'title': "MLB 2002",
         'pic0': 'https://images.launchbox-app.com/e3f43309-1cb7-4a02-8f7a-2033298dea36.png',
+        'pic1': 'https://ca-times.brightspotcdn.com/dims4/default/8f8fcd2/2147483647/strip/true/crop/1594x1244+0+0/resize/1200x937!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fzbk%2Fdamlat_images%2FLA%2FLA_PHOTO_ARCHIVE%2FSDOCS%2840%29%2Fh4ogclkf.JPG',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202002%20(USA).pdf',
     },
     'SCUS94653': {
@@ -11466,6 +11483,7 @@ games = {
     	'id': 'SCUS94653',
 	'title': "MLB 2003",
         'pic0': 'https://images.launchbox-app.com/17967388-b7fe-45c6-bc64-0b21fb5c71ef.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5FNsrHvZvMpmc4FNrpDTMrXPZ6rGtqds0Q&s',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202003%20(USA).pdf',
     },
     'SCUS94689': {
@@ -11473,6 +11491,7 @@ games = {
     	'id': 'SCUS94689',
 	'title': "MLB 2004",
         'pic0': 'https://images.launchbox-app.com/064f9b8b-d160-498e-bcd6-2ef531bb7564.png',
+        'pic1': 'https://thestartingnine.wordpress.com/wp-content/uploads/2015/08/roger-clemens.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202004%20(USA).pdf',
     },
     'SCUS94692': {
@@ -11480,6 +11499,7 @@ games = {
     	'id': 'SCUS94692',
 	'title': "MLB 2005",
         'pic0': 'https://images.launchbox-app.com/b3498022-7196-4ba1-bd4b-6b852646bcd8.png',
+        'pic1': 'https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w640/mlb/l3bnsfdijrnzezzg8vxz.png',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%202005%20(USA).pdf',
     },
     'SCUS94507': {
@@ -11487,6 +11507,7 @@ games = {
     	'id': 'SCUS94507',
 	'title': "MLB PENNANT RACE",
         'pic0': 'https://images.launchbox-app.com/a4689bb6-7e53-41b7-add1-1684321289ef.png',
+        'pic1': 'https://www.vgr.com/wp-content/uploads/2020/05/Super-Mega-Baseball-3-features-cross-platform-custom-pennant-race-mode.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/MLB%20Pennant%20Race%20(USA).pdf',
     },
     'SLUS01103': {
@@ -11760,6 +11781,7 @@ games = {
     	'id': 'SLUS01232',
 	'title': "MTV SPORTS - SKATEBOARDING FEATURING ANDY MACDONALD",
         'pic0': 'https://images.launchbox-app.com/5f9f1217-f211-4a57-b218-686865af7608.png',
+        'pic1': 'https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/andy-macdonald_542626_wuuafj.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/MTV%20Sports%20-%20Skateboarding%20featuring%20Andy%20Macdonald%20(USA).pdf',
     },
     'SLUS00990': {
@@ -12189,6 +12211,7 @@ games = {
     	'id': 'SLUS00142',
 	'title': "NCAA BASKETBALL - FINAL FOUR '97",
         'pic0': 'https://images.launchbox-app.com/849b7b40-fc00-4d38-8d38-9b3231bde2ee.png',
+        'pic1': 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/d3e2552b09d64544c862fd44ee924d3c0147dcdcab24926e91fec916f7676147.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Basketball%20Final%20Four%2097%20(USA).pdf',
     },
     'SCUS94264': {
@@ -12196,6 +12219,7 @@ games = {
     	'id': 'SCUS94264',
 	'title': "NCAA FINAL FOUR 99",
         'pic0': 'https://images.launchbox-app.com/17d4401b-4951-4ec5-bb4b-f4e4b9e7b2ea.png',
+        'pic1': 'https://tiebreakertimes.com.ph/wp-content/uploads/2023/11/NCAA-99-JRU-vs.-SBU-Marwin-Dionisio.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Final%20Four%2099%20(USA).pdf',
     },
     'SCUS94562': {
@@ -12203,6 +12227,7 @@ games = {
     	'id': 'SCUS94562',
 	'title': "NCAA FINAL FOUR 2000",
         'pic0': 'https://images.launchbox-app.com/e72e3008-576e-489b-ab87-18a1dd7e18b0.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aBhgmDvSO2-i_cTYNLm2G6lpI9YWW9VaVKi6Y5BG5tugD-OgODEvYeM9EQquPb9B15U&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Final%20Four%202000%20(USA).pdf',
     },
     'SCUS94579': {
@@ -12210,6 +12235,7 @@ games = {
     	'id': 'SCUS94579',
 	'title': "NCAA FINAL FOUR 2001",
         'pic0': 'https://images.launchbox-app.com/24d806ab-4fe4-4e9b-bbc1-46d933b41a07.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrwzeu_44CsGQOH03y_nw8ZTmb2m-DfDHp0Q&s',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%202001%20(USA).pdf',
     },
     'SLUS00514': {
@@ -12217,6 +12243,7 @@ games = {
     	'id': 'SLUS00514',
 	'title': "NCAA FOOTBALL 98",
         'pic0': 'https://images.launchbox-app.com/ef88a108-969b-41df-966d-610c1951f682.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_O4Xh3GAhT2qNfe14XlCk_QUwcRPhPqnf0A&s',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%2098%20(USA).pdf',
     },
     'SLUS00688': {
@@ -12224,6 +12251,7 @@ games = {
     	'id': 'SLUS00688',
 	'title': "NCAA FOOTBALL 99",
         'pic0': 'https://images.launchbox-app.com/27a28b79-f25d-4ad1-a3d0-b28c2f5cf636.png',
+        'pic1': 'https://www.shutterstock.com/editorial/image-editorial/MaT0M924MeDcUax8NjExMTU=/notre-dame-kicker-blake-grupe-99-during-440nw-13486396dt.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%2099%20(USA).pdf',
     },
     'SLUS00932': {
@@ -12231,6 +12259,7 @@ games = {
     	'id': 'SLUS00932',
 	'title': "NCAA FOOTBALL 2000",
         'pic0': 'https://images.launchbox-app.com/0c4c5458-cba2-4140-b802-84a75f70156d.png',
+        'pic1': 'https://cdn.vox-cdn.com/thumbor/XfClTO9KcoXg4Mphv21axXgoMc8=/0x3:1580x1056/1200x800/filters:focal(0x3:1580x1056)/cdn.vox-cdn.com/uploads/chorus_image/image/49231107/GettyImages-654890.0.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%202000%20(USA).pdf',
     },
     'SLUS01219': {
@@ -12238,6 +12267,7 @@ games = {
     	'id': 'SLUS01219',
 	'title': "NCAA FOOTBALL 2001",
         'pic0': 'https://images.launchbox-app.com/d3143569-7d20-41a2-9f5a-3d8811ed47a3.png',
+        'pic1': 'https://images2.minutemediacdn.com/image/upload/c_crop,w_2782,h_1564,x_0,y_443/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/all_hurricanes/01jvqw194fn7yfe8s9dr.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%202001%20(USA).pdf',
     },
     'SCUS94172': {
@@ -12245,6 +12275,7 @@ games = {
     	'id': 'SCUS94172',
 	'title': "NCAA GAMEBREAKER 98",
         'pic0': 'https://images.launchbox-app.com/22fe3dc4-d7e9-4606-9c9c-1179932bf795.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4e-U9Da3BGt6mJorC8Nh962av0rjENrwYAxr40vTVpTrfh4ZJ3kiYB08ZyGdNWlBN4dg&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20GameBreaker%2098%20(USA).pdf',
     },
     'SCUS94246': {
@@ -12252,6 +12283,7 @@ games = {
     	'id': 'SCUS94246',
 	'title': "NCAA GAMEBREAKER 99",
         'pic0': 'https://images.launchbox-app.com/bab7e799-9807-467a-8b9f-a3f471e4f964.png',
+        'pic1': 'https://platform.maizenbrew.com/wp-content/uploads/sites/102/2025/11/gettyimages-2240508646.jpg?quality=90&strip=all&crop=0.0060931026078492%2C0%2C99.987813794784%2C100&w=2400',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20GameBreaker%2099%20(USA).pdf',
     },
     'SCUS94509': {
@@ -12259,6 +12291,7 @@ games = {
     	'id': 'SCUS94509',
 	'title': "NCAA FOOTBALL - GAME BREAKER",
         'pic0': 'https://images.launchbox-app.com/22d9b019-cc36-4c0e-a6c6-853bbc1cadbb.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRO2PAGhZg4Wb_yQKB428ey2P10y4MWpSdeg&s',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20Football%20GameBreaker%20(USA).pdf',
     },
     'SCUS94557': {
@@ -12266,6 +12299,7 @@ games = {
     	'id': 'SCUS94557',
 	'title': "NCAA GAMEBREAKER 2000",
         'pic0': 'https://images.launchbox-app.com/b63915ca-b01f-4364-b24c-e361e6074218.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbysz-Y3WejdK1lYHMKzy-2diJyeXK7g7h2iB9CIzD9Z_ebWluWcnyPVc--wgQu0M4N0&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20GameBreaker%202000%20(USA).pdf',
     },
     'SCUS94573': {
@@ -12273,6 +12307,7 @@ games = {
     	'id': 'SCUS94573',
 	'title': "NCAA GAMEBREAKER 2001",
         'pic0': 'https://images.launchbox-app.com/1255ca16-8011-4fa9-bcb2-8112f735d50b.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9OaJGQ7DHHb1vOuSjctFkb3VuRKR9ChI26puoYO1sOsY4nPxqYuIk9gOq3YUMR5fjGY&usqp=CAU',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20GameBreaker%202001%20(USA).pdf',
     },
     'SLUS00526': {
@@ -12280,6 +12315,7 @@ games = {
     	'id': 'SLUS00526',
 	'title': "NCAA MARCH MADNESS '98",
         'pic0': 'https://images.launchbox-app.com/8545ba71-6f50-4d21-a60c-6f591c40d8a4.png',
+        'pic1': 'https://www.ncaa.com/_flysystem/public-s3/styles/small_16x9/public-s3/thumbnails/2023-02/M1K98CCS.JPG?h=5e85e809&itok=vsB1jcEB',
         'manual': 'https://www.videogamemanual.com/ps1/March%20Madness%20\'98%20(USA).pdf',
     },
     'SLUS00805': {
@@ -12287,6 +12323,7 @@ games = {
     	'id': 'SLUS00805',
 	'title': "NCAA MARCH MADNESS '99",
         'pic0': 'https://images.launchbox-app.com/fdaf4cc6-0ea5-4581-b833-f550ca53ccd1.png',
+        'pic1': 'https://www.wruf.com/wp-content/uploads/2024/03/USATSI_22881067-scaled.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20March%20Madness%2099%20(USA).pdf',
     },
     'SLUS01023': {
@@ -12294,6 +12331,7 @@ games = {
     	'id': 'SLUS01023',
 	'title': "NCAA MARCH MADNESS 2000",
         'pic0': 'https://images.launchbox-app.com/2057aa2d-1d94-4412-8691-94909fabbc46.png',
+        'pic1': 'https://i.ytimg.com/vi/Xq3Ycew6B1o/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20March%20Madness%202000%20(USA).pdf',
     },
     'SLUS01320': {
@@ -12301,6 +12339,7 @@ games = {
     	'id': 'SLUS01320',
 	'title': "NCAA MARCH MADNESS 2001",
         'pic0': 'https://images.launchbox-app.com/85c19961-70c8-4b03-a746-76e52d9a5242.png',
+        'pic1': 'https://i.ytimg.com/vi/GvLNsuJwmNM/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/NCAA%20March%20Madness%202001%20(USA).pdf',
     },
     'SLUS00764': {
@@ -16131,6 +16170,7 @@ games = {
     	'id': 'SLUS00935',
 	'title': "THRASHER PRESENTS SKATE & DESTROY",
         'pic0': 'https://images.launchbox-app.com/b4ffceba-5144-42ef-b7a3-06b9eb2cb4d2.png',
+        'pic1': 'https://cdn.myportfolio.com/469e64eb-e0fe-470d-b44e-b7d91aebb9ea/a895623a-4115-495f-a59c-91bed61d28bb_rw_1920.jpg?h=15a0238dc67843a0d081a836cec5a059',
         'manual': 'https://www.videogamemanual.com/ps1/Thrasher%20-%20Skate%20and%20Destroy%20(USA).pdf',
     },
     'SLUS01019': {
@@ -17380,6 +17420,7 @@ games = {
     	'id': 'SLUS01444',
 	'title': "X-BLADEZ - INLINE SKATER",
         'pic0': 'https://images.launchbox-app.com/29eb7c8e-c32f-40dd-82de-f5dbe67d7b4a.png',
+        'pic1': 'https://cdn.skatepro.com/upload/2024/08/fitness_2_5006.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/X-Bladez%20-%20Inline%20Skater%20(USA).pdf',
     },
     'SLUS00141': {
@@ -24855,6 +24896,7 @@ games = {
     	'id': 'SCES00393',
 	'title': "EPIDEMIC",
         'pic0': 'https://images.launchbox-app.com/f382109c-7e01-4f17-9fb0-7954dbe43816.png',
+        'pic1': 'https://images.launchbox-app.com//1fe6d5d1-5379-4068-8779-16eb27b90a0b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=VdSwNPY9iQg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Epidemic%20%28USA%29_jp2.zip',
     },
@@ -25859,6 +25901,7 @@ games = {
     	'id': 'SLES00084',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00125': {
@@ -25866,6 +25909,7 @@ games = {
     	'id': 'SLES00125',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00126': {
@@ -25873,6 +25917,7 @@ games = {
     	'id': 'SLES00126',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00127': {
@@ -25880,6 +25925,7 @@ games = {
     	'id': 'SLES00127',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SLES00128': {
@@ -25887,6 +25933,7 @@ games = {
     	'id': 'SLES00128',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SCES01000': {
@@ -27752,6 +27799,7 @@ games = {
     	'id': 'SLES03133',
 	'title': "MTV SPORTS - SKATEBOARDING FEATURING ANDY MCDONALD",
         'pic0': 'https://images.launchbox-app.com/5f9f1217-f211-4a57-b218-686865af7608.png',
+        'pic1': 'https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/andy-macdonald_542626_wuuafj.jpg',
     },
     'SLES02353': {
         'url': "games/P/M/SLES-02353.html",
@@ -37747,12 +37795,14 @@ games = {
     	'id': 'SLES02340',
 	'title': "THRASHER PRESENTS SKATE & DESTROY",
         'pic0': 'https://images.launchbox-app.com/b4ffceba-5144-42ef-b7a3-06b9eb2cb4d2.png',
+        'pic1': 'https://cdn.myportfolio.com/469e64eb-e0fe-470d-b44e-b7d91aebb9ea/a895623a-4115-495f-a59c-91bed61d28bb_rw_1920.jpg?h=15a0238dc67843a0d081a836cec5a059',
     },
     'SLES02556': {
         'url': "games/P/T/SLES-02556.html",
     	'id': 'SLES02556',
 	'title': "THRASHER PRESENTS SKATE & DESTROY",
         'pic0': 'https://images.launchbox-app.com/b4ffceba-5144-42ef-b7a3-06b9eb2cb4d2.png',
+        'pic1': 'https://cdn.myportfolio.com/469e64eb-e0fe-470d-b44e-b7d91aebb9ea/a895623a-4115-495f-a59c-91bed61d28bb_rw_1920.jpg?h=15a0238dc67843a0d081a836cec5a059',
     },
     'SLES00876': {
         'url': "games/P/T/SLES-00876.html",
@@ -40197,6 +40247,7 @@ games = {
     	'id': 'SLES03815',
 	'title': "X-BLADEZ INLINE SKATER",
         'pic0': 'https://images.launchbox-app.com/29eb7c8e-c32f-40dd-82de-f5dbe67d7b4a.png',
+        'pic1': 'https://cdn.skatepro.com/upload/2024/08/fitness_2_5006.jpg',
     },
     'SLES00054': {
         'url': "games/P/X/SLES-00054.html",
@@ -40220,6 +40271,7 @@ games = {
     	'id': 'SCES01556',
 	'title': "X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
+        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
     },
     'SLES00198': {
         'url': "games/P/X/SLES-00198.html",
@@ -56502,6 +56554,7 @@ games = {
     	'id': 'SLPS00492',
 	'title': "KRAZY IVAN",
         'pic0': 'https://images.launchbox-app.com/f7b0a1a8-8a5c-42dc-9097-df8bde29cc9a.png',
+        'pic1': 'https://cdnb.artstation.com/p/assets/images/images/017/240/305/large/hooman-rax-e1.jpg?1555182490',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Krazy%20Ivan%20%28USA%29_jp2.zip',
     },
     'SCPS10064': {
