@@ -5539,6 +5539,7 @@ games = {
     	'id': 'SCUS94502',
 	'title': "ADIDAS POWER SOCCER",
         'pic0': 'https://images.launchbox-app.com/8a9c8c2f-28b2-4b1a-ae2c-d4174d0014d7.png',
+        'pic1': 'https://upload.wikimedia.org/wikipedia/commons/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg',
         'snd0': 'https://www.youtube.com/watch?v=6A9siaXI3h8&list=PLxDCIWWph9M8cg894qwRSvL2Xx3cMXEKr&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Adidas%20Power%20Soccer%20(USA).pdf',
     },
@@ -5547,6 +5548,7 @@ games = {
     	'id': 'SLUS00547',
 	'title': "ADIDAS POWER SOCCER \'98",
         'pic0': 'https://images.launchbox-app.com/f1d78f9a-06b5-4fb2-a6dc-60e924141df0.png',
+        'pic1': 'https://static01.nyt.com/images/2020/09/25/sports/25soccer-nationalWEB1/merlin_177451008_91c7b66d-3c8a-4963-896e-54280f374b6d-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
         'snd0': 'https://www.youtube.com/watch?v=6A9siaXI3h8&list=PLxDCIWWph9M8cg894qwRSvL2Xx3cMXEKr&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Adidas%20Power%20Soccer%2098%20(USA).pdf',
     },
@@ -15458,6 +15460,7 @@ games = {
     	'id': 'SCUS94607',
 	'title': "TAIL OF THE SUN - WILD, PURE, SIMPLE LIFE",
         'pic0': 'https://images.launchbox-app.com/737e94c9-9e4c-4e33-a0cb-c7d24b1a56e8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_68003b73-8467-4880-9823-134ea89ca779.png',
         'manual': 'https://www.videogamemanual.com/ps1/Tail%20of%20the%20Sun%20(USA).pdf',
         'pspconfig': 'pspconfigs/Tail of the Sun/SCUS-94607.bin',
     },
@@ -15707,6 +15710,7 @@ games = {
     	'id': 'SCUS94906',
 	'title': "THE ADVENTURES OF LOMAX",
         'pic0': 'https://images.launchbox-app.com/cde46971-48ab-467d-9f01-d972e2725e79.png',
+        'pic1': 'https://images.launchbox-app.com//f80d1254-1edc-44e5-b79d-7ea39c4ac1f8.png',
         'manual': 'https://www.videogamemanual.com/ps1/Adventures%20of%20Lomax,%20The%20(USA).pdf',
     },
     'SLUS01475': {
@@ -15714,6 +15718,7 @@ games = {
     	'id': 'SLUS01475',
 	'title': "THE AMAZING VIRTUAL SEA MONKEYS",
         'pic0': 'https://images.launchbox-app.com/964f47fd-84c7-4a89-adf1-e83e6b3110bb.png',
+        'pic1': 'https://images.launchbox-app.com//898874dc-e989-4a18-9cbf-7d549d953269.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Amazing%20Virtual%20Sea-Monkeys,%20The%20(USA).pdf',
     },
     'SLUS01292': {
@@ -15750,6 +15755,7 @@ games = {
     	'id': 'SLUS00317',
 	'title': "THE DIVIDE - ENEMIES WITHIN",
         'pic0': 'https://images.launchbox-app.com/ebad4516-af9e-4174-92dd-7990c51aaed8.png',
+        'pic1': 'https://images.launchbox-app.com//fb7cc0b6-891e-468c-a700-33cc9dee7064.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Divide,%20The%20-%20Enemies%20Within%20(USA).pdf',
     },
     'SLUS00859': {
@@ -15783,6 +15789,7 @@ games = {
     	'id': 'SLUS00064',
 	'title': "THE FINAL ROUND",
         'pic0': 'https://images.launchbox-app.com/a2cb0d2e-8a0b-4abc-a5c1-548a294831ef.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_622e9500-4d78-4306-9709-50820e18f4ff.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Final%20Round,%20The%20(USA).pdf',
     },
     'SLUS00931': {
@@ -15798,6 +15805,7 @@ games = {
     	'id': 'SLUS00769',
 	'title': "THE GAME OF LIFE",
         'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_410387e4-e43b-4fa7-bb6a-208c82741479.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Game%20of%20Life,%20The%20(USA).pdf',
     },
     'SLUS00597': {
@@ -16464,6 +16472,7 @@ games = {
     	'id': 'SLUS01181',
 	'title': "TORNEKO - THE LAST HOPE",
         'pic0': 'https://images.launchbox-app.com/f2277af6-f06d-4955-ad66-c06b3ea72c11.png',
+        'pic1': 'https://images.launchbox-app.com//8385d97c-0ab9-4770-9774-48dd46f5c0f9.jpg',
         'snd0': 'https://www.youtube.com/watch?v=zItQY-Ghknc&list=PLdaHf7eG-NSw6OwSgzZdwJqDTp8aBKld9&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/World%20of%20Dragon%20Warrior%20-%20Torneko%20-%20The%20Last%20Hope%20(USA).pdf',
         'pspconfig': 'pspconfigs/Torneko - The Last Hope/SLUS-01181.bin',
@@ -16489,6 +16498,7 @@ games = {
     	'id': 'SLUS00430',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Treasures%20of%20the%20Deep%20(USA).pdf',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SLUS-00430.bin',
     },
@@ -16772,6 +16782,7 @@ games = {
     	'id': 'SLUS01070',
 	'title': "VANGUARD BANDITS",
         'pic0': 'https://images.launchbox-app.com/b12c52c1-0018-4165-8e58-4ad15b6ce48f.png',
+        'pic1': 'https://psxdatacenter.com/images/hires/U/V/SLUS-01070/SLUS-01070-I-2.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Vanguard%20Bandits%20(USA).pdf',
     },
     'SLUS01109': {
@@ -16798,6 +16809,7 @@ games = {
 	'title': "VIEWPOINT",
         'icon0': 'https://images.launchbox-app.com/5196a69c-b904-4bec-9ee2-b5cac77494d1.png',
         'pic0': 'https://images.launchbox-app.com/c9d427fb-7716-4a10-a4e6-64471ced95f3.png',
+        'pic1': 'https://images.launchbox-app.com//34414654-3674-41d1-818c-0637d20ab57e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Viewpoint%20(LB)%20(USA).pdf',
     },
     'SLUS00510': {
@@ -16919,6 +16931,7 @@ games = {
     	'id': 'SLUS01106',
 	'title': "WALT DISNEY'S WORLD QUEST - MAGICAL RACING TOUR",
         'pic0': 'https://images.launchbox-app.com/07501873-6726-488c-957c-4f18fe29e960.png',
+        'pic1': 'https://images.launchbox-app.com//2423e021-f4cb-456d-9471-7258c46bc97d.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Walt%20Disney%20World%20Quest%20-%20Magical%20Racing%20Tour%20(CE)%20(USA).pdf',
         'pspconfig': 'pspconfigs/Walt Disney World Quest - Magical Racing Tour/SLUS-01106.bin',
     },
@@ -16967,6 +16980,7 @@ games = {
 	'title': "WARHAWK - THE RED MERCURY MISSIONS",
         'icon0': 'https://images.launchbox-app.com/29138a87-d3bd-4c86-941d-89b2eba2e894.jpg',
         'pic0': 'https://images.launchbox-app.com/d3241105-81fe-4d21-8ed6-3b82b4d9d026.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_9eca2806-edfc-46a4-a2b7-35a10e1156b3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Warhawk%20-%20The%20Red%20Mercury%20Missions%20(USA).pdf',
     },
     'SLUS00976': {
@@ -17994,6 +18008,7 @@ games = {
     	'id': 'SLES00189',
 	'title': "ADIDAS POWER SOCCER",
         'pic0': 'https://images.launchbox-app.com/8a9c8c2f-28b2-4b1a-ae2c-d4174d0014d7.png',
+        'pic1': 'https://upload.wikimedia.org/wikipedia/commons/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg',
         'snd0': 'https://www.youtube.com/watch?v=6A9siaXI3h8&list=PLxDCIWWph9M8cg894qwRSvL2Xx3cMXEKr&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Adidas%20Power%20Soccer%20%28USA%29_jp2.zip',
     },
@@ -18002,6 +18017,7 @@ games = {
     	'id': 'SLES00857',
 	'title': "ADIDAS POWER SOCCER 2",
         'pic0': 'https://images.launchbox-app.com/44e43626-5557-431a-95ef-6485a4b97fe1.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY0-hig1fC-7XoqckOnjOfd2Kzi4qvxYsjXA&s',
         'snd0': 'https://www.youtube.com/watch?v=6A9siaXI3h8&list=PLxDCIWWph9M8cg894qwRSvL2Xx3cMXEKr&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Adidas%20Power%20Soccer%20%28USA%29_jp2.zip',
     },
@@ -18010,6 +18026,7 @@ games = {
     	'id': 'SLES01239',
 	'title': "ADIDAS POWER SOCCER '98",
         'pic0': 'https://images.launchbox-app.com/f1d78f9a-06b5-4fb2-a6dc-60e924141df0.png',
+        'pic1': 'https://static01.nyt.com/images/2020/09/25/sports/25soccer-nationalWEB1/merlin_177451008_91c7b66d-3c8a-4963-896e-54280f374b6d-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
         'snd0': 'https://www.youtube.com/watch?v=6A9siaXI3h8&list=PLxDCIWWph9M8cg894qwRSvL2Xx3cMXEKr&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Adidas%20Power%20Soccer%20%28USA%29_jp2.zip',
     },
@@ -18018,6 +18035,7 @@ games = {
     	'id': 'SLES00270',
 	'title': "ADIDAS POWER SOCCER - INTERNATIONAL '97",
         'pic0': 'https://images.launchbox-app.com/5b5b319c-d19f-4703-a028-9a85cbe07f44.png',
+        'pic1': 'https://media.cnn.com/api/v1/images/stellar/prod/ap25120744601184-20250501112206533.jpg?c=original',
     },
     'SLES01875': {
         'url': "games/P/A/SLES-01875.html",
@@ -26409,6 +26427,7 @@ games = {
     	'id': 'SLES00451',
 	'title': "LOMAX",
         'pic0': 'https://images.launchbox-app.com/cde46971-48ab-467d-9f01-d972e2725e79.png',
+        'pic1': 'https://images.launchbox-app.com//f80d1254-1edc-44e5-b79d-7ea39c4ac1f8.png',
     },
     'SLES02694': {
         'url': "games/P/L/SLES-02694.html",
@@ -36805,6 +36824,7 @@ games = {
     	'id': 'SLES03858',
 	'title': "THE AMAZING VIRTUAL SEA MONKEYS",
         'pic0': 'https://images.launchbox-app.com/964f47fd-84c7-4a89-adf1-e83e6b3110bb.png',
+        'pic1': 'https://images.launchbox-app.com//898874dc-e989-4a18-9cbf-7d549d953269.jpg',
     },
     'SLES03163': {
         'url': "games/P/T/SLES-03163.html",
@@ -38513,6 +38533,7 @@ games = {
     	'id': 'SCES00850',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-00850.bin',
     },
@@ -38521,6 +38542,7 @@ games = {
     	'id': 'SCES01070',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01070.bin',
     },
@@ -38529,6 +38551,7 @@ games = {
     	'id': 'SCES01071',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01071.bin',
     },
@@ -38537,6 +38560,7 @@ games = {
     	'id': 'SCES01072',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01072.bin',
     },
@@ -38545,6 +38569,7 @@ games = {
     	'id': 'SCES01073',
 	'title': "TREASURES OF THE DEEP",
         'pic0': 'https://images.launchbox-app.com/3bde6b08-bb06-47a9-b938-470e08456c24.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_39bc97bf-20ba-4224-90dd-b366b60de483.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Treasures%20of%20the%20Deep%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Treasures of the Deep/SCES-01073.bin',
     },
@@ -39075,6 +39100,7 @@ games = {
     	'id': 'SLES00123',
 	'title': "VIEWPOINT",
         'pic0': 'https://images.launchbox-app.com/c9d427fb-7716-4a10-a4e6-64471ced95f3.png',
+        'pic1': 'https://images.launchbox-app.com//34414654-3674-41d1-818c-0637d20ab57e.jpg',
     },
     'SLES01212': {
         'url': "games/P/V/SLES-01212.html",
@@ -39288,6 +39314,7 @@ games = {
     	'id': 'SLES02733',
 	'title': "WALT DISNEY'S WORLD QUEST - MAGICAL RACING TOUR",
         'pic0': 'https://images.launchbox-app.com/07501873-6726-488c-957c-4f18fe29e960.png',
+        'pic1': 'https://images.launchbox-app.com//2423e021-f4cb-456d-9471-7258c46bc97d.jpg',
     },
     'SLES04158': {
         'url': "games/P/W/SLES-04158.html",
@@ -39341,6 +39368,7 @@ games = {
     	'id': 'SCES00062',
 	'title': "WARHAWK - THE RED MERCURY MISSIONS",
         'pic0': 'https://images.launchbox-app.com/d3241105-81fe-4d21-8ed6-3b82b4d9d026.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_9eca2806-edfc-46a4-a2b7-35a10e1156b3.jpg',
     },
     'SLES03247': {
         'url': "games/P/W/SLES-03247.html",
@@ -44138,14 +44166,13 @@ games = {
     	'id': 'SLPS02661',
 	'title': "BRIGANDINE - GRAND EDITION",
         'pic0': 'https://images.launchbox-app.com/0caff446-d46a-47b3-ad2c-03fe7d283656.png',
-        'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
+        'pic1': 'https://images.launchbox-app.com//f80d1254-1edc-44e5-b79d-7ea39c4ac1f8.png',
     },
     'SLPS02662': {
         'url': "games/J/B/SLPS-02661.html",
     	'id': 'SLPS02662',
 	'title': "BRIGANDINE - GRAND EDITION",
         'pic0': 'https://images.launchbox-app.com/0caff446-d46a-47b3-ad2c-03fe7d283656.png',
-        'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
     },
     'SCPS10105': {
         'url': "games/J/B/SCPS-10105.html",
@@ -48174,6 +48201,7 @@ games = {
     	'id': 'SLPM86293',
 	'title': "DRAGON QUEST CHARACTERS - TORUNEKO NO DAIBOUKEN 2 - FUSHIGI NO DUNGEON",
         'pic0': 'https://images.launchbox-app.com/94e29b11-1d41-4251-b176-c345855825e8.png',
+        'pic1': 'https://images.launchbox-app.com//8385d97c-0ab9-4770-9774-48dd46f5c0f9.jpg',
         'pspconfig': 'pspconfigs/Torneko - The Last Hope/SLPM-86293.bin',
     },
     'SLPM86916': {
@@ -48386,6 +48414,7 @@ games = {
     	'id': 'SLPS00155',
 	'title': "DX JINSEI GAME - THE GAME OF LIFE",
         'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_410387e4-e43b-4fa7-bb6a-208c82741479.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Game%20of%20Life%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS91025': {
@@ -48393,6 +48422,7 @@ games = {
     	'id': 'SLPS91025',
 	'title': "DX JINSEI GAME - THE GAME OF LIFE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/6b9e2bb6-e1a2-4275-abf7-7214cfd862f7.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_410387e4-e43b-4fa7-bb6a-208c82741479.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Game%20of%20Life%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLPS00918': {
@@ -57109,6 +57139,7 @@ games = {
     	'id': 'SLPS00987',
 	'title': "LOMAX",
         'pic0': 'https://images.launchbox-app.com/cde46971-48ab-467d-9f01-d972e2725e79.png',
+        'pic1': 'https://images.launchbox-app.com//f80d1254-1edc-44e5-b79d-7ea39c4ac1f8.png',
         'manual': 'https://archive.org/compress/the-adventures-of-lomax-playstation-japanese-manual/formats=JPEG&file=/the-adventures-of-lomax-playstation-japanese-manual.zip',
     },
     'SLPS01787': {
@@ -70964,6 +70995,7 @@ games = {
     	'id': 'SCPS45099',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE",
         'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_68003b73-8467-4880-9823-134ea89ca779.png',
         'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS00330': {
@@ -70971,6 +71003,7 @@ games = {
     	'id': 'SLPS00330',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE",
         'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_68003b73-8467-4880-9823-134ea89ca779.png',
         'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS91034': {
@@ -70978,6 +71011,7 @@ games = {
     	'id': 'SLPS91034',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_68003b73-8467-4880-9823-134ea89ca779.png',
         'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS91411': {
@@ -70985,6 +71019,7 @@ games = {
     	'id': 'SLPS91411',
 	'title': "TAIYOU NO SHIPPO - WILD PURE SIMPLE LIFE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/3574a204-3c00-4a6a-8e0a-0e333ca411aa.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_68003b73-8467-4880-9823-134ea89ca779.png',
         'manual': 'https://psxdatacenter.com/manuals/Taiyou%20no%20Shippo%20(J)%20[SLPS-00330].cbr',
     },
     'SLPS00362': {
