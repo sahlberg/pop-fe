@@ -4355,6 +4355,7 @@ games = {
     	'id': 'SLPS00695',
 	'title': "WWF IN YOUR HOUSE",
         'pic0': 'https://images.launchbox-app.com/7cb7a185-01ac-4cbb-826a-061bfcd1fe13.png',
+        'pic1': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVJyLvjStrX5oYr-49n_5t2LTkQpldhbak81bL-YHdaYfDKsZULcZQ3LxAHxh7FyU89F0u08IJicx7RZsEqM8-pQmXGbyO-K4D1hizDGJuPzM3tHBsAPmkDBYhD6Yp3X-cRusklWwxBQrK/s1600/owenmichaels.jpg',
     },
     'SLPS00223': {
         'url': "games/J/W/SLPS-00223.html",
@@ -4368,12 +4369,14 @@ games = {
     	'id': 'SLPS01063',
 	'title': "X.RACING",
         'pic0': 'https://images.launchbox-app.com/4c129d26-05a5-4999-bf61-d2a66b7d2b30.png',
+        'pic1': 'https://images.launchbox-app.com//40dd623a-af81-44e5-ac4a-aaf7c0615832.jpg',
     },
     'SLPS00766': {
         'url': "games/J/X/SLPS-00766.html",
     	'id': 'SLPS00766',
 	'title': "X2 - NO RELIEF",
         'pic0': 'https://images.launchbox-app.com/54800b61-ff7a-4a7d-be2c-3a9258f020d9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_06ec2c62-4ad9-446d-9b56-53b7727da226.jpg',
     },
     'SLPS00257': {
         'url': "games/J/X/SLPS-00257.html",
@@ -6352,6 +6355,7 @@ games = {
     	'id': 'SLUS00456',
 	'title': "BATTLESTATIONS",
         'pic0': 'https://images.launchbox-app.com/c1bc4c30-ddb7-4a8b-b8fe-00d67f9b89b4.png',
+        'pic1': 'https://images.launchbox-app.com//005a82b5-5e57-49dd-8548-3776ec3ddf8e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Battle%20Stations%20(USA).pdf',
     },
     'SLUS01044': {
@@ -6367,6 +6371,7 @@ games = {
     	'id': 'SLUS01524',
 	'title': "BEAR IN THE BIG BLUE HOUSE",
         'pic0': 'https://images.launchbox-app.com/8170851e-bbed-4dea-a5d7-babf8e8e3db7.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_42b55a4a-848d-4f42-acdd-07535356ddf3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Jim%20Henson\'s%20Bear%20in%20the%20Big%20Blue%20House%20(USA).pdf',
     },
     'SLUS00508': {
@@ -7671,6 +7676,7 @@ games = {
     	'id': 'SLUS00799',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Crusaders%20of%20Might%20and%20Magic%20(USA).pdf',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (USA)/SLUS-00799.bin',
     },
@@ -8164,6 +8170,7 @@ games = {
     	'id': 'SCUS94636',
 	'title': "DISNEY'S ATLANTIS - THE LOST EMPIRE",
         'pic0': 'https://images.launchbox-app.com/4ef79353-1dff-411c-93de-bf9f6d3f5da5.png',
+        'pic1': 'https://images.launchbox-app.com//eaeeb7ce-4914-494a-97b4-9a135daf2daf.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Atlantis%20-%20The%20Lost%20Empire%20(USA).pdf',
     },
     'SLUS01167': {
@@ -8171,6 +8178,7 @@ games = {
     	'id': 'SLUS01167',
 	'title': "DISNEY'S DINOSAUR",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Disney\'s%20Dinosaur%20(USA).pdf',
     },
     'SLUS01242': {
@@ -8818,6 +8826,7 @@ games = {
     	'id': 'SLUS00541',
 	'title': "EXCALIBUR 2555 A.D.",
         'pic0': 'https://images.launchbox-app.com/c1b58241-9a6c-4e56-8b0a-f73fc67a3270.png',
+        'pic1': 'https://images.launchbox-app.com//7707744f-4e53-44d8-93fb-cade809275ff.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Excalibur%202555%20A.D.%20(USA).pdf',
     },
     'SLUS01075': {
@@ -8850,6 +8859,7 @@ games = {
     	'id': 'SLUS01120',
 	'title': "F1 2000",
         'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cfec04f5-1dd2-4649-a599-da2508134075.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/F1%202000%20(USA).pdf',
     },
     'SLUS01290': {
@@ -8873,6 +8883,7 @@ games = {
     	'id': 'SLUS01036',
 	'title': "F1 WORLD GRAND PRIX - 1999 SEASON",
         'pic0': 'https://images.launchbox-app.com/76b01371-77ad-4173-a997-e0f589ffc9bf.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_15f211c6-a22f-4c81-833e-a391342937a0.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/F1%20World%20Grand%20Prix%20-%201999%20Season%20(USA).pdf',
     },
     'SLUS01344': {
@@ -8880,6 +8891,7 @@ games = {
     	'id': 'SLUS01344',
 	'title': "F1 WORLD GRAND PRIX 2000",
         'pic0': 'https://images.launchbox-app.com/9ad3d474-3084-41c7-a987-52d861b903d8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_18c33d76-bac4-4add-8547-85cfc3d57a46.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/F1%20World%20Grand%20Prix%20(USA).pdf',
     },
     'SLUS00236': {
@@ -8903,6 +8915,7 @@ games = {
     	'id': 'SLUS01171',
 	'title': "FAMILY FEUD",
         'pic0': 'https://images.launchbox-app.com/d17877d7-2bde-413d-a77f-b79d44cde17e.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_882c9ca0-3789-44c5-b3ca-19afdc4a2799.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Family%20Feud%20(USA).pdf',
     },
     'SLUS01049': {
@@ -9036,6 +9049,7 @@ games = {
     	'id': 'SLUS00782',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%2099%20(USA).pdf',
     },
     'SLUS00994': {
@@ -9043,6 +9057,7 @@ games = {
     	'id': 'SLUS00994',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%202000%20-%20Major%20League%20Soccer%20(USA).pdf',
     },
     'SLUS01262': {
@@ -9050,6 +9065,7 @@ games = {
     	'id': 'SLUS01262',
 	'title': "FIFA 2001 - MAJOR LEAGUE SOCCER",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%202001%20(USA).pdf',
     },
     'SLUS01408': {
@@ -9057,6 +9073,7 @@ games = {
     	'id': 'SLUS01408',
 	'title': "FIFA 2002 - MAJOR LEAGUE SOCCER",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202002%20(USA).pdf',
     },
     'SLUS00520': {
@@ -9073,6 +9090,7 @@ games = {
     	'id': 'SLUS00038',
 	'title': "FIFA SOCCER '96",
         'pic0': 'https://images.launchbox-app.com/3fa7b707-6181-48e9-9159-f62ab17dbcb8.png',
+        'pic1': 'https://www.fcbarcelona.com/fcbarcelona/photo/2021/10/11/2f95a764-2a05-402d-85b8-cd71af3d3247/mini_12-10-96-Gol-Ronaldo-11.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%2096%20(LB)%20(USA).pdf',
     },
     'SLUS00269': {
@@ -9080,6 +9098,7 @@ games = {
     	'id': 'SLUS00269',
 	'title': "FIFA SOCCER '97",
         'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDUpt7FSh99p6v_P-BeFcVMK0mW_Jlb4Pmw&s',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%2097%20(USA).pdf',
     },
     'SLUS01504': {
@@ -9087,6 +9106,7 @@ games = {
     	'id': 'SLUS01504',
 	'title': "FIFA SOCCER 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202003%20(USA).pdf',
     },
     'SLUS01578': {
@@ -9094,6 +9114,7 @@ games = {
     	'id': 'SLUS01578',
 	'title': "FIFA SOCCER 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202004%20(USA).pdf',
     },
     'SLUS01585': {
@@ -9101,6 +9122,7 @@ games = {
     	'id': 'SLUS01585',
 	'title': "FIFA SOCCER 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://www.videogamemanual.com/ps1/FIFA%20Soccer%202005%20(USA).pdf',
     },
     'SLUS00641': {
@@ -9405,6 +9427,7 @@ games = {
     	'id': 'SLUS00101',
 	'title': "FOX HUNT",
         'pic0': 'https://images.launchbox-app.com/c212508f-6248-40c0-98ff-e248e7177917.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_a79e12df-d1b6-481c-8e60-218f40a0b5ac.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Fox%20Hunt%20(USA).pdf',
     },
     'SLUS00175': {
@@ -9412,6 +9435,7 @@ games = {
     	'id': 'SLUS00175',
 	'title': "FOX HUNT",
         'pic0': 'https://images.launchbox-app.com/c212508f-6248-40c0-98ff-e248e7177917.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_a79e12df-d1b6-481c-8e60-218f40a0b5ac.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Fox%20Hunt%20(USA).pdf',
     },
     'SLUS00176': {
@@ -9419,6 +9443,7 @@ games = {
     	'id': 'SLUS00176',
 	'title': "FOX HUNT",
         'pic0': 'https://images.launchbox-app.com/c212508f-6248-40c0-98ff-e248e7177917.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_a79e12df-d1b6-481c-8e60-218f40a0b5ac.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Fox%20Hunt%20(USA).pdf',
     },
     'SLUS00636': {
@@ -9426,6 +9451,7 @@ games = {
     	'id': 'SLUS00636',
 	'title': "FOX SPORTS GOLF '99",
         'pic0': 'https://images.launchbox-app.com/b5ddf2c5-6061-47b2-9519-79410d0bdacb.png',
+        'pic1': 'https://ftw.usatoday.com/gcdn/authoring/images/smg/2025/03/06/SFTW/81793581007-90-745123.jpeg?crop=999,563,x0,y38&width=999&height=499&format=pjpg&auto=webp',
         'manual': 'https://www.videogamemanual.com/ps1/Fox%20Sports%20Golf%20\'99%20(USA).pdf',
     },
     'SLUS00925': {
@@ -9433,6 +9459,7 @@ games = {
     	'id': 'SLUS00925',
 	'title': "FOX SPORTS NHL CHAMPIONSHIP 2000",
         'pic0': 'https://images.launchbox-app.com/a7be1bce-de76-4d25-adc1-7d37c52c3a1f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXvN_4GQHI3AEkaJkMd6IHPBx-JeGf2aixQ&s',
         'manual': 'https://www.videogamemanual.com/ps1/NHL%20Championship%202000%20(USA).pdf',
     },
     'SLUS00635': {
@@ -9440,6 +9467,7 @@ games = {
     	'id': 'SLUS00635',
 	'title': "FOX SPORTS SOCCER '99",
         'pic0': 'https://images.launchbox-app.com/b5ddf2c5-6061-47b2-9519-79410d0bdacb.png',
+        'pic1': 'https://static.scientificamerican.com/dam/m/63cd2e34dc7eef7/original/Soccer-player-making-sliding-tackle.jpg?m=1738952525.377&crop=4%3A3%2Csmart&w=1200',
         'manual': 'https://www.videogamemanual.com/ps1/Fox%20Sports%20Soccer%20\'99%20(USA).pdf',
     },
     'SLUS00010': {
@@ -11737,6 +11765,7 @@ games = {
     	'id': 'SCUS94355',
 	'title': "MOTOR TOON GRAND PRIX",
         'pic0': 'https://images.launchbox-app.com/5ed80657-93d4-4bd8-936f-b3425a5cb661.png',
+        'pic1': 'https://images.launchbox-app.com//a08f74bb-5a60-4fdd-bb20-6ad1b5aa3502.png',
         'manual': 'https://www.videogamemanual.com/ps1/Motor%20Toon%20Grand%20Prix%20(USA).pdf',
     },
     'SLUS00717': {
@@ -13170,6 +13199,7 @@ games = {
     	'id': 'SLUS00481',
 	'title': "POINT BLANK",
         'pic0': 'https://images.launchbox-app.com/3551ee41-ac47-4bf1-ab42-ad490ebc59c7.png',
+        'pic1': 'https://images.launchbox-app.com//161cbcff-7f1d-4748-8a2c-7291d667eb47.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Point%20Blank%20(USA).pdf',
     },
     'SLUS00796': {
@@ -13185,6 +13215,7 @@ games = {
     	'id': 'SLUS01354',
 	'title': "POINT BLANK 3",
         'pic0': 'https://images.launchbox-app.com/0c7834d1-2671-4621-a335-b463b360c93d.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_4569b282-5959-40a4-be67-d15ea28153d8.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Point%20Blank%203%20(USA).pdf',
     },
     'SLUS00072': {
@@ -13192,6 +13223,7 @@ games = {
     	'id': 'SLUS00072',
 	'title': "POINT BLANK 3 [SOLD WITH ORANGE GUNCON]",
         'pic0': 'https://images.launchbox-app.com/0c7834d1-2671-4621-a335-b463b360c93d.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_4569b282-5959-40a4-be67-d15ea28153d8.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Point%20Blank%203%20(USA).pdf',
     },
     'SLUS01033': {
@@ -13283,6 +13315,7 @@ games = {
     	'id': 'SLUS01343',
 	'title': "POWER SHOVEL",
         'pic0': 'https://images.launchbox-app.com/b0ecd0e5-147b-49ba-a761-9e8a10720205.png',
+        'pic1': 'https://cdn.britannica.com/19/146319-050-1910622D/power-shovel.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Power%20Shovel%20(USA).pdf',
     },
     'SLUS01196': {
@@ -14183,7 +14216,8 @@ games = {
         'url': "games/U/R/SLUS-00724.html",
     	'id': 'SLUS00724',
 	'title': "ROLL AWAY",
-        'pic0': 'https://images.launchbox-app.com/75229228-ff38-417a-b4fa-0f9592b6c0e1.png',
+        'pic0': None,
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1mBNFXoqdkk8aQ7QJUc3cywodyBATGFntA&s',
         'manual': 'https://www.videogamemanual.com/ps1/Roll%20Away%20(USA).pdf',
         'pspconfig': 'pspconfigs/Roll Away/SLUS-00724.bin',
     },
@@ -17407,6 +17441,7 @@ games = {
     	'id': 'SLUS00587',
 	'title': "WRECKIN' CREW",
         'pic0': 'https://images.launchbox-app.com/f3232b92-0c29-45e5-b6bf-e6a006e83ec2.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1713f301-55be-494a-908d-8e255c653177.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Wreckin%20Crew%20-%20Drive%20Dangerously%20(USA).pdf',
     },
     'SLUS00929': {
@@ -17430,6 +17465,7 @@ games = {
     	'id': 'SLUS00246',
 	'title': "WWF IN YOUR HOUSE",
         'pic0': 'https://images.launchbox-app.com/7cb7a185-01ac-4cbb-826a-061bfcd1fe13.png',
+        'pic1': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVJyLvjStrX5oYr-49n_5t2LTkQpldhbak81bL-YHdaYfDKsZULcZQ3LxAHxh7FyU89F0u08IJicx7RZsEqM8-pQmXGbyO-K4D1hizDGJuPzM3tHBsAPmkDBYhD6Yp3X-cRusklWwxBQrK/s1600/owenmichaels.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/WWF%20In%20Your%20House%20(USA).pdf',
     },
     'SLUS00927': {
@@ -17437,6 +17473,7 @@ games = {
     	'id': 'SLUS00927',
 	'title': "WWF SMACKDOWN!",
         'pic0': 'https://images.launchbox-app.com/5aa07767-6a12-4c41-bddb-ccb0209740b0.png',
+        'pic1': 'https://images.launchbox-app.com//9f96a294-08e6-476b-946e-76c142aaafdc.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/WWF%20SmackDown!%20(USA).pdf',
     },
     'SLUS01234': {
@@ -17444,6 +17481,7 @@ games = {
     	'id': 'SLUS01234',
 	'title': "WWF SMACKDOWN! 2 - KNOW YOUR ROLE",
         'pic0': 'https://images.launchbox-app.com/e6b3b967-e485-471a-91c1-3e84a073a00c.png',
+        'pic1': 'https://images.launchbox-app.com//a9731d26-38ad-4b0b-a944-6bfc498fb3d2.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/WWF%20SmackDown!%202%20-%20Know%20Your%20Role%20(GH)%20(USA).pdf',
     },
     'SLUS00495': {
@@ -17597,28 +17635,32 @@ games = {
         'url': "games/U/Y/SLUS-00716.html",
     	'id': 'SLUS90061',
 	'title': "YOU DON'T KNOW JACK (DEMO)",
-        'pic0': 'https://images.launchbox-app.com/323749a7-c793-445d-9149-849fe511449f.png',
+        'pic0': None,
+        'pic1': 'https://assetsio.gnwcdn.com/601780_622866677759007_841459781_n.png?width=1200&height=600&fit=crop&enable=upscale&auto=webp',
         'manual': 'https://www.videogamemanual.com/ps1/You%20Don\'t%20Know%20Jack%20(USA).pdf',
     },
     'SLUS00716': {
         'url': "games/U/Y/SLUS-00716.html",
     	'id': 'SLUS00716',
 	'title': "YOU DON'T KNOW JACK",
-        'pic0': 'https://images.launchbox-app.com/323749a7-c793-445d-9149-849fe511449f.png',
+        'pic0': None,
+        'pic1': 'https://assetsio.gnwcdn.com/601780_622866677759007_841459781_n.png?width=1200&height=600&fit=crop&enable=upscale&auto=webp',
         'manual': 'https://www.videogamemanual.com/ps1/You%20Don\'t%20Know%20Jack%20(USA).pdf',
     },
     'SLUS00762': {
         'url': "games/U/Y/SLUS-00716.html",
     	'id': 'SLUS00762',
 	'title': "YOU DON'T KNOW JACK",
-        'pic0': 'https://images.launchbox-app.com/323749a7-c793-445d-9149-849fe511449f.png',
+        'pic0': None,
+        'pic1': 'https://assetsio.gnwcdn.com/601780_622866677759007_841459781_n.png?width=1200&height=600&fit=crop&enable=upscale&auto=webp',
         'manual': 'https://www.videogamemanual.com/ps1/You%20Don\'t%20Know%20Jack%20(USA).pdf',
     },
     'SLUS01194': {
         'url': "games/U/Y/SLUS-01194.html",
     	'id': 'SLUS01194',
 	'title': "YOU DON'T KNOW JACK - MOCK 2",
-        'pic0': 'https://images.launchbox-app.com/c21239e5-2e26-4314-a884-f9189229b7fa.png',
+        'pic0': None,
+        'pic1': 'https://i.ytimg.com/vi/JJ8wJCUYQOM/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/You%20Don\'t%20Know%20Jack%20-%20Mock%202%20(USA).pdf',
     },
     'SLUS01411': {
@@ -17644,6 +17686,7 @@ games = {
     	'id': 'SLUS01401',
 	'title': "ZOBOOMAFOO - LEAPIN' LEMURS",
         'pic0': 'https://images.launchbox-app.com/43079c83-06b4-4e18-8990-2c3e5613b370.png',
+        'pic1': 'https://upload.wikimedia.org/wikipedia/en/7/70/Zoboomafoo_logo.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Zoboomafoo%20-%20Leapin\'%20Lemurs!%20(USA).pdf',
     },
     'SLUS00078': {
@@ -19686,6 +19729,7 @@ games = {
     	'id': 'SLES00662',
 	'title': "BATTLESTATIONS",
         'pic0': 'https://images.launchbox-app.com/c1bc4c30-ddb7-4a8b-b8fe-00d67f9b89b4.png',
+        'pic1': 'https://images.launchbox-app.com//005a82b5-5e57-49dd-8548-3776ec3ddf8e.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Battle%20Stations%20%28USA%29_jp2.zip',
     },
     'SLES02977': {
@@ -19711,6 +19755,7 @@ games = {
     	'id': 'SLES03598',
 	'title': "BEAR IN THE BIG BLUE HOUSE",
         'pic0': 'https://images.launchbox-app.com/8170851e-bbed-4dea-a5d7-babf8e8e3db7.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_42b55a4a-848d-4f42-acdd-07535356ddf3.jpg',
     },
     'SLES00709': {
         'url': "games/P/B/SLES-00709.html",
@@ -20710,24 +20755,28 @@ games = {
     	'id': 'SLES03145',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES03146': {
         'url': "games/P/F/SLES-03146.html",
     	'id': 'SLES03146',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES00916': {
         'url': "games/P/F/SLES-00916.html",
     	'id': 'SLES00916',
 	'title': "FIFA - DIE WM-QUALIFIKATION '98",
         'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'pic1': 'https://images.launchbox-app.com/616b03ea-3b9d-4369-889b-29bb2141f5c5.png',
     },
     'SLES00915': {
         'url': "games/P/F/SLES-00915.html",
     	'id': 'SLES00915',
 	'title': "FIFA - EN ROUTE POUR LA COUPE DU MONDE '98",
         'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'pic1': 'https://images.launchbox-app.com/616b03ea-3b9d-4369-889b-29bb2141f5c5.png',
     },
     'SLES00914': {
         'url': "games/P/F/SLES-00914.html",
@@ -20742,6 +20791,7 @@ games = {
     	'id': 'SLES00918',
 	'title': "FIFA - RUMBO AL MUNDIAL '98",
         'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'pic1': 'https://images.launchbox-app.com/616b03ea-3b9d-4369-889b-29bb2141f5c5.png',
         'ps3config': 'ps3configs/FIFA - Road to the World Cup \'98/SLES-00918.BIN',
     },
     'SLES00917': {
@@ -20757,66 +20807,77 @@ games = {
     	'id': 'SLES03666',
 	'title': "FIFA FOOTBALL 2002",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
     },
     'SLES03668': {
         'url': "games/P/F/SLES-03668.html",
     	'id': 'SLES03668',
 	'title': "FIFA FOOTBALL 2002",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
     },
     'SLES03669': {
         'url': "games/P/F/SLES-03669.html",
     	'id': 'SLES03669',
 	'title': "FIFA FOOTBALL 2002",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
     },
     'SLES03671': {
         'url': "games/P/F/SLES-03671.html",
     	'id': 'SLES03671',
 	'title': "FIFA FOOTBALL 2002",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
     },
     'SLES03672': {
         'url': "games/P/F/SLES-03672.html",
     	'id': 'SLES03672',
 	'title': "FIFA FOOTBALL 2002",
         'pic0': 'https://images.launchbox-app.com/d303fc23-162c-420d-8981-a91779809677.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
     },
     'SLES03977': {
         'url': "games/P/F/SLES-03977.html",
     	'id': 'SLES03977',
 	'title': "FIFA FOOTBALL 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
     },
     'SLES03978': {
         'url': "games/P/F/SLES-03978.html",
     	'id': 'SLES03978',
 	'title': "FIFA FOOTBALL 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
     },
     'SLES03979': {
         'url': "games/P/F/SLES-03979.html",
     	'id': 'SLES03979',
 	'title': "FIFA FOOTBALL 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
     },
     'SLES03980': {
         'url': "games/P/F/SLES-03980.html",
     	'id': 'SLES03980',
 	'title': "FIFA FOOTBALL 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
     },
     'SLES03981': {
         'url': "games/P/F/SLES-03981.html",
     	'id': 'SLES03981',
 	'title': "FIFA FOOTBALL 2003",
         'pic0': 'https://images.launchbox-app.com/0bcdd791-f3f8-428e-b5f1-127f1cb77b60.png',
+        'pic1': 'https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2015/07/ronaldinho-barcelona.jpg',
     },
     'SLES04115': {
         'url': "games/P/F/SLES-04115.html",
     	'id': 'SLES04115',
 	'title': "FIFA FOOTBALL 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%20Soccer%202004%20%28USA%29_jp2.zip',
     },
     'SLES04116': {
@@ -20824,6 +20885,7 @@ games = {
     	'id': 'SLES04116',
 	'title': "FIFA FOOTBALL 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%20Soccer%202004%20%28USA%29_jp2.zip',
     },
     'SLES04117': {
@@ -20831,6 +20893,7 @@ games = {
     	'id': 'SLES04117',
 	'title': "FIFA FOOTBALL 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%20Soccer%202004%20%28USA%29_jp2.zip',
     },
     'SLES04118': {
@@ -20838,6 +20901,7 @@ games = {
     	'id': 'SLES04118',
 	'title': "FIFA FOOTBALL 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%20Soccer%202004%20%28USA%29_jp2.zip',
     },
     'SLES04119': {
@@ -20845,6 +20909,7 @@ games = {
     	'id': 'SLES04119',
 	'title': "FIFA FOOTBALL 2004",
         'pic0': 'https://images.launchbox-app.com/6cbb07fc-76a3-4ddf-9dce-8461bcbafc7d.png',
+        'pic1': 'https://i.ytimg.com/vi/ZoNgfjaZBnQ/sddefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%20Soccer%202004%20%28USA%29_jp2.zip',
     },
     'SLES04165': {
@@ -20852,6 +20917,7 @@ games = {
     	'id': 'SLES04165',
 	'title': "FIFA FOOTBALL 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES04166': {
@@ -20859,6 +20925,7 @@ games = {
     	'id': 'SLES04166',
 	'title': "FIFA FOOTBALL 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES04167': {
@@ -20866,6 +20933,7 @@ games = {
     	'id': 'SLES04167',
 	'title': "FIFA FOOTBALL 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES04168': {
@@ -20873,6 +20941,7 @@ games = {
     	'id': 'SLES04168',
 	'title': "FIFA FOOTBALL 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES04169': {
@@ -20880,12 +20949,14 @@ games = {
     	'id': 'SLES04169',
 	'title': "FIFA FOOTBALL 2005",
         'pic0': 'https://images.launchbox-app.com/d7f4e1e3-b712-4cab-aa79-bd850e16265f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREW9FMupgPwBK-5BrTWOvB6iUh1dUUgdMRmg&s',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES03832': {
         'url': "games/P/F/SLES-03832.html",
     	'id': 'SLES03832',
 	'title': "FIFA FUSSBALL WELTMEISTERSCHAFT 2002",
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqUi_AuPSW176g0HOEwtKzHEEidYGCDVavw&s',
         'pic0': 'https://images.launchbox-app.com/f0c40ac4-e030-45c6-9a63-324be7562446.png',
     },
     'SLES00116':       {
@@ -20893,6 +20964,7 @@ games = {
     	'id': 'SLES00116',
 	'title': "FIFA SOCCER '96",
         'pic0': 'https://images.launchbox-app.com/3fa7b707-6181-48e9-9159-f62ab17dbcb8.png',
+        'pic1': 'https://www.fcbarcelona.com/fcbarcelona/photo/2021/10/11/2f95a764-2a05-402d-85b8-cd71af3d3247/mini_12-10-96-Gol-Ronaldo-11.jpg',
         'manual': 'https://psxdatacenter.com/manuals/FIFA%20Football%202005%20[SLES-04169]%20(S).cbr',
     },
     'SLES02515': {
@@ -25054,6 +25126,7 @@ games = {
     	'id': 'SLES00478',
 	'title': "EXCALIBUR 2555 A.D.",
         'pic0': 'https://images.launchbox-app.com/c1b58241-9a6c-4e56-8b0a-f73fc67a3270.png',
+        'pic1': 'https://images.launchbox-app.com//7707744f-4e53-44d8-93fb-cade809275ff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Excalibur%202555%20A.D.%20%28USA%29_jp2.zip',
     },
     'SLES00693': {
@@ -25061,6 +25134,7 @@ games = {
     	'id': 'SLES00693',
 	'title': "EXCALIBUR 2555 A.D.",
         'pic0': 'https://images.launchbox-app.com/c1b58241-9a6c-4e56-8b0a-f73fc67a3270.png',
+        'pic1': 'https://images.launchbox-app.com//7707744f-4e53-44d8-93fb-cade809275ff.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Excalibur%202555%20A.D.%20%28USA%29_jp2.zip',
     },
     'SLES00097': {
@@ -25076,12 +25150,14 @@ games = {
     	'id': 'SLES00716',
 	'title': "EXPLOSIVE RACING",
         'pic0': 'https://images.launchbox-app.com/9bfdc471-8aa6-4cfb-9b5f-8059dce8ce60.png',
+        'pic1': 'https://images.launchbox-app.com//40dd623a-af81-44e5-ac4a-aaf7c0615832.jpg',
     },
     'SLES02220': {
         'url': "games/P/E/SLES-02220.html",
     	'id': 'SLES02220',
 	'title': "EXTREME 500",
         'pic0': 'https://images.launchbox-app.com/94cabe0f-e47f-4186-969a-8fa61c14ff54.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_c256738b-13c2-4cb9-afc7-afc9ec6e8ddc.jpg',
         'pspconfig': 'pspconfigs/Extreme 500/SLES-02220.bin',
     },
     'SLES03990': {
@@ -25114,18 +25190,21 @@ games = {
     	'id': 'SLES02722',
 	'title': "F1 2000",
         'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cfec04f5-1dd2-4649-a599-da2508134075.jpg',
     },
     'SLES02723': {
         'url': "games/P/F/SLES-02723.html",
     	'id': 'SLES02723',
 	'title': "F1 2000",
         'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cfec04f5-1dd2-4649-a599-da2508134075.jpg',
     },
     'SLES02724': {
         'url': "games/P/F/SLES-02724.html",
     	'id': 'SLES02724',
 	'title': "F1 2000",
         'pic0': 'https://images.launchbox-app.com/3d533ba8-2b63-403f-af69-b64beb78c98b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_cfec04f5-1dd2-4649-a599-da2508134075.jpg',
     },
     'SLES03117': {
         'url': "games/P/F/SLES-03117.html",
@@ -25163,24 +25242,28 @@ games = {
     	'id': 'SLES00887',
 	'title': "F1 WORLD GRAND PRIX - 1999 SEASON",
         'pic0': 'https://images.launchbox-app.com/76b01371-77ad-4173-a997-e0f589ffc9bf.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_15f211c6-a22f-4c81-833e-a391342937a0.jpg',
     },
     'SLES03102': {
         'url': "games/P/F/SLES-03102.html",
     	'id': 'SLES03102',
 	'title': "F1 WORLD GRAND PRIX 2000",
         'pic0': 'https://images.launchbox-app.com/9ad3d474-3084-41c7-a987-52d861b903d8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_18c33d76-bac4-4add-8547-85cfc3d57a46.jpg',
     },
     'SLES03345': {
         'url': "games/P/F/SLES-03345.html",
     	'id': 'SLES03345',
 	'title': "F1 WORLD GRAND PRIX 2000",
         'pic0': 'https://images.launchbox-app.com/9ad3d474-3084-41c7-a987-52d861b903d8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_18c33d76-bac4-4add-8547-85cfc3d57a46.jpg',
     },
     'SLES03346': {
         'url': "games/P/F/SLES-03346.html",
     	'id': 'SLES03346',
 	'title': "F1 WORLD GRAND PRIX 2000",
         'pic0': 'https://images.launchbox-app.com/9ad3d474-3084-41c7-a987-52d861b903d8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_18c33d76-bac4-4add-8547-85cfc3d57a46.jpg',
     },
     'SLES00209': {
         'url': "games/P/F/SLES-00209.html",
@@ -25411,24 +25494,28 @@ games = {
     	'id': 'SLES00504',
 	'title': "FIFA '97",
         'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDUpt7FSh99p6v_P-BeFcVMK0mW_Jlb4Pmw&s',
     },
     'SLES00505': {
         'url': "games/P/F/SLES-00505.html",
     	'id': 'SLES00505',
 	'title': "FIFA '97",
         'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDUpt7FSh99p6v_P-BeFcVMK0mW_Jlb4Pmw&s',
     },
     'SLES00506': {
         'url': "games/P/F/SLES-00506.html",
     	'id': 'SLES00506',
 	'title': "FIFA '97",
         'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDUpt7FSh99p6v_P-BeFcVMK0mW_Jlb4Pmw&s',
     },
     'SLES01584': {
         'url': "games/P/F/SLES-01584.html",
     	'id': 'SLES01584',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLES01585': {
@@ -25436,6 +25523,7 @@ games = {
     	'id': 'SLES01585',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLES01586': {
@@ -25443,6 +25531,7 @@ games = {
     	'id': 'SLES01586',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLES01587': {
@@ -25450,6 +25539,7 @@ games = {
     	'id': 'SLES01587',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLES01588': {
@@ -25457,6 +25547,7 @@ games = {
     	'id': 'SLES01588',
 	'title': "FIFA '99",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLES02315': {
@@ -25464,6 +25555,7 @@ games = {
     	'id': 'SLES02315',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02316': {
@@ -25471,6 +25563,7 @@ games = {
     	'id': 'SLES02316',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02317': {
@@ -25478,6 +25571,7 @@ games = {
     	'id': 'SLES02317',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02318': {
@@ -25485,6 +25579,7 @@ games = {
     	'id': 'SLES02318',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02319': {
@@ -25492,6 +25587,7 @@ games = {
     	'id': 'SLES02319',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02320': {
@@ -25499,6 +25595,7 @@ games = {
     	'id': 'SLES02320',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES02321': {
@@ -25506,6 +25603,7 @@ games = {
     	'id': 'SLES02321',
 	'title': "FIFA 2000",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLES03140': {
@@ -25513,30 +25611,35 @@ games = {
     	'id': 'SLES03140',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES03141': {
         'url': "games/P/F/SLES-03141.html",
     	'id': 'SLES03141',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES03142': {
         'url': "games/P/F/SLES-03142.html",
     	'id': 'SLES03142',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES03143': {
         'url': "games/P/F/SLES-03143.html",
     	'id': 'SLES03143',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES03144': {
         'url': "games/P/F/SLES-03144.html",
     	'id': 'SLES03144',
 	'title': "FIFA 2001",
         'pic0': 'https://images.launchbox-app.com/043b7f58-b790-44ea-97fc-d10f906347d3.png',
+        'pic1': 'https://pbs.twimg.com/media/EFslDigWoAAo4Hc.jpg',
     },
     'SLES02916': {
         'url': "games/P/K/SLES-02916.html",
@@ -25995,7 +26098,8 @@ games = {
         'url': "games/P/K/SCES-01000.html",
     	'id': 'SCES01000',
 	'title': "KULA WORLD",
-        'pic0': 'https://images.launchbox-app.com/bceb6d67-bc5a-41e8-9104-08505891e783.png',
+        'pic0': 'https://images.launchbox-app.com//46baa2e4-3176-4cea-a14d-6c11b7439917.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1mBNFXoqdkk8aQ7QJUc3cywodyBATGFntA&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Kula%20World%20%28Europe%29_jp2.zip',
     },
     'SCES00866': {
@@ -29716,6 +29820,7 @@ games = {
     	'id': 'SLES02582',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02582.bin',
     },
@@ -29724,6 +29829,7 @@ games = {
     	'id': 'SLES02583',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02583.bin',
     },
@@ -29732,6 +29838,7 @@ games = {
     	'id': 'SLES02584',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02584.bin',
     },
@@ -29740,6 +29847,7 @@ games = {
     	'id': 'SLES02691',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
          'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02691.bin',
    },
@@ -29748,6 +29856,7 @@ games = {
     	'id': 'SLES02692',
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
+        'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
          'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02692.bin',
     },
@@ -30788,18 +30897,21 @@ games = {
     	'id': 'SCES03533',
 	'title': "DISNEY'S ATLANTIS - THE LOST EMPIRE",
         'pic0': 'https://images.launchbox-app.com/4ef79353-1dff-411c-93de-bf9f6d3f5da5.png',
+        'pic1': 'https://images.launchbox-app.com//eaeeb7ce-4914-494a-97b4-9a135daf2daf.jpg',
     },
     'SCES03534': {
         'url': "games/P/D/SCES-03534.html",
     	'id': 'SCES03534',
 	'title': "DISNEY'S ATLANTIS - THE LOST EMPIRE",
         'pic0': 'https://images.launchbox-app.com/4ef79353-1dff-411c-93de-bf9f6d3f5da5.png',
+        'pic1': 'https://images.launchbox-app.com//eaeeb7ce-4914-494a-97b4-9a135daf2daf.jpg',
     },
     'SCES03540': {
         'url': "games/P/D/SCES-03540.html",
     	'id': 'SCES03540',
 	'title': "DISNEY'S ATLANTIS - THE LOST EMPIRE",
         'pic0': 'https://images.launchbox-app.com/4ef79353-1dff-411c-93de-bf9f6d3f5da5.png',
+        'pic1': 'https://images.launchbox-app.com//eaeeb7ce-4914-494a-97b4-9a135daf2daf.jpg',
     },
     'SCES03235': {
         'url': "games/P/D/SCES-03235.html",
@@ -30839,30 +30951,35 @@ games = {
     	'id': 'SLES02864',
 	'title': "DISNEY'S DINOSAUR",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
     },
     'SLES02891': {
         'url': "games/P/D/SLES-02891.html",
     	'id': 'SLES02891',
 	'title': "DISNEY'S DINOSAURE",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
     },
     'SLES02893': {
         'url': "games/P/D/SLES-02893.html",
     	'id': 'SLES02893',
 	'title': "DISNEY'S DINOSAURI",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
     },
     'SLES02892': {
         'url': "games/P/D/SLES-02892.html",
     	'id': 'SLES02892',
 	'title': "DISNEY'S DINOSAURIER",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
     },
     'SLES02894': {
         'url': "games/P/D/SLES-02894.html",
     	'id': 'SLES02894',
 	'title': "DISNEY'S DINOSAURIO",
         'pic0': 'https://images.launchbox-app.com/c1b3fb14-af57-4038-b14d-9417e4544f40.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3c01500b-6cee-42e3-bdfe-5aacef00b833.jpg',
     },
     'SLES03638': {
         'url': "games/P/D/SLES-03638.html",
@@ -32846,6 +32963,7 @@ games = {
     	'id': 'SCES00886',
 	'title': "POINT BLANK",
         'pic0': 'https://images.launchbox-app.com/3551ee41-ac47-4bf1-ab42-ad490ebc59c7.png',
+        'pic1': 'https://images.launchbox-app.com//161cbcff-7f1d-4748-8a2c-7291d667eb47.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Point%20Blank%20%28USA%29_jp2.zip',
     },
     'SCES02180': {
@@ -32861,6 +32979,7 @@ games = {
     	'id': 'SCES03383',
 	'title': "POINT BLANK 3",
         'pic0': 'https://images.launchbox-app.com/0c7834d1-2671-4621-a335-b463b360c93d.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_4569b282-5959-40a4-be67-d15ea28153d8.jpg',
     },
     'SLES02020': {
         'url': "games/P/P/SLES-02020.html",
@@ -40243,6 +40362,7 @@ games = {
     	'id': 'SLES00489',
 	'title': "WRECKIN' CREW",
         'pic0': 'https://images.launchbox-app.com/f3232b92-0c29-45e5-b6bf-e6a006e83ec2.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1713f301-55be-494a-908d-8e255c653177.jpg',
     },
     'SLES02171': {
         'url': "games/P/W/SLES-02171.html",
@@ -40256,18 +40376,21 @@ games = {
     	'id': 'SLES02170',
 	'title': "WU-TANG - TASTE THE PAIN",
         'pic0': 'https://images.launchbox-app.com/b59cc29d-6523-4267-8e96-67ea8147bcae.png',
+        'pic1': 'https://images.launchbox-app.com//6afdd07c-0e08-40ee-b608-2c0a82ca0f42.jpg',
     },
     'SLES02172': {
         'url': "games/P/W/SLES-02172.html",
     	'id': 'SLES02172',
 	'title': "WU-TANG - TASTE THE PAIN",
         'pic0': 'https://images.launchbox-app.com/b59cc29d-6523-4267-8e96-67ea8147bcae.png',
+        'pic1': 'https://images.launchbox-app.com//6afdd07c-0e08-40ee-b608-2c0a82ca0f42.jpg',
     },
     'SLES02173': {
         'url': "games/P/W/SLES-02173.html",
     	'id': 'SLES02173',
 	'title': "WU-TANG - TASTE THE PAIN",
         'pic0': 'https://images.launchbox-app.com/b59cc29d-6523-4267-8e96-67ea8147bcae.png',
+        'pic1': 'https://images.launchbox-app.com//6afdd07c-0e08-40ee-b608-2c0a82ca0f42.jpg',
     },
     'SLES01980': {
         'url': "games/P/W/SLES-01980.html",
@@ -40290,12 +40413,14 @@ games = {
     	'id': 'SLES00286',
 	'title': "WWF IN YOUR HOUSE",
         'pic0': 'https://images.launchbox-app.com/7cb7a185-01ac-4cbb-826a-061bfcd1fe13.png',
+        'pic1': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVJyLvjStrX5oYr-49n_5t2LTkQpldhbak81bL-YHdaYfDKsZULcZQ3LxAHxh7FyU89F0u08IJicx7RZsEqM8-pQmXGbyO-K4D1hizDGJuPzM3tHBsAPmkDBYhD6Yp3X-cRusklWwxBQrK/s1600/owenmichaels.jpg',
     },
     'SLES02619': {
         'url': "games/P/W/SLES-02619.html",
     	'id': 'SLES02619',
 	'title': "WWF SMACKDOWN!",
         'pic0': 'https://images.launchbox-app.com/5aa07767-6a12-4c41-bddb-ccb0209740b0.png',
+        'pic1': 'https://images.launchbox-app.com//9f96a294-08e6-476b-946e-76c142aaafdc.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%20%28USA%29_jp2.zip',
     },
     'SLES03251': {
@@ -40303,6 +40428,7 @@ games = {
     	'id': 'SLES03251',
 	'title': "WWF SMACKDOWN! 2 - KNOW YOUR ROLE",
         'pic0': 'https://images.launchbox-app.com/e6b3b967-e485-471a-91c1-3e84a073a00c.png',
+        'pic1': 'https://images.launchbox-app.com//a9731d26-38ad-4b0b-a944-6bfc498fb3d2.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WWF%20SmackDown%21%202%20-%20Know%20Your%20Role%20%28USA%29_jp2.zip',
     },
     'SLES00804': {
@@ -40325,6 +40451,7 @@ games = {
     	'id': 'SLES00455',
 	'title': "X2",
         'pic0': 'https://images.launchbox-app.com/54800b61-ff7a-4a7d-be2c-3a9258f020d9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_06ec2c62-4ad9-446d-9b56-53b7727da226.jpg',
     },
     'SLES03433': {
         'url': "games/P/X/SLES-03433.html",
@@ -40520,7 +40647,8 @@ games = {
         'url': "games/P/Y/SLES-03499.html",
     	'id': 'SLES03499',
 	'title': "YOU DON'T KNOW JACK",
-        'pic0': 'https://images.launchbox-app.com/323749a7-c793-445d-9149-849fe511449f.png',
+        'pic0': None,
+        'pic1': 'https://assetsio.gnwcdn.com/601780_622866677759007_841459781_n.png?width=1200&height=600&fit=crop&enable=upscale&auto=webp',
     },
     'SLES01784': {
         'url': "games/P/Y/SLES-01784.html",
@@ -49639,6 +49767,7 @@ games = {
     	'id': 'SLPS02309',
 	'title': "FIFA '99 - EUROPEAN LEAGUE SOCCER",
         'pic0': 'https://images.launchbox-app.com/768056fc-12a3-4ba4-acfb-02890efaf68a.png',
+        'pic1': 'https://i.ytimg.com/vi/8C3we1FSAA0/maxresdefault.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%2099%20%28USA%29_jp2.zip',
     },
     'SLPS02675': {
@@ -49646,6 +49775,7 @@ games = {
     	'id': 'SLPS02675',
 	'title': "FIFA 2000 - EUROPA LEAGUE SOCCER",
         'pic0': 'https://images.launchbox-app.com/cb6ad982-7704-480c-8c20-3407c584a3e2.png',
+        'pic1': 'https://assets.manutd.com/AssetPicker/images/0/0/10/235/715677/GettyImages_790486941672917919005_medium.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/FIFA%202000%20-%20Major%20League%20Soccer%20%28USA%29_jp2.zip',
     },
     'SLPS01383': {
@@ -49667,12 +49797,14 @@ games = {
     	'id': 'SLPS00878',
 	'title': "FIFA SOCCER '97",
         'pic0': 'https://images.launchbox-app.com/99d6baff-1612-4670-8b28-d56d49e408f9.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDUpt7FSh99p6v_P-BeFcVMK0mW_Jlb4Pmw&s',
     },
     'SLPS01719': {
         'url': "games/J/F/SLPS-01719.html",
     	'id': 'SLPS01719',
 	'title': "FIFA WORLD CUP 98 - FRANCE 98 SOUSHUUHEN",
         'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'pic1': 'https://images.launchbox-app.com/616b03ea-3b9d-4369-889b-29bb2141f5c5.png',
     },
     'SLPS00822': {
         'url': "games/J/F/SLPS-00822.html",
@@ -60078,6 +60210,7 @@ games = {
     	'id': 'SCPS10001',
 	'title': "MOTOR TOON GRAND PRIX",
         'pic0': 'https://images.launchbox-app.com/5ed80657-93d4-4bd8-936f-b3425a5cb661.png',
+        'pic1': 'https://images.launchbox-app.com//a08f74bb-5a60-4fdd-bb20-6ad1b5aa3502.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Motor%20Toon%20Grand%20Prix%20%28USA%29_jp2.zip',
     },
     'SCPS10018': {
@@ -63876,6 +64009,7 @@ games = {
     	'id': 'SLPM86629',
 	'title': "POWER SHOVEL NI NOROU!!",
         'pic0': 'https://images.launchbox-app.com/b0ecd0e5-147b-49ba-a761-9e8a10720205.png',
+        'pic1': 'https://cdn.britannica.com/19/146319-050-1910622D/power-shovel.jpg',
     },
     'SLPM86032': {
         'url': "games/J/P/SLPM-86032.html",
@@ -68516,6 +68650,7 @@ games = {
     	'id': 'SLPM87035',
 	'title': "SIMPLE 1500 SERIES VOL.089 - THE POWER SHOVEL - POWER SHOVEL NI NOROU!!",
         'pic0': 'https://images.launchbox-app.com/b0ecd0e5-147b-49ba-a761-9e8a10720205.png',
+        'pic1': 'https://cdn.britannica.com/19/146319-050-1910622D/power-shovel.jpg',
     },
     'SLPM87044': {
         'url': "games/J/S/SLPM-87044.html",
@@ -74646,14 +74781,21 @@ games = {
     'SCUS94472': {
 	'id': 'SCUS94472',
 	'title': 'Slim Jim',
+        'icon0': 'https://images.launchbox-app.com//a24a3266-20f3-450e-b211-b31df650f699.jpg',
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_575d4f95-e9c4-453d-82da-400ce28f4861.png',
+        'pic1': 'https://i.ytimg.com/vi/xkPtAmdWxKY/maxresdefault.jpg',
     },
     'SCUS94176': {
 	'id': 'SCUS94176',
 	'title': 'Jampack Vol. 1',
+        'icon0': 'https://images.launchbox-app.com//d9d34d04-0b9a-4005-aab0-6ca7f472edf1.jpg',
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_3816c053-b1f3-4fa5-a641-d7deab17dfd3.png',
     },
     'SCUS94197': {
 	'id': 'SCUS94197',
 	'title': 'Jampack Vol. 2',
+        'icon0': 'https://images.launchbox-app.com//7c54ed6e-d052-4eb5-a9fa-0cad1288e788.jpg',
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_b9b4dcf1-4864-4d9b-8ce6-c6ab294c9bdb.png',
     },
     'SCUS80115': {
         'id': 'SCUS80115',
