@@ -9323,7 +9323,7 @@ games = {
     	'id': 'SLUS01363',
 	'title': "FINAL FANTASY CHRONICLES",
         'pic0': 'https://images.launchbox-app.com/6d737835-7e0c-4929-96e4-028cb6b76613.png',
-        'pic1': 'https://images.launchbox-app.com/b9e551a9-54d1-41d7-a208-ed8e434064a0.png',
+        'pic1': 'https://images.launchbox-app.com//5b682dba-1a0d-49f3-ab52-30e5b00a7a78.jpg',
         'snd0': 'https://www.youtube.com/watch?v=KI0ggsiNJP4&list=PLOtHyoIBfBLtwThQP3jBIwUr_VBnJ4WmL',
         'manual': 'https://www.videogamemanual.com/ps1/Final%20Fantasy%20Chronicles%20(USA).pdf',
     },
@@ -9374,6 +9374,7 @@ games = {
     	'id': 'SLUS01301',
 	'title': "FORD RACING",
         'pic0': 'https://images.launchbox-app.com/e2500f70-0407-4f6c-987f-fcbbefc9b66d.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_830b9bad-5d95-4085-b0e3-b36443027223.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Ford%20Racing%20(USA).pdf',
     },
     'SLUS01540': {
@@ -9381,6 +9382,7 @@ games = {
     	'id': 'SLUS01540',
 	'title': "FORD TRUCK MANIA",
         'pic0': 'https://images.launchbox-app.com/1c51ea2d-46da-472a-a04c-68b89f0ee609.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7fd7798a-36d0-4153-ac50-aec54bf9621a.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Ford%20Truck%20Mania%20(USA).pdf',
     },
     'SCUS94353': {
@@ -9420,6 +9422,7 @@ games = {
     	'id': 'SLUS01134',
 	'title': "FORMULA ONE 2000",
         'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7c5aa217-d19e-4426-bbb3-d7947288e8c6.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Formula%20One%202000%20(USA).pdf',
     },
     'SLUS00458': {
@@ -10660,6 +10663,7 @@ games = {
 	'title': "KILEAK - THE DNA IMPERATIVE",
         'icon0': 'https://images.launchbox-app.com/433e38e2-b153-491e-82cb-8f9d07b087bc.png',
         'pic0': 'https://images.launchbox-app.com/9bd245c2-1b73-4741-ad9c-d4054c50d987.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_23bb7089-e0ad-4df4-8bfe-2e5de00b347e.png',
         'manual': 'https://www.videogamemanual.com/ps1/Kileak%20-%20The%20DNA%20Imperative%20(LB)%20(USA).pdf',
     },
     'SLUS00938': {
@@ -13408,6 +13412,7 @@ games = {
     	'id': 'SCUS94551',
 	'title': "PROFESSIONAL UNDERGROUND LEAGUE OF PAIN",
         'pic0': 'https://images.launchbox-app.com/6707f9c2-1311-48d0-bb48-0dedd4686fef.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_214d8cfe-0610-4fc6-91be-482ef234b314.png',
         'manual': 'https://www.videogamemanual.com/ps1/Professional%20Underground%20League%20of%20Pain%20(USA).pdf',
     },
     'SCUS94408': {
@@ -14365,6 +14370,7 @@ games = {
     	'id': 'SCUS94272',
 	'title': "RUNNING WILD",
         'pic0': 'https://images.launchbox-app.com/5b2f7ba3-f591-4d33-b9bc-dda51dbb2954.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_30159a66-bea2-4557-869a-2b83e10f9145.png',
         'manual': 'https://www.videogamemanual.com/ps1/Running%20Wild%20(USA).pdf',
     },
     'SCUS94417': {
@@ -14372,6 +14378,7 @@ games = {
     	'id': 'SCUS94417',
 	'title': "RUSH HOUR",
         'pic0': 'https://images.launchbox-app.com/b816ea76-71f3-4621-a5ae-777f2594e480.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_f76b5af2-dd6e-4a49-baf9-e0954582125b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Rush%20Hour%20(USA).pdf',
     },
     'SLUS00828': {
@@ -21760,12 +21767,14 @@ games = {
     	'id': 'SLES03276',
 	'title': "FORD RACING",
         'pic0': 'https://images.launchbox-app.com/e2500f70-0407-4f6c-987f-fcbbefc9b66d.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_830b9bad-5d95-4085-b0e3-b36443027223.jpg',
     },
     'SLES04109': {
         'url': "games/P/F/SLES-04109.html",
     	'id': 'SLES04109',
 	'title': "FORD TRUCK MANIA",
         'pic0': 'https://images.launchbox-app.com/1c51ea2d-46da-472a-a04c-68b89f0ee609.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7fd7798a-36d0-4153-ac50-aec54bf9621a.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ford%20Truck%20Mania%20%28USA%29_jp2.zip',
     },
     'SLES00298': {
@@ -21835,6 +21844,7 @@ games = {
     	'id': 'SCES02777',
 	'title': "FORMULA ONE 2000",
         'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7c5aa217-d19e-4426-bbb3-d7947288e8c6.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Formula%20One%202000%20(E)%20[SCES-02777].cbr',
     },
     'SCES02778': {
@@ -21842,12 +21852,14 @@ games = {
     	'id': 'SCES02778',
 	'title': "FORMULA ONE 2000",
         'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7c5aa217-d19e-4426-bbb3-d7947288e8c6.jpg',
     },
     'SCES02779': {
         'url': "games/P/F/SCES-02779.html",
     	'id': 'SCES02779',
 	'title': "FORMULA ONE 2000",
         'pic0': 'https://images.launchbox-app.com/d7fc5f70-3887-4aeb-bf16-0a4488cb77f8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_7c5aa217-d19e-4426-bbb3-d7947288e8c6.jpg',
     },
     'SCES03404': {
         'url': "games/P/F/SCES-03404.html",
@@ -23994,6 +24006,7 @@ games = {
     	'id': 'SCES00035',
 	'title': "KILEAK - THE BLOOD",
         'pic0': 'https://images.launchbox-app.com/9bd245c2-1b73-4741-ad9c-d4054c50d987.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_23bb7089-e0ad-4df4-8bfe-2e5de00b347e.png',
     },
     'SLES01878': {
         'url': "games/P/K/SLES-01878.html",
@@ -34669,6 +34682,7 @@ games = {
     	'id': 'SCES01630',
 	'title': "RUNNING WILD",
         'pic0': 'https://images.launchbox-app.com/5b2f7ba3-f591-4d33-b9bc-dda51dbb2954.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_30159a66-bea2-4557-869a-2b83e10f9145.png',
     },
     'SLES01080': {
         'url': "games/P/R/SLES-01080.html",
@@ -35494,6 +35508,7 @@ games = {
     	'id': 'SLES00575',
 	'title': "SPEEDSTER",
         'pic0': 'https://images.launchbox-app.com/09258deb-d93e-4293-b19f-aa343dfcaa00.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_f76b5af2-dd6e-4a49-baf9-e0954582125b.jpg',
     },
     'SCES00883': {
         'url': "games/P/S/SCES-00883.html",
@@ -43352,6 +43367,7 @@ games = {
     	'id': 'SLPS01127',
 	'title': "BATTLEROUND USA",
         'pic0': 'https://images.launchbox-app.com/21df18bc-3bcd-4e99-be7e-a080dfb08438.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_c7489b61-539c-4640-a47d-25069fb0f25e.jpg',
     },
     'SCPS10138': {
         'url': "games/J/B/SCPS-10138.html",
@@ -55964,6 +55980,7 @@ games = {
     	'id': 'SLPS00027',
 	'title': "KILEAK - THE BLOOD",
         'pic0': 'https://images.launchbox-app.com/9bd245c2-1b73-4741-ad9c-d4054c50d987.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_23bb7089-e0ad-4df4-8bfe-2e5de00b347e.png',
     },
     'SLPS00170': {
         'url': "games/J/K/SLPS-00170.html",
