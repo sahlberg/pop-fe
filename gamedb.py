@@ -75753,6 +75753,15 @@ games = {
 }
 
 gameid_by_md5sum = {
+    'af159529592fe32dd8d3b2659b7e3adc': { # Brasilian Portuguese translation of Galerians d1
+        'id': 'SLUS00986',
+    },
+    'd2bf56b0510030b2bd464757da5ac9db': { # Brasilian Portuguese translation of Galerians d2
+        'id': 'SLUS01098',
+    },
+    '22ca48283348acb324a7c756af9b8aa9': { # Brasilian Portuguese translation of Galerians d3
+        'id': 'SLUS01099',
+    },
     '7c1b3596b4483b9420b843cbbfbb59b6': {
         'id': 'SLPS01940_ENG_101',
     },
