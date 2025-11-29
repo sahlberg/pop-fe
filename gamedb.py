@@ -5519,6 +5519,7 @@ games = {
     	'id': 'SLUS01470',
 	'title': "ACES OF THE AIR",
         'pic0': 'https://images.launchbox-app.com/c0af77e8-bfc1-4ea4-b792-f0a81df1ef52.png',
+        'pic1': 'https://images.launchbox-app.com//dfa910b1-8dd6-4578-9b6b-569fc927c6e6.jpg',
         'snd0': 'https://www.youtube.com/watch?v=MJiarkxsTBs',
         'pspconfig': 'pspconfigs/Aces of the Air/SLUS-01470.bin',
         'manual': 'https://www.videogamemanual.com/ps1/Aces%20of%20the%20Air%20(USA).pdf',
@@ -5528,6 +5529,7 @@ games = {
     	'id': 'SLUS01248',
 	'title': "ACTION BASS",
         'pic0': 'https://images.launchbox-app.com/8bd7f2e4-9452-4f30-a921-cfa10b432799.png',
+        'pic1': 'https://images.launchbox-app.com//2b477bd5-bd7e-454e-86e0-f1563d4b5e77.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fIJdiWnGLU4',
         'manual': 'https://www.videogamemanual.com/ps1/Action%20Bass%20(USA).pdf',
     },
@@ -6176,6 +6178,7 @@ games = {
     	'id': 'SLUS01567',
 	'title': "BALDIES",
         'pic0': 'https://images.launchbox-app.com/551532c7-998c-4844-bc89-7f53cf6cb6e8.png',
+        'pic1': 'https://images.launchbox-app.com//6ac6b0c6-02f1-4cef-adad-9bef385e6c60.jpg',
         'snd0': 'https://www.youtube.com/watch?v=YD4aqdTM3uM&list=PLUdlcoZWyY8bVJ5n3LEKydBqCsxcKSGn4&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Baldies%20(USA).pdf',
     },
@@ -6207,6 +6210,7 @@ games = {
     	'id': 'SLUS01568',
 	'title': "BALLERBURG - CASTLE CHAOS",
         'pic0': 'https://images.launchbox-app.com/34fa6eba-55c9-4ae6-a7f1-bfbda7ff8b86.png',
+        'pic1': 'https://images.launchbox-app.com//2cedd52c-3290-4584-b190-8c42d4e61893.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Ballerburg%20-%20Castle%20Chaos%20(USA).pdf',
     },
     'SLUS00966': {
@@ -6214,6 +6218,7 @@ games = {
     	'id': 'SLUS00966',
 	'title': "BALLISTIC",
         'pic0': 'https://images.launchbox-app.com/63c43bfd-7c04-47e6-be21-ba80e075811d.png',
+        'pic1': 'https://images.launchbox-app.com//f2b35141-af3e-4b7e-8722-4ee009a22f5c.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Ballistic%20(USA).pdf',
     },
     'SLUS01361': {
@@ -6543,6 +6548,7 @@ games = {
     	'id': 'SLUS01031',
 	'title': "BLASTER MASTER - BLASTING AGAIN",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
+        'pic1': 'https://images.launchbox-app.com//6eb16f6c-3cf1-46cd-93ee-39e7a289a6b3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Blaster%20Master%20-%20Blasting%20Again%20(USA).pdf',
     },
     'SCUS94412': {
@@ -6558,6 +6564,7 @@ games = {
     	'id': 'SLUS00100',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
+        'pic1': 'https://images.launchbox-app.com//ca655b38-569a-44f1-9257-311f2ce95e26.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Blazing%20Dragons%20(USA).pdf',
     },
     'SLUS01496': {
@@ -6639,6 +6646,7 @@ games = {
     	'id': 'SLUS00823',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
+        'pic1': 'https://images.launchbox-app.com//ef5d8177-fc62-4b8e-94c9-7d364a7a29c7.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Bomberman%20Fantasy%20Race%20(USA).pdf',
     },
     'SLUS01189': {
@@ -6646,6 +6654,7 @@ games = {
     	'id': 'SLUS01189',
 	'title': "BOMBERMAN PARTY EDITION",
         'pic0': 'https://images.launchbox-app.com/1de28c55-4ff8-4646-94e3-400d96c578d0.png',
+        'pic1': 'https://images.launchbox-app.com//c73564e7-7b4c-484f-8160-a904360bb964.jpg',
         'snd0': "https://www.youtube.com/watch?v=CtSzGhohR7A&list=PLjyLjyXJQJUPUeEAnIRdBFmWs5gUL9mZy&index=1",
         'manual': 'https://www.videogamemanual.com/ps1/Bomberman%20-%20Party%20Edition%20(USA).pdf',
         'pspconfig': 'pspconfigs/Bomberman/SLUS-01189.bin',
@@ -6655,6 +6664,7 @@ games = {
     	'id': 'SLUS00680',
 	'title': "BOMBERMAN WORLD",
         'pic0': 'https://images.launchbox-app.com/2304bab5-4fcb-4226-999c-9dcd15ab0a47.png',
+        'pic1': 'https://images.launchbox-app.com//8a91a775-747d-428b-a9ef-00f427f4c7f6.jpg',
         'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
         'manual': 'https://www.videogamemanual.com/ps1/Bomberman%20World%20(USA).pdf',
     },
@@ -6858,6 +6868,7 @@ games = {
     	'id': 'SLUS00370',
 	'title': "BUBBLE BOBBLE FEAT. RAINBOW ISLANDS",
         'pic0': 'https://images.launchbox-app.com/e9268ab1-ea0e-4c14-9dad-02e996dcac03.png',
+        'pic1': 'https://images.launchbox-app.com//a037513c-5825-4326-b867-fb35f09f9d1b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Bubble%20Bobble%20also%20featuring%20Rainbow%20Islands%20(USA).pdf',
     },
     'SLUS00110': {
@@ -6873,6 +6884,7 @@ games = {
     	'id': 'SLUS00354',
 	'title': "BUGRIDERS - THE RACE OF KINGS",
         'pic0': 'https://images.launchbox-app.com/581f5523-f8e0-49f4-adf9-e4d1bb4c03ac.png',
+        'pic1': 'https://images.launchbox-app.com//dcf46a1f-4ae4-4718-99ab-837c882c04b3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Bugriders%20-%20The%20Race%20of%20Kings%20(USA).pdf',
         'pspconfig': 'pspconfigs/Bugriders - The Race of Kings/SLUS-00354.bin',
     },
@@ -6899,6 +6911,7 @@ games = {
     	'id': 'SLUS01086',
 	'title': "BUILDER\'S BLOCK",
         'pic0': 'https://images.launchbox-app.com/091cb4f2-eb76-42b7-8e82-a0368589b637.png',
+        'pic1': 'https://images.launchbox-app.com//daa08436-686f-4c4c-b6e2-54e3cb13a1b4.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Builder\'s%20Block%20(USA).pdf',
     },
     'SLUS00324': {
@@ -7626,6 +7639,7 @@ games = {
     	'id': 'SLUS00576',
 	'title': "CRIME KILLER",
         'pic0': 'https://images.launchbox-app.com/8120d67a-c1ad-4175-927e-05043535d3bf.png',
+        'pic1': 'https://images.launchbox-app.com//7c42f7ab-76aa-4111-9ffc-563ab9ab81c6.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Crime%20Killer%20(USA).pdf',
     },
     'SLUS00428': {
@@ -7633,6 +7647,7 @@ games = {
     	'id': 'SLUS00428',
 	'title': "CRITICAL DEPTH",
         'pic0': 'https://images.launchbox-app.com/2603e250-18f8-4018-a0e0-469c1a6767a5.png',
+        'pic1': 'https://images.launchbox-app.com//33a4a037-cc12-4f69-8be9-5bfb17fd9602.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Critical%20Depth%20(USA).pdf',
     },
     'SLUS00046': {
@@ -7641,6 +7656,7 @@ games = {
 	'title': "CRITICOM - CRITICAL COMBAT",
         'icon0': 'https://images.launchbox-app.com/04ce6b74-7603-4964-a07a-a6c4788c87d6.png',
         'pic0': 'https://images.launchbox-app.com/c32a9143-40d7-4ff3-a95d-661e0ed26dd2.png',
+        'pic1': 'https://images.launchbox-app.com//e2e820fa-9281-4b97-8329-781a7473bfa3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Criticom%20(LB)%20(USA).pdf',
     },
     'SLUS00530': {
@@ -7670,6 +7686,7 @@ games = {
     	'id': 'SLUS01342',
 	'title': "CROSSROAD CRISIS",
         'pic0': 'https://images.launchbox-app.com/91df96cd-723b-46ca-826c-02108f871fdd.png',
+        'pic1': 'https://images.launchbox-app.com//54500d06-4624-41f3-a139-b5cdd8b8325e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Crossroad%20Crisis%20(USA).pdf',
     },
     'SLUS00268': {
@@ -7677,7 +7694,10 @@ games = {
     	'id': 'SLUS00268',
 	'title': "CRUSADER - NO REMORSE",
         'pic0': 'https://images.launchbox-app.com/118841fa-2895-4ab5-a7d4-099edcaf6cb4.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/4907e256-9ae6-4ea1-892c-f030e75b32f6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kLIB94Ikb2U&list=PLkog_NvP2P1Ivwh8ofQeytRDJ5akEKagC&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Crusader%20-%20No%20Remorse%20(USA).pdf',
     },
     'SLUS00799': {
@@ -7686,6 +7706,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://www.videogamemanual.com/ps1/Crusaders%20of%20Might%20and%20Magic%20(USA).pdf',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (USA)/SLUS-00799.bin',
     },
@@ -7711,6 +7732,7 @@ games = {
     	'id': 'SLUS00116',
 	'title': "CYBER SPEED",
         'pic0': 'https://images.launchbox-app.com/40472d88-9414-46e3-b1e2-61d53b7c02fa.png',
+        'pic1': 'https://images.launchbox-app.com//a8d9ae50-94b4-4aa6-baf9-ab0ef3ea77d0.png',
         'manual': 'https://www.videogamemanual.com/ps1/CyberSpeed%20(LB)%20(USA).pdf',
     },
     'SLUS00053': {
@@ -7727,6 +7749,7 @@ games = {
     	'id': 'SLUS00008',
 	'title': "CYBER SLED",
         'pic0': 'https://images.launchbox-app.com/437dd21d-3d82-4c9a-ace1-50a698585929.png',
+        'pic1': 'https://images.launchbox-app.com//60c6ef5c-e48d-4e1a-bb07-70cb391fd86d.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/CyberSled%20(LB)%20(USA).pdf',
     },
     'SLUS01004': {
@@ -8540,6 +8563,7 @@ games = {
     	'id': 'SLUS00226',
 	'title': "DRAGONHEART - FIRE & STEEL",
         'pic0': 'https://images.launchbox-app.com/fd144482-65fa-4863-82f2-16cf6661d46c.png',
+        'pic1': 'https://images.launchbox-app.com//ca04554f-118c-4aec-86ed-d3b6327ee1b1.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/DragonHeart%20-%20Fire%20&%20Steel%20(USA).pdf',
     },
     'SLUS01312': {
@@ -12957,6 +12981,7 @@ games = {
     	'id': 'SLUS01399',
 	'title': "PANZER FRONT",
         'pic0': 'https://images.launchbox-app.com/e53dea68-40c8-4a3e-b10e-3c2e8595b59a.png',
+        'pic1': 'https://images.launchbox-app.com//68e65a4c-611a-4481-b22a-7f11d1f72235.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Panzer%20Front%20(USA).pdf',
     },
     'SLUS00132': {
@@ -17665,6 +17690,7 @@ games = {
     	'id': 'SLUS01506',
 	'title': "XS MOTO",
         'pic0': 'https://images.launchbox-app.com/0dfef7bf-2cba-4e82-827f-74dd75f28826.png',
+        'pic1': 'https://i.ytimg.com/vi/bxx1MRWC4HU/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/XS%20Moto%20(USA).pdf',
     },
     'SLUS90061': {
@@ -18029,6 +18055,7 @@ games = {
     	'id': 'SLES03105',
 	'title': "ACTION BASS",
         'pic0': 'https://images.launchbox-app.com/8bd7f2e4-9452-4f30-a921-cfa10b432799.png',
+        'pic1': 'https://images.launchbox-app.com//2b477bd5-bd7e-454e-86e0-f1563d4b5e77.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fIJdiWnGLU4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Action%20Bass%20%28USA%29_jp2.zip',
     },
@@ -19500,6 +19527,7 @@ games = {
     	'id': 'SLES04091',
 	'title': "BALDIES",
         'pic0': 'https://images.launchbox-app.com/551532c7-998c-4844-bc89-7f53cf6cb6e8.png',
+        'pic1': 'https://images.launchbox-app.com//6ac6b0c6-02f1-4cef-adad-9bef385e6c60.jpg',
         'snd0': 'https://www.youtube.com/watch?v=YD4aqdTM3uM&list=PLUdlcoZWyY8bVJ5n3LEKydBqCsxcKSGn4&index=1',
     },
     'SLES00592': {
@@ -19531,18 +19559,21 @@ games = {
     	'id': 'SLES04017',
 	'title': "BALLERBURG - CASTLE CHAOS",
         'pic0': 'https://images.launchbox-app.com/34fa6eba-55c9-4ae6-a7f1-bfbda7ff8b86.png',
+        'pic1': 'https://images.launchbox-app.com//2cedd52c-3290-4584-b190-8c42d4e61893.jpg',
     },
     'SLES04018': {
         'url': "games/P/B/SLES-04018.html",
     	'id': 'SLES04018',
 	'title': "BALLERBURG - CASTLE CHAOS",
         'pic0': 'https://images.launchbox-app.com/34fa6eba-55c9-4ae6-a7f1-bfbda7ff8b86.png',
+        'pic1': 'https://images.launchbox-app.com//2cedd52c-3290-4584-b190-8c42d4e61893.jpg',
     },
     'SLES02701': {
         'url': "games/P/B/SLES-02701.html",
     	'id': 'SLES02701',
 	'title': "BALLISTIC",
         'pic0': 'https://images.launchbox-app.com/63c43bfd-7c04-47e6-be21-ba80e075811d.png',
+        'pic1': 'https://images.launchbox-app.com//f2b35141-af3e-4b7e-8722-4ee009a22f5c.jpg',
     },
     'SLES03693': {
         'url': "games/P/B/SLES-03693.html",
@@ -19959,6 +19990,7 @@ games = {
     	'id': 'SLES02273',
 	'title': "BLASTER MASTER - BLASTING AGAIN",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
+        'pic1': 'https://images.launchbox-app.com//6eb16f6c-3cf1-46cd-93ee-39e7a289a6b3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SCES01224': {
@@ -19993,6 +20025,7 @@ games = {
     	'id': 'SLES00247',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
+        'pic1': 'https://images.launchbox-app.com//ca655b38-569a-44f1-9257-311f2ce95e26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES00305': {
@@ -20000,6 +20033,7 @@ games = {
     	'id': 'SLES00305',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
+        'pic1': 'https://images.launchbox-app.com//ca655b38-569a-44f1-9257-311f2ce95e26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES00306': {
@@ -20007,6 +20041,7 @@ games = {
     	'id': 'SLES00306',
 	'title': "BLAZING DRAGONS",
         'pic0': 'https://images.launchbox-app.com/9017283e-cec8-469c-95c7-684827bcc334.png',
+        'pic1': 'https://images.launchbox-app.com//ca655b38-569a-44f1-9257-311f2ce95e26.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blazing%20Dragons%20%28USA%29_jp2.zip',
     },
     'SLES04067': {
@@ -20129,6 +20164,7 @@ games = {
     	'id': 'SLES01893',
 	'title': "BOMBERMAN",
         'pic0': 'https://images.launchbox-app.com/1cb1895e-36dc-4e1d-b0d7-2b12cf2ff975.png',
+        'pic1': 'https://images.launchbox-app.com//c73564e7-7b4c-484f-8160-a904360bb964.jpg',
         'pspconfig': 'pspconfigs/Bomberman/SLES-01893.bin',
     },
     'SLES01712': {
@@ -20136,6 +20172,7 @@ games = {
     	'id': 'SLES01712',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
+        'pic1': 'https://images.launchbox-app.com//ef5d8177-fc62-4b8e-94c9-7d364a7a29c7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SCES01078': {
@@ -20143,6 +20180,7 @@ games = {
     	'id': 'SCES01078',
 	'title': "BOMBERMAN WORLD",
         'pic0': 'https://images.launchbox-app.com/2304bab5-4fcb-4226-999c-9dcd15ab0a47.png',
+        'pic1': 'https://images.launchbox-app.com//8a91a775-747d-428b-a9ef-00f427f4c7f6.jpg',
         'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20World%20%28USA%29_jp2.zip',
     },
@@ -20362,6 +20400,7 @@ games = {
     	'id': 'SLES00448',
 	'title': "BUBBLE BOBBLE FEATURING RAINBOW ISLANDS",
         'pic0': 'https://images.launchbox-app.com/e9268ab1-ea0e-4c14-9dad-02e996dcac03.png',
+        'pic1': 'https://images.launchbox-app.com//a037513c-5825-4326-b867-fb35f09f9d1b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bubble%20Bobble%20Also%20Featuring%20Rainbow%20Islands%20%28USA%29_jp2.zip',
     },
     'SLES00458': {
@@ -20388,6 +20427,7 @@ games = {
     	'id': 'SLES00875',
 	'title': "BUGRIDERS - THE RACE OF KINGS",
         'pic0': 'https://images.launchbox-app.com/581f5523-f8e0-49f4-adf9-e4d1bb4c03ac.png',
+        'pic1': 'https://images.launchbox-app.com//dcf46a1f-4ae4-4718-99ab-837c882c04b3.jpg',
     },
     'SLES01726': {
         'url': "games/P/B/SLES-01726.html",
@@ -24528,6 +24568,7 @@ games = {
     	'id': 'SLES00300',
 	'title': "DRAGONHEART - FIRE & STEEL",
         'pic0': 'https://images.launchbox-app.com/fd144482-65fa-4863-82f2-16cf6661d46c.png',
+        'pic1': 'https://images.launchbox-app.com//ca04554f-118c-4aec-86ed-d3b6327ee1b1.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Dragonheart%20-%20Fire%20%26%20Steel%20%28USA%29_jp2.zip',
     },
     'SLES03525': {
@@ -26231,6 +26272,7 @@ games = {
     	'id': 'SLES02682',
 	'title': "LANDMAKER",
         'pic0': 'https://images.launchbox-app.com/a5924457-11d9-4689-ac9f-f30cd3667dd1.png',
+        'pic1': 'https://images.launchbox-app.com//daa08436-686f-4c4c-b6e2-54e3cb13a1b4.jpg',
     },
     'SLES03687': {
         'url': "games/P/L/SLES-03687.html",
@@ -29797,6 +29839,7 @@ games = {
     	'id': 'SLES00954',
 	'title': "CRIME KILLER",
         'pic0': 'https://images.launchbox-app.com/8120d67a-c1ad-4175-927e-05043535d3bf.png',
+        'pic1': 'https://images.launchbox-app.com//7c42f7ab-76aa-4111-9ffc-563ab9ab81c6.jpg',
     },
     'SLES02793': {
         'url': "games/P/C/SLES-02793.html",
@@ -29810,12 +29853,14 @@ games = {
     	'id': 'SLES00136',
 	'title': "CRITICAL DEPTH",
         'pic0': 'https://images.launchbox-app.com/2603e250-18f8-4018-a0e0-469c1a6767a5.png',
+        'pic1': 'https://images.launchbox-app.com//33a4a037-cc12-4f69-8be9-5bfb17fd9602.jpg',
     },
     'SLES00196': {
         'url': "games/P/C/SLES-00196.html",
     	'id': 'SLES00196',
 	'title': "CRITICOM - CRITICAL COMBAT",
         'pic0': 'https://images.launchbox-app.com/c32a9143-40d7-4ff3-a95d-661e0ed26dd2.png',
+        'pic1': 'https://images.launchbox-app.com//e2e820fa-9281-4b97-8329-781a7473bfa3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Criticom%20[SLPS-00229]%20(J).cbr',
     },
     'SLES00593': {
@@ -29844,21 +29889,30 @@ games = {
     	'id': 'SLES00587',
 	'title': "CRUSADER - NO REMORSE",
         'pic0': 'https://images.launchbox-app.com/118841fa-2895-4ab5-a7d4-099edcaf6cb4.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/4907e256-9ae6-4ea1-892c-f030e75b32f6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kLIB94Ikb2U&list=PLkog_NvP2P1Ivwh8ofQeytRDJ5akEKagC&index=1',
     },
     'SLES00588': {
         'url': "games/P/C/SLES-00588.html",
     	'id': 'SLES00588',
 	'title': "CRUSADER - NO REMORSE",
         'pic0': 'https://images.launchbox-app.com/118841fa-2895-4ab5-a7d4-099edcaf6cb4.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/4907e256-9ae6-4ea1-892c-f030e75b32f6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kLIB94Ikb2U&list=PLkog_NvP2P1Ivwh8ofQeytRDJ5akEKagC&index=1',
     },
     'SLES00589': {
         'url': "games/P/C/SLES-00589.html",
     	'id': 'SLES00589',
 	'title': "CRUSADER - NO REMORSE",
         'pic0': 'https://images.launchbox-app.com/118841fa-2895-4ab5-a7d4-099edcaf6cb4.png',
+        'pic0-scaling': 0.9,
+        'pic0-offset': (0.1, 0.3),
         'pic1': 'https://images.launchbox-app.com/4907e256-9ae6-4ea1-892c-f030e75b32f6.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=kLIB94Ikb2U&list=PLkog_NvP2P1Ivwh8ofQeytRDJ5akEKagC&index=1',
     },
     'SLES02582': {
         'url': "games/P/C/SLES-02582.html",
@@ -29866,6 +29920,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02582.bin',
     },
@@ -29875,6 +29930,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02583.bin',
     },
@@ -29884,6 +29940,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02584.bin',
     },
@@ -29893,6 +29950,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
          'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02691.bin',
    },
@@ -29902,6 +29960,7 @@ games = {
 	'title': "CRUSADERS OF MIGHT & MAGIC",
         'pic0': 'https://images.launchbox-app.com/7e2787f3-90cf-4d46-b6a4-6bc14967921c.png',
         'pic1': 'https://images.launchbox-app.com//238567d8-71a8-48d3-86bf-cd0b359ebf42.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=UjnaNDuDrsg&list=PLzRlBgivcNA3JRixeUt83sb9m-l6EtChj&index=3',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Crusaders%20of%20Might%20and%20Magic%20%28USA%29_jp2.zip',
          'pspconfig': 'pspconfigs/Crusaders of Might and Magic (Europe)/SLES-02692.bin',
     },
@@ -29951,12 +30010,14 @@ games = {
     	'id': 'SCES00006',
 	'title': "CYBER SLED",
         'pic0': 'https://images.launchbox-app.com/437dd21d-3d82-4c9a-ace1-50a698585929.png',
+        'pic1': 'https://images.launchbox-app.com//60c6ef5c-e48d-4e1a-bb07-70cb391fd86d.jpg',
     },
     'SLES00114': {
         'url': "games/P/C/SLES-00114.html",
     	'id': 'SLES00114',
 	'title': "CYBER SPEED",
         'pic0': 'https://images.launchbox-app.com/40472d88-9414-46e3-b1e2-61d53b7c02fa.png',
+        'pic1': 'https://images.launchbox-app.com//a8d9ae50-94b4-4aa6-baf9-ab0ef3ea77d0.png',
     },
     'SLES00233': {
         'url': "games/P/C/SLES-00233.html",
@@ -32581,6 +32642,7 @@ games = {
     	'id': 'SLES03339',
 	'title': "PANZER FRONT",
         'pic0': 'https://images.launchbox-app.com/e53dea68-40c8-4a3e-b10e-3c2e8595b59a.png',
+        'pic1': 'https://images.launchbox-app.com//68e65a4c-611a-4481-b22a-7f11d1f72235.jpg',
     },
     'SLES00041': {
         'url': "games/P/P/SLES-00041.html",
@@ -40691,6 +40753,7 @@ games = {
     	'id': 'SLES04095',
 	'title': "XS MOTO",
         'pic0': 'https://images.launchbox-app.com/0dfef7bf-2cba-4e82-827f-74dd75f28826.png',
+        'pic1': 'https://i.ytimg.com/vi/bxx1MRWC4HU/maxresdefault.jpg',
     },
     'SLES02272':       {
         'url': "games/P/Y/SLES-02272.html",
@@ -41355,6 +41418,7 @@ games = {
     	'id': 'SLPS02482',
 	'title': "ACTION BASS",
         'pic0': 'https://images.launchbox-app.com/8bd7f2e4-9452-4f30-a921-cfa10b432799.png',
+        'pic1': 'https://images.launchbox-app.com//2b477bd5-bd7e-454e-86e0-f1563d4b5e77.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fIJdiWnGLU4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Action%20Bass%20%28USA%29_jp2.zip',
     },
@@ -41363,6 +41427,7 @@ games = {
     	'id': 'SLPM86927',
 	'title': "ACTION BASS [POKKIRI 1400 SERIES]",
         'pic0': 'https://images.launchbox-app.com/8bd7f2e4-9452-4f30-a921-cfa10b432799.png',
+        'pic1': 'https://images.launchbox-app.com//2b477bd5-bd7e-454e-86e0-f1563d4b5e77.jpg',
         'snd0': 'https://www.youtube.com/watch?v=fIJdiWnGLU4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Action%20Bass%20%28USA%29_jp2.zip',
     },
@@ -43127,6 +43192,7 @@ games = {
     	'id': 'SLPS01074',
 	'title': "BALDY LAND",
         'pic0': 'https://images.launchbox-app.com/734b1340-6f55-4b7b-8017-0d165d650428.jpg',
+        'pic1': 'https://images.launchbox-app.com//6ac6b0c6-02f1-4cef-adad-9bef385e6c60.jpg',
     },
     'SLPS00796': {
         'url': "games/J/B/SLPS-00796.html",
@@ -43885,6 +43951,7 @@ games = {
     	'id': 'SLPS02617',
 	'title': "BLASTER MASTER",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
+        'pic1': 'https://images.launchbox-app.com//6eb16f6c-3cf1-46cd-93ee-39e7a289a6b3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SLPS03269': {
@@ -43892,6 +43959,7 @@ games = {
     	'id': 'SLPS03269',
 	'title': "BLASTER MASTER [VALUE 1500]",
         'pic0': 'https://images.launchbox-app.com/9c18dcfd-a4fc-4f41-a284-50db4419dcd5.png',
+        'pic1': 'https://images.launchbox-app.com//6eb16f6c-3cf1-46cd-93ee-39e7a289a6b3.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Blaster%20Master%20-%20Blasting%20Again%20%28USA%29_jp2.zip',
     },
     'SLPS01209': {
@@ -44163,18 +44231,21 @@ games = {
     	'id': 'SLPS01717',
 	'title': "BOMBERMAN",
         'pic0': 'https://images.launchbox-app.com/1cb1895e-36dc-4e1d-b0d7-2b12cf2ff975.png',
+        'pic1': 'https://images.launchbox-app.com//c73564e7-7b4c-484f-8160-a904360bb964.jpg',
     },
     'SLPM86844': {
         'url': "games/J/B/SLPM-86844.html",
     	'id': 'SLPM86844',
 	'title': "BOMBERMAN [HUDSON THE BEST]",
         'pic0': 'https://images.launchbox-app.com/1cb1895e-36dc-4e1d-b0d7-2b12cf2ff975.png',
+        'pic1': 'https://images.launchbox-app.com//c73564e7-7b4c-484f-8160-a904360bb964.jpg',
     },
     'SLPS01525': {
         'url': "games/J/B/SLPS-01525.html",
     	'id': 'SLPS01525',
 	'title': "BOMBERMAN FANTASY RACE",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
+        'pic1': 'https://images.launchbox-app.com//ef5d8177-fc62-4b8e-94c9-7d364a7a29c7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPS91138': {
@@ -44182,6 +44253,7 @@ games = {
     	'id': 'SLPS91138',
 	'title': "BOMBERMAN FANTASY RACE [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
+        'pic1': 'https://images.launchbox-app.com//ef5d8177-fc62-4b8e-94c9-7d364a7a29c7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPM87102': {
@@ -44189,6 +44261,7 @@ games = {
     	'id': 'SLPM87102',
 	'title': "BOMBERMAN FANTASY RACE [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/819cde45-6f15-4a7d-9dfe-142dd0ee6b7c.png',
+        'pic1': 'https://images.launchbox-app.com//ef5d8177-fc62-4b8e-94c9-7d364a7a29c7.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20Fantasy%20Race%20%28USA%29_jp2.zip',
     },
     'SLPS03002': {
@@ -44228,6 +44301,7 @@ games = {
     	'id': 'SCPS45168',
 	'title': "BOMBERMAN WORLD",
         'pic0': 'https://images.launchbox-app.com/2304bab5-4fcb-4226-999c-9dcd15ab0a47.png',
+        'pic1': 'https://images.launchbox-app.com//8a91a775-747d-428b-a9ef-00f427f4c7f6.jpg',
         'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20World%20%28USA%29_jp2.zip',
     },
@@ -44236,6 +44310,7 @@ games = {
     	'id': 'SLPS01155',
 	'title': "BOMBERMAN WORLD",
         'pic0': 'https://images.launchbox-app.com/2304bab5-4fcb-4226-999c-9dcd15ab0a47.png',
+        'pic1': 'https://images.launchbox-app.com//8a91a775-747d-428b-a9ef-00f427f4c7f6.jpg',
         'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20World%20%28USA%29_jp2.zip',
     },
@@ -44244,6 +44319,7 @@ games = {
     	'id': 'SLPS91149',
 	'title': "BOMBERMAN WORLD [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/2304bab5-4fcb-4226-999c-9dcd15ab0a47.png',
+        'pic1': 'https://images.launchbox-app.com//8a91a775-747d-428b-a9ef-00f427f4c7f6.jpg',
         'snd0': "https://www.youtube.com/watch?v=TA2wDZcjq_I&list=PL7B067F2CB1317513&index=1",
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bomberman%20World%20%28USA%29_jp2.zip',
     },
@@ -45186,12 +45262,14 @@ games = {
         'url': "games/J/C/SLPM-86630.html",
     	'id': 'SLPM86630',
 	'title': "CHIKI CHIKI CHICKEN [SUPERLITE 1500 SERIES]",
+        'pic1': 'https://images.launchbox-app.com//54500d06-4624-41f3-a139-b5cdd8b8325e.jpg',
     },
     'SLPM86845': {
         'url': "games/J/C/SLPM-86845.html",
     	'id': 'SLPM86845',
 	'title': "CHIKI CHIKI MACHINE MOU RACE",
         'pic0': 'https://images.launchbox-app.com/1721ab81-875e-461f-871e-4cf50aa217de.png',
+        'pic1': 'https://images.launchbox-app.com//54500d06-4624-41f3-a139-b5cdd8b8325e.jpg',
     },
     'SLPS02788': {
         'url': "games/J/C/SLPS-02788.html",
@@ -46634,6 +46712,7 @@ games = {
     	'id': 'SLPS00229',
 	'title': "CRITICOM - THE CRITICAL COMBAT",
         'pic0': 'https://images.launchbox-app.com/04b05fb1-5056-4aa8-b74a-eb43be22cf35.png',
+        'pic1': 'https://images.launchbox-app.com//e2e820fa-9281-4b97-8329-781a7473bfa3.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Criticom%20[SLPS-00229]%20(J).cbr',
     },
     'SLPM86310': {
@@ -46764,6 +46843,7 @@ games = {
         'url': "games/J/C/SLPS-00023.html",
     	'id': 'SLPS00023',
 	'title': "CYBER SLED",
+        'pic1': 'https://images.launchbox-app.com//60c6ef5c-e48d-4e1a-bb07-70cb391fd86d.jpg',
         'pic0': 'https://images.launchbox-app.com/437dd21d-3d82-4c9a-ace1-50a698585929.png',
     },
     'SLPS00396': {
@@ -46771,6 +46851,7 @@ games = {
     	'id': 'SLPS00396',
 	'title': "CYBER SPEED - THE FUTURE'S ULTIMATE GRAND PRIX",
         'pic0': 'https://images.launchbox-app.com/40472d88-9414-46e3-b1e2-61d53b7c02fa.png',
+        'pic1': 'https://images.launchbox-app.com//a8d9ae50-94b4-4aa6-baf9-ab0ef3ea77d0.png',
     },
     'SLPS01011': {
         'url': "games/J/C/SLPS-01011.html",
@@ -57139,6 +57220,7 @@ games = {
         'url': "games/J/L/SLPM-86394.html",
     	'id': 'SLPM86394',
 	'title': "LANDMAKER",
+        'pic1': 'https://images.launchbox-app.com//daa08436-686f-4c4c-b6e2-54e3cb13a1b4.jpg',
     },
     'SLPS00897': {
         'url': "games/J/L/SLPS-00897.html",
@@ -62819,12 +62901,14 @@ games = {
     	'id': 'SLPS02503',
 	'title': "PANZER FRONT",
         'pic0': 'https://images.launchbox-app.com/e53dea68-40c8-4a3e-b10e-3c2e8595b59a.png',
+        'pic1': 'https://images.launchbox-app.com//68e65a4c-611a-4481-b22a-7f11d1f72235.jpg',
     },
     'SLPS03345': {
         'url': "games/J/P/SLPS-03345.html",
     	'id': 'SLPS03345',
 	'title': "PANZER FRONT [ENTERBRAIN COLLECTION]",
         'pic0': 'https://images.launchbox-app.com/e53dea68-40c8-4a3e-b10e-3c2e8595b59a.png',
+        'pic1': 'https://images.launchbox-app.com//68e65a4c-611a-4481-b22a-7f11d1f72235.jpg',
     },
     'SLPS03111': {
         'url': "games/J/P/SLPS-03111.html",
@@ -68754,6 +68838,7 @@ games = {
         'url': "games/J/S/SLPM-87070.html",
     	'id': 'SLPM87070',
 	'title': "SIMPLE 1500 SERIES VOL.095 - THE HIKOUKI",
+        'pic1': 'https://images.launchbox-app.com//dfa910b1-8dd6-4578-9b6b-569fc927c6e6.jpg',
     },
     'SLPM87071': {
         'url': "games/J/S/SLPM-87071.html",

@@ -145,6 +145,10 @@ class PopFePs3App:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
         self.init_data()
+        try:
+            self.read_prefs()
+        except:
+            True
 
     def __del__(self):
         global temp_files
@@ -159,7 +163,7 @@ class PopFePs3App:
                 except:
                     True
         temp_files = []  
-        
+
     def init_data(self):
         global temp_files
         if temp_files:
@@ -192,10 +196,6 @@ class PopFePs3App:
         self.pic1_tk = None
         self.preview_tk = None
         self.manual = None
-        self.builder.get_variable('nopstitleimg_variable').set(self.nopstitleimg)
-        self.builder.get_variable('pic1aslogo_variable').set(self.pic1aslogo)
-        self.builder.get_variable('watermark_variable').set(self.watermark)
-        self.builder.get_variable('cdda_variable').set(self.cdda)
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
@@ -220,7 +220,65 @@ class PopFePs3App:
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
         self.builder.get_variable('pic0yoffset_variable').set('')
-        
+
+    def update_prefs(self):
+        with open('pop-fe-psp.config', "w") as f:
+            f.write('%s:%s\n' % ('undither', self.builder.get_variable('psx_undither_variable').get()))
+            f.write('%s:%s\n' % ('pic1aslogo', self.builder.get_variable('pic1aslogo_variable').get()))
+            f.write('%s:%s\n' % ('nopstitleimg', self.builder.get_variable('nopstitleimg_variable').get()))
+            f.write('%s:%s\n' % ('watermark', self.builder.get_variable('watermark_variable').get()))
+            f.write('%s:%s\n' % ('cdda', self.builder.get_variable('cdda_variable').get()))
+            f.write('%s:%s\n' % ('force_ntsc', self.builder.get_variable('force_ntsc_variable').get()))
+            f.write('%s:%s\n' % ('pic0_disabled', self.builder.get_variable('pic0_disabled_variable').get()))
+            f.write('%s:%s\n' % ('pic1_disabled', self.builder.get_variable('pic1_disabled_variable').get()))
+            f.write('%s:%s\n' % ('snd0_disabled', self.builder.get_variable('snd0_disabled_variable').get()))
+            f.write('%s:%s\n' % ('dir', self.builder.get_variable('pkgdir_variable').get()))
+            if self.path_dir:
+                f.write('%s:%s\n' % ('path', self.path_dir))
+
+
+    def read_prefs(self):
+        with open('pop-fe-psp.config', "r") as f:
+            for x in f.read().splitlines():
+                key, val =  x.split(':')
+                if key == 'undither':
+                    self.builder.get_variable('psx_undither_variable').set(val)
+                if key == 'pic1aslogo':
+                    self.builder.get_variable('pic1aslogo_variable').set(val)
+                    self.pic1aslogo = val
+                if key == 'nopstitleimg':
+                    self.builder.get_variable('nopstitleimg_variable').set(val)
+                    self.nopstitleimg = val
+                if key == 'watermark':
+                    self.builder.get_variable('watermark_variable').set(val)
+                    self.watermark = val
+                if key == 'cdda':
+                    self.builder.get_variable('cdda_variable').set(val)
+                    self.cdda = val
+                if key == 'force_ntsc':
+                    self.builder.get_variable('force_ntsc_variable').set(val)
+                if key == 'pic0_disabled':
+                    self.builder.get_variable('pic0_disabled_variable').set(val)
+                    self.disable_pic0 = val
+                if key == 'pic1_disabled':
+                    self.builder.get_variable('pic1_disabled_variable').set(val)
+                    self.disable_pic1 = val
+                if key == 'snd0_disabled':
+                    self.builder.get_variable('snd0_disabled_variable').set(val)
+                    self.disable_snd0 = val
+                if key == 'dir':
+                    self.builder.get_variable('pkgdir_variable').set(val)
+                    self.pkgdir = val
+                if key == 'path':
+                    self.path_dir = val
+                    if self.path_dir:
+                        self.builder.get_object('disc1', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc2', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc3', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc4', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc5', self.master).config(initialdir=self.path_dir)
+
+
     def on_theme_selected(self, event):
         self.master.config(cursor='watch')
         self._theme = self.builder.get_object('theme', self.master).get()
@@ -311,6 +369,9 @@ class PopFePs3App:
         if not len(cue_file):
             return
 
+        self.path_dir = os.path.dirname(cue_file)
+        self.update_prefs()
+
         self.master.config(cursor='watch')
         self.master.update()
         self.cue_file_orig = cue_file
@@ -371,6 +432,8 @@ class PopFePs3App:
             
             self.builder.get_object('disc1', self.master).config(state='disabled')
             self.builder.get_object('disc2', self.master).config(state='normal')
+            if self.path_dir:
+                self.builder.get_object('disc2', self.master).config(initialdir=self.path_dir)
             self.builder.get_object('youtube_button', self.master).config(state='normal')
             self.builder.get_object('create_button', self.master).config(state='normal')
             self.update_preview()
@@ -378,14 +441,20 @@ class PopFePs3App:
             self.builder.get_object('discid2', self.master).config(state='normal')
             self.builder.get_object('disc2', self.master).config(state='disabled')
             self.builder.get_object('disc3', self.master).config(state='normal')
+            if self.path_dir:
+                self.builder.get_object('disc3', self.master).config(initialdir=self.path_dir)
         elif disc == 'd3':
             self.builder.get_object('discid3', self.master).config(state='normal')
             self.builder.get_object('disc3', self.master).config(state='disabled')
             self.builder.get_object('disc4', self.master).config(state='normal')
+            if self.path_dir:
+                self.builder.get_object('disc4', self.master).config(initialdir=self.path_dir)
         elif disc == 'd4':
             self.builder.get_object('discid4', self.master).config(state='normal')
             self.builder.get_object('disc4', self.master).config(state='disabled')
             self.builder.get_object('disc5', self.master).config(state='normal')
+            if self.path_dir:
+                self.builder.get_object('disc5', self.master).config(initialdir=self.path_dir)
         elif disc == 'd5':
             self.builder.get_object('discid5', self.master).config(state='normal')
             self.builder.get_object('disc5', self.master).config(state='disabled')
@@ -408,6 +477,9 @@ class PopFePs3App:
                     return True
 
                 return False
+
+        if not len(self.disc_ids):
+            return
 
         if self.pic0_disabled == 'on':
             _pic0 = None
@@ -448,12 +520,15 @@ class PopFePs3App:
 
     def on_nopstitleimg(self):
         self.nopstitleimg = self.builder.get_variable('nopstitleimg_variable').get()
+        self.update_prefs()
         
     def on_pic1aslogo(self):
         self.pic1aslogo = self.builder.get_variable('pic1aslogo_variable').get()
+        self.update_prefs()
         
     def on_watermark(self):
         self.watermark = self.builder.get_variable('watermark_variable').get()
+        self.update_prefs()
         
     def on_icon0_clicked(self, event):
         filetypes = [
@@ -476,13 +551,16 @@ class PopFePs3App:
     def on_pic0_disabled(self):
         self.pic0_disabled = self.builder.get_variable('pic0_disabled_variable').get()
         self.update_preview()
+        self.update_prefs()
 
     def on_pic1_disabled(self):
         self.pic1_disabled = self.builder.get_variable('pic1_disabled_variable').get()
         self.update_preview()
+        self.update_prefs()
 
     def on_snd0_disabled(self):
         self.snd0_disabled = self.builder.get_variable('snd0_disabled_variable').get()
+        self.update_prefs()
 
     def on_pic0_clicked(self, event):
         filetypes = [
@@ -553,6 +631,7 @@ class PopFePs3App:
             
     def on_dir_changed(self, event):
         self.pkgdir = event.widget.cget('path')
+        self.update_prefs()
 
     def on_youtube_audio(self):
         if not have_pytube:
@@ -644,12 +723,13 @@ class PopFePs3App:
 
     def on_cdda(self):
         self.cdda = self.builder.get_variable('cdda_variable').get()
+        self.update_prefs()
 
     def on_force_ntsc(self):
-        True
+        self.update_prefs()
 
     def on_psx_undither(self):
-        True
+        self.update_prefs()
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
