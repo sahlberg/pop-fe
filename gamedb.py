@@ -5739,6 +5739,7 @@ games = {
     	'id': 'SLUS01488',
 	'title': "AMERICAN POOL",
         'pic0': 'https://images.launchbox-app.com/b1ea6f5a-9ae2-4580-8d21-96c456888fd1.png',
+        'pic1': 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Niels_Feijen_NL.JPG',
         'manual': 'https://www.videogamemanual.com/ps1/American%20Pool%20(USA).pdf',
     },
     'SLUS00264': {
@@ -10360,6 +10361,7 @@ games = {
     	'id': 'SLUS00378',
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
+        'pic1': 'https://images.launchbox-app.com//d64a8bb4-c0c5-4153-8eeb-46e76ad94e4d.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Advanced%20Dungeons%20&%20Dragons%20-%20Iron%20&%20Blood%20-%20Warriors%20of%20Ravenloft%20(USA).pdf',
     },
     'SLUS00212': {
@@ -10367,6 +10369,7 @@ games = {
     	'id': 'SLUS00212',
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
+        'pic1': 'https://images.launchbox-app.com//d64a8bb4-c0c5-4153-8eeb-46e76ad94e4d.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Advanced%20Dungeons%20&%20Dragons%20-%20Iron%20&%20Blood%20-%20Warriors%20of%20Ravenloft%20(USA).pdf',
     },
     'SLUS00235': {
@@ -10392,6 +10395,7 @@ games = {
     	'id': 'SLUS00775',
 	'title': "IRRITATING STICK",
         'pic0': 'https://images.launchbox-app.com/24d8b7db-2490-4270-a2b5-a84c6f245f78.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_efc7221a-9611-4710-8ca1-aab576b2b45e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Irritating%20Stick%20(USA).pdf',
     },
     'SLUS00674': {
@@ -10573,6 +10577,7 @@ games = {
     	'id': 'SLUS00894',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
         'manual': 'https://www.videogamemanual.com/ps1/Juggernaut%20(USA).pdf',
     },
@@ -10581,6 +10586,7 @@ games = {
     	'id': 'SLUS00988',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
         'manual': 'https://www.videogamemanual.com/ps1/Juggernaut%20(USA).pdf',
     },
@@ -10589,6 +10595,7 @@ games = {
     	'id': 'SLUS00989',
 	'title': "JUGGERNAUT",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
         'manual': 'https://www.videogamemanual.com/ps1/Juggernaut%20(USA).pdf',
     },
@@ -12958,6 +12965,7 @@ games = {
     	'id': 'SLUS01389',
 	'title': "PAJAMA SAM - YOU ARE WHAT YOU EAT FROM YOUR HEAD TO YOUR FEET",
         'pic0': 'https://images.launchbox-app.com/738deaf3-f7da-47b1-b881-e52a11647ef7.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202210/0501/eApSgD0frSeyGvCyDrElVpjy.png',
         'manual': 'https://www.videogamemanual.com/ps1/Pajama%20Sam%20-%20You%20Are%20What%20You%20Eat%20from%20Your%20Head%20to%20Your%20Feet%20(USA).pdf',
     },
     'SLUS00232': {
@@ -13287,6 +13295,7 @@ games = {
     	'id': 'SLUS00758',
 	'title': "POOL HUSTLER",
         'pic0': 'https://images.launchbox-app.com/c3e1951e-5a41-4f9c-a0a1-65b8a5cb984e.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-8-QDRGhri4C1ObGh1ADJSzWV8N2qLqh1A&s',
         'manual': 'https://www.videogamemanual.com/ps1/Pool%20Hustler%20(USA).pdf',
     },
     'SLUS00277': {
@@ -15822,8 +15831,9 @@ games = {
     'SLUS00487': {
         'url': "games/U/T/SLUS-00487.html",
     	'id': 'SLUS00487',
-	'title': "TEST DRIVE 4",
+        'title': "TEST DRIVE 4",
         'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'pic1': 'https://www.speedrun.com/static/theme/pr6329r9/background.jpg?v=113dfdc',
         'manual': 'https://www.videogamemanual.com/ps1/Test%20Drive%204%20(USA).pdf',
     },
     'SLUS00610': {
@@ -16151,6 +16161,7 @@ games = {
     	'id': 'SLUS01187',
 	'title': "THE MUMMY",
         'pic0': 'https://images.launchbox-app.com/f4f22f4a-6fc2-4eea-83df-42e64ff193f1.png',
+        'pic1': 'https://s.yimg.com/ny/api/res/1.2/UCIybxaR9aoiNpQ_dGX6Lg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02NDU7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2024-05/39aba650-1f50-11ef-bb35-5959ae798fb4',
         'manual': 'https://www.videogamemanual.com/ps1/Mummy,%20The%20(USA).pdf',
     },
     'SLUS00862': {
@@ -16158,6 +16169,7 @@ games = {
     	'id': 'SLUS00862',
 	'title': "THE NEXT TETRIS",
         'pic0': 'https://images.launchbox-app.com/e7ad893c-9a1d-47b0-af8c-bcbe2f6c24d3.png',
+        'pic1': 'https://www.playnplay.net/wp-content/uploads/2016/07/the-next-tetris-ps1-3-1.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Next%20Tetris,%20The%20(USA).pdf',
     },
     'SLUS01423': {
@@ -16217,6 +16229,7 @@ games = {
     	'id': 'SLUS01413',
 	'title': "THE WEAKEST LINK",
         'pic0': 'https://images.launchbox-app.com/d1637da6-723c-46c5-86e5-4316d6c093b8.png',
+        'pic1': 'https://ntvb.tmsimg.com/assets/p18538206_b_h8_ai.jpg?w=1280&h=720',
         'manual': 'https://www.videogamemanual.com/ps1/Weakest%20Link,%20The%20(USA).pdf',
     },
     'SLUS01128': {
@@ -16643,6 +16656,7 @@ games = {
     	'id': 'SLUS00032',
 	'title': "TOP GUN FIRE AT WILL",
         'pic0': 'https://images.launchbox-app.com/dcb7c975-4807-48d5-a390-077df2149a18.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkunRLAukQO3YLuTbUiJTS7H_HbvZxsDZGw&s',
         'manual': 'https://www.videogamemanual.com/ps1/Top%20Gun%20-%20Fire%20at%20Will!%20(USA).pdf',
     },
     'SLUS01181': {
@@ -17026,6 +17040,7 @@ games = {
     	'id': 'SLUS00034',
 	'title': "VIRTUAL POOL",
         'pic0': 'https://images.launchbox-app.com/484a9c37-2924-447c-a4cb-a81a7b99d938.png',
+        'pic1': 'https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/b7/0ad760a6fd48a7bd45155533cc40715b_1280x720.jpg?t=1699486485',
         'manual': 'https://www.videogamemanual.com/ps1/Virtual%20Pool%20(USA).pdf',
     },
     'SLUS01374': {
@@ -17033,6 +17048,7 @@ games = {
     	'id': 'SLUS01374',
 	'title': "VIRTUAL POOL 3",
         'pic0': 'https://images.launchbox-app.com/753fa0f4-1b86-4735-b357-528c1c0e51e0.png',
+        'pic1': 'https://media.istockphoto.com/id/174903847/photo/eight-ball-corner-pocket.jpg?s=612x612&w=0&k=20&c=Q2zR6sjfODHIXz-pLyNXdzj0tAyS4IgcFVq2nXZOTss=',
         'manual': 'https://www.videogamemanual.com/ps1/Virtual%20Pool%203%20(USA).pdf',
     },
     'SLUS00657': {
@@ -17144,6 +17160,7 @@ games = {
     	'id': 'SLUS00550',
 	'title': "WARHAMMER - DARK OMEN",
         'pic0': 'https://images.launchbox-app.com/07046d44-a449-4268-a5fb-27e204b29c07.png',
+        'pic1': 'https://images.launchbox-app.com//0791f31f-8dff-4564-bd0e-d31879c85c3b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=oW-SjbQwvlg&list=PL720FA12366A94360&index=2',
         'manual': 'https://www.videogamemanual.com/ps1/Warhammer%20-%20Dark%20Omen%20(USA).pdf',
     },
@@ -17152,6 +17169,7 @@ games = {
     	'id': 'SLUS00117',
 	'title': "WARHAMMER - SHADOW OF THE HORNED RAT",
         'pic0': 'https://images.launchbox-app.com/39d04a5a-892e-4118-b365-fd612091280a.png',
+        'pic1': 'https://images.launchbox-app.com//876fe075-5e8b-4776-8626-c24a8319ce4b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=KT-GKRxNRk0&list=PLdPsgzw0nQQnFvIHi0IyVmgHqfEQb0d1G&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Warhammer%20-%20Shadow%20of%20the%20Horned%20Rat%20(USA).pdf',
     },
@@ -17169,6 +17187,7 @@ games = {
     	'id': 'SLUS00976',
 	'title': "WARPATH - JURASSIC PARK",
         'pic0': 'https://images.launchbox-app.com/5057da89-254f-43aa-a675-1adfcfb43f06.png',
+        'snd0': 'https://www.youtube.com/watch?v=IuKljksLJ9g&list=PL3962AA06A383D316&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Warpath%20-%20Jurassic%20Park%20(USA).pdf',
     },
     'SLUS01204': {
@@ -18111,6 +18130,7 @@ games = {
     	'id': 'SLES01647',
 	'title': "ACTUA POOL",
         'pic0': 'https://images.launchbox-app.com/3df5c8d1-b39e-4c87-8332-b5be9e5088de.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTAHi1HkZ-mLXjJIWD4b_l-Mak_ATrcbYRg&s',
     },
     'SLES00014': {
         'url': "games/P/A/SLES-00014.html",
@@ -18665,6 +18685,7 @@ games = {
     	'id': 'SLES04037',
 	'title': "AMERICAN POOL",
         'pic0': 'https://images.launchbox-app.com/b1ea6f5a-9ae2-4580-8d21-96c456888fd1.png',
+        'pic1': 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Niels_Feijen_NL.JPG',
     },
     'SLES02347': {
         'url': "games/P/A/SLES-02347.html",
@@ -18941,6 +18962,7 @@ games = {
     	'id': 'SLES04096',
 	'title': "ARCHER MACLEAN'S 3D POOL",
         'pic0': 'https://images.launchbox-app.com/5e702b82-b8a8-4e5f-b919-f3f672db705c.png',
+        'pic1': 'https://community.thriveglobal.com/wp-content/uploads/2019/07/lifelessonsgameofpool.jpg',
     },
     'SLES00578': {
         'url': "games/P/A/SLES-00578.html",
@@ -23645,6 +23667,7 @@ games = {
     	'id': 'SLES00386',
 	'title': "IRON & BLOOD - WARRIORS OF RAVENLOFT",
         'pic0': 'https://images.launchbox-app.com/c2d5c108-761c-4337-b21e-65a3c64c1683.png',
+        'pic1': 'https://images.launchbox-app.com//d64a8bb4-c0c5-4153-8eeb-46e76ad94e4d.jpg',
     },
     'SLES00281': {
         'url': "games/P/I/SLES-00281.html",
@@ -32620,6 +32643,7 @@ games = {
     	'id': 'SLES03576',
 	'title': "PAJAMA SAM - YOU ARE WHAT YOU EAT FROM YOUR HEAD TO YOUR FEET",
         'pic0': 'https://images.launchbox-app.com/738deaf3-f7da-47b1-b881-e52a11647ef7.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202210/0501/eApSgD0frSeyGvCyDrElVpjy.png',
     },
     'SLES00526': {
         'url': "games/P/P/SLES-00526.html",
@@ -33101,6 +33125,7 @@ games = {
     	'id': 'SLES02697',
 	'title': "POOL ACADEMY",
         'pic0': 'https://images.launchbox-app.com/b966444b-4f24-405a-bab9-10c24e58dd84.png',
+        'pic1': 'https://quedos.com.au/wp-content/uploads/2022/07/father-and-son-playing-billiards.jpg',
         'pspconfig': 'pspconfigs/Pool Academy/SLES-02697.bin',
     },
     'SLES01688': {
@@ -33108,12 +33133,14 @@ games = {
     	'id': 'SLES01688',
 	'title': "POOL HUSTLER",
         'pic0': 'https://images.launchbox-app.com/c3e1951e-5a41-4f9c-a0a1-65b8a5cb984e.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-8-QDRGhri4C1ObGh1ADJSzWV8N2qLqh1A&s',
     },
     'SLES01537': {
         'url': "games/P/P/SLES-01537.html",
     	'id': 'SLES01537',
 	'title': "POOL SHARK",
         'pic0': 'https://images.launchbox-app.com/3df5c8d1-b39e-4c87-8332-b5be9e5088de.png',
+        'pic1': 'https://www.legacybilliards.com/cdn/shop/articles/PoolSharks.jpg?v=1728585992',
     },
     'SLES01971': {
         'url': "games/P/P/SLES-01971.html",
@@ -37150,6 +37177,7 @@ games = {
     	'id': 'SLES00948',
 	'title': "TEST DRIVE 4",
         'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'pic1': 'https://www.speedrun.com/static/theme/pr6329r9/background.jpg?v=113dfdc',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%204%20%28USA%29_jp2.zip',
     },
     'SLES01179': {
@@ -37762,6 +37790,7 @@ games = {
     	'id': 'SLES02973',
 	'title': "THE MUMMY",
         'pic0': 'https://images.launchbox-app.com/f4f22f4a-6fc2-4eea-83df-42e64ff193f1.png',
+        'pic1': 'https://s.yimg.com/ny/api/res/1.2/UCIybxaR9aoiNpQ_dGX6Lg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02NDU7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2024-05/39aba650-1f50-11ef-bb35-5959ae798fb4',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Mummy%2C%20The%20%28USA%29_jp2.zip',
     },
     'SLES01987': {
@@ -37769,6 +37798,7 @@ games = {
     	'id': 'SLES01987',
 	'title': "THE NEXT TETRIS",
         'pic0': 'https://images.launchbox-app.com/e7ad893c-9a1d-47b0-af8c-bcbe2f6c24d3.png',
+        'pic1': 'https://www.playnplay.net/wp-content/uploads/2016/07/the-next-tetris-ps1-3-1.jpg',
     },
     'SLES00749': {
         'url': "games/P/T/SLES-00749.html",
@@ -37853,6 +37883,7 @@ games = {
     	'id': 'SLES03551',
 	'title': "THE WEAKEST LINK",
         'pic0': 'https://images.launchbox-app.com/d1637da6-723c-46c5-86e5-4316d6c093b8.png',
+        'pic1': 'https://ntvb.tmsimg.com/assets/p18538206_b_h8_ai.jpg?w=1280&h=720',
     },
     'SCES01565': {
         'url': "games/P/T/SCES-01565.html",
@@ -38842,6 +38873,7 @@ games = {
     	'id': 'SLES00352',
 	'title': "TOP GUN - FIRE AT WILL",
         'pic0': 'https://images.launchbox-app.com/dcb7c975-4807-48d5-a390-077df2149a18.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkunRLAukQO3YLuTbUiJTS7H_HbvZxsDZGw&s',
     },
     'SLES00307': {
         'url': "games/P/T/SLES-00307.html",
@@ -39557,6 +39589,7 @@ games = {
     	'id': 'SLES00234',
 	'title': "VIRTUAL POOL",
         'pic0': 'https://images.launchbox-app.com/484a9c37-2924-447c-a4cb-a81a7b99d938.png',
+        'pic1': 'https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/b7/0ad760a6fd48a7bd45155533cc40715b_1280x720.jpg?t=1699486485',
     },
     'SLES01317': {
         'url': "games/P/V/SLES-01317.html",
@@ -39737,6 +39770,7 @@ games = {
     	'id': 'SLES01159',
 	'title': "WARHAMMER - DARK OMEN",
         'pic0': 'https://images.launchbox-app.com/07046d44-a449-4268-a5fb-27e204b29c07.png',
+        'pic1': 'https://images.launchbox-app.com//0791f31f-8dff-4564-bd0e-d31879c85c3b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=oW-SjbQwvlg&list=PL720FA12366A94360&index=2',
     },
     'SLES00028': {
@@ -39744,6 +39778,7 @@ games = {
     	'id': 'SLES00028',
 	'title': "WARHAMMER - SHADOW OF THE HORNED RAT",
         'pic0': 'https://images.launchbox-app.com/39d04a5a-892e-4118-b365-fd612091280a.png',
+        'pic1': 'https://images.launchbox-app.com//876fe075-5e8b-4776-8626-c24a8319ce4b.jpg',
         'snd0': 'https://www.youtube.com/watch?v=KT-GKRxNRk0&list=PLdPsgzw0nQQnFvIHi0IyVmgHqfEQb0d1G&index=1',
     },
     'SCES00062': {
@@ -39764,6 +39799,7 @@ games = {
     	'id': 'SLES02253',
 	'title': "WARPATH - JURASSIC PARK",
         'pic0': 'https://images.launchbox-app.com/5057da89-254f-43aa-a675-1adfcfb43f06.png',
+        'snd0': 'https://www.youtube.com/watch?v=IuKljksLJ9g&list=PL3962AA06A383D316&index=1',
     },
     'SLES03263': {
         'url': "games/P/W/SLES-03263.html",
@@ -55025,6 +55061,7 @@ games = {
     	'id': 'SLPS01671',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS01672': {
@@ -55032,6 +55069,7 @@ games = {
     	'id': 'SLPS01672',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS01673': {
@@ -55039,6 +55077,7 @@ games = {
     	'id': 'SLPS01673',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02916': {
@@ -55046,6 +55085,7 @@ games = {
     	'id': 'SLPS02916',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02917': {
@@ -55053,6 +55093,7 @@ games = {
     	'id': 'SLPS02917',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SLPS02918': {
@@ -55060,6 +55101,7 @@ games = {
     	'id': 'SLPS02918',
 	'title': "JUGGERNAUT - SENRITSU NO TOBIRA [BEST PRICE]",
         'pic0': 'https://images.launchbox-app.com/2bb16641-95b0-42c9-aa72-cb836cb75fb9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_6b99589d-7dad-4a73-b7af-56f9b9d867f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=2VHWlkSmJEY&list=PLsK0b2WjpUBcsj2AuzSfNqNe2D7DuxOl9&index=39',
     },
     'SCPD10007': {
@@ -72104,6 +72146,7 @@ games = {
     	'id': 'SLPS01288',
 	'title': "TEST DRIVE 4",
         'pic0': 'https://images.launchbox-app.com/159b4e85-3424-4568-af2f-89f3e96f852e.png',
+        'pic1': 'https://www.speedrun.com/static/theme/pr6329r9/background.jpg?v=113dfdc',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Test%20Drive%204%20%28USA%29_jp2.zip',
     },
     'SLPS01964': {
@@ -72804,12 +72847,14 @@ games = {
     	'id': 'SLPS01774',
 	'title': "THE NEXT TETRIS",
         'pic0': 'https://images.launchbox-app.com/e7ad893c-9a1d-47b0-af8c-bcbe2f6c24d3.png',
+        'pic1': 'https://www.playnplay.net/wp-content/uploads/2016/07/the-next-tetris-ps1-3-1.jpg',
     },
     'SLPS02701': {
         'url': "games/J/T/SLPS-02701.html",
     	'id': 'SLPS02701',
 	'title': "THE NEXT TETRIS [BPS THE CHOICE]",
         'pic0': 'https://images.launchbox-app.com/e7ad893c-9a1d-47b0-af8c-bcbe2f6c24d3.png',
+        'pic1': 'https://www.playnplay.net/wp-content/uploads/2016/07/the-next-tetris-ps1-3-1.jpg',
     },
     'SLPS02507': {
         'url': "games/J/T/SLPS-02507.html",
@@ -74272,6 +74317,7 @@ games = {
     	'id': 'SLPS00665',
 	'title': "TOP GUN - FIRE AT WILL!",
         'pic0': 'https://images.launchbox-app.com/dcb7c975-4807-48d5-a390-077df2149a18.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlkunRLAukQO3YLuTbUiJTS7H_HbvZxsDZGw&s',
     },
     'SLPS00620': {
         'url': "games/J/T/SLPS-00620.html",
@@ -74776,12 +74822,14 @@ games = {
     	'id': 'SCPS45221',
 	'title': "UCCHANNANCHAN NO HONOO NO CHALLENGER - DENRYU IRAIRA-BO RETURNS",
         'pic0': 'https://images.launchbox-app.com/11fcd1af-a84b-47df-9d55-4dac233eb1dc.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_efc7221a-9611-4710-8ca1-aab576b2b45e.jpg',
     },
     'SLPS01317': {
         'url': "games/J/U/SLPS-01317.html",
     	'id': 'SLPS01317',
 	'title': "UCCHANNANCHAN NO HONOO NO CHALLENGER - DENRYU IRAIRA-BO RETURNS",
         'pic0': 'https://images.launchbox-app.com/11fcd1af-a84b-47df-9d55-4dac233eb1dc.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_efc7221a-9611-4710-8ca1-aab576b2b45e.jpg',
     },
     'SLPM86190': {
         'url': "games/J/U/SLPM-86190.html",
