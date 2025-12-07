@@ -3376,6 +3376,7 @@ games = {
     	'id': 'SLPS00892',
 	'title': "VIRTUA BOWLING",
         'pic0': 'https://images.launchbox-app.com/85e0a0a3-ac1c-40db-a0a3-2aa2be170651.png',
+        'pic1': 'https://media.istockphoto.com/id/1370547889/vector/red-bowling-ball-crashing-into-the-pins-on-bowling-alley-line-illustration-of-bowling-strike.jpg?s=612x612&w=0&k=20&c=D9W4v2NbbkEZBy-9YTgP9oi8LWTUl27GJG5pNx1H8F0=',
     },
     'SLPS02896': {
         'url': "games/J/V/SLPS-02896.html",
@@ -3541,6 +3542,7 @@ games = {
     	'id': 'SLPM87225',
 	'title': "WAI WAI BOWLING [MAJOR WAVE SERIES]",
         'pic0': 'https://images.launchbox-app.com/53f740d2-b7eb-49ec-9262-d12d86c08138.png',
+        'pic1': 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/6f/ce/80/cj-s-bowling.jpg?w=900&h=500&s=1',
     },
     'SLPM86544': {
         'url': "games/J/W/SLPM-86544.html",
@@ -3583,6 +3585,7 @@ games = {
     	'id': 'SLPS01166',
 	'title': "WAKU WAKU BOWLING",
         'pic0': 'https://images.launchbox-app.com/cd523364-b399-455f-b1d2-0f704c659a8c.png',
+        'pic1': 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/6f/ce/80/cj-s-bowling.jpg?w=900&h=500&s=1',
     },
     'SLPS01695': {
         'url': "games/J/W/SLPS-01695.html",
@@ -4192,12 +4195,14 @@ games = {
     	'id': 'SLPS01389',
 	'title': "WORLD LEAGUE SOCCER - CHALLENGE NIPPON!",
         'pic0': 'https://images.launchbox-app.com/82268990-b30d-486f-8e0e-0fe7e091304d.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRds7ZUCj8yvIc5KRk73OqO1_sY9qeHP1hiaw&s',
     },
     'SLPS02687': {
         'url': "games/J/W/SLPS-02687.html",
     	'id': 'SLPS02687',
 	'title': "WORLD LEAGUE SOCCER - CHALLENGE NIPPON! [FAMILY PRICE 1500]",
         'pic0': 'https://images.launchbox-app.com/82268990-b30d-486f-8e0e-0fe7e091304d.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRds7ZUCj8yvIc5KRk73OqO1_sY9qeHP1hiaw&s',
     },
     'SLPS01037': {
         'url': "games/J/W/SLPS-01037.html",
@@ -4311,6 +4316,7 @@ games = {
         'url': "games/J/W/SLPS-03398.html",
     	'id': 'SLPS03398',
 	'title': "WORLD TOURNAMENT BOWLING [NICE PRICE VOL.07]",
+        'pic1': 'https://www.datocms-assets.com/88015/1683679234-strike_bowling_alley_carousel.jpg?auto=compress%2Cformat&dpr=1&fit=clip&q=40&w=900',
     },
     'SLPS00547': {
         'url': "games/J/W/SLPS-00547.html",
@@ -4924,24 +4930,28 @@ games = {
     	'id': 'SLPM86398',
 	'title': "YU-GI-OH! - SHIN DUEL MONSTERS",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
     },
     'SLPM86573': {
         'url': "games/J/Y/SLPM-86573.html",
     	'id': 'SLPM86573',
 	'title': "YU-GI-OH! - SHIN DUEL MONSTERS [KONAMI THE BEST]",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
     },
     'SLPM86396': {
         'url': "games/J/Y/SLPM-86396.html",
     	'id': 'SLPM86396',
 	'title': "YU-GI-OH! - SHIN DUEL MONSTERS [LIMITED EDITION]",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
     },
     'SLPM87066': {
         'url': "games/J/Y/SLPM-87066.html",
     	'id': 'SLPM87066',
 	'title': "YU-GI-OH! - SHIN DUEL MONSTERS [PSONE BOOKS]",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
     },
     'SLPM87013': {
         'url': "games/J/Y/SLPM-87013.html",
@@ -5088,12 +5098,14 @@ games = {
     	'id': 'SLPS00909',
 	'title': "ZAP! SNOWBOARDING TRIX '98",
         'pic0': 'https://images.launchbox-app.com/b81c9d7d-6c4e-4af7-bdd5-9187068b3a4a.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEPpCEWIXKVhRJ22lStEiuZg5_3f2siaCfw&s',
     },
     'SLPS03034': {
         'url': "games/J/Z/SLPS-03034.html",
     	'id': 'SLPS03034',
 	'title': "ZAP! SNOWBOARDING TRIX '98 [FUKYUUBAN 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/b81c9d7d-6c4e-4af7-bdd5-9187068b3a4a.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEPpCEWIXKVhRJ22lStEiuZg5_3f2siaCfw&s',
     },
     'SLPS00575': {
         'url': "games/J/Z/SLPS-00575.html",
@@ -6475,6 +6487,7 @@ games = {
     	'id': 'SLUS01478',
 	'title': "BIG STRIKE BOWLING",
         'pic0': 'https://images.launchbox-app.com/20635a4d-a75a-4fff-a14d-73d819858b57.png',
+        'pic1': 'https://superbowl.com.au/melville/wp-content/uploads/2023/11/Learn-to-Bowl.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Big%20Strike%20Bowling%20(USA).pdf',
     },
     'SLUS01289': {
@@ -6703,6 +6716,7 @@ games = {
     	'id': 'SLUS01288',
 	'title': "BOWLING",
         'pic0': 'https://images.launchbox-app.com/78c26ad9-21bc-4890-9ebe-680208211888.png',
+        'pic1': 'https://www.kingpinplay.com/media/4fehldrr/bowling-26_790_466.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Bowling%20(USA).pdf',
     },
     'SLUS01309': {
@@ -6855,6 +6869,7 @@ games = {
     	'id': 'SLUS00571',
 	'title': "BRUNSWICK CIRCUIT PRO BOWLING",
         'pic0': 'https://images.launchbox-app.com/17d80cb0-22e8-40eb-a1c8-87a71716e0ba.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ri9M4BP6FJtjlTX-pxd260fZOhgo-NnM4Q&s',
         'manual': 'https://www.videogamemanual.com/ps1/Brunswick%20Circuit%20Pro%20Bowling%20(USA).pdf',
     },
     'SLUS00856': {
@@ -6862,6 +6877,7 @@ games = {
     	'id': 'SLUS00856',
 	'title': "BRUNSWICK CIRCUIT PRO BOWLING 2",
         'pic0': 'https://images.launchbox-app.com/27683988-49ab-4832-9323-69c3ce271508.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ri9M4BP6FJtjlTX-pxd260fZOhgo-NnM4Q&s',
         'manual': 'https://www.videogamemanual.com/ps1/Brunswick%20Circuit%20Pro%20Bowling%202%20(USA).pdf',
     },
     'SLUS00370': {
@@ -7072,6 +7088,7 @@ games = {
     	'id': 'SLUS00494',
 	'title': "CAR & DRIVER PRESENTS - GRAND TOUR RACING \'98",
         'pic0': 'https://images.launchbox-app.com/5685526b-adc0-444e-9b35-ff19b807519c.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_016b8b5c-ae35-40b1-861c-2008a6a5c99b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Car%20and%20Driver%20Presents%20-%20Grand%20Tour%20Racing%20\'98%20(USA).pdf',
     },
     'SLUS01379': {
@@ -7079,6 +7096,7 @@ games = {
     	'id': 'SLUS01379',
 	'title': "CARD GAMES",
         'pic0': 'https://images.launchbox-app.com/a8673299-174f-444b-b3b2-3bdc45f14645.png',
+        'pic1': 'https://images.launchbox-app.com//02b3a380-918e-4a87-98d7-39d43da80d0d.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Card%20Games%20(USA).pdf',
     },
     'SCUS94156': {
@@ -7157,6 +7175,7 @@ games = {
     	'id': 'SLUS00882',
 	'title': "CASTROL HONDA SUPERBIKE RACING",
         'pic0': 'https://images.launchbox-app.com/2122e09a-2f99-4041-a3f8-91d285d2c062.png',
+        'pic1': 'https://images.launchbox-app.com//068b6932-8f49-408f-9b95-bef39adb3733.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Castrol%20Honda%20Superbike%20Racing%20(USA).pdf',
     },
     'SLUS00807': {
@@ -7196,6 +7215,7 @@ games = {
     	'id': 'SLUS01216',
 	'title': "CHAMPIONSHIP SURFER",
         'pic0': 'https://images.launchbox-app.com/01f7f392-0803-4c90-bcca-3bf9303cb8ee.png',
+        'pic1': 'https://images.ctfassets.net/4398fxjf8451/7oqhgxFAIkEG4TqOxhMd1a/4fe9c1388987d3451e69b047a5ca378b/FloRide.jpg?q=75&fm=webp&w=3840&h=2160',
         'manual': 'https://www.videogamemanual.com/ps1/Championship%20Surfer%20(USA).pdf',
     },
     'SLUS01400': {
@@ -7545,6 +7565,7 @@ games = {
     	'id': 'SLUS00442',
 	'title': "COURIER CRISIS",
         'pic0': 'https://images.launchbox-app.com/f76b3d23-f41a-4b65-8fc8-7e872b595098.png',
+        'pic1': 'https://images.launchbox-app.com//312bd119-45a7-4380-8d13-3a6895c9b7e0.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Courier%20Crisis%20-%20The%20Saga%20of%20the%20Modern%20Fatalist%20(USA).pdf',
     },
     'SLUS01151': {
@@ -8009,6 +8030,7 @@ games = {
     	'id': 'SLUS01221',
 	'title': "DETECTIVE BARBIE - THE MYSTERY CRUISE",
         'pic0': 'https://images.launchbox-app.com/990fa703-a518-4841-896a-222ce1c37bdd.png',
+        'pic1': 'https://cdn.mos.cms.futurecdn.net/abe47b8fe0f4b1357e3eae660827ee08.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Detective%20Barbie%20-%20The%20Mystery%20Cruise%20(USA).pdf',
     },
     'SLUS00672': {
@@ -8690,6 +8712,7 @@ games = {
     	'id': 'SLUS00943',
 	'title': "EAGLE ONE - HARRIER ATTACK",
         'pic0': 'https://images.launchbox-app.com/5fb03619-f9cc-4220-9a50-3720c631e624.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_4a301350-7cd3-42ca-84c5-05c665064c2c.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Eagle%20One%20-%20Harrier%20Attack%20(USA).pdf',
     },
     'SLUS01551': {
@@ -8697,6 +8720,7 @@ games = {
     	'id': 'SLUS01551',
 	'title': "EASTER BUNNY'S BIG DAY",
         'pic0': 'https://images.launchbox-app.com/16702f97-d30c-4a4d-97f4-e5cc2e298cb7.png',
+        'pic1': 'https://images.launchbox-app.com//c9fe95a4-b2e5-4f50-be96-c4148452874e.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Easter%20Bunny\'s%20Big%20Day%20(USA).pdf',
     },
     'SLUS00820': {
@@ -8734,6 +8758,7 @@ games = {
     	'id': 'SLUS00751',
 	'title': "EGGS OF STEEL - CHARLIE'S EGGCELLENT ADVENTURE",
         'pic0': 'https://images.launchbox-app.com/a57bdaf2-9cea-47e2-b962-d6627221dce1.png',
+        'pic1': 'https://images.launchbox-app.com//561e60be-0347-429c-b034-0fe2d4188eb9.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Eggs%20of%20Steel%20-%20Charlie\'s%20Eggcellent%20Adventure%20(USA).pdf',
     },
     'SLUS00809': {
@@ -12823,6 +12848,7 @@ games = {
     	'id': 'SLUS00466',
 	'title': "NORSE BY NORSEWEST - THE RETURN OF THE LOST VIKINGS",
         'pic0': 'https://images.launchbox-app.com/c2f1d190-9a9b-44e8-a851-8b4f91eeae69.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_e5cc2ef8-2f65-4632-925c-3324ff24e60b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Norse%20by%20Norsewest%20-%20The%20Return%20of%20the%20Lost%20Vikings%20(USA).pdf',
     },
     'SCUS94404': {
@@ -13281,6 +13307,7 @@ games = {
     	'id': 'SLUS01033',
 	'title': "POLARIS SNOCROSS",
         'pic0': 'https://images.launchbox-app.com/c9e3e513-e3b2-46aa-866c-402eb867891e.png',
+        'pic1': 'https://www.brmoffroad.com/uploads/5/4/9/5/54951519/s860654735975606422_p658_i250_w2048.jpeg',
         'manual': 'https://www.videogamemanual.com/ps1/Polaris%20SnoCross%20(USA).pdf',
     },
     'SLUS00889': {
@@ -13303,6 +13330,7 @@ games = {
     	'id': 'SLUS00277',
 	'title': "POPULOUS - THE BEGINNING",
         'pic0': 'https://images.launchbox-app.com/9e009ea3-9f2e-46e7-8cfd-69ad6a92dcb2.png',
+        'pic1': 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2203860/ss_e7a8cfc8fdd964c38f3131cc0277b5b99ac724e2.1920x1080.jpg?t=1709845101',
         'manual': 'https://www.videogamemanual.com/ps1/Populous%20-%20The%20Beginning%20(USA).pdf',
         'pspconfig': 'pspconfigs/Populous - The Beginning/SLUS-00277.bin',
         'ps3config': 'ps3configs/Populous - The Beginning/SLUS-00277.BIN',
@@ -14845,6 +14873,7 @@ games = {
     	'id': 'SLUS01287',
 	'title': "SNOWBOARDING",
         'pic0': 'https://images.launchbox-app.com/3deb7fdd-e2e0-455b-a979-9a7bb351e60b.png',
+        'pic1': 'https://cdn.britannica.com/21/233221-050-A0038475/torah-bright-Australia-snowboarder-2014.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Snowboarding%20(USA).pdf',
     },
     'SLUS01519': {
@@ -15074,6 +15103,7 @@ games = {
     	'id': 'SLUS01459',
 	'title': "SPORTS SUPERBIKE 2",
         'pic0': 'https://images.launchbox-app.com/636b7759-bea4-4e7f-a741-ca4f56906fba.png',
+        'pic1': 'https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2024/04/my23_ducati_panigale_v4_r_091_uc440936_preview.jpg?w=1600&h=900&fit=crop',
         'manual': 'https://www.videogamemanual.com/ps1/Sports%20Superbike%202%20(USA).pdf',
     },
     'SLUS00014': {
@@ -15081,6 +15111,7 @@ games = {
     	'id': 'SLUS00014',
 	'title': "SPOT GOES TO HOLLYWOOD",
         'pic0': 'https://images.launchbox-app.com/58d3e354-76f5-4d0d-97b2-50f7f2f9ac59.png',
+        'pic1': 'https://images.launchbox-app.com//dd06f947-61aa-4aaf-b0f7-5c4683a569dd.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Spot%20Goes%20to%20Hollywood%20(USA).pdf',
     },
     'SCUS94228': {
@@ -15385,6 +15416,7 @@ games = {
     	'id': 'SLUS01450',
 	'title': "STREET RACQUETBALL",
         'pic0': 'https://images.launchbox-app.com/873d7567-9058-4f07-8804-4316f0823f0c.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQouBujPd3bddMaP3zGQShsurVq4Dpds-5dPA&s',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Racquetball%20(USA).pdf',
     },
     'SLUS00818': {
@@ -15392,6 +15424,7 @@ games = {
     	'id': 'SLUS00818',
 	'title': "STREET SK8ER",
         'pic0': 'https://images.launchbox-app.com/f7e58415-2e95-4ad3-839a-01b796fac6d8.png',
+        'pic1': 'https://cdn.shopify.com/s/files/1/0557/5239/2813/files/Skate_Styles_1.jpg?v=1696950932',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Sk8er%20(USA).pdf',
     },
     'SLUS01083': {
@@ -15399,6 +15432,7 @@ games = {
     	'id': 'SLUS01083',
 	'title': "STREET SK8ER 2",
         'pic0': 'https://images.launchbox-app.com/ce02e31d-fef6-418f-b7fd-44a82c63a33c.png',
+        'pic1': 'https://cdn.shopify.com/s/files/1/0557/5239/2813/files/Skate_Styles.jpg?v=1696950917',
         'manual': 'https://www.videogamemanual.com/ps1/Street%20Sk8er%202%20(USA).pdf',
     },
     'SLUS01142': {
@@ -15511,6 +15545,7 @@ games = {
     	'id': 'SLUS01052',
 	'title': "SUPERBIKE 2000",
         'pic0': 'https://images.launchbox-app.com/4fabc578-5b01-460f-b122-5b6f7d8a2655.png',
+        'pic1': 'https://www.asbk.com.au/wp-content/uploads/2024/11/AW-1-1024x600.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/EA%20Sports%20Superbike%202000%20(USA).pdf',
     },
     'SLUS01005': {
@@ -15541,6 +15576,7 @@ games = {
     	'id': 'SLUS01190',
 	'title': "SURF RIDERS",
         'pic0': 'https://images.launchbox-app.com/3be8ffcd-b111-40f3-937f-3acb53e00c91.png',
+        'pic1': 'https://images.ctfassets.net/4398fxjf8451/WEsudn2sw9AF6hoTfzSUw/c0936571c64f842b3402e7d092605c5b/wnw-attraction-1920x1080-Flowrider-2.jpg?q=75&fm=webp&w=3840&h=2160',
         'manual': 'https://www.videogamemanual.com/ps1/Surf%20Riders%20(USA).pdf',
         'pspconfig': 'pspconfigs/Surf Riders/SLUS-01190.bin',
     },
@@ -15739,6 +15775,7 @@ games = {
     	'id': 'SLUS00299',
 	'title': "TECMO WORLD GOLF",
         'pic0': 'https://images.launchbox-app.com/d4c4dd66-7dde-4c05-8ce4-45634ee5e914.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiPZaO7qI23904GnVUf1Wk67HV8SaXxxoGqQ&s',
         'manual': 'https://www.videogamemanual.com/ps1/Tecmo%20World%20Golf%20-%20Japan%20(USA).pdf',
     },
     'SLUS00006': {
@@ -15918,6 +15955,7 @@ games = {
     	'id': 'SLUS00052',
 	'title': "THE CHESSMASTER 3-D",
         'pic0': 'https://images.launchbox-app.com/1a0a27de-aa73-45b6-a950-e034ff75be58.png',
+        'pic1': 'https://m.media-amazon.com/images/I/91B2w10TavL.png',
         'manual': 'https://www.videogamemanual.com/ps1/Chessmaster%203-D,%20The%20(USA).pdf',
     },
     'SCUS94150': {
@@ -15933,6 +15971,7 @@ games = {
     	'id': 'SLUS00242',
 	'title': "THE CROW - CITY OF ANGELS",
         'pic0': 'https://images.launchbox-app.com/088a9aef-cb3a-4df6-a186-af7b3be825e0.png',
+        'pic1': 'https://assets-prd.ignimgs.com/2024/03/19/the-crow-brandon-lee-thumb-1710876691508.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Crow,%20The%20-%20City%20of%20Angels%20(USA).pdf',
     },
     'SLUS00317': {
@@ -16237,6 +16276,7 @@ games = {
     	'id': 'SLUS01128',
 	'title': "THE WILD THORNBERRYS - ANIMAL ADVENTURES",
         'pic0': 'https://images.launchbox-app.com/2852e1f9-2ba4-46e3-9ef2-92a7f3ad7468.png',
+        'pic1': 'https://www.pluggedin.com/wp-content/uploads/2019/12/the-wild-thornberrys-movie-1024x640.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Wild%20Thornberrys,%20The%20-%20Animal%20Adventures%20(USA).pdf',
     },
     'SLUS00915': {
@@ -16363,6 +16403,7 @@ games = {
     	'id': 'SLUS01273',
 	'title': "TIGER WOODS - PGA TOUR GOLF",
         'pic0': 'https://images.launchbox-app.com/675382b7-b5ff-424d-806a-10952c61c749.png',
+        'pic1': 'https://cdn.britannica.com/48/223048-050-3AAA8EB6/Golfer-Tiger-Woods-Masters-Augusta-Georgia-2019.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Tiger%20Woods%20PGA%20Tour%20Golf%20(USA).pdf',
     },
     'SLUS00785': {
@@ -16370,6 +16411,7 @@ games = {
     	'id': 'SLUS00785',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
         'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'pic1': 'https://cdn.britannica.com/35/197935-050-A7E61875/Tiger-Woods-2002.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20(USA).pdf',
     },
     'SLUS01054': {
@@ -16377,13 +16419,15 @@ games = {
     	'id': 'SLUS01054',
 	'title': "TIGER WOODS PGA TOUR 2000",
         'pic0': 'https://images.launchbox-app.com/af150455-3c89-4602-ba1c-b93da4b3f547.png',
+        'pic1': 'https://cdn.mos.cms.futurecdn.net/4jCKNFQDMhjDDnJpGjJbL3.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Tiger%20Woods%20PGA%20Tour%202000%20(USA).pdf',
     },
     'SLUS00346': {
         'url': "games/U/T/SLUS-00346.html",
     	'id': 'SLUS00346',
 	'title': "TIGERSHARK",
-        'pic0': 'https://images.launchbox-app.com/1a61d7b5-ad64-4ae5-ac2f-f231c0aed1ae.png',
+        'pic0': None,
+        'pic1': 'https://images.gog-statics.com/d7590a83422efda991d1d44de7766d8def4ac514240682a2d3464ceb34bf30f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=ZCOtJuEbV0c',
         'manual': 'https://www.videogamemanual.com/ps1/Tigershark%20(USA).pdf',
     },
@@ -16391,7 +16435,8 @@ games = {
         'url': "games/U/T/SLUS-00342.html",
     	'id': 'SLUS00342',
 	'title': "TIME COMMANDO",
-        'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com//97f9919b-b174-49d2-a686-c55670f24176.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Time%20Commando%20(USA).pdf',
     },
@@ -16699,6 +16744,7 @@ games = {
     	'id': 'SLUS00979',
 	'title': "TRICK'N SNOWBOARDER",
         'pic0': 'https://images.launchbox-app.com/703a987e-f51d-4641-a5b3-30bd2d879b5b.png',
+        'pic1': 'https://neversummer.com/cdn/shop/articles/PROTO_SPLIT_2.webp?v=1694199894',
         'manual': 'https://www.videogamemanual.com/ps1/Trick\'n%20Snowboarder%20(USA).pdf',
     },
     'SLUS00237': {
@@ -16749,6 +16795,7 @@ games = {
     	'id': 'SLUS00337',
 	'title': "TRUE PINBALL",
         'pic0': 'https://images.launchbox-app.com/ed350b7c-06d1-4ea4-bc63-40a4c2fd6f08.png',
+        'pic1': 'https://i.ytimg.com/vi/gFZ_DWfTIV8/maxresdefault.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/True%20Pinball%20(USA).pdf',
     },
     'SLUS00188': {
@@ -16756,6 +16803,7 @@ games = {
     	'id': 'SLUS00188',
 	'title': "TUNNEL B1",
         'pic0': 'https://images.launchbox-app.com/2c9c90d3-7da3-49fa-a1fe-3458f313d967.png',
+        'pic1': 'https://images.launchbox-app.com//6f2f0358-738f-48c7-8eff-0d53b4cb8be6.png',
         'manual': 'https://www.videogamemanual.com/ps1/Tunnel%20B1%20(USA).pdf',
     },
     'SCUS94229': {
@@ -16874,6 +16922,7 @@ games = {
     	'id': 'SLUS01228',
 	'title': "V.I.P.",
         'pic0': 'https://images.launchbox-app.com/82b2c751-ce09-4772-846b-7daeff3a893d.png',
+        'pic1': 'https://www.metacritic.com/a/img/catalog/provider/2/13/2-46e1c224bf029aef582738958beecc9b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/V.I.P.%20(USA).pdf',
     },
     'SLUS01003': {
@@ -17056,6 +17105,7 @@ games = {
     	'id': 'SLUS00657',
 	'title': "VIVA SOCCER",
         'pic0': 'https://images.launchbox-app.com/ce2c2252-fc64-4048-84a5-90bd4054128e.png',
+        'pic1': 'https://australiansportscamps.com.au/cdn/shop/articles/How-To-Teach-Soccer-To-Beginners.jpg?v=1715913370',
         'manual': 'https://www.videogamemanual.com/ps1/Viva%20Soccer%20(USA).pdf',
     },
     'SLUS00953': {
@@ -17063,6 +17113,7 @@ games = {
     	'id': 'SLUS00953',
 	'title': "VIVA SOCCER",
         'pic0': 'https://images.launchbox-app.com/ce2c2252-fc64-4048-84a5-90bd4054128e.png',
+        'pic1': 'https://australiansportscamps.com.au/cdn/shop/articles/How-To-Teach-Soccer-To-Beginners.jpg?v=1715913370',
         'manual': 'https://www.videogamemanual.com/ps1/Viva%20Soccer%20(USA).pdf',
     },
     'SLUS00123': {
@@ -17070,6 +17121,7 @@ games = {
     	'id': 'SLUS00123',
 	'title': "VMX RACING",
         'pic0': 'https://images.launchbox-app.com/c6ff1ead-8ecd-4af4-8d9b-7d75f8beaec3.png',
+        'pic1': 'https://lh3.googleusercontent.com/proxy/9cqNYXbaLnuEqu0izRIc-nEbEtUXZCSDJJxbb5i8UxpEWSOdDv_PgGlFD83dfJs_K1IxUj0NP9qZJYup2tG9LAUSSQpztZDoyfc42UZ1E7kAnjlAXs_-RNiaRUjOfSe-xtf3tw',
         'manual': 'https://www.videogamemanual.com/ps1/VMX%20Racing%20(USA).pdf',
     },
     'SLUS00281': {
@@ -17187,6 +17239,7 @@ games = {
     	'id': 'SLUS00976',
 	'title': "WARPATH - JURASSIC PARK",
         'pic0': 'https://images.launchbox-app.com/5057da89-254f-43aa-a675-1adfcfb43f06.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_46c627d3-ac07-4140-988c-e38d3f7553db.png',
         'snd0': 'https://www.youtube.com/watch?v=IuKljksLJ9g&list=PL3962AA06A383D316&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Warpath%20-%20Jurassic%20Park%20(USA).pdf',
     },
@@ -17214,6 +17267,7 @@ games = {
     	'id': 'SLUS00147',
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
         'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
+        'pic1': 'https://images.radio-canada.ca/v1/ici-premiere/16x9/wayne-gretzky-nhl-hockey.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Wayne%20Gretzky\'s%203D%20Hockey%20\'98%20(USA).pdf',
         'pspconfig': "pspconfigs/Wayne Gretzky's 3D Hockey '98/SLUS-00147.bin",
     },
@@ -17457,6 +17511,7 @@ games = {
     	'id': 'SLUS00644',
 	'title': "WORLD CUP '98",
         'pic0': 'https://images.launchbox-app.com/bc4c77cf-85e6-46cd-9e08-f4b429550d41.png',
+        'pic1': 'https://images.launchbox-app.com/616b03ea-3b9d-4369-889b-29bb2141f5c5.png',
         'manual': 'https://www.videogamemanual.com/ps1/World%20Cup%2098%20(USA).pdf',
     },
     'SLUS00063': {
@@ -17471,6 +17526,7 @@ games = {
     	'id': 'SLUS01175',
 	'title': "WORLD DESTRUCTION LEAGUE - THUNDER TANKS",
         'pic0': 'https://images.launchbox-app.com/df636a31-b498-4019-9974-9fd99fd83545.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/2f009fac74877f93b68dabb932a5c680400464f5e3c49e06.png',
         'manual': 'https://www.videogamemanual.com/ps1/World%20Destruction%20League%20-%20Thunder%20Tanks%20(USA).pdf',
     },
     'SLUS01247': {
@@ -17688,6 +17744,7 @@ games = {
     	'id': 'SLUS01560',
 	'title': "XS JUNIOR LEAGUE DODGEBALL",
         'pic0': 'https://images.launchbox-app.com/1d522884-c982-4036-9891-5e781e8ff612.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_c5e943df-00eb-4931-a557-94889f3a0a47.png',
         'manual': 'https://www.videogamemanual.com/ps1/XS%20Junior%20League%20Dodgeball%20(USA).pdf',
     },
     'SLUS01554': {
@@ -17695,6 +17752,7 @@ games = {
     	'id': 'SLUS01554',
 	'title': "XS JUNIOR LEAGUE FOOTBALL",
         'pic0': 'https://images.launchbox-app.com/ddfec0c8-8044-4bb6-a997-33f87b04db62.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_a56f12c8-d432-4165-b3fe-82e1774f31ed.png',
         'manual': 'https://www.videogamemanual.com/ps1/XS%20Junior%20League%20Football%20(USA).pdf',
     },
     'SLUS01520': {
@@ -17749,6 +17807,7 @@ games = {
     	'id': 'SLUS01411',
 	'title': "YU-GI-OH! FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Yu-Gi-Oh!%20Forbidden%20Memories%20(USA).pdf',
     },
     'SLUS00183': {
@@ -18137,30 +18196,35 @@ games = {
     	'id': 'SLES00014',
 	'title': "ACTUA SOCCER",
         'pic0': 'https://images.launchbox-app.com/5a93314b-db06-4f24-93f0-9f0ed1993e1f.png',
+        'pic1': 'https://cf-images.us-east-1.prod.boltdns.net/v1/static/6057277724001/4daa6adf-4642-4f07-bfed-eb1be8b74010/2d835725-5033-48a3-80bb-21adc578685d/1280x720/match/image.jpg',
     },
     'SLES00190': {
         'url': "games/P/A/SLES-00190.html",
     	'id': 'SLES00190',
 	'title': "ACTUA SOCCER - CLUB EDITION",
         'pic0': 'https://images.launchbox-app.com/499c4991-2fbc-4259-aa3a-0446f88f1fd6.png',
+        'pic1': 'https://cf-images.us-east-1.prod.boltdns.net/v1/static/6057277724001/4daa6adf-4642-4f07-bfed-eb1be8b74010/2d835725-5033-48a3-80bb-21adc578685d/1280x720/match/image.jpg',
     },
     'SLES00021': {
         'url': "games/P/A/SLES-00021.html",
     	'id': 'SLES00021',
 	'title': "ACTUA SOCCER 2",
         'pic0': 'https://images.launchbox-app.com/745a166d-d3df-46fc-accd-f75573ed9091.png',
+        'pic1': 'https://bloximages.chicago2.vip.townnews.com/thespec.com/content/tncms/assets/v3/editorial/1/7b/17b5d223-c297-59d8-b414-06957653e2bc/687801730eb49.image.jpg?resize=1200%2C800',
     },
     'SLES01028': {
         'url': "games/P/A/SLES-01028.html",
     	'id': 'SLES01028',
 	'title': "ACTUA SOCCER 2",
         'pic0': 'https://images.launchbox-app.com/745a166d-d3df-46fc-accd-f75573ed9091.png',
+        'pic1': 'https://bloximages.chicago2.vip.townnews.com/thespec.com/content/tncms/assets/v3/editorial/1/7b/17b5d223-c297-59d8-b414-06957653e2bc/687801730eb49.image.jpg?resize=1200%2C800',
     },
     'SLES01029': {
         'url': "games/P/A/SLES-01029.html",
     	'id': 'SLES01029',
 	'title': "ACTUA SOCCER 2",
         'pic0': 'https://images.launchbox-app.com/745a166d-d3df-46fc-accd-f75573ed9091.png',
+        'pic1': 'https://bloximages.chicago2.vip.townnews.com/thespec.com/content/tncms/assets/v3/editorial/1/7b/17b5d223-c297-59d8-b414-06957653e2bc/687801730eb49.image.jpg?resize=1200%2C800',
     },
     'SLES01210': {
         'url': "games/P/A/SLES-01210.html",
@@ -18174,6 +18238,7 @@ games = {
     	'id': 'SLES01644',
 	'title': "ACTUA SOCCER 3",
         'pic0': 'https://images.launchbox-app.com/e5773d2c-872a-4b3b-a342-1da358aff14c.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQF50HI5T8hj-lEXuzxjEELsqUyYKX-XEftg&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Actua%20Soccer%203%20%28Europe%29_jp2.zip',
     },
     'SLES01645': {
@@ -18181,6 +18246,7 @@ games = {
     	'id': 'SLES01645',
 	'title': "ACTUA SOCCER 3",
         'pic0': 'https://images.launchbox-app.com/e5773d2c-872a-4b3b-a342-1da358aff14c.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQF50HI5T8hj-lEXuzxjEELsqUyYKX-XEftg&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Actua%20Soccer%203%20%28Europe%29_jp2.zip',
     },
     'SLES01646': {
@@ -18188,6 +18254,7 @@ games = {
     	'id': 'SLES01646',
 	'title': "ACTUA SOCCER 3",
         'pic0': 'https://images.launchbox-app.com/e5773d2c-872a-4b3b-a342-1da358aff14c.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQF50HI5T8hj-lEXuzxjEELsqUyYKX-XEftg&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Actua%20Soccer%203%20%28Europe%29_jp2.zip',
     },
     'SLES00265': {
@@ -19904,6 +19971,7 @@ games = {
     	'id': 'SLES04025',
 	'title': "BIG STRIKE BOWLING",
         'pic0': 'https://images.launchbox-app.com/20635a4d-a75a-4fff-a14d-73d819858b57.png',
+        'pic1': 'https://superbowl.com.au/melville/wp-content/uploads/2023/11/Learn-to-Bowl.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Big%20Strike%20Bowling%20%28USA%29_jp2.zip',
     },
     'SLES01316': {
@@ -20409,12 +20477,14 @@ games = {
     	'id': 'SLES01376',
 	'title': "BRUNSWICK CIRCUIT PRO BOWLING",
         'pic0': 'https://images.launchbox-app.com/17d80cb0-22e8-40eb-a1c8-87a71716e0ba.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ri9M4BP6FJtjlTX-pxd260fZOhgo-NnM4Q&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Brunswick%20Circuit%20Pro%20Bowling%20%28USA%29_jp2.zip',
     },
     'SLES02618': {
         'url': "games/P/B/SLES-02618.html",
     	'id': 'SLES02618',
 	'title': "BRUNSWICK CIRCUIT PRO BOWLING 2",
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ri9M4BP6FJtjlTX-pxd260fZOhgo-NnM4Q&s',
         'pic0': 'https://images.launchbox-app.com/27683988-49ab-4832-9323-69c3ce271508.png',
     },
     'SLES00448': {
@@ -20840,6 +20910,7 @@ games = {
     	'id': 'SLES01182',
 	'title': "CASTROL HONDA SUPERBIKE RACING",
         'pic0': 'https://images.launchbox-app.com/2122e09a-2f99-4041-a3f8-91d285d2c062.png',
+        'pic1': 'https://images.launchbox-app.com//068b6932-8f49-408f-9b95-bef39adb3733.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Castrol%20Honda%20Superbike%20Racing%20%28USA%29_jp2.zip',
     },
     'SLES02942': {
@@ -20847,6 +20918,7 @@ games = {
     	'id': 'SLES02942',
 	'title': "CASTROL HONDA WORLD SUPERBIKE TEAM VTR",
         'pic0': 'https://images.launchbox-app.com/f1a8340a-53e4-421a-b080-3dce642bd9b1.png',
+        'pic1': 'https://images.launchbox-app.com//068b6932-8f49-408f-9b95-bef39adb3733.jpg',
     },
     'SLES03145': {
         'url': "games/P/F/SLES-03145.html",
@@ -24998,6 +25070,7 @@ games = {
     	'id': 'SLES01715',
 	'title': "EAGLE ONE - HARRIER ATTACK",
         'pic0': 'https://images.launchbox-app.com/5fb03619-f9cc-4220-9a50-3720c631e624.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_4a301350-7cd3-42ca-84c5-05c665064c2c.jpg',
     },
     'SLES00343': {
         'url': "games/P/E/SLES-00343.html",
@@ -25753,12 +25826,14 @@ games = {
     	'id': 'SLES02916',
 	'title': "KING OF BOWLING 2",
         'pic0': 'https://images.launchbox-app.com/0a9b4141-cc89-46d5-bfbd-9c5ae70f16b1.png',
+        'pic1': 'https://tenpin.org.au/wp-content/uploads/2019/03/Governance-banner-768-x-400px-v2.png',
     },
     'SLES04049': {
         'url': "games/P/K/SLES-04049.html",
     	'id': 'SLES04049',
 	'title': "KING OF BOWLING 3",
         'pic0': 'https://images.launchbox-app.com/a11dff2c-58d4-452b-af2c-8494fdd3c8f4.png',
+        'pic1': 'https://tenpin.org.au/wp-content/uploads/2019/03/Governance-banner-768-x-400px-v2.png',
     },
     'SCES00510': {
         'url': "games/P/K/SCES-00510.html",
@@ -26795,6 +26870,7 @@ games = {
     	'id': 'SLES00057',
 	'title': "LOST VIKINGS 2 - NORSE BY NORSEWEST",
         'pic0': 'https://images.launchbox-app.com/9bfa3d61-4e83-4f69-8137-f47ef30731ec.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_e5cc2ef8-2f65-4632-925c-3324ff24e60b.jpg',
     },
     'SLES03174': {
         'url': "games/P/L/SLES-03174.html",
@@ -26906,6 +26982,7 @@ games = {
     	'id': 'SLES00980',
 	'title': "M6 TURBO RACING",
         'pic0': 'https://images.launchbox-app.com/5685526b-adc0-444e-9b35-ff19b807519c.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_016b8b5c-ae35-40b1-861c-2008a6a5c99b.jpg',
     },
     'SLES00630': {
         'url': "games/P/M/SLES-00630.html",
@@ -27650,6 +27727,7 @@ games = {
     	'id': 'SLES01594',
 	'title': "MICHAEL OWEN'S WORLD LEAGUE SOCCER 99",
         'pic0': 'https://images.launchbox-app.com/ca694fec-98ec-4485-996e-b2e1b06c5dca.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRds7ZUCj8yvIc5KRk73OqO1_sY9qeHP1hiaw&s',
     },
     'SLES03931': {
         'url': "games/P/M/SLES-03931.html",
@@ -28965,6 +29043,7 @@ games = {
     	'id': 'SLES03427',
 	'title': "CHAMPIONSHIP SURFER",
         'pic0': 'https://images.launchbox-app.com/01f7f392-0803-4c90-bcca-3bf9303cb8ee.png',
+        'pic1': 'https://images.ctfassets.net/4398fxjf8451/7oqhgxFAIkEG4TqOxhMd1a/4fe9c1388987d3451e69b047a5ca378b/FloRide.jpg?q=75&fm=webp&w=3840&h=2160',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Championship%20Surfer%20%28USA%29_jp2.zip',
     },
     'SLES03107': {
@@ -29778,6 +29857,7 @@ games = {
     	'id': 'SLES00326',
 	'title': "COURIER CRISIS",
         'pic0': 'https://images.launchbox-app.com/f76b3d23-f41a-4b65-8fc8-7e872b595098.png',
+        'pic1': 'https://images.launchbox-app.com//312bd119-45a7-4380-8d13-3a6895c9b7e0.jpg',
     },
     'SCES00344': {
         'url': "games/P/C/SCES-00344.html",
@@ -30482,6 +30562,7 @@ games = {
     	'id': 'SLES03803',
 	'title': "DETECTIVE BARBIE - THE MYSTERY CRUISE",
         'pic0': 'https://images.launchbox-app.com/990fa703-a518-4841-896a-222ce1c37bdd.png',
+        'pic1': 'https://cdn.mos.cms.futurecdn.net/abe47b8fe0f4b1357e3eae660827ee08.jpg',
     },
     'SLES04130': {
         'url': "games/P/D/SLES-04130.html",
@@ -32941,6 +33022,7 @@ games = {
     	'id': 'SLES01178',
 	'title': "PHAT AIR - EXTREME SNOWBOARDING",
         'pic0': 'https://images.launchbox-app.com/b7ac11d7-ffff-48b5-bf95-4380cccd84f0.png',
+        'pic1': 'https://www.snowskool.com/uploads/images/Snowboarding_and_Skiing%2C_Featured_Image.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Freestyle%20Boardin%27%20%2799%20%28USA%29_jp2.zip',
     },
     'SCES00059': {
@@ -33161,6 +33243,7 @@ games = {
     	'id': 'SLES01760',
 	'title': "POPULOUS - THE BEGINNING",
         'pic0': 'https://images.launchbox-app.com/9e009ea3-9f2e-46e7-8cfd-69ad6a92dcb2.png',
+        'pic1': 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2203860/ss_e7a8cfc8fdd964c38f3131cc0277b5b99ac724e2.1920x1080.jpg?t=1709845101',
     },
     'SCES00409': {
         'url': "games/P/P/SCES-00409.html",
@@ -35380,6 +35463,7 @@ games = {
     	'id': 'SLES03960',
 	'title': "SNOWBOARD RACER",
         'pic0': 'https://images.launchbox-app.com/978b12b2-b9a5-4071-896f-240011f0d7bf.png',
+        'pic1': 'https://www.sportscoverdirect.com/wp-content/uploads/2023/12/Snowboarding-off-piste-4.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Snowboard%20Racer%20[SCES-03960]%20(E).cbr',
     },
     'SLES00691': {
@@ -35779,12 +35863,14 @@ games = {
     	'id': 'SLES03057',
 	'title': "SPORTS SUPERBIKE",
         'pic0': 'https://images.launchbox-app.com/cbe9c760-69bb-4054-a674-d99b693fe39b.png',
+        'pic1': 'https://www.asbk.com.au/wp-content/uploads/2024/11/AW-1-1024x600.jpg',
     },
     'SLES03827': {
         'url': "games/P/S/SLES-03827.html",
     	'id': 'SLES03827',
 	'title': "SPORTS SUPERBIKE 2",
         'pic0': 'https://images.launchbox-app.com/636b7759-bea4-4e7f-a741-ca4f56906fba.png',
+        'pic1': 'https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2024/04/my23_ducati_panigale_v4_r_091_uc440936_preview.jpg?w=1600&h=900&fit=crop',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Sports%20Superbike%202%20%28USA%29_jp2.zip',
     },
     'SLES02616': {
@@ -35804,6 +35890,7 @@ games = {
     	'id': 'SLES00330',
 	'title': "SPOT GOES TO HOLLYWOOD",
         'pic0': 'https://images.launchbox-app.com/58d3e354-76f5-4d0d-97b2-50f7f2f9ac59.png',
+        'pic1': 'https://images.launchbox-app.com//dd06f947-61aa-4aaf-b0f7-5c4683a569dd.jpg',
     },
     'SCES01438': {
         'url': "games/P/S/SCES-01438.html",
@@ -36331,6 +36418,7 @@ games = {
     	'id': 'SLES01759',
 	'title': "STREET SK8ER",
         'pic0': 'https://images.launchbox-app.com/f7e58415-2e95-4ad3-839a-01b796fac6d8.png',
+        'pic1': 'https://cdn.shopify.com/s/files/1/0557/5239/2813/files/Skate_Styles_1.jpg?v=1696950932',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Street%20Sk8er%20%28USA%29_jp2.zip',
     },
     'SLES02703': {
@@ -36338,6 +36426,7 @@ games = {
     	'id': 'SLES02703',
 	'title': "STREET SK8ER 2",
         'pic0': 'https://images.launchbox-app.com/ce02e31d-fef6-418f-b7fd-44a82c63a33c.png',
+        'pic1': 'https://cdn.shopify.com/s/files/1/0557/5239/2813/files/Skate_Styles.jpg?v=1696950917',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Street%20Sk8er%202%20%28USA%29_jp2.zip',
     },
     'SLES02867': {
@@ -36598,6 +36687,7 @@ games = {
     	'id': 'SLES02538',
 	'title': "SUPERBIKE 2000",
         'pic0': 'https://images.launchbox-app.com/4fabc578-5b01-460f-b122-5b6f7d8a2655.png',
+        'pic1': 'https://www.asbk.com.au/wp-content/uploads/2024/11/AW-1-1024x600.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Superbike%202000%20%28USA%29_jp2.zip',
     },
     'SLES04154': {
@@ -36605,6 +36695,7 @@ games = {
     	'id': 'SLES04154',
 	'title': "SUPERBIKE MASTERS",
         'pic0': 'https://images.launchbox-app.com/f3f0a14a-6c31-48fe-b364-60b73b660015.png',
+        'pic1': 'https://cdn.prod.website-files.com/6421366231e3ebba4fbc565a/659b43c2b996a23858506e41_SuperBike%20Experince%202.jpg',
     },
     'SLES02373': {
         'url': "games/P/S/SLES-02373.html",
@@ -36631,6 +36722,7 @@ games = {
     	'id': 'SLES02838',
 	'title': "SURF RIDERS",
         'pic0': 'https://images.launchbox-app.com/3be8ffcd-b111-40f3-937f-3acb53e00c91.png',
+        'pic1': 'https://images.ctfassets.net/4398fxjf8451/WEsudn2sw9AF6hoTfzSUw/c0936571c64f842b3402e7d092605c5b/wnw-attraction-1920x1080-Flowrider-2.jpg?q=75&fm=webp&w=3840&h=2160',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Surf%20Riders%20%28USA%29_jp2.zip',
         'pspconfig': 'pspconfigs/Surf Riders/SLES-02838.bin',
     },
@@ -37236,6 +37328,7 @@ games = {
     	'id': 'SLES00187',
 	'title': "THE CHESSMASTER 3-D",
         'pic0': 'https://images.launchbox-app.com/1a0a27de-aa73-45b6-a950-e034ff75be58.png',
+        'pic1': 'https://m.media-amazon.com/images/I/91B2w10TavL.png',
     },
     'SLES00170': {
         'url': "games/P/T/SLES-00170.html",
@@ -37270,12 +37363,14 @@ games = {
     	'id': 'SLES00279',
 	'title': "THE CROW - CITY OF ANGELS",
         'pic0': 'https://images.launchbox-app.com/088a9aef-cb3a-4df6-a186-af7b3be825e0.png',
+        'pic1': 'https://assets-prd.ignimgs.com/2024/03/19/the-crow-brandon-lee-thumb-1710876691508.jpg',
     },
     'SLES00648': {
         'url': "games/P/T/SLES-00648.html",
     	'id': 'SLES00648',
 	'title': "THE CROW - CITY OF ANGELS",
         'pic0': 'https://images.launchbox-app.com/088a9aef-cb3a-4df6-a186-af7b3be825e0.png',
+        'pic1': 'https://assets-prd.ignimgs.com/2024/03/19/the-crow-brandon-lee-thumb-1710876691508.jpg',
     },
     'SLES02959': {
         'url': "games/P/T/SLES-02959.html",
@@ -38187,6 +38282,7 @@ games = {
     	'id': 'SLES01674',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
         'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'pic1': 'https://cdn.britannica.com/35/197935-050-A7E61875/Tiger-Woods-2002.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLES02551': {
@@ -38194,30 +38290,35 @@ games = {
     	'id': 'SLES02551',
 	'title': "TIGER WOODS - PGA TOUR 2000",
         'pic0': 'https://images.launchbox-app.com/af150455-3c89-4602-ba1c-b93da4b3f547.png',
+        'pic1': 'https://cdn.mos.cms.futurecdn.net/4jCKNFQDMhjDDnJpGjJbL3.jpg',
     },
     'SLES03148': {
         'url': "games/P/T/SLES-03148.html",
     	'id': 'SLES03148',
 	'title': "TIGER WOODS - PGA TOUR GOLF",
         'pic0': 'https://images.launchbox-app.com/675382b7-b5ff-424d-806a-10952c61c749.png',
+        'pic1': 'https://cdn.britannica.com/48/223048-050-3AAA8EB6/Golfer-Tiger-Woods-Masters-Augusta-Georgia-2019.jpg',
     },
     'SLES02595': {
         'url': "games/P/T/SLES-02595.html",
     	'id': 'SLES02595',
 	'title': "TIGER WOODS - USA TOUR 2000",
         'pic0': 'https://images.launchbox-app.com/af150455-3c89-4602-ba1c-b93da4b3f547.png',
+        'pic1': 'https://www.investopedia.com/thmb/cGLTSgopZFDs_WUnDPjxfIsEnfw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1863206916-67a4cf0a1f5c4598b6e7fda26ef7e004.jpg',
     },
     'SLES03337': {
         'url': "games/P/T/SLES-03337.html",
     	'id': 'SLES03337',
 	'title': "TIGER WOODS - USA TOUR 2001",
         'pic0': 'https://images.launchbox-app.com/b2015322-42be-4bab-bc07-5dccd5c2e65a.png',
+        'pic1': 'https://andscape.com/wp-content/uploads/2024/01/GettyImages-1865276627-e1704823156331.jpg?w=800',
     },
     'SLES00728': {
         'url': "games/P/T/SLES-00728.html",
     	'id': 'SLES00728',
 	'title': "TIGERSHARK",
-        'pic0': 'https://images.launchbox-app.com/1a61d7b5-ad64-4ae5-ac2f-f231c0aed1ae.png',
+        'pic0': None,
+        'pic1': 'https://images.gog-statics.com/d7590a83422efda991d1d44de7766d8def4ac514240682a2d3464ceb34bf30f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=ZCOtJuEbV0c',
     },
     'SLES00152': {
@@ -38230,7 +38331,8 @@ games = {
         'url': "games/P/T/SLES-00224.html",
     	'id': 'SLES00224',
 	'title': "TIME COMMANDO",
-        'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com//97f9919b-b174-49d2-a686-c55670f24176.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Commando%20%28USA%29_jp2.zip',
     },
@@ -38880,6 +38982,7 @@ games = {
     	'id': 'SLES00307',
 	'title': "TOTAL DRIVIN'",
         'pic0': 'https://images.launchbox-app.com/5dad31e3-86e0-4f49-af86-a3bfecd67f73.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_016b8b5c-ae35-40b1-861c-2008a6a5c99b.jpg',
     },
     'SLES00046': {
         'url': "games/P/T/SLES-00046.html",
@@ -38993,6 +39096,7 @@ games = {
     	'id': 'SLES02304',
 	'title': "TRICK'N SNOWBOARDER",
         'pic0': 'https://images.launchbox-app.com/703a987e-f51d-4641-a5b3-30bd2d879b5b.png',
+        'pic1': 'https://cdn.britannica.com/58/135658-050-24B17E09/snowboarder.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Trick%27n%20Snowboarder%20%28USA%29_jp2.zip',
     },
     'SLES01791': {
@@ -39019,6 +39123,7 @@ games = {
     	'id': 'SLES00052',
 	'title': "TRUE PINBALL",
         'pic0': 'https://images.launchbox-app.com/ed350b7c-06d1-4ea4-bc63-40a4c2fd6f08.png',
+        'pic1': 'https://i.ytimg.com/vi/gFZ_DWfTIV8/maxresdefault.jpg',
     },
     'SLES03298': {
         'url': "games/P/T/SLES-03298.html",
@@ -39031,6 +39136,7 @@ games = {
     	'id': 'SLES00322',
 	'title': "TUNNEL B1",
         'pic0': 'https://images.launchbox-app.com/2c9c90d3-7da3-49fa-a1fe-3458f313d967.png',
+        'pic1': 'https://images.launchbox-app.com//6f2f0358-738f-48c7-8eff-0d53b4cb8be6.png',
     },
     'SLES04005': {
         'url': "games/P/T/SLES-04005.html",
@@ -39265,6 +39371,7 @@ games = {
     	'id': 'SLES03681',
 	'title': "V.I.P.",
         'pic0': 'https://images.launchbox-app.com/82b2c751-ce09-4772-846b-7daeff3a893d.png',
+        'pic1': 'https://www.metacritic.com/a/img/catalog/provider/2/13/2-46e1c224bf029aef582738958beecc9b.jpg',
     },
     'SLES00846': {
         'url': "games/P/V/SLES-00846.html",
@@ -39799,6 +39906,7 @@ games = {
     	'id': 'SLES02253',
 	'title': "WARPATH - JURASSIC PARK",
         'pic0': 'https://images.launchbox-app.com/5057da89-254f-43aa-a675-1adfcfb43f06.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_46c627d3-ac07-4140-988c-e38d3f7553db.png',
         'snd0': 'https://www.youtube.com/watch?v=IuKljksLJ9g&list=PL3962AA06A383D316&index=1',
     },
     'SLES03263': {
@@ -39853,6 +39961,7 @@ games = {
     	'id': 'SLES01160',
 	'title': "WAYNE GRETZKY'S 3D HOCKEY '98",
         'pic0': 'https://images.launchbox-app.com/3ccb6044-34f4-4360-b3c1-be42691b9ab0.png',
+        'pic1': 'https://mayorsmanor.com/wp-content/uploads/2024/09/Gretz.webp',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Wayne%20Gretzky%27s%203D%20Hockey%20%2798%20%28USA%29_jp2.zip',
         'pspconfig': "pspconfigs/Wayne Gretzky's 3D Hockey '98/SLES-01160.bin",
     },
@@ -40048,6 +40157,7 @@ games = {
     	'id': 'SLES03329',
 	'title': "WINDSURFERS PARADISE",
         'pic0': 'https://images.launchbox-app.com/e5e61c78-370c-4490-b65b-2e3c34736952.png',
+        'pic1': 'https://wc1.prod3.arlocdn.net/p/22981dc4e430488b82d9588d984ed7dc/d/yW5ozz7b3UJpzT8HaiIRpcSEb53Hdr5z5kKm6Qf0q4ciEiwS/Hero_Windsurf_Hire.jpg',
     },
     'SLES00074': {
         'url': "games/P/W/SLES-00074.html",
@@ -40422,6 +40532,7 @@ games = {
     	'id': 'SLES03232',
 	'title': "WORLD DESTRUCTION LEAGUE - THUNDER TANKS",
         'pic0': 'https://images.launchbox-app.com/df636a31-b498-4019-9974-9fd99fd83545.png',
+        'pic1': 'https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/2f009fac74877f93b68dabb932a5c680400464f5e3c49e06.png',
     },
     'SLES03359': {
         'url': "games/P/W/SLES-03359.html",
@@ -40434,24 +40545,28 @@ games = {
     	'id': 'SLES00626',
 	'title': "WORLD LEAGUE BASKETBALL",
         'pic0': 'https://images.launchbox-app.com/a6b5b0da-ed4f-40ea-bd0b-c6d1733aac39.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRds7ZUCj8yvIc5KRk73OqO1_sY9qeHP1hiaw&s',
     },
     'SLES00717': {
         'url': "games/P/W/SLES-00717.html",
     	'id': 'SLES00717',
 	'title': "WORLD LEAGUE SOCCER '98",
         'pic0': 'https://images.launchbox-app.com/0c445d2a-5ec3-467d-b5c2-8d060fa3858e.png',
+        'pic1': 'https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2023-05/boot-on-soccer-ball-generic-b.jpg.webp?itok=4969xLpZ',
     },
     'SLES01166': {
         'url': "games/P/W/SLES-01166.html",
     	'id': 'SLES01166',
 	'title': "WORLD LEAGUE SOCCER '98",
         'pic0': 'https://images.launchbox-app.com/0c445d2a-5ec3-467d-b5c2-8d060fa3858e.png',
+        'pic1': 'https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2023-05/boot-on-soccer-ball-generic-b.jpg.webp?itok=4969xLpZ',
     },
     'SLES01167': {
         'url': "games/P/W/SLES-01167.html",
     	'id': 'SLES01167',
 	'title': "WORLD LEAGUE SOCCER '98",
         'pic0': 'https://images.launchbox-app.com/0c445d2a-5ec3-467d-b5c2-8d060fa3858e.png',
+        'pic1': 'https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2023-05/boot-on-soccer-ball-generic-b.jpg.webp?itok=4969xLpZ',
     },
     'SLES04039': {
         'url': "games/P/W/SLES-04039.html",
@@ -40828,6 +40943,7 @@ games = {
     	'id': 'SLES03947',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03948': {
@@ -40835,6 +40951,7 @@ games = {
     	'id': 'SLES03948',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03949': {
@@ -40842,6 +40959,7 @@ games = {
     	'id': 'SLES03949',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03950': {
@@ -40849,6 +40967,7 @@ games = {
     	'id': 'SLES03950',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES03951': {
@@ -40856,6 +40975,7 @@ games = {
     	'id': 'SLES03951',
 	'title': "YU-GI-OH! - FORBIDDEN MEMORIES",
         'pic0': 'https://images.launchbox-app.com/826e7c6b-cf98-459f-bd1e-22d7dcce3ac0.png',
+        'pic1': 'https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/07/yugioh-forbiddem-memories-feature-header.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Yu-Gi-Oh%21%20Forbidden%20Memories%20%28USA%29_jp2.zip',
     },
     'SLES00713': {
@@ -41492,6 +41612,7 @@ games = {
     	'id': 'SLPS00297',
 	'title': "ACTUA SOCCER",
         'pic0': 'https://images.launchbox-app.com/5a93314b-db06-4f24-93f0-9f0ed1993e1f.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQF50HI5T8hj-lEXuzxjEELsqUyYKX-XEftg&s',
     },
     'SLPS03510': {
         'url': "games/J/A/SLPS-03510.html",
@@ -45047,6 +45168,7 @@ games = {
     	'id': 'SLPM86489',
 	'title': "CASTROL HONDA SUPERBIKE RACING [SUPERLITE 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/2122e09a-2f99-4041-a3f8-91d285d2c062.png',
+        'pic1': 'https://images.launchbox-app.com//068b6932-8f49-408f-9b95-bef39adb3733.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Castrol%20Honda%20Superbike%20Racing%20%28USA%29_jp2.zip',
     },
     'SLPM86922': {
@@ -45054,6 +45176,7 @@ games = {
     	'id': 'SLPM86922',
 	'title': "CASTROL HONDA VTR [SUPERLITE 1500 SERIES]",
         'pic0': 'https://images.launchbox-app.com/717222a4-f0d3-46e5-b42c-60f98996b34e.jpg',
+        'pic1': 'https://images.launchbox-app.com//068b6932-8f49-408f-9b95-bef39adb3733.jpg',
     },
     'SLPS00908': {
         'url': "games/J/C/SLPS-00908.html",
@@ -46500,6 +46623,7 @@ games = {
     	'id': 'SLPS01128',
 	'title': "COURIER CRISIS",
         'pic0': 'https://images.launchbox-app.com/f76b3d23-f41a-4b65-8fc8-7e872b595098.png',
+        'pic1': 'https://images.launchbox-app.com//312bd119-45a7-4380-8d13-3a6895c9b7e0.jpg',
     },
     'SLPS01126': {
         'url': "games/J/C/SLPS-01126.html",
@@ -49787,12 +49911,14 @@ games = {
     	'id': 'SLPS01523',
 	'title': "FAMILY BOWLING",
         'pic0': 'https://images.launchbox-app.com/cf215546-ec9c-4742-81e0-50e6415ce2cd.png',
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS03043': {
         'url': "games/J/F/SLPS-03043.html",
     	'id': 'SLPS03043',
 	'title': "FAMILY BOWLING [NICHIBUTSU SELECT VOL.3]",
         'pic0': 'https://images.launchbox-app.com/cf215546-ec9c-4742-81e0-50e6415ce2cd.png',
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS03392': {
         'url': "games/J/F/SLPS-03392.html",
@@ -51763,6 +51889,7 @@ games = {
     	'id': 'SLPS01346',
 	'title': "GEKISOU!! GRAND RACING - TOTAL DRIVIN'",
         'pic0': 'https://images.launchbox-app.com/7eed6f07-5346-4b50-b61d-7d992a42b3e8.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_016b8b5c-ae35-40b1-861c-2008a6a5c99b.jpg',
     },
     'SCPS10087': {
         'url': "games/J/G/SCPS-10087.html",
@@ -56218,16 +56345,19 @@ games = {
     	'id': 'SLPS00092',
 	'title': "KING OF BOWLING",
         'pic0': 'https://images.launchbox-app.com/3fc8bff0-439c-4afb-9cf0-e04b2d145266.png',
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS01541': {
         'url': "games/J/K/SLPS-01541.html",
     	'id': 'SLPS01541',
 	'title': "KING OF BOWLING 2",
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS02688': {
         'url': "games/J/K/SLPS-02688.html",
     	'id': 'SLPS02688',
 	'title': "KING OF BOWLING 2 [PLAYSTATION THE BEST]",
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS00524': {
         'url': "games/J/K/SLPS-00524.html",
@@ -64152,6 +64282,7 @@ games = {
     	'id': 'SLPS02085',
 	'title': "POPULOUS - THE BEGINNING",
         'pic0': 'https://images.launchbox-app.com/9e009ea3-9f2e-46e7-8cfd-69ad6a92dcb2.png',
+        'pic1': 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2203860/ss_e7a8cfc8fdd964c38f3131cc0277b5b99ac724e2.1920x1080.jpg?t=1709845101',
         'pspconfig': 'pspconfigs/Populous - The Beginning/SLPS-02085.bin',
         'ps3config': 'ps3configs/Populous - The Beginning/SLPS-02085.BIN',
     },
@@ -68474,6 +68605,7 @@ games = {
         'url': "games/J/S/SLPS-02433.html",
     	'id': 'SLPS02433',
 	'title': "SIMPLE 1500 SERIES VOL.018 - THE BOWLING",
+        'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS02435': {
         'url': "games/J/S/SLPS-02435.html",
@@ -68524,6 +68656,7 @@ games = {
         'url': "games/J/S/SLPS-02630.html",
     	'id': 'SLPS02630',
 	'title': "SIMPLE 1500 SERIES VOL.027 - THE SNOWBOARD",
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEPpCEWIXKVhRJ22lStEiuZg5_3f2siaCfw&s',
     },
     'SLPS02726': {
         'url': "games/J/S/SLPS-02726.html",
@@ -70068,6 +70201,7 @@ games = {
     	'id': 'SLPS00394',
 	'title': "SPOT GOES TO HOLLYWOOD",
         'pic0': 'https://images.launchbox-app.com/58d3e354-76f5-4d0d-97b2-50f7f2f9ac59.png',
+        'pic1': 'https://images.launchbox-app.com//dd06f947-61aa-4aaf-b0f7-5c4683a569dd.jpg',
     },
     'SLPS02117': {
         'url': "games/J/S/SLPS-02117.html",
@@ -71997,6 +72131,7 @@ games = {
     	'id': 'SLPS00365',
 	'title': "TEKKYUU - TRUE PINBALL",
         'pic0': 'https://images.launchbox-app.com/ed350b7c-06d1-4ea4-bc63-40a4c2fd6f08.png',
+        'pic1': 'https://i.ytimg.com/vi/gFZ_DWfTIV8/maxresdefault.jpg',
     },
     'SLPM86368': {
         'url': "games/J/T/SLPM-86368.html",
@@ -72372,6 +72507,7 @@ games = {
     	'id': 'SLPS00769',
 	'title': "THE CROW - CITY OF ANGELS",
         'pic0': 'https://images.launchbox-app.com/088a9aef-cb3a-4df6-a186-af7b3be825e0.png',
+        'pic1': 'https://assets-prd.ignimgs.com/2024/03/19/the-crow-brandon-lee-thumb-1710876691508.jpg',
     },
     'SLPM86237': {
         'url': "games/J/T/SLPM-86237.html",
@@ -73032,24 +73168,28 @@ games = {
     	'id': 'SLPS01196',
 	'title': "THE STAR BOWLING - DX",
         'pic0': 'https://images.launchbox-app.com/d2017c10-05ef-4702-8a39-0f202002a8ea.png',
+        'pic1': 'https://www.newportworldresorts.com/sites/default/files/styles/large/public/2024-07/image3_0.jpg.webp',
     },
     'SLPS01197': {
         'url': "games/J/T/SLPS-01196.html",
     	'id': 'SLPS01197',
 	'title': "THE STAR BOWLING - DX",
         'pic0': 'https://images.launchbox-app.com/d2017c10-05ef-4702-8a39-0f202002a8ea.png',
+        'pic1': 'https://www.newportworldresorts.com/sites/default/files/styles/large/public/2024-07/image3_0.jpg.webp',
     },
     'SLPS01198': {
         'url': "games/J/T/SLPS-01196.html",
     	'id': 'SLPS01198',
 	'title': "THE STAR BOWLING - DX",
         'pic0': 'https://images.launchbox-app.com/d2017c10-05ef-4702-8a39-0f202002a8ea.png',
+        'pic1': 'https://www.newportworldresorts.com/sites/default/files/styles/large/public/2024-07/image3_0.jpg.webp',
     },
     'SLPS01199': {
         'url': "games/J/T/SLPS-01196.html",
     	'id': 'SLPS01199',
 	'title': "THE STAR BOWLING - DX",
         'pic0': 'https://images.launchbox-app.com/d2017c10-05ef-4702-8a39-0f202002a8ea.png',
+        'pic1': 'https://www.newportworldresorts.com/sites/default/files/styles/large/public/2024-07/image3_0.jpg.webp',
     },
     'SLPM86581': {
         'url': "games/J/T/SLPM-86581.html",
@@ -73279,13 +73419,15 @@ games = {
     	'id': 'SLPS02012',
 	'title': "TIGER WOODS 99 - PGA TOUR GOLF",
         'pic0': 'https://images.launchbox-app.com/58e5d81f-9c77-4459-9f96-d2357f343df0.png',
+        'pic1': 'https://cdn.britannica.com/35/197935-050-A7E61875/Tiger-Woods-2002.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Tiger%20Woods%2099%20PGA%20Tour%20Golf%20%28USA%29_jp2.zip',
     },
     'SLPS01017': {
         'url': "games/J/T/SLPS-01017.html",
     	'id': 'SLPS01017',
 	'title': "TIGERSHARK",
-        'pic0': 'https://images.launchbox-app.com/1a61d7b5-ad64-4ae5-ac2f-f231c0aed1ae.png',
+        'pic0': None,
+        'pic1': 'https://images.gog-statics.com/d7590a83422efda991d1d44de7766d8def4ac514240682a2d3464ceb34bf30f8.jpg',
         'snd0': 'https://www.youtube.com/watch?v=ZCOtJuEbV0c',
     },
     'SLPS00717': {
@@ -73324,7 +73466,8 @@ games = {
         'url': "games/J/T/SLPS-00556.html",
     	'id': 'SLPS00556',
 	'title': "TIME COMMANDO",
-        'pic0': 'https://images.launchbox-app.com/60c5b457-ac77-4fcf-8427-ba404c1ab29e.png',
+        'pic0': None,
+        'pic1': 'https://images.launchbox-app.com//97f9919b-b174-49d2-a686-c55670f24176.png',
         'snd0': 'https://www.youtube.com/watch?v=e-EAyVQNvWE&list=PLtF_NpuIBJ5JsAF7DVcXsBATlVgiQ9uxQ&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Time%20Commando%20%28USA%29_jp2.zip',
     },
