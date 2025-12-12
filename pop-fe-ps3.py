@@ -829,7 +829,8 @@ class PopFePs3App:
         undither = self.builder.get_variable('psx_undither_variable').get() == 'on'
         newemu   = self.builder.get_variable('force_newemu_variable').get() == 'on'
         swap     = self.builder.get_variable('allow_discswap_variable').get() == 'on'
-
+        ntsc     = self.builder.get_variable('force_ntsc_variable').get() == 'on'
+        
         popfe.create_ps3(pkg, disc_ids, self.real_disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
@@ -840,7 +841,7 @@ class PopFePs3App:
                          subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
                          psx_undither=undither,
-                         ps1_newemu=newemu, enable_swap=swap)
+                         ps1_newemu=newemu, enable_swap=swap, force_ntsc=ntsc)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)

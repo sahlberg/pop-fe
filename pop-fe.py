@@ -3104,7 +3104,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False):
+def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False, force_ntsc=False):
     #
     # This one is special since the same command may be used for other things
     # so we need to merge the argument if teh command is already there
@@ -3146,8 +3146,8 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
                 configs[i] = configs[i] + bytes([0x12, 0x00, 0x00, 0x00, 0x20,  0x00, 0x00, 0x00])
             else:
                 raise Exception('Cannot apply swapdisc to this disc. It already has 8 config commands')
-        if resolution == 1:
-            print('Force NTSC in config')
+        if force_ntsc:
+            print('Force NTSC in config. Game may run at wrong speed on PAL consoles')
             configs[i] = force_ntsc_config(configs[i])
         try:
             os.stat(real_cue_files[i][:-3]+'ps3config').st_size
