@@ -82,7 +82,8 @@ class PopFePs3App:
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
         self.manual = None
-        
+        self.path_dir = os.getcwd()
+
         self.master = master
         self.builder = builder = pygubu.Builder()
         builder.add_resource_path(PROJECT_PATH)
@@ -164,6 +165,10 @@ class PopFePs3App:
             o.append(theme)
         self.builder.get_object('theme', self.master).configure(values=o)
         self.init_data()
+        try:
+            self.read_prefs()
+        except:
+            True
 
     def __del__(self):
         global temp_files
@@ -178,7 +183,39 @@ class PopFePs3App:
                 except:
                     True
         temp_files = []  
-        
+
+    def update_prefs(self):
+        with open('pop-fe-ps3.config', "w") as f:
+            f.write('%s:%s\n' % ('newemu', self.builder.get_variable('force_newemu_variable').get()))
+            f.write('%s:%s\n' % ('swap', self.builder.get_variable('allow_discswap_variable').get()))
+            f.write('%s:%s\n' % ('ntsc', self.builder.get_variable('force_ntsc_variable').get()))
+            f.write('%s:%s\n' % ('undither', self.builder.get_variable('psx_undither_variable').get()))
+            if self.path_dir:
+                f.write('%s:%s\n' % ('path', self.path_dir))
+
+
+    def read_prefs(self):
+        with open('pop-fe-ps3.config', "r") as f:
+            for x in f.read().splitlines():
+                key, val =  x.split(':')
+                if key == 'newemu':
+                    self.builder.get_variable('force_newemu_variable').set(val)
+                if key == 'swap':
+                    self.builder.get_variable('allow_discswap_variable').set(val)
+                if key == 'ntsc':
+                    self.builder.get_variable('force_ntsc_variable').set(val)
+                if key == 'undither':
+                    self.builder.get_variable('psx_undither_variable').set(val)
+                if key == 'path':
+                    self.path_dir = val
+                    if self.path_dir:
+                        self.builder.get_object('disc1', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc2', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc3', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc4', self.master).config(initialdir=self.path_dir)
+                        self.builder.get_object('disc5', self.master).config(initialdir=self.path_dir)
+
+                
     def init_data(self):
         global temp_files
         if temp_files:
@@ -380,6 +417,9 @@ class PopFePs3App:
         img_file = None
         if not len(cue_file):
             return
+
+        self.path_dir = os.path.dirname(cue_file)
+        self.update_prefs()
 
         self.master.config(cursor='watch')
         self.master.update()
@@ -629,16 +669,16 @@ class PopFePs3App:
         self.update_preview()
 
     def on_force_ntsc(self):
-        True
+        self.update_prefs()
         
     def on_force_newemu(self):
-        True
+        self.update_prefs()
         
     def on_allow_swapdisc(self):
-        True
+        self.update_prefs()
         
     def on_psx_undither(self):
-        True
+        self.update_prefs()
         
     def on_data_track_only(self):
         self.data_track_only = self.builder.get_variable('data_track_only_variable').get()
