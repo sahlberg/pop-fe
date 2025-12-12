@@ -108,7 +108,6 @@ class PopFePs3App:
             'on_reset': self.on_reset,
             'on_theme_selected': self.on_theme_selected,
             'on_data_track_only': self.on_data_track_only,
-            'on_force_pal': self.on_force_pal,
             'on_force_ntsc': self.on_force_ntsc,
             'on_force_newemu': self.on_force_newemu,
             'on_allow_swapdisc': self.on_allow_swapdisc,
@@ -137,9 +136,7 @@ class PopFePs3App:
         self.force_newemu = builder.get_object("force_newemu")
         tooltip.create(self.force_newemu , "Use the psx_newemu emulator instead of psx_netemu\nVery few games need this.\nDo not enable unless you must since the psx_newemu emulator\nhas worse compatibility than psx_newemu")
         self.force_ntsc = builder.get_object("force_ntsc")
-        tooltip.create(self.force_ntsc , "Encode this game as NTSC even if it is actually PAL")
-        self.force_pal = builder.get_object("force_pal")
-        tooltip.create(self.force_pal , "Encode this game as PAL even if it is actually NTSC")
+        tooltip.create(self.force_ntsc , "Force the emulator to NTSC. This can cause the game to run\nat the wrong speed when used on a PAL console.")
         self.disc_as_icon0 = builder.get_object("disc_as_icon0")
         tooltip.create(self.disc_as_icon0 , "Use a scan of the disc as the icon")
         self.pic1_as_background = builder.get_object("pic1_as_background")
@@ -631,13 +628,8 @@ class PopFePs3App:
         c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
         self.update_preview()
 
-    def on_force_pal(self):
-        if self.builder.get_variable('force_pal_variable').get() == 'on':
-            self.builder.get_variable('force_ntsc_variable').set('off')
-            
     def on_force_ntsc(self):
-        if self.builder.get_variable('force_ntsc_variable').get() == 'on':
-            self.builder.get_variable('force_pal_variable').set('off')
+        True
         
     def on_force_newemu(self):
         True
@@ -790,8 +782,6 @@ class PopFePs3App:
                 
         if disc_id[:3] == 'SLE' or disc_id[:3] == 'SCE':
             print('SLES/SCES PAL game. Default resolution set to 2 (640x512)') if verbose else None
-            resolution = 2
-        if self.builder.get_variable('force_pal_variable').get() == 'on':
             resolution = 2
         if self.builder.get_variable('force_ntsc_variable').get() == 'on':
             resolution = 1
