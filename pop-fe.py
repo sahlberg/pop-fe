@@ -1877,10 +1877,6 @@ i0 = bytes([
 
 PSX_SITE = 'https://psxdatacenter.com/'
 verbose = False
-if sys.platform == 'win32':
-    font = 'arial.ttf'
-else:
-    font = 'DejaVuSansMono.ttf'
 
 def has_transparency(img):
     if img.info.get("transparency", None) is not None:
@@ -2397,27 +2393,29 @@ def add_image_text(image, title, game_id):
     # Add a nice title text to the background image
     # Split it into separate lines
     #   for ' - '
-    print('Add image text: title:', title) if verbose else None
     strings = title.split(' - ')
     y = 18
     txt = Image.new("RGBA", image.size, (255,255,255,0))
-    fnt = ImageFont.truetype(font, 8)
-    d = ImageDraw.Draw(txt)
+    fnt = ImageFont.load_default(8)
 
+    d = ImageDraw.Draw(txt)
     # Add Title (multiple lines) to upper right
     for t in strings:
-        ts = d.textsize(t, font=fnt)
-        d.text((image.size[0] - ts[0], y), t, font=fnt,
+        ts = d.textbbox((1,1), t, font=fnt)
+        w = ts[2] + ts[0]
+        h = ts[3] + ts[1]
+        d.text((image.size[0] - w, y), t, font=fnt,
                fill=(255,255,255,255))
-        y = y + ts[1] + 2
+        y = y + h + 2
 
     # Add game-id to bottom right
-    fnt = ImageFont.truetype(font, 10)
-    ts = d.textsize(game_id, font=fnt)
-    d.rectangle([(image.size[0] - ts[0] - 1, image.size[1] - ts[1] + 1),
+    ts = d.textbbox((1,1), game_id, font=fnt)
+    w = ts[2] + ts[0]
+    h = ts[3] + ts[1]
+    d.rectangle([(image.size[0] - w - 1, image.size[1] - h + 1),
                  (image.size[0] + 1, image.size[1] + 1)],
                 fill=(0,0,0,255))
-    d.text((image.size[0] - ts[0], image.size[1] - ts[1] - 1),
+    d.text((image.size[0] - w, image.size[1] - h),
            game_id, font=fnt, fill=(255,255,255,255))
 
     image = Image.alpha_composite(image, txt)
@@ -2976,7 +2974,7 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         pic0.save(i, format='PNG')
         i.seek(0)
         pic0 = i.read()
-    
+
     # Convert PIC1 to a file object
     if pic1:
         pic1 = pic1.resize((480, 272), Image.Resampling.LANCZOS).convert("RGBA")

@@ -2947,12 +2947,14 @@ games = {
     	'id': 'SLPS00103',
 	'title': "V-TENNIS",
         'pic0': 'https://images.launchbox-app.com/071f994b-14af-4a65-bcd7-4342273e7062.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdv95gT7xFZNN4u_07u_s9KHxl3fV1279cw&s',
     },
     'SLPS00469': {
         'url': "games/J/V/SLPS-00469.html",
     	'id': 'SLPS00469',
 	'title': "V-TENNIS 2",
         'pic0': 'https://images.launchbox-app.com/639a91f9-1b53-4f04-80b9-195a56163d52.png',
+        'pic1': 'https://www.europe1.fr/lmnr/var/europe1/storage/media/image/2025/10/28/14/066_dppi_20825043_186.jpg?VersionId=Rap6xy7dhcDD8bU9z8eymspuL5CmPENo',
     },
     'SLPS00352': {
         'url': "games/J/V/SLPS-00352.html",
@@ -6079,6 +6081,7 @@ games = {
     	'id': 'SLUS01090',
 	'title': "ARTHUR! - READY TO RACE",
         'pic0': 'https://images.launchbox-app.com/a795dc2f-1a55-41e0-9328-0fd9e3d3eb5b.png',
+        'pic1': 'https://images.launchbox-app.com//82581593-329e-4664-ac7f-7826b9f7c6c6.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Arthur!%20Ready%20to%20Race%20(USA).pdf',
     },
     'SLUS00713': {
@@ -8443,6 +8446,7 @@ games = {
     	'id': 'SLUS00224',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Disruptor%20(USA).pdf',
     },
     'SLUS00077': {
@@ -8796,6 +8800,7 @@ games = {
     	'id': 'SLUS00699',
 	'title': "ELIMINATOR",
         'pic0': 'https://images.launchbox-app.com/a9a54cc1-3c75-4cf1-9687-82178031bdc3.png',
+        'pic1': 'https://images.launchbox-app.com//cc476635-d62c-443d-a9d6-7257f7ce574c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0FGb4L7kXWM&list=PLjyLjyXJQJUPY3iESgDOJT6AZzm_zWMPl&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Eliminator%20(USA).pdf',
     },
@@ -15185,6 +15190,7 @@ games = {
     	'id': 'SLUS00924',
 	'title': "STAR TREK - INVASION",
         'pic0': 'https://images.launchbox-app.com/4544b1d0-e46d-4ca6-94ae-8b8684fa08dc.png',
+        'pic1': 'https://djcube.co.uk/wp-content/uploads/2023/05/invasion-016.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Trek%20-%20Invasion%20(USA).pdf',
     },
     'SLUS00297': {
@@ -15831,6 +15837,7 @@ games = {
     	'id': 'SLUS00377',
 	'title': "TEN PIN ALLEY",
         'pic0': 'https://images.launchbox-app.com/29f07594-5d5e-436f-805f-00f8d4685493.png',
+        'pic1': 'https://images.squarespace-cdn.com/content/v1/5db1bbf89fcdce492e5d32e9/1623820488184-1788ADWSHNSXAPVEK6UC/bowling+alleys+in+okc.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Ten%20Pin%20Alley%20(USA).pdf',
     },
     'SLUS00706': {
@@ -16941,6 +16948,7 @@ games = {
     	'id': 'SLUS00218',
 	'title': "V-TENNIS",
         'pic0': 'https://images.launchbox-app.com/071f994b-14af-4a65-bcd7-4342273e7062.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdv95gT7xFZNN4u_07u_s9KHxl3fV1279cw&s',
         'manual': 'https://www.videogamemanual.com/ps1/V-Tennis%20(LB)%20(USA).pdf',
     },
     'SLUS01040': {
@@ -17291,6 +17299,7 @@ games = {
     	'id': 'SLUS00397',
 	'title': "WCW - NITRO",
         'pic0': 'https://images.launchbox-app.com/0663114b-8b0f-4e60-831a-12a9d963df89.png',
+        'pic1': 'https://www.wwe.com/f/styles/wwe_16_9_s/public/2025/05/dcfullmay2025_62_ntwk_rev_1--a645e6f037bde9ca218924bcab8eb2cf.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/WCW%20Nitro%20(USA).pdf',
     },
     'SLUS00779': {
@@ -17298,6 +17307,7 @@ games = {
     	'id': 'SLUS00779',
 	'title': "WCW/NWO THUNDER",
         'pic0': 'https://images.launchbox-app.com/bca23a5c-6311-46f5-ac13-6a1acf944e58.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7jQN_1FJS_7d9zvbwfCixDDHykcG0wDrqw&s',
         'manual': 'https://www.videogamemanual.com/ps1/WCW-nWo%20Thunder%20(USA).pdf',
     },
     'SLUS00455': {
@@ -17305,6 +17315,7 @@ games = {
     	'id': 'SLUS00455',
 	'title': "WCW VS. THE WORLD",
         'pic0': 'https://images.launchbox-app.com/3b805750-0991-42d8-8ade-763babc92019.png',
+        'pic1': 'https://static0.thesportsterimages.com/wordpress/wp-content/uploads/2024/11/every-wcw-champion-ever.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/WCW%20vs.%20the%20World%20(USA).pdf',
     },
     'SLUS00683': {
@@ -24259,6 +24270,7 @@ games = {
     	'id': 'SLES00535',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disruptor%20%28USA%29_jp2.zip',
     },
     'SLES00564': {
@@ -24266,6 +24278,7 @@ games = {
     	'id': 'SLES00564',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disruptor%20%28USA%29_jp2.zip',
     },
     'SLES00565': {
@@ -24273,6 +24286,7 @@ games = {
     	'id': 'SLES00565',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disruptor%20%28USA%29_jp2.zip',
     },
     'SLES01535': {
@@ -25188,6 +25202,7 @@ games = {
     	'id': 'SLES01364',
 	'title': "ELIMINATOR",
         'pic0': 'https://images.launchbox-app.com/a9a54cc1-3c75-4cf1-9687-82178031bdc3.png',
+        'pic1': 'https://images.launchbox-app.com//cc476635-d62c-443d-a9d6-7257f7ce574c.jpg',
         'snd0': 'https://www.youtube.com/watch?v=0FGb4L7kXWM&list=PLjyLjyXJQJUPY3iESgDOJT6AZzm_zWMPl&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Eliminator%20%28USA%29_jp2.zip',
     },
@@ -36013,6 +36028,7 @@ games = {
     	'id': 'SLES02068',
 	'title': "STAR TREK - INVASION",
         'pic0': 'https://images.launchbox-app.com/4544b1d0-e46d-4ca6-94ae-8b8684fa08dc.png',
+        'pic1': 'https://djcube.co.uk/wp-content/uploads/2023/05/invasion-016.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Trek%20-%20Invasion%20%28USA%29_jp2.zip',
     },
     'SLES02884': {
@@ -36020,6 +36036,7 @@ games = {
     	'id': 'SLES02884',
 	'title': "STAR TREK - INVASION",
         'pic0': 'https://images.launchbox-app.com/4544b1d0-e46d-4ca6-94ae-8b8684fa08dc.png',
+        'pic1': 'https://djcube.co.uk/wp-content/uploads/2023/05/invasion-016.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Trek%20-%20Invasion%20%28USA%29_jp2.zip',
     },
     'SLES00585': {
@@ -37195,6 +37212,7 @@ games = {
     	'id': 'SLES00534',
 	'title': "TEN PIN ALLEY",
         'pic0': 'https://images.launchbox-app.com/29f07594-5d5e-436f-805f-00f8d4685493.png',
+        'pic1': 'https://images.squarespace-cdn.com/content/v1/5db1bbf89fcdce492e5d32e9/1623820488184-1788ADWSHNSXAPVEK6UC/bowling+alleys+in+okc.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Ten%20Pin%20Alley%20%28USA%29_jp2.zip',
     },
     'SLES01374':    {
@@ -38304,7 +38322,6 @@ games = {
     	'id': 'SLES02595',
 	'title': "TIGER WOODS - USA TOUR 2000",
         'pic0': 'https://images.launchbox-app.com/af150455-3c89-4602-ba1c-b93da4b3f547.png',
-        'pic1': 'https://www.investopedia.com/thmb/cGLTSgopZFDs_WUnDPjxfIsEnfw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1863206916-67a4cf0a1f5c4598b6e7fda26ef7e004.jpg',
     },
     'SLES03337': {
         'url': "games/P/T/SLES-03337.html",
@@ -39746,6 +39763,7 @@ games = {
     	'id': 'SLES00285',
 	'title': "V-TENNIS",
         'pic0': 'https://images.launchbox-app.com/071f994b-14af-4a65-bcd7-4342273e7062.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdv95gT7xFZNN4u_07u_s9KHxl3fV1279cw&s',
     },
     'SLES02468':       {
         'url': "games/P/W/SLES-02468.html",
@@ -39984,12 +40002,14 @@ games = {
     	'id': 'SLES01137',
 	'title': "WCW - NITRO",
         'pic0': 'https://images.launchbox-app.com/0663114b-8b0f-4e60-831a-12a9d963df89.png',
+        'pic1': 'https://www.wwe.com/f/styles/wwe_16_9_s/public/2025/05/dcfullmay2025_62_ntwk_rev_1--a645e6f037bde9ca218924bcab8eb2cf.jpg',
     },
     'SLES01663': {
         'url': "games/P/W/SLES-01663.html",
     	'id': 'SLES01663',
 	'title': "WCW/NWO THUNDER",
         'pic0': 'https://images.launchbox-app.com/bca23a5c-6311-46f5-ac13-6a1acf944e58.png',
+        'pic1': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7jQN_1FJS_7d9zvbwfCixDDHykcG0wDrqw&s',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/WCW-nWo%20Thunder%20%28USA%29_jp2.zip',
     },
     'SLES00763': {
@@ -39997,6 +40017,7 @@ games = {
     	'id': 'SLES00763',
 	'title': "WCW VS. THE WORLD",
         'pic0': 'https://images.launchbox-app.com/3b805750-0991-42d8-8ade-763babc92019.png',
+        'pic1': 'https://static0.thesportsterimages.com/wordpress/wp-content/uploads/2024/11/every-wcw-champion-ever.jpg',
     },
     'SLES03341': {
         'url': "games/P/W/SLES-03341.html",
@@ -40009,12 +40030,14 @@ games = {
     	'id': 'SLES03591',
 	'title': "WER WIRD MILLIONÃ„R - 2. EDITION",
         'pic0': 'https://images.launchbox-app.com/9dada551-1f82-40f2-8017-e6a0bba40a4e.png',
+        'pic1': 'https://www.pluggedin.com/wp-content/uploads/2020/01/who-wants-to-be-a-millionaire-1024x614.jpg',
     },
     'SLES03916': {
         'url': "games/P/W/SLES-03916.html",
     	'id': 'SLES03916',
 	'title': "WER WIRD MILLIONÃ„R - DRITTE EDITION",
         'pic0': 'https://images.launchbox-app.com/8a64e98c-2fb9-474c-8803-e4c800e0ffe8.png',
+        'pic1': 'https://deadline.com/wp-content/uploads/2025/04/173308_1520.jpg?w=681&h=383&crop=1',
     },
     'SLES03594': {
         'url': "games/P/W/SLES-03594.html",
@@ -48284,6 +48307,7 @@ games = {
     	'id': 'SCPS45043',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Disruptor%20%28USA%29_jp2.zip',
     },
     'SLPS00804': {
@@ -48291,6 +48315,7 @@ games = {
     	'id': 'SLPS00804',
 	'title': "DISRUPTOR",
         'pic0': 'https://images.launchbox-app.com/13ecb083-1b58-447b-b8ec-30beec1c76c6.png',
+        'pic1': 'https://images.launchbox-app.com//4e0dbba6-8205-4536-b992-c49f6350040b.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Disruptor%20[SLPS-00804]%20(J).cbr',
     },
     'SLPS01364': {
