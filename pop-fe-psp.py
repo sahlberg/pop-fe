@@ -77,6 +77,7 @@ class PopFePs3App:
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
         self.manual = None
+        self.icon0_path = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -106,6 +107,7 @@ class PopFePs3App:
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
             'on_psx_undither': self.on_psx_undither,
+            'on_ntsc_u_icon0': self.on_ntsc_u_icon0,
         }
 
         builder.connect_callbacks(callbacks)
@@ -135,6 +137,8 @@ class PopFePs3App:
         tooltip.create(self.pic0xoffset , "Shift the placement of pic0 horizontally.\n0.1 means shift 10% to the right.\n-0.1 means shift 10% to the left.\nThe resulting image is bounded by the maximum size of the pic0 box.")
         self.pic0yoffset = builder.get_object("pic0yoffset")
         tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
+        self.ntsc_u_icon0 = builder.get_object("ntsc_u_icon0")
+        tooltip.create(self.ntsc_u_icon0, "WIP")
         #self. = builder.get_object("")
         #tooltip.create(self. , "")
         
@@ -334,7 +338,7 @@ class PopFePs3App:
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((80,80),(62,62)))
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
             
         if self.icon0:
             temp_files.append(self.subdir + 'ICON0.PNG')
@@ -540,11 +544,8 @@ class PopFePs3App:
             self.icon0 = Image.open(path)
         except:
             return
-        temp_files.append(self.subdir + 'ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-        c = self.builder.get_object('icon0_canvas', self.master)
-        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.icon0_path = path
+        self.update_assets()
         self.update_preview()
 
 
@@ -730,7 +731,11 @@ class PopFePs3App:
 
     def on_psx_undither(self):
         self.update_prefs()
-        
+
+    def on_ntsc_u_icon0(self):
+        self.update_prefs()
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-v', action='store_true', help='Verbose')
