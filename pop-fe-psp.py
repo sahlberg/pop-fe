@@ -61,8 +61,10 @@ class PopFePs3App:
         self.icon0_tk = None
         self.pic0 = None
         self.pic0_orig = None
+        self.pic0_path = None
         self.pic0_tk = None
         self.pic1 = None
+        self.pic1_path = None
         self.pic1_tk = None
         self.pkgdir = None
         self.watermark = 'on'
@@ -195,8 +197,10 @@ class PopFePs3App:
         self.icon0_tk = None
         self.pic0 = None
         self.pic0_orig = None
+        self.pic0_path = None
         self.pic0_tk = None
         self.pic1 = None
+        self.pic1_path = None
         self.pic1_tk = None
         self.preview_tk = None
         self.manual = None
@@ -292,9 +296,12 @@ class PopFePs3App:
     def fetch_pic0(self):
         disc_id = self.disc_ids[0]
         game = popfe.get_game_from_gamelist(disc_id)
-        
+
         self.pic0 = None
-        if self._theme != '':
+        if self.pic0_path:
+            self.pic0 = Image.open(self.pic0_path)
+            self.pic0_orig = Image.open(self.pic0_path)
+        if not self.pic0 and self._theme != '':
             self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
             if not self.pic0:
                 self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
@@ -309,7 +316,7 @@ class PopFePs3App:
             c = self.builder.get_object('pic0_canvas', self.master)
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
         
-    def update_assets(self, icon0_only=False):
+    def update_assets(self, update_icon0=True, update_pic0=True, update_pic1=True):
         if not self.disc_ids:
             return
         if not self.cue_file_orig:
@@ -317,27 +324,24 @@ class PopFePs3App:
         disc_id = self.disc_ids[0]
         game = popfe.get_game_from_gamelist(disc_id)
 
-        print('Fetching ICON0') if verbose else None
-        self.icon0 = None
-        if self._theme != '':
-            print('Get icon0 from theme')
-            self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
+        if update_icon0:
+            print('Fetching ICON0') if verbose else None
+            self.icon0 = None
+            if self._theme != '':
+                print('Get icon0 from theme')
+                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
+                if not self.icon0:
+                    self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
+                if self.icon0:
+                    self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
-                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
+                self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
             if self.icon0:
-                self.icon0 = self.icon0.crop(self.icon0.getbbox())
-        if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
-        if self.icon0:
-            temp_files.append(self.subdir + 'ICON0.PNG')
-            self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-            self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-            c = self.builder.get_object('icon0_canvas', self.master)
-            c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
-        if icon0_only:
-            self.update_preview()
-            return
-            
+                temp_files.append(self.subdir + 'ICON0.PNG')
+                self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
+                self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
+                c = self.builder.get_object('icon0_canvas', self.master)
+                c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
  
         if self.snd0_disabled == 'off':
             snd0 = None
@@ -351,23 +355,27 @@ class PopFePs3App:
             if snd0:
                 self.builder.get_variable('snd0_variable').set(snd0)
                 
-        print('Fetching PIC0') if verbose else None
-        self.fetch_pic0()
+        if update_pic0:
+            print('Fetching PIC0') if verbose else None
+            self.fetch_pic0()
         
-        print('Fetching PIC1') if verbose else None
-        self.pic1 = None
-        if self._theme != '':
-            self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.PNG')
+        if update_pic1:
+            print('Fetching PIC1') if verbose else None
+            self.pic1 = None
+            if self.pic1_path:
+                self.pic1 = Image.open(self.pic1_path)
+            if not self.pic1 and self._theme != '':
+                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.PNG')
+                if not self.pic1:
+                    self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
             if not self.pic1:
-                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
-        if not self.pic1:
-            self.pic1 = popfe.get_pic1_from_game(disc_id, game, self.cue_file_orig)
-        if self.pic1:
-            temp_files.append(self.subdir + 'PIC1.PNG')
-            self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
-            self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
-            c = self.builder.get_object('pic1_canvas', self.master)
-            c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
+                self.pic1 = popfe.get_pic1_from_game(disc_id, game, self.cue_file_orig)
+            if self.pic1:
+                temp_files.append(self.subdir + 'PIC1.PNG')
+                self.pic1.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC1.PNG')
+                self.pic1_tk = tk.PhotoImage(file = self.subdir + 'PIC1.PNG')
+                c = self.builder.get_object('pic1_canvas', self.master)
+                c.create_image(0, 0, image=self.pic1_tk, anchor='nw')
 
         self.update_preview()
         
@@ -549,7 +557,7 @@ class PopFePs3App:
         except:
             return
         self.icon0_path = path
-        self.update_assets(icon0_only=True)
+        self.update_assets(update_pic0=False, update_pic1=False)
         self.update_preview()
 
 
@@ -575,15 +583,18 @@ class PopFePs3App:
         try:
             os.stat(path)
             self.pic0 = Image.open(path)
+            self.pic0_orig = Image.open(path)
+            self.pic0_path = path
         except:
             return
+
         temp_files.append(self.subdir + 'PIC0.PNG')
         self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
         self.pic0_tk = tk.PhotoImage(file = self.subdir + 'PIC0.PNG')
         c = self.builder.get_object('pic0_canvas', self.master)
         c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
         self.update_preview()
-
+        
     def on_pic1_clicked(self, event):
         filetypes = [
             ('Image files', ['.png', '.PNG', '.jpg', '.JPG']),
@@ -592,6 +603,7 @@ class PopFePs3App:
         try:
             os.stat(path)
             self.pic1 = Image.open(path)
+            self.pic1_path = path
         except:
             return
         temp_files.append(self.subdir + 'PIC1.PNG')
@@ -737,7 +749,7 @@ class PopFePs3App:
         self.update_prefs()
 
     def on_ntsc_u_icon0(self):
-        self.update_assets(icon0_only=True)
+        self.update_assets(update_pic0=False, update_pic1=False)
         self.update_prefs()
 
 
