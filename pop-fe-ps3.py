@@ -64,8 +64,11 @@ class PopFePs3App:
         self.icon0 = None
         self.icon0_tk = None
         self.pic0 = None
+        self.pic0_orig = None
+        self.pic0_path = None
         self.pic0_tk = None
         self.pic1 = None
+        self.pic1_path = None
         self.pic1_tk = None
         self.back = None
         self.disc = None
@@ -243,8 +246,10 @@ class PopFePs3App:
         self.icon0_tk = None
         self.pic0 = None
         self.pic0_orig = None
+        self.pic0_path = None
         self.pic0_tk = None
         self.pic1 = None
+        self.pic1_path = None
         self.pic1_tk = None
         self.back = None
         self.disc = None
@@ -339,7 +344,10 @@ class PopFePs3App:
         game = popfe.get_game_from_gamelist(disc_id)
         
         self.pic0 = None
-        if self._theme != '':
+        if self.pic0_path:
+            self.pic0 = Image.open(self.pic0_path)
+            self.pic0_orig = Image.open(self.pic0_path)
+        if not self.pic0 and self._theme != '':
             self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
             if not self.pic0:
                 self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
@@ -397,7 +405,9 @@ class PopFePs3App:
         
         print('Fetching PIC1') if verbose else None
         self.pic1 = None
-        if self._theme != '':
+        if self.pic1_path:
+            self.pic1 = Image.open(self.pic1_path)
+        if not self.pic1 and self._theme != '':
             self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.PNG')
             if not self.pic1:
                 self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
@@ -603,6 +613,8 @@ class PopFePs3App:
         try:
             os.stat(path)
             self.pic0 = Image.open(path)
+            self.pic0_orig = Image.open(path)
+            self.pic0_path = path
         except:
             return
         temp_files.append(self.subdir + 'PIC0.PNG')
