@@ -144,7 +144,7 @@ def encrypt_document(f, gameid, pages):
     ib = bytearray(info_block_size)
     struct.pack_into('<I', ib, 0x00, 0xffffffff)
     struct.pack_into('<I', ib, 0x04, len(pages))
-    struct.pack_into('<I', ib, 0x3188, len(pages))
+    struct.pack_into('<I', ib, 0x3188 if len(pages) < 100 else 0x1f388, len(pages))
     for i, p in enumerate(pages):
         png_len = len(p) + 0x20
         struct.pack_into('<I', ib, 0x08 + i * 0x80 + 0x00, fp)
