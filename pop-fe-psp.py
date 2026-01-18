@@ -80,6 +80,7 @@ class PopFePs3App:
         self.pic0yoffset = 0.1
         self.manual = None
         self.icon0_path = None
+        self.path_dir = None
         
         self.master = master
         self.builder = builder = pygubu.Builder()
