@@ -185,8 +185,8 @@ def boxbb_mac_gen_enc(buf: bytes, vkey: bytes) -> bytes:
     get_bb_mac =  boxbb_mac_gen(buf, vkey)
     return _encrypt_iv0(get_bb_mac, 0x63)
 
-# set standart keys
-ins_id = bytes(0x10)
+# set standard keys (POPS "VERSION" KEY)
+ins_id = bytes([0x2E, 0x41, 0x17, 0xA5, 0x32, 0xE6, 0xC4, 0x73, 0x71, 0x7B, 0x0F, 0x7A, 0x6E, 0xC0, 0xAA, 0xA5])
 ###################
 
 def decrypt_blob(hdr, name):
