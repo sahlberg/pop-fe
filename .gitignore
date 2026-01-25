@@ -1,2 +1,14 @@
 _internal/
 __pycache__/
+build/
+dist/
+pop-fe-work/
+pop-fe-psp-work/
+pop-fe-ps3-work/
+pop-fe-psp.config
+pop-fe-ps3.config
+EBOOT.PBP
+DOCUMENT.DAT
+*.exe
+*.pkg
+tmp*
