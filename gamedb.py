@@ -2428,22 +2428,22 @@ games = {
     'SLED00038': {'id': 'SLED00038', 'title': 'CROC [DEMO]', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCUS94482': {'id': 'SCUS94482', 'title': 'PLAYSTATION DEMO DISC - SHOCK YOUR SYSTEM!', 'icon0': None, 'pic0': None, 'pic1': None,},
     'SCUS94496': {'id': 'SCUS94496', 'title': 'PLAYSTATION DEMO DISC - SHOCK YOUR SYSTEM!', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00009': {
-        'id': 'PSUG00009',
+    'SCUS94161': {
+        'id': 'SCUS94161',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 1 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/317048-ug.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/317048-ug.jpg',
     },
-    'PSUG00010': {
-        'id': 'PSUG00010',
+    'SCUS94161': {
+        'id': 'SCUS94161',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 1 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/317048-ug.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/317048-ug.jpg',
     },
-    'PSUG00011': {
-        'id': 'PSUG00011',
+    'SCUS94178': {
+        'id': 'SCUS94178',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 2 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463621-ug2.jpg',
         'pic0': None,
@@ -2456,196 +2456,196 @@ games = {
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463621-ug2.jpg',
     },
-    'PSUG00013': {
-        'id': 'PSUG00013',
+    'SCUS94191': {
+        'id': 'SCUS94191',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 3 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463637-ug3.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463637-ug3.jpg',
     },
-    'PSUG00014': {
-        'id': 'PSUG00014',
+    'SCUS94192': {
+        'id': 'SCUS94192',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 3 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463637-ug3.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463637-ug3.jpg',
     },
-    'PSUG00015': {
-        'id': 'PSUG00015',
+    'SCUS94225': {
+        'id': 'SCUS94225',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463649-ug4.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463649-ug4.jpg',},
-    'PSUG00016': {
-        'id': 'PSUG00016',
+    'SCUS94226': {
+        'id': 'SCUS94226',
         'title': 'PLAYSTATION UNDERGROUND NUMBER 4 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463649-ug4.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463649-ug4.jpg',
     },
-    'PSUG00017': {'id': 'PSUG00017', 'title': 'PLAYSTATION UNDERGROUND JAMPACK - FALL 2001 (USA)', 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94657': {'id': 'SCUS94657', 'title': 'PLAYSTATION UNDERGROUND JAMPACK - FALL 2001 (USA)', 'icon0': None, 'pic0': None, 'pic1': None,},
     'PSUG00018': {'id': 'PSUG00018', 'title': 'PLAYSTATION UNDERGROUND JAMPACK - SUMMER 2K (USA)', 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00019': {'id': 'PSUG00019', 'title': "PLAYSTATION UNDERGROUND JAMPACK - SUMMER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00020': {'id': 'PSUG00020', 'title': "PLAYSTATION UNDERGROUND JAMPACK (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00021': {'id': 'PSUG00021', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER 2000 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00022': {'id': 'PSUG00022', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '98 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00023': {'id': 'PSUG00023', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
-    'PSUG00002': {
-        'id': 'PSUG00002',
+    'SCUS94428': {'id': 'SCUS94428', 'title': "PLAYSTATION UNDERGROUND JAMPACK - SUMMER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94267': {'id': 'SCUS94267', 'title': "PLAYSTATION UNDERGROUND JAMPACK (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94624': {'id': 'SCUS94624', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER 2000 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94293': {'id': 'SCUS94293', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '98 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94475': {'id': 'SCUS94475', 'title': "PLAYSTATION UNDERGROUND JAMPACK - WINTER '99 (USA)", 'icon0': None, 'pic0': None, 'pic1': None,},
+    'SCUS94237': {
+        'id': 'SCUS94237',
         'title': 'PLAYSTATION UNDERGROUND 2.1 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463654-ug5.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463654-ug5.jpg',
     },
-    'PSUG00003': {
-        'id': 'PSUG00003',
+    'SCUS94238': {
+        'id': 'SCUS94238',
         'title': 'PLAYSTATION UNDERGROUND 2.1 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463654-ug5.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463654-ug5.jpg',
     },
-    'PSUG00005': {
-        'id': 'PSUG00005',
+    'SCUS94259': {
+        'id': 'SCUS94259',
         'title': 'PLAYSTATION UNDERGROUND 2.2 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463665-ug6.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463665-ug6.jpg',
     },
-    'PSUG00006': {
-        'id': 'PSUG00006',
+    'SCUS94260': {
+        'id': 'SCUS94260',
         'title': 'PLAYSTATION UNDERGROUND 2.2 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463665-ug6.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463665-ug6.jpg',
     },
-    'PSUG00001': {
-        'id': 'PSUG00001',
+    'SCUS94269': {
+        'id': 'SCUS94269',
         'title': 'PLAYSTATION UNDERGROUND 2.3 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463667-ug7.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463667-ug7.jpg',
     },
-    'PSUG00004': {
-        'id': 'PSUG00004',
+    'SCUS94270': {
+        'id': 'SCUS94270',
         'title': 'PLAYSTATION UNDERGROUND 2.3 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463667-ug7.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463667-ug7.jpg',
     },
-    'PSUG00007': {
-        'id': 'PSUG00007',
+    'SCUS94298': {
+        'id': 'SCUS94298',
         'title': 'PLAYSTATION UNDERGROUND 2.4 (USA) (DISC 1)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463669-ug8.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463669-ug8.jpg',
     },
-    'PSUG00008': {
-        'id': 'PSUG00008',
+    'SCUS94299': {
+        'id': 'SCUS94299',
         'title': 'PLAYSTATION UNDERGROUND 2.4 (USA) (DISC 2)',
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463669-ug8.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463669-ug8.jpg',
     },
-    'PSUG00024': {
-        'id': 'PSUG00024',
+    'SCUS94440': {
+        'id': 'SCUS94440',
         'title': "PLAYSTATION UNDERGROUND 3.1 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463678-ug9.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463678-ug9.jpg',
     },
-    'PSUG00025': {
-        'id': 'PSUG00025',
+    'SCUS94441': {
+        'id': 'SCUS94441',
         'title': "PLAYSTATION UNDERGROUND 3.1 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463678-ug9.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463678-ug9.jpg',
     },
-    'PSUG00026': {
-        'id': 'PSUG00026',
+    'SCUS94442': {
+        'id': 'SCUS94442',
         'title': "PLAYSTATION UNDERGROUND 3.2 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463683-ug10.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463683-ug10.jpg',
     },
-    'PSUG00027': {
-        'id': 'PSUG00027',
+    'SCUS94443': {
+        'id': 'SCUS94443',
         'title': "PLAYSTATION UNDERGROUND 3.2 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463683-ug10.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463683-ug10.jpg',
     },
-    'PSUG00028': {
-        'id': 'PSUG00028',
+    'SCUS94444': {
+        'id': 'SCUS94444',
         'title': "PLAYSTATION UNDERGROUND 3.3 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463692-ug11.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463692-ug11.jpg',
     },
-    'PSUG00029': {
-        'id': 'PSUG00029',
+    'SCUS94445': {
+        'id': 'SCUS94445',
         'title': "PLAYSTATION UNDERGROUND 3.3 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463692-ug11.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463692-ug11.jpg',
     },
-    'PSUG00030': {
-        'id': 'PSUG00030',
+    'SCUS94446': {
+        'id': 'SCUS94446',
         'title': "PLAYSTATION UNDERGROUND 3.4 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463695-ug12.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463695-ug12.jpg',
     },
-    'PSUG00031': {
-        'id': 'PSUG00031',
+    'SCUS94447': {
+        'id': 'SCUS94447',
         'title': "PLAYSTATION UNDERGROUND 3.4 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463695-ug12.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463695-ug12.jpg',
     },
-    'PSUG00032': {
-        'id': 'PSUG00032',
+    'SCUS94565': {
+        'id': 'SCUS94565',
         'title': "PLAYSTATION UNDERGROUND 4.1 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463698-ug13.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463698-ug13.jpg',
     },
-    'PSUG00033': {
-        'id': 'PSUG00033',
+    'SCUS94566': {
+        'id': 'SCUS94566',
         'title': "PLAYSTATION UNDERGROUND 4.1 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463698-ug13.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463698-ug13.jpg',
     },
-    'PSUG00034': {
-        'id': 'PSUG00034',
+    'SCUS94612': {
+        'id': 'SCUS94612',
         'title': "PLAYSTATION UNDERGROUND 4.2 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463704-ug14.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463704-ug14.jpg',
     },
-    'PSUG00035': {
-        'id': 'PSUG00035',
+    'SCUS94613': {
+        'id': 'SCUS94613',
         'title': "PLAYSTATION UNDERGROUND 4.2 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463704-ug14.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463704-ug14.jpg',
     },
-    'PSUG00036': {
-        'id': 'PSUG00036',
+    'SCUS94620': {
+        'id': 'SCUS94620',
         'title': "PLAYSTATION UNDERGROUND 4.3 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463715-ug15cover.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463715-ug15cover.jpg',
     },
-    'PSUG00037': {
-        'id': 'PSUG00037',
+    'SCUS94621': {
+        'id': 'SCUS94621',
         'title': "PLAYSTATION UNDERGROUND 4.3 (USA) (DISC 2)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463715-ug15cover.jpg',
         'pic0': None,
         'pic1': 'https://www.giantbomb.com/a/uploads/original/0/1992/463715-ug15cover.jpg',
     },
-    'PSUG00038': {
-        'id': 'PSUG00038',
+    'SCUS97120': {
+        'id': 'SCUS97120',
         'title': "PLAYSTATION UNDERGROUND 4.4 (USA) (DISC 1)",
         'icon0': 'https://www.giantbomb.com/a/uploads/original/0/1992/463743-ug16.jpg',
         'pic0': None,
@@ -76563,118 +76563,118 @@ gameid_by_md5sum = {
         'id': 'PSPK00001',
     },
     '9e4389f44c0fc60df60f72895d42a88b': {
-        'id': 'PSUG00038',
+        'id': 'SCUS97120',
     },
     '57051906b50639027d374ce1aed567d0': {
-        'id': 'PSUG00037',
+        'id': 'SCUS94621',
     },
     'd41a1a29c181674e196282e09835ba2a': {
-        'id': 'PSUG00036',
+        'id': 'SCUS94620',
     },
     '0f7a646e4d70c90033a8ca5e62e197b5': {
-        'id': 'PSUG00035',
+        'id': 'SCUS94613',
     },
     '1da42fd377ad10f51bc5933eeaf79117': {
-        'id': 'PSUG00034',
+        'id': 'SCUS94612',
     },
     '65c3814644bc68c03e967793bde4bd9e': {
-        'id': 'PSUG00033',
+        'id': 'SCUS94566',
     },
     '812073b84d21d3eee4be484e3b65796d': {
-        'id': 'PSUG00032',
+        'id': 'SCUS94565',
     },
     'ad8e96d2a0785218623e416670d22b60': {
-        'id': 'PSUG00031',
+        'id': 'SCUS94447',
     },
     '4ee31226fef1c1bdca3c7f82d1c7ed98': {
-        'id': 'PSUG00030',
+        'id': 'SCUS94446',
     },
     '7e6ffb21ee1478964c795a0ddba7d921': {
-        'id': 'PSUG00029',
+        'id': 'SCUS94445',
     },
     '89b126fdc475db0d519c55b9221efeea': {
-        'id': 'PSUG00028',
+        'id': 'SCUS94444',
     },
     '8e24a72da1249e311ac84a05835f1678': {
-        'id': 'PSUG00027',
+        'id': 'SCUS94443',
     },
     '91804e9ea4c27aba8514a5b5d1f2e11a': {
-        'id': 'PSUG00026',
+        'id': 'SCUS94442',
     },
     '0dba18f38f61b712c0d9fdc7b9ee49fb': {
-        'id': 'PSUG00025',
+        'id': 'SCUS94441',
     },
     '6f01ee8ae1119292bbb15c095f9b301e': {
-        'id': 'PSUG00024',
+        'id': 'SCUS94440',
     },
     '426d23621b8e8f0b58c32b6133e87d49': {
-        'id': 'PSUG00023',
+        'id': 'SCUS94475',
     },
     '89d98de78368661aab5a61f86ae378de': {
-        'id': 'PSUG00022',
+        'id': 'SCUS94293',
     },
     '4be56c4d8ad1d62a884a1a6e901892e1': {
-        'id': 'PSUG00021',
+        'id': 'SCUS94624',
     },
     '640173dfeb39366ed4613a8f83ed3cb0': {
-        'id': 'PSUG00020',
+        'id': 'SCUS94267',
     },
     '7ef0a943409d8d63787d8fa68ce49df9': {
-        'id': 'PSUG00019',
+        'id': 'SCUS94428',
     },
     '5ad5262f832157807993c204e5d62de9': {
         'id': 'PSUG00018',
     },
     '5ad5262f832157807993c204e5d62de9': {
-        'id': 'PSUG00017',
+        'id': 'SCUS94657',
     },
     'ea7c9c048a26e26cb67469a8087b86aa': {
-        'id': 'PSUG00016',
+        'id': 'SCUS94226',
     },
     '006e0b00cb4833542bd095088f73c52a': {
-        'id': 'PSUG00015',
+        'id': 'SCUS94225',
     },
     'e43b3179788c16bc0642c532cc40240c': {
-        'id': 'PSUG00014',
+        'id': 'SCUS94192',
     },
     '4056fa249c8bdabb6d74b767a7e5640a': {
-        'id': 'PSUG00013',
+        'id': 'SCUS94191',
     },
     '27163e2caaaa68150c925303a2683ee9': {
         'id': 'PSUG00012',
     },
     '5d9edd649d38c6d2d6de0c562fc49c2a': {
-        'id': 'PSUG00011',
+        'id': 'SCUS94178',
     },
     'a172d0bea9fb92d8dd6598951f782fae': {
-        'id': 'PSUG00010',
+        'id': 'SCUS94161',
     },
     'a2476ecc059a1710a09ceb52e71780b4': {
-        'id': 'PSUG00009',
+        'id': 'SCUS94161',
     },
     'ff06fac972a453368fff623e8414729b': {
-        'id': 'PSUG00008',
+        'id': 'SCUS94299',
     },
     '0b148a17c75086343e7fabe8fe060ace': {
-        'id': 'PSUG00007',
+        'id': 'SCUS94298',
     },
     'a8c453578812a17ede42bcd81b1fd53f': {
-        'id': 'PSUG00006',
+        'id': 'SCUS94260',
     },
     '62c67fff04ec8b7b80d82731e40734c0': {
-        'id': 'PSUG00005',
+        'id': 'SCUS94259',
     },
     'a0941a3e7efd4951e3fa1cdcbeab46b0': {
-        'id': 'PSUG00004',
+        'id': 'SCUS94270',
     },
     '4edadd3c3ae1e32616d1396bca6fe25a': {
-        'id': 'PSUG00003',
+        'id': 'SCUS94238',
     },
     '62eda7fde0b34f92ab8c9d2984d9b1cc': {
-        'id': 'PSUG00002',
+        'id': 'SCUS94237',
     },
     'a4a862e930990c2f28e4202a284f8925': {
-        'id': 'PSUG00001',
+        'id': 'SCUS94269',
     },
     '300444a1aa7aae32ca9ca608614ecc7a': {
         'id': 'SCUS94496',
