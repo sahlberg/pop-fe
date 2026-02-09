@@ -16677,6 +16677,7 @@ games = {
     	'id': 'SLUS01007',
 	'title': "TONKA SPACE STATION",
         'pic0': 'https://images.launchbox-app.com/72b480ac-9718-48c5-8e4e-0d9c2d68e75a.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_fa6691b2-9097-474f-ad49-cc60eed24dab.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Tonka%20Space%20Station%20(USA).pdf',
     },
     'SLUS00860': {
@@ -17184,6 +17185,7 @@ games = {
     	'id': 'SLUS00513',
 	'title': "VS.",
         'pic0': 'https://images.launchbox-app.com/ffafe331-4bf9-4dee-a62e-a5551c9838ce.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3368874b-74f0-40e3-849a-c16987ea59a4.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Vs.%20(USA).pdf',
     },
     'SLUS01278':       {
@@ -34314,7 +34316,7 @@ games = {
         'url': "games/P/R/SCES-01706.html",
     	'id': 'SCED01832',
 	'title': "RIDGE RACER TYPE 4",
-        'pic0': 'https://gamesdb-images.launchbox.gg/r2_1d95f877-5e09-45e0-9e37-2dfad154e8da.png',
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_1d95f877-5e09-45e0-9e37-2dfad154e8da.png',        
         'pic0-scaling': 0.7,
         'pic0-offset': (0.3, 0.2),
         'pic1': 'https://images.launchbox-app.com/85b97c4b-b6ab-464b-81f4-af4881a76cbd.jpg',
@@ -39770,6 +39772,7 @@ games = {
     	'id': 'SLES01104',
 	'title': "VS.",
         'pic0': 'https://images.launchbox-app.com/ffafe331-4bf9-4dee-a62e-a5551c9838ce.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3368874b-74f0-40e3-849a-c16987ea59a4.jpg',
     },
     'SLES00285': {
         'url': "games/P/V/SLES-00285.html",
