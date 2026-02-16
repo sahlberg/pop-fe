@@ -671,64 +671,64 @@ games = {
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00001': {
-        'id': 'RUSS00001',
+    'UNLD00000': {
+        'id': 'UNLD00000',
         'title': 'Lyapis Trubets',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00002': {
-        'id': 'RUSS00002',
+    'UNLD00001': {
+        'id': 'UNLD00001',
         'title': 'Vacuum - Videoclips',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00003': {
-        'id': 'RUSS00003',
+    'UNLD00002': {
+        'id': 'UNLD00002',
         'title': 'Virtual Sex',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00004': {
-        'id': 'RUSS00004',
+    'UNLD00004': {
+        'id': 'UNLD00004',
         'title': 'Randevu s neznakomkoj',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00005': {
-        'id': 'RUSS00005',
+    'UNLD00005': {
+        'id': 'UNLD00005',
         'title': 'Randevu s neznakomkoj',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00006': {
-        'id': 'RUSS00006',
+    'UNLD00006': {
+        'id': 'UNLD00006',
         'title': 'Randevu s neznakomkoj 2',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00007': {
-        'id': 'RUSS00007',
+    'UNLD00003': {
+        'id': 'UNLD00003',
         'title': 'Randevu s neznakomkoj 2',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00008': {
-        'id': 'RUSS00008',
+    'UNLD00007': {
+        'id': 'UNLD00007',
         'title': 'Randevu s neznakomkoj 3 - Kurortnyj roman',
         'icon0': '',
         'pic0': '',
         'pic1': '',
     },
-    'RUSS00009': {
-        'id': 'RUSS00009',
+    'UNLD00008': {
+        'id': 'UNLD00008',
         'title': 'Randevu s neznakomkoj 3 - Kurortnyj roman',
         'icon0': '',
         'pic0': '',
@@ -76173,24 +76173,6 @@ gameid_by_md5sum = {
     '9597032591fab3e3538e453b2e3d6c41': {
         'id': 'SLED02231',
     },
-    'a2455a5d22e6b692557aa3358cfca1f6': { # Randevu s neznakomkoj 3 - Kurortnyj roman (Russia) (Disc 2)
-        'id': 'RUSS00009',
-    },
-    '3686aa52a1a432716202b5a1fb4c31d7': { # Randevu s neznakomkoj 3 - Kurortnyj roman (Russia) (Disc 1)
-        'id': 'RUSS00008',
-    },
-    '00ec0677b03c7d14550a838be98c43c8': { # Randevu s neznakomkoj 2 (Russia) (Disc 2)
-        'id': 'RUSS00007',
-    },
-    '6ad47503b842cf281faf88d661473af0': { # Randevu s neznakomkoj 2 (Russia) (Disc 1)
-        'id': 'RUSS00006',
-    },
-    'ecb3077d733ae994e91d2f7a0d8b83a3': { # Randevu s neznakomkoj Disc 2
-        'id': 'RUSS00005',
-    },
-    '38f0deed6ab9cd11ec4c02528f521872': { # Randevu s neznakomkoj Disc 1
-        'id': 'RUSS00004',
-    },
     'e2135fbe4cf58381401ec2aebad1593f': { # Italian translation of vagrant story
         'id': 'SLES02754',
     },
@@ -76392,12 +76374,6 @@ gameid_by_md5sum = {
     '9f9dc1dcf69773e30a29c0bcfff68ea9': {
         'id': 'HBRW00001',
     },
-    '798873f4f76c8ec9c65d4932062b1b25': {
-        'id': 'RUSS00003',
-    },
-    '92acb85d0224ebfa4ff44cd382ad6517': {
-        'id': 'RUSS00002',
-    },
     '75e8d6a6326705a0a1a4900add71cd48': {
         'id': 'SCPS10010',
     },
@@ -76406,9 +76382,6 @@ gameid_by_md5sum = {
     },
     'b0943dfeb655e48e81cca7a8a383c2f3': {
         'id': 'SLES03881',
-    },
-    '28ea87c36e225a2fad4484818083a1a4': {
-        'id': 'RUSS00001',
     },
     '55cfc5673df081968ef8bb77e21fb177': {
         'id': 'SLES04052',

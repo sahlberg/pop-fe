@@ -3823,6 +3823,9 @@ def get_disc_id(cue, real_cue_file, tmp):
     # identification scheme and retired the use of "md5 over first 1MB of ISO"
     bc.writetrack(1, tmp)
     gid, _ = get_gameid_from_iso(tmp)
+    print('gid', gid, 'rid', rid)
+    if gid == 'UNKN00000':
+        gid = rid
     
     return gid, md5
 
