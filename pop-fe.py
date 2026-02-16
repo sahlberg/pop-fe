@@ -3808,21 +3808,21 @@ def get_disc_id(cue, real_cue_file, tmp):
     bc = bchunk()
     bc.verbose = False
     bc.open(cue)
-    rmd5 = bc.md5(1)
+    md5 = bc.md5(1)
     rid = None
-    if rmd5 in disc_by_md5:
-        if 'id' in disc_by_md5[rmd5]:
-            rid = disc_by_md5[rmd5]['id']
+    if md5 in disc_by_md5:
+        if 'id' in disc_by_md5[md5]:
+            rid = disc_by_md5[md5]['id']
 
     if not rid:
-        print("DISC NOT IN DATABASE", rmd5)
+        print("DISC NOT IN DATABASE", md5)
         rid = 'UNKN00000'
-    print('T1 FINGERPRINT', rmd5, rid)
+    print('T1 FINGERPRINT', md5, rid)
 
     # TODO get rid of this once we have switched everything over to the new
     # identification scheme and retired the use of "md5 over first 1MB of ISO"
     bc.writetrack(1, tmp)
-    gid, md5 = get_gameid_from_iso(tmp)
+    gid, _ = get_gameid_from_iso(tmp)
     
     return gid, md5
 
@@ -4802,7 +4802,7 @@ if __name__ == "__main__":
             pfs = ((176,176),(138,138))
         if args.psp_dir:
             pfs = ((80,80),(62,62))
-        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', pfs)
+        icon0 = get_icon0_from_game(disc_ids[0], game, args.files[0], subdir + 'ICON0.jpg', psn_frame_size=pfs)
 
     # PIC0.PNG
     pic0 = None

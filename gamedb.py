@@ -77543,6 +77543,7 @@ gameid_by_md5sum = {
     },
 }
 
+# TODO remove
 gameid_translation = {
     'SCUS00163': {
         'id': 'SCES00163',
@@ -78124,7 +78125,6 @@ themes = {
                  },
 }
 
-# TODO convert to use the new md5 hash that redump uses
 ppf_fixes = {
     'SLUS00870': {
 	'desc': 'Fix for Formula One 99',
@@ -78174,11 +78174,11 @@ ppf_fixes = {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',
         'hashes': {
             # rev 1.0
-            '92d8e70c652f3e5938f8c9fddaa74534': {
+            '404300c056206584a74ad0ecba1b290a': {
                 'ppf': 'ppf/SLUS-00330.ppf'
             },
             # rev 1.1
-            'b828aac80855cfc0e452ebf161f2b365': {
+            '12131037d60bdfcbc870c84b97e70a35': {
                 'ppf': 'ppf/SLUS-00330 (Rev 1).ppf'
             },
         },
@@ -78216,11 +78216,7 @@ ppf_fixes = {
         'desc': 'Fix for Vita',
         'hashes': {
             # rev 1.0
-            '5a2ed39e908fcc437faf02969b76b8ee': {
-                'ppf': 'ppf/SLUS-00884-psp.ppf',
-            },
-            # Another rev 1.0 rip
-            'bd561bc8e682f49ba91c0ce0112977b5': {
+            '4cfef562e2d4b3d2dfa999b79011bf0e': {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
         },
@@ -78230,7 +78226,7 @@ ppf_fixes = {
         'desc': 'Fix for Septentrion English fan-translation for Vita',
         'hashes': {
             # Septentrion fan translation v1.0.1
-            '7c1b3596b4483b9420b843cbbfbb59b6': {
+            '2b069408c9783775937a7f654f2af695': {
                 'xdelta': 'romhacks/Septentrion_videofix_pspvita.xdelta',
             },
         },
