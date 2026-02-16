@@ -65,7 +65,7 @@ except:
 from pathlib import Path
 from bchunk import bchunk
 from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
-from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
+from gamedb import games, libcrypt, themes, ppf_fixes, gameid_by_md5sum
 from db import disc_by_md5
 try:
     from make_isoedat import pack
@@ -2028,8 +2028,6 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
         with open(path, 'rb') as f:
             f.seek(0x8028)
             buf = str(f.read(9))[2:-1]
-            if buf in gameid_translation:
-                return gameid_translation[buf]['id'], h
             if buf != '         ':
                 return buf, h
             else:
@@ -2064,16 +2062,12 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
 
     game_id = buf.upper()
     # Special handling of games with broken id in system.cnf
-    if game_id in gameid_translation:
-        game_id = gameid_translation[game_id]['id']
     if len(game_id) != 9:
         print('cdrom: line in system.cnf does not contain a proper id, read disc label instead')
         with open(path, 'rb') as f:
             f.seek(0x8028)
             game_id = str(f.read(9))[2:-1].upper()
     # Special handling of games with broken id in system.cnf
-    if game_id in gameid_translation:
-        game_id = gameid_translation[game_id]['id']
     if game_id not in games and buf[:9] in games:
         return buf[:9], h
     return game_id, h

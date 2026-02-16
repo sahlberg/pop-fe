@@ -79,8 +79,8 @@ games = {
         'pic0': None,
         'pic1': None,
     },
-    'SLUS99999': {
-        'id': 'SLUS99999',
+    'UNLD00013': {
+        'id': 'UNLD00013',
 	'title': "RE1.5 MAGIC ZOMBIE DOOR",
         'icon0': 'https://cdromance.com/wp-content/uploads/2022/03/Resident-Evil-1.jpg',
         'pic0': 'https://images.launchbox-app.com/aec46d88-a71b-4ca5-9e24-dc042eef7e71.png',
@@ -2686,8 +2686,8 @@ games = {
         'pic0': 'https://images.launchbox-app.com/98b030fc-f3da-4077-9b6f-bafcb94b4aac.png',
         'pic1': 'https://archive.org/download/tgm_20210207/TGM.png',
     },
-    'MAGC00000': {
-        'id': 'MAGC00000',
+    'UNLD00014': {
+        'id': 'UNLD00014',
         'title': 'MAGIC CASTLE',
         'icon0': 'https://images.launchbox-app.com/b8ec3135-3150-4502-8a70-5b5b08acaf33.jpg',
         'pic0': 'https://images.launchbox-app.com/bf8cb1eb-9110-48a7-8741-4814a1d0c2d1.png',
@@ -7138,6 +7138,16 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1103676e-61d3-4f90-9430-0c2208436e0c.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Casper%20-%20Friends%20Around%20the%20World%20(USA).pdf',
     },
+    'UNLD00012': {
+        'url': "games/U/C/SLUS-00067.html",
+    	'id': 'UNLD00012',
+	'title': "SYMPHONY OF THE NIGHT EDITOR",
+        'pic0': 'https://images.launchbox-app.com/eb4825a4-fd6c-44d3-b75b-8eeccb0ed5b7.png',
+        'pic0-scaling': 0.7,
+        'pic0-offset': (0.3, 0.3),
+        'pic1': 'https://images.launchbox-app.com/2dd1d81a-6cf6-4359-ace8-97ab375956fd.png',
+        'snd0': 'https://www.youtube.com/watch?v=HnVDnAMs_Mk&list=PLFjuFokngRvjHomRZTsWAEm3_Znrdax5s&index=2',
+    },
     'SLUS00067': {
         'url': "games/U/C/SLUS-00067.html",
     	'id': 'SLUS00067',
@@ -9778,7 +9788,7 @@ games = {
         'pic0': 'https://images.launchbox-app.com/5e5fc586-52f2-4197-8a6d-32097460bc21.png',
         'manual': 'https://www.videogamemanual.com/ps1/Golden%20Nugget%20(USA).pdf',
     },
-    'SCUD94194_RACEMASTER': {
+    'SCUD94194': {
         'url': "games/U/G/SCUS-94194.html",
     	'id': 'SCUD94194',
 	'title': "RaceMaster - Gran Turismo Edition",
@@ -13650,14 +13660,6 @@ games = {
         'pic1': 'https://gamesdb-images.launchbox.gg/r2_1723250b-7f3a-4eea-aaca-dbf7c878c6bb.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
     },
-    'SCUS94247_DEMO': {
-        'url': "games/U/R/SCUS-94247.html",
-    	'id': 'SCUS94247',
-	'title': "RALLY CROSS 2 [DEMO]",
-        'pic0': 'https://images.launchbox-app.com/c5094724-4ffe-4675-b7e3-1d5df37149cf.png',
-        'pic1': 'https://gamesdb-images.launchbox.gg/r2_1723250b-7f3a-4eea-aaca-dbf7c878c6bb.jpg',
-        'manual': 'https://www.videogamemanual.com/ps1/Railroad%20Tycoon%20II%20(USA).pdf',
-    },
     'SLUS01065': {
         'url': "games/U/R/SLUS-01065.html",
     	'id': 'SLUS01065',
@@ -13686,13 +13688,6 @@ games = {
         'url': "games/U/R/SLUS-00542.html",
     	'id': 'SLUS00542',
 	'title': "RASCAL",
-        'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
-        'manual': 'https://www.videogamemanual.com/ps1/Rascal%20(USA).pdf',
-    },
-    'SLUS00542_DEMO': {
-        'url': "games/U/R/SLUS-00542.html",
-    	'id': 'SLUS00542',
-	'title': "RASCAL [DEMO]",
         'pic0': 'https://images.launchbox-app.com/a79456eb-9ba4-4815-9ff1-4a196d86b392.png',
         'manual': 'https://www.videogamemanual.com/ps1/Rascal%20(USA).pdf',
     },
@@ -13746,17 +13741,6 @@ games = {
         'url': "games/U/R/SLUS-01235.html",
     	'id': 'SLUS01235',
 	'title': "RAYMAN 2 - THE GREAT ESCAPE",
-        'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
-        'pic0-scaling': 0.85,
-        'pic0-offset': (0.1, 0.25),
-        'pic1': 'https://images.launchbox-app.com/d0a988c1-7511-4c3b-86bd-99c0f0af508e.jpg',
-        'manual': 'https://www.videogamemanual.com/ps1/Rayman%202%20-%20The%20Great%20Escape%20(USA).pdf',
-        'snd0': 'https://www.youtube.com/watch?v=pxUL_xKqfMw',
-    },
-    'SLUS01235_DEMO': {
-        'url': "games/U/R/SLUS-01235.html",
-    	'id': 'SLUS01235',
-	'title': "RAYMAN 2 - THE GREAT ESCAPE [DEMO]",
         'pic0': 'https://images.launchbox-app.com/e7613788-cee5-4f5a-96e4-1675fc9aff65.png',
         'pic0-scaling': 0.85,
         'pic0-offset': (0.1, 0.25),
@@ -37912,6 +37896,12 @@ games = {
     'SLES00519': {
         'url': "games/P/T/SLES-00519.html",
     	'id': 'SLES00519',
+	'title': "THE RAVEN PROJECT",
+        'pic0': 'https://images.launchbox-app.com/cda689d4-3fd3-4c47-9893-39bd7df392ef.png',
+    },
+    'SLES10519': {
+        'url': "games/P/T/SLES-00519.html",
+    	'id': 'SLES10519',
 	'title': "THE RAVEN PROJECT",
         'pic0': 'https://images.launchbox-app.com/cda689d4-3fd3-4c47-9893-39bd7df392ef.png',
     },
@@ -75985,23 +75975,8 @@ gameid_by_md5sum = {
     '35b19c8c0d20af0306b642f1e40cd6b7': {
         'id': 'SCPS45477',
     },
-    '7cb72acb31605220987c7bada7435e51': {
-        'id': 'SLUS01235_DEMO',
-    },
-    'f07e5f709a5f5f83252c23848abd5ca3': {
-        'id': 'SLES00519',
-    },
     '6a180bc8e6ef67107aa971e609cd938f': {
         'id': 'SLES10039',
-    },
-    '4d71d33e5dfdb35da7b1df91bf11ce5b': {
-        'id': 'SLUS00542_DEMO',
-    },
-    '62391737fb4e4f066e11184833977d62': {
-        'id': 'SCUS94247_DEMO',
-    },
-    'c9ea8595fb416cb49f9d6eecff363f59': { # RaceMaster - Gran Turismo Edition
-        'id': 'SCUD94194_RACEMASTER',
     },
     'e510afa6402d4a6a89c8bee01e22b7d5': {
         'id': 'SCPS45354_KOREAN',
@@ -76011,9 +75986,6 @@ gameid_by_md5sum = {
     },
     'e2135fbe4cf58381401ec2aebad1593f': { # Italian translation of vagrant story
         'id': 'SLES02754',
-    },
-    '6e7f696c6a19c32e001a3e8f4628300e': { # resident evil 1.5
-        'id': 'SLUS99999',
     },
     'c7fde99e09ebf9546ed24a45a39d68b2': {
         'id': 'SLPS00022',
@@ -76032,15 +76004,6 @@ gameid_by_md5sum = {
     },
     'af6cedfde4f27f390dff0c99c8a68773': {
         'id': 'SLPS00013',
-    },
-    'ccaf77696aa6eceaaba6918486e3f441': {
-        'id': 'SLPS00057',
-    },
-    '4bd2e11c5ad242778cdb5a343ce9c8b4': {
-        'id': 'SLPS00056',
-    },
-    'fe79cc23073b8fb7827f2b76385ad173': {
-        'id': 'SLPS00055',
     },
     '48bbefe366fdb56269bafd0306c78f81': {
         'id': 'SLPS00023',
@@ -76068,9 +76031,6 @@ gameid_by_md5sum = {
     },
     'f814674218829a2f42eff0eacf23af77': {
         'id': 'SLES03986',
-    },
-    'f0fa5460e95b37a2c8f53f1104d26b2d': {
-        'id': 'SLES04155',
     },
     'aebfb0d6a5242f3887c1d9abc05f48bc': {
         'id': 'SLPS00104',
@@ -76402,12 +76362,6 @@ gameid_by_md5sum = {
     'a0941a3e7efd4951e3fa1cdcbeab46b0': {
         'id': 'SCUS94270',
     },
-    '4edadd3c3ae1e32616d1396bca6fe25a': {
-        'id': 'SCUS94238',
-    },
-    '62eda7fde0b34f92ab8c9d2984d9b1cc': {
-        'id': 'SCUS94237',
-    },
     'a4a862e930990c2f28e4202a284f8925': {
         'id': 'SCUS94269',
     },
@@ -76436,9 +76390,6 @@ gameid_by_md5sum = {
     },
     '45f777e606fcdb95997710a2402ca7ea': {
         'id': 'SLUS01579',
-    },
-    '36aa3aae0a290d1b1276d8c8ab480eb1': {
-        'id': 'SLUS01491',
     },
     '2cf42fd5bcabb2d2bf94b832a475cd22': {
         'id': 'SLUS01451',
@@ -76508,54 +76459,6 @@ gameid_by_md5sum = {
     },
     '8c72e73aafa3bcd8f96cc427304b914b': {
         'id': 'SLUS01528',
-    },
-    'feb5c6a42599d27b56743aa4d6165e8a':	{
-        'id': 'SCUS80115',
-    },
-    '0d602018093381fea580b5fb9c403743': {
-        'id': 'SCUS80114',
-    },
-    '37fb282f882f4d206f2a30cd3786275b': {
-        'id': 'SCUS80113',
-    },
-    '30432e38ea5672c9f86769e6c2936954': {
-        'id': 'SCUS80112',
-    },
-    'c7c1b24b3e27582fbb1f0e47fe111ddf': {
-        'id': 'SCUS80111',
-    },
-    '7d6558b349c08881e43f284a20852d17': {
-        'id': 'SCUS80110',
-    },
-    '31c4b55c716f0551aef55cd8b390a60f': {
-        'id': 'SCUS80109',
-    },
-    'fa7035741e5443120e4df53d6b6904d0': {
-        'id': 'SCUS80108',
-    },
-    'c7b4d3fc60d73681d1479d5e06a52710': {
-        'id': 'SCUS80107',
-    },
-    '8ba3a9acee008cc0dceeb085c0845fcb': {
-        'id': 'SCUS80106',
-    },
-    '727958a0866c056425c484062770b2d2': {
-        'id': 'SCUS80105',
-    },
-    'f7c002b59da3acc6f6c91cd03955bbeb': {
-        'id': 'SCUS80104',
-    },
-    '2558ca8ca299f3b537322076c1735502': {
-        'id': 'SCUS80103',
-    },
-    '4b29f047ca6ee12f3d329020b005299c': {
-        'id': 'SCUS80102',
-    },
-    'dad14b50799847212dec221ca5eefb1c': {
-        'id': 'SCUS80101',
-    },
-    '97f158a1b35ca5310cbdeb137fe06777': {
-        'id': 'SCUS80100',
     },
     'ae2f242b3a8baa17e14206837e2023da': {
         'id': 'SCUS80099',
@@ -77128,9 +77031,6 @@ gameid_by_md5sum = {
     '8bc2ab966c29c834a82769094c672bc3': { #116
         'id': 'SLES04108',
     },
-    '1704e1fd703d5f2a59c7d6b9a6fffcad': { #115
-        'id': 'PAPX90105',
-    },
     'd2b2230a7a1b058b9098fc4d586460d4': { #112
         'id': 'SLPS00011',
     },
@@ -77204,14 +77104,6 @@ gameid_by_md5sum = {
     '25fc59f87fd358f8feec6d8d84165a1e': {
         'id': 'SLES12080',
     },
-    # RE1.5
-    'fa456e05ebc9d71cad1d0a0add977315': {
-        'id': 'SLUS99999',
-    },
-    # RE1.5
-    'c9c004a9263fd99e3a296913bb2c1f78': {
-        'id': 'SLUS99999',
-    },
     # Martian gothic
     'f9f7c667f300a34ad8ece3200f9641a4': {
     	'id': 'SLUS01148',
@@ -77229,10 +77121,6 @@ gameid_by_md5sum = {
     },
     'ae38be5123981a060bccfd788fea8d06': {
         'id': 'TTGM00000',
-    },
-    # Magic Castle
-    'a51941d8dcda81bd7d0ef11c7fd20d6f': {
-        'id': 'MAGC00000',
     },
     # Fan translation to spanish. Both disks merged into a single disk
     '1808dd8b039de821d347167930b0bcf1': {
@@ -77265,37 +77153,6 @@ gameid_by_md5sum = {
     },
     '71d81692b02e6ba72929d7bddfc54519': {
         'id': 'SDUS94167',
-    },
-    '4d69e6a639b9bedcfd6089b3a429ab81': {
-        'id': 'SLUS00515',
-    },
-    '346e813e1cd8466d599403f7c9836fc3': {
-        'id': 'SDUS00515',
-    },
-}
-
-# TODO remove
-gameid_translation = {
-    'SCUS00163': {
-        'id': 'SCES00163',
-    },
-    'GUSSUN_19': {
-        'id': 'SLPS00041',
-    },
-    'NIGHTSTRI': {
-        'id': 'SLPS00050'
-    },
-    'SLUSP01206': {
-        'id': 'SLUS01206'
-    },
-    'SLUSP01346': {
-        'id': 'SLUS01346'
-    },
-    'SLPS0208': {
-        'id': 'SLPS00208'
-    },
-    'THEGREATB': {
-        'id': 'SLPS00719'
     },
 }
 

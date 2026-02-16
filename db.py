@@ -17,14 +17,14 @@
 #
 # Fan translations contain '(<Language>) (T)' in the 'title'
 #
-# Next available: UNLD00012
+# Next available: UNLD00015
 #
 
 disc_by_md5 = {
     '000c285ff98c05712009ef3ea6505f43': {'id': 'SLPM80321', 'title': 'Another Mind (Japan) (Demo)', 'vct': b'1998083019071000$'},
     '0014a427188c189cc427c76e6bee0667': {'title': 'PSone - Wherever, Whenever, Forever. (USA)'},
     '001651495d7eb37abc356c81f530c9c8': {'id': 'SLES04099', 'title': 'ATV Mania (Europe) (En,Fr,De,It)', 'vct': b'2003053010193200$'},
-    '001869ae4f620b7229fbee32fc2b77ee': {'id': 'UNKN00000', 'title': 'SOTN Editor', 'vct': b'2022031302485900\xe8'},
+    '001869ae4f620b7229fbee32fc2b77ee': {'id': 'UNLD00012', 'title': 'SOTN Editor', 'vct': b'2022031302485900\xe8'},
     '00208fc1319de95e23f2d0232b959a50': {'id': 'SLPS01863', 'title': 'Akagawa Jirou - Majo-tachi no Nemuri - Fukkatsusai (Japan)', 'vct': b'1999030708000000$'},
     '002e12e45f14dc190038e97c9ae432a6': {'id': 'SLUS00147', 'title': "Wayne Gretzky's 3D Hockey '98 (USA)", 'vct': b'1997120415065400$'},
     '00417169033f75f5d4db46a1507de218': {'id': 'SLUS01274', 'title': 'WCW Backstage Assault (USA)', 'vct': b'0000092611514900$'},
@@ -1651,7 +1651,7 @@ disc_by_md5 = {
     '254ee805194dab12706e11c760418302': {'id': 'SLPS00181', 'title': 'Eko Eko Azarak - Wizard of Darkness (Japan)', 'vct': b'1995112612082500$'},
     '2557e6005cd6f826df10cdef23224930': {'id': 'SLPS02804', 'title': 'Meitantei Conan - 3-nin no Meisuiri (Japan)', 'vct': b'0000061900000000\x00'},
     '25591657f32e6961c7728b21e113f409': {'title': 'Pro Pinball - Timeshock! (USA) (Demo)'},
-    '2560549524103489d78f5d1f6fef8773': {'id': 'SLUS99999', 'title': 'RE1.5 Magic Zombie Door (Unreleased)', 'vct': b'2023071422453200\x00'},
+    '2560549524103489d78f5d1f6fef8773': {'id': 'UNLD00013', 'title': 'RE1.5 Magic Zombie Door (Unreleased)', 'vct': b'2023071422453200\x00'},
     '25703609d374c6e2ed5ca92745a81686': {'id': 'SLPM80618', 'title': 'Dengeki PlayStation D45 (Japan)', 'vct': b'2001051100000000\x00'},
     '2583ae3304e98ce099094b574ed5fd89': {'id': 'SCED02636', 'title': 'Euro Demo 62 (Europe)', 'vct': b'0000062309275400$'},
     '2589bcff97211726b85fad51435b56aa': {'id': 'SLES01256', 'title': 'Alundra (Germany)', 'vct': b'1998051900000000\x00'},
@@ -3472,7 +3472,7 @@ disc_by_md5 = {
     '4f522f5a3a20210758d093ca78befeaa': {'id': 'SLES03337', 'title': 'Tiger Woods USA Tour 2001 (Australia)', 'vct': b'0000110616522400$'},
     '4f54264b5320fce1f29a7ddff319a57d': {'id': 'SLPS00253', 'title': 'Shouryuu Sangoku Engi (Japan)', 'vct': b'1995091310505600$'},
     '4f54fa0c3a6fa9ee9f275e027fe3f902': {'id': 'SLPS00658', 'title': 'Nihon Pro Golf Kyoukai Kanshuu - Double Eagle (Japan)', 'vct': b'1997041500000000\x00'},
-    '4f6baa774fa5e5cb81d9283b75326966': {'id': 'SLUS99999', 'title': 'RE1.5 Magic Zombie Door (Unreleased)', 'vct': b'1899123000000000\x00'},
+    '4f6baa774fa5e5cb81d9283b75326966': {'id': 'UNLD00013', 'title': 'RE1.5 Magic Zombie Door (Unreleased)', 'vct': b'1899123000000000\x00'},
     '4f70f627b996a5c35012cf501bdbe482': {'id': 'SLPS02499', 'title': 'Pocke-Kano - Houjouin Shizuka (Japan)', 'vct': b'1999122514535500$'},
     '4f7232e64b19ad6eb22a9245915e80aa': {'id': 'SLPS03418', 'title': 'Simple Character 2000 Series Vol. 07 - Ikkyuu-san - The Quiz (Japan)', 'vct': b'2002021802300000\x00'},
     '4f7b056116646e62911ee6b07378c39d': {'id': 'SLES01404', 'title': 'Grand Theft Auto 2 (Europe) (En,Fr,De,Es,It)', 'vct': b'1999092101461100$'},
@@ -5046,7 +5046,7 @@ disc_by_md5 = {
     '7368639d2c5298c7a8e5cb17d4c04e5f': {'id': 'SLPS00245', 'title': 'PGA Tour 96 (Japan)', 'vct': b'1996010914522800$'},
     '736ae603b7c5d1792da44d743186a8d1': {'id': 'SLPS02526', 'title': 'Spectral Blade (Japan)', 'vct': b'1999102322000000\x00'},
     '7373c8a3e9165576e7251c0905ec2140': {'id': 'SLES00052', 'title': 'True Pinball (Europe)', 'vct': b'1996021312584400$'},
-    '7374001ed356c4dfb13dcd667986d531': {'id': 'SCUD94194_RACEMASTER', 'title': 'RaceMaster - Gran Turismo Edition (USA) (Unl)', 'vct': b'2001082213504600\x00'},
+    '7374001ed356c4dfb13dcd667986d531': {'id': 'SCUD94194', 'title': 'RaceMaster - Gran Turismo Edition (USA) (Unl)', 'vct': b'2001082213504600\x00'},
     '7377dc2560695871b4d3728232e516d3': {'id': 'SLES02141', 'title': 'R-C Stunt Copter (France)', 'vct': b'1999080510580000\x00'},
     '737a5f844d3a081be4634d1150b003d8': {'id': 'SLPM86680', 'title': "Bishoujo Ren'ai Mahjong Series 2nd - Shiritsu Houou Gakuen - 1-nen Jun'ai-gumi (Japan)", 'vct': b'0000112900000000\x00'},
     '738ea62eeeb21fb71e1886f797ed173b': {'id': 'SLPS00687', 'title': 'Baseball Navigator (Japan)', 'vct': b'1997052013490000$'},
@@ -8973,7 +8973,7 @@ disc_by_md5 = {
     'd0ef88a6a9b749b8205233104b34ffce': {'id': 'SLUS00032', 'title': 'Top Gun - Fire at Will! (USA)', 'vct': b'1999041407350000$'},
     'd0f7b7c77415f037d86b527656e7f1f3': {'id': 'SLPS00722', 'title': 'Masters Fighter, The (Japan)', 'vct': b'1997080118300000\x00'},
     'd0fbabf6bfa62fcc9c01f7d9e45fb8e7': {'id': 'SCUS94366', 'title': 'Legend of Legaia (USA) (Demo)', 'vct': b'1996071216524000$'},
-    'd10ca60863783a1659c56570443bdde7': {'id': 'SLUS01235_DEMO', 'title': 'Rayman 2 - The Great Escape (USA) (Demo)', 'vct': b'0000110300085800$'},
+    'd10ca60863783a1659c56570443bdde7': {'id': 'SLUS01235', 'title': 'Rayman 2 - The Great Escape (USA) (Demo)', 'vct': b'0000110300085800$'},
     'd11d636655ab19cd96336f837bea9dc0': {'id': 'SLPS00547', 'title': 'Worms (Japan)', 'vct': b'1996081415185100$'},
     'd1272e7b99590efbc69fa1eb582e68fa': {'id': 'SLUS01367', 'title': 'Tales of Destiny II (USA) (Disc 2)', 'vct': b'1901080711485500$'},
     'd12e36fe9b6a16cc894268145ab3e028': {'id': 'SLUS01063', 'title': 'Sammy Sosa High Heat Baseball 2001 (USA)', 'vct': b'0000021809300000\x00'},
@@ -9254,7 +9254,7 @@ disc_by_md5 = {
     'd74661bb679f4684d4b48b483e8e9577': {'id': 'SLUS01181', 'title': 'World of Dragon Warrior - Torneko - The Last Hope (USA)', 'vct': b'0000100218000000\x00'},
     'd75300b396249f5f555c33ec8db612cc': {'id': 'SCUS94409', 'title': 'Codename - Tenka (USA)', 'vct': b'1997042816000000$'},
     'd75bf52aa6b85ce9efb041f94fe0b2c3': {'id': 'SLUS00387', 'title': 'Batman Forever - The Arcade Game (USA)', 'vct': b'1996103100000000\x00'},
-    'd762501076a70982794979f08ae28823': {'id': 'SCUS94247_DEMO', 'title': 'Rally Cross 2 (USA) (Demo)', 'vct': b'1998092513583955$'},
+    'd762501076a70982794979f08ae28823': {'id': 'SCUS94247', 'title': 'Rally Cross 2 (USA) (Demo)', 'vct': b'1998092513583955$'},
     'd769ff81fc16e8a58c361e72d253764a': {'id': 'SLPM86370', 'title': 'Dance Dance Revolution 2nd Remix - Append Club Version Vol. 1 (Japan, Asia)', 'vct': b'1999100812000000$'},
     'd76aa931ab1ea6b500a0f28b7207c66a': {'id': 'SLUS00571', 'title': 'Brunswick Circuit Pro Bowling (USA)', 'vct': b'1998090812000000$'},
     'd76f5a7ed10e22b3d67cc8fd075d10c8': {'id': 'SLUS90087', 'title': 'Dino Crisis 2 (USA) (En,Ja) (Demo)', 'vct': b'0000072509134000$'},
@@ -9334,7 +9334,7 @@ disc_by_md5 = {
     'd90f4eed6847d0cb91dd37f038ac9757': {'id': 'SLPS01674', 'title': 'Lucky Luke (Japan)', 'vct': b'1998100114200000\x00'},
     'd91a5ac71b38c608ff62ce70b83207c4': {'id': 'SLED01496', 'title': 'Wild 9 (Europe) (Demo)', 'vct': b'1998092100300000\x00'},
     'd926f2adb6b9ef2484a8f54addb67a30': {'id': 'SLPS00573', 'title': 'Shutokou Battle Gaiden - Super Technic Challenge - Drift King e no Michi (Japan)', 'vct': b'1996111120555600$'},
-    'd9283363db71c8850290b94cad5348cb': {'id': 'SLUS00542_DEMO', 'title': 'Rascal (USA) (Demo)', 'vct': b'1998020616000000$'},
+    'd9283363db71c8850290b94cad5348cb': {'id': 'SLUS00542', 'title': 'Rascal (USA) (Demo)', 'vct': b'1998020616000000$'},
     'd929a8efd152d329e883d37dda7f7e83': {'id': 'UNKN00000', 'title': 'Gamars - Cheat Code Renew Disc (Taiwan) (Unl)', 'vct': b'2000041515513000\x00'},
     'd930f33ff8c2c29f6800a843d50b7acf': {'id': 'SLED01787', 'title': 'Warzone 2100 (UK) (Demo)', 'vct': b'1999010818312521$'},
     'd9356aef8a2138af413adca7cde80442': {'id': 'PAPX90106', 'title': 'Chase the Express (Japan) (Demo 1)', 'vct': b'1999112514300000\x00'},
@@ -10190,6 +10190,7 @@ disc_by_md5 = {
     'ed0603a948770175777a856a25934132': {'id': 'SLPM86065', 'title': 'Broken Helix (Japan)', 'vct': b'1997120414000000\x00'},
     'ed163936d3817cb0127c9e22e500b331': {'id': 'SLUS01383', 'title': 'JumpStart Wildlife Safari - Field Trip (USA)', 'vct': b'2001080908250000$'},
     'ed248fb93ac9a4ced77bf365445b44ed': {'id': 'SCES02287', 'title': 'Syphon Filter 2 (Germany) (Disc 1)', 'vct': b'0000031610300000$'},
+    'ed5198fdabd39ee620d872541c6c5d27': {'id': 'UNLD00014', 'title': 'Magic Castle (USA) (Unl)'},
     'ed61e0b92cf31198f385ea0115802e75': {'id': 'SLES04158', 'title': 'Wanted (Europe)', 'vct': b'2004022015431400$'},
     'ed63f316214c656bc1ccb02b1b54dd23': {'id': 'SLES03973', 'title': 'Harry Potter and the Chamber of Secrets (Europe) (Es,It,Pt)', 'vct': b'2002090715022100$'},
     'ed67e0351a3a54cbd91e9b6c73a617d0': {'id': 'SLPM80562', 'title': 'Dengeki PlayStation D33 (Japan)', 'vct': b'0000030700000000\x00'},
@@ -10281,7 +10282,7 @@ disc_by_md5 = {
     'efbeefe71163a81be5fffc99bc4db03f': {'id': 'SLED01170', 'title': 'One (France) (Demo)', 'vct': b'1998021912260000$'},
     'efc6e5af33cfa835f751b8568948b53f': {'id': 'SCED00365', 'title': 'Euro Demo 13 (Europe)', 'vct': b'1996091609052800$'},
     'efd34f9033087ac1226c50f396d3e820': {'id': 'SLPM80185', 'title': 'Maria - Kimi-tachi ga Umareta Wake (Japan) (Demo)', 'vct': b'1997102323000000\x00'},
-    'efd6fed31a18322f78f6792efddcb40e': {'id': 'SLES00519', 'title': 'Raven Project, The (Germany) (En,Fr,De) (Disc 2)', 'vct': b'1996102416000000$'},
+    'efd6fed31a18322f78f6792efddcb40e': {'id': 'SLES10519', 'title': 'Raven Project, The (Germany) (En,Fr,De) (Disc 2)', 'vct': b'1996102416000000$'},
     'efe4fab4581367c674b220f9043bf7c0': {'id': 'SLUS01143', 'title': 'Ultimate Fighting Championship (USA)', 'vct': b'0000101210182900$'},
     'efea3ba769d0f59d9909ef6965f400fe': {'id': 'SLES03921', 'title': 'California Surfing (Europe)', 'vct': b'2002100912273200$'},
     'eff0a2668741964362b09ff24b2bc235': {'id': 'SCED01151', 'title': 'Euro Demo 41 (Europe)', 'vct': b'1998112717024500$'},
