@@ -5199,14 +5199,6 @@ games = {
         'pic1': 'https://images.launchbox-app.com/93b6973f-a003-4ab6-9de0-da2f9d198be8.png',
         'snd0': 'https://www.youtube.com/watch?v=rUXncxOdX8w&list=PL575D506906FCDC14&index=1',
     },
-    'SCPS10049_R1.1': {
-        'url': "games/J/Z/SCPS-10049.html",
-    	'id': 'SCPS10049',
-	'title': "ZERO PILOT - GINYOKU NO SENSHI [REV 1]",
-        'pic0': 'https://images.launchbox-app.com/240f8514-9a6f-4b75-9e4c-d04ad0c2b4a7.png',
-        'pic1': 'https://images.launchbox-app.com/8c1fa6aa-6955-4165-adfe-77d33a9e9938.png',
-        'snd0': 'https://www.youtube.com/watch?v=7bYnE_DW3t0&list=PLKcRYOLZS5obZmIFhuzjd4jyadwzUH-3d',
-    },
     'SCPS10049': {
         'url': "games/J/Z/SCPS-10049.html",
     	'id': 'SCPS10049',
@@ -5247,13 +5239,6 @@ games = {
     	'id': 'SLPS01483',
 	'title': "ZIG ZAG BALL",
         'pic0': 'https://images.launchbox-app.com/1a21bd5e-ea40-47b6-9323-e667671d4f7a.png',
-    },
-    'SLPM86311_R1.1': {
-        'url': "games/J/Z/SLPM-86311.html",
-    	'id': 'SLPM86311',
-	'title': "ZILL O'LL [REV 1.1]",
-        'pic0': 'https://images.launchbox-app.com/9e8c7a7a-1291-47da-bb8a-f30390223515.png',
-        'manual': "https://psxdatacenter.com/manuals/Zill%20O'll%20[SLPM-86311]%20(J).cbr",
     },
     'SLPM86311': {
         'url': "games/J/Z/SLPM-86311.html",
@@ -15221,30 +15206,6 @@ games = {
         'pic1': 'https://images.launchbox-app.com/f6821aee-9c27-466f-a867-47605b381ee8.png',
         'snd0': 'https://www.youtube.com/watch?v=3rDIXBrGp5U',
         'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20Jedi%20Power%20Battles%20(USA).pdf',
-    },
-    'SLUS00884_DEMO': {
-        'url': "games/U/S/SLUS-00884.html",
-    	'id': 'SLUS00884',
-	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (DEMO)",
-        'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
-        'pic0-scaling': 0.8,
-        'pic0-offset': (0.1, 0.5),
-        'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
-        'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20(USA).pdf',
-        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
-    },
-    'SLUS00884_R1.1': {
-        'url': "games/U/S/SLUS-00884.html",
-    	'id': 'SLUS00884',
-	'title': "STAR WARS - EPISODE I - THE PHANTOM MENACE (Rev 1.1)",
-        'pic0': 'https://images.launchbox-app.com/fe29c6db-be50-4caa-8600-4122b25d43e6.png',
-        'pic0-scaling': 0.8,
-        'pic0-offset': (0.1, 0.5),
-        'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
-        'manual': 'https://www.videogamemanual.com/ps1/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20(USA).pdf',
-        'pspconfig': 'pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin',
     },
     'SLUS00884': {
         'url': "games/U/S/SLUS-00884.html",
@@ -57459,17 +57420,6 @@ games = {
 	'title': "LANGRISSER I & II [RERELEASE]",
         'pic0': 'https://images.launchbox-app.com/3e527e94-aa05-4711-8a6d-ba6ff06008ed.png',
     },
-    'SLPS01818_ENGLISH': {
-        'url': "games/J/L/SLPS-01818.html",
-    	'id': 'SLPS01818',
-	'title': "LANGRISSER IV & V [ENGLISH]",
-        'pic0': 'https://images.launchbox-app.com/708b98f2-3470-4313-8d5b-7b8b4a2f728d.png',
-        'pic0-scaling': 0.9,
-        'pic0-offset': (0.1, 0.7),
-        'pic1': 'https://images.launchbox-app.com/9192e4af-b49f-48a0-9fe2-59c5cdc24499.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=IZLliJ8NQmI&list=PLhUct1tCjWsX3a_OqD0FsPFwEUeXlpKXT',
-        'pspconfig': 'pspconfigs/Langrisser IV & V/SLPS-01818.bin',
-    },
     'SLPS01818': {
         'url': "games/J/L/SLPS-01818.html",
     	'id': 'SLPS01818',
@@ -76098,9 +76048,6 @@ gameid_by_md5sum = {
     '2e925ec10219aa4e14b1568c547ce50c': {
         'id': 'SLPS00070',
     },
-    '55a109c1e993919fafc8bf4d2f16252d': {
-        'id': 'SLPS01818_ENGLISH',
-    },
     'b87b5dea53a4fc5f74f134c9007ca883': {
         'id': 'SLES04054',
     },
@@ -76169,18 +76116,6 @@ gameid_by_md5sum = {
     },
     '6e7f696c6a19c32e001a3e8f4628300e': { # resident evil 1.5
         'id': 'SLUS99999',
-    },
-    'c5fad589d46950da8c17453a96758402': {
-        'id': 'SCPS10049_R1.1',
-    },
-    'b11bdd56e6df4aef0515ac2084eb8130': {
-        'id': 'SLPM86311_R1.1',
-    },
-    '9975c33595ee115d026ab2e22af973e9': {
-        'id': 'SLUS00884_R1.1',
-    },
-    'eb9af280eba78c8afac5bb176a5230f8': {
-        'id': 'SLUS00884_DEMO',
     },
     'c7fde99e09ebf9546ed24a45a39d68b2': {
         'id': 'SLPS00022',
