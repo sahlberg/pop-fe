@@ -76072,6 +76072,7 @@ games = {
     },
 }
 
+# TODO remove and replace by new md5 shceme based on redump
 gameid_by_md5sum = {
     'af159529592fe32dd8d3b2659b7e3adc': { # Brasilian Portuguese translation of Galerians d1
         'id': 'SLUS00986',
@@ -78123,6 +78124,7 @@ themes = {
                  },
 }
 
+# TODO convert to use the new md5 hash that redump uses
 ppf_fixes = {
     'SLUS00870': {
 	'desc': 'Fix for Formula One 99',

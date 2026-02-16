@@ -3,6 +3,7 @@
 #
 
 import argparse
+import hashlib
 import os
 import re
 import struct
@@ -14,6 +15,24 @@ class bchunk(object):
     SECTLEN         = 2352
     WAV_FORMAT_HLEN = 24
     WAV_DATA_HLEN   = 8
+
+    def md5(self, idx):
+        t = self.tracks[idx]
+        m = hashlib.md5()
+        with open(t['FILE'], "rb") as i:
+            # Find the last index for this track. Assume this is the
+            # data track
+            index = None
+            for _i in t['INDEX']:
+                index = t['INDEX'][_i]
+
+            i.seek(index['STARTSECT'] * self.SECTLEN)
+            sect = index['STARTSECT']
+            while sect <= index['STOPSECT']:
+                m.update(i.read(self.SECTLEN))
+                sect = sect + 1
+        return m.hexdigest()
+
     
     def writetrack(self, idx, fn):
         t = self.tracks[idx]

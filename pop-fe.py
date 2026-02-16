@@ -66,6 +66,7 @@ from pathlib import Path
 from bchunk import bchunk
 from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
 from gamedb import games, libcrypt, themes, ppf_fixes, gameid_translation, gameid_by_md5sum
+from db import disc_by_md5
 try:
     from make_isoedat import pack
 except:
@@ -3807,9 +3808,22 @@ def get_disc_id(cue, real_cue_file, tmp):
     bc = bchunk()
     bc.verbose = False
     bc.open(cue)
-    bc.writetrack(1, tmp)
+    rmd5 = bc.md5(1)
+    rid = None
+    if rmd5 in disc_by_md5:
+        if 'id' in disc_by_md5[rmd5]:
+            rid = disc_by_md5[rmd5]['id']
 
+    if not rid:
+        print("DISC NOT IN DATABASE", rmd5)
+        rid = 'UNKN00000'
+    print('T1 FINGERPRINT', rmd5, rid)
+
+    # TODO get rid of this once we have switched everything over to the new
+    # identification scheme and retired the use of "md5 over first 1MB of ISO"
+    bc.writetrack(1, tmp)
     gid, md5 = get_gameid_from_iso(tmp)
+    
     return gid, md5
 
 
