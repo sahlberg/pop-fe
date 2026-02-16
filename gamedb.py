@@ -734,8 +734,8 @@ games = {
         'pic0': '',
         'pic1': '',
     },
-    'POPF00001': {
-        'id': 'POPF00001',
+    'UNLD00009': {
+        'id': 'UNLD00009',
         'title': 'Superman (unreleased)',
         'icon0': 'https://cdn.retrorgb.com/wp-content/uploads/2018/09/25130912/Superman64PS1.jpg',
         'pic0': 'https://images.launchbox-app.com//aa894d7d-fd94-4383-a907-5f78ddaf750c.png',
@@ -76056,8 +76056,8 @@ games = {
         'pic0': None,
         'pic1': 'https://images.launchbox-app.com/986b860a-09e9-496a-88d0-59bbd7416987.jpg',
     },
-    'resevil0d': {
-        'id': 'resevil0d',
+    'UNLD00010': {
+        'id': 'UNLD00010',
         'title': "Resident Evil 0 Demake",
         'icon0': 'https://images.launchbox-app.com//0a6157e1-01f5-4888-8277-95d15f812fe6.jpg',
         'pic0': 'https://images.launchbox-app.com//fc20b839-5162-4b95-8401-776746d09991.png',
@@ -76088,12 +76088,6 @@ gameid_by_md5sum = {
     },
     '32f0b75422d9a5ccd241e40807c284f2': {
         'id': 'SLPS01940_ENG_10',
-    },
-    'cad5543f2ed270abcd5a9a4dd243f9fa': {
-        'id': 'POPF00001',
-    },
-    '0954167366bfc1971f5191a725278658': {
-        'id': 'resevil0d',
     },
     'c73f2bbd43cd48b87fbcc5e89aae6d61': {
         'id': 'SLUS01087',

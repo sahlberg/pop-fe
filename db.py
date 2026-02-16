@@ -17,7 +17,7 @@
 #
 # Fan translations contain '(<Language>) (T)' in the 'title'
 #
-# Next available: UNLD00009
+# Next available: UNLD00011
 #
 
 disc_by_md5 = {
@@ -4864,7 +4864,7 @@ disc_by_md5 = {
     '6f4e173a326cb17317ab10b14cd33d28': {'id': 'SCES00896', 'title': "Disney's Action Game met Hercules (Netherlands)", 'vct': b'1997080711545642\x00'},
     '6f55001cffb01ec619ff2d726a134fff': {'id': 'SLUS01317', 'title': 'BursTrick - Wake Boarding!! (USA)', 'vct': b'0000101710075500$'},
     '6f57823b858f3cb439b6d7e48e80c751': {'title': 'Street Fighter Zero 2 (Japan) (Demo)'},
-    '6f57ca148d7d8fc23465eb24873f8581': {'title': 'Superman (USA) (Proto) (1999-10-29)'},
+    '6f57ca148d7d8fc23465eb24873f8581': {'id': 'UNLD00009', 'title': 'Superman (USA) (Proto) (1999-10-29)'},
     '6f5d71bd3c9c6a5bf0045db4c9020322': {'id': 'SCES02279', 'title': 'Pac-Man World - 20th Anniversary (Italy)', 'vct': b'1999101823000000\x00'},
     '6f601979baeb08278550a39a95bdbe44': {'id': 'SLPM86420', 'title': 'Jissen Pachi-Slot Hisshouhou! Single - Super Star Dust 2 (Japan)', 'vct': b'1999122015000000\x00'},
     '6f6144e9156c40a5e7838715b1f5f6e8': {'id': 'SCUS94216', 'title': 'Official U.S. PlayStation Magazine Demo Disc 09 (USA)', 'vct': b'1998032315193771$'},
@@ -7529,7 +7529,7 @@ disc_by_md5 = {
     'aeec59d5a597f4df5e8ed4bd2e626962': {'id': 'SCED02632', 'title': 'Euro Demo 58 (Europe)', 'vct': b'0000031516070200$'},
     'aeedeced47e9fa4fedf4530b9e7567b5': {'id': 'SCED00826', 'title': 'Euro Demo 30 (Europe)', 'vct': b'1998012211264100$'},
     'aeeefafab889c5b6cef3cc9b5c8ff700': {'id': 'SLPS00992', 'title': 'SeaBass Fishing 2 (Japan)', 'vct': b'1997081116081100$'},
-    'aefa8f53118ce3ec2e9a10e7fba93a1e': {'id': 'resevil0d', 'title': 'Resident Evil 0 Demake', 'vct': b'2023060117580932\x00'},
+    'aefa8f53118ce3ec2e9a10e7fba93a1e': {'id': 'UNLD00010', 'title': 'Resident Evil 0 Demake', 'vct': b'2023060117580932\x00'},
     'aefcdc6009e56f556ed2308be99ca4ae': {'id': 'SLPM87121', 'title': 'Plue no Daibouken from Groove Adventure Rave (Japan)', 'vct': b'2002061317045500$'},
     'af0916ddc5560c50979f94b5e0d47e0c': {'id': 'SLES12084', 'title': 'Final Fantasy VIII (Spain) (Disc 2)', 'vct': b'1999072520255600$'},
     'af10f3aa6c2c4b4960c75baa3dd14734': {'id': 'SLPS02407', 'title': 'Click Manga - Dynamic Robot Taisen 2 - Kyoufu! Akuma Zoku Fukkatsu (Japan)', 'vct': b'1999102700000000\x00'},
