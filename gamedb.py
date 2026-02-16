@@ -76101,9 +76101,6 @@ gameid_by_md5sum = {
     'c12a1d9ced6475936027e236fe507ae6': {
         'id': 'SLPS00017_ENGLISH',
     },
-    '57fb5996e43d49a49248de5bf8dba348': {
-        'id': 'PCPX96075',
-    },
     '2e925ec10219aa4e14b1568c547ce50c': {
         'id': 'SLPS00070',
     },
@@ -76184,36 +76181,6 @@ gameid_by_md5sum = {
     },
     'b11bdd56e6df4aef0515ac2084eb8130': {
         'id': 'SLPM86311_R1.1',
-    },
-    '4bc5c70d87cdb42d4985b2b1473b044e': {
-        'id': 'PCPX96038',
-    },
-    '4ac5802b5949c856064b0c395252232e': {
-        'id': 'PCPX96036',
-    },
-    'e6f851aba975d09e2cf8d48af9337312': {
-        'id': 'PCPX96032',
-    },
-    '31554336eac7200c5db76e20a0c3569f': {
-        'id': 'PCPX96027',
-    },
-    'aae9f5f6c50c553610b72585760001c8': {
-        'id': 'PCPX96026',
-    },
-    '97990bd94071987c4f49d25000b60de1': {
-        'id': 'PCPX96025',
-    },
-    'dd2d250335dc19fe6ce216d54e9504f7': {
-        'id': 'PCPX96022',
-    },
-    '28cde3f43dfbf8c4d846b674f3d53441': {
-        'id': 'PCPX96021',
-    },
-    '329942c2917dde68ca61fae0251a5a4b': {
-        'id': 'PCPX96019',
-    },
-    '5e61b6a33e91416ede4523ccffe396e5': {
-        'id': 'PCPX96018',
     },
     '9975c33595ee115d026ab2e22af973e9': {
         'id': 'SLUS00884_R1.1',
@@ -76430,36 +76397,6 @@ gameid_by_md5sum = {
     },
     '5497fdb95f7ffcbb5868f3c8aaf9eabe': {
         'id': 'SLUS99998',
-    },
-    '05a9be0adcdb3611158e099cad926805': {
-        'id': 'PCPX96016',
-    },
-    '39cc24b77bbc02cbec0153a6e9621ae4': {
-        'id': 'PCPX96014',
-    },
-    'ece278956af270ef664a859b013a2ace': {
-        'id': 'PCPX96013',
-    },
-    '8af116d1969ccfad4690ca5692b0fd3e': {
-        'id': 'PCPX96011',
-    },
-    '807245f1afb5fbd0b7518552934f494a': {
-        'id': 'PCPX96010',
-    },
-    '2bb8dfd9e4507e94c4cb65d1c3f4ffc1': {
-        'id': 'PCPX96009',
-    },
-    '61a18d24ea31c75d5e63be1485da1340': {
-        'id': 'PCPX96008',
-    },
-    '41048119ad240b31377fe9dfc37b8073': {
-        'id': 'PCPX96007',
-    },
-    '289785f410b56f254b201385add858a0': {
-        'id': 'PCPX96006',
-    },
-    'a4329201607d24e4fd21cba15277fd00': {
-        'id': 'PCPX96005',
     },
     'e9870f69fa34e72897e23cd5167850f2': {
         'id': 'SCPS10009',
@@ -77294,9 +77231,6 @@ gameid_by_md5sum = {
     },
     '6338691eb20e371e0b05099a5babd874': { #147
         'id': 'SCPS10008',
-    },
-    'dcb49206304032cbf7c64a3e137ca8e7': { #148
-        'id': 'PCPX96176',
     },
     '573979882d9faa0fbdd156dd635ac83e': { #140
         'id': 'SLPM80321',
