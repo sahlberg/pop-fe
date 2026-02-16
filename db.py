@@ -17,7 +17,7 @@
 #
 # Fan translations contain '(<Language>) (T)' in the 'title'
 #
-# Next available: UNLD00011
+# Next available: UNLD00012
 #
 
 disc_by_md5 = {
@@ -1269,7 +1269,7 @@ disc_by_md5 = {
     '1cb54c8e0107a1579cae74af56f3d9c7': {'id': 'SLPM86363', 'title': 'Chaos Break (Japan)', 'vct': b'1999120309000000\x00'},
     '1cbac8a094d389238265056b9af433fd': {'id': 'SCES01913', 'title': 'Syphon Filter (Italy)', 'vct': b'1999060909000000$'},
     '1cc915bfd7a2db4e3a32fd811cfbc14a': {'id': 'SLUS00691', 'title': 'Tomb Raider III - Adventures of Lara Croft (USA) (Rev 2)', 'vct': b'0000081411052369$'},
-    '1ccc50a91897f6d69f74cab1dc293e1d': {'id': 'SLPS00905_DEMO', 'title': 'Ridegear Guybrave (Japan) (Demo)', 'vct': b'1997051004293200$'},
+    '1ccc50a91897f6d69f74cab1dc293e1d': {'id': 'SLPS00905', 'title': 'Ridegear Guybrave (Japan) (Demo)', 'vct': b'1997051004293200$'},
     '1cd0368a0e5a818b741dbdffd84fe48c': {'id': 'SLPM80430', 'title': 'Acid (Japan) (Demo)', 'vct': b'1999041300000000\x00'},
     '1cdce48a07880076126985c91e81cd53': {'id': 'SLUS90091', 'title': 'Codemasters Demo CD (USA)', 'vct': b'0000092814102479\x00'},
     '1cdf2458d5b346c5e2f8b1f331c72adf': {'id': 'SLES03322', 'title': 'ISS Pro Evolution 2 (Europe) (Es,It)', 'vct': b'1901021300000000\x00'},
@@ -1738,7 +1738,7 @@ disc_by_md5 = {
     '2773d51b1f1df1de1a61cc1cfb2fafe1': {'id': 'SLES03198', 'title': 'Danger Girl (Europe)', 'vct': b'0000091521040100$'},
     '2773fbc65ee2cd077b05dbdeef9765d7': {'id': 'SLES02948', 'title': "Chris Kamara's Street Soccer (Europe)", 'vct': b'0000060721000000\x00'},
     '2778db3d15f62ec879afada71c619b7b': {'id': 'SCES00869', 'title': 'Final Fantasy VII (Germany) (Disc 1)', 'vct': b'1997101702323000$'},
-    '27793c165d63d42905d3aeba2d2e4066': {'id': 'SCPS45033_DEMO', 'title': 'Real Bout Garou Densetsu Special - Dominated Mind (Japan) (Demo)', 'vct': b'1998032709521800$'},
+    '27793c165d63d42905d3aeba2d2e4066': {'id': 'SCPS45033', 'title': 'Real Bout Garou Densetsu Special - Dominated Mind (Japan) (Demo)', 'vct': b'1998032709521800$'},
     '277bd932c44259ba767febd770894684': {'title': 'Wipeout 3 (USA) (Demo)'},
     '278133ae3469eecb60600443e3a1aea8': {'id': 'SLPS00023', 'title': 'CyberSled (Japan)', 'vct': b'1994122718351900$'},
     '2782358f22806dcaa18d8d04543a2afa': {'id': 'SLUS00997', 'title': "South Park - Chef's Luv Shack (USA)", 'vct': b'1999103100000000\x00'},
@@ -2804,7 +2804,7 @@ disc_by_md5 = {
     '3fc090adeec5daba89821c9918514698': {'id': 'SLPS01873', 'title': 'Cinema Eikaiwa Series Dai-2-dan - Interceptor (Japan) (Disc 2) (Chuukan)', 'vct': b'1999011211000000\x00'},
     '3fc0ec930403e777b0662cd75cc7d1f5': {'id': 'SCES01947', 'title': 'Legend of Legaia (Spain)', 'vct': b'0000041817560700$'},
     '3fc157124d0017a0ea1d5e0f186eb0b0': {'id': 'SLPM86046', 'title': 'Jikkyou American Baseball (Japan)', 'vct': b'1998032600000000\x00'},
-    '3fc5c3a32c777f36eff4a1f303f864a9': {'id': 'SLES00228_DEMO', 'title': 'Resident Evil (Germany) (Demo)', 'vct': b'1996052313440200$'},
+    '3fc5c3a32c777f36eff4a1f303f864a9': {'id': 'SLES00228', 'title': 'Resident Evil (Germany) (Demo)', 'vct': b'1996052313440200$'},
     '3fca8d945da7e1455f55699a2704026c': {'id': 'SLPS02391', 'title': 'Pandora Max Series Vol. 1 - Dragon Knights Glorious (Japan)', 'vct': b'1999101205000000$'},
     '3fcadb7e213a675030a455a483489a67': {'id': 'SLPM87331', 'title': 'Front Mission 2 (English) (T) (Front Mission History)', 'vct': b'1903100421000000\x00'},
     '3fcd99f1133941ac573835f5e5fe790f': {'id': 'SCUS94428', 'title': "PlayStation Underground Jampack - Summer '99 (USA)", 'vct': b'1999040617311550$'},
@@ -4603,7 +4603,7 @@ disc_by_md5 = {
     '68ee95407f1dc5874f68f3931b3b62ce': {'id': 'SLPS02205', 'title': 'Choro Q Wonderful! (Japan)', 'vct': b'1999040815532900$'},
     '68eed8e0cc011cdd6f6b48fe1a457d18': {'id': 'SLPS03220', 'title': 'Matsumoto Reiji 999 - Story of Galaxy Express 999 (Japan) (Disc 1)', 'vct': b'2001052416000000\x00'},
     '68f15ea04a0d612082ba50e52c0e7432': {'id': 'SLUS00339', 'title': 'Persona (USA)', 'vct': b'1996111500000000\x00'},
-    '68f5ff4b8b58b74e2cb7702203f589d0': {'id': 'SLPM86546_DEMO', 'title': 'RC de Go! (Japan) (Demo)', 'vct': b'0000042113071600$'},
+    '68f5ff4b8b58b74e2cb7702203f589d0': {'id': 'SLPM86546', 'title': 'RC de Go! (Japan) (Demo)', 'vct': b'0000042113071600$'},
     '68fa313a1b6a95d7033a0a1cfb4d1361': {'id': 'SLUS01389', 'title': 'Pajama Sam - You Are What You Eat from Your Head to Your Feet (USA)', 'vct': b'2001103123595900\x00'},
     '68fc2dca1f4d7659f0327e0f1402eeb5': {'id': 'SLES04055', 'title': 'Land Before Time, The - Big Water Adventure (Europe)', 'vct': b'2003022415000000$'},
     '6905f03e0bc349bcc9d3c768aa36238a': {'id': 'SLPS01403', 'title': 'Colony Wars (Japan) (Disc 1)', 'vct': b'1998042712000000\x00'},
@@ -5436,7 +5436,7 @@ disc_by_md5 = {
     '7c0f0e03e86706efaf5f261dc91abc80': {'id': 'SLPM86697', 'title': 'Simple 1500 Series Vol. 50 - The Billiard 2 (Japan)', 'vct': b'0000101600000000\x00'},
     '7c10931a2dc871f144dd39982bb68bcb': {'id': 'SCUS94280', 'title': 'Official U.S. PlayStation Magazine Demo Disc 18 (USA)', 'vct': b'1998120718002570$'},
     '7c15f016f8adfbf600b6023595cdc970': {'id': 'SLPS02710', 'title': 'Art Camion - Sugorokuden (Japan)', 'vct': b'0000032100560200$'},
-    '7c1800879a2b5b331cf0a604ce26500b': {'id': 'SCPS45487_DEMO', 'title': 'RayCrisis (Japan) (Demo)', 'vct': b'0000010715500000$'},
+    '7c1800879a2b5b331cf0a604ce26500b': {'id': 'SCPS45487', 'title': 'RayCrisis (Japan) (Demo)', 'vct': b'0000010715500000$'},
     '7c2b5585c7439a28fd03131a330131ec': {'id': 'SCUS94211', 'title': 'Official U.S. PlayStation Magazine Demo Disc 04 (USA)', 'vct': b'1997102310560262$'},
     '7c2cf96724d707a8eb015fb029b6790d': {'title': 'Weakest Link, The (USA)'},
     '7c3023ec3830fbe4750949d88391e410': {'id': 'SLPS00027', 'title': 'Kileak, The Blood (Japan)', 'vct': b'1994121500000000$'},
@@ -7770,7 +7770,7 @@ disc_by_md5 = {
     'b4504d33d426c88ffd0191ea1d081600': {'id': 'SLES03140', 'title': 'FIFA 2001 (Europe) (En,De,Es,Nl,Sv)', 'vct': b'0000091411333500$'},
     'b45625dca82b80d2bdbb3675fd2673b9': {'id': 'SLPS02652', 'title': 'Seireiki Rayblade (Japan)', 'vct': b'0000020522300000\x00'},
     'b45cc68e090e2e44cb496515d53a1040': {'id': 'SLES02577', 'title': 'UEFA Champions League - Season 1999-2000 (Europe) (Beta) (2000-02-16)', 'vct': b'0000021017214100$'},
-    'b46104b2ce99c8fddc5a4d097af0a347': {'id': 'UNRL00001', 'title': 'Redeemer, The (Europe) (Unl)', 'vct': b'2000100420054800\x00'},
+    'b46104b2ce99c8fddc5a4d097af0a347': {'id': 'UNLD00011', 'title': 'Redeemer, The (Europe) (Unl)', 'vct': b'2000100420054800\x00'},
     'b463d54ea7eb8f4d9edc4cec1125ab94': {'id': 'SLPM86528', 'title': 'Shichida-shiki Unou de Asobenture Vol. 2 - Katachi 123 - 0-2-sai Muke (Japan)', 'vct': b'0000073103433800$'},
     'b469faf7e80a1d4c8b51d61472fe9207': {'id': 'SCES10867', 'title': 'Final Fantasy VII (Europe) (Disc 2)', 'vct': b'1997091717505500$'},
     'b47940bf85e8d5216bc4b0e1956edfed': {'id': 'SLPS01960', 'title': 'Soukou Kihei Votoms - Lightning Slash (Japan) (Limited Edition)', 'vct': b'1999020107212900$'},
@@ -8481,7 +8481,7 @@ disc_by_md5 = {
     'c560c795e534261f4a0df5c98099f905': {'id': 'SCUS94421', 'title': 'Star Ocean - The Second Story (USA) (Disc 1)', 'vct': b'1999050600000000$'},
     'c56394e550fd2213a2f7dac9820abfea': {'id': 'SLPM80114', 'title': 'Hyper PlayStation Re-mix No. 7 (Japan) (Disc 2)', 'vct': b'1997042716104600$'},
     'c56bbb587a63b426828399232c10a633': {'id': 'SLPM80403', 'title': "Tokyo Game Show '99 Spring Special Version - Tomy Paradise Taikenban (Japan)", 'vct': b'1999021201003400$'},
-    'c56cfb36f19f2608d3c180c104ace9dd': {'id': 'SLPS00017_ENGLISH', 'title': "King's Field (English) (T)", 'vct': b'1994111013000000$'},
+    'c56cfb36f19f2608d3c180c104ace9dd': {'id': 'SLPS00017', 'title': "King's Field (English) (T)", 'vct': b'1994111013000000$'},
     'c5770f3e8ff7c27b7fec2e9964d378ec': {'id': 'SCES03848', 'title': 'Stuart Little 2 (Italy)', 'vct': b'2002071912000000$'},
     'c57c5763994f1e23f847a2fb7385c5f0': {'id': 'SCUS94245', 'title': 'NFL Xtreme (USA)', 'vct': b'1998052012371239$'},
     'c57de2803b3cd6c75f77813b382b8819': {'id': 'SLPS00938', 'title': 'Dark Seed II (Japan)', 'vct': b'1997080317000000$'},
@@ -8767,7 +8767,7 @@ disc_by_md5 = {
     'cc95023964b7482f41a215b7154d0690': {'id': 'SCES00934', 'title': 'Pac-Man World - 20th Anniversary (Europe)', 'vct': b'1999101913430000\x00'},
     'cca84dbdfa1b260b3af8e49af5bd0de8': {'id': 'SLPS01765', 'title': 'Bass Landing (Japan)', 'vct': b'1998120302324400$'},
     'ccaed8b7ed91adbc0194c030b17a13f2': {'id': 'PAPX90022', 'title': 'Yoi Ko to Yoi Otona no. PlayStation Taikenban Vol. 1 (Japan)', 'vct': b'1997101600000000\x00'},
-    'ccb3d4495e059f10de14b563c21321e3': {'id': 'SLUS00005_DEMO', 'title': 'Rayman (USA) (Playable Game Preview)', 'vct': b'1995111321063500$'},
+    'ccb3d4495e059f10de14b563c21321e3': {'id': 'SLUS00005', 'title': 'Rayman (USA) (Playable Game Preview)', 'vct': b'1995111321063500$'},
     'ccb5809af6f663b94ebe6cfc30768a2b': {'id': 'SLPS00603', 'title': 'Mahjong Taikai II Special (Japan)', 'vct': b'1996100218000000$'},
     'ccbeabe306c5c508cd82da9e32653f10': {'id': 'SLPM86575', 'title': 'Nihon Sumou Kyoukai Kounin - Nihon Oozumou (Japan)', 'vct': b'0000060800300000\x00'},
     'ccc18ff524bf19ff2e8bb27f824063cb': {'id': 'SLES04097', 'title': 'Dancing Stage Fever (Europe)', 'vct': b'1903072913000000$'},
@@ -9899,7 +9899,7 @@ disc_by_md5 = {
     'e66918a9a2e5102464c60eab26e39169': {'id': 'SLPM86219', 'title': 'Bust A Move 2 - Dance Tengoku Mix (Japan)', 'vct': b'1999030717055200$'},
     'e66c3b63e750abb3ec4ce42cca0197c1': {'id': 'SLES11508', 'title': 'Metal Gear Solid (Italy) (Disc 2)', 'vct': b'1999020911522000$'},
     'e6764028ef8f0b14930e6cd980ceef6d': {'title': 'Striker 96 (Europe) (Rev 1)'},
-    'e679fe32c92e2d5045921495c5874477': {'id': 'SLPS01643_DEMO', 'title': 'Ridegear Guybrave II (Japan) (Demo)', 'vct': b'1997122418000000$'},
+    'e679fe32c92e2d5045921495c5874477': {'id': 'SLPS01643', 'title': 'Ridegear Guybrave II (Japan) (Demo)', 'vct': b'1997122418000000$'},
     'e67f89a7479080136cca1da009348804': {'id': 'SLPS00843', 'title': 'Allied General (Japan) (En,Ja)', 'vct': b'1997032208350000$'},
     'e68771e91206ae8cdbea70e57c14c695': {'id': 'SLES01940', 'title': '40 Winks (Italy)', 'vct': b'1999101400000000\x00'},
     'e6879b4f703704de97f1f55f7af09569': {'id': 'SLPS01233', 'title': 'Bust A Move (Japan) (Disc 2) (Premium CD-ROM) (Genteiban)', 'vct': b'1997112811154100$'},
@@ -10466,7 +10466,7 @@ disc_by_md5 = {
     'f3ce9a736fa9cacc9f3ffc3b1d02bf2a': {'id': 'UNKN00000', 'title': 'Breaker Pro Version 1.1 (USA) (Unl)', 'vct': b'2003112121295200 '},
     'f3d566cce1ae08a9ffa4699efdf1590e': {'id': 'SLPM86916', 'title': 'Dragon Quest IV - Michibikareshi Mono-tachi (Japan)', 'vct': b'2001101217292400$'},
     'f3d99fed970d81b102c6134dfbbcf0b3': {'id': 'SLUS01301', 'title': 'Ford Racing (USA)', 'vct': b'0000110816184500$'},
-    'f3dbb98ec842176f4dc33ddc23e24329': {'id': 'SLPS01601_DEMO', 'title': 'Rally de Africa (Japan) (Demo)', 'vct': b'1998052018053700$'},
+    'f3dbb98ec842176f4dc33ddc23e24329': {'id': 'SLPS01601', 'title': 'Rally de Africa (Japan) (Demo)', 'vct': b'1998052018053700$'},
     'f3dbf7c0703b1815e4f2b858965ed057': {'title': 'Helix - Fear Effect (Japan) (Taikenban)'},
     'f3e4204f2905b946773f1d5689b21428': {'id': 'SLUS00802', 'title': "Fisherman's Bait - A Bass Challenge (USA)", 'vct': b'1998112717000000\x00'},
     'f3ea94696f534a62a5741646758cca41': {'id': 'SLUS00936', 'title': 'South Park (USA)', 'vct': b'1999082500000000\x00'},

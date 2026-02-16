@@ -9809,7 +9809,7 @@ games = {
         'pic0-offset': (0.3, 0.3),
         'pic1': 'https://images.launchbox-app.com/5da4163b-4362-4042-bf3b-2bd601e5d9a7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=sulROAVlU5M&list=PLO4jlmGoc6uCpxhtChuUT_HemI2TZJFfK&index=1',
-        'manual': 'https://www.videogamemanual.com/ps1/Gran%20Turismo%20(USA).pdf',
+        'manual': 'https://www.videogamemanual.com/ps1/Gran%20Turismo%202%20(GH)%20(USA).pdf',
         'pspconfig': 'pspconfigs/Gran Turismo 2/SCUS-94455.bin',
     },
     'SCUS94488': {
@@ -13733,19 +13733,6 @@ games = {
         'url': "games/U/R/SLUS-00005.html",
     	'id': 'SLUS00005',
 	'title': "RAYMAN",
-        'icon0': 'https://images.launchbox-app.com/09b793bd-683c-48b2-9d51-d5b371ae68c2.jpg',
-        'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
-        'pic0-scaling': 0.85,
-        'pic0-offset': (0.1, 0.25),
-        'pic1': 'https://images.launchbox-app.com//b074fd53-463b-4a23-a1f7-19e8d8410dc0.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=oVlSD0di-gQ&list=PLO4jlmGoc6uAKAgI6WEWiL33IESJcae84&index=4',
-        'manual': 'https://www.videogamemanual.com/ps1/Rayman%20(GH)%20(USA).pdf',
-        'ps3config': 'ps3configs/Rayman/SLUS-00005.BIN',
-    },
-    'SLUS00005_DEMO': {
-        'url': "games/U/R/SLUS-00005.html",
-    	'id': 'SLUS00005',
-	'title': "RAYMAN [DEMO]",
         'icon0': 'https://images.launchbox-app.com/09b793bd-683c-48b2-9d51-d5b371ae68c2.jpg',
         'pic0': 'https://images.launchbox-app.com/a0d13703-353d-4115-a322-a3ddb2573c38.png',
         'pic0-scaling': 0.85,
@@ -33963,15 +33950,6 @@ games = {
         'url': "games/P/R/SLES-00228.html",
     	'id': 'SLES00228',
 	'title': "RESIDENT EVIL",
-        'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
-        'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
-        'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%20%28USA%29_jp2.zip',
-    },
-    'SLES00228_DEMO': {
-        'url': "games/P/R/SLES-00228.html",
-    	'id': 'SLES00228',
-	'title': "RESIDENT EVIL [DEMO]",
         'pic0': 'https://images.launchbox-app.com/c898e82e-a8f6-4d97-942f-0bcad3c951d8.png',
         'pic1': 'https://images.launchbox-app.com/d31364a6-2612-494e-b2ee-f120778425d0.jpg',
         'snd0': 'https://www.youtube.com/watch?v=65Ox2nxvWDE&list=PLF8EF25BB4B90BBD1&index=1',
@@ -56385,17 +56363,6 @@ games = {
 	'title': "KING OF STALLION",
         'pic0': 'https://images.launchbox-app.com/25d96944-2abf-4516-91de-8ce128c0de38.png',
     },
-    'SLPS00017_ENGLISH': {
-        'url': "games/J/K/SLPS-00017.html",
-    	'id': 'SLPS00017',
-	'title': "KING'S FIELD [ENGLISH]",
-        'snd0': "https://www.youtube.com/watch?v=GRn_gfltbhw&list=PLMHCGC8qP5422kYz3kVp8e2NiFfeMCA3m&index=1",
-        'pic0': 'https://images.launchbox-app.com/bc3a60e6-ed3e-42ba-84bd-84a113034050.png',
-        'pic0-scaling': 0.8,
-        'pic0-offset': (0.2, 0.4),
-        'pic1': 'https://images.launchbox-app.com/e7cc24d9-46c5-491a-b5a4-a80468d67ca1.png',
-        'manual': 'https://archive.org/download/SonyPlaystationManuals/King%27s%20Field%20%28USA%29_jp2.zip',
-    },
     'SLPS00017': {
         'url': "games/J/K/SLPS-00017.html",
     	'id': 'SLPS00017',
@@ -65180,12 +65147,6 @@ games = {
 	'title': "RALLY DE AFRICA",
         'pic0': 'https://images.launchbox-app.com/d9328b43-3831-4aa8-a44e-d52ca8d87256.png',
     },
-    'SLPS01601_DEMO': {
-        'url': "games/J/R/SLPS-01601.html",
-    	'id': 'SLPS01601',
-	'title': "RALLY DE AFRICA [DEMO]",
-        'pic0': 'https://images.launchbox-app.com/d9328b43-3831-4aa8-a44e-d52ca8d87256.png',
-    },
     'SLPS02258': {
         'url': "games/J/R/SLPS-02258.html",
     	'id': 'SLPS02258',
@@ -65255,13 +65216,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/1e0bd3f0-6798-4eb8-80a5-6b003e0c1b98.png',
         'pic1': 'https://images.launchbox-app.com/cd01ac68-7272-429f-bac0-d272fb05cf6b.jpg',
     },
-    'SCPS45487_DEMO': {
-        'url': "games/J/R/SCPS-45487.html",
-    	'id': 'SCPS45487',
-	'title': "RAYCRISIS [DEMO]",
-        'pic0': 'https://images.launchbox-app.com/1e0bd3f0-6798-4eb8-80a5-6b003e0c1b98.png',
-        'pic1': 'https://images.launchbox-app.com/cd01ac68-7272-429f-bac0-d272fb05cf6b.jpg',
-    },
     'SLPM86450': {
         'url': "games/J/R/SLPM-86450.html",
     	'id': 'SLPM86450',
@@ -65310,13 +65264,6 @@ games = {
         'pic0': 'https://images.launchbox-app.com/c1bc7469-f5fc-41a4-b665-ea062bfb2f00.png',
         'pic1': 'https://images.launchbox-app.com/afedcf11-e07e-4196-bcc0-a289f3a11e5c.png',
     },
-    'SLPM86546_DEMO': {
-        'url': "games/J/R/SLPM-86546.html",
-    	'id': 'SLPM86546',
-	'title': "RC DE GO! [DEMO]",
-        'pic0': 'https://images.launchbox-app.com/c1bc7469-f5fc-41a4-b665-ea062bfb2f00.png',
-        'pic1': 'https://images.launchbox-app.com/afedcf11-e07e-4196-bcc0-a289f3a11e5c.png',
-    },
     'SLPM86635': {
         'url': "games/J/R/SLPM-86635.html",
     	'id': 'SLPM86635',
@@ -65349,13 +65296,6 @@ games = {
         'url': "games/J/R/SCPS-45033.html",
     	'id': 'SCPS45033',
 	'title': "REAL BOUT GAROU DENSETSU",
-        'pic0': 'https://images.launchbox-app.com/57bc2613-191b-4800-9671-604ba623fc66.png',
-        'pic1': 'https://images.launchbox-app.com/730c8bcc-a2d1-4ddb-912d-6a9800c9b552.jpg',
-    },
-    'SCPS45033_DEMO': {
-        'url': "games/J/R/SCPS-45033.html",
-    	'id': 'SCPS45033',
-	'title': "REAL BOUT GAROU DENSETSU [DEMO]",
         'pic0': 'https://images.launchbox-app.com/57bc2613-191b-4800-9671-604ba623fc66.png',
         'pic1': 'https://images.launchbox-app.com/730c8bcc-a2d1-4ddb-912d-6a9800c9b552.jpg',
     },
@@ -65629,22 +65569,10 @@ games = {
 	'title': "RIDEGEAR GUYBRAVE",
         'pic0': 'https://images.launchbox-app.com/b091efc9-2f88-4ead-a6cf-775f85eafd56.png',
     },
-    'SLPS00905_DEMO': {
-        'url': "games/J/R/SLPS-00905.html",
-    	'id': 'SLPS00905',
-	'title': "RIDEGEAR GUYBRAVE [DEMO]",
-        'pic0': 'https://images.launchbox-app.com/b091efc9-2f88-4ead-a6cf-775f85eafd56.png',
-    },
     'SLPS01643': {
         'url': "games/J/R/SLPS-01643.html",
     	'id': 'SLPS01643',
 	'title': "RIDEGEAR GUYBRAVE II",
-        'pic0': 'https://images.launchbox-app.com/f8dfa70d-3d1f-4c01-8813-0c90ff1fa980.png',
-    },
-    'SLPS01643_DEMO': {
-        'url': "games/J/R/SLPS-01643.html",
-    	'id': 'SLPS01643',
-	'title': "RIDEGEAR GUYBRAVE II [DEMO]",
         'pic0': 'https://images.launchbox-app.com/f8dfa70d-3d1f-4c01-8813-0c90ff1fa980.png',
     },
     'SLPS01644': {
@@ -76013,8 +75941,8 @@ games = {
         'pic0': 'https://images.launchbox-app.com//fc20b839-5162-4b95-8401-776746d09991.png',
         'pic1': 'https://images.launchbox-app.com//8fd1dc98-c5e7-4272-b01f-be8f6ddd73ed.jpg',
     },
-    'UNRL00001': {
-        'id': 'UNRL00001',
+    'UNLD00011': {
+        'id': 'UNLD00011',
         'title': 'The Redeemer [UNRELEASED]',
         'icon0': None,
         'pic0': None,
@@ -76042,23 +75970,11 @@ gameid_by_md5sum = {
     'c73f2bbd43cd48b87fbcc5e89aae6d61': {
         'id': 'SLUS01087',
     },
-    'c12a1d9ced6475936027e236fe507ae6': {
-        'id': 'SLPS00017_ENGLISH',
-    },
     '2e925ec10219aa4e14b1568c547ce50c': {
         'id': 'SLPS00070',
     },
     'b87b5dea53a4fc5f74f134c9007ca883': {
         'id': 'SLES04054',
-    },
-    'ca40ee80ec2310a253c6fd47b9a85d69': {
-        'id': 'SLPS00905_DEMO',
-    },
-    '8d15223caa1c60528ffc1d744d2e0c9e': {
-        'id': 'SLPS01643_DEMO',
-    },
-    '4b3dda5c4f0218e0ca2e076681798a59': {
-        'id': 'SLES00228_DEMO',
     },
     '07304d09af933a66b66b84eee3df559f': {
         'id': 'SLES03726',
@@ -76066,26 +75982,11 @@ gameid_by_md5sum = {
     'fb938f56780164a3e396716253c05326': {
         'id': 'SCPS45418',
     },
-    'e82a0eab7c962f97550db067884e3235': {
-        'id': 'UNRL00001',
-    },
-    '80a66e09b289136cfee26f8f1d6882f6': {
-        'id': 'SCPS45033_DEMO',
-    },
-    '02a3cb13008f98c56061de50c3eed335': {
-        'id': 'SLPM86546_DEMO',
-    },
     '35b19c8c0d20af0306b642f1e40cd6b7': {
         'id': 'SCPS45477',
     },
-    '52c5e511d59cc0845b189e00ff3b4be4': {
-        'id': 'SLUS00005_DEMO',
-    },
     '7cb72acb31605220987c7bada7435e51': {
         'id': 'SLUS01235_DEMO',
-    },
-    '1dd53d9621f829e128d3d6c5eb15ae6a': {
-        'id': 'SCPS45487_DEMO',
     },
     'f07e5f709a5f5f83252c23848abd5ca3': {
         'id': 'SLES00519',
@@ -76095,9 +75996,6 @@ gameid_by_md5sum = {
     },
     '4d71d33e5dfdb35da7b1df91bf11ce5b': {
         'id': 'SLUS00542_DEMO',
-    },
-    '1c4404d181d104e23a90bd5f725cf38b': {
-        'id': 'SLPS01601_DEMO',
     },
     '62391737fb4e4f066e11184833977d62': {
         'id': 'SCUS94247_DEMO',
@@ -76284,9 +76182,6 @@ gameid_by_md5sum = {
     },
     '6a5e62fdadceadde4679286bfb70de99': {
         'id': 'SLPS00069',
-    },
-    '68fd1c3cadcea71a6ee80bb7f2f9533f': {
-        'id': 'SLPS00017',
     },
     '08924b088fed61ba20585adacd5325b2': {
         'id': 'SLPS00029',
