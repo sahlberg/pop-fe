@@ -12,7 +12,7 @@
 # the same id as the final game release.
 #
 # Many games with nonstandard naming, such as the LSP games
-# will work on PSP/PS3 unless renames to SCUSxxxxx / SLUSxxxxx
+# will not work on PSP/PS3 unless renamed to SCUSxxxxx / SLUSxxxxx
 # This potentially also applies to other nonstandard numbering schemes as well.
 #
 # Fan translations are assigned the same 'id' as the original game/relese
@@ -25,7 +25,7 @@
 #
 # Fan translations contain '(<Language>) (T)' in the 'title'
 #
-# Next available: UNLD00093
+# Next available: UNLD00095
 #
 
 disc_by_md5 = {
@@ -10810,7 +10810,7 @@ disc_by_md5 = {
     'fb72c2503a067fe38cea9a21f31d116c': {'id': 'SLPM80151', 'title': 'StarSweep (Japan) (Demo 2)', 'vct': b'1997083121000000\x00'},
     'fb75a0fdf977a3eccc48fdc87286b0ef': {'id': 'SLES01722', 'title': 'Bloody Roar 2 - Bringer of the New Age (Europe)', 'vct': b'1999042218450000$'},
     'fb8bb09bd8d8bb1eaf517ee8587305c1': {'id': 'SCES02380', 'title': 'Gran Turismo 2 (Europe) (En,Fr,De,Es,It) (Disc 1) (Arcade Mode)', 'vct': b'0000010412000000\x00'},
-    'fb8d2a2e1eafd8d675d430b13d8c9d00': {'id': 'UNKN00000', 'title': 'GamePro Action Disc 2 (USA) (Unl)', 'vct': b'2001102311183670\x00'},
+    'fb8d2a2e1eafd8d675d430b13d8c9d00': {'id': 'UNLD00094', 'title': 'GamePro Action Disc 2 (USA) (Unl)', 'vct': b'2001102311183670\x00'},
     'fb8f7836c6e2eb1bd42fa7c8392e7c38': {'id': 'SLPS00261', 'title': 'Sotsugyou R - Graduation Real (Japan)', 'vct': b'1996010800000000\x00'},
     'fb9025645ea56077f9b96a551aab9c35': {'id': 'SLPS00419', 'title': 'Shock Wave (Japan)', 'vct': b'1996051822500000\x00'},
     'fb92866eae12ddd70bd696dbad32caca': {'id': 'SLES01423', 'title': 'Global Domination (Germany)', 'vct': b'1999012112000000$'},
@@ -10851,7 +10851,7 @@ disc_by_md5 = {
     'fc82c35b12f2fa1f28cc08a5516598f1': {'id': 'UNKN00000', 'title': 'Circuit Breakers (Europe) (En,Fr,De,Es,It) (Beta) (1998-01-23)', 'vct': b'1997091513083600$'},
     'fc8cc9fc5ed761ed5d9cf025df7a6877': {'id': 'SLUS01279', 'title': 'Dino Crisis 2 (USA)', 'vct': b'0000081721214400$'},
     'fc945c4fb1501f535710f03edb867d66': {'id': 'SLPM86464', 'title': 'Jikkyou Golf Master 2000 (Japan)', 'vct': b'0000030118000000\x00'},
-    'fc98a019296e0a355e25ea51be056e2c': {'id': 'UNKN00000', 'title': '900X Golden Finger (Europe) (Unl)', 'vct': b'1999071615143300\x00'},
+    'fc98a019296e0a355e25ea51be056e2c': {'id': 'UNLD00093', 'title': '900X Golden Finger (Europe) (Unl)', 'vct': b'1999071615143300\x00'},
     'fca954c6620948fcf2c2cfe94c7d42c3': {'id': 'SLPM86760', 'title': 'Simple 1500 Series Vol. 58 - The Sumou (Japan)', 'vct': b'2001030615000000$'},
     'fcb0464543a539014f47fc4349271dc5': {'id': 'SLPS91445', 'title': 'Armored Core - Master of Arena (Japan) (Disc 2) (PSone Books)', 'vct': b'2001112903000000\x00'},
     'fcb3d888682544b9b0aaf98bcd052e5f': {'id': 'SLUS00732', 'title': 'Destrega (USA)', 'vct': b'1997050600000000\x00'},
