@@ -1989,89 +1989,6 @@ def has_transparency(img):
         return False
 
     
-def _get_gameid_from_iso(path='NORMAL01.iso'):
-    if not have_pycdlib and not have_iso9660:
-        raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
-
-    buf = None
-    if have_pycdlib:
-        try:
-            iso = pycdlib.PyCdlib()
-            iso.open(path)
-            extracted = io.BytesIO()
-            iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
-            extracted.seek(0)
-            buf = str(extracted.read(1024))
-            iso.close()
-        except:
-            True
-    if not buf and have_iso9660:
-        try:
-            iso = iso9660.ISO9660.IFS(source=path)
-            st = iso.stat('system.cnf', True)
-            if st is None:
-                raise Exception('Could not open system.cnf')
-
-            buf = iso.seek_read(st['LSN'])[1][:128]
-            iso.close()
-        except:
-            True
-
-    if not buf:
-        print('Failed to read game id. Falling back to raw read')
-        with open(path, 'rb') as f:
-            f.seek(0x8028)
-            buf = str(f.read(9))[2:-1]
-            if buf != '         ':
-                return buf
-            else:
-                return 'UNKN00000'
-
-    idx = buf.find('cdrom:')
-    if idx < 0:
-        raise Exception('Could not read system.cnf')
-
-    buf = buf[idx + 6:idx + 50]
-    idx = buf.find('\\r')
-    if idx > 0:
-        buf = buf[:idx]
-    idx = buf.find('\r')
-    if idx > 0:
-        buf = buf[:idx]
-    idx = buf.find('\\n')
-    if idx > 0:
-        buf = buf[:idx]
-    idx = buf.find('\n')
-    if idx > 0:
-        buf = buf[:idx]
-    idx = buf.find(';1')
-    if idx > 0:
-        buf = buf[:idx]
-    # Some games are of the form \DIR\SLPS12345, get rid of the path
-    buf = buf.split('\\')[-1]
-    
-    bad_chars = "\\_. -"
-    for i in bad_chars:
-        buf = buf.replace(i, "")
-
-    game_id = buf.upper()
-    # Special handling of games with broken id in system.cnf
-    if len(game_id) != 9:
-        print('cdrom: line in system.cnf does not contain a proper id, read disc label instead')
-        with open(path, 'rb') as f:
-            f.seek(0x8028)
-            game_id = str(f.read(9))[2:-1].upper()
-    # Special handling of games with broken id in system.cnf
-    if game_id not in games and buf[:9] in games:
-        return buf[:9]
-    return game_id
-
-def get_gameid_from_iso(path='NORMAL01.iso'):
-    game_id = _get_gameid_from_iso(path=path)
-    if game_id not in games:
-        game_id = 'UNKN00000'
-    return game_id
-
 def fetch_cached_file(path):
     try:
         ret = requests.get(PSX_SITE + path)
@@ -3806,16 +3723,8 @@ def get_disc_id(cue, real_cue_file, tmp):
         print("DISC NOT IN DATABASE", md5)
         rid = 'UNKN00000'
     print('MD5 FINGERPRINT', md5, rid)
-
-    # TODO get rid of this once we have switched everything over to the new
-    # identification scheme and retired the use of "md5 over first 1MB of ISO"
-    bc.writetrack(1, tmp)
-    gid = get_gameid_from_iso(tmp)
-    print('gid', gid, 'rid', rid)
-    if gid == 'UNKN00000':
-        gid = rid
     
-    return gid, md5
+    return rid, md5
 
 
 def get_disc_ids(cue_files, real_cue_files, subdir='./'):
