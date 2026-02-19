@@ -65,7 +65,7 @@ except:
 from pathlib import Path
 from bchunk import bchunk
 from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
-from gamedb import games, libcrypt, themes, ppf_fixes, gameid_by_md5sum
+from gamedb import games, libcrypt, themes, ppf_fixes
 from db import disc_by_md5
 try:
     from make_isoedat import pack
@@ -1990,12 +1990,6 @@ def has_transparency(img):
 
     
 def _get_gameid_from_iso(path='NORMAL01.iso'):
-    with open(path, 'rb') as f:
-        h = hashlib.md5(f.read(1024*1024)).hexdigest()
-        print('MD5 fingerprint', h)
-        if h in gameid_by_md5sum:
-            return gameid_by_md5sum[h]['id'], h
-
     if not have_pycdlib and not have_iso9660:
         raise Exception('Can not find either pycdlib or pycdio. Try either \'pip3 install pycdio\' or \'pip3 install pycdlib\'.')
 
@@ -2029,9 +2023,9 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
             f.seek(0x8028)
             buf = str(f.read(9))[2:-1]
             if buf != '         ':
-                return buf, h
+                return buf
             else:
-                return 'UNKN00000', h
+                return 'UNKN00000'
 
     idx = buf.find('cdrom:')
     if idx < 0:
@@ -2069,14 +2063,14 @@ def _get_gameid_from_iso(path='NORMAL01.iso'):
             game_id = str(f.read(9))[2:-1].upper()
     # Special handling of games with broken id in system.cnf
     if game_id not in games and buf[:9] in games:
-        return buf[:9], h
-    return game_id, h
+        return buf[:9]
+    return game_id
 
 def get_gameid_from_iso(path='NORMAL01.iso'):
-    game_id, md5 = _get_gameid_from_iso(path=path)
+    game_id = _get_gameid_from_iso(path=path)
     if game_id not in games:
         game_id = 'UNKN00000'
-    return game_id, md5
+    return game_id
 
 def fetch_cached_file(path):
     try:
@@ -3811,12 +3805,12 @@ def get_disc_id(cue, real_cue_file, tmp):
     if not rid:
         print("DISC NOT IN DATABASE", md5)
         rid = 'UNKN00000'
-    print('T1 FINGERPRINT', md5, rid)
+    print('MD5 FINGERPRINT', md5, rid)
 
     # TODO get rid of this once we have switched everything over to the new
     # identification scheme and retired the use of "md5 over first 1MB of ISO"
     bc.writetrack(1, tmp)
-    gid, _ = get_gameid_from_iso(tmp)
+    gid = get_gameid_from_iso(tmp)
     print('gid', gid, 'rid', rid)
     if gid == 'UNKN00000':
         gid = rid
