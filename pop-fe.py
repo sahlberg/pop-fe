@@ -3720,10 +3720,33 @@ def get_disc_id(cue, real_cue_file, tmp):
             rid = disc_by_md5[md5]['id']
 
     if not rid:
+        print('DISC NOT IN DATABASE', md5)
+        print('Trying SYSTEM.CNF lookup')
+        try:
+            bc.writetrack(1, tmp)
+            iso = pycdlib.PyCdlib()
+            iso.open(tmp)
+            extracted = io.BytesIO()
+            iso.get_file_from_iso_fp(extracted, iso_path='/SYSTEM.CNF;1')
+            extracted.seek(0)
+            buf = str(extracted.read(1024))
+            iso.close()
+            buf = buf.split('cdrom:')[1]
+            while buf[0] == '\\':
+                buf = buf[1:]
+            buf = buf.split('\\')[0].split(';')[0].replace('_', '').replace('.', '')[:9].upper()
+            if buf in games:
+                rid = buf
+                print('Found this name in SYSTEM.CNF:', rid)
+                print('PLEASE REPORT THIS MD5 AND GAME SO I CAN ADD IT TO THE DATABASE')
+        except:
+            print('Failed to read disc id from SYSTEM.CNF')
+
+    if not rid:
         print("DISC NOT IN DATABASE", md5)
         rid = 'UNKN00000'
     print('MD5 FINGERPRINT', md5, rid)
-    
+
     return rid, md5
 
 
