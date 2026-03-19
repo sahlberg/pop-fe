@@ -2660,6 +2660,15 @@ class popstation(object):
     def dump_to_img(self, dat, img, cue, toc):
         def dcb(i):
             return ((i & 0xf0) >> 4) * 10 + (i & 0x0f)
+        def msf_to_sect(m, s, f):
+            return m* 60 * 75 + s * 75 + f
+        def sect_to_msf(sect):
+            m = (int)(sect / (60 * 75))
+            sect = sect - m * 60 * 75
+            s = (int)(sect / 75)
+            sect = sect - s * 75
+            f =  sect
+            return m, s, f
 
         t = {}
         with open(dat, 'rb') as i:
@@ -2683,8 +2692,8 @@ class popstation(object):
                     t[_i] = _e
                     _i = _i + 1
                     buf = buf[10:]
-                for _i in range(len(t)):
-                    print(_i, t[_i + 1])
+                #for _i in range(len(t)):
+                #    print(_i, t[_i + 1])
 
             print('Create', img) if self._verbose else None
             with open(img, 'wb') as o:
@@ -2718,10 +2727,22 @@ class popstation(object):
 
         print('Create', cue) if self._verbose else None
         with open(cue, "w") as c:
-            c.write('FILE "%s" BINARY\n' % img)
-            c.write('  TRACK 01 MODE2/2352\n')
-            c.write('    INDEX 01 00:00:00\n')
+            for i in range(1, t[2]['pmin'] + 1):
+                if i == 1:
+                    c.write('FILE "%s" BINARY\n' % img)
+                    c.write('  TRACK 01 MODE2/2352\n')
+                    c.write('    INDEX 01 00:00:00\n')
+                    sector = -150
+                    continue
+                sector = msf_to_sect(t[i + 3]['pmin'], t[i + 3]['psec'], t[i + 3]['pframe']) - 300
 
+                c.write('  TRACK %02d AUDIO\n' % i)
+                m, s, f = sect_to_msf(sector)
+                c.write('    INDEX 00 %02d:%02d:%02d\n' % (m, s, f))
+                sector = sector + 150
+                m, s, f = sect_to_msf(sector)
+                c.write('    INDEX 01 %02d:%02d:%02d\n' % (m, s, f))
+                
     def get_toc(self, img_toc, isosize):
         def bcd(i):
             return int(i % 10) + 16 * (int(i / 10) % 10)
