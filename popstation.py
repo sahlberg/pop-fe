@@ -2658,17 +2658,34 @@ class popstation(object):
         return data
 
     def dump_to_img(self, dat, img, cue, toc):
-        print('Create', cue) if self._verbose else None
-        with open(cue, "w") as c:
-            c.write('FILE "%s" BINARY\n' % img)
-            c.write('  TRACK 01 MODE2/2352\n')
-            c.write('    INDEX 01 00:00:00\n')
+        def dcb(i):
+            return ((i & 0xf0) >> 4) * 10 + (i & 0x0f)
+
+        t = {}
         with open(dat, 'rb') as i:
             print('Create', toc) if self._verbose else None
             with open(toc, 'wb') as o:
                 i.seek(0x800)
                 buf = i.read(1020)
                 o.write(buf)
+                _i = 1
+                while buf[:10] != bytes(10):
+                    _e = {}
+                    _e['type'] = buf[0]
+                    _e['tno'] = buf[1]
+                    _e['point'] = buf[2]
+                    _e['min'] = dcb(buf[3])
+                    _e['sec'] = dcb(buf[4])
+                    _e['frame'] = dcb(buf[5])
+                    _e['pmin'] = dcb(buf[7])
+                    _e['psec'] = dcb(buf[8])
+                    _e['pframe'] = dcb(buf[9])
+                    t[_i] = _e
+                    _i = _i + 1
+                    buf = buf[10:]
+                for _i in range(len(t)):
+                    print(_i, t[_i + 1])
+
             print('Create', img) if self._verbose else None
             with open(img, 'wb') as o:
                 _o = 0x4000
@@ -2687,6 +2704,23 @@ class popstation(object):
                     if len(buf) < 0x9300:
                         buf = zlib.decompress(buf, wbits=-15)
                     o.write(buf)
+                print('Dumped', img, 'size', o.tell())
+                try:
+                    if t[3]['point'] == 162:
+                        size = (t[3]['pmin'] * 60 * 75 + t[3]['psec'] * 75 + t[3]['pframe'] - 1) * 2352
+                        if o.tell() < size:
+                            print('Disc image in EBOOT unexpectedly small. Was this created without audio tracks?')
+                        else:
+                            o.truncate(size)
+                            print('Truncated extracted disc image to', size, 'based on TOC')
+                except:
+                    True
+
+        print('Create', cue) if self._verbose else None
+        with open(cue, "w") as c:
+            c.write('FILE "%s" BINARY\n' % img)
+            c.write('  TRACK 01 MODE2/2352\n')
+            c.write('    INDEX 01 00:00:00\n')
 
     def get_toc(self, img_toc, isosize):
         def bcd(i):
@@ -3042,6 +3076,7 @@ class popstation(object):
                            f.write(buf)
                            _num = _num - len(buf)
                     self.dump_to_img('PSISO%d.DAT' % _disc_id, 'PSISO%d.img' % _disc_id, 'PSISO%d.cue' % _disc_id, 'PSISO%d.toc' % _disc_id)
+
                     # pad to 16 bytes
                     if e.tell() & 0xf:
                         e.seek((e.tell() + 0xf) & 0xfffffff0)
