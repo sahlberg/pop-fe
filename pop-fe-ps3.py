@@ -145,8 +145,8 @@ class PopFePs3App:
         tooltip.create(self.disc_as_icon0 , "Use a scan of the disc as the icon")
         self.pic1_as_background = builder.get_object("pic1_as_background")
         tooltip.create(self.pic1_as_background , "Use the back of the game box as the background image")
-        self.data_track_only = builder.get_object("data_track_only")
-        tooltip.create(self.data_track_only , "Only encode the data track and skip all CDDA tracks\nwhen creating the EBOOT.\nThis makes the EBOOT smaller but you can no longer convert the EBOOT back into a BIN/CUE file.\nMusic will still work since it is always converted to ATRAC3.\n")
+        dto = builder.get_object("data_track_only")
+        tooltip.create(dto , "Only encode the data track and skip all CDDA tracks\nwhen creating the EBOOT.\nThis makes the EBOOT smaller but you can no longer convert the EBOOT back into a BIN/CUE file.\nMusic will still work since it is always converted to ATRAC3.\n")
         self.disable_snd0 = builder.get_object("disable_snd0")
         tooltip.create(self.disable_snd0 , "Disable the SND0 audio that would play when the game icon is\nhighlighted on the XMB")
         self.disable_pic1 = builder.get_object("disable_pic1")
@@ -872,7 +872,7 @@ class PopFePs3App:
         newemu   = self.builder.get_variable('force_newemu_variable').get() == 'on'
         swap     = self.builder.get_variable('allow_discswap_variable').get() == 'on'
         ntsc     = self.builder.get_variable('force_ntsc_variable').get() == 'on'
-        
+
         popfe.create_ps3(pkg, disc_ids, self.real_disc_ids, title,
                          self.icon0 if self.icon0_disc=='off' else self.disc,
                          self.pic0 if self.pic0_disabled =='off' else None,
