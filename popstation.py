@@ -3046,9 +3046,8 @@ class popstation(object):
                 offset = e.tell()
                 # If we are expecting PSISOIMG blobs at specific offsets
                 # then just seek to them
-                if len(_dso) > 0:
+                if len(_dso):
                     offset = _dso[0]
-                    _dso = _dso[1:]
                 e.seek(offset)
                 buf = e.read(24)
                 e.seek(offset)
@@ -3128,6 +3127,11 @@ class popstation(object):
                             e.seek(offset + aea_offset + 0x100000)
                             f.write(e.read(aea_length))
                     e.seek(_o)
+                    if len(_dso):
+                        _dso = _dso[1:]
+                        if not len(_dso):
+                            print('Done dumping', eboot) if self._verbose else None
+                            return
                     continue
                 if buf[:8] == b'STARTDAT':
                     # This is where startdat, the logo buffer and pgd sits
