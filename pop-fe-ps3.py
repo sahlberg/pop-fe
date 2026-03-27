@@ -193,6 +193,7 @@ class PopFePs3App:
             f.write('%s:%s\n' % ('swap', self.builder.get_variable('allow_discswap_variable').get()))
             f.write('%s:%s\n' % ('ntsc', self.builder.get_variable('force_ntsc_variable').get()))
             f.write('%s:%s\n' % ('undither', self.builder.get_variable('psx_undither_variable').get()))
+            f.write('%s:%s\n' % ('pkgdir', self.builder.get_variable('pkgdir_variable').get()))
             if self.path_dir:
                 f.write('%s:%s\n' % ('path', self.path_dir))
 
@@ -209,6 +210,8 @@ class PopFePs3App:
                     self.builder.get_variable('force_ntsc_variable').set(val)
                 if key == 'undither':
                     self.builder.get_variable('psx_undither_variable').set(val)
+                if key == 'pkgdir':
+                    self.builder.get_variable('pkgdir_variable').set(val)
                 if key == 'path':
                     self.path_dir = val
                     if self.path_dir:
