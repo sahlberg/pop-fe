@@ -220,6 +220,9 @@ games = {
     'PCPX96035': {
         'id': 'PCPX96035',
         'title': 'TOBAL NO.1 [DEMO]',
+        'pic0': 'https://images.launchbox-app.com/1eacec3d-414a-42f4-866d-fa5c02c107e6.png',
+        'pic1': 'https://images.launchbox-app.com/08be590e-fb1f-4c65-a6ad-3f5a6b66b032.png',
+        'snd0': 'https://www.youtube.com/watch?v=RavsEBqstLU&list=PLfOIofO13h09Bh2LXT4OrsFpaXHiobdp6&index=1',
     },
     'PCPX96036': {
         'id': 'PCPX96036',
@@ -13404,6 +13407,7 @@ games = {
     	'id': 'SLUS01196',
 	'title': "POWER SPIKE PRO BEACH VOLLEYBALL",
         'pic0': 'https://images.launchbox-app.com/1098a94b-8d08-40de-9573-cf9b82129896.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_04e5de02-b499-4498-ae98-c4ede9780b73.jpg',
         'manual': 'https://www.videogamemanual.com/ps1/Power%20Spike%20-%20Pro%20Beach%20Volleyball%20(USA).pdf',
         'pspconfig': 'pspconfigs/Power Spike Pro Beach Volleyball/SLUS-01196.bin',
     },
@@ -19860,6 +19864,8 @@ games = {
         'url': "games/P/B/SLES-02808.html",
     	'id': 'SLES02808',
 	'title': "BEACH VOLLEYBALL",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_7b2f8ab9-d166-44dc-a41f-fbc565c0eb30.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_04e5de02-b499-4498-ae98-c4ede9780b73.jpg',
         'pspconfig': 'pspconfigs/Power Spike Pro Beach Volleyball/SLES-02808.bin',
     },
     'SLES03598': {
@@ -24853,6 +24859,7 @@ games = {
         'url': "games/P/D/SLES-03402.html",
     	'id': 'SLES03402',
 	'title': "DSF FUZBALL MANAGER 2001",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_618e4e90-6b2c-4585-a36e-df98af328772.png',
     },
     'SLES03864': {
         'url': "games/P/D/SLES-03864.html",
@@ -33544,11 +33551,13 @@ games = {
         'url': "games/P/Q/SLES-03752.html",
     	'id': 'SLES03752',
 	'title': "QUIZ SHOW",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_de68fa71-6c29-4eeb-9516-3317d9d2de22.png',
     },
     'SLES13752': {
         'url': "games/P/Q/SLES-03752.html",
     	'id': 'SLES13752',
 	'title': "QUIZ SHOW",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_de68fa71-6c29-4eeb-9516-3317d9d2de22.png',
     },
     'SLES01665':       {
         'url': "games/P/R/SLES-01665.html",
@@ -49845,17 +49854,21 @@ games = {
     'SLPS02758':       {
         'url': "games/J/F/SLPS-02758.html",
     	'id': 'SLPS02758',
-	'title': "F 1 2000",
+	'title': "F1 2000",
+        'pic0': 'https://images.launchbox-app.com//3d533ba8-2b63-403f-af69-b64beb78c98b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_dd0f719b-9654-43f7-aa82-6b743ae8a756.jpg',
     },
     'SLPS00677': {
         'url': "games/J/F/SLPS-00677.html",
     	'id': 'SLPS00677',
 	'title': "F-1 GRAND PRIX '96 - TEAM UNEI SIMULATION",
+        'pic0': 'https://images.launchbox-app.com//f592d4ae-86b7-42f7-a377-827ab13ae845.png',
     },
     'SLPM86366': {
         'url': "games/J/F/SLPM-86366.html",
     	'id': 'SLPM86366',
 	'title': "F-1 GRAND PRIX '96 - TEAM UNEI SIMULATION [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com//f592d4ae-86b7-42f7-a377-827ab13ae845.png',
     },
     'SLPS00812': {
         'url': "games/J/F/SLPS-00812.html",
@@ -50017,31 +50030,37 @@ games = {
         'url': "games/J/F/SLPS-02371.html",
     	'id': 'SLPS02371',
 	'title': "FEVER - SANKYO KOUSHIKI PACHINKO SIMULATION",
+        'pic0': 'https://images.launchbox-app.com//c143379b-8403-47fe-8e9a-73271264aa32.png',
     },
     'SLPS91473': {
         'url': "games/J/F/SLPS-91473.html",
     	'id': 'SLPS91473',
 	'title': "FEVER - SANKYO KOUSHIKI PACHINKO SIMULATION [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//c143379b-8403-47fe-8e9a-73271264aa32.png',
     },
     'SLPS02760': {
         'url': "games/J/F/SLPS-02760.html",
     	'id': 'SLPS02760',
 	'title': "FEVER 2 - SANKYO KOUSHIKI PACHINKO SIMULATION",
+        'pic0': 'https://images.launchbox-app.com//9cce5ab3-8f09-455f-ab8a-f92b4466f150.png',
     },
     'SLPS91474': {
         'url': "games/J/F/SLPS-91474.html",
     	'id': 'SLPS91474',
 	'title': "FEVER 2 - SANKYO KOUSHIKI PACHINKO SIMULATION [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//9cce5ab3-8f09-455f-ab8a-f92b4466f150.png',
     },
     'SLPS02994': {
         'url': "games/J/F/SLPS-02994.html",
     	'id': 'SLPS02994',
 	'title': "FEVER 3 - SANKYO KOUSHIKI PACHINKO SIMULATION",
+        'pic0': 'https://images.launchbox-app.com//b5679997-b36b-4fa5-b5a4-6902562b35db.png',
     },
     'SLPS91475': {
         'url': "games/J/F/SLPS-91475.html",
     	'id': 'SLPS91475',
 	'title': "FEVER 3 - SANKYO KOUSHIKI PACHINKO SIMULATION [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//b5679997-b36b-4fa5-b5a4-6902562b35db.png',
     },
     'SLPS02309': {
         'url': "games/J/F/SLPS-02309.html",
@@ -52321,12 +52340,14 @@ games = {
         'url': "games/J/G/SLPS-01712.html",
     	'id': 'SLPS01712',
 	'title': "GOLGO 13 - 1 - KARAIRU NO YABOU",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_d5ff01d2-3b33-40ef-b62c-a0b2d91633c1.png',
         'pic1': 'https://images.launchbox-app.com/d8c97abc-584c-4145-acdb-d4de555b0eac.jpg',
     },
     'SLPS01713': {
         'url': "games/J/G/SLPS-01713.html",
     	'id': 'SLPS01713',
 	'title': "GOLGO 13 - 2 - MIENAI GUNTAI",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_d5ff01d2-3b33-40ef-b62c-a0b2d91633c1.png',
         'pic1': 'https://images.launchbox-app.com/99a81da5-e4e5-4bb0-aad4-99dc638475f3.jpg',
     },
     'SCPS45434': {
@@ -66876,21 +66897,25 @@ games = {
         'url': "games/J/S/SLPS-03166.html",
     	'id': 'SLPS03166',
 	'title': "SANKYO FEVER 4",
+        'pic0': 'https://images.launchbox-app.com//71265e53-2303-4505-b824-3077a79ef004.png',
     },
     'SLPS91494': {
         'url': "games/J/S/SLPS-91494.html",
     	'id': 'SLPS91494',
 	'title': "SANKYO FEVER 4 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//71265e53-2303-4505-b824-3077a79ef004.png',
     },
     'SLPS03277': {
         'url': "games/J/S/SLPS-03277.html",
     	'id': 'SLPS03277',
 	'title': "SANKYO FEVER 5",
+        'pic0': 'https://images.launchbox-app.com//fed85083-a479-472d-9f6e-c9b4411e1e88.png',
     },
     'SLPS91495': {
         'url': "games/J/S/SLPS-91495.html",
     	'id': 'SLPS91495',
 	'title': "SANKYO FEVER 5 [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//fed85083-a479-472d-9f6e-c9b4411e1e88.png',
     },
     'SLPS01176': {
         'url': "games/J/S/SLPS-01176.html",
@@ -69730,11 +69755,13 @@ games = {
         'url': "games/J/S/SLPS-02479.html",
     	'id': 'SLPS02479',
 	'title': "SOUMATOU",
+        'pic1': 'https://images.launchbox-app.com//3cdd0c8c-89b6-43d1-b093-f2c84762edeb.jpg',
     },
     'SLPS91237': {
         'url': "games/J/S/SLPS-91237.html",
     	'id': 'SLPS91237',
 	'title': "SOUMATOU [PLAYSTATION THE BEST]",
+        'pic1': 'https://images.launchbox-app.com//3cdd0c8c-89b6-43d1-b093-f2c84762edeb.jpg',
     },
     'SLPS00882': {
         'url': "games/J/S/SLPS-00882.html",
@@ -71219,27 +71246,32 @@ games = {
         'url': "games/J/S/SLPS-02066.html",
     	'id': 'SLPS02066',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
     },
     'SLPM86425': {
         'url': "games/J/S/SLPM-86425.html",
     	'id': 'SLPM86425',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU 2",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
     },
     'SLPM86536': {
         'url': "games/J/S/SLPM-86536.html",
     	'id': 'SLPM86536',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU 3",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
         'manual': 'https://psxdatacenter.com/manuals/Superlite%201500%20Series%20Suudoku%203%20[SLPM-86536]%20(J).cbr',
     },
     'SLPM86676': {
         'url': "games/J/S/SLPM-86676.html",
     	'id': 'SLPM86676',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU 4",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
     },
     'SLPM86741': {
         'url': "games/J/S/SLPM-86741.html",
     	'id': 'SLPM86741',
 	'title': "SUPERLITE 1500 SERIES - SUUDOKU 5",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
     },
     'SLPM86984': {
         'url': "games/J/S/SLPM-86984.html",
@@ -71281,6 +71313,7 @@ games = {
         'url': "games/J/S/SLPM-86956.html",
     	'id': 'SLPM86956',
 	'title': "SUPERLITE 3 IN 1 - SUUDOKU SYUU",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_ed39fb55-9c56-4952-8848-fe4ac73b7bdd.png',
     },
     'SLPM86981': {
         'url': "games/J/S/SLPM-86981.html",
