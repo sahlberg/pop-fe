@@ -267,6 +267,7 @@ games = {
     'PCPX96058': {
     	'id': 'PCPX96058',
 	'title': "I.Q. [DEMO]",
+        'pic0': 'https://images.launchbox-app.com/b89fbbe0-68da-4f84-be52-973770d27bc7.png',
     },
     'PCPX96063': {
         'id': 'PCPX96063',
@@ -431,6 +432,7 @@ games = {
     	'id': 'PCPX96137',
 	'title': "I.Q. FINAL [DEMO]",
         'icon0': 'https://d17x1wu3749i2y.cloudfront.net/2021/05/15/19/30/30/59fa4cb9-8ffa-4c88-bfe0-6c71e31be870/file.jpg',
+        'pic0': 'https://images.launchbox-app.com/b89fbbe0-68da-4f84-be52-973770d27bc7.png',
     },
     'PCPX96142': {
     	'id': 'PCPX96142',
@@ -49119,26 +49121,31 @@ games = {
         'url': "games/J/D/SLPS-01414.html",
     	'id': 'SLPS01414',
 	'title': "DYNAMITE SOCCER '98",
+        'pic0': 'https://images.launchbox-app.com//5c6ddb1b-c393-4751-942a-9f438ce852ca.png',
     },
     'SLPD01414': {
         'url': "games/J/D/SLPS-01414.html",
     	'id': 'SLPD01414',
 	'title': "DYNAMITE SOCCER '98 (DEMO)",
+        'pic0': 'https://images.launchbox-app.com//5c6ddb1b-c393-4751-942a-9f438ce852ca.png',
     },
     'SLPS02554': {
         'url': "games/J/D/SLPS-02554.html",
     	'id': 'SLPS02554',
 	'title': "DYNAMITE SOCCER 2000",
+        'pic0': 'https://images.launchbox-app.com//2afce296-068f-4456-ab6a-77d3ac6f189f.png',
     },
     'SLPS03436': {
         'url': "games/J/D/SLPS-03436.html",
     	'id': 'SLPS03436',
 	'title': "DYNAMITE SOCCER 2002",
+        'pic0': 'https://images.launchbox-app.com//6a9000ed-924c-4faa-a2f1-e55030a3a24d.png',
     },
     'SLPS03575': {
         'url': "games/J/D/SLPS-03575.html",
     	'id': 'SLPS03575',
 	'title': "DYNAMITE SOCCER 2004 FINAL",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_1e6980af-317d-4305-b413-095ff863fcb3.png',
     },
     'SLPS00525':       {
         'url': "games/J/E/SLPS-00525.html",
