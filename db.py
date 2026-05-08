@@ -95,6 +95,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  '01ba3785a7d979b037e2a9bea7b12f07': {'exe': 'SLPS_010.89', 'id': 'SLPS01089', 'title': 'Pachinko Hall - Shinsou Daikaiten (Japan)', 'vct': b'1997122216270841\x00'},
  '01baca524cfafbf663b7229d190a05fe': {'exe': 'HAO', 'id': 'SLPS01382', 'title': 'Honoo no Ryourinin - Cooking Fighter Hao (Japan)', 'vct': b'1998032210415800$'},
  '01bfd724f590f0144881098561ddde61': {'id': 'SLUS01414', 'title': 'Hellboy - Asylum Seeker (USA)', 'vct': b'2002120817423800$'},
+ '01c0893a3a25e55f65987b9ba9f9fac4 SLPM80453': {'exe': 'SLPM_804.53', 'id': 'SLPM80453', 'title': 'Ace Combat 3 - Electrosphere - Direct Audio with AppenDisc (English) (T)', 'vct': b'1999062219000000\x00'},
  '01c758c513c024a258312f2fbb6735cd': {'exe': 'SCED_019.91', 'id': 'SCED01991', 'title': 'Beat-Em-Up Special (Europe)', 'vct': b'1999030318001600$'},
  '01cfa70af5d4738a4834f708c2700bab': {'exe': 'SLPS_022.01', 'id': 'SLPS02201', 'title': 'SD Gundam - GGeneration-0 (Japan) (Disc 2)', 'vct': b'2080010100000000\x00'},
  '01cfc7fdfe9c7996c04ed6e7ad52972a': {'exe': 'SCED_036.75', 'id': 'SCED03675', 'title': 'PS One Demo Disc 02 (Europe) (En,Fr,De,Es,It)', 'vct': b'2001072612374100$'},
