@@ -69887,6 +69887,7 @@ games = {
         'url': "games/J/S/SLPS-02952.html",
     	'id': 'SLPS02952',
 	'title': "SPACE BATTLESHIP YAMATO - EIYUU NO KISEKI - PART 1 FAN DISC",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_7e4b4b2f-b764-45cd-a6b0-c788a42e3b7d.png',
         'pic1': 'https://images.launchbox-app.com/e7740b78-2fe5-47c0-8668-e2edc2ca3607.png',
     },
     'SLPS02761': {
@@ -70468,6 +70469,7 @@ games = {
         'url': "games/J/S/SLPS-02744.html",
     	'id': 'SLPS02744',
 	'title': "STREET BOARDERS 2",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_c0ebd8b2-9831-41f6-a6e2-09ecb2254abd.png',
     },
     'SLPS00080': {
         'url': "games/J/S/SLPS-00080.html",
@@ -70685,16 +70687,22 @@ games = {
         'url': "games/J/S/SLPS-02234.html",
     	'id': 'SLPS02234',
 	'title': "SUBMARINE HUNTER SYA-CHI",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_bfb63879-d21b-4858-a4af-3e6d2ede3e8b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_5fe043b0-6594-4491-971a-bc5801f11fba.jpg',
     },
     'SLPS91509': {
         'url': "games/J/S/SLPS-91509.html",
     	'id': 'SLPS91509',
 	'title': "SUBMARINE HUNTER SYA-CHI [PSONE BOOKS]",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_bfb63879-d21b-4858-a4af-3e6d2ede3e8b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_5fe043b0-6594-4491-971a-bc5801f11fba.jpg',
     },
     'SLPS03294': {
         'url': "games/J/S/SLPS-03294.html",
     	'id': 'SLPS03294',
 	'title': "SUBMARINE HUNTER SYA-CHI [VICTOR INTERACTIVE SOFTWARE BEST]",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_bfb63879-d21b-4858-a4af-3e6d2ede3e8b.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_5fe043b0-6594-4491-971a-bc5801f11fba.jpg',
     },
     'SLPS01264': {
         'url': "games/J/S/SLPS-01264.html",
@@ -70883,23 +70891,27 @@ games = {
         'url': "games/J/S/SLPM-86717.html",
     	'id': 'SLPM86717',
 	'title': "SUPER BLACK BASS 2 & THE BLUE MARLIN",
+        'pic0': 'https://images.launchbox-app.com//c1905ff8-accb-4262-a83e-f07bc99b253c.png',
         'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
     },
     'SLPM86718': {
         'url': "games/J/S/SLPM-86717.html",
     	'id': 'SLPM86718',
 	'title': "SUPER BLACK BASS 2 & THE BLUE MARLIN",
+        'pic0': 'https://images.launchbox-app.com//c1905ff8-accb-4262-a83e-f07bc99b253c.png',
         'pic1': 'https://images.launchbox-app.com/bb32c7da-dd95-4e87-bf4b-ef52a6d072ae.png',
     },
     'SLPS00467': {
         'url': "games/J/S/SLPS-00467.html",
     	'id': 'SLPS00467',
 	'title': "SUPER CASINO SPECIAL",
+        'pic0': 'https://images.launchbox-app.com//744cbe0c-2f90-4402-980a-dae110106d30.png',
     },
     'SLPM86365': {
         'url': "games/J/S/SLPM-86365.html",
     	'id': 'SLPM86365',
 	'title': "SUPER CASINO SPECIAL [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com//744cbe0c-2f90-4402-980a-dae110106d30.png',
     },
     'SLPS00569': {
         'url': "games/J/S/SLPS-00569.html",
