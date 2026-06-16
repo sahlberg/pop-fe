@@ -19951,7 +19951,6 @@ games = {
 	'title': "BISHI BASHI SPECIAL",
         'pic0': 'https://images.launchbox-app.com/49174c21-734e-45d7-bc51-33f44febc88c.png',
         'pic1': 'https://images.launchbox-app.com/7df01338-423c-4e68-b379-9254963b01a7.jpg',
-        'pspconfig': 'pspconfigs/Bishi Bashi Special/SLES-02537.bin',
         'ps3config': 'ps3configs/Bishi Bashi Special/SLES-02537.BIN',
     },
     'SLES00407': {
