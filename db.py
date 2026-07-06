@@ -1615,6 +1615,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  '241b9c65789b5ed717c3e6c8788f00f8': {'exe': 'SLES_023.46', 'id': 'SLES02346', 'title': "Amerzone, L' (France) (Disc 1)", 'vct': b'1999102816505600$'},
  '241c68b904bd857d0d17445778929dde': {'exe': 'SLPM_802.23', 'id': 'SLPM80223', 'title': 'Kattobi Tune (Japan) (Demo)', 'vct': b'1998011206000000$'},
  '242392683421ef5f96fedd623a7f9107': {'exe': 'SLPS_018.39', 'id': 'SLPS01839', 'title': 'TsunTsun-gumi 3 - Kanji Vader (Japan)', 'vct': b'1998120900000000$'},
+ '242613c999879003489d00f635aaacb6': {'exe': 'SLES_012.58', 'id': 'SLES01258', 'title': 'Alundra (Spain) (Definite Edition)', 'vct': b'1998051500000000\x00'},
  '2427dcf33eb81d65ac6ee8752ac131b4': {'exe': 'SLPS_015.74', 'id': 'SLPS01574', 'title': 'Touge Max 2 (Japan)', 'vct': b'1998032917521200$'},
  '242a8ba6c3231089b59e9504a58b645f': {'exe': 'SLUS_013.84', 'id': 'SLUS01384', 'title': 'Castlevania Chronicles (USA)', 'vct': b'1901082217225200$'},
  '24308e415f27e907f8da3198f64bfa57': {'exe': 'SLPS_025.05', 'id': 'SLPS02505', 'title': 'Countdown Vampires (Japan) (Disc 2)', 'vct': b'1999111706300000\x00'},
