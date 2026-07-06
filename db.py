@@ -1747,6 +1747,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  '273bc518591ebb7ed4b62840a86ad630': {'exe': 'SLPM_871.74', 'id': 'SLPM87174', 'title': 'Kaette Kita Cyborg Kuro-chan (Japan)', 'vct': b'2002101620180600$'},
  '27402c16d11558ed190d137f13213d31': {'exe': 'SLPM_803.51', 'id': 'SLPM80351', 'title': '1 on 1 (Japan) (Demo)', 'vct': b'1998100610200000$'},
  '2747cd9763921171d48bffbf84831bf4': {'exe': 'SCPS_100.15', 'id': 'SCPS10015', 'title': 'Sentou Kokka - Air Land Battle (Japan)', 'vct': b'1995020315052700$'},
+ '27500e322cd02b1aa679155534fca3e7': {'exe': 'SLPS_022.90', 'id': 'SLPS02290', 'title': 'Pixygarden (T) (English) (Disc 1) (Game Disc)', 'vct': b'1999083023000000\x00'},
  '275329141c4a2acb0092f01b11f0b0af': {'exe': 'SLPS_023.99', 'id': 'SLPS02399', 'title': 'Uranai 2, The - Mainichi no Tarot Uranai (Japan)', 'vct': b'1999092815555500$'},
  '275454acfb70abc01624cbdfb921513a': {'exe': 'SLES_033.86', 'id': 'SLES03386', 'title': 'Fear Effect 2 - Retro Helix (Europe) (En,Fr,De) (Disc 1)', 'vct': b'2001021509494600$'},
  '2758653f24062ebe5bd312f2855a7b4d': {'exe': 'SLPS_014.29', 'id': 'SLPS01429', 'title': 'Combination Pro Soccer - J.League no Kantoku ni Natte Sekai o Mezase! (Japan) (Rev 1)', 'vct': b'1998090216504700$'},
