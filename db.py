@@ -9882,6 +9882,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  'e381d14428f93d4f5abcf0b7c9b7fbca': {'exe': 'SLES_017.46', 'id': 'SLES01746', 'title': 'UEFA Champions League - Stagione 1998-99 (Italy)', 'vct': b'1999012417214100$'},
  'e384b7990a53cacd432d7cefbc9c654a': {'exe': 'MAIN.EXE', 'id': 'PCPX96026', 'title': 'DemoDemo PlayStation Vol. 17 (Japan)', 'vct': b'1995050212464300$'},
  'e38a16819c8cc0fbad7dac606e779375': {'exe': 'SCES_002.68', 'id': 'SCES00268', 'title': 'Namco Museum Vol. 3 (Europe)', 'vct': b'1996122712000000$'},
+ 'e38ea7d960829930899594f2b85d1fcc': {'exe': 'SLPM_873.31', 'id': 'SLPM87331', 'title': 'Front Mission 2 (English) (T) (Front Mission History)', 'vct': b'1903100421000000\x00'},
  'e3973cb6f7b9e6a2f8f30e2a6e386c1c': {'exe': 'slpm_868.37', 'id': 'SLPM86837', 'title': 'One Piece Mansion (Japan)', 'vct': b'2001013116032800$'},
  'e39c1d35c6e2d21a9008181f3c4fe2f1': {'exe': 'SLUS_900.43', 'id': 'SLUS90043', 'title': 'O.D.T. (USA) (Demo)', 'vct': b'1998082711200000$'},
  'e39d407fb204810cd7f19b1d88b91800': {'exe': 'SLES_010.40', 'id': 'SLES01040', 'title': 'DBZ - Dead Ball Zone (Europe) (En,Fr,De,Es,It) (Beta) (1998-04-03)', 'vct': b'1998040312000000\x00'},
