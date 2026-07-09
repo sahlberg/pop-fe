@@ -2920,6 +2920,7 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     if psx_undither:
         cue_files, img_files = patch_undither(disc_ids, cue_files, img_files, subdir=subdir)
 
+    need_config = False
     configs = []
     for i in range(len(disc_ids)):
         configs.append(EMPTY_CONFIG[:])
@@ -2928,6 +2929,7 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
             print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
             with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
                 configs[i] = f.read()
+            need_config = True
         except:
             True
         disc_id = real_disc_ids[i]
@@ -2935,6 +2937,7 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
             print('Found an external config for', disc_id)
             with open(games[disc_id]['pspconfig'], 'rb') as f:
                 configs[i] = f.read()
+            need_config = True
         if force_ntsc == 1:
             print('Force NTSC in config')
             configs[i] = bytearray(configs[i])
@@ -2943,6 +2946,7 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
                 configs[i][0x0b] |= 0x10
             if len(configs[i]) > 0x8f:
                 configs[i][0x8f] |= 0x10
+            need_config = True
         if cdda:
             configs[i] = bytearray(configs[i])
             # Set CDDA bit in configs
@@ -2950,7 +2954,14 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
                 configs[i][0x09] |= 0x20 # same effect as cdda_enabler
             if len(configs[i]) > 0x8d:
                 configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
+            need_config = True
 
+        # Can not unconditionally create a config as some games,
+        # such as RE2DS, have configs built into the emulator
+        # and we don't want to overwrite it by providing our own
+        # empty config
+        if not need_config:
+            configs = None
 
     # Convert LOGO to a file object
     if logo:
