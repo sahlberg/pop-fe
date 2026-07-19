@@ -21821,6 +21821,8 @@ games = {
         'url': "games/P/F/SLES-03295.html",
     	'id': 'SLES03295',
 	'title': "FISHERMAN'S BAIT 3",
+        'pic0': 'https://images.launchbox-app.com//433d841a-85d3-47e9-85d5-a48ca1539c40.png',
+        'pic1': 'https://images.launchbox-app.com//670d90e0-8411-468e-9313-831913de179c.jpg',
     },
     'SLES00453': {
         'url': "games/P/F/SLES-00453.html",
@@ -49790,6 +49792,7 @@ games = {
         'url': "games/J/E/SLPM-86295.html",
     	'id': 'SLPM86295',
 	'title': "EXCITING BASS 2",
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_3b5255ad-5769-411d-bb41-a9cb15387d5e.jpg',
     },
     'SLPM86729': {
         'url': "games/J/E/SLPM-86729.html",
@@ -54458,6 +54461,7 @@ games = {
         'url': "games/J/I/SLPS-02669.html",
     	'id': 'SLPS02669',
 	'title': "INFINITY",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_6d6f249c-8a21-4a84-a65d-5a8fd99d213a.png',
     },
     'SLPS01793': {
         'url': "games/J/I/SLPS-01793.html",
@@ -56348,12 +56352,14 @@ games = {
         'url': "games/J/K/SLPS-01541.html",
     	'id': 'SLPS01541',
 	'title': "KING OF BOWLING 2",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_20a83539-acce-4e84-b4bc-54961370fe06.png',
         'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS02688': {
         'url': "games/J/K/SLPS-02688.html",
     	'id': 'SLPS02688',
 	'title': "KING OF BOWLING 2 [PLAYSTATION THE BEST]",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_20a83539-acce-4e84-b4bc-54961370fe06.png',
         'pic1': 'https://images.ctfassets.net/6gvyj3hhelpa/6TdhXc5S4LqShELgLhVhSg/46fab1e547ad07fc73802beeb617d020/CenterLandingPage_BowleroBakersfield1_900x600_041924.jpg?w=3840&q=75&fm=webp',
     },
     'SLPS00524': {
@@ -57513,6 +57519,7 @@ games = {
         'url': "games/J/L/SLPS-01914.html",
     	'id': 'SLPS01914',
 	'title': "LET'S GO BASSFISHING",
+        'pic0': 'https://images.launchbox-app.com//f568331d-bad3-40b0-96fe-fbf79346cc7f.png',
     },
     'SLPS01827': {
         'url': "games/J/L/SLPS-01827.html",
@@ -59175,6 +59182,7 @@ games = {
         'url': "games/J/M/SLPS-01164.html",
     	'id': 'SLPS01164',
 	'title': "METAL FIST",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_31eda469-611f-47a8-9dec-df638c6b84e9.png',
         'pic1': 'https://images.launchbox-app.com/da61b604-8da0-43d6-a553-5cc78e50fd02.png',
         'pspconfig': 'pspconfigs/Fighting Force/SLPS-01164.bin',
         'ps3config': 'ps3configs/Fighting Force/SLPS-01164.BIN',
