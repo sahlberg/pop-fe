@@ -16,7 +16,6 @@ try:
 except:
     print('You need to install python module pillow')
 import argparse
-import datetime
 import hashlib
 import io
 import os
@@ -24,7 +23,6 @@ import re
 import random
 import shutil
 import struct
-import sys
 have_pycdlib = False
 try:
     import pycdlib
@@ -62,7 +60,6 @@ try:
     from vmp import encode_vmp
 except:
     True
-from pathlib import Path
 from bchunk import bchunk
 from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
 from gamedb import games, libcrypt, themes, ppf_fixes
@@ -4232,14 +4229,13 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
         if 'ppf' in ppf_fixes[disc_id]:
             ppf = ppf_fixes[disc_id]['ppf']
         if 'hashes' in ppf_fixes[disc_id]:
-            with open(img_files[i], 'rb') as f:
-                h = md5_sums[i]
-                if h in ppf_fixes[disc_id]['hashes']:
-                    print('Check', ppf_fixes[disc_id]['hashes'][h])
-                    if 'ppf' in ppf_fixes[disc_id]['hashes'][h]:
-                        ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
-                    if 'xdelta' in ppf_fixes[disc_id]['hashes'][h]:
-                        xdelta = ppf_fixes[disc_id]['hashes'][h]['xdelta']
+            h = md5_sums[i]
+            if h in ppf_fixes[disc_id]['hashes']:
+                print('Check', ppf_fixes[disc_id]['hashes'][h])
+                if 'ppf' in ppf_fixes[disc_id]['hashes'][h]:
+                    ppf = ppf_fixes[disc_id]['hashes'][h]['ppf']
+                if 'xdelta' in ppf_fixes[disc_id]['hashes'][h]:
+                    xdelta = ppf_fixes[disc_id]['hashes'][h]['xdelta']
         if not ppf and not xdelta:
             continue
 
@@ -4331,7 +4327,6 @@ def generate_aea_files(cue_files, img_files, subdir):
     extra_data_track_found = False
     for d in range(len(cue_files)):
         cue_file = cue_files[d]
-        img_file = img_files[d]
         aea_files.append([])
         
         bc = bchunk()
