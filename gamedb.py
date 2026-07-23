@@ -49792,6 +49792,7 @@ games = {
         'url': "games/J/E/SLPM-86295.html",
     	'id': 'SLPM86295',
 	'title': "EXCITING BASS 2",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_94a58616-5657-4c20-b885-4964db8b7a0b.png',
         'pic1': 'https://gamesdb-images.launchbox.gg/r2_3b5255ad-5769-411d-bb41-a9cb15387d5e.jpg',
     },
     'SLPM86729': {
@@ -49799,6 +49800,7 @@ games = {
     	'id': 'SLPM86729',
 	'title': "EXCITING BASS 3",
         'pic0': 'https://images.launchbox-app.com/cce8edd3-18a8-4f8a-9186-f22b081e77c2.png',
+        'pic1': 'https://images.launchbox-app.com//670d90e0-8411-468e-9313-831913de179c.jpg',
     },
     'SLPM86949': {
         'url': "games/J/E/SLPM-86949.html",

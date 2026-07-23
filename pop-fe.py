@@ -2920,45 +2920,50 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     need_config = False
     configs = []
     for i in range(len(disc_ids)):
-        configs.append(EMPTY_CONFIG[:])
-        try:
-            os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
-            print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
-            with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
-                configs[i] = f.read()
-            need_config = True
-        except:
-            True
-        disc_id = real_disc_ids[i]
-        if disc_id in games and 'pspconfig' in games[disc_id]:
-            print('Found an external config for', disc_id)
-            with open(games[disc_id]['pspconfig'], 'rb') as f:
-                configs[i] = f.read()
-            need_config = True
-        if force_ntsc == 1:
-            print('Force NTSC in config')
-            configs[i] = bytearray(configs[i])
-            # Set NTSC bit in configs
-            if len(configs[i]) > 0x0b:
-                configs[i][0x0b] |= 0x10
-            if len(configs[i]) > 0x8f:
-                configs[i][0x8f] |= 0x10
-            need_config = True
-        if cdda:
-            configs[i] = bytearray(configs[i])
-            # Set CDDA bit in configs
-            if len(configs[i]) > 0x09:
-                configs[i][0x09] |= 0x20 # same effect as cdda_enabler
-            if len(configs[i]) > 0x8d:
-                configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
-            need_config = True
+        # We have to be careful to not insert a config unless we absolutely have to
+        # because some games have configs built into the emulator and we do
+        # not yet have them extracted to pop-fe.   Once we have those configs
+        # stored in pop-fe we can revert this.
+        if configs:
+            configs.append(EMPTY_CONFIG[:])
+            try:
+                os.stat(real_cue_files[i][:-3]+'pspconfig').st_size
+                print('Found an external config ', real_cue_files[i][:-3]+'pspconfig')
+                with open(real_cue_files[i][:-3]+'pspconfig', 'rb') as f:
+                    configs[i] = f.read()
+                need_config = True
+            except:
+                True
+            disc_id = real_disc_ids[i]
+            if disc_id in games and 'pspconfig' in games[disc_id]:
+                print('Found an external config for', disc_id)
+                with open(games[disc_id]['pspconfig'], 'rb') as f:
+                    configs[i] = f.read()
+                need_config = True
+            if force_ntsc == 1:
+                print('Force NTSC in config')
+                configs[i] = bytearray(configs[i])
+                # Set NTSC bit in configs
+                if len(configs[i]) > 0x0b:
+                    configs[i][0x0b] |= 0x10
+                if len(configs[i]) > 0x8f:
+                    configs[i][0x8f] |= 0x10
+                need_config = True
+            if cdda:
+                configs[i] = bytearray(configs[i])
+                # Set CDDA bit in configs
+                if len(configs[i]) > 0x09:
+                    configs[i][0x09] |= 0x20 # same effect as cdda_enabler
+                if len(configs[i]) > 0x8d:
+                    configs[i][0x8d] |= 0x20 # same effect as cdda_enabler
+                need_config = True
 
-        # Can not unconditionally create a config as some games,
-        # such as RE2DS, have configs built into the emulator
-        # and we don't want to overwrite it by providing our own
-        # empty config
-        if not need_config:
-            configs = None
+            # Can not unconditionally create a config as some games,
+            # such as RE2DS, have configs built into the emulator
+            # and we don't want to overwrite it by providing our own
+            # empty config
+            if not need_config:
+                configs = None
 
     # Convert LOGO to a file object
     if logo:
