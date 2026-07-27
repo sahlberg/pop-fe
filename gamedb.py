@@ -4313,6 +4313,7 @@ games = {
         'url': "games/J/W/SLPM-86291.html",
     	'id': 'SLPM86291',
 	'title': "WORLD SOCCER - WINNING ELEVEN 4",
+        'pic0': 'https://images.launchbox-app.com//0f676d9f-8195-4dd7-8cb5-470301750da7.png',
     },
     'SLPM87056': {
         'url': "games/J/W/SLPM-87056.html",
@@ -22824,6 +22825,7 @@ games = {
         'url': "games/P/G/SLES-00596.html",
     	'id': 'SLES00596',
 	'title': "GEX 3D - RETURN OF THE GECKO",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_eef212bd-962b-4cea-b933-b1bd0fcc9bbb.png',
         'pic1': 'https://images.launchbox-app.com/6a373200-a4b9-4470-a696-6eb3db09edf3.jpg',
         'ps3config': 'ps3configs/Gex - Enter the Gecko/SLES-00596.BIN',
     },
@@ -22933,6 +22935,7 @@ games = {
         'url': "games/P/G/SLES-01222.html",
     	'id': 'SLES01222',
 	'title': "GOLDEN GOAL '98",
+        'pic0': 'https://images.launchbox-app.com//bc68bd64-a1da-47e4-a5e1-831924f06064.png',
     },
     'SLES02952': {
         'url': "games/P/G/SLES-02952.html",
@@ -23245,21 +23248,25 @@ games = {
         'url': "games/P/G/SLES-02693.html",
     	'id': 'SLES02693',
 	'title': "GUTE ZEITEN SCHLECHTE QUIZ",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_bffd354d-79db-4451-847e-03c460ce3194.png',
     },
     'SLES02441': {
         'url': "games/P/G/SLES-02441.html",
     	'id': 'SLES02441',
 	'title': "GUTE ZEITEN SCHLECHTE ZEITEN VOL.2",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_cc47e08b-c0f0-4435-ad42-bfa0bb421e42.png',
     },
     'SLES12441': {
         'url': "games/P/G/SLES-02441.html",
     	'id': 'SLES12441',
 	'title': "GUTE ZEITEN SCHLECHTE ZEITEN VOL.2",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_cc47e08b-c0f0-4435-ad42-bfa0bb421e42.png',
     },
     'SLES02980': {
         'url': "games/P/G/SLES-02980.html",
     	'id': 'SLES02980',
 	'title': "GUTE ZEITEN SCHLECHTE ZEITEN VOL.3",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_1cf6f766-37ab-492f-b7a1-3246b68cf4bb.png',
     },
     'SLES01360': {
         'url': "games/P/G/SLES-01360.html",
@@ -25553,6 +25560,7 @@ games = {
         'url': "games/P/E/SLES-02943.html",
     	'id': 'SLES02943',
 	'title': "EQUESTRIAD 2001",
+        'pic1': 'https://images.launchbox-app.com//e90a9e61-6485-455c-b1a1-11529f270ccf.jpg',
     },
     'SCES00063': {
         'url': "games/P/E/SCES-00063.html",
@@ -41801,6 +41809,7 @@ games = {
         'url': "games/J/A/SLPS-00004.html",
     	'id': 'SLPS00004',
 	'title': "A IV EVOLUTION",
+        'pic0': 'https://images.launchbox-app.com//9003840a-0665-47d1-82c6-214b1c7cfd48.png',
     },
     'SLPS00011': {
         'url': "games/J/A/SLPS-00011.html",
@@ -44299,6 +44308,7 @@ games = {
         'url': "games/J/B/SLPM-86574.html",
     	'id': 'SLPM86574',
 	'title': "BEATMANIA APPEND GOTTAMIX 2 - GOING GLOBAL",
+        'pic0': 'https://images.launchbox-app.com//72eb7c49-d274-42e6-8fd7-dec316067a6d.png',
         'manual': 'https://archive.org/download/bmgottamix2/bmgottamix2_jp2.zip',
     },
     'SLPM86596': {
@@ -45090,7 +45100,8 @@ games = {
     'SLPM86004': {
         'url': "games/J/B/SLPM-86004.html",
     	'id': 'SLPM86004',
-	'title': "BOTTON OF THE 9TH - MAJOR LEAGUE HEROES",
+	'title': "BOTTOM OF THE 9TH - MAJOR LEAGUE HEROES",
+        'pic0': 'https://images.launchbox-app.com//bc7f8ef9-0bf2-456f-b140-4c9964ca1d66.png',
     },
     'SLPS00907': {
         'url': "games/J/B/SLPS-00907.html",
@@ -45530,6 +45541,7 @@ games = {
         'url': "games/J/B/SLPM-86219.html",
     	'id': 'SLPM86219',
 	'title': "BUST A MOVE 2 - DANCE TENGOKU MIX",
+        'pic0': 'https://images.launchbox-app.com//c447fa99-5d32-40ec-a4d4-44a3a82b22e9.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Bust-A-Move%202%20-%20Arcade%20Edition%20%28USA%29_jp2.zip',
     },
     'SLPS01169': {
@@ -46385,6 +46397,7 @@ games = {
         'url': "games/J/C/SLPS-01368.html",
     	'id': 'SLPS01368',
 	'title': "CHOU MAJIN EIYUUDEN WATARY - ANOTHER STEP",
+        'pic0': 'https://images.launchbox-app.com//abb06316-88ca-489a-ac2e-76314696b879.png',
     },
     'SLPS01871': {
         'url': "games/J/C/SLPS-01871.html",
@@ -56635,6 +56648,8 @@ games = {
         'url': "games/J/K/SLPM-86345.html",
     	'id': 'SLPM86345',
 	'title': "KENKAKU IBUNROKU - YOMIGAERISHI SOUKOU NO HA - SAMURAI SPIRITS SHINSHOU",
+        'pic0': 'https://images.launchbox-app.com//c22e9d98-6dd4-47b4-8932-f2b4ca529a86.png',
+        'pic1': 'https://images.launchbox-app.com//1e76d960-e2c6-4196-b2f7-490f6422e13a.jpg',
     },
     'SLPS02831': {
         'url': "games/J/K/SLPS-02831.html",
