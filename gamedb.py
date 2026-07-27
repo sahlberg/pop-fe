@@ -62888,24 +62888,28 @@ games = {
     	'id': 'SLPS01193',
 	'title': "NÖEL - LA NEIGE",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     },
     'SLPS01194': {
         'url': "games/J/N/SLPS-01193.html",
     	'id': 'SLPS01194',
 	'title': "NÖEL - LA NEIGE",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     },
     'SLPS01195': {
         'url': "games/J/N/SLPS-01193.html",
     	'id': 'SLPS01195',
 	'title': "NÖEL - LA NEIGE",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     },
     'SLPS01190': {
         'url': "games/J/N/SLPS-01190.html",
     	'id': 'SLPS01190',
 	'title': "NÖEL - LA NEIGE [SPECIAL EDITION]",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     
         'pspconfig': "pspconfigs/Nöel - LA Neige/SLPS-01190.bin",
     },
@@ -62914,6 +62918,7 @@ games = {
     	'id': 'SLPS01191',
 	'title': "NÖEL - LA NEIGE [SPECIAL EDITION]",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     
         'pspconfig': "pspconfigs/Nöel - LA Neige/SLPS-01191.bin",
     },
@@ -62922,6 +62927,7 @@ games = {
     	'id': 'SLPS01192',
 	'title': "NÖEL - LA NEIGE [SPECIAL EDITION]",
         'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     
         'pspconfig': "pspconfigs/Nöel - LA Neige/SLPS-01192.bin",
     },
@@ -62929,6 +62935,8 @@ games = {
         'url': "games/J/N/SLPS-01515.html",
     	'id': 'SLPS01515',
 	'title': "NÖEL - LA NEIGE SPECIAL",
+        'pic0': 'https://images.launchbox-app.com/94338d46-2bc7-4ae3-814d-a2096fabe1dc.png',
+        'pic1': 'https://images.launchbox-app.com//abb9cfeb-a0f6-4903-8d5b-1e3f1fd4d7e8.png',
     
         'pspconfig': "pspconfigs/Nöel - La Neige Special/SLPS-01515.bin",
     },
