@@ -1,0 +1,175 @@
+name: Python package
+
+on: [push, pull_request]
+
+jobs:
+  test-linux:
+    name: Linux build and test
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run:   |
+          sudo apt update --fix-missing
+          sudo apt install python-is-python3
+          sudo apt install python3-pip
+          sudo apt install libsndfile-dev
+          sudo apt install git
+          sudo apt install ffmpeg
+      - name: Install pop-fe
+        run:   |
+          ./pop-fe.py --install
+      - name: Test building a PS3 package
+        run:   |
+          ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets --no-libcrypt testimages/vs/vs.cue
+      - name: Test building a PS3 package with UPPER CASE .CUE
+        run:   |
+          ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets --no-libcrypt testimages/vs/vs.CUE
+      - name: Test building a multidisc PS3 package
+        run:   |
+          ./pop-fe.py --ps3-pkg=vs.pkg --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets --no-libcrypt testimages/vs/vs.cue testimages/vs/vs.cue
+      - name: Test building a multidisc PSP EBOOT
+        run:   |
+          mkdir -p PSP/GAME
+          ./pop-fe.py --psp-dir=. --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets --no-libcrypt testimages/vs/vs.cue testimages/vs/vs.cue
+      - name: Test building a multidisc PSP EBOOT overriding the GAME_ID
+        run:   |
+          mkdir -p PSP/GAME
+          ./pop-fe.py --psp-dir=. --game_id=SLPS01623 --snd0=testimages/vs/sine.wav --cover=testimages/vs/blank.png --pic0=testimages/vs/blank.png --pic1=testimages/vs/blank.png --force-no-assets --no-libcrypt testimages/vs/vs.cue testimages/vs/vs.cue
+          stat ./PSP/GAME/SLPS01623/EBOOT.PBP
+
+  build-windows:
+    name: Windows build
+    runs-on: windows-2022
+
+    strategy:
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install required Python packages
+        run:   |
+          pip install pillow
+          pip install pycryptodome
+          pip install PyPDF2
+          pip install requests
+          pip install pycdlib
+          pip install ecdsa
+          pip install pyinstaller
+          pip install pygubu
+          pip install rarfile
+          pip install tkinterDnD2
+          pip install pytubefix
+          pip install opencv-contrib-python
+          pip install scikit-learn
+          pip install scipy
+      - name: Build PSL1GHT
+        run:   |
+          git clone http://github.com/sahlberg/PSL1GHT
+          cd PSL1GHT/tools/ps3py
+          git checkout origin/use-python3
+          make
+          cd ../../..
+          pyinstaller PSL1GHT/tools/ps3py/pkg.py
+      - name: Build CUE2CU2
+        run:   |
+          git clone https://github.com/NRGDEAD/Cue2cu2.git
+          cp Cue2cu2/cue2cu2.py .
+          pyinstaller cue2cu2.py
+      - name: Build binmerge
+        run:   |
+          git clone https://github.com/putnam/binmerge.git
+          cp binmerge/binmerge binmerge.py
+          pyinstaller binmerge.py
+      - name: Build sign3
+        run:   |
+          pyinstaller sign3.py
+      - name: Install ATRACDENC
+        run:   |
+          Invoke-WebRequest -OutFile atracdenc-x86_0.1.1.zip https://github.com/dcherednik/atracdenc/releases/download/0.1.1/atracdenc-win-x86_0.1.1.zip
+          unzip -j atracdenc-x86_0.1.1 -x README.TXT
+      - name: Install FFMPEG
+        run:   |
+          Invoke-WebRequest -OutFile ffmpeg-release-essentials.zip https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+          unzip -j ffmpeg-release-essentials.zip -x */doc/* -x */presets/* -x */README.txt -x */LICENSE -x */bin/ffplay.exe -x */bin/ffprobe.exe
+      - name: Install LibCrypt Patcher
+        run:   |
+          Invoke-WebRequest -OutFile libcrypt-patcher-v1.0.9-windows-x86_64-static.zip https://github.com/alex-free/libcrypt-patcher/releases/download/v1.0.9/libcrypt-patcher-v1.0.9-windows-x86_64-static.zip
+          unzip -j libcrypt-patcher-v1.0.9-windows-x86_64-static.zip */lcp.exe
+      - name: Install PSX-Undither
+        run:   |
+          Invoke-WebRequest -OutFile psx-undither-v1.0-windows-i686-static.zip https://github.com/alex-free/psx-undither/releases/download/v1.0/psx-undither-v1.0-windows-i686-static.zip
+          unzip -j psx-undither-v1.0-windows-i686-static.zip */psxund.exe
+      - name: Build pop-fe
+        run:   |
+          pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
+      - name: Build pop-fe-ps3
+        run:   |
+          cp pop-fe.py popfe.py
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput --collect-all tkinterdnd2
+      - name: Build pop-fe-psp
+        run:   |
+          cp pop-fe.py popfe.py
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-psp.ui;." pop-fe-psp.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+      - name: Update dist/pop-fe
+        run:   |
+          mkdir dist/pop-fe/atracdenc
+          mkdir dist/pop-fe/atracdenc/src
+          cp dist/binmerge/binmerge.exe dist/pop-fe/.
+          cp dist/cue2cu2/cue2cu2.exe dist/pop-fe/.
+          cp dist/pkg/pkg.exe dist/pop-fe/.
+          cp dist/pkg/pkgcrypt*.pyd dist/pop-fe/.
+          cp dist/sign3/sign3.exe dist/pop-fe/.
+          cp atracdenc.exe dist/pop-fe/atracdenc/src/.
+          cp ffmpeg.exe dist/pop-fe/.
+          cp lcp.exe dist/pop-fe/.
+          cp psxund.exe dist/pop-fe/.
+          mkdir dist/pop-fe/libcrypt
+          cp libcrypt/*.* dist/pop-fe/libcrypt
+          mkdir dist/pop-fe/ppf
+          cp ppf/*.* dist/pop-fe/ppf
+          mkdir dist/pop-fe/ps3configs
+          cp -r ps3configs/* dist/pop-fe/ps3configs
+      - name: Update dist/pop-fe-ps3
+        run:   |
+          mkdir dist/pop-fe-ps3/atracdenc
+          mkdir dist/pop-fe-ps3/atracdenc/src
+          cp dist/binmerge/binmerge.exe dist/pop-fe-ps3/.
+          cp dist/cue2cu2/cue2cu2.exe dist/pop-fe-ps3/.
+          cp pop-fe-psp.ui dist/pop-fe-ps3/_internal/.
+          cp dist/sign3/sign3.exe dist/pop-fe-ps3/.
+          cp atracdenc.exe dist/pop-fe-ps3/atracdenc/src/.
+          cp ffmpeg.exe dist/pop-fe-ps3/.
+          cp lcp.exe dist/pop-fe/.
+          cp psxund.exe dist/pop-fe/.
+          cp dist/pop-fe-ps3/_internal/PS3LOGO.DAT dist/pop-fe-ps3/.
+          mkdir dist/pop-fe-ps3/libcrypt
+          cp libcrypt/*.* dist/pop-fe-ps3/libcrypt
+          mkdir dist/pop-fe-ps3/ppf
+          cp ppf/*.* dist/pop-fe-ps3/ppf
+          mkdir dist/pop-fe-ps3/ps3configs
+          cp -r ps3configs/* dist/pop-fe-ps3/ps3configs
+          mkdir dist/pop-fe-ps3/pspconfigs
+          cp -r pspconfigs/* dist/pop-fe-ps3/pspconfigs
+          cp -r -Force dist/pkg/* dist/pop-fe-ps3/.
+          cp -r -Force dist/pop-fe/* dist/pop-fe-ps3/.
+          cp -r -Force dist/pop-fe-psp/* dist/pop-fe-ps3/.
+      - name: Upload pop-fe-ui artefact
+        uses: actions/upload-artifact@v4
+        with: 
+          name: pop-fe-ui
+          path: dist/pop-fe-ps3
