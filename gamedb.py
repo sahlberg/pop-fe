@@ -3375,6 +3375,14 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=ICtEXJuLnHw&list=PLrz4JsN6dw-yT_ekZD4TF1QeQWBYyybBa&index=1',
         'pspconfig': "pspconfigs/Vigilante 8 - 2Nd Offense/SLPS-02615.bin",
     },
+    'SCES02836': {
+        'url': "games/P/T/SCES-02836.html",
+    	'id': 'SCES02836',
+	'title': "TERRACON",
+        'pic0': 'https://images.launchbox-app.com/11d47f0a-037b-4298-8610-39a06975281a.png',
+        'pic1': 'https://images.launchbox-app.com/4227cc60-e1f0-4176-8d80-58308124d2ba.png',
+        'pspconfig': "pspconfigs/Terracon/SCES-02836.bin",
+    },
     'SLPM86928': {
         'url': "games/J/V/SLPM-86928.html",
     	'id': 'SLPM86928',
@@ -37714,13 +37722,6 @@ games = {
     	'id': 'SLES00935',
 	'title': "TENNIS ARENA",
         'pic0': 'https://images.launchbox-app.com/d2e1f85e-c16e-4fd8-92b2-12a9646c1411.png',
-    },
-    'SCES02836': {
-        'url': "games/P/T/SCES-02836.html",
-    	'id': 'SCES02836',
-	'title': "TERRACON",
-        'pic0': 'https://images.launchbox-app.com/11d47f0a-037b-4298-8610-39a06975281a.png',
-        'pic1': 'https://images.launchbox-app.com/4227cc60-e1f0-4176-8d80-58308124d2ba.png',
     },
     'SLES00948': {
         'url': "games/P/T/SLES-00948.html",
@@ -78019,6 +78020,10 @@ ppf_fixes = {
     'SLUS00601': {
 	'desc': 'Fix for SKULLMONKEYS',
         'ppf': 'ppf/SLUS-00601.ppf',
+    },
+    'SCES02836': {
+	'desc': 'Fix for TERRACON',
+        'ppf': 'ppf/SCES-02836.ppf',
     },
     'SLUS00990': {
 	'desc': 'Fix for MTV SPORTS - SNOWBOARDING',
