@@ -37723,13 +37723,6 @@ games = {
 	'title': "TENNIS ARENA",
         'pic0': 'https://images.launchbox-app.com/d2e1f85e-c16e-4fd8-92b2-12a9646c1411.png',
     },
-    'SCES02836': {
-        'url': "games/P/T/SCES-02836.html",
-    	'id': 'SCES02836',
-	'title': "TERRACON",
-        'pic0': 'https://images.launchbox-app.com/11d47f0a-037b-4298-8610-39a06975281a.png',
-        'pic1': 'https://images.launchbox-app.com/4227cc60-e1f0-4176-8d80-58308124d2ba.png',
-    },
     'SLES00948': {
         'url': "games/P/T/SLES-00948.html",
     	'id': 'SLES00948',
