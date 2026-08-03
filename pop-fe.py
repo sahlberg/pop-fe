@@ -2110,10 +2110,13 @@ def get_icon0_from_game(game_id, game, cue, tmpfile, selected_file=None, psn_fra
        if 'icon0' in games[game_id]:
            if not games[game_id]['icon0']:
                return None
-           ret = requests.get(games[game_id]['icon0'], stream=True)
-           if ret.status_code != 200:
+           try:
+               ret = requests.get(games[game_id]['icon0'], stream=True)
+               if ret.status_code != 200:
+                   return None
+               fcb = ret.content
+           except:
                return None
-           fcb = ret.content
        else:
            if not game or game_id[:4] == 'UNKN':
                if psn_frame_size:
