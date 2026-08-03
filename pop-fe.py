@@ -3698,7 +3698,7 @@ def create_ps2(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, su
     image.save(f, format='JPEG', quality=100, subsampling=0)
 
 
-def get_disc_id(cue, real_cue_file, tmp):
+def get_disc_id(cue, real_cue_file, tmp, is_psp=False):
     try:
         with open(create_path(real_cue_file, 'GAME_ID'), 'r') as d:
             gid = d.read()[:9]
@@ -3744,14 +3744,21 @@ def get_disc_id(cue, real_cue_file, tmp):
         rid = 'UNKN00000'
     print('MD5 FINGERPRINT', md5, rid)
 
+    # Terracon needs a different game id on psp so we trigger the "patch emulator for NTSC-J"
+    # feature in the psp firmware we need for this game.
+    # https://gbatemp.net/threads/pops-on-psp-vita-config-research.607286/page-70#post-10891000
+    if is_psp and rid == 'SCES02836':
+        print('Rename TERRACON to SCPS02836 for PSP')
+        rid = 'SCPS02836'
+
     return rid, md5
 
 
-def get_disc_ids(cue_files, real_cue_files, subdir='./'):
+def get_disc_ids(cue_files, real_cue_files, subdir='./', is_psp=False):
     disc_ids = []
     md5_sums = []
     for idx in range(len(cue_files)):
-        gid, md5 = get_disc_id(cue_files[idx], real_cue_files[idx], subdir + 'ISO%02x01.iso' % idx)
+        gid, md5 = get_disc_id(cue_files[idx], real_cue_files[idx], subdir + 'ISO%02x01.iso' % idx, is_psp=is_psp)
         disc_ids.append(gid)
         md5_sums.append(md5)
 
@@ -4643,7 +4650,8 @@ if __name__ == "__main__":
 
     # We need to convert the first track of every ISO so we can open the
     # disk and read system.cnf
-    disc_ids, md5_sums = get_disc_ids(cue_files, real_cue_files, subdir=subdir)
+    disc_ids, md5_sums = get_disc_ids(cue_files, real_cue_files, subdir=subdir,
+                                      is_psp=True if args.psp_dir else False)
     real_disc_ids = disc_ids[:]
                 
     #

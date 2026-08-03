@@ -402,7 +402,7 @@ class PopFePs3App:
             
         print('Scanning for Game ID') if verbose else None
         tmp = self.subdir + 'TMP01.iso'
-        disc_id, md5 = popfe.get_disc_id(cue_file, self.cue_file_orig, tmp)
+        disc_id, md5 = popfe.get_disc_id(cue_file, self.cue_file_orig, tmp, is_psp=True)
         print('ID', disc_id)
         temp_files.append(tmp)
 

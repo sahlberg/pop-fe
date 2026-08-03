@@ -3375,6 +3375,14 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=ICtEXJuLnHw&list=PLrz4JsN6dw-yT_ekZD4TF1QeQWBYyybBa&index=1',
         'pspconfig': "pspconfigs/Vigilante 8 - 2Nd Offense/SLPS-02615.bin",
     },
+    'SCPS02836': {
+        'url': "games/P/T/SCES-02836.html",
+    	'id': 'SCPS02836',
+	'title': "TERRACON",
+        'pic0': 'https://images.launchbox-app.com/11d47f0a-037b-4298-8610-39a06975281a.png',
+        'pic1': 'https://images.launchbox-app.com/4227cc60-e1f0-4176-8d80-58308124d2ba.png',
+        'pspconfig': "pspconfigs/Terracon/SCES-02836.bin",
+    },
     'SCES02836': {
         'url': "games/P/T/SCES-02836.html",
     	'id': 'SCES02836',
@@ -78044,7 +78052,7 @@ ppf_fixes = {
 	'desc': 'Fix for SKULLMONKEYS',
         'ppf': 'ppf/SLUS-00601.ppf',
     },
-    'SCES02836': {
+    'SCPS02836': {
 	'desc': 'Fix for TERRACON',
         'ppf': 'ppf/SCES-02836.ppf',
     },
