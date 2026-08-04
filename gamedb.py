@@ -36619,6 +36619,7 @@ games = {
         'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20La%20Amenaza%20Fantasma%20[SLES-02038]%20(S).cbr',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLES01111': {
         'url': "games/P/S/SLES-01111.html",
@@ -78138,6 +78139,11 @@ ppf_fixes = {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
         },
+        'tags': ['psp',],
+    },
+    'SLES02038': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLES-02038-psp.ppf',
         'tags': ['psp',],
     },
     'SLPS01940': {
