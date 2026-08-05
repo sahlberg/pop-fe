@@ -78114,17 +78114,17 @@ ppf_fixes = {
         'hashes': {
             # rev 1.0
             '404300c056206584a74ad0ecba1b290a': {
-                'ppf': 'ppf/SLUS-00330.ppf'
+                'ppf': 'ppf/SLUS-00330.ppf'            # PS3
             },
             # rev 1.1
             '12131037d60bdfcbc870c84b97e70a35': {
-                'ppf': 'ppf/SLUS-00330 (Rev 1).ppf'
+                'ppf': 'ppf/SLUS-00330 (Rev 1).ppf'    # PS3
             },
         },
     },
     'SLES00528': {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',
-        'ppf': 'ppf/SLES-00528.ppf'
+        'ppf': 'ppf/SLES-00528.ppf'                    # PS3
     },
     'SLES00053': {
         'desc': 'PPF for PS1 BIOS issue on PS3',
