@@ -78138,6 +78138,10 @@ ppf_fixes = {
             '4cfef562e2d4b3d2dfa999b79011bf0e': {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
+            # rev 1.1
+            'dd6f25fd60c6f78fc9af921c9faef8b8': {
+                'ppf': 'ppf/SLUS-00884-rev1-psp.ppf',
+            },
         },
         'tags': ['psp',],
     },
