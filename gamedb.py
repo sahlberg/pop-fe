@@ -36588,6 +36588,7 @@ games = {
         'pic0-scaling': 0.8,
         'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
     },
     'SLES02036': {
@@ -36598,6 +36599,7 @@ games = {
         'pic0-scaling': 0.8,
         'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
     },
     'SLES02037': {
@@ -36608,6 +36610,7 @@ games = {
         'pic0-scaling': 0.8,
         'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
     },
     'SLES02038': {
@@ -36618,6 +36621,7 @@ games = {
         'pic0-scaling': 0.8,
         'pic0-offset': (0.1, 0.5),
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://psxdatacenter.com/manuals/Star%20Wars%20-%20La%20Amenaza%20Fantasma%20[SLES-02038]%20(S).cbr',
         'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
