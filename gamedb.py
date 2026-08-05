@@ -78143,7 +78143,7 @@ ppf_fixes = {
     },
     'SLES02038': {
         'desc': 'Fix for Vita',
-        'ppf': 'ppf/SLUS-00884-psp.ppf',
+        'ppf': 'ppf/SLES-02038-psp.ppf',
         'tags': ['psp',],
     },
     'SLPS01940': {
