@@ -36579,6 +36579,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLES02035': {
         'url': "games/P/S/SLES-02035.html",
@@ -36590,6 +36591,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLES02036': {
         'url': "games/P/S/SLES-02036.html",
@@ -36612,6 +36614,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLES02038': {
         'url': "games/P/S/SLES-02038.html",
@@ -71684,6 +71687,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLPS01464': {
         'url': "games/J/S/SLPS-01464.html",
@@ -78149,9 +78153,29 @@ ppf_fixes = {
         },
         'tags': ['psp',],
     },
+    'SLES02034': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLES-02034-psp.ppf',
+        'tags': ['psp',],
+    },
+    'SLES02035': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLES-02035-psp.ppf',
+        'tags': ['psp',],
+    },
+    'SLES02037': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLES-02037-psp.ppf',
+        'tags': ['psp',],
+    },
     'SLES02038': {
         'desc': 'Fix for Vita',
         'ppf': 'ppf/SLES-02038-psp.ppf',
+        'tags': ['psp',],
+    },
+    'SLPS02153': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLPS-02153-psp.ppf',
         'tags': ['psp',],
     },
     'SLPS01940': {
