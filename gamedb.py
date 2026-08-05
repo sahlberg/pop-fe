@@ -78141,6 +78141,11 @@ ppf_fixes = {
         },
         'tags': ['psp',],
     },
+    'SLES02038': {
+        'desc': 'Fix for Vita',
+        'ppf': 'ppf/SLUS-00884-psp.ppf',
+        'tags': ['psp',],
+    },
     'SLPS01940': {
         'desc': 'Fix for Septentrion English fan-translation for Vita',
         'hashes': {
