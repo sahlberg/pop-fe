@@ -14162,6 +14162,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://www.videogamemanual.com/ps1/Resident%20Evil%202%20(USA).pdf',
         'ps3config': 'ps3configs/Resident Evil 2/SLUS-00421.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLUS-00421.bin",
     },
     'SLUS00592': {
         'url': "games/U/R/SLUS-00421.html",
@@ -14174,6 +14175,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://www.videogamemanual.com/ps1/Resident%20Evil%202%20(USA).pdf',
         'ps3config': 'ps3configs/Resident Evil 2/SLUS-00592.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLUS-00592.bin",
     },
     'SLUS00748': {
         'url': "games/U/R/SLUS-00748.html",
@@ -34487,6 +34489,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-00973.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-00973.bin",
     },
     'SLES10973': {
         'url': "games/P/R/SLES-00973.html",
@@ -34497,6 +34500,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-10973.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-10973.bin",
     },
     'SLES00974': {
         'url': "games/P/R/SLES-00974.html",
@@ -34507,6 +34511,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-00974.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-00974.bin",
     },
     'SLES10974': {
         'url': "games/P/R/SLES-00974.html",
@@ -34517,6 +34522,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-10974.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-10974.bin",
     },
     'SLES00975': {
         'url': "games/P/R/SLES-00975.html",
@@ -34527,6 +34533,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-00975.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-00975.bin",
     },
     'SLES10975': {
         'url': "games/P/R/SLES-00975.html",
@@ -34537,6 +34544,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-10975.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-10975.bin",
     },
     'SLES00976': {
         'url': "games/P/R/SLES-00976.html",
@@ -34547,6 +34555,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-00976.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-00976.bin",
     },
     'SLES10976': {
         'url': "games/P/R/SLES-00976.html",
@@ -34557,6 +34566,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Resident%20Evil%202%20%28USA%29%20%28Disc%201%29_jp2.zip',
         'ps3config': 'ps3configs/Resident Evil 2/SLES-10976.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2/SLES-10976.bin",
     },
     'SLES02529': {
         'url': "games/P/R/SLES-02529.html",
@@ -44487,6 +44497,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
         'ps3config': 'ps3configs/Biohazard 2/SLPS-01510.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2 (Dual Shock Version)/SLPS-01510.bin",
     },
     'SLPS01511': {
         'url': "games/J/B/SLPS-01510.html",
@@ -44497,6 +44508,7 @@ games = {
         'snd0': 'https://www.youtube.com/watch?v=UF4mYv4WagM&list=PLmAjrkj1KHpL3nA9S31EJwp8nc0m_p9x6&index=6',
         'manual': 'https://psxdatacenter.com/manuals/Biohazard%202%20-%20Dual%20Shock%20[SLPS-01510]%20(J).cbr',
         'ps3config': 'ps3configs/Biohazard 2/SLPS-01511.BIN',
+        'pspconfig': "pspconfigs/Resident Evil 2 (Dual Shock Version)/SLPS-01511.bin",
     },
     'SLPS02300': {
         'url': "games/J/B/SLPS-02300.html",
