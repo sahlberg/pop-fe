@@ -78152,13 +78152,13 @@ ppf_fixes = {
         'ppf': 'ppf/Jackie Chan Stuntmaster (USA).ppf',
     },
     'SLUS00884': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'hashes': {
-            # rev 1.0
+            # rev 1.0 -- Vita fix only, still fails on PSP
             '4cfef562e2d4b3d2dfa999b79011bf0e': {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
-            # rev 1.1
+            # rev 1.1 -- Vita fix plus the PSP CD-DMA chunking fix
             'dd6f25fd60c6f78fc9af921c9faef8b8': {
                 'ppf': 'ppf/SLUS-00884-rev1-psp.ppf',
             },
