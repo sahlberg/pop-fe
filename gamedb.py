@@ -36613,6 +36613,7 @@ games = {
         'pic1': 'https://images.launchbox-app.com/1030e2e5-0284-47d4-8e4a-a7cfbab889d7.jpg',
         'snd0': 'https://www.youtube.com/watch?v=3KohBT7Cl1k&list=PLeigbpMXUkYnWTpRB9JKrC-GCgJW8xjZU&index=2',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Star%20Wars%20-%20Episode%20I%20-%20The%20Phantom%20Menace%20%28USA%29_jp2.zip',
+        'pspconfig': "pspconfigs/Star Wars - Episode I - The Phantom Menace/SLUS-00884.bin",
     },
     'SLES02037': {
         'url': "games/P/S/SLES-02037.html",
@@ -78154,11 +78155,11 @@ ppf_fixes = {
     'SLUS00884': {
         'desc': 'Fix for Vita and PSP',
         'hashes': {
-            # rev 1.0 -- Vita fix only, still fails on PSP
+            # rev 1.0
             '4cfef562e2d4b3d2dfa999b79011bf0e': {
                 'ppf': 'ppf/SLUS-00884-psp.ppf',
             },
-            # rev 1.1 -- Vita fix plus the PSP CD-DMA chunking fix
+            # rev 1.1 -- the release the PSP fix was verified on
             'dd6f25fd60c6f78fc9af921c9faef8b8': {
                 'ppf': 'ppf/SLUS-00884-rev1-psp.ppf',
             },
@@ -78166,27 +78167,32 @@ ppf_fixes = {
         'tags': ['psp',],
     },
     'SLES02034': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'ppf': 'ppf/SLES-02034-psp.ppf',
         'tags': ['psp',],
     },
     'SLES02035': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'ppf': 'ppf/SLES-02035-psp.ppf',
         'tags': ['psp',],
     },
+    'SLES02036': {
+        'desc': 'Fix for Vita and PSP',
+        'ppf': 'ppf/SLES-02036-psp.ppf',
+        'tags': ['psp',],
+    },
     'SLES02037': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'ppf': 'ppf/SLES-02037-psp.ppf',
         'tags': ['psp',],
     },
     'SLES02038': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'ppf': 'ppf/SLES-02038-psp.ppf',
         'tags': ['psp',],
     },
     'SLPS02153': {
-        'desc': 'Fix for Vita',
+        'desc': 'Fix for Vita and PSP',
         'ppf': 'ppf/SLPS-02153-psp.ppf',
         'tags': ['psp',],
     },
