@@ -2635,6 +2635,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  '3b3eab9d57675782c88e5fd5ddbca1ec': {'exe': 'SLES_007.30', 'id': 'SLES00730', 'title': 'Legend (Europe)', 'vct': b'1998100812000000$'},
  '3b44511b31432bbd52035b94ff165ab9': {'exe': 'slpm803.32', 'id': 'SLPM80332', 'title': 'Ehrgeiz - God Bless the Ring (Japan) (Demo 1)', 'vct': b'1998091022300000\x00'},
  '3b44a377002a8180cda2b32ede5662ce': {'exe': 'slps_008.04', 'id': 'SLPS00804', 'title': 'Disruptor (Japan)', 'vct': b'1997022412000000\x00'},
+ '3b4cf1c6800c707d2bd153651de7b244': {'exe': 'PSX.EXE', 'id': 'UNLD00013', 'title': 'RE1.5 Magic Zombie Door (Unreleased)', 'vct': b'1899123000000000\x00'},
  '3b5b4d2699cccbb501a2539140e9cf70': {'exe': 'SLES_022.10', 'id': 'SLES02210', 'title': 'Dino Crisis (Italy)', 'vct': b'1999092811140900$'},
  '3b6932e4d5f49ba1b9f16e71f7e3509a': {'exe': 'SLPS_014.90', 'id': 'SLPS01490', 'title': 'Brave Fencer Musashiden (Japan, Asia)', 'vct': b'1998060522000000$'},
  '3b6bf3ce8230da37b8a717b6e892b457': {'exe': 'NAUTS', 'id': 'SLPS00216', 'title': 'Policenauts (English) (T) (Disc 2)', 'vct': b'2009082119070186\x00'},
