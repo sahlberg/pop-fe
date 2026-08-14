@@ -82,7 +82,7 @@ games = {
     'UNLD00013': {
         'id': 'UNLD00013',
 	'title': "RE1.5 MAGIC ZOMBIE DOOR",
-        'icon0': 'https://cdromance.com/wp-content/uploads/2022/03/Resident-Evil-1.jpg',
+        'icon0': 'https://images.launchbox-app.com//af6e7fea-20c5-4d97-8354-ef5f7bf69f6a.jpg',
         'pic0': 'https://images.launchbox-app.com/aec46d88-a71b-4ca5-9e24-dc042eef7e71.png',
         'pic0-scaling': 0.9,
         'pic0-offset': (0.1, 0.35),
