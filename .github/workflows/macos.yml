@@ -1,0 +1,142 @@
+name: macOS Apple Silicon
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+  pull_request:
+
+concurrency:
+  group: macos-arm64-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-macos:
+    name: Build macOS 14 ARM64 DMG
+    runs-on: macos-14
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out locked sources
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Set up ARM64 Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12.13'
+          architecture: arm64
+          cache: pip
+          cache-dependency-path: |
+            packaging/macos/requirements-build.txt
+            packaging/macos/requirements-constraints.txt
+            packaging/macos/requirements-runtime.txt
+
+      - name: Select release version and Python
+        id: version
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_TYPE" == 'tag' ]]; then
+            version="${GITHUB_REF_NAME#v}"
+          else
+            version='0.0.0'
+          fi
+          [[ "$version" =~ ^[0-9]+([.][0-9]+){2}$ ]]
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "POPFE_VERSION=$version" >> "$GITHUB_ENV"
+          echo "PYTHON_BIN=$(python -c 'import sys; print(sys.executable)')" >> "$GITHUB_ENV"
+
+      - name: Verify build interpreter
+        shell: bash
+        run: |
+          python - <<'PY'
+          import platform
+          import tkinter
+
+          assert platform.machine() == "arm64"
+          assert tkinter.TkVersion >= 8.6
+          PY
+
+      - name: Install workflow parser
+        run: |
+          python -m pip install \
+            --constraint packaging/macos/requirements-constraints.txt \
+            --requirement packaging/macos/requirements-build.txt
+
+      - name: Validate workflow and run unit tests
+        shell: bash
+        run: |
+          python -c "import pathlib, yaml; yaml.safe_load(pathlib.Path('.github/workflows/macos.yml').read_text())"
+          python -m unittest discover -s tests -v
+
+      - name: Cache helper downloads
+        uses: actions/cache@v6
+        with:
+          path: build/macos/downloads
+          key: macos-14-arm64-downloads-${{ hashFiles('packaging/macos/dependencies.lock.json') }}
+
+      - name: Cache verified helper binaries
+        id: helper-cache
+        uses: actions/cache@v6
+        with:
+          path: build/macos/helpers
+          key: macos-14-arm64-helpers-${{ hashFiles('packaging/macos/dependencies.lock.json', 'packaging/macos/build-helpers.sh', 'packaging/macos/patches/**') }}
+
+      - name: Build native helper binaries
+        if: steps.helper-cache.outputs.cache-hit != 'true'
+        run: packaging/macos/build-helpers.sh
+
+      - name: Verify helper binaries
+        run: packaging/macos/verify-mach-o.sh build/macos/helpers
+
+      - name: Package applications and CLI
+        run: packaging/macos/build-apps.sh
+
+      - name: Exercise packaged conversion targets and input formats
+        run: tests/integration/smoke-macos-conversions.sh build/macos/dist/pop-fe
+
+      - name: Build and verify DMG
+        shell: bash
+        run: |
+          packaging/macos/create-dmg.sh
+          packaging/macos/smoke-dmg.sh "build/macos/Pop-FE-${POPFE_VERSION}-macOS-arm64.dmg"
+
+      - name: Upload verified DMG
+        uses: actions/upload-artifact@v7
+        with:
+          name: Pop-FE-macOS-arm64
+          path: |
+            build/macos/Pop-FE-${{ steps.version.outputs.version }}-macOS-arm64.dmg
+            build/macos/Pop-FE-${{ steps.version.outputs.version }}-macOS-arm64.dmg.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+
+  publish-release:
+    name: Publish tagged macOS artifact
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build-macos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download verified DMG
+        uses: actions/download-artifact@v8
+        with:
+          name: Pop-FE-macOS-arm64
+          path: release
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if ! gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes
+          fi
+          gh release upload "$GITHUB_REF_NAME" release/* --clobber
