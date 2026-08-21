@@ -3586,6 +3586,9 @@ def check_memory_card(f):
     
 
 def find_psp_mount():
+    if popfe_runtime.is_macos:
+        return str(popfe_runtime.find_psp_mount())
+
     candidates = ['/d', '/e', '/f', '/g']
     if os.name == 'posix':
         with open('/proc/self/mounts', 'r') as f:
@@ -3609,6 +3612,9 @@ def find_psp_mount():
 
 
 def find_psc_mount():
+    if popfe_runtime.is_macos:
+        return str(popfe_runtime.find_psc_mount())
+
     candidates = ['/d', '/e', '/f', '/g']
     if os.name == 'posix':
         with open('/proc/self/mounts', 'r') as f:

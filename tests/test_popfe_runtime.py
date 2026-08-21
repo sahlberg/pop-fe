@@ -3,7 +3,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from popfe_runtime import MissingResourceError, MissingToolError, RuntimePaths
+from popfe_runtime import (
+    MissingResourceError,
+    MissingToolError,
+    MountedDeviceNotFoundError,
+    RuntimePaths,
+)
 
 
 class RuntimePathsTests(unittest.TestCase):
@@ -269,6 +274,43 @@ class RuntimePathsTests(unittest.TestCase):
             )
 
             self.assertEqual(runtime.tool_path("xdelta3"), helper.resolve())
+
+    def test_macos_finds_psp_and_vita_volumes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            volumes = root / "Volumes"
+            psp = volumes / "A PSP"
+            vita = volumes / "B Vita" / "pspemu"
+            (psp / "PSP" / "GAME").mkdir(parents=True)
+            (vita / "PSP" / "GAME").mkdir(parents=True)
+            runtime = self.make_runtime(directory)
+
+            self.assertEqual(runtime.find_psp_mount(volumes), psp)
+
+            (psp / "PSP" / "GAME").rmdir()
+            self.assertEqual(runtime.find_psp_mount(volumes), vita)
+
+    def test_macos_finds_playstation_classic_volume(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            volumes = root / "Volumes"
+            classic = volumes / "SONY"
+            (classic / "Games").mkdir(parents=True)
+            runtime = self.make_runtime(directory)
+
+            self.assertEqual(runtime.find_psc_mount(volumes), classic)
+
+    def test_macos_volume_discovery_ignores_unrelated_and_missing_roots(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            volumes = root / "Volumes"
+            (volumes / "Unrelated" / "Documents").mkdir(parents=True)
+            runtime = self.make_runtime(directory)
+
+            with self.assertRaises(MountedDeviceNotFoundError):
+                runtime.find_psp_mount(volumes)
+            with self.assertRaises(MountedDeviceNotFoundError):
+                runtime.find_psc_mount(root / "not-mounted")
 
 
 if __name__ == "__main__":

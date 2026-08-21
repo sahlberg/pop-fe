@@ -30,6 +30,10 @@ class MissingToolError(RuntimePathError):
     """Raised when a required conversion helper is unavailable."""
 
 
+class MountedDeviceNotFoundError(RuntimePathError):
+    """Raised when automatic removable-device discovery finds no target."""
+
+
 _SOURCE_TOOL_PATHS = {
     "atracdenc": ("atracdenc/src/atracdenc",),
     "binmerge": ("binmerge/binmerge", "binmerge.py"),
@@ -196,6 +200,36 @@ class RuntimePaths:
         if self.is_macos:
             return Path("/Volumes")
         return None
+
+    def mounted_volumes(self, volume_root: Optional[PathLike] = None) -> tuple[Path, ...]:
+        """Return macOS mounted volumes in deterministic name order."""
+        root = _resolved(volume_root or self.mounted_volume_root or "/Volumes")
+        try:
+            volumes = [path.resolve() for path in root.iterdir() if path.is_dir()]
+        except OSError:
+            return ()
+        return tuple(sorted(volumes, key=lambda path: path.name.casefold()))
+
+    def find_psp_mount(self, volume_root: Optional[PathLike] = None) -> Path:
+        """Find a mounted PSP memory stick or Vita `pspemu` directory."""
+        for volume in self.mounted_volumes(volume_root):
+            if (volume / "PSP" / "GAME").is_dir():
+                return volume
+            vita_root = volume / "pspemu"
+            if (vita_root / "PSP" / "GAME").is_dir():
+                return vita_root
+        raise MountedDeviceNotFoundError(
+            "Could not find a PSP or Vita memory card under /Volumes"
+        )
+
+    def find_psc_mount(self, volume_root: Optional[PathLike] = None) -> Path:
+        """Find a mounted PlayStation Classic AutoBleem device."""
+        for volume in self.mounted_volumes(volume_root):
+            if (volume / "Games").is_dir():
+                return volume
+        raise MountedDeviceNotFoundError(
+            "Could not find a PlayStation Classic AutoBleem device under /Volumes"
+        )
 
     def resource_path(self, relative_path: PathLike, *, required: bool = False) -> Path:
         """Resolve a read-only resource without allowing traversal outside it."""
