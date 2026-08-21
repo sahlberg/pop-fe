@@ -918,10 +918,17 @@ if __name__ == "__main__":
     if args.v:
         verbose = True
 
+    smoke_test = os.environ.get("POPFE_GUI_SMOKE_TEST") == "1"
     root = TkinterDnD.Tk()
+    if smoke_test:
+        root.withdraw()
     if popfe_runtime.is_macos:
         install_tk_error_handler(root, popfe_runtime, "ps3", "Pop-FE PS3 Error")
     app = PopFePs3App(root)
     root.title('pop-fe PS3')
-    root.mainloop()
+    if smoke_test:
+        root.update_idletasks()
+        root.destroy()
+    else:
+        root.mainloop()
     

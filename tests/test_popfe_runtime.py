@@ -50,6 +50,30 @@ class RuntimePathsTests(unittest.TestCase):
 
             self.assertEqual(runtime.resource_root, resources.resolve())
 
+    def test_frozen_macos_resources_allow_pyinstaller_bundle_symlinks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            contents = Path(directory) / "Pop-FE.app" / "Contents"
+            frameworks = contents / "Frameworks"
+            resources = contents / "Resources"
+            macos = contents / "MacOS"
+            frameworks.mkdir(parents=True)
+            resources.mkdir()
+            macos.mkdir()
+            (resources / "pop-fe.ui").write_text("ui", encoding="utf-8")
+            (frameworks / "pop-fe.ui").symlink_to("../Resources/pop-fe.ui")
+
+            runtime = self.make_runtime(
+                directory,
+                frozen=True,
+                meipass=frameworks,
+                executable=macos / "Pop-FE",
+            )
+
+            self.assertEqual(
+                runtime.resource_path("pop-fe.ui", required=True),
+                (resources / "pop-fe.ui").resolve(),
+            )
+
     def test_resource_path_rejects_escape_and_reports_missing_resource(self):
         with tempfile.TemporaryDirectory() as directory:
             runtime = self.make_runtime(directory)

@@ -118,6 +118,90 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertIn('sys.version_info[:2] != (3, 12)', source)
         self.assertIn('platform.machine() != "arm64"', source)
 
+    def test_application_specs_bundle_all_resources_and_helpers(self):
+        common = (MACOS_PACKAGING / "spec_common.py").read_text(
+            encoding="utf-8"
+        )
+        for helper in self.locked_helper_outputs():
+            with self.subTest(helper=helper):
+                self.assertIn(f'"{helper}"', common)
+        for resource in (
+            "libcrypt",
+            "ppf",
+            "ps3configs",
+            "pspconfigs",
+            "romhacks",
+        ):
+            with self.subTest(resource=resource):
+                self.assertIn(f'"{resource}"', common)
+        self.assertNotIn('collect_all("tkinterdnd2")', common)
+        self.assertNotIn("collect_submodules", common)
+        self.assertIn('collect_data_files("pytubefix"', common)
+        self.assertIn('node_root / "bin" / "node"', common)
+        runtime_requirements = (
+            MACOS_PACKAGING / "requirements-runtime.txt"
+        ).read_text(encoding="utf-8")
+        self.assertIn("nodejs-wheel-binaries==24.19.0", runtime_requirements)
+
+    def test_gui_specs_are_arm64_macos_14_application_bundles(self):
+        for filename, identifier in (
+            ("pop-fe-psp.spec", "io.github.sahlberg.pop-fe.psp"),
+            ("pop-fe-ps3.spec", "io.github.sahlberg.pop-fe.ps3"),
+        ):
+            source = (MACOS_PACKAGING / filename).read_text(encoding="utf-8")
+            with self.subTest(spec=filename):
+                self.assertIn('target_arch="arm64"', source)
+                self.assertIn("BUNDLE(", source)
+                self.assertIn(identifier, source)
+        common = (MACOS_PACKAGING / "spec_common.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('"LSMinimumSystemVersion": "14.0"', common)
+        self.assertIn('"LSArchitecturePriority": ["arm64"]', common)
+
+    def test_application_build_prefers_pyenv_python_with_tk(self):
+        source = (MACOS_PACKAGING / "build-apps.sh").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("pyenv prefix", source)
+        self.assertIn("3.12.13", source)
+        self.assertIn("import tkinter", source)
+        self.assertIn("tkinter.TkVersion < 8.6", source)
+        self.assertIn('rm -rf "$DIST_ROOT/Pop-FE PSP"', source)
+
+    def test_application_smoke_exercises_cli_both_guis_and_signatures(self):
+        source = (MACOS_PACKAGING / "smoke-apps.sh").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('"$CLI" --help', source)
+        self.assertIn('node" --version', source)
+        self.assertEqual(source.count("POPFE_GUI_SMOKE_TEST=1"), 2)
+        self.assertEqual(source.count("codesign --verify --deep --strict"), 2)
+
+    def test_python_requirements_are_exactly_pinned(self):
+        requirement_files = (
+            MACOS_PACKAGING / "requirements-build.txt",
+            MACOS_PACKAGING / "requirements-runtime.txt",
+        )
+        for requirement_file in requirement_files:
+            with self.subTest(requirements=requirement_file.name):
+                requirements = [
+                    line.strip()
+                    for line in requirement_file.read_text(encoding="utf-8").splitlines()
+                    if line.strip() and not line.startswith("#")
+                ]
+                self.assertTrue(requirements)
+                self.assertTrue(all("==" in line for line in requirements))
+
+    @staticmethod
+    def locked_helper_outputs():
+        lock = json.loads(LOCK_FILE.read_text(encoding="utf-8"))
+        return sorted(
+            dependency["output"]
+            for dependency in lock["dependencies"].values()
+            if "output" in dependency
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -20,6 +20,8 @@ class GuiPathTests(unittest.TestCase):
                 self.assertIn("popfe_runtime.resource_path", source)
                 self.assertIn("popfe_runtime.application_work_dir", source)
                 self.assertIn("PREFERENCES_PATH", source)
+                self.assertIn('os.environ.get("POPFE_GUI_SMOKE_TEST")', source)
+                self.assertIn("root.update_idletasks()", source)
 
     def test_gui_exception_log_uses_macos_log_directory(self):
         with tempfile.TemporaryDirectory() as directory:

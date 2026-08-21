@@ -234,12 +234,22 @@ class RuntimePaths:
     def resource_path(self, relative_path: PathLike, *, required: bool = False) -> Path:
         """Resolve a read-only resource without allowing traversal outside it."""
         relative = Path(relative_path)
-        if relative.is_absolute():
+        if relative.is_absolute() or ".." in relative.parts:
             raise ValueError("Resource paths must be relative")
 
         root = self.resource_root.resolve()
         candidate = (root / relative).resolve()
-        if candidate != root and root not in candidate.parents:
+        allowed_roots = [root]
+        if self.is_macos and self.frozen and self.executable.parent.name == "MacOS":
+            bundle_contents = self.executable.parent.parent.resolve()
+            if bundle_contents.name == "Contents":
+                # PyInstaller stores data in Contents/Resources and exposes it
+                # through symlinks from sys._MEIPASS (Contents/Frameworks).
+                allowed_roots.append(bundle_contents)
+        if not any(
+            candidate == allowed or allowed in candidate.parents
+            for allowed in allowed_roots
+        ):
             raise ValueError("Resource path escapes the POP-FE resource directory")
         if required and not candidate.exists():
             raise MissingResourceError(

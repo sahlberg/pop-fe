@@ -774,10 +774,17 @@ if __name__ == "__main__":
     if args.v:
         verbose = True
 
+    smoke_test = os.environ.get("POPFE_GUI_SMOKE_TEST") == "1"
     root = tk.Tk()
+    if smoke_test:
+        root.withdraw()
     if popfe_runtime.is_macos:
         install_tk_error_handler(root, popfe_runtime, "psp", "Pop-FE PSP Error")
     app = PopFePs3App(root)
     root.title('pop-fe PSP')
-    root.mainloop()
+    if smoke_test:
+        root.update_idletasks()
+        root.destroy()
+    else:
+        root.mainloop()
     
