@@ -8229,6 +8229,7 @@ disc_by_md5 = {'000c285ff98c05712009ef3ea6505f43': {'exe': 'SLPM_803.21', 'id': 
  'bc9c9e0ff03e13b7762aacfda2a82041': {'exe': 'SLUS_006.60', 'id': 'SLUS00660', 'title': 'Tail Concerto (USA)', 'vct': b'1999083112000000\x00'},
  'bca462f046e2c0cecf009a9d397a021b': {'exe': 'SCES_012.89', 'id': 'SCES01289', 'title': 'Zero Divide 2 - The Secret Wish (Italy)', 'vct': b'1998061008581200$'},
  'bcaf3a65b03f65e66bbe3e590f62a037': {'id': 'SCES00311', 'title': 'MediEvil (Europe) (Beta) (1998-05-07) (v0.29)', 'vct': b'1997052023172500$'},
+ 'bcbb067561fdd08aa09b72e2baa65149': {'exe': 'SLPS_014.09', 'id': 'SLPS01409', 'title': 'Ai to Yuujou no Neko Monogatari. Jingle Cats - Love Para Daisakusen no Maki (English) (T)', 'vct': b'1998061100000000\x00'},
  'bcbfc101589b94096332ecf60bc4173d': {'exe': 'SLUS_012.99', 'id': 'SLUS01299', 'title': 'Spec Ops - Ranger Elite (USA)', 'vct': b'2001040814333900$'},
  'bcc84b1a427f56fc7f7b1c3dbf674ef3': {'exe': 'SLPS_026.39', 'id': 'SLPS02639', 'title': 'World Never Island (Japan)', 'vct': b'0000021221300000$'},
  'bcc8955c61f8781a963f82a144c89e6b': {'exe': 'LSP08014.001', 'id': 'SCUS80093', 'title': 'Faire Games - Mathematics (USA)', 'vct': b'1997061611532600$'},
