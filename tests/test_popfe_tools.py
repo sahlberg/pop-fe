@@ -76,6 +76,12 @@ class BackendToolIntegrationTests(unittest.TestCase):
         self.assertNotIn("subdir = 'pop-fe-work/'", source)
         self.assertNotIn("os.unlink('NORMAL01.iso')", source)
 
+    def test_retroarch_thumbnail_runs_before_pbp_mutates_images(self):
+        source = (REPOSITORY_ROOT / "pop-fe.py").read_text(encoding="utf-8")
+        thumbnail = "if args.retroarch_thumbnail_dir:"
+        pbp = "if args.retroarch_pbp_dir:"
+        self.assertLess(source.index(thumbnail), source.index(pbp))
+
 
 if __name__ == "__main__":
     unittest.main()

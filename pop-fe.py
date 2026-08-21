@@ -4967,6 +4967,8 @@ if __name__ == "__main__":
     if args.retroarch_cue_dir:
         new_path = args.retroarch_cue_dir + '/' + game_title
         create_retroarch_cue(new_path, game_title, cue_files, img_files, magic_word)
+    if args.retroarch_thumbnail_dir:
+        create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
     if args.retroarch_pbp_dir:
         new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
         if icon0:
@@ -4984,9 +4986,6 @@ if __name__ == "__main__":
             pic1 = i.read()
         
         generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, img_files, aea_files, None, subdir=subdir)
-    if args.retroarch_thumbnail_dir:
-        create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
-
     for f in temp_files:
         print('Deleting temp file', f) if verbose else None
         try:
