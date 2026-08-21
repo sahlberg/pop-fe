@@ -168,6 +168,8 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertIn("import tkinter", source)
         self.assertIn("tkinter.TkVersion < 8.6", source)
         self.assertIn('rm -rf "$DIST_ROOT/Pop-FE PSP"', source)
+        self.assertIn("popfe_build_version.py", source)
+        self.assertIn('POPFE_VERSION="$VERSION"', source)
 
     def test_application_smoke_exercises_cli_both_guis_and_signatures(self):
         source = (MACOS_PACKAGING / "smoke-apps.sh").read_text(
@@ -177,6 +179,46 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertIn('node" --version', source)
         self.assertEqual(source.count("POPFE_GUI_SMOKE_TEST=1"), 2)
         self.assertEqual(source.count("codesign --verify --deep --strict"), 2)
+
+    def test_cli_is_a_versioned_single_file_executable(self):
+        spec = (MACOS_PACKAGING / "pop-fe-cli.spec").read_text(encoding="utf-8")
+        source = (REPOSITORY_ROOT / "pop-fe.py").read_text(encoding="utf-8")
+        self.assertIn("a.binaries", spec)
+        self.assertIn("a.datas", spec)
+        self.assertNotIn("COLLECT(", spec)
+        self.assertIn("popfe_build_version", source)
+        self.assertIn("action='version'", source)
+        for gui_spec in ("pop-fe-psp.spec", "pop-fe-ps3.spec"):
+            with self.subTest(spec=gui_spec):
+                self.assertIn(
+                    'GENERATED = ROOT / "build" / "macos" / "generated"',
+                    (MACOS_PACKAGING / gui_spec).read_text(encoding="utf-8"),
+                )
+
+    def test_dmg_scripts_sign_stage_and_smoke_every_target(self):
+        sign = (MACOS_PACKAGING / "sign-apps.sh").read_text(encoding="utf-8")
+        create = (MACOS_PACKAGING / "create-dmg.sh").read_text(encoding="utf-8")
+        smoke = (MACOS_PACKAGING / "smoke-dmg.sh").read_text(encoding="utf-8")
+        readme = (MACOS_PACKAGING / "README-macOS.txt").read_text(
+            encoding="utf-8"
+        )
+        installer = (MACOS_PACKAGING / "Install CLI.command").read_text(
+            encoding="utf-8"
+        )
+
+        self.assertIn('codesign --force --sign - --timestamp=none "$target"', sign)
+        self.assertEqual(sign.count("codesign --verify --deep --strict"), 2)
+        self.assertIn("hdiutil create", create)
+        self.assertIn("shasum -a 256", create)
+        self.assertIn("Applications", create)
+        self.assertIn("hdiutil attach", smoke)
+        self.assertIn("hdiutil detach", smoke)
+        self.assertEqual(smoke.count("POPFE_GUI_SMOKE_TEST=1"), 2)
+        self.assertIn("Privacy & Security", readme)
+        self.assertIn("Open Anyway", readme)
+        self.assertNotIn("xattr", readme)
+        self.assertIn("$HOME/.local/bin", installer)
+        self.assertNotIn("sudo", installer)
 
     def test_python_requirements_are_exactly_pinned(self):
         requirement_files = (

@@ -58,6 +58,10 @@ import subprocess
 import zipfile
 from popfe_runtime import runtime as popfe_runtime
 try:
+    from popfe_build_version import VERSION as POPFE_VERSION
+except ImportError:
+    POPFE_VERSION = 'development'
+try:
     from vmp import encode_vmp
 except:
     True
@@ -4608,6 +4612,7 @@ def print_toc(toc):
 #
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument('--version', action='version', version=POPFE_VERSION)
     parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--retroarch-thumbnail-dir',
                     help='Where to store retroarch thumbnails')

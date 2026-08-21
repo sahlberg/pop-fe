@@ -11,6 +11,8 @@ VENV_ROOT="${POPFE_BUILD_VENV:-$BUILD_ROOT/app-venv}"
 PYTHON_BIN="${PYTHON_BIN:-}"
 PYENV_BUILD_VERSION="${POPFE_PYENV_VERSION:-3.12.13}"
 ICON_PATH="$BUILD_ROOT/Pop-FE.icns"
+VERSION="${POPFE_VERSION:-0.0.0}"
+GENERATED_ROOT="$BUILD_ROOT/generated"
 
 say() {
     printf '[pop-fe macOS] %s\n' "$*" >&2
@@ -79,6 +81,9 @@ for command in iconutil sips; do
     command -v "$command" >/dev/null || fail "required build command not found: $command"
 done
 
+[[ "$VERSION" =~ ^[0-9]+([.][0-9]+){1,2}$ ]] || fail \
+    'POPFE_VERSION must contain two or three numeric components (for example 1.2.0)'
+
 if [[ ! -x "$VENV_ROOT/bin/python3" ]]; then
     say "creating build environment from $PYTHON_BIN"
     "$PYTHON_BIN" -m venv "$VENV_ROOT"
@@ -107,11 +112,13 @@ for helper in atracdenc binmerge chdman cue2cu2 ffmpeg lcp pkg psxund sign3 xdel
 done
 
 rm -rf "$DIST_ROOT" "$WORK_ROOT"
-mkdir -p "$DIST_ROOT" "$WORK_ROOT"
+mkdir -p "$DIST_ROOT" "$WORK_ROOT" "$GENERATED_ROOT"
+printf 'VERSION = "%s"\n' "$VERSION" > "$GENERATED_ROOT/popfe_build_version.py"
 create_icon
 
 for spec in pop-fe-cli.spec pop-fe-psp.spec pop-fe-ps3.spec; do
     say "building $spec"
+    POPFE_VERSION="$VERSION" \
     POPFE_ICON_PATH="$ICON_PATH" \
     PYINSTALLER_CONFIG_DIR="$BUILD_ROOT/pyinstaller-cache" \
         "$VENV_PYTHON" -m PyInstaller \

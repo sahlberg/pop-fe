@@ -9,11 +9,12 @@ from spec_common import bundle_info, packaging_inputs
 
 
 ROOT = Path(SPECPATH).parents[1]
+GENERATED = ROOT / "build" / "macos" / "generated"
 datas, binaries, hiddenimports = packaging_inputs(ROOT, "pop-fe-ps3.ui")
 
 a = Analysis(
     [str(ROOT / "pop-fe-ps3.py")],
-    pathex=[str(ROOT)],
+    pathex=[str(GENERATED), str(ROOT)],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
