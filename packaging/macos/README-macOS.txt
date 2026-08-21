@@ -23,6 +23,9 @@ To approve an application:
 4. Authenticate if macOS asks, then confirm Open.
 
 Repeat this once for the other POP-FE application. Do not disable Gatekeeper.
+Apple notes that Open Anyway is available for about one hour after the blocked
+launch attempt:
+https://support.apple.com/guide/mac-help/open-an-app-by-overriding-security-settings-mh40617/mac
 
 Install the command-line tool
 -----------------------------
@@ -38,6 +41,15 @@ If ~/.local/bin is not already on PATH, add this line to ~/.zshrc:
 Then open a new Terminal window and run:
 
     pop-fe --help
+
+The single-file CLI may take several seconds to prepare its embedded runtime
+when it starts. No files are installed globally and no network access is used
+for this preparation.
+
+The bundle handles CUE/BIN, CCD/IMG, BIN/IMG, ZIP, and CHD game images without
+external tools. PDF, ZIP, and image-directory manuals are self-contained. CBR
+manual extraction has the same optional external UNRAR requirement as the
+existing desktop builds.
 
 Data and removal
 ----------------

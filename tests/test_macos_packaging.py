@@ -138,6 +138,7 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertNotIn("collect_submodules", common)
         self.assertIn('collect_data_files("pytubefix"', common)
         self.assertIn('node_root / "bin" / "node"', common)
+        self.assertIn('"licenses"', common)
         runtime_requirements = (
             MACOS_PACKAGING / "requirements-runtime.txt"
         ).read_text(encoding="utf-8")
@@ -170,6 +171,7 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertIn('rm -rf "$DIST_ROOT/Pop-FE PSP"', source)
         self.assertIn("popfe_build_version.py", source)
         self.assertIn('POPFE_VERSION="$VERSION"', source)
+        self.assertIn("collect-licenses.py", source)
 
     def test_application_smoke_exercises_cli_both_guis_and_signatures(self):
         source = (MACOS_PACKAGING / "smoke-apps.sh").read_text(
@@ -211,18 +213,31 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertIn("hdiutil create", create)
         self.assertIn("shasum -a 256", create)
         self.assertIn("Applications", create)
+        self.assertIn('"$BUILD_ROOT/licenses"', create)
         self.assertIn("hdiutil attach", smoke)
         self.assertIn("hdiutil detach", smoke)
         self.assertEqual(smoke.count("POPFE_GUI_SMOKE_TEST=1"), 2)
         self.assertIn("Privacy & Security", readme)
         self.assertIn("Open Anyway", readme)
+        self.assertIn("support.apple.com/guide/mac-help", readme)
         self.assertNotIn("xattr", readme)
         self.assertIn("$HOME/.local/bin", installer)
         self.assertNotIn("sudo", installer)
 
+    def test_license_collector_retains_distribution_license_files(self):
+        source = (MACOS_PACKAGING / "collect-licenses.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("importlib.metadata", source)
+        for marker in ("license", "copying", "notice"):
+            with self.subTest(marker=marker):
+                self.assertIn(f'"{marker}"', source)
+        self.assertIn("MANIFEST.txt", source)
+
     def test_python_requirements_are_exactly_pinned(self):
         requirement_files = (
             MACOS_PACKAGING / "requirements-build.txt",
+            MACOS_PACKAGING / "requirements-constraints.txt",
             MACOS_PACKAGING / "requirements-runtime.txt",
         )
         for requirement_file in requirement_files:

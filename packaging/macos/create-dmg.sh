@@ -49,6 +49,7 @@ ditto "$REPOSITORY_ROOT/LICENCE-LGPL-2.1.txt" \
     "$STAGING_ROOT/LICENCE-LGPL-2.1.txt"
 ditto "$REPOSITORY_ROOT/THIRD_PARTY_NOTICES.md" \
     "$STAGING_ROOT/THIRD_PARTY_NOTICES.md"
+ditto "$BUILD_ROOT/licenses" "$STAGING_ROOT/licenses"
 chmod 755 "$STAGING_ROOT/pop-fe" "$STAGING_ROOT/Install CLI.command"
 ln -s /Applications "$STAGING_ROOT/Applications"
 

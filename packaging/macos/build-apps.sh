@@ -13,6 +13,7 @@ PYENV_BUILD_VERSION="${POPFE_PYENV_VERSION:-3.12.13}"
 ICON_PATH="$BUILD_ROOT/Pop-FE.icns"
 VERSION="${POPFE_VERSION:-0.0.0}"
 GENERATED_ROOT="$BUILD_ROOT/generated"
+LICENSE_ROOT="$BUILD_ROOT/licenses"
 
 say() {
     printf '[pop-fe macOS] %s\n' "$*" >&2
@@ -103,8 +104,12 @@ PY
 say 'installing pinned packaging dependencies'
 "$VENV_PYTHON" -m pip install \
     --disable-pip-version-check \
+    --constraint "$SCRIPT_DIR/requirements-constraints.txt" \
     --requirement "$SCRIPT_DIR/requirements-build.txt" \
     --requirement "$SCRIPT_DIR/requirements-runtime.txt"
+
+say 'collecting Python package license texts'
+"$VENV_PYTHON" "$SCRIPT_DIR/collect-licenses.py" "$LICENSE_ROOT"
 
 for helper in atracdenc binmerge chdman cue2cu2 ffmpeg lcp pkg psxund sign3 xdelta3; do
     [[ -x "$BUILD_ROOT/helpers/$helper" ]] || fail \

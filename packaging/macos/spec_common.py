@@ -50,6 +50,7 @@ def packaging_inputs(repository_root: Path, ui_file: str | None = None):
         (str(repository_root / "PS3LOGO.DAT"), "."),
         (str(repository_root / "LICENCE-LGPL-2.1.txt"), "."),
         (str(repository_root / "THIRD_PARTY_NOTICES.md"), "."),
+        (str(repository_root / "build" / "macos" / "licenses"), "licenses"),
     ]
     datas.extend(
         (str(repository_root / directory), directory)

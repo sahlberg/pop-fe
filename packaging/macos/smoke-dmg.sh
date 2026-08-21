@@ -48,6 +48,7 @@ for target in "$CLI" "$PSP_APP" "$PS3_APP" "$INSTALLER" \
     }
 done
 [[ "$(readlink "$MOUNT_POINT/Applications")" == '/Applications' ]]
+[[ -f "$MOUNT_POINT/licenses/MANIFEST.txt" ]]
 
 codesign --verify --strict "$CLI"
 codesign --verify --deep --strict "$PSP_APP"
