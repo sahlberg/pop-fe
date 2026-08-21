@@ -235,6 +235,47 @@ class MacOSBuildScriptTests(unittest.TestCase):
                 self.assertTrue(requirements)
                 self.assertTrue(all("==" in line for line in requirements))
 
+    def test_macos_workflow_builds_and_publishes_verified_dmg(self):
+        workflow = (
+            REPOSITORY_ROOT / ".github" / "workflows" / "macos.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn("runs-on: macos-14", workflow)
+        self.assertIn("submodules: recursive", workflow)
+        self.assertIn("python-version: '3.12.13'", workflow)
+        self.assertIn("architecture: arm64", workflow)
+        self.assertIn("packaging/macos/build-helpers.sh", workflow)
+        self.assertIn("packaging/macos/build-apps.sh", workflow)
+        self.assertIn("tests/integration/smoke-macos-conversions.sh", workflow)
+        self.assertIn("packaging/macos/create-dmg.sh", workflow)
+        self.assertIn("packaging/macos/smoke-dmg.sh", workflow)
+        self.assertIn("actions/upload-artifact@v7", workflow)
+        self.assertIn("startsWith(github.ref, 'refs/tags/v')", workflow)
+        self.assertIn("gh release upload", workflow)
+
+    def test_conversion_smoke_covers_formats_and_cli_targets(self):
+        source = (
+            REPOSITORY_ROOT / "tests" / "integration" /
+            "smoke-macos-conversions.sh"
+        ).read_text(encoding="utf-8")
+        for extension in (".cue", ".ccd", ".zip", ".chd"):
+            with self.subTest(extension=extension):
+                self.assertIn(extension, source)
+        for option in (
+            "--psp-dir",
+            "--ps2-dir",
+            "--ps3-pkg",
+            "--psc-dir",
+            "--psio-dir",
+            "--retroarch-bin-dir",
+            "--retroarch-cue-dir",
+            "--retroarch-pbp-dir",
+            "--retroarch-thumbnail-dir",
+        ):
+            with self.subTest(option=option):
+                self.assertIn(option, source)
+        self.assertIn('HOME="$TEST_HOME"', source)
+        self.assertIn("chmod 555", source)
+
     @staticmethod
     def locked_helper_outputs():
         lock = json.loads(LOCK_FILE.read_text(encoding="utf-8"))
