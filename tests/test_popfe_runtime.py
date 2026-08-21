@@ -75,6 +75,34 @@ class RuntimePathsTests(unittest.TestCase):
                 runtime.preference_path("pop-fe-psp.config"),
                 runtime.config_dir / "pop-fe-psp.config",
             )
+            self.assertEqual(
+                runtime.application_preference_path("pop-fe-psp.config"),
+                runtime.config_dir / "pop-fe-psp.config",
+            )
+
+    def test_application_paths_preserve_legacy_non_macos_locations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            runtime = self.make_runtime(directory, platform="linux")
+
+            self.assertEqual(
+                runtime.application_preference_path("pop-fe-psp.config"),
+                runtime.cwd / "pop-fe-psp.config",
+            )
+            self.assertEqual(
+                runtime.application_work_dir("psp", "pop-fe-psp-work"),
+                runtime.cwd / "pop-fe-psp-work",
+            )
+
+    def test_macos_application_work_directory_is_unique_and_cached(self):
+        with tempfile.TemporaryDirectory() as directory:
+            runtime = self.make_runtime(directory)
+
+            first = runtime.application_work_dir("psp", "ignored")
+            second = runtime.application_work_dir("psp", "ignored")
+
+            self.assertNotEqual(first, second)
+            self.assertEqual(first.parent, runtime.cache_dir)
+            self.assertEqual(second.parent, runtime.cache_dir)
 
     def test_linux_user_directories_honor_xdg_environment(self):
         with tempfile.TemporaryDirectory() as directory:

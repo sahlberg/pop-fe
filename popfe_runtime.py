@@ -219,6 +219,22 @@ class RuntimePaths:
             raise ValueError("Preference filename must not contain directories")
         return self.config_dir / filename
 
+    def application_preference_path(self, filename: str) -> Path:
+        """Use macOS user storage while retaining legacy paths elsewhere."""
+        if self.is_macos:
+            return self.preference_path(filename)
+        if not filename or Path(filename).name != filename:
+            raise ValueError("Preference filename must not contain directories")
+        return self.cwd / filename
+
+    def application_work_dir(self, component: str, legacy_name: str) -> Path:
+        """Create a unique macOS workspace or return the legacy local path."""
+        if self.is_macos:
+            return self.create_work_dir(component)
+        if not legacy_name or Path(legacy_name).name != legacy_name:
+            raise ValueError("Legacy work directory must be a single name")
+        return (self.cwd / legacy_name).resolve()
+
     def ensure_user_directories(self) -> None:
         for directory in (self.config_dir, self.log_dir, self.cache_dir):
             directory.mkdir(parents=True, exist_ok=True)
