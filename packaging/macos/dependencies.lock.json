@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "target": {
+    "platform": "macos",
+    "architecture": "arm64",
+    "minimum_version": "14.0"
+  },
+  "dependencies": {
+    "ffmpeg": {
+      "source_type": "archive",
+      "version": "9.0.1",
+      "url": "https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz",
+      "filename": "ffmpeg-9.0.1.tar.xz",
+      "sha256": "cf38e0e28c7e5605942c4a77755349b0145804a397af37eb1fb4c77cb237f635",
+      "source_url": "https://ffmpeg.org/",
+      "license": "LGPL-2.1-or-later",
+      "output": "ffmpeg"
+    },
+    "libsndfile": {
+      "source_type": "archive",
+      "version": "1.2.2",
+      "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+      "filename": "libsndfile-1.2.2.tar.xz",
+      "sha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e",
+      "source_url": "https://github.com/libsndfile/libsndfile",
+      "license": "LGPL-2.1-or-later"
+    },
+    "xdelta3": {
+      "source_type": "archive",
+      "version": "3.2.0",
+      "revision": "ff322e592383227b0d65ddfde7e0e5bbc504dc15",
+      "url": "https://github.com/jmacd/xdelta/archive/ff322e592383227b0d65ddfde7e0e5bbc504dc15.tar.gz",
+      "filename": "xdelta-ff322e592383227b0d65ddfde7e0e5bbc504dc15.tar.gz",
+      "sha256": "2553888160ad4e4036fc012c123e9c4d917cfc1be10f180a43b22f09dc94db53",
+      "source_url": "https://github.com/jmacd/xdelta",
+      "license": "Apache-2.0",
+      "output": "xdelta3"
+    },
+    "mame-chdman": {
+      "source_type": "archive",
+      "version": "0.289",
+      "revision": "f34f02505e32c1993c6a782b6814232cbfc74e36",
+      "url": "https://github.com/mamedev/mame/archive/f34f02505e32c1993c6a782b6814232cbfc74e36.tar.gz",
+      "filename": "mame-f34f02505e32c1993c6a782b6814232cbfc74e36.tar.gz",
+      "sha256": "17d50a6effe503e5cd23818daf42ee2a60f471d1cda41c13e0e7cc4ae78c5e11",
+      "source_url": "https://github.com/mamedev/mame",
+      "license": "GPL-2.0-only",
+      "output": "chdman"
+    },
+    "libcrypt-patcher": {
+      "source_type": "archive",
+      "version": "1.1.0",
+      "revision": "f1e70da5666a888ca82d8e1c0ba4d04b994ac426",
+      "url": "https://github.com/alex-free/libcrypt-patcher/archive/f1e70da5666a888ca82d8e1c0ba4d04b994ac426.tar.gz",
+      "filename": "libcrypt-patcher-f1e70da5666a888ca82d8e1c0ba4d04b994ac426.tar.gz",
+      "sha256": "12f78206110a168ebbfa62afa822544182e294c43e2c92c29cc05339238300f2",
+      "source_url": "https://github.com/alex-free/libcrypt-patcher",
+      "license": "BSD-3-Clause",
+      "output": "lcp"
+    },
+    "lib-enigma": {
+      "source_type": "archive",
+      "version": "2026-01-24",
+      "revision": "7c4780c7031ba0d1236cb813aa3159931251ac84",
+      "url": "https://github.com/alex-free/lib-enigma/archive/7c4780c7031ba0d1236cb813aa3159931251ac84.tar.gz",
+      "filename": "lib-enigma-7c4780c7031ba0d1236cb813aa3159931251ac84.tar.gz",
+      "sha256": "88457157aaf5c45d4fe96b9dca66b0b247eadfea6cd6462c6e14b3ee23b72ce5",
+      "source_url": "https://github.com/alex-free/lib-enigma",
+      "license": "BSD-3-Clause"
+    },
+    "atracdenc": {
+      "source_type": "git-submodule",
+      "version": "0.1.0-29-g0fe8e1a",
+      "revision": "0fe8e1a0d1a495e41a281f54af31d6713c0de01d",
+      "path": "atracdenc",
+      "source_url": "https://github.com/dcherednik/atracdenc",
+      "license": "LGPL-2.1-or-later",
+      "output": "atracdenc"
+    },
+    "psx-undither": {
+      "source_type": "git-submodule",
+      "version": "1.0-2-g5dcf937",
+      "revision": "5dcf93743f685d5eb9bda1b39485038f85eae0b2",
+      "path": "psx-undither",
+      "source_url": "https://github.com/alex-free/psx-undither",
+      "license": "GPL-2.0-only",
+      "output": "psxund"
+    },
+    "lib-ps-cd-id": {
+      "source_type": "git-submodule",
+      "version": "2025-01-20",
+      "revision": "d1587afcf083144d51d19a17588c9949eb8723a0",
+      "path": "psx-undither/lib-ps-cd-id",
+      "source_url": "https://github.com/alex-free/lib-ps-cd-id",
+      "license": "GPL-2.0-only"
+    },
+    "cue2cu2": {
+      "source_type": "git-submodule",
+      "version": "master-b88a780",
+      "revision": "b88a780b4877bdcae5f33f3bc7bd00b8fff72a55",
+      "path": "Cue2cu2",
+      "source_url": "https://github.com/NRGDEAD/Cue2cu2",
+      "license": "Apache-2.0",
+      "output": "cue2cu2"
+    },
+    "binmerge": {
+      "source_type": "git-submodule",
+      "version": "1.0.3-1-gaa82700",
+      "revision": "aa827005c71f18c8723017e26738d5b1920b26af",
+      "path": "binmerge",
+      "source_url": "https://github.com/putnam/binmerge",
+      "license": "GPL-2.0-or-later",
+      "output": "binmerge"
+    },
+    "ps3py": {
+      "source_type": "git-submodule",
+      "version": "master-6-gb5134ab",
+      "revision": "b5134abb7fc2a49dd48cf4b539836a39a05eac83",
+      "path": "PSL1GHT",
+      "source_url": "https://github.com/ps3dev/PSL1GHT",
+      "license": "MIT",
+      "output": "pkg"
+    },
+    "sign3": {
+      "source_type": "repository",
+      "version": "pop-fe",
+      "path": "sign3.py",
+      "source_url": "https://github.com/sahlberg/pop-fe",
+      "license": "LGPL-2.1-only",
+      "output": "sign3"
+    }
+  }
+}
