@@ -339,6 +339,16 @@ class RuntimePaths:
                 if self._tool_is_usable(candidate):
                     return candidate
 
+        # Existing Windows one-directory builds stage their helpers beside
+        # the PyInstaller launcher, outside sys._MEIPASS. Keep that layout
+        # compatible; packaged macOS tools remain sealed under Resources.
+        if self.frozen and self.is_windows:
+            for name in names:
+                candidate = (self.executable.parent / name).resolve()
+                searched.append(candidate)
+                if self._tool_is_usable(candidate):
+                    return candidate
+
         if not self.frozen:
             for relative in _SOURCE_TOOL_PATHS.get(logical_name, ()):
                 candidate = (self.source_root / relative).resolve()

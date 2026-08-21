@@ -299,6 +299,22 @@ class RuntimePathsTests(unittest.TestCase):
 
             self.assertEqual(runtime.tool_path("xdelta3"), helper.resolve())
 
+    def test_frozen_windows_tools_support_existing_sibling_layout(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            helper = root / "distribution" / "ffmpeg.exe"
+            helper.parent.mkdir(parents=True)
+            helper.write_bytes(b"helper")
+            runtime = self.make_runtime(
+                directory,
+                platform="win32",
+                frozen=True,
+                meipass=root / "distribution" / "_internal",
+                executable=root / "distribution" / "pop-fe.exe",
+            )
+
+            self.assertEqual(runtime.tool_path("ffmpeg"), helper.resolve())
+
     def test_macos_finds_psp_and_vita_volumes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory).resolve()

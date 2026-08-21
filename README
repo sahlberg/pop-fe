@@ -614,9 +614,9 @@ macOS user data is stored at:
   Logs:         ~/Library/Logs/Pop-FE/
   Work cache:   ~/Library/Caches/Pop-FE/
 
-Failed conversions retain their unique work directory for diagnostics;
-successful conversions remove it. PSP/Vita and PlayStation Classic automatic
-discovery scans validated devices below /Volumes.
+Failed CLI conversions retain their unique work directory for diagnostics;
+successful CLI conversions remove it. PSP/Vita and PlayStation Classic
+automatic discovery scans validated devices below /Volumes.
 
 For installations on Linux/Posix/ you need to have a build environment.
 Make sure you have 'git', 'gcc', 'g++', 'make', 'cmake' installed.

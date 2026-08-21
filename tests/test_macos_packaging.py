@@ -79,7 +79,7 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertNotIn("/opt/homebrew", source)
         self.assertNotIn("brew install", source)
 
-    def test_verifier_rejects_homebrew_and_temporary_paths(self):
+    def test_verifier_rejects_newer_macos_and_nonportable_paths(self):
         source = (MACOS_PACKAGING / "verify-mach-o.sh").read_text(
             encoding="utf-8"
         )
@@ -92,6 +92,9 @@ class MacOSBuildScriptTests(unittest.TestCase):
             with self.subTest(path=forbidden_path):
                 self.assertIn(forbidden_path, source)
         self.assertIn('otool -l "$candidate"', source)
+        self.assertIn('vtool -show-build "$candidate"', source)
+        self.assertIn("MAXIMUM_MINIMUM_MACOS", source)
+        self.assertIn("version_is_greater", source)
 
     def test_python_extensions_have_local_rpaths_removed_before_freezing(self):
         source = (MACOS_PACKAGING / "build-helpers.sh").read_text(
