@@ -14,9 +14,15 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
+def load_font(size):
+    try:
+        return ImageFont.truetype(font, size)
+    except OSError:
+        return ImageFont.load_default()
+
 def create_dotpainting_pic0(game_id, title):
     p0 = Image.new("RGB", (250, 140), (0,0,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(p0)
 
     off = 80

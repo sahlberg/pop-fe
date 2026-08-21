@@ -14,9 +14,15 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
+def load_font(size):
+    try:
+        return ImageFont.truetype(font, size)
+    except OSError:
+        return ImageFont.load_default()
+
 def create_ascii_pic0(game_id, title):
     pic0 = Image.new("RGBA", (250, 140), (255,255,255,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(pic0)
 
     off = 80
@@ -49,7 +55,7 @@ def create_ascii_pic1(game_id, icon0):
     AC = ["W", "#", "%", "?", "*", "+", ";", ":", ",", ".", " "]
     icon0 = icon0.convert("L").resize((120,120), Image.Resampling.BILINEAR)
     pic1 = Image.new("RGB", (1920, 1080), (0,0,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(pic1)
     for i in range(120):
         for j in range(120):
