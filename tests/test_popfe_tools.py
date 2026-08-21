@@ -66,6 +66,16 @@ class BackendToolIntegrationTests(unittest.TestCase):
             with self.subTest(command=command):
                 self.assertNotIn(command, source)
 
+    def test_cli_uses_runtime_workspace_instead_of_current_directory(self):
+        source = (REPOSITORY_ROOT / "pop-fe.py").read_text(encoding="utf-8")
+        self.assertIn(
+            "popfe_runtime.application_work_dir('cli', 'pop-fe-work')",
+            source,
+        )
+        self.assertIn("popfe_runtime.remove_work_dir(work_dir)", source)
+        self.assertNotIn("subdir = 'pop-fe-work/'", source)
+        self.assertNotIn("os.unlink('NORMAL01.iso')", source)
+
 
 if __name__ == "__main__":
     unittest.main()

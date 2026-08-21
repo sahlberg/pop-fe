@@ -4710,14 +4710,11 @@ if __name__ == "__main__":
         print('You must specify at least one file to fetch images for')
         exit(1)
 
-    subdir = 'pop-fe-work/'
-    shutil.rmtree(subdir, ignore_errors=True)
-    os.mkdir(subdir)
-        
-    try:
-        os.unlink('NORMAL01.iso')
-    except:
-        True
+    work_dir = popfe_runtime.application_work_dir('cli', 'pop-fe-work')
+    if not popfe_runtime.is_macos:
+        shutil.rmtree(work_dir, ignore_errors=True)
+        work_dir.mkdir(parents=True)
+    subdir = str(work_dir) + os.sep
 
     idx = None
     cue_files = []
@@ -4769,7 +4766,10 @@ if __name__ == "__main__":
         romhacks = args.romhacks.split(',')
         if len(romhacks) != len(cue_files):
             print('--romhacks must have one patch for each disk. Found %d disks but only %d romhacks.' % (len(cue_files), len(romhacks)))
-            shutil.rmtree('pop-fe-work', ignore_errors=True)
+            if popfe_runtime.is_macos:
+                popfe_runtime.remove_work_dir(work_dir)
+            else:
+                shutil.rmtree(work_dir, ignore_errors=True)
             os._exit(1)
         cue_files, img_files = apply_romhacks(real_disc_ids, cue_files, img_files, romhacks, subdir)
     
@@ -4996,4 +4996,7 @@ if __name__ == "__main__":
                 os.rmdir(f)
             except:
                 True
-    shutil.rmtree('pop-fe-work', ignore_errors=True)
+    if popfe_runtime.is_macos:
+        popfe_runtime.remove_work_dir(work_dir)
+    else:
+        shutil.rmtree(work_dir, ignore_errors=True)
