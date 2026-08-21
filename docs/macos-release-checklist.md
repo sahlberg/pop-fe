@@ -104,12 +104,3 @@ requirement and is not a self-contained macOS test.
 - [ ] PlayStation Classic AutoBleem volume is discovered and launches the PBP.
 
 Unavailable hardware must be reported as **not tested**, never as passed.
-
-## Current development validation (2026-08-21)
-
-- Local host: Apple Silicon, macOS 26.5.2, Python 3.12.13 via pyenv, Tk 8.6.
-- Passed: unit suite, helper architecture/linkage verification, application
-  smoke, mounted-DMG smoke, ad-hoc signature verification, SHA-256 validation,
-  and the complete synthetic parity matrix above.
-- Not yet tested: quarantine/Open Anyway from a GitHub-downloaded artifact,
-  macOS 14 clean-machine runtime, and every real-device item.
