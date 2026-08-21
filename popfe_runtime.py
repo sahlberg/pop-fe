@@ -301,5 +301,28 @@ class RuntimePaths:
             )
         return None
 
+    def tool_command(
+        self,
+        logical_name: str,
+        *arguments: object,
+        path_search: Callable[[str], Optional[str]] = shutil.which,
+    ) -> list[str]:
+        """Build an argument vector for a required native or Python helper."""
+        tool = self.tool_path(
+            logical_name,
+            required=True,
+            path_search=path_search,
+        )
+        command = [str(tool)]
+        if tool.suffix == ".py":
+            if self.frozen:
+                raise MissingToolError(
+                    f"Packaged helper '{logical_name}' must be a standalone "
+                    "executable, not a Python source file"
+                )
+            command.insert(0, str(self.executable))
+        command.extend(str(argument) for argument in arguments)
+        return command
+
 
 runtime = RuntimePaths.detect()

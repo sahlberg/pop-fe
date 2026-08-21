@@ -16,9 +16,15 @@ if sys.platform == 'win32':
 else:
     font = 'DejaVuSansMono.ttf'
 
+def load_font(size):
+    try:
+        return ImageFont.truetype(font, size)
+    except OSError:
+        return ImageFont.load_default()
+
 def create_oilpainting_pic0(game_id, title, tmpfile):
     p0 = Image.new("RGB", (250, 140), (0,0,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(p0)
 
     off = 100
@@ -67,7 +73,7 @@ def create_oilpainting_pic1(game_id, icon0, tmpfile):
     
 def create_watercolor_pic0(game_id, title, tmpfile):
     p0 = Image.new("RGB", (250, 140), (0,0,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(p0)
 
     off = 100
@@ -116,7 +122,7 @@ def create_watercolor_pic1(game_id, icon0, tmpfile):
     
 def create_colorsketch_pic0(game_id, title, tmpfile):
     p0 = Image.new("RGB", (250, 140), (0,0,0))
-    fnt = ImageFont.truetype(font, 12)
+    fnt = load_font(12)
     d = ImageDraw.Draw(p0)
 
     off = 100

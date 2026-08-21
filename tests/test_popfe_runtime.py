@@ -177,6 +177,37 @@ class RuntimePathsTests(unittest.TestCase):
                 Path("/opt/tools/xdelta3"),
             )
 
+    def test_tool_command_uses_runtime_python_for_source_script(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            script = root / "source" / "sign3.py"
+            script.parent.mkdir(parents=True)
+            script.write_text("#!/usr/bin/env python3\n", encoding="utf-8")
+            runtime = self.make_runtime(directory, executable=root / "python3")
+
+            self.assertEqual(
+                runtime.tool_command("sign3", "image.bin"),
+                [str(root / "python3"), str(script), "image.bin"],
+            )
+
+    def test_tool_command_executes_native_helper_directly(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            helper = root / "resources" / "tools" / "ffmpeg"
+            helper.parent.mkdir(parents=True)
+            helper.write_bytes(b"helper")
+            helper.chmod(0o755)
+            runtime = self.make_runtime(
+                directory,
+                frozen=True,
+                meipass=root / "resources",
+            )
+
+            self.assertEqual(
+                runtime.tool_command("ffmpeg", "-version"),
+                [str(helper), "-version"],
+            )
+
     @unittest.skipUnless(os.name == "posix", "POSIX executable mode test")
     def test_non_executable_bundle_helper_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
