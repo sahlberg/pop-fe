@@ -185,6 +185,13 @@ class MacOSBuildScriptTests(unittest.TestCase):
         self.assertEqual(source.count("POPFE_GUI_SMOKE_TEST=1"), 2)
         self.assertEqual(source.count("codesign --verify --deep --strict"), 2)
 
+    def test_psp_gui_smoke_supports_folder_import(self):
+        source = (REPOSITORY_ROOT / "pop-fe-psp.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("POPFE_GUI_IMPORT_FOLDER", source)
+        self.assertIn("app.import_folder(", source)
+
     def test_cli_is_a_versioned_single_file_executable(self):
         spec = (MACOS_PACKAGING / "pop-fe-cli.spec").read_text(encoding="utf-8")
         source = (REPOSITORY_ROOT / "pop-fe.py").read_text(encoding="utf-8")

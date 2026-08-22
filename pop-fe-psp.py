@@ -12,7 +12,9 @@ import subprocess
 import tkinter as tk
 import tkinter.ttk as ttk
 import zipfile
+from tkinter import filedialog, messagebox
 from popfe_gui import install_tk_error_handler
+from popfe_psp_import import FolderImportError, scan_psp_folder
 from popfe_runtime import runtime as popfe_runtime
 
 have_pytube = False
@@ -34,6 +36,11 @@ from cue import parse_ccd, ccd2cue, write_cue
 
 verbose = False
 temp_files = []
+
+DISC_FILETYPES = [
+    ('PlayStation images', '*.cue *.ccd *.chd *.zip *.img *.bin'),
+    ('All files', '*'),
+]
 
 PROJECT_PATH = popfe_runtime.resource_root
 PROJECT_UI = popfe_runtime.resource_path("pop-fe-psp.ui", required=True)
@@ -86,6 +93,7 @@ class PopFePs3App:
         self.pic0yoffset = 0.1
         self.manual = None
         self.icon0_path = None
+        self.snd0_path = None
         self.path_dir = None
         
         self.master = master
@@ -96,6 +104,8 @@ class PopFePs3App:
 
         callbacks = {
             'on_icon0_clicked': self.on_icon0_clicked,
+            'on_add_disc': self.on_add_disc,
+            'on_import_folder': self.on_import_folder,
             'on_pic0_clicked': self.on_pic0_clicked,
             'on_pic0_disabled': self.on_pic0_disabled,
             'on_pic1_disabled': self.on_pic1_disabled,
@@ -120,6 +130,12 @@ class PopFePs3App:
         }
 
         builder.connect_callbacks(callbacks)
+        self.builder.get_variable('import_all_discs_variable').set('on')
+        for object_id in ('discs', 'separator5', 'frame1'):
+            self.builder.get_object(object_id, self.master).pack_configure(fill='x')
+        self.builder.get_object('output_frame', self.master).columnconfigure(
+            1, weight=1
+        )
 
         # Tooltips
         self.use_psx_undither = builder.get_object("use_psx_undither")
@@ -211,13 +227,17 @@ class PopFePs3App:
         self.pic1_tk = None
         self.preview_tk = None
         self.manual = None
+        self.icon0_path = None
+        self.snd0_path = None
         for idx in range(1,6):
             self.builder.get_object('discid%d' % (idx), self.master).config(state='disabled')
             self.builder.get_object('disc' + str(idx), self.master).config(filetypes=[('Image files', ['.cue', '.ccd', '.img', '.zip', '.chd']), ('All Files', ['*.*', '*'])])
             self.builder.get_variable('disc%d_variable' % (idx)).set('')
             self.builder.get_variable('discid%d_variable' % (idx)).set('')
             self.builder.get_object('disc' + str(idx), self.master).config(state='disabled')
-        self.builder.get_object('disc1', self.master).config(state='normal')
+            self.builder.get_object('disc' + str(idx), self.master).grid_remove()
+            self.builder.get_object('discid%d' % (idx), self.master).grid_remove()
+        self.builder.get_object('add_disc_button', self.master).config(state='normal')
         self.builder.get_object('create_button', self.master).config(state='disabled')
         self.builder.get_object('youtube_button', self.master).config(state='disabled')
         self.builder.get_object('pic0scaling', self.master).config(state='disabled')
@@ -235,6 +255,7 @@ class PopFePs3App:
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
         self.builder.get_variable('pic0yoffset_variable').set('')
+        self.builder.get_variable('import_summary_variable').set('')
 
     def update_prefs(self):
         PREFERENCES_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -301,9 +322,8 @@ class PopFePs3App:
         self.update_assets()
         self.master.config(cursor='')
 
-    def fetch_pic0(self):
+    def fetch_pic0(self, game=None):
         disc_id = self.disc_ids[0]
-        game = popfe.get_game_from_gamelist(disc_id)
 
         self.pic0 = None
         if self.pic0_path:
@@ -315,8 +335,14 @@ class PopFePs3App:
                 self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC0.png')
             self.pic0 = self.pic0_orig
         if not self.pic0:
+            if game is None and disc_id in games:
+                game = popfe.get_game_from_gamelist(disc_id)
             self.pic0_orig = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig, no_scaling=True)
-            self.pic0 = popfe.rescale_pic0(self.pic0_orig, popfe.get_pic0_scaling(disc_id), popfe.get_pic0_offset(disc_id))
+            self.pic0 = popfe.rescale_pic0(
+                self.pic0_orig,
+                self.pic0scaling,
+                (self.pic0xoffset, self.pic0yoffset),
+            )
         if self.pic0:
             temp_files.append(self.subdir + 'PIC0.PNG')
             self.pic0.resize((128,80), Image.Resampling.HAMMING).save(self.subdir + 'PIC0.PNG')
@@ -330,12 +356,23 @@ class PopFePs3App:
         if not self.cue_file_orig:
             return
         disc_id = self.disc_ids[0]
-        game = popfe.get_game_from_gamelist(disc_id)
+        needs_game_data = (
+            (update_icon0 and not self.icon0_path)
+            or (update_pic0 and not self.pic0_path)
+            or (update_pic1 and not self.pic1_path)
+        )
+        game = (
+            popfe.get_game_from_gamelist(disc_id)
+            if needs_game_data and disc_id in games
+            else None
+        )
 
         if update_icon0:
             print('Fetching ICON0') if verbose else None
             self.icon0 = None
-            if self._theme != '':
+            if self.icon0_path:
+                self.icon0 = Image.open(self.icon0_path)
+            elif self._theme != '':
                 print('Get icon0 from theme')
                 self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'ICON0.PNG')
                 if not self.icon0:
@@ -343,7 +380,10 @@ class PopFePs3App:
                 if self.icon0:
                     self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
-                self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
+                if disc_id in games:
+                    self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
+                else:
+                    self.icon0 = Image.new('RGBA', (80, 80), (255, 255, 255, 0))
             if self.icon0:
                 temp_files.append(self.subdir + 'ICON0.PNG')
                 self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
@@ -354,7 +394,9 @@ class PopFePs3App:
         if self.snd0_disabled == 'off':
             snd0 = None
             print('Fetching SND0') if verbose else None
-            if self._theme != '':
+            if self.snd0_path:
+                snd0 = self.snd0_path
+            elif self._theme != '':
                 snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, self.subdir)
                 if snd0:
                     temp_files.append(snd0)
@@ -365,7 +407,7 @@ class PopFePs3App:
                 
         if update_pic0:
             print('Fetching PIC0') if verbose else None
-            self.fetch_pic0()
+            self.fetch_pic0(game=game)
         
         if update_pic1:
             print('Fetching PIC1') if verbose else None
@@ -387,33 +429,46 @@ class PopFePs3App:
 
         self.update_preview()
         
-    def on_path_changed(self, event):
-        cue_file = event.widget.cget('path')
-        img_file = None
-        if not len(cue_file):
-            return
+    def _sync_disc_rows(self):
+        loaded = len(self.cue_files)
+        for idx in range(1, 6):
+            chooser = self.builder.get_object('disc%d' % idx, self.master)
+            disc_id = self.builder.get_object('discid%d' % idx, self.master)
+            if idx <= loaded:
+                chooser.grid()
+                disc_id.grid()
+                chooser.config(state='disabled')
+                disc_id.config(state='normal')
+            else:
+                chooser.grid_remove()
+                disc_id.grid_remove()
+        self.builder.get_object('add_disc_button', self.master).config(
+            state='disabled' if loaded >= 5 else 'normal'
+        )
 
-        self.path_dir = os.path.dirname(cue_file)
-        self.update_prefs()
+    def load_disc(self, source_path, idx, fallback_title=None):
+        if idx != len(self.cue_files) + 1 or idx > 5:
+            raise ValueError('Discs must be loaded in order, up to five.')
 
-        self.master.config(cursor='watch')
-        self.master.update()
-        self.cue_file_orig = cue_file
-        print('Processing', cue_file)  if verbose else None
-        disc = event.widget.cget('title')
-        print('Disc', disc)  if verbose else None
-        idx = int(disc[1])
+        source_path = os.path.abspath(source_path)
+        self.path_dir = os.path.dirname(source_path)
+        self.builder.get_variable('disc%d_variable' % idx).set(source_path)
+        self.cue_file_orig = source_path
+        print('Processing', source_path) if verbose else None
 
-        cue_file , real_cue_file, img_file = popfe.process_disk_file(cue_file, idx, temp_files, subdir=self.subdir)
+        cue_file, real_cue_file, img_file = popfe.process_disk_file(
+            source_path, idx, temp_files, subdir=self.subdir
+        )
         self.cue_file_orig = real_cue_file
-            
+
         print('Scanning for Game ID') if verbose else None
-        tmp = self.subdir + 'TMP01.iso'
-        disc_id, md5 = popfe.get_disc_id(cue_file, self.cue_file_orig, tmp, is_psp=True)
+        tmp = self.subdir + 'TMP%02d.iso' % idx
+        disc_id, md5 = popfe.get_disc_id(
+            cue_file, self.cue_file_orig, tmp, is_psp=True
+        )
         print('ID', disc_id)
         temp_files.append(tmp)
-
-        self.builder.get_variable('disci%s_variable' % (disc)).set(disc_id)
+        self.builder.get_variable('discid%d_variable' % idx).set(disc_id)
 
         self.img_files.append(img_file)
         self.disc_ids.append(disc_id)
@@ -422,68 +477,165 @@ class PopFePs3App:
         self.cue_files.append(cue_file)
         self.real_cue_files.append(real_cue_file)
 
-        if disc_id in games and 'manual' in games[disc_id]:
-            print('Found an MANUAL for', disc_id)
+        if not self.manual and disc_id in games and 'manual' in games[disc_id]:
+            print('Found a manual for', disc_id) if verbose else None
             self.manual = games[disc_id]['manual']
         if disc_id in games and 'psp-use-cdda' in games[disc_id]:
             self.cdda = 'on'
             self.builder.get_variable('cdda_variable').set(self.cdda)
-        
-        if disc == 'd1':
-            self.builder.get_object('discid1', self.master).config(state='normal')
-            self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
+
+        if idx == 1:
+            title = popfe.get_title_from_game(disc_id)
+            if title == 'Unknown' and fallback_title:
+                title = fallback_title
+            self.builder.get_variable('title_variable').set(title)
 
             if disc_id in games and 'pic0-scaling' in games[disc_id]:
-               self.pic0scaling = games[disc_id]['pic0-scaling']
+                self.pic0scaling = games[disc_id]['pic0-scaling']
             else:
                 self.pic0scaling = 0.9
             self.builder.get_variable('pic0scaling_variable').set(self.pic0scaling)
-            self.builder.get_object('pic0scaling', self.master).config(state='enabled')
+            self.builder.get_object('pic0scaling', self.master).config(state='normal')
 
             if disc_id in games and 'pic0-offset' in games[disc_id]:
-               self.pic0xoffset = games[disc_id]['pic0-offset'][0]
-               self.pic0yoffset = games[disc_id]['pic0-offset'][1]
+                self.pic0xoffset, self.pic0yoffset = games[disc_id]['pic0-offset']
             else:
                 self.pic0xoffset = 0.1
                 self.pic0yoffset = 0.1
             self.builder.get_variable('pic0xoffset_variable').set(self.pic0xoffset)
-            self.builder.get_object('pic0xoffset', self.master).config(state='enabled')
             self.builder.get_variable('pic0yoffset_variable').set(self.pic0yoffset)
-            self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
-            self.builder.get_variable('manual_variable').set(self.manual)
-            self.builder.get_object('manual', self.master).config(state='enabled')
+            self.builder.get_object('pic0xoffset', self.master).config(state='normal')
+            self.builder.get_object('pic0yoffset', self.master).config(state='normal')
+            self.builder.get_variable('manual_variable').set(self.manual or '')
+            self.builder.get_object('manual', self.master).config(state='normal')
             self.update_assets()
-            
-            self.builder.get_object('disc1', self.master).config(state='disabled')
-            self.builder.get_object('disc2', self.master).config(state='normal')
-            if self.path_dir:
-                self.builder.get_object('disc2', self.master).config(initialdir=self.path_dir)
             self.builder.get_object('youtube_button', self.master).config(state='normal')
             self.builder.get_object('create_button', self.master).config(state='normal')
-            self.update_preview()
-        elif disc == 'd2':
-            self.builder.get_object('discid2', self.master).config(state='normal')
-            self.builder.get_object('disc2', self.master).config(state='disabled')
-            self.builder.get_object('disc3', self.master).config(state='normal')
-            if self.path_dir:
-                self.builder.get_object('disc3', self.master).config(initialdir=self.path_dir)
-        elif disc == 'd3':
-            self.builder.get_object('discid3', self.master).config(state='normal')
-            self.builder.get_object('disc3', self.master).config(state='disabled')
-            self.builder.get_object('disc4', self.master).config(state='normal')
-            if self.path_dir:
-                self.builder.get_object('disc4', self.master).config(initialdir=self.path_dir)
-        elif disc == 'd4':
-            self.builder.get_object('discid4', self.master).config(state='normal')
-            self.builder.get_object('disc4', self.master).config(state='disabled')
-            self.builder.get_object('disc5', self.master).config(state='normal')
-            if self.path_dir:
-                self.builder.get_object('disc5', self.master).config(initialdir=self.path_dir)
-        elif disc == 'd5':
-            self.builder.get_object('discid5', self.master).config(state='normal')
-            self.builder.get_object('disc5', self.master).config(state='disabled')
+
+        self._sync_disc_rows()
+        self.update_prefs()
         print('Finished processing disc') if verbose else None
-        self.master.config(cursor='')
+
+    def _load_disc_with_dialog(self, source_path, idx, fallback_title=None):
+        self.master.config(cursor='watch')
+        self.master.update()
+        try:
+            self.load_disc(source_path, idx, fallback_title=fallback_title)
+        except Exception as error:
+            messagebox.showerror('Could not load disc', str(error), parent=self.master)
+            return False
+        finally:
+            self.master.config(cursor='')
+        return True
+
+    def on_add_disc(self):
+        idx = len(self.cue_files) + 1
+        if idx > 5:
+            return
+        source_path = filedialog.askopenfilename(
+            title='Select PlayStation disc image',
+            initialdir=self.path_dir or str(popfe_runtime.home),
+            filetypes=DISC_FILETYPES,
+        )
+        if source_path:
+            self._load_disc_with_dialog(source_path, idx)
+
+    def _apply_folder_assets(self, assets):
+        self.icon0_path = str(assets['icon0']) if 'icon0' in assets else None
+        self.pic0_path = str(assets['pic0']) if 'pic0' in assets else None
+        self.pic1_path = str(assets['pic1']) if 'pic1' in assets else None
+        self.snd0_path = str(assets['snd0']) if 'snd0' in assets else None
+        self.manual = str(assets['manual']) if 'manual' in assets else None
+        self.builder.get_variable('snd0_variable').set(self.snd0_path or '')
+        self.builder.get_variable('manual_variable').set(self.manual or '')
+        self.builder.get_variable('logo_variable').set(
+            str(assets['logo']) if 'logo' in assets else ''
+        )
+
+    def _set_folder_import_summary(self, result):
+        labels = {
+            'icon0': 'ICON0',
+            'pic0': 'PIC0',
+            'pic1': 'PIC1',
+            'snd0': 'SND0',
+            'manual': 'manual',
+            'logo': 'logo',
+        }
+        local = [labels[field] for field in labels if field in result.assets]
+        automatic = []
+        resolved = {
+            'icon0': self.icon0,
+            'pic0': self.pic0,
+            'pic1': self.pic1,
+            'snd0': self.builder.get_variable('snd0_variable').get(),
+            'manual': self.builder.get_variable('manual_variable').get(),
+        }
+        for field, value in resolved.items():
+            if field not in result.assets and value:
+                automatic.append(labels[field])
+
+        parts = [
+            'Loaded %d disc%s' % (
+                len(result.discs), '' if len(result.discs) == 1 else 's'
+            )
+        ]
+        if local:
+            parts.append('Local: ' + ', '.join(local))
+        if automatic:
+            parts.append('Automatic: ' + ', '.join(automatic))
+        parts.extend(result.warnings)
+        self.builder.get_variable('import_summary_variable').set('  |  '.join(parts))
+
+    def import_folder(self, directory, import_all_discs=True):
+        result = scan_psp_folder(
+            directory,
+            import_all_discs=import_all_discs,
+        )
+        self.init_data()
+        self.path_dir = str(result.directory)
+        self._apply_folder_assets(result.assets)
+        for idx, source_path in enumerate(result.discs, start=1):
+            self.load_disc(
+                str(source_path),
+                idx,
+                fallback_title=result.fallback_title if idx == 1 else None,
+            )
+        self._set_folder_import_summary(result)
+        self.update_prefs()
+        return result
+
+    def on_import_folder(self):
+        directory = filedialog.askdirectory(
+            title='Import PlayStation game folder',
+            initialdir=self.path_dir or str(popfe_runtime.home),
+        )
+        if not directory:
+            return
+
+        self.master.config(cursor='watch')
+        self.master.update()
+        try:
+            self.import_folder(
+                directory,
+                import_all_discs=(
+                    self.builder.get_variable('import_all_discs_variable').get()
+                    == 'on'
+                ),
+            )
+        except FolderImportError as error:
+            messagebox.showerror('Could not import folder', str(error), parent=self.master)
+        except Exception as error:
+            self.init_data()
+            messagebox.showerror('Could not import folder', str(error), parent=self.master)
+        finally:
+            self.master.config(cursor='')
+
+    def on_path_changed(self, event):
+        source_path = event.widget.cget('path')
+        if not source_path:
+            return
+        idx = int(event.widget.cget('title')[1])
+        self._load_disc_with_dialog(source_path, idx)
 
 
     def update_preview(self):
@@ -508,7 +660,11 @@ class PopFePs3App:
         if self.pic0_disabled == 'on':
             _pic0 = None
         else:
-            _pic0 = popfe.rescale_pic0(self.pic0_orig, popfe.get_pic0_scaling(self.disc_ids[0]), popfe.get_pic0_offset(self.disc_ids[0]))
+            _pic0 = popfe.rescale_pic0(
+                self.pic0_orig,
+                self.pic0scaling,
+                (self.pic0xoffset, self.pic0yoffset),
+            )
         if self.pic1_disabled == 'on':
             _pic1 = Image.new('RGBA', (1920, 1080), (0,0,0))
             _pic1.putalpha(0)
@@ -629,7 +785,8 @@ class PopFePs3App:
 
         if v > 0.1 and v != self.pic0scaling and self.disc_ids:
             self.pic0scaling = v
-            games[self.disc_ids[0]]['pic0-scaling'] = self.pic0scaling
+            if self.disc_ids[0] in games:
+                games[self.disc_ids[0]]['pic0-scaling'] = self.pic0scaling
             self.update_preview()
 
     def on_pic0_xoffset(self, event):
@@ -640,7 +797,8 @@ class PopFePs3App:
 
         if v >= 0.0 and v != self.pic0xoffset and self.disc_ids:
             self.pic0xoffset = v
-            games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
+            if self.disc_ids[0] in games:
+                games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
             self.update_preview()
             
     def on_pic0_yoffset(self, event):
@@ -651,7 +809,8 @@ class PopFePs3App:
 
         if v >= 0.0 and v != self.pic0yoffset and self.disc_ids:
             self.pic0yoffset = v
-            games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
+            if self.disc_ids[0] in games:
+                games[self.disc_ids[0]]['pic0-offset'] = (self.pic0xoffset, self.pic0yoffset)
             self.update_preview()
             
     def on_dir_changed(self, event):
@@ -781,8 +940,29 @@ if __name__ == "__main__":
     if popfe_runtime.is_macos:
         install_tk_error_handler(root, popfe_runtime, "psp", "Pop-FE PSP Error")
     app = PopFePs3App(root)
-    root.title('pop-fe PSP')
+    root.title('Pop-FE PSP')
+    root.minsize(820, 560)
+    root.rowconfigure(0, weight=1)
+    root.columnconfigure(0, weight=1)
+    app.mainwindow.columnconfigure(0, weight=1)
+    app.mainwindow.columnconfigure(1, weight=1)
     if smoke_test:
+        import_directory = os.environ.get('POPFE_GUI_IMPORT_FOLDER')
+        if import_directory:
+            result = app.import_folder(
+                import_directory,
+                import_all_discs=(
+                    os.environ.get('POPFE_GUI_IMPORT_ALL_DISCS', '1') != '0'
+                ),
+            )
+            print(
+                'Imported %d disc(s): %s; %s'
+                % (
+                    len(result.discs),
+                    result.fallback_title,
+                    app.builder.get_variable('import_summary_variable').get(),
+                )
+            )
         root.update_idletasks()
         root.destroy()
     else:

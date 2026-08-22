@@ -279,6 +279,11 @@ automatically eject when you create a PSP EBOOT.
 This is done by storing the config file in the same directory as the cue file
 and with the filename <cue-file>.pspconfig
 
+The PSP GUI can import a game folder. It loads up to five disc images, uses
+ICON0.PNG, PIC0.PNG, PIC1.PNG, SND0.AT3, MANUAL.* and LOGO.PNG when present,
+then fetches only the missing metadata and artwork. Disable "Import all discs
+in folder" to load only the first image.
+
 Image files for PS3 packages
 ============================
 PS3 packages uses 3 image files: <cue>_cover.png, <cue>_pic0.png and <cue>_pic1.png

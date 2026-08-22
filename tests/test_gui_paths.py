@@ -53,6 +53,17 @@ class GuiPathTests(unittest.TestCase):
             self.assertIn("RuntimeError", contents)
             self.assertIn("Platform: darwin", contents)
 
+    def test_psp_gui_exposes_folder_and_manual_disc_import(self):
+        ui = (REPOSITORY_ROOT / "pop-fe-psp.ui").read_text(encoding="utf-8")
+        source = (REPOSITORY_ROOT / "pop-fe-psp.py").read_text(encoding="utf-8")
+
+        self.assertIn("Import folder...", ui)
+        self.assertIn("Add disc...", ui)
+        self.assertIn("Import all discs in folder", ui)
+        self.assertIn("import_all_discs_variable", ui)
+        self.assertIn("def import_folder(", source)
+        self.assertIn("def load_disc(", source)
+
 
 if __name__ == "__main__":
     unittest.main()
