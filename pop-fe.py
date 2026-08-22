@@ -56,6 +56,11 @@ except:
     print('requests is not installed.\nYou should install requests by running:\npip3 install requests')
 import subprocess
 import zipfile
+from popfe_runtime import runtime as popfe_runtime
+try:
+    from popfe_build_version import VERSION as POPFE_VERSION
+except ImportError:
+    POPFE_VERSION = 'development'
 try:
     from vmp import encode_vmp
 except:
@@ -2026,7 +2031,10 @@ def get_snd0_from_theme(theme, game_id, subdir):
         temp_files.append(tmpfile)
         url = themes[theme]['url'] + '/blob/main/data/' + game_id + '/SND0.WAV' + '?raw=true'
         print('Try URL', url)
-        subprocess.run(['wget', '-q', url, '-O', tmpfile], timeout=30, check=True)
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
+        with open(tmpfile, 'wb') as output:
+            output.write(response.content)
         return tmpfile
     except:
         return None
@@ -2277,10 +2285,18 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
         s = parse_riff(tmp_wav)
         print('Creating temporary ATRAC3 file', tmp_snd0) if verbose else None
         try:
-            if os.name == 'posix':
-                subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True, stdout=subprocess.DEVNULL)
-            else:
-                subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', tmp_wav, '-o', tmp_snd0], check=True, stdout=subprocess.DEVNULL)
+            subprocess.run(
+                popfe_runtime.tool_command(
+                    'atracdenc',
+                    '--encode=atrac3',
+                    '-i',
+                    tmp_wav,
+                    '-o',
+                    tmp_snd0,
+                ),
+                check=True,
+                stdout=subprocess.DEVNULL,
+            )
         except:
             print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not create SND0.AT3\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             return None
@@ -2618,12 +2634,9 @@ def create_retroarch_cue(dest, game_title, cue_files, img_files, magic_word):
                 
 def create_psio(dest, game_id, game_title, icon0, cue_files, img_files, subdir = './'):
     try:
-        if os.name == 'posix':
-            os.stat('Cue2cu2/cue2cu2.py')
-        else:
-            os.stat('cue2cu2.exe')
+        popfe_runtime.tool_path('cue2cu2', required=True)
     except:
-        raise Exception('PSIO prefers CU2 files but cue2cu2.pu is not installed. See README file for instructions on how to install cue2cu2.')
+        raise Exception('PSIO requires the cue2cu2 helper, but it is not available.')
 
     f = dest + '/' + game_title
     try:
@@ -2933,7 +2946,11 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         disc_id = real_disc_ids[i]
         if disc_id in games and 'pspconfig' in games[disc_id]:
             print('Found an external config for', disc_id)
-            with open(games[disc_id]['pspconfig'], 'rb') as f:
+            config_path = popfe_runtime.resource_path(
+                games[disc_id]['pspconfig'],
+                required=True,
+            )
+            with open(config_path, 'rb') as f:
                 configs[i] = f.read()
         if force_ntsc == 1:
             print('Force NTSC in config')
@@ -3028,10 +3045,21 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         # XMB differences
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
-            if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stderr=subprocess.DEVNULL)
-            else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '44100', '-ac', '2', subdir + 'snd0_tmp.wav'], stderr=subprocess.DEVNULL)
+            subprocess.run(
+                popfe_runtime.tool_command(
+                    'ffmpeg',
+                    '-y',
+                    '-i',
+                    snd0,
+                    '-ar',
+                    '44100',
+                    '-ac',
+                    '2',
+                    subdir + 'snd0_tmp.wav',
+                ),
+                check=True,
+                stderr=subprocess.DEVNULL,
+            )
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
@@ -3169,7 +3197,11 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         disc_id = real_disc_ids[i]
         if disc_id in games and 'ps3config' in games[disc_id]:
             print('Found an external config for', disc_id)
-            with open(games[disc_id]['ps3config'], 'rb') as f:
+            config_path = popfe_runtime.resource_path(
+                games[disc_id]['ps3config'],
+                required=True,
+            )
+            with open(config_path, 'rb') as f:
                 f.seek(8)
                 configs[i] = configs[i] + f.read()
 
@@ -3273,10 +3305,22 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     if snd0:
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
-            if os.name == 'posix':
-                subprocess.call(['ffmpeg', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            else:
-                subprocess.call(['ffmpeg.exe', '-y', '-i', snd0, '-ar', '48000', '-ac', '2', subdir + 'snd0_tmp.wav'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            subprocess.run(
+                popfe_runtime.tool_command(
+                    'ffmpeg',
+                    '-y',
+                    '-i',
+                    snd0,
+                    '-ar',
+                    '48000',
+                    '-ac',
+                    '2',
+                    subdir + 'snd0_tmp.wav',
+                ),
+                check=True,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
             snd0 = subdir + 'snd0_tmp.wav'
         except:
             snd0 = None
@@ -3318,7 +3362,7 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         image.save(f + '/PIC1.PNG', format='PNG')
         temp_files.append(f + '/PIC1.PNG')
 
-    with open('PS3LOGO.DAT', 'rb') as i:
+    with open(popfe_runtime.resource_path('PS3LOGO.DAT', required=True), 'rb') as i:
         with open(f + '/PS3LOGO.DAT', 'wb') as o:
             o.write(i.read())
             temp_files.append(f + '/PS3LOGO.DAT')
@@ -3371,10 +3415,10 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
 
     # sign the ISO.BIN.DAT
     print('Signing', p.iso_bin_dat)
-    if os.name == 'posix':
-        subprocess.call(['python3', './sign3.py', p.iso_bin_dat])
-    else:
-        subprocess.call(['sign3.exe', p.iso_bin_dat])
+    subprocess.run(
+        popfe_runtime.tool_command('sign3', p.iso_bin_dat),
+        check=True,
+    )
 
     #
     # USRDIR/SAVEDATA
@@ -3454,10 +3498,16 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     # Create PS3 PKG
     #
     print('Create PKG')
-    if os.name == 'posix':
-        subprocess.call(['python3','PSL1GHT/tools/ps3py/pkg.py','-c', 'UP9000-%s_00-0000000000000001' % disc_ids[0],subdir + disc_ids[0], dest])
-    else:
-        subprocess.call(['pkg.exe','-c', 'UP9000-%s_00-0000000000000001' % disc_ids[0],subdir + disc_ids[0], dest])
+    subprocess.run(
+        popfe_runtime.tool_command(
+            'pkg',
+            '-c',
+            'UP9000-%s_00-0000000000000001' % disc_ids[0],
+            subdir + disc_ids[0],
+            dest,
+        ),
+        check=True,
+    )
     temp_files.append(subdir + disc_ids[0] + '/USRDIR/CONTENT')
     temp_files.append(subdir + disc_ids[0] + '/USRDIR/SAVEDATA')
     temp_files.append(subdir + disc_ids[0] + '/USRDIR')
@@ -3540,6 +3590,9 @@ def check_memory_card(f):
     
 
 def find_psp_mount():
+    if popfe_runtime.is_macos:
+        return str(popfe_runtime.find_psp_mount())
+
     candidates = ['/d', '/e', '/f', '/g']
     if os.name == 'posix':
         with open('/proc/self/mounts', 'r') as f:
@@ -3563,6 +3616,9 @@ def find_psp_mount():
 
 
 def find_psc_mount():
+    if popfe_runtime.is_macos:
+        return str(popfe_runtime.find_psc_mount())
+
     candidates = ['/d', '/e', '/f', '/g']
     if os.name == 'posix':
         with open('/proc/self/mounts', 'r') as f:
@@ -3769,6 +3825,11 @@ def get_disc_ids(cue_files, real_cue_files, subdir='./', is_psp=False):
 
 
 def install_deps():
+    if popfe_runtime.frozen:
+        raise RuntimeError(
+            'Packaged POP-FE builds already contain their dependencies and '
+            'cannot install or modify them at runtime.'
+        )
     print(os.name)
     subprocess.call(['git', 'submodule', 'update', '--init'])
 
@@ -4201,10 +4262,15 @@ def ApplyXDELTA(img, romhack):
     print('Applying XDELTA', romhack)
     _tmp = img + 'tmp'
     try:
-        if os.name == 'posix':
-            subprocess.run(['xdelta3', 'decode', '-s', img, romhack, _tmp], timeout=30, check=True)
-        else:
-            subprocess.run(['xdelta3', 'decode', '-s', img.replace("/", "\\"), romhack.replace("/", "\\"), _tmp.replace("/", "\\")], timeout=30, check=True)
+        command = popfe_runtime.tool_command(
+            'xdelta3',
+            'decode',
+            '-s',
+            img,
+            romhack,
+            _tmp,
+        )
+        subprocess.run(command, timeout=30, check=True)
     except:
         print('Could not apply xdelta3 patch. Is xdelta3 installed?')
         return
@@ -4256,10 +4322,12 @@ def apply_ppf_fixes(real_disc_ids, cue_files, img_files, md5_sums, subdir, tag=N
         img_files[i] = _b
 
         if ppf:
+            ppf = str(popfe_runtime.resource_path(ppf, required=True))
             print('Found PPF:', ppf_fixes[disc_id]['desc'], ppf)
             print('Applying', ppf, 'to', img_files[i])
             ApplyPPF(img_files[i], ppf)
         if xdelta:
+            xdelta = str(popfe_runtime.resource_path(xdelta, required=True))
             print('Found XDELTA:', ppf_fixes[disc_id]['desc'], xdelta)
             print('Applying', xdelta, 'to', img_files[i])
             ApplyXDELTA(img_files[i], xdelta)
@@ -4311,10 +4379,17 @@ def generate_cu2_files(cue_files, img_files, subdir):
         except:
             cu2_file = subdir + 'TMP%d.cu2' % (i)
             print('Creating temporary CU2 file: %s' % cu2_file) if verbose else None
-            if os.name == 'posix':
-                subprocess.call(['python3', 'Cue2cu2/cue2cu2.py', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
-            else:
-                subprocess.call(['cue2cu2.exe', '-n', cu2_file, '--size', str(os.stat(img_file).st_size), cue_file])
+            subprocess.run(
+                popfe_runtime.tool_command(
+                    'cue2cu2',
+                    '-n',
+                    cu2_file,
+                    '--size',
+                    str(os.stat(img_file).st_size),
+                    cue_file,
+                ),
+                check=True,
+            )
             temp_files.append(cu2_file)
         cu2_files.append(cu2_file)
     
@@ -4345,10 +4420,18 @@ def generate_aea_files(cue_files, img_files, subdir):
             temp_files.append(aea_file)
             print('Converting', f, 'to', aea_file)
             try:
-                if os.name == 'posix':
-                    subprocess.run(['./atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
-                else:
-                    subprocess.run(['atracdenc/src/atracdenc', '--encode=atrac3', '-i', f, '-o', aea_file], check=True, stdout=subprocess.DEVNULL)
+                subprocess.run(
+                    popfe_runtime.tool_command(
+                        'atracdenc',
+                        '--encode=atrac3',
+                        '-i',
+                        f,
+                        '-o',
+                        aea_file,
+                    ),
+                    check=True,
+                    stdout=subprocess.DEVNULL,
+                )
             except:
                 print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\natracdenc not found.\nCan not convert CDDA tracks.\nCreating EBOOT.PBP without support for CDDA audio.\nPlease see README file for how to install atracdenc\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                 break
@@ -4369,7 +4452,20 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
             temp_files.append(tmpcue)
             temp_files.append(tmpbin)
             print('Extracting', tmpcue, 'and', tmpbin, 'chd')  if verbose else None
-            subprocess.run(['chdman', 'extractcd', '-f', '-i', chd, '-ob', tmpbin, '-o', tmpcue], check=True)
+            subprocess.run(
+                popfe_runtime.tool_command(
+                    'chdman',
+                    'extractcd',
+                    '-f',
+                    '-i',
+                    chd,
+                    '-ob',
+                    tmpbin,
+                    '-o',
+                    tmpcue,
+                ),
+                check=True,
+            )
         except:
             print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nCHDMAN not found.\nCan not convert game\nPlease see README file for how to install chdman\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
             os._exit(10)
@@ -4426,18 +4522,21 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
 
     if len(i) > 1:
         try:
-            if os.name == 'posix':
-                os.stat('binmerge/binmerge')
-            else:
-                os.stat('binmerge.exe')
+            popfe_runtime.tool_path('binmerge', required=True)
         except:
             raise Exception('binmerge is required in order to support multi-bin disks. See README file for instructions on how to install binmerge.')
         mb = 'MB%d' % (idx)
         temp_files.append(mb)
-        if os.name == 'posix':
-            subprocess.call(['python3', 'binmerge/binmerge', '-o', subdir, cue_file, mb])
-        else:
-            subprocess.call(['binmerge.exe', '-o', subdir, cue_file, mb])
+        subprocess.run(
+            popfe_runtime.tool_command(
+                'binmerge',
+                '-o',
+                subdir,
+                cue_file,
+                mb,
+            ),
+            check=True,
+        )
         cue_file = subdir + mb + '.cue'
         temp_files.append(cue_file)
         img_file = subdir + mb + '.bin'
@@ -4472,10 +4571,10 @@ def patch_libcrypt(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
                 temp_files.append('LCP%02x.cue' % idx)
             cue_files[idx] = subdir + 'LCP%02x.cue' % idx
             img_files[idx] = subdir + 'LCP%02x.bin' % idx
-        if os.name == 'posix':
-            subprocess.run(['./lcp', img_files[idx]], check=True)
-        else:
-            subprocess.run(['lcp.exe', img_files[idx]], check=True)
+        subprocess.run(
+            popfe_runtime.tool_command('libcrypt-patcher', img_files[idx]),
+            check=True,
+        )
     return cue_files, img_files
 
 def patch_undither(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
@@ -4495,10 +4594,10 @@ def patch_undither(real_disc_ids, cue_files, img_files, subdir='pop-fe-work/'):
                 temp_files.append('UD%02x.cue' % idx)
             cue_files[idx] = subdir + 'UD%02x.cue' % idx
             img_files[idx] = subdir + 'UD%02x.bin' % idx
-        if os.name == 'posix':
-            subprocess.run(['./psx-undither/build/psxund', img_files[idx]], check=True)
-        else:
-            subprocess.run(['psxund.exe', img_files[idx].replace("/", "\\")], check=True)
+        subprocess.run(
+            popfe_runtime.tool_command('psx-undither', img_files[idx]),
+            check=True,
+        )
     return cue_files, img_files
 
 def print_toc(toc):
@@ -4513,6 +4612,7 @@ def print_toc(toc):
 #
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument('--version', action='version', version=POPFE_VERSION)
     parser.add_argument('-v', action='store_true', help='Verbose')
     parser.add_argument('--retroarch-thumbnail-dir',
                     help='Where to store retroarch thumbnails')
@@ -4610,14 +4710,11 @@ if __name__ == "__main__":
         print('You must specify at least one file to fetch images for')
         exit(1)
 
-    subdir = 'pop-fe-work/'
-    shutil.rmtree(subdir, ignore_errors=True)
-    os.mkdir(subdir)
-        
-    try:
-        os.unlink('NORMAL01.iso')
-    except:
-        True
+    work_dir = popfe_runtime.application_work_dir('cli', 'pop-fe-work')
+    if not popfe_runtime.is_macos:
+        shutil.rmtree(work_dir, ignore_errors=True)
+        work_dir.mkdir(parents=True)
+    subdir = str(work_dir) + os.sep
 
     idx = None
     cue_files = []
@@ -4669,7 +4766,10 @@ if __name__ == "__main__":
         romhacks = args.romhacks.split(',')
         if len(romhacks) != len(cue_files):
             print('--romhacks must have one patch for each disk. Found %d disks but only %d romhacks.' % (len(cue_files), len(romhacks)))
-            shutil.rmtree('pop-fe-work', ignore_errors=True)
+            if popfe_runtime.is_macos:
+                popfe_runtime.remove_work_dir(work_dir)
+            else:
+                shutil.rmtree(work_dir, ignore_errors=True)
             os._exit(1)
         cue_files, img_files = apply_romhacks(real_disc_ids, cue_files, img_files, romhacks, subdir)
     
@@ -4867,6 +4967,8 @@ if __name__ == "__main__":
     if args.retroarch_cue_dir:
         new_path = args.retroarch_cue_dir + '/' + game_title
         create_retroarch_cue(new_path, game_title, cue_files, img_files, magic_word)
+    if args.retroarch_thumbnail_dir:
+        create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
     if args.retroarch_pbp_dir:
         new_path = args.retroarch_pbp_dir + '/' + game_title + '.pbp'
         if icon0:
@@ -4884,9 +4986,6 @@ if __name__ == "__main__":
             pic1 = i.read()
         
         generate_pbp(new_path, disc_ids, game_title, icon0, None, pic1, cue_files, img_files, aea_files, None, subdir=subdir)
-    if args.retroarch_thumbnail_dir:
-        create_retroarch_thumbnail(args.retroarch_thumbnail_dir, game_title, icon0, pic1)
-
     for f in temp_files:
         print('Deleting temp file', f) if verbose else None
         try:
@@ -4896,4 +4995,7 @@ if __name__ == "__main__":
                 os.rmdir(f)
             except:
                 True
-    shutil.rmtree('pop-fe-work', ignore_errors=True)
+    if popfe_runtime.is_macos:
+        popfe_runtime.remove_work_dir(work_dir)
+    else:
+        shutil.rmtree(work_dir, ignore_errors=True)

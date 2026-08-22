@@ -1,0 +1,5 @@
+--- a/setup.py
++++ b/setup.py
+@@ -1 +1 @@
+-from distutils.core import setup, Extension
++from setuptools import setup, Extension

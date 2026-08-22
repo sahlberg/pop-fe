@@ -1,0 +1,11 @@
+Pillow==12.3.0
+PyPDF2==3.0.1
+opencv-contrib-python==5.0.0.93
+nodejs-wheel-binaries==24.19.0
+pycdlib==1.20.0
+pycryptodome==3.23.0
+pygubu==0.41.2
+pytubefix==10.11.0
+rarfile==4.5
+requests==2.34.2
+tkinterdnd2==0.6.2

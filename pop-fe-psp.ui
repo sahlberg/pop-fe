@@ -16,11 +16,11 @@
       <object class="ttk.Frame" id="output_frame">
         <layout manager="grid">
           <property name="column">0</property>
-          <property name="columnspan">1</property>
-          <property name="padx">10</property>
-          <property name="pady">5</property>
-          <property name="row">3</property>
-          <property name="sticky">nsew</property>
+          <property name="columnspan">2</property>
+          <property name="padx">12</property>
+          <property name="pady">8</property>
+          <property name="row">1</property>
+          <property name="sticky">ew</property>
         </layout>
         <child>
           <object class="ttk.Label" id="label15">
@@ -40,7 +40,7 @@
             <layout manager="grid">
               <property name="column">1</property>
               <property name="row">0</property>
-              <property name="sticky">w</property>
+              <property name="sticky">ew</property>
             </layout>
           </object>
         </child>
@@ -52,10 +52,10 @@
         <property name="width">200</property>
         <layout manager="grid">
           <property name="column">0</property>
-          <property name="columnspan">3</property>
-          <property name="padx">10</property>
-          <property name="pady">5</property>
-          <property name="row">5</property>
+          <property name="columnspan">2</property>
+          <property name="padx">12</property>
+          <property name="pady">8</property>
+          <property name="row">4</property>
           <property name="sticky">ew</property>
         </layout>
         <child>
@@ -83,7 +83,7 @@
         <property name="orient">horizontal</property>
         <layout manager="grid">
           <property name="column">0</property>
-          <property name="columnspan">3</property>
+          <property name="columnspan">2</property>
           <property name="pady">5</property>
           <property name="row">2</property>
           <property name="sticky">ew</property>
@@ -93,9 +93,12 @@
     <child>
       <object class="ttk.Frame" id="frame4">
         <layout manager="grid">
-          <property name="column">1</property>
-          <property name="padx">10</property>
+          <property name="column">0</property>
+          <property name="columnspan">2</property>
+          <property name="padx">12</property>
+          <property name="pady">8</property>
           <property name="row">3</property>
+          <property name="sticky">w</property>
         </layout>
         <child>
           <object class="ttk.Checkbutton" id="watermark">
@@ -245,15 +248,18 @@
         <property name="width">200</property>
         <layout manager="grid">
           <property name="column">1</property>
+          <property name="padx">12</property>
+          <property name="pady">12</property>
           <property name="row">0</property>
+          <property name="sticky">n</property>
         </layout>
         <child>
           <object class="ttk.Frame" id="preview">
             <property name="height">200</property>
-            <property name="padding">20</property>
+            <property name="padding">0</property>
             <property name="width">200</property>
             <layout manager="grid">
-              <property name="column">1</property>
+              <property name="column">0</property>
               <property name="row">0</property>
               <property name="sticky">n</property>
             </layout>
@@ -264,7 +270,7 @@
                 <layout manager="grid">
                   <property name="column">0</property>
                   <property name="columnspan">3</property>
-                  <property name="row">2</property>
+                  <property name="row">0</property>
                   <property name="sticky">nw</property>
                 </layout>
                 <child>
@@ -290,7 +296,7 @@
                 <property name="width">200</property>
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">3</property>
+                  <property name="row">1</property>
                   <property name="sticky">w</property>
                 </layout>
                 <child>
@@ -323,7 +329,7 @@
                 <property name="width">200</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">3</property>
+                  <property name="row">1</property>
                 </layout>
                 <child>
                   <object class="ttk.Label" id="label7">
@@ -355,7 +361,7 @@
                 <property name="width">200</property>
                 <layout manager="grid">
                   <property name="column">2</property>
-                  <property name="row">3</property>
+                  <property name="row">1</property>
                 </layout>
                 <child>
                   <object class="ttk.Label" id="label8">
@@ -389,7 +395,9 @@
             <property name="width">200</property>
             <layout manager="grid">
               <property name="column">0</property>
-              <property name="row">0</property>
+              <property name="pady">12</property>
+              <property name="row">1</property>
+              <property name="sticky">ew</property>
             </layout>
             <child>
               <object class="ttk.Frame" id="icon0">
@@ -428,8 +436,9 @@
                 <property name="height">200</property>
                 <property name="width">200</property>
                 <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">1</property>
+                  <property name="column">1</property>
+                  <property name="padx">16</property>
+                  <property name="row">0</property>
                 </layout>
                 <child>
                   <object class="tk.Canvas" id="pic0_canvas">
@@ -460,8 +469,8 @@
                 <property name="height">200</property>
                 <property name="width">200</property>
                 <layout manager="grid">
-                  <property name="column">0</property>
-                  <property name="row">2</property>
+                  <property name="column">2</property>
+                  <property name="row">0</property>
                 </layout>
                 <child>
                   <object class="tk.Canvas" id="pic1_canvas">
@@ -497,11 +506,15 @@
         <property name="width">200</property>
         <layout manager="grid">
           <property name="column">0</property>
+          <property name="padx">12</property>
+          <property name="pady">12</property>
           <property name="row">0</property>
+          <property name="sticky">nsew</property>
         </layout>
         <child>
           <object class="ttk.Frame" id="discs">
             <property name="height">200</property>
+            <property name="padding">8</property>
             <property name="width">200</property>
             <layout manager="pack" />
             <child>
@@ -513,7 +526,7 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">1</property>
+                  <property name="row">4</property>
                 </layout>
               </object>
             </child>
@@ -526,7 +539,7 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">2</property>
+                  <property name="row">5</property>
                 </layout>
               </object>
             </child>
@@ -539,7 +552,7 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">3</property>
+                  <property name="row">6</property>
                 </layout>
               </object>
             </child>
@@ -552,7 +565,7 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">4</property>
+                  <property name="row">7</property>
                 </layout>
               </object>
             </child>
@@ -565,16 +578,68 @@
                 <bind sequence="&lt;&lt;PathChooserPathChanged&gt;&gt;" handler="on_path_changed" add="" />
                 <layout manager="grid">
                   <property name="column">0</property>
-                  <property name="row">5</property>
+                  <property name="row">8</property>
                 </layout>
               </object>
             </child>
             <child>
               <object class="ttk.Label" id="label1">
-                <property name="text" translatable="yes">Discs:</property>
+                <property name="text" translatable="yes">Game files</property>
                 <layout manager="grid">
                   <property name="column">0</property>
                   <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="import_folder_button">
+                <property name="command" type="command" cbtype="simple">on_import_folder</property>
+                <property name="text" translatable="yes">Import folder...</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="padx">0 6</property>
+                  <property name="pady">6</property>
+                  <property name="row">1</property>
+                  <property name="sticky">ew</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="add_disc_button">
+                <property name="command" type="command" cbtype="simple">on_add_disc</property>
+                <property name="text" translatable="yes">Add disc...</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="pady">6</property>
+                  <property name="row">1</property>
+                  <property name="sticky">ew</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Checkbutton" id="import_all_discs">
+                <property name="offvalue">off</property>
+                <property name="onvalue">on</property>
+                <property name="text" translatable="yes">Import all discs in folder</property>
+                <property name="variable">string:import_all_discs_variable</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="columnspan">2</property>
+                  <property name="row">2</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="import_summary">
+                <property name="textvariable">string:import_summary_variable</property>
+                <property name="wraplength">460</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="columnspan">2</property>
+                  <property name="pady">0 6</property>
+                  <property name="row">3</property>
                   <property name="sticky">w</property>
                 </layout>
               </object>
@@ -586,7 +651,7 @@
                   <property name="column">0</property>
                   <property name="columnspan">2</property>
                   <property name="pady">5</property>
-                  <property name="row">6</property>
+                  <property name="row">9</property>
                   <property name="sticky">ew</property>
                 </layout>
               </object>
@@ -597,7 +662,7 @@
                 <property name="width">10</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">1</property>
+                  <property name="row">4</property>
                 </layout>
               </object>
             </child>
@@ -607,7 +672,7 @@
                 <property name="width">10</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">2</property>
+                  <property name="row">5</property>
                 </layout>
               </object>
             </child>
@@ -617,7 +682,7 @@
                 <property name="width">10</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">3</property>
+                  <property name="row">6</property>
                 </layout>
               </object>
             </child>
@@ -627,7 +692,7 @@
                 <property name="width">10</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">4</property>
+                  <property name="row">7</property>
                 </layout>
               </object>
             </child>
@@ -637,7 +702,7 @@
                 <property name="width">10</property>
                 <layout manager="grid">
                   <property name="column">1</property>
-                  <property name="row">5</property>
+                  <property name="row">8</property>
                 </layout>
               </object>
             </child>
@@ -652,8 +717,19 @@
         <child>
           <object class="ttk.Frame" id="frame1">
             <property name="height">200</property>
+            <property name="padding">8</property>
             <property name="width">200</property>
             <layout manager="pack" />
+            <child>
+              <object class="ttk.Label" id="metadata_heading">
+                <property name="text" translatable="yes">Metadata and assets</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
             <child>
               <object class="ttk.Frame" id="theme_frame">
                 <property name="height">200</property>
@@ -707,6 +783,7 @@
                 <child>
                   <object class="ttk.Entry" id="title" named="True">
                     <property name="textvariable">string:title_variable</property>
+                    <property name="width">36</property>
                     <layout manager="grid">
                       <property name="column">1</property>
                       <property name="row">0</property>

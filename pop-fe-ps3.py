@@ -5,7 +5,6 @@ import argparse
 import datetime
 import io
 import os
-import pathlib
 import pygubu
 import pygubu.widgets.simpletooltip as tooltip
 import re
@@ -16,6 +15,8 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinterdnd2 import *
 import zipfile
+from popfe_gui import install_tk_error_handler
+from popfe_runtime import runtime as popfe_runtime
 
 
 have_pytube = False
@@ -38,8 +39,11 @@ from cue import parse_ccd, ccd2cue, write_cue
 verbose = False
 temp_files = []
 
-PROJECT_PATH = pathlib.Path(__file__).parent
-PROJECT_UI = PROJECT_PATH / "pop-fe-ps3.ui"
+PROJECT_PATH = popfe_runtime.resource_root
+PROJECT_UI = popfe_runtime.resource_path("pop-fe-ps3.ui", required=True)
+PREFERENCES_PATH = popfe_runtime.application_preference_path(
+    "pop-fe-ps3.config"
+)
 
 
 class FinishedDialog(tk.Toplevel):
@@ -80,12 +84,18 @@ class PopFePs3App:
         self.preview_tk = None
         self.pkgdir = None
         self.data_track_only = 'off'
-        self.subdir = 'pop-fe-ps3-work/'
+        self.subdir = str(
+            popfe_runtime.application_work_dir("ps3", "pop-fe-ps3-work")
+        ) + os.sep
         self.pic0scaling = 0.9
         self.pic0xoffset = 0.1
         self.pic0yoffset = 0.1
         self.manual = None
-        self.path_dir = os.getcwd()
+        self.path_dir = (
+            str(popfe_runtime.home)
+            if popfe_runtime.is_macos
+            else os.getcwd()
+        )
 
         self.master = master
         self.builder = builder = pygubu.Builder()
@@ -188,7 +198,8 @@ class PopFePs3App:
         temp_files = []  
 
     def update_prefs(self):
-        with open('pop-fe-ps3.config', "w") as f:
+        PREFERENCES_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(PREFERENCES_PATH, "w") as f:
             f.write('%s:%s\n' % ('newemu', self.builder.get_variable('force_newemu_variable').get()))
             f.write('%s:%s\n' % ('swap', self.builder.get_variable('allow_discswap_variable').get()))
             f.write('%s:%s\n' % ('ntsc', self.builder.get_variable('force_ntsc_variable').get()))
@@ -199,9 +210,9 @@ class PopFePs3App:
 
 
     def read_prefs(self):
-        with open('pop-fe-ps3.config', "r") as f:
+        with open(PREFERENCES_PATH, "r") as f:
             for x in f.read().splitlines():
-                key, val =  x.split(':')
+                key, val = x.split(':', 1)
                 if key == 'newemu':
                     self.builder.get_variable('force_newemu_variable').set(val)
                 if key == 'swap':
@@ -351,9 +362,9 @@ class PopFePs3App:
             self.pic0 = Image.open(self.pic0_path)
             self.pic0_orig = Image.open(self.pic0_path)
         if not self.pic0 and self._theme != '':
-            self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.PNG')
+            self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC0.PNG')
             if not self.pic0:
-                self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC0.png')
+                self.pic0_orig = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC0.png')
             self.pic0 = self.pic0_orig
         if not self.pic0:
             self.pic0_orig = popfe.get_pic0_from_game(disc_id, game, self.cue_file_orig, no_scaling=True)
@@ -376,7 +387,7 @@ class PopFePs3App:
             snd0 = None
             print('Fetching SND0') if verbose else None
             if self._theme != '':
-                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-psp-work')
+                snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, self.subdir)
                 if snd0:
                     temp_files.append(snd0)
             if not snd0 and disc_id in games and 'snd0' in games[disc_id]:
@@ -388,9 +399,9 @@ class PopFePs3App:
         self.icon0 = None
         if self._theme != '':
             print('Get icon0 from theme')
-            self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
+            self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'ICON0.PNG')
             if not self.icon0:
-                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
+                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'ICON0.png')
             if self.icon0:
                 self.icon0 = self.icon0.crop(self.icon0.getbbox())
         if not self.icon0:
@@ -411,9 +422,9 @@ class PopFePs3App:
         if self.pic1_path:
             self.pic1 = Image.open(self.pic1_path)
         if not self.pic1 and self._theme != '':
-            self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.PNG')
+            self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC1.PNG')
             if not self.pic1:
-                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'PIC1.png')
+                self.pic1 = popfe.get_image_from_theme(self._theme, disc_id, self.subdir, 'PIC1.png')
         if not self.pic1:
             self.pic1 = popfe.get_pic1_from_game(disc_id, game, self.cue_file_orig)
         if self.pic1:
@@ -814,6 +825,8 @@ class PopFePs3App:
             pkg = 'game.pkg'
         if len(pkgdir):
             pkg = pkgdir + '/' + pkg
+        elif popfe_runtime.is_macos:
+            pkg = str(popfe_runtime.home / pkg)
         print('Creating ' + pkg)
         disc_ids = []
         for idx in range(len(self.cue_files)):
@@ -905,8 +918,17 @@ if __name__ == "__main__":
     if args.v:
         verbose = True
 
+    smoke_test = os.environ.get("POPFE_GUI_SMOKE_TEST") == "1"
     root = TkinterDnD.Tk()
+    if smoke_test:
+        root.withdraw()
+    if popfe_runtime.is_macos:
+        install_tk_error_handler(root, popfe_runtime, "ps3", "Pop-FE PS3 Error")
     app = PopFePs3App(root)
     root.title('pop-fe PS3')
-    root.mainloop()
+    if smoke_test:
+        root.update_idletasks()
+        root.destroy()
+    else:
+        root.mainloop()
     

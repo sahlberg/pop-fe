@@ -14,7 +14,7 @@ them on various platforms, including:
 This is all LGPLv2.1
 
 TL;DR
-For Linux and windows.
+For Linux, Windows, and Apple Silicon macOS.
 Connect PSP to your Linux/Windows box via USB, then run:
 
   $ ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.cue /psx/Grandia2of2.cue
@@ -33,8 +33,9 @@ Enjoy.
 HOW TO RUN POP-FE:
 ==================
 Pop-fe needs to create a bunch of temporary files while it is processing the
-data. So run it in a shell from the same directory that pop-fe and its
-dependencies are installed.
+data. Source installations on Linux and Windows retain the legacy local work
+directory. The prebuilt macOS applications and CLI instead use a unique
+directory below ~/Library/Caches/Pop-FE and can be launched from any directory.
 You do not need to copy the game images to this directory.
 Pop-fe can read and process the images from remote directories.
 
@@ -59,7 +60,7 @@ formats:
          MODE2/2352
 .zip   : ZIP file. The ZIP file will be extracted into the local directory
          and if a .cue file is found it will be used.
-.chd   : CHD file. This requires that the chdman program is installed.
+.chd   : CHD file. This requires chdman. It is included in the macOS release.
 .*     : Various memory card image formats.
          Memory cards are detected by file size so the extensions does not
 	 matter.
@@ -202,7 +203,7 @@ Assume I have connected my PSP with USB and it is shows up as :
 $ ./pop-fe.py --psp-dir=/run/media/sahlberg/disk /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
 Or you can just let pop-fe try to discover it automagically for you. This
-works for both Linux and Windows:
+works on Linux, Windows, and macOS:
 
 $ ./pop-fe.py --psp-dir=auto /psx/Metal\ Gear\ Solid\ VR\ Missions.cue
 
@@ -213,8 +214,8 @@ game id and title to be used for the whole set.
 Example:
  # ./pop-fe.py --psp-dir=auto /psx/Grandia1of2.img /psx/Grandia2of2.img
 
-During the conversion process the img/bin file will be temporarily converted
-into an ISO file as NORMAL01.iso in the current directory.
+During the conversion process the img/bin file is temporarily converted into
+an ISO file inside the active POP-FE work directory.
 This is in order to open the iso9660 image and read the system.cnf file
 to extract the game id.
 You can avoid/skip this step by forcing the game-id from the command line,
@@ -277,6 +278,11 @@ You can also specify additional config files that pop-fe/pop-fe-psp will
 automatically eject when you create a PSP EBOOT.
 This is done by storing the config file in the same directory as the cue file
 and with the filename <cue-file>.pspconfig
+
+The PSP GUI can import a game folder. It loads up to five disc images, uses
+ICON0.PNG, PIC0.PNG, PIC1.PNG, SND0.AT3, MANUAL.* and LOGO.PNG when present,
+then fetches only the missing metadata and artwork. Disable "Import all discs
+in folder" to load only the first image.
 
 Image files for PS3 packages
 ============================
@@ -574,6 +580,49 @@ Pop-fe has a few external dependencies. It requires python3 and some additional
 bits and pieces. Here are some examples on how to install pop-fe and its
 dependencies on different OSes:
 
+
+macOS 14+ (Apple Silicon, prebuilt DMG):
+----------------------------------------
+Download Pop-FE-<version>-macOS-arm64.dmg from the GitHub Releases page:
+https://github.com/sahlberg/pop-fe/releases
+
+The disk image contains Pop-FE PSP.app, Pop-FE PS3.app, the full pop-fe CLI,
+and all required native helpers. It does not require Python, Homebrew, Rosetta,
+or Xcode on the destination Mac. Intel Macs are not supported.
+
+Drag the two applications to Applications. The release uses an ad-hoc
+signature and is not notarized, so macOS blocks its first launch. Try to open
+the application once, then open System Settings > Privacy & Security, scroll
+to Security, click Open Anyway for that application, authenticate if asked,
+and confirm Open. Repeat once for the other application. Do not disable
+Gatekeeper globally.
+
+Apple documents this approval flow here:
+https://support.apple.com/guide/mac-help/open-an-app-by-overriding-security-settings-mh40617/mac
+
+To install the CLI without administrator access, control-click
+Install CLI.command in the disk image, choose Open, and accept the default
+~/.local/bin/pop-fe destination. Run `pop-fe --help` in Terminal. The first
+launch can take several seconds while the single-file executable prepares its
+embedded runtime.
+
+The graphical applications cover PSP/Vita EBOOT and PS3 PKG creation. Use the
+CLI for PSP/Vita, PSIO, PS2, PS3, RetroArch, and PlayStation Classic targets.
+CUE/BIN, CCD/IMG, raw BIN/IMG, ZIP, CHD, multidisc images, CDDA/ATRAC3,
+LibCrypt, PSX-Undither, PPF/Xdelta patches, artwork, PDF/ZIP/directory manuals,
+and themes use bundled dependencies. CBR/RAR manual extraction retains the
+same optional external UNRAR requirement as the existing desktop builds.
+
+macOS user data is stored at:
+
+  Preferences: ~/Library/Application Support/Pop-FE/
+  Logs:         ~/Library/Logs/Pop-FE/
+  Work cache:   ~/Library/Caches/Pop-FE/
+
+Failed CLI conversions retain their unique work directory for diagnostics;
+successful CLI conversions remove it. PSP/Vita and PlayStation Classic
+automatic discovery scans validated devices below /Volumes.
+
 For installations on Linux/Posix/ you need to have a build environment.
 Make sure you have 'git', 'gcc', 'g++', 'make', 'cmake' installed.
 
@@ -744,4 +793,3 @@ docker run -it --entrypoint /bin/bash pop-fe:latest
 #     └── PSP/
 #         └── GAME/
 docker run -it --volume "$(pwd):/psp" pop-fe:latest --psp-dir=/psp/pspemu /psp/game.cue
-
