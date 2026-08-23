@@ -68,7 +68,7 @@ try:
     from make_isoedat import pack
 except:
     True
-from cue import parse_ccd, parse_cue, ccd2cue, write_cue
+from cue import parse_ccd, parse_cue, ccd2cue, write_cue, is_abs_path, path_dirname
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
@@ -2565,12 +2565,8 @@ def get_imgs_from_bin(cue):
             # FILE
             if re.search(r'^\s*FILE', line):
                 f = get_file_name(line)
-                # unix absilute paths start with /
-                # windows absolute patsh start with ?:/
-                if f[0] != '/' and f[1:3] != '://':
-                    s = cue.split('/')
-                    if len(s) > 1:
-                        f = '/'.join(s[:-1]) + '/' + f
+                if not is_abs_path(f):
+                    f = path_dirname(cue) + f
                 img_files.append(f)
     return img_files
 

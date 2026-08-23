@@ -14,6 +14,30 @@ verbose = False
 
 SECTLEN = 2352
 
+# Is this an absolute path?
+# We can not use os.path.isabs() since we may well be parsing a cue file
+# that was created on a different OS than the one we run on.
+# Unix absolute paths start with /
+# Windows absolute paths are either ?:\ , ?:/ or start with \
+def is_abs_path(path):
+    if not path:
+        return False
+    if path[0] == '/' or path[0] == '\\':
+        return True
+    if len(path) > 2 and path[1] == ':' and path[2] in ['\\', '/']:
+        return True
+    return False
+
+# Return the directory part of a path, including the trailing separator,
+# or '' if the path has no directory part.
+# Handles both / and \ as separator since we may be reading a cue file
+# that was created on a different OS than the one we run on.
+def path_dirname(path):
+    idx = max(path.rfind('/'), path.rfind('\\'))
+    if idx < 0:
+        return ''
+    return path[:idx + 1]
+
 def fixup_cue(cue, raw=False, psxtruncate=False):
     file = None
     filesize = None
@@ -79,12 +103,8 @@ def parse_cue(cuefile, raw=False, psxtruncate=False):
 
             if line.upper()[:5] == 'FILE ':
                 file = strip_line(line[5:line.rindex(' ')])
-                try:
-                    # Windows absolute paths are ?:\
-                    if file[1:3] != ':\\' and file[0] != '/' and cuefile.rindex('/') >= 0:
-                        file = cuefile[:cuefile.rindex('/') + 1] + file
-                except:
-                    True
+                if not is_abs_path(file):
+                    file = path_dirname(cuefile) + file
             if line.upper()[:6] == 'TRACK ':
                 track = int(strip_line(line[6:line.rindex(' ')]))
                 mode = strip_line(line[line.rindex(' '):]).upper()
