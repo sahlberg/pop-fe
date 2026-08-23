@@ -38,6 +38,16 @@ def path_dirname(path):
         return ''
     return path[:idx + 1]
 
+# Return the file name part of a path, i.e. the path with any leading
+# directory components stripped off.
+# Handles both / and \ as separator since we may be reading a cue file
+# that was created on a different OS than the one we run on.
+def path_basename(path):
+    idx = max(path.rfind('/'), path.rfind('\\'))
+    if idx < 0:
+        return path
+    return path[idx + 1:]
+
 def fixup_cue(cue, raw=False, psxtruncate=False):
     file = None
     filesize = None

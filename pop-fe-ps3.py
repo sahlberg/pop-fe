@@ -201,7 +201,7 @@ class PopFePs3App:
     def read_prefs(self):
         with open('pop-fe-ps3.config', "r") as f:
             for x in f.read().splitlines():
-                key, val =  x.split(':')
+                key, val =  x.split(':', 1)
                 if key == 'newemu':
                     self.builder.get_variable('force_newemu_variable').set(val)
                 if key == 'swap':

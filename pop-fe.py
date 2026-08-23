@@ -68,7 +68,7 @@ try:
     from make_isoedat import pack
 except:
     True
-from cue import parse_ccd, parse_cue, ccd2cue, write_cue, is_abs_path, path_dirname
+from cue import parse_ccd, parse_cue, ccd2cue, write_cue, is_abs_path, path_dirname, path_basename
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
 from riff import copy_riff, create_riff, parse_riff
@@ -2441,10 +2441,9 @@ def copy_file(inp, oup):
 
 
 def create_path(bin, f):
-    s = bin.split('/')
-    if len(s) > 1:
-        f = '/'.join(s[:-1]) + '/' + f
-    return f
+    # bin may use either / or \ as separator depending on which OS
+    # it came from so let path_dirname() sort that out for us.
+    return path_dirname(bin) + f
 
 def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         try:
@@ -2472,7 +2471,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
 def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
     print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
-    f = cue.split('/')[-1][:-4]
+    f = path_basename(cue)[:-4]
 
     # GAME_ID
     try:
@@ -4439,11 +4438,14 @@ def process_disk_file(cue_file, idx, temp_files, subdir='./'):
         img_file = subdir + mb + '.bin'
         temp_files.append(img_file)
 
-    if cue_file[:3] == 'C:\\' or cue_file[:3] == 'D:\\' or cue_file[:3] == 'E:\\':
-        new_bin = '\\'.join(cue_file.split('\\')[:-1]) + '\\' + i[0]
-        copy_file(new_bin, subdir + '\\' + i[0])
+    # On windows, if we were given an absolute path, i.e. ?:\ or ?:/,
+    # copy the cue file into the work directory and use the bin file
+    # from its original location.
+    if len(cue_file) > 2 and cue_file[1] == ':' and cue_file[2] in ['\\', '/']:
+        new_bin = path_dirname(cue_file) + path_basename(i[0])
+        copy_file(new_bin, subdir + path_basename(i[0]))
         img_file = new_bin
-        new_cue = subdir + '/' + cue_file.split('\\')[-1]
+        new_cue = subdir + path_basename(cue_file)
         copy_file(cue_file, new_cue)
         cue_file = new_cue
         

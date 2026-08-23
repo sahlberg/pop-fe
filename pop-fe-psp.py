@@ -249,7 +249,7 @@ class PopFePs3App:
     def read_prefs(self):
         with open('pop-fe-psp.config', "r") as f:
             for x in f.read().splitlines():
-                key, val =  x.split(':')
+                key, val =  x.split(':', 1)
                 if key == 'undither':
                     self.builder.get_variable('psx_undither_variable').set(val)
                 if key == 'pic1aslogo':

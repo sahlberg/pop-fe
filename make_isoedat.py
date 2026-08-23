@@ -9,6 +9,8 @@
 import hashlib
 import os
 import struct
+
+from cue import path_basename
 try:
     from Crypto.Cipher import AES
 except:
@@ -112,7 +114,9 @@ def pack(ifn, ofn, cid):
 
     b = bytearray(0x30)
     b[:len(npd['content_id'])] = npd['content_id'].encode()
-    b = b + ofn.split('/')[-1].encode()
+    # The title hash is computed over the file name only, so any
+    # directory part must be stripped off, regardless of separator.
+    b = b + path_basename(ofn).encode()
     
     _key = bytes([0x2b, 0x7e, 0x15, 0x16,  0x28, 0xae, 0xd2, 0xa6,
                  0xab, 0xf7, 0x15, 0x88,  0x09, 0xcf, 0x4f, 0x3c,])
