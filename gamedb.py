@@ -6722,6 +6722,7 @@ games = {
         'manual': 'https://www.videogamemanual.com/ps1/Bloody%20Roar%20II%20(USA).pdf',
     
         'pspconfig': "pspconfigs/Bloody Roar 2/SCUS-94424.bin",
+        'ps3config': 'ps3configs/Bloody Roar 2/SLES-01722.BIN',
     },
     'SLUS01198': {
         'url': "games/U/B/SLUS-01198.html",
