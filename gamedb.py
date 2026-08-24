@@ -78152,6 +78152,33 @@ ppf_fixes = {
         'desc': 'PPF for Jackie Chan Stuntmaster',
         'ppf': 'ppf/Jackie Chan Stuntmaster (USA).ppf',
     },
+    'SCUS94350': {
+        'desc': 'Fix for PSP',
+        'hashes': {
+            'c8e98530e2b1ddcf54e1ac2326ae8127': {
+                'ppf': 'ppf/SCUS-94350-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SLES00299': {
+        'desc': 'Fix for PSP',
+        'hashes': {
+            '8328f6a18074ec5e0750826a5003f886': {
+                'ppf': 'ppf/SLES-00299-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SIPS60012': {
+        'desc': 'Fix for PSP',
+        'hashes': {
+            'f1cb58bf9af8779ca35faa4bc97234b5': {
+                'ppf': 'ppf/SIPS-60012-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLUS00884': {
         'desc': 'Fix for Vita and PSP',
         'hashes': {
