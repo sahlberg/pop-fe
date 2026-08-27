@@ -78124,6 +78124,35 @@ ppf_fixes = {
             },
         },
     },
+    'SLUS00859': {
+        'desc': 'Dukes of Hazzard hangs in its boot loader under POPS. The spinner '
+                'animation callback runs during the loader CD read that loads the '
+                'first overlay, and the read never completes. Do not install it.',
+        'hashes': {
+            # Dukes of Hazzard, The - Racing for Home (USA) (Rev 1)
+            '28998deaebc7e83361dba8040c78a547': {
+                'ppf': 'ppf/SLUS-00859-psp.ppf',
+            },
+            # Dukes of Hazzard, The - Racing for Home (USA)
+            # byte-identical boot EXE at the same LBA, so the same patch applies
+            'e186374c65e03630b69203f550bbf72d': {
+                'ppf': 'ppf/SLUS-00859-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SLES02343': {
+        'desc': 'Dukes of Hazzard (Europe): same boot-loader hang as SLUS-00859. '
+                'The loader is restructured and installs the spinner callback from '
+                'two sites, so both are removed.',
+        'hashes': {
+            # Dukes of Hazzard, The - Racing for Home (Europe)
+            '6e9224fd721c3c9734f7bf34f16c5046': {
+                'ppf': 'ppf/SLES-02343-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLES00528': {
         'desc': 'PPF for MortalCombatTrilogy countdown issue',
         'ppf': 'ppf/SLES-00528.ppf'                    # PS3
