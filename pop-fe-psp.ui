@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<interface version="1.4" author="PygubuDesigner 0.41.2">
+<interface version="1.5" author="PygubuDesigner 0.41.4">
   <project>
     <settings />
     <customwidgets />
+    <resources />
   </project>
   <object class="ttk.Frame" id="top_frame">
     <property name="height">200</property>
@@ -233,6 +234,20 @@
             <layout manager="grid">
               <property name="column">3</property>
               <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="swap_disc" named="True">
+            <property name="command" type="command" cbtype="simple">on_swap_disc</property>
+            <property name="offvalue">off</property>
+            <property name="onvalue">on</property>
+            <property name="text" translatable="yes">Allow Swap Disc</property>
+            <property name="variable">string:swap_disc_variable</property>
+            <layout manager="grid">
+              <property name="column">3</property>
+              <property name="row">1</property>
               <property name="sticky">w</property>
             </layout>
           </object>

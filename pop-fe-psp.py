@@ -106,6 +106,7 @@ class PopFePs3App:
             'on_cdda': self.on_cdda,
             'on_theme_selected': self.on_theme_selected,
             'on_force_ntsc': self.on_force_ntsc,
+            'on_swap_disc': self.on_swap_disc,
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
@@ -142,6 +143,8 @@ class PopFePs3App:
         tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
         self.ntsc_u_icon0 = builder.get_object("ntsc_u_icon0")
         tooltip.create(self.ntsc_u_icon0, "Use a NTSC-U PSN style frame for ICON0.\nThis has a thicker left edge with the text \"Playstation\" running along it\nand requires specially cropped covers to be manuallt provided for ICON0.\nPlease crop a cover image to 60x67 pixels and select it by clicking the ICON0 widget.")
+        self.swap_disc = builder.get_object("swap_disc")
+        tooltip.create(self.swap_disc, "Always allow swapping discs even if the game is not asking for it.")
         #self. = builder.get_object("")
         #tooltip.create(self. , "")
         
@@ -346,7 +349,7 @@ class PopFePs3App:
  
         if self.snd0_disabled == 'off':
             snd0 = None
-            print('Fetching SND0') if verbose else None
+            print('Fetching SND0')
             if self._theme != '':
                 snd0 = popfe.get_snd0_from_theme(self._theme, disc_id, 'pop-fe-psp-work')
                 if snd0:
@@ -688,6 +691,7 @@ class PopFePs3App:
         self.master.update()
 
         snd0 = self.builder.get_variable('snd0_variable').get()
+        print('snd0', snd0)
         if snd0[:24] == 'https://www.youtube.com/':
             snd0 = popfe.get_snd0_from_link(snd0, subdir=self.subdir)
             if snd0:
@@ -717,6 +721,7 @@ class PopFePs3App:
         undither = self.builder.get_variable('psx_undither_variable').get() == 'on'
         ntsc     = self.builder.get_variable('force_ntsc_variable').get() == 'on'
         cdda     = self.cdda == 'on'
+        swap_disc= self.builder.get_variable('swap_disc_variable').get() == 'on'
 
         popfe.create_psp(ebootdir, disc_ids, self.real_disc_ids, title,
                          self.icon0,
@@ -729,7 +734,8 @@ class PopFePs3App:
                          subchannels=subchannels, manual=manual,
                          use_cdda=True if self.cdda=='on' else False,
                          logo=self.pic1 if self.pic1aslogo=='on' else logo,
-                         psx_undither=undither, force_ntsc=ntsc, cdda=cdda)
+                         psx_undither=undither, force_ntsc=ntsc, cdda=cdda,
+                         swap_disc=swap_disc)
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
@@ -744,6 +750,9 @@ class PopFePs3App:
         self.update_prefs()
 
     def on_force_ntsc(self):
+        self.update_prefs()
+
+    def on_swap_disc(self):
         self.update_prefs()
 
     def on_psx_undither(self):
