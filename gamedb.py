@@ -12666,6 +12666,7 @@ games = {
 	'title': "NEED FOR SPEED - HIGH STAKES",
         'pic0': 'https://images.launchbox-app.com/ccedaa94-54b0-4dea-aec5-d1270c5e268c.png',
         'pic1': 'https://images.launchbox-app.com/f3f08dce-a9b6-4ab1-adbc-321f99e6b678.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Ga2oNFkA7A&list=PL3-VHI3NiXU4fcVkWLeaO4KdlEQo0V-o1&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Need%20for%20Speed%20-%20High%20Stakes%20(USA).pdf',
     },
     'SLUS01104': {
@@ -12674,6 +12675,7 @@ games = {
 	'title': "NEED FOR SPEED - PORSCHE UNLEASHED",
         'pic0': 'https://images.launchbox-app.com/189c2805-6ef4-41de-8840-91bac6ed2819.png',
         'pic1': 'https://images.launchbox-app.com/b4c91d3b-cfd2-4932-9779-224ed0db944f.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=6quV122vGnA&list=PLAE052B64227D2FDB&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Need%20for%20Speed%20-%20Porsche%20Unleashed%20(USA).pdf',
     },
     'SLUS00590': {
@@ -12691,6 +12693,7 @@ games = {
 	'title': "NEED FOR SPEED II",
         'pic0': 'https://images.launchbox-app.com/59ed96c0-c480-4e43-b2d1-bf7eed6d3644.png',
         'pic1': 'https://images.launchbox-app.com/2ce1e226-9f59-4185-b488-a0717811f1d5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=9RTO4qPEm64&list=PLE730706C5F8C6F79&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Need%20for%20Speed%20II%20(USA).pdf',
     },
     'SLUS00620': {
@@ -12699,6 +12702,7 @@ games = {
 	'title': "NEED FOR SPEED III - HOT PURSUIT",
         'pic0': 'https://images.launchbox-app.com/5279f2be-d671-47db-bb83-78c8121d2a27.png',
         'pic1': 'https://images.launchbox-app.com/78d9cb99-e38c-4cf1-874b-bd3cdeba2fe7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=A_6NN0Y_xuU&list=PLD48C6CD40AA6CEF0&index=1',
         'manual': 'https://www.videogamemanual.com/ps1/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20(GH)%20(USA).pdf',
     },
     'SLUS00602': {
@@ -29173,6 +29177,7 @@ games = {
 	'title': "NEED FOR SPEED - ROAD CHALLENGE",
         'pic0': 'https://images.launchbox-app.com/e256a7d7-ef0e-4bb1-944c-ec9f02677841.png',
         'pic1': 'https://images.launchbox-app.com/f3f08dce-a9b6-4ab1-adbc-321f99e6b678.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Ga2oNFkA7A&list=PL3-VHI3NiXU4fcVkWLeaO4KdlEQo0V-o1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20-%20High%20Stakes%20%28USA%29_jp2.zip',
     },
     'SLES01789': {
@@ -29181,6 +29186,7 @@ games = {
 	'title': "NEED FOR SPEED - ROAD CHALLENGE",
         'pic0': 'https://images.launchbox-app.com/e256a7d7-ef0e-4bb1-944c-ec9f02677841.png',
         'pic1': 'https://images.launchbox-app.com/f3f08dce-a9b6-4ab1-adbc-321f99e6b678.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Ga2oNFkA7A&list=PL3-VHI3NiXU4fcVkWLeaO4KdlEQo0V-o1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20-%20High%20Stakes%20%28USA%29_jp2.zip',
     },
     'SLES01790': {
@@ -29189,6 +29195,7 @@ games = {
 	'title': "NEED FOR SPEED - ROAD CHALLENGE",
         'pic0': 'https://images.launchbox-app.com/e256a7d7-ef0e-4bb1-944c-ec9f02677841.png',
         'pic1': 'https://images.launchbox-app.com/f3f08dce-a9b6-4ab1-adbc-321f99e6b678.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Ga2oNFkA7A&list=PL3-VHI3NiXU4fcVkWLeaO4KdlEQo0V-o1&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20-%20High%20Stakes%20%28USA%29_jp2.zip',
     },
     'SLES00658': {
@@ -29197,6 +29204,7 @@ games = {
 	'title': "NEED FOR SPEED II",
         'pic0': 'https://images.launchbox-app.com/59ed96c0-c480-4e43-b2d1-bf7eed6d3644.png',
         'pic1': 'https://images.launchbox-app.com/2ce1e226-9f59-4185-b488-a0717811f1d5.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=9RTO4qPEm64&list=PLE730706C5F8C6F79&index=1',
     },
     'SLES01154': {
         'url': "games/P/N/SLES-01154.html",
@@ -29204,6 +29212,7 @@ games = {
 	'title': "NEED FOR SPEED III - HOT PURSUIT",
         'pic0': 'https://images.launchbox-app.com/5279f2be-d671-47db-bb83-78c8121d2a27.png',
         'pic1': 'https://images.launchbox-app.com/78d9cb99-e38c-4cf1-874b-bd3cdeba2fe7.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=A_6NN0Y_xuU&list=PLD48C6CD40AA6CEF0&index=1',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29_jp2.zip',
     },
     'SLES03659': {
@@ -63663,6 +63672,9 @@ games = {
         'url': "games/J/O/SLPS-02099.html",
     	'id': 'SLPS02099',
 	'title': "OVER DRIVIN' IV",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_bb6b0dc7-8ad3-42a2-8e09-16de52a91af0.png',
+        'pic1': 'https://images.launchbox-app.com//f3f08dce-a9b6-4ab1-adbc-321f99e6b678.jpg',
+        'snd0': 'https://www.youtube.com/watch?v=3Ga2oNFkA7A&list=PL3-VHI3NiXU4fcVkWLeaO4KdlEQo0V-o1&index=1',
     },
     'SLPS01024': {
         'url': "games/J/O/SLPS-01024.html",
