@@ -78191,6 +78191,24 @@ ppf_fixes = {
         },
         'tags': ['psp',],
     },
+    'SLUS00620': {
+        'desc': 'Fix missing background music under POPS',
+        'hashes': {
+            'f353c6cb0befe735878402f4f006e2e9': {
+                'ppf': 'ppf/SLUS-00620-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SLES01154': {
+        'desc': 'Fix missing background music under POPS',
+        'hashes': {
+            '2471ef7d099a12e6704b57f2241f114a': {
+                'ppf': 'ppf/SLES-01154-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLES00299': {
         'desc': 'Fix for PSP',
         'hashes': {
