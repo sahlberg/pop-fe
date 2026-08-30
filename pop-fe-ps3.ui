@@ -450,6 +450,17 @@
               </object>
             </child>
             <child>
+              <object class="ttk.Button" id="manual_dir">
+                <property name="command" type="command" cbtype="simple">on_manual_dir</property>
+                <property name="text" translatable="yes">Directory...</property>
+                <layout manager="grid">
+                  <property name="column">2</property>
+                  <property name="row">4</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
               <object class="ttk.Label" id="label7">
                 <property name="text" translatable="yes">Manual:</property>
                 <layout manager="grid">

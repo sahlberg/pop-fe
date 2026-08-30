@@ -91,9 +91,10 @@ Command line arguments are:
 		         pop-fe will automatically fetch one from the internet.
 --pic1                 : Image to use as the PIC1/Screenshot. If not specified
 		         pop-fe will automatically fetch one from the internet.
---manual               : Specify a http link, zip-file or a directory containing
-                         scans of the manual or an already processed file in
-			 DOCUMENT.DAT format.
+--manual               : The manual for the game. This can be a directory
+                         containing one image per page, a ZIP/CBR/PDF file,
+                         an already finished DOCUMENT.DAT or a http link to
+                         any of these.
 			 See Manual section below.
 --no-libcrypt          : Do not patch out libcrypt.
 			 The default is that libcrypt will be automatically patched
@@ -341,7 +342,8 @@ This argument will download and install
 <cue>_pic0.png,
 <cue>_pic1.png,
 <cue>.snd0,
-<cue>.manual,
+<cue>.manual.zip / <cue>.manual.pdf / <cue>.manual  (depending on which
+format the manual is in),
 as well as the game id and title in the directory where the game is stored.
 This requires that the game directory is writeable.
 
@@ -409,25 +411,103 @@ $ ffmpeg -i Azure\ Dreams\ OST\ 3.\ Overture.3gp  -ar 44100 -ac 2 Azure\ Dreams\
 MANUAL
 ======
 Pop-fe can create a "Software Manual" for PSP and PS3.
-The manual is provided using the --manual command line option.
-This can either be a file or a https link to a document to use.
-The following extensions are supported :
+The manual is provided using the --manual command line option, or by
+selecting it in the pop-fe-psp/pop-fe-ps3 GUIs.
+This can be a local file, a local directory or a https link.
 
-.manual : A file/link already already prepared in the native
-          PS3 DOCUMENT.DAT format.
-.zip    : A ZIP file containing images	  
-.cbr    : A CBR file
-.pdf    : A PDF document containing scanned pages.
-or it can also just be a local directory containing a the images to
-use for the manual.
-zip/cbr/directories will have all the individual image files sorted
-alphabetically when they are joined together into the manual.
+A directory  : A directory containing the images for the manual,
+               one image per page.
+               In the GUIs, use the "Directory..." button next to the
+               Manual field to select a directory.
+.zip/.cbz    : A ZIP file containing the images.
+.cbr/.rar    : A RAR file containing the images.
+.pdf         : A PDF document containing scanned pages.
+DOCUMENT.DAT : An already finished manual, in either the PSP or the PS3
+               format. Pop-fe detects which of the two formats the file
+               is in and converts it to the other format if needed.
 
-If there is a file with the same filename as the .cue file but the extension
-.manual then this will be used as the manual. This file must be in
-DOCUMENT.DAT format.
-"document.py encrypt ..." can be used to create such files from a colelction
-of image files.
+Zip/cbr/directories will have all the individual image files sorted
+in natural order (i.e. page9 sorts before page10) when they are joined
+together into the manual. Any files in the archive or the directory
+that are not images are ignored.
+
+If no manual was specified, pop-fe will check if there is a manual
+stored next to the disc image. For a game called <game>.cue the
+following names are checked, in order :
+
+<game>.manual.zip    the pages as a ZIP archive
+<game>.manual.cbz
+<game>.manual.cbr    the pages as a RAR archive
+<game>.manual.rar
+<game>.manual.pdf    the pages as a PDF
+<game>.manual.dat    a finished DOCUMENT.DAT
+<game>.manual/       a directory containing one image per page
+<game>.manual        a finished DOCUMENT.DAT  (legacy name)
+
+If nothing is found there either, pop-fe will use the manual from the
+internal game database, if the game has one.
+
+
+USING YOUR OWN MANUALS
+----------------------
+If you have scanned the manual yourself, or downloaded a scan from a
+site such as archive.org or psxdatacenter, there are three ways to use
+it.
+
+1, Point pop-fe directly at it :
+
+  $ ./pop-fe.py --psp-dir=auto --manual="My Game manual.zip" "My Game.cue"
+  $ ./pop-fe.py --psp-dir=auto --manual=/psx/scans/mygame/ "My Game.cue"
+  $ ./pop-fe.py --ps3-pkg=mygame.pkg --manual=https://.../mygame.cbr "My Game.cue"
+
+  In pop-fe-psp and pop-fe-ps3, use the Manual field to pick a file, or
+  the "Directory..." button next to it to pick a directory of images.
+
+2, Store it next to the game, using the same name as the disc image but
+   with a .manual.* extension. Pop-fe will then find and use it
+   automatically every time you convert that game, without you having to
+   specify anything :
+
+  /psx/My Game.cue
+  /psx/My Game.bin
+  /psx/My Game.manual.zip
+
+   This is the recommended way if you keep a library of games, since the
+   manual then travels with the game. The full list of names that are
+   checked is above. A directory works here too, i.e. a directory called
+   "My Game.manual" containing the images.
+
+   Note that "My Game.manual" as a *file* means something different, it
+   is the legacy name for an already finished DOCUMENT.DAT.
+
+3, Let pop-fe download it. Many games already have a manual in the
+   internal game database and it will be used automatically if you did
+   not provide one yourself. --fetch-metadata will store a copy of that
+   manual next to the game, as My Game.manual.zip or similar, so that
+   later conversions do not need to download it again.
+
+Whichever way you provide it, the pages are scaled down and converted
+into a DOCUMENT.DAT which is installed as part of the EBOOT (PSP) or the
+PKG (PS3). On the PSP the manual is opened from the game menu, on the
+PS3 from the "View Manual" option in the XMB.
+
+Some hints :
+
+* One image per page. Any file in the archive/directory that is not an
+  image, such as a readme or a Thumbs.db, is skipped.
+* Name the images so that they sort in the right order. Both
+  "page1.png ... page10.png" and "0001.png ... 0010.png" work.
+* Scans where two pages of the manual were scanned side by side as a
+  single wide image are detected and split into two pages automatically.
+* If the images came out of a PDF, just use the PDF directly. Pop-fe
+  will extract the images from it.
+
+"document.py" can be used to inspect, create and unpack DOCUMENT.DAT
+files by hand :
+
+  $ ./document.py extract --document DOCUMENT.DAT --output /tmp/pages
+  $ ./document.py create --gameid SLUS00594 --directory /tmp/pages \
+                         --document DOCUMENT.DAT
 
 
 PSIO

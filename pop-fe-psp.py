@@ -112,6 +112,7 @@ class PopFePs3App:
             'on_pic0_yoffset': self.on_pic0_yoffset,
             'on_psx_undither': self.on_psx_undither,
             'on_ntsc_u_icon0': self.on_ntsc_u_icon0,
+            'on_manual_dir': self.on_manual_dir,
         }
 
         builder.connect_callbacks(callbacks)
@@ -143,6 +144,8 @@ class PopFePs3App:
         tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
         self.ntsc_u_icon0 = builder.get_object("ntsc_u_icon0")
         tooltip.create(self.ntsc_u_icon0, "Use a NTSC-U PSN style frame for ICON0.\nThis has a thicker left edge with the text \"Playstation\" running along it\nand requires specially cropped covers to be manuallt provided for ICON0.\nPlease crop a cover image to 60x67 pixels and select it by clicking the ICON0 widget.")
+        _manual = builder.get_object("manual")
+        tooltip.create(_manual, "The manual for the game.\nThis can be a ZIP/CBR/PDF file with one image per page, a finished\nDOCUMENT.DAT in either PSP or PS3 format, or a directory containing\none image per page. Use the Directory... button to select a directory.")
         self.swap_disc = builder.get_object("swap_disc")
         tooltip.create(self.swap_disc, "Always allow swapping discs even if the game is not asking for it.")
         #self. = builder.get_object("")
@@ -227,7 +230,8 @@ class PopFePs3App:
         self.builder.get_object('logo', self.master).config(filetypes=[('Audio files', ['.png', '.PNG']), ('All Files', ['*.*', '*'])])
 
         self.builder.get_object('manual', self.master).config(state='disabled')
-        self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
+        self.builder.get_object('manual', self.master).config(filetypes=[('Manuals', ['.zip', '.cbz', '.cbr', '.rar', '.pdf', '.dat', '.manual']), ('All Files', ['*.*', '*'])])
+        self.builder.get_object('manual_dir', self.master).config(state='disabled')
         self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
@@ -290,6 +294,16 @@ class PopFePs3App:
                         self.builder.get_object('disc4', self.master).config(initialdir=self.path_dir)
                         self.builder.get_object('disc5', self.master).config(initialdir=self.path_dir)
 
+
+    def on_manual_dir(self):
+        # The manual can also be just a directory containing one image
+        # per page. The path chooser can only select files so we need a
+        # separate button to select a directory.
+        path = tk.filedialog.askdirectory(title='Select directory containing the images for the manual')
+        if not path:
+            return
+        self.manual = path
+        self.builder.get_variable('manual_variable').set(path)
 
     def on_theme_selected(self, event):
         self.master.config(cursor='watch')
@@ -421,6 +435,9 @@ class PopFePs3App:
         if disc_id in games and 'manual' in games[disc_id]:
             print('Found an MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
+        _manual = popfe.find_local_manual(self.cue_file_orig)
+        if _manual:
+            self.manual = _manual
         if disc_id in games and 'psp-use-cdda' in games[disc_id]:
             self.cdda = 'on'
             self.builder.get_variable('cdda_variable').set(self.cdda)
@@ -448,6 +465,7 @@ class PopFePs3App:
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
             self.builder.get_variable('manual_variable').set(self.manual)
             self.builder.get_object('manual', self.master).config(state='enabled')
+            self.builder.get_object('manual_dir', self.master).config(state='enabled')
             self.update_assets()
             
             self.builder.get_object('disc1', self.master).config(state='disabled')

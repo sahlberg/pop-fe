@@ -61,7 +61,7 @@ try:
 except:
     True
 from bchunk import bchunk
-from document import create_document, create_document_from_dir, decrypt_document, encrypt_document
+from document import create_document, create_document_from_dir, decrypt_document, encrypt_document, read_document
 from gamedb import games, libcrypt, themes, ppf_fixes
 from db import disc_by_md5
 try:
@@ -2468,7 +2468,7 @@ def create_retroarch_thumbnail(dest, game_title, icon0, pic1):
         image.save(f, 'PNG')
 
 
-def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
+def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual, subdir='./pop-fe-work/'):
     print('fetching metadata for', game_id, 'to directory', cue) if verbose else None
 
     f = path_basename(cue)[:-4]
@@ -2523,14 +2523,21 @@ def create_metadata(cue, game_id, game_title, icon0, pic0, pic1, snd0, manual):
                     o.write(i.read())
         
     # MANUAL
-    if manual and game_id in games and 'manual' in games[game_id]:
-        try:
-            os.stat(create_path(cue, f + '.manual'))
-        except:
-            print('Installing MANUAL')
-            with open(manual, 'rb') as i:
-                with open(create_path(cue, f + '.manual'), 'wb') as o:
-                    o.write(i.read())
+    if manual:
+        name = manual_asset_name(cue, manual)
+        # name is None if the manual is a directory of images, we do not
+        # copy those into the game directory.
+        if name:
+            dest = create_path(cue, name)
+            try:
+                os.stat(dest)
+            except:
+                src = manual
+                if src[:7] == 'http://' or src[:8] == 'https://':
+                    src = download_manual(src, subdir)
+                if src and os.path.isfile(src):
+                    print('Installing MANUAL as', dest)
+                    copy_file(src, dest)
 
         
 def get_imgs_from_bin(cue):
@@ -3359,6 +3366,7 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     if manual:
         print('Installing manual as', subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
         copy_file(manual, subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
+        temp_files.append(subdir + disc_ids[0] + '/USRDIR/CONTENT/DOCUMENT.DAT')
 
     p.eboot = subdir + disc_ids[0] + '/USRDIR/CONTENT/EBOOT.PBP'
     p.iso_bin_dat = subdir + disc_ids[0] + '/USRDIR/ISO.BIN.DAT'
@@ -4045,125 +4053,233 @@ def create_sbi(sbi, magic_word):
                 f.write(generate_sbi(sector_pairs[i][0]))
                 f.write(generate_sbi(sector_pairs[i][1]))
 
+#
+# Manuals.
+#
+# A manual can be provided in a number of different formats :
+# * a directory containing one image per page
+# * a ZIP/CBZ or CBR/RAR archive containing one image per page
+# * a PDF file
+# * a http(s) URL pointing at any of the archives above
+# * an already finished DOCUMENT.DAT, in either PSP or PS3 format
+#
+# When stored as an asset next to the disc image it should be named
+# <disc-image>.manual.<ext>, i.e. for  'My Game (USA).cue' :
+#   My Game (USA).manual.zip     the pages as a ZIP archive
+#   My Game (USA).manual.pdf     the pages as a PDF
+#   My Game (USA).manual/        a directory with one image per page
+# The legacy name <disc-image>.manual, holding a finished DOCUMENT.DAT,
+# is still recognized.
+#
+manual_asset_extensions = ['.manual.zip', '.manual.cbz', '.manual.cbr',
+                           '.manual.rar', '.manual.pdf', '.manual.dat',
+                           '.manual']
+
+def find_local_manual(cue):
+    """Check if there is a manual stored as an asset next to the disc image"""
+    if not cue:
+        return None
+    base = os.path.splitext(cue)[0]
+    for ext in manual_asset_extensions:
+        f = base + ext
+        if os.path.exists(f):
+            print('Use locally stored manual from', f)
+            return f
+    return None
+
+
+def manual_asset_name(cue, manual):
+    """The name to use when storing 'manual' as an asset next to 'cue'"""
+    base = os.path.splitext(path_basename(cue))[0]
+    if os.path.isdir(manual):
+        return None
+    ext = os.path.splitext(manual.split('?')[0])[1].lower()
+    if ext not in ['.zip', '.cbz', '.cbr', '.rar', '.pdf']:
+        # Either a finished DOCUMENT.DAT or something we can not tell from
+        # the name alone. Store it under the legacy name.
+        ext = ''
+    return base + '.manual' + ext
+
+
+def download_manual(url, subdir):
+    """Download a manual and return the name of the local copy"""
+    print('Download manual from', url)
+    name = url.split('?')[0].split('/')[-1]
+    if not name:
+        name = 'MANUAL'
+    tmpfile = subdir + '/DOCUMENT-' + name
+    try:
+        ret = requests.get(url)
+        if ret.status_code != 200:
+            print('Failed to download manual from', url)
+            return None
+        with open(tmpfile, 'wb') as f:
+            f.write(ret.content)
+    except:
+        print('Failed to download manual from', url)
+        return None
+    temp_files.append(tmpfile)
+    print('Downloaded manual as', tmpfile)
+    return tmpfile
+
+
+def manual_format(source):
+    """Figure out what kind of manual 'source' is by looking at the content
+    and not at the file name."""
+    with open(source, 'rb') as f:
+        buf = f.read(8)
+    if buf[:4] == b'DOC ':
+        return 'psp-document'
+    if buf[:4] == b'\x00PGD':
+        return 'ps3-document'
+    if buf[:4] == b'PK\x03\x04':
+        return 'zip'
+    if buf[:4] == b'Rar!':
+        return 'rar'
+    if buf[:4] == b'%PDF':
+        return 'pdf'
+    return None
+
+
+def manual_tmpdir(subdir, name, tmpdirs):
+    """Create a fresh temporary directory to hold the pages of a manual"""
+    idx = 0
+    while True:
+        d = subdir + '/' + name + ('' if not idx else '-%d' % idx)
+        try:
+            os.mkdir(d)
+            tmpdirs.append(d)
+            return d
+        except FileExistsError:
+            idx = idx + 1
+            if idx > 100:
+                raise
+
+
+def collect_manual_pages(directory):
+    """Return all files in 'directory', in the order they should be shown"""
+    def sort_key(f):
+        # Sort naturally so that page9 comes before page10
+        return [int(s) if s.isdigit() else s.lower() for s in re.split('([0-9]+)', f)]
+
+    files = []
+    for root, dirs, names in os.walk(directory):
+        if '__MACOSX' in root:
+            continue
+        for n in names:
+            # Skip hidden files and MacOS resource forks
+            if n[0] == '.':
+                continue
+            files.append(os.path.join(root, n))
+    files.sort(key=sort_key)
+    return files
+
+
 # Convert scans of the manual into a DOCUMENT.DAT for PSP and PS3
 def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
+    # Everything we unpack while building the manual is thrown away again
+    # as soon as we are finished with it.
+    tmpdirs = []
+    try:
+        return _create_manual(source, gameid, subdir, ps3_manual, tmpdirs)
+    finally:
+        for d in tmpdirs:
+            shutil.rmtree(d, ignore_errors=True)
 
-    if source[-7:] == '.manual':
-        with open(source, 'rb') as f:
-            _b = f.read(4)
-            f.seek(0)
-            if _b == b'\x00PGD' and  ps3_manual:
-                print('Found a manual already in PS3 DOCUMENT.DAT format')
-                return source
-            if _b == b'\x00PGD':
-                print('Need to convert to kludgy PSP DOCUMENT.DAT format')
-                _d = subdir + '/PSP-DOCUMENT'
-                os.mkdir(_d)
-                decrypt_document(f.read(), _d)
-                print('Decrypted and extracted document to', _d)
-                _m = subdir + '/DOCUMENT.PSP'
-                create_document_from_dir(gameid, _d, _m)
-                print('Created PSP document')
-                return _m
 
-    print('Create manual', source)
-    files = []
-
-    if source[:8] != 'https://':
-        with open(source, 'rb') as f:
-            buf = f.read(4)
-            signature = struct.unpack_from('<I', buf, 0)[0]
-            if signature == 0x20434F44: # a PSP DOCUMENT.DAT file?
-                return source
-            if signature == 0x04034b50: # a ZIP file?
-                print('Is a zip file')
-                tmpfile = subdir + '/DOCUMENT.zip'
-                temp_files.append(tmpfile)
-                copy_file(source, tmpfile)
-                source = tmpfile
-
-    print('Create DOCUMENT.DAT from', source)
-    if source[:8] == 'https://':
-        print('Download manual from', source)
-        try:
-            tmpfile = subdir + '/DOCUMENT-' + source.split('/')[-1]
-            temp_files.append(tmpfile)
-            ret = requests.get(source)
-            if ret.status_code != 200:
-                print('Failed to download manual from', source)
-                return None
-            if ret.apparent_encoding:
-                buf = ret.content.decode(ret.apparent_encoding)
-            else:
-                buf = ret.content
-            with open(tmpfile, 'wb') as f:
-                f.write(buf)
-            print('Downloaded manual as', tmpfile)
-            source = tmpfile
-        except:
-            print('Failed to download manual from', source)
-            return None
-    if source[-4:] == '.zip':
-        print('Unzip manual', source, 'from ZIP')
-        subdir = subdir + '/DOCUMENT-tmp'
-        os.mkdir(subdir)
-        temp_files.append(subdir)
-
-        z = zipfile.ZipFile(source)
-        for f in z.namelist():
-            # Skip any subdirectories that might be created
-            if f[-1] == '/' or f[-1] == '\\':
-                continue
-            f = z.extract(f, path=subdir)
-            temp_files.append(f)
-            files.append(f)
-            source = subdir
-    if source[-4:] == '.cbr':
-        print('Unzip manual', source, 'from CBR')
-        subdir = subdir + '/DOCUMENT-tmp'
-        os.mkdir(subdir)
-        temp_files.append(subdir)
-
-        try:
-            r = rarfile.RarFile(source)
-            for f in r.namelist():
-                f = r.extract(f, path=subdir)
-                temp_files.append(f)
-                files.append(f)
-            source = subdir
-        except:
-            print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
-            return None
-
-    if source[-4:] == '.pdf':
-        print('Extract manual', source, 'from PDF')
-        subdir = subdir + '/DOCUMENT-tmp'
-        os.mkdir(subdir)
-        temp_files.append(subdir)
-        try:
-            idx = 0
-            r = PyPDF2.PdfReader(source)
-            for p in r.pages:
-                for i in p.images:
-                    f = subdir + '/' + f"{idx:04d}" + '.img'
-                    with open(f, "wb") as fp:
-                        fp.write(i.data)                   
-                    idx = idx + 1
-                    temp_files.append(f)
-                    files.append(f)
-            source = subdir
-        except:
-            print('Failed to parse PDF.')
-            return None
-            
-    if not os.path.isdir(source):
-        print('Can not create manual.', source, 'is not a directory')
+def _create_manual(source, gameid, subdir, ps3_manual, tmpdirs):
+    if not source or source == 'None':
         return None
 
-    tmpfile = subdir + '/DOCUMENT.DAT'
-    temp_files.append(tmpfile)
+    print('Create manual from', source)
+
+    if source[:7] == 'http://' or source[:8] == 'https://':
+        source = download_manual(source, subdir)
+        if not source:
+            return None
+
+    if not os.path.exists(source):
+        print('Can not create manual.', source, 'does not exist')
+        return None
+
+    files = []
+    if os.path.isdir(source):
+        print('Read manual pages from directory', source)
+        files = collect_manual_pages(source)
+    else:
+        fmt = manual_format(source)
+        if fmt == 'psp-document':
+            if not ps3_manual:
+                print('Manual is already in PSP DOCUMENT.DAT format')
+                return source
+            print('Manual is in PSP DOCUMENT.DAT format. Convert it to PS3 format')
+            d = manual_tmpdir(subdir, 'DOCUMENT-PAGES', tmpdirs)
+            try:
+                pages = read_document(source)
+            except Exception as e:
+                print('Failed to read DOCUMENT.DAT.', e)
+                return None
+            for idx, p in enumerate(pages):
+                f = d + '/%04d.png' % idx
+                with open(f, 'wb') as o:
+                    o.write(p)
+                files.append(f)
+        elif fmt == 'ps3-document':
+            if ps3_manual:
+                print('Manual is already in PS3 DOCUMENT.DAT format')
+                return source
+            print('Manual is in PS3 DOCUMENT.DAT format. Convert it to PSP format')
+            d = manual_tmpdir(subdir, 'DOCUMENT-PAGES', tmpdirs)
+            try:
+                with open(source, 'rb') as f:
+                    decrypt_document(f.read(), d)
+            except Exception as e:
+                print('Failed to decrypt DOCUMENT.DAT.', e)
+                return None
+            files = collect_manual_pages(d)
+        elif fmt == 'zip':
+            print('Unzip manual', source, 'from ZIP')
+            d = manual_tmpdir(subdir, 'DOCUMENT-tmp', tmpdirs)
+            z = zipfile.ZipFile(source)
+            for f in z.namelist():
+                # Skip any subdirectories that might be created
+                if f[-1] == '/' or f[-1] == '\\':
+                    continue
+                z.extract(f, path=d)
+            files = collect_manual_pages(d)
+        elif fmt == 'rar':
+            print('Unpack manual', source, 'from CBR')
+            d = manual_tmpdir(subdir, 'DOCUMENT-tmp', tmpdirs)
+            try:
+                r = rarfile.RarFile(source)
+                for f in r.namelist():
+                    r.extract(f, path=d)
+            except:
+                print('Failed to create SOFTWARE MANUAL. Could not extract images from CBR file. Make sure that UNRAR is installed.')
+                return None
+            files = collect_manual_pages(d)
+        elif fmt == 'pdf':
+            print('Extract manual', source, 'from PDF')
+            d = manual_tmpdir(subdir, 'DOCUMENT-tmp', tmpdirs)
+            try:
+                idx = 0
+                r = PyPDF2.PdfReader(source)
+                for p in r.pages:
+                    for i in p.images:
+                        f = d + '/' + f"{idx:04d}" + '.img'
+                        with open(f, "wb") as fp:
+                            fp.write(i.data)
+                        idx = idx + 1
+                        files.append(f)
+            except:
+                print('Failed to parse PDF.')
+                return None
+        else:
+            print('Can not create manual.', source, 'is not a directory and not a ZIP/CBR/PDF/DOCUMENT.DAT')
+            return None
+
     pages = []
-    for p in sorted(files):
+    for p in files:
         def add_pic(pic):
             maxysize = 480
             sf = 480 / pic.size[0]
@@ -4177,28 +4293,42 @@ def create_manual(source, gameid, subdir='./pop-fe-work/', ps3_manual=False):
             image.save(f, 'PNG')
             f.seek(0)
             pages.append(f.read())
-                
-        pic = Image.open(p)
-        # It is common that scans contains two pages side by side
-        # so check for that and split the image if needed
-        if pic.size[0] > int(pic.size[1] * 1.8):
-            pic1 = pic.crop((0, 0, int(pic.size[0] / 2), pic.size[1]))
-            pic2 = pic.crop((int(pic.size[0] / 2), 0 , pic.size[0], pic.size[1]))
-            add_pic(pic1)
-            add_pic(pic2)
-        else:
-            add_pic(pic)
+
+        try:
+            pic = Image.open(p)
+            # It is common that scans contains two pages side by side
+            # so check for that and split the image if needed
+            if pic.size[0] > int(pic.size[1] * 1.8):
+                pic1 = pic.crop((0, 0, int(pic.size[0] / 2), pic.size[1]))
+                pic2 = pic.crop((int(pic.size[0] / 2), 0 , pic.size[0], pic.size[1]))
+                add_pic(pic1)
+                add_pic(pic2)
+            else:
+                add_pic(pic)
+        except:
+            # Archives and directories often contain other things than
+            # just the pages of the manual.
+            print('Skipping', p, 'it is not an image we can read')
+            continue
+
+    if not pages:
+        print('Can not create manual. Did not find any pages in', source)
+        return None
+    print('Manual has', len(pages), 'pages')
 
     if ps3_manual:
+        tmpfile = subdir + '/DOCUMENT-PS3.DAT'
         print('Create PS3 manual')
         with open(tmpfile, 'wb') as f:
             encrypt_document(f, gameid, pages)
         print('Created PS3 manual in', tmpfile)
     else:
+        tmpfile = subdir + '/DOCUMENT-PSP.DAT'
         print('Create PSP manual')
         with open(tmpfile, 'wb') as f:
             create_document(f, gameid, pages)
         print('Created PSP manual in', tmpfile)
+    temp_files.append(tmpfile)
 
     return tmpfile
 
@@ -4554,7 +4684,7 @@ if __name__ == "__main__":
     parser.add_argument('--game_id',
                         help='Force game_id for this iso.')
     parser.add_argument('--manual',
-                        help='Directory/Zip/HTTP-link containing images for the manual')
+                        help='The manual for the game. Can be a directory containing one image per page, a ZIP/CBR/PDF file, a finished DOCUMENT.DAT or a HTTP-link to any of these.')
     parser.add_argument('--force-no-assets', action='store_true',
                         help='Do not download any assets for this')
     parser.add_argument('--title',
@@ -4781,25 +4911,20 @@ if __name__ == "__main__":
     manual = None
     psp_manual = None
     ps3_manual = None
-    if not args.force_no_assets and (args.psp_dir or args.ps3_pkg):
-        if args.manual:
+    if not args.force_no_assets:
+        if args.manual and args.manual.lower() != 'none':
             manual = args.manual
         if not manual:
-            try:
-                os.stat(args.files[0][:-4] + '.manual')
-                manual = args.files[0][:-4] + '.manual'
-                print('Use locally stored manual from', manual)
-            except:
-                True
+            manual = find_local_manual(args.files[0])
         if not manual and disc_ids[0] in games and 'manual' in games[disc_ids[0]]:
             manual = games[disc_ids[0]]['manual']
         if manual:
             if args.ps3_pkg:
                 print('Create PS3 manual from', manual)
-                ps3_manual = create_manual(manual, disc_ids[0], ps3_manual=True)
+                ps3_manual = create_manual(manual, disc_ids[0], subdir=subdir, ps3_manual=True)
             if args.psp_dir:
                 print('Create PSP manual from', manual)
-                psp_manual = create_manual(manual, disc_ids[0])
+                psp_manual = create_manual(manual, disc_ids[0], subdir=subdir)
         
     print('Id:', games[disc_ids[0]]['id'])
     print('Title:', game_title)
@@ -4867,7 +4992,7 @@ if __name__ == "__main__":
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
-        create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual)
+        create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual, subdir=subdir)
     if args.psio_dir:
         create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cue_files, img_files, subdir=subdir)
     if args.retroarch_bin_dir:

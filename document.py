@@ -49,21 +49,22 @@ KEY_VAULT = {
 }
 
 def _encrypt_iv0(data: bytes, keyseed: int) -> bytes:
-    return AES.new(KEY_VAULT[keyseed], AES.MODE_CBC, b'\x00' * 16).encrypt(data)
+    return AES.new(KEY_VAULT[keyseed], AES.MODE_CBC, b'\x00' * 16).encrypt(bytes(data))
 
 def _decrypt_iv0(data: bytes, keyseed: int) -> bytes:
-    return AES.new(KEY_VAULT[keyseed], AES.MODE_CBC, b'\x00' * 16).decrypt(data)
+    return AES.new(KEY_VAULT[keyseed], AES.MODE_CBC, b'\x00' * 16).decrypt(bytes(data))
 
 def _decrypt_des(input_data: bytes) -> bytes:
     cipher = DES.new(des_key, DES.MODE_CBC, des_iv)
-    return cipher.decrypt(input_data)
+    # pycryptodome only accepts read-only buffers, i.e. not a bytearray
+    return cipher.decrypt(bytes(input_data))
 
 def _encrypt_des(data: bytes) -> bytes:
     cipher = DES.new(des_key, DES.MODE_CBC, des_iv)
-    return cipher.encrypt(data)
+    return cipher.encrypt(bytes(data))
 
 def sha1hash(data: bytes) -> bytes:
-    return hashlib.sha1(data).digest()[:0x10]
+    return hashlib.sha1(bytes(data)).digest()[:0x10]
 
 def gen_pad(buf: bytes, block_size: int = 16) -> bytes:
     return buf + b'\x00' * (-len(buf) % block_size)
@@ -210,8 +211,7 @@ def decrypt_document(data, directory):
     # PGD Header
     hdr = data[:0x10]
     if hdr != pgd_hdr:
-        print('PGD magic mismatch')
-        os._exit(1)
+        raise Exception('PGD magic mismatch')
     
     # DOC Header
     o = 0x10
@@ -228,18 +228,15 @@ def decrypt_document(data, directory):
     #         os._exit(1)
     
     if sha1hash(hdr) != sha1:
-        print('DOC Header SHA1 mismatch')
-        os._exit(1)
+        raise Exception('DOC Header SHA1 mismatch')
     
     msg = _decrypt_des(hdr)
     
     if msg[:4] != b'DOC ':
-        print('DOC magic mismatch')
-        os._exit(1)
+        raise Exception('DOC magic mismatch')
     
     if msg[0x04:0x0C] != b'\0\0\1\0\0\0\1\0':
-        print('Unknown mismatch')
-        os._exit(1)
+        raise Exception('Unknown mismatch')
     
     print('Game ID:', msg[0x0C:0x1C].decode().rstrip('\0'))
     
@@ -260,14 +257,12 @@ def decrypt_document(data, directory):
     #         os._exit(1)
     
     if sha1hash(hdr) != sha1:
-        print('INFO Block SHA1 mismatch')
-        os._exit(1)
+        raise Exception('INFO Block SHA1 mismatch')
     
     msg = _decrypt_des(hdr)
     
     if msg[0:4] != b'\xFF' * 4:
-        print('Marker mismatch')
-        os._exit(1)
+        raise Exception('Marker mismatch')
     
     psp_image_count = struct.unpack_from('<I', msg, 0x04)[0]
     ps3_image_count = struct.unpack_from('<I', msg, 0x1f388 if big_flag else 0x3188)[0]
@@ -325,12 +320,12 @@ def decrypt_document(data, directory):
         needle_idx = page_buf.rfind(needle_buf)
         
         if needle_idx == -1:
-            print(f'Page {page_index+1:03d}: PNG trailer not found')
+            print(f'Page {i+1:03d}: PNG trailer not found')
             continue
         
         png_size = needle_idx + len(needle_buf)
         if png_size < 0x43:
-            print(f'Page {page_index+1:03d}: PNG too small or trailer found too early (size={png_size})')
+            print(f'Page {i+1:03d}: PNG too small or trailer found too early (size={png_size})')
             continue
         
         with open('%s/%03d.png' % (directory, i+1), 'wb') as f:
@@ -428,6 +423,29 @@ def create_document(f, gameid, pages):
         f.seek(0, 2)
         f.write(p)
 
+def read_document(document):
+    """Read a PSP format (unencrypted) DOCUMENT.DAT and return the pages
+    as a list of PNG images."""
+    pages = []
+    with open(document, 'rb') as i:
+        buf = i.read(136)
+
+        if struct.unpack_from('<I', buf, 0)[0] != 0x20434F44:
+            raise Exception('Not a decrypted PS1 DOCUMENT.DAT file')
+
+        num_pages = struct.unpack_from('<I', buf, 132)[0]
+        print('Num pages:', num_pages)
+
+        for page in range(num_pages):
+            i.seek(136 + 128 * page)
+            buf = i.read(128)
+            offset_low = struct.unpack_from('<I', buf, 0)[0]
+            size_low = struct.unpack_from('<I', buf, 12)[0]
+            i.seek(offset_low)
+            pages.append(i.read(size_low))
+    return pages
+
+
 def view_document(document, page):
     with open(document, 'rb') as i:
         buf = i.read(136)
@@ -451,27 +469,11 @@ def view_document(document, page):
         image.show()
 
 def extract_document(document, output):
-    with open(document, 'rb') as i:
-        buf = i.read(136)
-        
-        if struct.unpack_from('<I', buf, 0)[0] != 0x20434F44:
-            print('Not a Decrypted PS1 DOCUMENT.DAT file')
-            exit
-        
-        num_pages = struct.unpack_from('<I', buf, 132)[0]
-        print('Num pages:', num_pages)
-        
-        for page in range(num_pages):
-            print(f'Extracting {page+1:03d} to {output}/{page+1:03d}.png')
-            
-            i.seek(136 + 128 * page)
-            buf = i.read(128)
-            offset_low = struct.unpack_from('<I', buf, 0)[0]
-            size_low = struct.unpack_from('<I', buf, 12)[0]
-            i.seek(offset_low)
-            
-            with open(output + '/%03d.png' % page + 1, 'wb') as o:
-                o.write(i.read(size_low))
+    Path(output).mkdir(parents=True, exist_ok=True)
+    for page, buf in enumerate(read_document(document)):
+        print('Extracting %s/%03d.png' % (output, page + 1))
+        with open('%s/%03d.png' % (output, page + 1), 'wb') as o:
+            o.write(buf)
 
 def create_document_from_dir(gameid, dir, doc):
     pages = []

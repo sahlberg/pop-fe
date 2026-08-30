@@ -119,6 +119,7 @@ class PopFePs3App:
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
+            'on_manual_dir': self.on_manual_dir,
         }
 
         builder.connect_callbacks(callbacks)
@@ -153,6 +154,8 @@ class PopFePs3App:
         tooltip.create(self.disable_pic1 , "Disable the background image that would show up on the XMB\nwhen the gameicon is highlighted")
         self.disable_pic0 = builder.get_object("disable_pic0")
         tooltip.create(self.disable_pic0 , "Disable the game logo that would show up on the XMB\nwhen the gameicon is highlighted")
+        _manual = builder.get_object("manual")
+        tooltip.create(_manual, "The manual for the game.\nThis can be a ZIP/CBR/PDF file with one image per page, a finished\nDOCUMENT.DAT in either PSP or PS3 format, or a directory containing\none image per page. Use the Directory... button to select a directory.")
         self.pic0scaling = builder.get_object("pic0scaling")
         tooltip.create(self.pic0scaling , "Change the scaling of the game logo.\n1.0 is 100% of original.\n0.5 is 50%, etc.")
         self.pic0xoffset = builder.get_object("pic0xoffset")
@@ -275,7 +278,8 @@ class PopFePs3App:
         self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
         self.builder.get_variable('snd0_variable').set('')
         self.builder.get_object('manual', self.master).config(state='disabled')
-        self.builder.get_object('manual', self.master).config(filetypes=[('All Files', ['*.*', '*'])])
+        self.builder.get_object('manual', self.master).config(filetypes=[('Manuals', ['.zip', '.cbz', '.cbr', '.rar', '.pdf', '.dat', '.manual']), ('All Files', ['*.*', '*'])])
+        self.builder.get_object('manual_dir', self.master).config(state='disabled')
         self.builder.get_variable('manual_variable').set('')
         self.builder.get_variable('pic0scaling_variable').set('')
         self.builder.get_variable('pic0xoffset_variable').set('')
@@ -335,6 +339,16 @@ class PopFePs3App:
         self.preview_tk = tk.PhotoImage(file = self.subdir + 'PREVIEW.PNG')
         c = self.builder.get_object('preview_canvas', self.master)
         c.create_image(0, 0, image=self.preview_tk, anchor='nw')
+
+    def on_manual_dir(self):
+        # The manual can also be just a directory containing one image
+        # per page. The path chooser can only select files so we need a
+        # separate button to select a directory.
+        path = tk.filedialog.askdirectory(title='Select directory containing the images for the manual')
+        if not path:
+            return
+        self.manual = path
+        self.builder.get_variable('manual_variable').set(path)
 
     def on_theme_selected(self, event):
         self.master.config(cursor='watch')
@@ -461,6 +475,9 @@ class PopFePs3App:
         if disc_id in games and 'manual' in games[disc_id]:
             print('Found a MANUAL for', disc_id)
             self.manual = games[disc_id]['manual']
+        _manual = popfe.find_local_manual(self.cue_file_orig)
+        if _manual:
+            self.manual = _manual
         if disc == 'd1':
             self.builder.get_object('discid1', self.master).config(state='normal')
             self.builder.get_variable('title_variable').set(popfe.get_title_from_game(disc_id))
@@ -492,6 +509,7 @@ class PopFePs3App:
             self.builder.get_object('pic0yoffset', self.master).config(state='enabled')
             self.builder.get_variable('manual_variable').set(self.manual)
             self.builder.get_object('manual', self.master).config(state='enabled')
+            self.builder.get_object('manual_dir', self.master).config(state='enabled')
             self.update_assets()
             
         elif disc == 'd2':
