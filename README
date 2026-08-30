@@ -673,7 +673,6 @@ sudo dnf install -y python3-devel
 sudo dnf install -y python-tkinter
 sudo dnf install -y libsndfile-devel
 sudo dnf install -y ffmpeg
-sudo dnf install -y nodejs
 sudo dnf install -y glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
@@ -687,7 +686,6 @@ sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install ffmpeg
-sudo apt install nodejs
 sudo apt install glibc-static
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 cd pop-fe
@@ -700,7 +698,6 @@ sudo apt install python-is-python3
 sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
-sudo apt install nodejs
 pip3 install yt-dlp
 pip3 install PyPDF2
 pip3 install requests
