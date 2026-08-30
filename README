@@ -356,9 +356,13 @@ Memory Card Annihilator on the PS2.
 
 YOUTUBE
 =======
-Downloadding audio from youtube requires that the python package pytubefix is installed.
-This package currently has a dependency so you MUST also install the nnodejs package
-on your platform.
+Downloading audio from youtube requires that yt-dlp is installed.
+pop-fe will use the yt_dlp python package if it is available and will otherwise
+fall back to using the yt-dlp command line tool, so either
+  pip3 install yt-dlp
+or installing the yt-dlp package for your platform will work.
+For some videos yt-dlp also needs a javascript runtime. It uses deno by default,
+so if downloads start failing, installing deno may help.
 
 SND0.AT3
 ========
@@ -697,7 +701,7 @@ sudo apt install python3-pip
 sudo apt install libsndfile-dev
 sudo apt install git
 sudo apt install nodejs
-pip3 install pytubefix
+pip3 install yt-dlp
 pip3 install PyPDF2
 pip3 install requests
 pip3 install pycdlib  (or pip3 install pycdio)
@@ -718,7 +722,7 @@ unzip -j libcrypt-patcher-v1.0.9-linux-i386-static.zip */lcp
 Android (Termux https://f-droid.org/en/packages/com.termux/) Manual Install:
 ------------------------
 pkg install build-essential git patchelf python-pip python-pillow opencv-python ninja libsndfile
-pip install pytubefix PyPDF2 requests pycdlib ecdsa tkinterdnd2 rarfile pycryptodome
+pip install yt-dlp PyPDF2 requests pycdlib ecdsa tkinterdnd2 rarfile pycryptodome
 git clone --recursive https://github.com/sahlberg/pop-fe.git
 make -C pop-fe/PSL1GHT/tools/ps3py/
 cmake -B pop-fe/atracdenc/src/ -S pop-fe/atracdenc/src/

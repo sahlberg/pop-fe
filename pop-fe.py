@@ -16,6 +16,7 @@ try:
 except:
     print('You need to install python module pillow')
 import argparse
+import glob
 import hashlib
 import io
 import os
@@ -35,11 +36,11 @@ try:
     have_iso9660 = True
 except:
     True
-have_pytube = False
+have_ytdlp = False
+ytdlp = None
 try:
-    from pytubefix import YouTube
-    from pytubefix.contrib.search import Search
-    have_pytube = True
+    import yt_dlp as ytdlp
+    have_ytdlp = True
 except:
     True
 try:
@@ -2293,6 +2294,114 @@ def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
         duration = int(duration * 0.95 / (os.stat(at3).st_size / max_size))
     return snd0
 
+#
+# Youtube audio download/search, implemented on top of yt-dlp.
+# We prefer the yt_dlp python module but fall back to the yt-dlp
+# command line tool if the module is not installed.
+#
+def have_youtube():
+    return have_ytdlp or ytdlp_cli() is not None
+
+def ytdlp_cli():
+    for cmd in ['yt-dlp', 'yt-dlp.exe', 'yt-dlp_x86.exe']:
+        p = shutil.which(cmd)
+        if p:
+            return p
+    return None
+
+def download_youtube_audio(link, subdir='./'):
+    """Download the audio track for a youtube link.
+    Returns the name of the downloaded file or None."""
+    tmpl = os.path.join(subdir, 'snd0-youtube')
+    for f in glob.glob(tmpl + '.*'):
+        try:
+            os.unlink(f)
+        except:
+            True
+
+    if have_ytdlp:
+        opts = {
+            'format': 'bestaudio/best',
+            'outtmpl': tmpl + '.%(ext)s',
+            'noplaylist': True,
+            'noprogress': True,
+            'quiet': not verbose,
+            'no_warnings': not verbose,
+        }
+        try:
+            with ytdlp.YoutubeDL(opts) as ydl:
+                ydl.extract_info(link, download=True)
+        except Exception as e:
+            print('Failed to download', link, e)
+    else:
+        cli = ytdlp_cli()
+        if not cli:
+            print('Neither the yt_dlp python module nor the yt-dlp command line tool is available.\nInstall it by running:\npip3 install yt-dlp')
+            return None
+        cmd = [cli, '--no-playlist', '--no-progress',
+               '-f', 'bestaudio/best',
+               '-o', tmpl + '.%(ext)s', link]
+        if not verbose:
+            cmd.insert(1, '--quiet')
+        try:
+            subprocess.run(cmd, check=True,
+                           stdout=None if verbose else subprocess.DEVNULL)
+        except Exception as e:
+            print('Failed to download', link, e)
+
+    fn = glob.glob(tmpl + '.*')
+    if not fn:
+        print('Failed to download', link)
+        return None
+    # ignore any leftover .part/.ytdl files from an aborted download
+    fn = [f for f in fn if os.path.splitext(f)[1] not in ['.part', '.ytdl', '.temp']]
+    if not fn:
+        print('Failed to download', link)
+        return None
+    print('Downloaded', fn[0]) if verbose else None
+    return fn[0]
+
+def search_youtube_audio(query):
+    """Search youtube for a query string and return the URL of the
+    first hit, or None."""
+    vid = None
+    if have_ytdlp:
+        opts = {
+            'skip_download': True,
+            'extract_flat': True,
+            'noplaylist': True,
+            'noprogress': True,
+            'quiet': not verbose,
+            'no_warnings': not verbose,
+        }
+        try:
+            with ytdlp.YoutubeDL(opts) as ydl:
+                i = ydl.extract_info('ytsearch1:' + query, download=False)
+            if i and i.get('entries'):
+                vid = i['entries'][0].get('id')
+        except Exception as e:
+            print('Youtube search failed', e)
+            return None
+    else:
+        cli = ytdlp_cli()
+        if not cli:
+            print('Neither the yt_dlp python module nor the yt-dlp command line tool is available.\nInstall it by running:\npip3 install yt-dlp')
+            return None
+        try:
+            r = subprocess.run([cli, '--quiet', '--no-warnings',
+                                '--flat-playlist', '--print', 'id',
+                                'ytsearch1:' + query],
+                               check=True, stdout=subprocess.PIPE)
+            o = r.stdout.decode('utf-8').split()
+            if o:
+                vid = o[0]
+        except Exception as e:
+            print('Youtube search failed', e)
+            return None
+    if not vid:
+        return None
+    return 'https://www.youtube.com/watch?v=' + vid
+
 # caller adds the wav file to temp_files
 def get_snd0_from_link(link, subdir='./'):
     _h = hashlib.md5(link.encode('utf-8')).hexdigest()
@@ -2309,19 +2418,15 @@ def get_snd0_from_link(link, subdir='./'):
             temp_files.append(_d)
         return _d
 
-    if not have_pytube:
-        return None
-    try:
-        fn = YouTube(link).streams.filter(only_audio=True)[0].download(subdir)
-    except:
-        print('Failed to download', link)
+    fn = download_youtube_audio(link, subdir=subdir)
+    if not fn:
         return None
     temp_files.append(fn)
     return fn;
 
 # caller adds the wav file to temp_files
 def get_snd0_from_game(game_id, subdir='./'):
-    if not have_pytube or not game_id in games:
+    if not game_id in games:
         return None
     if not 'snd0' in games[game_id]:
         return None
@@ -3864,13 +3969,13 @@ def install_deps():
     except:
         print('Installing python Crypto')
         subprocess.call(['pip', 'install', 'Crypto'])
-    # pytube
+    # yt-dlp
     try:
-        from pytubefix import YouTube
-        print('Pytube is already installed')
+        import yt_dlp
+        print('yt-dlp is already installed')
     except:
-        print('Installing python pytube')
-        subprocess.call(['pip', 'install', 'pytubefix'])
+        print('Installing python yt-dlp')
+        subprocess.call(['pip', 'install', 'yt-dlp'])
     # opencv-contrib-python
     try:
         import cv2

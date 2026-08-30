@@ -53,7 +53,10 @@ jobs:
 
     strategy:
       matrix:
-        python-version: ["3.9"]
+        # 3.10 is the minimum for current yt-dlp (it requires >=3.10).
+        # On 3.9 pip silently resolves to a year-old yt-dlp that no longer
+        # works against youtube.
+        python-version: ["3.10"]
 
     steps:
       - uses: actions/checkout@v5
@@ -73,7 +76,7 @@ jobs:
           pip install pygubu
           pip install rarfile
           pip install tkinterDnD2
-          pip install pytubefix
+          pip install yt-dlp
           pip install opencv-contrib-python
           pip install scikit-learn
           pip install scipy
@@ -116,15 +119,15 @@ jobs:
           unzip -j psx-undither-v1.0-windows-i686-static.zip */psxund.exe
       - name: Build pop-fe
         run:   |
-          pyinstaller --add-data "PS3LOGO.DAT;." pop-fe.py
+          pyinstaller --add-data "PS3LOGO.DAT;." --collect-all yt_dlp pop-fe.py
       - name: Build pop-fe-ps3
         run:   |
           cp pop-fe.py popfe.py
-          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput --collect-all tkinterdnd2
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-ps3.ui;." pop-fe-ps3.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput --collect-all tkinterdnd2 --collect-all yt_dlp
       - name: Build pop-fe-psp
         run:   |
           cp pop-fe.py popfe.py
-          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-psp.ui;." pop-fe-psp.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput
+          pyinstaller --add-data "PS3LOGO.DAT;." --add-data "pop-fe-psp.ui;." pop-fe-psp.py --hidden-import pygubu.builder.tkstdwidgets --hidden-import pygubu.builder.ttkstdwidgets --hidden-import pygubu.builder.widgets.pathchooserinput --collect-all yt_dlp
       - name: Update dist/pop-fe
         run:   |
           mkdir dist/pop-fe/atracdenc

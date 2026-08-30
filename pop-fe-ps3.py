@@ -18,12 +18,6 @@ from tkinterdnd2 import *
 import zipfile
 
 
-have_pytube = False
-try:
-    import pytubefix as pytube
-    have_pytube = True
-except:
-    True
 
 from PIL import Image, ImageDraw
 from bchunk import bchunk
@@ -816,13 +810,15 @@ class PopFePs3App:
         # PKG in print()
 
     def on_youtube_audio(self):
-        if not have_pytube:
+        if not popfe.have_youtube():
+            print('yt-dlp is not installed.\nYou should install it by running:\npip3 install yt-dlp')
             return
         self.master.config(cursor='watch')
-        a = pytube.contrib.search.Search(self.builder.get_variable('title_variable').get() + ' ps1 ost')
-        if a:
-            self.builder.get_variable('snd0_variable').set('https://www.youtube.com/watch?v=' + a.results[0].video_id)
-           
+        self.master.update()
+        url = popfe.search_youtube_audio(self.builder.get_variable('title_variable').get() + ' ps1 ost')
+        if url:
+            self.builder.get_variable('snd0_variable').set(url)
+
         self.master.config(cursor='')
 
     def on_create_pkg(self):        
