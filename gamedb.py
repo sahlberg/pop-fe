@@ -2770,7 +2770,7 @@ games = {
     	'id': 'SLPS01767',
 	'title': "UMEZAWA YUKARI NO TAIKYOKU IGO - HEISEI KIIN II",
         'pic0': 'https://images.launchbox-app.com/54cebb8a-d6f0-4df6-9d10-6f31184c32a7.png',
-        'pic1': 'https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fckg2flcdd9s41.png',
+        'pic1': 'https://i.redd.it/ckg2flcdd9s41.png',
         'manual': 'https://psxdatacenter.com/manuals/Umezawa%20Yukari%20no%20Taikyoku%20Igo%20-%20Heisei%20Kiin%20II%20[J]%20[SLPS-01767].cbr',
     },
     'SLPS02172': {
@@ -4460,7 +4460,6 @@ games = {
     	'id': 'SLPS01944',
 	'title': "X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
-        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
         'manual': 'https://www.videogamemanual.com/ps1/X%20Games%20Pro%20Boarder%20(USA).pdf',
     },
     'SLPM86765': {
@@ -8985,7 +8984,6 @@ games = {
     	'id': 'SLUS00704',
 	'title': "ESPN X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
-        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
         'manual': 'https://www.videogamemanual.com/ps1/X%20Games%20Pro%20Boarder%20(USA).pdf',
     },
     'SLUS01034': {
@@ -41308,7 +41306,6 @@ games = {
     	'id': 'SCES01556',
 	'title': "X-GAMES PRO BOARDER",
         'pic0': 'https://images.launchbox-app.com/30849bad-f8eb-4104-9e33-9ae22f3a0f0f.png',
-        'pic1': 'https://tickettoridegroup.com/blog/how-to-become-a-pro-snowboarder/',
     },
     'SLES00198': {
         'url': "games/P/X/SLES-00198.html",
