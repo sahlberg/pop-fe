@@ -131,6 +131,178 @@ def dump_riff(riff):
                   print('\t', l + ':', res[k][l])
 
 
+# Wave format tags used for ATRAC3 audio
+WAVE_FORMAT_SONY_ATRAC3 = 624    # 0x0270
+WAVE_FORMAT_EXTENSIBLE  = 65534  # 0xfffe
+
+# ATRAC3 always decodes 1024 samples per channel from each block
+ATRAC3_SAMPLES_PER_BLOCK = 1024
+
+
+def is_at3(filename):
+    """Check if a file already is an ATRAC3 RIFF/WAVE file, i.e. a file
+    that can be used as SND0.AT3 as-is without any conversion."""
+    try:
+        with open(filename, 'rb') as f:
+            if f.read(4) != b'RIFF':
+                return False
+        r = parse_riff(filename)
+        if not r or 'fmt ' not in r or 'data' not in r:
+            return False
+        return r['fmt ']['compression_code'] in [WAVE_FORMAT_SONY_ATRAC3,
+                                                 WAVE_FORMAT_EXTENSIBLE]
+    except:
+        return False
+
+
+def _at3_fact_and_loop(number_of_samples):
+    """Create the 'fact' and 'smpl' chunks that make the XMB loop the audio."""
+    _f = bytearray(16)
+    _f[:4] = b'fact'
+    struct.pack_into('<I', _f, 4, len(_f) - 8)
+    struct.pack_into('<I', _f, 8, (number_of_samples & ~0xfff) - 0x2000)
+    struct.pack_into('<I', _f, 12, 0x800)
+
+    # loop(s)
+    _l = bytearray(24)
+    struct.pack_into('<I', _l, 0, 0)          # cue point id
+    struct.pack_into('<I', _l, 4, 0)          # type
+    struct.pack_into('<I', _l, 8, 0x800)      # start
+    struct.pack_into('<I', _l, 12, (number_of_samples & ~0xfff) - 0x2000 - 0x2801) # end
+    struct.pack_into('<I', _l, 16, 0)         # fraction
+    struct.pack_into('<I', _l, 20, 0)         # play count
+
+    _s = bytearray(36)
+    struct.pack_into('<I', _s, 0, 0)          # manufacturer
+    struct.pack_into('<I', _s, 4, 0)          # product
+    struct.pack_into('<I', _s, 8, 22676)      # sample period
+    struct.pack_into('<I', _s, 12, 60)        # midi unity node
+    struct.pack_into('<I', _s, 16, 0)         # midi pitch fraction
+    struct.pack_into('<I', _s, 20, 0)         # smpte format
+    struct.pack_into('<I', _s, 24, 0)         # smpte offset
+    struct.pack_into('<I', _s, 28, int(len(_l)/24)) # num sample loops
+    struct.pack_into('<I', _s, 32, len(_l))   # sampler data
+
+    _b = bytearray(8)
+    _b[:4] = b'smpl'
+    struct.pack_into('<I', _b, 4, len(_s) + len(_l))
+    return bytes(_f), bytes(_b + _s + _l)
+
+
+def _at3_list_chunk():
+    """The 'LIST' chunk we tag our AT3 files with."""
+    buf = b'ATRACDENC\0'
+    _b = bytearray(4)
+    struct.pack_into('<I', _b, 0, len(buf))
+    buf = b'INFOISFT' + _b + buf
+    _b = bytearray(4)
+    struct.pack_into('<I', _b, 0, len(buf))
+    buf = b'LIST' + _b + buf
+    if len(buf) & 1:
+        buf = buf + b'\0'
+    return buf
+
+
+def copy_at3(src, dst, max_duration_ms=0, max_size=0):
+    """Copy a file that already is in ATRAC3 format.
+
+    If the file fits within max_duration_ms and max_size it is copied
+    verbatim. If it is too long or too big we just truncate the ATRAC3
+    data at a block boundary and rebuild the header. ATRAC3 blocks are
+    independent of each other so no re-encoding is needed.
+    """
+    r = parse_riff(src)
+    if not r or 'fmt ' not in r or 'data' not in r:
+        print('Not a RIFF/WAVE file', src)
+        return None
+    if r['fmt ']['compression_code'] not in [WAVE_FORMAT_SONY_ATRAC3,
+                                             WAVE_FORMAT_EXTENSIBLE]:
+        print('Not an ATRAC3 file', src)
+        return None
+
+    fmt = r['fmt ']['data']
+    data = r['data']['data']
+    block_align = r['fmt ']['block_align']
+    if not block_align:
+        print('ATRAC3 file has no block alignment', src)
+        return None
+    bps = r['fmt ']['average_bytes_per_second']
+
+    # How much of the ATRAC3 data are we allowed to keep?
+    _max = len(data)
+    if max_duration_ms and bps:
+        _max = min(_max, int(bps * max_duration_ms / 1000))
+    if max_size:
+        # leave room for the header we are about to write
+        _overhead = 12 + (8 + len(fmt)) + 16 + (8 + 36 + 24) + 8 + len(_at3_list_chunk())
+        _max = min(_max, max_size - _overhead)
+    _max = _max - (_max % block_align)
+    if _max <= 0:
+        print('ATRAC3 file is too big and can not be trimmed to fit')
+        return None
+
+    if _max >= len(data) and (not max_size or os.stat(src).st_size < max_size):
+        print('Using', src, 'as-is. No conversion needed.')
+        with open(src, 'rb') as i:
+            with open(dst, 'wb') as o:
+                o.write(i.read())
+        return dst
+
+    print('Trimming ATRAC3 file from %d to %d bytes of audio' % (len(data), _max))
+    data = data[:_max]
+
+    number_of_samples = int(len(data) / block_align) * ATRAC3_SAMPLES_PER_BLOCK
+    with open(dst, 'wb') as f:
+        buf = bytearray(12)
+        buf[:4] = b'RIFF'
+        buf[8:12] = b'WAVE'
+        f.write(buf)
+
+        # fmt, copied verbatim from the source file
+        _b = bytearray(8)
+        _b[:4] = b'fmt '
+        struct.pack_into('<I', _b, 4, len(fmt))
+        f.write(_b + fmt)
+        if len(fmt) & 1:
+            f.write(b'\0')
+
+        # A loop needs a fair amount of audio to loop over
+        loop = number_of_samples > 0x8000
+        if loop:
+            _fact, _smpl = _at3_fact_and_loop(number_of_samples)
+            f.write(_fact)
+            f.write(_smpl)
+
+        # data
+        _b = bytearray(8)
+        _b[:4] = b'data'
+        struct.pack_into('<I', _b, 4, len(data))
+        buf = _b + data
+        if len(buf) & 1:
+            buf = buf + b'\0'
+        f.write(buf)
+
+        if not loop:
+            # fact
+            _b = bytearray(12)
+            _b[:4] = b'fact'
+            struct.pack_into('<I', _b, 4, len(_b) - 8)
+            struct.pack_into('<I', _b, 8, number_of_samples)
+            f.write(_b)
+
+        # LIST
+        f.write(_at3_list_chunk())
+
+        # update the RIFF length
+        f.seek(0, 2)
+        x = f.tell() - 8
+        _b = bytearray(4)
+        struct.pack_into('<I', _b, 0, x)
+        f.seek(4)
+        f.write(_b)
+    return dst
+
+
 def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
     print('Create', riff, 'from', ea3)
     with open(riff, 'wb') as f:
@@ -171,37 +343,9 @@ def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
             number_of_samples = int(data_size / 0xc0 * 0x201)
 
         if loop:
-            _b = bytearray(16)
-            _b[:4] = b'fact'
-            struct.pack_into('<I', _b, 4, len(_b) - 8)
-            struct.pack_into('<I', _b, 8, (number_of_samples & ~0xfff) - 0x2000)
-            struct.pack_into('<I', _b, 12, 0x800)
-            f.write(_b)
-
-            # loop(s)
-            _l = bytearray(24)
-            struct.pack_into('<I', _l, 0, 0)          # cue point id
-            struct.pack_into('<I', _l, 4, 0)          # type
-            struct.pack_into('<I', _l, 8, 0x800)      # start
-            struct.pack_into('<I', _l, 12, (number_of_samples & ~0xfff) - 0x2000 - 0x2801) # end
-            struct.pack_into('<I', _l, 16, 0)         # fraction
-            struct.pack_into('<I', _l, 20, 0)         # play count
-
-            _s = bytearray(36)
-            struct.pack_into('<I', _s, 0, 0)          # manufacturer
-            struct.pack_into('<I', _s, 4, 0)          # product
-            struct.pack_into('<I', _s, 8, 22676)      # sample period
-            struct.pack_into('<I', _s, 12, 60)        # midi unity node
-            struct.pack_into('<I', _s, 16, 0)         # midi pitch fraction
-            struct.pack_into('<I', _s, 20, 0)         # smpte format
-            struct.pack_into('<I', _s, 24, 0)         # smpte offset
-            struct.pack_into('<I', _s, 28, int(len(_l)/24)) # num sample loops
-            struct.pack_into('<I', _s, 32, len(_l))   # sampler data
-            
-            _b = bytearray(8)
-            _b[:4] = b'smpl'
-            struct.pack_into('<I', _b, 4, len(_s) + len(_l))
-            f.write(_b + _s + _l)
+            _fact, _smpl = _at3_fact_and_loop(number_of_samples)
+            f.write(_fact)
+            f.write(_smpl)
 
         #data
         _b = bytearray(8)
@@ -221,16 +365,7 @@ def create_riff(ea3, riff, number_of_samples=0, max_data_size=0, loop=False):
             f.write(_b)
 
         # LIST
-        buf = b'ATRACDENC\0'
-        _b = bytearray(4)
-        struct.pack_into('<I', _b, 0, len(buf))
-        buf = b'INFOISFT' + _b + buf
-        _b = bytearray(4)
-        struct.pack_into('<I', _b, 0, len(buf))
-        buf = b'LIST' + _b + buf
-        if len(buf) & 1:
-            buf = buf + b'\0'
-        f.write(buf)
+        f.write(_at3_list_chunk())
         
         # update the RIFF length
         f.seek(0, 2)

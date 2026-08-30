@@ -219,7 +219,7 @@ class PopFePs3App:
         self.builder.get_object('pic0yoffset', self.master).config(state='disabled')
         self.builder.get_variable('title_variable').set('')
         self.builder.get_variable('snd0_variable').set('')
-        self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav']), ('All Files', ['*.*', '*'])])
+        self.builder.get_object('snd0', self.master).config(filetypes=[('Audio files', ['.wav', '.mp3', '.m4a', '.ogg', '.flac']), ('ATRAC3 files', ['.at3', '.AT3', '.snd0']), ('All Files', ['*.*', '*'])])
         self.builder.get_variable('logo_variable').set('')
         self.builder.get_object('logo', self.master).config(filetypes=[('Audio files', ['.png', '.PNG']), ('All Files', ['*.*', '*'])])
 

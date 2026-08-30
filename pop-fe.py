@@ -72,7 +72,7 @@ except:
 from cue import parse_ccd, parse_cue, ccd2cue, write_cue, is_abs_path, path_dirname, path_basename
 from popstation import popstation, GenerateSFO
 from ppf import ApplyPPF
-from riff import copy_riff, create_riff, parse_riff
+from riff import copy_at3, copy_riff, create_riff, is_at3, parse_riff
 try:
     from theme_ascii import create_ascii_pic0, create_ascii_pic1
     from theme_dotpainting import create_dotpainting_pic0, create_dotpainting_pic1
@@ -2260,6 +2260,13 @@ def get_icon0_from_disc(game_id, game, cue, filename):
 
     return Image.open(io.BytesIO(ret.content))
 
+# Limits for the SND0 audio. The PSP XMB is a lot more restrictive
+# than the PS3 XMB.
+PS3_SND0_MAX_DURATION = 299
+PS3_SND0_MAX_SIZE = 2500000
+PSP_SND0_MAX_DURATION = 59
+PSP_SND0_MAX_SIZE = 500000
+
 def convert_snd0_to_at3(snd0, at3, duration, max_size, subdir = './'):
     print('Creating SND0.AT3')
     tmp_wav = subdir + 'SND0.WAV'
@@ -3130,17 +3137,18 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         True
 
     snd0_data = None
-    if snd0:
-        # Check if it is already in ATRAC3 format
-        with open(snd0, 'rb') as s:
-            buf = s.read(36)
-            if buf[:4] == b'RIFF':
-                riff = parse_riff(snd0)
-                if riff['fmt ']['compression_code'] in [624, 65534]:
-                    print('SND0 is already in AT3 format. No conversion needed.')
-                    s.seek(0)
-                    snd0_data = s.read()
-                    snd0 = None
+    if snd0 and is_at3(snd0):
+        # It is already in ATRAC3 format so we can use the audio data as-is.
+        # It might still be too long/big for the PSP XMB in which case we
+        # just truncate it. No re-encoding needed.
+        print('SND0 is already in AT3 format')
+        temp_files.append(subdir + 'SND0.AT3')
+        if copy_at3(snd0, subdir + 'SND0.AT3',
+                    max_duration_ms=PSP_SND0_MAX_DURATION * 1000,
+                    max_size=PSP_SND0_MAX_SIZE):
+            with open(subdir + 'SND0.AT3', 'rb') as i:
+                snd0_data = i.read()
+            snd0 = None
     if snd0:
         # PSP converts directly to 44100 as opposed to PS3 due to
         # XMB differences
@@ -3154,7 +3162,9 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
         except:
             snd0 = None
     if snd0:
-        if convert_snd0_to_at3(snd0, subdir + '/SND0.AT3', 59, 500000, subdir=subdir):
+        if convert_snd0_to_at3(snd0, subdir + '/SND0.AT3',
+                               PSP_SND0_MAX_DURATION, PSP_SND0_MAX_SIZE,
+                               subdir=subdir):
             with open(subdir + 'SND0.AT3', 'rb') as i:
                 snd0_data = i.read()
 
@@ -3378,16 +3388,15 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     with open(f + '/PARAM.SFO', 'wb') as of:
         of.write(GenerateSFO(sfo))
         temp_files.append(f + '/PARAM.SFO')
-    if snd0:
-        # Check if it is already in ATRAC3 format
-        with open(snd0, 'rb') as s:
-            buf = s.read(36)
-            if buf[:4] == b'RIFF':
-                riff = parse_riff(snd0)
-                if riff['fmt ']['compression_code'] in [624, 65534]:
-                    print('SND0 is already in AT3 format. No conversion needed.')
-                    copy_file(snd0, f + '/SND0.AT3')
-                    snd0 = None
+    if snd0 and is_at3(snd0):
+        # It is already in ATRAC3 format so we can use the audio data as-is.
+        # It might still be too long/big for the XMB in which case we just
+        # truncate it. No re-encoding needed.
+        print('SND0 is already in AT3 format')
+        if copy_at3(snd0, f + '/SND0.AT3',
+                    max_duration_ms=PS3_SND0_MAX_DURATION * 1000,
+                    max_size=PS3_SND0_MAX_SIZE):
+            snd0 = None
     if snd0:
         try:
             temp_files.append(subdir + 'snd0_tmp.wav')
@@ -3404,7 +3413,9 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
             struct.pack_into('<I', _b, 0, 0xac44)
             ff.seek(0x18)
             ff.write(_b)
-        convert_snd0_to_at3(snd0, f + '/SND0.AT3', 299, 2500000, subdir=subdir)
+        convert_snd0_to_at3(snd0, f + '/SND0.AT3',
+                            PS3_SND0_MAX_DURATION, PS3_SND0_MAX_SIZE,
+                            subdir=subdir)
 
     if icon0:
         image = icon0
