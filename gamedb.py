@@ -25619,11 +25619,15 @@ games = {
         'url': "games/P/E/SCES-00983.html",
     	'id': 'SCES00983',
 	'title': "EVERYBODY'S GOLF",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_ce3cc8ed-ee40-44a9-b151-f3848f9ad88c.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_da33a358-1cd1-4d91-9a7f-29c86c6d26e0.jpg',
     },
     'SCES02146': {
         'url': "games/P/E/SCES-02146.html",
     	'id': 'SCES02146',
 	'title': "EVERYBODY'S GOLF 2",
+        'pic0': 'https://gamesdb.launchbox-app.com/games/details/9862-hot-shots-golf-2',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_21babd21-4df9-4189-9aeb-876474023357.jpg',
         'pspconfig': "pspconfigs/Everybodys Golf 2/SCES-02146.bin",
     },
     'SLES03428': {
@@ -60891,6 +60895,7 @@ games = {
     	'id': 'SCPS10042',
 	'title': "MINNA NO GOLF",
         'pic0': 'https://images.launchbox-app.com/ac0c7670-be41-4a84-a112-0f97e7682ab3.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_da33a358-1cd1-4d91-9a7f-29c86c6d26e0.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Minna%20no%20Golf%20[Playstation%20the%20Best]%20(J)%20[SCPS-91126].cbr',
     },
     'SCPS91126': {
@@ -60898,6 +60903,7 @@ games = {
     	'id': 'SCPS91126',
 	'title': "MINNA NO GOLF [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/ac0c7670-be41-4a84-a112-0f97e7682ab3.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_da33a358-1cd1-4d91-9a7f-29c86c6d26e0.jpg',
         'manual': 'https://psxdatacenter.com/manuals/Minna%20no%20Golf%20[Playstation%20the%20Best]%20(J)%20[SCPS-91126].cbr',
     },
     'SCPS45421': {
@@ -60905,13 +60911,14 @@ games = {
     	'id': 'SCPS45421',
 	'title': "MINNA NO GOLF 2",
         'pic0': 'https://images.launchbox-app.com/e71f0249-d8a7-4ef0-bebb-6238a3c70c86.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_21babd21-4df9-4189-9aeb-876474023357.jpg',
     },
     'SCPS10093': {
         'url': "games/J/M/SCPS-10093.html",
     	'id': 'SCPS10093',
 	'title': "MINNA NO GOLF 2",
         'pic0': 'https://images.launchbox-app.com/e71f0249-d8a7-4ef0-bebb-6238a3c70c86.png',
-    
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_21babd21-4df9-4189-9aeb-876474023357.jpg',
         'pspconfig': "pspconfigs/Minna No Golf 2/SCPS-10093.bin",
     },
     'SCPS91197': {
@@ -60919,6 +60926,7 @@ games = {
     	'id': 'SCPS91197',
 	'title': "MINNA NO GOLF 2 [PLAYSTATION THE BEST]",
         'pic0': 'https://images.launchbox-app.com/e71f0249-d8a7-4ef0-bebb-6238a3c70c86.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_21babd21-4df9-4189-9aeb-876474023357.jpg',
     },
     'SLPM86921': {
         'url': "games/J/M/SLPM-86921.html",
