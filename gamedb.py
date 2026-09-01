@@ -78158,6 +78158,48 @@ ppf_fixes = {
         },
         'tags': ['psp',],
     },
+    'SCUS94502': {
+        'desc': 'Adidas Power Soccer hangs on the boot loading screen under POPS, '
+                'and later freezes in attract mode. Three loaders issue TWO CdReads '
+                'from a single position command -- FICHIERS.DAT, COMMENTS.DAT and '
+                'CROWDS.DAT -- and libcd skips its own reposition on the first '
+                'attempt of every CdRead, so the second read lands wrong. For '
+                'FICHIERS.DAT that leaves an unusable index and the game spins '
+                'forever in an unbounded strcmp walk looking for STR_E.TXT. Seek '
+                'explicitly before the second read at all three sites. These are '
+                'the only three functions in the executable that read more than '
+                'once per position command.',
+        'hashes': {
+            # Adidas Power Soccer (USA)  -- verified on hardware 2026-09-02:
+            # boots, plays, correct English menus, audio works
+            '63d2fac7b267a1527b7d1ecf641a7ffb': {
+                'ppf': 'ppf/SCUS-94502-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SLES00189': {
+        'desc': 'Adidas Power Soccer (Europe): same double-read as SCUS-94502 at '
+                'all three loaders. Sites located by instruction pattern; UNTESTED.',
+        'hashes': {
+            # Adidas Power Soccer (Europe) (En,Fr,De,Es,It)
+            '80cbdbca0590e193db0e18446fb757ec': {
+                'ppf': 'ppf/SLES-00189-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
+    'SLES00066': {
+        'desc': 'Adidas Power Soccer (UK Demo): same double-read as SCUS-94502 at '
+                'all three loaders. Sites located by instruction pattern; UNTESTED.',
+        'hashes': {
+            # Adidas Power Soccer (UK) (En,Fr,De,Es,It) (Demo)
+            '3367da1d2a23beb7a9fc52ec3b1c9994': {
+                'ppf': 'ppf/SLES-00066-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLES02343': {
         'desc': 'Dukes of Hazzard (Europe): same boot-loader hang as SLUS-00859. '
                 'The loader is restructured and installs the spinner callback from '
