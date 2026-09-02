@@ -78092,7 +78092,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SLUS-01134-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES03886': {
         'desc': "Formula One Arcade: the same fix as SLUS-00870 (Formula One 99) and SLUS-01134 (Formula One 2000), both verified on hardware -- Arcade reuses the same loader. Each track overlay ends by jumping through a function pointer held in BSS, which POPS does not reliably initialise, so jalr jumps through zero -> black screen, and the loader then retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x8001F000 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays. Located by instruction pattern; UNTESTED. NOTE: ppf/SCES-03886.ppf (no -psp suffix) is an older, unrelated and never-registered attempt at this disc; the two overlap on SOUND.EXE's exit vector and must never both be applied.",
@@ -78102,7 +78102,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-03886-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES02777': {
         'desc': 'Formula One 2000 (Europe): same overlay-exit vector and loader retry as SLUS-01134. Same four boot addresses, so the same build with different language data. Ported by instruction pattern; UNTESTED.',
@@ -78112,7 +78112,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-02777-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES02778': {
         'desc': 'Formula One 2000 (Europe): same overlay-exit vector and loader retry as SLUS-01134. Same four boot addresses, so the same build with different language data. Ported by instruction pattern; UNTESTED.',
@@ -78122,7 +78122,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-02778-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES02779': {
         'desc': 'Formula One 2000 (Europe): same overlay-exit vector and loader retry as SLUS-01134. Same four boot addresses, so the same build with different language data. Ported by instruction pattern; UNTESTED.',
@@ -78132,7 +78132,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-02779-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES02222': {
         'desc': "Formula One 99 (Europe): the same fix as the hand-made SLUS-00870.ppf, which is verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS; the original reads the copy in the OVERLAY's own memory, which is not reliably initialised under POPS, so jalr jumps through zero and the loader retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80022F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays, exactly as the USA disc. Located by instruction pattern; UNTESTED.",
@@ -78142,7 +78142,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-02222-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES01979': {
         'desc': "Formula One 99 (Europe, incl. the 1999-09-09 beta): the same fix as the hand-made SLUS-00870.ppf, which is verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS; the original reads the copy in the OVERLAY's own memory, which is not reliably initialised under POPS, so jalr jumps through zero and the loader retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80022F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays, exactly as the USA disc. Located by instruction pattern; UNTESTED.",
@@ -78156,7 +78156,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-01979-beta-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCPS10101': {
         'desc': "Formula One 99 (Japan): the same fix as the hand-made SLUS-00870.ppf, which is verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS; the original reads the copy in the OVERLAY's own memory, which is not reliably initialised under POPS, so jalr jumps through zero and the loader retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80022F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays, exactly as the USA disc. Located by instruction pattern; UNTESTED.",
@@ -78166,7 +78166,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCPS-10101-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES03404': {
         'desc': "Formula One 2001 (Europe, incl. the 2001-03-21 beta): the same fix as SLUS-00870 (Formula One 99) and SLUS-01134 (Formula One 2000), both verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS, which POPS does not reliably initialise, so jalr jumps through zero -> black screen, and the loader then retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80027F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays. Located by instruction pattern; UNTESTED.",
@@ -78180,7 +78180,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-03404-beta-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES03423': {
         'desc': "Formula One 2001 (Europe): the same fix as SLUS-00870 (Formula One 99) and SLUS-01134 (Formula One 2000), both verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS, which POPS does not reliably initialise, so jalr jumps through zero -> black screen, and the loader then retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80027F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays. Located by instruction pattern; UNTESTED.",
@@ -78190,7 +78190,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-03423-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES03424': {
         'desc': "Formula One 2001 (Europe): the same fix as SLUS-00870 (Formula One 99) and SLUS-01134 (Formula One 2000), both verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS, which POPS does not reliably initialise, so jalr jumps through zero -> black screen, and the loader then retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80027F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays. Located by instruction pattern; UNTESTED.",
@@ -78200,7 +78200,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-03424-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SCES03524': {
         'desc': "Formula One 2001 (Russia): the same fix as SLUS-00870 (Formula One 99) and SLUS-01134 (Formula One 2000), both verified on hardware. Each track overlay ends by jumping through a function pointer held in BSS, which POPS does not reliably initialise, so jalr jumps through zero -> black screen, and the loader then retries for ever. Read the target from offset 0x18 (t_addr) of the PS-EXE header buffer the loader keeps at 0x80027F00 instead -- the same address the original code already installs in $sp immediately before the jump -- and disable the loader's failure branch, its two 10-attempt retry loops and a wait loop. 4 boot nops + 36 overlays. Located by instruction pattern; UNTESTED.",
@@ -78210,7 +78210,7 @@ ppf_fixes = {
                 'ppf': 'ppf/SCES-03524-psp.ppf',
             },
         },
-        'tags': ['psp',],
+        'tags': ['psp', 'ps3',],
     },
     'SLUS00925': {
 	'desc': 'Fix for FOX SPORTS NHL CHAMPIONSHIP 2000',
