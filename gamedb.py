@@ -20628,6 +20628,7 @@ games = {
 	'title': "BRIAN LARA CRICKET",
         'pic0': 'https://images.launchbox-app.com/02ee3c78-dfde-4c52-adea-922a9fc6ce5b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Brian%20Lara%20Cricket%20%28Europe%29_jp2.zip',
+        'pspconfig': "pspconfigs/Brian Lara Cricket/SLES-00759.bin",
     },
     'SLES00873': {
         'url': "games/P/B/SLES-00873.html",
@@ -35659,6 +35660,7 @@ games = {
 	'title': "SHANE WARNE CRICKET '99",
         'pic0': 'https://images.launchbox-app.com/02ee3c78-dfde-4c52-adea-922a9fc6ce5b.png',
         'manual': 'https://archive.org/download/SonyPlaystationManuals/Shane%20Warne%20Cricket%20%2799%20%28Europe%29_jp2.zip',
+        'pspconfig': "pspconfigs/Shane Warne Cricket 99/SLES-01576.bin",
     },
     'SLES01618': {
         'url': "games/P/S/SLES-01618.html",
