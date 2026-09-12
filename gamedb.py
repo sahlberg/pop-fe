@@ -78084,6 +78084,23 @@ themes = {
 }
 
 ppf_fixes = {
+    'SLES02618': {
+        'desc': "Brunswick Circuit Pro Bowling 2 (Europe): same POPS stale "
+                "stack-argument read as SLUS-00856, same seven-word fix, shifted by "
+                "0x34. The renderer's prologue and jump-table dispatch are byte "
+                "identical to the USA release across the whole patched range, verified "
+                "word for word; the site was located by instruction pattern (the "
+                "'sltiu $v0,$a1,0xd ... jr $v0' dispatch is unique in the executable). "
+                "WHY POPS returns stale data for the off($sp) form is NOT known -- this "
+                "is a workaround. UNTESTED on hardware.",
+        'hashes': {
+            # Brunswick Circuit Pro Bowling 2 (Europe)
+            '2df355c1970e7c585761e4f9c25e65cc': {
+                'ppf': 'ppf/SLES-02618-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLUS00856': {
         'desc': "Brunswick Circuit Pro Bowling 2 hangs on a black screen right after "
                 "the PS logo, at the memory-card search screen. The text renderer at "
