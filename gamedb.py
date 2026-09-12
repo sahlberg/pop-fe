@@ -78084,6 +78084,31 @@ themes = {
 }
 
 ppf_fixes = {
+    'SLUS00856': {
+        'desc': "Brunswick Circuit Pro Bowling 2 hangs on a black screen right after "
+                "the PS logo, at the memory-card search screen. The text renderer at "
+                "0x80023064 reads its two stack arguments with lw/lhu off($sp); under "
+                "POPS both come back stale, so the string pointer in $s4 is garbage and "
+                "the per-character width loop at 0x80023570 walks memory with no NUL "
+                "byte and spins forever. WHY POPS returns stale data for that access "
+                "form is NOT known -- this is a workaround, not a root-cause fix. "
+                "Measured on hardware: the same address read as "
+                "'addiu rY,$sp,off; lw rX,0(rY)' returns the CORRECT value in the same "
+                "instant, and any other access to the word (a store, a differently "
+                "formed read, BIOS FlushCache, or a GPU register write) refreshes it. "
+                "So both arguments are loaded through a computed base instead. The "
+                "displaced register save moves into the jump-table branch delay slot, "
+                "paid for by folding 0x2c8 into the table load's offset, so it still "
+                "executes on both paths for all 255 callers. Seven words, no "
+                "instruction added or removed -- identical semantics on real hardware.",
+        'hashes': {
+            # Brunswick Circuit Pro Bowling 2 (USA) -- verified on hardware 2026-09-12
+            '75c14e7a442838fff684c5b7c194a4d9': {
+                'ppf': 'ppf/SLUS-00856-psp.ppf',
+            },
+        },
+        'tags': ['psp',],
+    },
     'SLUS00870': {
 	'desc': 'Fix for Formula One 99',
         'ppf': 'ppf/SLUS-00870.ppf',
