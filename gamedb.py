@@ -50400,6 +50400,7 @@ games = {
         'url': "games/J/E/SIPS-60004.html",
     	'id': 'SIPS60004',
 	'title': "ESPN STREET GAMES",
+        'pic0': 'https://images.launchbox-app.com//908935cd-5cd7-4cee-b1e6-2c13413f8afe.png',
     },
     'SLPS00584': {
         'url': "games/J/E/SLPS-00584.html",
@@ -52005,6 +52006,7 @@ games = {
         'url': "games/J/F/SLPS-03408.html",
     	'id': 'SLPS03408',
 	'title': "FROM TV ANIMATION - ONE PIECE GRAND BATTLE 2",
+        'pic0': 'https://images.launchbox-app.com//e2eeb537-61e6-40f8-a940-700902529d24.png',
     },
     'SLPM87317': {
         'url': "games/J/F/SLPM-87317.html",
@@ -56007,11 +56009,13 @@ games = {
         'url': "games/J/J/SLPS-01437.html",
     	'id': 'SLPS01437',
 	'title': "JISSEN PACHI-SLOT HISSHOUSOU! - SAMMY REVOLUTION",
+        'pic0': 'https://images.launchbox-app.com//4eda6521-59f0-4e1c-a139-9c4569ed0fda.png',
     },
     'SLPM86318': 	{
         'url': "games/J/J/SLPM-86318.html",
     	'id': 'SLPM86318',
 	'title': "JISSEN PACHI-SLOT HISSHOUSOU! - SAMMY REVOLUTION [SUPERLITE 1500 SERIES]",
+        'pic0': 'https://images.launchbox-app.com//4eda6521-59f0-4e1c-a139-9c4569ed0fda.png',
     },
     'SLPS01936': {
         'url': "games/J/J/SLPS-01936.html",
@@ -62711,33 +62715,38 @@ games = {
         'url': "games/J/N/SLPS-00793.html",
     	'id': 'SLPS00793',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - DOUJOU YABURI",
-    
+        'pic0': 'https://images.launchbox-app.com//b5aedf7f-4e60-4ce5-8155-16b96b077218.png',
         'pspconfig': "pspconfigs/Nippon Pro Mahjong Renmei Kounin - Doujou Yaburi/SLPS-00793.bin",
     },
     'SLPS02356': {
         'url': "games/J/N/SLPS-02356.html",
     	'id': 'SLPS02356',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - DOUJOU YABURI",
+        'pic0': 'https://images.launchbox-app.com//b5aedf7f-4e60-4ce5-8155-16b96b077218.png',
     },
     'SLPS02484': {
         'url': "games/J/N/SLPS-02484.html",
     	'id': 'SLPS02484',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - DOUJOU YABURI 2",
+        'pic0': 'https://images.launchbox-app.com//0cf1d322-8773-43dd-9e97-885084270239.png',
     },
     'SLPS03128': {
         'url': "games/J/N/SLPS-03128.html",
     	'id': 'SLPS03128',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - DOUJOU YABURI 2 [2800Y]",
+        'pic0': 'https://images.launchbox-app.com//0cf1d322-8773-43dd-9e97-885084270239.png',
     },
     'SLPS01653': {
         'url': "games/J/N/SLPS-01653.html",
     	'id': 'SLPS01653',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - SHIN TETSUMAN",
+        'pic0': 'https://images.launchbox-app.com//c8e38e66-2941-49a0-ac64-bc8da350d12c.png',
     },
     'SLPS02802': {
         'url': "games/J/N/SLPS-02802.html",
     	'id': 'SLPS02802',
 	'title': "NIPPON PRO MAHJONG RENMEI KOUNIN - SHIN TETSUMAN",
+        'pic0': 'https://images.launchbox-app.com//c8e38e66-2941-49a0-ac64-bc8da350d12c.png',
     },
     'SLPM86575': {
         'url': "games/J/N/SLPM-86575.html",
@@ -63974,6 +63983,7 @@ games = {
         'url': "games/J/P/SLPS-03441.html",
     	'id': 'SLPS03441',
 	'title': "PACHI-SLOT TEIOU - GOLGO 13 & LAS VEGAS",
+        'pic0': 'https://images.launchbox-app.com//31806ef2-6a21-4341-afdc-69f0a605f466.png',
     },
     'SLPS02217': {
         'url': "games/J/P/SLPS-02217.html",
@@ -63989,11 +63999,13 @@ games = {
         'url': "games/J/P/SLPS-02413.html",
     	'id': 'SLPS02413',
 	'title': "PACHI-SLOT TEIOU 3 - SEA MASTER - EPSILON R - WAI WAI PULSAR",
+        'pic0': 'https://images.launchbox-app.com//aaed720c-d379-4dba-81fd-676978bf3659.png',
     },
     'SLPS02887': {
         'url': "games/J/P/SLPS-02887.html",
     	'id': 'SLPS02887',
 	'title': "PACHI-SLOT TEIOU 3 - SEA MASTER - EPSILON R - WAI WAI PULSAR [BEST OF THE BEST]",
+        'pic0': 'https://images.launchbox-app.com//aaed720c-d379-4dba-81fd-676978bf3659.png',
     },
     'SLPS02564': {
         'url': "games/J/P/SLPS-02564.html",
@@ -66079,11 +66091,13 @@ games = {
         'url': "games/J/Q/SLPM-87156.html",
     	'id': 'SLPM87156',
 	'title': "QUIZ DARAKE NO JINSEI GAME DAI-2-KAI!",
+        'pic0': 'https://images.launchbox-app.com//5527d61f-27ef-4959-a05c-43863c0b60c0.png',
     },
     'SLPM87346': {
         'url': "games/J/Q/SLPM-87346.html",
     	'id': 'SLPM87346',
 	'title': "QUIZ DARAKE NO JINSEI GAME DAI-2-KAI! [PSONE BOOKS]",
+        'pic0': 'https://images.launchbox-app.com//5527d61f-27ef-4959-a05c-43863c0b60c0.png',
     },
     'SLPS03384': {
         'url': "games/J/Q/SLPS-03384.html",
@@ -70644,41 +70658,49 @@ games = {
         'url': "games/J/S/SLPS-03179.html",
     	'id': 'SLPS03179',
 	'title': "SLOT! PRO 2 - BAKURETSU OOZUMOU KURENAI & MURASAKI",
+        'pic0': 'https://images.launchbox-app.com//62bfbf69-9eea-4997-8a34-c2d04edc4441.png',
     },
     'SLPS03253': {
         'url': "games/J/S/SLPS-03253.html",
     	'id': 'SLPS03253',
 	'title': "SLOT! PRO 3 - JUGGLER SPECIAL",
+        'pic0': 'https://images.launchbox-app.com//63828cb1-a5d9-4edf-9b7d-ee6f5d14a541.png',
     },
     'SLPS03394': {
         'url': "games/J/S/SLPS-03394.html",
     	'id': 'SLPS03394',
 	'title': "SLOT! PRO 4 - TAIRYOU SPECIAL",
+        'pic0': 'https://images.launchbox-app.com//6cc95592-623c-4f4e-80b4-c57d952ad688.png',
     },
     'SLPS03439': {
         'url': "games/J/S/SLPS-03439.html",
     	'id': 'SLPS03439',
 	'title': "SLOT! PRO 5 - NANIWA SAKURA FUBUKI & SHIMAUTA",
+        'pic0': 'https://images.launchbox-app.com//be94a4e1-81af-4952-abc3-7004b3cfaf8b.png',
     },
     'SLPS03469': {
         'url': "games/J/S/SLPS-03469.html",
     	'id': 'SLPS03469',
 	'title': "SLOT! PRO 6 - HYPER JUGGLER V",
+        'pic0': 'https://images.launchbox-app.com//c73ffb11-198a-42b9-a585-ac951db60227.png',
     },
     'SLPS03551': {
         'url': "games/J/S/SLPS-03551.html",
     	'id': 'SLPS03551',
 	'title': "SLOT! PRO 8 - SHIMAUTA 30 & HANA DENSETSU 25",
+        'pic0': 'https://images.launchbox-app.com//323831e3-b6b5-40cd-8461-eecfcc587a01.png',
     },
     'SLPS02960': {
         'url': "games/J/S/SLPS-02960.html",
     	'id': 'SLPS02960',
 	'title': "SLOTTER MANIA - CORE TOKONATSU NO NETSUSA! OASIS",
+        'pic0': 'https://images.launchbox-app.com//b8cbdb3b-515c-446f-b733-e1751d3370d8.png',
     },
     'SLPS03192': {
         'url': "games/J/S/SLPS-03192.html",
     	'id': 'SLPS03192',
 	'title': "SLOTTER MANIA - SIOSAI SPECIAL",
+        'pic0': 'https://images.launchbox-app.com//2789a34f-eb1c-4156-884a-209ed1a65c2e.png',
     },
     'SLPS03349': {
         'url': "games/J/S/SLPS-03349.html",
