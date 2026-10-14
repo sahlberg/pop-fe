@@ -51686,6 +51686,7 @@ games = {
         'url': "games/J/F/SLPS-01266.html",
     	'id': 'SLPS01266',
 	'title': "FINAL ROUND",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_9e15ddba-6af6-4c5c-9abf-d62d0cca8f29.png',
         'pspconfig': "pspconfigs/Final Round/SLPS-01266.bin",
     },
     'SLPS02158': {
@@ -51698,6 +51699,7 @@ games = {
         'url': "games/J/F/SCPS-10055.html",
     	'id': 'SCPS10055',
 	'title': "FIRE PANIC - MACK NO RESCUE DAISAKUSEN",
+        'pic0': 'https://gamesdb-images.launchbox.gg/r2_8f525c86-afe2-4cd7-8536-0c01d2d9bb5c.png',
         'pspconfig': "pspconfigs/Rosco McQueen - Firefighter Extreme/SCPS-10055.bin",
     },
     'SLPS02065': {
@@ -68743,7 +68745,7 @@ games = {
         'url': "games/J/S/SLPS-03184.html",
     	'id': 'SLPS03184',
 	'title': "SENTIMENTAL GRAFFITI",
-    
+        'pic0': 'https://images.launchbox-app.com//1d0b65bd-435b-466a-8218-a5d0e785437a.png',
         'pspconfig': "pspconfigs/Sentimental Graffiti/SLPS-03184.bin",
     },
     'SLPS03183':    {
