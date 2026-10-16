@@ -4857,6 +4857,8 @@ if __name__ == "__main__":
 
     if args.psp_dir and args.psp_dir.upper() == 'AUTO':
         args.psp_dir = find_psp_mount()
+    elif args.psp_dir:
+     args.psp_dir = os.path.expanduser(args.psp_dir)
 
     if args.psc_dir and args.psc_dir.upper() == 'AUTO':
         args.psc_dir = find_psc_mount()
