@@ -106,6 +106,7 @@ class PopFePs3App:
             'on_pic0_yoffset': self.on_pic0_yoffset,
             'on_psx_undither': self.on_psx_undither,
             'on_ntsc_u_icon0': self.on_ntsc_u_icon0,
+            'on_no_icon0_frame': self.on_no_icon0_frame,
             'on_manual_dir': self.on_manual_dir,
         }
 
@@ -138,6 +139,8 @@ class PopFePs3App:
         tooltip.create(self.pic0yoffset , "Shift the placement of pic0 vertically.\n0.1 means shift 10% down.\n-0.1 means shift 10% up.\nThe resulting image is bounded by the maximum size of the pic0 box.")
         self.ntsc_u_icon0 = builder.get_object("ntsc_u_icon0")
         tooltip.create(self.ntsc_u_icon0, "Use a NTSC-U PSN style frame for ICON0.\nThis has a thicker left edge with the text \"Playstation\" running along it\nand requires specially cropped covers to be manuallt provided for ICON0.\nPlease crop a cover image to 60x67 pixels and select it by clicking the ICON0 widget.")
+        self.no_icon0_frame = builder.get_object("no_icon0_frame")
+        tooltip.create(self.no_icon0_frame, "Do not put a frame around ICON0.\nThe cover is used as-is, keeping its aspect ratio,\nscaled to fit within the 144x80 ICON0 area.\nUseful for 3D box shots and non-square covers.")
         _manual = builder.get_object("manual")
         tooltip.create(_manual, "The manual for the game.\nThis can be a ZIP/CBR/PDF file with one image per page, a finished\nDOCUMENT.DAT in either PSP or PS3 format, or a directory containing\none image per page. Use the Directory... button to select a directory.")
         self.swap_disc = builder.get_object("swap_disc")
@@ -239,6 +242,7 @@ class PopFePs3App:
             f.write('%s:%s\n' % ('watermark', self.builder.get_variable('watermark_variable').get()))
             f.write('%s:%s\n' % ('cdda', self.builder.get_variable('cdda_variable').get()))
             f.write('%s:%s\n' % ('force_ntsc', self.builder.get_variable('force_ntsc_variable').get()))
+            f.write('%s:%s\n' % ('no_icon0_frame', self.builder.get_variable('no_icon0_frame_variable').get()))
             f.write('%s:%s\n' % ('pic0_disabled', self.builder.get_variable('pic0_disabled_variable').get()))
             f.write('%s:%s\n' % ('pic1_disabled', self.builder.get_variable('pic1_disabled_variable').get()))
             f.write('%s:%s\n' % ('snd0_disabled', self.builder.get_variable('snd0_disabled_variable').get()))
@@ -267,6 +271,8 @@ class PopFePs3App:
                     self.cdda = val
                 if key == 'force_ntsc':
                     self.builder.get_variable('force_ntsc_variable').set(val)
+                if key == 'no_icon0_frame':
+                    self.builder.get_variable('no_icon0_frame_variable').set(val)
                 if key == 'pic0_disabled':
                     self.builder.get_variable('pic0_disabled_variable').set(val)
                     self.disable_pic0 = val
@@ -347,12 +353,14 @@ class PopFePs3App:
                 if self.icon0:
                     self.icon0 = self.icon0.crop(self.icon0.getbbox())
             if not self.icon0:
-                self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=((80,80),(62,62)))
+                no_frame = self.builder.get_variable('no_icon0_frame_variable').get() == 'on'
+                self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', selected_file=self.icon0_path, psp_ntsc_u_frame=self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on', psn_frame_size=None if no_frame else ((80,80),(62,62)))
             if self.icon0:
                 temp_files.append(self.subdir + 'ICON0.PNG')
-                self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
+                self.icon0_thumbnail(80, 80).save(self.subdir + 'ICON0.PNG')
                 self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
                 c = self.builder.get_object('icon0_canvas', self.master)
+                c.delete('all')
                 c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
  
         if self.snd0_disabled == 'off':
@@ -538,7 +546,8 @@ class PopFePs3App:
             else:
                 Image.Image.paste(p1, p0, box=(148,79))
         if self.icon0:
-            i0 = self.icon0.resize((int(p1.size[1] * 0.25) , int(p1.size[1] * 0.25)), Image.Resampling.HAMMING)
+            h = int(p1.size[1] * 0.25)
+            i0 = self.icon0_thumbnail(h * 144 // 80, h)
             if has_transparency(i0):
                 Image.Image.paste(p1, i0, box=(36,81), mask=i0)
             else:
@@ -749,7 +758,8 @@ class PopFePs3App:
                          use_cdda=True if self.cdda=='on' else False,
                          logo=self.pic1 if self.pic1aslogo=='on' else logo,
                          psx_undither=undither, force_ntsc=ntsc, cdda=cdda,
-                         swap_disc=swap_disc)
+                         swap_disc=swap_disc,
+                         icon0_keep_aspect=self.builder.get_variable('no_icon0_frame_variable').get() == 'on')
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
@@ -772,8 +782,29 @@ class PopFePs3App:
     def on_psx_undither(self):
         self.update_prefs()
 
+    def icon0_thumbnail(self, width, height):
+        # Scaled copy of ICON0 for display. Framed icons are square.
+        # Unframed icons keep their aspect ratio, fitted inside
+        # width x height, the same way create_psp() fits them in 144x80.
+        if self.builder.get_variable('no_icon0_frame_variable').get() != 'on':
+            return self.icon0.resize((height, height), Image.Resampling.HAMMING)
+        scale = min(width / self.icon0.size[0], height / self.icon0.size[1])
+        size = (max(1, round(self.icon0.size[0] * scale)), max(1, round(self.icon0.size[1] * scale)))
+        return self.icon0.resize(size, Image.Resampling.HAMMING)
+
     def on_ntsc_u_icon0(self):
+        # The NTSC-U frame and "no frame" are mutually exclusive
+        if self.builder.get_variable('ntsc_u_icon0_variable').get() == 'on':
+            self.builder.get_variable('no_icon0_frame_variable').set('off')
         self.update_assets(update_pic0=False, update_pic1=False)
+        self.update_preview()
+        self.update_prefs()
+
+    def on_no_icon0_frame(self):
+        if self.builder.get_variable('no_icon0_frame_variable').get() == 'on':
+            self.builder.get_variable('ntsc_u_icon0_variable').set('off')
+        self.update_assets(update_pic0=False, update_pic1=False)
+        self.update_preview()
         self.update_prefs()
 
 

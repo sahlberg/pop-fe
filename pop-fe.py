@@ -2096,6 +2096,18 @@ def get_image_from_theme(theme, game_id, subdir, image):
     except:
         return None
 
+def fit_image(image, size):
+    """Scale image to fit inside size, keeping its aspect ratio, and centre
+    it on a transparent canvas of exactly that size."""
+    scale = min(size[0] / image.size[0], size[1] / image.size[1])
+    scaled = (max(1, round(image.size[0] * scale)), max(1, round(image.size[1] * scale)))
+    image = image.convert('RGBA')
+    if image.size != scaled:
+        image = image.resize(scaled, Image.Resampling.LANCZOS)
+    canvas = Image.new('RGBA', size, (0, 0, 0, 0))
+    canvas.paste(image, ((size[0] - scaled[0]) // 2, (size[1] - scaled[1]) // 2))
+    return canvas
+
 def get_icon0_from_game(game_id, game, cue, tmpfile, selected_file=None, psn_frame_size=None, psp_ntsc_u_frame=False):
     if selected_file:
         with open(selected_file, 'rb') as f:
@@ -3002,7 +3014,7 @@ def generate_pbp(dest_file, disc_ids, game_title, icon0, pic0, pic1, cue_files, 
         True
 
     
-def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None, force_ntsc=False, cdda=False, swap_disc=False):
+def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, subdir = './', snd0=None, no_pstitleimg=False, watermark=False, subchannels=[], manual=None, use_cdda=False, logo=None, no_libcrypt=None, psx_undither=None, force_ntsc=False, cdda=False, swap_disc=False, icon0_keep_aspect=False):
     EMPTY_CONFIG = bytes([
         0x70,0x00,0x07,0x06,0x00,0x00,0x06,0x06,                 
                                                 0x00,0x00,0x00,0x00,
@@ -3090,7 +3102,11 @@ def create_psp(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     # Convert ICON0 to a file object
     if icon0:
         image = icon0
-        if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
+        if icon0_keep_aspect:
+            # Unframed ICON0 (e.g. a 3D box shot): keep the aspect ratio,
+            # fit it inside 144x80 and centre it on a transparent canvas.
+            image = fit_image(icon0, (144, 80))
+        elif icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
             if icon0.size != (80,80):
                 image = icon0.resize((80, 80), Image.Resampling.LANCZOS)
         else:
@@ -3241,7 +3257,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False, force_ntsc=False):
+def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False, force_ntsc=False, icon0_keep_aspect=False):
     #
     # This one is special since the same command may be used for other things
     # so we need to merge the argument if teh command is already there
@@ -3419,7 +3435,11 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
 
     if icon0:
         image = icon0
-        if icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
+        if icon0_keep_aspect:
+            # Unframed ICON0 (e.g. a 3D box shot): keep the aspect ratio,
+            # fit it inside 320x176 and centre it on a transparent canvas.
+            image = fit_image(icon0, (320, 176))
+        elif icon0.size[0] / icon0.size[1] < 1.4 and icon0.size[0] / icon0.size[1] > 0.75:
             if icon0.size != (176, 176):
                 icon0 = icon0.resize((176, 176), Image.Resampling.LANCZOS)
             image = Image.new(icon0.mode, (320, 176), (0,0,0)).convert('RGBA')
@@ -3515,7 +3535,10 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     except:
         True
     if icon0:
-        image = icon0.resize((80,80), Image.Resampling.LANCZOS)
+        if icon0_keep_aspect:
+            image = fit_image(icon0, (80, 80))
+        else:
+            image = icon0.resize((80,80), Image.Resampling.LANCZOS)
         i = io.BytesIO()
         image.save(f + '/ICON0.PNG', format='PNG')
         temp_files.append(f + '/ICON0.PNG')    

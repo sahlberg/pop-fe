@@ -56,6 +56,7 @@ class PopFePs3App:
         self.md5_sums = None
         self.real_disc_ids = None
         self.icon0 = None
+        self.icon0_custom = False
         self.icon0_tk = None
         self.pic0 = None
         self.pic0_orig = None
@@ -110,6 +111,7 @@ class PopFePs3App:
             'on_force_newemu': self.on_force_newemu,
             'on_allow_swapdisc': self.on_allow_swapdisc,
             'on_psx_undither': self.on_psx_undither,
+            'on_no_icon0_frame': self.on_no_icon0_frame,
             'on_pic0_scaling': self.on_pic0_scaling,
             'on_pic0_xoffset': self.on_pic0_xoffset,
             'on_pic0_yoffset': self.on_pic0_yoffset,
@@ -138,6 +140,8 @@ class PopFePs3App:
         tooltip.create(self.force_ntsc , "Force the emulator to NTSC. This can cause the game to run\nat the wrong speed when used on a PAL console.")
         self.disc_as_icon0 = builder.get_object("disc_as_icon0")
         tooltip.create(self.disc_as_icon0 , "Use a scan of the disc as the icon")
+        self.no_icon0_frame = builder.get_object("no_icon0_frame")
+        tooltip.create(self.no_icon0_frame, "Do not put a frame around the cover.\nThe cover keeps its aspect ratio and is scaled\nto fit within the 320x176 ICON0 area.\nUseful for 3D box shots and non-square covers.")
         self.pic1_as_background = builder.get_object("pic1_as_background")
         tooltip.create(self.pic1_as_background , "Use the back of the game box as the background image")
         dto = builder.get_object("data_track_only")
@@ -190,6 +194,7 @@ class PopFePs3App:
             f.write('%s:%s\n' % ('swap', self.builder.get_variable('allow_discswap_variable').get()))
             f.write('%s:%s\n' % ('ntsc', self.builder.get_variable('force_ntsc_variable').get()))
             f.write('%s:%s\n' % ('undither', self.builder.get_variable('psx_undither_variable').get()))
+            f.write('%s:%s\n' % ('no_icon0_frame', self.builder.get_variable('no_icon0_frame_variable').get()))
             f.write('%s:%s\n' % ('pkgdir', self.builder.get_variable('pkgdir_variable').get()))
             if self.path_dir:
                 f.write('%s:%s\n' % ('path', self.path_dir))
@@ -207,6 +212,8 @@ class PopFePs3App:
                     self.builder.get_variable('force_ntsc_variable').set(val)
                 if key == 'undither':
                     self.builder.get_variable('psx_undither_variable').set(val)
+                if key == 'no_icon0_frame':
+                    self.builder.get_variable('no_icon0_frame_variable').set(val)
                 if key == 'pkgdir':
                     self.builder.get_variable('pkgdir_variable').set(val)
                 if key == 'path':
@@ -243,6 +250,7 @@ class PopFePs3App:
         self.md5_sums = []
         self.real_disc_ids = []
         self.icon0 = None
+        self.icon0_custom = False
         self.icon0_tk = None
         self.pic0 = None
         self.pic0_orig = None
@@ -319,15 +327,18 @@ class PopFePs3App:
             else:
                 Image.Image.paste(p1, p0, box=(148,79))
         i0 = None
+        h = int(p1.size[0] * 0.10)
         if self.icon0 and self.icon0_disc == 'off':
-                i0 = self.icon0.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.HAMMING)
+                i0 = self.icon0_thumbnail(self.icon0, h * 320 // 176, h)
         if self.disc and self.icon0_disc == 'on':
-                i0 = self.disc.resize((int(p1.size[0] * 0.10) , int(p1.size[0] * 0.10)), Image.Resampling.HAMMING)
+                i0 = self.icon0_thumbnail(self.disc, h * 320 // 176, h)
         if i0:
+            # centred on the slot a square icon has always used
+            box = (100 + (h - i0.size[0]) // 2, 79 + (h - i0.size[1]) // 2)
             if has_transparency(i0):
-                Image.Image.paste(p1, i0, box=(100,79), mask=i0)
+                Image.Image.paste(p1, i0, box=box, mask=i0)
             else:
-                Image.Image.paste(p1, i0, box=(100,79))
+                Image.Image.paste(p1, i0, box=box)
         temp_files.append(self.subdir + 'PREVIEW.PNG')
         p1.save(self.subdir + 'PREVIEW.PNG')
         self.preview_tk = tk.PhotoImage(file = self.subdir + 'PREVIEW.PNG')
@@ -373,6 +384,58 @@ class PopFePs3App:
             c = self.builder.get_object('pic0_canvas', self.master)
             c.create_image(0, 0, image=self.pic0_tk, anchor='nw')
         
+    def no_frame(self):
+        return self.builder.get_variable('no_icon0_frame_variable').get() == 'on'
+
+    def fetch_icon0(self):
+        print('Fetching ICON0') if verbose else None
+        disc_id = self.disc_ids[0]
+        game = popfe.get_game_from_gamelist(disc_id)
+        self.icon0 = None
+        self.icon0_custom = False
+        if self._theme != '':
+            print('Get icon0 from theme')
+            self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
+            if not self.icon0:
+                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
+            if self.icon0:
+                self.icon0 = self.icon0.crop(self.icon0.getbbox())
+        if not self.icon0:
+            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=None if self.no_frame() else ((176,176),(138,138)))
+
+    def icon0_thumbnail(self, image, width, height):
+        # Scaled copy of ICON0/disc for display. Without a frame the
+        # aspect ratio is kept, the same way create_ps3() keeps it.
+        if not self.no_frame():
+            return image.resize((height, height), Image.Resampling.HAMMING)
+        scale = min(width / image.size[0], height / image.size[1])
+        size = (max(1, round(image.size[0] * scale)), max(1, round(image.size[1] * scale)))
+        return image.resize(size, Image.Resampling.HAMMING)
+
+    def show_icon0(self):
+        image = self.disc if self.icon0_disc == 'on' and self.disc else self.icon0
+        c = self.builder.get_object('icon0_canvas', self.master)
+        c.delete('all')
+        if not image:
+            return
+        temp_files.append(self.subdir + 'ICON0.PNG')
+        self.icon0_thumbnail(image, 80, 80).save(self.subdir + 'ICON0.PNG')
+        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
+        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+
+    def on_no_icon0_frame(self):
+        # Covers the user picked were never framed; only re-fetch the
+        # database/theme cover so it is fetched with or without a frame.
+        if self.disc_ids and self.cue_file_orig and not self.icon0_custom:
+            self.master.config(cursor='watch')
+            self.master.update()
+            self.fetch_icon0()
+            self.master.config(cursor='')
+        self.show_icon0()
+        if self.disc_ids:
+            self.update_preview()
+        self.update_prefs()
+
     def update_assets(self):
         if not self.disc_ids:
             return
@@ -392,24 +455,8 @@ class PopFePs3App:
             if snd0:
                 self.builder.get_variable('snd0_variable').set(snd0)
                 
-        print('Fetching ICON0') if verbose else None
-        self.icon0 = None
-        if self._theme != '':
-            print('Get icon0 from theme')
-            self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.PNG')
-            if not self.icon0:
-                self.icon0 = popfe.get_image_from_theme(self._theme, disc_id, 'pop-fe-psp-work', 'ICON0.png')
-            if self.icon0:
-                self.icon0 = self.icon0.crop(self.icon0.getbbox())
-        if not self.icon0:
-            self.icon0 = popfe.get_icon0_from_game(disc_id, game, self.cue_file_orig, self.subdir + 'ICON0.PNG', psn_frame_size=((176,176),(138,138)))
-            
-        if self.icon0:
-            temp_files.append(self.subdir + 'ICON0.PNG')
-            self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-            self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-            c = self.builder.get_object('icon0_canvas', self.master)
-            c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.fetch_icon0()
+        self.show_icon0()
             
         print('Fetching PIC0') if verbose else None
         self.fetch_pic0()
@@ -557,11 +604,8 @@ class PopFePs3App:
         self.master.config(cursor='')
         if not self.icon0:
             return
-        temp_files.append(self.subdir + 'ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-        c = self.builder.get_object('icon0_canvas', self.master)
-        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.icon0_custom = True
+        self.show_icon0()
         self.update_preview()
         
     def on_icon0_clicked(self, event):
@@ -574,11 +618,8 @@ class PopFePs3App:
             self.icon0 = Image.open(path)
         except:
             return
-        temp_files.append(self.subdir + 'ICON0.PNG')
-        self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-        c = self.builder.get_object('icon0_canvas', self.master)
-        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.icon0_custom = True
+        self.show_icon0()
         self.update_preview()
 
     def on_pic0_dropped(self, event):
@@ -742,13 +783,7 @@ class PopFePs3App:
             self.master.config(cursor='')
 
         self.builder.get_object('icon0_or_disc', self.master).config(text='COVER' if self.icon0_disc == 'off' else 'DISC')
-        if self.icon0_disc == 'off':
-            self.icon0.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-        else:
-            self.disc.resize((80,80), Image.Resampling.HAMMING).save(self.subdir + 'ICON0.PNG')
-        self.icon0_tk = tk.PhotoImage(file = self.subdir + 'ICON0.PNG')
-        c = self.builder.get_object('icon0_canvas', self.master)
-        c.create_image(0, 0, image=self.icon0_tk, anchor='nw')
+        self.show_icon0()
         
         self.update_preview()
             
@@ -900,7 +935,8 @@ class PopFePs3App:
                          subchannels=subchannels, manual=manual,
                          whole_disk=True if self.data_track_only=='off' else False,
                          psx_undither=undither,
-                         ps1_newemu=newemu, enable_swap=swap, force_ntsc=ntsc)
+                         ps1_newemu=newemu, enable_swap=swap, force_ntsc=ntsc,
+                         icon0_keep_aspect=self.no_frame())
         self.master.config(cursor='')
 
         d = FinishedDialog(self.master)
