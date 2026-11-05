@@ -234,7 +234,7 @@ class PopFePs3App:
         temp_files = []  
         temp_files.append(self.subdir)
         shutil.rmtree(self.subdir, ignore_errors=True)
-        os.mkdir(self.subdir)
+        os.makedirs(self.subdir, exist_ok=True)
 
         self.cue_files = []
         self.real_cue_files = []
