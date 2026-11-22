@@ -60,6 +60,9 @@ def _load_ps3_lzrc():
         lib.ps3_lzrc_compress.restype = ctypes.c_int
         lib.ps3_lzrc_compress.argtypes = [ctypes.c_char_p, ctypes.c_int,
                                           ctypes.c_char_p, ctypes.c_int]
+        lib.ps3_lzrc_decompress.restype = ctypes.c_int
+        lib.ps3_lzrc_decompress.argtypes = [ctypes.c_char_p, ctypes.c_int,
+                                            ctypes.c_char_p, ctypes.c_int]
         _ps3_lzrc_lib = lib
         break
     return _ps3_lzrc_lib
@@ -73,6 +76,51 @@ def ps3_lzrc_compress(buf):
     dst = ctypes.create_string_buffer(len(buf) * 2 + 64)
     n = lib.ps3_lzrc_compress(dst, len(dst), src, len(buf))
     return dst.raw[:n]
+
+def ps3_lzrc_decompress(buf, size=0x9300):
+    """Decompress one LZRC block. Returns None if it is not valid LZRC."""
+    import ctypes
+    lib = _load_ps3_lzrc()
+    if not lib:
+        return None
+    src = ctypes.create_string_buffer(bytes(buf), len(buf))
+    dst = ctypes.create_string_buffer(size)
+    n = lib.ps3_lzrc_decompress(dst, size, src, len(buf))
+    if n != size:
+        return None
+    return dst.raw
+
+def _inflate_block(buf, size=0x9300):
+    """Decompress one raw-deflate block. Returns None if it is not valid."""
+    try:
+        d = zlib.decompressobj(wbits=-15)
+        out = d.decompress(buf)
+    except zlib.error:
+        return None
+    if not d.eof or len(out) != size:
+        return None
+    return out
+
+def decompress_psiso_block(buf, entry):
+    """Decompress a compressed PSISOIMG block, autodetecting the format.
+    PSP (popstation) EBOOTs use raw deflate and checksum the decompressed
+    data; PS3 EBOOTs use LZRC and checksum the block as stored. So a
+    checksum over the stored bytes means LZRC; either way the other format
+    is tried if the first one does not decode."""
+    lzrc_first = hashlib.sha1(buf).digest()[:16] == bytes(entry[8:24])
+    decoders = [ps3_lzrc_decompress, _inflate_block]
+    if not lzrc_first:
+        decoders.reverse()
+    for dec in decoders:
+        out = dec(buf)
+        if out is not None:
+            return out
+    if not _load_ps3_lzrc():
+        raise Exception('Could not decompress disc image block. It is not '
+                        'deflate, and the LZRC library (lzrc/) to try '
+                        'LZRC is not available')
+    raise Exception('Could not decompress disc image block: neither '
+                    'deflate nor LZRC')
 
 _basic_toc = bytes([
     0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
@@ -2766,6 +2814,7 @@ class popstation(object):
                 while True:
                     i.seek(_o)
                     buf = i.read(32)
+                    entry = buf
                     _off = struct.unpack_from('<I', buf, 0)[0]
                     _len = struct.unpack_from('<H', buf, 4)[0]
                     _o = _o + 32
@@ -2776,7 +2825,7 @@ class popstation(object):
                     if not buf:
                         break
                     if len(buf) < 0x9300:
-                        buf = zlib.decompress(buf, wbits=-15)
+                        buf = decompress_psiso_block(buf, entry)
                     o.write(buf)
                 print('Dumped', img, 'size', o.tell())
                 try:
@@ -3145,7 +3194,7 @@ class popstation(object):
                 if buf[:12] == b'PSISOIMG0000':
                     # Iterate over the index table until we find the end
                     # the last entry will tell us the end of the PSISO blob
-                    _o = offset + 0x4400
+                    _o = offset + 0x4000
                     _last_offset = 0
                     while True:
                         e.seek(_o)
@@ -3153,9 +3202,9 @@ class popstation(object):
                         buf = e.read(32)
                         _off = struct.unpack_from('<I', buf, 0)[0]
                         _len = struct.unpack_from('<H', buf, 4)[0]
-                        if _off == 0:
+                        if _len == 0:
                             break
-                        _last_offset = _off + _len
+                        _last_offset = max(_last_offset, _off + _len)
 
                     print('Dumping PSISO%d.DAT' % _disc_id) if self._verbose else None
                     e.seek(offset)

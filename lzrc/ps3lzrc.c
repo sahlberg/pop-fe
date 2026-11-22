@@ -15,6 +15,8 @@
  *
  * int ps3_lzrc_compress(void *out, int out_len, void *in, int in_len)
  *   returns the compressed size.  Not thread safe (static match tree).
+ * int ps3_lzrc_decompress(void *out, int out_len, void *in, int in_len)
+ *   out_len is the exact decompressed size; returns it, or -1 on error.
  */
 #include <stdio.h>
 #include <string.h>
@@ -75,6 +77,198 @@ static void rc_putbyte(LZRC_DECODE *rc, u8 byte)
 
 	rc->output[rc->out_ptr++] = byte;
 }
+
+/* LZRC decoder (PS3 PS1-classics variant) */
+
+/* reading past the end of the input yields zeros, as the range coder
+ * reads a few bytes ahead of the last symbol */
+static u8 rd_getbyte(LZRC_DECODE *rc)
+{
+	if(rc->in_ptr >= rc->in_len){
+		rc->in_ptr++;
+		return 0;
+	}
+	return rc->input[rc->in_ptr++];
+}
+
+static void rd_normalize(LZRC_DECODE *rc)
+{
+	if(rc->range<0x01000000){
+		rc->range <<= 8;
+		rc->code = (rc->code<<8)+rd_getbyte(rc);
+	}
+}
+
+static int rd_bit(LZRC_DECODE *rc, u8 *prob)
+{
+	u32 bound;
+
+	rd_normalize(rc);
+	bound = (rc->range>>8)*(*prob);
+	*prob -= *prob>>3;
+	if(rc->code < bound){
+		rc->range = bound;
+		*prob += 31;
+		return 1;
+	}
+	rc->code -= bound;
+	rc->range -= bound;
+	return 0;
+}
+
+static int rd_bittree(LZRC_DECODE *rc, u8 *probs, int limit)
+{
+	int number = 1;
+
+	do{
+		number = (number<<1)+rd_bit(rc, probs+number);
+	}while(number<limit);
+	return number;
+}
+
+static int rd_number(LZRC_DECODE *rc, u8 *prob, int n)
+{
+	int i, number = 1;
+
+	if(n>3){
+		number = (number<<1)+rd_bit(rc, prob+3);
+		if(n>4){
+			number = (number<<1)+rd_bit(rc, prob+3);
+			if(n>5){
+				rd_normalize(rc);
+				for(i=0; i<n-5; i++){
+					rc->range >>= 1;
+					number <<= 1;
+					if(rc->code < rc->range){
+						number += 1;
+					}else{
+						rc->code -= rc->range;
+					}
+				}
+			}
+		}
+	}
+	if(n>0){
+		number = (number<<1)+rd_bit(rc, prob);
+		if(n>1){
+			number = (number<<1)+rd_bit(rc, prob+1);
+			if(n>2){
+				number = (number<<1)+rd_bit(rc, prob+2);
+			}
+		}
+	}
+	return number;
+}
+
+/*
+ * Decompress one block. out_len must be the exact decompressed size
+ * (0x9300 for PSISOIMG blocks). Returns out_len on success, -1 on error.
+ */
+int ps3_lzrc_decompress(void *out, int out_len, void *in, int in_len)
+{
+	LZRC_DECODE rc;
+	int match_step, rc_state, len_state, dist_state;
+	int i, bit, byte, last_byte;
+	int match_len, len_bits;
+	int match_dist, dist_bits, limit;
+	u8 *match_src;
+
+	if(in_len < 5)
+		return -1;
+
+	rc.input = in;
+	rc.in_len = in_len;
+	rc.in_ptr = 0;
+	rc.output = out;
+	rc.out_len = out_len;
+	rc.out_ptr = 0;
+	rc.range = 0xffffffff;
+	rc.lc = rd_getbyte(&rc);
+	rc.code = rd_getbyte(&rc)<<24;
+	rc.code |= rd_getbyte(&rc)<<16;
+	rc.code |= rd_getbyte(&rc)<<8;
+	rc.code |= rd_getbyte(&rc);
+	rc.out_code = 0xffffffff;
+
+	if(rc.lc&0x80){
+		/* stored, not compressed */
+		if(rc.code > (u32)out_len || rc.code > (u32)(in_len-5))
+			return -1;
+		memcpy(rc.output, rc.input+5, rc.code);
+		return rc.code;
+	}
+
+	memset(rc.bm_literal,   0x80, 2048);
+	memset(rc.bm_dist_bits, 0x80, 312);
+	memset(rc.bm_dist,      0x80, 144);
+	memset(rc.bm_match,     0x80, 64);
+	memset(rc.bm_len,       0x80, 248);
+
+	rc_state = 0;
+	last_byte = 0;
+
+	while(1){
+		match_step = 0;
+
+		bit = rd_bit(&rc, &rc.bm_match[rc_state][match_step]);
+		if(bit==0){
+			/* literal; the stream ends on a literal flag once the output is full */
+			if(rc_state>0)
+				rc_state -= 1;
+			if(rc.out_ptr == rc.out_len)
+				return rc.out_ptr;
+
+			byte = rd_bittree(&rc, &rc.bm_literal[((last_byte>>rc.lc)&0x07)][0], 0x100);
+			rc.output[rc.out_ptr++] = byte - 0x100;
+		}else{
+			len_bits = 0;
+			for(i=0; i<7; i++){
+				match_step += 1;
+				bit = rd_bit(&rc, &rc.bm_match[rc_state][match_step]);
+				if(bit==0)
+					break;
+				len_bits += 1;
+			}
+
+			if(len_bits==0){
+				match_len = 1;
+			}else{
+				len_state = ((len_bits-1)<<2)+((rc.out_ptr<<(len_bits-1))&0x03);
+				match_len = rd_number(&rc, &rc.bm_len[rc_state][len_state], len_bits);
+			}
+
+			dist_state = 0;
+			limit = 8;
+			if(match_len>3){
+				dist_state += 7;
+				limit = 16;
+			}
+			dist_bits = rd_bittree(&rc, &rc.bm_dist_bits[len_bits][dist_state], limit);
+			dist_bits -= limit;
+
+			if(dist_bits>0){
+				match_dist = rd_number(&rc, &rc.bm_dist[dist_bits][0], dist_bits);
+			}else{
+				match_dist = 1;
+			}
+
+			if(match_dist>rc.out_ptr || match_dist<=0)
+				return -1;
+			if(rc.out_ptr+match_len+1 > rc.out_len)
+				return -1;
+			match_src = rc.output+rc.out_ptr-match_dist;
+			for(i=0; i<match_len+1; i++)
+				rc.output[rc.out_ptr++] = *match_src++;
+			rc_state = 6+((rc.out_ptr+1)&1);
+		}
+		/* bail out on garbage that keeps reading past the input */
+		if(rc.in_ptr > rc.in_len+16)
+			return -1;
+		last_byte = rc.output[rc.out_ptr-1];
+	}
+}
+
+/*************************************************************/
 
 /* LZRC encoder */
 
