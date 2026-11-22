@@ -23,6 +23,57 @@ import zlib
 
 from gamedb import games
 
+_ps3_lzrc_lib = None
+_ps3_lzrc_tried = False
+
+def _load_ps3_lzrc():
+    """Load the PS3 LZRC encoder (lzrc/ps3lzrc.c) as a shared library.
+    Linux: lzrc/libps3lzrc.so (make -C lzrc), Windows: lzrc/ps3lzrc.dll,
+    macOS: lzrc/libps3lzrc.dylib. Returns None if it is not available."""
+    global _ps3_lzrc_lib, _ps3_lzrc_tried
+    if _ps3_lzrc_tried:
+        return _ps3_lzrc_lib
+    _ps3_lzrc_tried = True
+    import ctypes
+    if os.name == 'nt':
+        name = 'ps3lzrc.dll'
+    elif sys.platform == 'darwin':
+        name = 'libps3lzrc.dylib'
+    else:
+        name = 'libps3lzrc.so'
+    dirs = []
+    if getattr(sys, 'frozen', False):
+        dirs.append(os.path.dirname(sys.executable))
+        if hasattr(sys, '_MEIPASS'):
+            dirs.append(sys._MEIPASS)
+    dirs.append(os.path.dirname(os.path.abspath(__file__)))
+    dirs.append(os.getcwd())
+    for d in dirs:
+        path = os.path.join(d, 'lzrc', name)
+        if not os.path.exists(path):
+            continue
+        try:
+            lib = ctypes.CDLL(path)
+        except OSError as e:
+            print('Failed to load', path, e)
+            continue
+        lib.ps3_lzrc_compress.restype = ctypes.c_int
+        lib.ps3_lzrc_compress.argtypes = [ctypes.c_char_p, ctypes.c_int,
+                                          ctypes.c_char_p, ctypes.c_int]
+        _ps3_lzrc_lib = lib
+        break
+    return _ps3_lzrc_lib
+
+def ps3_lzrc_compress(buf):
+    """Compress one 0x9300 PSISOIMG block with the PS3 LZRC variant.
+    PS3 only: CFW on the PSP forces deflate for unsigned EBOOTs."""
+    import ctypes
+    lib = _load_ps3_lzrc()
+    src = ctypes.create_string_buffer(bytes(buf), len(buf))
+    dst = ctypes.create_string_buffer(len(buf) * 2 + 64)
+    n = lib.ps3_lzrc_compress(dst, len(dst), src, len(buf))
+    return dst.raw[:n]
+
 _basic_toc = bytes([
     0x41, 0x00, 0xa0, 0x00, 0x00, 0x00, 0x00, 0x01, 0x20, 0x00,
     0x41, 0x00, 0xa1, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00,
@@ -2421,6 +2472,8 @@ class popstation(object):
         self._striptracks = False
         # complevel is >0 for PSP and ==0 for PS3
         self._complevel = 1
+        # PS3 only: compress ISO blocks with LZRC instead of storing them raw
+        self._ps3_lzrc = False
         self._no_pstitleimg = False
         self._disc_ids = ['SLUS00000']
         self._game_title = 'TITLE'
@@ -2593,6 +2646,18 @@ class popstation(object):
     @complevel.setter
     def complevel(self, value):
         self._complevel = value
+
+    @property
+    def ps3_lzrc(self):
+        return self._ps3_lzrc
+
+    @ps3_lzrc.setter
+    def ps3_lzrc(self, value):
+        if value and not _load_ps3_lzrc():
+            print('PS3 LZRC compression library (lzrc/) not found, '
+                  'writing an uncompressed image instead')
+            value = False
+        self._ps3_lzrc = value
 
     @property
     def no_pstitleimg(self):
@@ -2892,6 +2957,9 @@ class popstation(object):
             if self._complevel != 0:
                 c = zlib.compress(buf, self._complevel)
                 c = c[2:-4]
+            elif self._ps3_lzrc:
+                # PS3 only (complevel == 0). Never used for PSP EBOOTs.
+                c = ps3_lzrc_compress(buf)
             idx = bytearray(32)
             struct.pack_into('<I', idx, 0, offset)
             h = hashlib.sha1()
@@ -2899,6 +2967,10 @@ class popstation(object):
             if self._complevel == 0:
                 idx[6] = 0x01 # we need this for uncompressed image in ps3 pkg?
             idx[8:24] = h.digest()[:16]
+            if self._complevel == 0 and self._ps3_lzrc and len(c) < 0x9300:
+                # ps1_netemu verifies SHA1 of the block AS STORED (i.e. the
+                # compressed bytes) before decompressing; raw blocks skip it.
+                idx[8:24] = hashlib.sha1(c).digest()[:16]
             if len(c) >= 0x9300:
                 struct.pack_into('<H', idx, 4, 0x9300)
                 fh.write(buf)

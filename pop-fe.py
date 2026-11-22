@@ -3241,7 +3241,7 @@ def create_psc(dest, disc_ids, game_title, icon0, pic1, cue_files, img_files, wa
         True
 
             
-def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False, force_ntsc=False):
+def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, subdir = './', snd0=None, whole_disk=True, subchannels=[], manual=None, no_libcrypt=None, psx_undither=False, ps1_newemu=False, enable_swap=False, force_ntsc=False, ps3_lzrc=True):
     #
     # This one is special since the same command may be used for other things
     # so we need to merge the argument if teh command is already there
@@ -3313,6 +3313,7 @@ def create_ps3(dest, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue
     if not whole_disk:
         p.striptracks = True
     p.complevel = 0
+    p.ps3_lzrc = ps3_lzrc
     p.magic_word = magic_word
     if len(aea_files):
         p.aea = aea_files
@@ -4047,6 +4048,8 @@ def install_deps():
             subprocess.call(['cmake', '.'])
             subprocess.call(['make'])
             os.chdir('../..')
+        # PS3 LZRC compression library
+        subprocess.call(['make', '-C', 'lzrc'])
         # PSL1GHT
         os.chdir('PSL1GHT/tools/ps3py')
         subprocess.call(['git', 'checkout', 'origin/use-python3'])
@@ -4830,6 +4833,8 @@ if __name__ == "__main__":
                     help='Use the ps1_newemu emulator (only valid for PS3 PKG, overrides other configs)')
     parser.add_argument('--swap-discs', action='store_true',
                     help='Enable swap_discs option (only valid for PS3 PKG)')
+    parser.add_argument('--ps3-no-lzrc', action='store_true',
+                    help='Do not LZRC-compress the disc image in PS3 PKGs')
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
@@ -5106,7 +5111,7 @@ if __name__ == "__main__":
     if args.ps2_dir:
         create_ps2(args.ps2_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, subdir=subdir)
     if args.ps3_pkg:
-        create_ps3(args.ps3_pkg, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs)
+        create_ps3(args.ps3_pkg, disc_ids, real_disc_ids, game_title, icon0, pic0, pic1, cue_files, real_cue_files, img_files, mem_cards, aea_files, magic_word, resolution, snd0=snd0, subdir=subdir, whole_disk=args.whole_disk, subchannels=subchannels, manual=ps3_manual, no_libcrypt=args.no_libcrypt, psx_undither=args.psx_undither, ps1_newemu=args.ps1_newemu, enable_swap=args.swap_discs, ps3_lzrc=not args.ps3_no_lzrc)
     if args.psc_dir:
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:

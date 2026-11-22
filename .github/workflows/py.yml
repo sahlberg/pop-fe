@@ -101,6 +101,10 @@ jobs:
       - name: Build sign3
         run:   |
           pyinstaller sign3.py
+      - name: Build PS3 LZRC library
+        run:   |
+          gcc --version
+          gcc -O2 -w -shared -static-libgcc -o lzrc/ps3lzrc.dll lzrc/ps3lzrc.c
       - name: Install ATRACDENC
         run:   |
           Invoke-WebRequest -OutFile atracdenc-x86_0.1.1.zip https://github.com/dcherednik/atracdenc/releases/download/0.1.1/atracdenc-win-x86_0.1.1.zip
@@ -147,6 +151,8 @@ jobs:
           cp ppf/*.* dist/pop-fe/ppf
           mkdir dist/pop-fe/ps3configs
           cp -r ps3configs/* dist/pop-fe/ps3configs
+          mkdir dist/pop-fe/lzrc
+          cp lzrc/ps3lzrc.dll dist/pop-fe/lzrc/.
       - name: Update dist/pop-fe-ps3
         run:   |
           mkdir dist/pop-fe-ps3/atracdenc
