@@ -53918,6 +53918,7 @@ games = {
     	'id': 'SCPS10136',
 	'title': "GUNPARADE MARCH",
         'pic0': 'https://images.launchbox-app.com/942a1dc2-6bbf-40a6-b76d-6c137e3612b9.png',
+        'pic1': 'https://gamesdb-images.launchbox.gg/r2_19df3daa-be08-445e-937f-e765ef05d634.png',
     
         'pspconfig': "pspconfigs/Gunparade March/SCPS-10136.bin",
     },
