@@ -43,6 +43,9 @@ Item types:
       "white": N (with "light") treats only pixels whose darkest channel is > N
       as text, for white lettering over busy artwork; "grow": px (orig) widens
       the text mask, e.g. to also remove a dark outline round the letters.
+      "key": [[r0, g0, b0], [r1, g1, b1]] (with "light"/"dark") treats only pixels
+      whose colour lies inside that range as text, for coloured lettering over
+      artwork of a similar brightness (yellow letters on an orange brush stroke).
       "shape": "ellipse" fills the ellipse inscribed in the box instead (only
       with a flat colour or "median"), e.g. to blank a lettered circle.
 
@@ -161,13 +164,13 @@ class Page:
                 st[k] = item[k]
         return st
 
-    def erase(self, box, fill=None, gh=9, thresh=18, ellipse=False, white=None, grow=None):
+    def erase(self, box, fill=None, gh=9, thresh=18, ellipse=False, white=None, grow=None, key=None):
         """Erase an ORIGINAL-pixel box on the upscaled page."""
         K = self.K
         x0, y0 = int(box[0] * K), int(box[1] * K)
         x1, y1 = int(box[2] * K), int(box[3] * K)
         if fill in ('light', 'dark'):
-            self.inpaint(x0, y0, x1, y1, fill, gh, thresh, white, grow)
+            self.inpaint(x0, y0, x1, y1, fill, gh, thresh, white, grow, key)
             return
         if fill == 'median':  # solid panel: its most common colour, ignoring the text
             fill = np.median(self.A[y0:y1, x0:x1].reshape(-1, 3), 0).astype(int)
@@ -201,7 +204,7 @@ class Page:
             a = (hi - lo) / (2 * r + 1)
         return a
 
-    def inpaint(self, x0, y0, x1, y1, kind, gh=9, thresh=18, white=None, grow_px=None):
+    def inpaint(self, x0, y0, x1, y1, kind, gh=9, thresh=18, white=None, grow_px=None, key=None):
         """Replace only the text pixels (lighter or darker than their surroundings)
         with the surrounding picture. gh = glyph height in original px: the
         background estimate must look further than one glyph, or the strokes of big
@@ -226,6 +229,9 @@ class Page:
         mask = text_mask(bg)
         if white is not None:  # absolute: only near-white pixels are text (busy artwork)
             mask = R.min(2) > white
+        if key is not None:  # absolute colour range
+            lo, hi = np.array(key[0], float), np.array(key[1], float)
+            mask = ((R >= lo) & (R <= hi)).all(2)
         grow = max(K, int(0.15 * gh * K))  # cover antialiased edges
         if grow_px is not None:  # e.g. to swallow a dark outline round the letters
             grow = max(1, int(grow_px * K))
@@ -269,7 +275,7 @@ class Page:
     # ---- item types ----------------------------------------------------
     def do_erase(self, it):
         self.erase(it['box'], it.get('fill'), it.get('size', 9), it.get('thresh', 18),
-                   it.get('shape') == 'ellipse', it.get('white'), it.get('grow'))
+                   it.get('shape') == 'ellipse', it.get('white'), it.get('grow'), it.get('key'))
 
     def do_text(self, it):
         K = self.K
@@ -278,7 +284,7 @@ class Page:
         st = self.style(it, 'body')
         if er:
             self.erase(er, it.get('fill'), st['size'], it.get('thresh', 18),
-                       it.get('shape') == 'ellipse', it.get('white'), it.get('grow'))
+                       it.get('shape') == 'ellipse', it.get('white'), it.get('grow'), it.get('key'))
         x0, y0, x1, y1 = (v * K for v in box)
         W, H = x1 - x0, y1 - y0
         lead = st.get('leading', 1.25)
