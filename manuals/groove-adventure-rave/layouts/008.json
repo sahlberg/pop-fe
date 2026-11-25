@@ -1,0 +1,76 @@
+{
+ "src": "../008.jpg",
+ "out": "../008-en.png",
+ "note": "page 05: Elie and Musica",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    245,
+    245,
+    245
+   ],
+   "leading": 1.4
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    308,
+    66,
+    648,
+    151
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    311,
+    68,
+    644,
+    151
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Elie   About 16?   Blood type: probably O\nShe loves Heart Kreuz (a fashion brand) and her special talent is gambling! A girl haunted by a past she cannot remember. She may not look it, but she fights pretty well with her modified tonfa."
+  },
+  {
+   "type": "erase",
+   "box": [
+    471,
+    532,
+    666,
+    650
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    471,
+    650,
+    600,
+    675
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    474,
+    534,
+    664,
+    668
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Musica   Age 18   Blood type: O   Silver Claimer\nBorn on Punk Street. His specialities are sweet-talking girls(?) and stealing! Headstrong, but a really good guy who backs Haru up in all sorts of ways."
+  }
+ ]
+}

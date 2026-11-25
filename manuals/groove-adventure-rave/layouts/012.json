@@ -1,0 +1,311 @@
+{
+ "src": "../012.jpg",
+ "out": "../012-en.png",
+ "note": "page 09: message from Hiro Mashima. Circles \u771f\u5cf6\u5148\u751f\u304b\u3089\u2026 -> MASHIMA",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    248,
+    248,
+    250
+   ],
+   "leading": 1.42
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    60,
+    88,
+    322,
+    516
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "erase",
+   "box": [
+    60,
+    515,
+    166,
+    540
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    63,
+    90,
+    318,
+    520
+   ],
+   "erase": false,
+   "style": "panel",
+   "valign": "middle",
+   "text": "A brand-new story, different from the manga!! In other words, this is RAVE for the \"PlayStation\"!! I drew a few new characters specially for it!!\n\nHonestly, I wanted to draw the small fry, the enemies and the machines myself too... but I'm glad I left it to the development staff, because it's more RAVE than the RAVE I draw (lol). What's up with that!! The atmosphere is spot on!!\n\nWell... putting that aside... In this game, YOU are Haru. Boss Elie around if you like! Protect Musica with your life if you like! Leave Plue to fend for himself if you like! Play it any way you want!! That's the point!!\n\nAs for me, I think I'll start by throwing Plue around a lot.",
+   "size": 13
+  },
+  {
+   "type": "erase",
+   "box": [
+    66,
+    42,
+    270,
+    51
+   ],
+   "fill": "light",
+   "size": 8
+  },
+  {
+   "type": "erase",
+   "box": [
+    64.9,
+    55.4,
+    84.1,
+    74.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    64.5,
+    54,
+    84.5,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    95.25,
+    55.4,
+    114.44999999999999,
+    74.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    94.85,
+    54,
+    114.85,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    125.6,
+    55.4,
+    144.79999999999998,
+    74.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    125.19999999999999,
+    54,
+    145.2,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    155.95000000000002,
+    55.4,
+    175.15,
+    74.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    155.55,
+    54,
+    175.55,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "H",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    186.3,
+    55.4,
+    205.5,
+    74.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    185.9,
+    54,
+    205.9,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    216.65,
+    55.4,
+    235.85,
+    74.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    216.25,
+    54,
+    236.25,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    247.00000000000003,
+    55.4,
+    266.20000000000005,
+    74.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    246.60000000000002,
+    54,
+    266.6,
+    76
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

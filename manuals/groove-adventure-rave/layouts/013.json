@@ -1,0 +1,623 @@
+{
+ "src": "../013.jpg",
+ "out": "../013-en.png",
+ "note": "page 10: controller. Circles 操作方法 -> KEYS",
+ "styles": {
+  "desc": {
+   "font": "SemiBold",
+   "size": 12.5,
+   "color": [
+    250,
+    250,
+    250
+   ],
+   "leading": 1.3
+  },
+  "black": {
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    35,
+    30,
+    30
+   ],
+   "leading": 1.3
+  },
+  "note": {
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    45,
+    40,
+    35
+   ],
+   "leading": 1.5
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    33,
+    147,
+    135,
+    185
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    145,
+    135,
+    175
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "L2 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    142,
+    145,
+    291,
+    189
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    145,
+    145,
+    293,
+    189
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Show the sword's Form Change menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    33,
+    218,
+    135,
+    262
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    216,
+    135,
+    247
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "L1 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    142,
+    217,
+    291,
+    261
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    145,
+    217,
+    293,
+    261
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Instructions menu (partner 1)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    33,
+    293,
+    135,
+    340
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    296,
+    135,
+    342
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Left stick /\nD-pad"
+  },
+  {
+   "type": "erase",
+   "box": [
+    142,
+    294,
+    291,
+    342
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    145,
+    294,
+    293,
+    342
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Move the hero; choose menu items"
+  },
+  {
+   "type": "erase",
+   "box": [
+    33,
+    346,
+    135,
+    409
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    347,
+    135,
+    395
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    250,
+    185,
+    185
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Left stick /\nD-pad"
+  },
+  {
+   "type": "erase",
+   "box": [
+    142,
+    349,
+    291,
+    412
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    145,
+    349,
+    293,
+    412
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Switch between the Form Change and Item menus"
+  },
+  {
+   "type": "erase",
+   "box": [
+    33,
+    439,
+    268,
+    465
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    438,
+    280,
+    467
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Analog mode switch"
+  },
+  {
+   "type": "erase",
+   "box": [
+    33,
+    491,
+    268,
+    517
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    35,
+    490,
+    200,
+    517
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "LED indicator"
+  },
+  {
+   "type": "erase",
+   "box": [
+    432,
+    112,
+    613,
+    139
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    432,
+    139,
+    613,
+    161
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    434,
+    120,
+    640,
+    139
+   ],
+   "erase": false,
+   "style": "black",
+   "text": "... on battle and town floors"
+  },
+  {
+   "type": "text",
+   "box": [
+    434,
+    144,
+    640,
+    163
+   ],
+   "erase": false,
+   "style": "black",
+   "text": "... on the Item menu screen"
+  },
+  {
+   "type": "erase",
+   "box": [
+    412,
+    176,
+    600,
+    199
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    405,
+    173,
+    607,
+    201
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Analog Controller",
+   "align": "center"
+  },
+  {
+   "type": "erase",
+   "box": [
+    465,
+    466,
+    580,
+    489
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    456,
+    463,
+    590,
+    491
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Controller",
+   "align": "center"
+  },
+  {
+   "type": "erase",
+   "box": [
+    444,
+    496,
+    603,
+    541
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    440,
+    497,
+    612,
+    542
+   ],
+   "erase": false,
+   "style": "black",
+   "align": "center",
+   "valign": "middle",
+   "text": "Each button does the same as on the Analog Controller."
+  },
+  {
+   "type": "erase",
+   "box": [
+    23,
+    525,
+    397,
+    654
+   ],
+   "fill": "dark",
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    26,
+    527,
+    397,
+    653
+   ],
+   "erase": false,
+   "style": "note",
+   "valign": "middle",
+   "text": "★These are the default controls. Button assignments can be changed under Field Menu > Settings. ★The left stick can be used while the analog mode switch is ON (LED lit). ★Supports the vibration function of the Analog Controller (DUALSHOCK). It vibrates according to the setting, whether the LED is red or off. Vibration is switched on and off under Field Menu > Settings > Vibration."
+  },
+  {
+   "type": "erase",
+   "box": [
+    88,
+    74,
+    195,
+    82.4
+   ]
+  },
+  {
+   "type": "erase",
+   "box": [
+    88.1,
+    86.6,
+    106.9,
+    105.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    87.5,
+    85,
+    107.5,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "K",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    117.3,
+    86.6,
+    136.1,
+    105.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    116.7,
+    85,
+    136.7,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    146.5,
+    86.6,
+    165.3,
+    105.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    145.9,
+    85,
+    165.9,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "Y",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    175.7,
+    86.6,
+    194.5,
+    105.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    175.1,
+    85,
+    195.1,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

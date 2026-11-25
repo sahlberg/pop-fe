@@ -1,0 +1,618 @@
+{
+ "src": "../023.jpg",
+ "out": "../023-en.png",
+ "note": "page 20: item menu. Circles アイテムメニュー -> ITEMMENU. Screenshot item names left in Japanese.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.3,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.48
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    180,
+    494,
+    210,
+    504
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    180,
+    270,
+    262,
+    282
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    430,
+    42,
+    472
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    367,
+    42,
+    409
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    325,
+    42,
+    347
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    131,
+    346,
+    199
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    135,
+    335,
+    194
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★You can open the Field Menu and use items at any time while on a battle floor (even during a fight)."
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    199,
+    346,
+    260
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    197,
+    335,
+    261
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Register the items you use most often in the Item menu beforehand, and you can use them easily without opening the Field Menu each time."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    280,
+    262,
+    299
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    24,
+    280,
+    268,
+    300
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Registering items in the Item menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    503,
+    262,
+    522
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    24,
+    503,
+    268,
+    523
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Using the Item menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    42,
+    300,
+    333,
+    347
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    304,
+    333,
+    348
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Press the START button to open the Field Menu and choose \"Item\"."
+  },
+  {
+   "type": "erase",
+   "box": [
+    42,
+    347,
+    333,
+    409
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    355,
+    333,
+    410
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "In the item window that appears, choose the item to register and press the ○ button to open a submenu, then choose \"Register\"."
+  },
+  {
+   "type": "erase",
+   "box": [
+    42,
+    409,
+    333,
+    472
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    418,
+    333,
+    473
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Choose where in the Item menu window to register it and press the ○ button. Up to 8 items can be registered."
+  },
+  {
+   "type": "erase",
+   "box": [
+    18,
+    530,
+    346,
+    664
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    21,
+    534,
+    335,
+    665
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "On a battle floor, press the △ button to bring up the Item menu. Choose the item you want with the left stick (D-pad) and press the ○ button. Then choose who to use it on with the left stick (D-pad) and press ○ to use it (press × to cancel)."
+  },
+  {
+   "type": "erase",
+   "box": [
+    385,
+    478,
+    545,
+    503
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    387,
+    482,
+    600,
+    504
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Registering in the Item menu",
+   "font": "Bold",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    385,
+    648,
+    555,
+    672
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    387,
+    652,
+    600,
+    673
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Using the Item menu",
+   "font": "Bold",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    150,
+    78,
+    320,
+    90
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    77.7,
+    90.2,
+    99.3,
+    111.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    78.5,
+    90,
+    98.5,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    106.8,
+    90.2,
+    128.4,
+    111.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    107.6,
+    90,
+    127.6,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    135.89999999999998,
+    90.2,
+    157.5,
+    111.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    136.7,
+    90,
+    156.7,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    165.0,
+    90.2,
+    186.60000000000002,
+    111.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    165.8,
+    90,
+    185.8,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    194.1,
+    90.2,
+    215.70000000000002,
+    111.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    194.9,
+    90,
+    214.9,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    223.2,
+    90.2,
+    244.8,
+    111.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    224.0,
+    90,
+    244.0,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252.3,
+    90.2,
+    273.90000000000003,
+    111.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    253.10000000000002,
+    90,
+    273.1,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    281.40000000000003,
+    90.2,
+    303.00000000000006,
+    111.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    282.20000000000005,
+    90,
+    302.20000000000005,
+    112
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "U",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

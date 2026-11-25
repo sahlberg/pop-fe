@@ -1,0 +1,262 @@
+{
+ "src": "../028.jpg",
+ "out": "../028-en.png",
+ "note": "page 25: standard Sony usage/health notice. NTSC-J and FOR SALE logos kept in place; English flows around them on line 1.",
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    27,
+    30,
+    127,
+    40
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    41,
+    124,
+    60
+   ],
+   "fill": [
+    30,
+    30,
+    30
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    25,
+    40,
+    127,
+    61
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Usage notes"
+  },
+  {
+   "type": "erase",
+   "box": [
+    20,
+    510,
+    125,
+    520
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    26,
+    521,
+    122,
+    540
+   ],
+   "fill": [
+    30,
+    30,
+    30
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    23,
+    520,
+    125,
+    541
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Health notes"
+  },
+  {
+   "type": "erase",
+   "box": [
+    128,
+    36,
+    418,
+    64
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    497,
+    36,
+    540,
+    64
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    661,
+    36,
+    690,
+    64
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    132,
+    43,
+    418,
+    63
+   ],
+   "erase": false,
+   "font": "Regular",
+   "size": 11.5,
+   "color": [
+    30,
+    30,
+    30
+   ],
+   "leading": 1.5,
+   "text": "• This disc is \"PlayStation\" format software marked",
+   "valign": "middle"
+  },
+  {
+   "type": "text",
+   "box": [
+    499,
+    43,
+    540,
+    63
+   ],
+   "erase": false,
+   "font": "Regular",
+   "size": 10.6,
+   "color": [
+    30,
+    30,
+    30
+   ],
+   "leading": 1.5,
+   "text": "or",
+   "valign": "middle",
+   "align": "center"
+  },
+  {
+   "type": "erase",
+   "box": [
+    22,
+    64,
+    692,
+    518
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    27,
+    67,
+    673,
+    518
+   ],
+   "erase": false,
+   "font": "Regular",
+   "size": 12.3,
+   "color": [
+    30,
+    30,
+    30
+   ],
+   "leading": 1.5,
+   "text": "and is compatible only with Japanese-specification \"PlayStation\", \"PlayStation\" (PS one) and \"PlayStation 2\" consoles. It cannot be used on overseas hardware. Never use it on other machines: doing so may damage the equipment or harm your ears or eyes. • Please read the software's \"instruction manual\" and the \"instruction manual\" and \"safety notes\" of the hardware you use carefully, and use it correctly. • When setting this disc in a \"PlayStation\", \"PS one\" or \"PlayStation 2\", always place it with the label side (the printed side) facing up. When setting it in a \"PlayStation\" or \"PS one\", press the centre gently to seat the disc firmly. • When taking the disc out of a \"PlayStation\" or \"PS one\" after playing, press the OPEN button and make sure the disc has stopped spinning completely before removing it. Touching a spinning disc may cause injury, damage the disc or damage the console. • Do not store the disc in direct sunlight, near heaters or anywhere hot or humid. • Do not touch either side of the disc with your fingers. • Do not stick paper or tape on the disc. • Do not write on the disc with a pen or the like. • Fingerprints and dirt on the disc can disturb the picture or lower the sound quality, so always keep it clean. • For normal care, wipe gently with a soft cloth from the centre outwards. • Never use benzine, record cleaner, anti-static agents or the like, as they may damage the disc. • Never use a disc that is cracked or warped, or that has been repaired with adhesive, as it may cause malfunctions or damage the console. • After playing, put the disc back in its case and keep it out of reach of small children. If it is left out of its case, stacked or stood on end, it may warp or get scratched. • Do not put a finger or any other part of your body into the centre hole of the disc; it may get stuck and cause injury. • Never throw the disc; it may hurt someone. • Do not put heavy objects on the case or drop it; it may break and cause injury. • We cannot compensate for scratches or damage caused by mishandling on the customer's part. • Do not connect a \"PlayStation\", \"PS one\" or \"PlayStation 2\" to a projection television (a screen-projection TV) other than a LCD type, as this may cause image burn-in (screen burn). Burn-in can occur especially when a still image is displayed. • Some software requires a \"Memory Card\" or \"PocketStation\". For details, see the software's \"instruction manual\"."
+  },
+  {
+   "type": "erase",
+   "box": [
+    126,
+    516,
+    690,
+    544
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    130,
+    522,
+    690,
+    542
+   ],
+   "erase": false,
+   "font": "Regular",
+   "size": 12,
+   "color": [
+    30,
+    30,
+    30
+   ],
+   "leading": 1.5,
+   "text": "• When playing, take a break of about 15 minutes every hour for your health.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    22,
+    544,
+    692,
+    664
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    27,
+    547,
+    673,
+    664
+   ],
+   "erase": false,
+   "font": "Regular",
+   "size": 12.0,
+   "color": [
+    30,
+    30,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Do not use the vibration function of an Analog Controller (DUALSHOCK) or the like continuously for long periods; as a guide, take a break about every 30 minutes. • Do not play when you are tired or have not slept enough. • Play in a well-lit room, as far from the TV screen as possible. • In rare cases, strong light stimulation or flashing, such as from a TV screen, can temporarily cause symptoms such as muscle twitching or loss of consciousness. If you have ever had such symptoms, consult a doctor beforehand. If you experience such symptoms, or feel dizziness, nausea, fatigue, or anything like motion sickness while playing, stop playing at once and see a doctor. • Read the \"instruction manual\" and \"health notes\" of the hardware you use carefully, and use it correctly."
+  }
+ ]
+}

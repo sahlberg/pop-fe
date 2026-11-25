@@ -1,0 +1,1108 @@
+{
+ "src": "../026.jpg",
+ "out": "../026-en.png",
+ "note": "page 23: items. Circles アイテムについて -> ITEMLIST.",
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    44,
+    135,
+    154,
+    163
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    142,
+    154,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Herb"
+  },
+  {
+   "type": "erase",
+   "box": [
+    44,
+    229,
+    154,
+    290
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    235,
+    154,
+    290
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Restores HP 20 + Lv1/2."
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    135,
+    280,
+    163
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    142,
+    280,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Herbal Medicine"
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    229,
+    280,
+    290
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    235,
+    280,
+    290
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Restores HP 80 + Lv1/2."
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    135,
+    407,
+    163
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    142,
+    407,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Eri Herb"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    229,
+    407,
+    290
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    235,
+    407,
+    290
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Fully restores HP."
+  },
+  {
+   "type": "erase",
+   "box": [
+    424,
+    135,
+    534,
+    163
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    426,
+    142,
+    534,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Needle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    424,
+    229,
+    534,
+    290
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    426,
+    235,
+    534,
+    290
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Cures Paralysis."
+  },
+  {
+   "type": "erase",
+   "box": [
+    551,
+    135,
+    680,
+    163
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    553,
+    142,
+    680,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Mocha"
+  },
+  {
+   "type": "erase",
+   "box": [
+    551,
+    229,
+    680,
+    290
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    553,
+    235,
+    680,
+    290
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Cures Sleep."
+  },
+  {
+   "type": "erase",
+   "box": [
+    44,
+    298,
+    154,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    305,
+    154,
+    327
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Antidote Herb"
+  },
+  {
+   "type": "erase",
+   "box": [
+    44,
+    391,
+    154,
+    452
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    397,
+    154,
+    452
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Cures Poison."
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    298,
+    280,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    305,
+    280,
+    327
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Hot Pepper"
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    391,
+    280,
+    452
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    397,
+    280,
+    452
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Cures Confusion."
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    298,
+    407,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    305,
+    407,
+    327
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Cure-All"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    391,
+    407,
+    452
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    397,
+    407,
+    452
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Cures all status ailments."
+  },
+  {
+   "type": "erase",
+   "box": [
+    424,
+    298,
+    534,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    426,
+    305,
+    534,
+    327
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Komekichi Candy"
+  },
+  {
+   "type": "erase",
+   "box": [
+    424,
+    391,
+    534,
+    452
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    426,
+    397,
+    534,
+    452
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Charges special moves twice as fast for a while."
+  },
+  {
+   "type": "erase",
+   "box": [
+    551,
+    298,
+    680,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    553,
+    305,
+    680,
+    327
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "That Meat"
+  },
+  {
+   "type": "erase",
+   "box": [
+    551,
+    391,
+    680,
+    452
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    553,
+    397,
+    680,
+    452
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Raises max HP by 10."
+  },
+  {
+   "type": "erase",
+   "box": [
+    44,
+    466,
+    154,
+    494
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    473,
+    154,
+    495
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    44,
+    559,
+    154,
+    618
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    46,
+    565,
+    154,
+    618
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Raises base attack power by 10%."
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    466,
+    280,
+    494
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    473,
+    280,
+    495
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Bomb"
+  },
+  {
+   "type": "erase",
+   "box": [
+    170,
+    559,
+    280,
+    618
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    172,
+    565,
+    280,
+    618
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Explodes after a while."
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    466,
+    407,
+    494
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    473,
+    407,
+    495
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "valign": "middle",
+   "text": "Living Chain"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297,
+    559,
+    407,
+    618
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    299,
+    565,
+    407,
+    618
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.42,
+   "text": "Lets you climb a wall where a cliff top has a ledge."
+  },
+  {
+   "type": "erase",
+   "box": [
+    322,
+    70,
+    632,
+    114
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    326,
+    74,
+    690,
+    114
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.45,
+   "text": "The world of RAVE holds all kinds of items. Here are a few of them."
+  },
+  {
+   "type": "erase",
+   "box": [
+    95,
+    70,
+    315,
+    84.5
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    83.7,
+    85.2,
+    105.3,
+    106.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    84.5,
+    85,
+    104.5,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    112.8,
+    85.2,
+    134.4,
+    106.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    113.6,
+    85,
+    133.6,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    141.89999999999998,
+    85.2,
+    163.5,
+    106.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    142.7,
+    85,
+    162.7,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    171.0,
+    85.2,
+    192.60000000000002,
+    106.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    171.8,
+    85,
+    191.8,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    200.1,
+    85.2,
+    221.70000000000002,
+    106.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    200.9,
+    85,
+    220.9,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "L",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    229.2,
+    85.2,
+    250.8,
+    106.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    230.0,
+    85,
+    250.0,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258.3,
+    85.2,
+    279.90000000000003,
+    106.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    259.1,
+    85,
+    279.1,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    287.40000000000003,
+    85.2,
+    309.00000000000006,
+    106.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    288.20000000000005,
+    85,
+    308.20000000000005,
+    107
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

@@ -1,0 +1,533 @@
+{
+ "src": "../015.jpg",
+ "out": "../015-en.png",
+ "note": "page 12: intro + main menu. Circles メインメニュー -> SELECT!",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 12,
+   "color": [
+    45,
+    35,
+    35
+   ],
+   "leading": 1.5
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    18,
+    35,
+    315,
+    104
+   ],
+   "fill": "light",
+   "size": 21,
+   "white": 225,
+   "grow": 4.5
+  },
+  {
+   "type": "text",
+   "box": [
+    22,
+    40,
+    330,
+    104
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 21,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.35,
+   "stroke": [
+    1.0,
+    [
+     60,
+     64,
+     90
+    ]
+   ],
+   "text": "Do you have \"friends\" who would stake their lives on you?"
+  },
+  {
+   "type": "erase",
+   "box": [
+    18,
+    105,
+    300,
+    190
+   ],
+   "fill": "light",
+   "size": 11.5,
+   "white": 225,
+   "grow": 3.5
+  },
+  {
+   "type": "text",
+   "box": [
+    22,
+    108,
+    236,
+    194
+   ],
+   "erase": false,
+   "font": "SemiBold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.5,
+   "stroke": [
+    1.0,
+    [
+     60,
+     64,
+     90
+    ]
+   ],
+   "text": "★This game is an action RPG. You control Haru and help the characters grow while enjoying battles that unfold in real time."
+  },
+  {
+   "type": "erase",
+   "box": [
+    18,
+    326,
+    242,
+    452
+   ],
+   "fill": "light",
+   "size": 11.5,
+   "white": 225,
+   "grow": 3.5
+  },
+  {
+   "type": "text",
+   "box": [
+    22,
+    330,
+    242,
+    458
+   ],
+   "erase": false,
+   "font": "SemiBold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.5,
+   "stroke": [
+    1.0,
+    [
+     60,
+     64,
+     90
+    ]
+   ],
+   "text": "★Thanks to the new \"RPD System\" you get to give orders to your partners and set them moving, and feel the tension of trust levels that change with Haru's actions. Whether your partners help you depends on how you yourself act."
+  },
+  {
+   "type": "erase",
+   "box": [
+    18,
+    463,
+    275,
+    532
+   ],
+   "fill": "light",
+   "size": 11.5,
+   "white": 225,
+   "grow": 3.5
+  },
+  {
+   "type": "text",
+   "box": [
+    22,
+    466,
+    270,
+    532
+   ],
+   "erase": false,
+   "font": "SemiBold",
+   "size": 11.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.5,
+   "stroke": [
+    1.0,
+    [
+     60,
+     64,
+     90
+    ]
+   ],
+   "text": "★Work together with your partners to solve many mysteries as you push on with the adventure. All kinds of events await you along the way."
+  },
+  {
+   "type": "erase",
+   "box": [
+    15,
+    535,
+    292,
+    578
+   ],
+   "fill": "light",
+   "size": 20,
+   "white": 225,
+   "grow": 4.5
+  },
+  {
+   "type": "text",
+   "box": [
+    20,
+    540,
+    330,
+    578
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 20,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.35,
+   "stroke": [
+    1.0,
+    [
+     60,
+     64,
+     90
+    ]
+   ],
+   "text": "Now, set out on your adventure!"
+  },
+  {
+   "type": "erase",
+   "box": [
+    415,
+    378,
+    600,
+    400
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    420,
+    381,
+    680,
+    401
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Start a new game."
+  },
+  {
+   "type": "erase",
+   "box": [
+    405,
+    448,
+    672,
+    492
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    410,
+    450,
+    672,
+    494
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Load data saved on a memory card."
+  },
+  {
+   "type": "erase",
+   "box": [
+    415,
+    535,
+    560,
+    558
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    420,
+    538,
+    680,
+    558
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Change the game settings."
+  },
+  {
+   "type": "erase",
+   "box": [
+    468.2,
+    83.0,
+    488.8,
+    103.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    468.5,
+    82.3,
+    488.5,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    497.53,
+    83.0,
+    518.13,
+    103.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    497.83,
+    82.3,
+    517.8299999999999,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    526.86,
+    83.0,
+    547.4599999999999,
+    103.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    527.16,
+    82.3,
+    547.16,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "L",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    556.19,
+    83.0,
+    576.79,
+    103.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    556.49,
+    82.3,
+    576.49,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    585.52,
+    83.0,
+    606.1199999999999,
+    103.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    585.8199999999999,
+    82.3,
+    605.8199999999999,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "C",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    614.85,
+    83.0,
+    635.4499999999999,
+    103.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    615.15,
+    82.3,
+    635.15,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    644.1800000000001,
+    83.0,
+    664.78,
+    103.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    644.48,
+    82.3,
+    664.48,
+    104.3
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "!",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

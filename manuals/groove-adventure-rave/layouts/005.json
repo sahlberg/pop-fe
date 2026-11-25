@@ -1,0 +1,79 @@
+{
+ "src": "../005.jpg",
+ "out": "../005-en.png",
+ "note": "page 02, manga spread: two speech bubbles. The small sfx 'pu' beside Plue is left alone (sits on hatching).",
+ "styles": {
+  "bubble": {
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    196,
+    140,
+    62
+   ],
+   "leading": 1.2
+  }
+ },
+ "items": [
+  {
+   "type": "text",
+   "box": [
+    232,
+    395,
+    330,
+    475
+   ],
+   "erase": [
+    233,
+    362,
+    325,
+    503
+   ],
+   "fill": "dark",
+   "style": "bubble",
+   "align": "center",
+   "valign": "middle",
+   "size": 12,
+   "text": "I'm not\nin this\nhalf-\nheartedly...",
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    276,
+    503,
+    294,
+    514
+   ],
+   "fill": "dark",
+   "thresh": 30,
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    463,
+    52,
+    505,
+    116
+   ],
+   "erase": [
+    465,
+    39,
+    500,
+    125
+   ],
+   "fill": "dark",
+   "style": "bubble",
+   "color": [
+    52,
+    44,
+    52
+   ],
+   "size": 15,
+   "align": "center",
+   "valign": "middle",
+   "text": "Pu-\nuun!"
+  }
+ ]
+}

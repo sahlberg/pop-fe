@@ -1,0 +1,829 @@
+{
+ "src": "../018.jpg",
+ "out": "../018-en.png",
+ "note": "page 15: trust. Circles 信頼度を上げよう! -> TRUSTME! (9 circles; last original ! kept)",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    40,
+    40,
+    45
+   ],
+   "leading": 1.5
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    398,
+    150,
+    670,
+    301
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    401,
+    157,
+    672,
+    302
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Trust changes with Haru's actions and the way you give your partners commands. When trust is high, their attack power goes up! They'll use combos and special moves (which differ per partner) to great effect. But when trust is low, they won't attack and run off instead, or refuse Haru's commands. In some cases you may not be able to go on..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    388,
+    313,
+    672,
+    339
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    391,
+    318,
+    690,
+    340
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Trust has 5 levels, shown by a face icon.",
+   "font": "Bold",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    388,
+    396,
+    462,
+    420
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    390,
+    401,
+    500,
+    421
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "High trust",
+   "font": "Bold",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    600,
+    396,
+    675,
+    420
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    580,
+    401,
+    676,
+    421
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Low trust",
+   "font": "Bold",
+   "align": "right",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    398,
+    436,
+    670,
+    522
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    401,
+    442,
+    672,
+    523
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Partners act according to trust, how much HP they have left, and so on. When their HP is low and they are carrying an item, they recover automatically. When they can't recover (knocked out), they sit down."
+  },
+  {
+   "type": "erase",
+   "box": [
+    398,
+    548,
+    670,
+    635
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    401,
+    555,
+    672,
+    636
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Only Plue acts as he pleases, and sometimes heals you (trust doesn't affect him). On top of that, Haru can throw Plue to attack!"
+  },
+  {
+   "type": "erase",
+   "box": [
+    30,
+    247,
+    196,
+    268
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    251,
+    200,
+    269
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Elie hit them with a special move!",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    30,
+    440,
+    150,
+    463
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    32,
+    445,
+    190,
+    464
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Listen to me~",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    200,
+    438,
+    355,
+    463
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    200,
+    445,
+    360,
+    464
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Hey, you! Don't run away! (angry)",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    52,
+    113,
+    150,
+    134
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    48,
+    113,
+    154,
+    134
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 10.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "When trust is high..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    52,
+    308,
+    150,
+    331
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    48,
+    308,
+    154,
+    331
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 10.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "When trust is low..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    212,
+    308,
+    305,
+    331
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    206,
+    308,
+    310,
+    331
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 10.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "At the lowest..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    46,
+    502,
+    180,
+    525.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    48,
+    501,
+    182,
+    527
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11,
+   "color": [
+    40,
+    35,
+    35
+   ],
+   "align": "left",
+   "valign": "middle",
+   "text": "Trust changes (examples)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    36,
+    533.5,
+    183,
+    556.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    38,
+    534.5,
+    195,
+    556.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Partner surrounded!",
+   "valign": "middle",
+   "font": "Medium",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    198,
+    533.5,
+    271,
+    556.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    200,
+    534.5,
+    279,
+    556.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Help",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    286,
+    533.5,
+    370,
+    556.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    288,
+    534.5,
+    378,
+    556.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Don't help",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    36,
+    562.5,
+    183,
+    585.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    38,
+    563.5,
+    195,
+    585.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Villager in trouble",
+   "valign": "middle",
+   "font": "Medium",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    198,
+    562.5,
+    271,
+    585.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    200,
+    563.5,
+    279,
+    585.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Talk to them",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    286,
+    562.5,
+    370,
+    585.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    288,
+    563.5,
+    378,
+    585.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Ignore them",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    36,
+    591.5,
+    183,
+    614.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    38,
+    592.5,
+    195,
+    614.5
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Other...",
+   "valign": "middle",
+   "font": "Medium",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    415,
+    92,
+    672,
+    103.5
+   ],
+   "fill": "light",
+   "size": 6
+  },
+  {
+   "type": "erase",
+   "box": [
+    417.4,
+    103.2,
+    438.0,
+    123.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    417.7,
+    102.5,
+    437.7,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    446.7,
+    103.2,
+    467.3,
+    123.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    447.0,
+    102.5,
+    467.0,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    476.0,
+    103.2,
+    496.6,
+    123.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    476.3,
+    102.5,
+    496.3,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "U",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    505.3,
+    103.2,
+    525.9,
+    123.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    505.6,
+    102.5,
+    525.6,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    534.6,
+    103.2,
+    555.1999999999999,
+    123.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    534.9,
+    102.5,
+    554.9,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    563.9000000000001,
+    103.2,
+    584.5,
+    123.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    564.2,
+    102.5,
+    584.2,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    593.2,
+    103.2,
+    613.8,
+    123.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    593.5,
+    102.5,
+    613.5,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    622.5,
+    103.2,
+    643.0999999999999,
+    123.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    622.8,
+    102.5,
+    642.8,
+    124.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "!",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

@@ -1,0 +1,1239 @@
+{
+ "src": "../027.jpg",
+ "out": "../027-en.png",
+ "note": "page 24: weapons. Circles 武器と特殊能力 -> WEAPONS. Form names are guessed romanisations (see glossary). Element kanji boxes kept; the element is spelled out in each description.",
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    315,
+    188,
+    331,
+    207
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    100,
+    634,
+    114,
+    645
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    300,
+    70,
+    560,
+    118
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    304,
+    82,
+    690,
+    119
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Haru and each of his partners have their own favourite weapons and special abilities."
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    136,
+    640,
+    162
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    142,
+    690,
+    162
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Controlled by the player.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    162,
+    640,
+    207
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    166,
+    640,
+    208
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Changing the form of the equipped sword changes the weapon's properties as shown below."
+  },
+  {
+   "type": "erase",
+   "box": [
+    100,
+    143,
+    205,
+    176
+   ],
+   "fill": "dark",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    104,
+    146,
+    210,
+    177
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Haru",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113,
+    177,
+    207,
+    201
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    114,
+    180,
+    212,
+    201
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Testaments",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    97,
+    400,
+    290,
+    425
+   ],
+   "fill": "dark",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    104,
+    402,
+    300,
+    426
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Plue",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113,
+    432,
+    290,
+    455
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    114,
+    433,
+    300,
+    456
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Haru throws him as a weapon",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    97,
+    470,
+    290,
+    496
+   ],
+   "fill": "dark",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    104,
+    472,
+    300,
+    497
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Elie",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113,
+    503,
+    290,
+    525
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    114,
+    504,
+    300,
+    526
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Uses modified tonfas",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    97,
+    540,
+    290,
+    565
+   ],
+   "fill": "dark",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    104,
+    542,
+    300,
+    566
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Musica",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113,
+    573,
+    290,
+    595
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    114,
+    574,
+    300,
+    596
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Uses Silver Claim",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    97,
+    608,
+    290,
+    636
+   ],
+   "fill": "dark",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    104,
+    610,
+    300,
+    637
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Angela",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113,
+    637,
+    290,
+    663
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    114,
+    638,
+    300,
+    664
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "DB: Element Drive",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    405,
+    688,
+    433
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    409,
+    690,
+    434
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Acts freely by AI, as he pleases.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    433,
+    688,
+    457
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    437,
+    690,
+    458
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Sometimes heals nearby partners.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    476,
+    688,
+    503
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    480,
+    690,
+    504
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Acts by AI. Behaviour changes with trust.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    503,
+    688,
+    527
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    507,
+    690,
+    528
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Can destroy objects (buildings, wood, etc.).",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    546,
+    688,
+    573
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    550,
+    690,
+    574
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Acts by AI. Behaviour changes with trust.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    573,
+    688,
+    597
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    577,
+    690,
+    598
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Can stretch a rope across a cliff.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    616,
+    688,
+    643
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    620,
+    690,
+    644
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "Acts by AI. Behaviour changes with trust.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    330,
+    643,
+    688,
+    665
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    332,
+    647,
+    690,
+    666
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.45,
+   "text": "???",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    48,
+    209,
+    160,
+    229
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    48,
+    212,
+    168,
+    230
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11.5,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Magna Flare",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    46,
+    297,
+    162,
+    378
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    48,
+    302,
+    162,
+    379
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.38,
+   "text": "Fire: raises attack power. Burns certain objects."
+  },
+  {
+   "type": "erase",
+   "box": [
+    175,
+    209,
+    287,
+    229
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    175,
+    212,
+    295,
+    230
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11.5,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Aeronotein",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    173,
+    297,
+    289,
+    378
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    175,
+    302,
+    289,
+    379
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.38,
+   "text": "Wind: attack speed goes up. Moves certain objects with wind."
+  },
+  {
+   "type": "erase",
+   "box": [
+    301,
+    209,
+    413,
+    229
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    301,
+    212,
+    421,
+    230
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11.5,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Gran Earth",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    299,
+    297,
+    415,
+    378
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    301,
+    302,
+    415,
+    379
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.38,
+   "text": "Earth: after damaging enemies on screen, stuns them for a while. Breaks walls."
+  },
+  {
+   "type": "erase",
+   "box": [
+    428,
+    209,
+    540,
+    229
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    428,
+    212,
+    548,
+    230
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11.5,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Windill",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    426,
+    297,
+    542,
+    378
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    428,
+    302,
+    542,
+    379
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.38,
+   "text": "Water: heals allies within range. Puts out fires. Makes plants grow."
+  },
+  {
+   "type": "erase",
+   "box": [
+    555,
+    209,
+    667,
+    229
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    555,
+    212,
+    675,
+    230
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 11.5,
+   "color": [
+    25,
+    25,
+    25
+   ],
+   "leading": 1.45,
+   "text": "Ragna Raise",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    553,
+    297,
+    669,
+    378
+   ],
+   "fill": "dark",
+   "size": 11
+  },
+  {
+   "type": "text",
+   "box": [
+    555,
+    302,
+    669,
+    379
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    35,
+    30,
+    40
+   ],
+   "leading": 1.38,
+   "text": "Light: locks on to enemies within range. Laser attack, reflected by mirrors, crystals, etc."
+  },
+  {
+   "type": "erase",
+   "box": [
+    95,
+    70,
+    300,
+    86.5
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    89.7,
+    86.2,
+    111.3,
+    107.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    90.5,
+    86,
+    110.5,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "W",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    118.89999999999999,
+    86.2,
+    140.5,
+    107.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    119.69999999999999,
+    86,
+    139.7,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    148.1,
+    86.2,
+    169.70000000000002,
+    107.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    148.9,
+    86,
+    168.9,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    177.29999999999998,
+    86.2,
+    198.9,
+    107.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    178.1,
+    86,
+    198.1,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "P",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    206.5,
+    86.2,
+    228.10000000000002,
+    107.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    207.3,
+    86,
+    227.3,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    235.7,
+    86.2,
+    257.3,
+    107.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    236.5,
+    86,
+    256.5,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    264.9,
+    86.2,
+    286.5,
+    107.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    265.7,
+    86,
+    285.7,
+    108
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

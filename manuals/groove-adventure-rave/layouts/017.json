@@ -1,0 +1,619 @@
+{
+ "src": "../017.jpg",
+ "out": "../017-en.png",
+ "note": "page 14: RPD system. Circles 仲間に指示を出せ! -> COMMANDS + original '!' kept (last circle). Screenshot menus translated.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    45,
+    40,
+    30
+   ],
+   "leading": 1.48
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    26,
+    93,
+    314,
+    257
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    29,
+    96,
+    313,
+    258
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "This game uses the RPD SYSTEM (Real-time Party Direction / partner command system). By giving your partners commands, you get the feeling of \"working together with your partners to push the adventure forward\". Combining your control of the hero Haru with suitable commands for your two partners opens up a wide range of play."
+  },
+  {
+   "type": "erase",
+   "box": [
+    38,
+    370,
+    303,
+    460
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    41,
+    381,
+    303,
+    461
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★The only character you control is the hero, Haru. Your partners Elie, Plue, Musica and Angela move by AI (artificial intelligence), so you cannot control them directly."
+  },
+  {
+   "type": "erase",
+   "box": [
+    38,
+    486,
+    303,
+    636
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    41,
+    496,
+    303,
+    637
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Press the R1 (L1) button to open the partner command menu and choose a command to set your partner moving. The menu changes with the situation, so give commands that suit it. Note that Plue cannot be given commands."
+  },
+  {
+   "type": "erase",
+   "box": [
+    358,
+    374,
+    645,
+    417
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    361,
+    377,
+    672,
+    418
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "The partner command menu, opened with the L1 (R1) button. Try giving Elie a command!"
+  },
+  {
+   "type": "erase",
+   "box": [
+    358,
+    598,
+    637,
+    642
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    361,
+    601,
+    672,
+    643
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Press L1 and R1 together for the command menu for both partners at once."
+  },
+  {
+   "type": "erase",
+   "box": [
+    403,
+    139,
+    590,
+    161
+   ],
+   "fill": "light",
+   "size": 15
+  },
+  {
+   "type": "erase",
+   "box": [
+    415,
+    137,
+    433,
+    142
+   ],
+   "fill": "light",
+   "size": 3,
+   "thresh": 35
+  },
+  {
+   "type": "erase",
+   "box": [
+    516,
+    137,
+    544,
+    142
+   ],
+   "fill": "light",
+   "size": 3,
+   "thresh": 35
+  },
+  {
+   "type": "text",
+   "box": [
+    396,
+    137,
+    600,
+    164
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "On the command menu..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    431,
+    223,
+    543,
+    238
+   ],
+   "fill": [
+    72,
+    90,
+    160
+   ],
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    433,
+    224,
+    560,
+    240
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 9.5,
+   "color": [
+    205,
+    55,
+    50
+   ],
+   "leading": 1.12,
+   "text": "Watch for monsters",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    431,
+    238,
+    545,
+    319
+   ],
+   "fill": [
+    72,
+    90,
+    160
+   ],
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    433,
+    239.5,
+    560,
+    317
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 8.6,
+   "color": [
+    235,
+    235,
+    235
+   ],
+   "leading": 1.58,
+   "text": "Avoid fights\nTake on the strong ones\nCome closer\nStay back\nGet the treasure chest\nLet's lie in wait"
+  },
+  {
+   "type": "erase",
+   "box": [
+    408,
+    489,
+    523,
+    503
+   ],
+   "fill": [
+    72,
+    90,
+    160
+   ],
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    409,
+    490,
+    545,
+    504
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 8.4,
+   "color": [
+    205,
+    55,
+    50
+   ],
+   "leading": 1.12,
+   "text": "Defeat the enemies together",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    408,
+    503,
+    523,
+    516
+   ],
+   "fill": [
+    72,
+    90,
+    160
+   ],
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    409,
+    503,
+    545,
+    516
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 8.4,
+   "color": [
+    235,
+    235,
+    235
+   ],
+   "leading": 1.12,
+   "text": "Wait here a moment",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    90,
+    302,
+    330,
+    312
+   ],
+   "fill": "dark",
+   "size": 6
+  },
+  {
+   "type": "erase",
+   "box": [
+    91.7,
+    315.2,
+    112.3,
+    335.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    92.0,
+    314.5,
+    112.0,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "C",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    121.05,
+    315.2,
+    141.65,
+    335.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    121.35,
+    314.5,
+    141.35,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    150.39999999999998,
+    315.2,
+    171.0,
+    335.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    150.7,
+    314.5,
+    170.7,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    179.75,
+    315.2,
+    200.35000000000002,
+    335.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    180.05,
+    314.5,
+    200.05,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    209.1,
+    315.2,
+    229.70000000000002,
+    335.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    209.4,
+    314.5,
+    229.4,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    238.45,
+    315.2,
+    259.05,
+    335.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    238.75,
+    314.5,
+    258.75,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    267.8,
+    315.2,
+    288.40000000000003,
+    335.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    268.1,
+    314.5,
+    288.1,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "D",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297.15000000000003,
+    315.2,
+    317.75000000000006,
+    335.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    297.45000000000005,
+    314.5,
+    317.45000000000005,
+    336.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

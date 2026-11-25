@@ -1,0 +1,354 @@
+{
+ "src": "../009.jpg",
+ "out": "../009-en.png",
+ "note": "page 06: villains. Circles \u60aa\u5f79\u5168\u54e1\u96c6\u5408! -> ROGUES!",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 10.5,
+   "color": [
+    245,
+    245,
+    245
+   ],
+   "leading": 1.42
+  },
+  "name": {
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    250,
+    250,
+    250
+   ]
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    32,
+    35,
+    178,
+    186
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    37,
+    36,
+    178,
+    60
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Napper"
+  },
+  {
+   "type": "text",
+   "box": [
+    37,
+    63,
+    178,
+    186
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 20. An executive of Gore Corvette with a nasty glare, in charge of kidnapping children. He always carries a whip, and any child who slacks off at work feels its lash without mercy."
+  },
+  {
+   "type": "erase",
+   "box": [
+    241,
+    35,
+    385,
+    186
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    243,
+    36,
+    385,
+    60
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Lepto"
+  },
+  {
+   "type": "text",
+   "box": [
+    243,
+    63,
+    385,
+    186
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 25. An executive of Gore Corvette. Suspicious and highly strung, he can't stand anyone who looks down on him or makes fun of him. His catchphrase: \"Don't stand in front of me!\""
+  },
+  {
+   "type": "erase",
+   "box": [
+    447,
+    35,
+    591,
+    186
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    449,
+    36,
+    591,
+    60
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Malice Gore"
+  },
+  {
+   "type": "text",
+   "box": [
+    449,
+    63,
+    591,
+    186
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 40. A tycoon who rules the mining town of Gore City, and boss of the criminal organisation Gore Corvette. A fat, flashy upstart with a talent for exploiting other people's weaknesses."
+  },
+  {
+   "type": "erase",
+   "box": [
+    465,
+    230,
+    640,
+    241
+   ],
+   "fill": "light",
+   "size": 8
+  },
+  {
+   "type": "erase",
+   "box": [
+    468.3,
+    242,
+    486.7,
+    260.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    467.5,
+    241,
+    487.5,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    496.90000000000003,
+    242,
+    515.3000000000001,
+    260.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    496.1,
+    241,
+    516.1,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    525.5,
+    242,
+    543.9000000000001,
+    260.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    524.7,
+    241,
+    544.7,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "G",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    554.0999999999999,
+    242,
+    572.5,
+    260.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    553.3,
+    241,
+    573.3,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "U",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    582.6999999999999,
+    242,
+    601.1,
+    260.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    581.9,
+    241,
+    601.9,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    611.3,
+    242,
+    629.7,
+    260.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    610.5,
+    241,
+    630.5,
+    261
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

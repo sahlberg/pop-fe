@@ -1,0 +1,889 @@
+{
+ "src": "../021.jpg",
+ "out": "../021-en.png",
+ "note": "page 18: basic actions. Circles 通常/アクション -> MY/MOVES.",
+ "styles": {
+  "head": {
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    25,
+    25,
+    25
+   ]
+  },
+  "key": {
+   "font": "SemiBold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ]
+  },
+  "cond": {
+   "font": "SemiBold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ]
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    239,
+    63,
+    277,
+    91
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    71,
+    500,
+    93
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Walk"
+  },
+  {
+   "type": "erase",
+   "box": [
+    245,
+    102,
+    408,
+    125
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    246,
+    101,
+    408,
+    126
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Left stick (D-pad)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    140,
+    279,
+    167
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    148,
+    500,
+    169
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Run"
+  },
+  {
+   "type": "erase",
+   "box": [
+    245,
+    179,
+    337,
+    202
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    246,
+    178,
+    337,
+    203
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "R2 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    368,
+    179,
+    530,
+    202
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    369,
+    178,
+    530,
+    203
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Left stick (D-pad)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    218,
+    319,
+    244
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    226,
+    500,
+    246
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Jump"
+  },
+  {
+   "type": "erase",
+   "box": [
+    245,
+    256,
+    320,
+    279
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    246,
+    255,
+    320,
+    280
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "× button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    294,
+    280,
+    322
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    302,
+    500,
+    324
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Push"
+  },
+  {
+   "type": "erase",
+   "box": [
+    245,
+    332,
+    320,
+    355
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    246,
+    331,
+    320,
+    356
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "○ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    353,
+    332,
+    515,
+    355
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    354,
+    331,
+    515,
+    356
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Left stick (D-pad)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    370,
+    340,
+    398
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    378,
+    500,
+    400
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Lift"
+  },
+  {
+   "type": "erase",
+   "box": [
+    242,
+    404,
+    515,
+    432
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    242,
+    408,
+    513,
+    432
+   ],
+   "erase": false,
+   "style": "cond",
+   "valign": "middle",
+   "text": "In front of certain objects (Plue, bombs, etc.)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    523,
+    409,
+    597,
+    431
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    524,
+    408,
+    597,
+    432
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "○ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    447,
+    299,
+    474
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    455,
+    500,
+    476
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Throw"
+  },
+  {
+   "type": "erase",
+   "box": [
+    242,
+    480,
+    378,
+    509
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    242,
+    484,
+    376,
+    509
+   ],
+   "erase": false,
+   "style": "cond",
+   "valign": "middle",
+   "text": "While holding something"
+  },
+  {
+   "type": "erase",
+   "box": [
+    385,
+    485,
+    547,
+    508
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    386,
+    484,
+    547,
+    509
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Left stick (D-pad)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    578,
+    485,
+    653,
+    508
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    579,
+    484,
+    653,
+    509
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    523,
+    276,
+    550
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    531,
+    500,
+    552
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Put down"
+  },
+  {
+   "type": "erase",
+   "box": [
+    242,
+    556,
+    398,
+    584
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    242,
+    560,
+    396,
+    584
+   ],
+   "erase": false,
+   "style": "cond",
+   "valign": "middle",
+   "text": "While holding something"
+  },
+  {
+   "type": "erase",
+   "box": [
+    405,
+    561,
+    480,
+    583
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    406,
+    560,
+    480,
+    584
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "○ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239,
+    598,
+    395,
+    625
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    240,
+    606,
+    500,
+    627
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Talk / Examine / Open"
+  },
+  {
+   "type": "erase",
+   "box": [
+    242,
+    631,
+    492,
+    659
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    242,
+    635,
+    490,
+    659
+   ],
+   "erase": false,
+   "style": "cond",
+   "valign": "middle",
+   "text": "Stand in front of a person, sign, chest, etc."
+  },
+  {
+   "type": "erase",
+   "box": [
+    499,
+    636,
+    573,
+    658
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    500,
+    635,
+    573,
+    659
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "○ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    20,
+    126,
+    85,
+    139
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    23.0,
+    141.3,
+    45.0,
+    163.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    24.0,
+    141.3,
+    44.0,
+    163.3
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    52.05,
+    141.3,
+    74.05,
+    163.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    53.05,
+    141.3,
+    73.05,
+    163.3
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "Y",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    23.0,
+    171.6,
+    45.0,
+    193.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    24.0,
+    171.6,
+    44.0,
+    193.6
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    52.05,
+    171.6,
+    74.05,
+    193.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    53.05,
+    171.6,
+    73.05,
+    193.6
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    81.1,
+    171.6,
+    103.1,
+    193.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    82.1,
+    171.6,
+    102.1,
+    193.6
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "V",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    110.15,
+    171.6,
+    132.15,
+    193.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    111.15,
+    171.6,
+    131.15,
+    193.6
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    139.2,
+    171.6,
+    161.2,
+    193.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    140.2,
+    171.6,
+    160.2,
+    193.6
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

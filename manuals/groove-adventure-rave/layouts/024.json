@@ -1,0 +1,610 @@
+{
+ "src": "../024.jpg",
+ "out": "../024-en.png",
+ "note": "page 21: settings. Circles 設定について -> CONFIG. Screenshots left in Japanese.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.3,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.48
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    14,
+    128,
+    342,
+    176
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    131,
+    342,
+    177
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★On this screen you can change various game settings. Set them up the way you like."
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    191,
+    342,
+    214
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    198,
+    110,
+    215
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Message"
+  },
+  {
+   "type": "text",
+   "box": [
+    100,
+    198,
+    342,
+    215
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Choose fast, normal or slow."
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    233,
+    342,
+    256
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    240,
+    110,
+    257
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Sound"
+  },
+  {
+   "type": "text",
+   "box": [
+    100,
+    240,
+    342,
+    257
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Choose stereo or mono."
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    274,
+    342,
+    297
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    281,
+    110,
+    298
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Vibration"
+  },
+  {
+   "type": "text",
+   "box": [
+    100,
+    281,
+    342,
+    298
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Choose on or off."
+  },
+  {
+   "type": "erase",
+   "box": [
+    14,
+    316,
+    342,
+    339
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    17,
+    323,
+    110,
+    340
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Next screen"
+  },
+  {
+   "type": "text",
+   "box": [
+    100,
+    323,
+    342,
+    340
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Change the controller's button layout."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    365,
+    230,
+    383
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    30,
+    364,
+    226,
+    384
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Changing the button layout"
+  },
+  {
+   "type": "erase",
+   "box": [
+    60,
+    351,
+    215,
+    365.5
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    40,
+    390,
+    340,
+    436
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    414,
+    40,
+    436
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    395,
+    338,
+    438
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Use the D-pad or left stick to move the finger cursor to the action you want to change."
+  },
+  {
+   "type": "erase",
+   "box": [
+    40,
+    436,
+    340,
+    497
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    456,
+    40,
+    497
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    441,
+    338,
+    499
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "In that state, press the button you want to use instead. The SELECT button, D-pad and left stick cannot be chosen."
+  },
+  {
+   "type": "erase",
+   "box": [
+    40,
+    497,
+    340,
+    520
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    24,
+    518,
+    40,
+    520
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    44,
+    502,
+    338,
+    522
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Choose \"Reset\" to go back to the default settings."
+  },
+  {
+   "type": "erase",
+   "box": [
+    389,
+    293,
+    460,
+    318
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    391,
+    298,
+    600,
+    319
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "★Settings screen"
+  },
+  {
+   "type": "erase",
+   "box": [
+    389,
+    557,
+    545,
+    582
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    391,
+    562,
+    600,
+    583
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "★Button layout screen"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    69,
+    250,
+    82.5
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    77.39999999999999,
+    87.1,
+    99.2,
+    108.9
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    78.3,
+    87,
+    98.3,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "C",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    106.64999999999999,
+    87.1,
+    128.45,
+    108.9
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    107.55,
+    87,
+    127.55,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    135.9,
+    87.1,
+    157.70000000000002,
+    108.9
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    136.8,
+    87,
+    156.8,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    165.15,
+    87.1,
+    186.95000000000002,
+    108.9
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    166.05,
+    87,
+    186.05,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    194.4,
+    87.1,
+    216.20000000000002,
+    108.9
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    195.3,
+    87,
+    215.3,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    223.65,
+    87.1,
+    245.45000000000002,
+    108.9
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    224.55,
+    87,
+    244.55,
+    109
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "G",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

@@ -1,0 +1,684 @@
+{
+ "src": "../020.jpg",
+ "out": "../020-en.png",
+ "note": "page 17: field menu. Small menu screenshots left in Japanese.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.45
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    280,
+    633,
+    580,
+    643
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    40,
+    633,
+    240,
+    643
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    30,
+    38,
+    315,
+    63
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    33,
+    44,
+    400,
+    64
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Face window: the expression changes with the character's condition",
+   "font": "Bold",
+   "valign": "middle",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    31,
+    129,
+    94,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    29,
+    135,
+    96,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Paralysis",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    96,
+    129,
+    159,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    94,
+    135,
+    161,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Poison",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    161,
+    129,
+    224,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    159,
+    135,
+    226,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Confusion",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    226,
+    129,
+    289,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    224,
+    135,
+    291,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Sleep",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    290,
+    129,
+    354,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    288,
+    135,
+    356,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "KO'd",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    353,
+    129,
+    417,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    351,
+    135,
+    419,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "High trust",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "center",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    600,
+    129,
+    668,
+    153
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    560,
+    135,
+    668,
+    153
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Low trust",
+   "font": "Bold",
+   "valign": "middle",
+   "align": "right",
+   "size": 10.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    270,
+    164,
+    662,
+    214
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    273,
+    174,
+    672,
+    215
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "On the Field Menu screen you can prepare for your adventure, look up all kinds of information, and change various game settings.",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    280,
+    226,
+    399,
+    242
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    282,
+    227,
+    399,
+    243
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Information",
+   "font": "Bold",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    268,
+    243,
+    342,
+    262
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    270,
+    247,
+    380,
+    263
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Money held",
+   "font": "Bold",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    268,
+    268,
+    400,
+    291
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    270,
+    272,
+    400,
+    292
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Items (⇒P.23)",
+   "font": "Bold",
+   "valign": "middle",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    470,
+    268,
+    572,
+    291
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    472,
+    272,
+    600,
+    292
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Settings (⇒P.21)",
+   "font": "Bold",
+   "valign": "middle",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    263,
+    433,
+    462,
+    504
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    271,
+    437,
+    465,
+    505
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Shows the items you are carrying. On this screen you register items in the Item menu (⇒P.20).",
+   "size": 11.2
+  },
+  {
+   "type": "erase",
+   "box": [
+    468,
+    433,
+    662,
+    504
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    471,
+    437,
+    672,
+    505
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Change sound, vibration and other settings. You can also change the button layout.",
+   "size": 11.2
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    568,
+    385,
+    611
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    254,
+    570,
+    400,
+    612
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Give the same command to both partners.",
+   "size": 11.2
+  },
+  {
+   "type": "erase",
+   "box": [
+    45,
+    178,
+    232,
+    196
+   ],
+   "fill": [
+    129,
+    178,
+    62
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    40,
+    176,
+    238,
+    198
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Field Menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    46,
+    643,
+    226,
+    665
+   ],
+   "fill": [
+    129,
+    178,
+    62
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    40,
+    641,
+    262,
+    667
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Partner 2 command menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    284,
+    643,
+    578,
+    665
+   ],
+   "fill": [
+    129,
+    178,
+    62
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    280,
+    641,
+    585,
+    667
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Command menu for partners 1 and 2"
+  },
+  {
+   "type": "erase",
+   "box": [
+    40,
+    365,
+    165,
+    389
+   ],
+   "fill": "median",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    33,
+    370,
+    165,
+    392
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "START button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    35,
+    449,
+    118,
+    467
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    33,
+    448,
+    120,
+    468
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "R1 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    542,
+    348,
+    562
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    255,
+    542,
+    352,
+    563
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "L1 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    376,
+    542,
+    468,
+    562
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    372,
+    542,
+    470,
+    563
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "R1 button"
+  }
+ ]
+}

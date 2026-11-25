@@ -1,0 +1,356 @@
+{
+ "src": "../007.jpg",
+ "out": "../007-en.png",
+ "note": "page 04: Haru and Plue. The 7 circle chars \u30cf\u30eb&\u4ef2\u9593\u305f\u3061 spell FRIENDS.",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 10,
+   "color": [
+    245,
+    245,
+    245
+   ],
+   "leading": 1.4
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    70,
+    64,
+    263,
+    140
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    70,
+    140,
+    249,
+    176
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    247,
+    138,
+    264,
+    157
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    72,
+    66,
+    262,
+    176
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Haru Glory   Age 16   Blood type: B\n\nThe hero. He fights with a sword. Kind, honest and a bit of a softie, but strong. His favourite thing(?) is his big sister!",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    426,
+    568,
+    648,
+    671
+   ],
+   "fill": "light",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    429,
+    570,
+    648,
+    671
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Plue\nAge, blood type and true identity unknown.\n\nHis hobbies seem to be sleeping and eating. His name apparently comes from the way he is always trembling (\"puru puru\"). His weapon is... his nose?",
+   "size": 12
+  },
+  {
+   "type": "erase",
+   "box": [
+    532,
+    326,
+    560,
+    334.5
+   ],
+   "fill": "light",
+   "size": 7
+  },
+  {
+   "type": "erase",
+   "box": [
+    568,
+    326,
+    582,
+    334.5
+   ],
+   "fill": "light",
+   "size": 7
+  },
+  {
+   "type": "erase",
+   "box": [
+    450.3,
+    338,
+    468.7,
+    356.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    449.5,
+    337,
+    469.5,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    479.5,
+    338,
+    497.9,
+    356.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    478.7,
+    337,
+    498.7,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    508.7,
+    338,
+    527.1,
+    356.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    507.9,
+    337,
+    527.9,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    537.9,
+    338,
+    556.3000000000001,
+    356.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    537.1,
+    337,
+    557.1,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    567.0999999999999,
+    338,
+    585.5,
+    356.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    566.3,
+    337,
+    586.3,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    596.3,
+    338,
+    614.7,
+    356.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    595.5,
+    337,
+    615.5,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "D",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    625.5,
+    338,
+    643.9000000000001,
+    356.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    624.7,
+    337,
+    644.7,
+    357
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

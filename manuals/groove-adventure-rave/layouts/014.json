@@ -1,0 +1,1102 @@
+{
+ "src": "../014.jpg",
+ "out": "../014-en.png",
+ "note": "page 11: controls (cont.), Before you start, Game start. Circles はじめに->NOTE, ゲームスタート->START!!",
+ "styles": {
+  "desc": {
+   "font": "SemiBold",
+   "size": 12,
+   "color": [
+    250,
+    250,
+    250
+   ],
+   "leading": 1.3
+  },
+  "body": {
+   "font": "Medium",
+   "size": 12.5,
+   "color": [
+    40,
+    34,
+    30
+   ],
+   "leading": 1.42
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    57,
+    585,
+    100,
+    592
+   ],
+   "fill": "light",
+   "size": 6
+  },
+  {
+   "type": "erase",
+   "box": [
+    57,
+    32,
+    160,
+    94
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    60,
+    32,
+    160,
+    94
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "R2 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    31,
+    315,
+    96
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    31,
+    314,
+    96
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Hold while pressing the D-pad or left stick to dash"
+  },
+  {
+   "type": "erase",
+   "box": [
+    57,
+    127,
+    160,
+    171
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    60,
+    127,
+    160,
+    171
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "R1 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    126,
+    315,
+    173
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    126,
+    314,
+    173
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Instructions menu (partner 2)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    204,
+    160,
+    225
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    202,
+    160,
+    227
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    203,
+    315,
+    226
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    203,
+    314,
+    226
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Show the Item menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    257,
+    160,
+    282
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    256,
+    160,
+    283
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    256,
+    315,
+    320
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    256,
+    314,
+    320
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Action (talk, push, lift, etc.), confirm, advance dialogue"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    327,
+    160,
+    349
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    326,
+    160,
+    350
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    255,
+    198,
+    176
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    327,
+    315,
+    350
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    327,
+    314,
+    350
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Confirm"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    381,
+    160,
+    402
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    379,
+    160,
+    403
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    380,
+    315,
+    403
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    380,
+    314,
+    403
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Jump, cancel"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    410,
+    160,
+    431
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    408,
+    160,
+    432
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    255,
+    198,
+    176
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    409,
+    315,
+    432
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    409,
+    314,
+    432
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Cancel"
+  },
+  {
+   "type": "erase",
+   "box": [
+    80,
+    463,
+    160,
+    484
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    82,
+    461,
+    160,
+    485
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    462,
+    315,
+    485
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    462,
+    314,
+    485
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Attack; hold to charge up"
+  },
+  {
+   "type": "erase",
+   "box": [
+    57,
+    517,
+    160,
+    561
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    60,
+    517,
+    160,
+    561
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "START\nbutton"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    516,
+    315,
+    562
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    516,
+    314,
+    562
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Field Menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    57,
+    592,
+    160,
+    613
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    60,
+    590,
+    163,
+    614
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "Right stick"
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    591,
+    315,
+    614
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    171,
+    591,
+    314,
+    614
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Not used"
+  },
+  {
+   "type": "erase",
+   "box": [
+    57,
+    643,
+    196,
+    664
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    60,
+    641,
+    198,
+    665
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 14,
+   "color": [
+    150,
+    208,
+    245
+   ],
+   "leading": 1.1,
+   "valign": "middle",
+   "text": "SELECT button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    200,
+    644,
+    315,
+    664
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    207,
+    642,
+    314,
+    665
+   ],
+   "erase": false,
+   "style": "desc",
+   "valign": "middle",
+   "text": "Not used"
+  },
+  {
+   "type": "erase",
+   "box": [
+    342,
+    77,
+    657,
+    227
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    344,
+    86,
+    655,
+    226
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "top",
+   "text": "Before starting the game, insert a memory card with at least 1 free block, or one holding save data for \"GROOVE ADVENTURE RAVE ~Yuukyuu no Kizuna~\", into MEMORY CARD slot 1. You can play without a memory card, but your game data cannot be saved, so please take care."
+  },
+  {
+   "type": "erase",
+   "box": [
+    364,
+    375,
+    667,
+    400
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "erase",
+   "box": [
+    340,
+    400,
+    667,
+    508
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    344,
+    385.5,
+    665,
+    510
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "top",
+   "text": "        Set the \"GROOVE ADVENTURE RAVE ~Yuukyuu no Kizuna~\" CD-ROM correctly in the \"PlayStation\" console and switch on the power. After the opening demo plays, the title screen appears. (Press the START button during the opening demo to skip to the title screen.)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    364,
+    512,
+    474,
+    540
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "erase",
+   "box": [
+    340,
+    540,
+    476,
+    664
+   ],
+   "fill": "dark",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    344,
+    523.5,
+    476,
+    664
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "top",
+   "text": "        Press the START button on the title screen to bring up the menu. Choose a mode with ↑↓ on the D-pad and confirm with the ○ button."
+  },
+  {
+   "type": "erase",
+   "box": [
+    359.7,
+    48.7,
+    379.3,
+    68.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    359.5,
+    47.5,
+    379.5,
+    69.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    390.09999999999997,
+    48.7,
+    409.7,
+    68.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    389.9,
+    47.5,
+    409.9,
+    69.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    420.5,
+    48.7,
+    440.1,
+    68.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    420.3,
+    47.5,
+    440.3,
+    69.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    450.9,
+    48.7,
+    470.5,
+    68.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    450.7,
+    47.5,
+    470.7,
+    69.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    404.7,
+    335.7,
+    424.3,
+    355.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    404.5,
+    334.5,
+    424.5,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    434.59999999999997,
+    335.7,
+    454.2,
+    355.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    434.4,
+    334.5,
+    454.4,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    464.5,
+    335.7,
+    484.1,
+    355.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    464.3,
+    334.5,
+    484.3,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    494.4,
+    335.7,
+    514.0,
+    355.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    494.2,
+    334.5,
+    514.2,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    524.3000000000001,
+    335.7,
+    543.9,
+    355.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    524.1,
+    334.5,
+    544.1,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    554.2,
+    335.7,
+    573.8,
+    355.3
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    554.0,
+    334.5,
+    574.0,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "!",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    584.1,
+    335.7,
+    603.6999999999999,
+    355.3
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    583.9,
+    334.5,
+    603.9,
+    356.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "!",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

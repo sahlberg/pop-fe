@@ -1,0 +1,1229 @@
+{
+ "src": "../016.jpg",
+ "out": "../016-en.png",
+ "note": "page 13: save & continue, game over. Circles セーブ&コンティニュー -> SAVE&RESUME, ゲームオーバーについて -> ABOUTDEFEAT. Screenshot menus translated.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 12,
+   "color": [
+    45,
+    35,
+    30
+   ],
+   "leading": 1.45
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    28,
+    589,
+    438,
+    599
+   ],
+   "fill": "dark",
+   "size": 8
+  },
+  {
+   "type": "erase",
+   "box": [
+    343,
+    114,
+    684,
+    205
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    346,
+    121,
+    672,
+    206
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★You never know what accidents may happen during an adventure. If you save your important adventure data often, then even if the game ends, you can pick up the adventure again from that spot."
+  },
+  {
+   "type": "erase",
+   "box": [
+    356,
+    223,
+    596,
+    248
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    359,
+    232,
+    600,
+    249
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★There are 2 ways to save."
+  },
+  {
+   "type": "erase",
+   "box": [
+    357,
+    272,
+    463,
+    302
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    356,
+    279,
+    464,
+    302
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.2,
+   "text": "Town floor",
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    468,
+    257,
+    673,
+    327
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    471,
+    269,
+    672,
+    328
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Find an inn. Talk to the clerk and choose \"Save\" to open the save screen."
+  },
+  {
+   "type": "erase",
+   "box": [
+    357,
+    338,
+    463,
+    372
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    356,
+    345,
+    464,
+    371
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.2,
+   "text": "Battle floor",
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    468,
+    339,
+    578,
+    381
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    471,
+    343,
+    578,
+    382
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Find a \"Griff statue\"."
+  },
+  {
+   "type": "erase",
+   "box": [
+    352,
+    382,
+    578,
+    442
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    355,
+    385,
+    578,
+    443
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Stand in front of it and press the ○ button to open the save screen (saving works the same as at an inn)."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    340,
+    303,
+    401
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    31,
+    343,
+    303,
+    402
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Save screen. You can save up to 3 sets of data. Choose where to save with the D-pad and confirm with the ○ button."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    532,
+    443,
+    576
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    31,
+    536,
+    443,
+    576
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "If Haru's HP drops to 0 in battle, he can no longer fight and the game is over. When the game is over, the menu below appears."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    598,
+    438,
+    617
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    31,
+    599,
+    135,
+    617
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Continue"
+  },
+  {
+   "type": "text",
+   "box": [
+    138,
+    599,
+    480,
+    617
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Resume the game as it was when you entered the map."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    617,
+    438,
+    637
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    31,
+    618,
+    135,
+    637
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Load Screen"
+  },
+  {
+   "type": "text",
+   "box": [
+    138,
+    618,
+    480,
+    637
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Resume the game from the place you last saved."
+  },
+  {
+   "type": "erase",
+   "box": [
+    28,
+    637,
+    438,
+    658
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    31,
+    638,
+    135,
+    658
+   ],
+   "erase": false,
+   "style": "body",
+   "font": "Bold",
+   "valign": "middle",
+   "text": "Title Screen"
+  },
+  {
+   "type": "text",
+   "box": [
+    138,
+    638,
+    480,
+    658
+   ],
+   "erase": false,
+   "style": "body",
+   "valign": "middle",
+   "text": "Return to the title screen."
+  },
+  {
+   "type": "erase",
+   "box": [
+    60,
+    157,
+    99,
+    198
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    62,
+    158,
+    99,
+    198
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 10,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.15,
+   "text": "Save\nLoad\nBack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    48,
+    280,
+    215,
+    295
+   ],
+   "fill": "light",
+   "size": 10
+  },
+  {
+   "type": "text",
+   "box": [
+    50,
+    280,
+    240,
+    296
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 10.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.2,
+   "text": "Please choose a file.",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    548,
+    577,
+    619,
+    612
+   ],
+   "fill": "median"
+  },
+  {
+   "type": "text",
+   "box": [
+    550,
+    577,
+    622,
+    612
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 8,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "leading": 1.1,
+   "text": "Continue\nLoad Screen\nTitle Screen",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    93.2,
+    82.2,
+    113.8,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    93.5,
+    81.5,
+    113.5,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    122.39999999999999,
+    82.2,
+    143.0,
+    102.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    122.69999999999999,
+    81.5,
+    142.7,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    151.6,
+    82.2,
+    172.20000000000002,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    151.9,
+    81.5,
+    171.9,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "V",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    180.79999999999998,
+    82.2,
+    201.4,
+    102.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    181.1,
+    81.5,
+    201.1,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    210.0,
+    82.2,
+    230.60000000000002,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    210.3,
+    81.5,
+    230.3,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "&",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239.2,
+    82.2,
+    259.8,
+    102.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    239.5,
+    81.5,
+    259.5,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    268.4,
+    82.2,
+    289.0,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    268.7,
+    81.5,
+    288.7,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297.59999999999997,
+    82.2,
+    318.2,
+    102.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    297.9,
+    81.5,
+    317.9,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    326.8,
+    82.2,
+    347.40000000000003,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    327.1,
+    81.5,
+    347.1,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "U",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    356.0,
+    82.2,
+    376.6,
+    102.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    356.3,
+    81.5,
+    376.3,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "M",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    385.2,
+    82.2,
+    405.8,
+    102.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    385.5,
+    81.5,
+    405.5,
+    103.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    93.2,
+    488.2,
+    113.8,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    93.5,
+    487.5,
+    113.5,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    122.39999999999999,
+    488.2,
+    143.0,
+    508.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    122.69999999999999,
+    487.5,
+    142.7,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "B",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    151.6,
+    488.2,
+    172.20000000000002,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    151.9,
+    487.5,
+    171.9,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    180.79999999999998,
+    488.2,
+    201.4,
+    508.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    181.1,
+    487.5,
+    201.1,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "U",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    210.0,
+    488.2,
+    230.60000000000002,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    210.3,
+    487.5,
+    230.3,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    239.2,
+    488.2,
+    259.8,
+    508.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    239.5,
+    487.5,
+    259.5,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "D",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    268.4,
+    488.2,
+    289.0,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    268.7,
+    487.5,
+    288.7,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    297.59999999999997,
+    488.2,
+    318.2,
+    508.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    297.9,
+    487.5,
+    317.9,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    326.8,
+    488.2,
+    347.40000000000003,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    327.1,
+    487.5,
+    347.1,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    356.0,
+    488.2,
+    376.6,
+    508.8
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    356.3,
+    487.5,
+    376.3,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "A",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    385.2,
+    488.2,
+    405.8,
+    508.8
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    385.5,
+    487.5,
+    405.5,
+    509.5
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

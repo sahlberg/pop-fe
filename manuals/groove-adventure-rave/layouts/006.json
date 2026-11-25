@@ -1,0 +1,251 @@
+{
+ "src": "../006.jpg",
+ "out": "../006-en.png",
+ "note": "page 03, prologue. Text is rotated ~9.5 deg CCW; boxes for text items are the unrotated frame centred on the original block.",
+ "styles": {
+  "prose": {
+   "font": "SemiBold",
+   "size": 13,
+   "color": [
+    252,
+    248,
+    238
+   ],
+   "leading": 1.5
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    298,
+    113,
+    690,
+    200
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    305,
+    200,
+    690,
+    260
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    315,
+    260,
+    690,
+    320
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    325,
+    320,
+    690,
+    380
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    335,
+    380,
+    690,
+    440
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    345,
+    440,
+    690,
+    466
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    350,
+    466,
+    440,
+    495
+   ],
+   "fill": "light",
+   "size": 20
+  },
+  {
+   "type": "erase",
+   "box": [
+    440,
+    466,
+    490,
+    487
+   ],
+   "fill": "light",
+   "size": 20
+  },
+  {
+   "type": "erase",
+   "box": [
+    490,
+    466,
+    545,
+    480
+   ],
+   "fill": "light",
+   "size": 20
+  },
+  {
+   "type": "erase",
+   "box": [
+    545,
+    466,
+    640,
+    477
+   ],
+   "fill": "light",
+   "size": 20
+  },
+  {
+   "type": "erase",
+   "box": [
+    348,
+    106,
+    400,
+    113
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    400,
+    99,
+    440,
+    113
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    440,
+    93,
+    506,
+    113
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    506,
+    79,
+    690,
+    113
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "erase",
+   "box": [
+    528,
+    58,
+    690,
+    79
+   ],
+   "fill": "light",
+   "size": 16
+  },
+  {
+   "type": "text",
+   "box": [
+    325,
+    87,
+    670,
+    444
+   ],
+   "erase": false,
+   "angle": 9.5,
+   "style": "prose",
+   "valign": "middle",
+   "text": "Haru and his friends are still searching for the RAVE stones when a sudden tornado wrecks their airship, scattering Haru, Elie and Musica far apart. Washed up on an unknown shore, Haru and Plue are rescued by Anne, a woman who lives quietly alone nearby. Anne is being hunted by soldiers of Gore Corvette, a mysterious criminal organisation. Having lost his beloved sword, the Ten Commandments, and been parted from his friends, Haru flees the organisation with Anne and sets out to find his friends and his sword. But in Anne's hand glows a black Dark Bring! Is she, too, one of Demon Card, out to get Haru, the Rave Master? What is behind the tornado? Can Haru rescue Elie and Musica from the clutches of Gore Corvette?"
+  },
+  {
+   "type": "text",
+   "box": [
+    365,
+    440,
+    625,
+    478
+   ],
+   "erase": false,
+   "angle": 9.5,
+   "style": "prose",
+   "size": 21,
+   "font": "Bold",
+   "text": "Haru's adventure begins now..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    166,
+    140,
+    214,
+    162
+   ],
+   "fill": "dark",
+   "size": 24
+  },
+  {
+   "type": "text",
+   "box": [
+    140,
+    25,
+    272,
+    145
+   ],
+   "erase": [
+    156,
+    3,
+    259,
+    140
+   ],
+   "fill": "dark",
+   "font": "Bold",
+   "size": 24,
+   "color": [
+    146,
+    42,
+    52
+   ],
+   "leading": 1.15,
+   "align": "center",
+   "valign": "middle",
+   "text": "I'm\nready\nfor this."
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "src": "../010.jpg",
+ "out": "../010-en.png",
+ "note": "page 07: more villains",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 10.5,
+   "color": [
+    245,
+    245,
+    245
+   ],
+   "leading": 1.42
+  },
+  "name": {
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    250,
+    250,
+    250
+   ]
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    126,
+    27,
+    271,
+    179
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    128,
+    28,
+    271,
+    52
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Windler"
+  },
+  {
+   "type": "text",
+   "box": [
+    128,
+    55,
+    271,
+    179
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 30. A Gore Corvette executive who runs a casino in the provincial town of Cowpunk. He loves rigged gambling. A secret lech with a thing for young girls, he's head over heels for Elie."
+  },
+  {
+   "type": "erase",
+   "box": [
+    333,
+    27,
+    478,
+    179
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    335,
+    28,
+    478,
+    52
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Bagler"
+  },
+  {
+   "type": "text",
+   "box": [
+    335,
+    55,
+    478,
+    179
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 30. A Gore Corvette executive. A muscleman who fights bare-handed, and captain of the Royal Guard as well. Fighting itself is his whole reason for living."
+  },
+  {
+   "type": "erase",
+   "box": [
+    540,
+    27,
+    686,
+    178
+   ],
+   "fill": "light",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    542,
+    28,
+    686,
+    52
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Liminal"
+  },
+  {
+   "type": "text",
+   "box": [
+    542,
+    55,
+    686,
+    178
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 20. A Gore Corvette executive. A self-styled, over-the-top pretty boy and a narcissist, forever polishing his nails. Handles the trade in stolen goods. Calls the other executives barbarians."
+  }
+ ]
+}

@@ -1,0 +1,801 @@
+{
+ "src": "../019.jpg",
+ "out": "../019-en.png",
+ "note": "page 16: field screen. Circles フィールド画面の見かた -> FIELDSCREEN (11). Tiny menu screenshot bottom-left left in Japanese.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.5,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.45
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    578,
+    569,
+    606,
+    575.5
+   ],
+   "fill": "light",
+   "size": 4,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    25,
+    127,
+    52,
+    137
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    123,
+    161,
+    285,
+    248
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    126,
+    164,
+    300,
+    243
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Haru can perform special attacks by changing the form of his sword. (⇒P.24)",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    543,
+    152,
+    668,
+    168
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    545,
+    152,
+    690,
+    168
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "HP (Hit Points)",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    543,
+    167,
+    668,
+    188
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    545,
+    173,
+    690,
+    188
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "EXP gauge",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    543,
+    194,
+    668,
+    209
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    545,
+    194,
+    690,
+    209
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Charge gauge",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    540,
+    209,
+    668,
+    230.5
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    545,
+    210,
+    690,
+    230
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "(power changes in 3 stages)",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    543,
+    230.5,
+    668,
+    251
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    545,
+    236,
+    690,
+    251
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Level",
+   "valign": "middle",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    420,
+    604,
+    615,
+    666
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    423,
+    606,
+    680,
+    667
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Register items you use often in the Item menu beforehand, and you can use them easily from this screen.",
+   "size": 11.5
+  },
+  {
+   "type": "erase",
+   "box": [
+    36,
+    136,
+    212,
+    157
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    34,
+    136,
+    214,
+    158
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Sword Form Change"
+  },
+  {
+   "type": "erase",
+   "box": [
+    440,
+    575.5,
+    618,
+    596
+   ],
+   "fill": [
+    135,
+    184,
+    42
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    430,
+    573,
+    620,
+    595
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Item menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    52,
+    642,
+    247,
+    666
+   ],
+   "fill": "light",
+   "size": 13,
+   "thresh": 40
+  },
+  {
+   "type": "text",
+   "box": [
+    45,
+    642,
+    250,
+    667
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Partner 1 command menu"
+  },
+  {
+   "type": "erase",
+   "box": [
+    95,
+    331,
+    175,
+    351
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    90,
+    331,
+    180,
+    352
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "L2 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    95,
+    449,
+    175,
+    469
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    90,
+    449,
+    180,
+    470
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "L1 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    386,
+    511,
+    445,
+    531
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    383,
+    511,
+    450,
+    532
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    85,
+    74,
+    400,
+    84.5
+   ],
+   "fill": "light",
+   "size": 6
+  },
+  {
+   "type": "erase",
+   "box": [
+    85.5,
+    84.9,
+    106.1,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    85.8,
+    84.2,
+    105.8,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    114.75,
+    84.9,
+    135.35,
+    105.5
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    115.05,
+    84.2,
+    135.05,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    144.0,
+    84.9,
+    164.60000000000002,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    144.3,
+    84.2,
+    164.3,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    173.25,
+    84.9,
+    193.85000000000002,
+    105.5
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    173.55,
+    84.2,
+    193.55,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "L",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    202.5,
+    84.9,
+    223.10000000000002,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    202.8,
+    84.2,
+    222.8,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "D",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    231.75,
+    84.9,
+    252.35000000000002,
+    105.5
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    232.05,
+    84.2,
+    252.05,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    261.0,
+    84.9,
+    281.6,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    261.3,
+    84.2,
+    281.3,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "C",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    290.25,
+    84.9,
+    310.85,
+    105.5
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    290.55,
+    84.2,
+    310.55,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    319.5,
+    84.9,
+    340.1,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    319.8,
+    84.2,
+    339.8,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    348.75,
+    84.9,
+    369.35,
+    105.5
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    349.05,
+    84.2,
+    369.05,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    378.0,
+    84.9,
+    398.6,
+    105.5
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    378.3,
+    84.2,
+    398.3,
+    106.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

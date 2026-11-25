@@ -1,0 +1,483 @@
+{
+ "src": "../011.jpg",
+ "out": "../011-en.png",
+ "note": "page 08: Ethan and Anne. Circles \u6575\u306a\u306e\u304b?\u5473\u65b9\u306a\u306e\u304b\u2026 -> FOE?FRIEND\u2026 (last circle kept)",
+ "styles": {
+  "panel": {
+   "font": "Medium",
+   "size": 10.5,
+   "color": [
+    245,
+    245,
+    245
+   ],
+   "leading": 1.42
+  },
+  "name": {
+   "font": "Bold",
+   "size": 17,
+   "color": [
+    250,
+    250,
+    250
+   ]
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    27,
+    95,
+    131,
+    200
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    29,
+    96,
+    200,
+    120
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Ethan"
+  },
+  {
+   "type": "text",
+   "box": [
+    29,
+    123,
+    175,
+    200
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age unknown\nBlood type unknown\nIdentity unknown.\nA man of mystery."
+  },
+  {
+   "type": "erase",
+   "box": [
+    518,
+    334,
+    678,
+    482
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    521,
+    335,
+    690,
+    359
+   ],
+   "erase": false,
+   "style": "name",
+   "text": "Anne (Angela)"
+  },
+  {
+   "type": "text",
+   "box": [
+    521,
+    362,
+    688,
+    482
+   ],
+   "erase": false,
+   "style": "panel",
+   "text": "Age 18(?)   Blood type unknown\nThe heroine of the story. She seems to have had some connection with Ethan in the past, a mystery that will gradually come to light during the adventure..."
+  },
+  {
+   "type": "erase",
+   "box": [
+    20,
+    273,
+    50,
+    283
+   ],
+   "fill": "light",
+   "size": 8
+  },
+  {
+   "type": "erase",
+   "box": [
+    176,
+    274,
+    187,
+    284
+   ],
+   "fill": "light",
+   "size": 6,
+   "thresh": 50
+  },
+  {
+   "type": "erase",
+   "box": [
+    204,
+    274,
+    222,
+    284
+   ],
+   "fill": "light",
+   "size": 6,
+   "thresh": 50
+  },
+  {
+   "type": "erase",
+   "box": [
+    24.6,
+    285.6,
+    43.4,
+    304.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    24.0,
+    284,
+    44.0,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    54.35,
+    285.6,
+    73.15,
+    304.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    53.75,
+    284,
+    73.75,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    84.1,
+    285.6,
+    102.9,
+    304.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    83.5,
+    284,
+    103.5,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    113.85,
+    285.6,
+    132.65,
+    304.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    113.25,
+    284,
+    133.25,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "?",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    143.6,
+    285.6,
+    162.4,
+    304.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    143.0,
+    284,
+    163.0,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    173.35,
+    285.6,
+    192.15,
+    304.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    172.75,
+    284,
+    192.75,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "R",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    203.1,
+    285.6,
+    221.9,
+    304.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    202.5,
+    284,
+    222.5,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    232.85,
+    285.6,
+    251.65,
+    304.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    232.25,
+    284,
+    252.25,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "E",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    262.6,
+    285.6,
+    281.4,
+    304.4
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    262.0,
+    284,
+    282.0,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    292.35,
+    285.6,
+    311.15,
+    304.4
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    291.75,
+    284,
+    311.75,
+    306
+   ],
+   "erase": false,
+   "size": 14,
+   "text": "D",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

@@ -1,0 +1,837 @@
+{
+ "src": "../022.jpg",
+ "out": "../022-en.png",
+ "note": "page 19: attack actions. Circles 攻撃/アクション -> GO/FIGHT.",
+ "styles": {
+  "head": {
+   "font": "Bold",
+   "size": 15,
+   "color": [
+    25,
+    25,
+    25
+   ]
+  },
+  "key": {
+   "font": "SemiBold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ]
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    190,
+    527,
+    260,
+    537
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    63,
+    334,
+    96
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    76,
+    520,
+    98
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Normal attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    107,
+    333,
+    130
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    106,
+    333,
+    131
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    145,
+    334,
+    173
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    153,
+    520,
+    175
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Combo attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    183,
+    333,
+    207
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    182,
+    333,
+    208
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    363,
+    183,
+    438,
+    207
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    364,
+    182,
+    438,
+    208
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    469,
+    183,
+    543,
+    207
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    470,
+    182,
+    543,
+    208
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    222,
+    375,
+    250
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    230,
+    520,
+    252
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Jump attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    260,
+    333,
+    284
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    259,
+    333,
+    285
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "× button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    363,
+    260,
+    438,
+    284
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    364,
+    259,
+    438,
+    285
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "□ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    298,
+    458,
+    326
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    306,
+    520,
+    328
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Dash jump attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    336,
+    350,
+    360
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    335,
+    350,
+    361
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "R2 button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    381,
+    336,
+    543,
+    360
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    382,
+    335,
+    543,
+    361
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Left stick (D-pad)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    574,
+    336,
+    648,
+    360
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    575,
+    335,
+    648,
+    361
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "× button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    375,
+    417,
+    403
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    383,
+    520,
+    405
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Jump special attack"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    413,
+    333,
+    437
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    412,
+    333,
+    438
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "× button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    363,
+    413,
+    543,
+    437
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    364,
+    412,
+    543,
+    438
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Hold the □ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    252,
+    451,
+    455,
+    479
+   ],
+   "fill": "dark",
+   "size": 14
+  },
+  {
+   "type": "text",
+   "box": [
+    253,
+    459,
+    520,
+    481
+   ],
+   "erase": false,
+   "style": "head",
+   "valign": "middle",
+   "text": "Special attack (charge up)"
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    489,
+    438,
+    513
+   ],
+   "fill": [
+    55,
+    152,
+    217
+   ]
+  },
+  {
+   "type": "text",
+   "box": [
+    259,
+    488,
+    438,
+    514
+   ],
+   "erase": false,
+   "style": "key",
+   "align": "center",
+   "valign": "middle",
+   "text": "Hold the □ button"
+  },
+  {
+   "type": "erase",
+   "box": [
+    186,
+    537,
+    370,
+    562
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    180,
+    537,
+    380,
+    562
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "EXP and level-ups"
+  },
+  {
+   "type": "erase",
+   "box": [
+    176,
+    568,
+    515,
+    672
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    179,
+    571,
+    515,
+    663
+   ],
+   "erase": false,
+   "font": "Medium",
+   "size": 11.3,
+   "color": [
+    45,
+    40,
+    35
+   ],
+   "leading": 1.45,
+   "text": "Haru earns experience by defeating monsters and enemies with these attacks. When his experience reaches a certain amount, he levels up (the same goes for partners). Defeating enemies of a higher level than your own earns more experience than defeating lower-level ones."
+  },
+  {
+   "type": "erase",
+   "box": [
+    30,
+    135,
+    100,
+    146
+   ],
+   "fill": "light",
+   "size": 5,
+   "thresh": 30
+  },
+  {
+   "type": "erase",
+   "box": [
+    39.0,
+    147.2,
+    61.0,
+    169.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    40.0,
+    147.2,
+    60.0,
+    169.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "G",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    68.1,
+    147.2,
+    90.1,
+    169.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    69.1,
+    147.2,
+    89.1,
+    169.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    39.0,
+    177.2,
+    61.0,
+    199.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    40.0,
+    177.2,
+    60.0,
+    199.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "F",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    68.1,
+    177.2,
+    90.1,
+    199.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    69.1,
+    177.2,
+    89.1,
+    199.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    97.2,
+    177.2,
+    119.2,
+    199.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    98.2,
+    177.2,
+    118.2,
+    199.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "G",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    126.30000000000001,
+    177.2,
+    148.3,
+    199.2
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    127.30000000000001,
+    177.2,
+    147.3,
+    199.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "H",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    155.4,
+    177.2,
+    177.4,
+    199.2
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    156.4,
+    177.2,
+    176.4,
+    199.2
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "T",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}

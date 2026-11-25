@@ -1,0 +1,639 @@
+{
+ "src": "../025.jpg",
+ "out": "../025-en.png",
+ "note": "page 22: shops & inns. Circles お店&宿について -> SHOP&INN. Screenshots left in Japanese.",
+ "styles": {
+  "body": {
+   "font": "Medium",
+   "size": 11.3,
+   "color": [
+    40,
+    35,
+    30
+   ],
+   "leading": 1.48
+  }
+ },
+ "items": [
+  {
+   "type": "erase",
+   "box": [
+    344,
+    157,
+    682,
+    244
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    347,
+    160,
+    682,
+    245
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Lots of people live on the town floors. Stand in front of someone and press the ○ button to talk to them. If choices come up during a conversation, events may happen depending on how you answer."
+  },
+  {
+   "type": "erase",
+   "box": [
+    344,
+    261,
+    682,
+    327
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    347,
+    264,
+    682,
+    328
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Conversations with people may hold hints for clearing events and solving puzzles. Make a note of important keywords so you don't forget them."
+  },
+  {
+   "type": "erase",
+   "box": [
+    344,
+    344,
+    682,
+    411
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    347,
+    347,
+    682,
+    412
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Town floors also have all kinds of shops. You can buy and sell items, and recover HP and save at an inn. You get money by defeating monsters."
+  },
+  {
+   "type": "erase",
+   "box": [
+    474,
+    462,
+    682,
+    527
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    477,
+    465,
+    682,
+    528
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★HP recovers on its own. It recovers faster while you're standing still than while you're moving."
+  },
+  {
+   "type": "erase",
+   "box": [
+    474,
+    544,
+    682,
+    590
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    477,
+    547,
+    682,
+    591
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Treasure chests lie on battle floors, town floors, in dungeons and so on."
+  },
+  {
+   "type": "erase",
+   "box": [
+    474,
+    590,
+    578,
+    652
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    477,
+    593,
+    578,
+    652
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Some of them are booby-trapped."
+  },
+  {
+   "type": "erase",
+   "box": [
+    52,
+    414,
+    250,
+    438
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    55,
+    418,
+    260,
+    439
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Item Shop",
+   "font": "Bold",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    262,
+    414,
+    330,
+    438
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    264,
+    418,
+    340,
+    439
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "★Inn",
+   "font": "Bold",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    50,
+    586,
+    250,
+    650
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    53,
+    589,
+    252,
+    651
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Buy and sell items here. Choose what you want to buy (or sell) and confirm with the ○ button.",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    258,
+    586,
+    456,
+    650
+   ],
+   "fill": "dark",
+   "size": 12
+  },
+  {
+   "type": "text",
+   "box": [
+    261,
+    589,
+    456,
+    651
+   ],
+   "erase": false,
+   "style": "body",
+   "text": "Recover HP here. The price differs from town to town. You can also save here.",
+   "size": 11
+  },
+  {
+   "type": "erase",
+   "box": [
+    358,
+    123.5,
+    560,
+    150
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    352,
+    127,
+    566,
+    151
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Listen carefully to what people say!"
+  },
+  {
+   "type": "erase",
+   "box": [
+    68,
+    386.5,
+    176,
+    412
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    62,
+    392,
+    274,
+    413
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 13,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "Shops"
+  },
+  {
+   "type": "erase",
+   "box": [
+    474,
+    429.5,
+    668,
+    456
+   ],
+   "fill": "light",
+   "size": 13
+  },
+  {
+   "type": "text",
+   "box": [
+    470,
+    434,
+    674,
+    457
+   ],
+   "erase": false,
+   "font": "Bold",
+   "size": 12.5,
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle",
+   "text": "HP recovery & chests"
+  },
+  {
+   "type": "erase",
+   "box": [
+    95,
+    63,
+    330,
+    80.5
+   ],
+   "fill": "dark",
+   "size": 5
+  },
+  {
+   "type": "erase",
+   "box": [
+    96.2,
+    80.4,
+    117.39999999999999,
+    101.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    96.8,
+    80,
+    116.8,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "S",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    125.30000000000001,
+    80.4,
+    146.5,
+    101.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    125.9,
+    80,
+    145.9,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "H",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    154.4,
+    80.4,
+    175.6,
+    101.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    155.0,
+    80,
+    175.0,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "O",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    183.50000000000003,
+    80.4,
+    204.70000000000002,
+    101.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    184.10000000000002,
+    80,
+    204.10000000000002,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "P",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    212.6,
+    80.4,
+    233.79999999999998,
+    101.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    213.2,
+    80,
+    233.2,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "&",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    241.70000000000002,
+    80.4,
+    262.90000000000003,
+    101.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    242.3,
+    80,
+    262.3,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "I",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    270.8,
+    80.4,
+    292.00000000000006,
+    101.6
+   ],
+   "fill": [
+    226,
+    34,
+    46
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    271.40000000000003,
+    80,
+    291.40000000000003,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  },
+  {
+   "type": "erase",
+   "box": [
+    299.9,
+    80.4,
+    321.1,
+    101.6
+   ],
+   "fill": [
+    38,
+    146,
+    214
+   ],
+   "shape": "ellipse"
+  },
+  {
+   "type": "text",
+   "box": [
+    300.5,
+    80,
+    320.5,
+    102
+   ],
+   "erase": false,
+   "size": 14.5,
+   "text": "N",
+   "font": "Bold",
+   "color": [
+    255,
+    255,
+    255
+   ],
+   "align": "center",
+   "valign": "middle"
+  }
+ ]
+}
