@@ -2730,6 +2730,137 @@ def create_retroarch_cue(dest, game_title, cue_files, img_files, magic_word):
                 print('Create magic word for disc', i)
                 create_sbi(dest + '/' + p + '.sbi', magic_word[i])
                 
+EMBER_BGM_MAX_SIZE = 5 * 1024 * 1024
+
+def create_ember_bgm(snd0, dest):
+    # Background music for Ember games on PS2 launchers: Ogg Vorbis, the format
+    # RiptOPL already decodes for its menu music. The EE decodes it in software
+    # so keep it cheap: mono, 32 kHz, quality 2 (~50 kbps).
+    # -fflags +bitexact with -serial_offset gives the stream serial number 1;
+    # ffmpeg's random serials sometimes set the top bit, which some PS2
+    # Vorbis players trip over.
+    ffmpeg = 'ffmpeg' if os.name == 'posix' else 'ffmpeg.exe'
+    def encode(duration=None):
+        cmd = [ffmpeg, '-y', '-i', snd0, '-vn', '-map_metadata', '-1']
+        if duration:
+            cmd += ['-t', '%.2f' % duration, '-af', 'afade=t=out:st=%.2f:d=2' % max(0, duration - 2)]
+        cmd += ['-ac', '1', '-ar', '32000', '-c:a', 'libvorbis', '-q:a', '2',
+                '-fflags', '+bitexact', '-serial_offset', '1', dest]
+        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    try:
+        encode()
+        size = os.stat(dest).st_size
+        if size > EMBER_BGM_MAX_SIZE:
+            # Too long: cut it to fit, with a short fade out at the end
+            out = subprocess.run([ffmpeg.replace('ffmpeg', 'ffprobe'), '-v', 'error', '-show_entries',
+                                  'format=duration', '-of', 'csv=p=0', dest],
+                                 check=True, capture_output=True, text=True).stdout
+            duration = float(out.strip()) * EMBER_BGM_MAX_SIZE / size * 0.95
+            encode(duration)
+        return True
+    except Exception as e:
+        print('Failed to create background music', dest, e)
+        try:
+            os.unlink(dest)
+        except:
+            True
+        return False
+
+def create_ember(dest, disc_ids, game_title, cue_files, img_files, magic_word, icon0=None, pic0=None, pic1=None, snd0=None):
+    # Ember (PS1 emulator for PS2): games live in <dest>/Ember/games/<folder>/
+    # as cue/bin. Multi-disc games list their cues, in order, in Discs.txt
+    # dest is the parent of the Ember directory, e.g. the root of a USB stick.
+    # Match the Ember directory case-insensitively (EMBER/ is also common).
+    ember = find_ember_subdir(dest)
+    if not ember:
+        print('No Ember directory found in', dest)
+        return
+    # The game folder is named after the game, which is also what RiptOPL
+    # shows as the title and uses as the key for the artwork in ART/.
+    # Drop (...) and [...] parts and characters FAT32 does not allow.
+    name = re.sub(r'\([^)]*\)|\[[^\]]*\]', '', game_title or '')
+    name = re.sub(r'[\\/:*?"<>|\x00-\x1f]', '', name)
+    name = re.sub(r'\s+', ' ', name).strip(' .')
+    name = name.encode('utf-8')[:160].decode('utf-8', 'ignore').strip(' .')
+    if not name or name == 'Unknown':
+        name = disc_ids[0]
+    gdir = ember + '/games/' + name
+    os.makedirs(gdir, exist_ok=True)
+    cues = []
+    for i in range(len(cue_files)):
+        p = disc_ids[i] if i < len(disc_ids) else disc_ids[0] + '-%d' % (i + 1)
+        if p in [c[:-4] for c in cues]:
+            p = p + '-%d' % (i + 1)
+        with open(gdir + '/' + p + '.cue', 'wb') as nc:
+            with open(cue_files[i], 'r') as cur_cue:
+                for line in cur_cue:
+                    m = re.search('FILE "?(.*?)"? BINARY', line)
+                    if m:
+                        nc.write(bytes('FILE \"%s.bin\" BINARY' % p + chr(13) + chr(10), encoding='utf-8'))
+                    else:
+                        nc.write(bytes(line, encoding='utf-8'))
+        cues.append(p + '.cue')
+        b = gdir + '/' + p + '.bin'
+        print('Installing', b)
+        copy_file(img_files[i], b)
+        if i < len(magic_word) and magic_word[i]:
+            print('Create magic word for disc', i)
+            create_sbi(gdir + '/' + p + '.sbi', magic_word[i])
+    if len(cues) > 1:
+        with open(gdir + '/Discs.txt', 'w') as d:
+            for c in cues:
+                d.write(c + '\n')
+    # Artwork for launchers such as RiptOPL: <dest>/ART/<key>_<TYPE>.png
+    # where the key for an Ember game is its folder name under games/.
+    # Scaled to the sizes the launchers draw them at.
+    art = None
+    try:
+        for d in os.listdir(dest):
+            if d.lower() == 'art' and os.path.isdir(os.path.join(dest, d)):
+                art = os.path.join(dest, d)
+                break
+    except:
+        True
+    if not art:
+        art = os.path.join(dest, 'ART')
+        os.makedirs(art, exist_ok=True)
+    def fit(image, size):
+        # scale to fit inside size keeping the aspect ratio, centre it on a
+        # transparent canvas (square PS1 covers in a PS2 case-shaped slot)
+        image = image.convert('RGBA')
+        r = min(size[0] / image.width, size[1] / image.height)
+        w, h = max(1, round(image.width * r)), max(1, round(image.height * r))
+        image = image.resize((w, h), Image.Resampling.LANCZOS)
+        canvas = Image.new('RGBA', size, (0, 0, 0, 0))
+        canvas.paste(image, ((size[0] - w) // 2, (size[1] - h) // 2))
+        return canvas
+
+    def fill(image, size):
+        # scale to cover size keeping the aspect ratio, crop the centre
+        image = image.convert('RGB')
+        r = max(size[0] / image.width, size[1] / image.height)
+        w, h = max(size[0], round(image.width * r)), max(size[1], round(image.height * r))
+        image = image.resize((w, h), Image.Resampling.LANCZOS)
+        x, y = (w - size[0]) // 2, (h - size[1]) // 2
+        return image.crop((x, y, x + size[0], y + size[1]))
+
+    # _COV: RiptOPL's built-in theme draws PS1 covers in a square 210x210 slot
+    # (list and Coverflow views; 120x120 in Grid), stretching the image to the
+    # slot with plain bilinear filtering. Deliver it square at that size so it
+    # is drawn 1:1 and never distorted.
+    for suffix, image, scale, size in (('_COV', icon0, fit, (210, 210)),
+                                       ('_ICO', icon0, fit, (64, 64)),
+                                       ('_LGO', pic0, fit, (300, 125)),
+                                       ('_BG', pic1, fill, (640, 480))):
+        if image:
+            f = os.path.join(art, name + suffix + '.png')
+            print('Installing', f)
+            scale(image, size).save(f, format='PNG')
+    if snd0:
+        f = os.path.join(art, name + '_BGM.ogg')
+        print('Installing', f)
+        create_ember_bgm(snd0, f)
+
 def create_psio(dest, game_id, game_title, icon0, cue_files, img_files, subdir = './'):
     try:
         if os.name == 'posix':
@@ -3691,6 +3822,58 @@ def find_psp_mount():
         except:
             True
     raise Exception('Could not find any PSP or VITA memory cards')
+
+
+def find_ember_subdir(dest):
+    # Return dest/<Ember> matching the Ember directory case-insensitively
+    # (EMBER/ is also common), or None.
+    try:
+        for d in os.listdir(dest):
+            if d.lower() == 'ember' and os.path.isdir(os.path.join(dest, d)):
+                return os.path.join(dest, d)
+    except:
+        True
+    return None
+
+
+def find_ember_mount():
+    # Look through every mount point (drive letters on Windows) for one
+    # that has an Ember subdirectory.
+    candidates = []
+    if os.name == 'nt':
+        for l in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+            if os.path.exists(l + ':\\'):
+                candidates.append(l + ':\\')
+    elif os.path.exists('/proc/self/mounts'):
+        # skip pseudo and network filesystems: listing them is pointless,
+        # and autofs/stale network mounts can hang or trigger mounts
+        skip = ('proc', 'sysfs', 'devtmpfs', 'devpts', 'tmpfs', 'cgroup',
+                'cgroup2', 'securityfs', 'pstore', 'bpf', 'debugfs',
+                'tracefs', 'configfs', 'fusectl', 'mqueue', 'hugetlbfs',
+                'autofs', 'binfmt_misc', 'efivarfs', 'rpc_pipefs', 'nsfs',
+                'selinuxfs', 'ramfs', 'squashfs', 'overlay', 'nfs', 'nfs4',
+                'cifs', 'smb3', 'fuse.gvfsd-fuse', 'fuse.portal')
+        with open('/proc/self/mounts', 'r') as f:
+            for line in f:
+                strings = line.split(' ')
+                if len(strings) < 3 or strings[2] in skip:
+                    continue
+                # mount points escape space, tab, newline and backslash
+                m = re.sub(r'\\([0-7]{3})', lambda x: chr(int(x.group(1), 8)), strings[1])
+                if m not in candidates:
+                    candidates.append(m)
+    else:
+        # macOS and other unixes without /proc
+        for base in ('/Volumes', '/media', '/mnt'):
+            try:
+                for d in os.listdir(base):
+                    candidates.append(os.path.join(base, d))
+            except:
+                True
+    for c in candidates:
+        if find_ember_subdir(c):
+            return c
+    raise Exception('Could not find any device with an Ember directory')
 
 
 def find_psc_mount():
@@ -4780,6 +4963,8 @@ if __name__ == "__main__":
                     help='Where to store retroarch games as (m3u/cue)')
     parser.add_argument('--retroarch-pbp-dir',
                     help='Where to store retroarch games as (pbp)')
+    parser.add_argument('--ps2-ember',
+                    help='Parent directory of Ember/ or AUTO. Install game as cue/bin in <dir>/Ember/games/<title>/')
     parser.add_argument('--psio-dir',
                     help='Where to store images for PSIO')
     parser.add_argument('--psp-dir',
@@ -4864,6 +5049,10 @@ if __name__ == "__main__":
         args.psp_dir = find_psp_mount()
     elif args.psp_dir:
      args.psp_dir = os.path.expanduser(args.psp_dir)
+
+    if args.ps2_ember and args.ps2_ember.upper() == 'AUTO':
+        args.ps2_ember = find_ember_mount()
+        print('Found Ember on', args.ps2_ember)
 
     if args.psc_dir and args.psc_dir.upper() == 'AUTO':
         args.psc_dir = find_psc_mount()
@@ -5116,6 +5305,8 @@ if __name__ == "__main__":
         create_psc(args.psc_dir, disc_ids, game_title, icon0, pic1, cue_files, img_files, watermark=True if args.watermark else False, subdir=subdir)
     if args.fetch_metadata:
         create_metadata(args.files[0], disc_ids[0], game_title, icon0, pic0, pic1, snd0, manual, subdir=subdir)
+    if args.ps2_ember:
+        create_ember(os.path.expanduser(args.ps2_ember), disc_ids, game_title, cue_files, img_files, magic_word, icon0=icon0, pic0=pic0, pic1=pic1, snd0=snd0)
     if args.psio_dir:
         create_psio(args.psio_dir, disc_ids[0], game_title, icon0, cue_files, img_files, subdir=subdir)
     if args.retroarch_bin_dir:

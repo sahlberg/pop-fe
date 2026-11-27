@@ -131,6 +131,27 @@ Command line arguments are:
 		         to PIC0 for PSP and PSC games.
 --list-themes          : This lists all the available themes
 --theme <theme>        : Use ICON0/PIC0/PIC1/SND0 from the theme if available
+--ps2-ember <path>     : Install the game for the Ember PS1 emulator on PS2
+                         (not POPStarter/VCD).
+                         <path> is the directory that holds Ember/ (e.g. the
+                         root of the USB stick); Ember/ must exist.
+                         Use --ps2-ember=auto to search all mount points (drive
+                         letters on Windows) for one with an Ember/. The
+                         game is installed as cue/bin in
+                         <path>/Ember/games/<title>/<game-id>.cue|.bin
+                         where <title> is the game title with any (...)
+                         and [...] parts removed.
+                         Multidisc games get a Discs.txt listing the discs.
+                         Artwork goes in <path>/ART/ using the RiptOPL
+                         naming: <title>_COV.png and <title>_ICO.png
+                         (cover), <title>_LGO.png (logo, PIC0) and
+                         <title>_BG.png (background, PIC1), scaled to
+                         210x210 (RiptOPL's square PS1 cover slot), 64x64,
+                         300x125 and 640x480.
+                         If the game has a SND0 it is stored as
+                         <path>/ART/<title>_BGM.ogg: Ogg Vorbis, mono,
+                         32 kHz, at most 5 MB (longer tracks are cut
+                         and faded out).
 --psio-dir <path>      : This specifies the path to where a PSIO sd card has
                          been mounted. The games will be be installed as
                          <path>/<game-title>/<game-title>.bin
